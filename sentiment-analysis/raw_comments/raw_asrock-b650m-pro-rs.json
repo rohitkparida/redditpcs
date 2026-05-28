@@ -1,0 +1,1759 @@
+{
+  "productName": "asrock-b650m-pro-rs",
+  "sourceThreads": [
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiaevse/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiakirn/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiag9kf/",
+    "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k6tms0f/",
+    "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k76et3f/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiapa2r/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajrjq/",
+    "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k9k8o3z/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajyyp/",
+    "https://www.reddit.com/r/mffpc/comments/1mzvh9i/for_those_who_owns_b650m_pro_rs_i_need_to_know/nanjkj8/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kj4jjzr/",
+    "https://www.reddit.com/r/buildapc/comments/1mpf8x5/asrock_rs_pro_wifi_motherboard_vs_cheaper_model/",
+    "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvcxab3/",
+    "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jv9wxq7/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiazpfj/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiapa4l/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiarnx8/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajbg4/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kidn2jl/",
+    "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibvq46/"
+  ],
+  "analyzedAt": "2026-05-28",
+  "comments": [
+    {
+      "commentId": "15laubk",
+      "author": "mkdr",
+      "text": "Asrock B650M pro rs wifi slower than other boards by MSI and Gigabyte, why?\n\nI wanted to buy an Asrock B650M pro rs wifi and read some reviews, and saw these two, which show the Asrock is way slower in most games compared to other boards by MSI and Gigabyte:\n\n[https://www.youtube.com/watch?v=DTFUa60ozKY](https://www.youtube.com/watch?v=DTFUa60ozKY)\n\n[https://i.imgur.com/G1Fshh1.jpeg](https://i.imgur.com/G1Fshh1.jpeg)\n\n[https://www.techspot.com/review/2633-amd-b650-motherboards/](https://www.techspot.com/review/2633-amd-b650-motherboards/)\n\n[https://i.imgur.com/RMjAIx8.png](https://i.imgur.com/RMjAIx8.png)\n\nAnyone maybe have an explanation why and maybe how to fix it and make the Asrock go par with the other boards. Might have some newer bios fixed this performance problem?",
+      "subreddit": "ASRock",
+      "upvotes": 7,
+      "depth": 0,
+      "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/",
+      "replies": [
+        {
+          "commentId": "jva3g1o",
+          "author": "gran172",
+          "text": "I know ASRock does have a lower TJMax on some boards compared to the competition which does affect performace a bit (check HWU's review on the B650M HDV/M.2, they do address this in the video).\n\nNot sure if that's the case with this specific model tho, but it'd make a lot of sense.",
+          "subreddit": "ASRock",
+          "upvotes": 3,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jva3g1o/",
+          "replies": [
+            {
+              "commentId": "jva3so7",
+              "author": "mkdr",
+              "text": "I dont think that is the issue here. Also you can disable it in bios I think, that was also said in the video. There seem to be some issue with two classes here: [https://i.imgur.com/RMjAIx8.png](https://i.imgur.com/RMjAIx8.png)\n\nyou see here that they tested with the 75C power limit and also deactivated:\n\n[https://i.imgur.com/AlAkywM.png](https://i.imgur.com/AlAkywM.png)\n\nclass a in this test is around 185 FPS, class b is around 175 FPS. that must have some connection, mostly some RAM timings, the \"class b\" boards use, compared to the \"class a\" in this list. It isnt an Asrock specific issue, but Asrock seems to be in the slower \"class\" for whatever reason. There is also a 162 and a 163 next to the MSI boards, I dont know what it means, maybe a bios version? And MSI boards are \"fixed\" with the 163 and are also slow in class B with 162. so maybe a bios setting in Asrock boards also can uplift it to class a range?\n\nyou also see the two classes again in this test:\n\n[https://i.imgur.com/G1Fshh1.jpeg](https://i.imgur.com/G1Fshh1.jpeg)\n\nclass a around 265fps class b around 245fps\n\nI know there is some setting in Asrock bios where you can set ram timings to aggressive, maybe that fixes it?",
+              "subreddit": "ASRock",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jva3so7/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "jvaxbvf",
+          "author": "Elrothiel1981",
+          "text": "It says 5600 so I assume it\u2019s using ddr5 5600 ram those other boards look like it\u2019s using ddr5 6000 wonder why 5600 on other boards and 6000 on the rest",
+          "subreddit": "ASRock",
+          "upvotes": 2,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvaxbvf/",
+          "replies": [
+            {
+              "commentId": "jvaxff5",
+              "author": "mkdr",
+              "text": "because it didnt boot with 6000",
+              "subreddit": "ASRock",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvaxff5/",
+              "replies": [
+                {
+                  "commentId": "jvayghr",
+                  "author": "Elrothiel1981",
+                  "text": "Ok well that explains the results then probably needs a bios update and ran with 6000 to see the results again but doubt anyone is going to do that now",
+                  "subreddit": "ASRock",
+                  "upvotes": 2,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvayghr/",
+                  "replies": [
+                    {
+                      "commentId": "jvaymn1",
+                      "author": "mkdr",
+                      "text": "No it does not. Look carefully on the pictures or watch the video or read the article. There are other examples where it runs at 6000. Basically there are 2 classes/groups, and I want to know why. https://i.imgur.com/RMjAIx8.png",
+                      "subreddit": "ASRock",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvaymn1/",
+                      "replies": [
+                        {
+                          "commentId": "jvazram",
+                          "author": "Elrothiel1981",
+                          "text": "I was going by your original graph this one shows about a 10 to 12 fps difference which is odd idk If it\u2019s cause they are still working out kinks with the new platform or what",
+                          "subreddit": "ASRock",
+                          "upvotes": 2,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvazram/",
+                          "replies": []
+                        },
+                        {
+                          "commentId": "jvb2009",
+                          "author": "Elrothiel1981",
+                          "text": "My next question would be if these reviews are still accurate or has the bios updates changed things",
+                          "subreddit": "ASRock",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvb2009/",
+                          "replies": [
+                            {
+                              "commentId": "jvb23m0",
+                              "author": "mkdr",
+                              "text": "That I also dont know, might be. There is also a weird thing where it shows the same boards by MSI with a 162 and then a 163 next to it, one running in the faster group, the other in the slower, and I dont know what that means.",
+                              "subreddit": "ASRock",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvb23m0/",
+                              "replies": [
+                                {
+                                  "commentId": "jvb354k",
+                                  "author": "Elrothiel1981",
+                                  "text": "I know the current bios version is 1.28 I have the b650m pro rs wifi but have not try to really push a single player game with high fps yet\n\nAnd honestly I would not really let this discourage from buying it unless 20 fps is that big a deal to you",
+                                  "subreddit": "ASRock",
+                                  "upvotes": 2,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvb354k/",
+                                  "replies": [
+                                    {
+                                      "commentId": "jvb48by",
+                                      "author": "mkdr",
+                                      "text": "well if I buy a new pc for 2300 Eur I want it to be maxed out. also 20fps is a lot, it can be the difference to reach 144fps or not. I want to know the cause behind that anomaly in these two tests, why there are two classes of boards, class b runs way slower and I want to know why.",
+                                      "subreddit": "ASRock",
+                                      "upvotes": 1,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvb48by/",
+                                      "replies": [
+                                        {
+                                          "commentId": "jvb5q0s",
+                                          "author": "Elrothiel1981",
+                                          "text": "Well these are old reviews to which is a problem since it\u2019s not on the most recent bios version May not make a difference but who knows yea I only spent about $1235 but If I spent that much probably would make a issue out of it",
+                                          "subreddit": "ASRock",
+                                          "upvotes": 1,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvb5q0s/",
+                                          "replies": []
+                                        },
+                                        {
+                                          "commentId": "jvc2tbt",
+                                          "author": "Ivantsi",
+                                          "text": "Those 20 fps are with a 4090 @1080p , 20fps of 264fps is 8%, so unless you are actually gonna buy a 4090 to play at 1080p you're not gonna see a 20fps drop.",
+                                          "subreddit": "ASRock",
+                                          "upvotes": 1,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvc2tbt/",
+                                          "replies": [
+                                            {
+                                              "commentId": "jvc310i",
+                                              "author": "mkdr",
+                                              "text": "wrong. it could be the difference between having stable 60 fps or dropping to 58 or 55 fps. or 144fps or having 140fps. I want optimal settings, and something is not working right for these boards, and I want to know what setting it is. mostly a ram timing setting.",
+                                              "subreddit": "ASRock",
+                                              "upvotes": 1,
+                                              "depth": 10,
+                                              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvc310i/",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "jwgwxqw",
+          "author": "Prestigious-Wind4222",
+          "text": "So, you ended up buying the Asrock B650M ?",
+          "subreddit": "ASRock",
+          "upvotes": 2,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jwgwxqw/",
+          "replies": [
+            {
+              "commentId": "jwgz7ro",
+              "author": "mkdr",
+              "text": "yes, I bought the ASRock B650M PRO RS WIFI, I have it here but cant finish the build because I am waiting for the power unit.",
+              "subreddit": "ASRock",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jwgz7ro/",
+              "replies": [
+                {
+                  "commentId": "jwhjin1",
+                  "author": "Prestigious-Wind4222",
+                  "text": "I am building a new rig. I have a 4070 and a 7800X3D so far.. \nand the AsRock seems to be a good fit, but then I saw your post here and now I am thinking about it lol",
+                  "subreddit": "ASRock",
+                  "upvotes": 2,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jwhjin1/",
+                  "replies": [
+                    {
+                      "commentId": "jwhlv8r",
+                      "author": "mkdr",
+                      "text": "i think it will be a good board, asrock always was one of my favorite brands. I am just not sure yet if the performance problem is fixed on it, I cant test it so far.",
+                      "subreddit": "ASRock",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jwhlv8r/",
+                      "replies": [
+                        {
+                          "commentId": "jwid1ir",
+                          "author": "Prestigious-Wind4222",
+                          "text": "[https://www.newegg.com/asus-tuf-gaming-a620m-plus-wifi/p/N82E16813119647?Item=N82E16813119647](https://www.newegg.com/asus-tuf-gaming-a620m-plus-wifi/p/N82E16813119647?Item=N82E16813119647)\n\nWhat do you think about this one?",
+                          "subreddit": "ASRock",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jwid1ir/",
+                          "replies": [
+                            {
+                              "commentId": "jwid75w",
+                              "author": "mkdr",
+                              "text": "Lol!! 100% NO GO!! Did you miss the entire Asus catastrophe of the past 6 months? Asus is the LAST one you should buy, NEVER EVER BUY ASUS. MSI or Asrock it is for board, Gigabyte might also be okish. Asus AM5 is a total mess, they were the only one who were destroying your Ryzen 7000 series because of bad soc voltages. Asus have the worst stability right now of all brands.\n\n[https://www.youtube.com/watch?v=wZ-QVOKGVyM](https://www.youtube.com/watch?v=wZ-QVOKGVyM)\n\n[https://www.youtube.com/watch?v=cbGfc-JBxlY](https://www.youtube.com/watch?v=cbGfc-JBxlY)\n\n[https://www.windowscentral.com/hardware/computers-desktops/shady-business-allegations-embroil-asus-at-the-worst-possible-time](https://www.windowscentral.com/hardware/computers-desktops/shady-business-allegations-embroil-asus-at-the-worst-possible-time)\n\n[https://www.tomshardware.com/news/amd-ryzen-7000-burning-out-root-cause-identified-expo-and-soc-voltages-to-blame](https://www.tomshardware.com/news/amd-ryzen-7000-burning-out-root-cause-identified-expo-and-soc-voltages-to-blame)\n\nGet the ASRock B650M PRO RS (WIFI).",
+                              "subreddit": "ASRock",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jwid75w/",
+                              "replies": [
+                                {
+                                  "commentId": "jwift62",
+                                  "author": "Prestigious-Wind4222",
+                                  "text": "Thanks lol",
+                                  "subreddit": "ASRock",
+                                  "upvotes": 1,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jwift62/",
+                                  "replies": []
+                                },
+                                {
+                                  "commentId": "keyhmh2",
+                                  "author": "datboyuknow",
+                                  "text": "How did your build turn out? Did you face any performance issues?",
+                                  "subreddit": "ASRock",
+                                  "upvotes": 1,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/keyhmh2/",
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "k1oocaz",
+                  "author": "Mackro_x",
+                  "text": "How is it working? I am going to buy the non wifi version, which is the same I think but no Wifi. It is 180\u20ac in Spain, is it good and recommended?",
+                  "subreddit": "ASRock",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k1oocaz/",
+                  "replies": [
+                    {
+                      "commentId": "k1qr3cn",
+                      "author": "mkdr",
+                      "text": "no issues so far",
+                      "subreddit": "ASRock",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k1qr3cn/",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "jvikmei",
+          "author": "ba0lian",
+          "text": "None of the links you provided refers to the B650M Pro RS, for which there are no reviews or benchmarks yet.\nThe B650 Pro RS (without the M) is a completely different board, tho similar in looks.",
+          "subreddit": "ASRock",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvikmei/",
+          "replies": [
+            {
+              "commentId": "jviry6t",
+              "author": "mkdr",
+              "text": "But 3 other Asrock boards, I actually made a copy paste error in the title, I meant one from the link, but cant edit the title anymore. the one i put n the title is irrelevant because it will give the same result.",
+              "subreddit": "ASRock",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jviry6t/",
+              "replies": [
+                {
+                  "commentId": "jviyij3",
+                  "author": "ba0lian",
+                  "text": "It seemed to me you were mixing up the boards so i wanted to help clarify.",
+                  "subreddit": "ASRock",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jviyij3/",
+                  "replies": []
+                },
+                {
+                  "commentId": "k76et3f",
+                  "author": "RedJamie",
+                  "text": "Hey, did this board come with Windows pre-installed?",
+                  "subreddit": "ASRock",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k76et3f/",
+                  "replies": [
+                    {
+                      "commentId": "k76x33x",
+                      "author": "mkdr",
+                      "text": "of course not",
+                      "subreddit": "ASRock",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k76x33x/",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "jv9wda8",
+          "author": "[deleted]",
+          "text": "New BIOS versions can address performance but it's on par with or even better than some other boards in the links you've posted? If you want the best performance then look at the Taichi or other brand",
+          "subreddit": "ASRock",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jv9wda8/",
+          "replies": [
+            {
+              "commentId": "jv9wqr2",
+              "author": "mkdr",
+              "text": "what are you talking about. the Asrock is last in the reviews, in both. and no thank you, wont pay a scam price for Asrock Taichi.\n\n[https://i.imgur.com/KOYD7et.png](https://i.imgur.com/KOYD7et.png)\n\n[https://i.imgur.com/G1Fshh1.jpeg](https://i.imgur.com/G1Fshh1.jpeg)\n\n[https://i.imgur.com/RMjAIx8.png](https://i.imgur.com/RMjAIx8.png)\n\nBlind? There is obviously an issue with the board (together with some others), mostly not proper RAM timings Asrock is using.",
+              "subreddit": "ASRock",
+              "upvotes": 0,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jv9wqr2/",
+              "replies": [
+                {
+                  "commentId": "jv9wxq7",
+                  "author": "[deleted]",
+                  "text": "In the cinebench picture you've used for the thread PG has 37537, the RS board has less but not last, are you blind?",
+                  "subreddit": "ASRock",
+                  "upvotes": 0,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jv9wxq7/",
+                  "replies": [
+                    {
+                      "commentId": "jv9x0hj",
+                      "author": "mkdr",
+                      "text": "This post is about GAMING. The cinebench is irrelevant. I just included it.\n\nThese boards seem to have an issue, and MSI seems to have fixed it with a newer bios: [https://i.imgur.com/7kCoRq6.png](https://i.imgur.com/7kCoRq6.png)\n\nMy question was if Asrock fixed it, or not.",
+                      "subreddit": "ASRock",
+                      "upvotes": 0,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jv9x0hj/",
+                      "replies": [
+                        {
+                          "commentId": "jv9xclv",
+                          "author": "[deleted]",
+                          "text": "You included cinebench data yourself but it's not relevant.. OK. In gaming 1 or 2 fps is hardly going to be noticeable. If you want higher performance don't buy the cheapest board and expect it to outperform models which are 30 or 40% more expensive.",
+                          "subreddit": "ASRock",
+                          "upvotes": 0,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jv9xclv/",
+                          "replies": [
+                            {
+                              "commentId": "jv9xhhe",
+                              "author": "mkdr",
+                              "text": "Youre obviously lacking simple logic thinking.\n\n[https://i.imgur.com/7kCoRq6.png](https://i.imgur.com/7kCoRq6.png)\n\nThat is not \"1 or 2\" FPS and you can see two board classes here. Class A running at \\~185FPS, class B at \\~175FPS in that test. And the other tests also show that. It is not a margin problem, it is a specific issue, which some boards seem to have, the Asrock included in Class B.",
+                              "subreddit": "ASRock",
+                              "upvotes": -1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jv9xhhe/",
+                              "replies": [
+                                {
+                                  "commentId": "jv9z07l",
+                                  "author": "[deleted]",
+                                  "text": "The Pro RS isn't even on that benchmark, you're all over the place now.",
+                                  "subreddit": "ASRock",
+                                  "upvotes": 0,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jv9z07l/",
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "jvcxab3",
+          "author": "sikoix",
+          "text": "the benchmark you are referring to is because of default ram timings. if you changed them to be the same, all the boards would bench basically the same.",
+          "subreddit": "ASRock",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvcxab3/",
+          "replies": [
+            {
+              "commentId": "jvcxfuy",
+              "author": "sikoix",
+              "text": "https://youtu.be/UN2gkbMQ2fs?t=807",
+              "subreddit": "ASRock",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/jvcxfuy/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "k6pdju0",
+          "author": "darksaucer",
+          "text": "hey man, I just received my pro rs wifi mobo, does your rear heatsink also wobble back and forth for a bit when you put a slight pressure on it?",
+          "subreddit": "ASRock",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k6pdju0/",
+          "replies": [
+            {
+              "commentId": "k6r9ryd",
+              "author": "mkdr",
+              "text": "what you mean with rear heatsink, the top one? yes it is just hold by springs.",
+              "subreddit": "ASRock",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k6r9ryd/",
+              "replies": [
+                {
+                  "commentId": "k6tms0f",
+                  "author": "darksaucer",
+                  "text": "yea that one, thanks.",
+                  "subreddit": "ASRock",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k6tms0f/",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "k76eyqr",
+              "author": "RedJamie",
+              "text": "Hey Dark, did your Mobo come with an operating system pre-installed? My box says \"windows 11 ready,\" but the spec sheet says \"Windows 10\". I am ready to install windows on it via USB but I am curious",
+              "subreddit": "ASRock",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k76eyqr/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "k9k7qvu",
+          "author": "Ash2000_",
+          "text": "Should I take this one or ds3h?",
+          "subreddit": "ASRock",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k9k7qvu/",
+          "replies": [
+            {
+              "commentId": "k9k7yt3",
+              "author": "mkdr",
+              "text": "asrock",
+              "subreddit": "ASRock",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k9k7yt3/",
+              "replies": [
+                {
+                  "commentId": "k9k84m0",
+                  "author": "Ash2000_",
+                  "text": "Y tho? Performance difference is clear!",
+                  "subreddit": "ASRock",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k9k84m0/",
+                  "replies": [
+                    {
+                      "commentId": "k9k877d",
+                      "author": "mkdr",
+                      "text": "&gt;Performance difference\n\nthere is no performance difference",
+                      "subreddit": "ASRock",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k9k877d/",
+                      "replies": [
+                        {
+                          "commentId": "k9k8bv2",
+                          "author": "Ash2000_",
+                          "text": "Did u not saw the review by hardware unboxed?",
+                          "subreddit": "ASRock",
+                          "upvotes": 0,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k9k8bv2/",
+                          "replies": [
+                            {
+                              "commentId": "k9k8eqw",
+                              "author": "mkdr",
+                              "text": "not accurate (anymore). get the asrock. the end.",
+                              "subreddit": "ASRock",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k9k8eqw/",
+                              "replies": [
+                                {
+                                  "commentId": "k9k8h94",
+                                  "author": "Ash2000_",
+                                  "text": "How? What?",
+                                  "subreddit": "ASRock",
+                                  "upvotes": 1,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k9k8h94/",
+                                  "replies": [
+                                    {
+                                      "commentId": "k9k8kfl",
+                                      "author": "mkdr",
+                                      "text": "reasons. the end.",
+                                      "subreddit": "ASRock",
+                                      "upvotes": 1,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k9k8kfl/",
+                                      "replies": [
+                                        {
+                                          "commentId": "k9k8o3z",
+                                          "author": "Ash2000_",
+                                          "text": "Can u explain pls, m gonna go to make my* pc tomorrow",
+                                          "subreddit": "ASRock",
+                                          "upvotes": 1,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k9k8o3z/",
+                                          "replies": [
+                                            {
+                                              "commentId": "k9k8uwn",
+                                              "author": "mkdr",
+                                              "text": "no. I said get the asrock. it doesnt matter to explain. there is no performance difference, asrock is best am5 platform. tests are outdated on old bios and agesa not relevant anymore. wrong / bad dram timings used. the end.",
+                                              "subreddit": "ASRock",
+                                              "upvotes": 1,
+                                              "depth": 10,
+                                              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/k9k8uwn/",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "kajvtfl",
+                  "author": "xthq",
+                  "text": "&gt;yes, I bought the ASRock B650M PRO RS WIFI\n\nDoes this mobo comes with WIFI on board? I see that there is M2Wifi, but do I need additional M2 card to make it works wireless?",
+                  "subreddit": "ASRock",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/kajvtfl/",
+                  "replies": [
+                    {
+                      "commentId": "kajvv4d",
+                      "author": "mkdr",
+                      "text": "of course it comes with wifi/bt what do you thought was the wifi in the name? it comes with a mediatek wifi 6e + bt card and antennas. latest drivers always here\n\nhttps://www.elevenforum.com/t/drivers-amd-mediatek-wifi-bluetooth.11384/",
+                      "subreddit": "ASRock",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/kajvv4d/",
+                      "replies": [
+                        {
+                          "commentId": "kajwasm",
+                          "author": "xthq",
+                          "text": "I expected that it contains wifi/bt module, and also checked ASRock spec but just got suspicious when I found a guy on YT that is unboxing this mobo and pointing finder at M.2 saying that wifi module is not included. As I understand that is an option for second wifi card.",
+                          "subreddit": "ASRock",
+                          "upvotes": 0,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/kajwasm/",
+                          "replies": [
+                            {
+                              "commentId": "kajwec9",
+                              "author": "mkdr",
+                              "text": "Two versions\n\n[https://asrock.com/MB/AMD/B650M%20Pro%20RS%20WiFi/index.asp](https://asrock.com/MB/AMD/B650M%20Pro%20RS%20WiFi/index.asp)\n\n[https://asrock.com/MB/AMD/B650M%20Pro%20RS/index.asp](https://www.asrock.com/MB/AMD/B650M%20Pro%20RS/index.asp)\n\none with wifi card and antennas reinstalled, one without, both have the wifi m2 slot. so hard to understand? what do you see on the pictures?",
+                              "subreddit": "ASRock",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/kajwec9/",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "kjcztwf",
+          "author": "Tartufaman",
+          "text": "Has ASRock fixed the performance issue by now? I can't find any benchmarks with the newer bios versions.",
+          "subreddit": "ASRock",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/ASRock/comments/15laubk/asrock_b650m_pro_rs_wifi_slower_than_other_boards/kjcztwf/",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "198yk7d",
+      "author": "m13b",
+      "text": "RTX 4070 SUPER reviews + 4070 SUPER giveaway!\n\nReview embargo for the [RTX 4070 SUPER](https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4070-family/) has lifted. Below is a collection of video and text reviews, I will be updating this list as more are posted over the coming days. We will be giving away one RTX 4070 SUPER in this thread!\n\n# SPECS\n\n||RTX 4070|RTX 4070 SUPER|\n|:-|:-|:-|\n|Shader units|5888|**7168**|\n|Base/Boost clock (GHz)|1.92/2.48|**1.98/2.48**|\n|VRAM|12GB GDDR6X|**12GB GDDR6X**|\n|Memory bus|192-bit|**192-bit**|\n|L2 cache|36MB|**48MB**|\n|GPU|AD104|**AD104**|\n|TGP|200W|**220W**|\n|Launch MSRP|599 USD (new MSRP 549 USD)|**599 USD**|\n|Launch date|APR 2023|**JAN 17, 2024**|\n\n# REVIEWS\n\n|Outlet|Text|Video|\n|:-|:-|:-|\n|Arstechnica|[FE](https://arstechnica.com/gadgets/2024/01/review-geforce-rtx-4070-super-makes-a-good-gpu-even-better-still-costs-600/)||\n|eTeknix||[FE, ZOTAC Trinity, Inno3D X2, Palit Dual](https://www.youtube.com/watch?v=9GdmDvG_rQY)|\n|Eurogamer (Digital Foundry)|[FE](https://www.eurogamer.net/digitalfoundry-2024-nvidia-geforce-rtx-4070-super-review)|[FE](https://www.youtube.com/watch?v=cOSG6JN9PGU)|\n|Gamers Nexus||[FE](https://www.youtube.com/watch?v=mL1l4jmxLa8)|\n|Hardware Canucks||[FE](https://www.youtube.com/watch?v=9GdmDvG_rQY)|\n|Hot Hardware|[FE](https://hothardware.com/reviews/nvidia-geforce-rtx-4070-super-review)||\n|IGN|[FE](https://www.ign.com/articles/nvidia-geforce-rtx-4070-super-review)||\n|Kitguru|[FE](https://www.kitguru.net/components/graphic-cards/dominic-moass/nvidia-rtx-4070-super-review/)|[FE](https://www.youtube.com/watch?v=PgZpghANDso)|\n|Linus Tech Tips|||\n|PC Gamer|[FE](https://www.pcgamer.com/nvidia-rtx-4070-super-founders-edition-review-benchmarks-performance/)||\n|PC Perspective|[FE](https://pcper.com/2024/01/nvidia-geforce-rtx-4070-super-founders-edition-review/)||\n|TechPowerUp|[FE](https://www.techpowerup.com/review/nvidia-geforce-rtx-4070-super-founders-edition/), [Gainward Ghost](https://www.techpowerup.com/review/gainward-geforce-rtx-4070-super-ghost/), [PNY Verto](https://www.techpowerup.com/review/pny-geforce-rtx-4070-super-verto/), [ZOTAC Trinity](https://www.techpowerup.com/review/zotac-geforce-rtx-4070-super-trinity/), [Asus Dual](https://www.techpowerup.com/review/asus-geforce-rtx-4070-super-dual/), [Palit Jetstream OC](https://www.techpowerup.com/review/palit-geforce-rtx-4070-super-jetstream-oc/), [Gigabyte Aorus Master](https://www.techpowerup.com/review/gigabyte-geforce-rtx-4070-super-aorus-master/), [ASUS TUF OC](https://www.techpowerup.com/review/asus-geforce-rtx-4070-super-tuf-oc/)||\n|Techspot (Hardware Unboxed)|[FE](https://www.techspot.com/review/2791-nvidia-geforce-rtx-4070-super/)|[FE](https://www.youtube.com/watch?v=HT8UmPrQYvk)|\n|Toms Hardware|[FE](https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-4070-super-review-boosted-clocks-and-core-counts-for-the-same-dollar599-as-the-vanilla-4070)||\n\n&amp;#x200B;\n\n# RTX 4070 SUPER Giveaway rules and entry\n\n\\---\n\nFrom NVIDIA:\n\n*Hey everyone!\u00a0 We love building PCs and the PC-building community - and we\u2019re especially excited to see the creative systems you\u2019ll build that include brand-new GeForce RTX 4070 SUPER graphics cards.\u00a0 And to celebrate, we want to help someone to get their hands on one.*\u00a0\u00a0\u00a0\n\n*Here is what you will need to do for a chance to win an RTX 4070 SUPER Founders Edition graphics card.*\u00a0\u00a0\u00a0\u00a0\n\n* *Use* [*PC Part Picker*](https://pcpartpicker.com/)\u00a0*to craft your RTX 4070 SUPER build*\n   * *Must include the RTX 4070 SUPER graphics card*\n* *Share your RTX 4070 SUPER PC Part Picker build &amp; link in the comments* (Note from buildapc: see instructions below, must be a reply to the top level comment)\n\n*Have questions about building with RTX 4070 SUPER? Our GeForce Evangelist Jacob Freeman will be in this thread throughout the day, to talk about the new RTX 4070 SUPER and PC gaming.*\n\n[*Terms &amp; Conditions*](https://www.nvidia.com/en-us/geforce/contests/reddit-4070-super-giveaway/)\u00a0*apply.*\n\n*Be sure to come back to* r/buildapc *on January 31st for the launch of the GeForce RTX 4080 SUPER where we\u2019ll have another event to celebrate.*\n\n\\---\n\n# Congratulations /u/trainsforalllife for their winning entry:\n\n[PCPartPicker Part List](https://pcpartpicker.com/list/tsBbdH)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [AMD Ryzen 5 7600X 4.7 GHz 6-Core Processor](https://pcpartpicker.com/product/66C48d/amd-ryzen-5-7600x-47-ghz-6-core-processor-100-100000593wof) | $228.95 @ Newegg \n**CPU Cooler** | [Thermalright Phantom Spirit 120 SE ARGB 66.17 CFM CPU Cooler](https://pcpartpicker.com/product/MzMMnQ/thermalright-phantom-spirit-120-se-argb-6617-cfm-cpu-cooler-ps120se-argb) | $35.90 @ Amazon \n**Motherboard** | [ASRock B650M Pro RS Micro ATX AM5 Motherboard](https://pcpartpicker.com/product/FcbRsY/asrock-b650m-pro-rs-micro-atx-am5-motherboard-b650m-pro-rs) | $119.99 @ Newegg \n**Memory** | [G.Skill Flare X5 32 GB (2 x 16 GB) DDR5-6000 CL30 Memory](https://pcpartpicker.com/product/LBstt6/gskill-flare-x5-32-gb-2-x-16-gb-ddr5-6000-cl30-memory-f5-6000j3038f16gx2-fx5) | $104.99 @ Amazon \n**Storage** | [ADATA XPG GAMMIX S70 Blade 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://pcpartpicker.com/product/qCqPxr/adata-xpg-gammix-s70-blade-2-tb-m2-2280-nvme-solid-state-drive-agammixs70b-2t-cs) | $139.99 @ Amazon \n**Video Card** | [Gigabyte WINDFORCE OC GeForce RTX 4070 SUPER 12 GB Video Card](https://pcpartpicker.com/product/HCkH99/gigabyte-windforce-oc-geforce-rtx-4070-super-12-gb-video-card-gv-n407swf3oc-12gd) | $599.99 @ Newegg \n**Case** | [Corsair 4000D Airflow ATX Mid Tower Case](https://pcpartpicker.com/product/bCYQzy/corsair-4000d-airflow-atx-mid-tower-case-cc-9011200-ww) | $104.99 @ Best Buy \n**Power Supply** | [Thermaltake Toughpower GF1 (2024) 850 W 80+ Gold Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/kVyH99/thermaltake-toughpower-gf1-2024-850-w-80-gold-certified-fully-modular-atx-power-supply-ps-tpd-0850fnfagu-p) | $89.99 @ Newegg \n | *Prices include shipping, taxes, rebates, and discounts* |\n | **Total** | **$1424.79**\n | Generated by [PCPartPicker](https://pcpartpicker.com) 2024-01-30 21:05 EST-0500 |",
+      "subreddit": "buildapc",
+      "upvotes": 686,
+      "depth": 0,
+      "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/",
+      "replies": [
+        {
+          "commentId": "kiaecy8",
+          "author": "m13b",
+          "text": "Reply to this comment with your PCPartPicker list to enter the giveaway! Not sure how to share a permalink? See this [image](https://media.discordapp.net/attachments/873058544721731604/1197201659965743144/Untitled-1.png).",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiaecy8/",
+          "replies": []
+        },
+        {
+          "commentId": "kiah3sx",
+          "author": "GeForce_JacobF",
+          "text": "Wow some of you are quick, a lot of super nice builds in here already \ud83d\ude03  Good luck and happy to answer any Super related questions!",
+          "subreddit": "buildapc",
+          "upvotes": 134,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiah3sx/",
+          "replies": [
+            {
+              "commentId": "kiamfgm",
+              "author": "Apprehensive_Rough80",
+              "text": "Why green card expensive",
+              "subreddit": "buildapc",
+              "upvotes": 131,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiamfgm/",
+              "replies": [
+                {
+                  "commentId": "kicz24m",
+                  "author": "spaceguerilla",
+                  "text": "You can get one for free if you marry an American",
+                  "subreddit": "buildapc",
+                  "upvotes": 45,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kicz24m/",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "kiasusi",
+              "author": "Brockhard_Purdvert",
+              "text": "Is my vram anxiety rational?",
+              "subreddit": "buildapc",
+              "upvotes": 30,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiasusi/",
+              "replies": [
+                {
+                  "commentId": "kiav6z7",
+                  "author": "GeForce_JacobF",
+                  "text": "A lot of this will depend on game/resolution and also keep in mind that most tools report memory allocation, not actual usage. Best way to find a low memory scenario is to look at 1% lows. With that being said, 12GB (like on the 4070 SUPER) is great for 1440P or even 4K in most games.",
+                  "subreddit": "buildapc",
+                  "upvotes": 27,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiav6z7/",
+                  "replies": [
+                    {
+                      "commentId": "kib3kk2",
+                      "author": "ProudAd1210",
+                      "text": "I heard same stories about 3070Ti, now it has ton of issues over time with ram in some games, while RX6800 does not.",
+                      "subreddit": "buildapc",
+                      "upvotes": 36,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kib3kk2/",
+                      "replies": [
+                        {
+                          "commentId": "kiif63i",
+                          "author": "[deleted]",
+                          "text": "What issues does 3070ti have",
+                          "subreddit": "buildapc",
+                          "upvotes": 2,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiif63i/",
+                          "replies": [
+                            {
+                              "commentId": "kiiucne",
+                              "author": "ProudAd1210",
+                              "text": "more badly optimized games or games with high ram demands over the year, since Consoles are 16GB, as a result - stutters/microfreezes on &lt;11GB Ram size, washed out textures, coz game cant keep up loading/unloading them. RT is mode dead (but RT is not a problem since it was dead from the beginning usually).\n\nThere is also a vid, where a dude from Brasil soldered additional 8GB to his 3070, and got a huge performance uplift in Resident Evil 4: [https://www.youtube.com/watch?v=W6uaUHBNFOU](https://www.youtube.com/watch?v=W6uaUHBNFOU)\n\nI played Hogwards Legacy (a lot of people does, since its one of most selling game on steam) and I traded my 3070Ti for RX6800 coz this game, and u may not believe me, but Hogsmeade and Hogwards caste stutters - all gone, after I switched my gpu to 16Gb.",
+                              "subreddit": "buildapc",
+                              "upvotes": 3,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiiucne/",
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "kicw4kg",
+                          "author": "Auroramaki",
+                          "text": "Nothing to do with the post: child of light pfp detected, I highly respect you stranger &lt;3",
+                          "subreddit": "buildapc",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kicw4kg/",
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "kiavmdm",
+                      "author": "Brockhard_Purdvert",
+                      "text": "Well, I'm upgrading my 1070 to a 4070s, and I got a 1440p monitor last black Friday. I'd love to think I'll get 5-6 years out of this like I did the 1070.",
+                      "subreddit": "buildapc",
+                      "upvotes": 2,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiavmdm/",
+                      "replies": [
+                        {
+                          "commentId": "kib3ut9",
+                          "author": "ProudAd1210",
+                          "text": "if u want a gpu for 4+ years go for 4070Ti Super or 4080, 4070S won't last for 4+ years.",
+                          "subreddit": "buildapc",
+                          "upvotes": 6,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kib3ut9/",
+                          "replies": [
+                            {
+                              "commentId": "kib5x1v",
+                              "author": "Brockhard_Purdvert",
+                              "text": "Bro. My anxiety.",
+                              "subreddit": "buildapc",
+                              "upvotes": 17,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kib5x1v/",
+                              "replies": []
+                            },
+                            {
+                              "commentId": "kibwufi",
+                              "author": "Sp1n_Kuro",
+                              "text": "Man is still on a 1070, that 4070S will last him like 10 years lol.\n\nNot everyone is trying to play at 8k 144fps with ray tracing on",
+                              "subreddit": "buildapc",
+                              "upvotes": 7,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibwufi/",
+                              "replies": [
+                                {
+                                  "commentId": "kic74lj",
+                                  "author": "ProudAd1210",
+                                  "text": "he still on a 1070, coz it had 8GB from the beginning, it was 2 times bigger than 4GB mainstream cards of that time.",
+                                  "subreddit": "buildapc",
+                                  "upvotes": 1,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kic74lj/",
+                                  "replies": [
+                                    {
+                                      "commentId": "kic9v4k",
+                                      "author": "Sp1n_Kuro",
+                                      "text": "and 8GB is still perfectly fine if you aren't chasing 8k or 4k high fps",
+                                      "subreddit": "buildapc",
+                                      "upvotes": 2,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kic9v4k/",
+                                      "replies": [
+                                        {
+                                          "commentId": "kicb6u3",
+                                          "author": "ProudAd1210",
+                                          "text": "for 1080p sure, my previous 3070Ti was choking in Hogwards Legacy even on 1080p with DLSS and not even super ultra textrures/settings, and I am sure this year and next year we will get even more unoptimized or big textures games.",
+                                          "subreddit": "buildapc",
+                                          "upvotes": 2,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kicb6u3/",
+                                          "replies": [
+                                            {
+                                              "commentId": "kijccun",
+                                              "author": "notevolve",
+                                              "text": "This doesn't say much about how the hardware will perform in a few years. Hogwarts Legacy was a really rough launch, performance wise, for a big portion of the playerbase, with both low end and high end setups being affected. It was (or maybe still is, I haven't tried it in a really long time) poorly optimized.",
+                                              "subreddit": "buildapc",
+                                              "upvotes": 1,
+                                              "depth": 10,
+                                              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kijccun/",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "commentId": "kibcnjw",
+                              "author": "fightingCookie0301",
+                              "text": "Highly depends on what games he plays, with which options on\u2026 \n\nMy 1060 6GB (mobile) lasted me 5+ years because I don\u2019t play games like cyberpunk or Starfield\u2026 if I did, it would be another story. Just to give an example\u2026",
+                              "subreddit": "buildapc",
+                              "upvotes": 5,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibcnjw/",
+                              "replies": [
+                                {
+                                  "commentId": "kibhix4",
+                                  "author": "ProudAd1210",
+                                  "text": "my 1070 lasted 6 years, and it still in use, but not by me, but when I bought it in 2016, 8GB was a solid size, today 12GB is not a solid size, not for 4070 performance league, 16GB is, so if u want 1070 experience again, you go for 16+ GB card, not 12gb.",
+                                  "subreddit": "buildapc",
+                                  "upvotes": 3,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibhix4/",
+                                  "replies": [
+                                    {
+                                      "commentId": "kictuvr",
+                                      "author": "[deleted]",
+                                      "text": "Where are y\u2019all getting these comparisons from \ud83d\ude02 12GB is definitely fine. I\u2019m tired of this community acting as if a 4090 is needed to keep up with gaming.",
+                                      "subreddit": "buildapc",
+                                      "upvotes": 8,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kictuvr/",
+                                      "replies": [
+                                        {
+                                          "commentId": "kicux5w",
+                                          "author": "ProudAd1210",
+                                          "text": "its fine today, how about later? also bear in mind, this card costs more than 600$, for 12 gigs in 2024.",
+                                          "subreddit": "buildapc",
+                                          "upvotes": 3,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kicux5w/",
+                                          "replies": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "commentId": "kibx1c6",
+                                      "author": "Sp1n_Kuro",
+                                      "text": "8GB is still fine if you're on 1080p or 1440p. 12GB is more than fine.\n\nIt's only if you're trying to do 4k that it starts becoming an issue.",
+                                      "subreddit": "buildapc",
+                                      "upvotes": 5,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibx1c6/",
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "kibwuxj",
+                  "author": "Khelgar_Ironfist_",
+                  "text": "At 600 bucks yes it is",
+                  "subreddit": "buildapc",
+                  "upvotes": 6,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibwuxj/",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "kiazpfj",
+          "author": "AverageCryptoEnj0yer",
+          "text": "You must be a legal resident of AUSTRALIA, AUSTRIA, BELGIUM, CANADA (EXCLUDING THE PROVINCE OF QUEBEC), COLOMBIA, CROATIA, CZECH REPUBLIC, DENMARK, FINLAND, FRANCE, GERMANY, GREECE, IRELAND, JAPAN, NEW ZEALAND, NORWAY, PERU, POLAND, SOUTH KOREA, SPAIN, SWITZERLAND, TAIWAN, THE NETHERLANDS, UNITED KINGDOM, THE UNITED STATES OF AMERICA (EXCLUDING PUERTO RICO AND ITS OTHER TERRITORIES AND POSSESSIONS) and you must be eighteen (18) or older to be eligible to participate.\u00a0\n\nDamn bro I can't be a resident of allat at once. (In fact, I'm resident in none of them)",
+          "subreddit": "buildapc",
+          "upvotes": 91,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiazpfj/",
+          "replies": [
+            {
+              "commentId": "kibjig1",
+              "author": "Tiwanacu",
+              "text": "Why is Norway, Finland and Denmark in there but not Sweden?",
+              "subreddit": "buildapc",
+              "upvotes": 22,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibjig1/",
+              "replies": [
+                {
+                  "commentId": "kibkz3p",
+                  "author": "AverageCryptoEnj0yer",
+                  "text": "Why is france switzerland austria and croatia there but not my Italy?",
+                  "subreddit": "buildapc",
+                  "upvotes": 16,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibkz3p/",
+                  "replies": [
+                    {
+                      "commentId": "kie4bjp",
+                      "author": "AgentBond007",
+                      "text": "You'd think it's either all of the EU or none of it?",
+                      "subreddit": "buildapc",
+                      "upvotes": 4,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kie4bjp/",
+                      "replies": [
+                        {
+                          "commentId": "kiefsgf",
+                          "author": "AverageCryptoEnj0yer",
+                          "text": "I have no idea how this works",
+                          "subreddit": "buildapc",
+                          "upvotes": 2,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiefsgf/",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "kic5227",
+                  "author": "the_lamou",
+                  "text": "It's the middle sibling everyone forgets about.",
+                  "subreddit": "buildapc",
+                  "upvotes": 4,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kic5227/",
+                  "replies": [
+                    {
+                      "commentId": "kichn39",
+                      "author": "Tiwanacu",
+                      "text": "haha so wierd",
+                      "subreddit": "buildapc",
+                      "upvotes": 2,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kichn39/",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "kif2wcg",
+                  "author": "juustoplay",
+                  "text": "Glad im from finland",
+                  "subreddit": "buildapc",
+                  "upvotes": 2,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kif2wcg/",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "kic3l25",
+              "author": "C4G_",
+              "text": "Cries in qu\u00e9b\u00e9cois",
+              "subreddit": "buildapc",
+              "upvotes": 7,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kic3l25/",
+              "replies": []
+            },
+            {
+              "commentId": "kichrnx",
+              "author": "qalpha94",
+              "text": "r/fuckyouinparticular Quebec!",
+              "subreddit": "buildapc",
+              "upvotes": 2,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kichrnx/",
+              "replies": []
+            },
+            {
+              "commentId": "kif7mwv",
+              "author": "a-tkyuki",
+              "text": "I have never seen anyone other than influencers win an NVIDIA campaign in Japan.  \nI'm doing machine translation.",
+              "subreddit": "buildapc",
+              "upvotes": 3,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kif7mwv/",
+              "replies": []
+            },
+            {
+              "commentId": "kieb89y",
+              "author": "GattoNonItaliano",
+              "text": "Where is Italy\ud83d\ude2d",
+              "subreddit": "buildapc",
+              "upvotes": 2,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kieb89y/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "kiarnx8",
+          "author": "MainHaze",
+          "text": "&gt;CANADA (EXCLUDING THE PROVINCE OF QUEBEC)\n\nI swear... we're not allowed to have any fun in this province.",
+          "subreddit": "buildapc",
+          "upvotes": 70,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiarnx8/",
+          "replies": [
+            {
+              "commentId": "kibtjbx",
+              "author": "Jigglemanscrafty",
+              "text": "Good (I'm from Ontario ofc). But I'm assuming there's just some strict law in quebec involving the language or something that makes it so that its always excluded (from trials and giveaways etc).",
+              "subreddit": "buildapc",
+              "upvotes": 10,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibtjbx/",
+              "replies": [
+                {
+                  "commentId": "kibvq46",
+                  "author": "MainHaze",
+                  "text": "It's not even (completely) language-related (surprisingly).\n\nIt's an absolute nanny-state here where the government thinks it has to protect the population from EVERYTHING.  In this case, there are laws in place that are designed to protect consumers from scams and illegal contests.  It honestly sounds like a good thing, but the problem is that the laws are so strict that it's just too much of a hassle for anyone running a contest and it's just easier to just skip Quebec altogether.\n\n[A bit more info...](https://www.liveabout.com/why-are-so-many-competitions-void-in-quebec-896835)",
+                  "subreddit": "buildapc",
+                  "upvotes": 10,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibvq46/",
+                  "replies": [
+                    {
+                      "commentId": "kibwdt1",
+                      "author": "Jigglemanscrafty",
+                      "text": "The quebec gov has some strict ass laws, some of them are great but sometimes it's too restricting. Like so many legitimate free things from contests or free trials often say that quebec is excluded.",
+                      "subreddit": "buildapc",
+                      "upvotes": 5,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibwdt1/",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "kiapfs8",
+          "author": "[deleted]",
+          "text": "Just commenting that this thread makes me sad.",
+          "subreddit": "buildapc",
+          "upvotes": 37,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiapfs8/",
+          "replies": [
+            {
+              "commentId": "kibx8vv",
+              "author": "Deluded_Nami",
+              "text": "How come?",
+              "subreddit": "buildapc",
+              "upvotes": 12,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibx8vv/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "kiarjok",
+          "author": "picatdim",
+          "text": "ITT: People not reading the instructions. POST YOUR PC PARTPICKER LIST AS A REPLY TO THE PINNED COMMENT!!!",
+          "subreddit": "buildapc",
+          "upvotes": 28,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiarjok/",
+          "replies": [
+            {
+              "commentId": "kidj9zp",
+              "author": "HovercraftExisting20",
+              "text": "https://pcpartpicker.com/list/GcH2TY",
+              "subreddit": "buildapc",
+              "upvotes": 26,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kidj9zp/",
+              "replies": [
+                {
+                  "commentId": "kidn2jl",
+                  "author": "picatdim",
+                  "text": "Not as a reply to this comment... I'm just a random person trying to help. look for the comment with the green pin at the top of the comments list.",
+                  "subreddit": "buildapc",
+                  "upvotes": 2,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kidn2jl/",
+                  "replies": [
+                    {
+                      "commentId": "kie8uri",
+                      "author": "QuinntinteranC",
+                      "text": "https://pcpartpicker.com/list/GcH2TY",
+                      "subreddit": "buildapc",
+                      "upvotes": 22,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kie8uri/",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "kie7ty9",
+              "author": "GoryRamsy",
+              "text": "It\u2019s actually a great way to weed out the bots.",
+              "subreddit": "buildapc",
+              "upvotes": 4,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kie7ty9/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "kib5xrh",
+          "author": "Fine_Ad_8414",
+          "text": "very exciting, I get my 4070 super tomorrow! (my first desktop gpu)",
+          "subreddit": "buildapc",
+          "upvotes": 6,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kib5xrh/",
+          "replies": [
+            {
+              "commentId": "kicreaz",
+              "author": "huhz",
+              "text": "Congrats! How exciting",
+              "subreddit": "buildapc",
+              "upvotes": 2,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kicreaz/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "kias2kd",
+          "author": "Pwnspoon",
+          "text": "Someone will be very happy. Congratulations to whom ever it is.",
+          "subreddit": "buildapc",
+          "upvotes": 4,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kias2kd/",
+          "replies": []
+        },
+        {
+          "commentId": "kibiqxs",
+          "author": "Ol2501",
+          "text": "As always Mexico can\u2019t have anything. Once again I hate my country",
+          "subreddit": "buildapc",
+          "upvotes": 4,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibiqxs/",
+          "replies": [
+            {
+              "commentId": "kizgsip",
+              "author": "sfjoellen",
+              "text": "but the food.. can't hate the food surely?",
+              "subreddit": "buildapc",
+              "upvotes": 2,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kizgsip/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "kibjk5l",
+          "author": "Tiwanacu",
+          "text": "Why is Norway, Finland and Denmark in there but not Sweden?",
+          "subreddit": "buildapc",
+          "upvotes": 2,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kibjk5l/",
+          "replies": []
+        },
+        {
+          "commentId": "kj4jjzr",
+          "author": "DadOfDayz",
+          "text": "Has the winner been chosen?",
+          "subreddit": "buildapc",
+          "upvotes": 2,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kj4jjzr/",
+          "replies": []
+        },
+        {
+          "commentId": "kiajrjq",
+          "author": "frozrdude",
+          "text": "[https://pcpartpicker.com/list/98r6mD](https://pcpartpicker.com/list/98r6mD)\n\n\ud83d\ude03",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajrjq/",
+          "replies": []
+        },
+        {
+          "commentId": "kiajwu2",
+          "author": "Bitten_ByA_Kitten",
+          "text": "[PCPartPicker Part List](https://pcpartpicker.com/list/qCdXFs)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [AMD Ryzen 5 7600X 4.7 GHz 6-Core Processor](https://pcpartpicker.com/product/66C48d/amd-ryzen-5-7600x-47-ghz-6-core-processor-100-100000593wof) | $221.00 @ Newegg \n**CPU Cooler** | [Deepcool AK620 ZERO DARK 68.99 CFM CPU Cooler](https://pcpartpicker.com/product/7J6p99/deepcool-ak620-zero-dark-6899-cfm-cpu-cooler-r-ak620-bknnmt-g-1) | $59.99 @ Amazon \n**Motherboard** | [Gigabyte B650M AORUS ELITE AX ICE Micro ATX AM5 Motherboard](https://pcpartpicker.com/product/w3dG3C/gigabyte-b650m-aorus-elite-ax-ice-micro-atx-am5-motherboard-b650m-aorus-elite-ax-ice) |-\n**Memory** | [TEAMGROUP T-Force Delta RGB 32 GB (2 x 16 GB) DDR5-6000 CL30 Memory](https://pcpartpicker.com/product/WFVmP6/teamgroup-t-force-delta-rgb-32-gb-2-x-16-gb-ddr5-6000-cl30-memory-ff4d532g6000hc30dc01) | $104.99 @ Amazon \n**Storage** | [Crucial P3 Plus 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://pcpartpicker.com/product/yGZ9TW/crucial-p3-plus-2-tb-m2-2280-nvme-solid-state-drive-ct2000p3pssd8) | $109.99 @ Newegg \n**Video Card** | [Zotac GAMING Trinity OC GeForce RTX 4070 Ti SUPER 16 GB Video Card](https://pcpartpicker.com/product/NrXV3C/zotac-gaming-trinity-oc-geforce-rtx-4070-ti-super-16-gb-video-card-zt-d40730q-10p) |-\n**Case** | [HYTE Y70 Touch ATX Mid Tower Case](https://pcpartpicker.com/product/JHrqqs/hyte-y70-touch-atx-mid-tower-case-cs-hyte-y70-ww-l) | $375.98 @ Newegg \n**Power Supply** | [Corsair RM850x SHIFT 850 W 80+ Gold Certified Fully Modular Side Interface ATX Power Supply](https://pcpartpicker.com/product/MgYmP6/corsair-rm850x-shift-850-w-80-gold-certified-fully-modular-side-interface-atx-power-supply-cp-9020252-na) | $144.99 @ Amazon \n**Operating System** | [Microsoft Windows 11 Home OEM - DVD 64-bit](https://pcpartpicker.com/product/dKkWGX/microsoft-windows-11-home-oem-dvd-64-bit-kw9-00633) | $124.99 @ Amazon \n**Monitor** | [Asus ROG Swift OLED PG27AQDM 26.5\" 2560 x 1440 240 Hz Monitor](https://pcpartpicker.com/product/tTBzK8/asus-rog-swift-oled-pg27aqdm-265-2560-x-1440-240-hz-monitor-90lm08q0-b01ab0) | $899.00 @ Amazon \n | *Prices include shipping, taxes, rebates, and discounts* |\n | **Total** | **$2040.93**\n | Generated by [PCPartPicker](https://pcpartpicker.com) 2024-01-17 10:53 EST-0500 |\n\nPlease let me win something just once here on Reddit \ud83e\udd23\ud83d\ude02\ud83d\ude22\ud83d\ude2d\ud83d\ude2d\ud83d\ude2d",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajwu2/",
+          "replies": []
+        },
+        {
+          "commentId": "kiapj7l",
+          "author": "SNEAKY_PNIS",
+          "text": "Awesome, good luck, everyone!",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiapj7l/",
+          "replies": []
+        },
+        {
+          "commentId": "kiargfb",
+          "author": "OwnAbbreviations3615",
+          "text": "Too bad there's not the fractal design Terra case on pcpartpicker !",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiargfb/",
+          "replies": []
+        },
+        {
+          "commentId": "kieitw4",
+          "author": "[deleted]",
+          "text": "One thing, asrock 750 8gb beats 4070 super with 256-bits instead of garbage 192-bits.\n\nNvidia is like valve:- garbage company!",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kieitw4/",
+          "replies": []
+        },
+        {
+          "commentId": "krc18f1",
+          "author": "Accomplished-Grade78",
+          "text": "I'm interested in running not just games but **local** **LLMs, AI and Machine Learning.** \n\nMy 1 karam point should be enough for the win!!",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/krc18f1/",
+          "replies": []
+        },
+        {
+          "commentId": "m2y43ds",
+          "author": "Likeaglove511",
+          "text": "https://pcpartpicker.com/list/mDMgb2",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/m2y43ds/",
+          "replies": []
+        },
+        {
+          "commentId": "kiaevse",
+          "author": "EntertainmentFar1537",
+          "text": "Here goes nothing &lt;3 ! GL Everyone",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiaevse/",
+          "replies": []
+        },
+        {
+          "commentId": "kiafw0s",
+          "author": "Left_Cat559",
+          "text": "[https://pcpartpicker.com/list/wqsZrv](https://pcpartpicker.com/list/wqsZrv)  \n\n\nGood luck everyone!",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiafw0s/",
+          "replies": []
+        },
+        {
+          "commentId": "kiag9kf",
+          "author": "Dog4theKid",
+          "text": "Thank you for the giveaway. Good luck everyone!!\n\n[PCPartPicker Part List](https://pcpartpicker.com/list/vkLJRK)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [Intel Core i7-13700KF 3.4 GHz 16-Core Processor](https://pcpartpicker.com/product/w86p99/intel-core-i7-13700kf-34-ghz-16-core-processor-bx8071513700kf) | $351.37 @ Amazon \n**CPU Cooler** | [Deepcool LS520 SE 85.85 CFM Liquid CPU Cooler](https://pcpartpicker.com/product/crxxFT/deepcool-ls520-se-8585-cfm-liquid-cpu-cooler-ls520-se) | $82.99 @ Amazon \n**Motherboard** | [Gigabyte B760 GAMING X AX ATX LGA1700 Motherboard](https://pcpartpicker.com/product/N6nypg/gigabyte-b760-gaming-x-ax-atx-lga1700-motherboard-b760-gaming-x-ax) | $169.99 @ Amazon \n**Memory** | [TEAMGROUP T-Force Delta RGB 32 GB (2 x 16 GB) DDR5-7200 CL34 Memory](https://pcpartpicker.com/product/TMLFf7/teamgroup-t-force-delta-rgb-32-gb-2-x-16-gb-ddr5-7200-cl34-memory-ff3d532g7200hc34adc01) | $129.99 @ Amazon \n**Storage** | [Crucial P3 Plus 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://pcpartpicker.com/product/yGZ9TW/crucial-p3-plus-2-tb-m2-2280-nvme-solid-state-drive-ct2000p3pssd8) | $109.99 @ Newegg \n**Video Card** | [Gigabyte WINDFORCE OC GeForce RTX 4070 SUPER 12 GB Video Card](https://pcpartpicker.com/product/HCkH99/gigabyte-windforce-oc-geforce-rtx-4070-super-12-gb-video-card-gv-n407swf3oc-12gd) |-\n**Case** | [Deepcool MATREXX 50 ADD-RGB 4F ATX Mid Tower Case](https://pcpartpicker.com/product/YJfFf7/deepcool-matrexx-50-add-rgb-4f-atx-mid-tower-case-dp-atx-matrexx50-ar-4f-ne) | $108.30 @ Amazon \n**Power Supply** | [Cooler Master MWE Gold 850 - V2 850 W 80+ Gold Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/tWMTwP/cooler-master-mwe-gold-850-v2-850-w-80-gold-certified-fully-modular-atx-power-supply-mpe-8501-afaag-us) | $95.99 @ Amazon \n**Case Fan** | [Deepcool FC120-3 IN 1 61.91 CFM 120 mm Fans 3-Pack](https://pcpartpicker.com/product/4zxRsY/deepcool-fc120-3-in-1-6191-cfm-120-mm-fans-3-pack-r-fc120-bamn3-g-1) | $25.99 @ Newegg \n | *Prices include shipping, taxes, rebates, and discounts* |\n | **Total** | **$1074.61**\n | Generated by [PCPartPicker](https://pcpartpicker.com) 2024-01-17 10:26 EST-0500 |",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiag9kf/",
+          "replies": []
+        },
+        {
+          "commentId": "kiagefb",
+          "author": "_BatLine_",
+          "text": "[PCPartPicker Part List](https://pcpartpicker.com/list/93CbdH)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [AMD Ryzen 9 7950X3D 4.2 GHz 16-Core Processor](https://pcpartpicker.com/product/X6XV3C/amd-ryzen-9-7950x3d-42-ghz-16-core-processor-100-100000908wof) | $648.54 @ Amazon \n**CPU Cooler** | [Lian Li Galahad II LCD SL-INF 79.9 CFM Liquid CPU Cooler](https://pcpartpicker.com/product/LKGhP6/lian-li-galahad-ii-lcd-sl-inf-799-cfm-liquid-cpu-cooler-ga2alcd36inb) | $358.94 @ Amazon \n**Motherboard** | [Asus ROG STRIX B650E-E GAMING WIFI ATX AM5 Motherboard](https://pcpartpicker.com/product/M36p99/asus-rog-strix-b650e-e-gaming-wifi-atx-am5-motherboard-rog-strix-b650e-e-gaming-wifi) | $336.99 @ Amazon \n**Memory** | [Corsair Vengeance RGB 64 GB (2 x 32 GB) DDR5-6000 CL30 Memory](https://pcpartpicker.com/product/WTMMnQ/corsair-vengeance-rgb-64-gb-2-x-32-gb-ddr5-6000-cl30-memory-cmh64gx5m2b6000c30) | $219.99 @ Amazon \n**Storage** | [Western Digital Black SN850X 4 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://pcpartpicker.com/product/yBC48d/western-digital-black-sn850x-4-tb-m2-2280-pcie-40-x4-nvme-solid-state-drive-wds400t2x0e) | $309.99 @ Adorama \n**Video Card** | [Asus DUAL GeForce RTX 4070 SUPER 12 GB Video Card](https://pcpartpicker.com/product/hfjRsY/asus-dual-geforce-rtx-4070-super-12-gb-video-card-dual-rtx4070s-12g) | $606.00 @ B&amp;H \n**Case** | [Lian Li O11 Dynamic EVO ATX Mid Tower Case](https://pcpartpicker.com/product/Ykytt6/lian-li-o11-dynamic-evo-atx-mid-tower-case-pc-o11dex) | $149.99 @ B&amp;H \n**Power Supply** | [be quiet! Dark Power 13 850 W 80+ Titanium Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/42FmP6/be-quiet-dark-power-13-850-w-80-titanium-certified-fully-modular-atx-power-supply-bn660) | $189.90 @ Amazon \n**Case Fan** | [Lian Li Uni Fan SL-Infinity 61.3 CFM 120 mm Fan](https://pcpartpicker.com/product/2hzhP6/lian-li-uni-fan-sl-infinity-613-cfm-120-mm-fan-uf-slin120-1b) | $44.19 @ MemoryC \n**Case Fan** | [Lian Li Uni Fan SL-Infinity 61.3 CFM 120 mm Fans 3-Pack](https://pcpartpicker.com/product/WNbTwP/lian-li-uni-fan-sl-infinity-613-cfm-120-mm-fans-3-pack-uf-slin120-3b) | $89.99 @ Newegg \n**Case Fan** | [Lian Li Uni Fan SL-Infinity 61.3 CFM 120 mm Fans 3-Pack](https://pcpartpicker.com/product/WNbTwP/lian-li-uni-fan-sl-infinity-613-cfm-120-mm-fans-3-pack-uf-slin120-3b) | $89.99 @ Newegg \n | *Prices include shipping, taxes, rebates, and discounts* |\n | **Total** | **$3044.51**\n | Generated by [PCPartPicker](https://pcpartpicker.com) 2024-01-17 10:28 EST-0500 |",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiagefb/",
+          "replies": []
+        },
+        {
+          "commentId": "kiagfpw",
+          "author": "deathpacito00",
+          "text": "I call it the \"what could possibly go wrong\" build  \n[https://pcpartpicker.com/list/k7P3dH](https://pcpartpicker.com/list/k7P3dH)",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiagfpw/",
+          "replies": []
+        },
+        {
+          "commentId": "kiagnia",
+          "author": "Impressive_Income874",
+          "text": "https://pcpartpicker.com/list/RTHhBL\n\ngl guys",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiagnia/",
+          "replies": []
+        },
+        {
+          "commentId": "kiail70",
+          "author": "Viking999",
+          "text": "https://pcpartpicker.com/list/z4nHrv",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiail70/",
+          "replies": []
+        },
+        {
+          "commentId": "kiaimli",
+          "author": "ServesYouRice",
+          "text": "https://pcpartpicker.com/list/hx6ssh",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiaimli/",
+          "replies": []
+        },
+        {
+          "commentId": "kiaio4o",
+          "author": "TheBugThatsSnug",
+          "text": "My brother-in-law desperately needs a PC upgrade but the DPU is the main cost holding him back from doing so, made this using old parts from his old pc and new stuff to hopefully get him into taking the leap.\n\n[PCPartPicker Part List](https://pcpartpicker.com/list/rf9JRK)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [AMD Ryzen 5 5600X 3.7 GHz 6-Core Processor](https://pcpartpicker.com/product/g94BD3/amd-ryzen-5-5600x-37-ghz-6-core-processor-100-100000065box) | $145.99 @ Amazon \n**CPU Cooler** | [Noctua NH-L9i 33.84 CFM CPU Cooler](https://pcpartpicker.com/product/xxphP6/noctua-nh-l9i-3384-cfm-cpu-cooler-nh-l9i) | $44.95 @ Amazon \n**Motherboard** | [ASRock X570 Phantom Gaming-ITX/TB3 Mini ITX AM4 Motherboard](https://pcpartpicker.com/product/FBmFf7/asrock-x570-phantom-gaming-itxtb3-mini-itx-am4-motherboard-x570-phantom-gaming-itxtb3) | $252.27 @ Amazon \n**Memory** | [Corsair Vengeance RGB Pro 32 GB (2 x 16 GB) DDR4-3600 CL18 Memory](https://pcpartpicker.com/product/khmFf7/corsair-vengeance-rgb-pro-32-gb-2-x-16-gb-ddr4-3600-memory-cmw32gx4m2z3600c18) | $99.99 @ Amazon \n**Storage** | [Samsung 980 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://pcpartpicker.com/product/f3cRsY/samsung-980-pro-2-tb-m2-2280-nvme-solid-state-drive-mz-v8p2t0bam) | $159.99 @ B&amp;H \n**Video Card** | [PNY VERTO OC GeForce RTX 4070 SUPER 2 GB Video Card](https://pcpartpicker.com/product/WHKscf/pny-verto-oc-geforce-rtx-4070-super-2-gb-video-card-vcg4070s12dfxpb1-o) |-\n**Case** | [Fractal Design Terra Mini ITX Desktop Case](https://pcpartpicker.com/product/rpKscf/fractal-design-terra-mini-itx-desktop-case-fd-c-ter1n-03) | $179.99 @ B&amp;H \n**Power Supply** | [Lian Li SP 750 W 80+ Gold Certified Fully Modular SFX Power Supply](https://pcpartpicker.com/product/3ZzhP6/lian-li-sp-750-w-80-gold-certified-fully-modular-sfx-power-supply-sp750) | $139.90 @ Amazon \n | *Prices include shipping, taxes, rebates, and discounts* |\n | **Total** | **$1023.08**\n | Generated by [PCPartPicker](https://pcpartpicker.com) 2024-01-17 10:42 EST-0500 |",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiaio4o/",
+          "replies": []
+        },
+        {
+          "commentId": "kiaiylx",
+          "author": "Sir_Bumington",
+          "text": "https://pcpartpicker.com/list/nt8Ywg",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiaiylx/",
+          "replies": []
+        },
+        {
+          "commentId": "kiajbg4",
+          "author": "e880128",
+          "text": "https://pcpartpicker.com/list/6W3bdH",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajbg4/",
+          "replies": []
+        },
+        {
+          "commentId": "kiajevg",
+          "author": "Many_Impression_4792",
+          "text": "[PCPartPicker Part List](https://pcpartpicker.com/list/6z7WPF)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [AMD Ryzen 7 7800X3D 4.2 GHz 8-Core Processor](https://pcpartpicker.com/product/3hyH99/amd-ryzen-7-7800x3d-42-ghz-8-core-processor-100-100000910wof) | $394.00 @ Newegg \n**CPU Cooler** | [Thermalright Phantom Spirit 120 SE 66.17 CFM CPU Cooler](https://pcpartpicker.com/product/GpbRsY/thermalright-phantom-spirit-120-se-6617-cfm-cpu-cooler-ps120se) | $35.90 @ Amazon \n**Motherboard** | [MSI B650 GAMING PLUS WIFI ATX AM5 Motherboard](https://pcpartpicker.com/product/szfxFT/msi-b650-gaming-plus-wifi-atx-am5-motherboard-b650-gaming-plus-wifi) | $179.99 @ Newegg \n**Memory** | [G.Skill Flare X5 32 GB (2 x 16 GB) DDR5-6000 CL30 Memory](https://pcpartpicker.com/product/LBstt6/gskill-flare-x5-32-gb-2-x-16-gb-ddr5-6000-cl30-memory-f5-6000j3038f16gx2-fx5) | $101.99 @ Amazon \n**Storage** | [Western Digital Black SN850X 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://pcpartpicker.com/product/crKKHx/western-digital-black-sn850x-2-tb-m2-2280-pcie-40-x4-nvme-solid-state-drive-wds200t2x0e) | $139.99 @ Adorama \n**Video Card** | [Asus DUAL GeForce RTX 4070 SUPER 12 GB Video Card](https://pcpartpicker.com/product/hfjRsY/asus-dual-geforce-rtx-4070-super-12-gb-video-card-dual-rtx4070s-12g) | $606.00 @ B&amp;H \n**Case** | [Lian Li LANCOOL 216 ATX Mid Tower Case](https://pcpartpicker.com/product/KKytt6/lian-li-lancool-216-atx-mid-tower-case-lancool-216rx) | $99.99 @ Newegg \n**Power Supply** | [Cooler Master MWE Gold 850 - V2 850 W 80+ Gold Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/tWMTwP/cooler-master-mwe-gold-850-v2-850-w-80-gold-certified-fully-modular-atx-power-supply-mpe-8501-afaag-us) | $95.99 @ Amazon \n | *Prices include shipping, taxes, rebates, and discounts* |\n | **Total** | **$1653.85**\n | Generated by [PCPartPicker](https://pcpartpicker.com) 2024-01-17 10:44 EST-0500 |\n\nI don\u2019t need a 4070 super, so I\u2019ll be giving it to a friend in need of an upgrade if I win :)\n\nEdit: why the downvote? I wasn\u2019t lying",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajevg/",
+          "replies": []
+        },
+        {
+          "commentId": "kiajnq1",
+          "author": "TheTibzzz",
+          "text": "https://pcpartpicker.com/list/74sZrv",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajnq1/",
+          "replies": []
+        },
+        {
+          "commentId": "kiajqb0",
+          "author": "Wichoop",
+          "text": "https://pcpartpicker.com/list/BGLJRK\nGood luck.",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajqb0/",
+          "replies": []
+        },
+        {
+          "commentId": "kiajujm",
+          "author": "dcxgod",
+          "text": "Have most of this already\n\n[PCPartPicker Part List](https://pcpartpicker.com/list/Nv3bdH)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [AMD Ryzen 7 7800X3D 4.2 GHz 8-Core Processor](https://pcpartpicker.com/product/3hyH99/amd-ryzen-7-7800x3d-42-ghz-8-core-processor-100-100000910wof) | $394.00 @ Newegg \n**CPU Cooler** | [NZXT Kraken 360 RGB 78.02 CFM Liquid CPU Cooler](https://pcpartpicker.com/product/HNcgXL/nzxt-kraken-360-rgb-7802-cfm-liquid-cpu-cooler-rl-kr360-w1) |-\n**Motherboard** | [Gigabyte B650 AORUS ELITE AX ATX AM5 Motherboard](https://pcpartpicker.com/product/WBwypg/gigabyte-b650-aorus-elite-ax-atx-am5-motherboard-b650-aorus-elite-ax) | $196.42 @ Amazon \n**Memory** | [Corsair Vengeance 64 GB (2 x 32 GB) DDR5-6000 CL30 Memory](https://pcpartpicker.com/product/8ZQKHx/corsair-vengeance-64-gb-2-x-32-gb-ddr5-6000-cl30-memory-cmk64gx5m2b6000c30) | $212.00 @ Amazon \n**Storage** | [Samsung 990 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://pcpartpicker.com/product/34ytt6/samsung-990-pro-2-tb-m2-2280-pcie-40-x4-nvme-solid-state-drive-mz-v9p2t0bw) | $184.99 @ Amazon \n**Video Card** | [Asus DUAL GeForce RTX 4070 SUPER 12 GB Video Card](https://pcpartpicker.com/product/hfjRsY/asus-dual-geforce-rtx-4070-super-12-gb-video-card-dual-rtx4070s-12g) | $606.00 @ B&amp;H \n**Case** | [NZXT H6 Flow ATX Mid Tower Case](https://pcpartpicker.com/product/8QMMnQ/nzxt-h6-flow-atx-mid-tower-case-cc-h61fw-01) | $109.99 @ Amazon \n**Power Supply** | [MSI MEG Ai1300P PCIE5 1300 W 80+ Platinum Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/JDGbt6/msi-meg-ai1300p-pcie5-1300-w-80-platinum-certified-fully-modular-atx-power-supply-meg-ai1300p-pcie5) | $299.99 @ Amazon \n**Operating System** | [Microsoft Windows 11 Home OEM - DVD 64-bit](https://pcpartpicker.com/product/dKkWGX/microsoft-windows-11-home-oem-dvd-64-bit-kw9-00633) | $124.99 @ Amazon \n | *Prices include shipping, taxes, rebates, and discounts* |\n | **Total** | **$2128.38**\n | Generated by [PCPartPicker](https://pcpartpicker.com) 2024-01-17 10:48 EST-0500 |",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajujm/",
+          "replies": []
+        },
+        {
+          "commentId": "kiajvce",
+          "author": "Legitimate-Emu-4199",
+          "text": "https://pcpartpicker.com/list/dmr6mD",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajvce/",
+          "replies": []
+        },
+        {
+          "commentId": "kiajwm2",
+          "author": "ji99lypu44",
+          "text": "https://pcpartpicker.com/list/HQ6ssh",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajwm2/",
+          "replies": []
+        },
+        {
+          "commentId": "kiajyx5",
+          "author": "Zoomlight",
+          "text": "https://pcpartpicker.com/list/MyKB4M\n\n2024 Super White AM5 Build!\n\nGood luck to all!",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajyx5/",
+          "replies": []
+        },
+        {
+          "commentId": "kiajyyp",
+          "author": "[deleted]",
+          "text": "MATX box build. Perfect for the 4070 super slim. \n\nhttps://au.pcpartpicker.com/list/6LsZrv",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiajyyp/",
+          "replies": []
+        },
+        {
+          "commentId": "kiak7di",
+          "author": "Sheibani",
+          "text": "https://pcpartpicker.com/list/2BcYwg\n\nMy current rig. 4070S would be huge from a GTX 1080. GL everyone!",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiak7di/",
+          "replies": []
+        },
+        {
+          "commentId": "kiakirn",
+          "author": "PotatoTango4892",
+          "text": "[https://ca.pcpartpicker.com/list/qmD2TY](https://ca.pcpartpicker.com/list/qmD2TY)\n\n&amp;#x200B;\n\nThanks!",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiakirn/",
+          "replies": []
+        },
+        {
+          "commentId": "kiakkon",
+          "author": "Comprehensive-Eye-98",
+          "text": "[https://pcpartpicker.com/list/rL9JRK](https://pcpartpicker.com/list/rL9JRK)\n\n&amp;#x200B;\n\nGood luck",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiakkon/",
+          "replies": []
+        },
+        {
+          "commentId": "kiakldo",
+          "author": "anotherwave1",
+          "text": "https://de.pcpartpicker.com/list/ppBbdH",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiakldo/",
+          "replies": []
+        },
+        {
+          "commentId": "kiaknt4",
+          "author": "Xynthexyz",
+          "text": "[https://pcpartpicker.com/list/dJnHrv](https://pcpartpicker.com/list/ZqRJRK)\n\nLiterally my current build with the 4070 instead, lmao. Though if I get lucky i might be down for an upgrade, who knows?",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiaknt4/",
+          "replies": []
+        },
+        {
+          "commentId": "kiakpjt",
+          "author": "Fxll3n",
+          "text": "https://pcpartpicker.com/list/gWtgpB",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiakpjt/",
+          "replies": []
+        },
+        {
+          "commentId": "kiakz1h",
+          "author": "WetDreamRhino",
+          "text": "[PCPartPicker Part List](https://pcpartpicker.com/list/VqRJRK)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [Intel Core i5-12600K 3.7 GHz 10-Core Processor](https://pcpartpicker.com/product/BB4Ycf/intel-core-i5-12600k-37-ghz-6-core-processor-bx8071512600k) | $169.99 @ Amazon \n**CPU Cooler** | [Thermalright Peerless Assassin 120 SE 66.17 CFM CPU Cooler](https://pcpartpicker.com/product/hYxRsY/thermalright-peerless-assassin-120-se-6617-cfm-cpu-cooler-pa120-se-d3) | $33.90 @ Amazon \n**Motherboard** | [MSI MAG B760 TOMAHAWK WIFI DDR4 ATX LGA1700 Motherboard](https://pcpartpicker.com/product/cX92FT/msi-mag-b760-tomahawk-wifi-ddr4-atx-lga1700-motherboard-mag-b760-tomahawk-wifi-ddr4) | $169.99 @ Amazon \n**Memory** | [TEAMGROUP T-Force Delta RGB 32 GB (2 x 16 GB) DDR4-3600 CL18 Memory](https://pcpartpicker.com/product/P7RYcf/team-t-force-delta-rgb-32-gb-2-x-16-gb-ddr4-3600-cl18-memory-tf3d432g3600hc18jdc01) | $69.98 @ Amazon \n**Storage** | [Western Digital Black SN770 1 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://pcpartpicker.com/product/YVytt6/western-digital-1-tb-m2-2280-nvme-solid-state-drive-wds100t3x0e) | $64.98 @ Amazon \n**Video Card** | [Asus DUAL GeForce RTX 4070 SUPER 12 GB Video Card](https://pcpartpicker.com/product/hfjRsY/asus-dual-geforce-rtx-4070-super-12-gb-video-card-dual-rtx4070s-12g) | $606.00 @ B&amp;H \n**Case** | [Fractal Design Pop Air ATX Mid Tower Case](https://pcpartpicker.com/product/QnD7YJ/fractal-design-pop-air-atx-mid-tower-case-fd-c-poa1a-02) | $86.96 @ Newegg \n**Power Supply** | [Corsair RM750e (2023) 750 W 80+ Gold Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/YRJp99/corsair-rm750e-2023-750-w-80-gold-certified-fully-modular-atx-power-supply-cp-9020262-na) | $89.99 @ Best Buy \n | *Prices include shipping, taxes, rebates, and discounts* |\n | **Total** | **$1291.79**\n | Generated by [PCPartPicker](https://pcpartpicker.com) 2024-01-17 10:54 EST-0500 |",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiakz1h/",
+          "replies": []
+        },
+        {
+          "commentId": "kial42c",
+          "author": "tunarkarimov",
+          "text": "https://pcpartpicker.com/list/2KXPYN\n\ni\u2019m just gonna try my luck, same as everyone. Hope the luckiest. May the luck be with us",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kial42c/",
+          "replies": []
+        },
+        {
+          "commentId": "kial5wd",
+          "author": "hovershark",
+          "text": "https://pcpartpicker.com/list/JLr6mD",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kial5wd/",
+          "replies": []
+        },
+        {
+          "commentId": "kialf7k",
+          "author": "Matyce",
+          "text": "Boy howdy a give away! https://pcpartpicker.com/list/tLcYwg",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kialf7k/",
+          "replies": []
+        },
+        {
+          "commentId": "kiapa2r",
+          "author": "Gloomy-Yak-1056",
+          "text": "Good luck! https://pcpartpicker.com/list/st9JRK",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiapa2r/",
+          "replies": []
+        },
+        {
+          "commentId": "kiapa4l",
+          "author": "sciasxiii",
+          "text": "https://pcpartpicker.com/list/rKhyyg",
+          "subreddit": "buildapc",
+          "upvotes": 0,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/198yk7d/rtx_4070_super_reviews_4070_super_giveaway/kiapa4l/",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "1mzvh9i",
+      "author": "anti22dot",
+      "text": "For those who owns B650M Pro RS, I need to know, whether there would be enough clearance to install \"Thermalright HR-09 2280 PRO\" into \"Blazing M.2\" slot, while having PA 120 SE on top CPU\n\n* Currently, have ordered and awaiting delivery of the ASRock B650M Pro RS, as well as PA 120 SE.\n* I would like to use the \"HR-09 2280 PRO\" NVMe M.2 thermal cooling specifically for the NVMe in the \"Blazing M.2\" slot, those slot, which is the closest to the CPU socket.\n* Not sure, but I hope, that there would be enough clearance, since I plan to install the PA 120 SE, and it may be in the way for the NVMe \"cooling tower\".\n* I would have the Ryzen 5 8400F in there, so, it is not the most powerfull CPU, and, perhaps, if the CPU cooler would be in the way, I would think of some smaller CPU cooler to being able to fit in all the components I need.\n* I did check the documentation, [I do see the dimensions of the PA over here very clearly](https://www.overclock.net/threads/thermalright-peerless-assassin-120-review.1796001/). But I did not find the precise dimensions of the B650M , especially in the area between the CPU socket and the closest NVMe slot...\n* Can someone, who has ASRock B650M Pro RS advise, if there is a certain distance between those \"Blazing M.2\" and the CPU socket, and whether you think those \"Thermalright HR-09 2280 PRO\"  would fit in along with some tower air cooler (PA 120 SE)?",
+      "subreddit": "mffpc",
+      "upvotes": 2,
+      "depth": 0,
+      "threadUrl": "https://www.reddit.com/r/mffpc/comments/1mzvh9i/for_those_who_owns_b650m_pro_rs_i_need_to_know/",
+      "replies": [
+        {
+          "commentId": "nan68oi",
+          "author": "OldManJeepin",
+          "text": "I have that board in a Jonsbo Z20 case. I have an MSI MAG liquid AIO cooler on the R5 7600x CPU and I was considering a cooler like that for my Corsair MP700 NvME, but just went with another one. There is plenty of room for a taller cooler in that slot though.",
+          "subreddit": "mffpc",
+          "upvotes": 2,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/mffpc/comments/1mzvh9i/for_those_who_owns_b650m_pro_rs_i_need_to_know/nan68oi/",
+          "replies": [
+            {
+              "commentId": "nan78g6",
+              "author": "anti22dot",
+              "text": "u/OldManJeepin , ou, thanks for the useful comment! I think those PA 120 SE might be a bit wider than AIO liquid cooler. Perhaps, it would be good to know how much distance is between the NVMe slot and the CPU socket, because, from the PA 120 SE diagram I can see there is either 55 mm or 70 mm distance from the center of CPU socket to the side of CPU cooler.\n\nhttps://preview.redd.it/r5tyu3jy38lf1.png?width=216&amp;format=png&amp;auto=webp&amp;s=dee34cb87e564fd7f997eef3f4f6f4745c1b35cf\n\nThe reason I go with air cooler is because I plan to use this setup for the TrueNAS server, and not for gaming. Otherwise, would have chosen the watercooling...",
+              "subreddit": "mffpc",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/mffpc/comments/1mzvh9i/for_those_who_owns_b650m_pro_rs_i_need_to_know/nan78g6/",
+              "replies": [
+                {
+                  "commentId": "nan93iy",
+                  "author": "OldManJeepin",
+                  "text": "If you are planning on using that as a CPU cooler, then your mileage will vary. There is a lot of room between the MSI pump/block on the CPU on my board. But not sure how much would be left if you used a different cooler. My concern would be the clearance between the NvME cooler and the VRAM heatsink. Not sure if you have been to their site, but here are pics of the board: [https://www.asrock.com/MB/AMD/B650M%20Pro%20RS%20WiFi/index.asp](https://www.asrock.com/MB/AMD/B650M%20Pro%20RS%20WiFi/index.asp) .",
+                  "subreddit": "mffpc",
+                  "upvotes": 2,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/mffpc/comments/1mzvh9i/for_those_who_owns_b650m_pro_rs_i_need_to_know/nan93iy/",
+                  "replies": [
+                    {
+                      "commentId": "nanea8f",
+                      "author": "anti22dot",
+                      "text": "Yes, yes, I have checked the MOBO site, but, [look at this pic of NVMe cooler itself.](https://www.amazon.com/Thermalright-HR-09-2280-PRO-Black/dp/B0BSKPDGTV/ref=sr_1_1?crid=3TH1BYSLJCGT2&amp;dib=eyJ2IjoiMSJ9.tzfHOVsP846iqM8qLAM0OvX8WroSW-ka7gUiWm-C99tdHjO4fm3_8JvexTr_xh1iQF94hbnJBkWUdhnC2csplbfh-xgfKNrjoRx2CjiHFA5od3GBemNmxrVrmeL-nbDaZMXCg0Mj0FqaK_2HU4Y4v3tN3Uc11buwoA5kGOT6NLAxBYxM-Mc5WQbgpGZKMTx3CqlVgqWV2KwbXKy6eToCsOF8ol6J3DE9j5ur2ixT_cA.8P1cNpPjfrU8Wt-s6F2u_dA9ieaETzeak7lIe5wO5BU&amp;dib_tag=se&amp;keywords=Thermalright%2BHR-09%2B2280%2BPRO&amp;qid=1756154802&amp;sprefix=thermalright%2Bhr-09%2B2280%2Bpro%2Caps%2C172&amp;sr=8-1&amp;th=1)\n\nhttps://preview.redd.it/az79zvj0a8lf1.png?width=733&amp;format=png&amp;auto=webp&amp;s=e98936e455daf1f51aaf9b8259acc1cb22ceba8f\n\nSo, to me, it looks like those \"NVMe cooler heatpipe\" is kinda matching the NVMe slot itself, and not going outside of it in width and length, so, I think it should be fine in terms of clearance with the VRM.\n\nBut because it's so tall, I am in particularly worrying that it would be in a way with the CPU Cooler rad...",
+                      "subreddit": "mffpc",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/mffpc/comments/1mzvh9i/for_those_who_owns_b650m_pro_rs_i_need_to_know/nanea8f/",
+                      "replies": []
+                    },
+                    {
+                      "commentId": "nanik1v",
+                      "author": "anti22dot",
+                      "text": "u/OldManJeepin , ou, BTW, I have non-WIFI version , I have this one [https://www.asrock.com/mb/AMD/B650M%20Pro%20RS/index.asp](https://www.asrock.com/mb/AMD/B650M%20Pro%20RS/index.asp)",
+                      "subreddit": "mffpc",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/mffpc/comments/1mzvh9i/for_those_who_owns_b650m_pro_rs_i_need_to_know/nanik1v/",
+                      "replies": [
+                        {
+                          "commentId": "nanjkj8",
+                          "author": "OldManJeepin",
+                          "text": "Ok, cool. The main M.2 is in the same position though...",
+                          "subreddit": "mffpc",
+                          "upvotes": 2,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/mffpc/comments/1mzvh9i/for_those_who_owns_b650m_pro_rs_i_need_to_know/nanjkj8/",
+                          "replies": [
+                            {
+                              "commentId": "nanub3q",
+                              "author": "anti22dot",
+                              "text": "Right, agree.",
+                              "subreddit": "mffpc",
+                              "upvotes": 2,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/mffpc/comments/1mzvh9i/for_those_who_owns_b650m_pro_rs_i_need_to_know/nanub3q/",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentId": "1mtx26y",
+      "author": "Present_Anxiety_1566",
+      "text": "How is MSI PRO B650M-A WIFI Micro ATX AM5 Motherboard?\n\nHello, I planning to build this budget PC for casual gaming and coding. I have some doubt about motherboard whether it is good enough for other components or it will create bottlenecks. I saw some mixed review for this motherboard, but as this motherboard comes in both ATX and microATX, I am confused.\n\nThe reason for opting this motherboard is I am getting this CPU bundle (CPU + MoBo + RAM) from memory express for 499 CAD. [Link](https://www.memoryexpress.com/Products/BDL_MM00004649)\n\nEarlier I was planning to get MSI PRO B650-S Wi-Fi 6E ATX AM5 DDR5 Motherboard, which seems decent to me. Can someone help me choosing the right motherboard for my build.\n\n\\[PCPartPicker Part List\\](https://ca.pcpartpicker.com/list/P6ys4p)\n\n  \nType|Item|Price  \n:----|:----|:----  \n\\*\\*CPU\\*\\* | \\[AMD Ryzen 5 7600X 4.7 GHz 6-Core Processor\\](https://ca.pcpartpicker.com/product/66C48d/amd-ryzen-5-7600x-47-ghz-6-core-processor-100-100000593wof) | $267.95 @ shopRBC  \n\\*\\*CPU Cooler\\*\\* | \\[Cooler Master Hyper 212 Spectrum V3 71.93 CFM CPU Cooler\\](https://ca.pcpartpicker.com/product/jgbRsY/cooler-master-hyper-212-spectrum-v3-7193-cfm-cpu-cooler-rr-s4na-17pa-r1) | $20.99 @ Memory Express  \n\\*\\*Motherboard\\*\\* | \\[MSI PRO B650M-A WIFI Micro ATX AM5 Motherboard\\](https://ca.pcpartpicker.com/product/cRQcCJ/msi-pro-b650m-a-wifi-micro-atx-am5-motherboard-pro-b650m-a-wifi) | $194.99 @ Amazon Canada  \n\\*\\*Memory\\*\\* | \\[Kingston FURY Beast 32 GB (2 x 16 GB) DDR5-6000 CL30 Memory\\](https://ca.pcpartpicker.com/product/q7LdnQ/kingston-fury-beast-32-gb-2-x-16-gb-ddr5-6000-cl30-memory-kf560c30bbek2-32) | $149.99 @ Canada Computers  \n\\*\\*Storage\\*\\* | \\[Kingston NV3 1 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive\\](https://ca.pcpartpicker.com/product/tmbRsY/kingston-nv3-1-tb-m2-2280-pcie-40-x4-nvme-solid-state-drive-snv3s1000g) | $70.95 @ shopRBC  \n\\*\\*Video Card\\*\\* | \\[Intel Limited Edition Arc B580 12 GB Video Card\\](https://ca.pcpartpicker.com/product/Kt62FT/intel-limited-edition-arc-b580-12-gb-video-card-31p06hb0ba) | $358.98 @ Best Buy Canada  \n\\*\\*Case\\*\\* | \\[Cooler Master MasterBox Q300L MicroATX Mini Tower Case\\](https://ca.pcpartpicker.com/product/rnGxFT/cooler-master-masterbox-q300l-microatx-mini-tower-case-mcb-q300l-kann-s00) | $49.99 @ Memory Express  \n\\*\\*Power Supply\\*\\* | \\[ASRock Steel Legend SL-650G 650 W 80+ Gold Certified Fully Modular ATX Power Supply\\](https://ca.pcpartpicker.com/product/LYP8TW/asrock-steel-legend-sl-650g-650-w-80-gold-certified-fully-modular-atx-power-supply-sl-650g) | $105.60 @ Vuugo  \n| \\*Prices include shipping, taxes, rebates, and discounts\\* |  \n| \\*\\*Total\\*\\* | \\*\\*$1219.44\\*\\*  \n| Generated by \\[PCPartPicker\\](https://pcpartpicker.com) 2025-08-18 15:58 EDT-0400 |",
+      "subreddit": "buildapc",
+      "upvotes": 2,
+      "depth": 0,
+      "threadUrl": "https://www.reddit.com/r/buildapc/comments/1mtx26y/how_is_msi_pro_b650ma_wifi_micro_atx_am5/",
+      "replies": [
+        {
+          "commentId": "n9ethkb",
+          "author": "BigDaddyThiccDong",
+          "text": "That motherboard looks solid, definetly a good value combo. I made a couple changes to your list for a better case (a bit bigger, more airflow, more fans), a better power supply for the same price, and a slighty better cooler that's a few bucks more.\n\n[PCPartPicker Part List](https://ca.pcpartpicker.com/list/RNTdVF)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [AMD Ryzen 5 7600X 4.7 GHz 6-Core Processor](https://ca.pcpartpicker.com/product/66C48d/amd-ryzen-5-7600x-47-ghz-6-core-processor-100-100000593wof) | $500.00 \n**CPU Cooler** | [Cooler Master Hyper 212 Spectrum V3 71.93 CFM CPU Cooler](https://ca.pcpartpicker.com/product/jgbRsY/cooler-master-hyper-212-spectrum-v3-7193-cfm-cpu-cooler-rr-s4na-17pa-r1) | $20.99 @ Memory Express \n**CPU Cooler** | [Thermalright Assassin X Refined SE ARGB CPU Cooler](https://ca.pcpartpicker.com/product/jvjv6h/thermalright-assassin-x-refined-se-argb-cpu-cooler-ax120r-se-argb-d6-cad) | $23.90 @ Amazon Canada \n**Motherboard** | [MSI PRO B650M-A WIFI Micro ATX AM5 Motherboard](https://ca.pcpartpicker.com/product/cRQcCJ/msi-pro-b650m-a-wifi-micro-atx-am5-motherboard-pro-b650m-a-wifi) | $0.00 \n**Memory** | [Kingston FURY Beast 32 GB (2 x 16 GB) DDR5-6000 CL30 Memory](https://ca.pcpartpicker.com/product/q7LdnQ/kingston-fury-beast-32-gb-2-x-16-gb-ddr5-6000-cl30-memory-kf560c30bbek2-32) | $0.00 \n**Storage** | [Kingston NV3 1 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://ca.pcpartpicker.com/product/tmbRsY/kingston-nv3-1-tb-m2-2280-pcie-40-x4-nvme-solid-state-drive-snv3s1000g) | $78.48 @ Amazon Canada \n**Video Card** | [Intel Limited Edition Arc B580 12 GB Video Card](https://ca.pcpartpicker.com/product/Kt62FT/intel-limited-edition-arc-b580-12-gb-video-card-31p06hb0ba) | $358.98 @ Best Buy Canada \n**Case** | [BitFenix Grafi ATX Mid Tower Case](https://ca.pcpartpicker.com/product/zXFCmG/bitfenix-grafi-atx-mid-tower-case-bfc-grm-kkgsk-4f) | $49.99 @ Canada Computers \n**Power Supply** | [Super Flower Leadex III Gold UP 850 W 80+ Gold Certified Fully Modular ATX Power Supply](https://ca.pcpartpicker.com/product/R4RwrH/super-flower-leadex-iii-gold-up-850-w-80-gold-certified-fully-modular-atx-power-supply-sf-850f14ge) | $119.99 @ Newegg Sellers \n | *Prices include shipping, taxes, rebates, and discounts* |\n | **Total** | **$1152.33**\n | Generated by [PCPartPicker](https://pcpartpicker.com) 2025-08-18 16:25 EDT-0400 |",
+          "subreddit": "buildapc",
+          "upvotes": 2,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/1mtx26y/how_is_msi_pro_b650ma_wifi_micro_atx_am5/n9ethkb/",
+          "replies": [
+            {
+              "commentId": "n9euryl",
+              "author": "Present_Anxiety_1566",
+              "text": "Thanks for the reply. My main concern for this motherboard is VRM and/or Power design (don't know whether they are same or not). The Power design on this board is 8+2+1.\n\n  \nAlso thanks for the suggestion will definitely look into it.",
+              "subreddit": "buildapc",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/buildapc/comments/1mtx26y/how_is_msi_pro_b650ma_wifi_micro_atx_am5/n9euryl/",
+              "replies": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentId": "1mpf8x5",
+      "author": "quixoticduck",
+      "text": "AsRock Rs Pro Wifi motherboard vs cheaper model?\n\nHi! My brother ordered the AsRock b650m Rs Pro Wifi motherboard on eBay for what seems a good price (\u00a3165) but they accidentally sent the non-wifi version and are now having supply issues. He's going to return it as the non-wifi version is sold on Amazon for \u00a3156.\n\nHe was planning on still buying the WiFi version from Amazon but it's a lot more expensive (\u00a3200) than the non-wifi version. I'm wondering if he'd be overpaying and it's better to get the cheaper \u00a3156 version and buy a WiFi Bluetooth card? Like is the WiFi version actually worth a lot more money or is it just low stock or something right now? We're in the UK btw. I think that in the past I watched a review which indicated that the WiFi model should only be about \u00a330 more. I'm not sure that there are any differences other than the WiFi/Bluetooth.\n\nOr is there another micro ATX board he should consider all together? Somebody kindly recommended the B850M model but the reviews seem worse so I'm unsure.\n\nThank you! :)\n\ntl;dr - should he get the AsRock B650M RS Pro WiFi for \u00a3200 or non-wifi for \u00a3156 and also a Bluetooth/WiFi card?",
+      "subreddit": "buildapc",
+      "upvotes": 0,
+      "depth": 0,
+      "threadUrl": "https://www.reddit.com/r/buildapc/comments/1mpf8x5/asrock_rs_pro_wifi_motherboard_vs_cheaper_model/",
+      "replies": [
+        {
+          "commentId": "n8jatkd",
+          "author": "SpectralUA",
+          "text": "If you have free slot for PCIe Wifi and found it for good price then just buy PCIe Wifi. No difference is it onboard card or additional. As option you can use USB Wifi dongle.",
+          "subreddit": "buildapc",
+          "upvotes": 2,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/1mpf8x5/asrock_rs_pro_wifi_motherboard_vs_cheaper_model/n8jatkd/",
+          "replies": []
+        },
+        {
+          "commentId": "n8m83mj",
+          "author": "Cer_Visia",
+          "text": "At the moment, the [B850M Pro RS WiFi](https://www.amazon.co.uk/dp/B0DRTWM32Q) is \u00a3160.\n\nThe [Pro-A](https://www.amazon.co.uk/dp/B0DS6KDMF5) is the same as the Pro RS, but without RGB, at \u00a3145.\n\npcpartpicker.com has lower-priced sources ([Pro RS](https://uk.pcpartpicker.com/product/KyfV3C/asrock-b850m-pro-rs-wifi-micro-atx-am5-motherboard-b850m-pro-rs-wifi), [Pro-A](https://uk.pcpartpicker.com/product/FFdMnQ/asrock-b850m-pro-a-wifi-micro-atx-am5-motherboard-b850m-pro-a-wifi)).",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/1mpf8x5/asrock_rs_pro_wifi_motherboard_vs_cheaper_model/n8m83mj/",
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

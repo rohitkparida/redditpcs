@@ -1,6 +1,1520 @@
 {
   "productName": "kingston-fury-beast-ddr5-6000-cl30",
-  "sourceThreads": [],
-  "analyzedAt": "2026-05-27",
-  "comments": []
+  "sourceThreads": [
+    "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mivxyjn/",
+    "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/o0nxlqn/",
+    "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt3wzy/",
+    "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsroeu/",
+    "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsivuf/",
+    "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n0ascnp/",
+    "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntpp9r/",
+    "https://www.reddit.com/r/buildapc/comments/1tltzyn/getting_a_1440p_monitor_what_exactly_do_i_upgrade/onicjk8/",
+    "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mj0i06b/",
+    "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsus29/",
+    "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/o49vqwe/",
+    "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n0avntq/",
+    "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsv3nv/",
+    "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntkytq/",
+    "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt42o4/",
+    "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mv04q09/",
+    "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/no25hya/",
+    "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntd65r/",
+    "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnstymn/",
+    "https://www.reddit.com/r/buildapc/comments/1tltzyn/getting_a_1440p_monitor_what_exactly_do_i_upgrade/oni9sih/"
+  ],
+  "analyzedAt": "2026-05-28",
+  "comments": [
+    {
+      "commentId": "1jfstm6",
+      "author": "Mandellaaffected",
+      "text": "Tuning Kingston Fury Beast 2x32GB DDR5 6000-CL30 to 6000-CL28 on 9800X3D for PCVR/Gaming- Need Help\n\nHello, I\u2019m looking for guidance/validation on settings for tuning my Kingston Fury Beast 2x32GB DDR5 6000-CL30 kit (KF560C30BBEAK2-64) to 6000-CL28 on a 9800X3D.  \n\nI\u2019ve reviewed tuning guides (SkatterBencher, Buildzoid, etc.) and searched this sub and other sources, but haven\u2019t found a guide for this specific 64GB dual-rank kit, so I\u2019m seeking advice.  \n\nBackground: I\u2019ve been testing PBO overclocking on my 9800X3D (Motherboard limits, +200 MHz, Scalar Auto-1x-10x, CO -25 to -35), but so far only saw 2-4% max clock gains (e.g., 5355 MHz vs. 5225 MHz baseline), neutral avg clocks, and 4-6\u00b0C higher temps (e.g., 86.2\u00b0C max in CoreCycler at 2x Scalar). Higher Scalars (10x, Auto) gave slightly better performance but increased temps and potential lifespan risks, so I\u2019m now exploring memory tuning, as it seems to drive the most performance gains.  \n\nUse Case: 4K PCVR and 4K-to-1440p gaming.  \n\nGoal: Optimize performance (higher max/avg clocks on Cores 0-1, all cores if possible, lower latency), while minimizing CPU lifespan impact (hesitant to push Scalar) and keeping temps reasonable for 24/7 use.  \n\nBuild Summary:  \n- CPU: Ryzen 7 9800X3D  \n- AIO: Arctic LF III 420 (top exhaust)  \n- Fans: Lian Li Uni SL-INF 3x140 side intake, 3x140 bottom intake, 1x120 rear exhaust  \n- Mobo: ASRock X870E Nova  \n- RAM: Kingston Fury Beast 2x32GB DDR5 6000-CL30 (KF560C30BBEAK2-64)  \n- PSU: Lian Li Edge 1300W Platinum  \n- Storage: 2TB &amp; 4TB WD Black NVMe  \n- Case: Lian Li O11 Dynamic Evo XL  \n\nRAM Kit Stock Settings (EXPO Enabled):  \n- Kingston Fury Beast 64GB (2x 32GB) DDR5-6000 CL30-36-36-80 (Hynix A-die, dual-rank).  \n- EXPO Timings: tCL 30, tRCD 36, tRP 36, tRAS 80, tRC 116, tWR 91, tRFC1 886, tRFC2 481, tRFCSb 391.  \n- Voltages: VDDIO/VDD/VDDQ 1.400V, VPP 1.800V.  \n- FCLK: 2000 MHz (1:1, MCLK 6000 MHz, UCLK 3000 MHz).  \n- Memory Controller: 1:1 (synchronous).  \n- VSoC: ~1.2V (default).  \n- VDDP: ~0.9V (default).  \n\nProposed Settings for 6000 CL28 (Need Verification/Correction):  \n- BIOS Setup:  \n  - Load EXPO Profile #0 (DDR5-6000 CL30-36-36-80, 1.400V).  \n  - FCLK: 2000 MHz (1:1, MCLK 6000 MHz, UCLK 3000 MHz).  \n  - Memory Controller: 1:1 (synchronous).  \n- Primary Timings:  \n  - CAS Latency (CL): 28 (from 30).  \n  - tRCD: 36.  \n  - tRP: 36.  \n  - tRAS: 80 (keep stock).  \n  - tRC: 116 (keep stock).  \n  - Result: 6000 CL28-36-36-80-116.  \n- Voltages and Other Settings:  \n  - Frequency: 6000 MHz.  \n  - VDDIO/VDD/VDDQ: 1.45V (from 1.400V, for stability at CL28).  \n  - VPP: 1.800V (unchanged).  \n  - VSoC: 1.25V (default ~1.2V, can increase to 1.30V if needed).  \n  - VDDP: 1.0V (default ~0.9V, to stabilize memory controller).  \n- Secondaries:  \n  - tRRD_S: 8 (default 6, loosened for dual-rank stability).  \n  - tRRD_L: 10 (default 8).  \n  - tFAW: 32 (default 24).  \n  - (Can tighten later if stable, e.g., tRRD_S 6, tRRD_L 8, tFAW 24).  \n- Tertiary Timings and Training: Auto, enable Memory Training (ASRock equivalent).  \n- Latency Calculation:  \n  - CL28 at 6000 MHz = 9.33 ns (2000 / 6000 * 28).  \n  - Stock (6000 CL30) = 10 ns.  \n  - Improvement: ~6.7% latency reduction.  \n\nI plan to test stability with AIDA64 (15 mins, memory stress on), MemTest86 (1-2 passes), and OCCT (CPU + RAM, 10 mins). If unstable, I\u2019ll increase VDDIO/VDD/VDDQ to 1.47V, loosen CL to 29, or increase VSoC to 1.30V.  \n\nHas anyone successfully tuned a similar 64GB dual-rank kit to 6000 CL28? Can you validate or correct my settings, especially voltages and secondaries for dual-rank stability? I\u2019m not an OC expert, so I\u2019d greatly appreciate any insights or alternative recommendations. Thanks in advance.\n\nUpdate: \nI was able to get CL28 stable and working well with settings from recommendation in thread comment below:\n\nDRAM Timing Preset Mode: Set to Aggressive\n\nVDD/VDDIO/VDDQ: Stock 1.4v\n\nVsoc 1.2v (Higher not needed for 6000 speed)\n\ntRRDS/L/FAW 8-12-32\n\ntWR 48\n\ntRTP 12\n\ntWTRS/L - 4 and 16\n\ntRFC to 383\n\ntREFI 50,000 (Will try to push to 65535 but was waiting on RAM fan cooling rig and other priorities so have tabled for now) - Primary Perf Gain if higher\n\nFCLK 2133 (Will try to push closer to 2200 once I revisit)\n\nDid not touch tRP, tRC or tRAS\n\nEdit2: I was able to push FCLK to 2200 and tREFI to 65,535 at VDDGIO/VDDCCD 1v, stable with good temps (with ram cooling fan).",
+      "subreddit": "overclocking",
+      "upvotes": 8,
+      "depth": 0,
+      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/",
+      "replies": [
+        {
+          "commentId": "miv9cf2",
+          "author": "samiamyammy",
+          "text": "Hi, I can share a few tips and tricks.\n\ntRRDS/L/FAW don't show any performance improvement below 8-12-32  -you can look at the test speed in Karhu to see settings other than my recommendation are slower.\n\nI run tCL26 on my 2x32 kit... for me it needs 1.54v VDD -but this does make it so the memory needs a fan blowing on them to not exceed 50c during heavy memory stress tests.  Your kit probably does not need more than the default expo 1.4v for VDD to run tCL28.  -and actually there's no need to increase VDDIO or VDDQ at all (sometimes need a minor bump for 6400 1:1 if you end up trying that at any point)\n\nVsoc higher than 1.2v isn't needed for 6000 speed.\n\ntWR can run 48\n\ntRTP 12\n\ntWTRS/L -4 and 16\n\nThe main performance gains are from Maxed out tREFI (65535) but that also generates more heat.. a lot of people use 50,000 as it performs better than stock, but less heat.\n\nYou can set tRFC to 383\n\nThere's further gains to be found, but they're pretty minor and it takes some stability testing to know what's ideal for you motherboard/memory kit.   -specifically the 4 SD/DD's and 2 SCL's\n\n\\-the SD/DD's you can use between 7 and 9 (have to test to know what is best, or just set 9 for all 4 will be fine), for the 2 SCL's you can do 6 or 7.  There's also GDM off and NItro settings (1-2-0 is best performance but needs stability testing to verify).\n\nThat's about it... highest possible FCLK gives better performance too.. most people can do 2133, slightly more rare is 2200 but a good percent can do it.\n\nJust as I see you did... there's no reason to mess with tRP, tRC or tRAS -basically nothing to gain from lower.\n\nGood luck to ya!  Happy tuning and testing!",
+          "subreddit": "overclocking",
+          "upvotes": 11,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/miv9cf2/",
+          "replies": [
+            {
+              "commentId": "mivg3wg",
+              "author": "Mandellaaffected",
+              "text": "Thank you!",
+              "subreddit": "overclocking",
+              "upvotes": 2,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mivg3wg/",
+              "replies": []
+            },
+            {
+              "commentId": "mo8tl84",
+              "author": "Mandellaaffected",
+              "text": "I was able to push 6000 at 2200 FCLK 65,535 tREFi with max temps 42-45c depending on the test. Thinking about trying to push 6400. \n\nWhat voltage changes other changes do you recommend if going 6400?\n\nThanks",
+              "subreddit": "overclocking",
+              "upvotes": 2,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mo8tl84/",
+              "replies": [
+                {
+                  "commentId": "moo1gww",
+                  "author": "samiamyammy",
+                  "text": "hey... 6400 usually just needs increase to VSOC.. you can start with 1.3v to verify 6400 is stable, and then lower it in steps while testing for stability.\n\n1.3v VSOC tends to destabilize 2200 FCLK though.  This is a reason some people end up not running 6400.  Or 6400 can need higher values for Nitro, which then makes it perform worse than 6200 with minimum Nitro.",
+                  "subreddit": "overclocking",
+                  "upvotes": 3,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/moo1gww/",
+                  "replies": [
+                    {
+                      "commentId": "moo9akx",
+                      "author": "Mandellaaffected",
+                      "text": "Hey thanks Sam, so for my kit and current temps, what would you do? Stand pat or go 6200?\n\nWhat setting would you adjust if going 6200?",
+                      "subreddit": "overclocking",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/moo9akx/",
+                      "replies": [
+                        {
+                          "commentId": "mooo1hj",
+                          "author": "samiamyammy",
+                          "text": "yw :)\n\nI'd first test to find the minimum VSOC needed for 6200... if it's under like 1.26v I'd stay with 6200.\n\nmy 9700x needs the full 1.3v to run 6200, and I prefer not running that much to the memory controller.  x3D tend to have better IMC though, so you might likely be able to do 1.26v or less.\n\nSometimes you need to bump VDD to like 1.43v for 6200 to stabilize.  The rest of the setup between 6000-6200 usually doesn't change.  I've seen a few people need 1 looser tRCD or SCL's.",
+                          "subreddit": "overclocking",
+                          "upvotes": 3,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mooo1hj/",
+                          "replies": [
+                            {
+                              "commentId": "moou03b",
+                              "author": "Mandellaaffected",
+                              "text": "Thanks, appreciate the insight!",
+                              "subreddit": "overclocking",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/moou03b/",
+                              "replies": []
+                            },
+                            {
+                              "commentId": "moyxbgo",
+                              "author": "Mandellaaffected",
+                              "text": "Sam \u201dtheman\u201d iamyammy \n\nDo you have zentimings pics you can share for 6200 CL28 and 6200 CL26? I would love to push 6200 CL26 if possible but if not I will pursue CL28 per your method above. Thank you good sir",
+                              "subreddit": "overclocking",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/moyxbgo/",
+                              "replies": [
+                                {
+                                  "commentId": "mp1cpoc",
+                                  "author": "samiamyammy",
+                                  "text": "no, I dont have one.. but it's all the same from 6000.... lower tCL just needs a little bump to VDD, the rest is usually identical timings.  It varies with memory kit.\n\nso:\n\nCL28 for 6200 is around 1.38-1.45 VDD\n\nCL26 for 6200 probably 1.45v or more for VDD",
+                                  "subreddit": "overclocking",
+                                  "upvotes": 2,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp1cpoc/",
+                                  "replies": [
+                                    {
+                                      "commentId": "mp1ed0l",
+                                      "author": "Mandellaaffected",
+                                      "text": "Got it, thank you sir.\n\nI\u2019m going to identify stable VSoC voltage first. Start with 1.25V and if stable will reduce until I find min stable VSoC.\n\nIf 1.26V is unstable, I\u2019ll try increasing VDD to 1.43V from stock 1.40V and loosening RCD to 38 from 36 and tRDRDSCL to 6 from 5 and tWRWRSCL to 12 from 10 if needed.\n\nTo push CL26 I\u2019ll try increasing VDD to 1.45V+",
+                                      "subreddit": "overclocking",
+                                      "upvotes": 2,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp1ed0l/",
+                                      "replies": [
+                                        {
+                                          "commentId": "mp1gqj6",
+                                          "author": "samiamyammy",
+                                          "text": "Solid gameplan! :)",
+                                          "subreddit": "overclocking",
+                                          "upvotes": 2,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp1gqj6/",
+                                          "replies": [
+                                            {
+                                              "commentId": "mp342mx",
+                                              "author": "Mandellaaffected",
+                                              "text": "Sorry to bother you again\u2026 last questions I promise\u2026\n\n1. I kept tRFC at 383, tRFC2 at 481, and tRFCsb at 391 when tuning 6200 CL28, confirmed min stable VSoC 1.25V.  \n\nSome advice suggested scaling these to tRFC 465, tRFC2 496, and tRFCsb 404 at 6200 MHz for proper refresh timing. \n\nFor CL26, I\u2019ve seen recommendations to tighten tRFC to 435 (with tRFC2 464, tRFCsb 378) for better performance. \n\nDo you agree with adjusting these values, or is it better to stick with my current settings at 6200-28/26?\n\n2. For 6200-26, I\u2019m planning to increase MEM VDD to 1.45V (from 1.4V) per your recc. I don\u2019t need to also raise CPU VDDIO to 1.45V from 1.4V to match since we\u2019re stable there at CL28, yes?\n\nThanks for your help!",
+                                              "subreddit": "overclocking",
+                                              "upvotes": 1,
+                                              "depth": 10,
+                                              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp342mx/",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "mp2n0t9",
+                      "author": "Mandellaaffected",
+                      "text": "Can you tell me what optimal/miminum Nitro settings are? Trying to confirm if my Nitro settings are optimal or not. Thanks",
+                      "subreddit": "overclocking",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp2n0t9/",
+                      "replies": [
+                        {
+                          "commentId": "mp3magx",
+                          "author": "samiamyammy",
+                          "text": "6400 is usually 1-3-1.. sometimes 1-2-1 works",
+                          "subreddit": "overclocking",
+                          "upvotes": 2,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp3magx/",
+                          "replies": [
+                            {
+                              "commentId": "mp3qq24",
+                              "author": "Mandellaaffected",
+                              "text": "Thanks. I\u2019m still working on trying to find stability at 6200-26. I found VDD &lt;1.48v caused system to reject the profile and revert back to 4800. Increasing to 1.48v allowed system to maintain 6200-26, but unstable. Even after increasing VDD to 1.5v, immediately fails AIDA memory and cache stress test. 1.25v VSoC was stable at 6200-28, but debating increasing to 1.26v to see if that helps. Could also try to loosen tRCD/SCL and increase VDDIO to 1.45v to see if that helps. \n\nWhat would your next step be? \n\nIf I can\u2019t get 26 stable I\u2019ll revert to 28. Just trying to think through next logical setting to tweak.",
+                              "subreddit": "overclocking",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp3qq24/",
+                              "replies": [
+                                {
+                                  "commentId": "mp418qh",
+                                  "author": "samiamyammy",
+                                  "text": "you're welcome.\n\ncl26 can be tricky to get stable.  My kit needs 1.54v for VDD to be stable at 6000 CL26\n\nA lot of people start with 1.6v VDD for initial testing and then lower it until instability shows up.\n\nVSOC only ever needs increasing when stepping up mt/s..\n\nVDDIO and VDDQ usually only need more than the expo default for 6400+",
+                                  "subreddit": "overclocking",
+                                  "upvotes": 2,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp418qh/",
+                                  "replies": [
+                                    {
+                                      "commentId": "mp5ghi6",
+                                      "author": "Mandellaaffected",
+                                      "text": "Got it stable at 1.59V :)",
+                                      "subreddit": "overclocking",
+                                      "upvotes": 2,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp5ghi6/",
+                                      "replies": []
+                                    },
+                                    {
+                                      "commentId": "mp4mop0",
+                                      "author": "Mandellaaffected",
+                                      "text": "Very helpful as always, thank you so much. I\u2019ve got everything I need to figure it out from here now. Will see what the temps look like and if it makes sense or not. \n\nI really wish Noctua made fans that weren\u2019t brown and beige, but may have to bite that bullet. We shall see. Cannot thank you enough!!",
+                                      "subreddit": "overclocking",
+                                      "upvotes": 1,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp4mop0/",
+                                      "replies": []
+                                    },
+                                    {
+                                      "commentId": "mp95yf8",
+                                      "author": "Mandellaaffected",
+                                      "text": "So I got 6200-26 2200 FCLK Nitro 1-2-1 stable at 1.58 VDD, but what I\u2019ve seen is my 3D Mark scores dropped 400 (Time Spy Extreme) - 700 points (First Strike Ultra) vs when I was at 6000-28 2200 FCLK with nitro 2-3-1.  I just changed Nitro to 2-3-1 and scored improved by 350 in FSU.\n\nThinking maybe I need to reduce FCLK to reduce IMC stress to allow for better performance, thoughts?",
+                                      "subreddit": "overclocking",
+                                      "upvotes": 1,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp95yf8/",
+                                      "replies": []
+                                    },
+                                    {
+                                      "commentId": "mp97pwr",
+                                      "author": "Mandellaaffected",
+                                      "text": "I figured out the issue, when my kit reverted to 4800 JEDEC setting it must\u2019ve turned my PBO settings off so resetting them",
+                                      "subreddit": "overclocking",
+                                      "upvotes": 1,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp97pwr/",
+                                      "replies": [
+                                        {
+                                          "commentId": "mp9n52v",
+                                          "author": "samiamyammy",
+                                          "text": "xD -that same thing has happened to me, sometimes the bootup with unstable setup reverts the whole bios\n\nSo now your 3dmark score is higher than when running 6000?",
+                                          "subreddit": "overclocking",
+                                          "upvotes": 1,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp9n52v/",
+                                          "replies": [
+                                            {
+                                              "commentId": "mp9ujd5",
+                                              "author": "Mandellaaffected",
+                                              "text": "It\u2019s odd, even after re-setting my PBO OC tune, my 6200-26 2200 1-2-1 (and 2-3-1) scores are slightly under what they were at 6000-28 2200 2-3-1. \n\nMy min stable VDD ended up being 1.58v, I also tried 1.59v but still no score improvement. I have confirmed stability with TestMem5 anta absolut w/music, Y-Cruncher, Prime95, AidaExtreme.\n\nReally surprised I\u2019m not seeing a score lift from the change. I didn\u2019t think I had to reduce FCLK unless going to 6400 2133\u2026 any recc on what I should try to tweak?",
+                                              "subreddit": "overclocking",
+                                              "upvotes": 1,
+                                              "depth": 10,
+                                              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp9ujd5/",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "mp2sttb",
+                      "author": "Mandellaaffected",
+                      "text": "Current Nitro settings:\n\n- ProcODT Pu/Pd - 480 \u03a9 \n- ProcCADS - 30 \u03a9 \n- RttNomRd - 48 \n- RttNomWr - 48 \n- RttWr - 240 \n- RttPark - 34 \n- RttParkDqs - 34",
+                      "subreddit": "overclocking",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp2sttb/",
+                      "replies": [
+                        {
+                          "commentId": "mp3mild",
+                          "author": "samiamyammy",
+                          "text": "those are not nitro settings, lol... those are the resistances used for end to end terminations..\n\n[https://www.overclock.net/posts/29460124/](https://www.overclock.net/posts/29460124/)\n\nThere's a good post about it... not many people change the Proc and Rtt's, but this guy has played with them and found some better settings",
+                          "subreddit": "overclocking",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp3mild/",
+                          "replies": [
+                            {
+                              "commentId": "mp3pgog",
+                              "author": "Mandellaaffected",
+                              "text": "Oh ok thanks for clarifying, will check it out",
+                              "subreddit": "overclocking",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mp3pgog/",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "mivxyjn",
+              "author": "Mandellaaffected",
+              "text": "I have a few follow-up questions.\n\nFCLK 2133 MHz Stability and Trade-Offs: You mentioned most Zen 4 CPUs can handle FCLK 2133 MHz (1:1), with some reaching 2200 MHz. For a 9800X3D, what\u2019s the best way to test FCLK stability (specific stress tests), and what latency penalty have you observed in 1:2 mode (impact on AIDA64 latency or gaming FPS)?\n\ntREFI Heat vs. Performance Trade-Off: You suggested tREFI 50,000 as a balanced option, or 65,535 for max performance with more heat. What performance difference have you seen between 50,000 and 65,535 (Ex. in AIDA64 bandwidth/latency or gaming FPS), and how much does RAM temperature increase with 65,535 (Ex. in Karhu or AIDA64)? Would you recommend active cooling for my kit at 65,535?\n\ntRFC 383 Stability and Approach: You recommended tRFC 383 (down from stock 886). Is this a safe starting point for most 2x32GB Hynix A-die kits, or should I step down gradually (e.g., 600, 500, 383) to avoid errors? Have you seen stability issues with dual-rank kits at 383?\n\nAdvanced Settings Effort vs. Gains: For the SD/DD (7-9), SCL (6-7), GDM Off, and Nitro 1-2-0 settings, what performance uplift have you seen (Ex. in AIDA64 bandwidth/latency or gaming FPS)? Are these worth pursuing for a gaming-focused setup, or should I focus on primary/secondary timings first?\n\nEdge Cases for 1.4V at tCL 28: You recommended 1.4V VDD for tCL 28, have you seen any edge cases where dual-rank 2x32GB kits struggle at this voltage? Should I be prepared to bump to 1.42V if I encounter instability?\n\nThanks so much, I appreciate it!",
+              "subreddit": "overclocking",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mivxyjn/",
+              "replies": [
+                {
+                  "commentId": "miw33vm",
+                  "author": "samiamyammy",
+                  "text": "Great questions, I like the analytical approach :)\n\nFor Fclk a test was recommended by a few top contributors on a memory OC forum... it's to run TestMem5 with Anta Absolute profile while playing music.. if the music stutters, then the FCLK is too high... that's more to determine the very edge of  stability though.  And some Zen 4 can do 2200.  -VDDGIO and VDDCCD bumped up to 0.950v-1v helps stabilize higher FCLK (2133-2200 usually need this extra voltage, default is 0.9v).  Fclk is unrelated to 1:2 mode.  And 1:2 mode is only for running 8000+ speeds.. there's no other benefit.\n\nHigher tREFI has the lowest latency... it's basically how long the memory is allowed to leave data stored in it's memory banks... it requires keeping power applied to memory for it to retain the data transferred to it... this is why running it higher ends up creating extra heat.  Between 50,000 and 65535 is not a huge change for gaming.. and probably 3-5C difference between the two.  Most \"overclocking enthusiast type\" people run 65535.  But 2x32 kits do tend to run hotter regardless, so either way it's good to keep them cool.. and if you are adding a fan anyways, may as well run 65535.  -an 80mm fan is what most people use, or just any 120-140mm you have lying around that can be wedged in, haha.\n\ntRFC running 383 is dead stable for any Hynix A-die at 6000-6200... needs to be looser for 6400-8000+ or if the memory is exceeding 50-55C.  People say low tRFC can cause stability issue when memory is over 50C, however before I had a fan on my memory I was often seeing 62C+ in memory stress testing and still didn't have any errors or issues with 383 tRFC.\n\nThe \"advanced settings\" can get you another 5-8% or so memory performance... it helps with 1% lows and max fps... but it's hard to say whether you'll notice that difference or if it's worth it for you testing stability with any of those.\n\nFor CL28 at 6000, I've seen a couple people with lower quality memory kits need more than 1.4vdd, I think 1.45v was the most anyone needed.\n\nBtw, you can see memory temps in a free app, HWinfo",
+                  "subreddit": "overclocking",
+                  "upvotes": 2,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/miw33vm/",
+                  "replies": [
+                    {
+                      "commentId": "miwqsyt",
+                      "author": "Mandellaaffected",
+                      "text": "Thanks so much, great insight!\n\nI just tested your recommended settings including FCLK 2133, tRFC 383, tREFI 50,000, and I enabled DRAM Performance Mode: Competitive from AMD AGESA default, which tweaked the advanced/tertiary settings along your reccs as well. \n\nTested in AIDA64 extreme and it was stable at CL28 with good temps, verified in HWINFO64. Max Mem Temp 49.8c, CPU Max Temp 66.8c.\n\nGoing to run OCCT CPU + RAM stress test next then MemTest86 for 1-2 cycles. \n\nI may try pushing FCLK closer to 2200 and testing with TestMem5 w/ Anta Absolute profile + music too, thanks for the recc!\n\nFor pushing tREFI closer to 65,535, would this fan setup be ok or would you recommend something else? [JONSBO NF-1/NF-2 PC Memory Cooling Radiator 4Pin PWM 5V 3PIN ARGB RAM Dual 5020 Fans RAM Heatsink Cooler for DDR4 DDR5](https://www.aliexpress.us/item/3256807321967513.html?src=google&amp;pdp_npi=4%40dis%21USD%2117.07%218.78%21%21%21%21%21%40%2112000044538518654%21ppc%21%21%21&amp;src=google&amp;albch=shopping&amp;acnt=708-803-3821&amp;isdl=y&amp;slnk=&amp;plac=&amp;mtctp=&amp;albbt=Google_7_shopping&amp;aff_platform=google&amp;aff_short_key=UneMJZVf&amp;gclsrc=aw.ds&amp;albagn=888888&amp;ds_e_adid=&amp;ds_e_matchtype=&amp;ds_e_device=m&amp;ds_e_network=x&amp;ds_e_product_group_id=&amp;ds_e_product_id=en3256807321967513&amp;ds_e_product_merchant_id=668016006&amp;ds_e_product_country=US&amp;ds_e_product_language=en&amp;ds_e_product_channel=online&amp;ds_e_product_store_id=&amp;ds_url_v=2&amp;albcp=20542171673&amp;albag=&amp;isSmbAutoCall=false&amp;needSmbHouyi=false&amp;gad_source=1&amp;gbraid=0AAAAAD6I-hHM8ctJksjdswXCSsI2XJJza&amp;gclid=EAIaIQobChMIuLrAy4-ajAMVdA-tBh38jgXOEAQYAiABEgKp4vD_BwE&amp;gatewayAdapt=glo2usa)\n\nCan\u2019t thank you enough for your help!",
+                      "subreddit": "overclocking",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/miwqsyt/",
+                      "replies": [
+                        {
+                          "commentId": "miwv5tt",
+                          "author": "samiamyammy",
+                          "text": "You're welcome :)\n\nSounds like you're well on your way!\n\nA cooler like you linked probably works fine, but I suppose my opinion is that it might be more noisey and/or not move as much air..or maybe it's awesome, I just don't know.  A lot of people buy a Noctua or \"Be Quiet\" brand 80mm case fan and then just rig up some way for it to be suspended (even twisty ties or zip ties) as they are basically silent while moving a whole lot of air.\n\nAn internet friend just ordered this: [https://www.aliexpress.us/item/3256807295624673.html?gatewayAdapt=glo2usa4itemAdapt](https://www.aliexpress.us/item/3256807295624673.html?gatewayAdapt=glo2usa4itemAdapt)\n\nfor use with a 120mm fan.. but it looks like it was designed to attach to an AIO, or maybe it wouldn't be the right dimensions to actually be over the memory, idk.\n\nPersonally, I had a spare 140mm fan so I just did the twisty ties method, but I'm thinking about that bracket for long-term.. or to get a Noctua 80mm instead and probably stick to twisty ties, haha.",
+                          "subreddit": "overclocking",
+                          "upvotes": 2,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/miwv5tt/",
+                          "replies": [
+                            {
+                              "commentId": "mix32wj",
+                              "author": "Mandellaaffected",
+                              "text": "Good to know, thanks!",
+                              "subreddit": "overclocking",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mix32wj/",
+                              "replies": [
+                                {
+                                  "commentId": "mj07vxz",
+                                  "author": "samiamyammy",
+                                  "text": ":) happy to have helped.\n\nBtw, Mandela effected..... I soooooo am!  I can't even count the number of things I noticed and wondered what the heck was going on (before I ever read about this phenomenon)!  Only later I googled about it and find others noticed the same exact things... and what a strange amount of these Mandela effects \"just so happen\" to be in a Simpsons episode!",
+                                  "subreddit": "overclocking",
+                                  "upvotes": 2,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mj07vxz/",
+                                  "replies": [
+                                    {
+                                      "commentId": "mj0i06b",
+                                      "author": "Mandellaaffected",
+                                      "text": "Not to get too metaphysical/quantum with you, but it\u2019s because we phase shift to alternate parallel realities based on our vibration. Check out Bashar if you want to learn more. A caveat- the level of truth you will learn about the nature of existence will change you, most likely for the better. Just depends on if you want to lift the veil of ignorance or not. Going down the Bashar rabbit hole is akin to taking the red pill. I for one am very happy I took it as it\u2019s changed my life for the better.",
+                                      "subreddit": "overclocking",
+                                      "upvotes": 2,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mj0i06b/",
+                                      "replies": [
+                                        {
+                                          "commentId": "mj1nykm",
+                                          "author": "samiamyammy",
+                                          "text": "I'll have to check out Bashar, haven't heard of that.. but I am more suspecting super high-level psyops is responsible for the various Mandela effects rather than parallel realities.. idk.  There's a lot of strange things going on with our vibrational nature these days.. a whole lot of funding, research, and decades of data was collected in inconceivably-thorough EMF bombardment testing and it's effects on humans, especially humans placed into \"altered states of consciousness\".  \n\nAnd/or the chemtrails, and/or 2G-5G signals, and/or Starlink tech, and/or bluetooth, and/or Wifi... and/or HAARP, and/or CERN.  I feel like any of those could also be the cause of the Mandela effects.\n\nReality has become far more like the Matrix movie than most people would ever guess.  Agent Smith needs a good kick in the face, lol.. and literally, no \"common person\" would have any idea just how advanced are the AI programs that are not public information... but that's a whole other level of sketchy stuff to overlay on top of the much more straightforward \"parallel realities based on our vibration\".",
+                                          "subreddit": "overclocking",
+                                          "upvotes": 2,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mj1nykm/",
+                                          "replies": [
+                                            {
+                                              "commentId": "mj2a2ou",
+                                              "author": "Mandellaaffected",
+                                              "text": "Yeah there\u2019s a lot of noise out there, some more harmful than others. CERN is playing with forces they do not fully understand, it is possible for them to open up a wormhole or potentially cause some disruptions in the fabric of space time. There is a reason why there are so many UFO sightings around nuclear facilities, our advanced interplanetary friends checking up on us to make sure we don\u2019t inadvertently destroy the planet. \n\nCheck out the double-slit experiment, collapsing the wave function, etc. Basically, it\u2019s been proven since all the way back in 1801 that observation fundamentally affects how matter behaves. Subatomic particles like protons and electrons, act as waves (light energy) while not being observed, but when a living being or even a camera or video recording device is present to observe them, they collapse the wave function and act as particles, as matter. This is some of the most fundamental evidence that our 3D space time reality is a simulation of sorts, albeit more nuanced and complicated than a computer simulation. \n\nWhen you begin to understand that this is just one dimension of reality, of existence, it starts to make more sense. Think of the higher dimensions as a sort of tesseract or quasicrystal. Researchers recently created a model of an 8-dimensional quasicrystal in a computer simulation. The shadow cast by the 8D quasicrystal was a 4D quasicrystal, like a tesseract\u2014made up of many 3D spaces. The shadow cast by that 4D quasicrystal was a 3D shadow [sauce](https://quantumgravityresearch.org/portfolio/a-deep-link-between-3d-and-8d/). This aligns with the theory that this 3D reality is a shadow of a higher dimension made up of light, where time is not linear. Time is a construct of this reality, much like gravity relative motion (speed), and of course they are interrelated. If we entertain the possibility we exist on some higher dimensional plane as beings of energy, and focus a concentrated version of our consciousness into these 3D lives, collapsing the wave function from energy into matter, we can begin to think of this reality as a sort of simulation for our higher consciousness. \n\nThink of this reality as a dream we agree to enter into with temporary amnesia in order to experience change, transformation, challenge, growth, to learn lessons, etc. We never leave the higher dimension, we\u2019re just dreaming that we have as we focus our consciousness into matter for a time, enter the quasicrystal simulation as it were, in order for existence, for creation to experience itself from a unique point of view, a unique perspective, thus then allowing creation to expand. When we die, we wake from the dream. If we imagine that scenario, our bodies are merely space suits for our spirits. \n\nBashar explains it well, he\u2019s chock full of wisdom and truth from the higher dimension. Here are a few videos to dip your toes in the water if you\u2019re interesting in learning more.\n\n[Bashar on your mission in life](https://www.tiktok.com/t/ZP8YKQvyN/)\n\n[Bashar\u2019s Story](https://www.tiktok.com/t/ZP8YKU7WD/)\n\n[Bashar\u2019s Story cont.](https://www.tiktok.com/t/ZP8YKU3JU/)\n\n[Bashar on why we\u2019re here](https://www.tiktok.com/t/ZP8YKXJEG/)\n\n[Bashar - Everything you need to know](https://www.tiktok.com/t/ZP8YKbU1H/)\n\n[Darryl Anka, channeler of Bashar on the 5 Laws of Existence](https://www.tiktok.com/t/ZP8YK9SVn/)\n\nCheck them out when you have a few minutes, it\u2019s like drinking straight universal wisdom and truth from a fire hose. No cult, no hidden agenda, just knowledge about how reality actually functions from a messenger. Pretty cool stuff.",
+                                              "subreddit": "overclocking",
+                                              "upvotes": 3,
+                                              "depth": 10,
+                                              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mj2a2ou/",
+                                              "replies": []
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "commentId": "mj1qak6",
+                                          "author": "samiamyammy",
+                                          "text": "Metaphysical stuff is one of my favorite topics, haha.  I have my degree in electronic technologies... and then went off and lived in a rainforest for 7 years... lol, it gave me some extreme contrast in regards to perspectives of life.\n\n...and then suddenly one day there were various mandela stuff going on.  I thought Chevron changed their sign and couldn't figure out why they rearranged the colors... then I saw a VW dealer and noticed it was changed too... and then another 10+ things all in a couple days.  Literally I thought a bunch of companies just had decided to make minor changes to their logos and company names.  \n\nBut all record of the original versions is scrubbed, lol... except sometimes evidence still remains of the pre-mandela effected.  You've seen some of those?  That's one of the top things that makes it not seem like parallel realities and instead some strange high-level experimenting going on.",
+                                          "subreddit": "overclocking",
+                                          "upvotes": 2,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mj1qak6/",
+                                          "replies": [
+                                            {
+                                              "commentId": "mj2nye5",
+                                              "author": "Mandellaaffected",
+                                              "text": "My first encounter with the Mandela Effect was realizing our current reality recognizes the Berenstein Bears as the Beren*stain* Bears. I had all the books as a kid and clearly remember it was Berenstein, but somewhere along the line we\u2019ve shifted to a slightly alternate parallel reality. It\u2019s some multiverse type stuff, pretty wonky. Bashar explains it well.",
+                                              "subreddit": "overclocking",
+                                              "upvotes": 1,
+                                              "depth": 10,
+                                              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mj2nye5/",
+                                              "replies": []
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "commentId": "okxue1g",
+                                          "author": "JGStonedRaider",
+                                          "text": "Came for the RAM info but just lol",
+                                          "subreddit": "overclocking",
+                                          "upvotes": 1,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/okxue1g/",
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "mo5mdry",
+                      "author": "Mandellaaffected",
+                      "text": "Hey friend, I was able to push FLCK 2200 and tREFI 65,535 at VDDGIO/VDDCCD at 1v, stable no errors in TestMem5 Anta Absolute w/Music and AIDA64 stress test, safe temps. I haven't tested it at 0.975v yet.  Thank you again for your great help and advice!  \n\nI'm working on trying to push 9800X3D core clocks 0&amp;1 (VCache cores) closer to 5425 Max and higher avg than stock.  Currently at PBO Advanced, PL Mobo, Scaler 7x, CO -30 (0&amp;1), -35 (2-7). I've been able to push max clocks \\~5330, but still falling short of goal. \n\nDebating ECLK/BCLK2 adjustment and curve shaper adjustments similar to Scatterbencher's recc's.  \n  \nHe recommends setting aSynchronous ECLK/BCLK2 from 100 to 105.5 MHz.  \n  \nCurve Shaper:   \n  \nFor all, set Low, Med, and High Temperature to Enable   \n  \nFor min, low, and med frequency, set Sign to Negative and Magnitude to 30   \n  \nFor high and max frequency, set Sign to Positive and Magnitude to 15\n\nDo you think this would be a good idea? Thanks!",
+                      "subreddit": "overclocking",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mo5mdry/",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mnev38p",
+          "author": "Particular-Edge-1000",
+          "text": "I have to go on 64Go to be comfortable on Star Citizen and your shares make me hesitate to take either:  \n64 GB (2 x 32 GB) DDR5 6,000 MT/s CL30 FURY Beast EXPO  \n64 GB (2 x 32 GB) DDR5 6 400 MT/s CL32 FURY Beast EXPO  \nTo benefit from your excellent timings, if I have to choose the most relevant, you would advise me which kit for the OC?  \nI think the KF564C32BBEK2-64 should be easier to OC at 6400CL28 and less (even if it is a bit more expensive)  \nI\u2019m going to partner with a 7800X3D and a 9800X3D because I have two drives at home:)  \nAnd I think your timing will be perfect for these two X3D!!!",
+          "subreddit": "overclocking",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mnev38p/",
+          "replies": [
+            {
+              "commentId": "mnhbgox",
+              "author": "Mandellaaffected",
+              "text": "Recommend confirming mobo compatibility as that is a key factor that influenced me going with KF Beast. Check QVL. I\u2019m not an expert on 6400\n\nChoose 6400 CL32 if:\n- Your motherboard and CPU can stably support 6400 MT/s\n- You want higher raw bandwidth (better for some productivity or bandwidth-hungry tasks)\n- You\u2019re optimizing for benchmarks or maximum overclocking\n\nChoose 6000 CL30 if:\n- You want higher stability and better compatibility (especially for AMD Expo or Intel XMP profiles)\n- Lower voltage, less heat\n- Better suited for daily use or gaming-focused rigs with tight timings\n\nBelow link are the recommendations I followed (In this thread) which worked for my kit. I believe user is using a 6400 kit so may want to ask them as I don\u2019t have any experience with 6400.\n\nhttps://www.reddit.com/r/overclocking/s/mSsz68oZ9A",
+              "subreddit": "overclocking",
+              "upvotes": 2,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mnhbgox/",
+              "replies": [
+                {
+                  "commentId": "mnms1mt",
+                  "author": "Particular-Edge-1000",
+                  "text": "Merci pour tes pr\u00e9cisions !\n\nAu final, j'ai pris les deux kits et le 6400CL32 passe avec mon 9800X3D en expo sans timing resserr\u00e9.\n\nCe weekend, je vais voir lequel des 2 kits est le plus stable \u00e0 6400CL28 avec beaucoup de chance, sinon je viserais 6200CL28.\n\nWait and see :)",
+                  "subreddit": "overclocking",
+                  "upvotes": 2,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mnms1mt/",
+                  "replies": [
+                    {
+                      "commentId": "mnn8bzk",
+                      "author": "Mandellaaffected",
+                      "text": "Great to hear and good luck with CL28! There are many experts in this sub who should be able to help if needed. Best",
+                      "subreddit": "overclocking",
+                      "upvotes": 2,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mnn8bzk/",
+                      "replies": [
+                        {
+                          "commentId": "mnq62dp",
+                          "author": "Particular-Edge-1000",
+                          "text": "Merci c'est agr\u00e9able d'avoir de l'aide de qualit\u00e9 comme la votre, cette communaut\u00e9 est g\u00e9niale !\n\nLe kit 6400CL32 passe \u00e0 30 36 36 sans modifier les autres timings avec FBLK \u00e0 2133 ! \n\nCela me semble un bon d\u00e9but pour le CL28 qui en revanche plante sans autre modification.\n\nJe suppose que pour que CL28 fonctionne, je dois maintenant modifier les timings, mais surtout les voltages et le VSOC en priorit\u00e9 je suppose de 1,2 vers 1,25 et le VDD de 1,4 vers 1,45\n\nEn revanche, impossible sur ma GIGABYTE AORUS ELITE AX de trouver le VSOC dans les menus, une suggestion ?\n\nMerci",
+                          "subreddit": "overclocking",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mnq62dp/",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mv04q09",
+          "author": "alizafeer",
+          "text": "I have the 16x2 (32gb) variant. Can i apply these to that? \n\nNew to ram oc here",
+          "subreddit": "overclocking",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mv04q09/",
+          "replies": [
+            {
+              "commentId": "mv0ectt",
+              "author": "Mandellaaffected",
+              "text": "I would look for a 2x16 guide. I\u2019m not an expert on 2x16, but pretty sure there are some differences in how they respond. May have different Voltage and timings ranges. There should be a lot of guides for 2x16 as it\u2019s more common",
+              "subreddit": "overclocking",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mv0ectt/",
+              "replies": [
+                {
+                  "commentId": "mv0f8xp",
+                  "author": "alizafeer",
+                  "text": "How much total difference did you get from ram tweaking in cpu performance and games?",
+                  "subreddit": "overclocking",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mv0f8xp/",
+                  "replies": [
+                    {
+                      "commentId": "mv0oleh",
+                      "author": "Mandellaaffected",
+                      "text": "I have my kit tuned to 6000 CL26 at 2200 FCLK and 65,535 tREFI, optimal Nitro settings and timings/sub-timings and the boost has been noticeable. \n\nBenchmark / Workload                 Est. Uplift vs EXPO\nLatency (AIDA64)                        \ud83d\udd3b ~10\u201315 ns lower\nMemory Bandwidth.                    \ud83d\udd3a ~5\u20138% higher\n1%/0.1% Lows in Games             \ud83d\udd3a ~8\u201315% better\nFrame Consistency                     \ud83d\udd3a Noticeably smoother\nMin FPS Uplift in Benchmarks   \ud83d\udd3a ~5\u201310%\nOverall Responsiveness             \ud83d\udd3a Noticeably snappier",
+                      "subreddit": "overclocking",
+                      "upvotes": 3,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mv0oleh/",
+                      "replies": [
+                        {
+                          "commentId": "mylw5qy",
+                          "author": "KaiokenMasta",
+                          "text": "Hey, great post! Can I ask something? In your Edit2, you mentioned pushing FCLK up to 2200 with a RAM cooling fan. Was Edit1 with 2133 also done with the RAM cooling fan?\n\nI'm asking because I have the exact same Kingston Fury 2x32GB CL30 6000 kit as yours, just without the RGB, since I needed low-profile sticks to fit under my Peerless Assassin 120 cooler.\n\nSince I can\u2019t install a RAM fan due to space limitations with the PA120, I\u2019m wondering if your Edit 1 settings would work for me. At what point did you add the RAM fan? Thanks in advance!",
+                          "subreddit": "overclocking",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/mylw5qy/",
+                          "replies": []
+                        },
+                        {
+                          "commentId": "n1zqaet",
+                          "author": "KaiokenMasta",
+                          "text": "It might be that you didn't see my question. Can you please reply me?",
+                          "subreddit": "overclocking",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n1zqaet/",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "o0nvbre",
+              "author": "mr_fonsecaa",
+              "text": "Did you find an answer to this?, in the same situation:P",
+              "subreddit": "overclocking",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/o0nvbre/",
+              "replies": [
+                {
+                  "commentId": "o0nww50",
+                  "author": "alizafeer",
+                  "text": "Lol no. Didnt oc. Everything seems to be working fine as is. I dnt wanna waste time on tweaking",
+                  "subreddit": "overclocking",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/o0nww50/",
+                  "replies": [
+                    {
+                      "commentId": "o0nxlqn",
+                      "author": "mr_fonsecaa",
+                      "text": "Nice to hear, thx",
+                      "subreddit": "overclocking",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/o0nxlqn/",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "n0977oz",
+          "author": "tha_blak_sheep",
+          "text": "Are you still utilizing the same tune for your Kingston ram? I recently got it and was looking to tune it similarly to your, but was wondering how it was holding up.",
+          "subreddit": "overclocking",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n0977oz/",
+          "replies": [
+            {
+              "commentId": "n0av11z",
+              "author": "Mandellaaffected",
+              "text": "CL26 requires higher VDD. \n\nI had initially used VDD 1.54v and VSOC 1.20 but was able to reduce to 1.50v VDD and 1.15v VSOC after changing to BIOS 3.25. 6000-CL28 I was running stable at 1.40v VDD. \n\n1.45v VDD 1.25 VSOC was stable for 6200 CL28, but I wanted to do 6000-26 at 2200 FCLK vs 6200 at 2066 FCLK. \n\nPushing 6400 requires you to stay at or under 1.30 VSOC. \n\nTypically you need 0.10 increase in VSOC to go up 200 ms so you can only run 6400 at 1.30v VSOC if you can run 6200 at 1.20v VSOC and 6000 at 1.10v VSOC, which is rare. If you\u2019re trying to push higher, find minimum stable VSoC at 6000 and 6200. If you need more than 1.20v VSOC to be stable at 6200 then you probably won\u2019t be able yo push 6400 since &gt;1.30v VSOC is not good/safe.\n\nCL26 gives a great latency improvement but runs hotter. I use a Corsair memory cooling fan setup with a Noctua 60x25mm 4-pin fan swapped to keep my temps under 50c max.  I also have really good fan cooling apart from that. \n\nIf you don\u2019t want to invest in a dedicated DRAM fan the. cL28 is the best bet.  I\u2019ll share some helpful guilds as well.",
+              "subreddit": "overclocking",
+              "upvotes": 2,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n0av11z/",
+              "replies": []
+            },
+            {
+              "commentId": "n0ascnp",
+              "author": "Mandellaaffected",
+              "text": "I\u2019m currently doing a 6000-26, 2200 FCLK, with optimal timings and nitro.\n\nHere is a summary:\nAM5 DDR5 RAM Tune \u2014 Current\nCPU: Ryzen 7 9800X3D\nBoard: X870E Nova WiFi (BIOS 3.25)\nKit: 64GB DDR5 (2\u00d732GB KF560C30)\nSpeed: 6000 MT/s\nMCLK/UCLK: 3000 MHz / 3000 MHz\nFCLK: 2200 MHz\n1:1 \nCmd Rate: 1T\nGear Down Mode: Enabled\nBank Group Swap: Enabled\nBank Group Swap Alt: Disabled\nPowerDown: Enabled (Disabled during testing)\nEco Mode off\nMemory Context Restore: Enabled (Disabled during testing)\nZen Gaming Memory Profile Mode Enabled (gives reduced latency)\n\nNitro settings: 1-2-0 x8 x8 (optimal for 6000)\n\nPrimary Timings:\n\ntCL:      26\ntRCDWR:   36\ntRCDRD:   36\ntRP:      36\ntRAS:     56\ntRC:      92\n\nSecondary / Tertiary Timings\n\ntRRDS:    6\ntRRDL:    12\ntFAW:     32\ntWR:      48\ntRFCns:   127.667\ntRFC2:    480\ntRFCsb:   390\ntREFI:    65535\ntCWL:     26\ntRTP:     16\ntWTRS:    4\ntWTRL:    16\ntWRRD:    6\ntWRWRSD:  7\ntWRWRDD:  8\ntWRWRDR:  1\ntRDWR:    16\ntRDWRSD:  8\ntRDWRDD:  7\ntRDWRDR:  1\ntRDRDSC:  6\ntRDRDSD:  6\ntRDRDDR:  6\ntCKE:     0\ntMODPDA:  32\ntMODPD:   32\ntPHYRDL:  12\ntPHYRWR:  6\n\nVoltages\n\nVSOC (SMU): 1.15V\nCLDO VDDP:  ~1.15V\nMEM VDD:    1.50V\nMEM VDDQ:   1.40V\nMEM VPP:    1.80V\nVDD Misc:   1.10V\nCPU VDDIO:  1.40V\n\nProcODT &amp; Termination\n\nProcODT:    48 \u03a9\nProcODT Alt: Hi-Z\nProcODT CADs: 30.0 \u03a9\nRTTNomWr:   RZQ/5 (48)\nRTTNomRd:   RZQ/5 (48)\nRTTWr:      RZQ/1 (240)\nRTTParkWr:  RZQ/7 (34)\nRTTParkRd:  RZQ/7 (34)",
+              "subreddit": "overclocking",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n0ascnp/",
+              "replies": [
+                {
+                  "commentId": "n0f1ris",
+                  "author": "tha_blak_sheep",
+                  "text": "Awesome. Thanks for all the guidance. I'll be going through the guides you listed as well. I'm newer to this and really just game, so i was looking for some midground that is better than just expo, but still pretty stable. This is where I'm currently at, so if you have any tweaks you can see, I'd be happy for the feedback. \n\n  \n[https://imgur.com/a/G60mNco](https://imgur.com/a/G60mNco)",
+                  "subreddit": "overclocking",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n0f1ris/",
+                  "replies": [
+                    {
+                      "commentId": "n0fo9q4",
+                      "author": "Mandellaaffected",
+                      "text": "Best and easiest thing for you to dial in if you want to push past default EXPO is tune 6000-28 with optimal timings and nitro. Ideally, you want to push to 2200 FCLK and 65,535 tREFI if stable as those give the best performance boost. Temps should still be well on safe range at CL28",
+                      "subreddit": "overclocking",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n0fo9q4/",
+                      "replies": [
+                        {
+                          "commentId": "n0g5gg9",
+                          "author": "tha_blak_sheep",
+                          "text": "Ok, I'll look into that. Thanks",
+                          "subreddit": "overclocking",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n0g5gg9/",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "n0avntq",
+              "author": "Mandellaaffected",
+              "text": "These are very helpful guides:\n\nhttps://www.reddit.com/r/overclocking/s/JNAknZmnSG\n\nhttps://www.reddit.com/r/overclocking/s/FSLsuemnyB",
+              "subreddit": "overclocking",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n0avntq/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "n31a7c0",
+          "author": "skynet_man",
+          "text": "Hi, back to memory tuning after 20 years from my last PC... My 2x32GB Kingston Fury Beast KF560C30BWEAK2-64 does not even boot with  6000 CL30 Profile set in Bios on Asrock B850M Steel Legend WiFi\u00a0(with latest BIOS)\n\nIt is a pain in the ass as each time i choose the wrong mem settings i need to reset the bios, remove RTX 5070, boot with internal GPU, set PCI-E x16 to gen5 and PCI-E X8 to Gen4, mount the RTX 5070 and reboot (otherwise no HDMI signal at all).\n\nWhat is the best tool to tweak and test memory params on the fly?",
+          "subreddit": "overclocking",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n31a7c0/",
+          "replies": [
+            {
+              "commentId": "n334xxj",
+              "author": "Mandellaaffected",
+              "text": "This guide is very helpful:\n\nhttps://www.reddit.com/r/overclocking/s/Nov8YygBsQ",
+              "subreddit": "overclocking",
+              "upvotes": 2,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/n334xxj/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "nzyygk2",
+          "author": "Zed_or_AFK",
+          "text": "Hey there! How did it go?\nWhat speeds do you get in a memory benchmark?",
+          "subreddit": "overclocking",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/nzyygk2/",
+          "replies": [
+            {
+              "commentId": "o477lez",
+              "author": "Mandellaaffected",
+              "text": "Will DM you my optimal results",
+              "subreddit": "overclocking",
+              "upvotes": 2,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/o477lez/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "o49vqwe",
+          "author": "Mandellaaffected",
+          "text": "I\u2019ve been getting a lot of questions on this, so will share this as additional guide/resources.\n\nRecommended Guides:\n\n[Guide 1](https://www.reddit.com/r/overclocking/s/oridx2SBLl)\n\n[Guide 2](https://www.reddit.com/r/overclocking/s/aVo57L8Oaw)\n\nFinal stable result (optimal for my silicon): 6000-CL26 2200 FCLK 65,535 tREFI, 1-2-0 Nitro (Optimal Nitro is dependent on memory speed MT/s, FCLK, and other factors.\n\n[ZenTimings / AIDA64 Cache &amp; Mem Benchmark](https://imgur.com/gallery/am5-memory-tune-optimal-2x32-kf-beast-6000-30-tuning-to-6000-26-timings-sub-timings-nitro-3H8kvbQ)\n\nDeep dive on Nitro:\n\n**DDR5 Nitro Mode Guide (AMD Ryzen AM5 Platform)**\n\n**What is DDR5 Nitro Mode?**  \nNitro Mode is an advanced tuning option available in many AMD BIOS implementations (typically found under AMD Overclocking \u2192 DDR and Infinity Fabric Frequency/Timings \u2192 DDR Options). It allows manual tightening of the low-level PHY-to-IMC signaling timings on DDR5 platforms. These adjustments reduce memory access latency and can improve read/write/copy bandwidth, often resulting in 1\u20135% real-world gains in latency-sensitive applications (e.g., games with better 1% lows, productivity workloads, or synthetic benchmarks like AIDA64).\n\n**Key Nitro Parameters**  \nThe settings are usually displayed as three values in this order:  \n**Nitro RX Data \u2013 Nitro TX Data \u2013 Nitro Control Line**  \n\nCommon tight/aggressive preset examples:  \n- 1-2-0 (very strong, low-latency target on good silicon)  \n- 1-2-1 or 2-2-0 (slightly looser but often more stable)  \n- 2-3-1 (typical looser default when EXPO is enabled at higher speeds)\n\nLower numbers = tighter signaling = potentially lower latency (e.g., 0.5\u20131 ns drop in AIDA64) and slightly higher bandwidth, but they require better IMC silicon quality, voltage tuning, and stability testing.\n\n**Recommended Supporting Settings for Optimal Nitro**  \nTo achieve and stabilize tight Nitro values (e.g., 1-2-0) at high speeds like DDR5-6000+ with strong FCLK:\n\n- DDR5 Nitro Mode: **Enabled**  \n- DDR5 Robust Training Mode: **Enabled** (recommended \u2013 performs more thorough memory training on boot; takes longer to POST but significantly improves stability at aggressive Nitro presets)  \n- Rx Burst Length: **8x**  \n- Tx Burst Length: **8x**  \n- Gear Down Mode (GDM): **Disabled** (critical for lowest possible latency; enabling GDM relaxes timings but usually adds ~1\u20132 ns penalty)  \n- UCLK DIV1 Mode: **UCLK = MCLK** (Gear 1 mode \u2013 essential for best latency at 6000\u20136400 MT/s)  \n- FCLK: 2000\u20132200+ MHz (higher FCLK reduces inter-core/CCX latency dramatically; 2133\u20132200 is elite territory on strong silicon)  \n- Voltages (tune carefully for marginal stability):  \n  - VSOC: 1.25\u20131.35 V (higher often needed for tight Nitro + high FCLK)  \n  - VDDG CCD / VDDG IOD: ~0.95\u20131.05 V  \n  - VDDP: ~0.90\u20131.00 V  \n  - VDCI: Predictive mode usually best  \n  - DRAM VDIMM: 1.35\u20131.45 V+ (depending on kit and primaries)  \n\n**Typical Performance at Tight Nitro (e.g., 6000 MT/s CL26\u201330 + 2200 FCLK + 1-2-0 + GDM off)**  \n- AIDA64 latency: ~56\u201358 ns  \n- Read bandwidth: 70\u201380 GB/s+ (on strong setups)  \n- Noticeable improvements in game frame-time consistency and synthetic scores  \n\n**Stability Testing Recommendations**  \nTight Nitro can pass quick tests but fail under heavy or real-world load. Use a combination of:  \n- TestMem5 (TM5) with anta777 extreme preset (3\u201310+ cycles)  \n- Karhu RAM Test (24+ hours preferred for deep validation)  \n- HCI Memtest (multiple instances to 1000\u20132000%+ coverage)  \n- y-cruncher VT3 stress mode (run while playing music or light tasks \u2013 audio glitches or crashes reveal instability)  \n- OCCT Memory test (Large Data Set)  \n- Daily usage + games/browsing for weeks  \n\n**Important Notes**  \n- Not every Ryzen chip can stably run 1-2-0 (or even 1-2-1) at high FCLK and tight primaries \u2013 this is heavily dependent on IMC silicon quality.  \n- Newer AGESA versions (1.0.0.7 series and later) greatly improve high-FCLK and Nitro compatibility.  \n- Always verify applied timings with ZenTimings after boot.  \n- Start conservative (e.g., 2-3-1), enable Robust Training, then tighten step-by-step while stress testing.  \n\nThis configuration (especially 6000\u20136400 MT/s + high FCLK + tight Nitro + GDM off) represents one of the best low-latency sweet spots for current AM5 DDR5 overclocking.",
+          "subreddit": "overclocking",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/o49vqwe/",
+          "replies": []
+        },
+        {
+          "commentId": "o49vrri",
+          "author": "Mandellaaffected",
+          "text": "Memory benchmark testing deep-dive:\n\n**DDR5 RAM Overclock Stability Testing Guide (AMD Ryzen AM5 Platform)**\n\n**Overview**  \nWhen overclocking or tightening DDR5 memory (e.g., high MT/s speeds, low CL timings, aggressive Nitro presets, high FCLK), thorough stability testing is essential. No single test catches everything \u2014 different tools stress the RAM, IMC (integrated memory controller), voltages, and signaling in unique ways. Errors can appear as crashes, BSODs (WHEA on AMD), audio artifacts, freezes, or silent corruption. A solid combo of dedicated memory testers + real-world/combined stress ensures daily usability.\n\n**Recommended Testing Suite**  \nFollow this tiered approach: Start with quick/aggressive tests to catch obvious issues, then move to deeper validation. Run tests at stock cooling + ambient temps; monitor RAM temps (via HWiNFO \u2014 keep under ~50\u201355\u00b0C to avoid thermal-related errors).\n\n1. **TestMem5 (TM5) with Extreme @anta777 Preset** (Primary quick/aggressive RAM tester)  \n   - **Why?** Fast, highly effective at finding subtle timing/voltage errors early \u2014 community gold standard for DDR5 overclocks. The \"Extreme @anta777\" config (download from GitHub integralfx/MemTestHelper or similar trusted sources) is tuned to hammer memory hard.  \n   - **How to run:**  \n     - Load the extreme@anta777.cfg (it should apply on launch in recent versions).  \n     - Run **at least 3 cycles** for initial screening (\u22481\u20132 hours on 64 GB kits).  \n     - For confidence: **5\u201310+ cycles** (or overnight if paranoid).  \n     - **+ Music playing test variant:** Run TM5 in the background while playing music (Spotify/YouTube/etc.) or doing light tasks. Instability can cause **audio glitches** (crackling, stuttering, skipping, slowdowns) even if no hard error pops up \u2014 a quick real-world check for marginal setups.  \n   - **Pass criteria:** Zero errors across all cycles. Any error = back to BIOS for voltage/timing tweaks.\n\n2. **Karhu RAM Test** (Deep, thorough validation)  \n   - **Why?** Excellent for long-run detection of errors that slip past quicker tests; stresses large data sets and cache.  \n   - **How to run:** Enable CPU cache stress if available; use default or high RNG settings.  \n     - Aim for **24+ hours** (or at minimum 8\u201312 hours) for true 24/7 stability.  \n   - **Pass criteria:** No errors. Often considered one of the strongest for overclocked DDR5.\n\n3. **y-cruncher (VT3 or VST mode)** (Combined CPU + IMC + RAM stress with real-world feel)  \n   - **Why?** Heavy all-core compute that pounds the IMC/RAM; great for detecting controller instability (especially high FCLK/Nitro on AM5).  \n   - **How to run:** Use VT3 (AVX512) or VST algo; run multi-hour loops.  \n     - **Music playing test:** Run y-cruncher while playing music or browsing \u2014 audio artifacts (stuttering, crackling) or system freezes often show up here when pure memtests pass. Excellent \"daily feel\" check.  \n     - Typical: **2\u20136+ hours** (or overnight loops). Some run 5\u201310 full passes.  \n   - **Pass criteria:** No calculation errors, crashes, or audio glitches.\n\n4. **HCI Memtest** (Classic coverage tester \u2014 optional but useful)  \n   - **Why?** Good for percentage-based coverage; stresses specific memory regions.  \n   - **How to run:** Launch multiple instances to cover 90\u2013100%+ of RAM (e.g., 400\u20131000%+ per instance on 64 GB).  \n     - Run to **1000\u20132000%+ coverage** total.  \n   - **Pass criteria:** Zero errors.\n\n5. **Additional/Combined Tools for Extra Coverage**  \n   - **OCCT Memory test** (Large Data Set mode, SSE/AVX): Good combined CPU+RAM stress; run 1\u20134 hours.  \n   - **MemTest86+** (bootable USB): Basic hardware fault check or very long runs; less aggressive for tuned overclocks.  \n   - **Prime95** (blend or large-FFT custom): IMC-heavy; use sparingly as it's older.  \n   - **Daily real-world usage:** After passing the above, game/browse/render for days/weeks \u2014 subtle instability often shows here first.\n\n**Typical Testing Flow for a New Tune**  \n1. Apply settings \u2192 boot \u2192 verify with ZenTimings/AIDA64.  \n2. Quick screen: TM5 anta777 extreme **3 cycles** (+ music playing in background).  \n3. Deeper: Karhu **8\u201324 hours**.  \n4. Combined/real-world: y-cruncher **multi-hour** (+ music playing).  \n5. Paranoid/final: Loop TM5 10+ cycles + Karhu overnight + y-cruncher.  \n6. Monitor: Use HWiNFO for temps/voltages; check Event Viewer for WHEA errors post-test.\n\n**Notes**  \n- Different tests catch different errors: TM5 excels at early detection, Karhu at depth, y-cruncher at IMC/AVX realism.  \n- On AM5 DDR5 (especially 6000+ MT/s with tight Nitro/GDM off), y-cruncher often reveals marginal IMC issues.  \n- If errors appear late in cycles \u2192 check RAM temps or marginal voltages.  \n- No setup is \"100% stable forever\" \u2014 but passing this suite means reliable 24/7 use for most.  \n\nThis combo (especially TM5 anta777 + Karhu + y-cruncher with music) is widely recommended in 2026 overclocking communities for DDR5 on AM5. Adjust runtimes based on paranoia level.",
+          "subreddit": "overclocking",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/o49vrri/",
+          "replies": []
+        },
+        {
+          "commentId": "ocvuz0z",
+          "author": "LeakBound",
+          "text": "OP im a owner of the same kit... I have a 9950x at 1.25vsoc 6200/2067 with cl28 and optimal timings everywhere else.\n\nI read in this thread you touched cl26. Mind sharing your current zentimings? I want to compare notes :) [https://imgur.com/a/m8zh57f](https://imgur.com/a/m8zh57f)",
+          "subreddit": "overclocking",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/ocvuz0z/",
+          "replies": [
+            {
+              "commentId": "ocy9w9z",
+              "author": "LeakBound",
+              "text": "I notice that my read speed is 86500 mb/s vs your 70160 mb/s at 6000 cl26. Did you try higher mclk? I like your result. Much better voltages than me. However, wouldn't you want more data at same latency? cl28 6200 vs cl26 6000 - or did you have trouble stabilizing 6200+?",
+              "subreddit": "overclocking",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/overclocking/comments/1jfstm6/tuning_kingston_fury_beast_2x32gb_ddr5_6000cl30/ocy9w9z/",
+              "replies": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentId": "1oru9z4",
+      "author": "Positive_Tennis_5657",
+      "text": "Worth downgrading CPU/SSD for a better GPU? (9800X3D vs 7800X3D | 5070 Ti vs 5080, $2600 budget)\n\nHey everyone,\n\nI\u2019m building a completely new PC and could use some advice before locking in my final parts.\n\nHere\u2019s my current setup (some parts are already purchased, but I can return them if absolutely necessary \u2014 I\u2019d just rather not since it would delay my build):\n\nCurrent build:\n\nCPU: Ryzen 7 9800X3D \u2013 $479\n\nCooler: MSI MAG CORELIQUID A13 - comes with the CPU\n\nMotherboard: MSI MAG X870E Tomahawk WiFi - $267 - Already purchased\n\nMemory: Corsair Vengeance RGB 64GB (2x32GB) DDR5-6000 CL30 - $462 - Already purchased\n\nSSD: WD SN8100 2TB PCIe 5.0 \u2013 $210\n\nGPU: ASUS TUF Gaming RTX 5070 Ti \u2013 $850\n\nCase: Lian Li Lancool 217 - $120 - Already purchased\n\nPSU: NZXT C1200 Gold \u2013 $170 - Already purchased\n\nOS: Windows 11 Home - Already have\n\nMy use case:\n\nThis system will mainly be for gaming (around 70% online titles and 30% story/single-player games), plus some video editing and occasional streaming.\n\nSo I\u2019m aiming for a cool, quiet, and long-lasting setup that performs well across all of those workloads \u2014 especially gaming and multitasking while streaming. I am planning to use this without an upgrade for at least 3 years. (Maybe storage if I need more)\n\nMy thought process (I am new to pc build, so this is all based on what I read and watch online):\n\nThere\u2019s a deal for the Ryzen 7 7800X3D at $384, which is about $96 cheaper than the 9800X3D.\n\nFrom what I\u2019ve seen, the 9800X3D only performs around 5% better on average in games \u2014 and sometimes not at all \u2014 though it\u2019s slightly better for productivity and thermals since it\u2019s based on Zen 5. (I am new to pc build, so this is all based on what I read and watch online)\n\nThe big advantage of the 9800X3D being Zen 5 is that it gives me at least a few years before I need to be upgraded. That\u2019s one reason I\u2019m hesitant to move down to the 7800X3D (Zen 4).\n\nFor storage, the SN8100 PCIe 5.0 SSD is probably overkill. In gaming or typical workloads, there\u2019s no noticeable real-world difference compared to PCIe 4.0 drives like the SN850X or Samsung 990 Pro, so I could save $50\u2013100 there without losing meaningful performance. I went with the SN8100 PCIe because I want the best boost time for my pc and just loading in-game for 4 to 5 years to come. I don't know if the PCIe 4 gonna be good for the next 5 years.\n\nNow for the GPU \u2014 the hardest choice:\n\nThe ASUS TUF RTX 5070 Ti has excellent cooling, quiet fans, and great build quality.\n\nFor about $150 more, I could get an RTX 5080 (ASUS Prime or PNY OC). The 5080 is around 10\u201320% faster, but those cheaper variants reportedly have weaker cooling and build quality than the TUF.\n\nI know the TUF 5070Ti can OC to get a very similar performance to the \"base model\" 5080. But I am NEVER OC before, and I don't want to blow up my pc, so I might not OC, or at least do basic tweaks like increase clock speed and power consumption.\n\nIf I go with the cheaper CPU and SSD, I can afford the 5080 \u2014 but that means slightly worse CPU/SSD specs and potentially higher GPU temps and noise.\n\nIf I keep my current setup, I\u2019ll have a cooler, quieter, and better-built system overall, but slightly less raw GPU performance.\n\nTL;DR:\n\nOption 1: Keep current setup \u2192 9800X3D (Zen 5) + SN8100 + TUF 5070 Ti\n\nOption 2: Switch to 7800X3D (Zen 4) + SN850X + RTX 5080 (Prime/PNY) for roughly the same total cost\n\nUse case: 70% online gaming, 30% story games, plus video editing and streaming\n\nPriority: Cool, quiet, reliable performance that will last\n\nExtra factor: 9800X3D\u2019s Zen 5 platform offers better long-term CPU upgrade potential\n\nBudget: Up to $2600 total, as long as it\u2019s well-balanced and makes sense\n\nWhat would you do?\n\nWould you prioritize the 5080\u2019s extra performance now, or stick with the quieter TUF 5070 Ti and the better CPU + SSD?\n\nAnd if anyone has other build ideas under $2600 total, I\u2019m open to suggestions \u2014 as long as it\u2019s a strong, cool-running setup for gaming, editing, and streaming.\n\n\n\n  \n**UPDATED:**  \n**I found this RAM 64GB 6000MT CL30 for $300:** [Kingston FURY Beast 64GB (2 x 32GB) 288-Pin PC RAM DDR5 6000 (PC5 48000) Memory (Desktop Memory) Model KF560C30BWEAK2-64](https://www.newegg.com/kingston-technology-corp-fury-beast-64gb-ddr5-6000-cas-latency-cl30-memory-white/p/N82E16820242867?Item=N82E16820242867&amp;_gl=1*wa3x44*_gcl_aw*R0NMLjE3NjI0ODQ5MzIuQ2owS0NRaUFxN0hJQmhEb0FSSXNBT0FURHhBRGxJNGVRMzZ2bkhESWVHRUVPMkV2U01mYWp6bVIwc2tHaDNISW9lbUV2cjVYaEJWU3NBZ2FBbUh2RUFMd193Y0I.*_gcl_dc*R0NMLjE3NjI0ODQ5MzIuQ2owS0NRaUFxN0hJQmhEb0FSSXNBT0FURHhBRGxJNGVRMzZ2bkhESWVHRUVPMkV2U01mYWp6bVIwc2tHaDNISW9lbUV2cjVYaEJWU3NBZ2FBbUh2RUFMd193Y0I.*_gcl_au*OTE0NzkyMTEzLjE3NjIyNzQzMjcuODkxMjExODU4LjE3NjI3NzIwNTQuMTc2Mjc3MjA1Mw)  \nA month ago, it was $250, but now it is $300, rough. Considering the next option of similar spec and quality is gonna be $450+, this is a great deal.   \n64GB so I can pass down to my children, no need to upgrade in next 5 years minimum. \n\nFor GPU: I\u2019m going with the TUF 5070Ti. Here\u2019s my thought process: Yes, I could put down $150 more to get the \u201clow-tier\u201d 5080 like Zotac or PNY. People say they\u2019re all the same, and if there are differences in cooling, build quality, or performance, they\u2019re within error margins so it doesn\u2019t matter much. Maybe it\u2019s just ignorance or fear, but I keep seeing a lot more negative reviews of the \u201clow-tier\u201d cards compared to the \u201chigher-tier\u201d ones like TUF. So as someone with no clue about PCs and GPUs, I just decided to go with a \u201chigh-tier\u201d card for the extra cooling and build quality. I\u2019m not sure if it\u2019s 1% extra or 5% extra, but that little extra saves my sanity.\n\nAnother point: VRAM. Both the 5080 and 5070Ti have 16GB, which means when the 5070Ti gets bottlenecked, the 5080 will most likely follow right after. And since I\u2019m gaming at 1440p, those 10\u201315% performance gains aren\u2019t necessary. In conclusion, I\u2019m going with the TUF 5070Ti for the (minor) extra cooling and build quality (potentially causing fewer issues, I hope), and I\u2019m giving up the 10\u201315 fps increase of the 5080. My monitor caps at 144Hz anyway. Since both cards will end up being bottlenecked and obsolete around the same time, I\u2019ll upgrade them at the same time anyway. So it\u2019s beside the $150, it\u2019s about quality, peace of mind, and the fact that the TUF 5070Ti meets everything I need. If I were gaming at 4K, maybe that 15% performance increase would outweigh the perks of the 5070Ti, but I\u2019m not.\n\nFor the CPU, I\u2019m going from a laptop to a PC, so I just want the best without going into silly-priced CPUs. I\u2019ll probably upgrade 1\u20132 more GPUs before I ever need to upgrade the CPU anyway.\n\nFor SSD, don\u2019t ask me why, maybe because I already spent $2.4k on the PC, so I might as well max out the SSD. I was thinking about getting 4TB for the true max, but that thing costs $420, which gives me pain in the heart. So 2TB for now. Maybe I\u2019ll go for a Gen 4 4TB later. My mobo has 3 more SSD slots, so I\u2019m good.\n\nMobo: I was looking at the X870 Tomahawk, but it got sold out, and even if it comes back, it\u2019s only $37 less than the X870E. I\u2019m too lazy to wait and delay my build, so there it is, I paid my impatience fee. Overkill at its peak.\n\nFor the PSU, I\u2019m just going to keep it. 1200W should be good for a few GPU upgrades.\n\nThat\u2019s all. Thank you for your input, y\u2019all gave me great info. If something changes, I\u2019ll update it here.\n\nBTW, I don\u2019t have a Windows 11 key, so I need to find one. What do y\u2019all think of MAS, the free activation script? I\u2019ve heard some say it\u2019s not safe, and others say many people use it with no issues. Let me know what y\u2019all think.",
+      "subreddit": "PcBuildHelp",
+      "upvotes": 6,
+      "depth": 0,
+      "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/",
+      "replies": [
+        {
+          "commentId": "nnsizlq",
+          "author": "Babylon4All",
+          "text": "Downgrade and return your ram, you don\u2019t need 64GB of ram for gaming AAA games right now and with ram prices where they are you can use that savings for the 5080.",
+          "subreddit": "PcBuildHelp",
+          "upvotes": 10,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsizlq/",
+          "replies": [
+            {
+              "commentId": "nnsroeu",
+              "author": "Positive_Tennis_5657",
+              "text": "So, I go for 32GB of RAM?",
+              "subreddit": "PcBuildHelp",
+              "upvotes": 3,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsroeu/",
+              "replies": [
+                {
+                  "commentId": "nnsuxtn",
+                  "author": "Babylon4All",
+                  "text": "Yes, 2x16GB, that should save you around $200 with current pricing which then you can do your 5080 and will get you the best results.\n\n  \nIf you want to save a LOT, walmart is having a deal on 32GB CL36 Kingston Fury for $116 [https://www.walmart.com/ip/Kingston-FURY-Beast-16GB-2x16GB-6000MT-s-DDR5-CL36-Desktop-Memory-AMD-EXPO-Plug-N-Play-Kit-of-2-KF560C36BBE2K2-32/9605705096](https://www.walmart.com/ip/Kingston-FURY-Beast-16GB-2x16GB-6000MT-s-DDR5-CL36-Desktop-Memory-AMD-EXPO-Plug-N-Play-Kit-of-2-KF560C36BBE2K2-32/9605705096)",
+                  "subreddit": "PcBuildHelp",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsuxtn/",
+                  "replies": [
+                    {
+                      "commentId": "nnszg1a",
+                      "author": "Positive_Tennis_5657",
+                      "text": "It CL 36 =(. I don't even know the performance margin of that vs CL 30. But as far as I know, the recommended spec is 6000mt CL 30 for 9800X3D.",
+                      "subreddit": "PcBuildHelp",
+                      "upvotes": 0,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnszg1a/",
+                      "replies": [
+                        {
+                          "commentId": "nnt2gnh",
+                          "author": "Anomxxly",
+                          "text": "Tbh you\u2019d hardly notice a difference. in my opinion,  The timings are a few seconds off like 1-2 in realtime",
+                          "subreddit": "PcBuildHelp",
+                          "upvotes": 3,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt2gnh/",
+                          "replies": [
+                            {
+                              "commentId": "nnt41vx",
+                              "author": "Positive_Tennis_5657",
+                              "text": "hmm, I will look into this more.",
+                              "subreddit": "PcBuildHelp",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt41vx/",
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "nnt42o4",
+                          "author": "Glynwys",
+                          "text": "CL 36 is just fine for the 9800x3D. CL30 is only recommended for the 9800x3D because folks are still in the DDR4 mindset. CAS Latency for DDR5 is generally less impactful than it was for DDR4. CL36 is more than acceptable for a 9800x3D, especially with how damn expensive CL30 is right now.",
+                          "subreddit": "PcBuildHelp",
+                          "upvotes": 3,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt42o4/",
+                          "replies": [
+                            {
+                              "commentId": "nntchz1",
+                              "author": "Positive_Tennis_5657",
+                              "text": "Do you have a video or a source where I can read or watch about it?",
+                              "subreddit": "PcBuildHelp",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntchz1/",
+                              "replies": [
+                                {
+                                  "commentId": "nntd65r",
+                                  "author": "Glynwys",
+                                  "text": "https://pcpartpicker.com/forums/topic/471350-cl30-and-cl32-is-there-a-noticeable-difference\n\nAnd\n\nhttps://pcpartpicker.com/forums/topic/452780-cl30-ram-vs-cl36-ram-whats-the-real-difference-in-peformance\n\nBoth have the answer to this question in the first replies. The second one especially is relevant to you.",
+                                  "subreddit": "PcBuildHelp",
+                                  "upvotes": 2,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntd65r/",
+                                  "replies": [
+                                    {
+                                      "commentId": "nnth7wn",
+                                      "author": "Positive_Tennis_5657",
+                                      "text": "Gotcha, just did my math: 6000 CL30 = 10 ns latency vs 6400 CL40 = 12.5 ns latency. Now I need to decide if 2.5ns latency + RGB is worth the $80.",
+                                      "subreddit": "PcBuildHelp",
+                                      "upvotes": 1,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnth7wn/",
+                                      "replies": [
+                                        {
+                                          "commentId": "nntkeuk",
+                                          "author": "Glynwys",
+                                          "text": "I can't make that decision for you, but you did mention saving money to get a better GPU. Dropping as little money as possible on 33gb of ram will get you closer to that goal. I'm not like a super competitive gamer so I can't really notice a 2.5n speed difference.",
+                                          "subreddit": "PcBuildHelp",
+                                          "upvotes": 2,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntkeuk/",
+                                          "replies": [
+                                            {
+                                              "commentId": "nntkytq",
+                                              "author": "Positive_Tennis_5657",
+                                              "text": "I am trying out to see if the Prime 5080 is worth it for me to drop my TUF 5070Ti and a few other parts to get it.",
+                                              "subreddit": "PcBuildHelp",
+                                              "upvotes": 1,
+                                              "depth": 10,
+                                              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntkytq/",
+                                              "replies": []
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "commentId": "nnyogpo",
+                                          "author": "ssniker",
+                                          "text": "You can in most cases easily reduce latency by manually tightening timings. Find out what ram die you got, search for optimal setting for that particular die and speed combo.\nAs example, I bought cl28 6000MTs kit and latency with default expo settings was ~72 ns. Tuned timings according to buildzoids hynix ram settings and got ~62ns latency.\n\nAlso look for faster kits with higher cl, you still can find something like 6800MTs cl36-38. Reduce MTs, set lower timings.",
+                                          "subreddit": "PcBuildHelp",
+                                          "upvotes": 1,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnyogpo/",
+                                          "replies": [
+                                            {
+                                              "commentId": "nnzce16",
+                                              "author": "Positive_Tennis_5657",
+                                              "text": "Yesterday I found 2 RAM that look pretty good. I did some research, and it seems like for the 1:1 ratio between the 9800X3D and RAM, the RAM needs to be 6000 MTs Cl30. Not sure if that is the whole true, but that was mentioned a lot online. So with more 6,000+ MTs, the 9800x3D is not optimal. So I found the last RAM dual 6000 Cl30 that is less than $350.\n\nThis is the 2 ram I found:  \n[https://www.amazon.com/dp/B0CZ2RGMKH?ref=ppx\\_yo2ov\\_dt\\_b\\_fed\\_asin\\_title](https://www.amazon.com/dp/B0CZ2RGMKH?ref=ppx_yo2ov_dt_b_fed_asin_title) : timing: 30 40 40 76 (This is the one I go for, better timing and it 6000 Cl30) - $340 - SK Hynix M die (on MSI support tab)  \n[https://www.amazon.com/gp/product/B0DSQMCV8B/ref=ewc\\_pr\\_img\\_1?smid=ATVPDKIKX0DER&amp;th=1](https://www.amazon.com/gp/product/B0DSQMCV8B/ref=ewc_pr_img_1?smid=ATVPDKIKX0DER&amp;th=1) : timing: 40 40 40 80 - $300 - This RAM doesn't show up in the MSI support tab for MAG X870E mobo, maybe they didn't update, maybe it's not compatible, seems unlikely tho, it has AMD EXPO",
+                                              "subreddit": "PcBuildHelp",
+                                              "upvotes": 1,
+                                              "depth": 10,
+                                              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnzce16/",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "nntpp9r",
+                          "author": "Babylon4All",
+                          "text": "You won\u2019t really notice a difference, but if you REALLY want CL30, the same Corsair kit you have as a 32GB one is only $226.\u00a0",
+                          "subreddit": "PcBuildHelp",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntpp9r/",
+                          "replies": [
+                            {
+                              "commentId": "nnts2ed",
+                              "author": "Positive_Tennis_5657",
+                              "text": "First, I really want to get the 64GB RAM, and just forget about it until my PC broke down.  \nI found this: [https://www.newegg.com/v-color-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-memory-desktop-memory/p/0RN-00MB-000V1?Item=0RN-00MB-000V1](https://www.newegg.com/v-color-32gb-2-x-16gb-ddr5-6000-pc5-48000-cas-latency-cl30-memory-desktop-memory/p/0RN-00MB-000V1?Item=0RN-00MB-000V1) for $174, 6000 CL30 32GB.  \nI also found this: [https://www.amazon.com/gp/product/B0DSQMCV8B/ref=ox\\_sc\\_act\\_title\\_1?th=1](https://www.amazon.com/gp/product/B0DSQMCV8B/ref=ox_sc_act_title_1?th=1) for $280, 6400 Cl40 64GB. Besides the 12.5 ns latency, this is a good deal.",
+                              "subreddit": "PcBuildHelp",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnts2ed/",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nnskij2",
+          "author": "0nlythebest",
+          "text": "I would drop to 32gb of RAM , prices are insane right now. I would also absolutely drop to a gen 4 SSD. U won't notice any difference and it will be fast for 5 years surely. \n\nI would stick with the 9800x3d and I would upgrade to the 5080. Even the cheapest 5080 is going to run so quiet and cool.\n\nAlso, you paid 220$ for a liancool 217? That's a rip off, can u return it ?\n\nAlso is there any reason you need a 270$ motherboard ? You can happily use a 180$ board and have 0 noticeable difference.\n\n\nEdit: \n\nhttps://pcpartpicker.com/list/7DRqTM\n\n\nThis is what I would go for, save a lot of $. Performance will be faster for gaming. Could even get the 4tb SSD. \n\nRam is so ridiculously expensive right now I would settle for this 5600mhz set and upgrade it later. (Ur talking about a 2% difference from 5600mhz to 6000mhz. Basically unnoticeable.",
+          "subreddit": "PcBuildHelp",
+          "upvotes": 3,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnskij2/",
+          "replies": [
+            {
+              "commentId": "nnssc8q",
+              "author": "Positive_Tennis_5657",
+              "text": "For the case, it was a typo, it cost $120.\n\nFor the board, what do you recommend?",
+              "subreddit": "PcBuildHelp",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnssc8q/",
+              "replies": [
+                {
+                  "commentId": "nnstymn",
+                  "author": "0nlythebest",
+                  "text": "https://pcpartpicker.com/list/7DRqTM",
+                  "subreddit": "PcBuildHelp",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnstymn/",
+                  "replies": [
+                    {
+                      "commentId": "nnt0clp",
+                      "author": "Positive_Tennis_5657",
+                      "text": "The GPU is not available, for the TUF model of 5080 is at least $1k3. DDR5-5600 CL36 Memory too low for 9800X3D, no? 6000 Cl 30 is recommended, I think.",
+                      "subreddit": "PcBuildHelp",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt0clp/",
+                      "replies": [
+                        {
+                          "commentId": "nnt12sw",
+                          "author": "0nlythebest",
+                          "text": "Ok, pick the next 5080 that you like. \n\n\nRam is fine.",
+                          "subreddit": "PcBuildHelp",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt12sw/",
+                          "replies": [
+                            {
+                              "commentId": "nnt2pd8",
+                              "author": "Positive_Tennis_5657",
+                              "text": "The GPU is the biggest issue I have with my current build. It is fine to pay $150 to get the 5080, but it is only the \"base model/low-tier\". The reason why I have the TUF 5070Ti is that it is considered a high-tier model in the 5070Ti series. It seems to have better cooling, built quality, and less noise compared to low-tier models like Prime. If I get the Prime 5080 and it has more potential issues due to heat and build quality, I would just stay with the TUF 5070Ti. But as I said above, I don't have reliable data to know what the quality is between \"low tier\" card vs \"high tier\" card, like Prime vs TUF.",
+                              "subreddit": "PcBuildHelp",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt2pd8/",
+                              "replies": [
+                                {
+                                  "commentId": "nnt3wzy",
+                                  "author": "0nlythebest",
+                                  "text": "You will not notice any difference whatsoever between the prime and Tuf cards. \n\nModern day 5000 series GPUs run so well, efficiency and noise are great. Even the CHEAPEST models are 10x better than what we've had in the past. \n\nJust get the best 5080 you can afford. Model/ brand doesn't matter much.",
+                                  "subreddit": "PcBuildHelp",
+                                  "upvotes": 1,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt3wzy/",
+                                  "replies": [
+                                    {
+                                      "commentId": "nnt79ag",
+                                      "author": "Positive_Tennis_5657",
+                                      "text": "Noted.",
+                                      "subreddit": "PcBuildHelp",
+                                      "upvotes": 1,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt79ag/",
+                                      "replies": [
+                                        {
+                                          "commentId": "nntafbv",
+                                          "author": "0nlythebest",
+                                          "text": "You can upgrade the ram later once prices go down. For now just get the cheap model. Only 1-2% different any ways",
+                                          "subreddit": "PcBuildHelp",
+                                          "upvotes": 1,
+                                          "depth": 9,
+                                          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntafbv/",
+                                          "replies": [
+                                            {
+                                              "commentId": "nntcdv9",
+                                              "author": "Positive_Tennis_5657",
+                                              "text": "It seems with the AI thing going on, it gonna be at least 2 or 3 years before anything changes, and it doesn't even guarantee to have a price decrease and considered inflation. It just seems to be exhausting to upgrade later. But it is valid that the differences are minimal, as most people said. So if I downgrade the RAM, I would still go for 64 GB, and keep it until things broke or I must upgrade it.",
+                                              "subreddit": "PcBuildHelp",
+                                              "upvotes": 1,
+                                              "depth": 10,
+                                              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntcdv9/",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nnsivuf",
+          "author": "Scout687",
+          "text": "I would get what you want and start shopping deals. Part picker isnt the only place to obtain items (ot doesnt search enough websites or show sales always). So wait for black friday and cyber Monday and all that and see what you can get for less. Otherwise you can get a pre-built right now with a 9800x3d and 5070 to for like $1800",
+          "subreddit": "PcBuildHelp",
+          "upvotes": 2,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsivuf/",
+          "replies": [
+            {
+              "commentId": "nnsuuov",
+              "author": "xcjb07x",
+              "text": "yeah, it doesnt show combos available on newegg or microcenter, which can help you save a bit or get a cpu cooler for free  \nedit: i didnt realized that op was already using the cpu cooler deal on newegg, mb",
+              "subreddit": "PcBuildHelp",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsuuov/",
+              "replies": []
+            },
+            {
+              "commentId": "nnsv3nv",
+              "author": "Positive_Tennis_5657",
+              "text": "I saw a few prebuilt, and they got a good CPU and GPU, but the other parts are pretty questionable. I am sure that for the majority of the time, they are fine. But with cheaper parts, more potential issues. My biggest issue with the build is the GPU; I can't find reliable data on what is the performance and quality of the base tier model vs the high tier model GPU, like Asus Prime vs Asus TUF. Let me know if you know anything related to that.",
+              "subreddit": "PcBuildHelp",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsv3nv/",
+              "replies": [
+                {
+                  "commentId": "no25hya",
+                  "author": "Spartan3793",
+                  "text": "You're not finding reliable data on the differences between the card bc the 50 series are all pretty much comparable to each other. This is really the first gen where brand doesn't matter. They all perform essentially the same in efficiency, noise, and temps. Just grab the one closest to msrp, undervolt, and profit.",
+                  "subreddit": "PcBuildHelp",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/no25hya/",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nnsn3zp",
+          "author": "Eclipse_Galian",
+          "text": "https://www.buildcores.com/builds/o27dKFQdc?share=true\n\nIt doesn't have all 3d parts but just look at the parts list",
+          "subreddit": "PcBuildHelp",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsn3zp/",
+          "replies": []
+        },
+        {
+          "commentId": "nnspvgs",
+          "author": "tht1guy63",
+          "text": "What resolution? If 4k you dont need x3d. 1440p you dont need x3d unless you want to be super competetive. Id go 7800x3d myself if i were in the market and put the extra money elsewhere. Same with ram you dont need 64gb save the money get 32gb, take what you have back if you can.",
+          "subreddit": "PcBuildHelp",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnspvgs/",
+          "replies": [
+            {
+              "commentId": "nnsu5vl",
+              "author": "Positive_Tennis_5657",
+              "text": "My current laptop has 32 GB of RAM, and opening like 9 tabs already eats up 18 GB. And I don't want to upgrade the RAM again for at least 5 to 6 years.",
+              "subreddit": "PcBuildHelp",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsu5vl/",
+              "replies": [
+                {
+                  "commentId": "nnsvye9",
+                  "author": "xcjb07x",
+                  "text": "dont use chrome dude. opera gx uses 3.6gb of ram with 6 1080 youtube vidoes open at once (i just barely tested it). Im not sponsored, chrome is just ass",
+                  "subreddit": "PcBuildHelp",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsvye9/",
+                  "replies": [
+                    {
+                      "commentId": "nnsyyr5",
+                      "author": "Positive_Tennis_5657",
+                      "text": "I will try that out. My thought was, if I already spent $2k+ for a pc that I am using for like 4 years at least. Also note that the majority of my day is spent on the PC, for work and hobbies. So I just max out those things and forget about it. It's like $150 different between 32 GB and 64 GB, that's gonna be good for maybe 7 years.",
+                      "subreddit": "PcBuildHelp",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsyyr5/",
+                      "replies": [
+                        {
+                          "commentId": "nnszjgv",
+                          "author": "xcjb07x",
+                          "text": "Oh, I agree with 64gb too. I wish I had gotten 64gb, but it\u2019s not worth spending 350 then having to deal with selling my current 32gb kit.",
+                          "subreddit": "PcBuildHelp",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnszjgv/",
+                          "replies": [
+                            {
+                              "commentId": "nnt4qpc",
+                              "author": "Positive_Tennis_5657",
+                              "text": " Yeah, value-wise, the 64GB is bad compared to the 32GB. But I guess I paid for the next 6-7 years without touching or upgrading that RAM unless it gets defective, never have ram limits in the back of my head.",
+                              "subreddit": "PcBuildHelp",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt4qpc/",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nnsrqcu",
+          "author": "Compilingthings",
+          "text": "Just for gaming? You game in 1440-4K?\nOr do you roll 1080p. If 1440-4K, go with the 5080,",
+          "subreddit": "PcBuildHelp",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsrqcu/",
+          "replies": [
+            {
+              "commentId": "nnstn8y",
+              "author": "Positive_Tennis_5657",
+              "text": "I do 1440p.",
+              "subreddit": "PcBuildHelp",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnstn8y/",
+              "replies": [
+                {
+                  "commentId": "nnsus29",
+                  "author": "Compilingthings",
+                  "text": "You gain more fps from the 5080 than the 9800x3d at 1440p,at 1080 I would go 9800x3d. That\u2019s how I see it anyway.",
+                  "subreddit": "PcBuildHelp",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsus29/",
+                  "replies": [
+                    {
+                      "commentId": "nnsww3a",
+                      "author": "Positive_Tennis_5657",
+                      "text": "I took that into consideration already, but there are a few questions that come from it.   \n1. The low-tier model of the 5080 (in this case is the Asus Prime, or PNY OC). I don't find too much info on their quality and thermal performance of those cards. The majority of people I read and watched online use a high-tier card like the TUF or Aorus Master. Which is $1300+  \n2. The 9800x3d is only 5% increase in gaming performance, but a good amount of increase in thermal performance and productivity tasks compared to the 7800X3D. Since I don't want to get another CPU in at least 4-5 years, I would spend a bit more to get the relatively best CPU now.",
+                      "subreddit": "PcBuildHelp",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnsww3a/",
+                      "replies": [
+                        {
+                          "commentId": "nntek6j",
+                          "author": "Compilingthings",
+                          "text": "That\u2019s why I asked if it was just for gaming, I run 9800x3d and sapphire nitro 9070xt it meets my needs, I barely game now though. I\u2019m looking for 2 3090\u2019s to start playing with llm\u2019s, you will love your choice either way. GG bro, have fun with that new pc.",
+                          "subreddit": "PcBuildHelp",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntek6j/",
+                          "replies": [
+                            {
+                              "commentId": "nntfjle",
+                              "author": "Positive_Tennis_5657",
+                              "text": "Thank you bro. My brain is so done with all the researching. I just don't know if I want to nerf my overkill build a bit to get the 5080 \"low-tier\" or keep my build with the 5070Ti \"high-tier\" card.",
+                              "subreddit": "PcBuildHelp",
+                              "upvotes": 1,
+                              "depth": 6,
+                              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntfjle/",
+                              "replies": [
+                                {
+                                  "commentId": "nnthhmw",
+                                  "author": "Compilingthings",
+                                  "text": "Ether way you win. \ud83c\udfc6",
+                                  "subreddit": "PcBuildHelp",
+                                  "upvotes": 1,
+                                  "depth": 7,
+                                  "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnthhmw/",
+                                  "replies": [
+                                    {
+                                      "commentId": "nntiuli",
+                                      "author": "Positive_Tennis_5657",
+                                      "text": "True, maybe I just want to optimize too much. Just go broke and max out the specs.",
+                                      "subreddit": "PcBuildHelp",
+                                      "upvotes": 1,
+                                      "depth": 8,
+                                      "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nntiuli/",
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nnt5ik8",
+          "author": "Positive_Tennis_5657",
+          "text": "So are we all agreeing on downgrading the SSD to Gen 4?",
+          "subreddit": "PcBuildHelp",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1oru9z4/worth_downgrading_cpussd_for_a_better_gpu_9800x3d/nnt5ik8/",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "1t3oqme",
+      "author": "tadmeister69",
+      "text": "Quiet Gaming PC part review - any advice?\n\nI'm looking to build my first PC after buying all others pre-built. I'd like advice on if I should swap out any of the parts below? I'm in the UK and looking to spend \\~\u00a32,500 (less if possible). I already have a 1440 monitor which I'll reuse (only supports G-Sync hence going for NVIDIA, although I expect DLSS will help if I ever go to 4k anyway).\n\nPCPartPicker Part List: [https://uk.pcpartpicker.com/list/xm4gtC](https://uk.pcpartpicker.com/list/xm4gtC)\n\n\n\nCPU: AMD Ryzen 7 9800X3D 4.7 GHz 8-Core Processor  (\u00a3372.60 @ Amazon UK) \n\nCPU Cooler: ARCTIC Liquid Freezer III Pro A-RGB 360 77 CFM Liquid CPU Cooler  (\u00a374.98 @ Amazon UK) \n\nMotherboard: MSI MAG X870 TOMAHAWK WIFI ATX AM5 Motherboard  (\u00a3247.99 @ Amazon UK) \n\nMemory: Kingston FURY Beast RGB 32 GB (2 x 16 GB) DDR5-6000 CL30 Memory  (\u00a3399.95 @ Overclockers.co.uk) \n\nStorage: Crucial P510 W/Heatsink 2 TB M.2-2280 PCIe 5.0 X4 NVME Solid State Drive  (\u00a3227.99 @ Amazon UK) \n\nVideo Card: MSI GAMING TRIO OC GeForce RTX 5070 Ti 16 GB Video Card  (\u00a3899.99 @ Amazon UK) \n\nCase: Fractal Design Define 7 Dark ATX Mid Tower Case  (\u00a3153.94 @ CCL Computers) \n\nPower Supply: be quiet! Power Zone 2 850 W 80+ Platinum Certified Fully Modular ATX Power Supply  (\u00a3116.43 @ Amazon UK) \n\nTotal: \u00a32493.87\n\nPrices include shipping, taxes, and discounts when available\n\nGenerated by PCPartPicker 2026-05-04 18:37 BST+0100",
+      "subreddit": "PcBuild",
+      "upvotes": 1,
+      "depth": 0,
+      "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/",
+      "replies": [
+        {
+          "commentId": "ojwkupo",
+          "author": "AutoModerator",
+          "text": "Remember to check our discord where you can get faster responses! \nhttps://discord.com/invite/pchh\nIf you are trying to find a price for your computer, r/PC_Pricing is our recommended source for finding out how much your PC is worth! \n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/PcBuild) if you have any questions or concerns.*",
+          "subreddit": "PcBuild",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojwkupo/",
+          "replies": []
+        },
+        {
+          "commentId": "ojwnlpc",
+          "author": "Present-Feeling2701",
+          "text": "that ram seems bit expensive for what you're getting - you can find similar speeds for way less money if you drop the rgb",
+          "subreddit": "PcBuild",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojwnlpc/",
+          "replies": [
+            {
+              "commentId": "ojwqsnt",
+              "author": "tadmeister69",
+              "text": "Thanks.  I'll look into that.  RAM prices just still seem ludicrous on the whole. I was hoping they'd drop but doesn't look like they will any time soon still. :(",
+              "subreddit": "PcBuild",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojwqsnt/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ojwnort",
+          "author": "Haunting-Kick-4024",
+          "text": "Buy these three instead and get a 5080  \n\n\nhttps://preview.redd.it/b4is5lxvr5zg1.jpeg?width=1206&amp;format=pjpg&amp;auto=webp&amp;s=87886c519a3ac675a6557cb985d40756a123331e",
+          "subreddit": "PcBuild",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojwnort/",
+          "replies": [
+            {
+              "commentId": "ojwnukl",
+              "author": "Haunting-Kick-4024",
+              "text": "https://preview.redd.it/2qugt2d0s5zg1.jpeg?width=1206&amp;format=pjpg&amp;auto=webp&amp;s=98aa609625e4229bf4cef7e278a5216c1e1e3f72",
+              "subreddit": "PcBuild",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojwnukl/",
+              "replies": [
+                {
+                  "commentId": "ojwohlc",
+                  "author": "Haunting-Kick-4024",
+                  "text": "U should not pay 2500 and get a 5070 ti u can get a prebuilt for around 2100-2300",
+                  "subreddit": "PcBuild",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojwohlc/",
+                  "replies": [
+                    {
+                      "commentId": "ojwqjso",
+                      "author": "tadmeister69",
+                      "text": "Thanks. I choose a lot of the parts to try to get a quieter build (I'm in a box room, so if its loud it gets really annoying). I've seen different opinions on if the parts make that much difference aside from the GPU though. ",
+                      "subreddit": "PcBuild",
+                      "upvotes": 1,
+                      "depth": 4,
+                      "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojwqjso/",
+                      "replies": [
+                        {
+                          "commentId": "ojwtd8l",
+                          "author": "Haunting-Kick-4024",
+                          "text": "Changing the psu ram and board won\u2019t affect the noise level. The components that will matter more are the case if it is getting good ventilation, the fans ,the aio cooler an air cooler might even serve u better aio are mostly for aesthetic purposes with the screens and rgb and the gpu if u have coil whine ",
+                          "subreddit": "PcBuild",
+                          "upvotes": 1,
+                          "depth": 5,
+                          "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojwtd8l/",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ojwrk4w",
+          "author": "fuddyduddyc",
+          "text": "Noise mostly comes from fans in the system - whether from case fans, GPU cooling fans, PSU fan, CPU cooler fans, etc.  So setting custom fan curves for those components (if possible) will be essential in getting you low noise levels.\n\nSuggestions below to get the list down to \u00a32303 while adding some components that, baseline, should be quieter and will be quieter still once you set custom fan curves.\n\n* **CPU Cooler**:  A 240m AIO is plenty, and the be quiet unit seems very quiet (including the pump) based on reviews.  The Arctic units generally are good in terms of cooling performance, but the little VRM cooling fan can be noisy.\n* **Motherboard**:  For gaming, no benefit to the X870 chipset.  The B850 Tomahawk will do the same for a good amount less cost.\n* **Memory**:  Less expensive same spec RAM.\n* **Storage**:  Went with the non-heatsink P510 for a few pounds less, since the motherboard has a heatsink.\n* **Video Card**:  Less expensive 5070 Ti that should provide similarly low noise levels  - see [this review](https://www.techpowerup.com/review/pny-geforce-rtx-5070-ti-epic-x-rgb-plus-oc/39.html) where the PNY 5070 Ti was only 2dB louder than the Gaming Trio under load.  Lower the power limits and/or underclock and the GPU should be quieter still (less heat, lower temps, slower the fans need to spin).\n* **Case**:  Switched to the Fractal Meshify 3 as it will allow for much better airflow and uses better fans - two very good 140mm PWM Momentum fans, better flow and quieter than the 140mm non-PWM fans in the Define.  Also added a Momentum 120mm PWM fan for exhaust at the rear.\n* **Power Supply**:  1200w is massive overkill for the system, but the NZXT unit it better quality than the Power Zone and, with the massively overkill max rated output, can power the system under load without even stressing the unit (so essentially no cooling fan needed), for the same price.\n\n[PCPartPicker Part List](https://uk.pcpartpicker.com/list/7wtCzv)\n\n|Type|Item|Price|\n|:-|:-|:-|\n|**CPU**|[AMD Ryzen 7 9800X3D 4.7 GHz 8-Core Processor](https://uk.pcpartpicker.com/product/fPyH99/amd-ryzen-7-9800x3d-47-ghz-8-core-processor-100-1000001084wof)|\u00a3372.60 @ Amazon UK|\n|**CPU Cooler**|[be quiet! Pure Loop 3 Liquid CPU Cooler](https://uk.pcpartpicker.com/product/Jjh2FT/be-quiet-pure-loop-3-liquid-cpu-cooler-bw027)|\u00a364.98 @ Amazon UK|\n|**Motherboard**|[MSI MAG B850 TOMAHAWK WIFI ATX AM5 Motherboard](https://uk.pcpartpicker.com/product/w6dMnQ/msi-mag-b850-tomahawk-wifi-atx-am5-motherboard-mag-b850-tomahawk-wifi)|\u00a3179.99 @ Amazon UK|\n|**Memory**|[Patriot Viper Venom 32 GB (2 x 16 GB) DDR5-6000 CL30 Memory](https://uk.pcpartpicker.com/product/4cCCmG/patriot-viper-venom-32-gb-2-x-16-gb-ddr5-6000-cl30-memory-pvv532g600c30k)|\u00a3349.99 @ Overclockers.co.uk|\n|**Storage**|[Crucial P510 2 TB M.2-2280 PCIe 5.0 X4 NVME Solid State Drive](https://uk.pcpartpicker.com/product/z98Pxr/crucial-p510-2-tb-m2-2280-pcie-50-x4-nvme-solid-state-drive-ct2000p510ssd8)|\u00a3225.83 @ Amazon UK|\n|**Video Card**|[PNY OC GeForce RTX 5070 Ti 16 GB Video Card](https://uk.pcpartpicker.com/product/XRvscf/pny-oc-geforce-rtx-5070-ti-16-gb-video-card-vcg5070t16tfxpb1-o)|\u00a3839.99 @ Amazon UK|\n|**Case**|[Fractal Design Meshify 3 ATX Mid Tower Case](https://uk.pcpartpicker.com/product/Phm2FT/fractal-design-meshify-3-atx-mid-tower-case-fd-c-mes3a-02)|\u00a3129.94 @ Amazon UK|\n|**Power Supply**|[NZXT C1200 1200 W 80+ Gold Certified Fully Modular ATX Power Supply](https://uk.pcpartpicker.com/product/RHfnTW/nzxt-c1200-1200-w-80-gold-certified-fully-modular-atx-power-supply-pa-2g1bb-us)|\u00a3119.99 @ Scan|\n|**Case Fan**|[Fractal Design Momentum 67.34 CFM 120 mm Fan](https://uk.pcpartpicker.com/product/6Ttkcf/fractal-design-momentum-6734-cfm-120-mm-fan-fd-f-mo1-1201)|\u00a319.99 @ AWD-IT|\n|*Prices include shipping, taxes, rebates, and discounts*|||\n|**Total**|**\u00a32303.30**||\n|Generated by [PCPartPicker](https://pcpartpicker.com) 2026-05-04 19:00 BST+0100|||",
+          "subreddit": "PcBuild",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojwrk4w/",
+          "replies": [
+            {
+              "commentId": "ojy8xhg",
+              "author": "tadmeister69",
+              "text": "Thanks a ton, I think I'll definitely swap for a number of those parts!",
+              "subreddit": "PcBuild",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojy8xhg/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ojwrpre",
+          "author": "Diligent_Winter_1841",
+          "text": "You can get ram for cheaper  \nOption 1 pc  \nGPU: RTX 4090 (\u00a31300) quzo uk  \nCPU:ryzen 9800x3d (\u00a3306) shop.bcs.com  \nMobo:X870 aorus elite Wi-Fi (\u00a3269)  \nRAM: Corsair vengeance rgb 2x16gb (\u00a3229) curry\u2019s pc world  \nSSD: WD\\_Black 1TB nvme (\u00a379.99) Argos  \nCPU cooler: TZMRIT Aio Waterp cooler (\u00a3119.99) Amazon  \nCase: gamemax hype black (\u00a379.99) AWD IT  \nPSU:Corsair RM1000e 1000w psu (\u00a3113.99) amazon  \nTotal: \u00a32497  \nEdit: pls reply this took me 27mins",
+          "subreddit": "PcBuild",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojwrpre/",
+          "replies": [
+            {
+              "commentId": "ojy9ho9",
+              "author": "tadmeister69",
+              "text": "Thank you so much! I never thought for a second that PC world would win out on RAM prices but I think that's the winner right there! Also similarly shocked Argos has a 1TB NVME for \u00a380! I'll deffinitely be grabbing that RAM and checking out the other parts too. Thank you so much for your time!",
+              "subreddit": "PcBuild",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojy9ho9/",
+              "replies": [
+                {
+                  "commentId": "ojycefh",
+                  "author": "fuddyduddyc",
+                  "text": "Those prices are not real. If you actually go to the Curry\u2019s pc world website, every single RAm listing under market value (which any 32GB listing under \u00a3300 is) is listed as out of stock - essentially click bait.  Edit:  [Here's a link to Corsair DDR5 RAM at Curry's](https://www.currys.co.uk/computing/components-and-upgrades/computer-memory/corsair?prefn2=searchFilter2&amp;prefv2=32%20GB&amp;prefn1=searchFilter4&amp;prefv1=16%20GB%20x%202).\n\nSame for other components like SSD - you\u2019re unfortunately not going to find a 1TB NVME for less than \u00a3100 in today\u2019s market. Actually add the drive to the shopping trolley and it\u2019s listed as unavailable.",
+                  "subreddit": "PcBuild",
+                  "upvotes": 1,
+                  "depth": 3,
+                  "threadUrl": "https://www.reddit.com/r/PcBuild/comments/1t3oqme/quiet_gaming_pc_part_review_any_advice/ojycefh/",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentId": "1tltzyn",
+      "author": "SuperSoniq_YT",
+      "text": "Getting a 1440p monitor - what exactly do I upgrade?\n\nHi folks, newbie builder here. Built my gaming PC last summer with the following specs:  \n**CPU**: [AMD Ryzen 5 7600X 4.7 GHz 6-Core Processor](https://de.pcpartpicker.com/product/66C48d/amd-ryzen-5-7600x-47-ghz-6-core-processor-100-100000593wof)\n\n**RAM**: [Kingston FURY Beast 32 GB (2 x 16 GB) DDR5-6000 CL30 Memory](https://de.pcpartpicker.com/product/q7LdnQ/kingston-fury-beast-32-gb-2-x-16-gb-ddr5-6000-cl30-memory-kf560c30bbek2-32)\n\n**Storage**: [Kingston NV3 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://de.pcpartpicker.com/product/gdBzK8/kingston-nv3-2-tb-m2-2280-pcie-40-x4-nvme-solid-state-drive-snv3s2000g)\n\n**Motherboard**: [Gigabyte B650M GAMING WIFI6E Micro ATX AM5 Motherboard](https://de.pcpartpicker.com/product/sNQwrH/gigabyte-b650m-gaming-wifi6e-micro-atx-am5-motherboard-b650m-gaming-wifi6e)\n\n**GPU**: [Sapphire PULSE Radeon RX 9060 XT 8 GB Video Card](https://de.pcpartpicker.com/product/DgFCmG/sapphire-pulse-radeon-rx-9060-xt-8-gb-video-card-11350-04-20g)\n\n**PSU**: [Corsair CX (2023) 650 W 80+ Bronze Certified ATX Power Supply](https://de.pcpartpicker.com/product/nNTZxr/corsair-cx-2023-650-w-80-bronze-certified-atx-power-supply-cp-9020278-na)\n\nThe full build list can be found here on PCPartPicker: [https://de.pcpartpicker.com/list/Xxxnv4](https://de.pcpartpicker.com/list/Xxxnv4)\n\nIn terms of context, I've grown up playing games on very low-end hardware (I'm talking single/dual-core Intel CPUs and 4GB ram), so I'm not interested in playing at 4K with Ray Tracing or playing at the highest settings possible- medium/high are enough for me. My main games currently consist of games such as Minecraft, Elden Ring Nightreign, GTA V, and other 2D games (visual novels, pixel-art games). Other uses include coding, game development and lightweight video editing.\n\nGiven that I'm buying a new monitor, I figured it'd be nice to go with a 27 inch 1440p one with a minimum of 120Hz. I've heard a lot of high praise online surrounding higher refresh rates, and from some light research, it doesn't seem like I need to do a drastic overhaul of my setup to continue gaming at a smooth performance. I'd love to be able to play with 120FPS @ 1440P, and I'm willing to use FSR if that means spending less on upgrade parts.\n\nIn terms of budget, I've got a \u20ac1000. I'm from Ireland, and I'd prefer to buy from Amazon Ireland or Amazon Germany if possible. As for the monitor, I'm still searching around on Amazon for a cheap enough option (&lt;\u20ac200) with swivel and tilt- it's hard to pick when most of them have almost no reviews and sketchy AI images. I assume my current GPU isn't powerful enough to handle 1440P gaming, so I did spot a RX 9070 non-XT that seemed okay in pricing ([https://amzn.eu/d/0c1JYkkA](https://amzn.eu/d/0c1JYkkA)). I'd prefer to stick with AMD since their GPUs seem to use less power and cost a little less than Nvidia. In regards to the PSU, I'm a little stuck on what to get, since some sources say a 650W is sufficient, while other sources says 750W or higher. I did see a 850W Gold efficiency PSU for a nice price, though I'm unsure if that's overkill or not.\n\nIt's my first post here, so I apologise if I've forgotten any relevant details, or possibly ranted at times. tl;dr: wondering what to upgrade in my PC (or if I need to at all) if I'm getting a 27 inch 1440p monitor, with the intention of playing at 120FPS. Please do advise me if my question is better suited for a different subreddit. Thank you! :)",
+      "subreddit": "buildapc",
+      "upvotes": 1,
+      "depth": 0,
+      "threadUrl": "https://www.reddit.com/r/buildapc/comments/1tltzyn/getting_a_1440p_monitor_what_exactly_do_i_upgrade/",
+      "replies": [
+        {
+          "commentId": "oni80gd",
+          "author": "Bichaelcycle",
+          "text": "Something like this. It's over your budget I know, but you can sell the old GPU and CPU to recoup some funds and this will last you 10 years if you stay on 1440p.\n\n[PCPartPicker Part List](https://ie.pcpartpicker.com/list/myvRQd)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [AMD Ryzen 7 9800X3D 4.7 GHz 8-Core Processor](https://ie.pcpartpicker.com/product/fPyH99/amd-ryzen-7-9800x3d-47-ghz-8-core-processor-100-1000001084wof) | \u20ac442.95 @ Paradigit \n**Video Card** | [ASRock Challenger Radeon RX 9070 XT 16 GB Video Card](https://ie.pcpartpicker.com/product/Q8sMnQ/asrock-challenger-radeon-rx-9070-xt-16-gb-video-card-rx9070xt-cl-16g) | \u20ac703.94 @ Paradigit \n**Power Supply** | [MSI MAG A850GL PCIE5 850 W 80+ Gold Certified Fully Modular ATX Power Supply](https://ie.pcpartpicker.com/product/zF4Zxr/msi-mag-a850gl-pcie5-850-w-80-gold-certified-fully-modular-atx-power-supply-mag-a850gl-pcie5) | \u20ac108.95 @ Paradigit \n | *Prices include shipping, taxes, rebates, and discounts* |\n | **Total** | **\u20ac1255.84**\n | Generated by [PCPartPicker](https://pcpartpicker.com) 2026-05-23 23:29 IST+0100 |",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/1tltzyn/getting_a_1440p_monitor_what_exactly_do_i_upgrade/oni80gd/",
+          "replies": []
+        },
+        {
+          "commentId": "oni9q81",
+          "author": "MagicPistol",
+          "text": "I say just get the monitor first and test it with your current setup to see how it runs. It seems like you don't really need to upgrade anything for the games you play.\n\nAlso, forget about swivel and tilt on a monitor. Just get a dual monitor arm and use your current and new monitor together.",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/1tltzyn/getting_a_1440p_monitor_what_exactly_do_i_upgrade/oni9q81/",
+          "replies": []
+        },
+        {
+          "commentId": "oni9sih",
+          "author": "forevertired1982",
+          "text": "An 8gb card has some limitations even at 1080p with higher texture setting for 1440p you 100% want a 16gb gfx card.",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/1tltzyn/getting_a_1440p_monitor_what_exactly_do_i_upgrade/oni9sih/",
+          "replies": []
+        },
+        {
+          "commentId": "onib5ra",
+          "author": "BaronB",
+          "text": "The Nvidia GPUs are generally more efficient. The 9060 XT uses about 20W more than the slightly more powerful 5060 Ti, and the 9070 XT uses 50W more than slightly more powerful the 5070 Ti. And all of the 7000 and 6000 series GPUs are similarly worse than next closest Nvidia GPU above them in performance. The 9070 non-XT is the one odd ball in AMD's line up, because it is effectively a factory undervolted 9070 XT with 1/8th of the chip disabled.\n\nBut Nvidia are also basically always more expensive than AMD performance / dollar, and especially VRAM / dollar, ignoring the 5060 Ti 8GB vs the 9060 XT 16GB, which isn't a fair fight with today's RAM pricing.\n\nAs for what to get, the 9070 non-XT is a good option for you, especially at around \u20ac550\\~560 with the slower and less power efficient RTX 5070 being closer to 580+.\n\nAs for your PSU, with the 9070, you're only look at another 20\\~40W over the 9060 XT, and you should have a decent bit of headroom with that 650W still. But if you're looking to upgrade the PSU, an NZXT C750 Core isn't too expensive, is well rated, and is *exceptionally* quiet and efficient.\n\n[https://de.pcpartpicker.com/product/CRy8TW/nzxt-c750-core-750-w-80-gold-certified-fully-modular-atx-power-supply-pa-7g3bb-us](https://de.pcpartpicker.com/product/CRy8TW/nzxt-c750-core-750-w-80-gold-certified-fully-modular-atx-power-supply-pa-7g3bb-us)\n\n(Note, the C750 non-Core is a very different PSU and not one I would recommend.)",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/1tltzyn/getting_a_1440p_monitor_what_exactly_do_i_upgrade/onib5ra/",
+          "replies": []
+        },
+        {
+          "commentId": "onicjk8",
+          "author": "dask1",
+          "text": "what monitor you plan to get?  \nin germany right now thats the cheapest i would get:  \n[https://de.pcpartpicker.com/product/Phrp99/lg-ultragear-g6-27g610a-b-270-2560-x-1440-200-hz-monitor-27g610a-b](https://de.pcpartpicker.com/product/Phrp99/lg-ultragear-g6-27g610a-b-270-2560-x-1440-200-hz-monitor-27g610a-b)  \nits a good 1440p ips, high refresh rate, its just that u said that you are a noob so why not also recommending a monitor.  \nnot sure about the stand it came with, but just get a 20$ monitor arm.\n\nyes for most people the GPU that you have right now is a bit insufficient.  \nbut you said it yourself that you dont care about high settings, so why not just getting the monitor and check play your games on the settings you like/want and see yourself if you getting enough fps or not and only than make a decision about upgrading GPU (which i recommend getting 9070xt btw)",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/1tltzyn/getting_a_1440p_monitor_what_exactly_do_i_upgrade/onicjk8/",
+          "replies": []
+        },
+        {
+          "commentId": "onieu4y",
+          "author": "Naerven",
+          "text": "In all honesty start by just plugging in the monitor to your GPU and playing games.  At some point get a better GPU and keep playing games.  Maybe get a higher capacity PSU when necessary.",
+          "subreddit": "buildapc",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/buildapc/comments/1tltzyn/getting_a_1440p_monitor_what_exactly_do_i_upgrade/onieu4y/",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "1t3ospu",
+      "author": "tadmeister69",
+      "text": "Quiet Gaming PC part review - any advice?\n\nI'm looking to build my first PC after buying all others pre-built. I'd like advice on if I should swap out any of the parts below? I'm in the UK and looking to spend \\~\u00a32,500 (less if possible). I already have a 1440 monitor which I'll reuse (only supports G-Sync hence going for NVIDIA, although I expect DLSS will help if I ever go to 4k anyway).\n\n\n\nPCPartPicker Part List:\u00a0[https://uk.pcpartpicker.com/list/xm4gtC](https://uk.pcpartpicker.com/list/xm4gtC)\n\n\n\nCPU: AMD Ryzen 7 9800X3D 4.7 GHz 8-Core Processor (\u00a3372.60 @ Amazon UK)\n\nCPU Cooler: ARCTIC Liquid Freezer III Pro A-RGB 360 77 CFM Liquid CPU Cooler (\u00a374.98 @ Amazon UK)\n\nMotherboard: MSI MAG X870 TOMAHAWK WIFI ATX AM5 Motherboard (\u00a3247.99 @ Amazon UK)\n\nMemory: Kingston FURY Beast RGB 32 GB (2 x 16 GB) DDR5-6000 CL30 Memory (\u00a3399.95 @ Overclockers.co.uk)\n\nStorage: Crucial P510 W/Heatsink 2 TB M.2-2280 PCIe 5.0 X4 NVME Solid State Drive (\u00a3227.99 @ Amazon UK)\n\nVideo Card: MSI GAMING TRIO OC GeForce RTX 5070 Ti 16 GB Video Card (\u00a3899.99 @ Amazon UK)\n\nCase: Fractal Design Define 7 Dark ATX Mid Tower Case (\u00a3153.94 @ CCL Computers)\n\nPower Supply: be quiet! Power Zone 2 850 W 80+ Platinum Certified Fully Modular ATX Power Supply (\u00a3116.43 @ Amazon UK)\n\nTotal: \u00a32493.87\n\nPrices include shipping, taxes, and discounts when available\n\nGenerated by PCPartPicker 2026-05-04 18:37 BST+0100",
+      "subreddit": "PcBuildHelp",
+      "upvotes": 1,
+      "depth": 0,
+      "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1t3ospu/quiet_gaming_pc_part_review_any_advice/",
+      "replies": [
+        {
+          "commentId": "ojwn963",
+          "author": "Ordinary_Horse9984",
+          "text": "build looks solid but that ram seems overpriced for what you're getting - you can find similar specs for much less if you drop the rgb. also the arctic aio might be bit overkill for the 9800x3d, a good air cooler would save you money and still keep temps fine\n\n  \nthat define 7 is great choice for quiet build though, used one in my last setup and it really dampens noise well",
+          "subreddit": "PcBuildHelp",
+          "upvotes": 2,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1t3ospu/quiet_gaming_pc_part_review_any_advice/ojwn963/",
+          "replies": [
+            {
+              "commentId": "ojwr773",
+              "author": "tadmeister69",
+              "text": "Thanks for the feedback. Good to know about the Define 7 as it was hard trying to find what seemed like a good sound dampening case. ",
+              "subreddit": "PcBuildHelp",
+              "upvotes": 1,
+              "depth": 2,
+              "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1t3ospu/quiet_gaming_pc_part_review_any_advice/ojwr773/",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ojye546",
+          "author": "ohnoitssobig",
+          "text": "Not sure why you call this quiet. It probably will be just average noise. For a quieter build you definitely want a reduce CPU (9700x) and GPU wattage.",
+          "subreddit": "PcBuildHelp",
+          "upvotes": 1,
+          "depth": 1,
+          "threadUrl": "https://www.reddit.com/r/PcBuildHelp/comments/1t3ospu/quiet_gaming_pc_part_review_any_advice/ojye546/",
+          "replies": []
+        }
+      ]
+    }
+  ]
 }

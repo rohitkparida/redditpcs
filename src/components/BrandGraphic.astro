@@ -1,0 +1,99 @@
+---
+interface Props {
+  brand: string;
+  name: string;
+  size?: 'small' | 'large';
+}
+
+const { brand, name, size = 'small' } = Astro.props;
+
+const normBrand = brand.toLowerCase().trim();
+const isAmd = normBrand === 'amd';
+const isNvidia = normBrand === 'nvidia';
+const isIntel = normBrand === 'intel';
+
+// Styling themes
+let bgGradient = 'from-zinc-800 via-zinc-900 to-zinc-950';
+let overlayColor = 'text-zinc-700/10 dark:text-zinc-800/20';
+let glowColor = 'bg-amber-500/10 dark:bg-amber-400/5';
+let badgeText = 'TECH';
+let badgeColor = 'bg-zinc-800 text-zinc-400 border-zinc-700';
+
+if (isAmd) {
+  bgGradient = 'from-orange-650 via-rose-900 to-zinc-950';
+  overlayColor = 'text-orange-500/10 dark:text-orange-500/5';
+  glowColor = 'bg-orange-500/20 dark:bg-orange-500/10';
+  badgeText = 'AMD';
+  badgeColor = 'bg-orange-950/30 text-orange-400 border-orange-900/40';
+} else if (isNvidia) {
+  bgGradient = 'from-emerald-950 via-zinc-950 to-zinc-950';
+  overlayColor = 'text-emerald-500/10 dark:text-emerald-500/5';
+  glowColor = 'bg-emerald-500/20 dark:bg-emerald-500/10';
+  badgeText = 'NVIDIA';
+  badgeColor = 'bg-emerald-950/30 text-emerald-400 border-emerald-900/40';
+} else if (isIntel) {
+  bgGradient = 'from-blue-950 via-indigo-950 to-zinc-950';
+  overlayColor = 'text-blue-500/10 dark:text-blue-500/5';
+  glowColor = 'bg-blue-500/20 dark:bg-blue-500/10';
+  badgeText = 'INTEL';
+  badgeColor = 'bg-blue-950/30 text-blue-400 border-blue-900/40';
+}
+
+const heightClass = size === 'large' ? 'h-56 md:h-64' : 'h-32';
+const modelLabel = name.replace(/^(AMD|Intel|NVIDIA|WD|Noctua|Samsung|ARCTIC|Crucial|Corsair)\s+/i, '');
+---
+
+<div class={`relative rounded-xl overflow-hidden bg-gradient-to-br ${bgGradient} border border-zinc-200/10 dark:border-zinc-800/80 shadow-md ${heightClass} flex flex-col justify-between p-4 group transition-all duration-300 select-none`}>
+  {/* Cybernetic ambient radial glow */}
+  <div class={`absolute -right-12 -top-12 w-32 h-32 rounded-full ${glowColor} blur-2xl group-hover:scale-125 transition-transform duration-500 pointer-events-none`}></div>
+  
+  {/* Technical Brand Watermark Background */}
+  <div class={`absolute inset-0 flex items-center justify-center font-black ${overlayColor} ${size === 'large' ? 'text-7xl md:text-8xl' : 'text-4xl'} tracking-tighter select-none pointer-events-none uppercase font-sans z-0`}>
+    {badgeText}
+  </div>
+
+  {/* Header Info */}
+  <div class="flex justify-between items-start z-10">
+    <span class={`text-[9px] font-extrabold uppercase tracking-wider px-2 py-0.5 rounded border ${badgeColor}`}>
+      {badgeText}
+    </span>
+    {/* Dynamic Silicon Circuit Indicator */}
+    <svg class="w-4 h-4 text-zinc-500/30 dark:text-zinc-600/40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+      <circle cx="12" cy="12" r="3" />
+      <path d="M12 2v7m0 6v7M2 12h7m6 0h7" />
+    </svg>
+  </div>
+
+  {/* Visual Graphic Representation */}
+  <div class="flex-1 flex items-center justify-center py-2 z-10">
+    {isAmd && (
+      <div class="w-10 h-10 rounded bg-gradient-to-tr from-orange-500 to-amber-400 flex items-center justify-center shadow-lg shadow-orange-500/20">
+        <span class="text-xs font-black text-zinc-950 font-sans">9</span>
+      </div>
+    )}
+    {isNvidia && (
+      <div class="w-10 h-10 rounded-full border-2 border-emerald-500/40 flex items-center justify-center">
+        <div class="w-6 h-6 rounded-full bg-emerald-500/20 border-2 border-emerald-500 flex items-center justify-center animate-pulse">
+          <span class="text-[8px] font-black text-emerald-400 font-sans">RTX</span>
+        </div>
+      </div>
+    )}
+    {isIntel && (
+      <div class="w-10 h-10 border border-blue-500/30 rounded flex flex-col items-center justify-center p-1 bg-blue-950/40">
+        <div class="w-full h-1 bg-blue-500 rounded-full mb-1 animate-pulse"></div>
+        <span class="text-[8px] font-bold text-blue-400 font-sans">ARC</span>
+      </div>
+    )}
+    {!isAmd && !isNvidia && !isIntel && (
+      <div class="w-8 h-8 rounded border border-zinc-700 flex items-center justify-center text-zinc-500">
+        ⚡
+      </div>
+    )}
+  </div>
+
+  {/* Footer Model Label */}
+  <div class="z-10 flex flex-col justify-end">
+    <span class="text-[9px] font-bold text-zinc-500 uppercase tracking-widest leading-none mb-0.5">Hardware Model</span>
+    <span class="font-extrabold text-xs text-zinc-150 dark:text-zinc-200 group-hover:text-white transition-colors truncate max-w-full font-sans">{modelLabel}</span>
+  </div>
+</div>

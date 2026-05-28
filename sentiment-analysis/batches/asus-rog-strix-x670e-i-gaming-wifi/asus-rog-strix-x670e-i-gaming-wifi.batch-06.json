@@ -1,0 +1,269 @@
+{
+  "productName": "asus-rog-strix-x670e-i-gaming-wifi",
+  "batchIndex": 6,
+  "totalBatches": 6,
+  "comments": [
+    {
+      "commentId": "1j971dk",
+      "text": "Poor performance in Minecraft with RTX on 5000?\n\nI have noticed a very odd behavior with Minecraft Bedrock Edition, where after enabling ray tracing, I get a worse than 4090 (or 3090 for that matter) level of performance, while the GPU usage hovers around 12%-20% or so.\n\nThe only way to improve the situation is to reduce chunk distance to 8 chunks to get reasonable performance in the survival world.\n\nNeon District RTX demo performs even worse, not even reaching 30 fps on 24 chunks. This map also oberserves even lower GPU usage, about 6%-7% GPU usage, while again, no single CPU thread is at full load either.\n\n[Minecraft Preview v1.21.70.24 running 20 FPS on a 5090 while at 1080p](https://preview.redd.it/61xrnz39o5oe1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=302f0a488f0bcf9a2aaa9639b98546e60e0553db)\n\nAs of writing this post, my configuration is as follows:\n\n* AMD Ryzen 9 7950X3D CPU\n* Corsair Vengeance RGB DDR5 96GB (2x48) 6000CL30 RAM\n* ASUS ROG Strix X670E-E Gaming WIFI (with latest bios, 2904) Motherboard\n* MSI RTX 5090 Vanguard SOC (with latest NV drivers, 572.70) GPU\n\nThings I have tried:\n\n* Multiple versions of Minecraft\n* Swapping DLSS file around (using Bedrock Launcher)\n* Multiple versions of NV drivers\n* Multiple BIOS revisions\n* Reverting PCIe from auto/5.0 to 4.0\n\nI am going insane, as with all other games I've tried so far (which I don't have many of, I mainly got this GPU for blender work) the performance is on the level I'd expect it to be.\n\nDoes anyone else have such issues? I haven't found anything relating to this problem so far.\n\n**EDIT:**\n\nAdditionally, I DID check that VSync is DISABLED, but that changed nothing.\n\nMy screen is a 270 Hz refresh rate screen, so that is not the problem here either.\n\nBetween the three GPUs, I never touched anything besides the card in the mobo itself initially, except for mandatory 5090 drivers (which I had also run with 3090 just fine before installing 5090!)\n\n**EDIT 2:**\n\nI have found [this](https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5090-review/5) article on Tom's Hardware, showing about the same performance I get in a survival world:\n\n[RTX 5090 \\(with 9800X3D\\) performs the worst on the chart.](https://preview.redd.it/3odqm4kgeioe1.png?width=970&amp;format=png&amp;auto=webp&amp;s=7bd5fe3d0654938064508b142d93842eb5b0e878)\n\nAnd since I ran with 7950X3D when I wrote the post, my average FPS was 41-49 or so.\n\nQuote: \"Nvidia is looking into the situation.\"\n\nI really hope this gets fixed soon as this lineup of GPUs had a ton of issues and this one just adds to the pile, which is incredibly disappointing.\n\nAdditionally, I can confirm that 9950X3D performs just slightly better than 7950X3D, raising my average FPS up to  50-55 on average in the same spot:\n\n[Average FPS slightly improved with 9950X3D](https://preview.redd.it/ww9v9sx6fioe1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=4789a56fb46d4a466654718f93cf1430f1704061)\n\nThis is still unacceptable for obvious reasons.\n\nI appreciate y'all help a lot, but as of now it seems I got the confirmation of it being NVIDIA doing shady driver magic.\n\n**EDIT 3: (Jun 3rd, 2025)**\n\nI keep receiving \"is this fixed yet?\" sometimes.\n\nWhile I share your frustration, please don't ask this question. I will issue another edit whenever more information comes out or the issue gets resolved.\n\nAs much as I understand the feelings, I have replied countless times and would prefer not to unless it brings something new to the table.\n\nThank you for understanding &lt;З",
+      "upvotes": 35,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "mi2j1ai",
+          "text": "I just put in a 5090 and the upscaling toggle in Minecraft Bedrock video settings is now greyed out. I run windows at 4k always and the 5090 does ok with my rtx pack (realsourcepack realistic rtx)  I have an i9 14900k. When I get into villager farms or areas with lots of mobs is where it can slow down alot, it's typically 75 to 115 FPS, but it doesn't look like it. When using Better RTX mods this really lowers the frame rate by 1/3. It is still better than the 4090 at 4k with no upscaling, but only like 25%. My 4090 is in my older PC now with an i9 11900k and it matches the performance it did in the newer PC with the 14900K so CPU doesn't make much of a difference Here. The RTX toggle glitch from a Minecraft update wasn't it either because upscaling worked in this PC and it still works on my older PC with the 4090 in it",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal ownership or usage experience with the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+          "replies": [
+            {
+              "commentId": "mi72z62",
+              "text": "Please read the edit 2 of the post, it clears things up quite a lot.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ml591em",
+          "text": "April 2nd and still the upscaling is greyed out. Yes the 5090 plays better than my 4090 with upscaling off, but of course the 4090 smokes the 5090 with upscaling on. There's been a couple game updates and several Nvidia driver updates, none of the Nvidia App smooth motion or built-in AI stuff works with Minecraft. Probably cuz Microsoft blocks it",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User compares the product against alternatives, providing value context.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+          "replies": [
+            {
+              "commentId": "ml5o96x",
+              "text": "I assume you're on an intel platform, thus your performance is not as screwed as in my case, which is nice. I'd assume Mojang will have to either update DLSS DLLs and/or NVIDIA doing driver patches. \n\nBut yeah, issues still here, unfortunately.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Comment expresses negative sentiment, citing issues, poor value, or disappointment.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mu88o6w",
+          "text": "Hey, Just upgraded to a 7950x3d/5090 and 64gb 6000mhz CL30 ram and I've no upscaling option and the frame rate looks awful! Surely there's a fix now from a few months ago??",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Comment expresses negative sentiment, citing issues, poor value, or disappointment.",
+          "replies": []
+        },
+        {
+          "commentId": "mvnc358",
+          "text": "You ever get this sorted? I have a 5080 and its running like 6-10% utilization on the GPU and stuttery af. My 6800xt ran better than this 5080 in MC, even with Ray Tracing on ;/",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal ownership or usage experience with the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+          "replies": [
+            {
+              "commentId": "mvogmkj",
+              "text": "Nope. There is no fix as of yet. I will update the post whenever that happens.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "n2ja5xh",
+          "text": "vote for my bug report for mojang here, if it gets enough attention mojang might do something about it: [https://report.bugs.mojang.com/servicedesk/customer/portal/6/MCPE-224613?created=true](https://report.bugs.mojang.com/servicedesk/customer/portal/6/MCPE-224613?created=true)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Comment expresses negative sentiment, citing issues, poor value, or disappointment.",
+          "replies": []
+        },
+        {
+          "commentId": "n83knm0",
+          "text": "Idem je suis passé d' une 4060 ou je jouais avec le raytracing vraiment dans de bonnes conditions et la avec ma 5060 c'est injouable si le raytracing est activé. J'ai dû réduire la distance pour jouer sans.. ça me rassure de voir les commentaires...",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+          "replies": []
+        },
+        {
+          "commentId": "nd4i03v",
+          "text": "Hey, did you post this in the BetterRTX discord server? If so, I was the one who posted about the Vibrant Visuals ocean biome bug on Blackwell cards, in which you or someone else responded about the issue in this main post.\n\nI know my issue with the ocean biomes in Vibrant Visuals on Blackwell got fixed in Nvidia’s 580.88 driver, so I’m surprised that this one isn’t fixed yet either.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Comment expresses negative sentiment, citing issues, poor value, or disappointment.",
+          "replies": [
+            {
+              "commentId": "nd5numn",
+              "text": "Heyo, I never was on BetterRTX discord server, it was someone else responding to your issue. I think both Mojang and NVIDIA don't care about ray-traced Minecraft anymore, otherwise it would've been long ago fixed.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Comment expresses negative sentiment, citing issues, poor value, or disappointment.",
+              "replies": []
+            },
+            {
+              "commentId": "nktj337",
+              "text": "I did",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Very short comment with insufficient content to evaluate relevance to product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "nn148ma",
+          "text": "i would say it got better i got with my 5080 at 20 chunks and upscaling arround 120-160 fps",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal ownership or usage experience with the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+          "replies": []
+        },
+        {
+          "commentId": "nugzlv6",
+          "text": "Steps for the best known work around\n\n1. Keep Render Distance below 18 chunks\n2. Install BetterRTX from the Microsoft Store\n3. Update DLSS to the newest version via BetterRTX (download it from Nvidia)\n4. Install updated RTX packages through BetterRTX\n5. My 5070 now gets 130+fps at 4k\n\nExplanation:\n\n\\- BVH Cliff (when above 18 chunks): Bedrock RTX rebuilds the entire world each frame instead of just                              chunks, 50 series architecture finishes RT workloads way to fast, making it have to wait on the BVH (world rebuild) to finish, causing low GPU usage.\n\n\\- BetterRTX helps: Submits larger RT workloads, keeping the GPU busier and reducing idle time, Increasing usage.\n\n\\- DLSS works now: With the newer DLSS version, updated with Better RTX. DLSS is now able to be enabled, and will now actually increase FPS instead of being irrelevant. (only when below 18 chunks)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Comment expresses positive sentiment about the product's performance, value, or quality.",
+          "replies": []
+        },
+        {
+          "commentId": "mhbztum",
+          "text": "Minecraft runs mostly off the cpu. There is a mod to utilize the gpu more. I just can't think of it atm I'm sorry.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+          "replies": [
+            {
+              "commentId": "mhcej0j",
+              "text": "Are you thinking of BetterRTX?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Very short comment with insufficient content to evaluate relevance to product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+              "replies": []
+            },
+            {
+              "commentId": "mhcmvdd",
+              "text": "I never did much of bedrock until recently, and not really aware of modding asides from resource &amp; behavior packs.\n\nMy problem is related to upgrading to a better GPU and getting worse performance all of a sudden, the CPU was the same all along, that's why I am so confused.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Comment expresses negative sentiment, citing issues, poor value, or disappointment.",
+              "replies": [
+                {
+                  "commentId": "mhf0cqq",
+                  "text": "make sure minecraft is using the new GPU, on my laptop i had to go into settings to do so, before that it was using the intel one instead of the nvidia card",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                  "replies": [
+                    {
+                      "commentId": "mhg4n4h",
+                      "text": "This was never an issue since I disable the iGPU most of the time, but no, it's not the problem sadly. I tried once to run mc rtx on the igpu just for funs and it did work, just in...measly 2 FPS lol! \n\nBut seriously though, even with igpu disabled the game doesn't really have many options as to which GPU it can use, so... I doubt that's the problem either! \n\nI'm currently blaming the drivers, but the issue might be as well in Minecraft code, I can't really know that xP",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "Comment expresses negative sentiment, citing issues, poor value, or disappointment.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mhilvek",
+                  "text": "-install prismlauncher\n\n-install rethinking voxels\n\n-play java\n\n-profit",
+                  "upvotes": 0,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                  "replies": [
+                    {
+                      "commentId": "mhiobhj",
+                      "text": "The point is using bedrock with actual hardware-accelerated ray tracing.\n\nAs much as I LOVE MC Java (and do a lot of mods for it too-), I am explicitly wanting to play bedrock for a change.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "Comment expresses positive sentiment about the product's performance, value, or quality.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mhdfhxx",
+          "text": "Reduziere die Bildschirmauflösung, dann sollest du über 30fps kommen.",
+          "upvotes": 0,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

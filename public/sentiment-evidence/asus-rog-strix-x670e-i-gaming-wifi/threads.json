@@ -1,0 +1,249 @@
+{
+  "productName": "ASUS ROG Strix X670E-I Gaming WiFi",
+  "analyzedAt": "2026-05-28T08:36:56.283261",
+  "totalThreads": 5,
+  "threads": [
+    {
+      "url": "https://www.reddit.com/r/sffpc/comments/1grtu5t/what_miniitx_boards_are_good_for_am5_all_the/",
+      "subreddit": "sffpc",
+      "commentCount": 109,
+      "positive": 33,
+      "negative": 31,
+      "neutral": 45,
+      "topComments": [
+        {
+          "author": "cniinc",
+          "text": "What Mini-ITX boards are good for AM5? All the Mini-ITX boards seem to have big problems\n\nI was thinking of building around the [ROG Strix x670E-i](https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x670e-i-gaming-wifi-model/), which is an insane 450 bucks, but I'm reading some bad QC problems. The [B650 boards](https://www.tomshardware.com/pc-components/motherboards/msi-b650i-edge-wi-fi-review) seem all OK at best, except maybe [the B650E-E](https://www.tomshardware.com/reviews/asus-rog-strix-b650e-e-gaming-wi-fi-reviewhttps://www.tomshardware.com/reviews/asus-rog-strix-b650e-e-gaming-wi-fi-review). Basically, how are you making small form factor stuff with AM5 chipsets?\n\n  \nEDIT: You all are amazing. I'm gonna shop for these through black friday. Appreciate it!",
+          "upvotes": 128,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "1grtu5t"
+        },
+        {
+          "author": "[deleted]",
+          "text": "asrock b650i lightning",
+          "upvotes": 164,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "lx8v640"
+        },
+        {
+          "author": "JadeSnekYT",
+          "text": "Just finished a build with this last night. Aside from me messing up the bios flashback zero issues from the board. Really appreciated the automatic driver installer.",
+          "upvotes": 22,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "lx96p52"
+        },
+        {
+          "author": "[deleted]",
+          "text": "What is the automatic driver installer?\nI'm also looking for a motherboard for the 9800x3d I just received. Last time I built a pc was more 10 years ago and I completely lost track of tech.",
+          "upvotes": 14,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "lx9p3gk"
+        },
+        {
+          "author": "burnttoastytoes",
+          "text": "I'm in this exact same position too... So many features and components that I've just never even heard of.",
+          "upvotes": 10,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "lxa9frx"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/minecraftRTX/comments/1j971dk/poor_performance_in_minecraft_with_rtx_on_5000/",
+      "subreddit": "minecraftRTX",
+      "commentCount": 35,
+      "positive": 4,
+      "negative": 10,
+      "neutral": 21,
+      "topComments": [
+        {
+          "author": "Zeitheron",
+          "text": "Poor performance in Minecraft with RTX on 5000?\n\nI have noticed a very odd behavior with Minecraft Bedrock Edition, where after enabling ray tracing, I get a worse than 4090 (or 3090 for that matter) level of performance, while the GPU usage hovers around 12%-20% or so.\n\nThe only way to improve the situation is to reduce chunk distance to 8 chunks to get reasonable performance in the survival world.\n\nNeon District RTX demo performs even worse, not even reaching 30 fps on 24 chunks. This map also oberserves even lower GPU usage, about 6%-7% GPU usage, while again, no single CPU thread is at full load either.\n\n[Minecraft Preview v1.21.70.24 running 20 FPS on a 5090 while at 1080p](https://preview.redd.it/61xrnz39o5oe1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=302f0a488f0bcf9a2aaa9639b98546e60e0553db)\n\nAs of writing this post, my configuration is as follows:\n\n* AMD Ryzen 9 7950X3D CPU\n* Corsair Vengeance RGB DDR5 96GB (2x48) 6000CL30 RAM\n* ASUS ROG Strix X670E-E Gaming WIFI (with latest bios, 2904) Motherboard\n* MSI RTX 5090 Vanguard SOC (with latest NV drivers, 572.70) GPU\n\nThings I have tried:\n\n* Multiple versions of Minecraft\n* Swapping DLSS file around (using Bedrock Launcher)\n* Multiple versions of NV drivers\n* Multiple BIOS revisions\n* Reverting PCIe from auto/5.0 to 4.0\n\nI am going insane, as with all other games I've tried so far (which I don't have many of, I mainly got this GPU for blender work) the performance is on the level I'd expect it to be.\n\nDoes anyone else have such issues? I haven't found anything relating to this problem so far.\n\n**EDIT:**\n\nAdditionally, I DID check that VSync is DISABLED, but that changed nothing.\n\nMy screen is a 270 Hz refresh rate screen, so that is not the problem here either.\n\nBetween the three GPUs, I never touched anything besides the card in the mobo itself initially, except for mandatory 5090 drivers (which I had also run with 3090 just fine before installing 5090!)\n\n**EDIT 2:**\n\nI have found [this](https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5090-review/5) article on Tom's Hardware, showing about the same performance I get in a survival world:\n\n[RTX 5090 \\(with 9800X3D\\) performs the worst on the chart.](https://preview.redd.it/3odqm4kgeioe1.png?width=970&amp;format=png&amp;auto=webp&amp;s=7bd5fe3d0654938064508b142d93842eb5b0e878)\n\nAnd since I ran with 7950X3D when I wrote the post, my average FPS was 41-49 or so.\n\nQuote: \"Nvidia is looking into the situation.\"\n\nI really hope this gets fixed soon as this lineup of GPUs had a ton of issues and this one just adds to the pile, which is incredibly disappointing.\n\nAdditionally, I can confirm that 9950X3D performs just slightly better than 7950X3D, raising my average FPS up to  50-55 on average in the same spot:\n\n[Average FPS slightly improved with 9950X3D](https://preview.redd.it/ww9v9sx6fioe1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=4789a56fb46d4a466654718f93cf1430f1704061)\n\nThis is still unacceptable for obvious reasons.\n\nI appreciate y'all help a lot, but as of now it seems I got the confirmation of it being NVIDIA doing shady driver magic.\n\n**EDIT 3: (Jun 3rd, 2025)**\n\nI keep receiving \"is this fixed yet?\" sometimes.\n\nWhile I share your frustration, please don't ask this question. I will issue another edit whenever more information comes out or the issue gets resolved.\n\nAs much as I understand the feelings, I have replied countless times and would prefer not to unless it brings something new to the table.\n\nThank you for understanding &lt;\u0417",
+          "upvotes": 35,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "1j971dk"
+        },
+        {
+          "author": "ClueRepresentative90",
+          "text": "this isnt somthing that has to do with nvidia. i got a 5090 and play bedrock with rtx mods. before i ran fine and the game pulled 600watts constant. since a couple days ago our realm with my friends randomly stopped accepting resourcepacks and we couldnt play on rtx. other worlds acted fine but when i went on a look, my rtx option got glitched. whole game acted weird and now rtx randomly aint clickable in home menu\n\nonly in game i can turn on rtx. well that said it worked fine in game. now i still wanted to check if my side had a fault for the realms thing. \n\ni deleted everything from minecraft and reinstalled the game. i got the new(sorry to say) world selector menus. and now since i got the new one. my gpu pulls around 500 watts in the home menus and when i go into a game with rtx on with 24 chunks it pulls around 300-400 watts SOMETIMEs. clearly something broke with their new update push and i raged a lot with getting dicked by a fucking awfull new world selector screen, no rtx on our realm, insane awfull performance. \n\nall and all. game feels freakin bricked when it comes to playing with rtx. feels like im in a 0.1 beta test or somthing. so it all is about the new updates from minecraft side",
+          "upvotes": 5,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "mhxgogn"
+        },
+        {
+          "author": "millenia3d",
+          "text": "yeah it's busted, very poor GPU utilization and upscaling seems to be categorically broken on 50 series cards. i was getting \\~30 fps in places with a 5090",
+          "upvotes": 5,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "mhnaans"
+        },
+        {
+          "author": "josh6499",
+          "text": "I have the same issue. Glad to see it's not just me. It was running better even on my 3080 I think.",
+          "upvotes": 3,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "mhfstgb"
+        },
+        {
+          "author": "NewspaperOriginal518",
+          "text": "Just came to add that Friday I was playing with a 40 series with RTX and upscaling on just fine, and swapped to a 50 series on Saturday to find upscaling disabled and bad performance. \n\nWhere is the best place to report this? Minecraft is my daughter\u2019s favorite game and rtx \u201coooh ahhh\u201d makes it more enjoyable for me when I join her.",
+          "upvotes": 3,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "mj9vm93"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Amd/comments/13w47bw/review_rog_strix_x670ea_gaming_wifi/",
+      "subreddit": "Amd",
+      "commentCount": 7,
+      "positive": 1,
+      "negative": 2,
+      "neutral": 4,
+      "topComments": [
+        {
+          "author": "4ndre1-",
+          "text": "Thx for clarify \ud83d\ude18",
+          "upvotes": 2,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "jma734e"
+        },
+        {
+          "author": "[deleted]",
+          "text": "That's not a black hole - that's an Einstein Rosenberg bridge :P\n\nThanks for the review.",
+          "upvotes": 4,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "jma6oii"
+        },
+        {
+          "author": "imastrangeone",
+          "text": "Why the hell are they still using the intel i225v ethernet controllers after their b550 strix boards had problems with it and the i226v controller as well? Asus doesnt learn",
+          "upvotes": 3,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "jmarbl5"
+        },
+        {
+          "author": "[deleted]",
+          "text": "They are fine as long as you stick with 1 gbps mode i guess. I have the b550-E and B550-i and they have no issues after firmware updates but I'm still on a 1 gbps wired home network. I've heard 2.5 gbps mode can be flakey.\n\nSo yeah you're still right, it's shitty on a board that's this expensive (almost $400) but I think they know that for marketing, Intel = $$ = good in most potential customers minds.",
+          "upvotes": 4,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "jmcgvw2"
+        },
+        {
+          "author": "[deleted]",
+          "text": "I agree it really does stink to only get debug LEDs and no 7 segment display on this board. It's $388!!! goddamn Asus give us a break.\n\nAlso the ALC4080 audio is an odd one. From my research it seems to be exactly the same as the ALC1220a found on many boards, but it's internally connected via USB instead of \"directly\"/\"southbridge\" connection.  (I'm guessing it's cheaper to do it via USB...)",
+          "upvotes": 2,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "jmcgjhb"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/buildapc/comments/1q0cx6c/asus_rog_strix_x870f_yes_or_no/",
+      "subreddit": "buildapc",
+      "commentCount": 6,
+      "positive": 3,
+      "negative": 1,
+      "neutral": 2,
+      "topComments": [
+        {
+          "author": "Refractant",
+          "text": "ASUS ROG Strix X870-F: Yes or No?\n\nGreetings! My PC build is almost done, but I'm lingering on the motherboard. I've chosen the [ASUS Rog Strix X870-F](https://rog.asus.com/uk/motherboards/rog-strix/rog-strix-x870-f-gaming-wifi/), I just need someone to slap me in my face and tell me **yes** or **no**. The PC is going be used for gaming, AI training, programming, compiling, video design, etc.\n\nI've chosen this mobo because it sounds like a high-ground, but not too steep. There's Asus X870E-E that is listed as the top gaming mobo by some review sites, but is also more expensive. Then there's people saying not to buy features you'll never need. I usually go for quality, and ASUS ROG was recommended to me. There are some mobos from other vendors that use the X870/E chipset, but I hear some people shout out that X670/X670E mobos offer very comparable performance at a much better value. What are your thoughts?\n\n  \nMy current build is: [https://pcpartpicker.com/list/XtKgYd](https://pcpartpicker.com/list/XtKgYd)",
+          "upvotes": 3,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "1q0cx6c"
+        },
+        {
+          "author": "Scarabesque",
+          "text": "&gt; There's Asus X870E-E that is listed as the top gaming mobo by some review sites\n\nThat board has no specific gaming performance over any other decent quality AM5 board. The CPU and RAM are what give the performance.\n\nROG is mostly a high end marketing exercise, which is not to say they are not quality boards.\n\nX870 and X870E only make sense if you want USB 4.0. If you don't, on most X870 and X870E board it will come with compromises because of USB 4.0, mainly that the top M.2 NVME slot will share bandwidth with the top x16 slot (halving it to x8 when a secondary CPU M.2 slot is used). X670 does not have PCIe 5.0x16, X670E is basically X870E without USB 4.0.\n\nI would personally go B850 unless you need USB 4.0 transfer speeds for your productivity. Having said that the board you selected will perform fine.\n\nLastly I'd get the 9950X3D. The 9900X3D is slower than both the 9800X3D and 9950X3D in gaming and the extra $100 is easily worth it for both your use cases, and you can easily save that by going for a cheaper board.",
+          "upvotes": 3,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nwwticl"
+        },
+        {
+          "author": "CaptainPigtails",
+          "text": "Just because it costs more doesn't mean it's better. If you aren't going to use the features you could spend around half that and see no difference. What feature does an X870 have that a B850 or B650E lacks that you will actually use?",
+          "upvotes": 2,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "nwwxz6s"
+        },
+        {
+          "author": "Inigo_Montoiya",
+          "text": "I run an x870-f and have had no issues and like all the easy access to overclocking function that ROG boards allow. I also have faith in ROG boards as I built a PC using the first ROG rage formula MB and it's still going after 15 years. You pay a premium and I doubt I use all the features effectively but the longevity is something Im happy to pay a bit more for.",
+          "upvotes": 1,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "o28lt95"
+        },
+        {
+          "author": "ProfitIllustrious967",
+          "text": "Do not cheap out on the cooler, X3D chips do get somewhat hot, go with atleast an AIO cooler. If you really don't need the extra RAM, 32 GB will be more than enough seeing the RAM prices now. Also, no need to go with Asus' ROG Thor. That thing is overpriced as far as I can remember. You can go with Seasonic or Corsair.\u00a0",
+          "upvotes": 1,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "o4qy50z"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/PcBuild/comments/166sv40/rog_strix_x670ea_gaming_wifi_good_for/",
+      "subreddit": "PcBuild",
+      "commentCount": 4,
+      "positive": 1,
+      "negative": 0,
+      "neutral": 3,
+      "topComments": [
+        {
+          "author": "Duchess430",
+          "text": "ROG STRIX X670E-A GAMING WIFI, good for overclocking 7950x3d?\n\nBuilding a new PC as overclocking is a big deal for me, it's alot of fun and was able to keep my old PC WAYY past its lifetime with the ~+20% fine tuned overclocking on everything. \n\nLooking to getting a 7950x3d, I have a great water cooler for it already. This motherboard has a nice deal, but the only concern is that it says on the Asus website it can output 70A from it's 16+2 power phases, no cpu comes rated for amperage and some other boards have 80+100A ratings. Yet no one really talks about this, or are there any measurements I could find online about cpu current draw. \n\n\nIf the CPU is pushed to 1.2v, and consuming around 170watts, that's already 141A which makes the 70A rating seem like shit, \nhttps://www.tomshardware.com/reviews/amd-ryzen-9-7950x3d-cpu-review/4\n \n\nIs this motherboard going to be limiting overclocks of a 7950x3D that's Watercooled?",
+          "upvotes": 1,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "166sv40"
+        },
+        {
+          "author": "AutoModerator",
+          "text": "Remember to check our discord where you can get faster responses! \nhttps://discord.gg/6dR6XU6\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/PcBuild) if you have any questions or concerns.*",
+          "upvotes": 1,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "jylo53q"
+        },
+        {
+          "author": "Ok_Presence_5209",
+          "text": "Have you received any info for this? I\u2019ve heard the asus \u201ca\u201d variant boards don\u2019t allow for over locking. I\u2019m confused since this is technically an \u201ce-a\u201d variant",
+          "upvotes": 1,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "kwz97h6"
+        },
+        {
+          "author": "Azurumi_Shinji",
+          "text": "Did you get this mobo and cpu? How well did your overclock go? If it went very good, please share some tips\u00a0 : )",
+          "upvotes": 1,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "mo88c5p"
+        }
+      ]
+    }
+  ]
+}

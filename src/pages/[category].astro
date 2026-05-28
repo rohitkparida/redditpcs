@@ -1,0 +1,430 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BrandGraphic from '../components/BrandGraphic.astro';
+import { slugify, getSentimentColor, formatDate } from '../utils/helpers';
+import { categories } from '../utils/data';
+
+export function getStaticPaths() {
+  return categories
+    .filter(c => c.productCount > 0)
+    .map(c => ({
+      params: { category: c.slug },
+      props: { data: c }
+    }));
+}
+
+const { data } = Astro.props;
+const { category, description, updated, products } = data;
+
+const getRankBadge = (rank: number, slug: string) => {
+  if (rank === 1) return { text: '👑 #1 Top Pick', color: 'bg-emerald-500 dark:bg-emerald-600 text-white font-bold' };
+  if (rank === 2) return { text: '💡 #2 Smart Pick', color: 'bg-blue-500 dark:bg-blue-600 text-white font-bold' };
+  if (rank === 3) {
+    const text = slug === 'cpus' ? '⚡ #3 Multi-threaded Pick' : '⚡ #3 High Performance';
+    return { text, color: 'bg-amber-500 dark:bg-amber-600 text-white font-bold' };
+  }
+  return { text: `#${rank} Recommended`, color: 'bg-zinc-100 dark:bg-zinc-800 text-zinc-650 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/50' };
+};
+
+const brands = [...new Set(products.map(p => p.brand))];
+const sockets = data.slug === 'cpus' ? [...new Set(products.map(p => p.specs?.socket).filter(Boolean))] : [];
+const cores = data.slug === 'cpus' ? [...new Set(products.map(p => p.specs?.cores).filter(Boolean))].sort((a, b) => parseInt(a) - parseInt(b)) : [];
+const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.memory?.split(' ')[0]).filter(Boolean))] : [];
+---
+
+<Layout title={category} description={description}>
+  <section class="py-12 px-4 border-b border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-950 transition-colors">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-xs text-reddit-muted dark:text-zinc-500 mb-3 font-semibold">
+        <a href="/" class="hover:text-reddit-orange dark:hover:text-reddit-orange">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-zinc-650 dark:text-zinc-400 font-bold">{category}</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold mb-3 text-zinc-900 dark:text-white tracking-tight font-sans">{category}</h1>
+      <p class="text-reddit-muted dark:text-zinc-400 text-base max-w-3xl leading-relaxed">{description}</p>
+      <p class="text-[10px] text-zinc-400 dark:text-zinc-500 font-bold uppercase tracking-wider mt-4 bg-zinc-55 dark:bg-zinc-900 border border-zinc-200/50 dark:border-zinc-800 inline-block px-2.5 py-1 rounded">
+        Last updated: {formatDate(updated)}
+      </p>
+    </div>
+  </section>
+
+  <section class="py-8 px-4 bg-zinc-50 dark:bg-zinc-950/40 transition-colors">
+    <div class="max-w-6xl mx-auto">
+      <div class="flex flex-col lg:flex-row gap-8">
+        <!-- Filters Sidebar -->
+        <aside class="w-full lg:w-60 flex-shrink-0">
+          <div class="bg-white dark:bg-zinc-900/60 rounded-2xl p-5 border border-reddit-border dark:border-zinc-800/80 mb-4 shadow-sm backdrop-blur-sm">
+            <div class="flex items-center justify-between mb-4 pb-2 border-b border-zinc-200 dark:border-zinc-800">
+              <h3 class="font-black text-zinc-850 dark:text-zinc-200 text-sm uppercase tracking-wide">Filters</h3>
+              <button id="clearFilters" class="text-xs font-extrabold text-reddit-orange hover:underline">Clear All</button>
+            </div>
+            
+            {/* Brand Filter */}
+            <div class="mb-5">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550 mb-3">Brand</h4>
+              <div class="space-y-2.5" id="brandFilters">
+                {brands.map(brand => (
+                  <label class="flex items-center gap-2 cursor-pointer hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">
+                    <input 
+                      type="checkbox" 
+                      value={brand}
+                      class="brand-filter w-4 h-4 text-reddit-orange border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 rounded focus:ring-reddit-orange"
+                      checked
+                    />
+                    <span class="text-sm font-medium text-zinc-700 dark:text-zinc-300">{brand}</span>
+                  </label>
+                ))}
+              </div>
+            </div>
+
+            {/* CPU Socket Filter */}
+            {data.slug === 'cpus' && sockets.length > 0 && (
+              <div class="mb-5 border-t border-zinc-200/50 dark:border-zinc-800 pt-4">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550 mb-3">Socket</h4>
+                <div class="space-y-2.5" id="socketFilters">
+                  {sockets.map(sock => (
+                    <label class="flex items-center gap-2 cursor-pointer hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">
+                      <input 
+                        type="checkbox" 
+                        value={sock}
+                        class="socket-filter w-4 h-4 text-reddit-orange border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 rounded focus:ring-reddit-orange"
+                        checked
+                      />
+                      <span class="text-sm font-medium text-zinc-700 dark:text-zinc-300">{sock}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* CPU Cores Filter */}
+            {data.slug === 'cpus' && cores.length > 0 && (
+              <div class="mb-5 border-t border-zinc-200/50 dark:border-zinc-800 pt-4">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550 mb-3">Cores</h4>
+                <div class="space-y-2.5" id="coresFilters">
+                  {cores.map(c => (
+                    <label class="flex items-center gap-2 cursor-pointer hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">
+                      <input 
+                        type="checkbox" 
+                        value={c}
+                        class="cores-filter w-4 h-4 text-reddit-orange border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 rounded focus:ring-reddit-orange"
+                        checked
+                      />
+                      <span class="text-sm font-medium text-zinc-700 dark:text-zinc-300">{c} Cores</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* GPU VRAM Filter */}
+            {data.slug === 'gpus' && memories.length > 0 && (
+              <div class="mb-5 border-t border-zinc-200/50 dark:border-zinc-800 pt-4">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550 mb-3">Memory / VRAM</h4>
+                <div class="space-y-2.5" id="memoryFilters">
+                  {memories.map(mem => (
+                    <label class="flex items-center gap-2 cursor-pointer hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">
+                      <input 
+                        type="checkbox" 
+                        value={mem}
+                        class="memory-filter w-4 h-4 text-reddit-orange border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 rounded focus:ring-reddit-orange"
+                        checked
+                      />
+                      <span class="text-sm font-medium text-zinc-700 dark:text-zinc-300">{mem}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Price Range Filter */}
+            <div class="mb-5 border-t border-zinc-200/50 dark:border-zinc-800 pt-4">
+              <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550 mb-3">Price Range</h4>
+              <div class="space-y-3">
+                <div>
+                  <label class="text-[10px] font-bold text-zinc-400 block mb-1">Min ($)</label>
+                  <input 
+                    type="number" 
+                    id="minPrice" 
+                    placeholder="0" 
+                    class="w-full px-3 py-1.5 text-sm border border-reddit-border dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-900 dark:text-zinc-200 focus:outline-none focus:border-reddit-orange"
+                  />
+                </div>
+                <div>
+                  <label class="text-[10px] font-bold text-zinc-400 block mb-1">Max ($)</label>
+                  <input 
+                    type="number" 
+                    id="maxPrice" 
+                    placeholder="2000" 
+                    class="w-full px-3 py-1.5 text-sm border border-reddit-border dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-900 dark:text-zinc-200 focus:outline-none focus:border-reddit-orange"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Results Count */}
+            <div class="text-[10px] font-bold text-zinc-450 dark:text-zinc-500 pt-3 border-t border-reddit-border dark:border-zinc-800 uppercase tracking-wider">
+              Showing <span id="visibleCount" class="text-zinc-700 dark:text-zinc-300 font-extrabold">{products.length}</span> of {products.length} products
+            </div>
+          </div>
+          
+          {/* Data Info */}
+          <div class="bg-white dark:bg-zinc-900/60 rounded-2xl p-5 border border-reddit-border dark:border-zinc-800 text-xs">
+            <h3 class="font-extrabold text-zinc-800 dark:text-zinc-300 mb-2 uppercase tracking-wide">Aggregation Method</h3>
+            <p class="text-reddit-muted dark:text-zinc-455 leading-relaxed mb-3">
+              Ranks are aggregated mathematically from verified, unique Reddit comments. Sponsor-free.
+            </p>
+            <div class="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-widest border-t border-zinc-200/50 dark:border-zinc-800 pt-2.5">
+              {products.reduce((acc, p) => acc + p.redditQuotes.length, 0)} direct citations
+            </div>
+          </div>
+        </aside>
+
+        <!-- Product List -->
+        <div class="flex-1">
+          <!-- Header Bar -->
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
+            <span class="text-sm font-semibold text-zinc-500" id="resultsCount">{products.length} products sorted by Reddit sentiment</span>
+            <div class="flex flex-wrap items-center gap-3 self-end sm:self-auto">
+              {/* Client-Side Category Text Search */}
+              <div class="relative">
+                <input 
+                  type="text" 
+                  id="categorySearch" 
+                  placeholder="Search in this category..." 
+                  class="px-3.5 py-1.5 pl-8 text-xs font-semibold border border-reddit-border dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-900 dark:text-zinc-200 focus:outline-none focus:border-reddit-orange w-48 sm:w-60"
+                />
+                <svg class="w-3.5 h-3.5 absolute left-3 top-2.5 text-zinc-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                </svg>
+              </div>
+
+              <div class="flex items-center gap-2.5">
+                <span class="text-xs font-bold uppercase tracking-wider text-zinc-400">Sort</span>
+                <select id="sortSelect" class="px-3 py-1.5 text-xs font-bold border border-reddit-border dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-900 dark:text-zinc-200 focus:outline-none focus:border-reddit-orange">
+                  <option value="rank">Reddit Rank</option>
+                  <option value="price-low">Price: Low to High</option>
+                  <option value="price-high">Price: High to Low</option>
+                  <option value="recommendation">Recommendation Rate</option>
+                  <option value="mentions">Mention Volume</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Cards -->
+          <div class="space-y-6" id="productList">
+            {products.map((product) => {
+              const badge = getRankBadge(product.rank, data.slug);
+              const sentimentColor = getSentimentColor(product.recommendationRate);
+              const productSlug = slugify(product.name);
+              const topQuote = product.redditQuotes[0];
+              // Parse price for filtering
+              const priceMatch = product.priceRange.match(/\$(\d+)/);
+              const minPrice = priceMatch ? parseInt(priceMatch[1]) : 0;
+              
+              const totalReviews = (product.positiveReviews || 0) + (product.neutralReviews || 0) + (product.negativeReviews || 0);
+              const positivePct = totalReviews > 0 ? Math.round(((product.positiveReviews || 0) / totalReviews) * 100) : 0;
+              const neutralPct = totalReviews > 0 ? Math.round(((product.neutralReviews || 0) / totalReviews) * 100) : 0;
+              const negativePct = totalReviews > 0 ? Math.max(0, 100 - positivePct - neutralPct) : 0;
+              return (
+                <a 
+                  href={`/${data.slug}/${productSlug}`} 
+                  class="product-card block bg-white dark:bg-zinc-900/50 border border-reddit-border dark:border-zinc-800 rounded-2xl p-6 hover:shadow-lg dark:hover:shadow-zinc-950/40 hover:border-zinc-300 dark:hover:border-zinc-700/60 transition-all duration-300 transform hover:-translate-y-0.5"
+                  data-brand={product.brand}
+                  data-price={minPrice}
+                  data-rank={product.rank}
+                  data-recommendation={product.recommendationRate}
+                  data-mentions={product.mentions}
+                  data-socket={product.specs?.socket || ''}
+                  data-cores={product.specs?.cores || ''}
+                  data-memory={product.specs?.memory?.split(' ')[0] || ''}
+                >
+                  <div class="flex flex-col md:flex-row gap-6">
+                    {/* Left Column: Premium Custom Neon Graphic */}
+                    <div class="flex-shrink-0 w-full md:w-32 self-center">
+                      <BrandGraphic brand={product.brand} name={product.name} size="small" />
+                    </div>
+
+                    {/* Middle Column: Product & Quote */}
+                    <div class="flex-1 min-w-0">
+                      <div class="flex items-center gap-2 mb-2">
+                        <span class={`${badge.color} text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-md shadow-sm`}>
+                          {badge.text}
+                        </span>
+                      </div>
+                      
+                      <h2 class="text-xl font-extrabold mb-1.5 text-zinc-900 dark:text-zinc-100 group-hover:text-reddit-orange transition-colors font-sans">{product.name}</h2>
+                      
+                      {/* Quiet Inline Specs */}
+                      {product.specs && (
+                        <div class="flex flex-wrap gap-2 mb-4">
+                          {Object.entries(product.specs).slice(0, 3).map(([key, val]) => (
+                            <span class="inline-flex items-center px-2 py-0.5 rounded bg-zinc-55 dark:bg-zinc-900 border border-zinc-150 dark:border-zinc-800 text-[10px] font-bold text-zinc-500 dark:text-zinc-400">
+                              <span class="text-zinc-400 dark:text-zinc-550 mr-1 uppercase text-[8px]">{key}:</span>
+                              {val}
+                            </span>
+                          ))}
+                        </div>
+                      )}
+
+                      {/* Featured Reddit Citation */}
+                      {topQuote && (
+                        <div class="bg-reddit-surface dark:bg-zinc-950/40 rounded-xl p-4 border border-zinc-100 dark:border-zinc-800/40">
+                          <p class="text-sm text-zinc-700 dark:text-zinc-300 italic leading-relaxed mb-3">
+                            "{topQuote.quote}"
+                          </p>
+                          <div class="flex items-center gap-2.5 text-xs font-semibold text-zinc-400 dark:text-zinc-550">
+                            <span class="text-reddit-orange">r/{topQuote.subreddit}</span>
+                            <span>•</span>
+                            <span class="text-emerald-600 dark:text-emerald-400">+{topQuote.upvotes} net votes</span>
+                            {product.redditQuotes.length > 1 && (
+                              <>
+                                <span>•</span>
+                                <span class="text-zinc-500 dark:text-zinc-500 font-bold">{product.redditQuotes.length} similar citations</span>
+                              </>
+                            )}
+                          </div>
+                        </div>
+                      )}
+                    </div>
+
+                    {/* Right Column: Sentiment & CTA */}
+                    <div class="flex-shrink-0 w-full md:w-36 flex flex-row md:flex-col items-center md:items-end justify-between md:justify-start gap-5 border-t md:border-t-0 md:border-l border-zinc-100 dark:border-zinc-800/80 pt-4 md:pt-0 md:pl-5">
+                      {/* Recommendation Percentage */}
+                      <div class="text-left md:text-right w-full flex flex-col md:items-end">
+                        <p class="text-[10px] font-bold text-zinc-400 dark:text-zinc-550 uppercase tracking-wider mb-1">Reddit consensus</p>
+                        <div class={`flex items-center gap-1 justify-start md:justify-end ${sentimentColor} mb-1`}>
+                          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                          </svg>
+                          <span class="font-black text-lg leading-none">{Math.round(product.recommendationRate * 100)}%</span>
+                        </div>
+                        <p class="text-[9px] text-zinc-450 dark:text-zinc-500 font-bold uppercase tracking-wider mt-0.5">{product.mentions} reviews</p>
+                      </div>
+
+                      {/* Price & CTA */}
+                      <div class="text-right flex flex-col items-end">
+                        <p class="text-[10px] font-bold text-zinc-400 dark:text-zinc-550 uppercase tracking-wider mb-0.5">Price Range</p>
+                        <p class="font-extrabold text-zinc-950 dark:text-zinc-150 text-sm mb-1">{product.priceRange}</p>
+                        <span class="inline-flex items-center gap-0.5 text-xs text-reddit-orange dark:text-reddit-orange font-bold hover:underline">
+                          Analysis
+                          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M9 5l7 7-7 7"/></svg>
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', function() {
+    const brandFilters = document.querySelectorAll('.brand-filter');
+    const socketFilters = document.querySelectorAll('.socket-filter');
+    const coresFilters = document.querySelectorAll('.cores-filter');
+    const memoryFilters = document.querySelectorAll('.memory-filter');
+    const minPriceInput = document.getElementById('minPrice');
+    const maxPriceInput = document.getElementById('maxPrice');
+    const categorySearch = document.getElementById('categorySearch');
+    const clearFiltersBtn = document.getElementById('clearFilters');
+    const sortSelect = document.getElementById('sortSelect');
+    const productList = document.getElementById('productList');
+    const resultsCount = document.getElementById('resultsCount');
+    const visibleCount = document.getElementById('visibleCount');
+    
+    function filterAndSortProducts() {
+      const selectedBrands = Array.from(brandFilters).filter(cb => cb.checked).map(cb => cb.value);
+      const selectedSockets = Array.from(socketFilters).filter(cb => cb.checked).map(cb => cb.value);
+      const selectedCores = Array.from(coresFilters).filter(cb => cb.checked).map(cb => cb.value);
+      const selectedMemories = Array.from(memoryFilters).filter(cb => cb.checked).map(cb => cb.value);
+      
+      const minPrice = isNaN(parseInt(minPriceInput.value)) ? 0 : parseInt(minPriceInput.value);
+      const maxPrice = isNaN(parseInt(maxPriceInput.value)) ? Infinity : parseInt(maxPriceInput.value);
+      const searchQuery = (categorySearch.value || '').toLowerCase().trim();
+      
+      const cards = Array.from(document.querySelectorAll('.product-card'));
+      let visible = 0;
+      
+      cards.forEach(card => {
+        const brand = card.dataset.brand;
+        const price = parseInt(card.dataset.price);
+        const socket = card.dataset.socket;
+        const cores = card.dataset.cores;
+        const memory = card.dataset.memory;
+        const name = card.querySelector('h2').textContent.toLowerCase();
+        
+        const matchesBrand = selectedBrands.includes(brand);
+        const matchesSocket = socketFilters.length === 0 || selectedSockets.includes(socket);
+        const matchesCores = coresFilters.length === 0 || selectedCores.includes(cores);
+        const matchesMemory = memoryFilters.length === 0 || selectedMemories.includes(memory);
+        const matchesPrice = price >= minPrice && price <= maxPrice;
+        const matchesSearch = name.includes(searchQuery);
+        
+        if (matchesBrand && matchesSocket && matchesCores && matchesMemory && matchesPrice && matchesSearch) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      
+      // Update counts
+      resultsCount.textContent = visible + ' product' + (visible !== 1 ? 's' : '') + ' sorted by Reddit sentiment';
+      visibleCount.textContent = visible;
+      
+      // Sort visible products
+      const visibleCards = cards.filter(c => c.style.display !== 'none');
+      visibleCards.sort((a, b) => {
+        switch(sortSelect.value) {
+          case 'rank':
+            return parseInt(a.dataset.rank) - parseInt(b.dataset.rank);
+          case 'price-low':
+            return parseInt(a.dataset.price) - parseInt(b.dataset.price);
+          case 'price-high':
+            return parseInt(b.dataset.price) - parseInt(a.dataset.price);
+          case 'recommendation':
+            return parseFloat(b.dataset.recommendation) - parseFloat(a.dataset.recommendation);
+          case 'mentions':
+            return parseInt(b.dataset.mentions) - parseInt(a.dataset.mentions);
+          default:
+            return 0;
+        }
+      });
+      
+      // Reorder DOM
+      visibleCards.forEach(card => {
+        productList.appendChild(card);
+      });
+    }
+    
+    // Event listeners
+    brandFilters.forEach(cb => cb.addEventListener('change', filterAndSortProducts));
+    socketFilters.forEach(cb => cb.addEventListener('change', filterAndSortProducts));
+    coresFilters.forEach(cb => cb.addEventListener('change', filterAndSortProducts));
+    memoryFilters.forEach(cb => cb.addEventListener('change', filterAndSortProducts));
+    
+    minPriceInput.addEventListener('input', filterAndSortProducts);
+    maxPriceInput.addEventListener('input', filterAndSortProducts);
+    categorySearch.addEventListener('input', filterAndSortProducts);
+    sortSelect.addEventListener('change', filterAndSortProducts);
+    
+    clearFiltersBtn.addEventListener('click', function() {
+      brandFilters.forEach(cb => cb.checked = true);
+      socketFilters.forEach(cb => cb.checked = true);
+      coresFilters.forEach(cb => cb.checked = true);
+      memoryFilters.forEach(cb => cb.checked = true);
+      minPriceInput.value = '';
+      maxPriceInput.value = '';
+      categorySearch.value = '';
+      sortSelect.value = 'rank';
+      filterAndSortProducts();
+    });
+  });
+</script>

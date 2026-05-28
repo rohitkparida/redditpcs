@@ -1,0 +1,232 @@
+{
+  "productName": "amd-radeon-rx-9070",
+  "batchIndex": 16,
+  "totalBatches": 19,
+  "comments": [
+    {
+      "commentId": "1tnfrvo",
+      "text": "RX 9070 XT cooling analysis nobody seems to be doing \ud83d\udc40\n\nNoise-normalized data tells a VERY different story than stock reviews\n\n\u26a0\ufe0f Disclaimer:\n\nThe table is sorted by NN Score only.\nThat does NOT automatically mean \u201cbest to worst\u201d overall GPU.\n\nDepending on:\n\n- sustained frequency\n- card size\n- noise preference\n- airflow setup\n- deshroud potential\n- power/connectors\n\n\u2026the ranking and best choice can change significantly.\n\n\u26a0\ufe0f XFX Mercury power connectors depend on the specific variant/SKU. Some models use 2X8-pin, while higher-end OC variants use 3X8-pin.\n\nI made a comparison table using [TechSpot](https://www.techspot.com/review/3015-amd-radeon-9070-xt-roundup/) thermal data from:\n\nBut instead of only looking at:\n\n\\- stock temperatures\n\n\\- stock noise\n\n\\- FPS\n\n\u2026I tried to analyze the behavior of the coolers themselves.\n\nSo I compared:\n\n\\- stock thermal results\n\n\\- 40 dBA noise-normalized results\n\n\\- airflow scaling (Delta)\n\n\\- card size\n\n\\- thermal efficiency relative to size\n\n\\- sustained frequency relative to thermals\n\nAnd honestly, the conclusions become VERY different once you start crossing the data instead of looking at isolated charts.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udd39 What the metrics actually mean\n\n\ud83d\udd35 NN Score (lower better)\n\nCombined thermal score during 40 dBA noise-normalized testing:\n\n\\- GPU temp\n\n\\- hotspot\n\n\\- VRAM\n\n\\- VRM\n\nThis is probably the best indicator of raw heatsink quality, because it removes a large part of the stock fan curve bias.\n\nIn other words:\n\n\u00abhow good is the cooler itself at equal noise?\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe2 Delta\n\nDifference between:\n\n\\- stock thermal score\n\n\\- noise-normalized thermal score\n\nThis metric became MUCH more interesting than I expected.\n\nLarge Delta usually means:\n\n\\- quieter/conservative stock tuning\n\n\\- strong airflow scaling\n\n\\- large thermal gains once more airflow/noise is allowed\n\n\\- excellent deshroud/high-airflow potential\n\nSmall Delta usually means:\n\n\\- stock profile already runs near normalized airflow\n\n\\- card may already be relatively audible stock\n\n\\- or the cooler gains less from additional airflow\n\nSo Delta is NOT simply:\n\n\u00ab\u201chigher good\u201d or \u201clower good\u201d.\u00bb\n\nIt mainly shows:\n\n\u00abhow the cooler responds to additional airflow and noise.\u00bb\n\nWhich becomes VERY important for:\n\n\\- deshroud mods\n\n\\- SFF airflow optimization\n\n\\- custom fan setups\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe3 Compact Efficiency\n\nCustom metric combining:\n\n\\- NN Score\n\n\\- card length\n\nFormula:\n\n\u00ab100000 / (NN Score \u00d7 Length)\u00bb\n\nThe goal is to estimate:\n\n\u00abcooling efficiency relative to physical size.\u00bb\n\nBecause raw thermal performance alone can be misleading.\n\nA massive 360 mm card SHOULD cool well.\n\nWhat becomes interesting is:\n\n\\- how much thermal performance you get\n\n\\- relative to the size penalty\n\nSo this metric rewards cards that:\n\n\\- remain compact\n\n\\- while still delivering strong normalized thermal performance\n\nThis helps reveal:\n\n\\- heatsink density efficiency\n\n\\- cooler optimization\n\n\\- compact designs punching above their weight\n\n\ud83d\udfe9 Surprisingly efficient for their size:\n\n\\- XFX Swift\n\n\\- Gigabyte Gaming\n\n\\- XFX Quicksilver\n\n\ud83d\udfe5 Relatively inefficient considering their size:\n\n\\- Hellhound\n\n\\- Taichi\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfea MHz / NN (higher better)\n\nSecondary metric combining:\n\n\\- operating frequency\n\n\\- normalized thermal score\n\nFormula:\n\n\u00abClock Frequency / NN Score\u00bb\n\nThis does NOT isolate the cooler alone.\n\nInstead, it reflects:\n\n\\- cooler performance\n\n\\- boost behavior\n\n\\- BIOS tuning\n\n\\- power behavior\n\n\\- sustained clocks at equal noise\n\nIn practice:\n\n\u00abhigher = more frequency maintained for a given thermal load.\u00bb\n\nSo this metric is more about:\n\n\u00ab\u201creal-world thermal performance efficiency\u201d\n\nthan pure heatsink quality.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udd0d Interesting findings\n\n\ud83d\udfe6 XFX Quicksilver\n\nThe Quicksilver is interesting because it highlights the difference between pure cooling capability and overall tuning/performance behavior.\n\nIt achieves the best NN Score in the roundup, which strongly suggests the heatsink itself is genuinely excellent.\n\nBut at the same time, its sustained clock frequency is relatively low compared to cards like:\n\n- Mercury\n- Nitro+\n- Gigabyte Elite\n\nSo the Quicksilver appears to prioritize:\n\n- thermal headroom\n- quieter behavior\n- conservative boost tuning\n\n\u2026rather than maximizing frequency at all costs.\n\nIn other words:\n\n\u00abit\u2019s probably one of the best pure coolers in the roundup,\nbut not necessarily the most aggressive performer out of the box.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 XFX Mercury\n\nThe \u201cfully unleashed\u201d version of the XFX philosophy.\n\nIt combines:\n\n\\- excellent NN thermals\n\n\\- very high sustained clocks\n\n\\- strong MHz / NN efficiency\n\n\\- large airflow scaling potential\n\nMeaning:\n\n\\- stock tuning is not overly aggressive\n\n\\- but the cooler still scales extremely well with airflow\n\nDownside:\n\n\\- absolutely gigantic size (360 mm)\n\nBut unlike many oversized cards:\n\n\u00abthe Mercury actually justifies its dimensions thermally.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 XFX Swift\n\nProbably one of the most interesting cards in the entire roundup.\n\nExcellent NN score + huge Delta + excellent Compact Efficiency.\n\nMeaning:\n\n\\- relatively conservative stock tuning\n\n\\- very efficient cooler density\n\n\\- extremely strong airflow scaling\n\nThis thing could become an absolute monster in:\n\n\\- deshroud builds\n\n\\- SFF airflow-focused setups\n\n\\- high-airflow custom configurations\n\nEspecially considering its more reasonable size compared to the Mercury/Quicksilver.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 ASUS Prime\n\nSurprisingly strong cooler efficiency despite its \u201cmid-tier\u201d reputation.\n\nAlso:\n\n\\- one of the easiest cards to deshroud\n\n\\- fan shroud removes very easily\n\n\\- minimal teardown required\n\nVery interesting for:\n\n\\- deshroud mods\n\n\\- SFF builds\n\n\\- low-noise airflow optimization\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 Sapphire PURE vs PULSE\n\nAfter comparing:\n\n\\- PCB photos\n\n\\- dimensions\n\n\\- thermal behavior\n\n\\- BIOS differences\n\n\u2026I\u2019m fairly convinced they are basically the same card underneath.\n\nSame PCB.\n\nSame heatsink.\n\nSame dimensions.\n\nThe PURE mainly adds:\n\n\\- ARGB\n\n\\- slightly more aggressive BIOS/fan tuning\n\nSo:\n\n\u00abPURE \u2248 PULSE + RGB + mild factory OC\u00bb\n\nTheir very similar NN behavior strongly supports this.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83e\udd14 Why I think reviewers underuse their own data\n\nMost reviews stop at:\n\n\\- stock thermals\n\n\\- stock acoustics\n\n\\- FPS\n\nBut the REALLY interesting stuff is often hidden in the relationships between variables:\n\n\\- airflow scaling\n\n\\- cooling density\n\n\\- noise sensitivity\n\n\\- efficiency per size\n\n\\- deshroud potential\n\n\\- sustained boost behavior\n\nOnce you start crossing the data instead of reading charts individually:\n\n\u00abthe rankings and conclusions change completely.\u00bb\n\nVRAM temps can absolutely vary depending on:\nSamsung vs Hynix memory\npad mounting pressure\nthermal pad variance\neven production revisions over time\nSo the VRAM part of the NN score is not a perfectly controlled variable.\nThat said, I still think the overall trends remain meaningful because the score combines:\nGPU temp\nhotspot\nVRAM\nVRM\n\u2026rather than relying on VRAM alone.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\nSorry to everyone who already commented on the previous post \u2014 I had to repost it because the image quality/formatting were not good enough and the XFX Mercury was missing.\n\nAlso:\n\n\\- the PowerColor Reaper is missing because it was not included in TechSpot\u2019s RX 9070 XT roundup data.\n\nBig thanks as well to the people in the previous thread.\nSeveral comments genuinely helped improve the updated version of the post.",
+      "upvotes": 432,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "onxpi3g",
+          "text": "I do want to say great effort that you seem to have put here and I do agree cooler analysis should be better discussed!\n\nBut I do have a lot of doubts on this testing method.\n\n* Many comments already mention the discrepancy between Samsung and Hynix memory chips for the VRAM that could skew the NN metric.\n* But I am also confused on how this data works given the very different clock speeds on the premium cooler cards? Cards like the Mercury and NITRO+ are a few hundred MHz faster than their lower counterparts and the nuance can be seen in [Hardware Unboxed's](https://www.youtube.com/watch?v=zQQUfQw5JA8) videos from last year. I don't think this can be ignored in comparing cooler effectiveness when those speed differences lead to marked differences in the performance that each card can give under the same normalized noise and temps.\n\nDon't want to be generally discouraging though, I agree especially for those that like to play around with overclocking that such tests are very important.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "onxra9c",
+          "text": "This is Techspot open bench with 21C ambient? \n\nProblem with temps benchmarks is people often run with the numbers of the benchmark without reading much how it was done so they think because the benchmark says 60C, the card will run at 60C, but neglect the setup and ambient temperature.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ony2zcm",
+          "text": "I'll take top four. Lol\n\nI have indeed noticed that my system stays pretty cool. Even under load, the maximum temps I see on either my GPU or CPU are around 60c.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ony5b73",
+          "text": "My red devil is insanely efficient and runs very cool under full load. I run it with -50 voltage - 2700 mem - fast timings. Clocks over 3100 in games and barely goes over 50 degrees",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ony5ej9",
+          "text": "well guess i won the lottery when i blind bought a xfx quicksilver",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "onyi5my",
+          "text": "AsRock more like ASSrock.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "onywr58",
+          "text": "This is Old Bro and I\u2019m gonna keep the XFX Quicksilver cause it\u2019s the best suited for greatness. \n\nhttps://youtu.be/C2v-9UNoW84?si=qFmc2fOTumMB3BcT",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "onyzv5i",
+          "text": "VASTARMOR is the cheapest 9070xt in China, priced at just $550, it should be the best-selling one. Is it not sold elsewhere?I flashed it with XFX Mercury.even asus tuf oc",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "oo2x5p2",
+          "text": "As a pulse owner, im a big fan of its huge cooler, and even at full speed isnt as loud as the asus prime OC, and the pulse reacts very well to fan tuning changes.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ontlp1m",
+          "text": "Why repost it?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ontmirl",
+              "text": "Mostly because the Mercury was missing, despite being one of the most important models in the lineup.\nAlso, a lot of people brought up the connection with frequency behavior, and after looking into it more, I think they were right. ",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ontqku2",
+          "text": "XFX are the best brand for amd GPU quieter and cooler ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ontry1s",
+              "text": "Yep, although what\u2019s really missing is a strong compact XFX model.\n\nThe Mercury and Quicksilver are extremely impressive thermally, but they\u2019re absolutely massive cards.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ontyuen",
+                  "text": "For sure the thing barely fits in my 4000d corsair.\n\nBut it does cool very well even at max load.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "onx152s",
+              "text": "best for those with big cases, worst for small cases where they dont fit. ",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onv9c01",
+          "text": "Peronally i think These Data are missleading. IT makes some cards Look a lot more worse and worse cards Look a lot better than in reality. \nAblot of Work you have done but based in These Stats i would Not buy a GPU.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "onzetrn",
+              "text": "That\u2019s why the NN Score ranking doesn\u2019t mean \u201cbest GPU overall\u201d. It\u2019s mainly an analysis of cooling behavior at normalized noise, combined with other factors like size, airflow scaling and sustained clocks. Personal preferences still matter a lot too, for example I still really like the Prime because of the size and how easy it is to deshroud even if it\u2019s not near the top of the NN ranking.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onvrdou",
+          "text": "The Mercury is actually a 3x8pin.\n\nSource: I have one. ",
+          "upvotes": 0,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "onwncsj",
+          "text": "The 9070xt is the most overpriced card I rver bought",
+          "upvotes": 0,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,740 @@
+{
+  "productName": "amd-radeon-rx-7900-xtx",
+  "batchIndex": 35,
+  "totalBatches": 36,
+  "comments": [
+    {
+      "commentId": "zkyovc",
+      "text": "ASUS Radeon RX 7900 XTX TUF OC Review - Apparently 3x8pins and some OC unlocks what AMD promised us",
+      "upvotes": 595,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "j02jiik",
+          "text": "3199 MHz average OC clock for the TUF  \n3165 MHz average OC clock for the Merc  \n\nIs that the end of the clock bug rumour then? \ud83e\udd23",
+          "upvotes": 48,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment discusses the overclocking performance of the product models.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "It presents clock speeds and asks a question, showing no clear positive or negative sentiment.",
+          "replies": [
+            {
+              "commentId": "j02so3b",
+              "text": "If anything it lends more support to that rumor. If it easily clocks that high why are the stock clocks so low?",
+              "upvotes": 36,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment critiques the product's stock clock speeds in relation to its overclocking potential.",
+              "sentiment": "negative",
+              "sentimentReasoning": "It implies a problem with stock clocks being too low despite easy overclockability, suggesting a missed potential or design flaw.",
+              "replies": [
+                {
+                  "commentId": "j02tub0",
+                  "text": "Because the stock config can't get enough power to push 3ghz",
+                  "upvotes": 22,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment provides a technical reason for the product's stock clock limitations.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "It offers a factual technical explanation without expressing a clear positive or negative opinion.",
+                  "replies": [
+                    {
+                      "commentId": "j02u4hj",
+                      "text": "... but why? It's not like they're unaware of the power requirements of the chip before deciding on what to put on the card.",
+                      "upvotes": 22,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment critiques the product's design decisions regarding power requirements.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "It expresses skepticism about AMD's design choices, implying a negative viewpoint.",
+                      "replies": [
+                        {
+                          "commentId": "j03uf7k",
+                          "text": "Because clocks won't help its poor RT performance and at stock it already draws more power than the 4080 anyway. GN even mentioned they noticed their reference sample dropped as low as 11v during testing. \n\nFrankly there's also the small issue that if someone is going to pay $1100 or more for an AIB 7900XTX they may as well outright buy a reference 4080 and get better everything for less power consumption.",
+                          "upvotes": 6,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "The comment critiques the product's Ray Tracing performance, power consumption, and value in comparison to a competitor.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "It highlights 'poor RT performance' and advises against buying it over a competitor, indicating a negative sentiment.",
+                          "replies": [
+                            {
+                              "commentId": "j04y34u",
+                              "text": "Clocking higher should help RT some.",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "The comment discusses how higher clock speeds might affect the product's Ray Tracing performance.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "It expresses a speculative, neutral observation about potential performance improvement.",
+                              "replies": []
+                            },
+                            {
+                              "commentId": "j05bjp1",
+                              "text": "The 7900XTX was faster in traditional rasterization than the 4080, at least in the reviews I saw.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "The comment compares the product's rasterization performance favorably against a competitor.",
+                              "sentiment": "positive",
+                              "sentimentReasoning": "It states that the product was faster than a competitor, indicating a positive sentiment.",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "j02vky6",
+                  "text": "\nProbably because they had an efficiency goal in mind, like they talked about at the launch event. TPU didn't show OC power draw, but if you look at the scaling it's pretty clear where it's headed:\n\n    GPU                     Avg Clock   Power\n    RX 7900 XTX Reference   2612        356\n    RX 7900 XTX TUF         2817        393\n    RX 7900 XTX TUF + OC    3199        \u221e",
+                  "upvotes": 16,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment explains a possible design goal for the product and provides technical data on clock speeds and power.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "It offers a technical explanation and data without expressing a clear positive or negative opinion.",
+                  "replies": [
+                    {
+                      "commentId": "j02zhew",
+                      "text": "Still doesn't make sense why they wouldn't make their top end product clock that high and leave the efficient products to the lower tiers, like NVidia did. Especially when their efficiency isn't actually noteworthy compared NVidia in the first place, so they're just hyping up a non-selling point. The best explanation is that the high frequencies either are too unstable or don't actually increase performance, either of which would be considered a bug.\n\nLike, I still think the rumor is likely rumormongers trying to backpedal their predictions to try to save clout, but the fact that it OCs that high points in the other direction.",
+                      "upvotes": 7,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment critiques the product's design strategy, efficiency claims, and suggests potential underlying technical issues.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "It questions AMD's strategy and points out issues with efficiency and potential bugs, indicating a negative sentiment.",
+                      "replies": [
+                        {
+                          "commentId": "j04y87t",
+                          "text": "They also didn't have the launch 7970 clock to over 1ghz even though that was a common overclock and then they released a GHz clocked version down the road",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "The comment draws a historical comparison of AMD's product launch and overclocking strategy relevant to the current product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "It offers a factual historical observation without expressing a clear positive or negative sentiment about the current product.",
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "j02w6na",
+                      "text": "Whoa... 3.2GHz is actually using infinite power? Are you saying AMD is responsible for the Big Bang?",
+                      "upvotes": 11,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a meme/joke responding to an exaggerated numerical symbol.",
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "j037q9s",
+                          "text": "They said that the power limit is set to the maximum +15%. They got almost 10% more performance out of it.\n\nYes it's less efficient but not THAT bad.\nI'd be interested in seeing how much performance they got from increasing the power limit and how much from reducing the voltage.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "The comment discusses the product's overclocking performance, power limits, and efficiency.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "It acknowledges both performance gains and reduced efficiency, maintaining a neutral stance.",
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "j0364cx",
+                      "text": "This is ignoring the fact they also undervolted it, so I dont think there would be much of a difference in the end. No idea why they didnt post the power consumption with UV + OC though.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment discusses specific overclocking methodologies and their impact on power consumption for the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "It points out a missing data point and makes a mild, neutral speculation about its impact.",
+                      "replies": []
+                    },
+                    {
+                      "commentId": "j06ce9t",
+                      "text": "Efficiency, the 4090 is on par with less wattage. This is not good marketing wise, esp. in europe where you have to give your kidney for some energy.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment critiques the product's efficiency in comparison to a competitor and its market implications.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "It states the efficiency is 'not good,' indicating a negative sentiment.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "j032odc",
+                  "text": "Well some other reviewers also mentioned hitting 3ghz easily. The issue being the performance doesn't scale with clock as expected. Some games it does. Some games it doesn't. Computerbase.de was even able to achieve 3145mhz using a reference card.\n\nSo there is some sort of design issue because they cannot reciprocate the clocks in a stable way in games.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment discusses the product's inconsistent performance scaling with clock speeds and identifies a potential design issue.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "It identifies a 'design issue' and states performance doesn't scale as expected, indicating a negative sentiment.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "j02c6ie",
+          "text": "Wow, looks like an entirely different beast. This is more in line with the xtx expectations.",
+          "upvotes": 62,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment expresses a strong positive opinion on the product's performance meeting expectations.",
+          "sentiment": "positive",
+          "sentimentReasoning": "It uses phrases like 'entirely different beast' and 'more in line with expectations,' indicating a positive sentiment.",
+          "replies": []
+        },
+        {
+          "commentId": "j02a29z",
+          "text": "That CP2077 result with the OC+UV is pretty nuts. Practically matching the 4090 at 4K.",
+          "upvotes": 86,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment discusses the product's overclocked performance and favorably compares it to a competitor.",
+          "sentiment": "positive",
+          "sentimentReasoning": "It uses 'pretty nuts' and mentions matching a high-end competitor's performance, indicating a positive sentiment.",
+          "replies": [
+            {
+              "commentId": "j05q5ua",
+              "text": "It's pretty awesome. But the other thing about the 7900xtx is it scales drastically different game to game.  An overclocked undervolted 4090 in cp2077 is using like 350w to outdo this performance. So this thing really is looking like it could be pretty fast but it's just a lot of power to do it.",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment discusses the product's performance, inconsistent scaling, and power consumption, comparing it to a competitor.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "It starts positive but immediately introduces negative caveats about inconsistent performance and high power, resulting in a neutral sentiment.",
+              "replies": []
+            },
+            {
+              "commentId": "j04t7yk",
+              "text": "Matching stock 4090 at raster is pretty nuts indeed. 4090 only gains \\~5% with OC anyway. Though power consumption probably is at 4090 rather than 4080 level.\n\nI'm thinking 7900XTX may really be aiming at 4090 as the naming suggests. Just that RT performance difference is too much, so they limited the power and aimed at 4080 instead.\n\nThough I'd rather them just unlocking the power, and come out with a card to match 4090 in raster, and hopefully that would close the gap with 4080 on RT as well. Being behind in RT vs 4090 is already expected anyway. Selling that hypothetical card at a bit higher price to cover the extra components cost should really pressure Nvidia.",
+              "upvotes": 10,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment discusses the product's raster and RT performance, power consumption, and strategic positioning against competitors.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "It acknowledges strong raster performance but notes poor RT and high power, then speculates on AMD's strategy with a mixed perspective, leading to a neutral sentiment.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "j02ctns",
+          "text": "Guru3D is showing vastly different and more expected results for the TUF+ OC'd, and they have OC benchmarks in several games.\n\n[https://www.guru3d.com/articles\\_pages/asus\\_tuf\\_gaming\\_radeon\\_rx\\_7900\\_xtx\\_oc\\_review,30.html](https://www.guru3d.com/articles_pages/asus_tuf_gaming_radeon_rx_7900_xtx_oc_review,30.html)\n\nComparing the rest of the review, benchmarks otherwise seem roughly the same. So im not really sure TPU's OC'd cyberpunk results are accurate",
+          "upvotes": 66,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment compares and questions different review results for the product's overclocked performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "It presents conflicting data and expresses uncertainty, maintaining a neutral stance.",
+          "replies": [
+            {
+              "commentId": "j02e4j5",
+              "text": "Isn't the clock difference between these 2 OC's more than 200mhz?\n\nGuru has the boost clock at 2950 while the avg here is almost 3200.",
+              "upvotes": 33,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment compares different clock speeds reported in various reviews of the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "It asks a clarifying question about technical data without expressing a clear positive or negative opinion.",
+              "replies": [
+                {
+                  "commentId": "j02hdhh",
+                  "text": "2800 vs 2686 mem clock as well.",
+                  "upvotes": 28,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment provides additional technical comparison points (memory clock) for the product from different sources.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "It offers a factual comparison without expressing a clear positive or negative opinion.",
+                  "replies": []
+                },
+                {
+                  "commentId": "j02hmin",
+                  "text": "It is, but that's the thing. Its only 2 reviewers, one testing 1 game, the other testing 4.   Which makes the data unreliable.\n\nTPU has the TUF OC with OC getting +13.8% over reference.\n\nGuru3D has the TUF OC with OC getting +5% over reference.\n\nTPU has the XFX  with OC getting +10.8% over reference.\n\nGuru3D has the XFX OC with OC getting +8% over reference.\n\nTPU's TUF OC seems like a golden sample, while Guru3D's seems like a dud.\n\nOn a side note im not sure why  W1zzard (TPU) chose Cyberpunk as the one game to test, if youre going to only test one game, it should be a title with a built-in benchmark so you get 99.99% repeatable results.",
+                  "upvotes": 10,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment critiques review methodologies, compares product performance data, and speculates on sample quality.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "It criticizes review methodology and suggests one product sample might be a 'dud,' indicating a negative sentiment towards the testing and potentially the product's consistency.",
+                  "replies": [
+                    {
+                      "commentId": "j02hy6x",
+                      "text": "Cyberpunk has a built in benchmark though though i'm not sure if they tested it with it.",
+                      "upvotes": 26,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment provides factual information about benchmarking tools relevant to product performance testing.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "It offers a factual statement and expresses uncertainty, remaining neutral.",
+                      "replies": [
+                        {
+                          "commentId": "j062w7j",
+                          "text": "Not using the integrated benchmark. I use my own test scene, which is actual in-game gameplay. Many integrated benchmarks are too light, or run too short (check the clocks graph on 35 why that can be misleading). \n\nIt's kinda easy to optimize your drivers/shader compiler for the benchmark, because you know exactly what reviewers are testing\n\nThis is even more relevant with the new dual-issue shader units on Navi 31. If this was my product I'd whip my developers to hand-optimize all the shaders in integrated benchmarks first, so reviewers get good results.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment discusses general benchmarking methodology rather than providing insight into the specific product's performance or features.",
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "j05r4yk",
+                      "text": "I randomly picked one popular game",
+                      "upvotes": 8,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment explains a reviewer's personal choice of game for testing, not the product itself.",
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "j02i00y",
+                      "text": "CP2077 has a built in benchmark.",
+                      "upvotes": 14,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment provides a factual statement about a benchmarking tool relevant to product performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "It is a factual statement without clear positive or negative sentiment.",
+                      "replies": []
+                    },
+                    {
+                      "commentId": "j05qol9",
+                      "text": "He didn't use it. I get 84 fps on my 4090 in the built in benchmark.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment provides factual context about benchmarking methods and personal performance data for a competitor.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "It is a factual statement about benchmark usage and a competitor's performance, without expressing a clear sentiment about the product.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "j02dcsr",
+              "text": "TPU applied an undervolt where as it appears that G3D did not.",
+              "upvotes": 45,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment provides a technical distinction in how the product was tested by different reviewers.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "It offers a factual observation without expressing a clear positive or negative opinion.",
+              "replies": [
+                {
+                  "commentId": "j062xp6",
+                  "text": "Correct, without undervolt you're not getting meaningful OC scaling",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment provides technical insight into the product's overclocking behavior and requirements.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "It is a factual technical statement about overclocking, without expressing a clear positive or negative sentiment.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "j02qgus",
+              "text": "Some notes:\n\nGuru3D is on a 5950x with 3600 ram  @??\n\nTPU is on a 13900k with 6000 ram @ C36\n\nThose are pretty different systems, even if you're testing at 4K",
+              "upvotes": 31,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment compares different system configurations used in product reviews, highlighting potential impacts on benchmarks.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "It factually points out differences in testing setups without expressing a clear positive or negative opinion.",
+              "replies": []
+            },
+            {
+              "commentId": "j02i0ja",
+              "text": "Im leaning towards TPU probably receiving a golden sample. io-tech.fi and overclocking.com only got their Powercolor Red Devils to around 2860MHz.\n\nIt could also be a skill issue; e.g. crunching to get the review out and not having time to fully delve into the overclocking methodology. But I guess we'll see when OC.net folks get their hands on these cards.",
+              "upvotes": 18,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment speculates on product sample quality and compares overclocking results from various reviews.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "It speculates on sample quality and review methodology, leading to a cautious and neutral assessment.",
+              "replies": [
+                {
+                  "commentId": "j05r2l4",
+                  "text": "Check the steps i wrote on the oc page, if you oc the classic way you get no meaningful oc. Max pwr and undervolt especially are a must",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment provides technical advice for effectively overclocking the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "It offers technical instructions for overclocking, without expressing a clear positive or negative opinion.",
+                  "replies": []
+                },
+                {
+                  "commentId": "j032ov8",
+                  "text": "How does the Red Devil HSF compare to the TUF OC HSF? e.g. are they both 3.5 slots? Does one use a vapor chamber and the other does not?\n\nI'm wondering if there are discrepancies that might explain the difference in cooling.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment asks technical questions about the product's cooling system to understand performance differences.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "It asks factual questions to understand technical aspects, maintaining a neutral stance.",
+                  "replies": [
+                    {
+                      "commentId": "j0362o7",
+                      "text": "3 slots, 3x100mm fans, 8 heatpipes. Seems like a good design, but I wouldn't put it past ASUS to have beaten it with their TUF cards, their past two generations of TUF cards have been really, really good.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment describes the product's cooler design and offers a positive opinion on its quality and the manufacturer's past performance.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "It describes the cooler as a 'good design' and praises the manufacturer's past cards, indicating a positive sentiment.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "j03ars8",
+                  "text": "I mean they also got the Merc over 3.1ghz.\n\nSo either AMD specicaly sent them 2 Golden samples or cards being able to reach 3ghz+ isn't that rare.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment discusses the overclocking potential of different product models and speculates on sample quality.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "It speculates on the commonality of high overclocks or the nature of review samples, remaining neutral.",
+                  "replies": [
+                    {
+                      "commentId": "j05qzep",
+                      "text": "Amd only sent us their own samples, the aib cards came from the aibs directly",
+                      "upvotes": 7,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment explains the source of review samples, which is a meta-discussion about review logistics.",
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "j02gcqc",
+              "text": "the clock is very different. guru has barely tuned it",
+              "upvotes": 11,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment compares overclocking results and critiques the tuning effort in a product review.",
+              "sentiment": "negative",
+              "sentimentReasoning": "It suggests poor tuning effort in a review, which is a negative assessment of the review quality impacting product perception.",
+              "replies": []
+            },
+            {
+              "commentId": "j03k0j9",
+              "text": "Gamer\u2019s Nexus OC is not that impressive either.\n Also how does OC AMD compare to OC Nvidia? Comparing OC to stock sounds wrong to me",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment critiques the product's overclocking performance from a specific review and questions comparison methodologies.",
+              "sentiment": "negative",
+              "sentimentReasoning": "It states the overclocking performance is 'not that impressive,' indicating a negative sentiment.",
+              "replies": []
+            },
+            {
+              "commentId": "j04bs0d",
+              "text": "Guru3D memory OC is weak by a big margin. I guess like typical OC, silicon lottery matters.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment critiques the memory overclocking performance of the product in a specific review.",
+              "sentiment": "negative",
+              "sentimentReasoning": "It states that memory OC is 'weak by a big margin,' indicating a negative sentiment.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "j028y2a",
+          "text": "https://tpucdn.com/review/asus-radeon-rx-7900-xtx-tuf-oc/images/oc-cyberpunk.png",
+          "upvotes": 49,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment provides a direct link to an image showing product performance benchmarks.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "It is a factual link without inherent positive or negative sentiment.",
+          "replies": [
+            {
+              "commentId": "j0299k5",
+              "text": "11.5% more performance from overclocking. That's crazy.",
+              "upvotes": 94,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment discusses significant performance gains achieved by overclocking the product.",
+              "sentiment": "positive",
+              "sentimentReasoning": "It expresses strong positive surprise at the performance uplift, indicating a positive sentiment.",
+              "replies": [
+                {
+                  "commentId": "j02a82o",
+                  "text": "With some tweaking to the OC and a bit of undervolting, they got a 23.1% performance uplift over the 4080. \n\nLooks like the reference cards could be starving for power with their 2x8pin connectors? If so there's finally a compelling reason to get the AIB's again.",
+                  "upvotes": 88,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment discusses significant performance gains from tuning the product and speculates on a design limitation, offering a recommendation for AIB versions.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "It highlights a significant performance uplift and a compelling reason to buy AIB versions, indicating a positive sentiment.",
+                  "replies": [
+                    {
+                      "commentId": "j02awsb",
+                      "text": "That's giving me HD 7970 overclocking vibes.",
+                      "upvotes": 40,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment draws a positive historical comparison related to the product's overclocking potential.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "It evokes positive 'overclocking vibes' by comparing it to a historically good overclocker, indicating a positive sentiment.",
+                      "replies": [
+                        {
+                          "commentId": "j02z21f",
+                          "text": "7970 is amazing to mess with. I got mine from the stock 925MHz/1375MHz to 1300MHz/1800MHz on air cooling and with a VBIOS mod to tighten the memory timings managed a 37% performance increase in Firestrike GPU score.",
+                          "upvotes": 18,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment details a personal overclocking experience with an older, different product (HD 7970).",
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "j03slmp",
+                              "text": "Damn thats nice... I ran my 7950 @ 1200/1600 which was very nice; 1300/1800  on air is insane bios mod or not.",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment discusses personal overclocking experiences with older, different AMD graphics cards.",
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "j03szrr",
+                                  "text": "Well my air cooling was about as good as air cooling gets. Arctic Accelero Xtreme IV with some comically noisy server fans. Maxed out at \\~1200MHz with the stock fans and was actually limited by VRM temperatures.",
+                                  "upvotes": 2,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment describes a personal cooling setup and limitations for an older, different graphics card.",
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "j02mhts",
+                          "text": "Ironic that would be teh case.",
+                          "upvotes": 8,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a short, general meta-reaction without specific insight into the product.",
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "j02affx",
+                      "text": "Looking forward to the LC editions getting reviewed. Could see some pretty mental gains.",
+                      "upvotes": 18,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment expresses anticipation for future product variants and their potential performance gains.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "It uses phrases like 'looking forward to' and 'pretty mental gains,' indicating positive anticipation.",
+                      "replies": []
+                    },
+                    {
+                      "commentId": "j02d8pb",
+                      "text": "Undervolting could give some gains on reference. I don't think any of the reviews tested this yet.",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment discusses potential performance gains for the product through undervolting and notes a gap in review coverage.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "It speculates on potential gains and notes missing review data, maintaining a neutral stance.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "j02yzk3",
+                  "text": "I remember when 10-20% was almost expected. I was able to push my R9 290 from 947MHz to 1200Mhz on water. I could even do 1250MHz with +200mv but the power draw became insane at those voltages.",
+                  "upvotes": 10,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment recounts a personal overclocking experience with an older, different graphics card (R9 290).",
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "j02d2iy",
+                  "text": "Did I read it wrong, or is moving the power limit knob up 15% all that they did?\n\nIt is impressive. Pretty much 4090 perf on cyberpunk. Crazy.",
+                  "upvotes": 6,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment asks about tuning methods and then praises the product's performance in comparison to a competitor.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "It uses words like 'impressive,' 'pretty much 4090 perf,' and 'crazy,' indicating a positive sentiment.",
+                  "replies": [
+                    {
+                      "commentId": "j02defs",
+                      "text": "Yeah and undervolting gave them another boost to 23.1% over 4080.",
+                      "upvotes": 26,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment highlights a significant performance gain for the product through undervolting compared to a competitor.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "It emphasizes a 'boost' and a substantial performance advantage, indicating a positive sentiment.",
+                      "replies": [
+                        {
+                          "commentId": "j02mkfj",
+                          "text": "OK, the undervolting definitely helps.",
+                          "upvotes": 8,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "The comment confirms the beneficial impact of undervolting on the product's performance.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "It states that undervolting 'definitely helps,' indicating a positive outcome.",
+                          "replies": []
+                        },
+                        {
+                          "commentId": "j02ew1z",
+                          "text": "How does that work, wouldn't undervolting lower the max clocks?",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "The comment asks a technical question about undervolting's effect on the product's clock speeds.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "It asks a factual technical question without expressing a clear positive or negative opinion.",
+                          "replies": [
+                            {
+                              "commentId": "j02zuws",
+                              "text": "For the last several generations of GPUs from both Nvidia and AMD, clocks scale based on an internal table that tells the card how high to boost based on temperature. Clocks will start to decrease around 50C, depending on the manufacturer, and go down further every 5-10C. That means that, if you can keep the card cooler, it will go faster. Undervolting pushes less power into the silicon, which keeps it cooler, resulting in higher clocks.\n\nHow much you can undervolt will depend on silicon quality, but since a die has to be at least good enough to be stable at stock, most will be better than that by *some* degree. Odds are you can at least get enough of an undervolt to lower power usage and temperature by a little bit, which will translate to higher clocks.\n\nBasically, undervolting *is* overclocking now.",
+                              "upvotes": 8,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "The comment provides a detailed technical explanation of how undervolting impacts GPU performance, relevant to the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "It offers a factual technical explanation without expressing a clear positive or negative opinion.",
+                              "replies": []
+                            },
+                            {
+                              "commentId": "j02f8sw",
+                              "text": "Undervolt actually lowers power use at same clocks. Effectively increasing the power limit and boosting clocks.",
+                              "upvotes": 20,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "The comment provides a concise technical explanation of how undervolting benefits the product's performance.",
+                              "sentiment": "positive",
+                              "sentimentReasoning": "It explains how undervolting leads to beneficial outcomes like lower power use and boosted clocks, indicating a positive attribute.",
+                              "replies": []
+                            },
+                            {
+                              "commentId": "j03c3n7",
+                              "text": "Silicon quality varies, and every die needs a different voltage to hit the desired clocks and get the right performance in their standard case.\n\nOnce you can hit the clocks, all the extra voltage does is generate more heat, which increases temps and can result in clocks dropping if your case doesn't have the airflow. It's like food, once you hit the calorie amount you need, any more makes you gain weight which reduces performance.\n\nAMD and Nvidia choose threshold voltages so that their yields are high enough and power consumption is in check. Say they have 100,000 cards and they want 90% yields. They'll pick a voltage high enough so that only 10,000 cards fail. That means by definition that 89,999 of the remaining 90,000 are overvolted to *some* degree.\n\nAlso as silicon quality goes up over time, yields increase. Now that stock voltage is giving you 95% yields, so now 94999 of every 100k cards are overvolted. That stock voltage is probably adjusted, but not immensely.\n\nAnd they can't change clocks because now suddenly your stock performance is changing based on age. This is why we often see late cycle refreshes (3600 XT, 6950 XT, etc). In the case of the 6650 XT, yields probably got so good that there's no point in reducing stock clocks and selling the inferior 6600 XT when it has the exact same cost to make as the 6650 XT.\n\nAMD and Nvidia probably check this per unit and have the card adjust itself, but not as thoroughly as an end user can for a lot of reasons:\n\n1. Risk, if a user screws up undervolting, the card will revert to its stock voltage and will still work. If AMD sets the *stock* voltage too low for the silicon, then the card is underperforming stock benchmarks, could crash, or may even brick with no way to fix it unless you flash vBios if the voltage is too low.\n\n2. Silicon also ages, and as it gets older it needs more voltage to hit the clocks. If they set the stock voltage as low as possible, then the card will crash when the silicon needs more. And every time it crashes it will go right back to that stock voltage.\n\n3. Time, neither company is going to test every unit for hours like an end user can",
+                              "upvotes": 5,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "The comment provides a detailed technical explanation of GPU silicon quality, voltage, performance, and manufacturing decisions relevant to the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "It offers a comprehensive, factual technical explanation without expressing a clear positive or negative sentiment about the specific product.",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "j034nl9",
+          "text": "Power draw with the custom OC matches/exceeds the 4090 and still isn\u2019t as fast. The v/f curve is not where AMD probably hoped. So they scaled it back to something more efficient and still competitive to the 4080.  That\u2019s my guess.",
+          "upvotes": 11,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment analyzes the product's power consumption, performance relative to competitors, and speculates on AMD's design strategy.",
+          "sentiment": "negative",
+          "sentimentReasoning": "It highlights high power draw for less performance than a competitor and suggests AMD's design goals were not met, indicating a negative sentiment.",
+          "replies": []
+        },
+        {
+          "commentId": "j02uwkd",
+          "text": "I really hope the multi-monitor and video playback power consumption is just a driver bug, because that's nuts.\n\n7W idle with one monitor to 99W with two? That is ridiculous. And nearly the same amount of power just to play back some video using the fixed function decoders? Something seems very wrong there.\n\nPower consumption issues aside, this is about what was expected from the launch. The reference cards would be limited, but the AIB cards would have plenty of room to go wild, and that seems to be exactly the case. An OC that puts it on par with the 4090 in Cyberpunk (no RTX\u2014raster only, obviously) at 4k is a pretty damn solid increase, and not something we have seen in a few generations now.",
+          "upvotes": 11,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment discusses severe power consumption issues but also praises the product's overclocking potential and performance compared to a competitor.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "It expresses strong negativity towards power consumption issues but strong positivity towards overclocking performance, resulting in a neutral overall sentiment.",
+          "replies": [
+            {
+              "commentId": "j02y6w7",
+              "text": "Definitely a driver bug, ans will be fixed. Some people had similar issues on some previous cards, and it got fixed.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment speculates on a product issue being a driver bug and expresses confidence in its future resolution.",
+              "sentiment": "positive",
+              "sentimentReasoning": "It expresses confidence that a 'driver bug' will be 'fixed,' indicating a positive outlook.",
+              "replies": [
+                {
+                  "commentId": "j02z4ow",
+                  "text": "Well, let's just hope it doesn't take over a year like it did for the RDNA2 multi display power consumption issue to be resolved. (Technically it took even longer than that, since the issue started with RDNA1 and wasn't fixed until over a year after RDNA2 launched.) \n\nI don't remember media playback being nearly that power hungry at launch on my 6800XT, so hopefully that's also just a bug, since that didn't seem to be an issue with RDNA2. It may just be that HW acceleration isn't working properly right now and that's actually being decoded on the cores rather than the fixed function decoder, which would explain the high power consumption on media playback.",
+                  "upvotes": 9,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment expresses concern about the duration of a product bug and speculates on its technical cause based on historical issues.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "It expresses concern over a potential bug and references past long-standing issues, indicating a negative sentiment.",
+                  "replies": []
+                },
+                {
+                  "commentId": "j033els",
+                  "text": "Had a similar issue when I had my 980 Ti and that took Nvidia years to fix.\n\nLet's hope AMD fixes this asap.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment draws a historical comparison to a competitor's product issue and expresses hope for a quick fix for the current product.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "It references a past issue that took 'years to fix,' creating a negative association, even with a hopeful closing statement.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

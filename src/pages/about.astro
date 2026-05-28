@@ -1,0 +1,104 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About How It Works" description="Learn how RedditPCs calculates hardware rankings mathematically from community sentiment analysis.">
+  <section class="py-16 px-4 bg-reddit-surface/40">
+    <div class="max-w-3xl mx-auto">
+      
+      <!-- Radical Zero-Compromise Typography Commitment -->
+      <div class="mb-16 text-center sm:text-left">
+        <span class="text-[10px] font-extrabold uppercase tracking-widest text-reddit-orange bg-orange-50 px-3 py-1 rounded-full border border-orange-100/50 inline-block mb-4">
+          Our Commitment
+        </span>
+        <h1 class="text-3xl md:text-5xl font-black text-zinc-900 leading-tight tracking-tight mb-6">
+          Sponsor-free. We do not accept hardware seeding. Ranks are aggregated directly from community comments.
+        </h1>
+        <p class="text-base md:text-lg text-zinc-600 leading-relaxed font-medium">
+          If the community dislikes a hardware component, its score drops. Scores are mathematically aggregated from builders who purchased the parts.
+        </p>
+      </div>
+
+      <div class="space-y-16">
+        <!-- How Data is Processed -->
+        <section class="border-t border-zinc-200 pt-12">
+          <h2 class="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-8 text-center sm:text-left">How Data is Processed</h2>
+          
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Step 1 -->
+            <div class="relative">
+              <div class="w-8 h-8 rounded-lg bg-reddit-orange text-white font-bold text-xs flex items-center justify-center mb-4 shadow-sm">1</div>
+              <h3 class="font-extrabold text-base text-zinc-900 mb-2">📡 Scrape</h3>
+              <p class="text-sm text-reddit-muted leading-relaxed">
+                We scrape raw comment trees on hardware subreddits (r/buildapc, r/hardware) for reviews and user feedback.
+              </p>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="relative">
+              <div class="w-8 h-8 rounded-lg bg-emerald-500 text-white font-bold text-xs flex items-center justify-center mb-4 shadow-sm">2</div>
+              <h3 class="font-extrabold text-base text-zinc-900 mb-2">🛡️ Deduplicate</h3>
+              <p class="text-sm text-reddit-muted leading-relaxed">
+                <strong>1 Builder = 1 Vote.</strong> We filter duplicate accounts and bots. If an author comments multiple times, only their highest-upvoted comment is counted.
+              </p>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="relative">
+              <div class="w-8 h-8 rounded-lg bg-blue-500 text-white font-bold text-xs flex items-center justify-center mb-4 shadow-sm">3</div>
+              <h3 class="font-extrabold text-base text-zinc-900 mb-2">📊 Rank</h3>
+              <p class="text-sm text-reddit-muted leading-relaxed">
+                Recommendation rate equals positive reviews divided by positive + negative. Neutral reviews are excluded to ensure score focus.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Communities & Funding -->
+        <section class="grid grid-cols-1 md:grid-cols-2 gap-10 pt-12 border-t border-zinc-200">
+          <div>
+            <h2 class="text-xs font-bold uppercase tracking-widest text-zinc-400 mb-4">Monitored Subreddits</h2>
+            <p class="text-sm text-reddit-muted mb-4 leading-relaxed font-medium">
+              We monitor sentiment across the web's largest hardware communities, covering over 16 million combined builders:
+            </p>
+            <ul class="space-y-2.5 text-sm font-bold">
+              <li class="flex items-center gap-2 text-zinc-800">
+                <span class="w-1.5 h-1.5 bg-reddit-orange rounded-full"></span>
+                <a href="https://reddit.com/r/buildapc" class="hover:text-reddit-orange transition-colors">r/buildapc</a> <span class="text-xs text-zinc-400 font-normal">(5M+ members)</span>
+              </li>
+              <li class="flex items-center gap-2 text-zinc-800">
+                <span class="w-1.5 h-1.5 bg-reddit-orange rounded-full"></span>
+                <a href="https://reddit.com/r/hardware" class="hover:text-reddit-orange transition-colors">r/hardware</a> <span class="text-xs text-zinc-400 font-normal">(2M+ members)</span>
+              </li>
+              <li class="flex items-center gap-2 text-zinc-800">
+                <span class="w-1.5 h-1.5 bg-reddit-orange rounded-full"></span>
+                <a href="https://reddit.com/r/pcmasterrace" class="hover:text-reddit-orange transition-colors">r/pcmasterrace</a> <span class="text-xs text-zinc-400 font-normal">(8M+ members)</span>
+              </li>
+              <li class="flex items-center gap-2 text-zinc-800">
+                <span class="w-1.5 h-1.5 bg-reddit-orange rounded-full"></span>
+                <a href="https://reddit.com/r/Amd" class="hover:text-reddit-orange transition-colors">r/Amd</a> <span class="text-xs text-zinc-400 font-normal">(500K+ members)</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="bg-reddit-surface p-6 rounded-2xl border border-reddit-border flex flex-col justify-between shadow-sm">
+            <div>
+              <h2 class="text-sm font-extrabold text-zinc-900 mb-2 uppercase tracking-wide">How We Keep the Lights On</h2>
+              <p class="text-xs text-reddit-muted leading-relaxed mb-3">
+                RedditPCs is funded through referral commissions. If you click on our Amazon or Newegg buttons and make a purchase, we earn a small percentage at zero extra cost to you.
+              </p>
+              <p class="text-xs text-zinc-800 font-semibold leading-relaxed">
+                <strong>Our Promise:</strong> Ranks are calculated mathematically from comment data. Affiliate partnerships have zero influence on scores.
+              </p>
+            </div>
+            <div class="text-[9px] font-bold text-zinc-400 mt-5 border-t border-zinc-200/50 pt-3 uppercase tracking-wider">
+              Updated weekly • 100% independent data scraping
+            </div>
+          </div>
+        </section>
+      </div>
+
+    </div>
+  </section>
+</Layout>
+

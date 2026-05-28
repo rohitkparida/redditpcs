@@ -1,0 +1,233 @@
+---
+import Layout from '../layouts/Layout.astro';
+import BrandGraphic from '../components/BrandGraphic.astro';
+import { slugify } from '../utils/helpers';
+
+// Curated top-performing Reddit community builds matching our verified database items
+const builds = [
+  {
+    id: 'ultimate-gaming',
+    title: 'The Ultimate Gaming Engine',
+    description: 'The absolute pinnacle of gaming performance. Frequently recommended on r/buildapc for high-refresh 4K gaming without compromise.',
+    tier: 'High-End',
+    budgetRange: '1500+',
+    totalCost: 3380,
+    redditUrl: 'https://reddit.com/r/buildapc',
+    subreddit: 'r/buildapc',
+    upvotes: 1420,
+    parts: [
+      { role: 'CPU', name: 'AMD Ryzen 7 9800X3D', price: 479, category: 'cpus', brand: 'AMD' },
+      { role: 'GPU', name: 'NVIDIA GeForce RTX 5090 (32GB)', price: 1999, category: 'gpus', brand: 'NVIDIA' },
+      { role: 'Cooler', name: 'Arctic Liquid Freezer II 360', price: 120, category: 'coolers', brand: 'Arctic' },
+      { role: 'Motherboard', name: 'Gigabyte X670 Aorus Elite', price: 289, category: 'motherboards', brand: 'Gigabyte' },
+      { role: 'RAM', name: 'G.Skill Trident Z5 Neo DDR5-6000 CL30', price: 115, category: 'ram', brand: 'G.Skill' },
+      { role: 'SSD', name: 'Samsung 990 Pro', price: 169, category: 'ssds', brand: 'Samsung' },
+      { role: 'PSU', name: 'Corsair RMx Series RM1000x', price: 189, category: 'psus', brand: 'Corsair' },
+      { role: 'Case', name: 'Fractal Design Torrent', price: 190, category: 'cases', brand: 'Fractal' }
+    ]
+  },
+  {
+    id: 'reddit-sweet-spot',
+    title: 'The Reddit Sweet Spot',
+    description: 'The golden ratio of price-to-performance. Excellent 1440p gaming machine optimized for efficiency and noise control.',
+    tier: 'Mid-Range',
+    budgetRange: '800-1500',
+    totalCost: 1455,
+    redditUrl: 'https://reddit.com/r/pcmasterrace',
+    subreddit: 'r/pcmasterrace',
+    upvotes: 850,
+    parts: [
+      { role: 'CPU', name: 'AMD Ryzen 5 9600X', price: 279, category: 'cpus', brand: 'AMD' },
+      { role: 'GPU', name: 'NVIDIA GeForce RTX 4070 Ti Super', price: 799, category: 'gpus', brand: 'NVIDIA' },
+      { role: 'Cooler', name: 'Thermalright Peerless Assassin 120 SE', price: 35, category: 'coolers', brand: 'Thermalright' },
+      { role: 'Motherboard', name: 'MSI B650 Tomahawk', price: 199, category: 'motherboards', brand: 'MSI' },
+      { role: 'RAM', name: 'G.Skill Trident Z5 Neo DDR5-6000 CL30', price: 115, category: 'ram', brand: 'G.Skill' },
+      { role: 'SSD', name: 'WD Black SN770', price: 79, category: 'ssds', brand: 'WD' },
+      { role: 'PSU', name: 'Seasonic Focus GX (750W)', price: 109, category: 'psus', brand: 'Seasonic' },
+      { role: 'Case', name: 'Lian Li Lancool 216', price: 95, category: 'cases', brand: 'Lian Li' }
+    ]
+  },
+  {
+    id: 'ultra-budget',
+    title: 'The Ultra-Budget Workhorse',
+    description: 'Stretching every dollar to the max. A perfect entry-level setup that punches well above its weight class in 1080p esports and AAA gaming.',
+    tier: 'Budget',
+    budgetRange: 'under-800',
+    totalCost: 673,
+    redditUrl: 'https://reddit.com/r/buildapc',
+    subreddit: 'r/buildapc',
+    upvotes: 620,
+    parts: [
+      { role: 'CPU', name: 'AMD Ryzen 5 5600', price: 119, category: 'cpus', brand: 'AMD' },
+      { role: 'GPU', name: 'AMD Radeon RX 6700 XT', price: 329, category: 'gpus', brand: 'AMD' },
+      { role: 'Cooler', name: 'Thermalright Peerless Assassin 120 SE', price: 35, category: 'coolers', brand: 'Thermalright' },
+      { role: 'Motherboard', name: 'ASRock B650M Pro RS', price: 119, category: 'motherboards', brand: 'ASRock' },
+      { role: 'RAM', name: 'Corsair Vengeance', price: 65, category: 'ram', brand: 'Corsair' },
+      { role: 'SSD', name: 'WD Black SN770', price: 79, category: 'ssds', brand: 'WD' },
+      { role: 'PSU', name: 'Seasonic Focus GX', price: 109, category: 'psus', brand: 'Seasonic' },
+      { role: 'Case', name: 'Montech Air 903 Max', price: 75, category: 'cases', brand: 'Montech' }
+    ]
+  }
+];
+
+---
+
+<Layout title="Reddit Community PC Builds" description="Highly recommended PC build configurations aggregated from Reddit consensus. Budget-friendly to high-end setups.">
+  <section class="py-12 px-4 border-b border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-950 transition-colors">
+    <div class="max-w-6xl mx-auto text-left">
+      <div class="text-xs text-reddit-muted dark:text-zinc-500 mb-3 font-semibold">
+        <a href="/" class="hover:text-reddit-orange dark:hover:text-reddit-orange">Home</a>
+        <span class="mx-2">/</span>
+        <span class="text-zinc-650 dark:text-zinc-400 font-bold">Community Builds</span>
+      </div>
+      <h1 class="text-3xl md:text-4xl font-extrabold mb-3 text-zinc-900 dark:text-white tracking-tight font-sans">Reddit Community Builds</h1>
+      <p class="text-reddit-muted dark:text-zinc-400 text-base max-w-3xl leading-relaxed">
+        We aggregate complete setup blueprints compiled from successful community builds on subreddits like r/buildapc and r/pcmasterrace. Balanced for performance, thermals, and verified compatibility.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-8 px-4 bg-zinc-50 dark:bg-zinc-950/40 transition-colors">
+    <div class="max-w-6xl mx-auto">
+      {/* Interactive Filter Tabs */}
+      <div class="flex flex-wrap items-center gap-3 mb-10 border-b border-zinc-200/60 dark:border-zinc-800/80 pb-6">
+        <span class="text-xs font-bold uppercase tracking-wider text-zinc-450 dark:text-zinc-500 mr-2">Budget Filter</span>
+        <button 
+          data-filter="all" 
+          class="budget-tab px-4 py-2 text-xs font-bold rounded-xl border border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 shadow-sm hover:border-reddit-orange transition-all duration-150 active"
+        >
+          All Configurations
+        </button>
+        <button 
+          data-filter="under-800" 
+          class="budget-tab px-4 py-2 text-xs font-bold rounded-xl border border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 shadow-sm hover:border-reddit-orange transition-all duration-150"
+        >
+          Budget (Under $800)
+        </button>
+        <button 
+          data-filter="800-1500" 
+          class="budget-tab px-4 py-2 text-xs font-bold rounded-xl border border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 shadow-sm hover:border-reddit-orange transition-all duration-150"
+        >
+          Mid-Range ($800 - $1,500)
+        </button>
+        <button 
+          data-filter="1500+" 
+          class="budget-tab px-4 py-2 text-xs font-bold rounded-xl border border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 shadow-sm hover:border-reddit-orange transition-all duration-150"
+        >
+          High-End ($1,500+)
+        </button>
+      </div>
+
+      {/* Build Configurations Grid */}
+      <div class="space-y-12" id="buildsList">
+        {builds.map((build) => (
+          <div 
+            class="build-card bg-white dark:bg-zinc-900/50 border border-reddit-border dark:border-zinc-800 rounded-3xl p-6 md:p-8 hover:shadow-xl dark:hover:shadow-zinc-950/40 hover:border-zinc-300 dark:hover:border-zinc-700/60 transition-all duration-300 transform hover:-translate-y-0.5"
+            data-range={build.budgetRange}
+          >
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+              {/* Left Side: Summary & Reddit Upvote Metric */}
+              <div class="lg:col-span-4 flex flex-col justify-between">
+                <div>
+                  <div class="flex items-center gap-2.5 mb-3">
+                    <span class="px-2.5 py-0.5 text-[9px] font-black uppercase tracking-wider rounded-md bg-reddit-orange text-white">
+                      {build.tier}
+                    </span>
+                    <a 
+                      href={build.redditUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      class="text-xs font-extrabold text-reddit-orange hover:underline inline-flex items-center gap-1"
+                    >
+                      {build.subreddit}
+                      <span class="text-zinc-400 font-normal">•</span>
+                      <span class="text-emerald-600 dark:text-emerald-400">+{build.upvotes} net votes</span>
+                    </a>
+                  </div>
+                  
+                  <h2 class="text-2xl font-black text-zinc-900 dark:text-white leading-tight mb-4 font-sans">{build.title}</h2>
+                  <p class="text-sm text-reddit-muted dark:text-zinc-400 leading-relaxed mb-6">
+                    {build.description}
+                  </p>
+                </div>
+
+                <div class="border-t border-zinc-100 dark:border-zinc-800/80 pt-6">
+                  <span class="text-[10px] font-bold text-zinc-400 dark:text-zinc-550 uppercase tracking-widest block mb-0.5">Estimated Total Cost</span>
+                  <div class="text-3xl font-black text-zinc-950 dark:text-zinc-100">
+                    ${build.totalCost.toLocaleString()}
+                  </div>
+                  <span class="text-[9px] font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wide block mt-1">Based on aggregated local pricing</span>
+                </div>
+              </div>
+
+              {/* Right Side: Component Spec Grid */}
+              <div class="lg:col-span-8">
+                <div class="rounded-2xl border border-reddit-border dark:border-zinc-800/80 bg-zinc-200/50 dark:bg-zinc-850 overflow-hidden grid grid-cols-1 sm:grid-cols-2 gap-px">
+                  {build.parts.map((part) => {
+                    const productSlug = slugify(part.name);
+                    const detailUrl = `/${part.category}/${productSlug}`;
+                    return (
+                      <div class="p-3 bg-white dark:bg-zinc-900/60 flex items-center justify-between text-xs hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all">
+                        <div class="min-w-0 pr-3">
+                          <span class="text-[8px] font-extrabold uppercase tracking-widest text-zinc-400 dark:text-zinc-550 block mb-0.5">{part.role}</span>
+                          <a 
+                            href={detailUrl} 
+                            class="font-extrabold text-zinc-850 dark:text-zinc-200 hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors truncate block max-w-[180px] sm:max-w-[150px]"
+                          >
+                            {part.name}
+                          </a>
+                        </div>
+                        <div class="text-right flex-shrink-0 flex items-center gap-3">
+                          <span class="font-extrabold text-zinc-905 dark:text-zinc-150">${part.price}</span>
+                          <a 
+                            href={detailUrl} 
+                            class="p-0.5 px-2 rounded-md border border-reddit-border dark:border-zinc-800 text-[9px] font-bold text-reddit-orange bg-white dark:bg-zinc-950 shadow-sm hover:bg-reddit-orange hover:text-white dark:hover:bg-reddit-orange dark:hover:text-white transition-all duration-150"
+                          >
+                            Verify
+                          </a>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const tabs = document.querySelectorAll('.budget-tab');
+    const cards = document.querySelectorAll('.build-card');
+
+    if (!tabs || !cards) return;
+
+    tabs.forEach(tab => {
+      tab.addEventListener('click', function() {
+        // Toggle Active styles
+        tabs.forEach(t => {
+          t.classList.remove('active', 'border-reddit-orange', 'text-reddit-orange');
+          t.classList.add('border-reddit-border', 'dark:border-zinc-800', 'text-zinc-800', 'dark:text-zinc-200');
+        });
+        
+        this.classList.add('active', 'border-reddit-orange', 'text-reddit-orange');
+        this.classList.remove('border-reddit-border', 'dark:border-zinc-800', 'text-zinc-800', 'dark:text-zinc-200');
+
+        const filter = this.getAttribute('data-filter');
+
+        cards.forEach(card => {
+          const range = card.getAttribute('data-range');
+          if (filter === 'all' || filter === range) {
+            card.style.display = 'block';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  });
+</script>

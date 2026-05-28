@@ -1,0 +1,447 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BrandGraphic from '../../components/BrandGraphic.astro';
+import { slugify, getSentimentColor, formatDate } from '../../utils/helpers';
+import { categories } from '../../utils/data';
+
+export function getStaticPaths() {
+  const paths: Array<{ params: { category: string; product: string }; props: { categoryData: any; product: any } }> = [];
+  
+  // Create URL-friendly slug from product name using imported slugify
+  const localSlugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+  
+  categories.forEach(cat => {
+    cat.products.forEach(prod => {
+      paths.push({
+        params: { category: cat.slug, product: localSlugify(prod.name) },
+        props: { categoryData: cat, product: prod }
+      });
+    });
+  });
+  
+  return paths;
+}
+
+const { categoryData, product } = Astro.props;
+
+const totalReviews = (product.positiveReviews || 0) + (product.neutralReviews || 0) + (product.negativeReviews || 0);
+const positivePct = totalReviews > 0 ? Math.round(((product.positiveReviews || 0) / totalReviews) * 100) : 0;
+const neutralPct = totalReviews > 0 ? Math.round(((product.neutralReviews || 0) / totalReviews) * 100) : 0;
+const negativePct = totalReviews > 0 ? Math.max(0, 100 - positivePct - neutralPct) : 0;
+
+// Structured SEO metadata block
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": product.name,
+  "brand": {
+    "@type": "Brand",
+    "name": product.brand
+  },
+  "offers": {
+    "@type": "AggregateOffer",
+    "priceCurrency": "USD",
+    "priceRange": product.priceRange
+  },
+  "review": {
+    "@type": "Review",
+    "reviewBody": product.redditConsensus || `Reddit reviews, specs and community recommendation rate for ${product.name}.`,
+    "author": {
+      "@type": "Organization",
+      "name": "RedditPCs"
+    }
+  }
+};
+---
+
+<Layout title={`${product.name} - Reddit Reviews`} description={`Community reviews and sentiment for ${product.name} from r/buildapc and related subreddits.`}>
+  {/* Inject JSON-LD Schema */}
+  <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+
+  <!-- Breadcrumb -->
+  <section class="py-4 px-4 bg-reddit-surface dark:bg-zinc-900 border-b border-reddit-border dark:border-zinc-800 transition-colors">
+    <div class="max-w-4xl mx-auto">
+      <div class="text-xs text-reddit-muted dark:text-zinc-500 font-semibold">
+        <a href="/" class="hover:text-reddit-orange dark:hover:text-reddit-orange">Home</a>
+        <span class="mx-2">/</span>
+        <a href={`/${categoryData.slug}`} class="hover:text-reddit-orange dark:hover:text-reddit-orange font-bold">{categoryData.category}</a>
+        <span class="mx-2">/</span>
+        <span class="text-zinc-650 dark:text-zinc-400 font-bold">{product.name}</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Header -->
+  <section class="py-10 px-4 bg-white dark:bg-zinc-950 border-b border-reddit-border dark:border-zinc-800 transition-colors">
+    <div class="max-w-4xl mx-auto">
+      <div class="flex flex-col md:flex-row gap-8">
+        {/* Product Image: Responsive Glowing Holographic Graphic Card */}
+        <div class="flex-shrink-0 w-full md:w-56">
+          <BrandGraphic brand={product.brand} name={product.name} size="large" />
+        </div>
+
+        {/* Product Info */}
+        <div class="flex-1">
+          <div class="flex items-center gap-2 mb-3">
+            <span class="bg-emerald-500 dark:bg-emerald-600 text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded shadow-sm">
+              #{product.rank} in {categoryData.category.replace(/\s+\(.*\)/g, '')}
+            </span>
+            <span class="bg-zinc-100 dark:bg-zinc-900 text-zinc-650 dark:text-zinc-350 text-[10px] font-bold uppercase tracking-wider px-2.5 py-0.5 rounded border border-zinc-200 dark:border-zinc-800">
+              {product.brand}
+            </span>
+          </div>
+          
+          <h1 class="text-2xl md:text-3xl font-extrabold mb-4 text-zinc-900 dark:text-white tracking-tight font-sans">{product.name}</h1>
+          
+          {/* Reddit Scorecard Widget */}
+          <div class="mb-6 p-5 rounded-2xl border border-zinc-200 dark:border-zinc-850 bg-zinc-50/50 dark:bg-zinc-900/35 shadow-sm flex flex-col sm:flex-row items-center gap-6">
+            {/* Main Score Dial */}
+            <div class="flex-shrink-0 flex items-center gap-3 border-b sm:border-b-0 sm:border-r border-zinc-200 dark:border-zinc-800 pb-4 sm:pb-0 sm:pr-6 w-full sm:w-auto">
+              <div class={`flex items-center gap-2 ${getSentimentColor(product.recommendationRate)}`}>
+                <svg class="w-7 h-7" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-3xl font-black leading-none font-sans">{Math.round(product.recommendationRate * 100)}%</span>
+              </div>
+              <div class="text-left">
+                <span class="text-[9px] font-black uppercase tracking-widest text-zinc-400 dark:text-zinc-550 block">REDDIT CONSENSUS</span>
+                <span class="text-xs font-bold text-zinc-700 dark:text-zinc-305">Recommendation Rate</span>
+              </div>
+            </div>
+
+            {/* Segmented Ratio Bar & Breakdown */}
+            <div class="flex-1 w-full">
+              {totalReviews > 0 ? (
+                <div>
+                  <div class="flex justify-between items-center text-[10px] font-black uppercase tracking-wider mb-2 text-zinc-405 dark:text-zinc-500">
+                    <span>Sentiment breakdown</span>
+                    <span class="text-zinc-700 dark:text-zinc-300 font-bold">{product.positiveReviews} positive vs {product.negativeReviews} critical</span>
+                  </div>
+                  <div class="h-2 w-full bg-zinc-200/50 dark:bg-zinc-850 rounded-full flex overflow-hidden border border-zinc-200 dark:border-zinc-800">
+                    {positivePct > 0 && (
+                      <div style={`width: ${positivePct}%`} class="h-full bg-emerald-500 dark:bg-emerald-600" title={`Positive: ${positivePct}%`}></div>
+                    )}
+                    {neutralPct > 0 && (
+                      <div style={`width: ${neutralPct}%`} class="h-full bg-zinc-400 dark:bg-zinc-500" title={`Neutral: ${neutralPct}%`}></div>
+                    )}
+                    {negativePct > 0 && (
+                      <div style={`width: ${negativePct}%`} class="h-full bg-rose-500 dark:bg-rose-600" title={`Negative: ${negativePct}%`}></div>
+                    )}
+                  </div>
+                  <div class="flex justify-between text-[9px] text-zinc-450 dark:text-zinc-500 mt-1.5 font-bold uppercase tracking-wider">
+                    <span class="text-emerald-600 dark:text-emerald-400">+{positivePct}% Positive</span>
+                    <span class="text-zinc-550">{neutralPct}% Neutral</span>
+                    <span class="text-rose-600 dark:text-rose-455">-{negativePct}% Critical</span>
+                  </div>
+                </div>
+              ) : (
+                <p class="text-xs text-zinc-450 dark:text-zinc-500 italic">Consensus metrics pending more reviews.</p>
+              )}
+            </div>
+          </div>
+
+          {/* Consensus Summary Box */}
+          {product.redditConsensus && (
+            <div class="mb-6 p-5 rounded-2xl bg-zinc-950 text-white border border-zinc-800/80 shadow-xl relative overflow-hidden">
+              <div class="absolute top-0 right-0 transform translate-x-8 -translate-y-8 w-24 h-24 bg-gradient-to-br from-reddit-orange/20 to-transparent rounded-full blur-xl pointer-events-none"></div>
+              <div class="text-[9px] font-bold text-reddit-orange uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+                <span>🛡️</span> Reddit Consensus Summary
+              </div>
+              <p class="text-sm font-semibold leading-relaxed text-zinc-200">
+                {product.redditConsensus}
+              </p>
+            </div>
+          )}
+
+          {/* Specs */}
+          {product.specs && (
+            <div class="bg-reddit-surface dark:bg-zinc-900/60 rounded-xl p-4 mb-5 border border-reddit-border dark:border-zinc-800">
+              <h3 class="font-bold text-zinc-800 dark:text-zinc-300 mb-2.5 text-xs uppercase tracking-wider">Specifications</h3>
+              <div class="grid grid-cols-2 gap-x-6 gap-y-2 text-xs">
+                {Object.entries(product.specs).map(([key, value]) => (
+                  <div class="flex justify-between border-b border-zinc-200/50 dark:border-zinc-800/65 pb-1">
+                    <span class="text-zinc-400 dark:text-zinc-550 font-bold uppercase tracking-wide text-[9px]">{key}:</span>
+                    <span class="font-bold text-zinc-850 dark:text-zinc-200">{value}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Price & CTA */}
+          <div class="flex items-center justify-between border-t border-zinc-150 dark:border-zinc-800/80 pt-5 mt-4">
+            <div>
+              <p class="text-[10px] font-bold text-zinc-400 dark:text-zinc-550 uppercase tracking-wider mb-0.5">Price Range</p>
+              <p class="text-2xl font-black text-zinc-900 dark:text-white leading-none font-sans">{product.priceRange}</p>
+            </div>
+            <div class="flex gap-3">
+              {product.affiliateLinks.amazon && (
+                <a 
+                  href={product.affiliateLinks.amazon}
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-2 px-5 py-2.5 bg-emerald-600 hover:bg-emerald-700 dark:bg-emerald-700 dark:hover:bg-emerald-800 text-white text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-sm hover:shadow-md"
+                >
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+                  </svg>
+                  Amazon Link
+                </a>
+              )}
+              {product.affiliateLinks.newegg && (
+                <a 
+                  href={product.affiliateLinks.newegg}
+                  target="_blank"
+                  rel="noopener"
+                  class="inline-flex items-center gap-2 px-5 py-2.5 bg-zinc-100 dark:bg-zinc-900 hover:bg-white dark:hover:bg-zinc-850 text-zinc-700 dark:text-zinc-350 hover:text-reddit-orange dark:hover:text-reddit-orange border border-zinc-200 dark:border-zinc-850 hover:border-zinc-300 dark:hover:border-zinc-800 text-xs font-bold uppercase tracking-wider rounded-xl transition-all shadow-sm"
+                >
+                  Newegg
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reddit Evidence Section -->
+  <section class="py-12 px-4 bg-reddit-surface/50 dark:bg-zinc-950/20 transition-colors">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-xs font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500 mb-8">Reddit Evidence & Transparency</h2>
+      
+      {/* Bilateral Column Container (Filled Dynamically in JS) */}
+      <div id="bilateral-opinions" class="mb-10">
+        <!-- Will display: Left Column (Positive opinions) vs Right Column (Critical opinions) -->
+      </div>
+
+      {/* Grouped Threads */}
+      <div class="bg-white dark:bg-zinc-900/60 rounded-2xl p-6 border border-reddit-border dark:border-zinc-800/80 shadow-sm backdrop-blur-sm">
+        <h3 class="font-extrabold text-zinc-800 dark:text-zinc-200 text-sm mb-2.5 uppercase tracking-wide">Data Verification</h3>
+        <p class="text-xs text-reddit-muted dark:text-zinc-450 mb-6 leading-relaxed">
+          Ranked #{product.rank} based on {product.mentions} verified comments. Every sentiment classification is traceable to its source thread.
+        </p>
+        
+        <div class="space-y-4">
+          <h4 class="text-[10px] font-bold text-zinc-400 dark:text-zinc-550 uppercase tracking-widest">Source Threads Grouped:</h4>
+          <div id="reddit-threads" class="grid grid-cols-1 sm:grid-cols-2 gap-4" data-slug={slugify(product.name)}>
+            <div class="text-xs text-reddit-muted dark:text-zinc-500 col-span-2">Loading source thread audit...</div>
+          </div>
+        </div>
+        
+        <div class="mt-6 pt-6 border-t border-zinc-150 dark:border-zinc-800 flex items-center justify-between">
+          <button id="toggle-evidence" class="text-xs font-bold text-reddit-orange hover:underline">
+            Audit raw comment transcripts &rarr;
+          </button>
+          <span class="text-[10px] text-zinc-400 dark:text-zinc-550 font-semibold uppercase tracking-wider">Deduplicated unique users</span>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  // Load Reddit evidence for transparency
+  async function loadRedditEvidence() {
+    const threadsContainer = document.getElementById('reddit-threads');
+    if (!threadsContainer) return;
+    const slug = threadsContainer.getAttribute('data-slug');
+    
+    // 1. Fetch Grouped parent threads
+    try {
+      const response = await fetch(`/sentiment-evidence/${slug}/threads.json`);
+      const evidence = await response.json();
+      
+      if (evidence.threads && evidence.threads.length > 0) {
+        threadsContainer.innerHTML = '';
+        
+        evidence.threads.forEach(thread => {
+          const threadEl = document.createElement('div');
+          threadEl.className = 'border border-reddit-border dark:border-zinc-800 rounded-xl p-3.5 bg-zinc-50/50 dark:bg-zinc-950/20 hover:bg-white dark:hover:bg-zinc-900 hover:shadow-sm dark:hover:shadow-zinc-950/50 transition-all duration-200';
+          threadEl.innerHTML = `
+            <div class="flex items-start justify-between">
+              <div class="flex-1 min-w-0">
+                <div class="flex items-center gap-1.5 mb-1.5">
+                  <span class="text-[10px] font-extrabold text-reddit-orange uppercase tracking-wider">r/${thread.subreddit}</span>
+                  <span class="text-zinc-300 dark:text-zinc-700">•</span>
+                  <span class="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase">${thread.commentCount} opinions</span>
+                </div>
+                <div class="flex items-center gap-3 text-[10px] font-bold">
+                  <span class="text-emerald-600 dark:text-emerald-450">+${thread.positive} positive</span>
+                  <span class="text-rose-600 dark:text-rose-455">-${thread.negative} critical</span>
+                  <span class="text-zinc-500 dark:text-zinc-500">${thread.neutral} neutral</span>
+                </div>
+              </div>
+              <a href="${thread.url}" target="_blank" rel="noopener" 
+                 class="text-[10px] font-bold text-reddit-orange hover:underline ml-4 whitespace-nowrap self-center">
+                Thread &rarr;
+              </a>
+            </div>
+          `;
+          threadsContainer.appendChild(threadEl);
+        });
+      }
+    } catch (error) {
+      console.log('Evidence not yet available for this product');
+      document.getElementById('reddit-threads').innerHTML = 
+        '<div class="text-xs text-reddit-muted dark:text-zinc-550 col-span-2">Evidence will be available after sentiment analysis is complete.</div>';
+    }
+
+    // 2. Fetch and render Bilateral (Side-by-Side) Top Opinions
+    const bilateralContainer = document.getElementById('bilateral-opinions');
+    if (bilateralContainer) {
+      try {
+        const response = await fetch(`/sentiment-evidence/${slug}/comments.json`);
+        const data = await response.json();
+        
+        if (data.comments && data.comments.length > 0) {
+          // Sort by upvotes
+          const included = data.comments.filter(c => c.relevance === 'include' && c.sentiment);
+          
+          const posComments = included
+            .filter(c => c.sentiment === 'positive')
+            .sort((a, b) => (b.upvotes || 0) - (a.upvotes || 0))
+            .slice(0, 3); // Take top 3 positive
+            
+          const negComments = included
+            .filter(c => c.sentiment === 'negative' || c.sentiment === 'neutral')
+            .sort((a, b) => (b.upvotes || 0) - (a.upvotes || 0))
+            .slice(0, 3); // Take top 3 critical/neutral
+            
+          if (posComments.length > 0 || negComments.length > 0) {
+            bilateralContainer.innerHTML = `
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {/* Positive Column */}
+                <div>
+                  <h4 class="font-bold text-sm mb-4 flex items-center gap-1.5 text-emerald-700 dark:text-emerald-450 uppercase tracking-wider pb-2 border-b border-emerald-100 dark:border-emerald-900/35">
+                    <span>💚</span> Why Redditors Love It
+                  </h4>
+                  <div class="space-y-4" id="pos-comments-list"></div>
+                </div>
+                
+                {/* Critical Column */}
+                <div>
+                  <h4 class="font-bold text-sm mb-4 flex items-center gap-1.5 text-rose-700 dark:text-rose-455 uppercase tracking-wider pb-2 border-b border-rose-100 dark:border-rose-900/35">
+                    <span>⚠️</span> Criticisms & Concerns
+                  </h4>
+                  <div class="space-y-4" id="neg-comments-list"></div>
+                </div>
+              </div>
+            `;
+            
+            const posList = document.getElementById('pos-comments-list');
+            const negList = document.getElementById('neg-comments-list');
+            
+            posComments.forEach(comment => {
+              const card = document.createElement('div');
+              card.className = `border border-emerald-100 dark:border-emerald-900/30 rounded-xl p-4 bg-white dark:bg-zinc-900/40 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200`;
+              card.innerHTML = `
+                <div>
+                  <div class="flex items-center justify-between mb-2 pb-2 border-b border-zinc-55 dark:border-zinc-800/60 text-[10px] font-bold text-zinc-400 dark:text-zinc-550">
+                    <span class="text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/20 px-2 py-0.5 rounded border border-emerald-100 dark:border-emerald-900/40">Positive consensus</span>
+                    <span>+${comment.upvotes} votes</span>
+                  </div>
+                  <p class="text-xs text-zinc-700 dark:text-zinc-300 italic leading-relaxed mb-3">
+                    "${comment.text.length > 220 ? comment.text.substring(0, 220) + '...' : comment.text}"
+                  </p>
+                </div>
+                <div class="flex items-center justify-between border-t border-zinc-55 dark:border-zinc-800/60 pt-2 mt-auto text-[9px] font-bold text-zinc-450 dark:text-zinc-500">
+                  <span>u/${comment.author}</span>
+                  <a href="${comment.threadUrl}" target="_blank" rel="noopener" 
+                     class="text-reddit-orange hover:underline">
+                    Link &rarr;
+                  </a>
+                </div>
+              `;
+              posList.appendChild(card);
+            });
+            
+            negComments.forEach(comment => {
+              const badgeClass = comment.sentiment === 'negative' 
+                ? 'text-rose-600 bg-rose-50 border-rose-100 dark:text-rose-400 dark:bg-rose-955/20 dark:border-rose-900/40' 
+                : 'text-zinc-605 bg-zinc-50 border-zinc-150 dark:text-zinc-400 dark:bg-zinc-950/20 dark:border-zinc-800';
+              const label = comment.sentiment === 'negative' ? 'Critical opinion' : 'Neutral warning';
+              
+              const card = document.createElement('div');
+              card.className = `border border-rose-100/50 dark:border-rose-900/20 rounded-xl p-4 bg-white dark:bg-zinc-900/40 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200`;
+              card.innerHTML = `
+                <div>
+                  <div class="flex items-center justify-between mb-2 pb-2 border-b border-zinc-55 dark:border-zinc-800/60 text-[10px] font-bold text-zinc-400 dark:text-zinc-555">
+                    <span class="${badgeClass} px-2 py-0.5 rounded border">${label}</span>
+                    <span>+${comment.upvotes} votes</span>
+                  </div>
+                  <p class="text-xs text-zinc-700 dark:text-zinc-300 italic leading-relaxed mb-3">
+                    "${comment.text.length > 220 ? comment.text.substring(0, 220) + '...' : comment.text}"
+                  </p>
+                </div>
+                <div class="flex items-center justify-between border-t border-zinc-55 dark:border-zinc-800/60 pt-2 mt-auto text-[9px] font-bold text-zinc-450 dark:text-zinc-500">
+                  <span>u/${comment.author}</span>
+                  <a href="${comment.threadUrl}" target="_blank" rel="noopener" 
+                     class="text-reddit-orange hover:underline">
+                    Link &rarr;
+                  </a>
+                </div>
+              `;
+              negList.appendChild(card);
+            });
+          }
+        }
+      } catch (error) {
+        console.error('Featured comments not available:', error);
+      }
+    }
+  }
+  
+  // Toggle full comments view
+  document.getElementById('toggle-evidence')?.addEventListener('click', async function() {
+    const threadsContainer = document.getElementById('reddit-threads');
+    if (!threadsContainer) return;
+    const slug = threadsContainer.getAttribute('data-slug');
+    
+    try {
+      const response = await fetch(`/sentiment-evidence/${slug}/comments.json`);
+      const data = await response.json();
+      
+      if (data.comments && data.comments.length > 0) {
+        threadsContainer.innerHTML = '<div class="space-y-4 col-span-2"></div>';
+        const commentsContainer = threadsContainer.firstChild as HTMLDivElement;
+        
+        data.comments.forEach((comment: any) => {
+          const commentEl = document.createElement('div');
+          commentEl.className = 'border border-reddit-border dark:border-zinc-800 rounded-xl p-4 bg-white dark:bg-zinc-900 transition-colors';
+          
+          const sentimentColor = comment.sentiment === 'positive' ? 'text-emerald-600 dark:text-emerald-400' : 
+                                comment.sentiment === 'negative' ? 'text-rose-600 dark:text-rose-400' : 'text-zinc-500';
+          
+          commentEl.innerHTML = `
+            <div class="flex items-start justify-between mb-2">
+              <div class="flex flex-wrap items-center gap-2">
+                <span class="text-sm font-medium dark:text-zinc-200">u/${comment.author}</span>
+                <span class="text-xs px-2 py-0.5 rounded font-bold border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950 ${sentimentColor}">
+                  ${comment.sentiment}
+                </span>
+                ${comment.recommendation === 'yes' ? '<span class="text-xs px-2 py-0.5 rounded font-bold bg-emerald-50 dark:bg-emerald-950/20 text-emerald-600 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-900/30">Recommends</span>' : ''}
+                ${comment.recommendation === 'no' ? '<span class="text-xs px-2 py-0.5 rounded font-bold bg-rose-50 dark:bg-rose-955/20 text-rose-600 dark:text-rose-400 border border-rose-100 dark:border-rose-900/30">Doesn\'t recommend</span>' : ''}
+              </div>
+              <span class="text-xs text-reddit-muted dark:text-zinc-500 font-bold">${comment.upvotes} upvotes</span>
+            </div>
+            <p class="text-sm mb-2 text-zinc-700 dark:text-zinc-300 leading-relaxed">${comment.text}</p>
+            <a href="${comment.threadUrl}" target="_blank" rel="noopener" 
+               class="text-xs text-reddit-orange hover:underline font-bold">
+              View in thread →
+            </a>
+          `;
+          
+          commentsContainer.appendChild(commentEl);
+        });
+        
+        this.textContent = 'Hide comment transcripts ←';
+      }
+    } catch (error) {
+      console.error('Failed to load comments:', error);
+    }
+  });
+  
+  // Load evidence on page load
+  document.addEventListener('DOMContentLoaded', loadRedditEvidence);
+</script>

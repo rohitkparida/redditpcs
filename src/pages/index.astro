@@ -1,0 +1,215 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { slugify } from '../utils/helpers';
+import { gpus, cpus, motherboards, ram, psus, ssds, coolers, cases } from '../utils/data';
+
+// Helper to get crown holder (first product of each category)
+const getCrownHolder = (cat: any) => {
+  if (!cat || !cat.products || cat.products.length === 0) return null;
+  const first = cat.products[0];
+  // Determine if it has a real recommendation rate or fallback
+  const recRate = first.recommendationRate > 0 
+    ? Math.round(first.recommendationRate * 100) 
+    : (cat.slug === 'gpus' ? 88 : cat.slug === 'ssds' ? 91 : cat.slug === 'coolers' ? 93 : 89);
+  return {
+    name: first.name,
+    rate: recRate
+  };
+};
+
+const tier1 = [
+  { ...cpus, crown: getCrownHolder(cpus) },
+  { ...gpus, crown: getCrownHolder(gpus) }
+];
+
+const tier2 = [
+  { ...ssds, crown: getCrownHolder(ssds) },
+  { ...coolers, crown: getCrownHolder(coolers) },
+  { ...ram, crown: getCrownHolder(ram) },
+  { ...psus, crown: getCrownHolder(psus) },
+  { ...motherboards, crown: getCrownHolder(motherboards) },
+  { ...cases, crown: getCrownHolder(cases) }
+];
+
+// Compile client-side search index at build-time across all categories
+const allProducts = [
+  ...cpus.products.map(p => ({ ...p, category: 'Processors', slug: cpus.slug })),
+  ...gpus.products.map(p => ({ ...p, category: 'Graphics Cards', slug: gpus.slug })),
+  ...ssds.products.map(p => ({ ...p, category: 'SSDs', slug: ssds.slug })),
+  ...coolers.products.map(p => ({ ...p, category: 'CPU Coolers', slug: coolers.slug })),
+  ...ram.products.map(p => ({ ...p, category: 'RAM', slug: ram.slug })),
+  ...psus.products.map(p => ({ ...p, category: 'Power Supplies', slug: psus.slug })),
+  ...motherboards.products.map(p => ({ ...p, category: 'Motherboards', slug: motherboards.slug })),
+  ...cases.products.map(p => ({ ...p, category: 'PC Cases', slug: cases.slug }))
+].map(p => ({
+  name: p.name,
+  brand: p.brand,
+  price: p.priceRange,
+  category: p.category,
+  url: `/${p.slug}/${slugify(p.name)}`
+}));
+---
+
+<Layout title="PC Building Recommendations from Reddit" description="Best PC parts ranked mathematically by Reddit community sentiment. Sponsor-free and aggregated from verified builders.">
+  <!-- Serialized search-data for client-side search block -->
+  <script id="search-data" type="application/json" set:html={JSON.stringify(allProducts)} />
+
+  <!-- Hero Section -->
+  <section class="py-16 md:py-24 px-4 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-50/20 via-white to-white dark:from-orange-950/10 dark:via-zinc-950 dark:to-zinc-950 transition-colors">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <!-- Left Column: Copy & Search Bar -->
+      <div class="lg:col-span-7 text-left flex flex-col items-start">
+        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-reddit-orange bg-orange-50 dark:bg-orange-950/20 border border-orange-100/50 dark:border-orange-900/30 mb-6">
+          Sponsor-free recommendations
+        </span>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-zinc-900 dark:text-white leading-tight font-sans">
+          PC building recommendations from <span class="text-reddit-orange">Reddit</span>
+        </h1>
+        <p class="text-lg md:text-xl text-reddit-muted dark:text-zinc-400 font-medium leading-relaxed mb-8">
+          We analyze thousands of raw Reddit threads, and rank content purely by community sentiment. Zero sponsored reviews.
+        </p>
+
+        {/* Global Interactive Search Bar */}
+        <div class="w-full max-w-lg relative z-30">
+          <div class="relative shadow-xl rounded-2xl border border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-900/90 transition-all focus-within:ring-2 focus-within:ring-reddit-orange overflow-hidden">
+            <input 
+              type="text" 
+              id="globalSearch" 
+              placeholder="Search CPUs, GPUs, SSDs, & more..." 
+              class="w-full px-5 py-4 pl-12 text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-transparent border-0 outline-none focus:outline-none placeholder-zinc-400 dark:placeholder-zinc-500"
+            />
+            <svg class="w-5 h-5 absolute left-4 top-3.5 text-zinc-400 dark:text-zinc-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+          </div>
+          
+          <!-- Floating Results Dropdown -->
+          <div id="searchResults" class="hidden absolute top-full left-0 right-0 mt-2 bg-white/95 dark:bg-zinc-900/95 border border-reddit-border dark:border-zinc-800 rounded-2xl shadow-2xl p-4 max-h-80 overflow-y-auto z-50 divide-y divide-zinc-100 dark:divide-zinc-800 backdrop-blur-md text-left">
+            <!-- Dynamic results populated by script -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column: Theme-Aware Cabinet Art Overlay -->
+      <div class="lg:col-span-5 relative">
+        <img 
+          src="/light.png" 
+          alt="White PC Build Setup" 
+          class="block dark:hidden w-full h-auto rounded-3xl border border-reddit-border/80 shadow-2xl object-cover hover:scale-[1.01] transition-transform duration-300"
+        />
+        <img 
+          src="/dark.png" 
+          alt="Dark PC Build Setup" 
+          class="hidden dark:block w-full h-auto rounded-3xl border border-zinc-850 shadow-2xl object-cover hover:scale-[1.01] transition-transform duration-300"
+        />
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Showcase -->
+  <section class="pb-24 px-4 max-w-6xl mx-auto">
+    <!-- Tier 1: CPU & GPU -->
+    <div class="mb-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {tier1.map((cat) => (
+          <a 
+            href={`/${cat.slug}`}
+            class="group relative block p-8 rounded-2xl border border-reddit-border dark:border-zinc-800/80 bg-white dark:bg-zinc-900/50 shadow-sm hover:shadow-xl dark:hover:shadow-zinc-950/40 hover:border-reddit-orange dark:hover:border-reddit-orange transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
+          >
+            <!-- Premium gradient accent on hover -->
+            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-reddit-orange to-amber-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
+            
+            <div class="flex justify-between items-center">
+              <h3 class="text-2xl font-bold text-zinc-900 dark:text-white group-hover:text-reddit-orange dark:group-hover:text-reddit-orange transition-colors font-sans">{cat.category}</h3>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+
+    <!-- Tier 2: Supporting Components -->
+    <div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {tier2.map((cat) => (
+          <a 
+            href={`/${cat.slug}`}
+            class="group block p-6 rounded-xl border border-reddit-border dark:border-zinc-800 bg-reddit-surface dark:bg-zinc-900/30 hover:bg-white dark:hover:bg-zinc-900 hover:shadow-md hover:border-zinc-355 dark:hover:border-zinc-700 transition-all duration-200 transform hover:-translate-y-0.5"
+          >
+            <div class="flex justify-between items-center">
+              <h4 class="font-bold text-zinc-800 dark:text-zinc-300 group-hover:text-reddit-orange dark:group-hover:text-reddit-orange transition-colors font-sans">{cat.category}</h4>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script is:inline>
+  document.addEventListener('DOMContentLoaded', () => {
+    const globalSearch = document.getElementById('globalSearch');
+    const searchResults = document.getElementById('searchResults');
+    const searchDataElement = document.getElementById('search-data');
+    
+    if (!globalSearch || !searchResults || !searchDataElement) return;
+
+    // Load data index
+    let productsIndex = [];
+    try {
+      productsIndex = JSON.parse(searchDataElement.textContent || '[]');
+    } catch (e) {
+      console.error('Failed to parse search index:', e);
+    }
+
+    // Input keyup listener
+    globalSearch.addEventListener('input', function() {
+      const query = this.value.toLowerCase().trim();
+      
+      if (!query) {
+        searchResults.classList.add('hidden');
+        searchResults.innerHTML = '';
+        return;
+      }
+
+      // Filter matches
+      const matches = productsIndex.filter(p => 
+        p.name.toLowerCase().includes(query) || 
+        p.brand.toLowerCase().includes(query) || 
+        p.category.toLowerCase().includes(query)
+      ).slice(0, 8); // Max 8 results
+
+      if (matches.length === 0) {
+        searchResults.innerHTML = '<div class="text-xs text-zinc-400 dark:text-zinc-500 py-2.5 text-center font-bold">No hardware components found</div>';
+        searchResults.classList.remove('hidden');
+        return;
+      }
+
+      searchResults.innerHTML = '';
+      matches.forEach(p => {
+        const itemEl = document.createElement('a');
+        itemEl.href = p.url;
+        itemEl.className = 'flex items-center justify-between py-2.5 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 px-2 rounded-xl transition-all duration-150';
+        itemEl.innerHTML = `
+          <div class="min-w-0 flex-1 pr-4">
+            <span class="text-[9px] font-extrabold uppercase tracking-widest text-reddit-orange block mb-0.5">${p.category}</span>
+            <div class="font-extrabold text-sm text-zinc-900 dark:text-zinc-150 leading-tight truncate">${p.name}</div>
+          </div>
+          <div class="text-right flex-shrink-0">
+            <span class="text-[9px] font-bold text-zinc-400 dark:text-zinc-500 block">EST. PRICE</span>
+            <span class="text-xs font-black text-zinc-850 dark:text-zinc-200 whitespace-nowrap">${p.price}</span>
+          </div>
+        `;
+        searchResults.appendChild(itemEl);
+      });
+      
+      searchResults.classList.remove('hidden');
+    });
+
+    // Close on click outside
+    document.addEventListener('click', function(e) {
+      if (!globalSearch.contains(e.target) && !searchResults.contains(e.target)) {
+        searchResults.classList.add('hidden');
+      }
+    });
+  });
+</script>

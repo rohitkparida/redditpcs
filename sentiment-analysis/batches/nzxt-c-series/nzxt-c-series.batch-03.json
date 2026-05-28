@@ -1,0 +1,520 @@
+{
+  "productName": "nzxt-c-series",
+  "batchIndex": 3,
+  "totalBatches": 294,
+  "comments": [
+    {
+      "commentId": "iko4gj",
+      "text": "RTX 3000 series announcement megathread\n\n**EDIT:** The Nvidia Q&amp;A has finished, you can find their answers to some of the more common questions here: [https://www.reddit.com/r/buildapc/comments/ilgi6c/rtx\\_30series\\_qa\\_answers\\_from\\_nvidia/](https://www.reddit.com/r/buildapc/comments/ilgi6c/rtx_30series_qa_answers_from_nvidia/)\n\n**EDIT 2:**  **First, GeForce RTX 3080 Founders Edition reviews (and all related technologies and games) will be on September 16th at 6 a.m. Pacific Time.**\n\n**Second,** **GeForce RTX 3070 will be available on October 15th at 6 a.m. Pacific Time.**\n\n2020-09-01\n\nNvidia have just completed their keynote on the newest [RTX 3000 series GPUs](https://preview.redd.it/ndfllmczjfk51.png?width=1920&amp;format=png&amp;auto=webp&amp;s=b6946ba9c93b8a94fab806f2fc76da1e7e6a1851). Below is a summary of the event, the products' specifications, and some general compatibility notes for builders looking at new video cards.\n\nLink to keynote VOD:  [https://nvda.ws/32MTnHB](https://nvda.ws/32MTnHB)\n\nLink to GeForce news page: [https://www.nvidia.com/en-us/geforce/news/](https://www.nvidia.com/en-us/geforce/news/)\n\n**KEY TAKEAWAYS**\n\n* Shader cores, RT cores and Tensor cores have doubled TFLOPs throughput. Turing: [https://i.imgur.com/Srr5hNl.png](https://i.imgur.com/Srr5hNl.png) Ampere: [https://i.imgur.com/pVQE4gp.png](https://i.imgur.com/pVQE4gp.png)\n* 1.9x performance/watt [https://i.imgur.com/16vJGU9.png](https://i.imgur.com/16vJGU9.png)\n* Up to 2x improved ray traced gaming performance [https://i.imgur.com/jdvp5Tn.png](https://i.imgur.com/jdvp5Tn.png)\n* RTX IO: storage to GPU, reduces CPU utilization and improves throughput. Supports Microsoft DirectStorage [https://i.imgur.com/KojuAxh.png](https://i.imgur.com/KojuAxh.png)\n* RTX 3080 is up to 2x performance increase over the RTX 2080 at $699. Available September 17th. [https://i.imgur.com/mPTB0hI.png](https://i.imgur.com/mPTB0hI.png)\n* RTX 3070 is greater than RTX 2080Ti levels of performance at $499. Available October. [https://i.imgur.com/mPTB0hI.png](https://i.imgur.com/mPTB0hI.png)\n* RTX 3090 is the first 8K gaming card. Available September 24th.\n* RTX 3080 is up to 3x quieter and up to 20C cooler than the RTX 2080.\n* RTX 3090 is up to 10x quieter and up to 30C cooler than the Titan RTX.\n* 12 pin dongle is included with RTX 30XX series FE cards. Use TWO SEPARATE 8-pins when required.\n* There will be NO pre-orders for RTX 30XX Founders Edition cards. Cards will be made available for purchase on the dates mentioned above.\n\n**PRODUCT SPECIFICATIONS**\n\n||**RTX 3090**|**RTX 3080**|**RTX 3070**|Titan RTX|RTX 2080Ti|RTX 2080|\n|:-|:-|:-|:-|:-|:-|:-|\n|CUDA cores|10496|8704|5888|4608|4352|2944|\n|Base clock||||1350MHz|1350MHz|1515MHz|\n|Boost clock|1700MHz|1710MHz|1730MHz|1770MHz|1545MHz|1710MHz|\n|Memory speed|19.5Gbps|19Gbps|14Gbps|14Gbps|14Gbps|14Gbps|\n|Memory bus|384-bit|320-bit|256-bit|384-bit|352-bit|256-bit|\n|Memory bandwidth|935GB/s|760GB/s|448GB/s|672GB/s|616GB/s|448GB/s|\n|Total VRAM|24GB GDDR6X|10B GDDR6X|8GB GDDR6|24GB GDDR6|11GB GDDR6|8GB GDDR6|\n|Single-precision throughput|36 TFLOPs|30 TFLOPs|20 TFLOPs|16.3 TFLOPs|13.4 TFLOPs|10.1 TFLOPs|\n|TDP|350W|320W|220W|280W|250W|215W|\n|Architecture|AMPERE|AMPERE|AMPERE|TURING|TURING|TURING|\n|Node|Samsung 8NM|Samsung 8NM|Samsung 8NM|TSMC 12NM|TSMC 12NM|TSMC 12NM|\n|Connectors|HDMI2.1, 3xDP1.4a|HDMI2.1, 3xDP1.4a|HDMI2.1, 3xDP1.4a||||\n|Launch MSRP USD|$1499|$699|$499|$3000|$999-1199|$699|\n\n&amp;#x200B;\n\n**NEW TECH FEATURES**\n\n|**Feature**|**Article link**|**Video link**|\n|:-|:-|:-|\n|NVIDIA Reflex: A Suite of Technologies to Optimize and Measure Latency in Competitive Games|[https://www.nvidia.com/en-us/geforce/news/reflex-low-latency-platform/](https://www.nvidia.com/en-us/geforce/news/reflex-low-latency-platform/)|[https://www.youtube.com/watch?v=WY-I6\\_cKZIY](https://www.youtube.com/watch?v=WY-I6_cKZIY)|\n|GeForce RTX 30XX Series Graphics Cards|[https://nvda.ws/34PDO4L](https://nvda.ws/34PDO4L)|[https://nvda.ws/2GfLl2B](https://nvda.ws/2GfLl2B)|\n|NVIDIA Broadcast App: AI-Powered Home Studio|[https://nvda.ws/2QHurvC](https://nvda.ws/2QHurvC)|[https://nvda.ws/32F9aZ6](https://nvda.ws/32F9aZ6)|\n|8K HDR Gaming with the RTX 3090|[https://nvda.ws/2YQiEzH](https://nvda.ws/2YQiEzH)|[https://www.youtube.com/watch?v=BMmebKshF-k](https://www.youtube.com/watch?v=BMmebKshF-k)|\n|8K HDR with DLSS|[https://nvda.ws/2QGhHp1](https://nvda.ws/2QGhHp1)|[https://nvda.ws/34O5mYg](https://nvda.ws/34O5mYg)|\n\n&amp;#x200B;\n\n**UPCOMING RTX GAMES**\n\n[Cyberpunk 2077](https://www.nvidia.com/en-us/geforce/news/cyberpunk-2077-30-series-4k-rtx-on-trailer), [Fortnite](https://nvda.ws/3jq70Do), [Call of Duty: Black Ops Cold War](https://www.nvidia.com/en-us/geforce/news/call-of-duty-black-ops-cold-war-ray-tracing-dlss-reflex), [Watch Dogs: Legion](https://www.nvidia.com/en-us/geforce/news/watch-dogs-legion-geforce-rtx-dlss-trailer), [Minecraft RTX](https://nvda.ws/3jwIrF4)\n\n&amp;#x200B;\n\n**VIDEO CARD COMPATIBILITY TIPS**\n\nWhen looking to purchase any video card, keep these compatibility points in mind:\n\n1. **Motherboard compatibility -** Every modern GPU fits into a PCIExpress 16x slot ([circled in red here](https://i.imgur.com/XS24UW4.png)). PCIExpress is forward and backward compatible, meaning a PCIe1.0 graphics card from 15 years ago will still work in your PCIe4.0 PC today, and your RTX 2060 (PCIe 3.0) is compatible with your old PCIe2.0 motherboard. Generational changes increase total bandwidth (16x PCIe1.0 provides 4GBps throughput, 16x PCIe4.0 provides 32GBps throughput) however most modern GPUs aren’t bandwidth constrained and won’t see large improvements or losses moving between 16x PCIe3.0 and 16x PCIe4.0.\\[[1](https://www.techpowerup.com/review/nvidia-geforce-rtx-2080-ti-pci-express-scaling/6.html)\\]\\[[2](https://www.youtube.com/watch?v=PAwIh1nSOQ8)\\]. **If you have a single 16x PCIe3.0 or PCIe4.0 slot, your board is slot compatible with any available modern GPU.**\n2. **Size compatibility -** To ensure your video card will fit in your case, it is good practice to compare the card’s [**length, width (usually # of slots) and height**](https://i.imgur.com/v85vEx6.png) with your case's compatibility notes. Maximum GPU **length** is often listed in your case manual or on your case's product page ([NZXT H510 for example](https://i.imgur.com/lUP4vx8.png)). Remember to take into account front mounted fans and radiators which often reduce **length** clearance by 25mm to over 80mm. GPU **height** clearance is not usually explicitly listed, but can usually be compared to CPU tower height clearance. In especially slim cases, some tall GPUs may interfere with the side panel window. GPU **width** (or number of slots) compatibility is easy to visually assess. mITX cases typically support a max of 2 slots, mATX typically 4 slots, ATX focused cases typically 7 slots or more. Be mindful that especially wide GPUs may interfere with your ability to install other add in cards like WiFi or storage controllers.\n3. **Power compatibility -** GPU TDP, while actually referring to thermals, often serves as a good estimation of maximum power draw in regular use cases at stock settings. GPUs may draw their TDP + 20% (or more!) under heavy load depending on overclock, boosting characteristics, partner model limitations, or CPU limitations. Total system power is primarily your CPU+GPU power consumption. Situations where both the CPU and GPU are under max load are rare in gaming and most consumer workloads but may arise in simulation or heavy render workloads. See GamersNexus' system power draw comparison for popular CPU+GPU combinations between production heavy workloads [here](https://i.imgur.com/h4QBRky.png) and gaming [here](https://i.imgur.com/V6a8MST.png). It is always good practice to plan for maximum power draw workloads or power draw spikes. Follow your GPU manufacturer's recommendations, take into account PCPartPicker's estimated power draw and always ask for recommendations here or in the Buildapc Discord. \n\n**NVIDIA RECOMMENDATIONS**: \n\n* **When necessary, it is strongly recommended you use two SEPARATE 8-pin power connectors** instead of a [daisy-chain connector](https://i.stack.imgur.com/G6r9d.jpg).\n* **For power connector adapters, we recommend you use the 12-pin dongle that already comes with the RTX 3080 GPU. However, there will also be excellent modular power cables that connect directly to the system power supply available from other vendors, including Corsair, EVGA, Seasonic, and CableMod. Please contact them for pricing and additional product details.**\n\n&amp;#x200B;\n\n**NVIDIA PROVIDED MEDIA**\n\nHigh res images and wallpapers of the Ampere release cards can be found [here](https://www.nvidia.com/en-us/geforce/community/wallpapers/) and gifs [here](https://giphy.com/NVIDIA-GeForce).",
+      "upvotes": 9362,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "g3m166n",
+          "text": "This is why we shouldn't place much stock in the rumour mill, thankfully those prices were miles off.\n\nI can't wait to see some independent benchmarks and decide between the 3070 and 3080.",
+          "upvotes": 847,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+          "replies": [
+            {
+              "commentId": "g3m31iu",
+              "text": "The one's of $2000 for the 3090? That still might be right for partner cards. The rumors of $1400 for the 3090 was a bit low, as it turned out.",
+              "upvotes": 323,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+              "replies": [
+                {
+                  "commentId": "g3m5bjw",
+                  "text": "I've never really been in the top tier bracket. I was more following the xx60 - xx80 rumours before the speculated prices got so silly that I tuned out.",
+                  "upvotes": 127,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                  "replies": [
+                    {
+                      "commentId": "g3mbphk",
+                      "text": "Problem is 100% going to be supply and demand. We *are* still coming out of the COVID-19 manufacturing freeze, and these cards have been hyped up for months during. There's going to be availability nightmares and people capitalizing on that.",
+                      "upvotes": 102,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "Comment expresses negative sentiment, citing issues, poor value, or disappointment.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "g3m9yvn",
+              "text": "Bless ~~AMD~~ consoles and ~~market competition~~ undershooting profit margins\n\nedit",
+              "upvotes": 120,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+              "replies": [
+                {
+                  "commentId": "g3mb7g6",
+                  "text": "That's one perspective. \n\nIt could be as simple as RTX didn't meet their projected sales targets, so prices this gen are set where Nvidia think they'll make the most money.",
+                  "upvotes": 81,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+                  "replies": [
+                    {
+                      "commentId": "g3medik",
+                      "text": "Need a reason to switch to RTX. This raw power upgrade alone will convince people. These cards should sell REALLY well. I want one but I don't need it. My 2070 is still plenty.",
+                      "upvotes": 52,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+                      "replies": [
+                        {
+                          "commentId": "g3mkkay",
+                          "text": "&gt;I want one but I don't need it. My 2070 is still plenty.\n\nTBH, I'm in the same boat. My 2070super is fine, but with 1440p/144hz monitors I notice it's limits quite often. If benchmarks impress as much as I expect, I'll probably sell the 2070super to help justify this upgrade.",
+                          "upvotes": 17,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                          "replies": []
+                        },
+                        {
+                          "commentId": "g3mjvey",
+                          "text": "I'll switch just for the RTX Audio. My 1080ti is not a slouch but I have four kids and three adults in my house, my gaming rig is in the living room, and having the ability to filter that out for the two poor bastards listening to me in game would be grand.",
+                          "upvotes": 16,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "User shares personal ownership or usage experience with the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+                          "replies": [
+                            {
+                              "commentId": "g3mpimg",
+                              "text": "You can already do that with RTX Voice, [even on your Pascal GPU.](https://www.pcgamer.com/au/nvidia-rtx-voice-performance/#section-how-to-install-gtx-graphics-card)",
+                              "upvotes": 13,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "g3mc9k5",
+              "text": "The rumors I heard were $600, $800, and $1400. $500, $700, and $1500 don't seem miles off, and the 3090 is more expensive.",
+              "upvotes": 67,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+              "replies": [
+                {
+                  "commentId": "g3mkaob",
+                  "text": "The 3090 is also this gen's Titan, per JH, and 1500 for a Titan is pretty fucking par for Titans in general, and HALF as much as last gen's Titan.\n\nI want a 3080ti, but to be honest.....that 3090 ain't looking too bad and I can get that in three weeks, not however many months until AMD makes their announcement, and then Nvidia tweaks specs and price to compete, blah blah blah.",
+                  "upvotes": 17,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User assesses the value proposition or pricing of the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "g3mc75w",
+              "text": "People got played like a fiddle. THEY intentionally leak ridiculous prices to make the actual prices seem cheaper.",
+              "upvotes": 52,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+              "replies": []
+            },
+            {
+              "commentId": "g3mc413",
+              "text": "I didn’t realize a $100 difference was “miles off”",
+              "upvotes": 52,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+              "replies": [
+                {
+                  "commentId": "g3mmwn9",
+                  "text": "Yeah, people are acting relieved when these cards still seem crazy expensive to me.",
+                  "upvotes": 13,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "g3m8eda",
+              "text": "I liked it though, they lowered my expectations so when the official news dropped, I got uber excited XD",
+              "upvotes": 43,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User shares personal ownership or usage experience with the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+              "replies": [
+                {
+                  "commentId": "g3m8ri3",
+                  "text": "That often goes the other way though too. eg. Ryzen 3xxx CPU's were hyped as being much cheaper than their eventual MSRP.",
+                  "upvotes": 26,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "g3m2197",
+          "text": "Prices for 3090, 3080, 3070 and release date\n\n\nSlides for the 3090, 3080, and 3070 : [https://imgur.com/a/tWB2JqK](https://imgur.com/a/tWB2JqK)\n\n&amp;#x200B;\n\n3090- $1500 - September 24 \n\n3080- $700 - September 17\n\n3070- $500 - October\n\nRIP 3060 :( (Hope it comes out soon!)\n\nMr.Huang said these are the \"first 3 members\" of ampere, so the other members are yet to come out!\n\nEdit: Thanks for the award!\n\nEdit: Thanks everyone for all the cool awards!",
+          "upvotes": 704,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+          "replies": [
+            {
+              "commentId": "g3mr9xa",
+              "text": "The 3060 is what I'm excited for seeing as it should be a good price. Hopefully It comes before christmas so I can add it to the build I'm planning to do for then :(",
+              "upvotes": 83,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User assesses the value proposition or pricing of the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+              "replies": [
+                {
+                  "commentId": "g3n83d3",
+                  "text": "It was rumored to be better than the 2080, and if the 3070 is better than the 2080 then idk",
+                  "upvotes": 18,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User compares the product against alternatives, providing value context.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                  "replies": [
+                    {
+                      "commentId": "g3ndgfj",
+                      "text": "The 3070 is said to be better than the 2080ti.\nThe 3080 is said to be 2x a 2080 performance.",
+                      "upvotes": 34,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "User compares the product against alternatives, providing value context.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                      "replies": [
+                        {
+                          "commentId": "g3nif8l",
+                          "text": "Oh i thought it said the 3070 was better than the 2080 not the ti, in that case the 3060 may very well be better",
+                          "upvotes": 12,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "User compares the product against alternatives, providing value context.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                          "replies": [
+                            {
+                              "commentId": "g3nix7k",
+                              "text": "Pretty sure the 3060 will be a $300~350 2080ti.\n\nI don't think it's worth to buy a 3060 for $400 when you can pay a little bit more for better.\n\nAlso , the 3060 is NVIDIA's card to compete big navi pricing.",
+                              "upvotes": 13,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "g3n4tir",
+              "text": "Seeing how much value is in the 3070 and up, I'm really excited to see how well the 3060 stands against the 2000 series. Ray Tracing and DLSS 2.0 for a low price is going to be insane.",
+              "upvotes": 36,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User assesses the value proposition or pricing of the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+              "replies": [
+                {
+                  "commentId": "g3n4xdh",
+                  "text": "Same, I have a $300 budget, hoping to either buy a 3060 or a used 2080 or 2070 super",
+                  "upvotes": 18,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User shares personal ownership or usage experience with the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "g3m1ntf",
+          "text": "3070 better than 2080 Ti for $500? Holy shit that's nuts. \n\nTime to see what AMD's Big Navi can bring and then upgrade from my R9 390. It's-happening.jpg",
+          "upvotes": 698,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User compares the product against alternatives, providing value context.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Comment expresses negative sentiment, citing issues, poor value, or disappointment.",
+          "replies": [
+            {
+              "commentId": "g3m2f22",
+              "text": "thats just in rtx mode tho",
+              "upvotes": 40,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Very short comment with insufficient content to evaluate relevance to product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+              "replies": [
+                {
+                  "commentId": "g3m6pk4",
+                  "text": "Is it though? I don't think they have said so either way.",
+                  "upvotes": 50,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                  "replies": []
+                },
+                {
+                  "commentId": "g3m7adu",
+                  "text": "That’s a good point. I wonder what it is in normal operation.",
+                  "upvotes": 13,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "g3m1902",
+          "text": "Still can't believe the 3070 performs similar to 2080ti at $499 it's insane!",
+          "upvotes": 583,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+          "replies": [
+            {
+              "commentId": "g3m6w4r",
+              "text": "I just bought a 2070s for $499 rip",
+              "upvotes": 291,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+              "replies": [
+                {
+                  "commentId": "g3m9ahd",
+                  "text": "any chance of returning for refund?",
+                  "upvotes": 97,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Very short comment with insufficient content to evaluate relevance to product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                  "replies": [
+                    {
+                      "commentId": "g3ma6ts",
+                      "text": "Maybe, I’ve only had it for a week. Only problem is I kinda need it until then. Until the $499 card comes out, that is.",
+                      "upvotes": 94,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "Comment expresses negative sentiment, citing issues, poor value, or disappointment.",
+                      "replies": [
+                        {
+                          "commentId": "g3mabbk",
+                          "text": "is it anything graphically intense? Or is it just so your pc can work?",
+                          "upvotes": 35,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                          "replies": [
+                            {
+                              "commentId": "g3mat14",
+                              "text": "Yup, just so my pc can work. I need CAD and matlab. My cpu doesn’t have integrated graphics.",
+                              "upvotes": 36,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                              "replies": [
+                                {
+                                  "commentId": "g3mb7pv",
+                                  "text": "get [this](https://www.amazon.com/dp/B01DOFD3RY?tag=pcpapi-20&amp;linkCode=ogi&amp;th=1&amp;psc=1&amp;pldnSite=1), cheapest gpu I can find, it doesn't have dp though so make sure your monitor has an hdmi port (it probably will)",
+                                  "upvotes": 89,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                                  "replies": [
+                                    {
+                                      "commentId": "g3md6jd",
+                                      "text": "Good idea, I might just do that.",
+                                      "upvotes": 43,
+                                      "classifyThis": true,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Very short comment with insufficient content to evaluate relevance to product.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "g3m2748",
+              "text": "do we know the PSU req for a 3070 ? seems like it hits the perfect sweetspot between price/performance",
+              "upvotes": 70,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User assesses the value proposition or pricing of the product.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Comment expresses positive sentiment about the product's performance, value, or quality.",
+              "replies": [
+                {
+                  "commentId": "g3m38uh",
+                  "text": "TDP of 220W. That's an imperfect match for PSU strength, but a 500-600W PSU should do fine.",
+                  "upvotes": 83,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment asks a neutral question or seeks information about the product.",
+                  "replies": []
+                },
+                {
+                  "commentId": "g3m43nd",
+                  "text": "Depends entirely on your CPU. TDP of 220W + say 20% for OC/AIB/boosting is still under 300W. With the ever popular 3600 drawing under 90W it'll fit into a 550W PSU nicely.",
+                  "upvotes": 29,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                  "replies": []
+                },
+                {
+                  "commentId": "g3m3jk9",
+                  "text": "I believe 650W is recommended for 3070 and 750W for 3080/3090",
+                  "upvotes": 21,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User expresses an opinion or critique relevant to evaluating the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                  "replies": [
+                    {
+                      "commentId": "g3m97jd",
+                      "text": "on nvidia's official site for the 3070 a 650w is recommended",
+                      "upvotes": 26,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Comment provides factual information or discussion without strong positive or negative sentiment.",
+                      "replies": [
+                        {
+                          "commentId": "g3mf0wn",
+                          "text": "It’s because they have to factor in people using a shit PSU",
+                          "upvotes": 21,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Comment discusses aspects of the product or related hardware context.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "Comment expresses negative sentiment, citing issues, poor value, or disappointment.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

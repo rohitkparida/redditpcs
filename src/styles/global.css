@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom base styles */
+body {
+  @apply antialiased;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Focus visible styles for accessibility */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-reddit-orange;
+}
+
+/* Link styles */
+a {
+  @apply transition-colors;
+}
+
+@property --radius {
+  syntax: '<length>';
+  inherits: false;
+  initial-value: 0px;
+}
+
+/* View Transitions Circular Reveal Overrides */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none !important;
+  mix-blend-mode: normal !important;
+}
+::view-transition-old(root) {
+  z-index: 1;
+}
+::view-transition-new(root) {
+  z-index: 9999;
+}
+
+/* Feathered Radial Mask always on the top-most new screen */
+::view-transition-new(root) {
+  mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), black var(--radius, 0px), transparent calc(var(--radius, 0px) + 80px));
+  mask-repeat: no-repeat;
+  -webkit-mask-image: radial-gradient(circle at var(--x, 50%) var(--y, 50%), black var(--radius, 0px), transparent calc(var(--radius, 0px) + 80px));
+  -webkit-mask-repeat: no-repeat;
+}

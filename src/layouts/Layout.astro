@@ -1,0 +1,162 @@
+---
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "PC hardware recommendations compiled from Reddit community sentiment. Sponsor-free and mathematically aggregated." } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/global.css">
+    <title>{title} | RedditPCs</title>
+    
+    {/* Blocking theme initialization script to avoid FOUC */}
+    <script is:inline>
+      const theme = (() => {
+        if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+          return localStorage.getItem('theme');
+        }
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+          return 'dark';
+        }
+        return 'light';
+      })();
+      if (theme === 'dark') {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+  </head>
+  <body class="font-sans bg-white dark:bg-zinc-950 text-reddit-text dark:text-zinc-200 transition-colors duration-200 min-h-screen flex flex-col justify-between">
+    <div>
+      <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-zinc-950/80 border-b border-reddit-border dark:border-zinc-800 transition-all duration-200">
+        <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+          <div class="flex items-center gap-4">
+            <a href="/" class="text-2xl font-extrabold tracking-tight text-zinc-900 dark:text-white hover:text-reddit-orange transition-colors font-sans">
+              Reddit<span class="text-reddit-orange font-black">PCs</span>
+            </a>
+          </div>
+          
+          <div class="flex items-center gap-6">
+            <a href="/builds" class="text-sm font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">Builds</a>
+            <a href="/about" class="text-sm font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">About</a>
+            <!-- Custom Theme Toggle Switch -->
+            <button 
+              id="theme-toggle" 
+              type="button" 
+              aria-label="Toggle Dark Mode"
+              class="p-2 rounded-xl bg-zinc-50 dark:bg-zinc-900 hover:bg-zinc-100 dark:hover:bg-zinc-800 text-zinc-500 dark:text-zinc-400 transition-colors border border-zinc-200/50 dark:border-zinc-800"
+            >
+              <!-- Sun Icon -->
+              <svg id="theme-toggle-light-icon" class="hidden w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707m0-12.728l.707.707m12.728 12.728l.707.707M12 8a4 4 0 100 8 4 4 0 000-8z"/>
+              </svg>
+              <!-- Moon Icon -->
+              <svg id="theme-toggle-dark-icon" class="hidden w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+      
+      <main>
+        <slot />
+      </main>
+    </div>
+    
+    <footer class="border-t border-reddit-border dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/30 transition-colors mt-16">
+      <div class="max-w-6xl mx-auto px-4 py-8 text-sm text-reddit-muted dark:text-zinc-500 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+        <p>Data sourced mathematically from Reddit. Affiliate commissions may be earned.</p>
+        <p class="font-bold flex gap-4"><a href="/about" class="text-reddit-orange hover:underline">How It Works</a> • <a href="/builds" class="text-reddit-orange hover:underline">Builds</a> • <a href="/" class="text-reddit-orange hover:underline">Categories</a></p>
+      </div>
+    </footer>
+
+    <script>
+      const initThemeToggle = () => {
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+
+        if (!themeToggleBtn) return;
+
+        // Explicitly sync the visual state of icons
+        function updateIconState(isDark: boolean) {
+          if (isDark) {
+            themeToggleLightIcon?.classList.remove('hidden');
+            themeToggleDarkIcon?.classList.add('hidden');
+          } else {
+            themeToggleLightIcon?.classList.add('hidden');
+            themeToggleDarkIcon?.classList.remove('hidden');
+          }
+        }
+
+        // Run initial sync
+        const isInitiallyDark = document.documentElement.classList.contains('dark');
+        updateIconState(isInitiallyDark);
+
+        // Simple and robust toggle action with high-fidelity circular view transition
+        themeToggleBtn.addEventListener('click', (event: MouseEvent) => {
+          const doc = document as any;
+          if (!doc.startViewTransition) {
+            const isDark = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateIconState(isDark);
+            return;
+          }
+
+          // Fallback coordinates if event is keyboard-triggered
+          const x = event.clientX || window.innerWidth / 2;
+          const y = event.clientY || window.innerHeight / 2;
+          
+          const endRadius = Math.hypot(
+            Math.max(x, window.innerWidth - x),
+            Math.max(y, window.innerHeight - y)
+          );
+
+          // Set click coordinates as custom properties
+          document.documentElement.style.setProperty('--x', `${x}px`);
+          document.documentElement.style.setProperty('--y', `${y}px`);
+
+          const transition = doc.startViewTransition(() => {
+            const isDark = document.documentElement.classList.toggle('dark');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateIconState(isDark);
+          });
+
+          transition.ready.then(() => {
+            document.documentElement.animate(
+              {
+                '--radius': ['0px', `${endRadius}px`],
+              } as any,
+              {
+                duration: 650,
+                easing: 'cubic-bezier(0.2, 0.8, 0.2, 1)',
+                fill: 'forwards',
+                pseudoElement: '::view-transition-new(root)',
+              }
+            );
+          });
+        });
+      };
+
+      // Run on page load
+      initThemeToggle();
+
+      // Listen for view transitions if added later
+      document.addEventListener('astro:after-swap', initThemeToggle);
+    </script>
+  </body>
+</html>

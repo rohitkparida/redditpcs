@@ -1,0 +1,262 @@
+{
+  "productName": "gigabyte-x670-aorus-elite",
+  "batchIndex": 6,
+  "totalBatches": 66,
+  "comments": [
+    {
+      "commentId": "1j922ym",
+      "text": "Gaming on RTX 3080 12GB vs 9070 XT - My benchmark results\n\n# Intro\n\nGreetings!\n\nSo I have managed to get my hands on a Gigabyte Gaming OC 9070 XT at my local store (Canada Computers in Quebec), and since I am upgrading from a Gigabyte RTX 3080 12GB Gaming OC, I thought it could be fun to gather results to know EXACTLY what I am buying.\n\nAnd so I ran gaming benchmarks. Lots of gaming benchmarks. And compiled the results in an excel sheet, which I am now publishing for you guys here. Hope you find this fun or useful! I saw some people on the fence about upgrading from a 3080, so this should provide a bit more data.\n\n[Here are my findings, on google sheets.](https://docs.google.com/spreadsheets/d/118H1-Gc3btCrlDYFJZtdjQK98z3hKr5Xhc-bnhGkiWU/edit?usp=sharing)\n\n# What this is\n\nThese are my benchmarks, run on my system, using a 3080 12GB and then a 9070XT. None of the cards are overclocked manually. I am not a reviewer or professional, just an enthusiastic gamer and tech lover. These were done for fun!\n\n# Testing Methodology\n\nI ran the games that had built-in benchmarks (one exception: Stalker 2). I used CapFrameX to capture the Average FPS and the 1% Lows average. I would start the capture as soon as the first game images were visible on screen and stopped the capture when there was either the loading screen before the end results or the end results screen appeared.\n\nThe number of runs done are indicated in the sheet. All numbers are averages of the specified number of runs (most of the time, 3 run average). All tests are done at 1440p, highest settings if possible unless otherwise noted in the \"notes\" cell for each game. When DLSS or FSR is used, I mention it, along with (if possible) the version used.\n\nPC Specs:\n\nAMD Ryzen 7 7800X3D, G.Skill F5-6000J3038F16G (32GB DDR5, 6000 MHZ), GIGABYTE X670 AORUS ELITE AX, Windows 11 Pro.\n\nDrivers: Nvidia 572.16 Game Ready and Adrenalin 25.3.1\n\n**Note**: I did not stop the capture during a benchmark between scenes. This means, for example, that in Avatar Frontiers of Pandora, the loading screens (2) between the 3 scenes are *counted in the benchmark results.* This was to make my life simpler, as after all my benchmarking is mostly for fun!\n\nTModel means Transformer Model for DLSS (4). 3.1=&gt;4 for FSR means the game is using FSR 3.1, but I converted it to FSR 4 using the Adrenalin toggle for FSR 4.\n\n**Exception:** The Stalker 2 run is a quick and dirty run. I loaded the same save, and did the same actions in a very short period of gameplay (about 2-3 minutes). It was just to see what kind of uplift I could get in that game.\n\n# Results\n\n[Again, findings in my google sheet here.](https://docs.google.com/spreadsheets/d/118H1-Gc3btCrlDYFJZtdjQK98z3hKr5Xhc-bnhGkiWU/edit?usp=sharing)\n\nI am looking at a 30% performance uplift in raw raster in average, and roughly 30% as well in Raytracing. For the price I paid (\\~660 USD), I'd say that's pretty good! I was looking for an upgrade from my 3080 12 GB and it seems to be it. Gone are the days of the 50% uplift unfortunately, or even 100%. But that's okay by me. Sure, I am downclassing (going from an 80 class card to 70 class), but in the current market I'd say it's the move to do.\n\nFor those of you with a 3080 10GB, the 3080 12GB is about 6% faster. So you can take the results of these benchmark, and divide them by 1.06 to get an estimate of how the 3080 10GB would look.\n\n# Final thoughts\n\nI'd say I am happy with it, but I'm giving myself time to adjust to the Radeon suite instead of Nvidia. It's an adjustment for sure...\n\nNo overclocking done yet! But it's on my TODO list. I might report back just saying how much, in synthetics, I managed to gain. I also might make an edit or a comment detailing my experience with Radeon drivers and the AMD Adrenalin software suite.\n\nHope you enjoyed this!\n\n# EDIT (2025-04-24): \n\nIt's been a while. Card is still rock solid, works super well. \n\n**Software:** Adrenalin has been pretty great for me. I had a weird hiccup when trying to benchmark games, but after a reinstall it's been smooth sailing ever since. Easy to manoeuver around and understand. Adrenalin is good. Minor nitpick: Sometimes, the hotkey to bring up Adrenalin makes you wait a good 5-10 seconds before it pops up. No idea why. But it doesn't always happen. I'd say I am happy with Adrenalin.\n\n**Overclocking:**\n\nI overclocked it to 0 on the GPU Clock, 2800 on the Memory clock, and -40 on the undervolting. Steel Nomad (Stress Test) went from 7243.66 no OC to 7557 with OC. Little gains, but my OC is **very** stable. I could probably afford to go more reckless if I decided to tweak per title.\n\nHaven't dived into a secondary OC profile for \"efficiency\" that I would tune per game. But that's ok!\n\n**Fan Curve:** Guys, it's pretty damn near necessary for the Gigabyte 9070XT Gaming OC to tweak the fan curve. By default, the card is way, way too loud for no reason. The fans can go to 4200 RPM! The fix is pretty easy, just set a fan curve in Adrenalin. For the curious ones or people like me, **my fan curve is as follows:** Each number is the number in adrenalin for a node (P1, P2 etc.) with first number being fan speed and second number being Temperature. \\[P1: 20, 60\\] \\[P2: 50, 80\\] \\[P3: 67, 88\\] \\[P4: 100, 93\\] \\[P5: 100, 98\\]\n\nWith this fan curve, the card is much quieter, doesn't bother me anymore. It's much, MUCH quieter, while also staying cool from what I saw in HWinfo running Furmark for 20 mins. Hotspot goes to 93 Celsius I believe, in the worst case.\n\nSo that's it for the update! I am enjoying it so far.",
+      "upvotes": 282,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "miv9ee5",
+          "text": "nice post! I was wondering if someone could give a hint on my situation, I just sold my old i9 9900+3090 rig because I managed to put my hands onto a brand new 2k 27\" 360hz monitor and it couldnt keep up the pace to run cs2 (main game that I play) at solid 360fps, but at the same time I need something capable of running iRacing (racing simulator) in VR Meta Quest 3.\n\nnow planning to buy 9800x3d and gpu is my main concern.. \n\nmy friend's selling his used 3080 for $440, I can consider it as an option\n\n9070xt here in my country goes for $1000, better overall performance but tight budget is killing me \n\nwhat should I do? is 3080 a good move or try to save some money for 9070xt?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "movrqr1",
+          "text": "Have you since gotten used to the Adrenalin software suite?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "movxco8",
+              "text": "Hey there! Yep, got used to it. Wasn't too hard: Most of the time I don't need to faff about anything in there. Honestly, it's pretty much set and forget.\n\nI haven't yet really dived into have a second OC profile and setting it per game. I have enabled the FSR 4 override in a few games, like Stalker 2. And applying the OC with Adrenalin was pretty easy, so now my 9070 XT is OC'ed. Didn't gain a lot: Steel Nomad (Stress Test) went from 7243.66 no OC to 7557 with OC. But my OC is **very** stable. I could probably afford to go more reckless if I decided to tweak per title.\n\nBut yeah, the software was easy to get into.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "movz3x8",
+                  "text": "Awesome thank you so much \ud83d\ude4c",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "movzhhm",
+                      "text": "No problem! If you have other questions you can always ask or DM me \ud83d\ude04",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nam0gx2",
+          "text": "It's hard for me to give up DLSS and team green's ray tracing implementation. FSR has come a long way but it's still nowhere close to as good. \n\nI was planning on holding onto my 3080 12GB for quite a while longer since it serves my purposes just fine, but I've recently been offered a killer deal on a complete used rig with a 9800x3d and 9070xt Red Devil Special Edition. If I buy it I'll likely end up just selling my entire current rig, aside from storage. It's hard to pass this up but I've long been an Intel+Nvidia guy so it's a big switch. I know on paper it's a solid upgrade though, and the price is good enough that I might pay next to nothing for the upgrade after selling my rig. \n\nLooks like I'm about to take the full AMD plunge. Wish me luck.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "nam6xq1",
+              "text": "Hey! I think you should definitely take the plunge, even if only to see the other side in terms of components.\n\nFor CPUs, AMD has been crushing it. Zero issues for a few years now, 7800 and 9800x3d are awesome chips and you will not have issues in game. At the same time, they are super easy to cool because of their rather low TDP compared to intel's offering which guzzles power.\n\nFor the GPU side, I would suggest watching Hardware Unboxed's videos comparing FSR **4** (not 3.1) with DLSS. It is much closer than you think. FSR 4 is goddamn good and equivalent to somewhere between DLSS performance and DLSS standard. I think you'll be happy with it. The biggest problem is not quality, it's games adoption, but look into Optiscaler for that.\n\nI think now that I have my AMD gpu, there are just a few things I miss / have trouble with:\n\n- I had one game (Peak) have issues in the first 2 weeks with crashes. Was patched. NVidia gpus did not have this issue. But, nvidia has a bunch of black screen issues across games so...\n\n- I would have liked to have RTX HDR. Autohdr from windows is okay, but we have no AMD equivalent for RTX HDR.\n\n- RTX Remix would be cool to try out.\n\n- Not faffling with Optiscaler for wider games adoption of FSR 4 would be cool.\n\n\nThat's it. Very happy with my purchase, and I run a 7800x3d which I've had zero complaints about.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mha3bvq",
+          "text": "Nice. We have extremely similar builds (but my motherboard is the ITX version) and my old card is a lot older than yours lol. It\u2019ll be a mighty upgrade for me (mine says backordered so hopefully it arrives soon and isn\u2019t cancelled lol)",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mha43e2",
+              "text": "I hope your order goes through! \ud83d\ude4f\n\nIt's a pretty strong card.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mha8j1m",
+          "text": "Nice work, I was planning to do the same with my setup and now I don't have to thanks to you. My old rtx 3080 runs like an airplane so rx 9070 xt pulse is a godsend, runs very quiet and I hope it's gonna get better with new drivers, especially those 1% lows.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "mhahp86",
+          "text": "It's RT performance is closer to the 3090",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mharefb",
+              "text": "Is that so? That's nice to hear! \n\nI wish I could have published more RT data, but these were the games I had haha",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mhcso0l",
+          "text": "Man idk if this upgrade makes sense. Would've kept the 3080 for longer and gone with a bigger uplift later. 12gh vram is still very usable and you lost dlss4.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mhdo8fr",
+              "text": "I thought about it. Initially, I wanted a 5080 (before the benchmarks came out). But Nvidia bamboozled us with essentially a 70 class card disguising as a 5080. It's a damn shame.\n\nSo I was stuck choosing between waiting another year for the 5080 Super (maybe), or 2 years for the next gen of cards. 1 year was doable, but uncertain if there will be a 5080 super or ti, and not even sure if it will be worth it or priced into oblivion. And then 2 years was bit long, considering I already wanted an upgrade.\n\nI usually decide to upgrade when I can't run the games I play smoothly at the configs I want to run them at. In this case, Cyberpunk 2077 with raytracing just wasn't cutting it on my 3080, and my Bigscreen Beyond VR headset really pushed my 3080 to its limits and was severely limited by it. Would suck to sit with my Beyond being gimped for 2 years.\n\nSo I went with the upgrade. Beyond, from my quick test, is a lot smoother now at higher quality, and Cyberpunk is looking good if I can inject FSR 4 using Optiscaler.\n\nDLSS 4 is very nice, but FSR 4 is not far behind according to Hardware Unboxed. It's games support that will be harder on FSR 4. But for the 2 reasons I wanted to upgrade, DLSS 4 did not matter at this time, since it wouldn't have helped me there. I still wish I could use DLSS on my AMD card \ud83d\ude05",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mhira79",
+                  "text": "I see but does ray tracing really run much better than on the 3080? Also you don't have ray reconstruction anymore which I understand is pretty important also.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mhjf2yh",
+                      "text": "Well, look at the benchmarks for that. About 30% uplift in just those 2 games with ray tracing. Avatar has some weird shanenigans with 1% lows, but yeah, 30% higher perf in Cyberpunk or so in Raytracing. That's a lot, goes from barely playable to playable for me.\n\nRay reconstruction hasn't really been implemented much from what I googled, yet. It's in Black Myth Wukong, and in RTX remix such as Portal RTX. But not much else at the moment. Maybe in path tracing? I don't know, but it doesn't see much use in 2025 so far.\n\nEDIT: It is in Cyberpunk as well.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "mhjfzpx",
+                          "text": "Hopefully amd can come up with their own ray reconstruction soon. Their reflex equivalent also isn't as good and only on driver level I think and no rtx hdr and rtx video.\nI'm still trying to get a 9070xt as it's so much cheaper than the 5070ti (if the market comes back to normal). \nI only have a 3060ti rn so the upgrade should be likely double raster and double vram.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "mhk1d6h",
+                              "text": "Yeah their Anti-lag technology is not as mature, although I haven't resear hes it. And rtx hdr and video would be nice to have on AMD for sure.\n\nYeah that was my choice yoo in the current market. 5070 ti is so stupidly expensive for what you get. 1100$ CAD used to be the price of a 80 class card here! Now it's a 70 class...\n\nHopefully you get your new card!",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "n2582by",
+          "text": "great work mate....  Currently have a 3080FE and was wondering how team red would stack up...  Cheers \ud83c\udf7b",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "n6ak6ou",
+          "text": "I have a 3080 and a 3080 TI and I play most games without any issue whatsoever. I'm running them with a 5900X and a 5950X. I play games at 1440p resolution with high settings. I stream at 1080p with high settings and I must say that I've had zero problems.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "n6ce8nr",
+              "text": "Yeah, the 3080 is a really solid card, so is the 3080 TI. I Upgraded for 2 reasons:  \n\\- I wanted ray-tracing with high smoothness gameplay in Cyberpunk\n\n\\- I have a Beyond VR headset that is really hard to run for a 3080. I have to lower the render resolution. So I wanted more juice to power it.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "productName": "intel-core-i5-12600kf",
+  "batchIndex": 6,
+  "totalBatches": 7,
+  "comments": [
+    {
+      "commentId": "1tk9uml",
+      "text": "I\u2019ve done it!!! FINALLY I have become a (quasi-local) summoner!!! AMA [imtiredboss.jpg]\n\nHi friends! After 2.5 years of a LOT of hard work...starting from the GPT-3.5 bottom and now we're here...I've finally got my personal 1.0 local-ish\\*\\* AI playground whipped into shape. This is for all those out there with mid-tier equipment relying on Big Tech/BigAI as far as their AI needs when they know they have something useful and they're not sure how to piece it together. Hopefully this gives some inspiration!!\n\n**\\*\\*DISCLAIMER:** I say local-ish because while I do have nine local endpoints... there are only a handful (if that) that are useful *to me* because I do not have the compute to support long context, extended/semi-agentic inferencing. *I am of firm belief that as of May 2026 and beyond, the \"free ride\" for AI is over, and unless you have equipment worth thousands and thousands of dollars, you WILL be paying some piper somewhere if you want to be remotely competitive.* ***Therefore, if you're looking for something COMPLETELY \"free\" and \"unlocked\"****,* ***this likely won't be it, but*** *you can get close with a lot of configuring (and a LOT of horsepower) though!*\n\nGranted, I realize that's an area for healthy debate... but that's just me and it's what drove the philosophy behind my stack. I do feature local endpoints in my screenshots and will say more about them below.\n\nIt's been a long time plan of mine to put something together that felt right, and this feels right to me. I could only take slap after slap from Big Tech, and the one-two punch that made me finally sit down over the past month and a half and wire it all together was a) Perplexity's arcadification of Computer Use (as if that's not an existential crisis waiting to happen, INSERT CREDITS HERE for intelligence...), and 2) GitHub going to pay-per-use starting in June. No, says I; NINJY STAR THAT SHI-!!!!!!!!\n\n**WHAT I DO:** I run my own software \"chop shop\" if you will, helping consult on AI and tech-operations for, at least at this stage, primarily law firms (which is how I cut my teeth prior to AI becoming a thing). I have a few clients where I'm fortunate enough they keep me on permanent retainer to where I can work from home and never have to travel if I don't want (law firms also need secure document repositories where they can use AI in a private, confidential manner, which I help them configure).\n\nThe core app at the heart of what you see here is [Msty Studio](https://msty.ai), and honestly, this is the first setup I\u2019ve used that makes me feel like I\u2019m not waiting on a vendor\u2019s product roadmap anymore. Ashok and the crew are BRILLIANT. (*DISCLAIMER: I'm an Aurum lifetime license holder; privileged enough to invest very early and stuck with it*.)\n\nTo be clear: I\u2019m not claiming my local box beats frontier models on raw intelligence because it doesn't at ALL (**seriously, for the HuggingFace people out there...I'm at 25.3 TFLOPs soooo there's that**). What I mean is that this workflow is better for \\*me\\* than any single hosted SOTA chat product because I control the routing, context, tooling, model mix, observability, and failure handling.\n\nWhat I\u2019ve got stitched together:\n\n**Msty Studio as the front-end cockpit**\n\n* Workspaces/projects for different domains\n* Local and hosted models in one Model Hub\n* Personas, toolsets, live contexts, split chats, and Turnstiles\n* Usage/cost/token visibility inside the app via Insights\n\n**Hybrid local + cloud inference**\n\n* Local models for private, cheap, fast-enough work\n* OpenAI-compatible providers routed through my own stack\n* Multiple hosted providers available when I need raw capability\n* Local vision model testing in Msty\n\n**LiteLLM proxy layer**\n\n* Central model gateway\n* Team/provider/model routing\n* Budget/cost tracking\n* Fallback chains\n* Per-model health state\n* Request and token telemetry\n\n**Dockerized observability stack**\n\n* Grafana\n* Prometheus\n* Postgres\n* Redis\n* Tempo\n* Tail/trace/log views\n* Container-level CPU/memory monitoring\n\n**Actual operational guardrails**\n\n* Health checks\n* Fallback behavior\n* Request latency tracking\n* Spend watch\n* Local failure visibility\n\nThe screenshots are not meant to be polished SaaS screenshots. They are more like proof that I finally have the bones of a real personal inference platform running: model control, budget visibility, telemetry, local models, remote models, tool workflows, and enough dashboards to tell when something is lying, slow, down, expensive, or looping.\n\nSome underrated Msty pieces that clicked for me:\n\n*Model Hub* \\-&gt; makes a messy provider/model universe manageable.\n\n*OpenAI-compatible providers* \\-&gt; plug in my own LiteLLM gateway instead of being locked into one vendor.\n\n*Workspaces/projects -&gt;* keeping contexts from turning into a junk drawer.\n\n*Toolsets/MCP-style workflows* \\-&gt; an actual workbench, not just a textbox.\n\n*Turnstiles* \\-&gt; reusable workflow pipelines for repeated tasks.\n\n*Personas -&gt;* lets me keep specialized operating modes without rewriting giant prompts every time.\n\nIt\u2019s not enterprise-grade, but I'mma get it there. It\u2019s not pretty...well, i think it is, but I'm sure it's left a lot to be desired. It\u2019s also not finished. Some parts are janky, some dashboards are still half-empty, and since a lot of this was vibe-coded as far as the YAMLs, I'm not really even sure what Tempo is, but I need to find out!!\n\nAll that to say, it works!!!\n\nAnd the best part is that it feels like the system is now compounding. Every new model, provider, tool, prompt, workflow, and dashboard slot can plug into the same cockpit instead of becoming another disconnected toy. I know a lot of people here already run much more serious local stacks because holy GOD it's impressive what this community puts out... so I\u2019m not pretending this is some final boss. But as a solo-builder \u201cquasi-local summoner\u201d setup, this is the first time my local AI environment feels like an actual platform instead of a pile of experiments.\n\nAMA. Happy to explain the architecture, Msty setup, LiteLLM routing, Docker stack, local model choices, what failed, what I\u2019d rebuild, and what\u2019s still duct-taped together.\n\nAdditional Disclaimer: The uncensored content you're seeing is from certain providers unique in the sector that offered anonymized model endpoints and E2EE anonymized model endpoints (I do purple-team security research) where ordinary SOTA models refuse queries. I'm not going to tell you what my config is for that; the local models I have are good enough to give you a starting point down that path should you wish.\n\n**ALL LOCAL MODELS EMPLOYED:**\n\n&gt;Unsloth's Gemma3-1B-IT (Q4\\_K\\_M, llama.cpp-fed)  \nGoogle's Gemma4-E2B-IT (4 BPW, MLX)  \nIBM's Granite 3.3-2B-IT (4 BPW, MLX)  \nNVIDIA's Nemotron-3-Nano-4B (Q8\\_0, GGUF, LM Link-fed)  \nMistral's Ministral3-8B-IT (Q4\\_K\\_M, llama.cpp-fed)  \nmlx-community's Jan-v2-VL-High 8B (4 BPW, MLX)  \nHauhauCS's Qwen3.5-9B-Uncensored-Aggressive (Q4\\_K\\_M, GGUF, LM Link-fed)  \nOpenAI's gpt-oss-20B (MXFP4, GGUF, LM Link-fed)  \nHauhauCS's Qwen3.6-35B-A3B-Uncensored-Aggressive (Q5\\_K\\_P, GGUF, LM Link-fed)\n\nFor those curious about my beefiest model (that I call \"titan\"), it's...let's say not fast lmao. I'm probably rocking anywhere from 5-9 tokens per sec; it can get up to 15 sometimes but never really faster. Otherwise, I'm not really a tps demon per se... so long as it's usable for what I'm using the model for, it works just fine for me (5-9 is my slowest, 150+ is my fastest as far as local endpoints).\n\nEDIT: forgot the hardware\u2026\n\n**STATION-1:**  \n*2021 M1 iMac, 16GB unified memory*\n\n**STATION-2:**  \n*Windows 11 Pro*  \n*12th-gen Intel Core i5 12600KF*  \n*48.0GB DDR4 RAM*  \n*3TB NVM.E SSD*  \n*8GB NVIDIA GeForce RTX 4060 Ti*",
+      "upvotes": 0,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "on9950f",
+          "text": "What's this post about? I would appreciate if you start with a introduction and explain the purpose of the post in it.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "on9pmm4",
+              "text": "It\u2019s my entry into the \u201clocal\u201d world that I\u2019ve finally got configured. The purpose is to share some of my details, configs, and other information in hopes of sparking some imagination for what others are shaping out for their own builds.\n\nOtherwise, the \u201cSlop\u201d part for all intents and purposes was supposed to be a dig against myself so I suppose you can look at it that way too.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "on74c81",
+          "text": "Is it the qwen3.6 you're getting 5-9 tok/sec with? - it's unclear which is your 'titan' - if it's that one, you might want to check out the conversation over in [https://www.reddit.com/r/LocalLLaMA/comments/1tjh7az/110\\_toks\\_with\\_12gb\\_vram\\_on\\_qwen36\\_35b\\_a3b\\_and\\_ik/](https://www.reddit.com/r/LocalLLaMA/comments/1tjh7az/110_toks_with_12gb_vram_on_qwen36_35b_a3b_and_ik/) \\- 110 likely outside the realm of reasonable given the implied setup, but might give some pointers.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "on754gp",
+              "text": "Yes, so sorry! You\u2019re absolutely right; thanks for clarifying that. Titan is indeed Qwen3.6. \n\nAlso THANKS A ZILLION!!! I had a LOT of fuss tuning the experts on this model; thanks to the MoE + LM Studio it can get reasonably going once it\u2019s inferencing, but after a certain number of experts my total memory ends up running **386 bytes short** of supporting them all hahahaha \ud83e\udd23. I will def check this article out to try to eke out more performance.\n\nEDIT: Ooof, my man on this article has DDR5 architecture w/ 4GB more VRAM hahaha; I\u2019m DDR4 so I don\u2019t hold out much hope but I\u2019ll def give it a poke around! Disabling mmap() I did consider even though LM Studio warns me away from it, otherwise I\u2019m pleasantly surprised to find our model load configs are surprisingly similar so perhaps there\u2019s hope yet \ud83e\udd1e\ud83c\udffc",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "on7zx23",
+          "text": "So you're saying one should get Msty Studio and it will do everything.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "on8dme9",
+              "text": "No, not necessarily. I mean, Msty is what worked for me, but I cut my teeth on Open WebUI a lot as well. I haven't checked in on those folks in awhile, but I would imagine that one could painstakingly wire up the same features (or similar) w/ their suite of tools and configs. Same with LibreChat. I just found Msty to offer the sweet spot as far as what I was willing to config v. what I wasn't willing to. There's plenty of ways to skin a cat, so to speak.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onj132e",
+          "text": "This was super inspiring!!",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "onwsstc",
+              "text": "Thanks friend! I was hoping this would help with some of the telemetry/plumbing particulars for those wiring their locals.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onnjbpa",
+          "text": "I respect this because it is not just another local model screenshot, it is the plumbing around the models that actually matters. Redis, Postgres, traces, health checks, fallback routing, and cost visibility are the pieces that stop the setup from turning into chaos. Memurai fit nicely for me on Windows when I wanted Redis compatible cache behavior without making the rest of the stack more annoying. The part I\u2019d be most curious about is how your fallback chains behave when a provider slows down instead of fully failing.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "onwtm4r",
+              "text": "Thanks a bunch; I appreciate you chiming in!! I haven\u2019t looked into Memurai but def will give it a gander.\n\nSo you raise a very interesting point. I actually haven\u2019t configured slowdowns; at this point, I feel like I\u2019m teetering on the edge with what I can keep up with v. what I\u2019d need a whole autonomous AI agent for (Kilo Claw in my instance). I don\u2019t feel comfortable enough letting agents run fully independent just yet, but the moment I get more practice with them? This is something that\u2019s definitely going to matter on the omni-production side. For example, in one of my alias chains, I have Imagen3 falling back to GPT Image 1.2 (or whatever it\u2019s called) falling back to DALLE-3. The idea is for n8n MCP workflows to run smoothly and report back *something* as far as an image if a provider say, processes and processes and processes, but hangs too long pending a content filter rejection, whathaveyou. (EDIT: all of my chains are config\u2019d on the LiteLLM side)\n\nI have no idea how I\u2019d pipe that just yet; but it\u2019s definitely something I need to consider and probably pipe in (I\u2019d likely use Tempo for this unless this use-case can\u2019t apply this granularly).",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "on7aulj",
+          "text": "What would you do differently if you had one RTX Pro 6000 or two (and the not insignificant PC around them). What benefits would you anticipate or is the point that your existing setup goes extremely far for what you need and the API plans via LiteLLM get you what you\u2019re missing?\n\nI\u2019m thinking about a pivot in this direction from another regulated industry, but I\u2019m struggling to see how far 96/192 gb of vram would go or if the only real option is to still pull on whatever SOTA model is cheap in the cloud month to month.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "on8fffv",
+              "text": "Well, first thing I'd do is sweep up/mop up my brain matter glooped all over the floor at the mind-melting possibilities that VRAM could do me LMAO... but yeah, you got this gist; it's basically an existing setup that takes every byte of compute I can squeeze for what I need, and supplement with LiteLLM with what I'm missing (though to be technical, my local models are also piped in to LiteLLM so I get the dashboard goodies).\n\nTo do my best to answer your question (because it's a REAL struggle myself)...on one hand, I have ZERO doubt that 96GB of VRAM would be *more* than enough for what my clients'/my needs are. That being said, there's still some very real downsides to giving up memberships (e.g., I haven't given up my Claude Max subscription yet because of Claude Code, and though I gave up OpenAI, they extended a 6-seat-free ChatGPT Business subscription for 3 months to try to get me to stay). I'm still trying to find the best balance myself. If it gives you any additional context, I'm trying to find a tricked out used M4 Max MBP for a few grand ... but I'm also keeping my ear to the ground about any 5080/5090-series RTX's that I could swap out my 8GB RTX 4060 Ti for as a down payment on something bigger. .... or both. Both is good?!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

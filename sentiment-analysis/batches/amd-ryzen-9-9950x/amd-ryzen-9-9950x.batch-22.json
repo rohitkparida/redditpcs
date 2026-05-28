@@ -1,0 +1,329 @@
+{
+  "productName": "amd-ryzen-9-9950x",
+  "batchIndex": 22,
+  "totalBatches": 22,
+  "comments": [
+    {
+      "commentId": "1es12bl",
+      "text": "AMD Ryzen 9 9950X CPU Review &amp; Benchmarks vs. 7950X, 9700X, 14900K, &amp; More",
+      "upvotes": 301,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "li2mvcf",
+          "text": "honestly this was probably the best year for amd to focus on power usage over pure performance. intel is in the shitter with its 13 and 14 gen issues. 15th gen gonna ditch hyper threading on p cores in favor of more e cores and who knows how that'll hit gaming. looks to be a transitional year for both. makes me excited for next gen but kinda meh this gen",
+          "upvotes": 12,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "li2s034",
+              "text": "Removing Hyper threading won\u2019t have a hit on gaming considering it\u2019s a classic item that hurts it, and by the leaks of Arrow Lake, that at least has a healthy multi core up lift.\n\nBut it is probably a better year to not have performance upgrades for them considering the whole 13/14th gen meltdown and the fact 15th gen will be on a even more troubled node",
+              "upvotes": 22,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "li3mife",
+                  "text": "&gt;But it is probably a better year to not have performance upgrades for them considering the whole 13/14th gen meltdown and the fact 15th gen will be on a even more troubled node\n\n\nIt's not a good year because Zen 5 is a 2 year endeavor unlike Intel who launch yearly.",
+                  "upvotes": 9,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "li5izi5",
+                  "text": "The real problem is that both the P cores and E cores are going to be stronger with Arrow lake along with running on better silicon than what AMD has access too.\n\nAs long as Arrow lake isn't cooking itself to death it's going to be out performing these chips. And we will have to see how the X3D does against them. The entire point of tossing Hyperthreading is that it allows Intel to use far beefier P and E Cores.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "li3fule",
+              "text": "&gt; 15th gen gonna ditch hyper threading on p cores in favor of more e cores\n\nThey have the same number of E-cores as RPL.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "li3e8s9",
+          "text": "The really concerning part here is the communication and marketing from AMD as the Steves from HUB/GN have noted repeatedly across several videos. It is a catastrophic failure from all ends. Its only because of their marketing/comms that the reception is as bad as it is right now. We are pretty much in limbo whether or not Zen 6 is even going to be on AM5.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "li5kh5w",
+              "text": "The confirmed support until 2027 for AM5 when they confirmed these 9000 series CPUs some months ago. That pretty much confirms Zen 6 on AM5",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lij8n21",
+                  "text": "They are still releaseing new SKU for AM4, so technically supported.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "li2joj1",
+          "text": "Unrelated to the actual CPUs here, but it's a joke that you outlets still use chromium code compile (on windows!) to represent developer productivity workloads. Pretty much no one is doing constant clean release builds of a browser so the benchmark **massively** favors high core count CPUs compared to lower core count faster per core CPUs or CPUs with better memory bandwidth. GN isn't the only outlet to do this, so this isn't to pile on them, but that's not an excuse to have a flawed benchmark.\n\n\nIt'd be bad if this benchmark was just useless but it actually misinforms consumers on what CPU they should buy as a developer since a faster ST CPU is going to be quicker for the developer doing incremental builds where they change a handful of files before rerunning the test suite.",
+          "upvotes": 7,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "li2krmv",
+              "text": "What do you propose they run instead that is consistent and easy to reproduce?",
+              "upvotes": 13,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "li2n911",
+                  "text": "Something more analogous to a standard IC's workflow:\n \n1. Clone multiple codebases with different languages with different compilers ranging from small to large sizes (1k lines to 1M lines) and checkout to a specific commit\n2. Do an (untimed) clean debug build then run the test suite\n3. Apply the next commit on the branch and do a timed debug build and then a timed test suite run assuming the tests aren't doing anything network or disk heavy.\n4. Repeat step 3 for N commits.\n5. For completeness sake, do a timed release build but show it separately from the more real world results. While less applicable to most developers it's still good information to have.",
+                  "upvotes": 18,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "li2lrm6",
+                  "text": "Check Puget's and Phoronix's reviews for the benchmarks they run.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "li2jyxe",
+              "text": "9950X was the best in all code compilation tests for Phoronix as well, its not misleading.\n\nhttps://www.phoronix.com/review/amd-ryzen-9950x-9900x/2\n\nWhen it comes to the ST performance, 9950X might actually be the [best](https://youtu.be/43DFYvOoRhY?t=303) when it is not struggling for memory bandwidth. The problem is for most users that scenario is pretty rare.",
+              "upvotes": 45,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "li2ndph",
+                  "text": "yeah 4 channel memory needs to be standard on consumer boards for these high core countchips like the n950x and intels top end too. or at least tri channel. dual channel is holding them back",
+                  "upvotes": 7,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "li2px70",
+                      "text": "I wouldn't have expected to buy I miss the 7980XE for that. I hope DDR6 isn't used as a lazy bandaid for the need for more consumer memory bandwidth",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "li2qz8r",
+                          "text": "ddr5 was supposed to be that, so i dont know if i trust ddr6 to be. we need more bandwidth options on board at this point i think. but hey maybe this bandwidth shortage will help the x3d chips more this gen who konws",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "li2mmua",
+                  "text": "&gt; 9950X was the best in all code compilation tests for Phoronix as well, its not misleading.\n\nPhoronix is still incredibly misleading (but better than just chromium compile), their benchmarks are timed release builds of medium-to-large C/C++ programs just like GN. The vast majority of developers aren't working in these languages to begin with, and *certainly* not doing constant clean release builds. I'm a software engineer and I'm doing maybe a dozen release builds a week (and certainly smaller codebases than what phoronix and GN bench against), the vast majority of a normal developers time is going to be incremental debug builds.\n\n\n&gt; When it comes to the ST performance, 9950X might actually be the best when it is not struggling for memory bandwidth. The problem is for most users that scenario is pretty rare.\n\nIn the development world Apple Silicon is kinda kicking ass at the moment. Again it's still a very flawed test methodology but in clang lines per second M3 Pro 1T is a good 20% faster than 7950x 1T. I haven't seen any real-world benchmarking of M3/4 vs Zen 4/5 for developer workloads but based on what I've seen and Apple's excellent memory bandwidth I'd be surprised if Zen won.\n\nEdit:\n\nI forgot to add this, but a lot of large code compilation benchmarks can also get pretty IO heavy which is one of the big reasons Windows usually scores lower than MacOS and Linux on the same hardware in these kind of developer benchmarks. NTFS kinda sucks.",
+                  "upvotes": 6,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "li64496",
+                      "text": "but i need vs 2022, i hate vscode or ryder",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "li2os9m",
+              "text": "I understand what you're saying, but if the incremental build process is optimized to the point to where it's CPU/Memory bound (e.g. not talking about cases where you're waiting on the OS, the disk, or pulling packages from the network), then how much absolute time savings is there really when talking about changing 1-4 files? Even if you cut a 10 second incremental build time down to 1 second, it's not a 10x productivity increase, because if you're trying to play your IDE like a first person shooter, you should probably be debugging instead.\n\n\nChanging 1-4 files can still end up parallelizing to using 16 cores if those files are dependencies to other files, it all depends on your project, language, and compiler.\n\n\nYou can't really measure developer productivity as a function of code compile time at all, but if you're talking about the difference between a full release code compile taking 2 hours vs. 30 minutes, that's a very different story for those days where you do perform it.\n\n\nThat being said if you're going with a dual-channel solution (such as AM5) I would recommend developers just get the 8-core X3D CPU and spend that extra savings elsewhere, RAM/SSD capacity, new keyboard, ultrawide monitor, etc. If you occasionally have a task that needs more firepower, try to find ways to offload it to another system, such as an AWS instance you spin up once a week to do release builds.",
+              "upvotes": 10,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "li2sfty",
+                  "text": "&gt; then how much absolute time savings is there really when talking about changing 1-4 files?\n\nAt the high end, yeah there isn't much time saved between a 14900K and a 9950x for that incremental build. But in the low end it can be a lot more substantial depending on how many cached objects gets invalidated with those edits. When I started at my current employer I was working on a medium sized C++ codebase with a 4 core tigerlake cpu, if I edited the wrong header deep in the include tree my tiny quad core could be spending several minutes compiling a test build because everything that included that header had to be invalidated.\n\n&gt; Even if you cut a 10 second incremental build time down to 1 second, it's not a 10x productivity increase, because if you're trying to play your IDE like a first person shooter, you should probably be debugging instead.\n\n100%. Code compilation speed is hardly the be all and end all of developer productivity but reducing the time between tests when you are debugging is really nice when you're trying to keep that hypothesis train of thought while you're investigating an issue.\n\n&gt; You can't really measure developer productivity as a function of code compile time at all, but if you're talking about the difference between a full release code compile taking 2 hours vs. 30 minutes, that's a very different story for those days where you do perform it.\n\nI think we're talking about different things a bit, I'm not trying to measure developer productivity by code compiled per second but instead more focused on reducing the perceived friction of an engineer. Developers are productive writing code not compiling it but we need to test our code to know if what we've written is correct or if we need to adjust accordingly and in those 5 to 45 seconds in-between an incremental build that's the time a developer gets distracted or loses their train of thought. By having a CPU that minimizes those periods where you can an increased risk of getting distracted you enable developers to be more productive because they can spend more time thinking of the code to write rather than waiting to validate the code they've written.\n\n&gt; That being said if you're going with a dual-channel solution (such as AM5) I would recommend developers just get the 8-core X3D CPU and spend that extra savings elsewhere, RAM/SSD capacity, new keyboard, ultrawide monitor, etc. If you occasionally have a task that needs more firepower, try to find ways to offload it to another system, such as an AWS instance you spin up once a week to do release builds.\n\nAgreed.",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "li2sh6a",
+          "text": "I wonder why there is almost no coverage of 7950X3D in their benchmarks?",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "li32hmh",
+              "text": "Yeah. I noticed that too. Hardware Unboxed has them. I think right now 7950x3D is best of both worlds\u00a0",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "li3ov6z",
+                  "text": "Yea it doesn't lose much productivity performance and it has very good gaming performance.",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "li2uflr",
+              "text": "This was the second thing I noticed. It's  not even present in the game benchmarks. I just assume gaming =&gt; 7950X3D = 7800X3D +/- 1%.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "li74myc",
+          "text": "So cheaper 7000 it's better buy, if the extra ~30% avx512 performance won't be needed",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lu8nl9z",
+          "text": "Pretty rarely does 5 or 10 or even 15% better CHIP performance in then7800x3d to 9800x3d space actually do much for gameplay.\n\nGPUs are too far behind. \n\nEven at 1080p",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "m582xgm",
+          "text": "Hello guys, I want a cpu for productivity and I like AMD but why did people recommended me Intel CPU when I saw this video most AMD CPU are on top",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

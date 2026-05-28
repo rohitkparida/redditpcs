@@ -1,0 +1,136 @@
+{
+  "productName": "seasonic-vertex-gx-1000",
+  "batchIndex": 143,
+  "totalBatches": 145,
+  "comments": [
+    {
+      "commentId": "1e62264",
+      "text": "My contribution to stopping Destiny from making bad hardware decisions. [Effort Post]\n\nWatched the 5 minutes that u/NeoDestiny discussed building a PC, and he is a little lost. Not his fault. He is incredibly busy, and only losers like me keep up with the latest hardware trends.\n\n# My Background: \n\nI'm a hardware fanatic, and I build and maintain workstations/NASs for some labs in my department as a side-gig (thank god for p-card purchasing). I work with electrophysiology hardware/software as well as write machine learning code for data analysis projects. Software debugging is something I am all too familiar with.\n\n# The Problem: \n\nDestiny is having issues with his OBS hanging up. He has had some blue screens as well. Destiny most likely has OBS scripts and some ad-ons that could be the cause for his issues. He also has older hardware that might be sundowning. Finally, updating the software could be a culprit, however his reformats and reinstalling of the software might discount this specific problem. \n\n# Requirements: \n\nDestiny requires a pure streaming machine that is separate from his gaming PC. He wants the latest features. He also needs a machine that can take advantage of his 5 Gbps internet. He has discussed having storage issues in the past, so he will probably want some long-term storage in his PC. He hates water-cooling, so everything will need to be air-cooled. This build should also not trip his breaker, so efficient parts might be the way to go. The parts should have solid warranties and built to withstand daily use (no part can guarantee this 100%, but the best course of action is sticking with reputable brands). The OS will need to be Windows, because Destiny will retire if he has to deal with a terminal. Finally, the parts need to be available currently and come from mainstream e-tailers. There is always new hardware on the horizon, but a reminder that Destiny' primary needs are viewing NSFW links and GPU streaming. So, on to the hardware.\n\n# Potential Build:\n\nI will provide my best justification for this build since on the surface it seems entirely unnecessary. I think If Destiny wants all of the latest features, he should go with the sTR5 platform. The AM5 X3D chips are not the best chips for Destiny's use case, since he is not going to be gaming on this PC. Looking through the hardware review for the X3D chips such as [Gamer's Nexus](https://youtu.be/9gCzXdLmjPY?si=mfOPOl-9sE_p3Hqp) show that the primary benefit is pretty much only for gaming. More reasonable pushback with, \"Why not the 7900x or 7950x?\". That was my first idea. However, I think Destiny's primary issue is going to be PCIE lanes. I think 28 lanes might get used used up very quickly when you account for GPU, multiple SSDs (if Destiny wants that), capture card, and thunderbolt peripherals (I'll get to this later). He might also want to put in a 10 Gb nic if he wants to do more video projects and opts to connect a NAS over network. I'm not saying this is the only option, all I'm trying to say is Destiny should have options and flexibility with this build. Final thing to mention, this platform is an efficiency king.\n\nI am also going to make the case for a NVIDIA RTX 4000 SFF Ada Generation card. Before people freak out, this is a 70 watt card. Let me repeat myself. 70 watts! Destiny does not need to use an inefficient CPU to encode streams in 2024 and heat up his room. This card has multiple encoders capable of encoding multiple streams. Plus, AV1 is on YouTube, so he can take advantage of this revolutionary codec. Since he is using the encoders, it will probably be operating at half or less than half of its rated TDP. [Level1](https://www.youtube.com/watch?v=ZiPmT_JWNII) had a great overview of this card and potential use cases. While destiny is not going to machine learning, having a highly binned card from Nvidia will ensure he has a quality card that should stay rock solid over the long-term. It also should not get crazy hot.\n\n# Part Recommendations:\n\nCPU - [AMD Ryzen Threadripper 7960X](https://www.newegg.com/amd-threadripper-7960x-350w-sp6-ryzen-threadripper-7000-series/p/19-113-804?Item=19-113-804&amp;cm_sp=product-_-from-price-options) or the [7970x](https://www.newegg.com/amd-threadripper-pro-7965wx-350w-sp6-ryzen-threadripper-7000-series/p/19-113-806?Item=19-113-806&amp;cm_sp=product-_-from-price-options): I think the 24 core is more than enough for Destiny while providing him a platform that can take advantage of all the ad-in cards and peripherals he wants. It has incredible compression and decompression performance, so he should be able to take full advantage of his SSDs and internet connection (yes, downloading and uploading at 5Gbps can be incredibly taxing on a CPU). I have seen Destiny have his stream hang up when he splits vods, so this CPU should handle some of these bursty tasks as well. Again, I am making my best conjecture from personal experience with other tasks as well as some reviews, so Destiny will need to test this himself.\n\nMobo - [GIGABYTE TRX50 AERO D sTR5 (Rev 1.2)](https://www.newegg.com/gigabyte-trx50-aero-d/p/N82E16813145484?Item=N82E16813145484&amp;SoldByNewegg=1): USB4 (40 Gbps) and 2 LAN ports (10 Gbps + 2.5 Gbps) is the main stars of the show. Destiny discussed how he would want better ports with his new build, and this would allow him to reduce the number of cables going into the back of the PC. He could also take advantage of Thunderbolt docks and better external SSDs with this setup. Now, Destiny should be warned that not all the ports are PCIE 5.0. However, the trade-offs with the two features I mentioned as well as Wifi 7 (negligible feature, but still cool) is probably worth it. Reviews also seem good. It is also way cheaper than the Asus offering with arguably more usable features.\n\nGPU - [RTX 4000 SFF](https://store.nvidia.com/en-us/nvidia-rtx/products/nvidia-rtx-4000-sff-ada-generation/?nvid=em-VCNRTX4000ADALP-PB): I already went over this in the potential build section. Reminder for everyone that he is not gaming on this. The GPU needs to chug as an encoder and multi-streamer. He does not need a more expensive workstation card or a 4090. He is just encoding. Frankly, a [4060](https://www.amazon.com/MSI-RTX-4060-Architecture-2X/dp/B0C8BPW1SP?source=ps-sl-shoppingads-lpcontext&amp;ref_=fplfs&amp;psc=1&amp;smid=ATVPDKIKX0DER) would be a good alternative if he wants a low wattage offering that will encode for him. I just recommended this, because the 4000 SFF is less than HALF the TDP of a 4060. So freaking cool!!! I know it's unnecessary, but think of how unique it is :)\n\nRAM - [Kingston Fury Renegade Pro 128GB](https://newegg.com/kingston-128gb/p/N82E16820242850): Probably an unnecessary amount, but I do not know how many pictures of your mom he will be opening up. Threadripper also works best with all channels populated. This was the highest channel kit of matching ram from the supported memory list that also meet the 5200 memory speed requirement (Threadripper sortof maxes out at 5200 for memory speed).\n\nCPU Cooler - [Noctua NH-U14S TR5-SP6](https://www.amazon.com/dp/B0CHRS9RXB?maas=maas_adg_9B5E62ADF6F9D163C527BCF52245CCB8_afap_abs&amp;ref_=aa_maas&amp;tag=maas#customerReviews): There aren't a ton of supported air coolers for the sTR5 platform. Noctua is expensive, however they are incredibly reputable and easy to install with their secufirm bracket. Destiny will not have to worry in the slightest on reliability, and the CPU comes with CPU paste pre-applied. I personally use this cooler for the workstation builds in lab. I liked it enough to get the regular version for my partner's gaming PC. Cool enough and quiet.\n\nSSD - [Crucial T700 4T](https://www.newegg.com/crucial-4tb-t700/p/N82E16820156331)B: Storage has gotten so damn cheap. Destiny could get 2 of these in and run them in RAID 1. He could even put the OS on one and use the other as storage. These are rock solid and fast. PCIE 5.0 as well. I know the Samsung 990 pros are no slouch, but Destiny might as well just get the 5.0 drives if he is going through the trouble and wants to take full advantage of the sTR5 platform.\n\nLong-term storage - [Seagate IronWolf Pro 20TB](https://www.newegg.com/seagate-ironwolf-pro-st20000nt001-20tb/p/N82E16822185071): Get two of these and run them RAID 1. Are you kidding me? Look at how damn cheap storage is now. For the people wondering why I didn't recommend SSDs: people do not recommend long-term storage on flash memory. Data stored on flash can decay with time, and the drives need to constantly be active. I don't want there to be a risk for any of Destiny's data, so to be safe he should stick with a HDD.\n\nPower Supply - [Seasonic Vertex GX-1000](https://www.newegg.com/seasonic-vertex-gx-1000/p/17-320-022?Item=17-320-022&amp;cm_sp=product-_-from-price-options): I can already feel Destiny getting riled up at that unnecessary wattage number. U have a good reason. When modern PSUs operate at less than half of their total rated wattage, they do not need to spin their fan. One less component causing noise in your room. This is a minute point and probably does not matter to most people, but it is something for noise sensitive people to consider with their own builds. Besides that, Seasonic is the best brand for power supplies. Destiny could go for there platinum or titanium line-up, but that would get expensive. This is a great option with a 12 year warranty to boot. Destiny can feel confident that this power supply will stand the test of daily use. I have two lab computers using this power supply and can stand by it.\n\nPC Case - [Fractal Design North XL](https://www.newegg.com/charcoal-black-fractal-design-north-atx-mid-tower/p/N82E16811352216?Item=9SIAD6HK9F2398) or the [Fractal Design Torrent](https://www.newegg.com/white-fractal-design-torrent-atx-mid-tower/p/11-352-207?Item=11-352-207&amp;cm_sp=product-_-from-price-options): This is honestly personal preference. I think the Torrent would be a solid pick due to the airflow, but the CPU tower will be blowing air directly into the powersupply with this case. It also has a \"loud\" design language. Destiny might like the more subdued look of the Fractal North. It is indeed an elegant case. I have worked in Fractals and Phanteks cases mostly. Both brands are easy to work with and they both provide high-quality, quiet airflow fans. \n\nCapture Card - [Elgato 4k Pro](https://www.elgato.com/us/en/p/game-capture-4k-pro) or [Elgato 4k x ](https://www.elgato.com/us/en/p/game-capture-4k-x): Destiny will know his external capture requirements much better than I would. I have provided the latest gen options for him to look at.\n\n# Conclusion:\n\nI'd love the community's feedback as well as Destiny's thoughts on this build. I have some alternative builds that he can consider if he has a different use case in mind for his streaming PC. I can also totally defend these hardware choices if needed for anyone who might not understand them. I think my experience and understanding of what Destiny needs is solid. Looking forward to hearing from everyone :)",
+      "upvotes": 216,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ldqlnnd",
+          "text": "&gt;Long-term storage -\u00a0[Seagate IronWolf Pro 20TB](https://www.newegg.com/seagate-ironwolf-pro-st20000nt001-20tb/p/N82E16822185071): Get two of these and run them RAID 1. Are you kidding me? Look at how damn cheap storage is now. For the people wondering why I didn't recommend SSDs: people do not recommend long-term storage on flash memory. Data stored on flash can decay with time, and the drives need to constantly be active. I don't want there to be a risk for any of Destiny's data, so to be safe he should stick with a HDD.\n\n  \nfuck that. he should have a Proper NAS or 2 for his use case. aint no way youre a streamer, use multiple pc\u00b4s, laptops, tablet and such things without having a proper fileserver and backup system.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ldqq756",
+              "text": "Yea, I'd want a little Ubuntu mini-PC + NAS as a server running a buncha Docker apps. The learning curve is off-putting though. I'm also not sure it'd benefit him much if he's accessing most of his stuff through the cloud anyway.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ldqs69h",
+                  "text": "start with the NAS and put it in your network. NAS systems often have home server features. depending what you bought. like deploying VWs, running docker, plex and allow VPN access. But you have it as easy click and deploy solution. \n\nBut Dman would benefit a lot from his own home server. The cloud is limited, his own system can be upgraded as much as he wants, he has absolut control over it and the security, he can have faster access to his files, because its in his network and not in the cloud( when he is at home), he can grand access to august for VODs without uploading them somewhere. he would have his own personal cloud.\n\nits so essential im sure he already has something like this, a NAS at least.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ldqst3z",
+                      "text": "Ah, maybe you're right.\n\nI kinda figured August handled that storage on his own, but now that I think about it, Dest probably already has a Synology or something plug'n'play.\n\nI am already running a Ubuntu server for my household. I just meant that I'd probably want one if I were a streamer. Those Docker apps, and the self-hosted options are neat.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ldroio2",
+                          "text": "Bro Docker is a trigger word. Troubleshooting Linux shit turned me into a note taking fiend. I have such meticulous notes with different commands.\n\nYeah, it would be cool to have some more insight into what Destiny already has. A build stream where he sets up a server would be sick. Are you using ZFS or just Linux RAID?",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "ldrnnke",
+              "text": "Very true. I\u2019m only recommending a streamer PC in this case. Currently, I do not know if he even has 20TB worth of pictures of our moms. I think the Israel trip might have generated a ton of data. However, I am unsure Destiny has the mental for a NAS on top of the streaming PC having issues. \n\nI would love for Destiny to build a NAS though. I\u2019m thankful for my university IT department making us a massive storage server, so I know the benefits of Destiny having a dedicated, reliable storage space in his home.\n\nOne other thing to consider is Destiny\u2019s storage plans. If he doesn\u2019t have anything to even store, then a NAS might be unnecessary for him (although I doubt that with the amount of pictures of our moms he has).",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ldrluif",
+          "text": "\u2764\ufe0f\u2764\ufe0f\u2764\ufe0f.u should maybe post it in streaming subreddit so that other streamer can apply ur suggestions too",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ldrp8hy",
+              "text": "It\u2019s a little expensive and would probably apply for only top streamers. I also do not agree with Destiny using a dual PC setup, however he requires that. I only recommend what the user wants. Other streamers that don\u2019t have this requirement should stick with GPU encoding on their gaming PC and have a MacBook Air on the side for clicking NSFW links and messaging lol.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ldrpgvv",
+                  "text": "Damn bro it seems u r genius when it comes to customisation it seems.u r a cool dude",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ldrtfhk",
+                      "text": "I\u2019m sorry if this reply was genuine, but after the schizo stream I think you are a bot \ud83e\udd16\ud83d\ude22",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

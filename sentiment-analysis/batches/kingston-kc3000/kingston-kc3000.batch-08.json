@@ -1,0 +1,30 @@
+{
+  "productName": "kingston-kc3000",
+  "batchIndex": 8,
+  "totalBatches": 8,
+  "comments": [
+    {
+      "commentId": "1ffhtf1",
+      "text": "Subpar performance on Kingston KC3000 SSD - any tips?\n\nHi all - just wondering if I can get some help improving the performance of this SSD. I've been getting some stuttering in games and thought it could be related to the SSD, so I did some benchmarking. Based on this review of my SSD ([Kingston KC3000 PCIe 4.0 NVME SSD Review - Did Kingston Just Release a 'Game' Changer? | The SSD Review](https://www.thessdreview.com/our-reviews/nvme/kingston-kc3000-pcie-4-0-nvme-ssd-review/3/)) the performance I'm getting is lower than it should be.\n\nHere are some images of the performance I'm getting (the top image is the benchmarking from the review above and the bottom image is my own results): [Imgur: The magic of the Internet](https://imgur.com/a/4VccJT4)\n\nMy specs:\n\nRyzen 5800X3D\n\n32GB 3200Mhz\n\nKingston KC3000 2TB NVme\n\nEdit: Also, I have done the defrag/TRIM in Windows on this drive and the results above are still the same.",
+      "upvotes": 0,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "mb6trgg",
+          "text": "Check for firmware updates. That drive has the problematic phison controller version.\u00a0\n\n\nIf you're a firmware behind, you'll see literal seconds of delay in read performance.\u00a0",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

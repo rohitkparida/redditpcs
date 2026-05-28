@@ -1,0 +1,687 @@
+{
+  "productName": "asrock-b650m-pro-rs",
+  "batchIndex": 1,
+  "totalBatches": 6,
+  "comments": [
+    {
+      "commentId": "15laubk",
+      "text": "Asrock B650M pro rs wifi slower than other boards by MSI and Gigabyte, why?\n\nI wanted to buy an Asrock B650M pro rs wifi and read some reviews, and saw these two, which show the Asrock is way slower in most games compared to other boards by MSI and Gigabyte:\n\n[https://www.youtube.com/watch?v=DTFUa60ozKY](https://www.youtube.com/watch?v=DTFUa60ozKY)\n\n[https://i.imgur.com/G1Fshh1.jpeg](https://i.imgur.com/G1Fshh1.jpeg)\n\n[https://www.techspot.com/review/2633-amd-b650-motherboards/](https://www.techspot.com/review/2633-amd-b650-motherboards/)\n\n[https://i.imgur.com/RMjAIx8.png](https://i.imgur.com/RMjAIx8.png)\n\nAnyone maybe have an explanation why and maybe how to fix it and make the Asrock go par with the other boards. Might have some newer bios fixed this performance problem?",
+      "upvotes": 7,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "jva3g1o",
+          "text": "I know ASRock does have a lower TJMax on some boards compared to the competition which does affect performace a bit (check HWU's review on the B650M HDV/M.2, they do address this in the video).\n\nNot sure if that's the case with this specific model tho, but it'd make a lot of sense.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "jva3so7",
+              "text": "I dont think that is the issue here. Also you can disable it in bios I think, that was also said in the video. There seem to be some issue with two classes here: [https://i.imgur.com/RMjAIx8.png](https://i.imgur.com/RMjAIx8.png)\n\nyou see here that they tested with the 75C power limit and also deactivated:\n\n[https://i.imgur.com/AlAkywM.png](https://i.imgur.com/AlAkywM.png)\n\nclass a in this test is around 185 FPS, class b is around 175 FPS. that must have some connection, mostly some RAM timings, the \"class b\" boards use, compared to the \"class a\" in this list. It isnt an Asrock specific issue, but Asrock seems to be in the slower \"class\" for whatever reason. There is also a 162 and a 163 next to the MSI boards, I dont know what it means, maybe a bios version? And MSI boards are \"fixed\" with the 163 and are also slow in class B with 162. so maybe a bios setting in Asrock boards also can uplift it to class a range?\n\nyou also see the two classes again in this test:\n\n[https://i.imgur.com/G1Fshh1.jpeg](https://i.imgur.com/G1Fshh1.jpeg)\n\nclass a around 265fps class b around 245fps\n\nI know there is some setting in Asrock bios where you can set ram timings to aggressive, maybe that fixes it?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "jvaxbvf",
+          "text": "It says 5600 so I assume it\u2019s using ddr5 5600 ram those other boards look like it\u2019s using ddr5 6000 wonder why 5600 on other boards and 6000 on the rest",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "jvaxff5",
+              "text": "because it didnt boot with 6000",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "jvayghr",
+                  "text": "Ok well that explains the results then probably needs a bios update and ran with 6000 to see the results again but doubt anyone is going to do that now",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "jvaymn1",
+                      "text": "No it does not. Look carefully on the pictures or watch the video or read the article. There are other examples where it runs at 6000. Basically there are 2 classes/groups, and I want to know why. https://i.imgur.com/RMjAIx8.png",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "jvazram",
+                          "text": "I was going by your original graph this one shows about a 10 to 12 fps difference which is odd idk If it\u2019s cause they are still working out kinks with the new platform or what",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "jvb2009",
+                          "text": "My next question would be if these reviews are still accurate or has the bios updates changed things",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "jvb23m0",
+                              "text": "That I also dont know, might be. There is also a weird thing where it shows the same boards by MSI with a 162 and then a 163 next to it, one running in the faster group, the other in the slower, and I dont know what that means.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "jvb354k",
+                                  "text": "I know the current bios version is 1.28 I have the b650m pro rs wifi but have not try to really push a single player game with high fps yet\n\nAnd honestly I would not really let this discourage from buying it unless 20 fps is that big a deal to you",
+                                  "upvotes": 2,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "jvb48by",
+                                      "text": "well if I buy a new pc for 2300 Eur I want it to be maxed out. also 20fps is a lot, it can be the difference to reach 144fps or not. I want to know the cause behind that anomaly in these two tests, why there are two classes of boards, class b runs way slower and I want to know why.",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "jvb5q0s",
+                                          "text": "Well these are old reviews to which is a problem since it\u2019s not on the most recent bios version May not make a difference but who knows yea I only spent about $1235 but If I spent that much probably would make a issue out of it",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": []
+                                        },
+                                        {
+                                          "commentId": "jvc2tbt",
+                                          "text": "Those 20 fps are with a 4090 @1080p , 20fps of 264fps is 8%, so unless you are actually gonna buy a 4090 to play at 1080p you're not gonna see a 20fps drop.",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "jvc310i",
+                                              "text": "wrong. it could be the difference between having stable 60 fps or dropping to 58 or 55 fps. or 144fps or having 140fps. I want optimal settings, and something is not working right for these boards, and I want to know what setting it is. mostly a ram timing setting.",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "jwgwxqw",
+          "text": "So, you ended up buying the Asrock B650M ?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "jwgz7ro",
+              "text": "yes, I bought the ASRock B650M PRO RS WIFI, I have it here but cant finish the build because I am waiting for the power unit.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "jwhjin1",
+                  "text": "I am building a new rig. I have a 4070 and a 7800X3D so far.. \nand the AsRock seems to be a good fit, but then I saw your post here and now I am thinking about it lol",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "jwhlv8r",
+                      "text": "i think it will be a good board, asrock always was one of my favorite brands. I am just not sure yet if the performance problem is fixed on it, I cant test it so far.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "jwid1ir",
+                          "text": "[https://www.newegg.com/asus-tuf-gaming-a620m-plus-wifi/p/N82E16813119647?Item=N82E16813119647](https://www.newegg.com/asus-tuf-gaming-a620m-plus-wifi/p/N82E16813119647?Item=N82E16813119647)\n\nWhat do you think about this one?",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "jwid75w",
+                              "text": "Lol!! 100% NO GO!! Did you miss the entire Asus catastrophe of the past 6 months? Asus is the LAST one you should buy, NEVER EVER BUY ASUS. MSI or Asrock it is for board, Gigabyte might also be okish. Asus AM5 is a total mess, they were the only one who were destroying your Ryzen 7000 series because of bad soc voltages. Asus have the worst stability right now of all brands.\n\n[https://www.youtube.com/watch?v=wZ-QVOKGVyM](https://www.youtube.com/watch?v=wZ-QVOKGVyM)\n\n[https://www.youtube.com/watch?v=cbGfc-JBxlY](https://www.youtube.com/watch?v=cbGfc-JBxlY)\n\n[https://www.windowscentral.com/hardware/computers-desktops/shady-business-allegations-embroil-asus-at-the-worst-possible-time](https://www.windowscentral.com/hardware/computers-desktops/shady-business-allegations-embroil-asus-at-the-worst-possible-time)\n\n[https://www.tomshardware.com/news/amd-ryzen-7000-burning-out-root-cause-identified-expo-and-soc-voltages-to-blame](https://www.tomshardware.com/news/amd-ryzen-7000-burning-out-root-cause-identified-expo-and-soc-voltages-to-blame)\n\nGet the ASRock B650M PRO RS (WIFI).",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "jwift62",
+                                  "text": "Thanks lol",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                },
+                                {
+                                  "commentId": "keyhmh2",
+                                  "text": "How did your build turn out? Did you face any performance issues?",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "k1oocaz",
+                  "text": "How is it working? I am going to buy the non wifi version, which is the same I think but no Wifi. It is 180\u20ac in Spain, is it good and recommended?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "k1qr3cn",
+                      "text": "no issues so far",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "jvikmei",
+          "text": "None of the links you provided refers to the B650M Pro RS, for which there are no reviews or benchmarks yet.\nThe B650 Pro RS (without the M) is a completely different board, tho similar in looks.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "jviry6t",
+              "text": "But 3 other Asrock boards, I actually made a copy paste error in the title, I meant one from the link, but cant edit the title anymore. the one i put n the title is irrelevant because it will give the same result.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "jviyij3",
+                  "text": "It seemed to me you were mixing up the boards so i wanted to help clarify.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "k76et3f",
+                  "text": "Hey, did this board come with Windows pre-installed?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "k76x33x",
+                      "text": "of course not",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "jv9wda8",
+          "text": "New BIOS versions can address performance but it's on par with or even better than some other boards in the links you've posted? If you want the best performance then look at the Taichi or other brand",
+          "upvotes": 0,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "jv9wqr2",
+              "text": "what are you talking about. the Asrock is last in the reviews, in both. and no thank you, wont pay a scam price for Asrock Taichi.\n\n[https://i.imgur.com/KOYD7et.png](https://i.imgur.com/KOYD7et.png)\n\n[https://i.imgur.com/G1Fshh1.jpeg](https://i.imgur.com/G1Fshh1.jpeg)\n\n[https://i.imgur.com/RMjAIx8.png](https://i.imgur.com/RMjAIx8.png)\n\nBlind? There is obviously an issue with the board (together with some others), mostly not proper RAM timings Asrock is using.",
+              "upvotes": 0,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "jv9wxq7",
+                  "text": "In the cinebench picture you've used for the thread PG has 37537, the RS board has less but not last, are you blind?",
+                  "upvotes": 0,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "jv9x0hj",
+                      "text": "This post is about GAMING. The cinebench is irrelevant. I just included it.\n\nThese boards seem to have an issue, and MSI seems to have fixed it with a newer bios: [https://i.imgur.com/7kCoRq6.png](https://i.imgur.com/7kCoRq6.png)\n\nMy question was if Asrock fixed it, or not.",
+                      "upvotes": 0,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "jv9xclv",
+                          "text": "You included cinebench data yourself but it's not relevant.. OK. In gaming 1 or 2 fps is hardly going to be noticeable. If you want higher performance don't buy the cheapest board and expect it to outperform models which are 30 or 40% more expensive.",
+                          "upvotes": 0,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "jv9xhhe",
+                              "text": "Youre obviously lacking simple logic thinking.\n\n[https://i.imgur.com/7kCoRq6.png](https://i.imgur.com/7kCoRq6.png)\n\nThat is not \"1 or 2\" FPS and you can see two board classes here. Class A running at \\~185FPS, class B at \\~175FPS in that test. And the other tests also show that. It is not a margin problem, it is a specific issue, which some boards seem to have, the Asrock included in Class B.",
+                              "upvotes": -1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "jv9z07l",
+                                  "text": "The Pro RS isn't even on that benchmark, you're all over the place now.",
+                                  "upvotes": 0,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "jvcxab3",
+          "text": "the benchmark you are referring to is because of default ram timings. if you changed them to be the same, all the boards would bench basically the same.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "jvcxfuy",
+              "text": "https://youtu.be/UN2gkbMQ2fs?t=807",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "k6pdju0",
+          "text": "hey man, I just received my pro rs wifi mobo, does your rear heatsink also wobble back and forth for a bit when you put a slight pressure on it?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "k6r9ryd",
+              "text": "what you mean with rear heatsink, the top one? yes it is just hold by springs.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "k6tms0f",
+                  "text": "yea that one, thanks.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "k76eyqr",
+              "text": "Hey Dark, did your Mobo come with an operating system pre-installed? My box says \"windows 11 ready,\" but the spec sheet says \"Windows 10\". I am ready to install windows on it via USB but I am curious",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "k9k7qvu",
+          "text": "Should I take this one or ds3h?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "k9k7yt3",
+              "text": "asrock",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "k9k84m0",
+                  "text": "Y tho? Performance difference is clear!",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "k9k877d",
+                      "text": "&gt;Performance difference\n\nthere is no performance difference",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "k9k8bv2",
+                          "text": "Did u not saw the review by hardware unboxed?",
+                          "upvotes": 0,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "k9k8eqw",
+                              "text": "not accurate (anymore). get the asrock. the end.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "k9k8h94",
+                                  "text": "How? What?",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "k9k8kfl",
+                                      "text": "reasons. the end.",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "k9k8o3z",
+                                          "text": "Can u explain pls, m gonna go to make my* pc tomorrow",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "k9k8uwn",
+                                              "text": "no. I said get the asrock. it doesnt matter to explain. there is no performance difference, asrock is best am5 platform. tests are outdated on old bios and agesa not relevant anymore. wrong / bad dram timings used. the end.",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "kajvtfl",
+                  "text": "&gt;yes, I bought the ASRock B650M PRO RS WIFI\n\nDoes this mobo comes with WIFI on board? I see that there is M2Wifi, but do I need additional M2 card to make it works wireless?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "kajvv4d",
+                      "text": "of course it comes with wifi/bt what do you thought was the wifi in the name? it comes with a mediatek wifi 6e + bt card and antennas. latest drivers always here\n\nhttps://www.elevenforum.com/t/drivers-amd-mediatek-wifi-bluetooth.11384/",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "kajwasm",
+                          "text": "I expected that it contains wifi/bt module, and also checked ASRock spec but just got suspicious when I found a guy on YT that is unboxing this mobo and pointing finder at M.2 saying that wifi module is not included. As I understand that is an option for second wifi card.",
+                          "upvotes": 0,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "kajwec9",
+                              "text": "Two versions\n\n[https://asrock.com/MB/AMD/B650M%20Pro%20RS%20WiFi/index.asp](https://asrock.com/MB/AMD/B650M%20Pro%20RS%20WiFi/index.asp)\n\n[https://asrock.com/MB/AMD/B650M%20Pro%20RS/index.asp](https://www.asrock.com/MB/AMD/B650M%20Pro%20RS/index.asp)\n\none with wifi card and antennas reinstalled, one without, both have the wifi m2 slot. so hard to understand? what do you see on the pictures?",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "kjcztwf",
+          "text": "Has ASRock fixed the performance issue by now? I can't find any benchmarks with the newer bios versions.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "productName": "intel-core-i5-14600kf",
+  "batchIndex": 5,
+  "totalBatches": 6,
+  "comments": [
+    {
+      "commentId": "17ej64v",
+      "text": "Intel Raptor Lake Refresh (14th Core Gen) Meta Review\n\n- compilation of 13 launch reviews with ~1390 gaming benchmarks (and some application benchmarks)\n- stock performance on default power limits, no overclocking\n- only gaming benchmarks for real games compiled, not included any 3DMark &amp; Unigine benchmarks\n- gaming benchmarks strictly at CPU limited settings, mostly at 720p or 1080p 1%/99th\n- power consumption is strictly for the CPU (package) only, no whole system consumption\n- geometric mean in all cases\n- gaming performance average is weighted in favor of reviews with more benchmarks\n- MSRPs: from AMD's online shop (lower than official MSRP, but nearer market level), \"Recommended Customer Price\" on Intel for non-F models\n- Retailer prices from Newegg on October 23, 2023\n- for the full results and more explanations check [3DCenter's Raptor Lake Refresh Launch Analysis](https://www.3dcenter.org/artikel/launch-analyse-intel-raptor-lake-refresh)\n\nNote: The following tables are sometimes very wide. The last column to the right should be the Core i9-14900K.\n\n&amp;nbsp;\n\nSKU|Cores|P-clock|L2+L3|PBP/MTP|Change from predecessor\n|:--|:--:|:--:|:--:|:--:|:--:|\nCore i9-14900K&amp;nbsp;(F)|8P+16E/32T|3.2/6.0 GHz|32+36 MB|125/253W|+200 MHz base &amp; boost\nCore i9-14900&amp;nbsp;(F)|8P+16E/32T|2.0/5.8 GHz|32+36 MB|65/?W|+200 MHz boost\nCore i7-14700K&amp;nbsp;(F)|8P+12E/28T|3.4/5.6 GHz|28+33 MB|125/253W|+4 E-cores, +200 MHz boost, more L2+L3\nCore i7-14700&amp;nbsp;(F)|8P+12E/28T|2.1/5.4 GHz|28+33 MB|65/?W|+4 E-cores, +200 MHz boost, more L2+L3\nCore i5-14600K&amp;nbsp;(F)|6P+8E/20T|3.5/5.3 GHz|20+24 MB|125/181W|+200 MHz boost\nCore i5-14600|6P+8E/20T|2.7/5.2 GHz|11.5+24 MB|65/?W|+200 MHz boost\nCore i5-14500|6P+8E/20T|2.6/5.0 GHz|11.5+24 MB|65/?W|+100 MHz base, +200 MHz boost\nCore i5-14400&amp;nbsp;(F)|6P+4E/16T|2.5/4.7 GHz|9.5+20 MB|65/?W|+100 MHz boost\nCore i3-14100&amp;nbsp;(F)|4P+0E/8T|3.5/4.7 GHz|5+12 MB|60/?W|+100 MHz base, +200 MHz boost\n\nData basis: K/KF models according to official Intel information, other processors: unofficial info\n\n&amp;nbsp;\n\nApplication Performance|13600K &amp;#8594; 14600K|13700K &amp;#8594; 14700K|13900K &amp;#8594; 14900K\n|:--|:--:|:--:|:--:|\nHardware differences:|+200 MHz boost|+4 E-cores, +200 MHz boost, more L2+L3|+200 MHz base &amp; boost\nComputerBase (8 tests, rendering-heavy, with power limit)|-|+9%|\u20132%\nComputerBase (8 tests, rendering-heavy, without power limit)|+3%|+13%|+2%\nHardware &amp; Co. (16 tests, rendering-heavy)|+2.9%|-|+1.0%\nPC Games Hardware (6 tests)|+3.3%|+10.4%|+2.2%\nTechPowerUp (47 tests, office/professional-heavy)|+2.9%|+5.6%|+2.9%\nTweakers (27 tests, wide mix incl. micro benchmarks)|+3.4%|+9.4%|+1.5%\n\n&amp;nbsp;\n\nSource|Tests|Method|AMD system|Intel system\n|:--|:--:|:--:|:--:|:--:|\n[ComputerBase](https://www.computerbase.de/2023-10/intel-core-i9-14900k-i7-14700k-i5-14600k-test/)|10 games|720p, 1% Perzentil|DDR5/5200|DDR5/5600\n[eTeknix](https://www.eteknix.com/intel-14600k-14700k-14900k-cpu-review/)|15 games|1080P, 1% low fps|DDR5/7600|DDR5/7600\n[Eurogamer](https://www.eurogamer.net/digitalfoundry-2023-intel-core-i9-14900k-core-i5-14600k-review)|8 games|1080p, Lowest 5%|DDR5/6000|DDR5/6000\n[Hardware &amp; Co.](https://hardwareand.co/dossiers/cpu/test-intel-gen-14-les-core-i9-14900k-core-i5-14600k-vraiment-utiles)|12 games|1080p, 1er centile|DDR5/6000|DDR5/6000\n[Igor's Lab](https://www.igorslab.de/raptor-lake-resfresh-mit-den-intel-core-i9-14900k-core-i7-14700k-und-core-i5-14600k-heisser-drachenkampf-im-energetischen-endstadium/)|6 games|720p, 1% low fps|DDR5/6000|DDR5/6000\n[PC Games Hardware](https://www.pcgameshardware.de/Core-i9-14900K-CPU-279978/Tests/Refresh-Review-i7-14700K-i5-14600K-UVP-Release-Benchmark-Specs-1431342/)|11 games|&amp;#8804;720p, avg fps|DDR5/5200|DDR5/5600\n[PurePC](https://www.purepc.pl/test-procesora-intel-core-i9-14900k-krol-wydajnosci-czy-odgrzewany-kotlet-fabryczne-6-ghz-okupione-wysokim-kosztem)|10 games|1080p, 1% low fps|DDR5/7000|DDR5/7000\n[QuasarZone](https://quasarzone.com/bbs/qc_bench/views/87650)|15 games|1080p, 1% low fps|DDR5/6000|DDR5/6000\n[SweClockers](https://www.sweclockers.com/test/37338-test-intel-core-i9-14900k-och-core-i5-14600k-raptor-lake-refresh)|7 games|720p, 99:e percentilen|DDR5/6000|DDR5/6000\n[TechPowerUp](https://www.techpowerup.com/review/intel-core-i9-14900k/)|14 games|1080p, 1% low fps|DDR5/6000|DDR5/6000\n[TechSpot](https://www.techspot.com/review/2749-intel-core-14th-gen-cpus/)|12 games|1080p, 1% low fps|DDR5/6000|DDR5/7200\n[Tom's Hardware](https://www.tomshardware.com/news/intel-core-i9-14900k-cpu-review)|8 games|1080p, 99th percentile|DDR5/5200|DDR5/5600\n\nThe results from PurePC and SweClockers are listed in the table below, but were not used to create the performance index. Both results represent outliers in one or the other direction. This can always happen in CPU tests, the results of the different sources are fluctuating.\n\n&amp;nbsp;\n\nGaming Perf.|77X|790X|795X|78X3D|790X3D|795X3D|136K|137K|139K|146K|147K|149K\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\nCB|84.7%|-|-|101.8%|-|104.3%|90.2%|93.3%|98.2%|91.4%|96.3%|_100%_\neTeknix|82.8%|82.1%|85.5%|95.2%|-|96.6%|87.6%|96.6%|97.9%|89.7%|97.9%|_100%_\nEurog|-|-|-|100.1%|-|97.9%|89.8%|-|92.3%|94.2%|-|_100%_\nHW&amp;Co|87.3%|90.5%|90.5%|102.7%|-|103.1%|84.2%|93.3%|95.7%|88.5%|-|_100%_\nIgor's|71.2%|75.4%|79.3%|92.9%|89.4%|97.6%|88.5%|96.2%|97.3%|89.5%|97.1%|_100%_\nPCGH|79.2%|80.5%|81.6%|102.6%|98.7%|105.4%|89.8%|95.7%|98.9%|91.4%|97.7%|_100%_\nPurePC|-|72.0%|74.7%|88.4%|-|-|89.8%|95.2%|98.0%|92.5%|-|_100%_\nQuasar|86.2%|87.2%|88.4%|100.6%|93.0%|98.3%|91.4%|96.0%|98.3%|93.2%|97.2%|_100%_\nSweCl|88.9%|-|91.5%|108.6%|-|114.2%|86.3%|94.7%|96.9%|87.5%|-|_100%_\nTPU|89.5%|87.9%|87.4%|101.3%|-|96.1%|87.6%|92.6%|95.8%|90.6%|94.3%|_100%_\nTechSp|86.4%|87.9%|90.2%|107.6%|-|106.1%|88.6%|93.9%|97.7%|90.2%|98.5%|_100%_\nTom's|80.2%|82.6%|82.6%|107.4%|105.8%|106.6%|87.6%|94.2%|100.0%|88.4%|96.7%|_100%_\n**avg Gaming Perf.**|**83.7%**|**85.0%**|**86.2%**|**101.7%**|**96.7%**|**101.5%**|**88.5%**|**94.2%**|**97.3%**|**90.8%**|**96.9%**|**_100%_**\nPower-Limit|142W|230W|230W|162W|162W|162W|181W|253W|253W|181W|253W|253W\nMSRP|$349|$449|$599|$449|$599|$699|$319|$409|$589|$319|$409|$589\nRetail US|$315|$407|$551|$370|$477|$675|$316|$394|$570|$329|$419|$599\n\n&amp;nbsp;\n\nCPU Power Draw|77X|790X|795X|78X3D|790X3D|795X3D|136K|137K|139K|146K|147K|149K\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\nAVX Peak @ Anand|-|-|222W|82W|-|147W|238W|-|343W|169W|397W|428W\nCB23 @ Tweakers|136W|189W|234W|75W|110W|138W|175W|246W|341W|202W|344W|319W\nBlender @ TPU|-|200W|254W|77W|-|140W|189W|252W|276W|174W|279W|282W\ny-cruncher @ Tom's|126W|161W|168W|68W|92W|99W|126W|172W|212W|139W|230W|262W\nPremiere @ Tweakers|102W|114W|128W|55W|68W|77W|126W|162W|199W|155W|164W|218W\nAutoCAD @ Igor's|77W|90W|93W|62W|87W|69W|76W|95W|139W|75W|128W|143W\n\u00d8 6 Apps @ PCGH|136W|179W|212W|77W|107W|120W|172W|232W|269W|186W|270W|292W\n\u00d8 47 Apps @ TPU|-|111W|128W|49W|-|79W|105W|133W|169W|93W|155W|170W\n\u00d8 11 Games @ PCGH|75W|105W|118W|51W|64W|68W|111W|141W|155W|116W|155W|187W\n\u00d8 10 Games @ CB|-|-|-|48W|-|66W|83W|104W|142W|89W|124W|149W\n\u00d8 13 Games @ TPU|-|86W|89W|49W|-|56W|89W|107W|143W|76W|132W|144W\n\u00d8 6 Games FHD @ Igor's|91W|122W|112W|69W|80W|75W|97W|128W|123W|96W|135W|131W\n\u00d8 6 Games 4K @ Igor's|81W|109W|104W|62W|72W|67W|85W|107W|102W|82W|113W|107W\n**avg Gaming Power Draw**|**77W**|**100W**|**102W**|**54W**|**64W**|**66W**|**95W**|**120W**|**141W**|**94W**|**137W**|**153W**\nPower-Limit|142W|230W|230W|162W|162W|162W|181W|253W|253W|181W|253W|253W\nMSRP|$349|$449|$599|$449|$599|$699|$319|$409|$589|$319|$409|$589\nRetail US|$315|$407|$551|$370|$477|$675|$316|$394|$570|$329|$419|$599\n\n&amp;nbsp;\n\nGaming|Hardware|Perf.|Draw|fps/W|Retail|fps/$\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|\nCore i9-14900K|Raptor Lake Refresh, 8P+16E/32T|_100%_|153W|**68%**|$599|61%\nCore i7-14700K|Raptor Lake Refresh, 8P+12E/28T|96.9%|137W|73%|$419|84%\nCore i5-14600K|Raptor Lake Refresh, 6P+8E/20T|90.8%|94W|_100%_|$329|**_100%_**\nRyzen 9 7950X3D|Zen 4 X3D, 16C/32T|101.5%|66W|159%|$675|55%\nRyzen 9 7900X3D|Zen 4 X3D, 12C/24T|96.7%|64W|156%|$477|73%\nRyzen 7 7800X3D|Zen 4 X3D, 8C/16T|101.7%|54W|**195%**|$370|**100%**\nCore i9-13900KS|Raptor Lake, 8P+16E/32T|~98.5%|~150W|~68%|$730|~49%\nCore i9-13900K|Raptor Lake, 8P+16E/32T|97.3%|141W|71%|$570|62%\nCore i7-13700K|Raptor Lake, 8P+8E/24T|94.2%|120W|81%|$394|87%\nCore i5-13600K|Raptor Lake, 6P+8E/20T|88.5%|95W|97%|$316|**102%**\nRyzen 9 7950X|Zen 4, 16C/32T|86.2%|102W|88%|$551|57%\nRyzen 9 7900X|Zen 4, 12C/24T|85.0%|100W|88%|$407|76%\nRyzen 7 7700X|Zen 4, 8C/16T|83.7%|77W|113%|$315|**96%**\n\nNote: Ryzen 7 7800X3D thus has almost double the energy efficiency compared to Core i5-14600K and almost triple the energy efficiency compared to Core i9-14900K in gaming use (in scenes of pure CPU load).\n\n&amp;nbsp;\n\nAt a glance|Apps|Gaming|Gaming Power Draw|Retail\n|:--|:--:|:--:|:--:|:--:|\nCore i9-13900K &amp;#8594; **Core i9-14900K**|+2-3%|+3%|141W &amp;#8594; 153W (+9%)|$570 &amp;#8594; $599 (+5%)\nCore i9-13900KF &amp;#8594; **Core i9-14900KF**|+2-3%|+3%|?|$543 &amp;#8594; $574 (+6%)\nCore i7-13700K &amp;#8594; **Core i7-14700K**|+6-9%|+3%|120W &amp;#8594; 137W (+14%)|$394 &amp;#8594; $419 (+6%)\nCore i7-13700KF &amp;#8594; **Core i7-14700KF**|+6-9%|+3%|?|$386 &amp;#8594; $394 (+2%)\nCore i5-13600K &amp;#8594; **Core i5-14600K**|+3%|+3%|95W &amp;#8594; 94W (\u20131%)|$316 &amp;#8594; $329 (+4%)\nCore i5-13600KF &amp;#8594; **Core i5-14600KF**|+3%|+3%|?|$280 &amp;#8594; $304 (+9%)\n\n&amp;nbsp;\n\nSource: [3DCenter.org](https://www.3dcenter.org/artikel/launch-analyse-intel-raptor-lake-refresh)",
+      "upvotes": 109,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "k66mtvt",
+          "text": "So as far as I can tell, if you want a gaming cpu, go with an x3d still. It'll be just as fast if not faster, and way more efficient under load. 7800x3d is the best cpu for the average gamer imo.\n\nIf you want just the most cores and parallel processing, then go with the 14900. \n\nIf you want a budget all rounder, then 13600, though you're not that far off from a 7800x3d at this point (~$60).\n\nIf you just want to browse the web, basically get anything.",
+          "upvotes": 5,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "k670olz",
+              "text": "&gt;If you want just the most cores and parallel processing, then go with the 14900.\n\nNot exactly, you can't really go by core count anymore because of Intel's use of e-cores. The 13900K/14900K have more cores than the 7950X however, they have the same number of threads, as the 7950X is all \"performance\" cores with full speed and SMT/hyperthreading, no lower speed e-cores without.\n\nAnd as for productivity type performance, it really comes down to application at that point. They trade blows. In most of the adobe suite for instance, Intel has an edge and Intel has Quick Sync which is a great asset for most video editing software. However, in many CPU render tasks like Blender, AMD is considerably ahead as they are with compression and decompression. And you can look at various other workloads and see one outdo the other and vice versa. And then there's AMD's significantly greater efficiency which may matter for you if you're going to be doing long, all core workloads with it.\n\nSo there really isn't a straight right answer for professional applications at the high end, it depends on what you're doing. But for gaming yeah, the 7800X3D is pretty much a no brainer unless you basically only play one of the games that likes the Intel CPU better for whatever reason (CS2 for example)",
+              "upvotes": 11,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "k656x4w",
+          "text": "Juat realised that Raptorlake is a lot faster over vase zen 4 than people givebit credit for",
+          "upvotes": 0,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "k67qfr1",
+              "text": "People don't care cause why would you buy base Zen 4 when Zen 4 3d is available?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "k6aga71",
+              "text": "they aren\u2019t, these revieweres aren\u2019t running optimized RAM for AMD.\n\nOn HUB and GN. zen 4 is faster",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "k65fc76",
+          "text": "Whelp, I think im going with my first AMD chip ever. I have an ITX system so efficiency is huge. I just can\u2019t stand the price of AM5 motherboards.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "k65laic",
+              "text": "The cheapest ITX socket 1700 board with DDR5 support I can find is [$220](https://www.newegg.com/p/N82E16813145459?Item=N82E16813145459)\n\nThe cheapest ITX AM5 board is [$200](https://www.newegg.com/asrock-b650i-lightning-wifi/p/N82E16813162151)\n\nMaybe there's slightly different prices at different retailers but unless you still want to buy DDR4 and lose a bunch of performance on the Intel side, the prices are pretty similar.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "k65mb9l",
+                  "text": "Oh I wasn\u2019t saying it\u2019s only AMD boards. It\u2019s mobos in general. I remember $350 would get me the top end ROG board. \n\nI should add though, I wouldn\u2019t go anywhere near a gigabyte mobo. Would rather wait and get something a better.",
+                  "upvotes": 6,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "k65mod6",
+                      "text": "Yeah most motherboards feel like a straight rip off recently. It's getting bad. I've been an Asus guy for a while but the premium price they charge now is ridiculous, especially considering my past few Asus boards have been feature lacking and far from trouble-free. It's insane to me we have to pay over $400 just to get a CMOS reset button on the IO panel. I thought they were supposed to be the enthusiast brand. Guess that means emptying our entire bank account.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "k65mu5o",
+                          "text": "If the Asus prices aren\u2019t reasonable I am tempted by the MSI and even more so the ASrock.",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "k65n3ky",
+                              "text": "I had the MSI B350 Tomahawk on AM4 and it was a solid board, I later gave it to a friend and it's still chugging along well. They're worth a shot.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "k67eqyy",
+                          "text": "Motherboard prices make no sense these days.  An ASUS proart is $450 and has all the features I want except a debug code.  Meanwhile a maximus hero is $550 and is far from high end.  \n\nASrock's Taichi Lite series is giving me hope - a top of the line featureset for $350, only missing 10gig LAN.  It's still expensive but in line with historic top end boards.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "k67xjpt",
+                      "text": "&gt; I wouldn\u2019t go anywhere near a gigabyte mobo.\n\nWhy not?",
+                      "upvotes": 0,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "k65kqdu",
+          "text": "I only got a 14900k because I got the board free and the cpu for $480. Otherwise I would\u2019ve just stuck with my 5800x3d.",
+          "upvotes": 0,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "k65zlmw",
+              "text": "I suppose in a microcenter. \ud83d\ude25\n\nSuper deal, enjoy it.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ka5lwc5",
+          "text": "Commenting on Intel Raptor Lake Refresh (14th Core Gen) Meta Review...",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

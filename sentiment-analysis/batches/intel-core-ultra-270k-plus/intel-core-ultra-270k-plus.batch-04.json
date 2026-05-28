@@ -1,0 +1,566 @@
+{
+  "productName": "intel-core-ultra-270k-plus",
+  "batchIndex": 4,
+  "totalBatches": 13,
+  "comments": [
+    {
+      "commentId": "1s43tbs",
+      "text": "[HWU] Intel Core Ultra 7 270K Plus Review &amp; Benchmarks vs. 7800X3D, 9700X &amp; More",
+      "upvotes": 65,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ockl3yt",
+          "text": "$300 for 24 cores. I know we're in that classic phase of mid gen refresh/price reductions but if this is a telegraph towards Intel's upcoming NVL-S with increasing core counts for each of their class segments then that'll be interesting",
+          "upvotes": 58,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ocmkgz1",
+              "text": "It'll be interesting to see how they segment things. Part of Intel's \"advantage\" for their latest lineup is that they essentially front-load the core counts, i.e. you get most of the cores at a still mid tier price point. But that makes sense for them, because they're all from the same 8+16 die that probably yields quite well. AMD's lineup is a lot more linear, but largely because they have 2 dies they can segment without worrying about wasting a ton of good silicon. Intel will be moving to the same next gen, albeit with a larger component die (8+16 will *probably* beat AMD 12+0 in MT). \n\nWouldn't be surprising if they end up charging a large premium for the 40c+ configs. Core Ultra 11?",
+              "upvotes": 19,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ocn3kmj",
+                  "text": "With the cadence of their WS processors I think that may be the strategy of those large core count configs, since the top boards have 48 total lanes. so big $$$",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ocnqgz7",
+                      "text": "Nah, there's still plenty of room for workstations. Impressive as NVL may end up being, a proper workstation platform would still be 3-4x in core count and same for memory channels. \n\nThough Intel's been flirting with dropping the workstation market for years. So it might be this or AMD going forward. \n\n&gt; since the top boards have 48 total lanes\n\n\nNova Lake? Maybe if you include chipset lanes, but in terms of raw CPU lanes/bandwidth, it should be broadly similar to what ARL has. Not enough to displace workstations in IO.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ocnwpu3",
+                          "text": "Yeah I meant total when I quickly looked up jaykihns chipset table. I think it'd be like that awkward spec of wanting to be a WS but not quite. So apart from the higher core count we'd see from past, I'm interested to see how these are received for productive workloads instead of getting something like (what I assume in the future to be discounted) Threadrippers with more IO or even GNR-WS",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ocnxp43",
+                              "text": "I just wish Intel actually went through with NVL-WS, but I assume they must have killed it by now.\u00a0",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "ocnzq24",
+                                  "text": "NVL-WS? \ud83d\udc40",
+                                  "upvotes": 3,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "ocmqebp",
+                  "text": "Core Ultra 11 would sell bank. 40+ cores would be amazing, but cooling it with the possible TDP\u2019s will be a pain. We have to see what they got planned, but they need to be rapid because AMD is on a warm up again.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ocmwuq5",
+                      "text": "Looking at how effecient panther lake is, i don't think cooling 40 cores will be all that difficult",
+                      "upvotes": 5,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ocne114",
+                          "text": "PTL's efficiency gains are in light loads and idle where SoC power dominates. The cores themselves are nothing special.\u00a0",
+                          "upvotes": 6,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ocqnkvo",
+                              "text": "PTL cores got some branch prediction upgrade. On paper that alone should improve power efficiency at any load a little bit. 18A only really slays at lower frequencies though yeah.",
+                              "upvotes": 4,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "octhdbw",
+                                  "text": "&gt; PTL cores got some branch prediction upgrade. On paper that alone should improve power efficiency at any load a little bit. \n\nSure, and there are other small refinements, but we're talking low single digits of IPC, and probably similar from design on top. Doesn't really budge the needle. \n\n&gt; 18A only really slays at lower frequencies though yeah.\n\nTbh, 18A doesn't seem to be showing any real advantage vs N3. But the interesting NVL SKUs will all use N2, so it's a bit moot. That should deliver some nice gains.",
+                                  "upvotes": 2,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "od2ksl6",
+                                      "text": "I think PPA wise 18A is comparable tk N3, but until I see a comparison between ARL and PTL cores from the same OEM and brand I'd reserve my judgement for 18A vs N3 efficiency. But PTL does look very power efficient at low load.\n\n\nWhen it comes to SRAM density I recall 18A being close to N2 though. But afaik SRAM has a uniform pattern, different from the compute circuitry.",
+                                      "upvotes": 2,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "ocmxqq9",
+                          "text": "First, we need a glimpse of the Core Ultra 11. However, for workstations, I believe it\u2019ll be an absolute powerhouse. Apple will face some serious competition.  More is better and technically cheaper from an economic perspective.  I\u2019d also appreciate an increase in E Core Cache since efficiency is already impressive.  Let\u2019s hope cooling is as easy as you think it will be \ud83d\ude02",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ocn1p08",
+                              "text": "I live in an extremely hot and humid country, so for my own sake, i hope it is lol. I always envy the folks who can use their pc as a space heater",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "ocnjclr",
+                                  "text": "Living in a country where heat isn\u2019t as common as I\u2019d like, a bit of heat exhaustion wouldn\u2019t hurt at all. It\u2019d be nice to avoid the cold! \ud83e\udd23",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "ocqla8o",
+                  "text": "&gt;8+16 will\u00a0*probably*\u00a0beat AMD 12+0 in MT\n\nNVL might have smaller P-cores than previous Intel generations since they now come in a cluster of two, sharing one L2 cache. Either that means smaller compute die than Arrow Lake to make the dual compute SKUs cheaper, or highly beefed up e-cores. The latter would mean huge MT jump. But yeah either way there'll definitely be a huge jump in MT from both companies. AMD adds more cores per tile while Intel works to reduce the p-core/e-core gap.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "octf7t7",
+                      "text": "&gt; Either that means smaller compute die than Arrow Lake to make the dual compute SKUs cheaper, or highly beefed up e-cores\n\nThe E-cores will need to grow a bit if they're supporting AVX512/AVX10, but I wouldn't expect much beyond that. We're not looking at another Skymont or Gracemont style leap, and these cores were also planned before the UC transition. In general, I wouldn't expect much from the Atom line until then, as UC is likely sucking up all spare resources.\n\nBut you're right that the P-core clustering should save some area. Hell, that's why they're doing it in the first place. Dropping SMT hurt their area efficiency a lot, and this helps recoup some of the damage. Need it to have viable server chips. Though it might have some interesting advantages in workloads where two threads have a lot of data reuse. Hah, might even work out for gaming, given some of the SKT benchmarks.\n\nWhat I'll be curious to see are clocks speeds. On N2, both Intel and AMD should land somewhere in the mid-6GHz range. Just a question of how far each is able to push it.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ocu1jnz",
+                          "text": "&gt;What I'll be curious to see are clocks speeds. On N2, both Intel and AMD should land somewhere in the mid-6GHz range.\n\nThere is some forum hype about huge Zen 6 clock gains thanks to N2, but people should realise that if it is such a huge boon in frequency ceiling, it will help Nova Lake too.\n\nI'm baffled about the low projected single-thread performance projections that leaked ages ago, though: Just \"&gt;1,1x\". Even if I assume it is sandbagged and really means +15%, isn't that hard to reconcile with mid-6GHz clocks (more than +10% compared to 285K)?  \nOr was that \"&gt;1.1x ST\" leak fake/irrelevant?",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "oczbx8n",
+                              "text": "&gt; There is some forum hype about huge Zen 6 clock gains thanks to N2, but people should realise that if it is such a huge boon in frequency ceiling, it will help Nova Lake too.\n\nYeah, I see a lot of people underestimating N2 in general, though I think that's partially from people who don't want to acknowledge the gap vs 18A. AMD also gets a bit more credibility from (a) getting a nominally 2 node jump vs Intel's 1, and (b) actually having a tract record of getting frequency improvement out of new nodes, but both will probably end up in a similar ballpark. I don't trust those 7GHz numbers some people are throwing around, but mid-6GHz for both should be more than achievable. \n\n&gt; I'm baffled about the low projected single-thread performance projections that leaked ages ago, though: Just \"&gt;1,1x\".\n\nI agree. Short of some monumental fuckup, there's no way NVL gets just 10-15% ST over ARL. The only plausible explanations I can think of, short of it being completely fake, are that it's either an IPC number or an iso-process number.",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "od9q6n4",
+                                  "text": "Or just NVL without BLLC",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "od9tm7n",
+                                      "text": "Nah, when Intel talks about ST numbers, at least internally, they default to SPEC, maybe Geekbench. Neither is going to be radically affected by bLLC. Or let's just look at the fundamentals. It should get a new core (let's say a conservative +10% IPC, iso-clocks @iso-process vs LNC), a new node (N2 vs N3B should be a good 10%+ by itself), and a bunch of uncore improvements. Frankly, I think anything less than 20% vs ARL would be a disappointment. 30% would be more on par with expectations.",
+                                      "upvotes": 3,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "ocu0bys",
+              "text": "It's due to competitive pressure. The previous gens already offered o lot of E-Core threads.\n\nSimilar to AMD offering surprisingly cheap octocores when they were behind in games and single-thread and suffered bad sales.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ockgnmk",
+          "text": "Here comes the power consumption complaints \n\nThe 270K competes with the 9950X. \n\nRun the 9950X at full tilt and the power will be in the same ballpark north of 200 watts\n\nThe 250K competes with the 9600X - 9700X \n\nOh and you can limit the PL settings for more efficiency\n\nYou are not buying the refresh for the best gaming experience\n\nYou buy this for great compute and good gaming for a low price  ",
+          "upvotes": 86,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ockn3tn",
+              "text": "Isn't idle power consumption lower on Intel CPUs? Most of the time computer is powered on the CPU will be idle (for an average user).",
+              "upvotes": 44,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ockouvq",
+                  "text": "Yes\n\nWhen intel cpus are more efficient at idle \n\nAmd io die is always using power ",
+                  "upvotes": 31,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ockqxtx",
+              "text": "And they all ignore the idle power draw which is worse than LGA1700 CPUs but still much better than AM5 is.",
+              "upvotes": 18,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "ocm3ihd",
+              "text": "Plus, as defensive and bitter as people like to get about it, FSR 4.1/DLSS 4.5 upscaling and frame gen are designed to give you better performance on mid range hardware and overcome bottlenecking.\n\nUnless you're doing \"productivity\", AI, crypto and rendering kind of shit... you are not going to need an Ultra 9 or a 9800x3d anymore if you just want to play RE9 with 4k path tracing and get 110 fps. Getting 10-15 extra base FPS is simply not worth the extra few hundred dollars for most people... unless maybe you're a Rendering Bro who *also* wants to use your rig for video games!",
+              "upvotes": 8,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ocn29so",
+                  "text": "Even us rendering bros use gpus to render. Cpu rendering is more of big media thing",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "odahc5r",
+                  "text": "Depends on the games you play. If you play a lot of sim games like Rimworld, Zomboid, Stellaris or Bannerlord, a big beefy cpu like the 9800x3d is a no brainer.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ockj9g2",
+              "text": "Exactly...",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ocls3ay",
+          "text": "8 P-Cores, 16 E-Cores. Intel just took the Ultra 9 285K and renamed it 270KP. Intel finally realized their performance stack this generation and named things properly. At $300 (which is a lie. Amazon has it for $360, MC has it for $350, etc) it's good price/perf. But this is still the exact same 8+16 configuration that Intel's been doing since ADL.\n\nNot to mention, this is almost 118mm^2 of N3B die, plus the rest of the tiles and the interconnect. Intel does not have some sweetheart contract with TSMC either. There is almost no way they are actually making a profit from these, I can only imagine they are doing what they can to salvage the rest of their 285K stock and prepare for NVL.",
+          "upvotes": 23,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "odovqjn",
+              "text": "so the 9800x3d was exactly at msrp on launch?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ockfxdo",
+          "text": "Why are the comments here and on youtube talking about \"horrible\" power consumption? It can consume more than twice but it does have more than twice of the performance.",
+          "upvotes": 54,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ocln5bl",
+              "text": "There's about 30 comments complaining about power and 15 of them are from one anti-Intel account run by someone who we know runs multiple accounts thanks to a copy-paste error. ",
+              "upvotes": 43,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "ocmhzim",
+              "text": "Well, a few of the commenters in this thread post on the AMD stock sub which puts their credibility in doubt. They have a vested interest in steering people away from these chips.",
+              "upvotes": 17,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "ocl4oye",
+              "text": "Because the AMD mindshare created by X3D",
+              "upvotes": 22,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ockqj0v",
+          "text": "Kinda want to upgrade my 14700k with this ..",
+          "upvotes": 6,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ocl0hxo",
+              "text": "In the same boat. Newegg offering 220 on trade for a 14700k, so I am moving on. I will admit that is not the only reason though... I have been fighting a motherboard issue for a while and if I wasn't I would probably wait for Nova.",
+              "upvotes": 7,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ocl4yfc",
+                  "text": "Oh damn\u2026 220 is hard to pass up.  Thanks for the info!",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ocl96ct",
+                      "text": "Yep, I just submitted what I was trading and bought the 270k plus. They charge you complete amount and refund you when they receive your processor and test it. Hopefully all goes smoothly. They provide the UPS label to ship them the processor as well, which was appreciated.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "ocxiuwq",
+              "text": "what, why.. your cpu is faster... get rid of the e cores, unlock the power and get it to 5.7-5.8, ring at at least 4.8 if u can and run the ram at 7600c34 with tuned timings or faster and u have a cpu which is faster...\n\nmy 12700k is faster than the 14900k in hub bf6 cpu comparisons, basically as fast as the 7800x3d in their comparisons, my 13900kf(defective) is on par with my 9800x3d..\n\nWhy dont people play with their systems to actually see how it fares?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "od6onk9",
+                  "text": "I mean, you make a good point.  I have a pretty sweet undervolt on my 14700k along with an undervolted 5090.. maybe I should just leave everything alone \ud83d\ude05",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ocmngmw",
+              "text": "I got a 12900k so I probably should ",
+              "upvotes": -1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ocpktyy",
+                  "text": "No, wait for Nova Lake or Zen 6.",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "oglfil7",
+                      "text": "but if I wait for nova lake so I should wait for the next one and then what's a little bit more ill wait for the next one and so on. I do what I want I got it",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ogloxek",
+                          "text": "It's not the same thing. Not only are CPU generations every 2 years or even longer (not counting refreshes which offer only a tiny benefit), but going from a 12900K to a 14700K or even a 270K like the Hardware Unboxed video mentions, that's only a small benefit for gaming.. Nova Lake on the other hand, if you get the bLLC/x3d version, should offer a BIG benefit. I have a 12700K + DDR4 and I am waiting for Zen 6 or Nova Lake.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

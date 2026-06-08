@@ -18,25 +18,26 @@
           "text": "What do the percentages mean in the table, how do I read this?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a purely factual question about how to read the data table, providing no insight into the product itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a clarifying question without expressing any positive or negative opinion.",
           "replies": [
             {
               "commentId": "m9rw934",
               "text": "For all the tables: 5090 is 100%. If another GPU is at 77%, then it's 23% slower as 5090. If it have a 150% price/performance ratio, then it's 50% better as 5090.\n\nException: table named \"Perf. Gain of 5090\"",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment provides a factual explanation of the table's percentages, which is meta-talk about the data presentation rather than a critique or experience with the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The response is a neutral, factual explanation of how the data is calculated.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -85,7 +85,7 @@
                       "relevance": "exclude",
                       "relevanceReasoning": "This is a joke about a drawing, not the product.",
                       "sentiment": "neutral",
-                      "sentimentReasoning": "neutral",
+                      "sentimentReasoning": "The comment is a joke about a drawing.",
                       "replies": [
                         {
                           "commentId": "oehymp7",
@@ -153,10 +153,10 @@
                   "text": "I'm in this post and I don't like it \ud83d\ude2d",
                   "upvotes": 33,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a joke about the user's environment, not the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "neutral",
                   "replies": []
                 }
               ]
@@ -337,7 +337,7 @@
                   "upvotes": 1,
                   "classifyThis": true,
                   "relevance": "exclude",
-                  "relevanceReasoning": "relevanceReasoning",
+                  "relevanceReasoning": "This is a discussion about flooring types, not the product.",
                   "sentiment": "neutral",
                   "sentimentReasoning": "neutral",
                   "replies": []
@@ -467,5 +467,5 @@
       ]
     }
   ],
-  "model": "gemma-4-31b-it"
+  "model": "gemini-2.5-flash-lite"
 }

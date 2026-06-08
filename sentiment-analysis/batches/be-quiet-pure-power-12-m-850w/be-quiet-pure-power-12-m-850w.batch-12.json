@@ -18,40 +18,40 @@
           "text": "**Turn off Hardware-accelerated GPU scheduling.**\n\nIn Windows, search for Graphics, then click Change default graphics setting, then move the slider to off. Hardware-accelerated GPU scheduling is supposed to improve performance with the potential of causing of some issues, but with AMD cards, it's just nothing but issues.  I wish Microsoft would change it back to off by default as it is not stable enough to leave it on.\n\nI had constant driver crashes in a particular dungeon and tried so many things, but the issue persisted across different hardware (motherboards, CPUs, and AMD GPUs) and even reinstalling Windows 11, yet no crashes in Linux.  With Hardware-accelerated GPU scheduling turned off, it's been rock solid for months as opposed to multiple driver crashes daily.\n\nI had also noticed when transcoding some videos that I had no GPU usage, however, with hardware scheduling turned off, it actually utilized the GPU like it was supposed to.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses GPU scheduling and driver crashes, not the Be Quiet! Pure Power 12 M PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing technical advice regarding GPU settings.",
           "replies": [
             {
               "commentId": "l0g4mhi",
               "text": "As I have mentioned on the original post, I have indeed tried disabling HAGS and that wasn't the solution. I was so confident this was the solution that I even made a post on r/AMDHelp about it.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a response about troubleshooting GPU driver issues, not the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is clarifying their troubleshooting steps.",
               "replies": [
                 {
                   "commentId": "l1ckdp6",
                   "text": "Sorry, I missed that one.  I had the issue on my 7900 XTX in an AM5 system and 7600 in an AM4 system and turning off HAGS resolved the issue with both of them.\n\nThe other time I've primarily seen this happen is with IRQ sharing conflicts, such as the video card having the same IRQ as a network or audio card.  Plug n Play and IRQ Steering are supposed to make it a non issue, but I've had it happen.  Unfortunately, you can't just change or reserve IRQ setttings for specific devices anymore, so the best you can do is turn off everything you don't use, such as extra SATA ports, COM ports, etc., try swapping slots, perhaps even drop to 1 SSD,  then do a clean install of Windows. Windows seems to assign IRQs differently during a clean install, but not when you just remove components.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses IRQ sharing and GPU issues, not the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is offering technical troubleshooting suggestions.",
                   "replies": [
                     {
                       "commentId": "l1dem1q",
                       "text": "That's very interesting! I have a hunch my wifi card is kinda shaky. Occasionally it gives me some pretty big lag spikes and I can't quite seem to remember having those with my old PC. There's always something about DistibutedCOM in the Event Viewer, but I don't know if that's of any relevance?",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses wifi card lag and Event Viewer logs, not the PSU.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is sharing their observations about their network card.",
                       "replies": []
                     }
                   ]
@@ -62,5 +62,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

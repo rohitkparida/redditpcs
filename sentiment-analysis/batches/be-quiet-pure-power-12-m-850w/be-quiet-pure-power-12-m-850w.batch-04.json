@@ -18,13 +18,14 @@
           "text": "I had the same issues on my 6700xt throughout Shadowlands and Dragonflight. Only happens in WoW, everything else runs without issue.\n\nI originally tried anything and everything to fix it eventually managing to mitigate it by using driver 23.8.2 and disabling MPO which made it occur far far less often. However the thing that actually 100% fixed the issue for me oddly enough was lowering my RAM speed from its original 3600cl16 to 3400cl16. No idea why considering it was perfectly stable as far as any test could tell me, but that completely eliminated it for me. I have no idea if the older driver and MPO were needed alongside the lowered RAM speed since I figured \"It's finally working, I'm not gonna fuck with it\". Also somewhere along the way SAM stopped working regardless of what was set in the bios or windows (probably due to constant motherboard bios version changing fuckery) but I'm not sure if that is important or not.\n\nAlthough I later swapped from Windows to Linux and found that the issue no longer existed at all even with my RAM back at full speed. So all I can assume is that it's definitely related to the windows AMD driver. It might just be incredibly sensitive to even the tiniest instability.",
           "upvotes": 7,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses GPU driver issues and RAM stability in World of Warcraft, with no mention of the Be Quiet! PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is describing technical troubleshooting steps without expressing a positive or negative opinion about the target product.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

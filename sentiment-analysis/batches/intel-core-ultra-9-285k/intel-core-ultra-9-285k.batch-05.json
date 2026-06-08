@@ -18,20 +18,20 @@
           "text": "Impressive...\n\nHow it can barely keep-up with the baby 5700X3D in most gaming benches!\n\nI guess Arrow Lake is now officially Intel's Bulldozer.\n\nDecent in parallel workloads, but kinda dogshit in gaming and pretty much everything else.",
           "upvotes": 45,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User provides a critical opinion on gaming performance and compares it to the 5700X3D.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes the product as 'dogshit in gaming' and compares it unfavorably to an older CPU.",
           "replies": [
             {
               "commentId": "ltjqp9d",
               "text": "tiny cache storage and very high memory latency, with the later making the former even worse. Something the x3d chips mostly mitigate",
               "upvotes": 22,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides technical critique regarding cache storage and memory latency of the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user highlights technical flaws that make the performance worse.",
               "replies": []
             },
             {
@@ -39,70 +39,70 @@
               "text": "11900K was bulldozer this is excavator",
               "upvotes": 15,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Uses a historical analogy (Excavator) to critique the current architecture's failure.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Comparing the product to a failed architecture (Excavator) is a strong negative critique.",
               "replies": [
                 {
                   "commentId": "ltli7o5",
                   "text": "What made Bulldozer so bad was that it was the basis of an entire new family of CPUs that would be the only CPU's AMD would make for years to come.\n\nThe issue with ARL is its packaging, and it's the last CPU to use that packaging. So the comparison is not the same.\n\nARL will certainly be remembered for years to come for its issues, but it's its own unique case studio.\n\nP4 was a case study in why sacrificing IPC for clockspeed was a bad idea.\n\nBulldozer was a case study for why sharing a front end and FPU across two \"cores\" was a bad idea\n\nRKL was a case study for why backporting a design that was specifically made for a new node to an old one is bad\n\nARL is a case study for why high L3 and memory latency is bad in gaming.",
                   "upvotes": 19,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the specific technical failures of the Arrow Lake (ARL) architecture regarding latency.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user explicitly states that ARL is a case study in why high latency is bad for gaming.",
                   "replies": [
                     {
                       "commentId": "ltlobdu",
                       "text": ">The issue with ARL is its packaging, and it's the last CPU to use that packaging. \n\nIt's not the packaging; it's the SoC. And regardless, we're stuck with ARL for at least another 2 years.",
                       "upvotes": 8,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Critiques the SoC design of the Arrow Lake architecture.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user disagrees with a previous point to emphasize that the SoC is the core problem.",
                       "replies": [
                         {
                           "commentId": "ltn9pf8",
                           "text": "The question is, then what for Intel comes next? \n\nThe Royal Core is cancelled. It would have provided a clear successor. The Lion Cove P Core  is a weak part of the whole Lunar Lake. They could salvage what they can from the Royal Core for future generations of Lion Cove successors, but that's the only clear path. \n\nI could have seem Intel delivering a Royal Core as P Core  + Improved Skymont E core  + improved GPU, but that's now not an option. Skymont and the GPU are clearly the biggest improvement in the Lunar Lake.\n\nAll I can see is an attempt to fix the memory latency, which has increased with the tile design and incrementally widen the Lion Cove.\n\n---\n\nEdit: A big reason why I think that there will be difficulties is the loss of top tier talent at Intel as well.",
                           "upvotes": 4,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion shifts to future roadmaps, cancelled projects, and corporate talent loss rather than the 285K itself.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a speculative discussion about Intel's future strategy.",
                           "replies": [
                             {
                               "commentId": "ltoqsgm",
                               "text": "Intel\u2019s plan currently seems to be to have one more major P core generation after Panther Cove, and then switch to an Atom-based Unified Core after that. Whether they actually follow through on their plan is another question.",
                               "upvotes": 5,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Discusses future P-core generations and Atom-based cores, not the specific product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is factual/speculative about future product plans.",
                               "replies": [
                                 {
                                   "commentId": "ltq4mms",
                                   "text": "\n>Intel\u2019s plan currently seems to be to have one more major P core generation after Panther Cove, and then switch to an Atom-based Unified Core after that. Whether they actually follow through on their plan is another question.\n\nIt would not be without precedent. The Conroe architecture was a scaled up mobile core.\n\nAt the time Intel was struggling to find a way to compete with the AMD K8.\n\nOf course today is very different. Skymont is a big improvement, but one question is if it a scaled up version is the best way to compete with AMD and ARM based alternatives.",
                                   "upvotes": 2,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Discusses historical architecture (Conroe) and future scaling strategies.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment is a general architectural discussion.",
                                   "replies": [
                                     {
                                       "commentId": "ltq9fn3",
                                       "text": ">Of course today is very different. Skymont is a big improvement, but one question is if it a scaled up version is the best way to compete with AMD and ARM based alternatives.\n\nIt\u2019s certainly a much better plan than going with P core. Even Royal somewhat resembled a scaled-up Atom core.",
                                       "upvotes": 1,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Discusses general core design strategies (P-core vs Atom) for future products.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The comment is a technical opinion on general design paths.",
                                       "replies": []
                                     }
                                   ]
@@ -112,20 +112,20 @@
                                   "text": ">and then switch to an Atom-based Unified Core after that\n\nAFAIK, the basis of the unified core (if it happens) hasn't been decided",
                                   "upvotes": 1,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Discusses the undecided nature of a future 'unified core' project.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment is a factual statement about internal project status.",
                                   "replies": [
                                     {
                                       "commentId": "ltotgf6",
                                       "text": "The \u201cUnified Core\u201d project is indeed Atom\u2019s. But whether that project will get cancelled or not in the future is still up in the air. The P core team obviously would prefer for Unified Core to be killed.",
                                       "upvotes": 3,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Discusses internal team preferences for future core projects.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The comment is meta-talk about Intel's internal development.",
                                       "replies": []
                                     }
                                   ]
@@ -143,10 +143,10 @@
                   "text": "yeah especially coming after the 10900k",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Contextually agrees with the negative comparison to previous Intel generations.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user is agreeing with the sentiment that the current product is a disappointment compared to the 10900k.",
                   "replies": []
                 }
               ]
@@ -158,10 +158,10 @@
           "text": "AM5 looking like it'll be another legendary CPU socket/platform right now.",
           "upvotes": 90,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discusses the AMD AM5 platform rather than the Intel Core Ultra 9 285K.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user expresses a positive view of the AMD platform.",
           "replies": []
         },
         {
@@ -169,25 +169,26 @@
           "text": "Remember when users were laughing at AMD for not going backwards after staying on the same node but the improvement was small? I wonder how they feel about this launch.",
           "upvotes": 47,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Critiques the launch of the product by comparing it to past AMD launches.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user implies the launch is a failure or laughable.",
           "replies": [
             {
               "commentId": "ltng6c5",
               "text": "> Remember when users were laughing at AMD for not going backwards after staying on the same node but the improvement was small? I wonder how they feel about this launch.\n\nAt least AMD's excuse is their fancy new Two-Block Ahead Branch Predictor for Zen 5. That probably wasn't easy for them to do, I imagine, while optimizing stuff around it.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses AMD's Zen 5 branch predictor, not the Intel product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical explanation for AMD's performance.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

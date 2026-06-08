@@ -18,30 +18,30 @@
           "text": "Some things come to mind for me. \n\n1. try changing the HDMI/DP cables you're using.\n2. Are you using a powered external hub? I had a friend who had one which was backfeeding power into the system via USB\n\nI'm also a bit curious about what other environmental effects might be at play with your setup. \n\nIt does seem like a hardware issue tho, but what could be causing it (defective part, vs unexpected voltages etc)",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment provides general troubleshooting advice for driver timeouts and does not mention the Be Quiet! PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is offering helpful, neutral technical suggestions.",
           "replies": [
             {
               "commentId": "l0d8yzj",
               "text": "&gt;Are you using a powered external hub? I had a friend who had one which was backfeeding power into the system via USB\n\nThats an interesting question! I do use an external HDD that I keep plugged into the PC at all times. It has occasionally caused booting to take too long. It's not externally powered however.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses external hard drives and booting issues, not the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is responding to a troubleshooting question in a neutral tone.",
               "replies": [
                 {
                   "commentId": "l0dhra2",
                   "text": "The delay. Might be due to spin up if it were mechanical...\u00a0\n\n\nFunny thing is, I had symptoms almost the same as yours. Bizzare ultra specific display driver crashes in specific situations.\u00a0\n\n\nMost commonly when watching encrypted media such as netflix etc. but also playing specific games such as stellaris.\u00a0\n\n\nAs it stands upgrading to windows 11, updating drivers and importantly updating my bios fixed 99.99% of my issues and I've not had any crashes in months now.\n\n\nI would try paring back all external accessories and even extra monitors etc and see how things behave with just mouse/monitor/keyboard.\u00a0\n\n\nIf you can swap out the cables going to the monitor. (Dumb thing I know, but it might be your video card does things differently then the one you tested and found working did.)\n\n\nI'd love to help further but it's super late here, I hope that some of my thoughts help you explore new avenues and find new results or outcomes :)",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses OS updates, BIOS updates and general hardware troubleshooting, not the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing helpful, neutral advice based on personal experience.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

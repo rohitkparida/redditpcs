@@ -18,10 +18,10 @@
           "text": "Thumbnail Indy HUB Steve when ?!",
           "upvotes": -4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a joke/meme about a thumbnail and not about the product performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment contains no opinion on the product itself.",
           "replies": []
         },
         {
@@ -29,20 +29,20 @@
           "text": "with the new microcode update ??",
           "upvotes": -14,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a factual question about a microcode update without providing an opinion.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a question and does not express sentiment.",
           "replies": [
             {
               "commentId": "m1cq9qq",
               "text": "No, that didn\u2019t arrive yet. Obviously before the update for the sake of clicks. Nothing changed actually",
               "upvotes": -19,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the timing of a video for clicks rather than the product's performance.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The sentiment is directed at the content creator, not the product.",
               "replies": []
             }
           ]
@@ -52,25 +52,26 @@
           "text": "Anyone still cares about this though.",
           "upvotes": -26,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a general meta-comment about whether people care, not a critique of the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No sentiment regarding the product is expressed.",
           "replies": [
             {
               "commentId": "m1hww7t",
               "text": "this is literally the subreddit of people who care...",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a meta-discussion about the subreddit community, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No sentiment regarding the product is expressed.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

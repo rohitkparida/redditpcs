@@ -18,10 +18,10 @@
           "text": "I would try another power supply just to be sure.  \n\nDidn't see if you tried messing with gpu clocks but you could try lowering the power limit as low as it will go.  Don't know what games you play but older ones might be boosting higher clocks.\n\nDidn't see you post anything on SOC voltage.  Since you tried EXPO, I'm assuming it blasted it to 1.25v.  Single rank 6000 kits, something like 1.15v - 1.20v would probably work.  Test to make sure, you can use ycruncher - VST + VT3 for at least 2 hours.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user suggests trying another power supply as a general troubleshooting step, but does not provide a specific opinion or experience with the Be Quiet! Pure Power 12 M 850W.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral troubleshooting suggestion without a clear positive or negative sentiment toward the product.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "I had the same issue while playing WoW (computer freeze but still hear sound). 22.5.1 fixes it for me. Any driver after that one has the issue.\n\nI use a 6650 XT though, so I don't know if it'll work with your card.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses GPU drivers and a specific GPU model (6650 XT), which is off-topic regarding the power supply.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is focused on driver issues and does not express sentiment toward the power supply.",
           "replies": []
         },
         {
@@ -40,13 +40,14 @@
           "text": "I also had massive problems with this, constantly going to black screens and having to reset PC in the middle of pulls.\n\nI found this thread that described the exact problem and the fixes it mentions did seem to help me, stopping crashes almost entirely - note that it contains a Reddit thread within that mentions an issue with HBM that is part of my fixes.\n\nhttps://eu.forums.blizzard.com/en/wow/t/solved-black-screen-and-gpu-hyperventilating-on-radeon-rx-vega/393427\n\nThe two fixes I implemented were to install the Pro drivers offered by AMD for your particular card - as well as managing the HBM in Adrenaline so that all 4 or 5 options were at the same level (I think it was 800, the lowest).\n\nThis prevented the card from crashing on WoW entirely, though this was with a Vega64, so not sure if it will apply to whatever card you have.\n\nThis did have the drawback of having Pro drivers, which meant no Instant Replay, which ended up becoming more and more annoying for me, so I replaced the card entirely, but in the interim this did help massively.\n\nIt took me months to find an answer to this so hopefully this helps.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses GPU crashes and driver fixes for a Vega64 card, which is off-topic regarding the power supply.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is focused on GPU issues and does not express sentiment toward the power supply.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,40 +18,40 @@
           "text": "Always great to the see meta reviews from you, keep up the great work!",
           "upvotes": 104,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general compliment to the author of the meta-review and does not provide insight into the product itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing gratitude and encouragement, which is positive toward the author but neutral toward the product.",
           "replies": [
             {
               "commentId": "m9lk88a",
               "text": "This one is especially valuable because the complete composite of data shows significantly lower performance than I'd previously  understood from briefly skimming a couple reviews and seeing a few one-line summaries posted in review threads here.\n\nAs someone mostly interested in 1440p raster, sub-20% performance increase for 25% price increase is... ouch. Plus the worse power draw, heat and noise.",
               "upvotes": 9,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides an opinionated performance critique regarding the price-to-performance ratio at 1440p, power draw, heat, and noise.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user describes the performance increase as 'ouch' and highlights negative aspects like power draw and heat.",
               "replies": [
                 {
                   "commentId": "m9lmort",
                   "text": "Upgrading every gen is very rarely\u00a0worth it. Every second gen is noticeable and every third gen makes a big difference. In general, but obviously it depends on other factors too.",
                   "upvotes": 9,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses general GPU upgrade cycles rather than specific insights or opinions on the RTX 5090.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment provides a general observation about hardware upgrade patterns without a clear positive or negative leaning toward the product.",
                   "replies": [
                     {
                       "commentId": "m9lrs5m",
                       "text": "Yes I agree. I wasn't thinking anyone even considers one-gen upgrades these days. I actually think in 2 to 3.5 gen upgrades lately. So, I cited this gen's disappointing results because that's the new info that makes up half of a two-gen upgrade cycle or a third of a three gen cycle - and everyone already knows what the earlier gen's uplifts were.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user refers to the 'disappointing results' of the current generation (RTX 5090), providing a technical critique of its performance uplift.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user explicitly labels the results of this generation as 'disappointing'.",
                       "replies": []
                     }
                   ]
@@ -62,5 +62,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

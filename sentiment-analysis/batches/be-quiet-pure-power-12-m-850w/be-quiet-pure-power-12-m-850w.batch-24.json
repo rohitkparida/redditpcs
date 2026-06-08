@@ -18,10 +18,10 @@
           "text": "I had similar issues with WoW when I upgraded from a nividia to a 7900XT. It seemed to be crashing on launch in DX12 so I switched to DX11 and got the driver time outs. Eventually I saw something that said to launch in DX12 and just wait. After over five minutes it finally fully launched in DX12 and I haven't had any real issues since.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses GPU driver issues in World of Warcraft and does not mention the power supply.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is describing a technical issue and its resolution without expressing a strong positive or negative sentiment toward a specific product.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "I keep having this issue only in World of Warcraft. I can play Ark Survival Ascended on ultra settings for hours on end, and I have never once gotten this issue during gameplay. It ONLY happens in WoW. This is baffling to me. I am using a 7900 GRE and 5800X3D.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment focuses on GPU and CPU issues in a specific game, not the power supply.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing frustration with a game's stability, not a product's performance.",
           "replies": []
         },
         {
@@ -40,10 +40,10 @@
           "text": "lower ram or cpu clock by a lot. :)\ni had similar issues but a rx 550...",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment provides general troubleshooting advice for RAM and CPU clocks, unrelated to the power supply.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is offering a helpful suggestion without a clear sentiment leaning.",
           "replies": []
         },
         {
@@ -51,10 +51,10 @@
           "text": "limit your fps to 1 below your max refresh rate and its fixed.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment suggests an FPS limit to fix a game crash, which is unrelated to the power supply.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing a technical fix without expressing sentiment toward a product.",
           "replies": []
         },
         {
@@ -62,30 +62,30 @@
           "text": "Holy shit, that was a lot of troubleshooting. \n\nBut I didnt see \"GPU Undervolt\" in the list.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment mentions GPU undervolting, which is unrelated to the power supply product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is making a technical observation about troubleshooting steps.",
           "replies": [
             {
               "commentId": "l0kwhrg",
               "text": "Yeah, I didn't do things I'm not comfortable with. Although I did use Adrenaline's UV. Still crashed.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses GPU undervolting and crashes, unrelated to the power supply.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is describing their experience with GPU settings.",
               "replies": [
                 {
                   "commentId": "l0mtfp1",
                   "text": "Try memory/core underclock to see if it's hardware related at all.\n\nYou borrowed your friend's 3060, now try to run your 7800 on his machine. That's what I'd try.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment suggests hardware testing for the GPU, unrelated to the power supply.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing troubleshooting advice.",
                   "replies": []
                 }
               ]
@@ -97,10 +97,10 @@
           "text": "I too have has this exact issue and as you note, only in that Mythic+ dungeon and even then, intermittently. \n\nI've been able to run it a few other times perfectly fine\n\nI've got a 6800xt and an AM4 system.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses GPU issues in a specific game, not the power supply.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is sharing a similar experience with a GPU issue.",
           "replies": []
         },
         {
@@ -108,13 +108,14 @@
           "text": "Hi, let's do some stability testing for CPU/RAM. Download Y-Cruncher link bellow, go to option 1 for stress testing, 8 to disable all test, then 16 to enable FFT and press 0 to start the test. Let it run for 2 hours and report back in case if it crashes with screenshot (it runs in infinite loop of tests). Computer can also hard crash in process. Report back how it did go and if you encountered any errors.\n\nhttp://numberworld.org/y-cruncher/",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment suggests stability testing for CPU/RAM, unrelated to the power supply.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing technical instructions for stress testing.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

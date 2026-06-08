@@ -18,20 +18,20 @@
           "text": "Ok, so review embargo lifts in 22 mins from now?",
           "upvotes": 6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Purely factual question about the review embargo timing.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question without expressing an opinion.",
           "replies": [
             {
               "commentId": "ltitvi3",
               "text": "Haven't seen anything yet. Been refreshing a couple of sites.\n\nEdit: Looks like TPU has theirs up.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about where to find reviews, not about the product itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is simply stating their actions of refreshing sites.",
               "replies": []
             },
             {
@@ -39,10 +39,10 @@
               "text": "Some asian sites already released. Looks pretty bad.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Shares an opinion on the product's performance based on early reviews.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user states the product 'looks pretty bad'.",
               "replies": []
             }
           ]
@@ -52,40 +52,40 @@
           "text": "Damn... pre-orders cancelled. Very disappointed",
           "upvotes": 15,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Expresses disappointment and mentions cancelling pre-orders.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is 'very disappointed' and cancelled their order.",
           "replies": [
             {
               "commentId": "ltjn3t9",
               "text": "Same going AMD for my main PC for the first time!",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Decides to switch to AMD due to dissatisfaction with the Intel product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is abandoning the product in favor of a competitor.",
               "replies": [
                 {
                   "commentId": "ltjxcgc",
                   "text": "Best of luck finding an available 7800X3D! I think everyone refunded and started buying this beast cpu 0\\_0\n\n#",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about the availability of AMD CPUs, not the Intel product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is discussing stock levels of a competitor's product.",
                   "replies": [
                     {
                       "commentId": "ltk6nja",
                       "text": "Yeah I doubt people are refunding or its a very small amount of people because it's still sold out.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about AMD stock levels.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing stock levels of a competitor's product.",
                       "replies": []
                     }
                   ]
@@ -95,20 +95,20 @@
                   "text": "You might as well wait for 9800x3d now",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Recommendation to wait for a competitor's product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is recommending a different product entirely.",
                   "replies": [
                     {
                       "commentId": "ltk1skx",
                       "text": "I need more cores but why should AMD bother releasing it when Intel can not match the performance at all.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Critique of Intel's performance compared to AMD.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user states Intel 'can not match the performance at all'.",
                       "replies": []
                     }
                   ]
@@ -122,10 +122,10 @@
           "text": "Less power = lower temps. Guys at intel could just limit 14-th gen wattage to 220 wats get same temp and same perfomance! LOL",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Technical critique regarding power and thermals compared to previous generations.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Laughter at Intel's design choices, implying they are inefficient.",
           "replies": []
         },
         {
@@ -133,20 +133,20 @@
           "text": "OOF, not looking good\n\nEDIT: OH but it gets worse....\n\nEDIT2: HUB review:  \nVS 14900K:\n\nminus 20% gaming performacne on CP2077,  \nminus 19% homeworld 3  \nminus 18%A plagues tale requiem  \nminus 11% Watch Dogs legion.",
           "upvotes": 12,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Provides specific performance data comparing the product to the 14900K.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user states it is 'not looking good' and provides data showing performance drops.",
           "replies": [
             {
               "commentId": "ltiv8h1",
               "text": "Not looking good at all.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Opinion on the product's performance based on reviews.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user states it is 'not looking good at all'.",
               "replies": []
             }
           ]
@@ -156,30 +156,30 @@
           "text": "While it doesn't seem as bad it did yesterday, and granted its early days and something like this isn't unique to Intel, I cant help but feel that the wait simply wasnt worth it in the end. \n\nAs I mentioned in another thread yesterday, I've held off upgrading for 2 years to skip over the issues Intel had previously - but given that the 9800X3D is coming over the horizon, having to wait another 2 weeks to see what's in store there won't be difficult and seems like the logical course of action to me.",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Opinion on whether the product is worth the wait and comparison to AMD.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user feels the wait 'wasnt worth it in the end'.",
           "replies": [
             {
               "commentId": "ltj8l6z",
               "text": "cheerful numerous touch chunky coherent recognise straight slim chief cough\n\n *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Deleted/anonymized post containing random words.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No meaningful content.",
               "replies": [
                 {
                   "commentId": "ltjbxaz",
                   "text": "I don't do high end builds anymore when I saw that my old 8700k has around the same gaming performance as my friend's newly bought i3 12100f that's like 90 bucks... The silver lining is newer games now are using the gpus alot more than cpu so the weaker locked 13th i have now can  stay longer. I'll think about x3d when games are hammering cpu ls again but it seems less likely now",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about old CPUs (8700k, 12100f) and general gaming trends.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is discussing their own old hardware and general trends.",
                   "replies": []
                 },
                 {
@@ -187,10 +187,10 @@
                   "text": "Same, 6700K. The Cores would be an upgrade of course compared to it, but I feel putting the money down for one  that's meant to be brand new but is 3rd or 4th best on the face of it isn't justifiable, hence not pulling the trigger for another couple of weeks until AMD come to the table.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Opinion on the value proposition of the new Intel CPU compared to AMD.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user feels buying it is 'not justifiable' because it is '3rd or 4th best'.",
                   "replies": []
                 }
               ]
@@ -200,10 +200,10 @@
               "text": "It is not very different from yesterday based on what MLID and Gamer Nexus said it seems like there is a large variation from one unit to another. So yesterday\u2019s screenshots might be from a particularly bad unit maybe?",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discussion about performance variation between units (silicon lottery).",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is speculating about unit variation without a clear positive or negative leaning.",
               "replies": []
             }
           ]
@@ -213,20 +213,20 @@
           "text": "Zen 5% Intel - 2.85%",
           "upvotes": 11,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Comparison of performance gains/losses between Zen 5 and Intel.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is highlighting a negative performance percentage for Intel.",
           "replies": [
             {
               "commentId": "ltj96cx",
               "text": "I guess AMD in rear view mirror means driving backwards.",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Sarcastic comment about AMD, not providing insight into the Intel product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is making a joke about AMD.",
               "replies": []
             },
             {
@@ -234,20 +234,20 @@
               "text": "More than -2.85%",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Agreement that Intel's performance is worse than stated.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is agreeing that the performance is poor.",
               "replies": [
                 {
                   "commentId": "ltj4d7u",
                   "text": "yes but the nameing thou",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort comment about naming conventions.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No meaningful opinion on the product.",
                   "replies": []
                 }
               ]
@@ -259,10 +259,10 @@
           "text": "This is so sad. I'm going to switch to AMD for the first time",
           "upvotes": 7,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Expresses sadness and decision to switch to AMD.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is switching to a competitor due to the product's poor performance.",
           "replies": []
         },
         {
@@ -270,10 +270,10 @@
           "text": "The RAM latency is at the same level as Zen 1, no wonder they\u2019re so bad in games.",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Technical critique regarding RAM latency and gaming performance.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user states the product is 'so bad in games' due to latency.",
           "replies": []
         },
         {
@@ -281,30 +281,30 @@
           "text": "wow, in gaming seems worse than i was expecting in some places.  might have to sit this gen out",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Opinion on gaming performance and decision to skip the generation.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user states gaming performance is 'worse than i was expecting'.",
           "replies": [
             {
               "commentId": "ltjndax",
               "text": "This is all over blown.   Same as when AMD Switched to chiplets.   Drivers need time to update, software can be patched to better use the new cores and rely less on HT,  DDR5 needs to come out at 10KMT etc.  Then the true performance will be shown.    Most of these outlets, have \"redone\" alll their tests that boost AMD and 14th gen performance with all the updates.",
               "upvotes": -2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Opinion that the initial reviews are overblown and that software updates will fix it.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is arguing that the performance issues are early-day issues that will be patched.",
               "replies": [
                 {
                   "commentId": "ltt6exr",
                   "text": "The new chiplets platform delivered a massive selection of improved processors with time, and not just software fixes. 4 iterations of Zen.\n\nZen had definite issues but it was such a bargain for mid builds that it still sold, \n\nIt's not going to pan out like that for this series of Core Ultra. Third launch in a row with severe issues. Anything but overblown.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Rebuttal to the 'software fixes' argument, citing a history of issues.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user believes the series has 'severe issues' and is 'anything but overblown'.",
                   "replies": []
                 },
                 {
@@ -312,10 +312,10 @@
                   "text": "I've been hearing \"they'll optimise for Intel's new approach eventually\" after every launch since Alder Lake. Still waiting for it to happen.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Opinion that Intel's new architecture approach is not delivering as promised.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user is expressing frustration and skepticism about promised optimizations.",
                   "replies": []
                 }
               ]
@@ -327,10 +327,10 @@
           "text": "Gamers crying that a company made the best ai productivity chip during an ai boom. LUL.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Opinion that the product is a great AI productivity chip.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user calls it the 'best ai productivity chip'.",
           "replies": []
         },
         {
@@ -338,20 +338,20 @@
           "text": "I\u2019ll stay on the gas guzzling raptor for another year at least. This is not Ultra performance. Disappointment Lake. Why did intl waste billions of dollars buying capacity on tsmc 3nm, for this result?why did intel need to move to lga1851 if arrow lake supposedly consumes less power than the predecessor? That means lga1700 can supply the necessary power\u2026 another lost generation. Meteor lake and now arrow lake are duds.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Detailed critique of the product's performance, power, and platform change.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user calls the product a 'dud' and 'Disappointment Lake'.",
           "replies": [
             {
               "commentId": "ltmiesp",
               "text": "Error Lake lol",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Joke/pun on the product's name implying failure.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is mocking the product as 'Error Lake'.",
               "replies": []
             }
           ]
@@ -361,10 +361,10 @@
           "text": "so AMD calls???",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Low-effort question about AMD's response.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No meaningful opinion on the Intel product.",
           "replies": []
         },
         {
@@ -372,20 +372,20 @@
           "text": "Is there any reason left to even buy an Intel CPU on desktop?",
           "upvotes": 7,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Questioning the reason to buy an Intel CPU on desktop.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is questioning the value proposition of the product.",
           "replies": [
             {
               "commentId": "ltj9gfv",
               "text": "0. Absolutely 0",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Direct answer stating there is no reason to buy it.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user states there is 'Absolutely 0' reason to buy it.",
               "replies": []
             },
             {
@@ -393,10 +393,10 @@
               "text": "probably if you barely play games and mostly do productivity stuff",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Opinion that the product is only useful for productivity tasks.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a balanced view on its utility for productivity vs gaming.",
               "replies": []
             },
             {
@@ -404,10 +404,10 @@
               "text": "Older ones can be cheap.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about older Intel CPUs, not the Core Ultra 9 285K.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is discussing the price of older hardware.",
               "replies": []
             },
             {
@@ -415,10 +415,10 @@
               "text": "If you need Intel Quicksync",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Mention of a specific Intel feature (Quicksync) as a reason to buy.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user is identifying a positive feature that makes the product viable.",
               "replies": []
             },
             {
@@ -426,40 +426,40 @@
               "text": "If you use your PC for literally anything other than gaming.",
               "upvotes": 0,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Opinion that the product is viable for non-gaming tasks.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is suggesting it is useful for anything other than gaming.",
               "replies": [
                 {
                   "commentId": "lvjl4z8",
                   "text": "??? My compile times are faster on Ryzen than on Intel. I checked benchmarks before buying.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comparison of compile times between Ryzen and Intel.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user states their compile times are faster on Ryzen.",
                   "replies": [
                     {
                       "commentId": "lvjqpzb",
                       "text": "Creative applications are still ruled by Intel. Maybe not Photoshop for some reason but anything else is better on Intel. Specifically video editing due to Quicksync.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Opinion that Intel is still superior for creative applications and video editing.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user states creative applications are 'still ruled by Intel'.",
                       "replies": [
                         {
                           "commentId": "lvjqy1s",
                           "text": "But still I see render times shorter on Ryzen CPUs than on Intel for similarly priced CPUs.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Comparison of render times between Ryzen and AMD.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user states render times are shorter on Ryzen.",
                           "replies": []
                         }
                       ]
@@ -472,5 +472,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

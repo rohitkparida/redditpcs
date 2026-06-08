@@ -18,30 +18,30 @@
           "text": "AMD better and you don't have to deal with annoying windows bugs https://www.reddit.com/r/XMG_gg/comments/vlqn6d/psa_rendering_tasks_are_moved_to_ecores_when/ (yes, it's still a problem for a lot of software)",
           "upvotes": -44,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares AMD to Intel and mentions specific software issues related to Intel's architecture.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user explicitly states AMD is better and criticizes Intel's E-core scheduling issues.",
           "replies": [
             {
               "commentId": "lsyfziu",
               "text": "is this not a microsoft issue",
               "upvotes": 16,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a factual question about whether a bug is a Microsoft issue, not an opinion on the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral inquiry.",
               "replies": [
                 {
                   "commentId": "lszi1yz",
                   "text": "does this make it less annoying?",
                   "upvotes": -1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a low-effort rhetorical question that does not provide insight into the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment does not express a sentiment toward the product.",
                   "replies": []
                 },
                 {
@@ -49,60 +49,60 @@
                   "text": "no, probably an Intel Thread Director issue.  Win11 just listens to what ITD tells it AFAIK",
                   "upvotes": -6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a technical critique regarding the Intel Thread Director.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user attributes software bugs to a flaw in Intel's hardware-level scheduling.",
                   "replies": [
                     {
                       "commentId": "lszgi0k",
                       "text": "False. The OS is the one that flags tasks with background or foreground priority and manages the resources accordingly.",
                       "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a technical debate about OS scheduling and not a critique of the 285K specifically.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual argument about how operating systems work.",
                       "replies": [
                         {
                           "commentId": "lt04u9l",
                           "text": "Tell me you don't know the purpose of ITD and how the Win11 scheduler works without telling me....",
                           "upvotes": -5,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "This is a personal attack/banter and does not provide product insight.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is directed at another user, not the product.",
                           "replies": [
                             {
                               "commentId": "lt0bz5z",
                               "text": "I probably know about it better than you do. It's the CPU that gives guidance and recommendations to the OS, which makes the resource allocation decisions. Not the other way around.",
                               "upvotes": 3,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "This is a technical debate about CPU guidance and OS decisions, not a product review.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is a technical argument.",
                               "replies": [
                                 {
                                   "commentId": "lt105gt",
                                   "text": "> I probably know about it better than you do.\n\nI guarantee you that you do not.\n\nUnless they've changed it W11 scheduler generally just followed whatever recommendations ITD gave it.",
                                   "upvotes": -3,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "This is a continuation of a technical debate about the scheduler.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment is a technical argument.",
                                   "replies": [
                                     {
                                       "commentId": "lt151qa",
                                       "text": "Then please explain to us how does the CPU knows if a task is running in foreground or background, since you claim it is the one deciding whether to run it on a P core or an E core.",
                                       "upvotes": 4,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "This is a technical question about CPU architecture and not a product opinion.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The comment is a technical inquiry.",
                                       "replies": []
                                     }
                                   ]
@@ -121,5 +121,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

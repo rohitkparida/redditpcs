@@ -18,20 +18,20 @@
           "text": "Wait, am I reading this right? You spent all that time trying different things and even paid for a technician but didn't bother to try an RMA?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about the RMA process for a GPU, not the Be Quiet! PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question about the troubleshooting process without expressing sentiment toward the product.",
           "replies": [
             {
               "commentId": "l0dhrvw",
               "text": "Can't quite make any sense out of the situation. AMD says I should talk to Sapphire. Sapphire says it has do be done via my retailer in my country (Greece). My retailer basically sent the card back as should as possible, felt like they wanted to avoid a refund. They never called, they never even sent a message to ask more about my issues. In written text, I did indeed let them know my issue was with WoW, but they basically ignored it.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses GPU manufacturer and retailer issues, not the PSU.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user expresses frustration with the GPU RMA process and retailer.",
               "replies": []
             }
           ]
@@ -41,10 +41,10 @@
           "text": "I have been having issues for 500+ days, can i and everyone affected get compensated please thanks.  \nI have spend 200 euros on a game that is unplayable because AMD and Blizzard keep pointing its users back and forward at each other forums or to the AMD Bug Report Tool, without any progress, just non stop pointing back and forward, this is ridiculous.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about game stability and AMD/Blizzard support, not the PSU.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is frustrated with the unplayable state of the game and lack of support.",
           "replies": []
         },
         {
@@ -52,13 +52,14 @@
           "text": "Please try the following:\n\nPrepare in advance everything below as offline installers \n\nPull out ethernet cable \n\ninstall w10 not 11, just to test it, \n\ninstall motherboard chipset and rest of drivers from the manufacturer website for your mb version, could be Rev 1.1, 1.2 etc, be careful there.\n\nInstall amd adrenalin + driver, restart\n\nConnect to the internet\n\nTry wow now\n\nThis and only this fixed it for me, even allows me to OC my rx 7900 gre, play dx12 ultra 4k valdrakken no stutters, or crashes, even in raids",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment provides technical troubleshooting for GPU drivers and OS, not the PSU.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is happy that their specific installation method fixed their crashes.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

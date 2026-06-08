@@ -18,40 +18,40 @@
           "text": "At least I feel better that the 4080 Super I got a year ago looks like a great decision and there's no reason for FOMO.",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing their satisfaction with a previous purchase (RTX 4080 Super) rather than providing insight into the RTX 5090.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment expresses relief about a past decision but does not evaluate the RTX 5090.",
           "replies": [
             {
               "commentId": "mav8igf",
               "text": "4080 Super looks like a great choice based on this data. Unfortunately, nVidia knows this too - and as a result, the 4080S is currently being phased out (Germany) or has already done so (USA).",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion focuses on the market availability and value of the RTX 4080 Super, not the RTX 5090.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual information about product phasing and market trends.",
               "replies": [
                 {
                   "commentId": "maxwmu6",
                   "text": "There's really no reason to produce two identically sized chip on the same node to sell one cheaper.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a general comment on chip production and business logic, not specific to the RTX 5090.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a technical observation about hardware manufacturing.",
                   "replies": [
                     {
                       "commentId": "maywv9f",
                       "text": "*Unless one is a cutdown version of the other (imperfect yields), but that's clearly not the case.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a technical discussion about chip yields, not a critique or experience with the RTX 5090.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a technical clarification.",
                       "replies": []
                     },
                     {
@@ -59,10 +59,10 @@
                       "text": "True.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort agreement ('True') with no product-specific insight.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment contains no sentiment toward the product.",
                       "replies": []
                     }
                   ]
@@ -72,10 +72,10 @@
                   "text": "Yeah, it looks like the supply for the 4080S has dried up in the US. I mean, if anyone was looking to get a 4080S around now anyway it's not like the 5080 is bad - the MSRP is the same anyway so they should just get the 5080. It's just a shame that the 4080S never had a chance to drop in price to get anyone a real deal.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user discusses the RTX 5080 and RTX 4080 Super, not the RTX 5090.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is discussing MSRP and availability of other models.",
                   "replies": []
                 }
               ]
@@ -84,5 +84,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

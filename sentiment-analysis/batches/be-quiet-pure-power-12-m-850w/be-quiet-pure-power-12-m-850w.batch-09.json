@@ -18,30 +18,30 @@
           "text": "I have the exact same issue as you OP, i have done numerous things to help fix it, only thing that has fixed some of it, and i mean some of it is setting the driver timeout detection to 12 seconds instead of 6 in the Windows registry, the game crashes far less but still does. The worst part is that these driver timeouts are random, i can play multiple days for hours without crashes and then have two back to back within 15 minutes and its not locked to retail either it happens in classic and wrath of the lich king as well.\n\nEdit: hit the save button to fast to finish my post.\n\nEdit edit: Specifically it is the amduw23g display driver that is crashing. AMD support basically told me there is no fix currently and just wait for new drivers.",
           "upvotes": 7,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses GPU driver timeouts and game crashes, not the power supply.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is reporting a technical issue with drivers, but it is not related to the product under analysis.",
           "replies": [
             {
               "commentId": "l3jftj0",
               "text": "Did they recommend that registry fix as a work around? I have recently started getting the issue more and more often both in WoW/FFXIV or random games and I am beyond frustrated for a 1000 card and using a 1600 display (G9 OLED) the solutions are \"disable features\" that you paid good money for.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment focuses on GPU performance and display issues, not the power supply.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is frustrated with their GPU, but this is not relevant to the power supply.",
               "replies": [
                 {
                   "commentId": "l3jgmmo",
                   "text": "They did not, i found it randomly while searching through the internet for a possible solution. So use at your own risk. \n\nIt comes with a flaw or benefit? sometimes and i mean this rarely, my wow starts up and will run at like 4-5 fps for half a minute then come back to normal, its a good indication of having to restart the pc or game because it will always crash at a random time after that but obviously only in wow, as these crashes happens in nothing else that i play atm(Dragons Dogma 2, manor Lords, Fallout 4, Helldivers 2)",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses game performance and driver fixes, not the power supply.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is describing technical behavior of their system, but not the power supply.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

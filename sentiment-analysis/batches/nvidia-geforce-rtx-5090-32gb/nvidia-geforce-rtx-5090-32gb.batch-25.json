@@ -18,25 +18,26 @@
           "text": "It defo gets cpu bottlenecked at 1440p raster and there are signs that it gets bottlenecked at 1440p RT as well.",
           "upvotes": 10,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides an opinionated performance observation regarding CPU bottlenecks specifically for the RTX 5090 at 1440p.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment describes a technical limitation (bottlenecking) without expressing positive or negative emotion toward the product itself.",
           "replies": [
             {
               "commentId": "m9jeqd5",
               "text": "Gpus are much ahead of cpus that's sad. It wont be bottlenecked until like 10800x3d...",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion has shifted to a general meta-talk about GPU vs CPU progress rather than specific insight into the RTX 5090.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user expresses sadness about the general state of hardware, but it is not a sentiment directed at the RTX 5090.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

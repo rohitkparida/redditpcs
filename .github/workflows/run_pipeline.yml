@@ -1,0 +1,68 @@
+name: Sentiment Analysis Pipeline
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN || github.token }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests python-dotenv
+
+      - name: Setup environment variables
+        run: |
+          echo "${{ secrets.DOT_ENV }}" > sentiment-analysis/.env
+
+      - name: Run Pipeline Chunk
+        id: run_step
+        working-directory: sentiment-analysis
+        run: |
+          python run_sentiment_pipeline_concurrent_unified.py --model gemma-4-31b-it --resume --workers 3 --limit 30
+
+      - name: Commit and Push Progress
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add sentiment-analysis/classified/
+          git add sentiment-analysis/pipeline_state.json
+          git add src/data/
+          # Commit only if there are changes
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "[Bot] Sync sentiment analysis progress"
+            git push https://x-access-token:${{ secrets.PAT_TOKEN || github.token }}@github.com/${{ github.repository }}.git HEAD:main
+          fi
+
+      - name: Trigger next run if products remain
+        if: steps.run_step.outputs.has_remaining == 'true'
+        run: |
+          if [ -z "${{ secrets.PAT_TOKEN }}" ]; then
+            echo "WARNING: PAT_TOKEN is not set. Cannot trigger next run automatically."
+            echo "Please add a Personal Access Token (PAT) with 'workflow' scope as PAT_TOKEN in secrets."
+          else
+            echo "Products still remaining. Triggering next chunk..."
+            curl -X POST \
+              -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
+              -H "Accept: application/vnd.github.v3+json" \
+              https://api.github.com/repos/${{ github.repository }}/actions/workflows/run_pipeline.yml/dispatches \
+              -d '{"ref":"main"}'
+          fi

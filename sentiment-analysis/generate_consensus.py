@@ -9,30 +9,23 @@ Usage:
 """
 
 import os
+import re
 import json
+import time
 import argparse
 import requests
+import sys
 from pathlib import Path
 from dotenv import load_dotenv
 
+if hasattr(sys.stdout, 'reconfigure'):
+    sys.stdout.reconfigure(encoding='utf-8')
+if hasattr(sys.stderr, 'reconfigure'):
+    sys.stderr.reconfigure(encoding='utf-8')
+
 # Load env vars
 load_dotenv()
-API_KEYS = [k for k in [os.getenv("GEMINI_API_KEY"), os.getenv("GEMINI_API_KEY_2")] if k]
-current_key_index = 0
-
-def get_active_key():
-    global current_key_index
-    if not API_KEYS:
-        return None
-    return API_KEYS[current_key_index]
-
-def rotate_key():
-    global current_key_index
-    if len(API_KEYS) > 1:
-        current_key_index = (current_key_index + 1) % len(API_KEYS)
-        print(f"  [Key Rotation in Consensus] Exceeded quota. Switched to Key #{current_key_index + 1}")
-        return True
-    return False
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
 
 def select_representative_comments(classified_file: Path, max_comments: int = 15):
@@ -60,13 +53,8 @@ def select_representative_comments(classified_file: Path, max_comments: int = 15
     return product_name, top_pos, top_neg
 
 
-def call_gemini_for_consensus(product_name: str, top_pos: list, top_neg: list, model: str = "gemini-2.5-flash") -> str:
-    """Send the curated positive and negative opinions to Gemini to synthesize a 2-sentence consensus."""
-    active_key = get_active_key()
-    if not active_key:
-        raise ValueError("No Gemini API keys are set in .env")
-
-    # Format the reviews for the LLM
+def call_gemini_for_consensus(product_name: str, top_pos: list, top_neg: list, model: str = "openrouter/free") -> str:
+    """Send the curated positive and negative opinions to Gemini API directly (for speed), with failover and OpenRouter backup."""
     pos_str = "\n".join([f"- [Upvotes: {c.get('upvotes', 0)}] {c.get('text')}" for c in top_pos])
     neg_str = "\n".join([f"- [Upvotes: {c.get('upvotes', 0)}] {c.get('text')}" for c in top_neg])
 
@@ -92,48 +80,101 @@ RULES FOR THE SUMMARY:
 
 Write the 2-sentence consensus:"""
 
-    headers = {"Content-Type": "application/json"}
+    # Gather potential keys
+    keys = []
+    for key, val in sorted(os.environ.items()):
+        if key.startswith("GEMINI_API_KEY") and val.strip():
+            keys.append(val.strip())
+
+    # Try calling Gemini directly first for maximum speed (~1-2 seconds)
+    for attempt in range(5):
+        has_429 = False
+        has_503_504 = False
+        has_net_error = False
+
+        for idx, key in enumerate(keys):
+            try:
+                url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={key}"
+                headers = {"Content-Type": "application/json"}
+                payload = {
+                    "contents": [{"parts": [{"text": prompt}]}]
+                }
+                response = requests.post(url, headers=headers, json=payload, timeout=20)
+                if response.status_code == 200:
+                    result = response.json()
+                    text = result["candidates"][0]["content"]["parts"][0]["text"].strip().replace('`', '')
+                    print(f"  [Consensus] Generated consensus successfully using Gemini API (Key {idx+1})")
+                    return " ".join(text.split())
+                elif response.status_code == 429:
+                    has_429 = True
+                    print(f"  [Consensus] Gemini API Key {idx+1} failed with status 429 (Rate Limit). Trying next...")
+                elif response.status_code in [503, 504]:
+                    has_503_504 = True
+                    print(f"  [Consensus] Gemini API Key {idx+1} failed with status {response.status_code}. Trying next...")
+                else:
+                    print(f"  [Consensus] Gemini API Key {idx+1} failed with status {response.status_code}. Trying next...")
+            except Exception as e:
+                err_str = str(e).lower()
+                if any(x in err_str for x in ["connection", "timeout", "resolution", "dns", "getaddrinfo"]):
+                    has_net_error = True
+                print(f"  [Consensus] Gemini API Key {idx+1} hit exception: {e}. Trying next...")
+        
+        if attempt < 4:
+            if has_429:
+                wait_time = (attempt + 1) * 15
+                reason = "Rate Limit (429)"
+            elif has_503_504:
+                wait_times = [3, 5, 10, 10]
+                wait_time = wait_times[attempt]
+                reason = "Service Overload (503/504)"
+            elif has_net_error:
+                wait_times = [2, 4, 8, 8]
+                wait_time = wait_times[attempt]
+                reason = "Network/DNS Error"
+            else:
+                wait_times = [5, 10, 15, 15]
+                wait_time = wait_times[attempt]
+                reason = "General Error"
+                
+            print(f"  [Consensus] All keys failed/rate-limited on attempt {attempt+1}/5. Reason: {reason}. Waiting {wait_time}s before retrying...")
+            time.sleep(wait_time)
+
+    # Fallback to OpenRouter if Gemini keys are exhausted
+    print("  [Consensus] All Gemini keys exhausted. Falling back to OpenRouter...")
+    if not OPENROUTER_API_KEY:
+        raise ValueError("No GEMINI keys worked, and no OPENROUTER_API_KEY is configured in .env")
+
     payload = {
-        "contents": [
-            {
-                "parts": [
-                    {
-                        "text": prompt
-                    }
-                ]
-            }
-        ]
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}]
+    }
+    headers = {
+        "Authorization": f"Bearer {OPENROUTER_API_KEY}",
+        "Content-Type": "application/json"
     }
 
-    # Try different fallback models if needed
-    models_to_try = [model, "gemini-2.5-flash-lite", "gemini-flash-latest"]
-    
-    for current_model in models_to_try:
-        max_retries = 3
-        for attempt in range(max_retries):
-            url = f"https://generativelanguage.googleapis.com/v1beta/models/{current_model}:generateContent?key={get_active_key()}"
-            try:
-                response = requests.post(url, headers=headers, json=payload, timeout=60)
-                if response.status_code == 200:
-                    res_data = response.json()
-                    text = res_data['candidates'][0]['content']['parts'][0]['text']
-                    # Clean up whitespace and any potential markdown wrapping
-                    consensus = text.strip().replace("`", "")
-                    # Ensure it's single line
-                    consensus = " ".join(consensus.split())
-                    return consensus
-                elif response.status_code == 429:
-                    if rotate_key():
-                        continue
-                    else:
-                        print(f"API Error 429 with {current_model} (status {response.status_code}): Exhausted all keys.")
-                        break
-                else:
-                    print(f"API Error with {current_model} (status {response.status_code}): {response.text}")
-            except Exception as e:
-                print(f"Exception trying {current_model} (Attempt {attempt+1}/{max_retries}): {e}")
+    max_retries = 3
+    for attempt in range(max_retries):
+        try:
+            response = requests.post(
+                "https://openrouter.ai/api/v1/chat/completions",
+                headers=headers, json=payload, timeout=60
+            )
+            if response.status_code == 200:
+                text = response.json()['choices'][0]['message']['content'].strip().replace('`', '')
+                return " ".join(text.split())
+            elif response.status_code == 429:
+                wait = 30 * (attempt + 1)
+                print(f"  [Consensus] OpenRouter 429 — waiting {wait}s (attempt {attempt+1}/{max_retries})...")
+                time.sleep(wait)
+            else:
+                print(f"  [Consensus] OpenRouter error {response.status_code}: {response.text}")
+                break
+        except Exception as e:
+            print(f"  [Consensus] Exception (attempt {attempt+1}/{max_retries}): {e}")
+            time.sleep(10)
 
-    raise RuntimeError("Failed to generate consensus using any fallback Gemini models")
+    raise RuntimeError("Failed to generate consensus via Gemini and OpenRouter")
 
 
 def update_database_file(category_file: Path, product_name: str, consensus: str, dry_run: bool = False):
@@ -144,11 +185,26 @@ def update_database_file(category_file: Path, product_name: str, consensus: str,
     products = data.get("products", [])
     matched_product = None
 
+    # Clean helper to slugify names for comparison
+    def clean_slug(name_str):
+        s = name_str.lower().strip()
+        s = re.sub(r'[^a-z0-9\s-]', '', s)
+        s = re.sub(r'[\s-]+', '-', s)
+        return s
+
     # Search match
     for product in products:
         if product.get("name", "").lower().strip() == product_name.lower().strip():
             matched_product = product
             break
+
+    if not matched_product:
+        # Try slugified matching
+        prod_slug = clean_slug(product_name)
+        for product in products:
+            if clean_slug(product.get("name", "")) == prod_slug:
+                matched_product = product
+                break
 
     if not matched_product:
         # Try substring word matching

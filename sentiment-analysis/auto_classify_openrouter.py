@@ -1,23 +1,31 @@
 import json
 import os
+import sys
 import time
+import re
 import requests
 from pathlib import Path
 from dotenv import load_dotenv
+from common import (
+    load_json, save_json,
+    is_batch_classified,
+    strip_markdown_block,
+    apply_classifications_to_batch,
+    resolve_product_name,
+)
 
 # Load environment variables
 load_dotenv()
 
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
-def process_batch(batch_file, prompt_text, model="meta-llama/llama-3.3-70b-instruct:free"):
+def process_batch(batch_file, prompt_text, model="openrouter/auto:free"):
     """Send a single batch to OpenRouter API, requesting flat classifications, and merge them back locally."""
     if not OPENROUTER_API_KEY:
         print("CRITICAL ERROR: No OPENROUTER_API_KEY set in .env. Aborting.")
         return False
 
-    with open(batch_file, 'r', encoding='utf-8') as f:
-        batch_data = json.load(f)
+    batch_data = load_json(batch_file)
     
     batch_json_str = json.dumps(batch_data, indent=2)
     combined_prompt = f"{prompt_text}\n\nAnalyze this JSON batch and return the flat classifications object as specified in the output format:\n\n{batch_json_str}"
@@ -54,49 +62,43 @@ def process_batch(batch_file, prompt_text, model="meta-llama/llama-3.3-70b-instr
                 print(f"OpenRouter rate limit hit (429). Waiting {wait_time} seconds (Attempt {attempt + 1}/{max_retries})...")
                 time.sleep(wait_time)
                 continue
+            elif response.status_code in [503, 504]:
+                wait_times = [3, 5, 10]
+                wait_time = wait_times[attempt]
+                print(f"OpenRouter service overload ({response.status_code}). Waiting {wait_time} seconds (Attempt {attempt + 1}/{max_retries})...")
+                time.sleep(wait_time)
+                continue
                 
             response.raise_for_status()
             result = response.json()
             
-            # Extract content from OpenRouter response
-            ai_content = result['choices'][0]['message']['content'].strip()
-            
-            # Clean up potential markdown wrapper code blocks
-            if ai_content.startswith("```"):
-                lines = ai_content.splitlines()
-                if lines[0].startswith("```"):
-                    lines = lines[1:]
-                if lines[-1].startswith("```"):
-                    lines = lines[:-1]
-                ai_content = "\n".join(lines).strip()
-            
+            # Extract and clean content
+            raw_content = result['choices'][0]['message']['content']
+            if raw_content is None:
+                raise ValueError("Model returned null content (likely overloaded). Will retry.")
+
+            ai_content = strip_markdown_block(raw_content)
+            ai_content = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', ai_content)
+
             classifications = json.loads(ai_content)
             comments_list = classifications.get("comments", [])
             class_map = {c["commentId"]: c for c in comments_list if "commentId" in c}
-            
-            # Recursive map back into our tree
-            def update_node_recursive(node):
-                cid = node.get("commentId")
-                if cid in class_map:
-                    node["relevance"] = class_map[cid].get("relevance")
-                    node["relevanceReasoning"] = class_map[cid].get("relevanceReasoning")
-                    node["sentiment"] = class_map[cid].get("sentiment")
-                    node["sentimentReasoning"] = class_map[cid].get("sentimentReasoning")
-                for reply in node.get("replies", []):
-                    update_node_recursive(reply)
-            
-            for root in batch_data.get("comments", []):
-                update_node_recursive(root)
-            
-            # Save back to the same file
-            with open(batch_file, 'w', encoding='utf-8') as f:
-                json.dump(batch_data, f, indent=2)
+
+            apply_classifications_to_batch(batch_data, class_map)
+            batch_data["model"] = model
+            save_json(batch_file, batch_data)
                 
             print(f"Successfully updated {batch_file.name} via OpenRouter")
             return True
             
         except Exception as e:
-            wait_time = (attempt + 1) * 10
+            err_str = str(e).lower()
+            if any(x in err_str for x in ["connection", "timeout", "resolution", "dns", "getaddrinfo"]):
+                net_waits = [2, 4, 8]
+                wait_time = net_waits[attempt]
+            else:
+                gen_waits = [5, 10, 15]
+                wait_time = gen_waits[attempt]
             print(f"Error processing {batch_file.name} via OpenRouter (Attempt {attempt + 1}/{max_retries}): {e}")
             if attempt < max_retries - 1:
                 print(f"Retrying in {wait_time} seconds...")
@@ -106,21 +108,8 @@ def process_batch(batch_file, prompt_text, model="meta-llama/llama-3.3-70b-instr
                 
     return False
 
-def is_classified(comment):
-    if comment.get("classifyThis") and comment.get("relevance") is not None:
-        return True
-    for reply in comment.get("replies", []):
-        if is_classified(reply):
-            return True
-    return False
 
-def is_batch_classified(batch_data):
-    for comment in batch_data.get("comments", []):
-        if is_classified(comment):
-            return True
-    return False
-
-def main(product_slug, model="meta-llama/llama-3.3-70b-instruct:free"):
+def main(product_slug, model="openrouter/auto:free"):
     batch_dir = Path(f"batches/{product_slug}")
     if not batch_dir.exists():
         print(f"Error: Batch directory {batch_dir} not found")
@@ -131,19 +120,7 @@ def main(product_slug, model="meta-llama/llama-3.3-70b-instruct:free"):
     with open(prompt_path, 'r', encoding='utf-8') as f:
         prompt_text = f.read()
 
-    # Get product name
-    template_path = Path(f"classified/{product_slug}.template.json")
-    raw_path = Path(f"raw_comments/raw_{product_slug}.json")
-    
-    product_name = product_slug
-    if template_path.exists():
-        with open(template_path, 'r', encoding='utf-8') as f:
-            template_data = json.load(f)
-            product_name = template_data.get('productName', product_slug)
-    elif raw_path.exists():
-        with open(raw_path, 'r', encoding='utf-8') as f:
-            template_data = json.load(f)
-            product_name = template_data.get('productName', product_slug)
+    product_name = resolve_product_name(product_slug)
             
     prompt_text = prompt_text.replace("[PRODUCT_NAME_HERE]", product_name)
     print(f"Loaded product name: '{product_name}'")
@@ -153,28 +130,24 @@ def main(product_slug, model="meta-llama/llama-3.3-70b-instruct:free"):
     print(f"Found {len(batch_files)} batches for {product_slug}")
     
     for i, batch_file in enumerate(batch_files):
-        with open(batch_file, 'r', encoding='utf-8') as f:
-            try:
-                temp_data = json.load(f)
-                if is_batch_classified(temp_data):
-                    print(f"Skipping {batch_file.name} (Already classified)")
-                    continue
-            except Exception:
-                pass
+        try:
+            if is_batch_classified(load_json(batch_file)):
+                print(f"Skipping {batch_file.name} (Already classified)")
+                continue
+        except Exception:
+            pass
 
         success = process_batch(batch_file, prompt_text, model)
-        if success:
-            if i < len(batch_files) - 1:
-                print("Waiting 6 seconds to respect OpenRouter free tier limits...")
-                time.sleep(6)
-        else:
-            print(f"Stopping at {batch_file.name} due to error.")
-            break
+        if not success:
+            print(f"Skipping {batch_file.name} after all retries failed (continuing with next batch).")
+            continue
+        if i < len(batch_files) - 1:
+            print("Waiting 6 seconds to respect OpenRouter free tier limits...")
+            time.sleep(6)
 
 if __name__ == "__main__":
-    import sys
     if len(sys.argv) < 2:
         print("Usage: python auto_classify_openrouter.py <product-slug> [model]")
     else:
-        model_name = sys.argv[2] if len(sys.argv) > 2 else "meta-llama/llama-3.3-70b-instruct:free"
+        model_name = sys.argv[2] if len(sys.argv) > 2 else "openrouter/auto:free"
         main(sys.argv[1], model_name)

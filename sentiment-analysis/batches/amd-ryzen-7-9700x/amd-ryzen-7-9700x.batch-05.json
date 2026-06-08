@@ -1,12 +1,12 @@
 {
   "productName": "amd-ryzen-7-9700x",
   "batchIndex": 5,
-  "totalBatches": 19,
+  "totalBatches": 26,
   "comments": [
     {
-      "commentId": "1embux1",
-      "text": "AMD Ryzen 7 9700X Review - Zen 5 Sucks",
-      "upvotes": 310,
+      "commentId": "1emazvy",
+      "text": "AMD Ryzen 7 9700X and Ryzen 5 9600X Review Roundup",
+      "upvotes": 556,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,627 +14,169 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "lgxufk6",
-          "text": "The outlier results on Linux by Phoronix...\n\n&gt;The Ryzen 7 9700X delivered 1.195x the performance of the Core i5 14600K competition or 1.15x the performance of the prior generation Ryzen 7 7700X. The Ryzen 5 9600X came in at 1.35x the performance of the Core i5 14500 and 1.25x the performance of the Ryzen 5 7600X. Or if still on Zen 3 for comparison, the Ryzen 5 9600X was 1.82x the performance of the Ryzen 5 5600X.\n\n...makes me wonder if Windows itself is something of a bottleneck. Granted I haven't looked closely at reviews yet, just the conclusions from Phoronix and this HUB review and some headlines, but it does make me wonder.",
-          "upvotes": 167,
+          "commentId": "lgxsm8x",
+          "text": "Just watched Linus' review on these chips. Why a lot of people are disappointed? [The main selling point i found is these chips run so cool and draw as much powers a freaking i3](https://imgur.com/a/VoQAUgZ). That is more than enough reason to be a major selling point in a country like mine where electricity is not cheap.",
+          "upvotes": 28,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User discusses the power efficiency and low power draw of the 9700X as a major selling point.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is satisfied with the low power consumption and considers it a major selling point.",
           "replies": [
             {
-              "commentId": "lgxvy31",
-              "text": "Probably because Phoronix's Linux software tests are compiled with all the latest optimizations in the compiler, while all the other sites use old software.",
-              "upvotes": 94,
+              "commentId": "lgxygsu",
+              "text": "Because the performance gains are minimal. It's all well and good to save power, but they should've named these parts appropriately for the consumer to get that these are not replacements for the 7700X. Like why not call this the 9700 instead of 9700X? It would've been a more appropriate name and then maybe another SKU called the 9700X could have been 105W and pushed performance a little more. This is basically a Ryzen 7700X on eco mode, refreshed with some small IPC gains which is nice, but nothing to really celebrate or have a victory lap over.",
+              "upvotes": 24,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User provides a technical critique of the performance gains and naming convention of the 9700X.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is disappointed by the minimal performance gains and feels the product is essentially a refreshed 7700X.",
               "replies": [
                 {
-                  "commentId": "lgzmek9",
-                  "text": "Phoronix isn't gaming focused like HUB. There is just not much of an uplift for games.",
-                  "upvotes": 24,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "lgy7k6e",
-              "text": "Probably coz Phoronix has fresh re-compiles of their benchmarks which likely leveraged the improved AVX512 capabilities of the Ryzen 9000 series. Wendell also saw some good uplift in his benchmarks which were still on Windows but more workstation oriented than the usual gaming-focused outlets.",
-              "upvotes": 37,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lgz1w1h",
-                  "text": "well shouldn\u2019t be ignored in the overall scheme of things especially with windows moving the way it is raw linux performance shouldn\u2019t be ignored, i\u2019ve been dual booting for 6 mi this now",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "lgz6k2a",
-                      "text": "Rather than Windows it's more about the apps. \n\nSadly unless AMD sponsors them most publishers probably aren't going to recompile their games for AVX512 just to make Ryzen 9000 look good, but future games might include such optimizations. [3DNow! did get support from quite a number of games and publishers](https://web.archive.org/web/20001109071400/http://www1.amd.com/products/cpg/3dnow/optimized/).",
-                      "upvotes": 4,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "lgy4wk9",
-              "text": "Not likely. It's just that the tests are quite different. It's clear from the Phoronix tests that AMD designed Zen 5 for the data centre. AVX512 performance is much improved and power consumption is better.\n\nFor end users, and especially gamers, this doesn't matter.",
-              "upvotes": 37,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lgy7dar",
-                  "text": "Gamers maybe unless you include emulators many of which do use AVX256 and AVX512... but AVX512 is heavily used in Handbrake for instance which a lot of end user use. As well as many media and content creation applications that require heavy compute to do what they do.\n\nZen 5 should run RPCS3 noticeably better. This is also a case where the application IS going to have the features enabled for sure.",
-                  "upvotes": 7,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "lgyjb6h",
-                      "text": "Maybe not :(  \n\"So sorry to disappoint the RPCS3 community here. As much as they love AVX512, they primarily only use 128-bit AVX512 - which does not significantly benefit from Zen5's improvements to the vector unit.\"\n\n[http://www.numberworld.org/blogs/2024\\_8\\_7\\_zen5\\_avx512\\_teardown/](http://www.numberworld.org/blogs/2024_8_7_zen5_avx512_teardown/)\n\n\"**~512-bit is required for significant performance gain.~**\n\n\u00a0Zen5's improvement to the AVX512 is that it doubles up the the width of (nearly) everything that was 256-bit to 512-bit. All the datapaths, execution units, etc... they are now natively 512-bit. There is no more \"double-pumping\" from Zen4 - at least on the desktop and server cores with the full AVX512 capability.\n\n\u00a0Consequently, the only way to utilize all this new hardware is to use 512-bit instructions. None of the 512-bit hardware can be split to service 256-bit instructions at twice the throughput. The upper-half of all the 512-bit hardware is \"use it or lose it\". The only way to use them is to use 512-bit instructions.\n\n\u00a0As a result, Zen5 brings little performance gain for scalar, 128-bit, and 256-bit SIMD code. It's 512-bit or bust.\n\n\u00a0So sorry to disappoint the RPCS3 community here. As much as they love AVX512, they primarily only use 128-bit AVX512 - which does not significantly benefit from Zen5's improvements to the vector unit.\"",
-                      "upvotes": 15,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "lgzndkc",
-              "text": "Phoronix's benchmarks should be more representative of the Zen 5 vs Zen 4 Epyc improvements. Zen 5 seems to be flat in many consumer tasks, but improve greater in server workloads.",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lgxx38o",
-              "text": "Windows is definitely a bottleneck, why I'm glad steam is doing good work on Linux with proton/are Deck.",
-              "upvotes": 37,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lgy26vz",
-              "text": "Stability issue aside, why is the 14600K and not the 14700K considered the competitor of the 9700X?",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lgy5gcy",
-                  "text": "price point, MSRP at launch of the 14600k is closer to the 9700x",
-                  "upvotes": 21,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "lgy73ro",
-                      "text": "I see. Thanks for the answer.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                },
-                {
-                  "commentId": "lgy3trd",
-                  "text": "Probably based on price?",
-                  "upvotes": 7,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "lgychnc",
-          "text": "So glad I got my 7800x3d for 263\u20ac brand new 2 months ago.",
-          "upvotes": 15,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "lgzt9i6",
-          "text": "I would argue that a power - focused architecture doesn\u2019t mean at all that the product \u201csucks\u201d.\n\nIntel is eating shit right now because they slipped all of their power targets, and here we have a product with 5-20% IPC increases using like 2/3rds of the power and it \u201csucks\u201d.",
-          "upvotes": 19,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "lh2i91i",
-              "text": "2/3rds of the power compared to the highly inefficient 7600X/7700X, if you add the regular 7600/7700 in the mix, it's not that impressive anymore, in fact, it's pretty meh when you factor in the higher price (compared to 7600/7700) and lack of any integrated coolers - especially since 9600X/9700X would have worked very well with a Wraith Stealth/Prism respectively.\n\nThe only good thing is the Linux performance, so servers/data centers might actually see a nice uplift, where the most money is at, for a regular \"reddit\" consumer, however, this gen doesn't look that great right now.",
-              "upvotes": 8,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lh2ndjs",
-                  "text": "it's crazy how everybody coping rn is acting like the 7600 and 7700 don't exist",
-                  "upvotes": 6,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "lgybsd9",
-          "text": "There's more to computers other than gaming. The energy efficiency is the main selling point here.",
-          "upvotes": 149,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "lgyqvxn",
-              "text": "Unfortunately reviewers barely know what energy efficiency is, they just compare performance numbers. Might as well release 500W CPU:s just to win the graphs by a few percent.",
-              "upvotes": 55,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lgzlwpm",
-                  "text": "Intel tried :P",
-                  "upvotes": 52,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "lgzmru1",
-                  "text": "Redditors have proven they have no idea what power efficiency is either. They just look at TDP on the product page and form their opinion from there. The idea that efficiency is a formula of performance / power draw is completely beyond their comprehension.",
-                  "upvotes": 38,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "lh24i6w",
-                  "text": "Unfortunately people forget that the 7700 non-X exists and it was like 4% worse than 7700X.",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "lgzcvqd",
-              "text": "Yea the laptop chips seem to be where it's at. And that's great.",
-              "upvotes": 7,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lgyjo7d",
-              "text": "When we're talking about a 50% increase in retail pricing over the 7700x (Which is still very efficient). The lower power draw is largely irrelevant\n\nIt's PBO results are also underwhelming, which shows that the efficiency gains also aren't massive",
-              "upvotes": 31,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lgz6xpi",
-                  "text": "Cheaper launch prices than Ryzen 7000, especially if you consider inflation, it's launching substantially cheaper.",
-                  "upvotes": 16,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "lgzw2as",
-              "text": "&gt; efficiency\n\nidle power is nuts though, almost 80 watts. paired with an amd gpu, power idle is crazy high. Doesnt matter if it isn't on all the time.\n\nWas looking forward to buy this zen5, but it not even a generational uplift in performance. Its the same performance as last gen.\n\nIf intel killed itself by self destructing, amd is dying from stagnation. I can already tell price cuts gonna come sooner than later. AM4 is the real winner here.",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lh3ln8x",
-                  "text": "LMAO how does this thing idle at 80w yet the avg gaming power consumption is 70w. I've never seen a cpu that uses more power idle than gaming. \n\n\nhttps://www.techpowerup.com/review/amd-ryzen-7-9700x/23.html",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "lh22s23",
-              "text": "According to hardware unboxed, the difference between the 9700x and 7700x is only 27w in total system power. Thats less than a $4 difference in the power bill a month assuming 3 hours of use every day. Thats rounding error territory. You wont even notice it, but what you will notice is the lack of performance jump if you are upgrading from last gen. Its a disappointment no matter how you look at it",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lh2s7ve",
-              "text": "Exactly. I have a really tiny room and it gets toasty as soon as I fire a game. I have already switched from a 3070ti to a 4070 for that reason and I will be switchng to zen 5 for sure.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lhhrs3k",
-              "text": "Man I gotta love all these armchair engineers miraculously coming out of the woodwork to proclaim everyone who disagrees with them as \"uninformed\" or \"not seeing the true picture\" that apparently *everyone else apart from them* are incapable of seeing.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lgysxlf",
-              "text": "That only comes up when AMD isn't lighting the charts on fire in single core speed. If multitasking mattered people would have machines with ecores.",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "lgy7l31",
-          "text": "They should've just skipped another year. We're at the point where tech companies really need to start taking more time to develop better products instead of cranking out half-assed products every year or two.",
-          "upvotes": 73,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "lgyxdq4",
-              "text": "There's a ton of improvements under the skin of this CPU, just sadly not showing in the benchmarks. It has a significantly wider design and improved cache, prefetch, etc etc. Its definitely not half arsed.\n\n\n\u00a0Strongly suspect there are systemic issues holding it back. Mike Clarke the lead architect said it'll take some software improvements to see the full potential. See Phoronix Linux results for some anecdotal evidence this might be true.\n\n\n\u00a0Regardless, it's a lackluster release and kinda baffling.",
-              "upvotes": 67,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lgzn9sv",
-                  "text": "These are similar changes to haswell transition to skylake.\u00a0 A wider core that looks awesome on paper and doesn't do nearly as much in real life.\u00a0\u00a0",
-                  "upvotes": 5,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "lgytdva",
-              "text": "The CCDs would be made anyway for data center (where the improvements are better), and since it uses the same node (effectively) it will replace Zen 4 production, so that will no longer be available in huge numbers.",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lgyyxtz",
-              "text": "It's interesting that under linux there's a mean of 15% improvement, but under windows it's not as much.   I wonder if it simply comes down to different workloads or if there's something going on with windows right now.",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lgypa2y",
-              "text": "I feel like I agree but why exactly? Why deliver marginally better products thus causing people to work on removing old inventory, designing, building, testing, packaging, shipping, marketing, stocking, benchmarking, reviewing and all that myriad of tasks for each new SKU. So much effort and money spent.",
-              "upvotes": 7,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lgz21w0",
-                  "text": "Gotta have something to show for the execs and shareholders, and brands demands new stuff so they too can release new stuff for people to \u2018upgrade\u2019.",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "lh1amo1",
-              "text": "I agree, this time period where we expect a new product every 2 years with insane results is foolish. I hope AMD changes it up sometime soon.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "lgxxd1t",
-          "text": "Sucks? No. Fails to impress? Yeah",
-          "upvotes": 131,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "lgxz70f",
-              "text": "Slower than 7700X in some tests. So yeah, sucks -- only because of the hype and price premium. Hopefully we'll see some changes once X870\u00a0boards are out.",
-              "upvotes": 48,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lgykedr",
-                  "text": "I mean 144W 7700x delivering same performance as 88W 9700x? (LTT and GN)",
-                  "upvotes": 65,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "lgymcly",
-                      "text": "Something is off with power management, in derbauer oc test, is possibile to reach 5.4ghz like the 9600x: max stress uses double the power, have 25% more performance with 15% more clock speed. Sure we will see more optimisations soon",
-                      "upvotes": 16,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "lgymh36",
-                      "text": "If you value that, then spend the premium. I think most users were expecting (based on what material they had access to for better or worse) both less power usage, and materially more performance across the board for a similar cost. Which it didn't deliver...yet? It's pretty early still, perhaps things will change.\n\nI'm excited for the rest of the reviews for the other chips.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                },
-                {
-                  "commentId": "lgz9b8b",
-                  "text": "Using \\~40% less power to achieve the same results is fairly impressive. The IPC gains are obviously there. AMD seemed overcautious on the power limits though. \n\nAfraid to pull an Intel maybe?",
-                  "upvotes": 27,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "lgzpqi2",
-                      "text": "I'd say that power consumption has been increasing quite a lot and decreasing it makes sense. The people who want and can afford will have the high-end to play with and likely they have something coming that will further improve upon.\n\nAdded parallelism (more instructions dispatched per clock cycle) possible needs updated compiler/OS to take maximum advantage of it.\n\nEdit: one thing about power consumption: people have been interested in the ARM-solutions recently for that reason and making x86-64 more attractive choice again is a sensible direction.\n\nEdit2: on Linux the results seem to be generally showing improvements: [https://www.phoronix.com/review/ryzen-9600x-9700x](https://www.phoronix.com/review/ryzen-9600x-9700x)",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "lgzeggv",
-                      "text": "Throw a 7700 into the mix or limit the 7700X to the same 88W and then try again. Yeah, those efficiency numbers are misleading.",
-                      "upvotes": 10,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "lgziynp",
-                      "text": "40% less power... in prodcutivity.\n\nin gaming, [not so much.](https://tpucdn.com/review/amd-ryzen-7-9700x/images/power-games.png)",
-                      "upvotes": 7,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "lh1uu79",
-                          "text": "&gt; in gaming, not so much.\n\nSeems like 9000 is a productivity generation.\n\n9800x3d's saving grace for gaming would be it's unlocked overclocking.",
-                          "upvotes": 4,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "commentId": "lh34kql",
-                  "text": "Might need to revisit some of those benchmarks later,   \n  \nSomething is wrong with a lot of the benchmarks we're seeing based what PCworld had experienced&gt;\n\nthey got 9600X beating 9700X in multicore workloads. \n\nOn the other hand you have Wendel from Level 1 Tech manage to having a 9700X beat a 7800X3D in Assassins Creed.\n\nIt's all over the shop",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "lgy5gdb",
-              "text": "If we take price into account, which we absolutely should when last gen is so widely available, it's pretty atrocious. Gaming? x3d for $20 more smashes it. Productivity? Better options for speed and the power efficency is more than wiped out my that price premium. 'Future proofing?' Offers nothing over the 7700x which leaves you enough change to do a grocery shop.\n\nIt literally has no spot in the market unless they artifically create one by removing better/cheaper products.",
-              "upvotes": 20,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lgyngo1",
-                  "text": "&gt;If we take price into account, which we absolutely should when last gen is so widely available, it's pretty atrocious\n\nIsn't that the standard zen AMD?\n\nHow many cpu generations do we have to go back to find the first release to be good value on release compared to the last gen?",
+                  "commentId": "lgxzy2c",
+                  "text": "Also 7800X3D is still more efficient (and faster) in games, so it\u2019s not a clean win for 9700X in efficiency.\n\n[https://www.techpowerup.com/review/amd-ryzen-7-9700x/23.html](https://www.techpowerup.com/review/amd-ryzen-7-9700x/23.html)",
                   "upvotes": 11,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
+                  "relevance": "include",
+                  "relevanceReasoning": "Direct comparison between the 9700X and the 7800X3D regarding efficiency and gaming performance.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user argues that the 9700X is not a 'clean win' because the 7800X3D is still better.",
+                  "replies": [
+                    {
+                      "commentId": "lgy5i4l",
+                      "text": "I do think the trend will remain the same when the eventual 9800X3D does come out that the Zen5 part will be more power efficient, but probably only very slightly. Honestly, I thought Zen4 ruined the Ryzen branding when the motherboards released at such high prices and Zen4 wasn't much of an improvement over Zen3. But once 7800X3D came out and motherboard and RAM prices came down and Zen4 received big discounts, it made me feel better about Zen4. But this launch is a disaster imo and has really hurt the Ryzen brand, it's also left the door open for Intel's Arrow Lake to take the performance crown too, AMD had a layup here after all the Intel drama and they fumbled. Maybe X3D really saves Zen5 like it did for Zen4, but it's not looking good.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "User shares an opinion on the 9700X launch as a 'disaster' and its impact on the Ryzen brand.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user describes the launch as a disaster and believes AMD 'fumbled' the opportunity.",
+                      "replies": []
+                    }
+                  ]
                 },
                 {
-                  "commentId": "lgyopk6",
-                  "text": "100% agree, idk why people stuff like this.",
-                  "upvotes": 4,
+                  "commentId": "lhe0rhk",
+                  "text": "3600X was 105W TDP and 5600X was 65W TDP and no-one complained about that now did they? When 7700X released everyone was complaining about how hot it ran and there are tons of guides on how to undervolt it to run cooler. So AMD lowers TDP and power draw and then everyone yet again complains. So yea AMD can never win. We always hate whatever they do.",
+                  "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discussion on TDP and power draw of Ryzen CPUs, including the 9700X, in the context of historical context.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is making a general observation about consumer complaints regardless of AMD's design choices.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lgyd9s4",
+              "text": "Also Linus doesn\u2019t put the non-X 7000 parts on the chart which would have much lower power draw",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Comment is about the 7000 series non-X parts, not specifically the 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "lgy3ufc",
+              "text": "That is all core workload in Cinebench, which is a use case that not many actual real users will encounter. Techpowerup shows the 9700x draws the same watts as the 7700x in games, for a 3-5% FPS improvement.",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User discusses the 9700X's power draw in games versus the 7700X for a small FPS improvement.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user implies the 3-5% FPS improvement is negligible for the power draw.",
+              "replies": []
+            },
+            {
+              "commentId": "lgy1que",
+              "text": "power efficiency alone will never be a good metric, especially after historical context are considered (higher cost for whats considered \"high end\", raytracing and the entire state of contemporary gpu)\nwe have monitors now that does 4k 240hz, people want something that can match that.",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "General discussion about power efficiency as a metric and monitor specs, off-topic from specific product performance.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "lgyd2l4",
+              "text": "You can\u2019t sell a 70$ markup on lower energy consumption",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User expresses an opinion on the value proposition of the 9700X based on energy consumption.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user believes the energy savings are not worth a $70 markup.",
+              "replies": []
+            },
+            {
+              "commentId": "lgy2ilz",
+              "text": "OMG 40W instead of 45W! My electricity bill\u2019s gonna be happy!",
+              "upvotes": 10,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort joke/meme about electricity bills.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "lgyh7tx",
+              "text": "I've been reading a lot of the data on the 9600x review from tech power up. Gaming efficiency (FPS / watt) is about the same. Power is less than 7600x, but pretty similar to the 7600.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion is focused on the 9600X, not the 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "lgzuk02",
+              "text": "Because the 7800x3d exists",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User suggests the 9700X is less appealing because the 7800X3D exists.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user implies the 9700X is a poor choice compared to the 7800X3D.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lgxsndt",
+          "text": "The entire result says wait for X3D. TechJesus is right that this get brownie points because it's not labelled Intel.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User recommends waiting for the X3D version of the 9000 series.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is disappointed with the current 9000 series launch.",
+          "replies": [
+            {
+              "commentId": "lgytexf",
+              "text": "This was the perfect opportunity for them to crush the market and they launched this lol",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User expresses disappointment in the 9000 series launch, including the 9700X.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user feels AMD missed a perfect opportunity to 'crush the market'.",
+              "replies": [
+                {
+                  "commentId": "lh0ic6z",
+                  "text": "To be fair to them, this are just midrange CPUs. The 9900X and 9950X was delayed.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General comment about the 9900X and 9950X, not specifically the 9700X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
                   "replies": []
                 }
               ]
@@ -642,84 +184,211 @@
           ]
         },
         {
-          "commentId": "lgy7li1",
-          "text": "5700x3D with 6800 it is then..",
-          "upvotes": 20,
+          "commentId": "lgxmswi",
+          "text": "Releasing these CPU's seems like a waste of time and money for AMD.",
+          "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses an opinion that releasing the 9000 series (including 9700X) is a waste of time and money.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user views the product release as a waste.",
+          "replies": []
+        },
+        {
+          "commentId": "lgxqa9e",
+          "text": "ITS ZEN 4 PERFORMANCE.... But with wayyyyy lower power based of ltt and gamers nexus. It's the European edition Cpu's.\n\nBut yeah. Umm, buy a 7800x3d",
+          "upvotes": 11,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User compares the 9700X's performance to Zen 4 and recommends buying a 7800X3D instead.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is disappointed by the performance and recommends a competitor/older product.",
           "replies": [
             {
-              "commentId": "lgyirvz",
-              "text": "always has been",
+              "commentId": "lgxrriv",
+              "text": "Nah, that power usage was in all-core workloads, aka a scenario that no one will ever realistically encounter. \n\nhttps://tpucdn.com/review/amd-ryzen-7-9700x/images/power-games.png\n\nThis is what you want to look at",
+              "upvotes": 7,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Technical critique of the 9700X's power usage in gaming vs all-core workloads.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical correction to another user's claim.",
+              "replies": [
+                {
+                  "commentId": "lgyk7e1",
+                  "text": "&gt;a scenario that no one will ever realistically encounter. \n\nImplying all users of desktop CPUs are gamers.",
+                  "upvotes": 7,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Meta-discussion about user types (gamers vs non-gamers), not specific to product performance.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "lgxnfpl",
+          "text": "all those people that told people to not get a 7800x3d and wait for zen 5 must be feeling quite silly right now hahaha",
+          "upvotes": 10,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User discusses the 9000 series launch in comparison to the 7800X3D.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is mocking those who waited for Zen 5, implying the 9700X is not a significant upgrade.",
+          "replies": [
+            {
+              "commentId": "lgyjf73",
+              "text": "Who on earth was saying that? When the official slides came out I thought it was very apparent to everyone that the non-x3d chips were not going to outperform the 7800x3d in gaming.",
+              "upvotes": 17,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User argues that the non-X3D chips (like 9700X) were not expected to outperform the 7800X3D in gaming.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a logical explanation for the performance gap.",
+              "replies": []
+            },
+            {
+              "commentId": "lgxpiz9",
+              "text": "Not long and it'll be \"my friend's uncle's sister's father-in-law works for AMD and he told me that Zen 6 is going to be incredible. 50% IPC increase and 400MHz clock speed increase for $100 less than this gen. Wait for the 10000 series\", MLID and co will act as though nothing happened, just like always, and round we go again.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Speculation about future Zen 6 products, off-topic from the 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
               "replies": []
             }
           ]
         },
         {
-          "commentId": "lgy3jkt",
-          "text": "Just bought a 5700x3d to squeeze abit more juice out of AM4. Glad I did",
-          "upvotes": 13,
+          "commentId": "lgxtpow",
+          "text": "So this is basically a productivity monster zen series if you play with the power limits.",
+          "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User describes the 9700X as a 'productivity monster' if power limits are adjusted.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is positive about the 9700X's potential for productivity.",
           "replies": []
         },
         {
-          "commentId": "lgz8n0h",
-          "text": "I will keep my 7950X3D thank you....",
-          "upvotes": 5,
+          "commentId": "lgzs2eu",
+          "text": "Interesting to see the 9700x at unlocked power (caps out at 155w from what I've noticed) outperform a 5900x roughly 4 years later. I'm still wondering why 7700x sees little gain going over 90w whereas 9700x sees nearly 20% going from 90w to over 140w.",
+          "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal experience with the 9700X's performance at unlocked power limits.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is impressed that the 9700X outperforms the 5900X by a significant margin.",
           "replies": []
         },
         {
-          "commentId": "lgy43e6",
-          "text": "Cool I can still get by with my 5800x for now",
+          "commentId": "lgxqicu",
+          "text": "Disappointing that the 9700x is barely any better. My brother\u2019s new 5700x3D is looking really good.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses disappointment that the 9700X is barely any better than previous generations.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is disappointed by the lack of performance gains.",
+          "replies": []
+        },
+        {
+          "commentId": "lgxmvfp",
+          "text": "So, what the hell is AMD actually have done on this CPU?\n\n\n\nSo, there's actually some nice double-digit improvement, but it's so limited... AMD. What the heck are you doing? It seems like they only focus on efficiency. Which is good, but... come on!\n\n\n\n---\n\n\n\nI get it AMD, your target is HPC user, not us....\n\n  \n[The raw performance results alone were impressive for this big Linux desktop CPU comparison but it's all the more mesmerizing when accounting for the CPU power use. On average across the nearly 400 benchmarks the Ryzen 5 9600X and Ryzen 7 9700X were consuming 73 Watts on average and a peak of 101\\~103 Watts. The Ryzen 5 7600X meanwhile had a 92 Watt average and a 149 Watt peak while the Ryzen 7 7700X had a 99 Watt average and 140 Watt peak. The Core i5 14600K with being a power hungry Raptor Lake had a 127 Watt average and a 236 Watt peak. The power efficiency of these Zen 5 processors are phenomenal!](https://www.phoronix.com/review/ryzen-9600x-9700x/16)",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User provides a technical critique of the 9700X, praising efficiency but criticizing the lack of raw performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is conflicted, praising the efficiency but frustrated by the lack of performance.",
+          "replies": [
+            {
+              "commentId": "lgxqwxj",
+              "text": "Yeah it's kind of weird, I'd get it if these were non x chips but.. Yeah... How much power is a 9700 non x going to use, 65w?",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User discusses the 9700X's power draw and naming convention.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is questioning the 'X' branding for a low-power chip.",
+              "replies": [
+                {
+                  "commentId": "lgy420o",
+                  "text": "Ok, I just check the review by Phoronix, and they have it 15% faster than 7700X at significantly lower power.\n\nI think, I get it now. AMD dialed this CPU for HPC use, not your average desktop user.\n\n\n\n&gt;The raw performance results alone were impressive for this big Linux desktop CPU comparison but it's all the more mesmerizing when accounting for the CPU power use. On average across the nearly 400 benchmarks the Ryzen 5 9600X and Ryzen 7 9700X were consuming 73 Watts on average and a peak of 101\\~103 Watts. The Ryzen 5 7600X meanwhile had a 92 Watt average and a 149 Watt peak while the Ryzen 7 7700X had a 99 Watt average and 140 Watt peak. The Core i5 14600K with being a power hungry Raptor Lake had a 127 Watt average and a 236 Watt peak. The power efficiency of these Zen 5 processors are phenomenal!\n\n[https://www.phoronix.com/review/ryzen-9600x-9700x/16](https://www.phoronix.com/review/ryzen-9600x-9700x/16)",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User cites Phoronix review to praise the 9700X's performance and efficiency for HPC use.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is positive about the 9700X's performance and efficiency in specific workloads.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "lgy434j",
+          "text": "AM5 7500f owners \u00a0to 5.5ghz gang we eating good today\n\nbest $100 cpu ever\u00a0",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Comment is about the 7500f, not the 9700X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": []
+        },
+        {
+          "commentId": "lgy97ap",
+          "text": "Little confused. Why are the 14700k and, I think, the 14600k faster? Some of the results aren't even close. It's like the 9700x is a tier lower? They definitely could not have gotten away with charging more for it\n\nDoes seem to do ok in gaming but you'll probably be GPU limited. Gets wrecked in productivity except for strange things like Photoshop and browsing",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User compares the 9700X to Intel 14th gen and criticizes its productivity performance.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is disappointed that the 9700X is outperformed by Intel in productivity.",
+          "replies": []
+        },
+        {
+          "commentId": "lgxlgzp",
+          "text": "Man AMD needs better names i always confuse them with their GPUs",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Comment is about AMD's naming conventions in general, not specific to the 9700X's performance or value.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": [
+            {
+              "commentId": "lgxmiat",
+              "text": "100% this, although to be fair it's pretty much an industry problem",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "General comment about industry naming conventions, off-topic.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lgxvyr4",
+          "text": "LMAO what a total disaster, this is like Skylake vs Kaby Lake bad. This is basically a refresh, I guess AMD's hit the wall on IPC gains they can get out of Zen architecture in its current configuration and they need to do a complete re-design to see any significant performance increase. Man I really thought Zen4 sucked compared to Zen3 because it had the clock speed to carry it, but Zen5 is even worse of a launch.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "lgyp2kl",
-          "text": "best review of this processor is from der8uer so far",
-          "upvotes": 5,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "lgyqa0o",
-          "text": "I was debating if I should upgrade from my 5900x to the 9900x, but after I read that Zen5 will be performing abit worse than the 7800x3d I just bought the 7800x3d in the end and will keep it until 2026 and buy w/e is the best gaming CPU by then, was a good choice after all lol.",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User describes the 9700X launch as a 'total disaster' and a 'refresh' with poor IPC gains.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is highly critical of the product's performance and the launch.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

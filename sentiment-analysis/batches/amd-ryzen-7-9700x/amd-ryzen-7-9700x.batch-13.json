@@ -1,7 +1,7 @@
 {
   "productName": "amd-ryzen-7-9700x",
   "batchIndex": 13,
-  "totalBatches": 19,
+  "totalBatches": 26,
   "comments": [
     {
       "commentId": "1go3ybt",
@@ -14,119 +14,164 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "lwfu2n9",
-          "text": "All those people using 720p/1080p with a 3 grand setup must be super excited.  \n\n7950x is the same price and 8 extra cores, really don't get the excitement about 9800x3d. Way too expensive.",
-          "upvotes": -12,
+          "commentId": "lwfuo7r",
+          "text": "|Appl.|78X3D|9700X|9900X|146K|147K|245K|265K|98X3D|\n|:-|:-|:-|:-|:-|:-|:-|:-|:-|\n||8C Zen4|8C Zen5|12C Zen5|6P+8E RPL|8P+12E RPL|6P+8E ARL|8P+12E ARL|8C Zen5|\n|avg Appl. Perf.|81.8%|91.4%|120.1%|**91.2%**|114.1%|**94.0%**|119.1%|***100%***|\n|Power Limit|162W|88W|162W|181W|253W|159W|250W|162W|\n|MSRP|$449|$359|$499|$319|$409|$309|$394|$479|\n|avg Appl. Power|65W|81W|135W|**121W**|174W|**95W**|127W|**107W**|\n|Appl. Power Efficiency|134%|120%|95%|**80%**|70%|**106%**|100%|**100%**|\n\nPutting aside price for a sec, in the scope of applications, I was surprised to see how well the 9800X3D handled. 8-cores seemingly going strong with 2nd gen v-cache. Though, had the 9700X been benchmarked with the same \"162W\" power limit, I wonder how much it closes the gap.",
+          "upvotes": 11,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "lwfhs36",
-          "text": "Going to wait until intel fixes core ultra. In a month or 2, these benchmarks will be meaningless.",
-          "upvotes": -51,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user discusses the 9700X's performance and power limits in comparison to the 9800X3D.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is analyzing benchmark data and questioning power limit impacts without a clear positive or negative bias.",
           "replies": [
             {
-              "commentId": "lwfjp8j",
-              "text": "Does anyone honestly believe there is some earthshattering fix to come that will massively change stuff for the Ultra series? \n\nLike yes maybe with some tweaks to the bios or scheduler a few extra % here and there might be available but its not gonna massively change the picture. These post release CPU \"fixes\" never do.",
-              "upvotes": 40,
+              "commentId": "lwi4quh",
+              "text": "At least Intel got their power efficiency sorted out.  Lets see if they can improve performance without losing that for the next gen.",
+              "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment focuses on Intel's power efficiency and does not mention the Ryzen 7 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "lwm1wxw",
+              "text": "Computerbase does have benchmarks with 9700x at 142w limit, not quite the same power but it's closer than others\n\nhttps://www.computerbase.de/artikel/prozessoren/amd-ryzen-7-9800x3d-test.90151/seite-3#abschnitt_multicoreleistung",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a specific benchmark reference for the 9700X at a higher power limit.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a factual link to benchmarks without expressing a personal opinion.",
+              "replies": []
+            },
+            {
+              "commentId": "lws6f4x",
+              "text": "Still it goes to show you, VCACHE HELPS OUTSIDE OF GAMING. The 9800x3d is literally just a premium 9700x in all respects now. The 9800x3d has a bit of an artificial frequency limit so a non power limited 9700x will get really close to tying it but it'll be at higher frequency and using pbo will equalise the frequency again and the 9800x3d will pull further ahead.\n\nZen 5 x3d may have been the smallest improvement in gaming but it completely ironed out all of x3ds flaws",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The user compares the 9700X to the 9800X3D, discussing frequency and PBO.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical analysis of the differences between the two CPUs.",
+              "replies": []
+            },
+            {
+              "commentId": "lwhjz9c",
+              "text": "Really makes you wonder if Intels e cores are really worth it. 12 P core flagship would probably fare better? No weird scheduling issues, maybe even MT?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about Intel's E-cores and scheduling, not the Ryzen 7 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
               "replies": [
                 {
-                  "commentId": "lwfkphy",
-                  "text": "Hmm, the only thing I know which could be the case is when people tried disabling all P-cores except 1 and somehow have a lot higher gaming performance.",
+                  "commentId": "lwizq5z",
+                  "text": "I think they have pushed a lot of enthusiasts away with the split designs. \n\nI even went ahead with a simple 8-core vs the similar 16-core Ryzen simply because I wanted a straightforward CPU that acts and performs consistently the same with 0 unpredictability or actions required ever. I'd have 100% spent more on the 16-core if all of them were on one CCD, or there was otherwise nearly no occasional latency penalty or software to need to be mindful of.\n\nThis is because the extra MT performance is something I'd like, but *need* extremely rarely. But a consistently performing CPU is what I want all the time.\n\nOn the Intel side things are even way more extreme. I remember a lot of people were getting the eek about the idea of getting CPUs with lower performance cores mixed in with the \"normal\" cores. As well as the still seldom occurring scheduling issues where you randomly get a lower performance because the thread you want to run at a max speed isn't getting anywhere close to the max speed the CPU can deliver, because it was assigned to a core that's slower than the one they had on their CPU of 8 years ago.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user discusses general CPU core counts and Intel's design, not the 9700X specifically.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
                   "replies": []
                 },
                 {
-                  "commentId": "lwfx7fc",
-                  "text": "&gt; Does anyone honestly believe there is some earthshattering fix to come that will massively change stuff for the Ultra series?\n\nWasn't this literally the case for the 9950x in gaming benchmarks recently?",
+                  "commentId": "lwkrhi5",
+                  "text": "The problem with ARL is not the E-cores. If anything, the E-cores are the only thing in ARL that's making the product as a whole bearable. \n\nA 12P core count ARL product will not be beating out an 8+16 model in NT. It would lose, pretty badly I would imagine.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about Intel's ARL architecture, not the Ryzen 7 9700X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
                   "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "lwfl11z",
-              "text": "maybe, maybe not. intel has a lot of fires to put out, and i can't see them flipping the script on gaming performance.",
-              "upvotes": 12,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lwflwdl",
-              "text": "There's no magic fix coming. There might be some fixes for outlier games that perform exceptionally badly, but the majority of the performance loss is probably due to the terrible memory latency, and that's a hardware issue.",
-              "upvotes": 12,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lwj0abk",
-              "text": "Intel should certainly be able to make improvements. But they won't fix this huge performance difference with fixes. With a lot of luck, Intel will manage to ensure that ARL is no longer slower than RPL in games.",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lwfoj2t",
-              "text": "Well it's not like you can get your hands on the 9800x3d anyway",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
+                },
                 {
-                  "commentId": "lwfvl3d",
-                  "text": "I consider myself so lucky that microcenter is walking distance from my house",
-                  "upvotes": 5,
+                  "commentId": "lwk0jve",
+                  "text": "Isn't that what bartlett lake is supposed to be? Though I'm not sure if it is even coming.\n\nAlso 12P cores wouldn't win in applications/benchmarks against a 9950x, so they use the space for 4p cores as e cores instead. Its a sad world where an architecture is designed from the ground up to win cinebench for 2mins instead of being a good architecture (low latency, high throughput, consistency, etc).",
+                  "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses Intel's architecture and Cinebench, not the 9700X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                },
+                {
+                  "commentId": "lwk0toi",
+                  "text": "Looking at the die shots, the P cores are 4x larger. I'd rather see a 48 e core design instead of the current 8+16.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about Intel's die shots and core design, not the 9700X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
                   "replies": []
                 }
               ]
             }
           ]
+        },
+        {
+          "commentId": "lwh0byd",
+          "text": "As a 5800X3D owner... *HOLD*!\n\nProbably going to upgrade to the next-gen X3D. 32% is a good uplift, but not quite enough to justify it for me. I usually look for ~50% uplift.",
+          "upvotes": 11,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing upgrading from a 5800X3D to a next-gen X3D, not the 9700X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": [
+            {
+              "commentId": "lwhje93",
+              "text": "That's all I'm waiting for, 50-60% and this 5800X3D can go downstairs for the family to use. Daddy's getting the bigger box. Maybe one more year...",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about waiting for a future X3D CPU, not the 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "lwi8i6f",
+              "text": "Yeah, I'm trying to hold out with my 5800X3D until AM6/DDR6, but it's difficult... 32%+ less chugging in late-game Victoria 3...",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about the 5800X3D and future AM6, not the 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "lwizhb9",
+              "text": "Absolutely fair. +32% is a bit low to have the need for an upgrade.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about the performance uplift of X3D chips, not the 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "lwjlym1",
+              "text": "Waiting for AM6 here\ud83d\ude24",
+              "upvotes": 0,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about waiting for AM6, not the 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            }
+          ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -1,0 +1,562 @@
+{
+  "productName": "nvidia-geforce-rtx-5090-32gb",
+  "batchIndex": 43,
+  "totalBatches": 56,
+  "comments": [
+    {
+      "commentId": "1igzay4",
+      "text": "nVidia GeForce RTX 5080 Meta Review\n\n- compilation of 18 launch reviews with ~8520 gaming benchmarks at 1080p, 1440p, 2160p\n- only benchmarks at real games compiled, not included any 3DMark &amp; Unigine benchmarks\n- geometric mean in all cases\n- standard raster performance without ray-tracing and/or DLSS/FSR/XeSS\n- extra ray-tracing benchmarks (mostly without upscaler) after the standard raster benchmarks\n- stock performance on (usually) reference/FE boards, no overclocking\n- factory overclocked cards were normalized to reference clocks/performance, but just for the overall performance average (so the listings show the original performance result, just the performance index has been normalized)\n- missing results were interpolated (for a more accurate average) based on the available &amp; former results\n- performance average is (some) weighted in favor of reviews with more benchmarks\n- all reviews should have used newer drivers for _all_ cards\n- power draw numbers based on a couple of reviews, always for the graphics card only\n- performance/price ratio (higher is better) for 2160p raster performance and 2160p ray-tracing performance\n- for the full results and some more explanations check [3DCenter's launch analysis](https://www.3dcenter.org/artikel/launch-analyse-nvidia-geforce-rtx-5080)\n\n&amp;nbsp;\n\nRaster 2160p|3080|3090|309Ti|79XT|79XTX|407TiS|4080|4080S|4090|5080|5090\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|Ampere 10GB|Ampere 24GB|Ampere 24GB|RDNA3 20GB|RDNA3 24GB|Ada 16GB|Ada 16GB|Ada 16GB|Ada 24GB|Blackw. 16GB|Blackw. 32GB\nCBase|-|-|-|74.2%|87.0%|78.0%|-|89.3%|120.5%|_100%_|149.2%\nCowcotl|-|-|-|74.6%|89.0%|78.0%|84.7%|86.4%|112.7%|_100%_|144.9%\nEurog|64.1%|66.6%|73.7%|76.0%|88.0%|-|84.3%|85.8%|114.1%|_100%_|149.4%\nGamersN|59.9%|64.7%|75.9%|74.4%|93.5%|-|86.8%|87.8%|118.8%|_100%_|155.3%\nHW &amp; Co|51.5%|68.4%|-|74.2%|86.7%|-|-|89.5%|117.3%|_100%_|149.8%\nHWLuxx|58.1%|65.0%|73.7%|73.4%|84.6%|73.8%|85.8%|87.8%|113.4%|_100%_|147.5%\nIgor's|-|-|-|76.1%|92.5%|77.7%|-|91.2%|121.2%|_100%_|152.5%\nKitGuru|-|-|-|79.1%|92.6%|75.6%|-|88.9%|117.9%|_100%_|151.8%\nLinus|57.5%|67.5%|72.5%|76.3%|88.8%|75.0%|-|85.0%|115.0%|_100%_|147.5%\nOvercl|-|-|-|79.9%|94.3%|-|88.4%|89.7%|115.6%|_100%_|148.4%\nPCGH|52.8%|-|-|76.9%|91.6%|73.8%|-|87.7%|118.7%|_100%_|152.2%\nPurePC|56.8%|-|73.9%|72.7%|85.2%|-|87.5%|-|117.0%|_100%_|151.7%\nQuasarZ|-|65.1%|71.9%|-|84.8%|-|84.5%|87.2%|116.1%|_100%_|148.1%\nSweCl|59.9%|-|-|-|90.1%|-|88.4%|-|121.3%|_100%_|152.1%\nTPU|57%|66%|74%|73%|87%|74%|87%|88%|113%|_100%_|152%\nTechSpot|60.4%|70.3%|-|76.9%|92.3%|76.9%|87.9%|90.1%|120.9%|_100%_|150.5%\nTom's|-|-|-|-|90.2%|-|-|91.6%|120.4%|_100%_|150.9%\nTweakers|58.9%|65.2%|-|77.0%|88.9%|73.7%|88.1%|88.9%|114.6%|_100%_|151.1%\n**avg**|57.2%|66.9%|74.3%|75.2%|89.0%|75.2%|86.8%|88.5%|117.2%|_100%_|150.3%\n\n&amp;nbsp;\n\nRaster 1440p|3080|3090|309Ti|79XT|79XTX|407TiS|4080|4080S|4090|5080|5090\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|Ampere 10GB|Ampere 24GB|Ampere 24GB|RDNA3 20GB|RDNA3 24GB|Ada 16GB|Ada 16GB|Ada 16GB|Ada 24GB|Blackw. 16GB|Blackw. 32GB\nCBase|60.6%|-|-|78.6%|88.8%|81.2%|-|92.0%|116.5%|_100%_|135.0%\nCowcotl|-|-|-|83.0%|92.9%|80.4%|89.3%|91.1%|109.8%|_100%_|127.7%\nEurog|64.0%|67.0%|73.8%|76.5%|89.0%|-|86.4%|87.2%|110.7%|_100%_|136.8%\nGamersN|60.5%|64.9%|75.2%|79.2%|94.2%|-|91.9%|92.1%|118.3%|_100%_|142.4%\nHW &amp; Co|60.1%|69.6%|-|79.1%|89.8%|-|-|92.3%|114.9%|_100%_|136.1%\nHWLuxx|60.1%|70.7%|79.0%|83.2%|95.0%|81.5%|95.4%|97.2%|118.5%|_100%_|144.2%\nIgor's|-|-|-|78.5%|92.2%|79.1%|-|92.3%|114.0%|_100%_|135.2%\nKitGuru|-|-|-|82.2%|93.6%|78.9%|-|91.6%|117.4%|_100%_|143.8%\nLinus|60.9%|69.2%|73.7%|82.0%|93.2%|80.5%|-|89.5%|115.0%|_100%_|136.1%\nPCGH|58.5%|-|-|80.3%|94.1%|77.2%|-|91.2%|118.5%|_100%_|143.5%\nPurePC|59.2%|-|74.0%|75.1%|87.0%|-|90.5%|-|115.4%|_100%_|141.4%\nQuasarZ|-|65.6%|70.9%|-|86.5%|-|87.6%|90.4%|113.8%|_100%_|136.7%\nSweCl|61.8%|-|-|-|92.4%|-|92.0%|-|117.7%|_100%_|142.5%\nTPU|60%|67%|74%|77%|89%|79%|90%|91%|112%|_100%_|137%\nTechSpot|63.7%|73.3%|-|82.2%|95.2%|83.6%|93.8%|95.9%|119.2%|_100%_|131.5%\nTom's|-|-|-|-|91.1%|-|-|93.5%|113.3%|_100%_|128.2%\nTweakers|59.9%|65.7%|-|80.8%|89.8%|77.3%|91.4%|91.8%|111.6%|_100%_|135.1%\n**avg**|60.4%|68.3%|75.0%|79.3%|91.2%|79.3%|90.5%|92.0%|115.3%|_100%_|137.3%\n\n&amp;nbsp;\n\nRaster 1080p|3080|3090|309Ti|79XT|79XTX|407TiS|4080|4080S|4090|5080|5090\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|Ampere 10GB|Ampere 24GB|Ampere 24GB|RDNA3 20GB|RDNA3 24GB|Ada 16GB|Ada 16GB|Ada 16GB|Ada 24GB|Blackw. 16GB|Blackw. 32GB\nCowcotl|-|-|-|88.1%|94.5%|85.3%|91.7%|92.7%|106.4%|_100%_|113.8%\nEurog|65.6%|70.2%|79.9%|83.8%|92.4%|-|89.4%|90.2%|108.1%|_100%_|126.5%\nGamersN|62.5%|66.8%|75.9%|81.7%|95.8%|-|95.6%|95.7%|115.9%|_100%_|131.7%\nHWLuxx|67.1%|70.9%|78.3%|83.2%|93.6%|83.8%|92.6%|94.5%|114.8%|_100%_|130.4%\nIgor's|-|-|-|79.5%|91.2%|82.7%|-|94.8%|111.6%|_100%_|124.0%\nKitGuru|-|-|-|83.6%|93.7%|81.2%|-|93.1%|115.4%|_100%_|136.0%\nPCGH|60.1%|-|-|82.0%|93.7%|79.8%|-|92.3%|115.8%|_100%_|133.2%\nPurePC|61.0%|-|74.4%|87.8%|87.8%|-|92.1%|-|115.9%|_100%_|137.2%\nQuasarZ|-|67.1%|71.7%|-|86.6%|-|89.9%|92.6%|110.9%|_100%_|125.9%\nSweCl|63.3%|-|-|-|93.2%|-|93.5%|-|114.8%|_100%_|131.1%\nTPU|63%|69%|76%|80%|90%|82%|93%|94%|111%|_100%_|124%\nTechSpot|71.0%|79.5%|-|86.9%|96.6%|90.3%|99.4%|100.6%|117.0%|_100%_|115.9%\nTom's|-|-|-|-|92.5%|-|-|96.5%|111.4%|_100%_|115.1%\nTweakers|61.4%|67.0%|-|81.8%|89.3%|79.5%|93.8%|93.6%|106.2%|_100%_|122.4%\n**avg**|63.5%|70.1%|76.6%|82.7%|92.0%|82.5%|93.0%|94.2%|112.8%|_100%_|128.1%\n\n&amp;nbsp;\n\nRayTr. 2160p|3080|3090|309Ti|79XT|79XTX|407TiS|4080|4080S|4090|5080|5090\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|Ampere 10GB|Ampere 24GB|Ampere 24GB|RDNA3 20GB|RDNA3 24GB|Ada 16GB|Ada 16GB|Ada 16GB|Ada 24GB|Blackw. 16GB|Blackw. 32GB\nCBase|-|-|-|67.3%|77.8%|80.1%|-|92.1%|121.0%|_100%_|147.2%\nCowcotl|-|-|-|59.0%|68.9%|73.8%|82.0%|84.4%|116.4%|_100%_|150.8%\nEurog|63.6%|65.9%|75.6%|62.5%|72.4%|-|87.9%|89.5%|124.6%|_100%_|162.0%\nGamersN|54.8%|59.0%|69.4%|54.4%|68.8%|-|86.2%|87.1%|116.3%|_100%_|156.3%\nHWLuxx|45.8%|58.7%|67.2%|44.7%|50.1%|82.1%|92.9%|94.4%|125.3%|_100%_|154.0%\nKitGuru|-|-|-|55.1%|63.7%|75.0%|-|89.3%|123.8%|_100%_|159.8%\nLinus|28.2%|59.0%|64.1%|43.6%|48.7%|74.4%|-|87.2%|123.1%|_100%_|161.5%\nOvercl|-|-|-|59.9%|72.1%|-|89.8%|91.6%|116.3%|_100%_|148.6%\nPCGH|46.3%|-|-|58.2%|68.8%|75.9%|-|89.4%|119.3%|_100%_|150.8%\nPurePC|50.0%|-|67.5%|47.0%|56.0%|-|86.5%|-|122.0%|_100%_|160.0%\nQuasarZ|-|60.5%|65.3%|-|-|-|85.7%|88.4%|116.9%|_100%_|148.6%\nSweCl|-|-|-|-|56.0%|-|90.7%|-|131.2%|_100%_|165.6%\nTPU|44%|64%|71%|53%|62%|77%|89%|90%|119%|_100%_|156%\nTechSpot|-|-|-|41.0%|49.2%|73.8%|88.5%|91.8%|118.0%|_100%_|149.2%\nTom's|-|-|-|-|68.9%|-|-|93.9%|128.8%|_100%_|163.1%\nTweakers|51.6%|60.7%|-|58.4%|66.8%|75.2%|90.5%|91.4%|124.3%|_100%_|164.1%\n**avg**|47.1%|61.3%|68.7%|53.8%|63.0%|76.2%|88.2%|90.0%|121.1%|_100%_|155.4%\n\n&amp;nbsp;\n\nRayTr. 1440p|3080|3090|309Ti|79XT|79XTX|407TiS|4080|4080S|4090|5080|5090\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|Ampere 10GB|Ampere 24GB|Ampere 24GB|RDNA3 20GB|RDNA3 24GB|Ada 16GB|Ada 16GB|Ada 16GB|Ada 24GB|Blackw. 16GB|Blackw. 32GB\nCBase|46.4%|-|-|72.4%|80.5%|82.9%|-|93.4%|115.2%|_100%_|125.9%\nCowcotl|-|-|-|64.1%|70.1%|71.8%|85.5%|87.2%|112.0%|_100%_|139.3%\nEurog|63.2%|66.8%|75.3%|65.1%|73.7%|-|89.6%|91.1%|121.2%|_100%_|150.4%\nHW &amp; Co|52.8%|62.5%|-|46.2%|52.8%|-|-|92.0%|121.4%|_100%_|153.3%\nHWLuxx|57.3%|60.5%|67.6%|49.4%|54.5%|84.2%|94.4%|96.1%|119.6%|_100%_|139.5%\nKitGuru|-|-|-|56.8%|64.7%|76.8%|-|90.3%|119.1%|_100%_|149.2%\nLinus|52.0%|60.0%|64.0%|44.0%|50.7%|78.7%|-|88.0%|117.3%|_100%_|148.0%\nPCGH|56.2%|-|-|63.2%|72.8%|79.1%|-|92.1%|117.6%|_100%_|139.5%\nPurePC|52.9%|-|68.3%|48.7%|57.1%|-|87.3%|-|118.5%|_100%_|150.3%\nSweCl|-|-|-|-|57.3%|-|92.8%|-|125.0%|_100%_|151.3%\nTPU|59%|66%|72%|57%|66%|80%|92%|93%|117%|_100%_|146%\nTechSpot|-|-|-|47.5%|54.5%|80.8%|93.9%|94.9%|117.2%|_100%_|139.4%\nTweakers|56.0%|62.3%|-|59.5%|67.2%|78.2%|93.6%|93.9%|121.9%|_100%_|151.9%\n**avg**|55.6%|63.4%|70.0%|55.5%|63.3%|78.9%|90.5%|92.0%|118.6%|_100%_|144.7%\n\n&amp;nbsp;\n\nRayTr. 1080p|3080|3090|309Ti|79XT|79XTX|407TiS|4080|4080S|4090|5080|5090\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|Ampere 10GB|Ampere 24GB|Ampere 24GB|RDNA3 20GB|RDNA3 24GB|Ada 16GB|Ada 16GB|Ada 16GB|Ada 24GB|Blackw. 16GB|Blackw. 32GB\nCowcotl|-|-|-|63.2%|70.1%|78.6%|85.5%|87.2%|103.4%|_100%_|114.5%\nEurog|62.8%|68.2%|74.8%|66.6%|74.3%|-|90.7%|92.4%|117.9%|_100%_|138.5%\nHWLuxx|60.2%|62.5%|68.6%|52.3%|57.3%|83.4%|90.5%|91.7%|112.4%|_100%_|126.3%\nKitGuru|-|-|-|58.3%|65.2%|78.6%|-|90.4%|115.3%|_100%_|140.4%\nPCGH|59.3%|-|-|66.6%|75.3%|81.5%|-|93.3%|114.5%|_100%_|130.5%\nPurePC|55.2%|-|68.5%|51.4%|58.6%|-|90.1%|-|117.1%|_100%_|142.0%\nSweCl|56.8%|-|-|-|59.3%|-|93.9%|-|118.6%|_100%_|134.3%\nTPU|61%|68%|74%|60%|68%|83%|94%|95%|115%|_100%_|136%\nTechSpot|-|-|-|49.2%|56.2%|84.6%|96.2%|97.7%|113.8%|_100%_|130.8%\nTweakers|57.1%|62.9%|-|59.7%|66.3%|78.9%|93.6%|94.8%|116.0%|_100%_|140.7%\n**avg**|59.2%|65.3%|71.6%|59.2%|66.5%|81.3%|91.7%|93.1%|114.4%|_100%_|133.0%\n\n&amp;nbsp;\n\nFG/MFG 2160p|4090|4090 FG|5080|5080 FG|5080 MFGx3|5080 MFGx4|5090|5090 FG|5090 MFGx3|5090 MFGx4\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\nComputerB|123.2%|216.2%|_100%_|175.0%|251.2%|322.0%|150.0%|274.3%|394.9%|499.8%\nHWLuxx|129.5%|228.4%|_100%_|183.6%|254.8%|323.4%|172.0%|303.9%|435.0%|547.0%\nTechPowerUp|114.3%|139.2%|_100%_|-|-|274.5%|148.8%|-|-|460.9%\navg pure FG/MFG gain|&amp;nbsp;|+74% vs4090|&amp;nbsp;|+73% vs5080|+141% vs5080|+206% vs5080|&amp;nbsp;|+78% vs5090|+154% vs5090|+220% vs5090\n\n&amp;nbsp;\n\nAt a glance|3080|3090|309Ti|79XT|79XTX|407TiS|4080|4080S|4090|5080|5090\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|Ampere 10GB|Ampere 24GB|Ampere 24GB|RDNA3 20GB|RDNA3 24GB|Ada 16GB|Ada 16GB|Ada 16GB|Ada 24GB|Blackw. 16GB|Blackw. 32GB\n2160p Raster|57.2%|66.9%|74.3%|75.2%|89.0%|75.2%|86.8%|88.5%|117.2%|_100%_|150.3%\n1440p Raster|60.4%|68.3%|75.0%|79.3%|91.2%|79.3%|90.5%|92.0%|115.3%|_100%_|137.3%\n1080p Raster|63.5%|70.1%|76.6%|82.7%|92.0%|82.5%|93.0%|94.2%|112.8%|_100%_|128.1%\n2160p RayTr|47.1%|61.3%|68.7%|53.8%|63.0%|76.2%|88.2%|90.0%|121.1%|_100%_|155.4%\n1440p RayTr|55.6%|63.4%|70.0%|55.5%|63.3%|78.9%|90.5%|92.0%|118.6%|_100%_|144.7%\n1080p RayTr|59.2%|65.3%|71.6%|59.2%|66.5%|81.3%|91.7%|93.1%|114.4%|_100%_|133.0%\nTDP|320W|350W|450W|315W|355W|285W|320W|320W|450W|360W|575W\nReal Power Draw|325W|359W|462W|309W|351W|277W|297W|302W|418W|311W|509W\nEE RA 2160p|55%|58%|50%|76%|79%|84%|91%|91%|87%|_100%_|92%\nMSRP|$799|$1499|$1999|$899|$999|$799|$1199|$999|$1599|$999|$1999\nRetail GER|800\u20ac|1700\u20ac|2100\u20ac|679\u20ac|889\u20ac|831\u20ac|1150\u20ac|1000\u20ac|1750\u20ac|1300\u20ac|2600\u20ac\nP/P&amp;nbsp;GER 2160p&amp;nbsp;RA|93%|51%|46%|144%|130%|118%|98%|115%|87%|_100%_|75%\nP/P&amp;nbsp;GER 2160p&amp;nbsp;RT|77%|47%|43%|103%|92%|119%|100%|117%|90%|_100%_|78%\nRetail US|$700|$1500|$2000|$650|$870|$900|$1200|$1000|$1600|$1150|$2300\nP/P US 2160p RA|94%|51%|43%|133%|118%|96%|83%|102%|84%|_100%_|75%\nP/P US 2160p RT|77%|47%|39%|95%|83%|97%|85%|103%|87%|_100%_|78%\n\nNote: RA = Raster, RT = Ray-Tracing, EE = Energy Efficiency, P/P = Performance/Price Ratio    \nNote: For the graphics cards that have already been discontinued, a retail price was assumed at the time of their sale. The same applies to the 7900XT, 7900XTX and 4080S, which are currently on the retreat from the market. Retail prices were estimated for 5080 &amp; 5090 when availability is reached. These estimates are of course not perfect, as nobody knows how the price situation will develop.\n\n&amp;nbsp;\n\nPerf. Gain of 5080|Raster 2160p|Raster 1440p|Raster 1080p|RayTr. 2160p|RayTr. 1440p|RayTr. 1080p\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|\nGeForce RTX 2080 Ti FE|+131%|+119%|+102%|+176%|+156%|+135%\nGeForce RTX 3080 10GB|+75%|+66%|+58%|+112%|+80%|+69%\nGeForce RTX 3090|+50%|+46%|+43%|+63%|+58%|+53%\nGeForce RTX 3090 Ti|+35%|+33%|+31%|+46%|+43%|+40%\nRadeon RX 7900 XT|+33%|+26%|+21%|+86%|+80%|+69%\nRadeon RX 7900 XTX|+12%|+10%|+9%|+59%|+58%|+50%\nGeForce&amp;nbsp;RTX&amp;nbsp;4070&amp;nbsp;Ti&amp;nbsp;Super|+33%|+26%|+21%|+31%|+27%|+23%\nGeForce RTX 4080|+15%|+11%|+8%|+13%|+10%|+9%\nGeForce RTX 4080 Super|+13%|+9%|+6%|+11%|+9%|+7%\nGeForce RTX 4090|\u201315%|\u201313%|\u201311%|\u201317%|\u201316%|\u201313%\nGeForce RTX 5090|\u201333%|\u201327%|\u201322%|\u201336%|\u201331%|\u201325%\n\nNote: Performance improvement of the GeForce RTX 5080 compared to the other cards. The respective other card is then _100%_.\n\n&amp;nbsp;\n\n&amp;nbsp;|nVidia FE|Asus Astral OC|Colorful Vulcan OC|Gainward Phoenix GS|Galax/KFA2 1-Click OC|Gigabyte Gaming OC\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|\nCooling|Air, 2 Fans|Air, 4 Fans|Air, 3 Fans|Air, 3 Fans|Air, 3 Fans|Air, 3 Fans\nDimensions|DualSl, 30x13.5cm|TripleSl, 35x15cm|TripleSl, 36x15cm|TripleSl, 33x13cm|TripleSl, 30x13.5cm|TripleSl, 34x14cm\nWeight|1635g|2900g|2796g|1595g|1308g|1823g\nClocks|2295/2617 MHz|2295/2760 MHz|2295/2685 MHz|2295/2700 MHz|2295/2625 MHz|2295/2730 MHz\nReal Clock (avg/median)|2640 MHz / 2662 MHz|2882 MHz / 2925 MHz|2822 MHz / 2865 MHz|2821 MHz / 2865 MHz|2745 MHz / 2790 MHz|2815 MHz / 2857 MHz\nTDP|360W (max: 390W)|400W (max: 400W)|375W (max: 400W)|360W (max: 380W)|360W (max: 450W)|360W (max: 450W)\nRaster Perf. (2160/1440/1080)|_100%_|+6% / +6% / +5%|+5% / +4% / +4%|+5% / +5% / +4%|+3% / +3% / +2%|+4% / +4% / +3%\nRayTr. Perf. (2160/1440/1080)|_100%_|+6% / +6% / +6%|+4% / +5% / +5%|+4% / +5% / +4%|+2% / +3% / +4%|+4% / +4% / +5%\nTemperatures (GPU/Memory)|67\u00b0C / 74\u00b0C|62\u00b0C / 66\u00b0C|61\u00b0C / 66\u00b0C|68\u00b0C / 76\u00b0C|69\u00b0C / 76\u00b0C|64\u00b0C / 66\u00b0C\nLoundness|36.8 dBA|36.3 dBA|34.4 dBA|37.4 dBA|35.6 dBA|38.4 dBA\nReal Power Draw (Idle/Gaming)|20W / 325W|17W / 388W|30W / 367W|22W / 361W|17W / 350W|18W / 358W\nPrice|$999|$1500|$1300|$1150|$1000|$1200\nSource:|[TPU](https://www.techpowerup.com/review/nvidia-geforce-rtx-5080-founders-edition/)|[TPU](https://www.techpowerup.com/review/asus-geforce-rtx-5080-astral-oc/)|[TPU](https://www.techpowerup.com/review/colorful-geforce-rtx-5080-vulcan-oc/)|[TPU](https://www.techpowerup.com/review/gainward-geforce-rtx-5080-phoenix-gs/)|[TPU](https://www.techpowerup.com/review/galax-geforce-rtx-5080-1-click-oc/)|[TPU](https://www.techpowerup.com/review/gigabyte-geforce-rtx-5080-gaming-oc/)\n\n&amp;nbsp;|nVidia FE|MSI Vanguard OC|MSI Suprim SOC|Palit GameRock OC|Zotac AMP Extreme Infinity\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\nCooling|Air, 2 Fans|Air, 3 Fans|Air, 3 Fans|Air, 3 Fans|Air, 3 Fans\nDimensions|DualSl, 30x13.5cm|TripleSl, 36x15cm|TripleSl, 36x15cm|TripleSl, 33x14.5cm|TripleSl, 33x14cm\nWeight|1635g|1954g|2639g|2200g|2161g\nClocks|2295/2617 MHz|2295/2730 MHz|2295/2745 MHz|2295/2730 MHz|2295/2670 MHz\nReal Clock (avg/median)|2640 MHz / 2662 MHz|2791 MHz / 2835 MHz|2726 MHz / 2752 MHz|2803 MHz / 2857 MHz|2830 MHz / 2872 MHz\nTDP|360W (max: 390W)|360W (max: 400W)|360W (max: 400W)|360W (max: 400W)|360W (max: 400W)\nRaster Perf. (2160/1440/1080)|_100%_|+4% / +3% / +3%|+2% / +2% / +2%|+5% / +5% / +4%|+5% / +5% / +4%\nRayTr. Perf. (2160/1440/1080)|_100%_|+4% / +4% / +4%|+2% / +1% / +3%|+4% / +5% / +5%|+5% / +5% / +5%\nTemperatures (GPU/Memory)|67\u00b0C / 74\u00b0C|60\u00b0C / 62\u00b0C|60\u00b0C / 62\u00b0C|64\u00b0C / 68\u00b0C|66\u00b0C / 66\u00b0C\nLoundness|36.8 dBA|35.0 dBA|25.5 dBA|37.3 dBA|38.6 dBA\nReal Power Draw (Idle/Gaming)|20W / 325W|15W / 352W|18W / 318W|30W / 346W|24W / 371W\nPrice|$999|$1230|$1250|$1200|$1250\nSource:|[TPU](https://www.techpowerup.com/review/nvidia-geforce-rtx-5080-founders-edition/)|[TPU](https://www.techpowerup.com/review/msi-geforce-rtx-5080-vanguard-soc/)|[TPU](https://www.techpowerup.com/review/msi-geforce-rtx-5080-suprim-soc/)|[TPU](https://www.techpowerup.com/review/palit-geforce-rtx-5080-gamerock-oc/)|[TPU](https://www.techpowerup.com/review/zotac-geforce-rtx-5080-amp-extreme/)\n\nNote: Just the values of the default BIOS were noted throughout, as _complete_ information including performance values are only available for that BIOS.\n\n&amp;nbsp;\n\nList of GeForce RTX 5080 reviews evaluated for this performance analysis:\n\n- [ComputerBase](https://www.computerbase.de/artikel/grafikkarten/nvidia-geforce-rtx-5080-test.91176/)\n- [Cowcotland](https://www.cowcotland.com/articles/4489/test-nvidia-geforce-rtx-5080-fe-blackwell-s-attaque-au-gaming-haut-de-gamme.html)\n- [Eurogamer](https://www.eurogamer.net/digitalfoundry-2025-nvidia-geforce-rtx-5080-review)\n- [Gamers Nexus](https://www.youtube.com/watch?v=nShh_j4s2YE)\n- [Hardware &amp; Co](https://hardwareand.co/dossiers/gpu/test-de-la-geforce-rtx-5080-une-demi-5090)\n- [Hardwareluxx](https://www.hardwareluxx.de/index.php/artikel/hardware/grafikkarten/65395-leistungsplus-nur-ueber-mfg-die-geforce-rtx-5080-founders-edition-im-test.html)\n- [Igor's Lab](https://www.igorslab.de/nvidia-geforce-rtx-5080-founders-edition-im-test-geforce-rtx-4080-ti-mit-blackwell-genen/)\n- [KitGuru](https://www.kitguru.net/components/graphic-cards/dominic-moass/nvidia-rtx-5080-review-efficiency-gains-but-a-performance-letdown/)\n- [Linus Tech Tips](https://www.youtube.com/watch?v=Fbg7ChsjmEA)\n- [Overclocking](https://overclocking.com/test-la-nvidia-rtx-5080-founders-edition/)\n- [PC Games Hardware](https://www.pcgameshardware.de/Geforce-RTX-5080-Grafikkarte-281030/Tests/Release-Preis-kaufen-Benchmark-Review-vs-4080-Super-1464610/)\n- [PurePC](https://www.purepc.pl/nvidia-geforce-rtx-5080-recenzja-test-wydajnosci-premiera-blackwell)\n- [Quasarzone](https://quasarzone.com/bbs/qc_bench/views/93127)\n- [SweClockers](https://www.sweclockers.com/test/40513-nvidia-geforce-rtx-5080-mer-refresh-an-revolution)\n- [TechPowerUp](https://www.techpowerup.com/review/nvidia-geforce-rtx-5080-founders-edition/)\n- [TechSpot](https://www.techspot.com/review/2947-nvidia-geforce-rtx-5080/)\n- [Tom's Hardware](https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5080-review)\n- [Tweakers](https://tweakers.net/reviews/12896/nvidia-geforce-rtx-5080-vooral-interessant-dankzij-de-extra-ai-frames.html)\n\nSource: [3DCenter.org](https://www.3dcenter.org/artikel/launch-analyse-nvidia-geforce-rtx-5080)",
+      "upvotes": 290,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "masxnss",
+          "text": "As someone upgrading from 3080, I'm stuck in the dilemma of whether to pay for the premium price of RTX 5090 or settle for the mediocre performance of RTX 5080. Not to mention the possibility of buyer remorse if 5080 super comes in to fill the big gap between 5080 and 5090 or even a bigger vram",
+          "upvotes": 56,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "masyzgx",
+              "text": "As someone who upgraded from the 3080 to the 4080 Super, which is basically nearly-5080, it was the most underwhelming jump I've made. You can tell that things run smoother, but I feel if there was a game that needed it, the jump is too small to make a difference. It just made edge cases smoother or allowed me to bump a setting here and there. In hindsight, I would have stayed with the trusty 3080 unless there was a game I really needed to play ASAP that *needed* more Vram or something. Otherwise I'd save a nice amount of money and let Nvidia try again in 2 years.\n\nI actually find it really crazy that the 3080's performance is still ~60% of the 5080. That's a 4-year old $699 card vs a new $999 card hitting awkwardly close in terms of performance per dollar, and an insane advantage in performance/$/month of ownership considering you could've had a similar perf/$ for 4 years now.\n\nI think if you're someone who used to upgrade every other generation, that habit may not hold well anymore, just as upgrading your phone every 2 years/generations no longer makes much sense. The performance differences are far smaller nowadays, and the new hardware is more expensive at that.",
+              "upvotes": 95,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mat5lu5",
+                  "text": "I am still riding my 3080 and nothing about the 50 series makes me think I need it. Granted I mainly play strategy games these days that don\u2019t tax my card that much, but when I play a modern triple aaa title I don\u2019t feel like my 3080 isn\u2019t delivering a good performance.\u00a0\n\nI\u2019ve said before it felt like the 3080 is the new 1080ti and should be quite sufficient for years to come.\u00a0",
+                  "upvotes": 38,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mau0aev",
+                      "text": "1GB less VRAM than the 1080Ti 3 years later and for the same price. 3080 wasn\u2019t designed as well as the 1080Ti in terms of longevity. If you\u2019re playing at 4K that 10GB buffer has been an issue for years now. It\u2019s otherwise a fantastic card.",
+                      "upvotes": 21,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "mau9ut9",
+                          "text": "Yeah, that\u2019s the one flaw with the 3080. They fixed it later on by making the 12 GB model but that should have been the launch model.",
+                          "upvotes": 9,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "mau92qz",
+                          "text": "unless they have the 12gb version",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "mb26fca",
+                          "text": "&gt; 3080 wasn\u2019t designed as well as the 1080Ti in terms of longevity.\n\nIf anything, I believe 3080's longevity will be better. 3080 supports features like mesh shaders, DLSS and raytracing, which greatly help in newer games.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "mb5ahcw",
+                              "text": "If you play at 1080p maybe. Games like Dead Space Remake are broken at 4K with the 3080 10GB.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "mb9yn8c",
+                                  "text": "S.t.a.l.k.e.r 2 refuses to even work stable with lesser vram like 16gb is sweetspot for 1440p seen people have issues even with 16gb vram on green side I myself have RX6800XT nitro+ sapphire",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "mavpl60",
+                      "text": "&gt;I am still riding my 3080\n\nThis comment is wild considering this GPU is stronger than 90% of everyone else's GPU if you just glance at Steam Hardware Survey.",
+                      "upvotes": 18,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "mavv7js",
+                          "text": "This subreddit is mostly used by enthusiasts who usually upgrade every generation. It's not unusual to see comments like \"My 4090 is still great in game x after I bought it last year\".",
+                          "upvotes": 14,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "mavvdce",
+                              "text": "I mostly get it, but I'm still getting whiplash every time I see something like this.",
+                              "upvotes": 7,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "mawir2m",
+                          "text": "Meanwhile, some of us are still using GTX 1000 series GPUs, lol.",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "max5b7p",
+                          "text": "If it makes you feel better, Imma be riding my 4060 until like, the 7060.  I went GTX 465 - GTX 760 - GTX 1660 - RTX 4060.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "maytnp1",
+                              "text": "I've got a 2080 and I'd *like* to upgrade three generations later, it's just apparently wholly impossible.",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "mazp0mf",
+                                  "text": "I guess cross fingers that the 5070ti will have more availability?  Sorry.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "mbpansl",
+                                      "text": "That's still going to be at least a $1000 GPU, this is getting as bad as the miner craze.",
+                                      "upvotes": 2,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "maxq2r3",
+                          "text": "Forums will always have enthusiasts. Steam hardware survey is counting everyones laptops and old PCs that have steam installed at some point. It skews the results quite a lot.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "mbpazqd",
+                              "text": "I think forums like this are what's \"skewed\" most people do not upgrade every generation.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "mazs68e",
+                          "text": "Better than 90% but the 10gb VRAM really makes you cut back on important settings. 4k is a real struggle despite having the framerate.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mau8hr6",
+                  "text": "Yup.  I'm on a 3070, and the 8GB is feeling a little tight, so I've been weighing my options.  Honestly, a used 3080 12GB and 3080ti are serious contenders (note: outside of US, not sure how much this would apply there).",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mawoyfd",
+                      "text": "I personally wouldn't do a within-gen upgrade. Feels bad, man. \n\nI would wait for the 5070 to launch and then try and pick up a new/used 4070, or, preferably a 4070 Super.\n\nBetter performance, more power efficiency, and DLSS frame gen, which is honestly very nice, in spite of the shit it gets.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "max4l1n",
+                          "text": "Yeah, I'm still considering other options like that. It will depend on how much prices drop, with the 5000 series being so close in performance. Currently 3080 (12gb or Ti) is quite a lot less than used 4070 (Ti or S) here, and it will be quite cheap after flipping the 3070. Either way, 12GB will feel like a compromise and temporary stop gap. Really, a 4070TiS would be ideal, but will have to stretch the budget a little even after prices drop. 5060ti 16gb? Might not provide much raw performance improvement though (4060ti was not even an upgrade).  GPU market just us what it is these days...",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "mauusvn",
+                      "text": "I play 4k only and jumped from a 3070 to a 4080 Super. No regrets",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mattrh7",
+                  "text": "It's only crazy if youre not aware of the death of Moore's law.",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "maut33c",
+                  "text": "I was considering upgrading from my 3080 as well; it's a great card but is definitely starting to fall in sub 60-FPS territory in high settings on some games.\n\nBased on this review aggregation it seems like the 5080 performance is 66-112% above the 3080 at 1440p/2160p RA/RT.  While I understand people would prefer something like 2X performance of the previous generation for raster generation, it's difficult to imagine that a 66%-122% increase in performance would not be noticeable.",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "maw5478",
+                      "text": "It would be noticeable. Just not huge. It would get you to 60fps if you're falling behind to 45. But it wouldn't suddenly go high refresh in those titles. It also may make CP path tracing in 4k go from 30 to like 45-ish fps. Better, but it didn't feel like it's enough to unlock new experiences. \n\nIf that's enough for you, go for it. To me it felt like an upgrade for sure, but too underwhelming one to justify the cost and effort to me personally in hindsight. My own lesson learned is that next time I'd need a 2-3x GPU performance uplift, which is the kind of jump you'd historically see when upgrading every other gen, but now may need to wait until every third gen.",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "maurffn",
+                  "text": "&gt;As someone who upgraded from the 3080 to the 4080 Super, which is basically nearly-5080, it was the most underwhelming jump I've made\n\nMade the same exact jump last month and couldnt agree less. I was shocked by how much of an uplift it was. It was like a 30-50% pure raster uplift, then when you add in FG its even more impressive.",
+                  "upvotes": 6,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mauw7r3",
+                      "text": "In the same boat but haven\u2019t received my card yet.\n\nSure the 3080 12gb is still a strong card and I plan on using it elsewhere, but the performance jump looks quite nice especially with how well the AIB cards are overclocking.\n\nMight not be a 200% jump but I\u2019m still happy for it.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "mbpblaw",
+                      "text": "You probably have a better CPU, that's the part a lot of people forget.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "mbprjdn",
+                          "text": "Its possible. I did upgrade from a 5800x to a 9800x3d shortly before.\n\nStill a CPU bottleneck is the users problem not a hit on the 40xx series.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mavn3i1",
+                  "text": "If I have a 3070 is it worth upgrading? I play at 1440p",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "matzijd",
+              "text": "Ride it out until the 5080 ti/super/whatever, you KNOW it's coming.  3080 is still solid just deal with lower texture quality for a while.",
+              "upvotes": 14,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "maujy2u",
+                  "text": "That\u2019s where I\u2019m at. 5080 ended up just slightly under where I would have liked it to upgrade, and ultimately the 3080 is still an exceptional card for 1440p. I don\u2019t need every game cranked to Ultra/Extreme and generally I turn RT off and Shadows down due to preference anyway.\n\nI\u2019ll pick up the mid cycle refresh or maybe just turn the DLSS preset down a notch on newer games and chill until 60 series.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "maykpvs",
+                  "text": "The refresh isn't likely going to bring any real performance increase though. 5080 already maxes out GB203 and Nvidia certainly isn't going to cut down GB202 unless the datacenter market completely collapses overnight. Mid-gen N3 die shrink is also incredibly unlikely for consumer products.\n\n24GB VRAM is realistic, but I don't think 5080ti is going to be any faster than an overclocked 5080. In hindsight buying a MSRP 4090 2 years ago was the wisest decision.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mau4k77",
+              "text": "I regret not buying 4090 when building my PC, I\u2019d say 4090 is better buy if you can find one at reasonable price.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "mau7b17",
+              "text": "I made that jump and am underwhelmed.  Got lucky on Best Buy on day 1 and got a 5080FE.  Installed Saturday.   \n\nI play on a 3440x1440 monitor @ 144. cpu is a 5800x3d\n\nCyberpunk could be turned up a little, but honestly still absolutely has to have dlss on to run any ray tracing and high/ultra settings.   Not impressed.\n\nBG3 runs beautifully now fully maxed out.\n\nHelldivers 2 runs better but mostly just getting better framerate, didnt have many settings turned down.\n\nIf I can manage to get a 5090FE for msrp while the return window is open for the 5080, I probably will do so.  I was on the fence about the price before, but other than a used 4090, it's the only other card that makes sense. I've had my 3080 since release though so I did feel like it was time for an upgrade.",
+              "upvotes": 8,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mawrunk",
+                  "text": "&gt;Cyberpunk could be turned up a little, but honestly still absolutely has to have dlss on to run any ray tracing and high/ultra settings. Not impressed.\n\nI mean... a 5090 isn't capable of reaching 30fps in Cyberpunk with path tracing on at 4k. It's just that demanding.\n\nEven on a 1440p widescreen setup like yours, a 5090 is going to require DLSS for path tracing unless you're willing to live with sub-60 framerates.",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mb06akb",
+                      "text": "I don't need everything turned up.  I was just really surprised that i didn't \"feel\" a bigger difference between my trusty ol evga 3080 10gb and this new 5080. On paper, it seems to add up, I just thought it would feel like more.\n\nmy card path has been:\n7970GHZ  --&gt; 980ti  --&gt; 1080ti  --&gt; 3080  --&gt; 5080.   This has been the least noticeable I feel.\n\nAppreciate your comment, keeps me grounded in my expectations.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "mb2pb3e",
+                          "text": "To be honest, I'm sorta surprised you don't either. I guess it depends on the games you play. A 3080 is still a very capable 1440p card. If you were already maxing your monitor before, then, obviously, it's not going to feel any different. \n\nAlso, if you're not playing Cyberpunk, Star Wars Outlaws, Wukong, and Alan Wake 2 (all very RT-heavy games, potentially), then the result will also not be as impressive. Outside of those games, and a handful of others, you were probably getting excellent frames before with a 3080 at 1440p.\n\nAnd, honestly, I wouldn't worry too much about DLSS. With DLSS 4 and the new transformer model, I'd honestly be surprised if you could tell the difference between DLSS Quality and native, even at 1440p. It really is ***that*** good. It's about as close to a \"free FPS\" toggle as anything I've ever seen. \n\nIt's a very capable card for 1440p widescreen. I'd probably just stick with the 5080 FE, especially if you managed to get it at MSRP. Yeah, the 5090 is better, but at that resolution and that framerate, I just don't think there's that much additional value in the 5090.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "mb6xu4f",
+                              "text": "The 3080 ran out of vram in more than just cyberpunk unfortunately. \n\nCouldn't max out Mech Warrior 5, BG3, Enshrouded, Forza, or honestly anything made in the last 5 or so years and expect anything over 72fps. \n\nI tried DLSS when it first came out and the texture pop in was really terrible. I avoid it if at all possible. Maybe it's better now, but I notice texture pop in way too easily to ignore it.\n\nI'm not sure that I agree that the 3080 10gb was very capable at 1440 ultrawide at anything over 60fps.  AT 60fps, and 2560x1440, I'd say it's still quite good.\n\nI always buy the 80 or 80ti when it releases, every other generation. I'm almost 40 and been at this a while. I just didn't list everything in my first post about this.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "mb6ztpm",
+                                  "text": "The first iteration of DLSS was pretty awful. Later iterations (that actually used machine learning) were a lot better. Honestly, DLSS4 is getting pretty close to perfect. In a blind test, on quality, I don't think you could tell the difference, really. Don't let DLSS 1 spoil the technology for you. It's pretty awesome.\n\nTexture pop-in is a problem that's not related to DLSS, as far as I know. It's engine related. For games like Cyberpunk, even on a high-end system like mine, texture pop-in can be pretty annoying. It's honestly the biggest graphical problem with that game, but turning off DLSS doesn't change anything at all. It still happens. It's just how the engine works. RDR2 is the same way.\n\nThe biggest problems with DLSS are minor shimmering, which is annoying, but not game breaking, and fuzzy artifacts around objects in motion. DLSS4 has really minimized these problems, though, to the extent that they either don't exist or are very hard to spot in realistic gameplay scenarios.\n\nBut my experiences may be a little bit different because I play at 4k. Even at 4k, though, DLSS performance, on the new transformer model, is insanely good, and it's native 1080p. I honestly can't tell the difference between it and the higher settings in Cyberpunk.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "mb7f55h",
+                                      "text": "Oh man your mention of RDR2 having pop in jarred my memory! I need to boot that up and see how she runs now!  \n\nI'm going to give DLSS another shot on other games too. I guess I just picked the worst games to base my opinion of the tech on!\n\nMech Warrior 5 is crashing now with fatal errors, seems UE4 games might have a problem with this 572.16 driver. That's a bummer.\n\nThanks for talking this out with me!",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "mb7lyau",
+                                          "text": "RDR2 also uses a relatively old DLSS version, FWIW. \n\nAnd, yeah... the recent driver has been pretty unstable for me as well, actually.\n\nDefinitely give DLSS another shot, though. Use the Nvidia app. It should tell you which games you can auto-update with DLSS4. That'll give you the best results.",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "matl1np",
+              "text": "Practically speaking, going from 3080 &gt; 5080 is effectively just going to be a 1-generation jump. I feel like it's only cost effective to upgrade when there's a true generational jump with tangible hardware improvements (increasing VRAM/core count/process node improvement) at the same class of card, like 2080 &gt; 4080.",
+              "upvotes": 9,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mawpxfi",
+                  "text": "Depends on how you define a generation, I guess. I generally think a 30% jump gen-on-gen is pretty typical, honestly.\n\nSo, a 65% jump from the 3080 to a 5080 is about what you'd expect, but, yeah... the vast majority of that jump happened with Ada. And, of course, you need to deal with the shitty reality that MSRP increased by 40+% as well from the 3080 to the 5080.\n\nThe best play might even be to see if you can get a 4080S on sale, but that's not looking likely. Maybe the used market would be better?",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "mattykw",
+                  "text": "A Moore's law generation yea but we live in a post Moore's law world. If Nvidia had chosen N3 wed have seen greater performance for Blackwell but then prices would have shot up due to the extra costs.\u00a0",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

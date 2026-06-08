@@ -1,7 +1,7 @@
 {
   "productName": "amd-radeon-rx-7900-xt",
   "batchIndex": 21,
-  "totalBatches": 36,
+  "totalBatches": 42,
   "comments": [
     {
       "commentId": "1j7fhzl",
@@ -14,103 +14,152 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mgwlzy4",
-          "text": "This is many number, and I many stupid\u2026\n\nIs there a TLDR?",
-          "upvotes": 25,
+          "commentId": "mgwi8cc",
+          "text": "Worth mentioning, that ray tracing includes black myth wukong, which is completely broken on AMD and is basically bruteforced, so it Heavily bricks the results for ray tracing on AMD cards. It's ~5-6% better average if you exclude it (since it's a huge outlier)",
+          "upvotes": 310,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user discusses the ray tracing performance of AMD cards, specifically mentioning how a certain game affects the results.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user states that ray tracing is 'completely broken' on AMD cards for a specific title.",
           "replies": [
             {
-              "commentId": "mgwmq1l",
-              "text": "TLDR, just look at the average row for each set. It's normalized to a 5070, so if the average line for a card is 110%, that means it's 10% faster than a 5070.",
-              "upvotes": 32,
+              "commentId": "mgwj5og",
+              "text": "This. Removing the statistical anomaly or highlighting it would be helpful for a more accurate understanding.",
+              "upvotes": 151,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "mgwth3l",
-              "text": "for rasterization without raytracing, 5070 &lt;= 9070 &lt;= 7900xt within 10% and 5070ti = 9070xt &lt;= 7900xtx so check if 7000 series is cheaper than corresponding 9000 series when buying  \nif you want raytracing it's basically reversed, 5070 &gt; 9070 &gt; 7900xt within 10% and 5070ti &gt; 9070xt &gt; 7900xtx within 20%",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user is contributing to the discussion about the accuracy of AMD's ray tracing performance benchmarks.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is calling for more accurate statistical representation without expressing a clear positive or negative opinion on the product itself.",
               "replies": [
                 {
-                  "commentId": "mgwwv2v",
-                  "text": "Also don't forget access to FSR4 when choosing between 9000 and 7000 cards. It's apparently a night and day difference",
-                  "upvotes": 14,
+                  "commentId": "mgykae4",
+                  "text": "That's why I'm a fan of using something like geometric mean for these types of comparisons",
+                  "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "mgy4dki",
-                      "text": "Just because of FSR4, I'd trade my 7900XTX for a 9070XT. The ghosting and disocclussion artifacts are terrible for FSR3. \n\nHowever, I still feel like we will see an int8 quantitized variant of FSR4 for RDNA3. Call it FSR4 lite if you will. I tend to play with XESS mostly because of this. I think AMD might get away with just a regular quantitized version of the model that performs a bit worse. Thankfully, RDNA3 has a lot of regular compute available.",
-                      "upvotes": 6,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "mgxtbgb",
-                      "text": "I\u2019ve heard that too, so it makes it a lot harder.\n\nPeople recommend 7800\u2019s, buuuuuut you\u2019re giving up what seems like an important advancement, even if the raw power holds up for 1440p gaming.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about statistical methodology (geometric mean) and not the product's performance.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is expressing a preference for a mathematical method.",
+                  "replies": []
                 },
                 {
-                  "commentId": "mgxt78s",
-                  "text": "You are beautiful, thank you.\n\nI suppose ray tracing is a personal preference?\n\nI don\u2019t think I\u2019ve used it much, or perhaps ever? I have a 3060 and haven\u2019t ever thought explicitly about enabling it.\n\nBut\u2026in your experience and preference\u2026do you like it and think it\u2019s worth it?",
-                  "upvotes": 1,
+                  "commentId": "mgxmynq",
+                  "text": "It's not an outlier tho. 9070XT just gets obliterated in full RT. \n\nhttps://ibb.co/album/HL1B1F\n\nhttps://ibb.co/album/QpQ4vD\n\nIt's actually performing better in black myth wukong than Indiana jones or alan wake 2 full RT",
+                  "upvotes": -41,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user claims the 9070XT (and by extension the 7900 XT series) is 'obliterated' in full ray tracing.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user uses strong negative language to describe the product's performance in ray tracing.",
                   "replies": [
                     {
-                      "commentId": "mgzazq9",
-                      "text": "It's absolutely personal preference. But you're going to have to try it out wherever it's offered; don't just let random people on a subreddit influence you into ignoring it. \n\nAnd keep in mind, whatever framerate you're gonna get with ray tracing on your RTX 30 series is gonna be much better on an Nvidia 50 series *or* a Radeon 9000 series.",
-                      "upvotes": 2,
+                      "commentId": "mgyk16t",
+                      "text": "Your definition of obliterated is different than mine. We can agree to disagree.",
+                      "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "mgyjz9s",
-                      "text": "personal preference mostly, if you want the highest quality in every game on 1440+ resolution you might want to try raytracing, but you're going to pay a premium since you would ideally want 5070ti+.\u00a0\u00a0\ni'd still go with amd for the lower price if that's not the case",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
+                      "relevance": "include",
+                      "relevanceReasoning": "The user is debating the extent of the performance gap in ray tracing.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is simply disagreeing with the term 'obliterated' without providing a new positive or negative claim.",
+                      "replies": [
+                        {
+                          "commentId": "mh02lcd",
+                          "text": "You could have contested the importance of those *particular* results (don't care about path tracing / RT is mostly okay, Nvidia-fork of Unreal, Nvidia affiliated studio..) but to contest the numbers? my man, you're insane if you pretend nearly 3x faster is anything but total anihilation.\n\nWhatever helps you sleep at night i guess.",
+                          "upvotes": 6,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user argues that the performance difference is so large that it constitutes 'total annihilation'.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user is highlighting a massive performance deficit compared to the competition.",
+                          "replies": [
+                            {
+                              "commentId": "mhfolu6",
+                              "text": "&gt;\u00a0nearly 3x faster is anything but total anihilation.\n\nits more like 2x, but i also agree, but even then, these are still outliers.\n\nthe vast majority of games released in the next 5 years are going to be raster and ray traced, and the games that are purely ray traced are going to run poorly on the 5070ti and the 9070 xt. a 5070ti isn't going to make a game that is unplayable on the 9070xt playable, so the difference in ray tracing performance really isn't all that worth mentioning, even if the 5070ti is twice as fast, because its like...30 frames instead of 15. Not 120 instead of 60.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "The user argues that the ray tracing performance difference is not significant because the games run poorly on both.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is attempting to downplay the negative performance gap, but doesn't express satisfaction with the product.",
+                              "replies": [
+                                {
+                                  "commentId": "mhghpub",
+                                  "text": "&gt; the difference in ray tracing performance really isn't all that worth mentioning\n\nIt's a 2x to 4x performance difference! it matters! \n\n&gt; even if the 5070ti is twice as fast, because its like...30 frames instead of 15. Not 120 instead of 60\n\nThat's pure copium, are we *really* just going to repeating this nonsense every time? Nvidia GPUs have largely aged far better than people gave them credit for on launch. Turing supporting full DX12_2 gave it *far* more longevity than anything AMD had around at the time and nobody realised it back then. DLSS also helped a lot as Nvidia kept iterating on it and releasing new updates that keep improving image quality. \n\nAs for \"it's a 30fps baseline, who cares\".. this is at 4k path traced with minimal upscaling. at 1440p, it's nearly *4* times faster in IJ and nets you a very playable, fairly stable 53fps. compare that to 12fps on the 9070xt.\n\n*How* can you possibly believe that the 9070xt is going to age even remotely as well as any Nvidia card from this generation?",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "The user argues that the 9070XT/AMD cards will age poorly due to the ray tracing gap.",
+                                  "sentiment": "negative",
+                                  "sentimentReasoning": "The user expresses a strong belief that the product will not age well compared to Nvidia.",
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "mgykgl8",
+                          "text": "I think being beaten by your competition by 50-250% under those settings counts as being obliterated",
+                          "upvotes": -7,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user claims the product is beaten by 50-250% in certain settings.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user is highlighting a significant performance failure.",
+                          "replies": [
+                            {
+                              "commentId": "mgytqj3",
+                              "text": "Not when neither offers good performance. At least target 60 fps on the 5070 ti so we can see where the 9070 xt actually lands.",
+                              "upvotes": 4,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "The user is discussing the actual performance levels of the 9070 XT.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is questioning the benchmarks without expressing a clear positive or negative sentiment.",
+                              "replies": [
+                                {
+                                  "commentId": "mgyu2ly",
+                                  "text": "Itll land the same proportionally. Just do the math. Also some people are fine with the cinematic 30-40fps locked gaming graphics over fps you know",
+                                  "upvotes": -12,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "The user is discussing the performance expectations for the 9070 XT.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is arguing about frame rates and preferences, not the product's quality.",
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
+                }
+              ]
+            },
+            {
+              "commentId": "mgy6ecz",
+              "text": "Worth mentioning that Black myth wukong uses a specific Nvidia fork of unreal engine. Not a conspiracy to assume that Nvidia cards have primary focus on that engine.\u00a0",
+              "upvotes": 47,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The user discusses the technical reasons why AMD cards might perform poorly in a specific game.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical explanation for the performance gap.",
+              "replies": [
+                {
+                  "commentId": "milm1ph",
+                  "text": "Not to mention it's UE 5.0, so it's terribly outdated for general UE5 performance.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about the version of the Unreal Engine, not the product itself.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a factual statement about software versioning.",
+                  "replies": []
                 }
               ]
             }
@@ -118,5 +167,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

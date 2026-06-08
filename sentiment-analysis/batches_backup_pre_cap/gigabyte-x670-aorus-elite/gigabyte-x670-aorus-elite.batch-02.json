@@ -1,0 +1,318 @@
+{
+  "productName": "gigabyte-x670-aorus-elite",
+  "batchIndex": 2,
+  "totalBatches": 66,
+  "comments": [
+    {
+      "commentId": "1j922ym",
+      "text": "Gaming on RTX 3080 12GB vs 9070 XT - My benchmark results\n\n# Intro\n\nGreetings!\n\nSo I have managed to get my hands on a Gigabyte Gaming OC 9070 XT at my local store (Canada Computers in Quebec), and since I am upgrading from a Gigabyte RTX 3080 12GB Gaming OC, I thought it could be fun to gather results to know EXACTLY what I am buying.\n\nAnd so I ran gaming benchmarks. Lots of gaming benchmarks. And compiled the results in an excel sheet, which I am now publishing for you guys here. Hope you find this fun or useful! I saw some people on the fence about upgrading from a 3080, so this should provide a bit more data.\n\n[Here are my findings, on google sheets.](https://docs.google.com/spreadsheets/d/118H1-Gc3btCrlDYFJZtdjQK98z3hKr5Xhc-bnhGkiWU/edit?usp=sharing)\n\n# What this is\n\nThese are my benchmarks, run on my system, using a 3080 12GB and then a 9070XT. None of the cards are overclocked manually. I am not a reviewer or professional, just an enthusiastic gamer and tech lover. These were done for fun!\n\n# Testing Methodology\n\nI ran the games that had built-in benchmarks (one exception: Stalker 2). I used CapFrameX to capture the Average FPS and the 1% Lows average. I would start the capture as soon as the first game images were visible on screen and stopped the capture when there was either the loading screen before the end results or the end results screen appeared.\n\nThe number of runs done are indicated in the sheet. All numbers are averages of the specified number of runs (most of the time, 3 run average). All tests are done at 1440p, highest settings if possible unless otherwise noted in the \"notes\" cell for each game. When DLSS or FSR is used, I mention it, along with (if possible) the version used.\n\nPC Specs:\n\nAMD Ryzen 7 7800X3D, G.Skill F5-6000J3038F16G (32GB DDR5, 6000 MHZ), GIGABYTE X670 AORUS ELITE AX, Windows 11 Pro.\n\nDrivers: Nvidia 572.16 Game Ready and Adrenalin 25.3.1\n\n**Note**: I did not stop the capture during a benchmark between scenes. This means, for example, that in Avatar Frontiers of Pandora, the loading screens (2) between the 3 scenes are *counted in the benchmark results.* This was to make my life simpler, as after all my benchmarking is mostly for fun!\n\nTModel means Transformer Model for DLSS (4). 3.1=&gt;4 for FSR means the game is using FSR 3.1, but I converted it to FSR 4 using the Adrenalin toggle for FSR 4.\n\n**Exception:** The Stalker 2 run is a quick and dirty run. I loaded the same save, and did the same actions in a very short period of gameplay (about 2-3 minutes). It was just to see what kind of uplift I could get in that game.\n\n# Results\n\n[Again, findings in my google sheet here.](https://docs.google.com/spreadsheets/d/118H1-Gc3btCrlDYFJZtdjQK98z3hKr5Xhc-bnhGkiWU/edit?usp=sharing)\n\nI am looking at a 30% performance uplift in raw raster in average, and roughly 30% as well in Raytracing. For the price I paid (\\~660 USD), I'd say that's pretty good! I was looking for an upgrade from my 3080 12 GB and it seems to be it. Gone are the days of the 50% uplift unfortunately, or even 100%. But that's okay by me. Sure, I am downclassing (going from an 80 class card to 70 class), but in the current market I'd say it's the move to do.\n\nFor those of you with a 3080 10GB, the 3080 12GB is about 6% faster. So you can take the results of these benchmark, and divide them by 1.06 to get an estimate of how the 3080 10GB would look.\n\n# Final thoughts\n\nI'd say I am happy with it, but I'm giving myself time to adjust to the Radeon suite instead of Nvidia. It's an adjustment for sure...\n\nNo overclocking done yet! But it's on my TODO list. I might report back just saying how much, in synthetics, I managed to gain. I also might make an edit or a comment detailing my experience with Radeon drivers and the AMD Adrenalin software suite.\n\nHope you enjoyed this!\n\n# EDIT (2025-04-24): \n\nIt's been a while. Card is still rock solid, works super well. \n\n**Software:** Adrenalin has been pretty great for me. I had a weird hiccup when trying to benchmark games, but after a reinstall it's been smooth sailing ever since. Easy to manoeuver around and understand. Adrenalin is good. Minor nitpick: Sometimes, the hotkey to bring up Adrenalin makes you wait a good 5-10 seconds before it pops up. No idea why. But it doesn't always happen. I'd say I am happy with Adrenalin.\n\n**Overclocking:**\n\nI overclocked it to 0 on the GPU Clock, 2800 on the Memory clock, and -40 on the undervolting. Steel Nomad (Stress Test) went from 7243.66 no OC to 7557 with OC. Little gains, but my OC is **very** stable. I could probably afford to go more reckless if I decided to tweak per title.\n\nHaven't dived into a secondary OC profile for \"efficiency\" that I would tune per game. But that's ok!\n\n**Fan Curve:** Guys, it's pretty damn near necessary for the Gigabyte 9070XT Gaming OC to tweak the fan curve. By default, the card is way, way too loud for no reason. The fans can go to 4200 RPM! The fix is pretty easy, just set a fan curve in Adrenalin. For the curious ones or people like me, **my fan curve is as follows:** Each number is the number in adrenalin for a node (P1, P2 etc.) with first number being fan speed and second number being Temperature. \\[P1: 20, 60\\] \\[P2: 50, 80\\] \\[P3: 67, 88\\] \\[P4: 100, 93\\] \\[P5: 100, 98\\]\n\nWith this fan curve, the card is much quieter, doesn't bother me anymore. It's much, MUCH quieter, while also staying cool from what I saw in HWinfo running Furmark for 20 mins. Hotspot goes to 93 Celsius I believe, in the worst case.\n\nSo that's it for the update! I am enjoying it so far.",
+      "upvotes": 282,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "mha2raj",
+          "text": "Nice work! I'm on a 2080 super and was tossing up between a second hand 3080 or a new 9070 xt. Think I'll just go new!",
+          "upvotes": 86,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experiences with Gigabyte X670 Aorus Elite",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents positive sentiment about the product.",
+          "replies": [
+            {
+              "commentId": "mhaliue",
+              "text": "I definitely wouldn\u2019t get a 10GB 3080. That VRAM is going to be limiting sooner rather than later",
+              "upvotes": 43,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the relevance of VRAM in relation to the Gigabyte X670 Aorus Elite",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a neutral stance on the relevance of VRAM in relation to the product",
+              "replies": [
+                {
+                  "commentId": "mhax0qu",
+                  "text": "Oh yeah. Already is at 1440p in some games, like Hogwarts Legacy.",
+                  "upvotes": 16,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the gaming performance of Gigabyte X670 Aorus Elite",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Presents a positive sentiment about the product's gaming performance",
+                  "replies": [
+                    {
+                      "commentId": "mhbv90z",
+                      "text": "Shit, I have a 7900XT with 20 GB of VRAM and some games hit 16-18 GB reported usage.",
+                      "upvotes": 7,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses personal experiences with a specific hardware configuration.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Presents a neutral sentiment about the personal experience.",
+                      "replies": [
+                        {
+                          "commentId": "mhbyvai",
+                          "text": "I continue to not regret my 7900XTX",
+                          "upvotes": 10,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "Presents a positive sentiment about the product.",
+                          "replies": [
+                            {
+                              "commentId": "mhcw2wu",
+                              "text": "Same! I bought a prebuilt around 2,5 years ago, it had a 3080 TI amongst other things. \n\nThe 3080 actually died about 3 months later, in december -22, and they had no extra 3080 TI in stock and not many of the other high-end Nvidia cards would fit my chassis so I got the option to upgrade to 7900XTX (which had just released) if I paid a little money, approx 150-200 dollars added inbetween. \n\nVery happy with this decision, it's my first AMD card and while the drivers/software might be subpar to nvidia equivalent, the performance is insane",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite",
+                              "sentiment": "positive",
+                              "sentimentReasoning": "Presents personal experience without clear positive or negative bias.",
+                              "replies": [
+                                {
+                                  "commentId": "mhf90ur",
+                                  "text": "Lots of people like Adrenalin much better than nvidia software. The drivers are for sure a little weaker though.",
+                                  "upvotes": 3,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "Discusses personal preference for Adrenalin over Nvidia software.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "Presents personal preference without clear positive or negative bias.",
+                                  "replies": []
+                                }
+                              ]
+                            },
+                            {
+                              "commentId": "mhbzbhu",
+                              "text": "Got mine cheap for $200 from a buddy who was having driver issues and card crashes. A repaste, a few days of swearing at AMD drivers, and it's stable.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite",
+                              "sentiment": "positive",
+                              "sentimentReasoning": "Presents a positive sentiment about the product's performance and stability",
+                              "replies": [
+                                {
+                                  "commentId": "mhcfowi",
+                                  "text": "Anything specific you remember doing to please the AMD drivers lust for chaos? I still deal with random black screens when pc goes to sleep mode and sometimes at random during usage.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "Discusses personal experiences with Gigabyte X670 Aorus Elite and AMD drivers.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "Presents personal experiences with Gigabyte X670 Aorus Elite and AMD drivers.",
+                                  "replies": [
+                                    {
+                                      "commentId": "mhcg1tc",
+                                      "text": "Don't let the PC go to sleep. On or off. That's been my issue with AMD drivers since the 480. \n\nAs for random black screens during usage, I also had this and I think DDU is not perfect and a fresh windows install is required with no internet access. I am on 24.10.1 driver only install. I had to perform a fresh windows 11 install with no internet connection whatsoever, download every single motherboard, chip set, GPU, etc. driver that I needed onto a thumb drive and move them over to install them before I allowed the new Windows install to see the Internet. No problems.",
+                                      "upvotes": 3,
+                                      "classifyThis": true,
+                                      "relevance": "include",
+                                      "relevanceReasoning": "Discusses personal experience with AMD drivers and DDU issues",
+                                      "sentiment": "negative",
+                                      "sentimentReasoning": "Presents a negative sentiment about AMD drivers and DDU issues",
+                                      "replies": [
+                                        {
+                                          "commentId": "mhchl9h",
+                                          "text": "Damn, that's finnicky as hell. Thanks for the insight!",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": "include",
+                                          "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite",
+                                          "sentiment": "negative",
+                                          "sentimentReasoning": "Presents a negative sentiment about the product.",
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "commentId": "mhfip8o",
+                                  "text": "That's funny because mine was to replace my 3080 that would crash under load despite temps and other things being fine",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "Presents personal experience without clear positive or negative bias.",
+                                  "replies": []
+                                }
+                              ]
+                            },
+                            {
+                              "commentId": "mhdinz9",
+                              "text": "It's a good card!",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "mhdimt9",
+                          "text": "Yeah, especislly in 4k. 1440p 16gb is enough for now. But VR and 4k? Yeah you'll hit that hahah",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses the relevance of Gigabyte X670 Aorus Elite in 4k and VR gaming.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "Presents a positive sentiment about the product's performance in 4k and VR gaming.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mhd9gfr",
+                  "text": "Have had a 3080 10GB since release and I tell ya, it's really showing its age now unfortunately.\nI have a 4K display and I've had to pop it down to 1440p as the dips are just getting too annoying to dismiss.\n\nIf AMD comes out with a 9080 or something this generation then I'll be hopping on that.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite and mentions AMD's upcoming product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents personal experience with Gigabyte X670 Aorus Elite and mentions AMD's upcoming product.",
+                  "replies": [
+                    {
+                      "commentId": "mourxut",
+                      "text": "I find it crazy how quickly gpu\u2019s start to get out of date. Feels like the 3080 just came out.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the rapid pace of GPU technology advancement",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "Presents a negative sentiment about the rapid pace of GPU technology advancement",
+                      "replies": [
+                        {
+                          "commentId": "moxb2uj",
+                          "text": "It's incredibly frustrating. I managed to pick mine up on release for MSRP so that was nice, but always lamented the 10gb of vram.\nIt really show how poor of a decision that was. It sounds ignorant to say it but it would make a great 1080p card \ud83d\ude44",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses personal frustration with Gigabyte X670 Aorus Elite.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Presents personal frustration without clear positive or negative bias.",
+                          "replies": []
+                        },
+                        {
+                          "commentId": "mq0pnnn",
+                          "text": "I upgraded to the 3080 12gb in 2022 and some of the newer titles would crash my PC",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "Presents a negative sentiment about the product's performance",
+                          "replies": []
+                        },
+                        {
+                          "commentId": "n715ruj",
+                          "text": "It is still perfectly usable lol.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Relevance: Excluded",
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mhujf7b",
+                  "text": "Honestly it's already starting to be limiting that's the only reason I've decided to upgrade",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses personal experiences with the product",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Presents a positive sentiment about the product",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mha3xng",
+              "text": "Eyyy! Glad I could help with that decision! It's been pretty good so far for me, I hope it will be the same for you.",
+              "upvotes": 11,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experiences with Gigabyte X670 Aorus Elite",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents positive personal experience without clear positive or negative bias.",
+              "replies": []
+            },
+            {
+              "commentId": "mha8142",
+              "text": "Here's something to always consider with new versus second hand. How often do you plan to upgrade? How okay are you with selling your card later?\n\nIf you buy a new card now, you can still get a very good price for it 3-4 years later. A second hand card that's already pretty old (like the 3080) is only worth it if you can find a killer price on it.\n\nBut if you are paying for that used 3080 2/3 of a new 9070 xt... that's not even a question. In 4 years you will probably still be able to get half your money back selling your 9070 XT (might be even more depending where you live or how fucked up the GPU market continues to be, you might even recoup 66%, lol). So that cuts into the price of that 9070 XT you had for those 4 years, actually makes it not just more performant but ultimately a better deal. Selling a 3080 in 4 years will get you less than half of what you might be paying for it now, especially because driver support might be close to end of life at that point (the 3080 Ti will be 8 years at that point).\n\nAlthough I will say this, something to consider in the future, the best time to buy a new card is getting the current generation of GPU just before the next one comes out, because stores are trying to clear up shelf space for the new cards and that's when you will get the best prices. Even if your new card is a model that's 1 to 2 years old, that's still fine and you will get a much better price for it in 3-4 years, if you want to sell it to someone else, once it's out of warranty.\n\nBut at the same time with how the GPU market continues to get more and more fucked, this tip might not hold true for long.",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the value of buying a used card versus a new one.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a balanced argument for buying a used card.",
+              "replies": [
+                {
+                  "commentId": "mhaaw2m",
+                  "text": "Yeah not many new previous gen cards available where I am. The ones that are are priced to the moon",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses availability and pricing of previous generation cards",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Presents a negative sentiment about the pricing and availability of previous generation cards",
+                  "replies": [
+                    {
+                      "commentId": "mhawy46",
+                      "text": "Yeah the GPU market is pretty bad where i live too second hand. I bought new for that reason.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses personal experience with the GPU market.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Presents personal experience without clear positive or negative bias.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "mhdrnqh",
+              "text": "2080 Ti reporting in. Same boat. Buuuut the stupid thing is that 5070 Ti lowest price crosses over with mid range 9070XT price and you get better RT performance with that, otherwise same same. Tough choice. The thing that might tip the scale for me is my G-sync monitor, which is kind of a big deal tbh.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the performance of the Gigabyte X670 Aorus Elite against the 9070XT and the impact of the monitor on the decision-making process",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a balanced perspective on the product's performance and the influence of the monitor",
+              "replies": []
+            },
+            {
+              "commentId": "mhgnf73",
+              "text": "Years ago I went from a 980 to a 2070 Super OC (Chip lottery winner too, maintaining ~100mhz higher boost clock frequency nearly indefinitely).  \nThat performance boost felt insane.  \nI\u2019m hoping my next upgrade, to perhaps the 9070, feels like that again. Cause it\u2019ll be the last time :-P. Moores Law and all",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experience with a specific GPU model",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents personal experience with a specific GPU model",
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

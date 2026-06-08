@@ -1,0 +1,262 @@
+{
+  "productName": "nvidia-rtx-5090-32gb",
+  "batchIndex": 8,
+  "totalBatches": 19,
+  "comments": [
+    {
+      "commentId": "1svuf1e",
+      "text": "Building a desktop PC that can handle Gemma 31B\n\nHey everyone, not a native speaker so please correct me if I make mistakes!\n\nWith the current trend of API providers making their models worse over time, models becoming unavailable or \"sunsetted\"/removed, it might be nice to know how to put your own system together capable of running Gemma4 31B.\n\nI will highlight decisions I made during building my own PC back in January 2026, and will be using current (2026-04-26) Dutch prices as reference.\n\n# Goal\n\nRunning Gemma4 31B (Q5\\_K\\_M) with 128K (Q8\\_0) context + mmproj (on CPU).\n\n>Why this target?\n\nWith MoE models we can get away with a single weaker GPU, but for dense models it would be really slow.\n\nRunning Q2/3 quant/s severely hurts the model's accuracy and performance. The difference between Q4/5 is also quite noticable, from Q5 to Q6 and higher depends more on non-latin use ( [https://localbench.substack.com/p/gemma-4-31b-gguf-kl-divergence](https://localbench.substack.com/p/gemma-4-31b-gguf-kl-divergence) ).\n\nWhile I understand Q8\\_0 for context isn't lossless for this model ( [https://localbench.substack.com/p/kv-cache-quantization-benchmark](https://localbench.substack.com/p/kv-cache-quantization-benchmark) ), at half the model's context (128k of 256k) I have yet to experience issues.\n\n# System parts\n\n**Buy used?**\n\nIf you're willing to bear the risk, it is a really good option (and sometimes much cheaper!)\n\nPersonally, due to the uncertain times and not being able to secure that money relatively soon in case anything goes wrong or breaks, **I did not**. So my own choices resolved buying around new hardware.\n\n**GPU**\n\nMost important part(s) of the system. You have a few options:\n\n* NVIDIA RTX 5090 32GB: 3500EU (New)\n* AMD Radeon AI R9700 Pro 32GB: 1500EU (New)\n* **2x NVIDIA RTX 5060 Ti 16GB: 2x 560EU (New)**\n* 2x AMD Radeon RX 9060 XT 16GB: 2x 480EU (New)\n* 2x NVIDIA RTX 3090 24GB: 2x 1000EU (Used)\n* 2x NVIDIA RTX 4060 Ti 16GB: 2x 450EU (Used)\n\nThe R9700 Pro is the best value for money here, and the least hassle. Only downside is how loud it is (blower-style fan).\n\nPersonally I went for two ASUS PRIME RTX 5060 Ti 16GB. I could buy one first and the other later. That specific model is very silent under load and draw very little power. MXFP4 / NVFP4 hardware support is a nice bonus, CUDA makes anything AI software related easy to set up.\n\n>What about intel?\n\nWhile their prices are really good, the performance isn't (slow hardware and unstable drivers). Look up B70 and B60 reviews on r/localllama for more info so you know what you're getting into.\n\n>What about data center GPUs?\n\nNo comment as I have too little experience with them.\n\n>Anything to be careful of?\n\nWhen buying RTX 3000 series cards: they might've been used for mining, which significantly reduced their lifespan if so. Repaste them!\n\nFor RTX 5090, be very careful as they have can catch fire due to bad 12vhpr connectors required for them ( [https://gamersnexus.net/gpus/12vhpwr-dumpster-fire-investigation-contradicting-specs-corner-cutting](https://gamersnexus.net/gpus/12vhpwr-dumpster-fire-investigation-contradicting-specs-corner-cutting) ). Undervolting is a good idea!\n\n**Motherboard**\n\nIf you choose the RTX 5090 or R9700 Pro, any used PCIE 4/5 x16 motherboard is fine.\n\nOtherwise, you really want a motherboard that supports PCIE 5.0 x8x8 mode. Not doing so results in a performance penalty, which is especially bad for the RTX 5060 Ti. Options I know supporting it include:\n\n* **ASUS PROART X870E-CREATOR WIFI: 380EU (New)**\n* ASUS PROART B850-CREATOR WIFI NEO: 270EU (New)\n* ASUS Pro WS B850M\u2011ACE SE: 400EU (New)\n* Gigabyte B850 AI TOP: 400EU (New)\n* ASRock X870E TAICHI LITE: 410EU (New)\n\nI went with the PROART X870E as it has the best chipset available for a good price and good PCIE x16 slot placement for the cards I want to use. Most 2/3-slot GPUs are actually 3/4-slot due to their cooler's size.\n\nIt also supports display routing: Connect the monitor to the motherboard's display port (HDMI or DP), during inference the GPUs can use their full 16GB each and the iGPU handles the display. When playing games, the motherboard uses the GPUs and not the iGPU without having to change cables around.\n\n>What about intel?\n\nNo clue! Too many motherboard series for me to track.\n\n**CPU**\n\nIt kinda depends.\n\n* AMD Ryzen 5 5600 AM4: 130EU\n* AMD Ryzen 5 7600 AM5: 170EU\n* **AMD Ryzen 5 9600 AM5: 200EU**\n\nIf you choose the RTX 5090 or R9700 Pro, you can get away with the the Ryzen 5 5600 or better.\n\nOtherwise, an AMD Ryzen 7600 and better will do.\n\nI went with the AMD Ryzen 5 9600X as I wanted the AVX-512 improvements from the Ryzen 9000 series for my work.\n\n>Why not 8+ cores?\n\nYou won't get much benefit of having more than 6 cores, you're getting RAM bandwidth starved ( [https://www.reddit.com/r/LocalLLaMA/comments/1qdtvgs/comment/nztj6g7](https://www.reddit.com/r/LocalLLaMA/comments/1qdtvgs/comment/nztj6g7) ).\n\n>Why not Ryzen 5500 or Ryzen 8000 series?\n\nThe AMD Ryzen 5 5500 and older doesn't support PCIE 4.0, Ryzen 8000 series doesn't have the PCIE bandwith for PCIE 5.0 x8x8 support. You need 24 PCIE 5.0 lanes usable.\n\n>What about intel?\n\nNo clue! Their power efficiency was too low for me.\n\n**RAM**\n\nYou want to have at least 32GB RAM, prefer 2x 16GB. More capacity is always really useful but a luxury.\n\nI personally have **96GB (2x 48GB) DDR5-6000 CL30** which I bought before the RAM demand increase.\n\nHaving at least 96GB is needed when running 120B MoE models, but you don't need it to run Gemma4 31B.\n\n**Other hardware**\n\nMake sure there is at least 1 slot space between the graphics cards inside your case, and that a strong fan is carrying away the heat of the GPU's backplate.\n\nIf you have an iGPU, attach the display to it to free up a little more VRAM. Every byte counts!\n\n**The software side**\n\nYou really want to use llama.cpp or koboldcpp directly for the least overhead.\n\nMake sure to specify when using two GPUs:\n\n    device = cuda0,cuda1 (or vulkan0,vulkan1 when using AMD)\n    tensor-split = 16,16 (or 24,24 when using RTX 3090)\n\nThat way llama.cpp / koboldcpp knows how to handle the dual GPU setup.\n\n# That's it!\n\n**TL;DR:**\n\n* Get the AMD Radeon AI R9700 Pro + PCIE 4.0 compatible AM4 motherboard + AMD Ryzen 5 5600 + 32GB (2x16) DDR4 3600MHz RAM if that's cheaper for the whole system combined.\n* Get 2x AMD Radeon RX 9060 XT 16GB + ASUS PROART B850-CREATOR WIFI NEO + AMD Ryzen 5 7600 + 32GB (2x16) DDR5 6000MHz RAM for the cheapest PCIE 5.0 based option I know.\n* Get 2x NVIDIA RTX 5060 Ti 16GB + ASUS PROART X870E-CREATOR WIFI + AMD Ryzen 5 9600 AM5 + 96GB (2x48) DDR5 6000MHz RAM if you want to run \\~120B MoE (Q4\\_K\\_M) models in the future with CPU offloading of experts while still being able to run \\~30B dense models at decent speed.\n\nHopefully this infodump was helpful to you! Let me know your questions or thoughts down below, I'll be happy to help where I can.",
+      "upvotes": 84,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "oijfxgc",
+          "text": "overall cost?\n\n",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oimgdmp",
+              "text": "Components:  \n1x [https://www.megekko.nl/product/8197/1169049/AMD-Socket-AM5-Moederborden/ASUS-PROART-B850-CREATOR-WIFI-NEO-moederbord](https://www.megekko.nl/product/8197/1169049/AMD-Socket-AM5-Moederborden/ASUS-PROART-B850-CREATOR-WIFI-NEO-moederbord)  \n1x [https://www.megekko.nl/product/8200/156727/Socket-AM5-Processoren/AMD-Ryzen-5-9600-Processor](https://www.megekko.nl/product/8200/156727/Socket-AM5-Processoren/AMD-Ryzen-5-9600-Processor)  \n1x [https://www.megekko.nl/product/7962/959097/DDR5-Geheugen/Crucial-DDR5-PRO-2x16GB-6000-CP2K16G60C36U5B-geheugenmodule](https://www.megekko.nl/product/7962/959097/DDR5-Geheugen/Crucial-DDR5-PRO-2x16GB-6000-CP2K16G60C36U5B-geheugenmodule)  \n1x [https://www.megekko.nl/product/5093/959091/SSD-M-2/Crucial-T705-1TB-M-2-SSD](https://www.megekko.nl/product/5093/959091/SSD-M-2/Crucial-T705-1TB-M-2-SSD)  \n2x [https://www.megekko.nl/product/1962/194492/AMD-Videokaarten/ASUS-Prime-Radeon-RX-9060-XT-16GB-OC-Videokaart](https://www.megekko.nl/product/1962/194492/AMD-Videokaarten/ASUS-Prime-Radeon-RX-9060-XT-16GB-OC-Videokaart)  \n1x [https://www.megekko.nl/product/4186/967849/PC-Voedingen-PSU-/be-quiet-Power-Zone-2-750W-PSU-PC-voeding](https://www.megekko.nl/product/4186/967849/PC-Voedingen-PSU-/be-quiet-Power-Zone-2-750W-PSU-PC-voeding)  \n1x [https://www.megekko.nl/product/2013/971578/PC-Behuizingen/ASUS-ProArt-PA401-TG-PWM-Zwart-Behuizing](https://www.megekko.nl/product/2013/971578/PC-Behuizingen/ASUS-ProArt-PA401-TG-PWM-Zwart-Behuizing)\n\nTotal price: 2289,70 EUR.\n\nYou can save money replacing:\n\n* CPU: AMD Ryzen 5 9600 -> AMD Ryzen 5 7600\n* NVME: Crucial T705 1TB -> Crucial P310 1TB\n* GPU: ASUS Prime Radeon RX 9060 XT 16GB OC -> ASRock Challenger Radeon RX 9060 XT 16GB\n* PSU: be quiet! Power Zone 2 750W -> DeepCool PF750\n* Case: ASUS ProArt PA401 TG PWM -> Antec AX20\n\nThat would cost 1931,75 EUR total. But personally I wouldn't do that except for maybe the AMD Ryzen 5 7600 and the case, because of the (lack of) component quality and reduction in lifespan in the other parts.\n\nKeep in mind that this is Dutch prices with 21% VAT included, it's well known how expensive tech is compared to other EU regions. In germany it would've been less expensive.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ojbfusv",
+          "text": "I was glad to find out it fits on a 5090 I bought last autumn (I also kept my 12gb 3080) so I have \\~40-42gbs of spare vram on my gaming PC, I can fit a 6bit quant and still have around 30k worth of context (in 8bit iirc), and the model has been pretty great.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "okhicd9",
+          "text": "Thanks a lot for your post, it's very detailed but easy to understand. I've always been more of a fan of owning my own stuff rather than renting, I prefer the control over it and, of course, it's fun to tinker with it. :D",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "okhl9bg",
+              "text": "Glad it was helpful to you!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "oiej2mr",
+          "text": "it would take 100 years of constant use for the gemma 4 api costs to equal this.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oiendw8",
+              "text": "Yes I know it almost never makes sense to run AI local when compared to API costs, if price is your only objective.\n\nBut that's not the point nor the objective in this post (as I outlined).\n\nRunning local does garuantee:\n\n* You own it\n* It will work offline (during internet outages and electricity outages when running on UPS)\n* it is very electricity efficient (in case of 2x RTX 5060 Ti 16GB + AMD Ryzen 5 7600 in ECO mode) and can even run off-the-grid, doesn't pollute as bad as using datacenter over API\n* You know the model and kv cache quant\n* You can run multiple different roleplay optimized models on it not tied to provider's willing to serve or having capacity available\n* The model doesn't get sunsetted/removed at another's whim\n* A single up-front payment, no longer montly API bills\n\nFor the price class I'm talking about, most people already use PCs like this for gaming or work. Adding a second GPU isn't too bad of an expense compared to alternatives (like buying a mac mini for the purpose).",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "oib49x9",
+          "text": "You mention \"less hassle\" with the Radeon card - I'd love to hear from someone using these to hear if they feel like it's actually not a lot of hassle to run with them, or if the lack of CUDA is an issue. (I imagine it depends on the workload.)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oiblrhr",
+              "text": "With my old Radeon, text generation was fine with it. The real problem came when I was trying to go image generation. Then my dumbass bought a 5090 and hit the problem that nothing would work with Blackwell. But this was a year ago. Blackwell support is much better now, and I have no clue about any issues with AMD GPUs now.",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "oib5db0",
+              "text": "Nowadays, many major backends support AMD Radeons out of the box without any extra configuration needed. Lack of CUDA isn't a problem for inference workload today.",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "oib522p",
+              "text": "For comfyui it would be a real pain for sure, but for inference you can simply use vulkan on llama.cpp and get decent token generation at the expense of prompt processing, with ROCM it's the other way around.\n\nReason why I call it less hassle here is that x8x8 has it's own (and in my eyes more) hassle to get set up and working. 32GB unified is easier to fit models than 32GB parallel, not all models offload their layers neatly when split.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "oib6pdh",
+                  "text": "A good news for you: ComfyUI used to be a real pain ass to get it to run on Radeons, but recently they made huge stride in this regard and now they have just one-click portable installer archive just like they do for GeForce. No tons of extra work needed anymore.",
+                  "upvotes": 7,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "oib84xh",
+                      "text": "That's fantastic to hear, thanks for letting me know!",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "oibsaeu",
+          "text": "Why Q5 with 128k context though? I run Q6 with 24k context (fp16) on my 5090. Tested Q5 and above 32k context it's getting fucking textbook sloppy. If you already quantize kv, do yourself a favor and grab the Q6 with ~48k context in Q8",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oibx39r",
+              "text": "Maybe preset or sampler issues? Don't have those issues on my end with a 100k context in q8\\_0. Also check your llama.cpp/koboldcpp version and released quants, it was quite broken until like 4 days ago.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "oicdhou",
+                  "text": "You don't understand. It's not broken, it's just shitty quality. The quality difference between Q5 >40K context & Q6 <40K context is like day and night. Even the big API models start getting incoherent at 100K context",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "oidziel",
+                      "text": "I do understand because I've experienced it firsthand with Magistral Small 2507. And no it's not the case for me. Yes quality does degrade, but not to the extend you are describing.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "oif3xe0",
+          "text": "I\u2019m just starting this hobby and I\u2019m curious. Why use a traditional graphics card like a rtx3090 vs a Tesla p40? ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oifyap1",
+              "text": "Due to architecture, availability and support.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "oig2921",
+                  "text": "Yea architecture makes sense, though I feel like in terms of a discount rig discussion it\u2019s worth mentioning as support isn\u2019t very difficult so far imo. I bought a p40 for $185 a few months ago. ",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "oih3qt1",
+                      "text": "That depends; an MI 50 on windows would require special 3rd party drivers for example.\n\nAs for the P40 I have a hard time recommending it due to their bandwith and lack for BF16 support. Ideally you get a FP8 supported GPU but for a 3090 the VRAM with raw performance makes that less of a must-have.\n\nAlso, what is thr support status of a P40 on CUDA 13? I would worry about the longlivity despite the low price.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

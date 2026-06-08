@@ -1,0 +1,433 @@
+{
+  "productName": "be-quiet-pure-power-12-m-850w",
+  "batchIndex": 94,
+  "totalBatches": 97,
+  "comments": [
+    {
+      "commentId": "18tzgnw",
+      "text": "I am about to spend almost 3.000 \u20ac on a new PC and I am nervous and need your help\n\nHey friends,\n\nAfter about 2 hardcore, 100% autistic focus driven days, I am about to buy parts for my new PC as my old one (about 6 years old) is getting old.\n\nSince the total price amounts to almost 2.700 \u20ac, an I used this subreddit a lot for my research on different components and opinions, I thought before I make some huge mistake, I'll ask you, the experts, what you think about it.\n\nThese are the parts I picked:\n\n* CPU\n\n\\-AMD Ryzen 7 7800X3D (nothing but praise about this one)\n\n&amp;#x200B;\n\n* Motherboard\n\n\\-MSI MAG B650 Tomahawk (this one was hard as there was a lot of Pro/Cons between MSI and Gigabyte)\n\n&amp;#x200B;\n\n* RAM\n\n\\-64 GB Kingston FURY Beast DDR5-6000 (compatible with MSI Tomahawk and I need the RAM)\n\n&amp;#x200B;\n\n* GPU\n\n\\-Sapphire Nitro+ Radeon 7900 XTX Vapor-X 24 GB (The heart of the build. I read a lot of praise about the Nitro+ if one has the money for it)\n\n&amp;#x200B;\n\n* PSU\n\n\\-850W be quiet! Pure Power 12 M (some seem to think you need 1000W with 7900 XTX/ 7800X3D, but most people say that 850 should be more than enough)\n\n&amp;#x200B;\n\n* PC Case\n\n\\-Lian Li Lancool 216 (personal preference and hard choice against the Liamcool II Mesh)\n\n&amp;#x200B;\n\n* OS SSD\n\n\\- the only thing from my old PC: Samsung SSD 970 EVO Plus\n\n&amp;#x200B;\n\n* Main Storage SSD (Files)\n\n\\- Lexar NM790 4TB, M.2 (4 TB for 220 \u20ac and good reviews acros Platforms? Holy)- Seagate Exos X18 18TB (I need a LOT of space for Pictures and Videos and Games and HDD is cheap)\n\n&amp;#x200B;\n\n* CPU Cooler\n\n\\-Thermalright Phantom Spirit 120 SE (lot of praises for this awesome piece)\n\n&amp;#x200B;\n\n* Insurance- GPU has an additional 3 years (so in total up to 5 years) in Assurance from Amazon for 55\u20ac. I\n\nI would really appreciate some feedback from you on my build.",
+      "upvotes": 139,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "kfk6p1q",
+          "text": "*CPU*\n\nI would recommend considering Single Thread performance for which Intel is simply unbeatable. This gives more of the \"snappy\" feeling especially in gaming.\n\n&amp;#x200B;\n\n||AMD Ryzen 7 7800X3D|Intel Core i5-14600K|\n|:-|:-|:-|\n|Single Thread Rating|3757|4314|\n\nRef1: [https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+7800X3D&amp;id=5299](https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+7800X3D&amp;id=5299)\n\nRef2: [https://www.cpubenchmark.net/cpu.php?id=5720&amp;cpu=Intel+Core+i5-14600K](https://www.cpubenchmark.net/cpu.php?id=5720&amp;cpu=Intel+Core+i5-14600K)\n\nMotherboard will thus be a MSi MEG-Z790-ACE.\n\nCooler Noctua DH15 with Thermal Grizzly Kryonaut paste.\n\n\\*In case you do alot of CPU-bound work (ie. not for gaming), you might want to pickup the i9-14900K.\n\n*SSD/Storage*\n\nGet the Samsung 990 Pro NVMe 4TB and use it for both OS + Files storage. You will thank me later. Also, ensure to partition it properly (use Linux fdisk) to ensure alignment to 1MiB (2048s at 512 sector size). Depending on usage profile leave some space at the end. (mostly read:write &gt;3:1 \\*\\*7.5% overprovision, mixed 14% overprovision,  high writing load like Database 28% overprovision).\n\n* 100 MiB EFI (fdisk type EFI - eXpert S GUID Bit 63)\n* 128 MiB MSR (fdisk type Microsoft Reserved eXpert S GUID Bit 63)\n* 200 GiB OS (NTFS)\n* 572 MiB Recovery (fdisk eXpert Required / S GUID Bit 63)\n* 4TB x (100% - 7.5%\\*\\*) - 800MiB - 200GiB\n* Overprovision (see above\\*\\*)\n\nNB: 4 TB = 3.63 TiB = 3,725 GiB\n\nBonus points #A: set it to Advanced Format 4k sectors using nvme cli (Linux only - just boot using a bootable USB stick with the distro of your choice)\n\nBonus points #B: format all SSD's to 16k NTFS cluster to match the 16k page size of the NAND flash.\n\nBonus points #C: format the Seagate Exos at 64KB NTFS cluster.\n\nBonus points #D: install smartmontools for Windows (or use Linux) and ensure the Seagate Exos has SCTERC disabled unless you're doing RAID/ZFS/BTRFS (smartctl -l scterc,0,0,p /dev/sdX where X is your drive). This will ensure your data will not get lost. Normally the Enterprise disks are set to 7 seconds timeout so that the RAID/ZFS/BTRFS redundancy can reconstruct the data faster from the other mirrors. If you use it as single disk you run a higher risk when a sector is unreadable to directly loose that data instead of giving the ECC max chances to re-try as much as possible.\n\n*Power*\n\nAverage load: CPU 125W, GPU 420W, Storage 3 x 9W = 572W.\n\nPSU peak power should be double the average load as good electrical engineering practice (that's also the efficiency maximum usually if you look at 80Gold/Platinum/Titanium at 50%), so would recommend a 1100W .. 1200W PSU like a Corsair HX1200.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "kflnrh5",
+              "text": "thanks a lot for your very detailed feedback. I will consider your steps when I make the final buys and espacally when I'll install the PC, I'll be comming back to this very coment again :-)",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experience with Be Quiet! Pure Power 12 M 850W.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents positive sentiment about Be Quiet! Pure Power 12 M 850W.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "kfhhl66",
+          "text": "Ive heard bad things about BeQuiet for power supplies and other products from them but if you did your research you probably know more than me!! Looks like a killer unit, have loads of fun friend!",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses BeQuiet's reputation for quality and performance",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about BeQuiet's products",
+          "replies": [
+            {
+              "commentId": "kfhoojs",
+              "text": "Thank you friend.\n\nI hope it works well. One can always be unlucky but generally it is considered A-Tier by many Lists",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experience with Be Quiet! Pure Power 12 M 850W",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents positive personal experience with Be Quiet! Pure Power 12 M 850W.",
+              "replies": [
+                {
+                  "commentId": "kfhw0xg",
+                  "text": "then you shouldn't worry",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "kfixyn4",
+                  "text": "Absolutely agreed, if it\u2019s a tier? Godspeed my friend. Emphasis on speed \ud83d\ude08",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the product's performance in gaming and mentions the word 'tier'",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Presents a positive sentiment about the product's performance.",
+                  "replies": [
+                    {
+                      "commentId": "kfjrkrq",
+                      "text": "I think you still have Corsair RM850X on Amazon at a discounted price. Not too sure about MSI mobo.. last time I heard they had issues with RAM overclocking. I would prefer a Gigabyte, gaming x ax",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses Be Quiet! Pure Power 12 M 850W gaming and rendering performance against competitor.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Presents balanced performance comparison without clear positive or negative bias.",
+                      "replies": [
+                        {
+                          "commentId": "kfll65s",
+                          "text": "Got gigabyte x670 elite AX. Damn it was mystery to boot first few times, even tho it came updated. Maybe it didn't like my RAM at first. Otherwise I think I can't complain about it. 7800x3d sits in it. Had to turn off auto boost in bios, coz it had weird temp spikes and my fans were going a bit crazy. \nHad rm850x in my old case, got rm1000x for a new one and I think I am gonna swap 850 instead of 1000, because the new rm1000x is louder than 850 and is doing some funky sound every time it stops/starts fan.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "kfiz944",
+          "text": "How do you spend 3000 euro on a PC and not get the 4090 is beyond me.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "kfjat0d",
+              "text": "They recently went up on price tbf.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses Be Quiet! Pure Power 12 M 850W price increase without mentioning personal experiences, specs, or direct feedback about the product.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "kfljs7f",
+              "text": "cause the 4090 is 2.2-2.4k alone",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the Be Quiet! Pure Power 12 M 850W's power output without mentioning the competition.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive sentiment about the product's power output.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "kvrcgsg",
+          "text": "After checking comments didn't saw anyone bringing this up. With a setup like this you are not future proofing your build. If next gen gpu is released and they go with pcie 5 you wont be able to upgrade. Is that something you have considered? Asrock Riptide Wifi has Pcie5 and m2 pcie5 with 2 or 3 m2 pcie4 slots. Check the price on this mobo, you might consider putting extra i don't know 40 euro to future proof your build.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses future-proofing considerations for PC hardware",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a relevant discussion about future-proofing PC hardware.",
+          "replies": []
+        },
+        {
+          "commentId": "kfhady2",
+          "text": "Personally I\u2019d rather run a 1000w psu, but you should be okay with 850. Do you really need 64gb? The imc in the 7 series isn\u2019t very good, so there\u2019s a good chance you wind be able to run that kit at the expo 6000 speed. Really think hard about if you rather run a 32gb kit at 6000-6400 or a 64gb kit at 5000 ish",
+          "upvotes": 0,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses Be Quiet! Pure Power 12 M 850W's performance against a 1000w psu and a 64gb kit.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a balanced comparison of Be Quiet! Pure Power 12 M 850W's performance against other hardware.",
+          "replies": [
+            {
+              "commentId": "kfhbmtq",
+              "text": "would 4x16 at 6000 work? Or does the total number of ram matter for that fact?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses Be Quiet! Pure Power 12 M 850W's performance with 4x16 RAM at 6000 RPM.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a relevant question about Be Quiet! Pure Power 12 M 850W's performance with 4x16 RAM at 6000 RPM.",
+              "replies": [
+                {
+                  "commentId": "kfhhybv",
+                  "text": "2\u00d732 is preferable",
+                  "upvotes": 11,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the number of cores in the Be Quiet! Pure Power 12 M 850W",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a neutral opinion about the number of cores.",
+                  "replies": []
+                },
+                {
+                  "commentId": "kfhi40z",
+                  "text": "It likely won\u2019t work, there\u2019s a chance, just not a good one. 4 sticks of single rank (16gb each) or 2 sticks of dual rank (32gb each) is pretty tough for the integrated memory controller (imc) in the cpu to run, and the imc in ryzen 7xxx isn\u2019t very good",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discusses the performance of the integrated memory controller (imc) in the CPU of the \"Be Quiet! Pure Power 12 M 850W\" without mentioning the product.",
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "kfhpze1",
+                  "text": "Get 2x24GiB 6000-6400 c30/32",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses Be Quiet! Pure Power 12 M 850W's performance with a gaming-focused GPU.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Presents a positive sentiment about the product's performance.",
+                  "replies": []
+                },
+                {
+                  "commentId": "kfhvxnn",
+                  "text": "2x 32 is preferable for stability, 4x 16 will work but probably not with expo on",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "kfho2on",
+              "text": "I've had 0 issues from my kit of 64gb 6000 Mhz from G.Skill.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experiences with Be Quiet! Pure Power 12 M 850W.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive sentiment about the product.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "kfhgauf",
+          "text": "Good build!",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "kfhoesj",
+              "text": "Thank you, a big part of it is based around discussions on this very sub",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses Be Quiet! Pure Power 12 M 850W's performance in the context of other products.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive sentiment about Be Quiet! Pure Power 12 M 850W's performance.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "kfhq1vz",
+          "text": "Looks awesome, but do you really need all that PC?",
+          "upvotes": 0,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discusses the product's aesthetics without mentioning its performance or relevance to the user's needs.",
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "kfhqhd6",
+              "text": "No, I propably dont to be honest.\n\nBut I wanted to treat myself with something very nice for once.",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses personal preference without mentioning Be Quiet! Pure Power 12 M 850W.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "kfibnh0",
+              "text": "\"looks awesome, but\"  \n\n\nthose comments grind my gears lmao  \n\n\nbUt dO yOu ReAlLy neED aLl tHaT pC?  \n\n\nBruh, not everyone on this planet is a penny pincher. They clearly wanna get something nice for themselves.",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses the product's appearance and functionality without mentioning Be Quiet! Pure Power 12 M 850W.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "kidfebs",
+                  "text": "yes, why gAmErS need a pc like this for shitty \"AAA\" games they'll forget in a week or jack off to playing some CoMpEteTiVe eSpOrT crap? Watch moovies, browse crapdit? please.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the relevance of Be Quiet! Pure Power 12 M 850W for \"AAA\" games and its potential use for other activities.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Presents a mixed sentiment, with a negative tone towards the product's intended use.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "kfhsp99",
+          "text": "i would highly highly highly recommend the taichi b650e lite. it has been so far an extraordinary motherboard and i cant say good enough things about it. i was gonna get the aorus b650m elite ax but i reas countless nightmares about it so i returned it before i did my build and i am so happy with the taichi",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with Be Quiet! Pure Power 12 M 850W.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents positive sentiment about Be Quiet! Pure Power 12 M 850W.",
+          "replies": [
+            {
+              "commentId": "kfi3pz7",
+              "text": "a little heafty price tag :-)",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses the price of Be Quiet! Pure Power 12 M 850W without mentioning its features or performance.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "kfi4wri",
+                  "text": "its 240$",
+                  "upvotes": 0,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discusses pricing without mentioning Be Quiet! Pure Power 12 M 850W.",
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "kficolb",
+                      "text": "Around 380\u20ac+ here",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discusses pricing without mentioning Be Quiet! Pure Power 12 M 850W.",
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "kflk0pg",
+                      "text": "&gt;taichi b650e lite\n\n350\u20ac in austria",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discusses thetaichi b650e lite without mentioning Be Quiet! Pure Power 12 M 850W.",
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "kfhupez",
+          "text": "I recently did a very very similar build to you if you need any further inspiration for parts. \n\nhttps://pcpartpicker.com/list/xKGvsh",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses a similar build to Be Quiet! Pure Power 12 M 850W",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about the build process",
+          "replies": [
+            {
+              "commentId": "kfi3ma6",
+              "text": "nice build. First build I see also utilising the 4 TB M.2\n\nI was thinking about getting the Fractual North as well for a while but decided against it due to the vibe I got from the game nexus review. Dunno, it was all positive but it didnt really click for me but I defenetly see why one would pick it",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses Be Quiet! Pure Power 12 M 850W build quality and mentions Fractual North without mentioning Be Quiet! Pure Power 12 M 850W.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive opinion about the build quality of Be Quiet! Pure Power 12 M 850W and mentions a competitor product (Fractual North) without mentioning Be Quiet! Pure Power 12 M 850W.",
+              "replies": [
+                {
+                  "commentId": "kfkzr0u",
+                  "text": "Initially I was going to do a white build with the 216 but getting all the parts was proving difficult/expensive so pivoted to a non RGB black build which the north mesh/tg has proven great for.\n\nAll in all a really solid case and amazingly easy to build in so really just go with what you like the look of better. For a point against white cases I've heard some tend to yellow over time where there is plastic so black cases definitely win for longevity. \n\nAs for the Lexar 4TB M.2 there's been some amazing deals for it in Australia hence why I picked it, and it's a really solid drive.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses personal preferences for hardware build materials and performance.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents personal preferences without clear positive or negative bias.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "kfhyc2s",
+          "text": "I have a B660 Tomahawk and it's amazing. Basically just the Intel version. I love it! But I'm thinking of getting the Z690 Force WiFi from MSI because I'm going to build my son a PC and use the b660 and the i5-12400 inside it.\n\nId get the Lian Li Lancool 3. Much more room for the first time builder. You're gonna want it for that beefy GPU. And it looks great too",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the Be Quiet! Pure Power 12 M 850W and the Lian Li Lancool 3",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about the Be Quiet! Pure Power 12 M 850W and the Lian Li Lancool 3.",
+          "replies": [
+            {
+              "commentId": "kfi30we",
+              "text": "Hey, I thought about the Lian 3 as well, but it is 1) more expensive and 2) its thermal ratings is worse than 216 or the 2 Mesh.\n\nIt is my 3rd PC I am building, yet the last one is 5 years ago, I hope I will manage with the space",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses thermal ratings of Be Quiet! Pure Power 12 M 850W and Lian 3",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents thermal ratings comparison without clear positive or negative bias.",
+              "replies": [
+                {
+                  "commentId": "kfi3foj",
+                  "text": "Oh okay! I have it, I get 32\u00b0C temps under load, typically 19-23\u00b0C idle. I think the reason I didn't go with the 216 (I think it was the 216) was Gamers Nexus showed there was some odd kinda bar you had to scoot over to fit the motherboard or GPU? Idk it was something like that and for a first time builder I was like nope! Even not a first time builder I don't wanna mess with stuff like that. I think the Lancool 3 price reflects the 4 140mm fans you get with it, 3 being RGB.\n\nDefinitely going with Lian Li Dynamic Evo (one of the models not sure which!) next PC build. If it's still around then when I build my next one in 5 years. Maybe I'll rebuild it in one in a year or 2\ud83d\ude01",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discusses Be Quiet! Pure Power 12 M 850W's cooling and fan setup, but does not mention the product itself.",
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

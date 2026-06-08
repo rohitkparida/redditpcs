@@ -1,12 +1,12 @@
 {
   "productName": "seasonic-vertex-gx-1000",
   "batchIndex": 141,
-  "totalBatches": 145,
+  "totalBatches": 142,
   "comments": [
     {
-      "commentId": "1e62264",
-      "text": "My contribution to stopping Destiny from making bad hardware decisions. [Effort Post]\n\nWatched the 5 minutes that u/NeoDestiny discussed building a PC, and he is a little lost. Not his fault. He is incredibly busy, and only losers like me keep up with the latest hardware trends.\n\n# My Background: \n\nI'm a hardware fanatic, and I build and maintain workstations/NASs for some labs in my department as a side-gig (thank god for p-card purchasing). I work with electrophysiology hardware/software as well as write machine learning code for data analysis projects. Software debugging is something I am all too familiar with.\n\n# The Problem: \n\nDestiny is having issues with his OBS hanging up. He has had some blue screens as well. Destiny most likely has OBS scripts and some ad-ons that could be the cause for his issues. He also has older hardware that might be sundowning. Finally, updating the software could be a culprit, however his reformats and reinstalling of the software might discount this specific problem. \n\n# Requirements: \n\nDestiny requires a pure streaming machine that is separate from his gaming PC. He wants the latest features. He also needs a machine that can take advantage of his 5 Gbps internet. He has discussed having storage issues in the past, so he will probably want some long-term storage in his PC. He hates water-cooling, so everything will need to be air-cooled. This build should also not trip his breaker, so efficient parts might be the way to go. The parts should have solid warranties and built to withstand daily use (no part can guarantee this 100%, but the best course of action is sticking with reputable brands). The OS will need to be Windows, because Destiny will retire if he has to deal with a terminal. Finally, the parts need to be available currently and come from mainstream e-tailers. There is always new hardware on the horizon, but a reminder that Destiny' primary needs are viewing NSFW links and GPU streaming. So, on to the hardware.\n\n# Potential Build:\n\nI will provide my best justification for this build since on the surface it seems entirely unnecessary. I think If Destiny wants all of the latest features, he should go with the sTR5 platform. The AM5 X3D chips are not the best chips for Destiny's use case, since he is not going to be gaming on this PC. Looking through the hardware review for the X3D chips such as [Gamer's Nexus](https://youtu.be/9gCzXdLmjPY?si=mfOPOl-9sE_p3Hqp) show that the primary benefit is pretty much only for gaming. More reasonable pushback with, \"Why not the 7900x or 7950x?\". That was my first idea. However, I think Destiny's primary issue is going to be PCIE lanes. I think 28 lanes might get used used up very quickly when you account for GPU, multiple SSDs (if Destiny wants that), capture card, and thunderbolt peripherals (I'll get to this later). He might also want to put in a 10 Gb nic if he wants to do more video projects and opts to connect a NAS over network. I'm not saying this is the only option, all I'm trying to say is Destiny should have options and flexibility with this build. Final thing to mention, this platform is an efficiency king.\n\nI am also going to make the case for a NVIDIA RTX 4000 SFF Ada Generation card. Before people freak out, this is a 70 watt card. Let me repeat myself. 70 watts! Destiny does not need to use an inefficient CPU to encode streams in 2024 and heat up his room. This card has multiple encoders capable of encoding multiple streams. Plus, AV1 is on YouTube, so he can take advantage of this revolutionary codec. Since he is using the encoders, it will probably be operating at half or less than half of its rated TDP. [Level1](https://www.youtube.com/watch?v=ZiPmT_JWNII) had a great overview of this card and potential use cases. While destiny is not going to machine learning, having a highly binned card from Nvidia will ensure he has a quality card that should stay rock solid over the long-term. It also should not get crazy hot.\n\n# Part Recommendations:\n\nCPU - [AMD Ryzen Threadripper 7960X](https://www.newegg.com/amd-threadripper-7960x-350w-sp6-ryzen-threadripper-7000-series/p/19-113-804?Item=19-113-804&amp;cm_sp=product-_-from-price-options) or the [7970x](https://www.newegg.com/amd-threadripper-pro-7965wx-350w-sp6-ryzen-threadripper-7000-series/p/19-113-806?Item=19-113-806&amp;cm_sp=product-_-from-price-options): I think the 24 core is more than enough for Destiny while providing him a platform that can take advantage of all the ad-in cards and peripherals he wants. It has incredible compression and decompression performance, so he should be able to take full advantage of his SSDs and internet connection (yes, downloading and uploading at 5Gbps can be incredibly taxing on a CPU). I have seen Destiny have his stream hang up when he splits vods, so this CPU should handle some of these bursty tasks as well. Again, I am making my best conjecture from personal experience with other tasks as well as some reviews, so Destiny will need to test this himself.\n\nMobo - [GIGABYTE TRX50 AERO D sTR5 (Rev 1.2)](https://www.newegg.com/gigabyte-trx50-aero-d/p/N82E16813145484?Item=N82E16813145484&amp;SoldByNewegg=1): USB4 (40 Gbps) and 2 LAN ports (10 Gbps + 2.5 Gbps) is the main stars of the show. Destiny discussed how he would want better ports with his new build, and this would allow him to reduce the number of cables going into the back of the PC. He could also take advantage of Thunderbolt docks and better external SSDs with this setup. Now, Destiny should be warned that not all the ports are PCIE 5.0. However, the trade-offs with the two features I mentioned as well as Wifi 7 (negligible feature, but still cool) is probably worth it. Reviews also seem good. It is also way cheaper than the Asus offering with arguably more usable features.\n\nGPU - [RTX 4000 SFF](https://store.nvidia.com/en-us/nvidia-rtx/products/nvidia-rtx-4000-sff-ada-generation/?nvid=em-VCNRTX4000ADALP-PB): I already went over this in the potential build section. Reminder for everyone that he is not gaming on this. The GPU needs to chug as an encoder and multi-streamer. He does not need a more expensive workstation card or a 4090. He is just encoding. Frankly, a [4060](https://www.amazon.com/MSI-RTX-4060-Architecture-2X/dp/B0C8BPW1SP?source=ps-sl-shoppingads-lpcontext&amp;ref_=fplfs&amp;psc=1&amp;smid=ATVPDKIKX0DER) would be a good alternative if he wants a low wattage offering that will encode for him. I just recommended this, because the 4000 SFF is less than HALF the TDP of a 4060. So freaking cool!!! I know it's unnecessary, but think of how unique it is :)\n\nRAM - [Kingston Fury Renegade Pro 128GB](https://newegg.com/kingston-128gb/p/N82E16820242850): Probably an unnecessary amount, but I do not know how many pictures of your mom he will be opening up. Threadripper also works best with all channels populated. This was the highest channel kit of matching ram from the supported memory list that also meet the 5200 memory speed requirement (Threadripper sortof maxes out at 5200 for memory speed).\n\nCPU Cooler - [Noctua NH-U14S TR5-SP6](https://www.amazon.com/dp/B0CHRS9RXB?maas=maas_adg_9B5E62ADF6F9D163C527BCF52245CCB8_afap_abs&amp;ref_=aa_maas&amp;tag=maas#customerReviews): There aren't a ton of supported air coolers for the sTR5 platform. Noctua is expensive, however they are incredibly reputable and easy to install with their secufirm bracket. Destiny will not have to worry in the slightest on reliability, and the CPU comes with CPU paste pre-applied. I personally use this cooler for the workstation builds in lab. I liked it enough to get the regular version for my partner's gaming PC. Cool enough and quiet.\n\nSSD - [Crucial T700 4T](https://www.newegg.com/crucial-4tb-t700/p/N82E16820156331)B: Storage has gotten so damn cheap. Destiny could get 2 of these in and run them in RAID 1. He could even put the OS on one and use the other as storage. These are rock solid and fast. PCIE 5.0 as well. I know the Samsung 990 pros are no slouch, but Destiny might as well just get the 5.0 drives if he is going through the trouble and wants to take full advantage of the sTR5 platform.\n\nLong-term storage - [Seagate IronWolf Pro 20TB](https://www.newegg.com/seagate-ironwolf-pro-st20000nt001-20tb/p/N82E16822185071): Get two of these and run them RAID 1. Are you kidding me? Look at how damn cheap storage is now. For the people wondering why I didn't recommend SSDs: people do not recommend long-term storage on flash memory. Data stored on flash can decay with time, and the drives need to constantly be active. I don't want there to be a risk for any of Destiny's data, so to be safe he should stick with a HDD.\n\nPower Supply - [Seasonic Vertex GX-1000](https://www.newegg.com/seasonic-vertex-gx-1000/p/17-320-022?Item=17-320-022&amp;cm_sp=product-_-from-price-options): I can already feel Destiny getting riled up at that unnecessary wattage number. U have a good reason. When modern PSUs operate at less than half of their total rated wattage, they do not need to spin their fan. One less component causing noise in your room. This is a minute point and probably does not matter to most people, but it is something for noise sensitive people to consider with their own builds. Besides that, Seasonic is the best brand for power supplies. Destiny could go for there platinum or titanium line-up, but that would get expensive. This is a great option with a 12 year warranty to boot. Destiny can feel confident that this power supply will stand the test of daily use. I have two lab computers using this power supply and can stand by it.\n\nPC Case - [Fractal Design North XL](https://www.newegg.com/charcoal-black-fractal-design-north-atx-mid-tower/p/N82E16811352216?Item=9SIAD6HK9F2398) or the [Fractal Design Torrent](https://www.newegg.com/white-fractal-design-torrent-atx-mid-tower/p/11-352-207?Item=11-352-207&amp;cm_sp=product-_-from-price-options): This is honestly personal preference. I think the Torrent would be a solid pick due to the airflow, but the CPU tower will be blowing air directly into the powersupply with this case. It also has a \"loud\" design language. Destiny might like the more subdued look of the Fractal North. It is indeed an elegant case. I have worked in Fractals and Phanteks cases mostly. Both brands are easy to work with and they both provide high-quality, quiet airflow fans. \n\nCapture Card - [Elgato 4k Pro](https://www.elgato.com/us/en/p/game-capture-4k-pro) or [Elgato 4k x ](https://www.elgato.com/us/en/p/game-capture-4k-x): Destiny will know his external capture requirements much better than I would. I have provided the latest gen options for him to look at.\n\n# Conclusion:\n\nI'd love the community's feedback as well as Destiny's thoughts on this build. I have some alternative builds that he can consider if he has a different use case in mind for his streaming PC. I can also totally defend these hardware choices if needed for anyone who might not understand them. I think my experience and understanding of what Destiny needs is solid. Looking forward to hearing from everyone :)",
-      "upvotes": 216,
+      "commentId": "1hz8alx",
+      "text": "Just finished my 7900xtx build\n\nStill got to fine tune the overclock to undervolt the 7900 XTX but I am so happy with how it turned out. If anyone was on the fence about getting the [Lian Li Lancool 207](https://a.co/d/iWaRf1v) this thing was a dream to build in. Yes I already know Tech Jesus reviewed it lol\n\nSpecs\nCase: Lian Li Lancool 207\nGPU: 7900 XTX (Stock AMD version, didn't really want to add anymore RGB. The ram and fans were good enough for me)\nCPU: 9800x3D\nCooler: ARCTIC Liquid Freezer III aRGB\nRAM: Corsair Vengeance 32 GB 6400 DDR5\nStorage: Two 2TB Samsung 990 Pros (pulled one off my old PC)\nPSU: Seasonic Vertex GX-1000-1000W",
+      "upvotes": 122,
       "classifyThis": true,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,32 +14,20 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "ldpzawu",
-          "text": "Based hardware enjoyer post",
-          "upvotes": 37,
+          "commentId": "m6nppz6",
+          "text": "Awesome! Enjoy the performance, I know I have been.",
+          "upvotes": 3,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
           "sentiment": null,
           "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "ldq05nq",
-              "text": "Thanks brother \ud83d\ude0a",
-              "upvotes": 13,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
+          "replies": []
         },
         {
-          "commentId": "ldq1zgt",
-          "text": "i just upvoted for the effort",
-          "upvotes": 20,
+          "commentId": "m6o59fl",
+          "text": "Man those reference edition cards are so nice.",
+          "upvotes": 3,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -47,31 +35,8 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "ldq3lui",
-              "text": "Thanks \ud83d\ude0a",
-              "upvotes": 11,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "ldqpduq",
-          "text": "It's bad timing with Zen 5 right on our doorstep eh. I don't know his level of urgency, but if he could wait:\n\nX870E chipset AM5 motherboard + 9950X (16-core) is an obvious choice. USB4 is supported, Wifi 7, 10GBe options (or add-in card). I think there are enough PCIe lanes. It'd be fine w/o Threadripper.\n\n64GB of relatively fast RAM, as long as it's priced well. 128GB is unnecessary and slower.\n\nThermalright or Noctua's latest NHD15 gen 2 heatsink for cooling. For additional fans, either the same Noctua A12X25 (120mm) and A14X25 (140mm) series or the 30mm thick Phanteks T30 (120mm only).\n\nI'd get the RTX 4060 GPU anyway. 4070 Super or 4070 if it'll ever conceivably be transferred to a gaming rig, price-dependent.\n\nI'd also choose a high-wattage PSU just because of the potential transient GPU spikes and partial-load efficiency. If this PSU or this PC will ever conceivably be used in a gaming rig, then it's easily justified.\n\nCase with open airflow, low resistance, and easily cleaned filters. Fractal is good.\n\nIf He cannot wait:\n\nProbably 7900X (12-core) (or whatever is priced well - even a 7800X3D (8-core + 3D cache gaming CPU) if there's a plan to bequeath that to Nathan or someone) on an X670E motherboard that supports USB4 (and if possible, avoid the Intel i225v ethernet chipset (disconnect faults, no fix) or plan to use an add-in 10Gbe card (not a big deal, works great).\n\nThen Upgrade to 9950X when possible (A BIOS update and maybe 40 minutes of work). All other recommendations the same. It'd still work fine.",
-          "upvotes": 9,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "ldqq5gd",
-              "text": "Looks like we had the same thought. And you are right about 128gb being slower than 64, I think populating all 4 slots with 32 incurs a HUGE penalty on max memory speeds and boot times, 32gig modules in two slots is better and two 24gig modules is the best for speed.  \nDepending on his needs 48gigs total may be enough, but 64 should definitely suffice.  \nKeep in mind the x670e Pro ART I suggested is almost equivalent to future x870e boards except for the wifi7.",
+              "commentId": "m6og8nu",
+              "text": "Yeah the only downside is the display layout is:\n\n2x Displayport 1x HDMI 1x USB C\n\n..... but it's not much of a downside since the speeds are the same as the displayport ones. I just got to get a USB C to Displayport cable. So, no biggie. Already have one on order to deliver tomorrow.\n\nI saw the options from Powercolor and others and just thought it was doing too much. I have rgb on every other component, and for me, that was enough. The reference card is also only 2 slots so it has a nice and slim look while still being a triple fan GPU.",
               "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
@@ -80,9 +45,9 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "ldrkx1f",
-                  "text": "I didn\u2019t want him incurring any performance loss once he enters the OS. If this was the AM5 platform or LGA 1700, then I would agree with your assessment. However, Threadripper does take advantage of a full kit of ram. It also sort of maxes out at 5200 for the recommended speed to run at. AM5 on the other hand is 6000-6400. I know 128gb is way too much, but as I say in the post, this is a full kit and meets the requirements of being supported by the board. It is also available to purchase from a major e-tailer,",
-                  "upvotes": 2,
+                  "commentId": "m6ogjit",
+                  "text": "Agreed.",
+                  "upvotes": 1,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -91,10 +56,150 @@
                   "replies": []
                 }
               ]
+            }
+          ]
+        },
+        {
+          "commentId": "m6o0kpv",
+          "text": "Bet those components are more than happy with the airflow.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m6oege2",
+              "text": "Everything is mesh so this thing gets ample airflow. I was going to put an exhaust fan in but after thinking about it I didn't see a need lol",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m6ojypf",
+                  "text": "I wouldn't bother unless you notice your GPU getting too warm. It could help pull some of that air out. If it's fine, tho, you're in good shape. Betting static pressure from intakes will push out the warm air on its own.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m6om1lg",
+                      "text": "right below the gpu are two horizontally mounted 120mm fans which should be great for airflow",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "commentId": "ldrkads",
-              "text": "Yup, I would have agreed with all of if he wasn\u2019t an impatient bastard. I do mention in the post that the parts should be available currently. I also did not want to recommend a brand new platform Day 1 since the thing he is suffering from is stability issues. \n\nI think the build you mention is better for his gaming PC. Factorio is coming out in October. He should build this then.\n\nI have the 7900x with a 7900xtx at home (I could not afford a 4090 + wanted to try out RocM in Linux. I\u2019m a masochist) and the 7900x has been rock solid. I did want Destiny\u2019s insight on if he would need the PCIE lanes. Cause my other rec would be AM5 if he needs something now.",
+              "commentId": "m6q775j",
+              "text": "I do like rear fans though.\n\nI would go with classic black here.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "m6nqs5f",
+          "text": "I have the exact build as you, just different brands.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "m6o6ibt",
+          "text": "I\u2019ve been looking for the AMD Reference 7900XTX, looks so great! Congrats OP, more pics!",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m6oe9mr",
+              "text": "I would but I don't know how to add photos after the fact lol",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m6oehcy",
+                  "text": "Ahhh all good, probably my favorite GPU design in recent times. Hope it suits you well, frames high and temps low..!",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m6ol4qj",
+                      "text": "[Extra Photos](https://imgur.com/a/DBk2wcC)\n\nMaybe this will work lol",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "m6olh11",
+                          "text": "Madlad did it, thanks and it looks SOLID.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "m6otl6g",
+          "text": "I\u2019ve got this case coming in the mail soon. I\u2019m gonna be using a Corsair RM850X (2024) PSU which is 160mm long and I\u2019m gonna be attempting to use FormulaMod cable extensions on the 24pin, 8pin EPS and two 8pin PCIEs for my 7900XT. Pray for me. I\u2019m hoping it fits lol",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m6oxy93",
+              "text": "My PSU was 160mm long and it fit perfectly.... but I can't comment on the other stuff lol",
               "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
@@ -106,9 +211,9 @@
           ]
         },
         {
-          "commentId": "ldqa2y1",
-          "text": "But he will need an x3d cpu because he\u2019s going to start playing games again copium",
-          "upvotes": 5,
+          "commentId": "m6p0whi",
+          "text": "How much you spend on that machine",
+          "upvotes": 1,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -116,19 +221,65 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "ldqc5k2",
-              "text": "He has a dual PC setup. This would only be for his streaming PC.",
-              "upvotes": 10,
+              "commentId": "m6p2vss",
+              "text": "$2.5k not accounting for Windows, which I bought like an upstanding citizen",
+              "upvotes": 1,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
               "sentiment": null,
               "sentimentReasoning": null,
               "replies": []
-            },
+            }
+          ]
+        },
+        {
+          "commentId": "m6q73vd",
+          "text": "Classic  Power  Connectors rock",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "m8c4bja",
+          "text": "Question about the case. You ran the pcie cables through the slot near the fans. How much space is left over? Do you think a 3rd cable could fit? I have an Asrock 7900xtx Taichi, and it needs 3 cables.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
             {
-              "commentId": "lds2y6r",
-              "text": "He can set up a gaming pc with an 7800x3d. The 7800x3d is an excellent gaming cpu, but a miserable production cpu (in relative terms).",
+              "commentId": "m8cgwy4",
+              "text": "So below there is where you would mount SATA drives or HDD if you have them otherwise it is completely open. I would say you can easily fit a 3rd cable no issue.\n\nSee photo [here](https://i.pcmag.com/imagery/reviews/06MNlL3YFXX894Lu8TvMKGT-10.fit_lim.size_1313x.jpg)",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mabii23",
+          "text": "Late reply, very nice build. I am looking to build my new PC in this case.\n\nI was wondering how much room you have in the back and does the Lancool 207 take up to 160mm PSUs? Im also looking to get the same Seasonic one as well.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mabja8k",
+              "text": "Room in the back is more than enough to fit all your cables but there really is no option to not cable manage. The back plate is magnetic so you'll need to keep your cables managed with the in case velcros. Also the psu comes with a ton of velcro cable ties.\n\nJayzTwoCents put a beefy 4080S in this case and it fit just fine. Should fit 160mm cards just fine",
               "upvotes": 1,
               "classifyThis": true,
               "relevance": null,

@@ -1,7 +1,7 @@
 {
   "productName": "asus-rog-strix-x670e-i-gaming-wifi",
   "batchIndex": 4,
-  "totalBatches": 6,
+  "totalBatches": 9,
   "comments": [
     {
       "commentId": "1grtu5t",
@@ -14,54 +14,9 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "lyi2k71",
-          "text": "I've been using the MSI B650 Edge and it's been rock solid, tbh.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "m1z1830",
-          "text": "X670e-i is amazing. It's overpriced, I don't need it. I wanted it. The only reason to go overs. The QC problems are mostly pitchfork waving about misunderstandings. It's a lot of fun.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "lx9cbz7",
-          "text": "I'm looking at the strix B650. ASUS are severely overpriced, but are also the only brand I've had no issues with.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        }
-      ]
-    },
-    {
-      "commentId": "1j971dk",
-      "text": "Poor performance in Minecraft with RTX on 5000?\n\nI have noticed a very odd behavior with Minecraft Bedrock Edition, where after enabling ray tracing, I get a worse than 4090 (or 3090 for that matter) level of performance, while the GPU usage hovers around 12%-20% or so.\n\nThe only way to improve the situation is to reduce chunk distance to 8 chunks to get reasonable performance in the survival world.\n\nNeon District RTX demo performs even worse, not even reaching 30 fps on 24 chunks. This map also oberserves even lower GPU usage, about 6%-7% GPU usage, while again, no single CPU thread is at full load either.\n\n[Minecraft Preview v1.21.70.24 running 20 FPS on a 5090 while at 1080p](https://preview.redd.it/61xrnz39o5oe1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=302f0a488f0bcf9a2aaa9639b98546e60e0553db)\n\nAs of writing this post, my configuration is as follows:\n\n* AMD Ryzen 9 7950X3D CPU\n* Corsair Vengeance RGB DDR5 96GB (2x48) 6000CL30 RAM\n* ASUS ROG Strix X670E-E Gaming WIFI (with latest bios, 2904) Motherboard\n* MSI RTX 5090 Vanguard SOC (with latest NV drivers, 572.70) GPU\n\nThings I have tried:\n\n* Multiple versions of Minecraft\n* Swapping DLSS file around (using Bedrock Launcher)\n* Multiple versions of NV drivers\n* Multiple BIOS revisions\n* Reverting PCIe from auto/5.0 to 4.0\n\nI am going insane, as with all other games I've tried so far (which I don't have many of, I mainly got this GPU for blender work) the performance is on the level I'd expect it to be.\n\nDoes anyone else have such issues? I haven't found anything relating to this problem so far.\n\n**EDIT:**\n\nAdditionally, I DID check that VSync is DISABLED, but that changed nothing.\n\nMy screen is a 270 Hz refresh rate screen, so that is not the problem here either.\n\nBetween the three GPUs, I never touched anything besides the card in the mobo itself initially, except for mandatory 5090 drivers (which I had also run with 3090 just fine before installing 5090!)\n\n**EDIT 2:**\n\nI have found [this](https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5090-review/5) article on Tom's Hardware, showing about the same performance I get in a survival world:\n\n[RTX 5090 \\(with 9800X3D\\) performs the worst on the chart.](https://preview.redd.it/3odqm4kgeioe1.png?width=970&amp;format=png&amp;auto=webp&amp;s=7bd5fe3d0654938064508b142d93842eb5b0e878)\n\nAnd since I ran with 7950X3D when I wrote the post, my average FPS was 41-49 or so.\n\nQuote: \"Nvidia is looking into the situation.\"\n\nI really hope this gets fixed soon as this lineup of GPUs had a ton of issues and this one just adds to the pile, which is incredibly disappointing.\n\nAdditionally, I can confirm that 9950X3D performs just slightly better than 7950X3D, raising my average FPS up to  50-55 on average in the same spot:\n\n[Average FPS slightly improved with 9950X3D](https://preview.redd.it/ww9v9sx6fioe1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=4789a56fb46d4a466654718f93cf1430f1704061)\n\nThis is still unacceptable for obvious reasons.\n\nI appreciate y'all help a lot, but as of now it seems I got the confirmation of it being NVIDIA doing shady driver magic.\n\n**EDIT 3: (Jun 3rd, 2025)**\n\nI keep receiving \"is this fixed yet?\" sometimes.\n\nWhile I share your frustration, please don't ask this question. I will issue another edit whenever more information comes out or the issue gets resolved.\n\nAs much as I understand the feelings, I have replied countless times and would prefer not to unless it brings something new to the table.\n\nThank you for understanding &lt;\u0417",
-      "upvotes": 35,
-      "classifyThis": true,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
-      "replies": [
-        {
-          "commentId": "mhxgogn",
-          "text": "this isnt somthing that has to do with nvidia. i got a 5090 and play bedrock with rtx mods. before i ran fine and the game pulled 600watts constant. since a couple days ago our realm with my friends randomly stopped accepting resourcepacks and we couldnt play on rtx. other worlds acted fine but when i went on a look, my rtx option got glitched. whole game acted weird and now rtx randomly aint clickable in home menu\n\nonly in game i can turn on rtx. well that said it worked fine in game. now i still wanted to check if my side had a fault for the realms thing. \n\ni deleted everything from minecraft and reinstalled the game. i got the new(sorry to say) world selector menus. and now since i got the new one. my gpu pulls around 500 watts in the home menus and when i go into a game with rtx on with 24 chunks it pulls around 300-400 watts SOMETIMEs. clearly something broke with their new update push and i raged a lot with getting dicked by a fucking awfull new world selector screen, no rtx on our realm, insane awfull performance. \n\nall and all. game feels freakin bricked when it comes to playing with rtx. feels like im in a 0.1 beta test or somthing. so it all is about the new updates from minecraft side",
-          "upvotes": 5,
+          "commentId": "lx8v6uf",
+          "text": "They\u2019re mostly fine. You\u2019ll find problems for anything if you look for it. \n\nMsi b650i has worked fine for me.",
+          "upvotes": 41,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -69,9 +24,9 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "mi0hieu",
-              "text": "I doubt this problem is because of the game update, and let me explain why:\n\nI played the same version on 3090, and it wasn't an issue, yet it is present on 5090.\n\nFurthermore, I went out of my way to test multiple older versions of the game and saw the same issue happen regardless of what I did. (1.19.2.2 and 1.18.1.2 are the versions I've tried)\n\nTom's Hardware's graphs confirm that this is an issue specifically with NVIDIA GPU paired with AMD CPU, and as of now, there's nothing that can be done about it. The graph they provide for 1080p heavily confirms these\n\nI do agree with bugrock feeling like a terrible beta, I've been pretty used to Java MC being a much better option, but wanted to try something new for a change, and got this lol\n\nHoping for this to get fixed soon but it honestly seems like the Mojang-NVIDIA partnership to bring RT to Minecraft was a one-time deal, and I haven't seen any RT-related issues get addressed and that sucks big time.",
-              "upvotes": 1,
+              "commentId": "lx97b1f",
+              "text": "I had small problems with Bluetooth drivers with it, but otherwise works fine",
+              "upvotes": 3,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -79,78 +34,9 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "mi5ywo1",
-                  "text": "while i fixed the bug that didnt accept global resources. i tried to fix the performance. and yeah going for the same drivers and minecraft versions that i had 2 weeks before didnt help. that jackie chan Dafuq meme is an appropiate example of my reaction",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mhnaans",
-          "text": "yeah it's busted, very poor GPU utilization and upscaling seems to be categorically broken on 50 series cards. i was getting \\~30 fps in places with a 5090",
-          "upvotes": 5,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mhohrug",
-              "text": "This is overall the worst launch by far. Let's see just how long NVIDIA takes to fix at least this part of the huge mess haha\n\nAccording to Tom's Hardware article, I assume we all have an AMD CPU, which makes this situation all the more interesting.\n\nHere's hoping for the quick fix (however quick that could get for the 42 of us who have 5090 to play Minecraft lol)",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mhfstgb",
-          "text": "I have the same issue. Glad to see it's not just me. It was running better even on my 3080 I think.",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mj9vm93",
-          "text": "Just came to add that Friday I was playing with a 40 series with RTX and upscaling on just fine, and swapped to a 50 series on Saturday to find upscaling disabled and bad performance. \n\nWhere is the best place to report this? Minecraft is my daughter\u2019s favorite game and rtx \u201coooh ahhh\u201d makes it more enjoyable for me when I join her.",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mjch266",
-              "text": "As of now there is no fix in sight, and according to Tom's Hardware: \"The 5090 really underperformed in this game when running on the 9800X3D, but did better on the 13900K; Nvidia is looking into the situation.\"",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mjfh6ku",
-                  "text": "i really do hope they fix it eventually, minecraft rtx is what got me into the game during its beta period and playing without it just doesn't feel right to me. it's been a neglected aspect of bedrock for most of its life anyway but idk, it just is special to me.",
-                  "upvotes": 4,
+                  "commentId": "lx9ap6g",
+                  "text": "what the BT problem you are having? Im currently having problem with my 8bitdo pro 2, not sure if it is the board or the gamepad",
+                  "upvotes": 5,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -158,9 +44,9 @@
                   "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "mjfyix4",
-                      "text": "I feel like Mojang and NVIDIA partnership to bring RT to MC was a one-and-done thing, which Mojang stopped caring for soon after, ignoring so many bug reports for a very long time...",
-                      "upvotes": 3,
+                      "commentId": "lxdeytv",
+                      "text": "Is it normal that Wi-Fi antennas boosts Bluetooth range?",
+                      "upvotes": 1,
                       "classifyThis": true,
                       "relevance": null,
                       "relevanceReasoning": null,
@@ -168,8 +54,8 @@
                       "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "mjfyvqc",
-                          "text": "yeah it's a real shame, i think it elevates the game massively",
+                          "commentId": "lxdgvjl",
+                          "text": "what the antenna boosts BT? i didnt put my antenna I thought its just for the wifi. Ill give it a try and let you know.",
                           "upvotes": 2,
                           "classifyThis": true,
                           "relevance": null,
@@ -178,8 +64,8 @@
                           "sentimentReasoning": null,
                           "replies": [
                             {
-                              "commentId": "mjg2ox0",
-                              "text": "Big agreed.. Hopefully either party solves he lag at least, but its been multiple weeks, multiple driver updates with no improvements whatsoever",
+                              "commentId": "lxdh7ki",
+                              "text": "Oh, I think I replied to the wrong person, but that\u2019s what I was questioning",
                               "upvotes": 1,
                               "classifyThis": true,
                               "relevance": null,
@@ -188,19 +74,8 @@
                               "sentimentReasoning": null,
                               "replies": [
                                 {
-                                  "commentId": "mjgi0as",
-                                  "text": "yeah, at least I can play it on my 3080 laptop if need be but I was really looking forward to running it on my 5090 with increased draw distance and/or amazing framerates!",
-                                  "upvotes": 2,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": []
-                                },
-                                {
-                                  "commentId": "mjk09st",
-                                  "text": "Were you able to use DLSS on your 5090 with a third party launcher? Upscaling is greyed out for me on my 5070 but was available on my 3060 Ti",
+                                  "commentId": "lxf33hz",
+                                  "text": "Yes they do in-fact boost the range, the antennas are used for both BT and Wifi.",
                                   "upvotes": 2,
                                   "classifyThis": true,
                                   "relevance": null,
@@ -209,8 +84,8 @@
                                   "sentimentReasoning": null,
                                   "replies": [
                                     {
-                                      "commentId": "mjkcjyb",
-                                      "text": "So the swapping DLLs kinda works, but not really improves performance \\*at all\\*, so there is basically no point in doing so at this time",
+                                      "commentId": "lxgmdqp",
+                                      "text": "Next silly question; does it also boost the range of things like keyboards/mice/headphones that use 2.4GHz?",
                                       "upvotes": 1,
                                       "classifyThis": true,
                                       "relevance": null,
@@ -219,9 +94,9 @@
                                       "sentimentReasoning": null,
                                       "replies": [
                                         {
-                                          "commentId": "mjknjji",
-                                          "text": "Hi, just tried swapping the DLSS for myself, was getting around 60ish fps and swapping it to the latest version on DLSS swapper allows me to enable upscaling and increased it to 100+ fps, maybe the specific DLL wasn\u2019t functioning properly?\n\nEdit: This was at 50% GPU utilisation, I disabled v sync and I am now getting 175+ FPS at 95% utilisation on a 5070, let me know if you need any help :)",
-                                          "upvotes": 1,
+                                          "commentId": "lxj7j9e",
+                                          "text": "nope, those have their own receivers that are programmed to talk to those devices, it will only boost range for things you connect over bluetooth.",
+                                          "upvotes": 2,
                                           "classifyThis": true,
                                           "relevance": null,
                                           "relevanceReasoning": null,
@@ -229,8 +104,8 @@
                                           "sentimentReasoning": null,
                                           "replies": [
                                             {
-                                              "commentId": "mjkqjeh",
-                                              "text": "Which CPU are you running on, and which version of DLL did you use to see the improvements?",
+                                              "commentId": "lxj973f",
+                                              "text": "Got it. Thank you for your time!",
                                               "upvotes": 1,
                                               "classifyThis": true,
                                               "relevance": null,
@@ -252,103 +127,10 @@
                       ]
                     }
                   ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "n9fcgm7",
-          "text": "Here in August 2025 out of frustration that my new build with a 9950X3D and 5080 is getting 50fps with RTX and 100fps with vibrant visuals. Despite that I\u2019m getting 200+ fps minimum on every other game with max settings.",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "npg61r5",
-              "text": "did you ever figure this out? still tearing my hair out over this.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
+                },
                 {
-                  "commentId": "nrldbrb",
-                  "text": "Using the vanilla RTX tuner from the guy who makes vanilla RTX seemed to fix it for the most part",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mizpe78",
-          "text": "[Minecraft Bedrock RTX higher Chunk g | NVIDIA GeForce Forums](https://www.nvidia.com/en-us/geforce/forums/moar-games/35/559717/minecraft-bedrock-rtx-higher-chunk-give-low-perfor/)",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mj2zpeo",
-              "text": "I gave you an upvote! Here's hope they will fix it sooner than later",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mjhbc4n",
-          "text": "This is also happening for me. I had upscaling on a RTX 3070 and was getting 80 fps. Now, the upscaling option is greyed out after upgrading to a 5080 and I'm getting 70fps.\n\nMy brother is rocking a 3060Ti and he gets 15 fps MORE than me. Very annoying how this is broken now.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mmx01c5",
-          "text": "I had a 2080TI and could run Minecraft with RTX at 32 chunks, it died so I had to get a 5070 and it performs much worse? makes no sense?",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "n2j2jvs",
-              "text": "how did you get the option to run at 32? I thought that the max was 24",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "n2kqfiu",
-                  "text": "Somewhere in the settings, probably video settings",
+                  "commentId": "lxb0al0",
+                  "text": "Are you using the wifi antennas? You need to use the antennas if you aren't. \n\nI changed mine out for something a little stronger and my BT and WiFi range was even better. I don't use WiFi though but the BT range was notable.",
                   "upvotes": 1,
                   "classifyThis": true,
                   "relevance": null,
@@ -357,8 +139,19 @@
                   "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "n2l0uxg",
-                      "text": "Max for me is 24 with my 5070 ti huh",
+                      "commentId": "lxdorfj",
+                      "text": "It wasn\u2019t about that. The issue was that the Bluetooth would just disappear from the windows menu with the buggy driver version installed",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "lxej21r",
+                      "text": "What antennas did you get? I am currently using an external bluetooth adapter so that I can relocate it under my TV but having the onboard be a little stronger/relocatable would be preferable.",
                       "upvotes": 1,
                       "classifyThis": true,
                       "relevance": null,
@@ -367,8 +160,8 @@
                       "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "n2m59fj",
-                          "text": "It may of changed as it has had a major update, I'll try and check tomorrow if I remember and get back to you",
+                          "commentId": "lxf6vfk",
+                          "text": "I have extra antennas from other motherboards over the years. I believe this one was from the gigabyte b550i mobo, its a much larger external antenna like this. \n\nhttps://a.co/d/e2OQQ1b",
                           "upvotes": 1,
                           "classifyThis": true,
                           "relevance": null,
@@ -376,121 +169,28 @@
                           "sentiment": null,
                           "sentimentReasoning": null,
                           "replies": []
-                        },
-                        {
-                          "commentId": "n3fj54n",
-                          "text": "There's a text file you can change but it's a bit buggy as you go higher and can cause chunks to not load",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "n3fq8ky",
-                              "text": "I see thanks for letting me know, though due to low rtx 50 series performance it will probably be unusable with my gpu",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            }
-                          ]
                         }
                       ]
                     }
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "commentId": "mrymqgp",
-          "text": "Just built my pc with a 5080 and a 9800x3d and I was going insane thinking I had built the pc wrong due to the low performance I was getting , but I seen the have the exact problems you\u2019re having. Hoping there\u2019s a fix soon. There\u2019s some new drivers out today but I haven\u2019t tried since I\u2019m at work.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
+            },
             {
-              "commentId": "ms1dv2p",
-              "text": "Just bought a 5070ti at a decent price and I just found out about these issues, I was hoping I could play some MC with RTX on:( let us know if installing the new drivers fixed it!",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "ms1g1ap",
-                  "text": "yeah drivers didn't help:( . For now Im just playing it at 16 chunks since it still runs me at 70 fps. I really really hope theres a fix soon",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "ms7p6tr",
-                  "text": "So I kinda figured out a way around it (not really)\n\nbut if you really wanna play with stable fps at higher chunks then get lossless scaling from steam, it's only $7 and it makes your fps way better. ( runs me at stable 144)\n\nSet your mc with rtx to 24 chunks then run the app.  \n[Here](https://i.imgur.com/rPyI74X.jpeg) are the settings I have. You can still mess around and see what gets you the best performance!\n\nOnly thing I haven't figured out is how to set it to fullscreen since it only lets you play windowed full.\n\nLet me know if you need any help!",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mxphnre",
-          "text": "Any new news? My 5090 is not enjoying Minecraft......Upscaling is greyed out \ud83d\ude11",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mxpie7a",
-              "text": "See Edit 3.",
-              "upvotes": 1,
+              "commentId": "lx9s13u",
+              "text": "Have mine on my work pc\n\nMostly fine but the 2 issues I have are bios reset if you remove the PSU plug and it won't wake from sleep properly, requiring replugging my keyboard, but I don't know if that's just my OS or the mobo",
+              "upvotes": 3,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
               "sentiment": null,
               "sentimentReasoning": null,
               "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mxz6bnm",
-          "text": "So the problem is just rtx 5000 + ryzen cpu ? If I have a intel no problem its good ?",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
+            },
             {
-              "commentId": "mxzxpce",
-              "text": "it's better, but not perfect. in the graph of the edit 2 you can see that even with intel CPU you get lower performance than on 4090, which indicates that both suffer similar issues, just to a different extent.",
-              "upvotes": 1,
+              "commentId": "lx9fyp3",
+              "text": "Purely anecdotal but I had one of the RAM slots die after a few months and a friend had their ethernet port die with this board.",
+              "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -498,8 +198,8 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "my146mp",
-                  "text": "Can u send the link of the article pls",
+                  "commentId": "lxkpn3z",
+                  "text": "ethernet not working at all or limited speed?",
                   "upvotes": 1,
                   "classifyThis": true,
                   "relevance": null,
@@ -508,8 +208,8 @@
                   "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "my1ktyp",
-                      "text": "Its all in my post, please navigate to edit 2 above :P",
+                      "commentId": "lxm0gda",
+                      "text": "I believe he said it completely died with no warning one day",
                       "upvotes": 1,
                       "classifyThis": true,
                       "relevance": null,
@@ -521,8 +221,223 @@
                   ]
                 }
               ]
+            },
+            {
+              "commentId": "lx9xyte",
+              "text": "Same love this board even with a beast of a air cooler on it( Deepcool assassin 4)",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
             }
           ]
+        },
+        {
+          "commentId": "lx8ypk1",
+          "text": "All boards can be faulty - where exactly is your problem? Just pick one that ticks your boxes and that's it.",
+          "upvotes": 22,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "miz1yiv",
+              "text": "Some boards are just bad from the beginning. For example the MSI MPG B650I Wifi has some serious Bluetooth problems, even in this thread you can read about it. So i would never recommend that board.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lx99qsf",
+          "text": "B650 is where it\u2019s at. The insane pcie 5.0 specs add MASSIVE amounts of complexity to itx boards and most b650 boards are capable of pcie 5 for gpu and one ssd anyway. \nAnything above b series motherboards are a waste of money.",
+          "upvotes": 12,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lx9a6ku",
+              "text": "I used to have the x670E itx from ASUS but sold it and got a b650 itx from gigabyte. I feel literally not difference between them so can\u2019t say I was impressed by the ASUS at twice the cost\u2026",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lx90vfm",
+          "text": "What are the features you actually 'need' to have? That wil help you narrow down your choice of chipsets and motherboards.\n\ni have an MSI MPG B650i running a 7800X3D and 4090 and that motherboard has everything I need. The higher tier chipsets and godlike motherboards dont offer anything extra that I absolutely need to have in order to pay the extra for.\n\nThe only gripe I have with the the MSI MPG B650i \\*\\* is that the 2nd M2  is on the back of the motherboard unlike some others that have dual stacked M2 's on the front of motherboard. That would have made my life a lot easier when cramming 10Gb SFP+ networking into my SFF case.\n\n( \\*\\* - obviusly I meant my only gripe apart from that obnoxious bios reset button being so easy to accidentally press all the god damn time, yes it can be 'capped' with something so as not to be so easily presed, but FFS every time I used to accidentally hit it.....)",
+          "upvotes": 10,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lx95wj2",
+              "text": "I recently built a system with this board and I think they've made some changes to this awful button, it's not as easy to accidentally press now.\n\nThe m.2 drives locations are kinda annoying, but tbh it works for me. I have Windows in the back and games in the front one. Getting to the headers around the front m.2 is a real pain in the ass cause of the heatsink though, easier to leave the heatsink uninstalled to connect everything and install the drive last.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lx97mx0",
+                  "text": "Mate I ended up using curved tweezers down there :)\n\nThing with the M2\\_2 slot is its not a problem really for most normal people. I have a 10L sandwich so between back of motherboard and GPU is barely any space and then I went and decided I wanted dual SFP+ networking to connect this machine to my storage server. So had ot use an M2 extender which is wired for x4 leading to an x16 riser. Had to sneak that out of the case through the gap just under the GPU. And then you still have to somehow supply it 12V. Tried to find one where the x4 wires were thinner but they were all flat and braod so they get a bit pinched and can easily damage the cable and extender pcb connections. But this doesnt answer OP's quesiton, sorry for rambling just giving some idea of why its important to deifne your needs when askign such a question.",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lx98krx",
+                      "text": "&gt;sorry for rambling just giving some idea of why its important to deifne your needs when askign such a question.\n\nNo no I totally agree. With SFF you really need to know what you're doing, plan and research every component thoroughly.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "lx99w81",
+                          "text": "I'm just hoping the 5090 doesnt exceed 304x137x61 ;-)",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "lx99q45",
+          "text": "ASRock A620i Lightning.",
+          "upvotes": 10,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxai1zc",
+          "text": "My MSI has worked out well, but two minor inconveniences are:\na) Clear CMOS button sticks out a little, making it easier to press by accident, meaning you might have to reapply BIOS changes \nb) Connectivity to some headers is somewhat oddly placed if I recall correctly.\n\nAbsolutely no issues otherwise. Just make sure you have a separate laptop or PC from which you can download the latest drivers for wifi and other stuff in case you need to update them. I know this was a thing I had to do as I couldn\u2019t get the Wifi working from the get go.",
+          "upvotes": 6,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxdbtlc",
+          "text": "OP, many people will try to \"help\" you by warning you of an issue with a component that was reported by a handful of people in some thread. It's usually just survey bias (people without problems don't post about it, so the percentage of people with complaints seems way higher).\u00a0\n\nLook up any ANY motherboard, GPU, CPU, and you'll see someone with a problem with it. Computers can be finicky beasts, but modern hardware is remarkably reliable. Don't worry so much. RMA exists for a reason.\u00a0",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lx8wp8e",
+          "text": "I have the asus rog but it's pricey, a lot of people suggest the Asrock board on here and the reviews online are good for it, they're a bit cheaper.",
+          "upvotes": 5,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lx9lhhu",
+          "text": "I had the MSI b650i brand new, that one had an issue that would run the CMOS battery dead, even though i bought it brand new. It was annoying every time I unplugged my PC, I would have to reconfigure my. IOS settings.\n\nReplace it with an ROG b650e-i used from ebay. No issues so far.\n\nAll tech products will have QC issues, some slightly worse than others. YMMV as always",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lx9xm3y",
+          "text": "One of the new x870i boards with PCIE gen5",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxcn89d",
+          "text": "I personally used ASUS, Gigabyte and can confidently say B650i Lightning by Asrock is the best option by a good mile. I don\u2019t have any issues: no coil whine, no weird bios behaviour, no issues with EXPO and memory training, etc.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxdzp93",
+          "text": "If you want something cheap and reliable and don't mind an awful awful bios or don't plan to do any over/under-clocking at all, then go with Asrock.\n\nElse, if you need a lot of NVMe slots and don't mind missing out on PCIe 5 support, then go with MSI.\n\nElse go with Asus.\n\nDo not go with Gigabyte. And whatever brand you choose, do not go X670.\n\nIf you are an overclocking enthusiast then maybe consider an X870. Else stick with b650 until AM6.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lx9ab2x",
+          "text": "ASUS B650E-I is the best in my opinion.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         }
       ]
     }

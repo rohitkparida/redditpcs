@@ -1,0 +1,622 @@
+{
+  "productName": "amd-ryzen-7-7800x3d",
+  "batchIndex": 15,
+  "totalBatches": 58,
+  "comments": [
+    {
+      "commentId": "12cjw59",
+      "text": "[Gamers Nexus] AMD Ryzen 7 7800X3D CPU Review & Benchmarks",
+      "upvotes": 618,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "jf297iy",
+          "text": "You are good with a core i5 or Ryzen 5 cpu for gaming. Those cherry picked 1080p medium with 4090 benchmarks are ridiculous. Specifically for AAA titles, You are gpu bound most of the time.",
+          "upvotes": -14,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the real-world value and gaming relevance of high-end CPUs versus mid-range ones.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Dismisses high-end CPU benchmarks at lower resolutions as ridiculous and not representative of actual usage.",
+          "replies": [
+            {
+              "commentId": "jf2x44s",
+              "text": "they purposely lower the resolution and settings to highlight cpu differences because its a cpu benchmark",
+              "upvotes": 15,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Provides a purely factual explanation of CPU benchmarking methodology without personal opinion on the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The explanation is factual and lacks subjective sentiment.",
+              "replies": [
+                {
+                  "commentId": "jf7ezzl",
+                  "text": "Games that run at hundreds of FPS are not representative of performance in actually-CPU-bound games, especially when the CPUs differ hugely on how much cache they have.",
+                  "upvotes": 0,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses how CPU cache differences impact performance under CPU-bound gaming scenarios.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a technical critique of benchmarking metrics without a clear positive or negative bias toward the product.",
+                  "replies": [
+                    {
+                      "commentId": "jf7g8l7",
+                      "text": "I don't follow you",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "A simple conversational query requesting clarification, offering no insight about the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Lacks any positive or negative expression.",
+                      "replies": [
+                        {
+                          "commentId": "jf9hsbd",
+                          "text": "Suppose you have an RTS game engine that drops below 60FPS (on a late-model CPU) when there are more than 1200 units on the map.  Wanting to have a reasonably-sized customer base, devs make a game with that engine where the campaign mode never has more than 200 units on the map, and the UI doesn't scale well past controlling a few groups of 24 at a time.\n\nFurthermore, they make an in-game benchmark with 300 units.  What can this benchmark tell you about how well CPUs will run games made with the same engine in the future?\n\nIt depends on a lot.\n\nMaybe the units are processed in parallel, but there's some other part of the engine that becomes a single-threaded IPC\\*frequency bottleneck at 130 FPS.  But when the engine is pushed to the actual limit of playability, more cores = more better.\n\nMaybe the game has very sequential memory access patterns, and the working set size at 1200 units, where the game falls over, is 800 MiB, and it's all about memory bandwidth at the high end.  On the in-game benchmark, with a WSS of 200 MiB, a lot of it fits in the 96 MiB L3 of X3D chips, so AMD looks better than it really is.\n\nMaybe the game has more random memory access patterns, and the working set size at 1200 units where it falls over is 80 MiB. On the in-game benchmark with a WSS of 20 MiB, it fits in L3 on most CPUs on the market, so it seems like X3D does nothing, even though a giant L3 would let the engine scale way farther.\n\nYou can repeat this argument with a lot of different things in place of \"unit count in an RTS\".  Maybe its \"players in town in an MMO\", or \"rocket part count in KSP\", or \"number of NPC-driven vehicles in Unreal engine game,\" or \"amount of monomorphised generic functions that make the game executable really big\".\n\nAnd then outlets like GN publish reviews that test Rainbow 6 running at 400 FPS... who fuckin cares?  When I read the gaming section of CPU reviews, I look at the 2-3 games with the lowest FPS at the bottom of the chart, and ignore everything else.",
+                          "upvotes": 0,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Analyzes the technical interaction of game engine design with the L3 cache size of X3D CPUs.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Provides an objective technical breakdown of cache utilization without taking a emotional stance.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "jf2xjc3",
+                  "text": "You think I don't know that ? I was saying even if it's better in those benchmarks that doesn't mean it's worth it over a 200$ Ryzen 5 or core i5 which is easily 10-15% behind in 1440p preformece. 4k ? Which is 99% buy 4090 for, different doesn't exist.",
+                  "upvotes": -6,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Compares the cost and performance of the product against cheaper Ryzen 5 and Core i5 options.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Argues that the performance difference is not worth the premium price over cheaper alternatives.",
+                  "replies": [
+                    {
+                      "commentId": "jf2yzlt",
+                      "text": "Why are you so defensive? \n\nFrom reading your previous comment I couldn't tell that you knew and I don't have a crystal ball.\n\nIf it's worth it or not will depend on every use case. If you play factorio, stellaris or similar games it could be worth it.\n\nPeople who buy a 4090 will buy the best of the best even if it's not optimal.",
+                      "upvotes": 7,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Highlights specific CPU-heavy gaming use cases where purchasing the CPU is justified.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "Notes that the CPU is worth it for targeted simulation and strategy games like Factorio and Stellaris.",
+                      "replies": [
+                        {
+                          "commentId": "jf2zg7t",
+                          "text": "Fair enough. The new Ryzen 7 chip is the best gaming chip don't get me wrong. It's just unrecommendable for mainstream gpu like a 4070 or 3080 because it's straight up not worth it.",
+                          "upvotes": -3,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Directly evaluates the Ryzen 7 chip's recommendation status for mainstream GPU configurations.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Acknowledges it is the best gaming chip but advises that it is not worth it for mainstream GPUs.",
+                          "replies": [
+                            {
+                              "commentId": "jf33slk",
+                              "text": "I agree, most people are better served by a cheaper cpu, but that has always been the case.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "Discusses the general market value of high-end gaming CPUs compared to cheaper options.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "Expresses general agreement on value dynamics without a strong positive or negative bias.",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "jf5hu3j",
+          "text": "cant wait to see starfield benchmarks drop xd",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Expresses hype about upcoming game benchmarks rather than offering product feedback.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Expresses anticipation for a game rather than evaluating the CPU.",
+          "replies": []
+        },
+        {
+          "commentId": "jf6tdn2",
+          "text": "I was watching ltt video and they compare it with the core i5 13600k which is 150usd less than this one\u2026 I don\u2019t think they are on  the same league",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Compares the product's pricing class with the significantly cheaper Intel Core i5-13600K.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Questions the product's value proposition relative to a cheaper competitor from a different tier.",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "18ogzwt",
+      "text": "AMD Ryzen 7 7800X3D vs. Intel Core i9-14900K",
+      "upvotes": 384,
+      "classifyThis": true,
+      "relevance": "exclude",
+      "relevanceReasoning": "A thread title comparing the product to a competitor without any personal opinion or feedback.",
+      "sentiment": "neutral",
+      "sentimentReasoning": "The title is factual and does not convey sentiment.",
+      "replies": [
+        {
+          "commentId": "kehtu07",
+          "text": "TLDR: the 7800x3d is better or equal in 90% of cases, uses much less power, and is a cheaper total cost than the 14900k. 14900k is better for high thread workloads or memory dependent workloads.",
+          "upvotes": 484,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Compares the gaming performance, cost, and power efficiency of the 7800X3D against the Core i9-14900K.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Highlights the 7800X3D as a cheaper, more power-efficient, and equal-or-better gaming performer.",
+          "replies": [
+            {
+              "commentId": "keict67",
+              "text": "no surprise there, the 7800x3d is a gaming cpu and not a productivity cpu really.",
+              "upvotes": 179,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Classifies the product's primary design focus as a gaming CPU rather than a productivity chip.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Categorizes the processor's segment neutrally without expressing overall satisfaction or disappointment.",
+              "replies": [
+                {
+                  "commentId": "kejbx5t",
+                  "text": "Don\u2019t need the \u201creally\u201d it\u2019s just not. Epic gaming value just like the 5800X3D was. Instead of making a one size fits all the brands should hyper execute on specific segments. This chip probably doesn\u2019t have margins as good as the more expensive chips though if I had to guess",
+                  "upvotes": 45,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the gaming value of the CPU compared to its predecessor, the 5800X3D.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Praises the product for offering epic gaming value and successful segment focus.",
+                  "replies": [
+                    {
+                      "commentId": "kejd8n3",
+                      "text": "I mean the 7800x3d is the \"worst\" of the lineup, so probably also better yields and more volume of viable chips, so even if the margins are lower, you can crank out more of them.",
+                      "upvotes": 12,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Speculates on the production yields and profit margins of the 7800X3D within the AMD lineup.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Discusses supply chain and pricing strategy without expressing a positive or negative personal sentiment.",
+                      "replies": [
+                        {
+                          "commentId": "kejegf6",
+                          "text": "You mean worst as far as the yield? Because I think the worst is the 7900X3D, a product for no one so even if you could corner the market with a middle ground chip like that\u2026 gaming is 6 cores Vcache and productivity is only 12 cores so there\u2019s a better gaming chip $100 less and better productivity chip $100 more",
+                          "upvotes": 19,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Compares the value proposition of the 7800X3D to other X3D siblings like the 7900X3D.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "Highlights the 7800X3D as the better and cheaper choice for gaming compared to its siblings.",
+                          "replies": [
+                            {
+                              "commentId": "kejjt13",
+                              "text": "I thought the 7900x3d was for nobody until I saw all the idiots buying them up lol, same fools who payed 400 for a 4060ti, thats worse than a 3060ti, all while 3080FEs are 400 on ebay currently.\n\nI honestly was surprised how many people I saw on various forums and reddit with them",
+                              "upvotes": 18,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Mainly discusses the market for the Ryzen 9 7900X3D and Nvidia GPUs rather than the 7800X3D.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "Not focused on the target product, sentiment remains neutral.",
+                              "replies": [
+                                {
+                                  "commentId": "kejjtym",
+                                  "text": "> fools who *paid* 400 for\n\nFTFY.\n\nAlthough *payed* exists (the reason why autocorrection didn't help you), it is only correct in:\n\n * Nautical context, when it means to paint a surface, or to cover with something like tar or resin in order to make it waterproof or corrosion-resistant. *The deck is yet to be payed.*\n\n * *Payed out* when letting strings, cables or ropes out, by slacking them. *The rope is payed out! You can pull now.*\n\nUnfortunately, I was unable to find nautical or rope-related words in your comment.\n\n*Beep, boop, I'm a bot*",
+                                  "upvotes": 18,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "An automated bot response correcting grammatical usage, unrelated to the product.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "Bot messages do not carry personal or consumer sentiment.",
+                                  "replies": []
+                                },
+                                {
+                                  "commentId": "l5vyzle",
+                                  "text": "i think the AMD Ryzen 7- 7800X3D processor is a wonderful gaming chip and I haven\u2019t even overclocked it yet it run\u2019s with my RTX 4090 like a dream, go look it up on YouTube against the intel i9 .",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "Shares personal experience running the CPU with a flagship GPU and recommends checking benchmarks.",
+                                  "sentiment": "positive",
+                                  "sentimentReasoning": "Describes the processor as a wonderful gaming chip that runs like a dream.",
+                                  "replies": []
+                                },
+                                {
+                                  "commentId": "kelvgq3",
+                                  "text": "Then there's me waiting for the 4070 ti super! Shit looks fire can't wait to see benvhmarks",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Expresses excitement for a future Nvidia GPU release rather than discussing the AMD CPU.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The sentiment is off-topic and unrelated to the product under review.",
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "kv8qqb4",
+                      "text": "Why I want a computer that I can compile projects, edit video, and play games on. What you propose would require I build two computers.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the product's suitability for mixed workloads including compiling and video editing.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "Expresses frustration with specialized chips that require separate builds for different workloads.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "l5vyi2c",
+                  "text": "I have the AMD Ryzen 7- 7800X3D processor with the RTX 4090 and I haven\u2019t overclocked it yet and it\u2019s still running new games at over 100fps.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Shares personal experience regarding gaming frame rates on stock settings with a high-end GPU.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Indicates high satisfaction with the CPU's out-of-the-box performance in modern games.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "keim3cv",
+              "text": "Considering that chip is supposed to compete with the 7950x it just goes to show how fantastic of a well rounder the 7800X3D is, using a ton less power.",
+              "upvotes": 52,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Compares the power efficiency and overall capability of the 7800X3D to higher-tier chips.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Extols the CPU as a fantastic and power-efficient all-rounder for users.",
+              "replies": [
+                {
+                  "commentId": "kein62h",
+                  "text": "The 7950x3D is well rounded, the 7800x3D is pure gaming and loses hard in productivity.",
+                  "upvotes": 41,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Contrasts the productivity capabilities of the 7800X3D against the 7950X3D.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Emphasizes that the chip is restricted to gaming and performs poorly in productivity workloads.",
+                  "replies": [
+                    {
+                      "commentId": "kejmdu4",
+                      "text": "7950X3D is a weird product, and doesn't really outperform the 7950X in a lot of cases where its high-thread count matters due to the asymmetrical cache scheme. A 7950X3D with two X3D CCDs would've been killer.",
+                      "upvotes": 15,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Analyzes the CCD layout and asymmetrical cache scheme of the Ryzen 9 7950X3D.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The technical critique is directed at a different product model.",
+                      "replies": [
+                        {
+                          "commentId": "kekb39v",
+                          "text": "Nah not true. All core workloads show the 3D chip only trailing the base chip by a few percentage points. Games don't scale well beyond 8 cores making a 16 core V-Cache chip pointless. The 7950x3D sits perfectly as a sort of best of both worlds where for games that benefit from extra cache you get a 7800x3D and did games that don't, you have the elevated clocks of a regular 7950x. Then for production workloads that scale to all core, you have 8 cores that clock the same as regular 7950x, and 8 cores that are slightly underclocked. It's really the ultimate all around gaming and production chip as of right now. Eventually I plan to drop a 9950x3D in this board and just watch my CPU performance jump another generational leap worth of performance. Probably be my final upgrade.",
+                          "upvotes": 7,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Argues over core scaling and cache layouts specifically for the Ryzen 9 7950X3D and future upgrades.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The discussion is focused on the Ryzen 9 and future architectures rather than the 7800X3D.",
+                          "replies": [
+                            {
+                              "commentId": "kel8qbf",
+                              "text": "7950X3D would have been perfect if AMD had something like Intel's Thread Director which seems able to correctly place gaming and background threads on the core they need to be on.\n\nTill then Process Lasso seems to be a good enough work-around. You only need to configure it once per each game install anyway so it's not like it's a huge hardship.",
+                              "upvotes": 4,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Discusses scheduling logic and software solutions for the Ryzen 9 7950X3D and Intel CPUs.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The scheduling discussion is irrelevant to the single-CCD 7800X3D.",
+                              "replies": [
+                                {
+                                  "commentId": "kelug3s",
+                                  "text": "I'm actually quite happy with the CPPC Prefer frequency and Process Lasso setup over anything automatic. Unless the automatic setup was absolutely flawless at determining which games run faster with the cache cores or the frequency cores, then it will always be worse than manual assignment. Intel doesn't have a perfect situation with thread director either. My buddy showed me how on his 14700k if he doesn't disable eco cores, he gets gnarly stutters in a bunch of different games. Clearly it isn't working right so again manually handling core assignment is the way to go.",
+                                  "upvotes": 0,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Discusses core scheduling, Process Lasso, and Intel Core i7 stuttering issues.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "Does not relate to user experiences with the 7800X3D.",
+                                  "replies": [
+                                    {
+                                      "commentId": "kemcbim",
+                                      "text": "APO seems to be their solution to further fine-grained tuning of what to run on P and E-cores. \n\nAPO even outperforms having E-cores disabled and in some cases actually increases E-core residency while boosting performance, so clearly the E-cores are good for something if used correctly.\n\nToo bad Intel decided to lock APO to 14th gen only, when clearly 13th and even 12th gen could benefit from it.",
+                                      "upvotes": 3,
+                                      "classifyThis": true,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Focuses on Intel's APO technology and thread scheduling on Intel processors.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "Explores proprietary competitor technology, unrelated to the AMD product.",
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "commentId": "kekgbqh",
+                              "text": "yes it is true, it literally costs more and is slower in some scenarios than the cheaper 7950X. that's just the reality.",
+                              "upvotes": 0,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Compares the pricing and productivity performance of the 7950X vs the 7950X3D.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "Does not address the 7800X3D.",
+                              "replies": [
+                                {
+                                  "commentId": "kekp8xm",
+                                  "text": "\"some scenarios\" meanwhile in reality you see stuff like this all the time: https://www.guru3d.com/review/amd-ryzen-9-7950x3d-processor-review/page-16/ https://www.guru3d.com/review/amd-ryzen-9-7950x3d-processor-review/page-18/ https://www.guru3d.com/review/amd-ryzen-9-7950x3d-processor-review/page-15/ https://www.guru3d.com/review/amd-ryzen-9-7950x3d-processor-review/page-14/\n\nBut okay man, sure. Whatever you say.",
+                                  "upvotes": 3,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Posts review links comparing the Ryzen 9 7950X3D's productivity capabilities.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The references are for a different CPU model.",
+                                  "replies": [
+                                    {
+                                      "commentId": "kemos8m",
+                                      "text": "yep, basically margin of error for productivity in those tests. also seen reports of poor perf due to how cores get allocated, with things getting put on the \"wrong\" cores.",
+                                      "upvotes": 2,
+                                      "classifyThis": true,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Discusses core allocation errors and productivity benchmarks on the 7950X3D.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "Does not cover the 7800X3D CPU.",
+                                      "replies": [
+                                        {
+                                          "commentId": "kemx73g",
+                                          "text": "Most of that has been ironed out now, but yes rarely something goes wrong just like the p and e core thing. And just like that, the fixes are fairly simple. Process lasso, CPPC prefer frequency/cache depending on how you want to set it up. \n\nSimilar to Intel. Either way, the insane efficiency cannot be denied. Even when it loses productivity benchmarks it's not by a lot while using half the power and in gaming it's just killer period. \n\nI like the 14900k also don't get me wrong. It's the faster chip in productivity and has more predictable performance imo. Really can't go wrong with either. They each have clear pros and cons. We get to choose individually what's important to us. Competition is awesome",
+                                          "upvotes": 2,
+                                          "classifyThis": true,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "Summarizes the efficiency, core assignment, and scheduling of the 7950X3D versus the Intel 14900K.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "The comparison focuses on flagship models and does not involve the 7800X3D.",
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "kejvxk3",
+                          "text": "> 7950X3D is a weird product, and doesn't really outperform the 7950X in a lot of cases where its high-thread count matters due to the asymmetrical cache scheme.\n\nWell it's not meant to, right? The point is that it's a 7800X3D for gaming and (nearly) a 7900X for productivity.",
+                          "upvotes": 4,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Analyzes the 7800X3D's gaming performance as a baseline against higher-end multi-CCD processors.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Describes the product's segment performance in a comparative framework neutrally.",
+                          "replies": [
+                            {
+                              "commentId": "kejx1h7",
+                              "text": "It absolutely should be better than the 7950X because it costs more. For the most part it is faster in gaming so long as the core parking is working properly. For productivity it is a mixed bag and sometimes slower due to the loss of frequency due to the  V-cache. Also it's WAY better than a 7900X. It's not terrible, but it feels like it's a bit of a gimmick product.",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Evaluates the productivity value and gimmicks associated with the 7950X3D relative to the 7950X.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The critique and analysis are centered on the Ryzen 9 chips.",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "keio95j",
+                      "text": "I mean that's stating the obvious. Less cores and threads, but still impressive either way.",
+                      "upvotes": 10,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Reflects on the product's performance despite having fewer cores than high-end productivity alternatives.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "Declares that the processor is still impressive despite its specialized nature.",
+                      "replies": [
+                        {
+                          "commentId": "keiprfu",
+                          "text": "I'm just saying to me well rounded means it can excel in all areas and the 7800x3D is a highly focused product meant for gaming only, compared to other CPUs.",
+                          "upvotes": 8,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Analyzes the product's classification, highlighting its design focus solely on gaming.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Labels the product as specialized rather than general-purpose in an objective tone.",
+                          "replies": [
+                            {
+                              "commentId": "keiv7c3",
+                              "text": "It's still a great cpu for some mixed usage. You can't say a cpu you can get for $320 is pure gaming because it loses to $700 cpu. It's still quite good in productivity to most people.",
+                              "upvotes": 22,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "Discusses the product's value and capability for moderate productivity workloads alongside gaming.",
+                              "sentiment": "positive",
+                              "sentimentReasoning": "Claims that the CPU is great for mixed usage and is quite good for everyday productivity tasks.",
+                              "replies": [
+                                {
+                                  "commentId": "kej1vkn",
+                                  "text": "But it also loses to cheaper cpus, lol. It's terrible for anything that's multithreaded. It's very similar to intel's 7700k, good for games, sucked for everything else",
+                                  "upvotes": -9,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "Compares the CPU's multithreaded performance negatively to cheaper processors and old architectures.",
+                                  "sentiment": "negative",
+                                  "sentimentReasoning": "Criticizes the chip's non-gaming capabilities, calling them terrible.",
+                                  "replies": [
+                                    {
+                                      "commentId": "kejdq9p",
+                                      "text": "If you're like me who mainly games but also does some computer science stuff for school it's perfect medium. It will take care of 99% of peoples needs since most people don't need to have 12+ cores for example",
+                                      "upvotes": 11,
+                                      "classifyThis": true,
+                                      "relevance": "include",
+                                      "relevanceReasoning": "Shares a personal use case of using the CPU for gaming and academic work, evaluating its utility.",
+                                      "sentiment": "positive",
+                                      "sentimentReasoning": "Declares it as a perfect medium that satisfies almost all of a normal user's needs.",
+                                      "replies": [
+                                        {
+                                          "commentId": "kejigg4",
+                                          "text": "99% of people do not need a 7800x 3d, cause 99% of people do not have a high end gpu and even if they do they do not use it for 720p.\n\nThe 3d is the definition of not a perfect medium. Its a story of extremes. A 13600k is much more of a balanced cpu, having no weakness.",
+                                          "upvotes": -7,
+                                          "classifyThis": true,
+                                          "relevance": "include",
+                                          "relevanceReasoning": "Critiques the necessity and value of the CPU for general users, comparing it with the Core i5-13600K.",
+                                          "sentiment": "negative",
+                                          "sentimentReasoning": "Argues that most users don't need it and that it is an extreme, unbalanced product compared to Intel's offering.",
+                                          "replies": [
+                                            {
+                                              "commentId": "kejw3vv",
+                                              "text": "> 99% of people do not need a 7800x 3d, cause 99% of people do not have a high end gpu and even if they do they do not use it for 720p.\n\nYou clearly don't play CPU intensive games. 7800X3D is a godsend for e.g. wow",
+                                              "upvotes": 6,
+                                              "classifyThis": true,
+                                              "relevance": "include",
+                                              "relevanceReasoning": "Discusses the CPU's performance benefits in CPU-bound, massive multiplayer online games like WoW.",
+                                              "sentiment": "positive",
+                                              "sentimentReasoning": "Refers to the processor as a godsend for CPU-intensive titles.",
+                                              "replies": []
+                                            },
+                                            {
+                                              "commentId": "kejvgry",
+                                              "text": "Except that it's on a dead end platform, whereas AM5 is going to be here for another two (or more) CPU series upgrades.\n\nTo each their own.",
+                                              "upvotes": 2,
+                                              "classifyThis": true,
+                                              "relevance": "include",
+                                              "relevanceReasoning": "Discusses the upgrade potential and longevity of the AM5 platform hosting the 7800X3D.",
+                                              "sentiment": "positive",
+                                              "sentimentReasoning": "Favors the AMD platform over Intel due to its support for future generation upgrades.",
+                                              "replies": []
+                                            },
+                                            {
+                                              "commentId": "kejoppp",
+                                              "text": "Jack of all trades, master of none.",
+                                              "upvotes": -2,
+                                              "classifyThis": true,
+                                              "relevance": "include",
+                                              "relevanceReasoning": "Directly replies to a comparative debate about the performance profiles of gaming CPUs vs balanced CPUs.",
+                                              "sentiment": "neutral",
+                                              "sentimentReasoning": "Uses a common phrase to describe competitor design philosophies without a clear positive/negative bias toward the 7800X3D.",
+                                              "replies": []
+                                            },
+                                            {
+                                              "commentId": "kekc76a",
+                                              "text": "man, you have no clue what you are talking to...at this point i would be surprised if you have any of the cpu's in your rambling comments...",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": "exclude",
+                                              "relevanceReasoning": "An ad-hominem insult directed at another user with no relevant product feedback.",
+                                              "sentiment": "neutral",
+                                              "sentimentReasoning": "Lacks constructive sentiment about the processor.",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "commentId": "kej89pe",
+                              "text": ">I'm just saying to me well rounded means it can excel in all areas and the 7800x3D is a highly focused product meant for gaming only, compared to other CPUs.\n\nYea, it's a great cpu but I want a 1000 core gaming cpu capable of creating a simulation & downloading my brain \ud83e\udde0 into the simulation.",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "Directly acknowledges the product's quality in an ironic or hyperbolic comment about future demands.",
+                              "sentiment": "positive",
+                              "sentimentReasoning": "Directly refers to the chip as a great CPU.",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "keivd8c",
+                  "text": "7800x3d is not well rounded at all, it's highly specialised in gaming workloads\n\nWho is downvoting this? Do y'all know what \"well-rounded\" means??",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses whether the 7800X3D can be considered a well-rounded CPU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Stands on the technical reality of it being specialized for gaming without emotional coloring.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "kei30yr",
+              "text": "Yeah, but if you wanna run high thread workloads, it would be worth taking a look at the 7950X3d or one of its 12 and 16 core siblings.",
+              "upvotes": 42,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Evaluates alternative high-core models from the same platform for heavy multi-threaded tasks.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Offers generic market guidance for alternative workstation-oriented choices.",
+              "replies": [
+                {
+                  "commentId": "kei41yo",
+                  "text": "True, but that wasn't in the article so I didn't include it",
+                  "upvotes": 21,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "A meta-comment explaining the exclusion of certain information from a summary of a review article.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Does not express consumer sentiment regarding the processor's characteristics.",
+                  "replies": []
+                },
+                {
+                  "commentId": "keic9zx",
+                  "text": "Literally not one of the 2 this threads about. Thanks.",
+                  "upvotes": -1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Meta-comment addressing the scope of the thread rather than evaluating the processor.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Expresses frustration with thread focus rather than providing feedback on the hardware.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "keiva8j",
+              "text": "And it doesn't fucking bend lmao",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "References structural differences (bending) between the AMD and Intel platforms.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Positively highlights that the AMD CPU's platform does not suffer from socket bending issues.",
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

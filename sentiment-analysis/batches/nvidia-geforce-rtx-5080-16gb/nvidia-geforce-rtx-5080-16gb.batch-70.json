@@ -1,7 +1,7 @@
 {
   "productName": "nvidia-geforce-rtx-5080-16gb",
   "batchIndex": 70,
-  "totalBatches": 100,
+  "totalBatches": 101,
   "comments": [
     {
       "commentId": "1j7fckq",
@@ -14,8 +14,8 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mgx4h7v",
-          "text": "5070 performance is unusually good vs 4070 (+17.1-19.7% at 1440p-1080p RT and raster), and based on the 5070 TI gains vs 4070 TI Super we should have expected closer to +6-7% gains based on SM count growth (+2 vs +4 with 5070 TI). \n\nAcross 1080p-1440p raster and RT perf uplifts I've made these comparisons between cards:  \n\\-  note that I've checked average clocks (identical) during gaming from TechPowerup reviews.\n\n* 4070 -&gt; 5070 = +17.1-19.7% FPS\n* 4070 TI S -&gt; 5070 TI = +8.4-10.7% FPS\n* 4070 -&gt; 4070 TI S = +28.1-39.3% FPS\n* 5070 -&gt; 5070 TI = +19.7-27.1% FPS\n\nAnd no this has nothing to do with SM counts increases.\n\n* 4070 -&gt; 4070 TI S = 46 vs 66 = +43.5%\n* 5070 -&gt; 5070 TI = 48 vs 70 = +45.8%\n\nSeems like 50 series is back to 30 series poor core scaling. Really hope this is something NVIDIA can adress in a future architecture, but it absolutely is holding back the high end.",
+          "commentId": "mgxjl61",
+          "text": "Awesome job, thanks a lot!\n\nI think this serves to highlight just how odd HUB's RT testing was. Every other reviewer has the 9070 XT as better than the 5070 at 4k RT - and by an average of nearly 20%! - but HUB has it as worse.\n\nThat's simply too much of a difference to be fully explained by a difference in testing methodology.",
           "upvotes": 30,
           "classifyThis": true,
           "relevance": null,
@@ -24,9 +24,9 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "mgxa93w",
-              "text": "5070 has +25% TDP vs 4070, while 5070Ti only 5% vs 4070Ti S. This especially helps because 50 series has better scaling with more power than 40 series did.",
-              "upvotes": 27,
+              "commentId": "mgy5rt5",
+              "text": "Driver difference?",
+              "upvotes": 13,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -34,9 +34,9 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "mh1my9g",
-                  "text": "Did you read that gaming core clocks are identical between generations? Found it hard to believe myself but that's the numbers from TechPowerup. That applies to 4070 vs 5070 AND 4070 TI S vs 5070 \n\nNVIDIA clock scaling is \\~75% with Ampere derivative designs (I did this analysis a while back relation to a post) so even with the +300mhz effective clock speed bump claimed in the Blackwell deep dives, that's no more than a \\~8% perf gain. Something else is going on, prob architectural, L2 cache, aggresssive clock, +2SMs, GDDR7.   \nWas also surprised by how well the 4070S scaled vs 4070 despite 0% BW increase, probably thanks to the 48MB cache.\n\nAlso real world power draw increase corresponds to the FPS difference (see u/Voodoo2-SLi's power draw numbers) and not the TDP.",
-                  "upvotes": 1,
+                  "commentId": "mgyawag",
+                  "text": "According to their pinned comment on their review, no.\n\nBut I thought the same thing.",
+                  "upvotes": 12,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -45,32 +45,9 @@
                   "replies": []
                 },
                 {
-                  "commentId": "mgywfh7",
-                  "text": "50watts extra for the 5070 over 4070 for about 20% improvement - yikes :/",
-                  "upvotes": -1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "mgxmdg8",
-              "text": "When we had benchmarks for the 5080, I think it was reasonable to estimate possible performance results of the 5070 Ti over 4070 Ti Super considering the spec bump similarities. Then when it came to the regular 5070, with data from the whitepaper, everything seemed mostly like a downgrade to the 4070 Super. I just had a feeling it wouldn't make sense for the 5070 to be that bad.\n\nI really think GDDR7 is carrying Blackwell hard. Still haven't research if the memory subsystem has changed, but it would rather seem miniscule as much the large uplift is to MBW. Really the only improvements outside of gaming is LLMs and the few STEM apps that like MBW, and I guess new NVENC for those specific workloads.",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mh1scj8",
-                  "text": "For sure memory BW demanding games have seen some ludicrous gains (IIRC one game +20% vs 4070S in a review (can't remember sorry). TechYesCity showed a +10% gain vs 4070S in Windows 10 gaming optimized build (stripped down for bloat). \n\nThe 48MB L2 and the new clock controller (+300mhz effective according to NVIDIA) is also doing a lot of heavy lifting with the 5070. As I said clocks are identical between 5070 and 4070 in TechPowerup's, but despite that and GDDR7 memory being a lot more efficient than GDDR6X, the average power draw during gaming is significantly higher (+37W). The new clock controller is probably the culprit. \n\nThe performance scaling for higher end though doesn't make any sense and suggests that 40 series high end was never held back (but lower end was) or that 50 series high end have serious frontend/scheduling bottlenecks. When the entire Blackwell stack has launched I'll prob expand upon my posts (pinned) from late last year and compare against 30 and 40 series.\n\nThere's absolutely no changes to the memory subsystem. Completely unchanged vs 40 series rc. Yes this architecture is very incremental outside of FP4, GDDR7 and as ou said new NVENC with prosumer functionality (Can't remember what the format was called), this is a AI first and gaming second or last gen for sure.   \nEven Cooperative vectors which NVIDIA touted as 50 series only (lying by omission) actually works on 40 series, so 40 series is neural rendering ready as well and runs the new DLSS transformer models just as well. The power efficiency tech (low latency sleep and new power gating) sounds very impressive on paper, but doesn't result in any real world wins vs 40 series. Guess LSS, RTX mega geometry RT cores, 75% BVH footprint and faster SER logic are nice but only extras.\n\nI was hoping for a clean slate redesign in late December but in hindsight that was a bit stupid. Clean slate redesigns almost always (with the exception of Maxwell) result in bloated SMs and die sizes/silicon budget. Just look at RDNA 4 vs 3 and Turing vs Pascal. But NVIDIA can't keep kicking the can and do Ampere and Turing derivative architectures in perpetuity. At some point they have to do a clean slate design, something that hasn't happened since Turing and Volta. Hopefully next gen and maybe on SF2 if Samsung finally gets their act together.",
-                  "upvotes": 3,
+                  "commentId": "mgyq11f",
+                  "text": "HUB also had a lot more path tracing in their testing. For eg, two of their games Wukong and Alan Wake 2 use path tracing at medium settings.",
+                  "upvotes": 15,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -78,9 +55,9 @@
                   "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "mh3d3cx",
-                      "text": "&gt;The 48MB L2 and the new clock controller\n\nThat's something I didn't know before your writeup. Probably some granularity on clocks that effectively scales with the bump in TDP I guess.\n\n&gt;The performance scaling for higher end though doesn't make any sense and suggests that 40 series high end was never held back (but lower end was) or that 50 series high end have serious frontend/scheduling bottlenecks.\n\nThis was my thought just before the 5070 released when we had specs from the whitepaper. The thought of the 5070 not being able to catch up to the 4070 Super at least would be very strange, barely enough of a tier uplift considering the current state of underwhelming generational improvements. Maybe there's something with GPCs, idk from what I read before, replies to your writeup.\n\n&gt;The power efficiency tech (low latency sleep and new power gating) sounds very impressive on paper\n\nThis is something I'm looking forward to see in laptops, but my expectations are rather low.\n\nAs for you last point, I thought during the announcements that Blackwell (2.0) was going to be the next Turing. Well, turns out it seems to be Ada Lovelace+ with new GDDR7 and interesting layout choices. On an new node/fab with a new PDK and such hopefully they really revamp stuff.",
-                      "upvotes": 1,
+                      "commentId": "mh3unn1",
+                      "text": "I agree that's likely part of it, but I don't think that even that could account for the entire difference.\n\nAnd even if it could, it'd be a very silly way of testing RT, since even the majority of RT titles don't have PT.",
+                      "upvotes": 0,
                       "classifyThis": true,
                       "relevance": null,
                       "relevanceReasoning": null,
@@ -88,45 +65,32 @@
                       "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "mh3p9m8",
-                          "text": "Because it's 1000x faster it doesn't have to downclock just to be save but can manage clocks on the \u00b5s level and as a result it sustains high clocks for longer and doesn't see massive downclocking when encountering heavy workloads. Techpowerup's Blackwell architecture deep dive has a slide that explains this well). This is why TDP is higher because clocks are a lot higher most of the time on 50 series even if the benchmarking suite reports clocks differently. Pulling mhz at \u00b5s intervals just isn't feasible for game benchmarking, so we'll prob never know truly how much it differs between generations across different workloads.\n\nAgreed seems like the more likely explanation is the difference in GPC count between 4070 and 5070. 4070S = 5070 in all regards except GDDR7 and core count. L2 cache and GPC count is identtical. This is why 4070S scaled so well against 4070 despite slight clock regression. +25% frontends and backends + 33% more L2 cache helps a ton for gaming workloads.\n\nIn the end this (frontend and backend throughput and memory bandwidth is what really matters for gaming performance not massively higher compute and the 5070 proves that perfectly. If you want something in a completely different direction look at 3070 TI vs 3080. 0% increase in GPCs and as a result underwhelming performance gains (15-20% in TechPowerup's 3070 TI review). And a lot of those gains are probably memory BW rather than compute.\n\nI wouldn't get my hopes up either, but perhaps this is simply to counter the agressive clock controller on Blackwell.+300mhz effective clocks will increase power draw significantly.\n\nAgreed what a joke. Heralding this generation as the beginning of neural rendering and having special hardware capable of running it a huge lie by omision (40 series supports all this). What a load of BS and no doubt the worst lie of 50 series alongside the idiotic 5070 &gt; 4090 marketing claim.\n\nFingers crossed we're getting a clean slate \u00b5arch and that it's on Samsung SF2. I don't want another launch with poor availability.",
-                          "upvotes": 2,
+                          "commentId": "mh8b5vr",
+                          "text": "More games are moving to path tracing in the future. Doom TDA of all games is going to have it. And not having OMM and SER on AMD RDNA 4 cards is a massive disadvantage when path tracing.",
+                          "upvotes": 1,
                           "classifyThis": true,
                           "relevance": null,
                           "relevanceReasoning": null,
                           "sentiment": null,
                           "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "mh3zjse",
-                              "text": "I wonder if the increased clock stability is the reason why 50 series seems to have a significant gain over 40 series in 1% lows.",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": [
-                                {
-                                  "commentId": "mh7ztk5",
-                                  "text": "Very interesting and that's actually a very plausible explanation. Judging be [this slide](https://www.techpowerup.com/review/nvidia-geforce-rtx-50-technical-deep-dive/3.html#2-17) the clock variance on 50 series is \\~3x smaller than 50 series. 50 series 2700-2375 mhz, 40 series 2750-1750mhz.\n\nCould also have something to do with the AMP (dedicated context scheduling with a RISC-V processor) and mem BW gain from GDDR7.",
-                                  "upvotes": 1,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": []
-                                }
-                              ]
-                            }
-                          ]
+                          "replies": []
                         }
                       ]
                     }
                   ]
                 }
               ]
+            },
+            {
+              "commentId": "mh43613",
+              "text": "Hope I'm wrong , but it's not the first time I see strange data with HUB.\n\nSo maybe they made a mistake due to drivers, scripts, outlier... something definetly weirrd going on.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
             }
           ]
         }

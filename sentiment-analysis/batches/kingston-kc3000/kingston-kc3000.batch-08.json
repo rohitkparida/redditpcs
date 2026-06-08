@@ -4,6 +4,134 @@
   "totalBatches": 8,
   "comments": [
     {
+      "commentId": "1hydycb",
+      "text": "NVME Kingstone KC3000 VERY LOW read speed.\n\nHi everyone,\n\nI am a bit lost here tbh... Would appreciate some guidance. I recently built my new rig (7950x3d, 4080super, 32gb RAM 6000 EXPO) with a Kingston NVME KC3000  2TB. When I got it, I remember doing a CrystalDiskMark benchmark and got pretty good (normal) results compared to reviews on internet.\n\nHowever, I have been experiencing microstutter in a lot of games (especially open world ones like Spiderman : Miles Morales, Cyberpunk 2077 (especially while driving), and a little bit on red dead redemption but less often, etc...).  \nI do not stutter in little demanding games likes valorant and LoL for example.\n\nI did everything I could concerning CPU, RAM and GPU to mitigate the stutters, some things helped but I did not get id of them completely. So I thought let me test my NVME again and, to my surprise:\n\n[TEST 1](https://preview.redd.it/ewofqpi468ce1.png?width=1536&amp;format=png&amp;auto=webp&amp;s=ed90c94b77c5c734626c5583bc76e916717a3691)\n\n[TEST2](https://preview.redd.it/zh7tlbx668ce1.png?width=935&amp;format=png&amp;auto=webp&amp;s=8400dcf422a35188699442c323e853819e9453e7)\n\n[TEST 3](https://preview.redd.it/e903l46868ce1.png?width=474&amp;format=png&amp;auto=webp&amp;s=61299ea0383455e1d6230ea95b7a3a99d1eaaa33)\n\nThese are extremly low compared to reviews online that look more like this:\n\n[ONLINE REVIEW](https://preview.redd.it/2tjwcqxc68ce1.png?width=492&amp;format=png&amp;auto=webp&amp;s=a33d00156230b74cc70f367f2c3a011a3e21fc1e)\n\nSo, my question is, how the F is this happening? Could this be the culprit of all my stuttering issues ? Should I change it ?\n\nThanks a lot to anyone who read this and thanks in advance for all guidance and advice. Wish you a great 2025 year!\n\nEDIT : I tried freeing up some space on the NVME getting to 30% free space. I have turned off the pc for a few hours and just got back to it and tested it out. Results are extremely inconsistent.. look at this: [https://imgur.com/a/kX66uan](https://imgur.com/a/kX66uan)\n\nAt first it got 1705mB/s then the normal 6900MB/s and now  Itested again and got to 3500MB/s..\n\nEDIT 2: Just got an eye on HWinfo and noticed a temperature that looks to be way to high for the disk while being idle ????\n\n\\-&gt; Drive Temperature 3 being at 59\u00b0C even when idling ?\n\nThe drive temp looks to be at 32\u00b0C as reported on CrystalDisk too but? Wtf is that ?\n\n[https://imgur.com/a/ustR7dB](https://imgur.com/a/ustR7dB)",
+      "upvotes": 1,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "npy2pzj",
+          "text": "Did you figure it out?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "npyydi1",
+              "text": "BIOS issue, when i updated it worked fine!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ns7mr3x",
+                  "text": "so all the stuttering was because of the outdated BIOS and not by the ssd?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ns7v8m6",
+                      "text": "No it fixed my ssd speeds. Onthe stuttering side i realized that it was mostly game related and learnt to live with it",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ns7zl46",
+                          "text": "How was the experience with KC3000? Would you recommend it?",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "nsaopjf",
+                              "text": "W\u00fcrde mich auch interessieren, ich plane mit sie zu holen oder die 990 pro",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            },
+                            {
+                              "commentId": "nsgn6t4",
+                              "text": "I mean, it's pretty good! Can't remember the price exactly but I think that it's cheaper thank than 990 pro and has a longer life spawn (Write/delete cycles) and the speed difference is almost non significant!\n\nI bought a second 2TB KC3000",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "nsjpg2s",
+                                  "text": "Ohh noted, thank you!",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nupw72h",
+          "text": "Sorry for commenting on the old post, how is the drive doing? Did you fix this?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "1gkzklm",
+      "text": "Kingston KC3000 1TB\n\nHello! I want to know how is Kingston KC3000 for gaming laptops and my laptop is Lenovo LOQ 15IRX9. I was checking about its review and the performance of it is top notch but the power consumption is little bit on higher side and so does the temperature would be also on the higher side so I wanted to know how bad it will be or it shouldnt matter much? I normally only do gaming and other normal browsing and some codings on my laptop. Should I get this or other ssd that has relatively lower performance and lower power consumption?",
+      "upvotes": 1,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": []
+    },
+    {
       "commentId": "1ffhtf1",
       "text": "Subpar performance on Kingston KC3000 SSD - any tips?\n\nHi all - just wondering if I can get some help improving the performance of this SSD. I've been getting some stuttering in games and thought it could be related to the SSD, so I did some benchmarking. Based on this review of my SSD ([Kingston KC3000 PCIe 4.0 NVME SSD Review - Did Kingston Just Release a 'Game' Changer? | The SSD Review](https://www.thessdreview.com/our-reviews/nvme/kingston-kc3000-pcie-4-0-nvme-ssd-review/3/)) the performance I'm getting is lower than it should be.\n\nHere are some images of the performance I'm getting (the top image is the benchmarking from the review above and the bottom image is my own results): [Imgur: The magic of the Internet](https://imgur.com/a/4VccJT4)\n\nMy specs:\n\nRyzen 5800X3D\n\n32GB 3200Mhz\n\nKingston KC3000 2TB NVme\n\nEdit: Also, I have done the defrag/TRIM in Windows on this drive and the results above are still the same.",
       "upvotes": 0,

@@ -11,7 +11,9 @@ export function getStaticPaths() {
   const localSlugify = (name: string) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
   
   categories.forEach(cat => {
-    cat.products.forEach(prod => {
+    // Only generate routes for products that are fully ready
+    const readyProducts = cat.products.filter(prod => prod.redditConsensus && prod.redditConsensus !== "" && prod.mentions > 0);
+    readyProducts.forEach(prod => {
       paths.push({
         params: { category: cat.slug, product: localSlugify(prod.name) },
         props: { categoryData: cat, product: prod }
@@ -28,6 +30,35 @@ const totalReviews = (product.positiveReviews || 0) + (product.neutralReviews ||
 const positivePct = totalReviews > 0 ? Math.round(((product.positiveReviews || 0) / totalReviews) * 100) : 0;
 const neutralPct = totalReviews > 0 ? Math.round(((product.neutralReviews || 0) / totalReviews) * 100) : 0;
 const negativePct = totalReviews > 0 ? Math.max(0, 100 - positivePct - neutralPct) : 0;
+
+// Dynamic Discussion Profile based on the sentiment density and ratio
+let discussionProfile = {
+  label: "Balanced Discussion",
+  color: "text-blue-600 bg-blue-50/50 dark:text-blue-400 dark:bg-blue-950/20 border-blue-100 dark:border-blue-900/35",
+  desc: "A healthy mix of specifications, benchmarks, and active buying recommendations."
+};
+
+if (totalReviews > 0) {
+  if (neutralPct >= 60) {
+    discussionProfile = {
+      label: "Technical Standard",
+      color: "text-zinc-600 bg-zinc-50 border-zinc-200 dark:text-zinc-400 dark:bg-zinc-900 dark:border-zinc-800",
+      desc: "Discussions heavily focus on objective specifications, compatibility, and sizing rather than emotional sentiment."
+    };
+  } else if (positivePct >= 40) {
+    discussionProfile = {
+      label: "Highly Praised",
+      color: "text-emerald-600 bg-emerald-50 border-emerald-100 dark:text-emerald-450 dark:bg-emerald-950/20 dark:border-emerald-900/35",
+      desc: "Strong positive owner bias. Redditors frequently praise its value, performance, or thermal efficiency."
+    };
+  } else if (negativePct >= 30) {
+    discussionProfile = {
+      label: "Active Criticisms",
+      color: "text-rose-600 bg-rose-50 border-rose-100 dark:text-rose-455 dark:bg-rose-955/20 dark:border-rose-900/35",
+      desc: "Notable critical warnings. Focus is on competitive price concerns, defects, or better product alternatives."
+    };
+  }
+}
 
 // Structured SEO metadata block
 const jsonLd = {
@@ -132,6 +163,16 @@ const jsonLd = {
                     <span class="text-emerald-600 dark:text-emerald-400">+{positivePct}% Positive</span>
                     <span class="text-zinc-550">{neutralPct}% Neutral</span>
                     <span class="text-rose-600 dark:text-rose-455">-{negativePct}% Critical</span>
+                  </div>
+                  
+                  {/* Dynamic Discussion Profile Explanation Card */}
+                  <div class="mt-4 flex items-center gap-2.5 p-3 rounded-2xl border bg-zinc-50/50 dark:bg-zinc-950/20 border-zinc-200/50 dark:border-zinc-850 shadow-sm transition-all duration-200">
+                    <span class={`text-[9px] font-black uppercase tracking-widest px-2.5 py-1 rounded-lg border inline-block shrink-0 ${discussionProfile.color}`}>
+                      {discussionProfile.label}
+                    </span>
+                    <span class="text-[10px] text-zinc-500 dark:text-zinc-400 font-bold leading-relaxed">
+                      {discussionProfile.desc}
+                    </span>
                   </div>
                 </div>
               ) : (
@@ -241,6 +282,126 @@ const jsonLd = {
 </Layout>
 
 <script>
+  // Robust client-side markdown parser to render premium tables, links, bold, and bullets
+  function parseInlineMarkdown(text) {
+    if (!text) return '';
+    let parsed = text;
+    
+    // Convert Bold: **text** -> <strong>
+    parsed = parsed.replace(/\*\*([\s\S]+?)\*\*/g, '<strong class="font-extrabold text-zinc-900 dark:text-white">$1</strong>');
+    
+    // Convert Italics: *text* -> <em>
+    parsed = parsed.replace(/\*([\s\S]+?)\*/g, '<em class="italic text-zinc-800 dark:text-zinc-200">$1</em>');
+
+    // Convert Links: [text](url) -> <a>
+    parsed = parsed.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (match, linkText, url) => {
+      const cleanUrl = url.replace(/&amp;/g, '&');
+      return `<a href="${cleanUrl}" target="_blank" rel="noopener" class="text-reddit-orange hover:underline font-bold transition-colors inline-flex items-center gap-0.5">${linkText} <svg class="w-3 h-3 inline-block flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg></a>`;
+    });
+
+    return parsed;
+  }
+
+  function isSeparatorRow(cells) {
+    return cells.length > 0 && cells.every(cell => {
+      const clean = cell.trim();
+      return clean === '' || /^:?-+:?$/.test(clean);
+    });
+  }
+
+  function renderTable(rows) {
+    let headerCells = rows[0];
+    let dataRows = rows.slice(1);
+    
+    if (rows[1] && isSeparatorRow(rows[1])) {
+      dataRows = rows.slice(2);
+    } else if (rows[0] && isSeparatorRow(rows[0])) {
+      headerCells = [];
+      dataRows = rows.slice(1);
+    } else {
+      headerCells = rows[0];
+      dataRows = rows.slice(1);
+    }
+
+    let tableHtml = `<div class="overflow-x-auto rounded-xl border border-zinc-200 dark:border-zinc-800 shadow-sm my-4 bg-white dark:bg-zinc-950/45 max-w-full">`;
+    tableHtml += `<table class="w-full text-left border-collapse text-[11px] leading-normal">`;
+    
+    if (headerCells && headerCells.length > 0) {
+      tableHtml += `<thead class="bg-zinc-50 dark:bg-zinc-900 text-zinc-550 dark:text-zinc-400 font-extrabold uppercase tracking-wider border-b border-zinc-200 dark:border-zinc-800"><tr>`;
+      headerCells.forEach(cell => {
+        tableHtml += `<th class="px-3.5 py-2.5 border-r last:border-r-0 border-zinc-200 dark:border-zinc-800 font-bold">${parseInlineMarkdown(cell)}</th>`;
+      });
+      tableHtml += `</tr></thead>`;
+    }
+    
+    tableHtml += `<tbody class="divide-y divide-zinc-200 dark:divide-zinc-800 text-zinc-700 dark:text-zinc-300">`;
+    dataRows.forEach((row, rIdx) => {
+      const rowClass = rIdx % 2 === 0 ? 'bg-white dark:bg-zinc-950/20' : 'bg-zinc-50/30 dark:bg-zinc-900/10';
+      tableHtml += `<tr class="${rowClass} hover:bg-zinc-100/50 dark:hover:bg-zinc-900/30 transition-colors">`;
+      row.forEach(cell => {
+        tableHtml += `<td class="px-3.5 py-2.5 border-r last:border-r-0 border-zinc-200 dark:border-zinc-800 font-medium whitespace-normal">${parseInlineMarkdown(cell)}</td>`;
+      });
+      tableHtml += `</tr>`;
+    });
+    
+    tableHtml += `</tbody></table></div>`;
+    return tableHtml;
+  }
+
+  function parseMarkdown(text) {
+    if (!text) return '';
+    
+    let html = text
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/&amp;nbsp;/g, '&nbsp;');
+
+    const lines = html.split('\n');
+    const resultLines = [];
+    let inTable = false;
+    let tableRows = [];
+
+    for (let i = 0; i < lines.length; i++) {
+      const line = lines[i];
+      const trimmed = line.trim();
+      
+      const pipeCount = (trimmed.match(/\|/g) || []).length;
+      
+      if (pipeCount >= 2) {
+        inTable = true;
+        const cells = trimmed.split('|');
+        if (cells.length > 0 && cells[0].trim() === '' && trimmed.startsWith('|')) {
+          cells.shift();
+        }
+        if (cells.length > 0 && cells[cells.length - 1].trim() === '' && trimmed.endsWith('|')) {
+          cells.pop();
+        }
+        tableRows.push(cells);
+      } else {
+        if (inTable && tableRows.length > 0) {
+          resultLines.push(renderTable(tableRows));
+          tableRows = [];
+          inTable = false;
+        }
+        
+        // Bullet list support outside tables
+        if (trimmed.startsWith('- ') || trimmed.startsWith('* ')) {
+          const content = trimmed.substring(2);
+          resultLines.push(`<div class="flex items-start gap-2 my-1 text-zinc-700 dark:text-zinc-350"><span class="text-reddit-orange mt-1.5 flex-shrink-0 w-1.5 h-1.5 rounded-full bg-reddit-orange"></span><div class="flex-1">${parseInlineMarkdown(content)}</div></div>`);
+        } else {
+          resultLines.push(parseInlineMarkdown(line));
+        }
+      }
+    }
+    
+    if (inTable && tableRows.length > 0) {
+      resultLines.push(renderTable(tableRows));
+    }
+
+    return resultLines.join('\n');
+  }
+
   // Load Reddit evidence for transparency
   async function loadRedditEvidence() {
     const threadsContainer = document.getElementById('reddit-threads');
@@ -262,9 +423,9 @@ const jsonLd = {
             <div class="flex items-start justify-between">
               <div class="flex-1 min-w-0">
                 <div class="flex items-center gap-1.5 mb-1.5">
-                  <span class="text-[10px] font-extrabold text-reddit-orange uppercase tracking-wider">r/${thread.subreddit}</span>
+                  <a href="https://www.reddit.com/r/${thread.subreddit}" target="_blank" rel="noopener noreferrer" class="text-[10px] font-extrabold text-reddit-orange uppercase tracking-wider hover:underline">r/${thread.subreddit}</a>
                   <span class="text-zinc-300 dark:text-zinc-700">•</span>
-                  <span class="text-[10px] font-bold text-zinc-400 dark:text-zinc-500 uppercase">${thread.commentCount} opinions</span>
+                  <span class="text-[10px] font-bold text-zinc-400 dark:text-zinc-550 uppercase">${thread.commentCount} opinions</span>
                 </div>
                 <div class="flex items-center gap-3 text-[10px] font-bold">
                   <span class="text-emerald-600 dark:text-emerald-450">+${thread.positive} positive</span>
@@ -299,19 +460,18 @@ const jsonLd = {
           const included = data.comments.filter(c => c.relevance === 'include' && c.sentiment);
           
           const posComments = included
-            .filter(c => c.sentiment === 'positive')
-            .sort((a, b) => (b.upvotes || 0) - (a.upvotes || 0))
-            .slice(0, 3); // Take top 3 positive
-            
+             .filter(c => c.sentiment === 'positive')
+             .sort((a, b) => (b.upvotes || 0) - (a.upvotes || 0))
+             .slice(0, 3); // Take top 3 positive
+             
           const negComments = included
-            .filter(c => c.sentiment === 'negative' || c.sentiment === 'neutral')
-            .sort((a, b) => (b.upvotes || 0) - (a.upvotes || 0))
-            .slice(0, 3); // Take top 3 critical/neutral
-            
+             .filter(c => c.sentiment === 'negative' || c.sentiment === 'neutral')
+             .sort((a, b) => (b.upvotes || 0) - (a.upvotes || 0))
+             .slice(0, 3); // Take top 3 critical/neutral
+             
           if (posComments.length > 0 || negComments.length > 0) {
             bilateralContainer.innerHTML = `
               <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {/* Positive Column */}
                 <div>
                   <h4 class="font-bold text-sm mb-4 flex items-center gap-1.5 text-emerald-700 dark:text-emerald-450 uppercase tracking-wider pb-2 border-b border-emerald-100 dark:border-emerald-900/35">
                     <span>💚</span> Why Redditors Love It
@@ -319,7 +479,6 @@ const jsonLd = {
                   <div class="space-y-4" id="pos-comments-list"></div>
                 </div>
                 
-                {/* Critical Column */}
                 <div>
                   <h4 class="font-bold text-sm mb-4 flex items-center gap-1.5 text-rose-700 dark:text-rose-455 uppercase tracking-wider pb-2 border-b border-rose-100 dark:border-rose-900/35">
                     <span>⚠️</span> Criticisms & Concerns
@@ -334,19 +493,19 @@ const jsonLd = {
             
             posComments.forEach(comment => {
               const card = document.createElement('div');
-              card.className = `border border-emerald-100 dark:border-emerald-900/30 rounded-xl p-4 bg-white dark:bg-zinc-900/40 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200`;
+              card.className = `border border-emerald-105 dark:border-emerald-900/30 rounded-xl p-4 bg-white dark:bg-zinc-900/40 shadow-sm flex flex-col justify-between hover:shadow-md transition-shadow duration-200`;
               card.innerHTML = `
                 <div>
                   <div class="flex items-center justify-between mb-2 pb-2 border-b border-zinc-55 dark:border-zinc-800/60 text-[10px] font-bold text-zinc-400 dark:text-zinc-550">
-                    <span class="text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/20 px-2 py-0.5 rounded border border-emerald-100 dark:border-emerald-900/40">Positive consensus</span>
+                    <span class="text-emerald-600 dark:text-emerald-450 bg-emerald-50 dark:bg-emerald-950/20 px-2 py-0.5 rounded border border-emerald-100 dark:border-emerald-900/40 font-bold uppercase tracking-wider">Positive consensus</span>
                     <span>+${comment.upvotes} votes</span>
                   </div>
-                  <p class="text-xs text-zinc-700 dark:text-zinc-300 italic leading-relaxed mb-3">
-                    "${comment.text.length > 220 ? comment.text.substring(0, 220) + '...' : comment.text}"
-                  </p>
+                  <div class="text-xs text-zinc-700 dark:text-zinc-300 italic leading-relaxed mb-3 max-h-56 overflow-y-auto pr-1 custom-scrollbar">
+                    "${parseMarkdown(comment.text)}"
+                  </div>
                 </div>
                 <div class="flex items-center justify-between border-t border-zinc-55 dark:border-zinc-800/60 pt-2 mt-auto text-[9px] font-bold text-zinc-450 dark:text-zinc-500">
-                  <span>u/${comment.author}</span>
+                  <a href="https://www.reddit.com/user/${comment.author}" target="_blank" rel="noopener" class="hover:text-reddit-orange hover:underline transition-colors">u/${comment.author}</a>
                   <a href="${comment.threadUrl}" target="_blank" rel="noopener" 
                      class="text-reddit-orange hover:underline">
                     Link &rarr;
@@ -367,15 +526,15 @@ const jsonLd = {
               card.innerHTML = `
                 <div>
                   <div class="flex items-center justify-between mb-2 pb-2 border-b border-zinc-55 dark:border-zinc-800/60 text-[10px] font-bold text-zinc-400 dark:text-zinc-555">
-                    <span class="${badgeClass} px-2 py-0.5 rounded border">${label}</span>
+                    <span class="${badgeClass} px-2 py-0.5 rounded border font-bold uppercase tracking-wider">${label}</span>
                     <span>+${comment.upvotes} votes</span>
                   </div>
-                  <p class="text-xs text-zinc-700 dark:text-zinc-300 italic leading-relaxed mb-3">
-                    "${comment.text.length > 220 ? comment.text.substring(0, 220) + '...' : comment.text}"
-                  </p>
+                  <div class="text-xs text-zinc-700 dark:text-zinc-300 italic leading-relaxed mb-3 max-h-56 overflow-y-auto pr-1 custom-scrollbar">
+                    "${parseMarkdown(comment.text)}"
+                  </div>
                 </div>
                 <div class="flex items-center justify-between border-t border-zinc-55 dark:border-zinc-800/60 pt-2 mt-auto text-[9px] font-bold text-zinc-450 dark:text-zinc-500">
-                  <span>u/${comment.author}</span>
+                  <a href="https://www.reddit.com/user/${comment.author}" target="_blank" rel="noopener" class="hover:text-reddit-orange hover:underline transition-colors">u/${comment.author}</a>
                   <a href="${comment.threadUrl}" target="_blank" rel="noopener" 
                      class="text-reddit-orange hover:underline">
                     Link &rarr;
@@ -406,26 +565,28 @@ const jsonLd = {
         threadsContainer.innerHTML = '<div class="space-y-4 col-span-2"></div>';
         const commentsContainer = threadsContainer.firstChild as HTMLDivElement;
         
-        data.comments.forEach((comment: any) => {
+        const verifiedComments = data.comments.filter((c: any) => c.relevance === 'include');
+        
+        verifiedComments.forEach((comment: any) => {
           const commentEl = document.createElement('div');
-          commentEl.className = 'border border-reddit-border dark:border-zinc-800 rounded-xl p-4 bg-white dark:bg-zinc-900 transition-colors';
+          commentEl.className = 'border border-reddit-border dark:border-zinc-800 rounded-xl p-4 bg-white dark:bg-zinc-900 transition-colors shadow-sm';
           
           const sentimentColor = comment.sentiment === 'positive' ? 'text-emerald-600 dark:text-emerald-400' : 
-                                comment.sentiment === 'negative' ? 'text-rose-600 dark:text-rose-400' : 'text-zinc-500';
+                                comment.sentiment === 'negative' ? 'text-rose-600 dark:text-rose-400' : 'text-zinc-505 dark:text-zinc-400';
           
           commentEl.innerHTML = `
             <div class="flex items-start justify-between mb-2">
               <div class="flex flex-wrap items-center gap-2">
-                <span class="text-sm font-medium dark:text-zinc-200">u/${comment.author}</span>
-                <span class="text-xs px-2 py-0.5 rounded font-bold border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950 ${sentimentColor}">
-                  ${comment.sentiment}
+                <a href="https://www.reddit.com/user/${comment.author}" target="_blank" rel="noopener" class="text-sm font-medium dark:text-zinc-200 hover:text-reddit-orange hover:underline transition-colors">u/${comment.author}</a>
+                <span class="text-xs px-2 py-0.5 rounded font-bold border border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950 ${sentimentColor} capitalize">
+                  ${comment.sentiment || 'neutral'}
                 </span>
-                ${comment.recommendation === 'yes' ? '<span class="text-xs px-2 py-0.5 rounded font-bold bg-emerald-50 dark:bg-emerald-950/20 text-emerald-600 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-900/30">Recommends</span>' : ''}
-                ${comment.recommendation === 'no' ? '<span class="text-xs px-2 py-0.5 rounded font-bold bg-rose-50 dark:bg-rose-955/20 text-rose-600 dark:text-rose-400 border border-rose-100 dark:border-rose-900/30">Doesn\'t recommend</span>' : ''}
+                ${comment.recommendation === 'yes' ? '<span class="text-xs px-2 py-0.5 rounded font-bold bg-emerald-50 dark:bg-emerald-955/20 text-emerald-600 dark:text-emerald-400 border border-emerald-100 dark:border-emerald-900/30 font-bold uppercase tracking-wider">Recommends</span>' : ''}
+                ${comment.recommendation === 'no' ? '<span class="text-xs px-2 py-0.5 rounded font-bold bg-rose-50 dark:bg-rose-955/20 text-rose-600 dark:text-rose-455 border border-rose-100 dark:border-rose-900/30 font-bold uppercase tracking-wider">Doesn\'t recommend</span>' : ''}
               </div>
               <span class="text-xs text-reddit-muted dark:text-zinc-500 font-bold">${comment.upvotes} upvotes</span>
             </div>
-            <p class="text-sm mb-2 text-zinc-700 dark:text-zinc-300 leading-relaxed">${comment.text}</p>
+            <div class="text-sm mb-2 text-zinc-700 dark:text-zinc-355 leading-relaxed whitespace-pre-wrap">${parseMarkdown(comment.text)}</div>
             <a href="${comment.threadUrl}" target="_blank" rel="noopener" 
                class="text-xs text-reddit-orange hover:underline font-bold">
               View in thread →

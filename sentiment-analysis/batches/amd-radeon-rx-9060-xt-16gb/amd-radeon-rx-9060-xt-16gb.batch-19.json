@@ -1,7 +1,7 @@
 {
   "productName": "amd-radeon-rx-9060-xt-16gb",
   "batchIndex": 19,
-  "totalBatches": 25,
+  "totalBatches": 30,
   "comments": [
     {
       "commentId": "1l8yden",
@@ -14,160 +14,54 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mx8uu3g",
-          "text": "&gt;standard raster performance without ray-tracing and/or DLSS/FSR/XeSS\n\nHow long until reviews from...anyone...start including DLSS?\n\nits literally impossible to take these reviews at face value when people at 1440p (and even 1080p, to an extent) can net 20-30% more performance across the board in basically every game with a 5060ti or a 5070.",
-          "upvotes": 9,
-          "classifyThis": false,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "commentId": "mx90uws",
+          "text": "The gap (both price and performance) to the 9070 is so large, wonder would there be a 9065 XT or something?",
+          "upvotes": 30,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The user is discussing the performance and price gap of the RX 9060 XT relative to the 9070.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question about potential product tiers without expressing a positive or negative opinion.",
           "replies": [
             {
-              "commentId": "mx9o98n",
-              "text": "There is no scientifically valid way to compare hardware directly, when you start giving them different software workloads to test.\n\nYou can't directly compare a 5060ti to a 9060xt for example, if one is using FSR 4 and the other is using DLSS.\n\nYou can most certainly compare the image quality of them separate from raw performance (hence all those videos looking at FSR vs DLSS), you can also compare raw performace of them separate from the upscalers available, like at native or with a hardware agnostic upscaling solution, but once you throw different upscalers at different cards, now you're not just comparing raw performance.\n\nIt's the same reason why you don't see cards running games at medium being compared to cards running games at ultra. They're running different software workloads so you're no longer just comparing hardware to hardware.",
-              "upvotes": 22,
-              "classifyThis": false,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "commentId": "mx97ndf",
+              "text": "There is a more cut down RX 9070 GRE already, but for now it's staying China only.",
+              "upvotes": 52,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion has shifted to the RX 9070 GRE, which is a different product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is purely factual regarding the availability of the 9070 GRE.",
               "replies": [
                 {
-                  "commentId": "mx9r63w",
-                  "text": "&gt; There is no scientifically valid way to compare hardware directly, when you start giving them different software workloads to test.\n\nYou need to fix one metric. Normally that is IQ by using the same settings and measuring the FPS. The other option is to fix the frame rate and the measure the IQ differences. [H]ardOCP used this testing methodology.and it made for a nice alternative to bigger bar better testing.",
-                  "upvotes": 2,
+                  "commentId": "mxchdt4",
+                  "text": "too bad they saved on the VRAM on that again",
+                  "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment refers to the VRAM of the RX 9070 GRE, not the RX 9060 XT.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user expresses disappointment regarding the VRAM of the 9070 GRE.",
                   "replies": [
                     {
-                      "commentId": "mxagyim",
-                      "text": "&gt;Normally that is IQ by using the same settings and measuring the FPS\n\nYou cannot measure the FPS in this way and have it be an actually valid measurement. That's what I'm trying to say.\n\nBy leaving the FPS unlocked and trying to measure it with different upscalers on, you're not measuring the impact of just the upscaler, but also of the hardware running that upscaler. It's not a valid test of either the hardware OR the upscaler at that point.\n\nPeople want these charts because they want to know how specific games perform, but they ask for these charts in hardware reviews where such charts are invalid. I don't think showing a 5070ti vs a 9070XT with their respective upscalers and their performance is an invalid test *if done in the context of specific games*. It's just invalid when you're trying to use it to measure how either the cards, or those upscalers, perform in a vacuum.\n\nThat's also why we do sometimes see outlets like hardware unboxed throw limited performance graphs in their reviews of upscalers, most recently FSR 4. It's a way to see how certain games or settings can scale, but it's definitely *not* a valid way to compare just those two cards to one another, or just those two upscalers to one another.",
-                      "upvotes": 6,
+                      "commentId": "mxe6lj7",
+                      "text": "The issue is that the 9070 and 9070 XT are both 256bit bus cards. So, any dies with an imperfect memory controller would have to go in the garbage if the GRE was also 256bit. With 192bit, they can salvage those dies and pair them with 12GB of VRAM.\n\nIt's the same reason Intel has both the B570 and B580 despite them being so close in price.",
+                      "upvotes": 5,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The discussion is about the technical architecture of the 9070 series and Intel cards, not the 9060 XT.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment provides a technical explanation of memory controllers and binning.",
                       "replies": [
                         {
-                          "commentId": "mxc3ctf",
-                          "text": "I did not say that allowing both the IQ and the FPS to be variable was a valid test.\n\nYou said\n\n&gt; There is no scientifically valid way to compare hardware directly, when you start giving them different software workloads to test.\n\nThis is not true as long as you to fix a different metric about which the comparison can occur.\n\nFor [H] this was 'For a fixed 60 FPS how good can the test card make these games look Vs it's competitors'\n\nFor other reviewers it was 'For a fixed IQ how many FPS can the test card get Vs it's competitors'.\n\nBoth are valid methods. Fixing frame rate is harder and more time consuming though.",
+                          "commentId": "mxhblgk",
+                          "text": "Yeah, I suspect lowbins with intact memory controllers become the lowest tier 9070 SKUs.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "mxcldvm",
-                              "text": "&gt;I did not say that allowing both the IQ and the FPS to be variable was a valid test.\n\nYou outlined 2 testing methods and didn't dispute the validity of either, so I assumed you thought they were okay to use. One of those methods was, and I quote, \"Normally that is IQ by using the same settings and measuring the FPS.\" That is you saying we can measure IQ and FPS in the same test, right? Maybe I've misunderstood what you meant.\n\n&gt;This is not true as long as you to fix a different metric about which the comparison can occur.\n\nIt is true. The problem isn't that we're trying to use the wrong metric as our performance metric, the problem is that you can't measure one thing when there's a bunch of different variables all effecting it at once. Weather that's IQ or FPS or whatever else, you need as few variables as possible. I feel you're not quite understanding that I'm talking about purely isolating the hardware as the variable, because you keep bringing up tests that don't do that? In order to measure the hardware, the software cannot change between tests as much as you can help (so we allow for drivers, but we wouldn't allow you to enable different upscalers on different cards).\n\n&gt;For [H] this was 'For a fixed 60 FPS how good can the test card make these games look Vs it's competitors'\n\nThat is an interesting test, and as I mentioned before, I don't think it's invalid *if it's done in the context of a specific game*. That's what randomgaminginHD does sometimes. If you try to use that test to say that card X is faster than card Y, or that upscaler X outperforms upscaler Y though, then it becomes invalid.\n\n&gt;For other reviewers it was 'For a fixed IQ how many FPS can the test card get Vs it's competitors'.\n\nThis is a perfectly valid test if by \"fixed IQ\" you mean that the settings are the same across all cards tested. That removes as many of the software variables as possible and allow you to compare purely the cards performance. \n\nJust to keep the example going, a test like this *wouldn't* be valid anymore if you used DLSS for the Nvidia cards, and FSR for the AMD cards. Do you see why?",
-                              "upvotes": 3,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": [
-                                {
-                                  "commentId": "mxczcpf",
-                                  "text": "&gt; You outlined 2 testing methods and didn't dispute the validity of either, so I assumed you thought they were okay to use. One of those methods was, and I quote, \"Normally that is IQ by using the same settings and measuring the FPS.\" That is you saying we can measure IQ and FPS in the same test, right? Maybe I've misunderstood what you meant.\n\nYou fix the IQ by using the same in game settings and then compare FPS which is the variable. Bigger bar better in that scenario barring catastrophic 1% lows that cause hitching. It can be an issue when the game will swap out assets to lower quality ones on the fly regardless of settings to try and more gracefully work around VRAM limitations.\n\n&gt; It is true. The problem isn't that we're trying to use the wrong metric as our performance metric, the problem is that you can't measure one thing when there's a bunch of different variables all effecting it at once. Weather that's IQ or FPS or whatever else, you need as few variables as possible. I feel you're not quite understanding that I'm talking about purely isolating the hardware as the variable, because you keep bringing up tests that don't do that? In order to measure the hardware, the software cannot change between tests as much as you can help (so we allow for drivers, but we wouldn't allow you to enable different upscalers on different cards).\n\nI understand perfectly. You either lock the IQ (which is probably better referred to as GPU workload) and compare the resulting FPS. Or you can lock the FPS as much as possible and compare the IQ.\n\nYou are quite correct that you cannot do both at the same time because you have no fixed reference point to pivot the variables around.\n\n&gt; That is an interesting test, and as I mentioned before, I don't think it's invalid if it's done in the context of a specific game. That's what randomgaminginHD does sometimes. If you try to use that test to say that card X is faster than card Y, or that upscaler X outperforms upscaler Y though, then it becomes invalid.\n\nThe conclusion would be more that Card X can provide better IQ at the same frame rate as Card Y across a range of games. It is a shame that [H] don't have their old reviews archived, they may be on the waybackmachine as they are quite useful to look at to see how they went about that style of testing.\n\n&gt; This is a perfectly valid test if by \"fixed IQ\" you mean that the settings are the same across all cards tested. That removes as many of the software variables as possible and allow you to compare purely the cards performance.\n\nCorrect, that is exactly what I mean.\n\nA more precise way to explain the methods is that the typical method will equalise the workload between tested parts and then measure the time it takes to complete that workload (so really that would be frame time which gets converted into FPS). \n\nThe alternative method is to fix the frame time and see how much work each part can perform in that time frame. Obviously this method is a bit trickier because games don't tend to dynamically scale IQ to hit a performance target where as they will dynamically scale frame time to render the output. That does not mean you can't do it to an acceptable degree for the purposes of comparing products though. It is also more subjective unless the game will dynamically scale resolution to hit a framerate target but resolution is only 1 component of IQ so even that is not entirely objective.",
-                                  "upvotes": 2,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": [
-                                    {
-                                      "commentId": "mxippfx",
-                                      "text": "Thank you for explaining, I think I see what you're saying clearly now.\n\nYou're hitting pretty much all the points here, so you agree that DLSS and FSR being changed out randomly throughout *standard* benchmarks would invalidate those results (aka, any gamersnexus video). That's what the whole discussion I've had with a few folks in this thread has been about after all. A lot of people genuinely just want the gamersnexus style of which card gets the better fps, but they want the guys benchmarking to swap settings per card.\n\nI totally agree that image quality tests, and especially image quality tests that focus on what cards can achieve what quality at a given performance target, would be really cool to have! But yeah those are separate from what we normally think of as a GPU benchmark with x card getting y fps with z 1% lows, or basing it on frame times, or whatever.\n\nSeeing a test that instead does say, cyberpunk with a 60 fps target, and then going through a handful of cards to see what the best looking output they can achieve at that target, would be a REALLY cool test! I could imagine a card like the 3060 hitting 60 at 1080p ultra with dlss, but a 4090 does it at 4k with path tracing, or whatever else. Would let users decide if they even need higher presets, which I'd guess most don't.\n\nWhat that ultimately means though, and why it's not common I think, is that all the results are subjective and need to be interpreted by the audience and the reviewer, instead of simply saying x number is higher so y card wins. Would probably also mean less cards, and less games getting tested.",
-                                      "upvotes": 2,
-                                      "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
-                                      "replies": []
-                                    }
-                                  ]
-                                },
-                                {
-                                  "commentId": "mxf1ehk",
-                                  "text": "You are responding to what you expected them to say, not what they said.\n\n&gt;\"Normally that is IQ by using the same settings and measuring the FPS.\" \n\n&gt;That is you saying we can measure IQ and FPS in the same test, right?\n\nWhat they said was that the \"normal\" way is to **fix IQ** and measure FPS.  \n\nThat's a valid test, but it's only possible without upscaling, because a real-world user who wasn't religiously opposed to upscaling would use different upscalers between vendors, so you can't fix IQ with anything like real-world conditions.\n\nSo instead you can fix FPS.\n\n&gt;This is a perfectly valid test if by \"fixed IQ\" you mean that the settings are the same across all cards tested.\n\nThat is obviously what they mean.\n\n&gt;*if it's done in the context of a specific game*\n\nObviously you would not (should not) use the same fps target for every game, only for every card within the same game.\n\nSubjectively rank IQ, and present images for so readers can verify your rankings are reasonable.\n\nAggregate between games by presenting each GPU's average and minimum rank, with an inline link to the game where rank was minimum, so readers can see what was so ugly about the IQ in that particular test.\n\nI don't think this is any worse than averaging FPS numbers in a fixed-IQ comparison.",
-                                  "upvotes": 1,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": [
-                                    {
-                                      "commentId": "mxio4y6",
-                                      "text": "I'm not going to assume they meant the correct thing when they had just spent another comment or two telling me the incorrect thing. If they want to they're free to reword it so it's more clear, I have no problem with that.\n\nWhen I say \"in the context of a game\", I mean that you're not using the data to come to conclusions about the hardware or the specific upscalers performance, you're using the data to show *the game*.\n\nLike I said, I have no problems with looking at image quality, comparing up scalers, or anything else. I have a problem with misusing that data to try and make ultimately unscientific and incorrect judgements on the underlying hardware. There's a reason we test hardware the way we do, and there's a reason we test software the way we do.",
-                                      "upvotes": 2,
-                                      "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
-                                      "replies": [
-                                        {
-                                          "commentId": "mxjrvj0",
-                                          "text": "I think the kind of scientific judgements of underlying hardware you are looking for go out the window the second you benchmark games at all.  CPU dependence, auto-scaling, drivers patching buggy/slow shaders, temporal AA and post-processing effects...  A game running at different frame rates isn't executing the same math, and it's not blocking on GPU code in the same places.  And it's not even really producing the same image.\n\nYou could maybe benchmark renderdoc traces of games, and maybe 3Dmark.  And of course you could do GPGPU benchmarks.\n\nBut, if a reviewer is doing the typical, \"here's the FPS you can expect from a bunch of games at X settings,\" they are already reviewing the GPU *as a gaming product*.  And you might as well go full hog and do \"here's the image quality you can expect from a bunch of games at 60, 120 FPS.\"\n\nThat is a better model of the end user's experience of the product than a review that has on one chart Cyberpunk @ max settings flopping at 35 FPS with minimums to 15, and on another chart Rainbow Six: Siege throwing a rod at 400 FPS.",
-                                          "upvotes": 1,
-                                          "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
-                                          "replies": [
-                                            {
-                                              "commentId": "mxmduvu",
-                                              "text": "This is why you control for as many variables as possible in order to use the games as a benchmark tool, not as a game to be reviewed.\n\nYou use the same CPU, same settings same drivers, same everything *except* the hardware you wish to evaluate.\n\nI think where you and a lot of folks get confused is that you know games to be a separate product that has its own merits, but in the context of a GPU review, they are nothing more than another benchmark on the list.\n\nI don't disagree that image quality based reviews could be nice to see, but that would not be an effective review of just the GPUs performance, it would be more of a look at the games performance if anything.",
-                                              "upvotes": 1,
-                                              "classifyThis": true,
-                                              "relevance": null,
-                                              "relevanceReasoning": null,
-                                              "sentiment": null,
-                                              "sentimentReasoning": null,
-                                              "replies": []
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "commentId": "mxc09ce",
-                      "text": "How do you measure IQ? As we now know, DLSS version can look better than native render due to better AA quality. So you cannot use native as baseline for deviations.",
-                      "upvotes": -2,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "mxc1lmt",
-                          "text": "It becomes a subjective test but if you have two cards on test and one can maintain 60fps at 1440p DLSS q Max settings + RT and the other can only maintain 60fps at 1440p DLLS b without RT then it is quite clear the 1st card is better. With high quality screen grabs you can also see the IQ difference to see what the extra bells and whistles gets you on the 1st card.",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about the 9070 SKUs, not the RX 9060 XT.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is speculating on the binning process for the 9070 series.",
                           "replies": []
                         }
                       ]
@@ -177,8 +71,20 @@
               ]
             }
           ]
+        },
+        {
+          "commentId": "mx8o91p",
+          "text": "Good work Op. You dropped this, king \ud83d\udc51",
+          "upvotes": 47,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a low-effort comment praising the original poster, not the product.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is expressing gratitude and praise toward the OP.",
+          "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

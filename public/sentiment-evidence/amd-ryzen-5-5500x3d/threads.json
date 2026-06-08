@@ -1,0 +1,191 @@
+{
+  "productName": "AMD Ryzen 5 5500X3D",
+  "analyzedAt": "2026-06-05T11:21:49.945633",
+  "totalThreads": 4,
+  "threads": [
+    {
+      "url": "https://www.reddit.com/r/hardware/comments/1n3qb4z/gamers_nexus_am4_lives_amd_ryzen_5_5500x3d_cpu/",
+      "subreddit": "hardware",
+      "commentCount": 71,
+      "positive": 30,
+      "negative": 2,
+      "neutral": 39,
+      "topComments": [
+        {
+          "author": "wickedplayer494",
+          "text": "[Gamers Nexus] AM4 Lives: AMD Ryzen 5 5500X3D CPU Review &amp; Benchmarks",
+          "upvotes": 139,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "1n3qb4z"
+        },
+        {
+          "author": "Method__Man",
+          "text": "I'm waiting for the AMD 3100x3d",
+          "upvotes": 137,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "nbfgjnj"
+        },
+        {
+          "author": "rubiconlexicon",
+          "text": "Backport 3D cache to Bulldozer.",
+          "upvotes": 101,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nbfvdkz"
+        },
+        {
+          "author": "3G6A5W338E",
+          "text": "Release a `Socket 7` Ryzen CPU with massive 3d cache.",
+          "upvotes": 11,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "nbihjfh"
+        },
+        {
+          "author": "[deleted]",
+          "text": "lol. ive forgotten about bulldozer. I dont think ive ever seen one in person.",
+          "upvotes": 8,
+          "sentiment": null,
+          "recommendation": null,
+          "commentId": "nbg755y"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Amd/comments/18lx32a/upgrading_ryzen_5_3600_to_5600x3d5800x3d/",
+      "subreddit": "Amd",
+      "commentCount": 49,
+      "positive": 15,
+      "negative": 2,
+      "neutral": 32,
+      "topComments": [
+        {
+          "author": "DRankedBacon",
+          "text": "Upgrading Ryzen 5 3600 to 5600X3D/5800X3D: Benchmarks, Memory Scaling in Old and New Games\n\nHey all,\n\nBack again with another random benchmark post. I managed to nab a 5600X3D from Microcenter a couple months ago as a drop-in upgrade for a buddy's old PC (R5 3600). While I had the CPU for less than a week, I was able to put together some quick benchmarks results to see how my 5800X3D compares with the 5600X3D and the venerable 3600.\n\nOne thing led to another however and I found myself conducting a much larger test. So instead of releasing the original post of the 5600X3D vs 5800X3D/3600 comparison, I ended up going down another rabbit hole, adding more games to the suite as well as conducting some memory scaling tests. So yeah, this ultimately became less of the 3600 vs 5600X3D I was intending to do lol\n\n# Testbed\n\nMy system has changed a bit since [I last reviewed the 6700 non-XT](https://www.reddit.com/r/Amd/comments/10v1yov/my_xfx_rx_6700_nonxt_benchmark_review_20_games/) a about year ago.\n\n* X570 Aorus Master (F37c)\n* 2x16GB GSkill TridentZ Neo DDR4 3600 (Timings modified, see below)\n* Lian Li Galahad SL 360 AIO\n* Samsung 980 Pro 2TB, Kingston NV2 2TB, Crucial 750GB game drives\n* Corsair RM850x PSU\n* Win 10 Pro (19045)\n* Dell Alienware AW34323DWF\n* GeForce RTX 4090 FE (Driver 537.58)\n\n# The Contenders\n\n* **Ryzen 5 3600 -** tested in its stock configuration\n* **Ryzen 5 5600X3D** (Curve Optimized to -30 all cores)\n* **Ryzen 5 5800X3D** (Curve Optimized to -30 all cores)\n\nYeah, I made the mistake of not testing stock performance :/. Probably a miniscule difference overall that skews the numbers towards X3D but I thought I'd point it out.\n\nFor RAM I tested two configurations:\n\n**Loose Timings and Speed** **(DDR4-3200 CL16-18-18-38) -** I downclocked my 3600 kit to 3200 and loosened the timings to simulate what \"budget\" DDR4 would perform like. This is probably more representative of what a drop-in upgrade would look like for most users.\n\n**Tight Timings (DDR4-3600 CL14-14-14-32, 170ns tRFC) -** Not ridiculous timings for B-die but it does give a noticeable uplift over stock XMP and should show the R5 3600 in its best light relative to the X3D parts.\n\nRAM tests were only conducted on the 5800X3D and 3600 as I no longer had access to the 5600X3D when I started these tests.\n\n# The Test\n\nIn the spirit of my original 5800X vs X3D comparison, I try to continue pushing the use of older games into my testing suites. With the RTX 4090, I'm also able to test CPU bottlenecks for RT as well so there's a few of those titles thrown in here as well.\n\nRemember that this is a CPU-FOCUSED test, so some of the settings will not make sense for the hardware in actual use cases (stuff like 1080p DLSS, etc.).\n\nAll games with manual runs are captured using the latest version of NVIDIA FrameView.SimCity 4 is the only game that uses a different metric. Instead of AVG FPS/1%/0.1%, SimCity 4 performance is based on the number of simulated days elapsed.\n\n\\*indicates game that was tested without the 5600X3D.\n\n|App|Settings|Test|\n|:-|:-|:-|\n|**DX7 - SimCity 4 (2003)**|1920x1080 - High, Shadows High|Custom large city with 7GB of mods, 3 minute fixed camera simulation with max (cheetah) speed, result is days elapsed (higher is better)|\n|**DX10 - Crysis Warhead (2008)**|2560x1440 - Enthusiast 0xMSAA|Manual run - Call Me Ishmael mission start|\n|\\***DX11 - Company of Heroes 2 (2013)**|2560x1440 - Max AA High|5 minutes of playback at 2x speed of a custom 4v4 AI match on a large map|\n|**DX11 - Deus Ex: Mankind Divided (2016)**|2560x1440 - Ultra No MSAA|Manual run of Prague - \u010cist\u00e1 \u010ctvr\u0165 area|\n|**DX11 - Dishonored 2 (2016)**|2560x1440 - Ultra TXAA Forced VSync off (unlimited FPS)|Manual run of Karnaca mission start|\n|\\***DX11 - Battlefield 1 (2016)**|2560x1440 - Ultra TAA|Manual run of Mud and Blood starting at first checkpoint|\n|**DX9 - A Hat in Time (2017)**|2560x1440 - Very High SMAA|Custom Map: New Hat City, Manual loop run around the center|\n|**DX11 - Kingdom Come: Deliverance (2018)**|1920x1080 - Ultra High, HD Textures On|Manual run through center of starting town Skalitz|\n|**DX11 - Borderlands 3 (2019)**|1920x1080 - Ultra|Manual run through the town of Vestige in the Bounty of Blood DLC|\n|**DX11 - Halo MCC: Halo CE Anniversary (2020)**|3440x1440 - Enhanced|Manual run of the Silent Cartographer mission|\n|**DX12 \\[RT\\] - Metro Exodus: Enhanced Edition (2021)**|1920x1080 - Ultra, RT Ultra, DLSS Quality|Manual run of The Volga mission start|\n|**DX12 - Halo Infinite S4 (2021)**|1920x1080 - Ultra|Manual run of Pelican Down mission|\n|**DX12 - Far Cry 6 (2021)**|1920x1080 - Ultra, TAA|Manual run around Clara's Camp|\n|**DX12 \\[RT\\] - The Witcher 3: Next Gen Patch 4.04 (2023)**|1920x1080 - Ultra+, RT Ultra, DLSS Quality|Manual run of Beauclair port area|\n|**DX12 - The Last of Us: Part 1 Patch 1.1.2 (2023)**|1920x1080 - Ultra|Manual run of a section Prologue mission|\n|**DX12 - Starfield Pre-DLSS Patch 1.7.36 (2023)**|1920x1080 - High (62% FSR2 Scaling), No VRS|Manual run around MAST district of New Atlantis|\n|**DX12 \\[RT\\] - Cyberpunk 2077: Phantom Liberty Patch 2.02 (2023)**|1920x1080 - High, High Crowd Density, RT Ultra, DLSS Quality, Ryzen SMT ON|Manual run of Little China night market area|\n|**DX12 - 3DMark**|Time Spy|Time Spy|\n|**OGL - GZDoom 4.3.1**|3440x1440, Hardware Rendering 16xAF|FrameView capture of demo recording for MAP01 of COMATOSE.WAD + Russian Overkill 3.0|\n\nAll of the accompanying charts are linked below ~~should be attached to this post~~, in-order (except 3DMark).\n\n**Go here for charts:** [**Imgur mirror**](https://imgur.com/a/q4iXa9E)\n\nEDIT: I am dumb and didn't realize text posts and image post are different things. Please use the Imgur link above for the charts. Sorry about that!\n\n# The Result Summary\n\nUsing the Ryzen 5 3600 with DDR4 3200 as a Baseline (Excludes 3DMark):\n\n* **R5 3600 with Tuned D4 3600** is **11.5%** faster\n* **R5 5600X3D with Tuned D4 3600** is **66.5%** faster (worst SimCity 12.4%, best Halo CE:A 99.3%)\n* **R7 5800X3D with D4 3200** is **76.7%** faster (worst Starfield (old patch) 46.8%, best Dishonored 2 117.7%)\n* **R7 5800X3D with Tuned D4 3600** is **85.8%** faster (worst Far Cry 6 57.4%, best Halo CE:A 125.1%)\n\nAs for the 5600X3D vs 5800X3D:\n\n* **R7 5800X3D with D4 3200** is **3.4%** faster (worst KC: Deliverance -8%, best TLoU 13.2%)\n* **R7 5800X3D with Tuned D4 3600** is **8.8%** faster (worst GZDoom -2.1%, best TLoU 19.5%)\n\nEveryone know it at this point: these X3D chip are *fast* and offer a massive boost over the Zen 2 parts, even when they're equipped with low latency DDR4 3600.\n\nSurprisingly, I found the 5800X3D to still scale decently well with RAM. Not as much as the 20%+ the 3600 gains in heavy RT-centric titles but still more than I was expecting.\n\nThe 5600X3D is impressive; it offers over 90% of the 5800X3D in most situations so anyone that got in on that $150 price at Microcenter last month got a killer deal on a drop-in AM4 upgrade. It's a little iffy at $230 though and being exclusive doesn't help either. Hopefully the rumored 5500X3D and 5700X3D are widely available.\n\nHope you enjoyed this little writeup and found this post informative! Next time, I'll be ~~torturing~~ benchmarking the RX 7600 at 3440x1440 Ultrawide and seeing how it fares. Should be fun.\n\nCheers!",
+          "upvotes": 410,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "18lx32a"
+        },
+        {
+          "author": "pecche",
+          "text": "great you shared those numbers",
+          "upvotes": 44,
+          "sentiment": null,
+          "recommendation": null,
+          "commentId": "ke1xlf9"
+        },
+        {
+          "author": "PsyOmega",
+          "text": "Nobody beleives me when I say going from a 3600 to a 5600 can double fps, and yet... (most of the titles tested here would perform the same on 5600X3D vs 5600 non-x. I'd love it if you tested DCS, MSFS2020, tarkov, and other stuff that actually uses vcache)",
+          "upvotes": 17,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "ke213qy"
+        },
+        {
+          "author": "Commando_911",
+          "text": "\n\nI got 5600 coming from a 2600, I am pleased with the results, not sure whether I have a motherboard good enough to handle 5800x3d (Asus TUF B450M-PLUS GAMING)",
+          "upvotes": 7,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "ke2tbxh"
+        },
+        {
+          "author": "Fuzzy_Elk_5762",
+          "text": "Your motherboard will be very, very fine to drop a 5800X3D on it. You'll probably looking at a maximal of 4-8% performance lose vs B550. But don't forget to update your MoBo if you do so!",
+          "upvotes": 2,
+          "sentiment": null,
+          "recommendation": null,
+          "commentId": "ke2waex"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/wow/comments/1nl2ak8/would_a_5500x3d_be_better_for_wow_than_a_ryzen_5/",
+      "subreddit": "wow",
+      "commentCount": 16,
+      "positive": 8,
+      "negative": 0,
+      "neutral": 8,
+      "topComments": [
+        {
+          "author": "Myroky9000",
+          "text": "(5500X3D + RX 9060 XT)  Vs  (7800X3D + RX 7600)\n\n Which combo you think is better for wow?",
+          "upvotes": 3,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nf2fo8n"
+        },
+        {
+          "author": "WinterKujira",
+          "text": "id rather ditch am4 and go straight am5 x3d, save a few bucks more for better performance. \n\nand i would still go 7600 since its am5 where i have a clear upgrade path for new gen cpus if i want to.",
+          "upvotes": 11,
+          "sentiment": null,
+          "recommendation": null,
+          "commentId": "nf2azol"
+        },
+        {
+          "author": "wartornhero2",
+          "text": "Unless you already have AM4 (3xxxx or 2xxxx) and looking for an upgrade to last you another 3-4 years.",
+          "upvotes": 2,
+          "sentiment": null,
+          "recommendation": null,
+          "commentId": "nf34pmh"
+        },
+        {
+          "author": "hesitationz",
+          "text": "Getting a x3d chip is single handedly the biggest performance upgrade you can make for WoW. Would try and get the 7800x3d if budget/availability allows",
+          "upvotes": 15,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nf286nh"
+        },
+        {
+          "author": "kerthard",
+          "text": "For wow specifically, the 7800x3d system. \n\nFor basically any other game, other option.",
+          "upvotes": 15,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nf2hnxi"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/computadores/comments/1oxc8w3/benchmarks_e_comparativos_entre_ryzen_5_5600gt_vs/",
+      "subreddit": "computadores",
+      "commentCount": 3,
+      "positive": 3,
+      "negative": 0,
+      "neutral": 0,
+      "topComments": [
+        {
+          "author": "itachi_hm",
+          "text": "Benchmarks e comparativos entre Ryzen 5 5600GT vs Ryzen 7 5700X (PCI-E 3.0 vs 4.0) com uma RTX 5060\n\nEu tinha um Ryzen 5 5600GT (Vega 7) e comprei uma RTX 5060. Li muito sobre os tais \"gargalos de PCI-Express\" e o impacto que isso causa quando a placa estoura vRAM. Inclusive muitas das cr\u00edticas \u00e0 5060 foi quanto \u00e0 \"falta de vRAM\" pra jogos atuais. Com isso tem diversos reviews e benchmarks na internet comparando qual seria esse gargalo, mas eu pessoalmente n\u00e3o concordei com a maioria das conclus\u00f5es dos testes, pelos seguintes pontos:  \n\\- Testes de CPU normalmente usam um cen\u00e1rio irreal de usar 1080p com tudo no m\u00ednimo pra for\u00e7ar o uso m\u00e1ximo de CPU (ent\u00e3o dificilmente bate a vRAM da placa de v\u00eddeo). Quem compraria uma 9060XT ou RTX 5060 pra ficar jogando em 1080p Low?  \n\\- Muitos testes usam placas de v\u00eddeo parrudas, com 12 ou 16GB de vRAM, com isso os jogos mesmo no talo n\u00e3o usam toda a vRAM, atenuando e muito o uso do barramento PCI-Express;  \n\\- Muitos outros testes usam placas com 16 linhas PCI-Express, como a 4070, 5070, 9060XT, etc, ent\u00e3o mesmo que a pessoa esteja usando PCI-Express 3.0 ou 4.0, o fato de usar as 16 linhas dobra a banda comparado \u00e0s 8 linhas, fazendo o gargalo ser menos percept\u00edvel.\n\nPara quem n\u00e3o sabe, a banda m\u00e1xima vai ser o menor dos fatores envolvidos na soma entre vers\u00e3o PCI-Express e quantidade de linhas PCI-Express. Ilustrando:\n\n\\- 5600GT: PCI-E 3.0 16x  \n\\- 5700X: PCI-E 4.0 16x  \n\\- B550 chipset: PCI-E 4.0 16x  \n\\- RTX 5060: PCI-E 5.0 8x  \n\\- 9060XT: PCI-E 5.0 16x\n\nEnt\u00e3o voc\u00ea pode ter essas combina\u00e7\u00f5es, por exemplo:\n\n5600GT + B550 + RTX 5060 = 3.0 16x + 4.0 16x + 5.0 8x = 3.0 8x  \n5600GT + B550 + 9060XT = 3.0 16x + 4.0 16x + 5.0 16x = 3.0 16x  \n5700X + B550 + RTX 5060 = 4.0 16x + 4.0 16x + 5.0 8x = 4.0 8x  \n5700X + B550 + 9060XT = 4.0 16x + 4.0 16x + 5.0 16x = 4.0 16x\n\nE cada gera\u00e7\u00e3o dobra a quantidade de banda dispon\u00edvel com a anterior, ent\u00e3o voc\u00ea tem como equival\u00eancia:\n\n\\- PCI-E 5.0 8x = 4.0 16x  \n\\- PCI-E 4.0 8x = 3.0 16x  \n\\- PCI-E 3.0 8x = 2.0 16x\n\nMinha 5060 estava rodando em 3.0 8x ao inv\u00e9s do 5.0 8x, ou seja, 25% da banda m\u00e1xima. O elo fraco era a vers\u00e3o do PCI-Express suportado pelo 5600GT, na verdade todos os AM4 com v\u00eddeo integrado s\u00e3o limitados em PCI-E 3.0, a partir do 5600 (agora o 5500X3D, e excetuando o 5700 \"vanilla\") todos s\u00e3o PCI-E 4.0. Minha teoria era de que trocando meu processador por um com PCI-Express 4.0 diminuiria o gargalo, dobrando a banda dispon\u00edvel, e melhoraria pro futuro tendo em vista que se eu trocasse a placa por uma 5070 por exemplo ou 9060XT da vida, usando as 16 linhas dobraria a banda atual.\n\nEu sou o tipo de cara que joga no m\u00e1ximo de resolu\u00e7\u00e3o poss\u00edvel no m\u00e1ximo de detalhe poss\u00edvel mantendo minimamente 60fps. O DLSS vem de brinde nessa conta com a 5060 pois ao inv\u00e9s de rodar 1080p nativo posso jogar em 1440p com DLSS Quality que a imagem, embora reconstru\u00edda, fica melhor. Ent\u00e3o maioria dos meus cen\u00e1rios acabo estourando os 8GB de vRAM. N\u00e3o curto FPS online, sou mais de jogo single player offline.\n\nResolvi trocar o 5600GT por um 5700X. Poderia ter pego o 5500X3D, mas alguns pontos me fizeram n\u00e3o optar por ele PRO MEU CEN\u00c1RIO:   \n1) Como j\u00e1 tinha um hexa core, n\u00e3o me agradou a ideia de gastar dinheiro em um upgrade e continuar com hexa core. Ent\u00e3o um octa core me pareceu mais \"preparado pro futuro\";  \n2) 65W vs 105W. N\u00e3o ligo tanto pra quest\u00e3o de consumo nesse caso, mas mais consumo = mais calor. Quando mais suave o processador rodar, melhor o boost dele e mais performance;  \n3) 3,4GHz - 4,6GHz &gt; 3GHz - 4GHz. Mais clock stock e boost nativo maior. Pro dia a dia significa que tudo vai rodar \"mais r\u00e1pido\". Tanto que benchmarks sint\u00e9ticos tipo Passmark da coisa de 15-20% de perda pro 5500X3D em tarefas single core;  \n4) Vi a lista de jogos e testes com Cache X3D, e embora v\u00e1rios cen\u00e1rios tem ganhos, eu n\u00e3o vi um \"gargalo\" do 5600X ou 5700X nisso. Tipo, se o 5700X entrega 120fps e o 5500X3D em um jogo entrega 180fps que seja, mesmo tendo 50% de ganho 120fps \u00e9 coisa pra carai kkkkkkkk n\u00e3o chega a ser um gargalo. Seria diferente de um processador entregar 40fps e o outro entregar 60fps.\n\nMinhas specs:\n\nRyzen 5 5600GT com AMD Wraith Stealth cooler  \nRyzen 7 5700X com Cooler Master Hyper 212 Spectrum v3  \nGigabyte B550M-K  \n2x 16GB DDR4 3600MHz Corsair Vengeance RGB RT  \nFonte 750W Cooler Master MWE Gold 750 V3  \nMSI RTX 5060 8GB Shadow 2X OC\n\nBasicamente s\u00e3o 3 cen\u00e1rios de benchmark:\n\n1. 5600GT @ PCI-E 3.0\n2. 5700X @ PCI-E 3.0 (testar quanto efetivamente de ganho/perda a troca de CPU acarreta, por for\u00e7a bruta, mantendo o \"gargalo do PCI-Express\")\n3. 5700X @ PCI-E 4.0 (sabendo quanto o 5700X entrega em PCI-E 3.0, \u00e9 poss\u00edvel saber quanto de ganho efetivo tem \"somente fazendo o upgrade do PCI-Express\")\n\nJogos e testes:\n\n\\- Rise of Tomb Raider (Benchmark nativo, rodei 2x cada teste e tirei a m\u00e9dia)  \n\\- Shadow of Tomb Raider (Benchmark nativo, rodei 3x cada teste e tirei a m\u00e9dia)  \n\\- Forza Horizon 5 (Benchmark nativo, rodei 2x cada teste e tirei a m\u00e9dia)  \n\\- Jedi Survivor (Afterburner + RivaTuner: Joguei o trecho inicial da escolta dos prisioneiros at\u00e9 a ponte)  \n\\- Control (Afterburner + RivaTuner: Andando livremente pela parte da Gera\u00e7\u00e3o de For\u00e7a)  \n\\- Assassin's Creed Valhalla (Benchmark nativo, 1x cada teste)  \n\\- Middle-Earth: Shadow of War (Benchmark nativo, 1x cada teste)  \n\\- 3DMark (Time Spy Extreme, Fire Strike Ultra, Steel Nomad)  \n\\- Doom Dark Ages (Benchmark nativo, 1x cada um dos 7 testes, tirei a m\u00e9dia de cada um das m\u00e9tricas)\n\nQuando me convenci de que haveriam ganhos, resolvi \"bancar do meu pr\u00f3prio bolso\" e troquei a CPU. Troca feita, coletei os dados e resolvi compartilhar com a comunidade. \u00c9 um review bem dom\u00e9stico, sem hardware de ponta e sem explica\u00e7\u00e3o concreta pra todos os cen\u00e1rios rs. Apenas foquei em jogos com ferramentas nativas pra ter algo mais padronizado, e os 2 jogos que foram com o RivaTurner foram jogos que eu j\u00e1 estava jogando.",
+          "upvotes": 11,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "1oxc8w3"
+        },
+        {
+          "author": "tukow",
+          "text": "Boa demais, n\u00e3o tem placa com esse valor que faz isso hoje em dia! Olha esse spike no 3d, estressando hein??? foda!",
+          "upvotes": 2,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nq49rog"
+        },
+        {
+          "author": "matheusoc",
+          "text": "cara, desinstala isso e vai jogar...",
+          "upvotes": 1,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "np15wbt"
+        }
+      ]
+    }
+  ]
+}

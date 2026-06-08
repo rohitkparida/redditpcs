@@ -1,7 +1,7 @@
 {
   "productName": "amd-ryzen-9-9950x",
   "batchIndex": 3,
-  "totalBatches": 22,
+  "totalBatches": 29,
   "comments": [
     {
       "commentId": "1go3ybt",
@@ -18,30 +18,30 @@
           "text": "All I want is a Factorio megafactory UPS benchmark. My M1 Max MacBook Pro stomps all over my 5800X3D in my latest factory. Dying to know how 9800X3D would handle it.",
           "upvotes": 19,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking for benchmarks for the 9800X3D, not the 9950X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing a desire for information without a clear positive or negative sentiment toward the 9950X.",
           "replies": [
             {
               "commentId": "lwgda9w",
               "text": "https://factoriobox.1au.us/results/cpus?map=4c5f65003d84370f16d6950f639be1d6f92984f24c0240de6335d3e161705504&amp;vl=1.0.0&amp;vh=\n\nThis has the 9800x3d at ~50% higher UPS than the 5800x3d",
               "upvotes": 28,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the 9800X3D and 5800X3D performance, not the 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment provides factual benchmark data for other CPUs.",
               "replies": [
                 {
                   "commentId": "lwgefp4",
                   "text": "Nice! Thanks!",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a low-effort thank you message and is not relevant to the 9950X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a simple expression of gratitude.",
                   "replies": []
                 },
                 {
@@ -49,20 +49,20 @@
                   "text": "...how does that have a 9950X3D benchmark on it?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user is questioning the presence of a 9950X3D benchmark, which is a direct reference to the product family/variant of the 9950X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking a question about benchmark data.",
                   "replies": [
                     {
                       "commentId": "lwk0jgy",
                       "text": "Dunno, someone ran one on pre release hardware? The numbers make no sense unless that was some insane memory though.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user is discussing the validity of 9950X3D benchmarks, which is relevant to the product line.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is speculating on the same benchmark data.",
                       "replies": []
                     },
                     {
@@ -70,10 +70,10 @@
                       "text": "There will be engineering samples out there, I wouldn't put too much stock in it though.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user is discussing the possibility of engineering samples of the 9950X3D, which is relevant to the product line.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a cautious opinion on the benchmark data.",
                       "replies": []
                     }
                   ]
@@ -83,10 +83,10 @@
                   "text": "10k is misleading. \u00a0You need to look at the 50k since that actually uses enough memory to not fit in the vcache",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses Factorio benchmarks and vcache, but not specifically the 9950X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is providing technical critique of a benchmark methodology.",
                   "replies": []
                 },
                 {
@@ -94,10 +94,10 @@
                   "text": "Wrong map.  Nobody runs Factorio at 600 UPS unless they're checking the long-term behavior of a factory in the map editor with time acceleration.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about Factorio benchmark maps, not the 9950X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is providing a technical correction regarding a benchmark map.",
                   "replies": []
                 }
               ]
@@ -107,40 +107,40 @@
               "text": "&gt; All I want is a Factorio megafactory UPS benchmark\n\n[Factoriobox has some data](https://factoriobox.1au.us/results/cpus?map=9927606ff6aae3bb0943105e5738a05382d79f36f221ca8ef1c45ba72be8620b&amp;vl=1.0.0&amp;vh=) on the 50k spm base. Probably more to come as more ppl get the cpu:s probably, but seems that there is a fair bit of benefit to it even at large bases and [not just \"small\" 10k spm](https://factoriobox.1au.us/results/cpus?map=4c5f65003d84370f16d6950f639be1d6f92984f24c0240de6335d3e161705504&amp;vl=1.0.0&amp;vh=) base. No big base with dlc benchmarks yet afaik and the newer 2.0.7+ version does run the benchmarks a little bit faster on my 7800x3d than 1.18 did, not much, like 3-5%~ish\n\n&gt;My M1 Max MacBook Pro stomps all over my 5800X3D in my latest factory\n\nReally? You have some numbers for that? Cause factoriobox doesn't seem to have mac numbers at all and i can't really find any info on m1 performance on factorio anywhere really other than some [random site where a user states states 199UPS](https://news.ycombinator.com/item?id=33742918) on the 10k spm map in 2022(so you can apparently benchmark factorio on mac at least it seems) which is obviously nowhere near a 5800x3d as that is 350 avg on that map. Which makes sense, cause if the M1 max would actually be faster than a 5800x3d i gotta feeling that that info would be more easily found.",
               "upvotes": 11,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the 9800X3D, 7800X3D and M1 Max, not the 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is discussing benchmark data and comparing CPUs.",
               "replies": [
                 {
                   "commentId": "lwiqlpm",
                   "text": "I personally ran the 50k SPM map on my M1 Pro (32 UPS) and my desktop 5800x3D was 40% faster (45 UPS). I am also curious about OPs result.\n\nTo run the benchmark on Mac you need to use a different test script because the one originally made doesn't work after they did the ARM port. Someone on the technical factorio discord made one which works.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the M1 Pro and 5800X3D, not the 9950X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is sharing personal experience with other CPUs.",
                   "replies": [
                     {
                       "commentId": "lwk7mym",
                       "text": "Could you point me to that if you don't mind? I was trying to find one for the ARM version and came up empty.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is asking for a script for ARM version benchmarks, not related to the 9950X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is asking for a technical resource.",
                       "replies": [
                         {
                           "commentId": "lwkf6pp",
                           "text": "This is the script I ran in my terminal. It pulls the benchmark script from the guys github and the world from factoriobox:\n\n`curl https://gist.githubusercontent.com/duskwuff/63db7a7f92d9848b90aea5843bd284e9/raw/7d87c8576b73a66413a469b6ae8de38b98aaac1b/benchmark-macos.sh | URL='https://factoriobox.1au.us/map/download/9927606ff6aae3bb0943105e5738a05382d79f36f221ca8ef1c45ba72be8620b.zip' bash`",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment provides a script for macOS benchmarks, not related to the 9950X.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is providing a technical resource.",
                           "replies": []
                         }
                       ]
@@ -152,30 +152,30 @@
                   "text": "With these numbers, I think I\u2019ll be upgrading. My two main games are Factorio and Escape From Tarkov, which are both heavily cache-advantaged. My last megabase was on 1.0 about 20k SPM and heavily modded, running on a local dedicated Xeon 6138 server. A lot of the mods I was using were EOL so I retired the factory when 2.0 came out so I won\u2019t be able to benchmark it. Before I retired it, I was able to maintain 60 UPS consistently on my M1 Max. Whenever I would move over to my 5800X3D UPS would tank down to the low 40s consistently. I did my annual reimage to 24H2, which netted me the branch prediction bug fix but little improvement in UPS. I hit my goal of 2 miners per blue belt though, so it was a good time to take a break!",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses upgrading to the 9800X3D, not the 9950X.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is expressing a desire to upgrade to the 9800X3D based on performance numbers.",
                   "replies": [
                     {
                       "commentId": "lwigv2k",
                       "text": "There is something else going on there, because when you play on a server, it's always the slowest of the 2 computers (yours vs. the server). Pretty sure the Xeon 6138 is slower than either the M1 Max or the 5800X3D, so the UPS would always be capped at that of the Xeon 6138.\n\nAlso, the UPS shown in multiplayer games used to not be accurate, especially if your computer wasn't the slowest. Not sure if that's been fixed.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses server performance and the Xeon 6138, not the 9950X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is providing a technical explanation of server-side bottlenecks.",
                       "replies": [
                         {
                           "commentId": "lwihdtb",
                           "text": "Yeah 6138 is way slower than both. Whatever the case is/was, it was unplayable on my 5800X3D/4090, but fine on my M1 Max. Once I get into Space Age, I\u2019ll test again. Tarkov numbers look great on 9800X3D, so I\u2019ll probably do the upgrade this week.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment discusses upgrading to the 9800X3D, not the 9950X.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "The user is expressing a desire to upgrade to the 9800X3D.",
                           "replies": []
                         }
                       ]
@@ -189,20 +189,20 @@
               "text": "MSFS saw a good 13-15% improvement over the 7800X3D, which in itself had about a 20% improvement over the 5800X3D. Factorio takes similar advantage of the 3D Cache, so I'd expect a very similar uplift.\n\nComparing Apple Si to anything is just a losing game though.",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the 9800X3D, 7800X3D and 5800X3D, not the 9950X.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user is discussing performance improvements of the 9800X3D.",
               "replies": [
                 {
                   "commentId": "lwgnhch",
                   "text": "Great info! Thanks!",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a low-effort thank you message and is not relevant to the 9950X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a simple expression of gratitude.",
                   "replies": []
                 }
               ]
@@ -214,50 +214,50 @@
           "text": "Did anyone do 4k testing with 1% lows?",
           "upvotes": 6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking for 4k testing for the 9800X3D, not the 9950X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question about benchmark data.",
           "replies": [
             {
               "commentId": "lwgo5kt",
               "text": "Yes techpowerup. There really is no difference between a 9800x3d and 5800x3d.",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the 9800X3D and 5800X3D, not the 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is stating a fact about 4k performance differences.",
               "replies": [
                 {
                   "commentId": "lwgtup1",
                   "text": "Thus is important to remember.  For many games that are gpu bound most of the time, a faster cpu will offer limited upside. \n\nSome games are more cpu intense than othere, of course, and lots of people have mixed workloads,  but for gaming-first users that don't care about sim-heavy games I think lower tier x3d processor would be totally fine.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses general CPU performance in GPU-bound scenarios, not specifically the 9950X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is providing general hardware advice.",
                   "replies": [
                     {
                       "commentId": "lwjs3ro",
                       "text": "Thats why he asked about 1% lows, which are usually CPU bound even in GPU bound scenarios.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about 1% lows and CPU bound scenarios, not the 9950X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "L'utilisateur est providing a technical correction.",
                       "replies": [
                         {
                           "commentId": "lwlomsx",
                           "text": "Usually perhaps, but not always. GPU cost can vary from frame to frame because of computed effects and whatnot that don't update on every frame.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about GPU cost and frame times, not the 9950X.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is providing a technical explanation.",
                           "replies": []
                         }
                       ]
@@ -271,10 +271,10 @@
               "text": "https://tpucdn.com/review/amd-ryzen-7-9800x3d/images/relative-performance-games-38410-2160.png\n\n5800x3d is 97% the performance of 9800x3d\n\nThis isn't 1% lows, but it is 4k testing.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the 9800X3D and 5800X3D, not the 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "L'utilisateur est providing a link to benchmark data.",
               "replies": []
             },
             {
@@ -282,10 +282,10 @@
               "text": "Eurogamer",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a one-word answer mentioning a reviewer, not related to the 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual answer.",
               "replies": []
             }
           ]
@@ -295,10 +295,10 @@
           "text": "I'm interested in limiting the power of 9800X3D to the same as 7800X3D, @iso-power consumption, which one has more perf-per-Watt? From that table 7800X3D is very efficient, 9800X3D has more performance but at the cost of more power consumption.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing the 9800X3D and 7800X3D, not the 9950X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "L'utilisateur est discussing power efficiency of other CPUs.",
           "replies": []
         },
         {
@@ -306,30 +306,30 @@
           "text": "9800x3D is literally the best CPU ever",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is calling the 9800X3D the best CPU ever, not the 9950X.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is expressing high satisfaction with the 9800X3D.",
           "replies": [
             {
               "commentId": "lwh7j3z",
               "text": "At gaming only\n\nEdit: I'm getting downvoted but this is the hardware subreddit, not a gaming subreddit. Many people use their desktop for things outside of gaming. For those people, the 9800x3d is no where near the top of best CPU. There's much cheaper CPUs that will perform much better at certain productivity tasks, and I think it's worth mentioning. Doesn't mean the 9800x3d isn't an excellent CPU for what it's designed for.",
               "upvotes": 0,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the 9800X3D and productivity tasks, not the 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a nuanced view on the 9800X3D's purpose.",
               "replies": [
                 {
                   "commentId": "lwk13z1",
                   "text": "Sure, i guess the 192 core 9965 is the fastest CPU for productivity ever. I don't think many are in the market for that though.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the 9965, not the 9950X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is discussing a different CPU for productivity.",
                   "replies": []
                 }
               ]
@@ -338,5 +338,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

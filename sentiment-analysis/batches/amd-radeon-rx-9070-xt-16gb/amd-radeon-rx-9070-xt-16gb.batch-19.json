@@ -1,0 +1,476 @@
+{
+  "productName": "amd-radeon-rx-9070-xt-16gb",
+  "batchIndex": 19,
+  "totalBatches": 29,
+  "comments": [
+    {
+      "commentId": "1pa4e36",
+      "text": "Am I stupid if I don\u2019t get this\n\nIs this to good to be true right now?",
+      "upvotes": 175,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ns73b69",
+          "text": "Costco has a good pc that\u2019s similar to this one. Ryzen 7 9800x3D, nvidia 5070, 32gb of ram. I got it the other day and it\u2019s a beast, just runs loud cause of its 7 fans. It\u2019s a ibuypower prebuilt for $1500",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about a different GPU (Nvidia 5070) and a prebuilt PC.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is sharing a factual description of a PC they bought.",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "1k38f73",
+      "text": "My new Ryzen 7 9800x3d and 9070 XT build and some help for those needing a UPS with Pure Sine Wave and undervolting and overclocking the Sapphire Pulse RX 9070 XT\n\nMy current specs are listed below. I built this entire PC through [elitehubs.com](http://elitehubs.com) u/JD\\_EliteHubs so a big thank you to the team for helping me build my dream PC. \n\nOne of the biggest issues i faced was finding a UPS that has PURE SINE WAVE output to protect my sensitive electronics and I wanted to make this post in case anyone else is going through the same thing. After hours of research I found out that only 2 models in India give Pure Sine wave output which at least has 2000va and in built batteries. \n\nThe Microtek ONLINE UPS 2KVA 1PH:1PH 72V-IB MAX+ and the Cyberpower OLS2000EC which comes with a smaller 36v batteries but I settled on them as Microtek didn't respond to a single call or email whereas Cyber power responded to my calls and emails and any doubts i had they cleared them. Cant speak regarding their customer service to warranty and parts repair but unfortunately in India I don't think there are many options so I just had to bite the bullet and see. The UPS works perfectly and it comes with a 6a plug. \n\nThe main issue I faced is that the output ports of the UPS is 6a sockets only whereas for most of us, our high end PC PSU's come with a 16a plug and no UPS that I have seen has a 16a output socket. Since my PC realistically speaking would never cross 4.2 amps I picked up a power cable from amazon (FEDUS power cable, the one with the 10amp rated 6a plug and not the 6amp rated 6aplug) and using this connected my PC to the UPS and it has been working flawlessly for the past 2 weeks, I have tested switching on and off my power to the UPS(along with the occasional power cuts) and my PC shows no issues and I can safely shutdown with no problems.\n\nNow comes the fun part. Undervolting and Overclocking the GPU. I have the Sapphire Pulse variant which has lower boost clocks then the other OC counterparts. Remember to please take this advice with a grain of salt and do your own testing. Using AMD Adrenaline you can easily undervolt and overclock your gpu. \n\nTaking advice from Blackbird PC Tech and Ancient Gameplays from Youtube, I tried multiple tests with small increments with Steel Nomad and Furmark but i settled on steel nomad as this actually gave crashes so I could find a more stable GPU overclock and undervolt. I have attached some test results and for my GPU I found that -60 mv was the most stable, Max MHZ core offset actually gives worse performance the higher you go so I did not change this, I increased the power by 10% and I get a gpu wattage draw of 340w. The last thing I changed was VRAM Tuning to +150mhz or to 2664mhz (-14mhz is the offset by default making it 2650mhz). This was the most stable one I found as +200mhz crashes in Steel nomad but not other benchmark tools. Just to recap I used a -60mv, 10% power increase, and VRAM tuning of 2664mhz(+150mhz), which gave me a score of 7250 average on steel nomad. \n\nI have also uploaded pictures of my AMD Adrenaline GLOBAL GRAPHICS settings to those interested. Just change stuff in-game if you want but in general i think that these are good for most games.\n\nI also overclocked my Ryzen 7 9800x3d and it would take me a while to explain the process. SkatterBencher's video on youtube titled  \"Ryzen 7 9800X3D Undervolt & Overclock to 5750 MHz | SkatterBencher #82\" was of great help and he goes in every little detail. I do recommend watching his channel as he also boosts your ram timings by expo/xmp.\n\nOverall I am extremely satisfied with the performance and would love any input from you guys to helping me maybe boost even further.\n\nI hope this guide helps someone who is stuck in a similar situation as i was.\n\nLast but not least\n\nAal Bormahu aak hin miiraad\n\nFUS ROH DAAAAAAHHH\n\n\n\n\\[PCPriceTracker Build\\](https://pcpricetracker.in/b/s/a71d4e20-6c11-44ee-bd0b-085d4aa3dbc8)\n\n\\*\\*Processor\\*\\* | \\[AMD Ryzen 7 9800X3D Processor with Radeon Graphics (8 Cores, 16 Threads, Up to 5.2GHz, 104MB Cache, AM5 Socket)\\](https://pcpricetracker.in/products/5cea6be16a674532a506524222b4e57a) | PrimeABGB | 49449\n\n\\*\\*Motherboard\\*\\* | \\[MSI X870 GAMING PLUS WI-FI MOTHERBOARD\\](https://pcpricetracker.in/products/38b0d4b36c670a7b37ee558a2bcda50b) | Vedant Computers | 26540\n\n\\*\\*Graphic Card\\*\\* | \\[Sapphire PULSE AMD Radeon RX 9070 XT 16GB GDDR6 Graphics Card\\](https://pcpricetracker.in/products/df0aeb0eda8bbbeae2da4c9601f9808e) | Elitehubs | 77999\n\n\\*\\*Power Supply\\*\\* | \\[Deepcool PN850M 850W 80+ Gold ATX 3.1 Fully Modula\\](https://pcpricetracker.in/products/3d56a76c0cc4125abe320f4eb2f12b13) | PrimeABGB | 9346\n\n\\*\\*Cabinet\\*\\* | \\[Cooler Master MasterBox MB520 Mesh E-ATX Mid-Tower Cabin\\](https://pcpricetracker.in/products/d4eed940863a31d29487fa24508aa0d2) | PrimeABGB | 7360\n\n\\*\\*Memory\\*\\* |  |  | \\[ADATA XPG Lancer Neon RGB 16GB ( 16GBx 2 ) 6000MHz DDR5 Ram CL30 ( Black )\\] | EliteHubs \\\\ 12030\n\n\\*\\*SSD drive\\*\\* | \\[Kingston NV3 2TB PCIe Gen 4.0 Internal SSD\\](https://pcpricetracker.in/products/e75a49caadac92c8f89d58b26062af27) | PCStudio | 11500\n\n\\*\\*CPU Cooler\\*\\* | \\[Cooler Master MasterLiquid 360L Core ARGB Liquid Cooler ( Black )\\](https://pcpricetracker.in/products/bee74b3ba94bf8293b36333408ce266d) | PrimeABGB | 8100\n\n\\*\\*Case Fans\\*\\* | \\[Cooler Master CF120 Argb Cabinet Fan (Single Pack) (R4-S2S-12AA-GP)\\](https://pcpricetracker.in/products/12ffe714a37ab0d1b3f4c6cd2b1f17b7) | PCStudio | 500\n\n\\*\\*UPS\\*\\* | \\[Cyberpower OLS2000EC PURE SINEWAVE UPS - 26000 \n\n| | \\*\\*Grand Total\\*\\* | \\*\\*INR 2,28,824\\*\\* |",
+      "upvotes": 35,
+      "classifyThis": true,
+      "relevance": "include",
+      "relevanceReasoning": "User shares detailed personal experience with the RX 9070 XT, including overclocking and undervolting results.",
+      "sentiment": "positive",
+      "sentimentReasoning": "User states they are 'extremely satisfied with the performance'.",
+      "replies": [
+        {
+          "commentId": "mo0339b",
+          "text": "Join our Discord server https://discord.gg/WX6jbCD\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/IndianGaming) if you have any questions or concerns.*",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Automated bot message.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Bot messages have no sentiment.",
+          "replies": []
+        },
+        {
+          "commentId": "mo04oyf",
+          "text": "https://preview.redd.it/tzvkz9x7gvve1.jpeg?width=1840&format=pjpg&auto=webp&s=a38c680de7d7ee24099669e5b3acd617cd6a7a84\n\nforgot to add my AIO cooler",
+          "upvotes": 7,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Comment is about an AIO cooler, not the GPU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Factual statement about adding a photo of a cooler.",
+          "replies": [
+            {
+              "commentId": "mokl031",
+              "text": "Horrible liquid cooler",
+              "upvotes": -2,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about a liquid cooler.",
+              "sentiment": "negative",
+              "sentimentReasoning": "User describes the cooler as 'horrible'.",
+              "replies": [
+                {
+                  "commentId": "mol515r",
+                  "text": "why? because you dont like cooler master? lol",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about a liquid cooler brand.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "User is asking a question about brand preference.",
+                  "replies": [
+                    {
+                      "commentId": "mu8dz1w",
+                      "text": "How's the performance of that AIO? I have a Thermalright Aqua Elite v3, but I'm thinking about to buy another one",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about AIO performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "User is asking for performance information.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mqna2ds",
+          "text": "How is the fan noise from the UPS?",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about UPS fan noise.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "User is asking a question.",
+          "replies": []
+        },
+        {
+          "commentId": "mo1u0j5",
+          "text": "This is giving me multiple orgasims",
+          "upvotes": 6,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Low-effort banter/meme-like expression of excitement.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User is expressing extreme excitement.",
+          "replies": [
+            {
+              "commentId": "mo1u40b",
+              "text": "Lol me too buddy. Me too \ud83d\ude04",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort banter.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User is agreeing with the excitement.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mo81nqf",
+          "text": "I also ended up getting the cyber power OLA2000EC about two months ago works great",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about a UPS.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User states the UPS 'works great'.",
+          "replies": [
+            {
+              "commentId": "mo8229u",
+              "text": "That's good to hear. Once it reaches the 1 year mark i want to see the performance as well.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about a UPS.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "User is expressing interest in long-term performance.",
+              "replies": [
+                {
+                  "commentId": "mo825bm",
+                  "text": "Yea, the only con I can think of is that it doesn\u2019t have user replaceable batteries",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about a UPS.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "User mentions a 'con' regarding replaceable batteries.",
+                  "replies": [
+                    {
+                      "commentId": "mo82a0l",
+                      "text": "Yeah I was so tempted to get the external battery model but I was tired of adding more and more expenses to my build so eventually settled on inbuilt batteries. I hate the fact that we can't buy extended warranty but what we gonna do",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about a UPS.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "User expresses frustration over lack of extended warranty.",
+                      "replies": [
+                        {
+                          "commentId": "mo82eso",
+                          "text": "To preserve battery life I\u2019ve set my UPS to turn my pc off 5 mins after there\u2019s a power outage, but aside from that haven\u2019t had any issues",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about a UPS.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "User is describing their UPS settings.",
+                          "replies": [
+                            {
+                              "commentId": "mo87wn6",
+                              "text": "Does this UPS run continously from the battery only or switch in case of an outage?",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Discussion about a UPS.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "User is asking a technical question about the UPS.",
+                              "replies": [
+                                {
+                                  "commentId": "mo8diox",
+                                  "text": "Only switches in case of an outage or voltage drops, but it\u2019s pure sine wave",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Discussion about a UPS.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "User is providing a factual answer about the UPS.",
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mqu2k5o",
+          "text": "Interesting, how is the UPS working out? Is noise an issue? How long does it support your build when power goes?",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about a UPS.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "User is asking questions about the UPS.",
+          "replies": []
+        },
+        {
+          "commentId": "mo0zrsd",
+          "text": "How's the uv stability on gpu in games? I noticed it was stable at around -75 mv for steel nomad with great results but I had to reduce it to - 35 for some games(mostly older titles that do not max out the freq)\n\nI finally settled on -35mv undervolt, 2718 default timing on memory and -9 power limit on gpu to keep slightly better performance and much lower temps",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User discusses undervolting stability and specific settings for the RX 9070 XT.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Technical discussion about stability and settings without a clear positive or negative lean.",
+          "replies": [
+            {
+              "commentId": "mo1samj",
+              "text": "So far i have played the witcher 3, cs2, apex legends, rdr2, skyrim, gta v enhanced and many ryujinx emulator games and till now not even one crash for me. But I will keep you posted because 2 weeks is not that long of a time for proper results. So far so good",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User shares experience with various games on the RX 9070 XT.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User reports no crashes and says 'so far so good'.",
+              "replies": [
+                {
+                  "commentId": "mo1xl3l",
+                  "text": "That's great, I noticed it on destiny 2 and sea of thieves, fwiw I also use radeon chill to limit gpu usage while locking in the desired fps(maybe thats causing the crashes as it does downclock the gpu when not needed).\n\nThat said it's an amazing card, so hope you won the silicon lottery and get to keep the stable uv!",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User describes the RX 9070 XT as an 'amazing card'.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Directly calls the product an 'amazing card'.",
+                  "replies": [
+                    {
+                      "commentId": "mo1y0dl",
+                      "text": "I found that Radeon chill doesn't work on all games like cs2 and apex legends for example. It never capped my fps. So instead I opted to use the amd frame controller tool and kept it 4 frames below my monitor refresh rate which is 165hz so I kept 161 fps cap. If any game has ingame one you should use that. Unfortunately you can't enable it individually for each game like Radeon chill.\nAnd thanks this is an amazing card that really impressed me with it's ray tracing abilities",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "User discusses performance and ray tracing abilities of the RX 9070 XT.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "User is 'impressed' with the ray tracing abilities.",
+                      "replies": [
+                        {
+                          "commentId": "mo1y99x",
+                          "text": "Ah I did run into that inconsistency with chill, what I found to work for me was making sure the game is full screen for radeon chill to work. Haven't tried cs2 and apex on it, but it did fix the issue on marvel rivals and gta enhanced.\n\nEdit: I typically go over the monitor refresh rate, chill locked at 200 idle 200 max, and then enable enhanced sync to eliminate tearing. This gives me the low latency while still eliminating any tearing.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about software settings (Radeon Chill) and monitor sync, not specifically the hardware performance of the 9070 XT.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Technical discussion about software configuration.",
+                          "replies": [
+                            {
+                              "commentId": "mo1ymkn",
+                              "text": "What issues you were facing in GTA enhanced so far it is working perfectly played a couple hours of story and online with Raytracing on ultra+ settings. I tested Amds AMFS 2.1 but there was too much artificial ghosting in high movement scenes so I just disabled it and running it at native aa FSR.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "User shares experience with the RX 9070 XT running GTA Enhanced with Raytracing on ultra+ settings.",
+                              "sentiment": "positive",
+                              "sentimentReasoning": "User states it is 'working perfectly'.",
+                              "replies": [
+                                {
+                                  "commentId": "mo1yyef",
+                                  "text": "Gta enhanced didn't work with chill, so had to ensure it was full screen, which made it work.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Discussion about software settings (Radeon Chill).",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "Factual statement about software behavior.",
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mo15grx",
+          "text": "How's the performance on modded Skyrim(nolvus/eldergleam)?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User asks about performance on a specific modded game for the RX 9070 XT.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "User is asking a question.",
+          "replies": [
+            {
+              "commentId": "mo1spud",
+              "text": "Haven't tested any modded games yet. With the Oblivion Remaster coming out i doubt I'll have time to test but eventually will get there. Once I do I'll keep you posted",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User responds to a performance question about the RX 9070 XT.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "User states they haven't tested it yet.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mo16elk",
+          "text": "Congrats! Where did you buy the UPS from?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about a UPS.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "User is asking where the UPS was bought.",
+          "replies": [
+            {
+              "commentId": "mo1rupj",
+              "text": "Thank you, I called CyberPower websites number and they connected me with a local offline dealer and I picked it up from there.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about a UPS.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Factual answer about where the UPS was bought.",
+              "replies": [
+                {
+                  "commentId": "mowrc5y",
+                  "text": "Superb build and great info, OP. Would appreciate it you can respond to 2 questions:\n1. You mentioned the ups comes with a 6a plug - I believe this is the plug that goes into the power socket at your home, right? \n2. What\u2019s the fan noise like? I am in an apartment and just need the ups to provide backup till my apartment\u2019s generator kicks in - usually in around 15-20 seconds.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about a UPS.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "User is asking questions about the UPS.",
+                  "replies": [
+                    {
+                      "commentId": "moxp5ou",
+                      "text": "Hi, yes it comes with a 6a plug to connect to your socket which means that if you don't have those big 16a sockets at home you don't need to install one. Another important thing is check the mcb rating for your room which you are going to put your pc in. My room mcb was rated cl10 which means that upto 10 amps my room supports without blowing a fuse. If you have cl6 I would suggest you call an electrician to make the necessary changes.\n\nAnd as for the noise I barely noticed it existed. Sometimes sure I can hear it but that is only if my rooms fan or ac is not on and it is dead silent. Otherwise I never noticed it while gaming or anything like that.\n\nRemember that the output of the UPS is also 6a sockets only.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about a UPS.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "User is providing technical information about the UPS.",
+                      "replies": [
+                        {
+                          "commentId": "mp0hrta",
+                          "text": "Thanks a lot, OP - I think this one may work for my 5080 build. You\u2019ve given me quite a lot of good info. Thanks again.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about a UPS for a different GPU (5080).",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "User is thanking the OP for info.",
+                          "replies": [
+                            {
+                              "commentId": "mp0jp1a",
+                              "text": "The 2000 va one will surely work with your build. I'm assuming your power supply comes with active PFC which needs Pure Sinewave. Since 5080 takes alot more power go for the 2000va models and have that peace of mind",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Discussion about a UPS.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "User is providing technical advice about the UPS.",
+                              "replies": [
+                                {
+                                  "commentId": "mp3jsl8",
+                                  "text": "That makes sense - I do have a 10 amp pcb for my room. I do plan to use 2 power backup solutions - a smaller 660 w one for my peripherals (including my oled) and the other one for just my pc.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Discussion about a UPS.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "User is describing their power backup plan.",
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mtafyk9",
+                  "text": "Hi, which number you tried? Number on their website is coming as invalid.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about a UPS.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "User is asking for a contact number.",
+                  "replies": [
+                    {
+                      "commentId": "mtsdvwg",
+                      "text": "https://preview.redd.it/csaasf2xyg2f1.jpeg?width=1080&format=pjpg&auto=webp&s=f62728fe95d660539a1d8b18cabd77308aa4fa49\n\n098694 59305 Try these numbers. I had called their toll free and spoke with their sales department . then this number WhatsApped me guiding me to buy it locally.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about a UPS.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "User is providing a contact number.",
+                      "replies": [
+                        {
+                          "commentId": "mtsuv7p",
+                          "text": "Thanks, I'll check this.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about a UPS.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "User is thanking the OP.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mo1iecc",
+          "text": "Nice build - I am looking for a ups as well for my 5080 build? Where did you get yours from?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about a UPS for a different GPU (5080).",
+          "sentiment": "neutral",
+          "sentimentReasoning": "User is asking where the UPS was bought.",
+          "replies": [
+            {
+              "commentId": "mo1rve4",
+              "text": "Thank you, I called CyberPower websites number and they connected me with a local offline dealer and I picked it up from there.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about a UPS.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "sentimentReasoning",
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "model": "gemma-4-31b-it"
+}

@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 import os
 import json
+import sys
 import time
-import subprocess
+import shutil
 from pathlib import Path
-from collections import Counter
+from datetime import datetime
 
 # Imports from existing scripts
 import auto_classify_gemini
-import merge_batches
-import create_template
-import generate_consensus
+import pipeline_validators as pv
+import pipeline_core
 
 REGISTRY_PATH = Path('product_registry.json')
 BATCHES_DIR = Path('batches')
@@ -19,6 +19,33 @@ DATA_DIR = Path('../src/data')
 
 CLASSIFIED_DIR.mkdir(exist_ok=True)
 
+STATE_FILE = Path('pipeline_state.json')
+BATCHES_ARCHIVE_DIR = Path('batches_archive')
+
+
+def load_state() -> dict:
+    """Load per-product pipeline state from disk."""
+    if STATE_FILE.exists():
+        with open(STATE_FILE, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    return {}
+
+
+def save_state(state: dict):
+    """Persist pipeline state to disk."""
+    with open(STATE_FILE, 'w', encoding='utf-8') as f:
+        json.dump(state, f, indent=2)
+
+
+def mark_state(state: dict, slug: str, status: str, step: str = "", error: str = ""):
+    """Update a single product's state entry and save."""
+    state[slug] = {
+        "status": status,
+        "step": step,
+        "error": error,
+        "updated_at": datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+    }
+    save_state(state)
 # Category map to database files
 CATEGORY_MAP = {
     "CPUs": "../src/data/cpus.json",
@@ -32,6 +59,13 @@ CATEGORY_MAP = {
 }
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Run the sentiment pipeline on products.")
+    parser.add_argument("--resume", action="store_true", help="Resume processing, skipping already completed/done products")
+    parser.add_argument("--model", default="gemini-2.5-flash-lite", help="Gemini API model name to use (default: gemini-2.5-flash-lite)")
+    parser.add_argument("slugs", nargs="*", help="Target product slugs to process (optional)")
+    args = parser.parse_args()
+
     if not REGISTRY_PATH.exists():
         print("Product registry not found.")
         return
@@ -47,16 +81,50 @@ def main():
             if files:
                 active_slugs.append(entry.name)
 
-    import sys
-    if len(sys.argv) > 1:
-        target_slugs = sys.argv[1:]
-        active_slugs = [s for s in active_slugs if s in target_slugs]
+    if args.slugs:
+        active_slugs = [s for s in active_slugs if s in args.slugs]
+
+    state = load_state()
+
+    # If --resume, filter out products that are already successfully classified/done in state or have classified outputs
+    if args.resume:
+        original_count = len(active_slugs)
+        resumed_slugs = []
+        for slug in active_slugs:
+            classified_file = CLASSIFIED_DIR / f"{slug}.classified.json"
+            if state.get(slug, {}).get("status") == "done" and classified_file.exists():
+                # Check if it really is classified completely
+                try:
+                    with open(classified_file, 'r', encoding='utf-8') as f:
+                        c_data = json.load(f)
+                    comments = c_data.get("comments", [])
+                    if comments and any(c.get("relevance") is not None for c in comments):
+                        continue # Skip successfully completed
+                except Exception:
+                    pass
+            resumed_slugs.append(slug)
+        active_slugs = resumed_slugs
+        print(f"Resuming pipeline: skipped {original_count - len(active_slugs)} already completed products.")
 
     print(f"Found {len(active_slugs)} products with active batches ready for classification.")
 
+    # Report any previously failed products
+    failed = [s for s, v in state.items() if v.get("status") == "failed"]
+    if failed:
+        print(f"  [Note] {len(failed)} product(s) previously failed: {failed}")
+        print(f"  [Note] Re-running will retry them. Check pipeline_state.json for details.")
+
+    start_time = time.time()
     for idx, slug in enumerate(active_slugs):
+        # Calculate ETA
+        elapsed = time.time() - start_time
+        avg_time = elapsed / idx if idx > 0 else 0
+        eta = avg_time * (len(active_slugs) - idx) if idx > 0 else 0
+        eta_str = f"{int(eta)}s" if eta > 0 else "Calculating..."
+
         print(f"\n==================================================")
         print(f"[{idx+1}/{len(active_slugs)}] Processing pipeline for: {slug}")
+        print(f"Progress: {idx}/{len(active_slugs)} | Elapsed: {int(elapsed)}s | ETA: {eta_str}")
         print(f"==================================================")
         
         # Look up product in registry to get category and proper name
@@ -75,137 +143,65 @@ def main():
         template_file = CLASSIFIED_DIR / f"{slug}.template.json"
         classified_file = CLASSIFIED_DIR / f"{slug}.classified.json"
 
-        # --- STEP 1: Create Classified Template ---
+        # --- STEP 1: Validate Scrape & Create Classified Template ---
+        mark_state(state, slug, "in_progress", step="scrape_validation")
+
+        ok, msgs = pv.validate_scrape(slug)
+        if not pv.report("Scrape", ok, msgs):
+            mark_state(state, slug, "failed", step="scrape_validation", error=" | ".join(msgs))
+            print(f"    Skipping '{slug}' due to scrape validation failure.")
+            continue
+
         if not template_file.exists() or not classified_file.exists():
             print("  [Step 1/4] Creating template files...")
-            if not raw_comments_file.exists():
-                print(f"    [Error] Raw comments file raw_{slug}.json not found. Skipping.")
-                continue
-                
-            try:
-                with open(raw_comments_file, 'r', encoding='utf-8') as f:
-                    raw = json.load(f)
-                
-                # Update raw to have the correct proper product name from the registry
-                raw['productName'] = reg_item.get("name")
-                
-                # Create tree-based template
-                with open(template_file, 'w', encoding='utf-8') as f:
-                    json.dump(raw, f, indent=2)
-                    
-                # Create flat classified file
-                flat_comments = create_template.flatten_comments(raw.get('comments', []))
-                classified_data = {
-                    'productName': reg_item.get("name"),
-                    'sourceThreads': raw.get('sourceThreads'),
-                    'analyzedAt': raw.get('analyzedAt'),
-                    'comments': flat_comments
-                }
-                with open(classified_file, 'w', encoding='utf-8') as f:
-                    json.dump(classified_data, f, indent=2)
-                print("    Successfully created templates with proper product name.")
-            except Exception as e:
-                print(f"    [Error] Creating templates failed: {e}")
+            if not pipeline_core.create_product_templates(
+                slug, raw_comments_file, template_file, classified_file, reg_item
+            ):
                 continue
         else:
             print("  [Step 1/4] Template files already exist.")
 
-        # --- STEP 2: Auto Classify Batches via Gemini ---
+        # Validate split batches before classifying
+        mark_state(state, slug, "in_progress", step="split_validation")
+        ok, msgs = pv.validate_split(slug)
+        if not pv.report("Split", ok, msgs):
+            mark_state(state, slug, "failed", step="split_validation", error=" | ".join(msgs))
+            print(f"    Skipping '{slug}' due to split validation failure.")
+            continue
+
+        mark_state(state, slug, "in_progress", step="classify")
         print("  [Step 2/4] Running auto-classification on batches...")
         try:
-            # Runs classification on all batches under batches/slug
-            # Respects rate limit delay automatically
-            auto_classify_gemini.main(slug, "gemini-2.5-flash-lite")
+            auto_classify_gemini.main(slug, args.model)
         except Exception as e:
+            mark_state(state, slug, "failed", step="classify", error=str(e))
             print(f"    [Error] Gemini auto-classification failed: {e}")
             continue
 
-        # --- STEP 3: Merge Batches into Flat Classified Store ---
-        print("  [Step 3/4] Merging batches and resolving votes...")
-        try:
-            merge_batches.merge_batches(
-                str(BATCHES_DIR / slug),
-                str(classified_file),
-                str(classified_file)
-            )
-        except Exception as e:
-            print(f"    [Error] Merging batches failed: {e}")
+        ok, msgs = pv.validate_classification(slug)
+        if not pv.report("Classify", ok, msgs):
+            mark_state(state, slug, "failed", step="classify_validation", error=" | ".join(msgs))
+            print(f"    Skipping '{slug}' — classification output looks invalid.")
             continue
 
-        # --- STEP 4: Generate Consensus & Seed Real Sentiment ---
-        print("  [Step 4/4] Generating community consensus & updating database...")
-        try:
-            # We select top representative comments
-            product_name, top_pos, top_neg = generate_consensus.select_representative_comments(classified_file)
-            
-            if not top_pos and not top_neg:
-                print("    [Warning] No classified comments found. Consensus generation skipped.")
-                continue
-                
-            print(f"    Generating consensus for: '{product_name}'...")
-            consensus = generate_consensus.call_gemini_for_consensus(product_name, top_pos, top_neg)
-            
-            # Write back to database file
-            generate_consensus.update_database_file(Path(db_file_path), product_name, consensus, dry_run=False)
-            
-            # --- STEP 4.5: Calculate & Update Real Sentiment Metrics ---
-            with open(classified_file, 'r', encoding='utf-8') as f:
-                cls_data = json.load(f)
-                
-            comments = cls_data.get("comments", [])
-            included = [c for c in comments if c.get("relevance") == "include"]
-            
-            total_mentions = len(included)
-            positives = sum(1 for c in included if c.get("sentiment") == "positive")
-            negatives = sum(1 for c in included if c.get("sentiment") == "negative")
-            neutrals = total_mentions - positives - negatives
-            
-            rate = round(positives / (positives + negatives), 2) if (positives + negatives) > 0 else 0.0
-            
-            # Update metrics in database json
-            with open(db_file_path, 'r', encoding='utf-8') as f:
-                cat_db = json.load(f)
-                
-            for product in cat_db.get("products", []):
-                if product.get("name", "").lower().strip() == product_name.lower().strip():
-                    product["mentions"] = total_mentions
-                    product["positiveReviews"] = positives
-                    product["negativeReviews"] = negatives
-                    product["neutralReviews"] = neutrals
-                    product["recommendationRate"] = rate
-                    
-                    # Select real Reddit quotes from classified comments
-                    # Filter and sort positive ones for top quotes
-                    top_quotes = sorted(
-                        [c for c in included if c.get("sentiment") == "positive"],
-                        key=lambda x: x.get("upvotes", 0),
-                        reverse=True
-                    )[:3]
-                    
-                    product["redditQuotes"] = []
-                    for q in top_quotes:
-                        product["redditQuotes"].append({
-                            "quote": q.get("text")[:200] + "..." if len(q.get("text")) > 200 else q.get("text"),
-                            "sourceUrl": q.get("threadUrl", "https://www.reddit.com"),
-                            "subreddit": q.get("subreddit", "buildapc"),
-                            "upvotes": q.get("upvotes", 0)
-                        })
-                    break
-                    
-            with open(db_file_path, 'w', encoding='utf-8') as f:
-                json.dump(cat_db, f, indent=2)
-                
-            print(f"    Successfully updated sentiment metrics & real quotes for {product_name}!")
-            
-        except Exception as e:
-            print(f"    [Error] Consensus or metrics update failed: {e}")
+        mark_state(state, slug, "in_progress", step="merge+consensus")
+        ok = pipeline_core.compute_and_write_metrics(slug, classified_file, db_file_path)
+        if not ok:
+            mark_state(state, slug, "failed", step="merge+consensus", error="see logs")
             continue
 
-        # Safe delay between different products to protect quota
+        # Validate DB write
+        ok_db, msgs = pv.validate_db_write(db_file_path, reg_item.get("name", slug))
+        pv.report("DB Write", ok_db, msgs)
+
+        mark_state(state, slug, "done", step="complete")
+
+        # Safe delay between products to protect quota
         print("Waiting 10 seconds before next product...")
         time.sleep(10)
 
     print("\nAll products processed successfully!")
+
 
 if __name__ == '__main__':
     main()

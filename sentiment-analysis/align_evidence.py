@@ -43,6 +43,15 @@ def find_product_in_all_databases(product_name: str, data_dir: Path) -> Optional
     for product in all_products:
         if product.get('name', '').lower() == search_name:
             return product
+            
+    # 1b. Try exact alphanumeric-only match (catches hyphen discrepancies like 'gskill' vs 'g-skill' and exact name slug matches)
+    def norm_alphanumeric(n):
+        return re.sub(r'[^a-z0-9]', '', n.lower())
+        
+    search_norm = norm_alphanumeric(product_name)
+    for product in all_products:
+        if norm_alphanumeric(product.get('name', '')) == search_norm:
+            return product
     
     # 2. Try exact match without suffixes like "12GB", "16GB", etc.
     def clean_name(n):

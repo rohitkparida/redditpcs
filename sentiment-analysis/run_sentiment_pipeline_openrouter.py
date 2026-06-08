@@ -6,9 +6,7 @@ from pathlib import Path
 
 # Imports from existing scripts
 import auto_classify_openrouter
-import merge_batches
-import create_template
-import generate_consensus
+import pipeline_core
 
 REGISTRY_PATH = Path('product_registry.json')
 BATCHES_DIR = Path('batches')
@@ -30,6 +28,12 @@ CATEGORY_MAP = {
 }
 
 def main():
+    import argparse
+    parser = argparse.ArgumentParser(description="Run the OpenRouter sentiment pipeline (concurrent counterpart).")
+    parser.add_argument("--resume", action="store_true", help="Resume processing, skipping already completed products")
+    parser.add_argument("slugs", nargs="*", help="Target product slugs to process (optional)")
+    args = parser.parse_args()
+
     if not REGISTRY_PATH.exists():
         print("Product registry not found.")
         return
@@ -45,14 +49,43 @@ def main():
             if files:
                 active_slugs.append(entry.name)
 
+    if args.slugs:
+        active_slugs = [s for s in active_slugs if s in args.slugs]
+
     # REVERSE the order for the OpenRouter thread so it starts from the bottom
     active_slugs.reverse()
 
+    if args.resume:
+        original_count = len(active_slugs)
+        resumed_slugs = []
+        for slug in active_slugs:
+            classified_file = CLASSIFIED_DIR / f"{slug}.classified.json"
+            if classified_file.exists():
+                try:
+                    with open(classified_file, 'r', encoding='utf-8') as f:
+                        c_data = json.load(f)
+                    comments = c_data.get("comments", [])
+                    if comments and any(c.get("relevance") is not None for c in comments):
+                        continue # Skip successfully completed
+                except Exception:
+                    pass
+            resumed_slugs.append(slug)
+        active_slugs = resumed_slugs
+        print(f"Resuming pipeline: skipped {original_count - len(active_slugs)} already completed products.")
+
     print(f"[OpenRouter Pipeline] Found {len(active_slugs)} products. Processing in REVERSE order.")
 
+    start_time = time.time()
     for idx, slug in enumerate(active_slugs):
+        # Calculate ETA
+        elapsed = time.time() - start_time
+        avg_time = elapsed / idx if idx > 0 else 0
+        eta = avg_time * (len(active_slugs) - idx) if idx > 0 else 0
+        eta_str = f"{int(eta)}s" if eta > 0 else "Calculating..."
+
         print(f"\n==================================================")
         print(f"[OpenRouter Pipeline] [{idx+1}/{len(active_slugs)}] Processing for: {slug}")
+        print(f"Progress: {idx}/{len(active_slugs)} | Elapsed: {int(elapsed)}s | ETA: {eta_str}")
         print(f"==================================================")
         
         reg_item = registry.get(slug)
@@ -71,33 +104,11 @@ def main():
         classified_file = CLASSIFIED_DIR / f"{slug}.classified.json"
 
         # --- STEP 1: Create Classified Template ---
-        # Note: Name alignment is already done by fix_names.py, but this ensures correct names for any new templates.
         if not template_file.exists() or not classified_file.exists():
             print("  [Step 1/4] Creating template files...")
-            if not raw_comments_file.exists():
-                print(f"    [Error] Raw comments file raw_{slug}.json not found. Skipping.")
-                continue
-                
-            try:
-                with open(raw_comments_file, 'r', encoding='utf-8') as f:
-                    raw = json.load(f)
-                raw['productName'] = reg_item.get("name")
-                
-                with open(template_file, 'w', encoding='utf-8') as f:
-                    json.dump(raw, f, indent=2)
-                    
-                flat_comments = create_template.flatten_comments(raw.get('comments', []))
-                classified_data = {
-                    'productName': reg_item.get("name"),
-                    'sourceThreads': raw.get('sourceThreads'),
-                    'analyzedAt': raw.get('analyzedAt'),
-                    'comments': flat_comments
-                }
-                with open(classified_file, 'w', encoding='utf-8') as f:
-                    json.dump(classified_data, f, indent=2)
-                print("    Successfully created templates.")
-            except Exception as e:
-                print(f"    [Error] Creating templates failed: {e}")
+            if not pipeline_core.create_product_templates(
+                slug, raw_comments_file, template_file, classified_file, reg_item
+            ):
                 continue
         else:
             # Force the proper product name in existing templates to prevent DB mismatch errors
@@ -128,93 +139,7 @@ def main():
             print(f"    [Error] OpenRouter auto-classification failed: {e}")
             continue
 
-        # --- STEP 3: Merge Batches into Flat Classified Store ---
-        print("  [Step 3/4] Merging batches and resolving votes...")
-        try:
-            merge_batches.merge_batches(
-                str(BATCHES_DIR / slug),
-                str(classified_file),
-                str(classified_file)
-            )
-        except Exception as e:
-            print(f"    [Error] Merging batches failed: {e}")
-            continue
-
-        # --- STEP 4: Generate Consensus & Seed Real Sentiment ---
-        print("  [Step 4/4] Generating community consensus & updating database...")
-        try:
-            product_name, top_pos, top_neg = generate_consensus.select_representative_comments(classified_file)
-            
-            if not top_pos and not top_neg:
-                print("    [Warning] No classified comments found. Consensus generation skipped.")
-                continue
-                
-            # Check if database already has a consensus populated for this product
-            # to avoid wasting API calls on products that are already fully completed.
-            with open(db_file_path, 'r', encoding='utf-8') as f:
-                cat_db = json.load(f)
-            
-            existing_consensus = None
-            for prod in cat_db.get("products", []):
-                if prod.get("name", "").lower().strip() == product_name.lower().strip():
-                    existing_consensus = prod.get("redditConsensus")
-                    break
-
-            if existing_consensus:
-                print(f"    Consensus already exists in database. Skipping API call.")
-                consensus = existing_consensus
-            else:
-                print(f"    Generating consensus for: '{product_name}'...")
-                consensus = generate_consensus.call_gemini_for_consensus(product_name, top_pos, top_neg)
-                # Write back to database file
-                generate_consensus.update_database_file(Path(db_file_path), product_name, consensus, dry_run=False)
-            
-            # --- STEP 4.5: Calculate & Update Real Sentiment Metrics ---
-            with open(classified_file, 'r', encoding='utf-8') as f:
-                cls_data = json.load(f)
-                
-            comments = cls_data.get("comments", [])
-            included = [c for c in comments if c.get("relevance") == "include"]
-            
-            total_mentions = len(included)
-            positives = sum(1 for c in included if c.get("sentiment") == "positive")
-            negatives = sum(1 for c in included if c.get("sentiment") == "negative")
-            neutrals = total_mentions - positives - negatives
-            
-            rate = round(positives / (positives + negatives), 2) if (positives + negatives) > 0 else 0.0
-            
-            # Update metrics in database json
-            for product in cat_db.get("products", []):
-                if product.get("name", "").lower().strip() == product_name.lower().strip():
-                    product["mentions"] = total_mentions
-                    product["positiveReviews"] = positives
-                    product["negativeReviews"] = negatives
-                    product["neutralReviews"] = neutrals
-                    product["recommendationRate"] = rate
-                    
-                    top_quotes = sorted(
-                        [c for c in included if c.get("sentiment") == "positive"],
-                        key=lambda x: x.get("upvotes", 0),
-                        reverse=True
-                    )[:3]
-                    
-                    product["redditQuotes"] = []
-                    for q in top_quotes:
-                        product["redditQuotes"].append({
-                            "quote": q.get("text")[:200] + "..." if len(q.get("text")) > 200 else q.get("text"),
-                            "sourceUrl": q.get("threadUrl", "https://www.reddit.com"),
-                            "subreddit": q.get("subreddit", "buildapc"),
-                            "upvotes": q.get("upvotes", 0)
-                        })
-                    break
-                    
-            with open(db_file_path, 'w', encoding='utf-8') as f:
-                json.dump(cat_db, f, indent=2)
-                
-            print(f"    Successfully updated sentiment metrics & real quotes for {product_name}!")
-            
-        except Exception as e:
-            print(f"    [Error] Consensus or metrics update failed: {e}")
+        if not pipeline_core.compute_and_write_metrics(slug, classified_file, db_file_path):
             continue
 
         print("Waiting 10 seconds before next product...")

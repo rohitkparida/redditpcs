@@ -1,0 +1,208 @@
+{
+  "productName": "thermalright-phantom-spirit-120-evo",
+  "batchIndex": 21,
+  "totalBatches": 25,
+  "comments": [
+    {
+      "commentId": "1r0o1ro",
+      "text": "I switched from RTX 2070 to RX 9070, here's my honest experience, tips and thoughts.\n\n# INTRO + CONTEXT\n\nBack in december I got a Gigabyte RX 9070 Gaming OC and once opened I fell in love with the grey details on the card. Also the size made my Gigabyte RTX 2070 Windforce seem like a little toy, but at the same time it fitted in my small-ish mid tower without issues.\n\nWhen I first tried playing some of my games I noticed my fps were literally DOUBLED or even TRIPLED in most of them, despite having less rgb in my case (sorry I had to). In some of them I can reach higher than 100fps at max details (WQHD res) while before I was struggling to get to 60-80 at min details.\n\n# BUILD\n\nFor the occasion I upgraded my build:\n\n* i7 9700k --> R7 7700\n* 16gb 3000 c15 --> 32gb 6000 c36 (both corsair vengeance)\n* OCZ ZT 750w bronze --> Pccooler YN1000 gold\n* Gigabyte B650 Eagle AX\n* Thermalright Phantom Spirit 120 Evo (70 celsius under load with undervolt)\n* Orico 2tb m2 e7400 (\\~6500 effective, no OS only games)\n\nMy psu was 12+ years old (and has powered 3 builds) so it was time to say goodbye, also I read newer ones can handle power spikes better and I saw one spike from 270w (oc) to 400w on the new gpu, so I think it was a good call.\n\nThe R7 7700 only shows some visible bottleneck on a couple of really unoptimized games, still way better even in Rust on my old gpu, so it feels great for now and can be upgraded down the line with an X3D.\n\nIt started as a last minute budget build in november to avoid price increases, but since also gpus were doomed to rise I finished it as soon as I could. I'll share more details if anyone's interested.\n\n# ADRENALIN HORROR\n\n*Consider the following lines as guidelines rather than a rant, hopefully this helps newcomers get started faster than I did.*\n\nI liked the idea of switching to just one app for all my needs, but...\n\nI had weeks of terror with Adrenalin, until I figured out the rules are:\n\n* never press ALT+R, instead ALT+TAB and open Adrenalin manually from taskbar\n* if you really want to press ALT+R, ensure your game is in exclusive full screen (but some games can only be borderless full screen, so don't press ALT+R if you want to forget about the issues)\n* if Adrenalin crashes silently while playing, maybe it didn\u2019t like the oc (even without driver timeout or the game crashing)\n\nI'll leave my other findings:\n\n* some games like MH:Wilds will crash on launch if you enable FSR 4 Framegen without warning you about the issue, fortunately it's a simple fix once you know it\n* everytime I rebooted or turned off-on my pc, oc kept getting reset to default in Adrenalin. As pointed out by others, disabling fast boot in Windows power management fixed it\n* Adrenalin Video and Streaming by default outputs darker images than what you see: I tried making some videos to use as live wallpaper in Oblivion Remastered in dark areas but most details were lost because of this. I didn't investigate further, but I hope there's an option in Adrenalin to fix this. Since some people tell it can give issues, I'm keeping it off for now (just making sure everything is stable)\n* sometimes I had some doubts with freesync on so I turned it off for now (I was still testing oc though)\n* when I started with 25.12.1, when launching a game I'm pretty sure I wasn't getting the top-right red square from Adrenalin saying FSR 4 upscale upgrade was turned on (among other settings). I discovered it when I downgraded to 25.9.1 (with ddu) and, after updating to 26.1.1, I now get it aswell.\n\nI also don't like the weird slow scrolling animation, but it can't be disabled.\n\nI noticed people in this sub saying Nvidia App has been buggy aswell but I never had any major issues since Geforce Experience came out, maybe I'm lucky.\n\nIf you need always working metrics there are alternatives like Afterburner+RivaTuner, CapFrameX etc. Personally I switched to CapFrameX for the time being just to make sure if I get crashes Afterburner isn't a variable, being also an oc tool. I'll try it back when I'm sure I'm stable.  \nIf you take the CapFrameX road keep in mind you can show/hide the overlay with ALT+O.\n\n# ADRENALIN SETTINGS\n\nI set FSR upscaler and framegen upgrades globally on, framegen upgrade disabled specifically in Wilds.\n\nEDIT: the latter is called \"AMD FSR Frame Generation\", not Fluid Motion Frames. I think it has been added in december 2025. It upgrades frame gen to the latest version when frame gen is turned on inside the game, it doesn't just apply frame gen to everything.\n\n# OVERCLOCK\n\nCPU: PBO enabled, curve optimizer -30\n\nGPU: +10% power, -80mv\n\nIt could reach -130mv but I'd rather keep it stock then see it crash even after days, so here I am.\n\nI always had crashes through many builds when overclocking, so I'm happy I can get some more performance without issues this time and I wonder if the old psu was the culprit back then.\n\n# UPSCALERS DRAMA\n\nOnce figured all this, my only complaint was DLSS 4 missing cause you can\u2019t unsee that thing, gold even in performance mode.\n\nHaving played MH:Wilds, BF6 and other games with DLSS 4 during last year, I instantly noticed FSR 4 being less crispy and detailed, but I knew the risk. I admit it gave me some headache at the beginning but now I can say I'm getting used to it. It's not about the framerate, but gaining clarity especially in natively blurry games. But FSR 4 upscaler is still good, hope it gets great this year.\n\nI can see why one would want to abandon the ship and refund, but I didn\u2019t want to spend 200+\u20ac more for a 5070Ti (that was the price gap for me).\n\nI was wondering if getting a 5070 for a little bit less was a better idea, but once getting used to FSR I had my answer. Putting aside the (decent) upscaler and considering the added performance and vram, the 9070 is a great price to performance gpu. I still hope next FSR upscaler implementation will reach that peak, but I'm keeping my expectations low and I'm fine with it.\n\nI'm more worried about FSR not being implemented in newer games, since already 2 games came out in january with DLSS but no FSR (one based on vulkan). Luckily I'm not planning to play them and right now I don't think FSR is vital over a standard antialiasing for visuals, except maybe for more performance.\n\n# VRAM DEBATE\n\nI also think the vram story about the 5070 (non Ti) has been a little bit exaggerated since I noticed from many benchmarks that Nvidia uses less vram (I believe thanks to compression) but it can vary between 800mb-1.3gb and probably a better upscaler can give a better result than ultra textures, but I guess it depends on the specific game and resolution.\n\nAnyway we'd still be comparing a \\~13gb gpu against a 16gb one.\n\nI have to admit that seeing I'm really using most of it in some games makes me happy about choosing my 9070 anyway.\n\n# PERFORMANCE / RAY TRACING\n\nTalking about pure performance, as I said above, 9070 delivers A LOT!\n\nI was used to Ray Tracing on my old RTX 2070, where turning it on would halve my fps usually below 60 (reason why I mostly kept it off), so I was amazed when I turned it on in Wilds without experiencing the long freeze on activation and the evident loss in performance.\n\nSame thing with shaders in Minecraft, but if I understood correctly those shouldn't be real ray tracing (even if it used to halve my fps the same with my old gpu).\n\nI usually avoid Ray Tracing anyway but I'm loving it with Lumen on in Oblivion Remastered. Though turning settings down there can make the game run better and still look good without the wow effect, so it's up to personal preference.\n\n# FRAME GENERATION\n\nI mainly use it in Wilds and Oblivion Remastered, but sometimes I find myself turning it off. Specially in Oblivion Remastered, since after a loading screen it warms up in 4-5 seconds and that game is full of loadings. I never tried it on team green so I can't tell much about that.\n\nI found a bug in Oblivion when alt-tabbing out and back in, where framegen just turns off. Turning it off and back on didn't fix it, but turning overall game settings from ultra to high and then back to ultra fixes it reliably.\n\n# GAMES I TRIED\n\n* *Now playing:* Battlefield 6, COD Black Ops 7, CS2, MH:Wilds, Oblivion Remastered, Zenless Zone Zero\n* *Just (re)tried for testing:* Cyberpunk, The Witcher 3, Starfield, Skyrim Anniversary (Nolvus), Hogwarts Legacy, Clair Obscur, Dragon Age The Veilguard, New World, Rust, Minecraft, Overwatch 2, Fortnite, Genshin Impact, Wuthering Waves, Arknights Endfield, Highguard\n\n# CONCLUSION\n\nNow that I sorted out things, I can say I'm really happy about my 9070. I'm finally back to high fps specially in Cod and Battlefield, now Oblivion Remastered and Wilds are playable and I can try some other games I avoided because of poor performance (or played with everything low, even the upscaler).\n\nIt's already a powerful card and it could get golden with updates, fingers crossed.\n\nI'm only waiting for FSR upscaling next implementation and fixes for Adrenalin, but for now I'm pretty much satisfied.",
+      "upvotes": 150,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "o4k100j",
+          "text": "I went from a 2070s and 3700x i had for 4 years into a 7800x3d and 7900gre its been an awesome experience first time i had an all amd setup, i haven't noticed anything frustrating and i really like the adrenaline software, only issue I had and dislike is when overclocking the gpu in the settings it will save for a little bit then reset itself for some odd reason lol, other than that its been a pure joy and gaming experience for me.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "o4k510q",
+              "text": "Glad you're experience is smooth!\n\nAs someone else pointed out, maybe Adrenalin bugs only with newer cards.\n\nAnyway did you try disabling fast startup? My oc settings were resetting after every reboot and it fixed it for me.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "o4k8aa0",
+                  "text": "Thats clutch i will have to give that a shot! I appreciate the help \ud83d\ude0e yeah i am unclear if it is just with newer cards or not.  I built my new pc in 2024 during black friday, the gre has been a super solid and reliable preforming card for me. Hopefully things will smooth out more for you with continuous updates.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "o4k8thv",
+                      "text": "If everything keeps working like this it's all good for me, it'd be nice having Adrenalin fixed but I can also live with it. :)\n\nI think a friend of mine has your model and he's also happy about it!",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "o4k9a3i",
+                          "text": "Yeah the funny thing is i bought this card because i have a pet rabbit and i loved the name of the card plus it was more than enough for my gaming needs on high settings native in 1440p definitely happy with it.\n\nYeah amd takes some getting used to but its overall good imo, plus it was more affordable at the time than other cards for my build. I have the XFX version tripple fan.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "o4kapes",
+                              "text": "I didn't know what \"gre\" stood for, cute story :)\n\nYeah that's also why I opted for amd, it seemed better value for playing native 1440p and probably will get even better with updates.\n\nI set my eyes on a XFX 9060XT before this one, they seem really nice cards.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "o4kb6tz",
+                                  "text": "Yeah it was originally a china release only card and came out in the year of the rabbit so it is called the golden rabbit edition. Then they decided to drop it into the NA market for a limited time. \n\nDefinitely was a great budget friendly option saldy they discounted them. \n\nDefinitely majority of amd cards are excellent for native, frame gen and stuff is cool, i like seeing what i can do raw settings above anything else. \n\n9060 id take that over a 5060 anyday.",
+                                  "upvotes": 2,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "o4kg2pm",
+                                      "text": "Nice, I didn't know it was limited.\n\nYep I also generally prefer native, but after seeing Wilds in particular (and other games) where you can't have a crispy image without it no matter how you set it, I began using it more. Before dlss 4.0 I only enabled it when I really needed more performance. Sadly also 1440p games can look blurry now.\n\nYep I was set on taking the 9060xt 16gb, but then I thought better investing now for a 9070 since we don't know when prices will drop back to normal, specially after seeing ram prices. I'm glad I did it because I remember seeing something like half the fps on 9060xt benchmarks, and the jump has been insane from a 2070 now. I've been waiting for this exact reason, to make the jump worthy.",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "o4jznvy",
+          "text": "Amd gpus are tolerable once you get used to tinkering with the settings to make them stable. But it's not a sacrifice im willing to make.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "o4k2ada",
+              "text": "I get it, not everybody has the time or will to put time and effort in this. It should be plug and play, but here we are.\n\nLucky me I found out how to deal with it, or I would have probably regretted the choice.",
+              "upvotes": 0,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "o4kgdz7",
+                  "text": "What are the things to note, I have recently switch from team green",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "o4kk3px",
+                      "text": "Turn on AMD FSR Upscaler (upgrade) globally in Adrenalin if not already checked (so it will replace FSR 3.1 upscaler with 4, now called Redstone).\n\nYou can also turn on AMD FSR Frame Generation (the upgrade one, not Fluid Motion Frames! If drivers are older than december you won't have it) but keep in mind MH:Wilds crashes at startup with it.\n\nIf you have issues with Adrenalin overlay bugging (not opening, invisible, mouse locked etc), stop using ALT+R and start opening it manually from task bar. While playing games in exclusive fullscreen mode it should always work with the hotkey, but in borderless fullscreen (in some games it's the only option) it usually keeps bugging.\n\nIf you want to OC your gpu from Adrenalin, keep in mind:\n\n* if after a reboot the oc resets, disable fast startup in windows power management and try again (fixed it for me and others). If you can't fix it, you can try ocing in afterburner instead. Don't mix them up.\n* if you don't get driver timeouts or games crashing, but Adrenalin crashes silently in the taskbar and can't be opened without rebooting, maybe it doesn't like your OC so you have to lower it\n\nIf you're OCing, remember undervolting (and raising power limit) will give you higher clocks so no need to boost clocks (unless you really want to push it further).\n\nI think that's all.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "o4k39lo",
+          "text": "Did you test your ram properly?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "o4k5qop",
+              "text": "I used them with my old gpu for a month before swapping psu and gpu (and reinstalling windows from scratch) and everything was smooth. Being Adrenalin the only issue I have and seeing all the feedback on reddit, I think it's definitely Adrenalin being bugged.\n\nEverything works fine except Adrenalin in borderless games, it seemed working consistently with exclusive fullscreen mode I prefer being able to alt-tab and now I don't need to look at it anymore.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "o4md5rc",
+                  "text": "I am sorry to say this like that but that's not testing, give it at least a 4/4 pass with Memtest, minimum.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "o4mf2i1",
+                      "text": "I know the theory on actually testing ram, but why should I use memtest for ram in factory expo when everything works fine?\n\nI\u2019m not overclocking ram anyway and never had issues with expo / xmp profiles.\n\nYeah it would give me 95% confidence cause that\u2019s a possibility, but I\u2019m not doing anything unusual and it\u2019s behaving good, so personally I don\u2019t see the point.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

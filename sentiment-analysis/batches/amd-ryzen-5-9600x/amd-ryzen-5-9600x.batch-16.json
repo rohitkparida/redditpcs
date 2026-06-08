@@ -1,7 +1,7 @@
 {
   "productName": "amd-ryzen-5-9600x",
   "batchIndex": 16,
-  "totalBatches": 32,
+  "totalBatches": 39,
   "comments": [
     {
       "commentId": "1ewbaoy",
@@ -14,86 +14,248 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "lj0jmoo",
-          "text": "Arrow Lake will be a beast and will crush amd. 14% better IPC on the P cores and the E cores will have a 2% better IPC than the raptor lake P cores. (38% interger IPC gain, 68% IPC gain float)\n\nIt will crush 3d v cache as well since Intel increased the l2 cache per P core from 2-3mb with only a 1 cycle latency penalty because of the intermediary 192kb of l1 which would allow the Ultra 9 285k to have 80mb of total cache (40mb l2 for P and E cores, 36mb l3 in total) and the P cores will have 24mb of L2 and 16mb for the E cores. clock speeds will be 5.7 for the P cores, 4.7 for the E cores and all core will be 5.4 on the P cores.\n\nKeep in mind the increase of L2 cache from 1-2mb per core is part of why the 13900k is 12% faster in gaming performance. and since Arrow Lake will likely be made using TSMC N3B there's no reason to be worried about these cpu's breaking since they're made in TSMC fabs and not by intel.\n\nAMD is going to get crushed this generation.",
-          "upvotes": -7,
+          "commentId": "lixh6cr",
+          "text": "The gaming results are very weird. What makes PPC in games *so* much lower than in other workloads? \n\nI don't think it's the weird cross-CCD latency results, otherwise the single CCD chips would be much more performant. Memory latency and bandwidth appears to be very similar. IIRC L3 latency in cycles is similar or down as well? \n\nGoing off chips and cheese's article on Zen 4, it seemed like AMD did improve many of the areas that were bottlenecks in gaming for Zen 4. \n\nHopefully someone would profile a couple games and explain the results.",
+          "upvotes": 34,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is critiquing the gaming performance results of the Zen 5 architecture, which includes the 9600X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking technical questions and seeking explanations for the performance data without expressing a clear positive or negative opinion.",
           "replies": [
             {
-              "commentId": "lj1bezw",
-              "text": "&gt;Keep in mind the increase of L2 cache from 1-2mb per core is why the 13900k is 12% faster in gaming performance.\n\nIt's *part* of the reason why, games saw a 2-3% increase in PPC IIRC. The rest of it is all clock and memory uplifts.",
-              "upvotes": 1,
+              "commentId": "lixiwae",
+              "text": "It seems like games these days are more limited by io then by raw compute, so the increase in raw compute performance without much of any change in memory, cache, or latency resulted in little change",
+              "upvotes": 36,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a technical explanation for the limited gaming performance of the Zen 5 CPUs.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual technical analysis of why performance didn't increase as expected.",
               "replies": [
                 {
-                  "commentId": "lj3sz69",
-                  "text": "the 13900k and 14900ks have a frequency difference of 400mhz (5.8 vs 6.2 TVB) which provided about 4% extra performance.\n\nat most the 500mhz boost from the 12900k to the 13900k provided a 5% performance boost, the rest being provided by the increased cache and ring bus clocks",
-                  "upvotes": 1,
+                  "commentId": "lixqdy4",
+                  "text": "Which could mean the X3D parts will have a greater uplift",
+                  "upvotes": 23,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user is speculating on the performance uplift of future X3D versions of the Zen 5 architecture.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a speculative technical prediction.",
                   "replies": [
                     {
-                      "commentId": "lj3u9mj",
-                      "text": "&gt;the 13900k and 14900ks have a frequency difference of 400mhz (5.8 vs 6.2 TVB) which provided about 4% extra performance.\n\nThe comparison should be between the 12900k and 13900k. 5.8 to 5.2 GHz is a 11.5% boost. \n\n&gt;at most the 500mhz boost from the 12900k to the 13900k provided a 5% performance boost, the rest being provided by the increased cache and ring bus clocks\n\nThe extra L2 did not provide that large of a boost on average. People have tested [this](https://www.computerbase.de/2022-10/intel-core-i9-13900k-i7-13700-i5-13600k-test/#abschnitt_wesentliche_neuerungen_und_ipcanalyse).",
-                      "upvotes": 1,
+                      "commentId": "liz5832",
+                      "text": "!RemindMe 4 months",
+                      "upvotes": 5,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a bot command for a reminder, which is off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": [
+                        {
+                          "commentId": "lj2iv0x",
+                          "text": "Optimistic?\u00a0",
+                          "upvotes": 0,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Low-effort banter/question about the timing of a reminder.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
+                          "replies": [
+                            {
+                              "commentId": "lj2mr97",
+                              "text": "zen 4 x3d took about 5 months so 4 isnt really far fetched",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Discussion about the release timing of previous CPU generations, not specific to the product's performance or value.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "N/A",
+                              "replies": [
+                                {
+                                  "commentId": "lj5c4ew",
+                                  "text": "Hope you are right. If Intel's arrow lake smokes the zen 5 amd would be more motivated to release it asap too",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "General discussion about competition between AMD and Intel, not specific to the 9600X.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "N/A",
+                                  "replies": [
+                                    {
+                                      "commentId": "m2xeybk",
+                                      "text": "hey look it did launch within 4 months",
+                                      "upvotes": 2,
+                                      "classifyThis": true,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Discussion about the release date of a product, not its performance or value.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "N/A",
+                                      "replies": [
+                                        {
+                                          "commentId": "m2ydzqm",
+                                          "text": "Congrats on being right :p",
+                                          "upvotes": 2,
+                                          "classifyThis": true,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "Low-effort banter between users.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "N/A",
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "lj08it6",
+                      "text": "Since Zen 5 was such a new architecture with different internal bottlenecks, I expect x3d zen 5 parts will have more uplift than zen4.  It's possible that there's a major bottleneck that isn't affected by memory latency or bandwidth, but the odds are reducing average latency with more cache will help alleviate a variety of them.",
+                      "upvotes": 5,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user is discussing the potential performance uplift of Zen 5 X3D parts based on the architecture's bottlenecks.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a technical speculation on future product performance.",
                       "replies": []
+                    },
+                    {
+                      "commentId": "liynzpe",
+                      "text": "!RemindMe 1 year",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a bot command for a reminder, which is off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": []
+                    },
+                    {
+                      "commentId": "liynu5p",
+                      "text": "Or perhaps we can finally get quad channels mobos in the consumer space.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General discussion about motherboard features (quad channel memory), not specific to the 9600X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": [
+                        {
+                          "commentId": "lizhpjv",
+                          "text": "More channels won't help with latency, only bandwidth, and games typically care much more about the former.",
+                          "upvotes": 7,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Technical discussion about memory latency and bandwidth in general, not specific to the 9600X.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
+                          "replies": [
+                            {
+                              "commentId": "lj0su5r",
+                              "text": "It's both. T topography quad channel cl30 6000 should have the same latency to the core but double the bandwidth. Quad channel can lower latency in T topology can actually help lower latency even more and increasing bandwidth. We are currently limited by the IMC which is shit .\n\nThere are old games like the latest spidermaN that skales with bandwith as per Hardware unboxed.\n\nEven though more expensive any cpu should benefit from quad channel performance in gaming.\n\nBack in the day when. Intel gated 4 cores,  getting an HEDT part meant usually lower single core speeds but massive fps gains from the quad channel and double the cores.\n\nThese days I'm a dad who occasionally plays. Back in the day I was a system builder nerd.\n\nA 4 core Skylake had faster single core speeds but with tuning you could have the Skylake HEDT part close enough in clocks with double the cores and quad channel support. It was extremely expensive but much more performance in general.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "General technical discussion about memory architecture and historical CPU performance, not specific to the 9600X.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "N/A",
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "liyrjpl",
+                          "text": "Adds a lot of cost.\n\nUsing CAMM2 module with faster LPDDR5 variants could give a lot more bandwidth without blowing up on pin count.\n\nThere are some prototypes already, so that is what I\u2019d bet on.",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "General discussion about memory modules (CAMM2), not specific to the 9600X.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
+                          "replies": []
+                        }
+                      ]
                     }
                   ]
                 }
               ]
             },
             {
-              "commentId": "ly2x542",
-              "text": "Didn't age so well",
-              "upvotes": 1,
+              "commentId": "liydjrs",
+              "text": "&gt; The gaming results are very weird. What makes PPC in games so much lower than in other workloads? \n\nThe same reason why overclocking just the cores on regular Zen 4 gives very little in games.\n\nGaming performance is almost entirely memory and cache bound on standard Zen 4.",
+              "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user is explaining why gaming performance on Zen 4 and Zen 5 is limited by memory and cache.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual technical explanation.",
               "replies": []
             },
             {
-              "commentId": "lj0uf79",
-              "text": "There's a limit to how many times we're going to fall for that claim.",
-              "upvotes": 1,
+              "commentId": "liz9kyj",
+              "text": "Games results probably got hit by [some higher memory latencies](https://x.com/hjc4869/status/1824672133064298648).",
+              "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user is suggesting a reason for the poor gaming results of the Zen 5 CPUs.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is pointing out a performance regression/issue (higher memory latencies).",
               "replies": []
             },
             {
-              "commentId": "lj0r9u3",
-              "text": "Sure...  \n!RemindMe 3 months",
+              "commentId": "lixyq1q",
+              "text": "Core to core latency within the same CCD also regressed.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The user is pointing out a specific technical regression in the Zen 5 architecture.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is highlighting a performance regression (core to core latency).",
+              "replies": []
+            },
+            {
+              "commentId": "lizmouw",
+              "text": "For real.  Seems like the bread and butter 78x3d is still on top.\n\nAnd here I was hoping it would get a bit cheaper when the 9k's came out.  Guess not.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The user is comparing the 9000 series to the 7800X3D and expressing disappointment in the pricing.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is disappointed that the 7800X3D remains superior and that the 9000 series didn't lower the price of the older chip.",
+              "replies": []
+            },
+            {
+              "commentId": "lj6rzaf",
+              "text": "games dont use no fancy AVX-512 instructions and the like, the only parts of Zen5 that got better.\n\nalso Cross-CCD latency is 2.5x higher for Zen 5 so that will certainly be influencing it.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user is critiquing the Zen 5 architecture's gaming performance and mentioning a latency regression.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is highlighting a negative technical aspect (Cross-CCD latency is 2.5x higher).",
+              "replies": []
+            },
+            {
+              "commentId": "lj6x6ka",
+              "text": "\n\nWindows, core parking, new chipsets, and probably Zen 5 microcode aren't ready yet. Better to wait for X3D versions with new chipsets to see its real performance. It in it's buggy state already has a big boost in AVX512 workloads and is the fastest CPU in emulation.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The user is discussing the performance of Zen 5 CPUs, mentioning both bugs and strengths in specific workloads.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user balances a 'buggy state' with praise for AVX512 and emulation performance.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

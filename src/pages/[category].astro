@@ -14,35 +14,46 @@ export function getStaticPaths() {
 }
 
 const { data } = Astro.props;
-const { category, description, updated, products } = data;
+const { category, description, updated } = data;
 
-const getRankBadge = (rank: number, slug: string) => {
-  if (rank === 1) return { text: '👑 #1 Top Pick', color: 'bg-emerald-500 dark:bg-emerald-600 text-white font-bold' };
-  if (rank === 2) return { text: '💡 #2 Smart Pick', color: 'bg-blue-500 dark:bg-blue-600 text-white font-bold' };
-  if (rank === 3) {
-    const text = slug === 'cpus' ? '⚡ #3 Multi-threaded Pick' : '⚡ #3 High Performance';
-    return { text, color: 'bg-amber-500 dark:bg-amber-600 text-white font-bold' };
-  }
-  return { text: `#${rank} Recommended`, color: 'bg-zinc-100 dark:bg-zinc-800 text-zinc-650 dark:text-zinc-300 border border-zinc-200 dark:border-zinc-700/50' };
-};
+// Filter: Only include ready products that have finished sentiment classification
+// Sort dynamically by recommendationRate (sentiment %) descending
+const products = data.products
+  .filter(p => p.redditConsensus && p.redditConsensus !== "" && p.mentions > 0)
+  .sort((a, b) => b.recommendationRate - a.recommendationRate);
 
 const brands = [...new Set(products.map(p => p.brand))];
 const sockets = data.slug === 'cpus' ? [...new Set(products.map(p => p.specs?.socket).filter(Boolean))] : [];
 const cores = data.slug === 'cpus' ? [...new Set(products.map(p => p.specs?.cores).filter(Boolean))].sort((a, b) => parseInt(a) - parseInt(b)) : [];
 const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.memory?.split(' ')[0]).filter(Boolean))] : [];
+
+// Dynamic min/max prices for current products in this category
+const productPrices = products.map(p => {
+  const priceMatch = p.priceRange.match(/\$(\d+)/);
+  return priceMatch ? parseInt(priceMatch[1]) : null;
+}).filter(Boolean);
+const minCategoryPrice = productPrices.length > 0 ? Math.min(...productPrices) : 0;
+const maxCategoryPrice = productPrices.length > 0 ? Math.max(...productPrices) : 2000;
 ---
 
 <Layout title={category} description={description}>
-  <section class="py-12 px-4 border-b border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-950 transition-colors">
-    <div class="max-w-6xl mx-auto">
-      <div class="text-xs text-reddit-muted dark:text-zinc-500 mb-3 font-semibold">
+  <!-- Sticky Breadcrumb Bar -->
+  <div id="stickyBreadcrumb" class="sticky top-0 z-20 bg-white/95 dark:bg-zinc-950/95 border-b border-reddit-border dark:border-zinc-800/80 transition-colors backdrop-blur-md py-3 px-4 shadow-sm">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <div id="breadcrumbText" class="text-xs text-reddit-muted dark:text-zinc-500 font-semibold cursor-pointer select-none">
         <a href="/" class="hover:text-reddit-orange dark:hover:text-reddit-orange">Home</a>
         <span class="mx-2">/</span>
-        <span class="text-zinc-650 dark:text-zinc-400 font-bold">{category}</span>
+        <span class="text-zinc-650 dark:text-zinc-400 font-bold hover:text-reddit-orange transition-colors">{category}</span>
       </div>
-      <h1 class="text-3xl md:text-4xl font-extrabold mb-3 text-zinc-900 dark:text-white tracking-tight font-sans">{category}</h1>
+    </div>
+  </div>
+
+  <!-- Hero Header Section -->
+  <section class="py-10 px-4 border-b border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-950 transition-colors">
+    <div class="max-w-6xl mx-auto">
+      <h1 id="categoryTitle" class="text-3xl md:text-4xl font-extrabold mb-3 text-zinc-900 dark:text-white tracking-tight font-sans cursor-pointer hover:text-reddit-orange transition-colors select-none">{category}</h1>
       <p class="text-reddit-muted dark:text-zinc-400 text-base max-w-3xl leading-relaxed">{description}</p>
-      <p class="text-[10px] text-zinc-400 dark:text-zinc-500 font-bold uppercase tracking-wider mt-4 bg-zinc-55 dark:bg-zinc-900 border border-zinc-200/50 dark:border-zinc-800 inline-block px-2.5 py-1 rounded">
+      <p class="text-[10px] text-zinc-400 dark:text-zinc-550 font-bold uppercase tracking-wider mt-4 bg-zinc-55 dark:bg-zinc-900 border border-zinc-200/50 dark:border-zinc-800 inline-block px-2.5 py-1 rounded">
         Last updated: {formatDate(updated)}
       </p>
     </div>
@@ -55,13 +66,19 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
         <aside class="w-full lg:w-60 flex-shrink-0">
           <div class="bg-white dark:bg-zinc-900/60 rounded-2xl p-5 border border-reddit-border dark:border-zinc-800/80 mb-4 shadow-sm backdrop-blur-sm">
             <div class="flex items-center justify-between mb-4 pb-2 border-b border-zinc-200 dark:border-zinc-800">
-              <h3 class="font-black text-zinc-850 dark:text-zinc-200 text-sm uppercase tracking-wide">Filters</h3>
-              <button id="clearFilters" class="text-xs font-extrabold text-reddit-orange hover:underline">Clear All</button>
+              <h3 class="font-black text-zinc-850 dark:text-zinc-200 text-sm uppercase tracking-wide flex items-center gap-1.5">
+                Filters
+                <span id="filterCount" class="hidden text-[10px] font-bold px-1.5 py-0.5 rounded-full bg-zinc-100 dark:bg-zinc-800 text-zinc-550 dark:text-zinc-400">0</span>
+              </h3>
+              <button id="clearFilters" class="hidden text-xs font-extrabold text-reddit-orange hover:underline">Clear All</button>
             </div>
             
             {/* Brand Filter */}
             <div class="mb-5">
-              <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550 mb-3">Brand</h4>
+              <div class="flex items-center justify-between mb-3">
+                <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550">Brand</h4>
+                <button id="resetBrand" class="hidden text-[10px] font-bold text-reddit-orange hover:underline">Reset</button>
+              </div>
               <div class="space-y-2.5" id="brandFilters">
                 {brands.map(brand => (
                   <label class="flex items-center gap-2 cursor-pointer hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">
@@ -80,7 +97,10 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
             {/* CPU Socket Filter */}
             {data.slug === 'cpus' && sockets.length > 0 && (
               <div class="mb-5 border-t border-zinc-200/50 dark:border-zinc-800 pt-4">
-                <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550 mb-3">Socket</h4>
+                <div class="flex items-center justify-between mb-3">
+                  <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550">Socket</h4>
+                  <button id="resetSocket" class="hidden text-[10px] font-bold text-reddit-orange hover:underline">Reset</button>
+                </div>
                 <div class="space-y-2.5" id="socketFilters">
                   {sockets.map(sock => (
                     <label class="flex items-center gap-2 cursor-pointer hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">
@@ -100,7 +120,10 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
             {/* CPU Cores Filter */}
             {data.slug === 'cpus' && cores.length > 0 && (
               <div class="mb-5 border-t border-zinc-200/50 dark:border-zinc-800 pt-4">
-                <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550 mb-3">Cores</h4>
+                <div class="flex items-center justify-between mb-3">
+                  <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550">Cores</h4>
+                  <button id="resetCores" class="hidden text-[10px] font-bold text-reddit-orange hover:underline">Reset</button>
+                </div>
                 <div class="space-y-2.5" id="coresFilters">
                   {cores.map(c => (
                     <label class="flex items-center gap-2 cursor-pointer hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">
@@ -120,7 +143,10 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
             {/* GPU VRAM Filter */}
             {data.slug === 'gpus' && memories.length > 0 && (
               <div class="mb-5 border-t border-zinc-200/50 dark:border-zinc-800 pt-4">
-                <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550 mb-3">Memory / VRAM</h4>
+                <div class="flex items-center justify-between mb-3">
+                  <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550">Memory / VRAM</h4>
+                  <button id="resetMemory" class="hidden text-[10px] font-bold text-reddit-orange hover:underline">Reset</button>
+                </div>
                 <div class="space-y-2.5" id="memoryFilters">
                   {memories.map(mem => (
                     <label class="flex items-center gap-2 cursor-pointer hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">
@@ -137,30 +163,33 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
               </div>
             )}
 
-            {/* Price Range Filter */}
-            <div class="mb-5 border-t border-zinc-200/50 dark:border-zinc-800 pt-4">
-              <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550 mb-3">Price Range</h4>
-              <div class="space-y-3">
-                <div>
-                  <label class="text-[10px] font-bold text-zinc-400 block mb-1">Min ($)</label>
-                  <input 
-                    type="number" 
-                    id="minPrice" 
-                    placeholder="0" 
-                    class="w-full px-3 py-1.5 text-sm border border-reddit-border dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-900 dark:text-zinc-200 focus:outline-none focus:border-reddit-orange"
-                  />
-                </div>
-                <div>
-                  <label class="text-[10px] font-bold text-zinc-400 block mb-1">Max ($)</label>
-                  <input 
-                    type="number" 
-                    id="maxPrice" 
-                    placeholder="2000" 
-                    class="w-full px-3 py-1.5 text-sm border border-reddit-border dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-900 dark:text-zinc-200 focus:outline-none focus:border-reddit-orange"
-                  />
-                </div>
-              </div>
-            </div>
+              {/* Price Range Filter */}
+             <div class="mb-5 border-t border-zinc-200/50 dark:border-zinc-800 pt-4">
+               <div class="flex items-center justify-between mb-3">
+                 <h4 class="text-xs font-bold uppercase tracking-wider text-zinc-400 dark:text-zinc-550">Price Range</h4>
+                 <button id="resetPrice" class="hidden text-[10px] font-bold text-reddit-orange hover:underline">Reset</button>
+               </div>
+               <div class="space-y-3">
+                 <div>
+                   <label class="text-[10px] font-bold text-zinc-400 block mb-1">Min ($)</label>
+                   <input 
+                     type="number" 
+                     id="minPrice" 
+                     placeholder={minCategoryPrice.toString()} 
+                     class="w-full px-3 py-1.5 text-sm border border-reddit-border dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-900 dark:text-zinc-200 focus:outline-none focus:border-reddit-orange"
+                   />
+                 </div>
+                 <div>
+                   <label class="text-[10px] font-bold text-zinc-400 block mb-1">Max ($)</label>
+                   <input 
+                     type="number" 
+                     id="maxPrice" 
+                     placeholder={maxCategoryPrice.toString()} 
+                     class="w-full px-3 py-1.5 text-sm border border-reddit-border dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-900 dark:text-zinc-200 focus:outline-none focus:border-reddit-orange"
+                   />
+                 </div>
+               </div>
+             </div>
 
             {/* Results Count */}
             <div class="text-[10px] font-bold text-zinc-450 dark:text-zinc-500 pt-3 border-t border-reddit-border dark:border-zinc-800 uppercase tracking-wider">
@@ -187,25 +216,27 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
             <span class="text-sm font-semibold text-zinc-500" id="resultsCount">{products.length} products sorted by Reddit sentiment</span>
             <div class="flex flex-wrap items-center gap-3 self-end sm:self-auto">
               {/* Client-Side Category Text Search */}
-              <div class="relative">
+              <div class="group relative">
                 <input 
                   type="text" 
                   id="categorySearch" 
                   placeholder="Search in this category..." 
-                  class="px-3.5 py-1.5 pl-8 text-xs font-semibold border border-reddit-border dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-900 dark:text-zinc-200 focus:outline-none focus:border-reddit-orange w-48 sm:w-60"
+                  class="px-3.5 py-1.5 pl-8 pr-8 text-xs font-semibold border border-reddit-border dark:border-zinc-800 rounded-xl bg-white dark:bg-zinc-900 dark:text-zinc-200 focus:outline-none focus:border-reddit-orange w-48 sm:w-60"
                 />
                 <svg class="w-3.5 h-3.5 absolute left-3 top-2.5 text-zinc-400" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
                 </svg>
+                <kbd class="absolute right-2.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[8px] font-extrabold text-zinc-400 dark:text-zinc-550 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700/60 rounded pointer-events-none select-none transition-opacity duration-150 group-focus-within:opacity-0">
+                  /
+                </kbd>
               </div>
 
               <div class="flex items-center gap-2.5">
                 <span class="text-xs font-bold uppercase tracking-wider text-zinc-400">Sort</span>
                 <select id="sortSelect" class="px-3 py-1.5 text-xs font-bold border border-reddit-border dark:border-zinc-800 rounded-lg bg-white dark:bg-zinc-900 dark:text-zinc-200 focus:outline-none focus:border-reddit-orange">
-                  <option value="rank">Reddit Rank</option>
+                  <option value="rank">Reddit Sentiment (Default)</option>
                   <option value="price-low">Price: Low to High</option>
                   <option value="price-high">Price: High to Low</option>
-                  <option value="recommendation">Recommendation Rate</option>
                   <option value="mentions">Mention Volume</option>
                 </select>
               </div>
@@ -215,7 +246,6 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
           <!-- Product Cards -->
           <div class="space-y-6" id="productList">
             {products.map((product) => {
-              const badge = getRankBadge(product.rank, data.slug);
               const sentimentColor = getSentimentColor(product.recommendationRate);
               const productSlug = slugify(product.name);
               const topQuote = product.redditQuotes[0];
@@ -233,7 +263,7 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
                   class="product-card block bg-white dark:bg-zinc-900/50 border border-reddit-border dark:border-zinc-800 rounded-2xl p-6 hover:shadow-lg dark:hover:shadow-zinc-950/40 hover:border-zinc-300 dark:hover:border-zinc-700/60 transition-all duration-300 transform hover:-translate-y-0.5"
                   data-brand={product.brand}
                   data-price={minPrice}
-                  data-rank={product.rank}
+                  data-rank={Math.round(product.mentions * product.recommendationRate)}
                   data-recommendation={product.recommendationRate}
                   data-mentions={product.mentions}
                   data-socket={product.specs?.socket || ''}
@@ -248,13 +278,8 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
 
                     {/* Middle Column: Product & Quote */}
                     <div class="flex-1 min-w-0">
-                      <div class="flex items-center gap-2 mb-2">
-                        <span class={`${badge.color} text-[10px] uppercase tracking-wider px-2.5 py-0.5 rounded-md shadow-sm`}>
-                          {badge.text}
-                        </span>
-                      </div>
                       
-                      <h2 class="text-xl font-extrabold mb-1.5 text-zinc-900 dark:text-zinc-100 group-hover:text-reddit-orange transition-colors font-sans">{product.name}</h2>
+                      <h2 class="product-name text-xl font-extrabold mb-1.5 text-zinc-900 dark:text-zinc-100 group-hover:text-reddit-orange transition-colors font-sans" data-original-name={product.name}>{product.name}</h2>
                       
                       {/* Quiet Inline Specs */}
                       {product.specs && (
@@ -300,6 +325,14 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
                           </svg>
                           <span class="font-black text-lg leading-none">{Math.round(product.recommendationRate * 100)}%</span>
                         </div>
+                        <div 
+                          class="w-full max-w-[100px] bg-zinc-150 dark:bg-zinc-800/80 h-1.5 rounded-full overflow-hidden flex my-1.5 cursor-help"
+                          title={`${product.positiveReviews || 0} Positive / ${product.neutralReviews || 0} Neutral / ${product.negativeReviews || 0} Negative`}
+                        >
+                          {positivePct > 0 && <div style={`width: ${positivePct}%`} class="bg-emerald-500 dark:bg-emerald-600 h-full"></div>}
+                          {neutralPct > 0 && <div style={`width: ${neutralPct}%`} class="bg-zinc-400 dark:bg-zinc-550 h-full"></div>}
+                          {negativePct > 0 && <div style={`width: ${negativePct}%`} class="bg-rose-500 dark:bg-rose-600 h-full"></div>}
+                        </div>
                         <p class="text-[9px] text-zinc-450 dark:text-zinc-500 font-bold uppercase tracking-wider mt-0.5">{product.mentions} reviews</p>
                       </div>
 
@@ -317,6 +350,17 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
                 </a>
               );
             })}
+          </div>
+          <!-- Empty State -->
+          <div id="emptyState" class="hidden text-center py-16 px-4 bg-white dark:bg-zinc-900/40 rounded-2xl border border-dashed border-zinc-200 dark:border-zinc-800 shadow-sm">
+            <svg class="w-12 h-12 mx-auto text-zinc-400 dark:text-zinc-650 mb-4" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+            </svg>
+            <h3 class="text-base font-bold text-zinc-800 dark:text-zinc-200 mb-1">No products match your filters</h3>
+            <p class="text-xs text-zinc-550 dark:text-zinc-450 mb-4">Try relaxing your search query or checkbox selections.</p>
+            <button id="emptyResetBtn" class="px-4 py-2 text-xs font-bold text-white bg-reddit-orange hover:bg-orange-600 rounded-xl transition-colors shadow-sm focus:outline-none">
+              Reset All Filters
+            </button>
           </div>
         </div>
       </div>
@@ -339,6 +383,10 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
     const resultsCount = document.getElementById('resultsCount');
     const visibleCount = document.getElementById('visibleCount');
     
+    function escapeRegExp(string) {
+      return string.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    }
+
     function filterAndSortProducts() {
       const selectedBrands = Array.from(brandFilters).filter(cb => cb.checked).map(cb => cb.value);
       const selectedSockets = Array.from(socketFilters).filter(cb => cb.checked).map(cb => cb.value);
@@ -358,18 +406,27 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
         const socket = card.dataset.socket;
         const cores = card.dataset.cores;
         const memory = card.dataset.memory;
-        const name = card.querySelector('h2').textContent.toLowerCase();
+        const nameEl = card.querySelector('.product-name');
+        const originalName = nameEl.dataset.originalName;
+        const nameLower = originalName.toLowerCase();
         
         const matchesBrand = selectedBrands.includes(brand);
         const matchesSocket = socketFilters.length === 0 || selectedSockets.includes(socket);
         const matchesCores = coresFilters.length === 0 || selectedCores.includes(cores);
         const matchesMemory = memoryFilters.length === 0 || selectedMemories.includes(memory);
         const matchesPrice = price >= minPrice && price <= maxPrice;
-        const matchesSearch = name.includes(searchQuery);
+        const matchesSearch = nameLower.includes(searchQuery);
         
         if (matchesBrand && matchesSocket && matchesCores && matchesMemory && matchesPrice && matchesSearch) {
           card.style.display = 'block';
           visible++;
+          
+          if (searchQuery) {
+            const regex = new RegExp(`(${escapeRegExp(searchQuery)})`, 'gi');
+            nameEl.innerHTML = originalName.replace(regex, '<mark class="bg-orange-500/20 text-reddit-orange dark:text-orange-400 p-0 font-extrabold rounded-sm">$1</mark>');
+          } else {
+            nameEl.textContent = originalName;
+          }
         } else {
           card.style.display = 'none';
         }
@@ -384,7 +441,7 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
       visibleCards.sort((a, b) => {
         switch(sortSelect.value) {
           case 'rank':
-            return parseInt(a.dataset.rank) - parseInt(b.dataset.rank);
+            return parseFloat(b.dataset.recommendation) - parseFloat(a.dataset.recommendation);
           case 'price-low':
             return parseInt(a.dataset.price) - parseInt(b.dataset.price);
           case 'price-high':
@@ -402,6 +459,87 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
       visibleCards.forEach(card => {
         productList.appendChild(card);
       });
+
+      const emptyState = document.getElementById('emptyState');
+      if (emptyState) {
+        if (visible === 0) {
+          emptyState.classList.remove('hidden');
+        } else {
+          emptyState.classList.add('hidden');
+        }
+      }
+
+      // Update dynamic clear button visibility
+      updateClearButtonVisibility();
+    }
+
+    function updateClearButtonVisibility() {
+      const activeBrands = Array.from(brandFilters).filter(cb => !cb.checked).length;
+      const activeSockets = Array.from(socketFilters).filter(cb => !cb.checked).length;
+      const activeCores = Array.from(coresFilters).filter(cb => !cb.checked).length;
+      const activeMemories = Array.from(memoryFilters).filter(cb => !cb.checked).length;
+      const minPriceDirty = minPriceInput.value !== '' ? 1 : 0;
+      const maxPriceDirty = maxPriceInput.value !== '' ? 1 : 0;
+      const searchDirty = categorySearch.value !== '' ? 1 : 0;
+      
+      const totalActive = activeBrands + activeSockets + activeCores + activeMemories + minPriceDirty + maxPriceDirty + searchDirty;
+      
+      const filterCountBadge = document.getElementById('filterCount');
+      if (filterCountBadge) {
+        if (totalActive > 0) {
+          filterCountBadge.textContent = totalActive;
+          filterCountBadge.classList.remove('hidden');
+          clearFiltersBtn.classList.remove('hidden');
+        } else {
+          filterCountBadge.classList.add('hidden');
+          clearFiltersBtn.classList.add('hidden');
+        }
+      }
+
+      const resetPriceBtn = document.getElementById('resetPrice');
+      if (resetPriceBtn) {
+        if (minPriceDirty || maxPriceDirty) {
+          resetPriceBtn.classList.remove('hidden');
+        } else {
+          resetPriceBtn.classList.add('hidden');
+        }
+      }
+
+      const resetBrandBtn = document.getElementById('resetBrand');
+      if (resetBrandBtn) {
+        if (activeBrands > 0) {
+          resetBrandBtn.classList.remove('hidden');
+        } else {
+          resetBrandBtn.classList.add('hidden');
+        }
+      }
+
+      const resetSocketBtn = document.getElementById('resetSocket');
+      if (resetSocketBtn) {
+        if (activeSockets > 0) {
+          resetSocketBtn.classList.remove('hidden');
+        } else {
+          resetSocketBtn.classList.add('hidden');
+        }
+      }
+
+      const resetCoresBtn = document.getElementById('resetCores');
+      if (resetCoresBtn) {
+        if (activeCores > 0) {
+          resetCoresBtn.classList.remove('hidden');
+        } else {
+          resetCoresBtn.classList.add('hidden');
+        }
+      }
+
+      const resetMemoryBtn = document.getElementById('resetMemory');
+      if (resetMemoryBtn) {
+        if (activeMemories > 0) {
+          resetMemoryBtn.classList.remove('hidden');
+        } else {
+          resetMemoryBtn.classList.add('hidden');
+        }
+      }
     }
     
     // Event listeners
@@ -415,6 +553,22 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
     categorySearch.addEventListener('input', filterAndSortProducts);
     sortSelect.addEventListener('change', filterAndSortProducts);
     
+    const categoryTitle = document.getElementById('categoryTitle');
+    if (categoryTitle) {
+      categoryTitle.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    const breadcrumbText = document.getElementById('breadcrumbText');
+    if (breadcrumbText) {
+      breadcrumbText.addEventListener('click', (e) => {
+        if (e.target.tagName !== 'A') {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+    }
+
     clearFiltersBtn.addEventListener('click', function() {
       brandFilters.forEach(cb => cb.checked = true);
       socketFilters.forEach(cb => cb.checked = true);
@@ -426,5 +580,90 @@ const memories = data.slug === 'gpus' ? [...new Set(products.map(p => p.specs?.m
       sortSelect.value = 'rank';
       filterAndSortProducts();
     });
+
+    const resetPriceBtn = document.getElementById('resetPrice');
+    if (resetPriceBtn) {
+      resetPriceBtn.addEventListener('click', () => {
+        minPriceInput.value = '';
+        maxPriceInput.value = '';
+        filterAndSortProducts();
+      });
+    }
+
+    const resetBrandBtn = document.getElementById('resetBrand');
+    if (resetBrandBtn) {
+      resetBrandBtn.addEventListener('click', () => {
+        brandFilters.forEach(cb => cb.checked = true);
+        filterAndSortProducts();
+      });
+    }
+
+    const resetSocketBtn = document.getElementById('resetSocket');
+    if (resetSocketBtn) {
+      resetSocketBtn.addEventListener('click', () => {
+        socketFilters.forEach(cb => cb.checked = true);
+        filterAndSortProducts();
+      });
+    }
+
+    const resetCoresBtn = document.getElementById('resetCores');
+    if (resetCoresBtn) {
+      resetCoresBtn.addEventListener('click', () => {
+        coresFilters.forEach(cb => cb.checked = true);
+        filterAndSortProducts();
+      });
+    }
+
+    const resetMemoryBtn = document.getElementById('resetMemory');
+    if (resetMemoryBtn) {
+      resetMemoryBtn.addEventListener('click', () => {
+        memoryFilters.forEach(cb => cb.checked = true);
+        filterAndSortProducts();
+      });
+    }
+
+    // Keyboard global listener for slash shortcut to focus local search
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/' && document.activeElement !== categorySearch && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
+        e.preventDefault();
+        categorySearch.focus();
+      }
+    });
+
+    // Escape key inside categorySearch to clear search query
+    categorySearch.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        if (categorySearch.value) {
+          categorySearch.value = '';
+          filterAndSortProducts();
+        } else {
+          categorySearch.blur();
+        }
+      }
+    });
+
+    // Escape key inside price inputs to reset/clear the price filter only
+    const handlePriceEscape = (e) => {
+      if (e.key === 'Escape') {
+        e.preventDefault();
+        if (minPriceInput.value || maxPriceInput.value) {
+          minPriceInput.value = '';
+          maxPriceInput.value = '';
+          filterAndSortProducts();
+        } else {
+          e.target.blur();
+        }
+      }
+    };
+    minPriceInput.addEventListener('keydown', handlePriceEscape);
+    maxPriceInput.addEventListener('keydown', handlePriceEscape);
+
+    const emptyResetBtn = document.getElementById('emptyResetBtn');
+    if (emptyResetBtn) {
+      emptyResetBtn.addEventListener('click', () => {
+        clearFiltersBtn.click();
+      });
+    }
   });
 </script>

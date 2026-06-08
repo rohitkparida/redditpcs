@@ -6,7 +6,10 @@ import { gpus, cpus, motherboards, ram, psus, ssds, coolers, cases } from '../ut
 // Helper to get crown holder (first product of each category)
 const getCrownHolder = (cat: any) => {
   if (!cat || !cat.products || cat.products.length === 0) return null;
-  const first = cat.products[0];
+  // Get only products that are ready
+  const readyProducts = cat.products.filter((p: any) => p.redditConsensus && p.redditConsensus !== "" && p.mentions > 0);
+  if (readyProducts.length === 0) return null;
+  const first = readyProducts[0];
   // Determine if it has a real recommendation rate or fallback
   const recRate = first.recommendationRate > 0 
     ? Math.round(first.recommendationRate * 100) 
@@ -31,21 +34,25 @@ const tier2 = [
   { ...cases, crown: getCrownHolder(cases) }
 ];
 
-// Compile client-side search index at build-time across all categories
+// Helper to filter ready products for search index
+const getReadyProducts = (cat: any) => cat.products.filter((p: any) => p.redditConsensus && p.redditConsensus !== "" && p.mentions > 0);
+
+// Compile client-side search index at build-time across all categories (only ready ones)
 const allProducts = [
-  ...cpus.products.map(p => ({ ...p, category: 'Processors', slug: cpus.slug })),
-  ...gpus.products.map(p => ({ ...p, category: 'Graphics Cards', slug: gpus.slug })),
-  ...ssds.products.map(p => ({ ...p, category: 'SSDs', slug: ssds.slug })),
-  ...coolers.products.map(p => ({ ...p, category: 'CPU Coolers', slug: coolers.slug })),
-  ...ram.products.map(p => ({ ...p, category: 'RAM', slug: ram.slug })),
-  ...psus.products.map(p => ({ ...p, category: 'Power Supplies', slug: psus.slug })),
-  ...motherboards.products.map(p => ({ ...p, category: 'Motherboards', slug: motherboards.slug })),
-  ...cases.products.map(p => ({ ...p, category: 'PC Cases', slug: cases.slug }))
+  ...getReadyProducts(cpus).map((p: any) => ({ ...p, category: 'Processors', slug: cpus.slug })),
+  ...getReadyProducts(gpus).map((p: any) => ({ ...p, category: 'Graphics Cards', slug: gpus.slug })),
+  ...getReadyProducts(ssds).map((p: any) => ({ ...p, category: 'SSDs', slug: ssds.slug })),
+  ...getReadyProducts(coolers).map((p: any) => ({ ...p, category: 'CPU Coolers', slug: coolers.slug })),
+  ...getReadyProducts(ram).map((p: any) => ({ ...p, category: 'RAM', slug: ram.slug })),
+  ...getReadyProducts(psus).map((p: any) => ({ ...p, category: 'Power Supplies', slug: psus.slug })),
+  ...getReadyProducts(motherboards).map((p: any) => ({ ...p, category: 'Motherboards', slug: motherboards.slug })),
+  ...getReadyProducts(cases).map((p: any) => ({ ...p, category: 'PC Cases', slug: cases.slug }))
 ].map(p => ({
   name: p.name,
   brand: p.brand,
   price: p.priceRange,
   category: p.category,
+  recommendationRate: p.recommendationRate,
   url: `/${p.slug}/${slugify(p.name)}`
 }));
 ---
@@ -71,16 +78,28 @@ const allProducts = [
 
         {/* Global Interactive Search Bar */}
         <div class="w-full max-w-lg relative z-30">
-          <div class="relative shadow-xl rounded-2xl border border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-900/90 transition-all focus-within:ring-2 focus-within:ring-reddit-orange overflow-hidden">
+          <div class="group relative shadow-xl rounded-2xl border border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-900/90 transition-all focus-within:ring-2 focus-within:ring-reddit-orange overflow-hidden">
             <input 
               type="text" 
               id="globalSearch" 
               placeholder="Search CPUs, GPUs, SSDs, & more..." 
-              class="w-full px-5 py-4 pl-12 text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-transparent border-0 outline-none focus:outline-none placeholder-zinc-400 dark:placeholder-zinc-500"
+              class="w-full px-5 py-4 pl-12 pr-12 text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-transparent border-0 outline-none focus:outline-none placeholder-zinc-400 dark:placeholder-zinc-500"
             />
             <svg class="w-5 h-5 absolute left-4 top-3.5 text-zinc-400 dark:text-zinc-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
             </svg>
+            <kbd class="absolute right-4 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[9px] font-extrabold text-zinc-400 dark:text-zinc-550 bg-zinc-100 dark:bg-zinc-800 border border-zinc-200 dark:border-zinc-700/60 rounded pointer-events-none select-none transition-opacity duration-150 group-focus-within:opacity-0">
+              /
+            </kbd>
+            <button 
+              id="clearSearch" 
+              class="hidden absolute right-3.5 top-1/2 -translate-y-1/2 p-1 text-zinc-400 hover:text-zinc-650 dark:hover:text-zinc-250 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800/80 transition-colors"
+              aria-label="Clear search"
+            >
+              <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+              </svg>
+            </button>
           </div>
           
           <!-- Floating Results Dropdown -->
@@ -150,6 +169,7 @@ const allProducts = [
     const globalSearch = document.getElementById('globalSearch');
     const searchResults = document.getElementById('searchResults');
     const searchDataElement = document.getElementById('search-data');
+    const clearSearch = document.getElementById('clearSearch');
     
     if (!globalSearch || !searchResults || !searchDataElement) return;
 
@@ -161,13 +181,112 @@ const allProducts = [
       console.error('Failed to parse search index:', e);
     }
 
-    // Input keyup listener
-    globalSearch.addEventListener('input', function() {
-      const query = this.value.toLowerCase().trim();
+    function highlightText(text, query) {
+      if (!query) return text;
+      const escapedQuery = query.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+      const regex = new RegExp(`(${escapedQuery})`, 'gi');
+      return text.replace(regex, '<mark class="bg-orange-100 dark:bg-orange-955/65 text-reddit-orange font-black rounded-sm p-0">$1</mark>');
+    }
+
+    let activeIndex = -1;
+
+    function getNavItems() {
+      return Array.from(searchResults.querySelectorAll('.search-nav-item'));
+    }
+
+    function updateActiveItem() {
+      const items = getNavItems();
+      items.forEach((item, idx) => {
+        if (idx === activeIndex) {
+          item.classList.add('bg-zinc-50', 'dark:bg-zinc-800/80');
+          item.focus();
+        } else {
+          item.classList.remove('bg-zinc-50', 'dark:bg-zinc-800/80');
+        }
+      });
+    }
+
+    function addToHistory(product) {
+      let history = [];
+      try {
+        history = JSON.parse(localStorage.getItem('redditpcs_search_history') || '[]');
+      } catch (e) {}
       
-      if (!query) {
+      history = history.filter(item => item.url !== product.url);
+      history.unshift(product);
+      history = history.slice(0, 3);
+      
+      localStorage.setItem('redditpcs_search_history', JSON.stringify(history));
+    }
+
+    function showHistory() {
+      if (globalSearch.value.trim()) return;
+      
+      let history = [];
+      try {
+        history = JSON.parse(localStorage.getItem('redditpcs_search_history') || '[]');
+      } catch (e) {}
+      
+      if (history.length === 0) {
         searchResults.classList.add('hidden');
         searchResults.innerHTML = '';
+        return;
+      }
+      
+      searchResults.innerHTML = '<div class="text-[9px] font-black text-zinc-400 dark:text-zinc-550 uppercase tracking-widest pb-2 px-2 border-b border-zinc-100 dark:border-zinc-800 mb-1">Recent Research</div>';
+      
+      history.forEach((p) => {
+        const itemEl = document.createElement('a');
+        itemEl.href = p.url;
+        itemEl.className = 'search-nav-item flex items-center justify-between py-2 px-2 rounded-xl transition-all duration-150 hover:bg-zinc-50 dark:hover:bg-zinc-800/50';
+        itemEl.setAttribute('data-search-item', JSON.stringify(p));
+        
+        itemEl.addEventListener('click', () => {
+          addToHistory(p);
+        });
+
+        const ratePct = Math.round(p.recommendationRate * 100);
+        let rateColorClass = 'text-emerald-600 dark:text-emerald-400';
+        if (ratePct < 60) {
+          rateColorClass = 'text-rose-600 dark:text-rose-455';
+        } else if (ratePct < 80) {
+          rateColorClass = 'text-amber-500 dark:text-amber-450';
+        }
+
+        itemEl.innerHTML = `
+          <div class="min-w-0 flex-1 pr-4">
+            <span class="text-[9px] font-extrabold uppercase tracking-widest text-zinc-400 block mb-0.5">${p.category}</span>
+            <div class="font-extrabold text-sm text-zinc-900 dark:text-zinc-150 leading-tight truncate">${p.name}</div>
+          </div>
+          <div class="flex-shrink-0 flex items-center gap-4 text-right">
+            <div class="pr-4 border-r border-zinc-150 dark:border-zinc-800">
+              <span class="text-[9px] font-bold text-zinc-400 dark:text-zinc-500 block">EST. PRICE</span>
+              <span class="text-xs font-black text-zinc-850 dark:text-zinc-200 whitespace-nowrap">${p.price}</span>
+            </div>
+            <div class="min-w-[65px]">
+              <span class="text-[9px] font-bold text-zinc-400 dark:text-zinc-550 block">SENTIMENT</span>
+              <span class="text-xs font-black whitespace-nowrap ${rateColorClass}">${ratePct}% Pos</span>
+            </div>
+          </div>
+        `;
+        searchResults.appendChild(itemEl);
+      });
+      
+      searchResults.classList.remove('hidden');
+    }
+
+    globalSearch.addEventListener('input', function() {
+      const query = this.value.toLowerCase().trim();
+      activeIndex = -1;
+      
+      if (this.value) {
+        clearSearch.classList.remove('hidden');
+      } else {
+        clearSearch.classList.add('hidden');
+      }
+      
+      if (!query) {
+        showHistory();
         return;
       }
 
@@ -179,30 +298,167 @@ const allProducts = [
       ).slice(0, 8); // Max 8 results
 
       if (matches.length === 0) {
-        searchResults.innerHTML = '<div class="text-xs text-zinc-400 dark:text-zinc-500 py-2.5 text-center font-bold">No hardware components found</div>';
+        searchResults.innerHTML = '<div class="text-xs text-zinc-400 dark:text-zinc-550 py-2.5 text-center font-bold">No hardware components found</div>';
         searchResults.classList.remove('hidden');
         return;
       }
 
-      searchResults.innerHTML = '';
+      // Group by category
+      const grouped = {};
       matches.forEach(p => {
-        const itemEl = document.createElement('a');
-        itemEl.href = p.url;
-        itemEl.className = 'flex items-center justify-between py-2.5 hover:bg-zinc-50 dark:hover:bg-zinc-800/50 px-2 rounded-xl transition-all duration-150';
-        itemEl.innerHTML = `
-          <div class="min-w-0 flex-1 pr-4">
-            <span class="text-[9px] font-extrabold uppercase tracking-widest text-reddit-orange block mb-0.5">${p.category}</span>
-            <div class="font-extrabold text-sm text-zinc-900 dark:text-zinc-150 leading-tight truncate">${p.name}</div>
-          </div>
-          <div class="text-right flex-shrink-0">
-            <span class="text-[9px] font-bold text-zinc-400 dark:text-zinc-500 block">EST. PRICE</span>
-            <span class="text-xs font-black text-zinc-850 dark:text-zinc-200 whitespace-nowrap">${p.price}</span>
-          </div>
-        `;
-        searchResults.appendChild(itemEl);
+        if (!grouped[p.category]) {
+          grouped[p.category] = [];
+        }
+        grouped[p.category].push(p);
+      });
+
+      searchResults.innerHTML = '';
+      Object.keys(grouped).forEach(category => {
+        // Group Header
+        const headerEl = document.createElement('div');
+        headerEl.className = 'text-[9px] font-black text-zinc-450 dark:text-zinc-500 uppercase tracking-widest pt-2.5 pb-1.5 px-2 border-b border-zinc-100/50 dark:border-zinc-800/40 mb-1 first:pt-1';
+        headerEl.textContent = category;
+        searchResults.appendChild(headerEl);
+
+        grouped[category].forEach(p => {
+          const itemEl = document.createElement('a');
+          itemEl.href = p.url;
+          itemEl.className = 'search-nav-item flex items-center justify-between py-2 px-2 rounded-xl transition-all duration-150 hover:bg-zinc-50 dark:hover:bg-zinc-800/50';
+          itemEl.setAttribute('data-search-item', JSON.stringify(p));
+          
+          itemEl.addEventListener('click', () => {
+            addToHistory(p);
+          });
+
+          const ratePct = Math.round(p.recommendationRate * 100);
+          let rateColorClass = 'text-emerald-600 dark:text-emerald-400';
+          if (ratePct < 60) {
+            rateColorClass = 'text-rose-600 dark:text-rose-455';
+          } else if (ratePct < 80) {
+            rateColorClass = 'text-amber-500 dark:text-amber-450';
+          }
+
+          itemEl.innerHTML = `
+            <div class="min-w-0 flex-1 pr-4">
+              <div class="font-extrabold text-sm text-zinc-900 dark:text-zinc-150 leading-tight truncate">${highlightText(p.name, query)}</div>
+            </div>
+            <div class="flex-shrink-0 flex items-center gap-4 text-right">
+              <div class="pr-4 border-r border-zinc-150 dark:border-zinc-800">
+                <span class="text-[9px] font-bold text-zinc-400 dark:text-zinc-550 block">EST. PRICE</span>
+                <span class="text-xs font-black text-zinc-850 dark:text-zinc-200 whitespace-nowrap">${p.price}</span>
+              </div>
+              <div class="min-w-[65px]">
+                <span class="text-[9px] font-bold text-zinc-400 dark:text-zinc-550 block">REDDIT SCORE</span>
+                <span class="text-xs font-black whitespace-nowrap ${rateColorClass}">${ratePct}% Pos</span>
+              </div>
+            </div>
+          `;
+          searchResults.appendChild(itemEl);
+        });
       });
       
       searchResults.classList.remove('hidden');
+    });
+
+    // Keyboard shortcut / focus history
+    globalSearch.addEventListener('focus', () => {
+      if (globalSearch.value) {
+        clearSearch.classList.remove('hidden');
+      } else {
+        clearSearch.classList.add('hidden');
+        showHistory();
+      }
+    });
+
+    if (clearSearch) {
+      clearSearch.addEventListener('click', function() {
+        globalSearch.value = '';
+        clearSearch.classList.add('hidden');
+        showHistory();
+        globalSearch.focus();
+      });
+    }
+
+    // Keyboard Arrow navigation
+    globalSearch.addEventListener('keydown', function(e) {
+      const items = getNavItems();
+      
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        if (items.length === 0) return;
+        activeIndex = (activeIndex + 1) % items.length;
+        updateActiveItem();
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        if (items.length === 0) return;
+        activeIndex = (activeIndex - 1 + items.length) % items.length;
+        updateActiveItem();
+      } else if (e.key === 'Escape') {
+        e.preventDefault();
+        if (globalSearch.value) {
+          globalSearch.value = '';
+          clearSearch.classList.add('hidden');
+          showHistory();
+        } else {
+          searchResults.classList.add('hidden');
+          globalSearch.blur();
+        }
+      } else if (e.key === 'Enter') {
+        if (activeIndex >= 0 && items[activeIndex]) {
+          e.preventDefault();
+          const pData = JSON.parse(items[activeIndex].getAttribute('data-search-item') || '{}');
+          if (pData.name) {
+            addToHistory(pData);
+          }
+          window.location.href = items[activeIndex].href;
+        } else {
+          // If search results exist, auto-navigate to the first matched result
+          if (items.length > 0) {
+            e.preventDefault();
+            const firstItem = items[0];
+            const pData = JSON.parse(firstItem.getAttribute('data-search-item') || '{}');
+            if (pData.name) {
+              addToHistory(pData);
+            }
+            window.location.href = firstItem.href;
+            return;
+          }
+
+          // Check exact match as fallback
+          const query = globalSearch.value.trim().toLowerCase();
+          const categoriesMap = {
+            'cpus': '/cpus', 'cpu': '/cpus', 'processors': '/cpus', 'processor': '/cpus',
+            'gpus': '/gpus', 'gpu': '/gpus', 'graphics': '/gpus', 'cards': '/gpus',
+            'motherboards': '/motherboards', 'motherboard': '/motherboards', 'mobo': '/motherboards',
+            'ram': '/ram', 'memory': '/ram',
+            'ssds': '/ssds', 'ssd': '/ssds', 'storage': '/ssds',
+            'psus': '/psus', 'psu': '/psus', 'power': '/psus',
+            'coolers': '/coolers', 'cooler': '/coolers',
+            'cases': '/cases', 'case': '/cases'
+          };
+          
+          if (categoriesMap[query]) {
+            e.preventDefault();
+            window.location.href = categoriesMap[query];
+            return;
+          }
+          
+          const exactProduct = productsIndex.find(p => p.name.toLowerCase() === query);
+          if (exactProduct) {
+            e.preventDefault();
+            addToHistory(exactProduct);
+            window.location.href = exactProduct.url;
+          }
+        }
+      }
+    });
+
+    // Keyboard global listener for slash shortcut
+    document.addEventListener('keydown', (e) => {
+      if (e.key === '/' && document.activeElement !== globalSearch && !['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
+        e.preventDefault();
+        globalSearch.focus();
+      }
     });
 
     // Close on click outside

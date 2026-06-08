@@ -1,0 +1,277 @@
+{
+  "productName": "nvidia-rtx-5090-32gb",
+  "batchIndex": 15,
+  "totalBatches": 19,
+  "comments": [
+    {
+      "commentId": "1q6x3vx",
+      "text": "RTX 5090 - What is the most up to date Model that can actually work? \ud83e\udd14 more details inside\n\nHi All,  \nI looked around on other posts before I asked but it didn't help me much because, first of all I'm a newbie for LLM models, I just downloaded LM Studio (looks easy for my level).\n\nBut I wonder if you can recommend me a Model that won't be slow-motion and OOM on my specs, I never tried offline Models before, my only minor experience with models that can work on my system is via ComfyUI for image and videos (Qwen 2511, Wan 2.2 etc..)\n\n*My Specs:*  \n\\- Intel Core Ultra 9 285K  \n\\- Nvidia RTX 5090 32GB VRAM  \n\\- 96 RAM 6400 Mhz  \n\\- Nvme SSD  \n\\- Windows 11 Pro\n\n\\---\n\n\ud83d\udfe2 What I'm looking for? \ud83e\udd14  \nI would like to try an uncensored model, but I don't think it's a must I'm just curious about it since it's an option I never tried before, but that's not my highest priority.\n\n\ud83d\udd38 I'm looking for something to help me out with design questions, GUI, layouts, visual workflows and if there is such beast: allows me to Drag n Drop image and ask question about it similar to Gpt 5.1 I use CoPilot)\n\n\ud83d\udd38 Also, generating promps will be helpful based on image I will drag n drop (I create datasets for training LoRA)\n\nAny my most interest thing that I never tried before!  \nSome sort of Vibe-Code, for example if I want to create an idea of a \"simple app\" something like a **Portable Gradio** (with built-in **venv**, which usually I do via cmd) - Consider I'm not a programmer this could be such an impressive experience to me!\n\nTBH I don't even know if Vibe Code is possible offline because I'm new to the scene, I only heard of online related models but never tried it.\n\n\\---\n\n\ud83d\udd35 Visual:\n\nIs one of these local MODELS can generate images / graphs?  \nBecause if I ask for a GUI, layout or visual workflow of a design that will be very helpful!\n\n\\---\n\n\ud83d\udd35 Vibe-Code:\n\nIs there anything close even by a tiny bit to what these huge monsters:  \n  \n\\- Lovable  \n\\- Bolt  \n\\- Replit  \n\\- v0\n\nyou got the idea... for non-technical / non-programmers users such as myself.\n\nI'm not expecting anything near, but I wonder if the spirit of such thing already exist in local LLM and if I can barely try one of these on my specs?\n\n\\---\n\nProbably what I described is not **ALL-IN-ONE** model, especially for limited specs for LLM use at least.\n\nSo if anyone know (from experience) specific MODEL for specific task I can test in LM Studio, please mention it and feel free to share your personal opinions of how it did compare to your expectations.\n\nIf possible, please point on the exact versions so I can find and download within **LM Studio**.\n\nThe all idea of running it offline is something is very appealing to me, I just got panicked away when I realize my specs are a JOKE for such things so I thought why not asking you guys who already have experience.\n\nThanks to anyone who can help in this\ud83d\ude4f",
+      "upvotes": 12,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "nyb43bu",
+          "text": "Bro with a 5090 and 32GB VRAM your specs are definitely not a joke lol, you're basically set for most models\n\n  \nFor vision stuff try Qwen2-VL-72B or LLaVA-NeXT, both handle image analysis pretty well. For coding I'd go with CodeQwen1.5-7B or DeepSeek-Coder-33B if you want something beefier\n\n  \nUncensored models check out dolphin-2.9-llama3-70b or wizard-vicuna-uncensored variants, just search those in LM Studio and grab the highest quant that fits your VRAM\n\n  \nYou can definitely run gradio apps offline with these models, the coding ones especially are pretty solid at generating working Python scripts",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "nyb5jrw",
+              "text": "Can someone else chime in and help me out pls \n\nIs a 5090 considered high-spec?\n\nI'm debating getting one just to mess around with chatbots, meme video generation, and uncensored image generation, but I'm having trouble justifying the cost. It seems like most people have 32 GB+ for their rigs, and 32 GB might become irrelevant soon. so, I might as well settle with a 5070 Ti, learn the software, and rent whenever I need more",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "nyblo9h",
+                  "text": "Unless you wanna go multi-gpu or spend thousands more for RTX pro, it's the best you can get now.  \nIt's crazy fast, and makes that 32gb feel like nothing because it tears through anything you give it.  \nI think it has about double the memory bandwidth of the 5070 ti.  \nIt's the highest spec single card on the consumer side.",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "nybd1p0",
+                  "text": "High spec for normie (like myself), tiny spec for big models.\n\nI was thinking about whether I should YOLO with a 4090 when I built my PC a while ago, but I argued against it because 24GB VRAM (or even 32GB VRAM of the 5090) would not meaningfully move my local LLM to a new bracket vs a 16GB VRAM card (i.e., going into 70B class and beyond with real context length and good performance, not 10t/s for saying hello). Meanwhile, the 4090 or 5090 is hot, huge, and consume a lot of electricity. \n\nMy 16GB 4060Ti is tight fit and not that fast, but I was still able to test most of the new stuffs released on comfyui and run reasonable LLM (all hail MoE models). I have accepted the fact that I'm not going to run my real CLI agent with a local LLM, unless some new model architecture just curb stomp the current generation like how Z Image Turbo steam rolled over heavier local models in the image gen space.",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "nybomdl",
+                  "text": "So I bought a 5070ti and then ended up getting a 5090. For llms the 5070ti is enough to mess around with and it works fine, but I felt chats weren't consistent for what I wanted. Conversations worked, but I couldn't roleplay an rpg, or do language learning.\u00a0\n\n\nWhen I got the 5090, the bigger models were better about logic or fully tracking the chat. I've ended up using both the 5070ti and 5090 combined for language learning and have been happy with the configuration",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "nyb8p2v",
+                  "text": "For LLM I have no clue yet,  \nthat's why I started this newbie-style thread, hopefully it will help to others as well in the future.\n\nBut for ComfyUI, images / videos etc.. it's great, also I train LoRA locally via AI-Toolkit which is something I prefer than do offline.\n\nBut probably somebody else can tell you more about LLM, good luck! \ud83d\udc4d",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "nybatgy",
+                  "text": "The 5090 has essentially the same hardware as the RTX 6000 but with obviously less VRAM. It would be extremely expensive to buy something faster which makes the 5090 high end in that regard. I have one, and it is everything I currently need a card for but I don\u2019t use LLMs as chat bots so my use case might be different.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "nybl9fb",
+                  "text": "The 5090 is a great card but it has drawbacks for LLM vs multiple smaller, older cards (cost, power, heat, ddr5 prices). The exceptions are mainly image generation, video generation, and fine-tuning models that fit in 32gb.\u200b\n\nIf you're getting a single card that's also for a gaming/rendering machine it's the best in the consumer market, though. You have to jump to pro Blackwell $8000usd+ to do better really.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "nybm3se",
+                  "text": "I am also wondering this because I heard have more unified memory is better than just a GFX card",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "nybjdmc",
+                  "text": "It's a $2500 GPU that costs more alone that the vast majority of the consumer computers in the world. Yes",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "nyb8but",
+              "text": "Thank you for sharing!\ud83d\ude4f  \nReally? I honestly thought for LLM locally it's pretty low, I just never tried so I have zero clue unlike some experience in ComfyUI and Training LoRAs locally via AI-Toolkit.\n\nGradio App:  \nI just gave an example, sometimes I have an idea for a simple app, and I prefer instead using CMD and running zillion ugly batch files for each order, I'm a visual person, not a programmer, it will be nice to have an offline MODEL via LM Studio to help me \"Vibe-Code\" my own ideas and actually guide me how to implement to Gradio.\n\nThe reason I mention Gradio:  \n is because it was the first thing I did from zero knowledge via CoPiot's built-in Windows (GPT 5.1 free model) it was pretty impressive, but... if there is a way to do such thing without CoPilot I'll be happy to try it!\n\nIt doesn't have to be Gradio, I just don't know much about the whole complexity of different IDE's and whatever needed to be install locally since I'm not a programmer, while Gradio is not my preferences because it is based on Browser, but it's better than CMD and Batch files \ud83d\ude05\n\nCan you share some experience usage you really like about specific models I can try for whatever tasks, it will be interesting to just test different models but I don't want to go lost... I prefer aim for \"BEST\" up to date model of any of the goals I mentioned.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "nyb9qmh",
+              "text": "Is one of these local MODELS can also generate images / graphs?  \nBecause if I ask for a layout or workflow of a design that will be very helpful!\n\nProbably not the best example but something like:  \n\"Make a layout for an app, description prompt here...\"  \n\nAnd then I can continue ADD to that idea, so it will keep UPDATE and Re-Generate.  \nThat could be super useful... if it exist and can run on my specs \ud83d\ude05",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "nybjcf0",
+              "text": "72B at q4 cannot fit in 32GB even without a context. If it\u2019s MOE, it can probably still run well though",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "nyci1p9",
+              "text": "\"Uncensored models check out dolphin-2.9-llama3-70b or wizard-vicuna-uncensored variants\" this is clearly a response from someone who has no clue what he is talking about, probably generated by ChatGPT  \n  \n...which explains also \"high spec 5090\" \"bro\", people who talk here don't use local models, they just hype",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "nycekfe",
+              "text": "No, 5090 is not a high spec, it's just a way to burn the money. 4x3090 is kind of medium/high spec for LLMs.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "nycfu3a",
+          "text": "generating images is usually handled by separate models (probably also in cloud solutions like ChatGPT), so for that you should focus on ComfyUI, not LLMs (LLM is just writing a prompt for the second model)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "nyhwk9n",
+              "text": "Not really, because I can't continue the conversation on the visual GUI or layouts as I build it, ComfyUI works for 1 time, not for chat and improve and fix and analyze helping me get deeper while I work on it that's what I did with CoPilot (GPT 5.1 for example) but it's not as good as others, also if I can run something with my specs offline for such purpose, I would like to give it a try compare to what I tried online.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "nyekl5y",
+          "text": "qwen-image-2512 fp8 for image gen",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "nyi1c0d",
+              "text": "Sure, but by itself it's heavy enough, I use it on ComfyUI (I also love using the 2511 Edit model) but this is not gonna work in ComfyUI for my case, I can't talk with ComfyUI about a concept file and continue conversation how to improve and change a GUI layout design with ideas etc.. it's just generate 1 time based on prompt, not a full continues conversation like GPT 5.1 for example, which is what I would like to test locally.\n\nSo even if it's possible to work with 2 models in LM Studio, 1 for the main chat conversation and other for the generating images, I don't think my specs can handle it without Quantize to so low VRAM so both will give really bad results... unless there is a nice \"ALL-IN-ONE\" Model which is something I'm willing to try.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "nz1ghdt",
+                  "text": "I kinda see your point, my approach atm is to have a jailbreaked chatbot LLM, then just snip the result from ComfyUI and feed into it. You do have to do a bit more work, but I personally find the results are better than using only Gemini Pro or GPT 5.2, even for SFW content. It just that in my view the top LLM like GPT and Gemini is only good for texting, when you combine the chat with image gen function it get quite a bit shitty. Also Jailbreak only apply to the Chatbot atm.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "nz1h2n6",
+                  "text": "Another thing is I think it might be hard even in the future, as Chinese lab are focus and better at small specialised model, while US llm are chasing AGI chatbot, the thing you describe are not being amde by non of these 2.\n\nAlthough if you managed to find a way or model I would love to hear :))",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "o22jdcp",
+          "text": "Need help as well. \nI have a 9950x3d with 192gb ram, a 5090, a 5060ti and two 3080 10gb, a few 3060s that aren't used. \n\nChatGPT said it was best to just use one card? \n\nWill try to get moltbot running with it.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "o8p5lon",
+          "text": "try llama 70b?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

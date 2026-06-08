@@ -1,0 +1,422 @@
+{
+  "productName": "intel-core-ultra-9-285k",
+  "batchIndex": 23,
+  "totalBatches": 84,
+  "comments": [
+    {
+      "commentId": "1gb4peg",
+      "text": "Intel Core Ultra 9 285K Review, It's A Mess.... Probably A Flop",
+      "upvotes": 437,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ltiu2ky",
+          "text": "You see. I always thought, i think many as well, intel nodes were the issues. This is was backed by Core Ultra 200V Lunar Lake on N3\n\nBut now this 200S is on N3 and these is no excuse. Heck Zen 5 is 4NM and that's better in every way",
+          "upvotes": 209,
+          "classifyThis": false,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ltiw9k1",
+              "text": "This is Intel's first chiplet design. It's clear that they fumbled hard. I doubt any amounts of Windows and microcode updates will fix up to 30% (!!!) worse results than 14900k in games and even in some applications it's up to 15% behind.\n\nAt this point I don't understand why they thought it's better to release this than nothing at all.",
+              "upvotes": 57,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ltj2mqe",
+                  "text": "Intel did chiplets well before AMD, including [having a separate I/O die on an older node back in 2009](https://www.anandtech.com/show/2846/6) with Clarkdale and Arrandale.\n\n(edit - better link)",
+                  "upvotes": 36,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ltj3s51",
+                      "text": "Indeed. If you use current nomenclature clarkdale was a 1CCD design with an IO die.\n\nI think you could make a case for P4D being the 1st chiplet design. That had 2 CCDs but the IO die was off package (AKA the northbridge) and instead of Infinity Fabric it used the FSB.",
+                      "upvotes": 13,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ltj42q2",
+                          "text": "Funnily enough, AMD was the one with monolithic designs (Athlon 64 X2, Phenom X4) making \u201cglue\u201d arguments against Intel\u2019s Pentium D and Core 2 Quads as well back then. How the turn tables",
+                          "upvotes": 14,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ltj4e2s",
+                              "text": "Pretty sure AMD were marketing Phenom as the 1st true quad core CPU because the Core2Quads were just 2 dual cores slapped together.",
+                              "upvotes": 18,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "ltjiuru",
+                                  "text": "They did that with Athlon X2, the actual true dual core design -- one that actually outperformed PD. By Phenom's time, they were already being pit against Conroe cores which were far better.",
+                                  "upvotes": 5,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "ltiwy6x",
+                  "text": "This is intel 2nd gen chiplet.\n\nThe 100 series exists for a year now.",
+                  "upvotes": 73,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ltj1u95",
+                      "text": "P4D?\n\nClarkdale?\n\nThey were arguably the 1st chiplet designs.",
+                      "upvotes": 34,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ltjirpt",
+                          "text": "And Clarkdale is basically how Ryzen desktop processors are built now. [https://www.anandtech.com/show/2846/6](https://www.anandtech.com/show/2846/6)",
+                          "upvotes": 20,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "ltlg1ro",
+                          "text": "AFAIK the Pentium Ds didn't have an interposer connecting the stuff on package together, the cores needed to go through the chipset's front side bus to communicate.",
+                          "upvotes": 6,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ltlgxxo",
+                              "text": "Correct. Just like the CCDs and IO die.\n\nFundamentally the Zen2 onwards topology is 2 CPU chips connected via a bus to a Northbridge.\n\nThe difference between P4D and Zen2 onwards is the location of that io chip. With P4D it was on the motherboard, Zen2 onwards it is on the CPU package.\n\nClarkdale in 2010 was a single CCD design that had an IO die and a CPU die. It was pretty much the exact same layout as the single CCD Zen 2 onwards parts.",
+                              "upvotes": 4,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "ltj6qn8",
+                      "text": "Arrow Lake is using the same platform as Meteor Lake though, so I\u2019m not sure that this is really a true \u201csecond go\u201d at a chiplet design.",
+                      "upvotes": 12,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ltkh2dd",
+                          "text": "Compromise and call it a 1.5th gen, I guess?",
+                          "upvotes": 4,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ltmsh9o",
+                              "text": "More like a 0.5 gen? Half a step forward, one step back\u2026",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "ltl0c1h",
+                          "text": "The ring clock being so slow should've been independent from the re-used SOC chiplet. der8auer's ring OC results show that it's a major contributor to poor gaming performance vs 14th gen, but he capped out at a low 4.2GHz",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ltp8din",
+                              "text": "On the other hand, reusing the Meteor Lake platform meant that Intel was stuck with having the IMC on the SOC tile, which is a decision that they quickly revered with Lunar Lake. Hard to say what was fixable by going with this approach versus what wasn\u2019t.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "ltpg7xx",
+                                  "text": "Raising SOC and D2D clocks by 50% and 75% only improved CS2 FPS on der8auer's benchmark by 3%, but a 10% increase to ring clock alone increased FPS by 7%. \n\nI think the SOC tile is a red herring, tbh. The weird L2/L3 bandwidth scaling seen on Cheese's 258V review might be a bigger contributor given the results seen while tuning clocks.",
+                                  "upvotes": 2,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "ltj1ruz",
+                  "text": "Technically you could argue Pentium 4 D was intels 1st chiplet design. Fundamentally that was 2 CCDs with 1 core each and they connected to the northbridge via an FSB and just like with AMDs design if Core 0 wanted to communicate with core 1 it had to go via the nortbridge (IO die in AMDs nomenclature).\n\nIf you want their 1st design that had an IO die on package then you have to look at Clarkdale from 2010.",
+                  "upvotes": 11,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "ltixzg3",
+                  "text": "> At this point I don't understand why they thought it's better to release this than nothing at all.\n\nLow power consumption, easy cooling, no degradation legacy, comparable performance (better in productivity, worse in gaming).",
+                  "upvotes": 18,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ltiyven",
+                      "text": "yeah they had to take a gen to fix their fuck up killing the last two. its understandable but wont make the payers happy",
+                      "upvotes": 13,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "ltj4t12",
+                      "text": "> Low power consumption\n\nLower. It still has worse power efficiency than amd cpus from 2 or even 4 years ago.",
+                      "upvotes": 32,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "ltj6n3e",
+                      "text": ">better in productivity\n\nNot really thought, in some cases productivity also took a hit",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ltj79pq",
+                          "text": "When taking the geometric mean of nearly 400 benchmarks tested across these processors, the Core Ultra 9 285K was 12% faster than the Core i9 14900K overall.\n\nThe Core Ultra 9 285K on average was at around 136 Watts during the entire span of workloads tested, much lower than the 156 Watt average with the Core i9 14900K.\n\n(c) https://www.phoronix.com/review/intel-core-ultra-9-285k-linux/18",
+                          "upvotes": 9,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ltlwd3n",
+                              "text": "When looking at individual results, in some cases productivity took a hit.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            },
+                            {
+                              "commentId": "ltw8c27",
+                              "text": "Geometric mean doesn't mean much, because unless you are true renesiance man I doubt you are coding, editing videos, editing images, working with 3d graphics, running AI and working with CAD. Some productivity tasks took a hit, notable at that. If these productivity tasks don't affect you then it's ok, but if they do it sucks. And even these productivity tasks in which it performs good need to be checked if it performs better than cheaper 9900X or similarly priced 9950X (and often it doesn't). So finally you are left with very narrow set of productivity tasks where it makes sense to pick 285k.\n\nSo to be precise 285k, once all stability issues are resolved, could be good CPU for SOME productivity tasks.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "ltjftbj",
+              "text": "It's just bad design this time it's nodes sometimes it's bad design\u00a0",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "ltqrirq",
+              "text": "I\u2019m betting it\u2019s because it\u2019s TSMC, and not Intels own fabrications. Cuz they\u2019ve been doing their own nodes for a long time, even their Intel 7 (10nm) was still efficient enough to keep up with AMDs stuff.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "luhkn74",
+              "text": "Intel nodes not as bad as people though, turns out.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "ltj8lsy",
+              "text": "https://www.phoronix.com/review/intel-core-ultra-9-285k-linux\n\nIt's probably the software more than hardware.",
+              "upvotes": -1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ltjnbn4",
+                  "text": "How is it barely sipping power in gaming tests? Is it just that power limited?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ltjazue",
+              "text": "It's x86. And while AMD has better efficiency, it still pales in comparison to M series. Wish both of them gave up and finally give us a high performance ARM CPU that wipes the floor with the current stack. \n\nOr Nvidia has to spank their butt next year when they release an ARM SoC.",
+              "upvotes": -18,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ltl5ba3",
+                  "text": "[ARM is not magic](https://chipsandcheese.com/2021/07/13/arm-or-x86-isa-doesnt-matter), it will use the same amount of power and die space for equal performance.",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "ltje8y1",
+                  "text": "I think Nvidia is primed for a full take over if they can tackle both CPU and GPU. Most impressive company imo",
+                  "upvotes": 0,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ltjfu5o",
+          "text": "I used to be an Intel customer, then I took an Arrowlake to the knee.",
+          "upvotes": 41,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

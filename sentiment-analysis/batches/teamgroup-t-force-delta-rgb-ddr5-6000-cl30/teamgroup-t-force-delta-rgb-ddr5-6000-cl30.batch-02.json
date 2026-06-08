@@ -1,0 +1,486 @@
+{
+  "productName": "teamgroup-t-force-delta-rgb-ddr5-6000-cl30",
+  "batchIndex": 2,
+  "totalBatches": 27,
+  "comments": [
+    {
+      "commentId": "1crl64e",
+      "text": "I am having the worst time I ever had with my PC\n\nAbout 20 days ago, I started encountering a blue screen issue that constantly crashed my PC regardless of what I was on (discord, games, chrome, etc). I\u2019ve done multiple tests trying to confirm where the problem is but nothing seems to work. Please find below the error codes and what I have tried to do to identify and rectify the issue. \n\nBSOD Error Codes:\n*IRQL_NOT_LESS_OR_EQUAL\n*SYSTEM_THREAD_EXCEPTION_NOT_HANDLED\n*PAGE_FAULT_IN_NONPAGED_AREA\n*DRIVER_IRQL_NOT_LESS_OR_EQUAL\n*CACHE_MANAGER\n*EXCEPTION_ON_INVALID_STACK\n\nAttempts to Identify and Rectify Issues as of 20 days ago:\n\n*Reinstall Windows - I have tried this several times, continues to crash or come up with an error that it cannot be done.\n* Uninstall GPU driver and uninstalled GeForce\n* Windows Memory Diagnostics - no errors came up.\n* eject memory and try it one by one to see if one or the other has an issue\n* sfc /scannow - first time I tried it, it said it fixed something. If I try doing it again, it doesn\u2019t do anything anymore.\n* chkdsk /f /r - helped it seems?  Did it once and it was running well for an hour. Blue screen came back. \n* Tried MemTest86. Results came through and it passed. So memory isn\u2019t the issue.\n* Took out the M.2 in question. Kept the \u201cvideo game\u201d m.2 drive in. Wiped it and tried installing Windows. Got several errors and while installing it crashed. With that, I am assuming it\u2019s not the SSD either\n* Wiped secondary M.2 to install windows. Removed first M.2. Still kept crashing or BSOD\n*Removed all drives associated with the computer and ordered a 256gb ssd. Tried to install windows on it and it crashed or BSOD.\n\nSystem Information:\nCPU - Intel Core i9-14900K\nMotherboard - ROG Strix Z690-E Gaming Wifi\nMemory Sticks - Corsair DDR5 6600MT/s 2x32GB 1.40v\nGPU - Nvidia GeForce RTX 4070 Ti\nDrives\n*C Drive (Windows) - Samsung SSD M.2 970 EVO Plus 2Tb\n*D Drive (Game storage) - Samsung SSD M.2 970 EVO Plus 2Tb\n*E Drive - Western Digital Blue 8Tb\n*F Drive - Western Digital Black 6tb\n\n\n\n\n\nPresent Day:\n\nI have reached out for help on this Reddit before. I was told to get an RMA on my motherboard since the issues appeared to be coming from it.\nWell, unfortunately I am still encountering issues. Apparently my old motherboard had a \u201cHDD to Sata\u201d issue so they replaced the entire motherboard.\n\nI ordered new Ram sticks. Tried those, and I am still encountering issues.\n*New Ram Sticks - DDR5 T-Force Delta 2x16GB 6400Mhz\n\nI thought replacing the motherboard and the Ram sticks would solve my issue but that is not the case.\n\nI tried reinstalling windows to see if that could solve it, but once again, it\u2019s having the same issues again. Sometimes it BSOD before I even get to the installation.\n\n\n\n\n\nThank you for reading this far. If you have any ideas on what I can do next, I would greatly appreciate it. I am currently lost and have no idea how this problem came about.\nCould this be a CPU or Power supply issue? Could the replaced Motherboard still be faulty?",
+      "upvotes": 575,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "l3zmlf3",
+          "text": "How are your RAM sticks inserted? It shouldnt be A1 and A2. Made this rookie mistake before myself and ended up with alot of bluescreens.\n\nhttps://preview.redd.it/yarjt2cetd0d1.png?width=1200&format=png&auto=webp&s=7772a7be354f8420ad4495e583f8cee80bf1d39f",
+          "upvotes": 12,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l41e387",
+              "text": "That wouldn't be the cause of bluescreens. That would siply put the RAM into single channel mode.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "l41obm4",
+              "text": "I do agree with this. However, if I recall correctly, my motherboard recommended slot 1 and 2 to be used. Rather than 2 then 4.\nMy memory has been in 1 and 2 for 6 months and haven\u2019t had an issue till these blue screens popped up.\nI will look again if I have the correct slots though. Thanks!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l3znvof",
+          "text": "Ive had this issue in the past. The first time, I had to swap out my ram for something with better compatibility. The second time, I had to reset the bios by loading optimized defaults. The automatic overlocking tool in my bios had very aggressively overlocked my system and it was throwing a BSOD multiple times a day. So, I\u2019d check those two things if I were you. Maybe start by loading optimized defaults in the BIOS",
+          "upvotes": 6,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l41opjy",
+              "text": "Thanks, I will look into optimized default settings in the motherboard. Hopefully it can solve by then. Though I believe this issue might be originating from the stability issues with my CPU currently",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l3yt2l3",
+          "text": "What is your PSU?\n\nAlso ... dont push motherboard optimizations in bios. Those will push cpu past safe limits and can result in crashes and issues.",
+          "upvotes": 14,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l3ytnzn",
+              "text": "Oops I forgot to list that in the specs. My apologies\n\nIt is Thermaltake Toughpower GF A3 1200W ATX 3.0\n\nFor the motherboard, I haven\u2019t pushed any settings on there. Unless default settings is messing with it?",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l3yyi87",
+                  "text": "Asus Multicore optimizations is so aggressive .. there is at the moment recall on all motherboards for this particular mishap. Asus is biggest offender.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l3yyw56",
+                      "text": "Oh??? I gotta see if mine is part of that recall",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "l3zm4to",
+                          "text": "Actually ... they will release a bios, to fix the issue. BUT ... fix is to change Multicore optimizations ... OFF/disabled. There are values you could setup manually, but for time being, just do this first and see if that changes anything",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "l41oelz",
+                              "text": "Will do, thanks for reaching out",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l40z3ej",
+          "text": "Check device manager and see if any drivers have issues. If you see one that have the yellow triangle on it then find that driver and run the installer. \n\nGo to the motherboard manufacturer website and get the most current driver pack and run that installer and update all drivers.",
+          "upvotes": 5,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44k55g",
+              "text": "Will do. Thanks! I\u2019ll give that a try",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l3zuvm1",
+          "text": "I had the same issue and my memory tests all came up clean but I said screw it and got some better RAM and it fixed it. My computer had been doing this since I first got it but I was too stubborn to send it to the manufacturer on the other side of the country.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l41pbhq",
+              "text": "I\u2019ve heard people have been putting massive amounts of ram in. How much ram do you have in yours?\nI tried different ram but the issue still keeps occuring",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l4d86hq",
+                  "text": "I just got two 16 gig sticks. So 32 altogether. Just the Corsair stuff from Bestbuy. I bought my computer prebuilt and it had the shittiest Oloy sticks money could buy so I'm guessing something went wrong with them in shipping and caused it to constantly crash. Been running it for over a month since replacing them and it hasn't crashed a single time even playing shit like Helldivers.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l4zn551",
+                      "text": "I would say that could fix it, but I did get new ram and the issue was still present. So I don\u2019t believe it could be a ram issue unfortunately.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l42f4s7",
+          "text": "Its the 14900k Bro, just like u/Nyy8 said you got to undervolt it. I had the same issues until i fixed the bio settings and now it works like a dream",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44kj2o",
+              "text": "Is it worth undervolting? Would it be better to get a new CPU all together? \nCurrently trying to determine if I should either undervolt it plus modify it to be stable or get a new one all together.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l45fpcl",
+                  "text": "Yeah, it is worth undervolting. The only reason you do it is because the mobo is over locking it way past recommend specs that Intel offers, it doesn't affect performance at all, and if it did it would be pretty minor. I got mine stable in 30 minutes working in the bios, jay2cents makes a great video on this. https://youtu.be/HIubZYwBfPc?si=ClqygsQxpH27Vvib",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l4wfslt",
+                      "text": "I followed the video, but I am unfortunately still having crashes and issues. Thank you for sharing. This video should\u2019ve worked but my cpu might be degraded too much.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "l4y1573",
+                          "text": "damn sorry about that brother, is it still under the warranty period?",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "l4zn175",
+                              "text": "Yes it is still under warranty. Currently in contact with an intel representative about it",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "l500q2p",
+                                  "text": "What else do you have over locked in the system?",
+                                  "upvotes": 2,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "l51fltb",
+                                      "text": "I would say everything is default. Nothing else is over clocked",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "l45px78",
+                      "text": "Thanks! I\u2019ll take a look at that video",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l3ze7tr",
+          "text": "Going back to a stable Nvidia driver worked for me, i encountered similar problems after updating my gpu drivers",
+          "upvotes": 8,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l3znpd7",
+              "text": "This feels like a good thing to try first tbh. I spent like 2-3 months wrestling with crashes last year, finally rolled back to ms recommended gpu drivers (the version windows update installs) and haven\u2019t had a single crash since.",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "l41p4ad",
+              "text": "I updated my gpu driver then the issue started. Uninstalled it and left it as is. However the BSOD kept coming back.\nUnfortunately I think it might be the CPU that is causing all these issues",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l444pm7",
+                  "text": "Try clean installing the version 537.58",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l3ziwnd",
+          "text": "One invaluable tool I used to have was a custom [Windows PE](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/winpe-intro?view=windows-11) usb drive. The tool we used the most was [HD Tune](https://www.hdtune.com/) and about 80% of BSOD's resulted in HDDs/SSDs/M.2s/NVMEs with bad sectors. It wasn't uncommon to see drives that passed SMART still have bad sectors.\n\nWe used to use [Hiren's BootCD PE](https://www.hirensbootcd.org/) until we made our own custom one. If you haven't already, I would absolutely double check those SSDs with HDTune.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44kmfy",
+              "text": "Thank you! I will look into this. Though I would say I have disconnected all drives and the issue still happens. I see some other comments suggesting it could be the cpu.\nThough I will take a look at inspecting the drives. Thanks!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l40117h",
+          "text": "Your common bsod is from Windows blowing up. Ntoskrnl.exe is usually memory. I know you\u2019ve tried replacing RAM but is it possible they are not socketed in the right slots or something?\n\nThe CPU stability with 14th gen\u2019s still may be it.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l4289em",
+              "text": "Yeah. I noticed almost all the blue screen errors I am having are related to memory issues. However, I feel like I\u2019ve done an adequate job testing the memory. Even bought new memory to test but still it has issues. I would say tho I believe they are socketed correctly. I will check again though, thanks!\n\nI\u2019m assuming it is the CPU but not entirely sure. Will do some deep diving.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l429v8k",
+                  "text": "Fair. Is the BIOS on the motherboard on the latest version? I would update it outside of Windows with an EZ flash and if your having issue with a bios file being seen it\u2019s usually the USB slot being used or the Thumbdrive just won\u2019t work. I\u2019ve had the best luck with the sandisks cruzer glides 32GB. (Sorry can\u2019t link)\n\nOnce you update the BIOS, factory reset it (or do the restore factory defaults setting make sure something like load optimized defaults is enabled). Then reinstall Windows. Be sure the chipset drivers get installed first then graphics and you should be set.\n\nThat\u2019s where I\u2019d personally go next and I do this for a living.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l44kbew",
+                      "text": "Haven\u2019t updated a bios before so that\u2019s new ground for me. However I will give that a shot.\n\nDef will follow your instructions. Thank you for reaching out.\n\nCurrently I do have a ticket raised with Intel. Trying to see what they say as well and what move they will make",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l41j8eq",
+          "text": "You said you wiped the drive. But did you wipe it using command prompt? Because using Windows to wipe it still leaves things like loose registry files.\n\nUsing command prompt leaves NOTHING. It was the only way I could get Windows to work right after a malicious virus bricked half the registry.\n\nhttps://www.tomshardware.com/news/format-hard-drive-command-prompt,37632.html",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l41mpf9",
+              "text": "I would say the drives could be a problem, but I had every single one disconnected, bought a new SSD and I was still having the same issue.\n\nBut I did wipe my gaming drive using format and partition in Windows.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l41olu1",
+                  "text": ">every single one disconnected, bought a new SSD, and I was still having the same issue\n\nOof. Okay, if that doesn't rule out the drives as being part of the problem, I don't know what does.\n\nYour gaming drive should be fine. There shouldn't be any loose files on there capable of causing BSOD -- that I know of at least.\n\nI saw another user commenting about your CPU potentially being unstable because of the BIOS settings? That sounds like the next best lead to me.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l44kfsg",
+                      "text": "Apparently my CPU is known to have issues as of recently. Intel has yet to make an official announcement but there are a plentiful amount of articles about it. Apparently they too are also having the same blue screen issues I am having. I assume it is the same issue.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

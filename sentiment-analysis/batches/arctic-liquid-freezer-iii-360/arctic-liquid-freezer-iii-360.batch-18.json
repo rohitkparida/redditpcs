@@ -1,0 +1,471 @@
+{
+  "productName": "arctic-liquid-freezer-iii-360",
+  "batchIndex": 18,
+  "totalBatches": 123,
+  "comments": [
+    {
+      "commentId": "1tlbfy6",
+      "text": "Do I need a bigger AIO? 14900k temperature spikes near 100c\n\nI've been running Arctic Liquid Freezer III 360 for about a year and a half now. For the first few months it was pretty cool with temps under 80c, but recently it has started doing these brief spikes over 90c for some types of multi-core load.\n\nSpikes occur when the CPU is not at full utilization. I managed to catch 87c on screen, but I've also seen 94c. I'm running all fans and pump at 100%.\n\nIs it normal for an AIO to lose performance like that? Do I need a 420? Maybe just repaste the current one?\n\n**UPD. The AIO radiator is room temperature after hours of benchmarking and the air exiting out is barely warm.**\n\n**I tried opening the side cover and blowing air in the case with a utility fan at max speed. Other components temps went down, but there was zero change in CPU temperature.**\n\n**I suspect there's something wrong with the AIO. I'll try remounting the contact frame and repasting first and if that fails too it's new AIO time.**\n\nUPD2. I fixed the issue by adjusting OC options in BIOS like that: https://postimg.cc/0bWMmnLJ",
+      "upvotes": 256,
+      "classifyThis": true,
+      "relevance": "include",
+      "relevanceReasoning": "User shares personal experience with performance degradation of the Arctic Liquid Freezer III 360 over time.",
+      "sentiment": "negative",
+      "sentimentReasoning": "User is experiencing overheating spikes and suspects the AIO is faulty.",
+      "replies": [
+        {
+          "commentId": "oneegi3",
+          "text": "The 14900K is just a hot CPU.\n\nAlso update your BIOS to the latest and undervolt it. ",
+          "upvotes": 137,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Comment focuses on the CPU's heat characteristics and BIOS updates, not the AIO itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": [
+            {
+              "commentId": "onejtrd",
+              "text": "Yup, try -0.07v on Global Core SVID (ASUS motherboard), my Noctua NH-D15 G2 is keeping it cooled under stress with that.\n\nOh and sync all cores, set the Pcores to 57x and Ecores to 44x, instead of that stupid pretend to be a 6Ghz CPU thing auto will do.",
+              "upvotes": 29,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about undervolting and a different cooler (Noctua), not the Arctic LFIII.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": [
+                {
+                  "commentId": "onemaq1",
+                  "text": "Thank you! I'll try that core sync thing.\n\n-0.07v isn't stable for me, I have -0.05 now. ",
+                  "upvotes": 15,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about undervolting stability, not the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "onef3ev",
+          "text": "You're running the single hottest consumer CPU barring the 14900KS.\n\nIt's always gonna run hot, that's what 300W does to a piece of silicon. Undervolt it if you're uncomfortable with high temps.",
+          "upvotes": 64,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Comment focuses on the CPU's heat output, not the AIO's performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": []
+        },
+        {
+          "commentId": "onef4o5",
+          "text": "Maybe repaste the cpu or up your fan and pump speed a little. ",
+          "upvotes": 24,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General troubleshooting advice (repaste/fan speed) not specific to the product's design.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": [
+            {
+              "commentId": "onek65z",
+              "text": "It's already at 100% lol. ",
+              "upvotes": 8,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Short reply confirming fan speed, not providing product insight.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": [
+                {
+                  "commentId": "onfib6u",
+                  "text": "Max pump speed isnt best id say 70%. But fan curve max if you like, the coolant circilulates the system so fast the liquid itself really doesn't get time to cool in the rad. Jays2cents did a video a while back on it. ",
+                  "upvotes": 12,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General AIO pump speed theory, not specific to the Arctic LFIII.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": [
+                    {
+                      "commentId": "onfj6wr",
+                      "text": "Oh I see! Thanks, I didn't know that. ",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort acknowledgement of information.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": [
+                        {
+                          "commentId": "oniq33n",
+                          "text": "In this case, it's a Liquid Freezer III, you should keep it at 100%.\n\nI have mine like that 24/7 and it doesn't hurt.\n\nEdit: You can see a little more info on this if you search for \"Liquid Freezer III pro deep dive\" in the Arctic sub. (The Pro and the normal version is the same for the pump)",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Provides specific technical advice regarding the pump speed of the Liquid Freezer III.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "User recommends keeping the pump at 100% and suggests it doesn't hurt the device.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "onegvb0",
+          "text": "this particular Artic cooler is really nice, the 14900k is the culprit ",
+          "upvotes": 10,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Directly praises the Arctic cooler as being 'really nice'.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User expresses satisfaction with the product.",
+          "replies": [
+            {
+              "commentId": "onf0yd8",
+              "text": "the arctic is not that good, many other are actually better but ac is a very nice cheap one.\n\nI actually use a dirt cheap mars 360 aio, I got it for 30usd and it cools a very bad 13900kf just as good as any other aio.\n\n[https://youtu.be/4X21uw1v7Xk?si=RIJlU7lpP0es336P&t=523](https://youtu.be/4X21uw1v7Xk?si=RIJlU7lpP0es336P&t=523)",
+              "upvotes": -19,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Directly compares the Arctic cooler to other AIOs and mentions its value.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "User views it as a 'nice cheap one' but not the best performing.",
+              "replies": [
+                {
+                  "commentId": "onfxdz6",
+                  "text": "Those benchmarks listed make no sense",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Critique of a YouTube benchmark, not the product itself.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": [
+                    {
+                      "commentId": "ong0ve9",
+                      "text": "how so? this channel is one of the better one when it comes to cooling.",
+                      "upvotes": -5,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about a YouTube channel's credibility.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": [
+                        {
+                          "commentId": "ong9bak",
+                          "text": "I've got multiple sites contradicting those results including tomshardware. ",
+                          "upvotes": 5,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about benchmark contradictions from other sites.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
+                          "replies": [
+                            {
+                              "commentId": "ongr82m",
+                              "text": "look what test setup they have used, here u see it is an intel, if u look further back in the video u can see an amd based system in use as well.\n\nI have seen tomshardware, gn and the canadian one and even they show different results, but sts is what I turn too.\n\nEven gn think it was, that said that the rad it too thick and the pump too slow to really make a difference.",
+                              "upvotes": -2,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "Mentions specific technical critiques of the radiator thickness and pump speed of the Arctic cooler.",
+                              "sentiment": "negative",
+                              "sentimentReasoning": "User cites sources claiming the radiator is too thick and pump too slow.",
+                              "replies": [
+                                {
+                                  "commentId": "onhcy9y",
+                                  "text": "I have great results with my lf3 420.",
+                                  "upvotes": 3,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "User shares positive personal experience with the LF3 420 version.",
+                                  "sentiment": "positive",
+                                  "sentimentReasoning": "User reports 'great results'.",
+                                  "replies": [
+                                    {
+                                      "commentId": "onhm47w",
+                                      "text": "I got an 280, and two 360, it still does not change the fact that it is not the best.",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": "include",
+                                      "relevanceReasoning": "User shares experience with multiple Arctic units and claims it's not the best.",
+                                      "sentiment": "negative",
+                                      "sentimentReasoning": "User explicitly states it 'does not change the fact that it is not the best'.",
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "onf0vbf",
+          "text": "This chip just runs hot as shit. I went over to 7800X3D to mitigate the heat thrown out by my AIO. ",
+          "upvotes": 5,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Comment focuses on the CPU and switching to AMD, not the AIO.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": []
+        },
+        {
+          "commentId": "onefg7b",
+          "text": "Lock the cores and undervolt.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General CPU tuning advice.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": []
+        },
+        {
+          "commentId": "onge522",
+          "text": "14900k user with an arctic liquid freezer ii 420 aio stock fans. Applied ptm7950 from moddiy to the cpu(not delidded) and have a thermalright cpu antibend bracket on(the arctic 2 did not come with its own unlike the liquid 3). Using occt, max temp was 88c. Before the ptm7950 and bracket, I'd hit 100c immediately on max load.\u00a0",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares experience with an Arctic Liquid Freezer II 420, which is a previous generation product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Discussion of thermal results with specific modifications.",
+          "replies": [
+            {
+              "commentId": "onm6ev4",
+              "text": "So you are saying that's better to use than thermal paste? \ud83d\ude2e. Interesting",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Question about thermal paste vs pads.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": [
+                {
+                  "commentId": "onnhsry",
+                  "text": "It certainly works better for this spicy chip. My paste, despite being high quality only lasted 2 years before drying out because of how hot this chip can get even though I never throttled in games. The ptm7950 has higher idle temps at first before turning to liquid and cooling down. Idle temps when the pad liquifies is 28-32c. Its also reusable which is fantastic if you need to remove the aio and supposedly lasts much longer.\u00a0",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about thermal pads, not the AIO.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": [
+                    {
+                      "commentId": "onqa7em",
+                      "text": "Damn. I really like what I'm reading about it so far. Lasts up to 10 years. Non conductive so don't have to be too careful with the size, no mess and tbh I think it's quite cheap for these benefits. I just ordered some Thermalright Helios. Thanks.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about ordering thermal pads.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "oniha1x",
+          "text": "I have this cpu and let me tell you something. It\u2019s impossible to curb this thermal throttling nightmare of a cpu without making instability. I\u2019ve found a 200/220p1/p2 on top of a .05 under-volt the most helpful of all my trouble shooting. As ambient temperature is already a problem for me. I\u2019m so close to just capping the cores to 5.2 and allowing single/dual core boost to 5.6 in an effort to completely curb the problem. At stock unless your ambient temperature is below 68 degrees Fahrenheit your already in performance hell.  ",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about CPU thermal throttling and BIOS settings.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": [
+            {
+              "commentId": "onihkoy",
+              "text": "But as others have stated, this is a hot cpu intel legit pushes it to the maximum threshold for temperature for the silicon on purpose. If you have stable performance and can deal with the fans and not bsod the cpu is actually working as intended. ",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about Intel CPU design and temperature thresholds.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "onlz6ko",
+              "text": "Have you tried lowering the power limit? Some motherboards have ridiculous auto OC features that set the power limit to 4096 watts, if you cap power at 200 watts the CPU should be fairly easy to cool. ",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "General advice on lowering power limits.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "onmka2u",
+              "text": "Nah you just don't know what you are doing. If you know your way around a bios and set appropriate LLC mode / undervolt they work fine. Any 360mm AIO will be able to cool it at Intel's recommended 253w pl1/2 -\u00a0 https://imgur.com/a/ri87f9v",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "General statement about any 360mm AIO's ability to cool a CPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": [
+                {
+                  "commentId": "oodznzh",
+                  "text": "There's no reputable source that reports temps like that with any aio. This is way too low. I don't see how this is achievable. \n\nAll your values are suspiciously low. Motherboard at 24, PCH at 39. I just turned on my system and in a couple minutes of idling it got 33c mobo, 55c PCH. I suspect you ran your benchmark at a significantly colder ambient than room temperature for whatever reason.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about benchmark results and ambient temperature.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": [
+                    {
+                      "commentId": "oogn2tv",
+                      "text": "I use an AliExpress external bykski rad.\u00a0\n\n\nReputable sources don't undervolt. Look at the -145v offset / vmin drooping to 1.1v underload. ambient temps of ~18 degrees at the time.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about an external Bykski radiator.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "onefhay",
+          "text": "Maybe set your fans to stay at max speed perpetually.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General fan speed advice.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": []
+        },
+        {
+          "commentId": "onfq6u4",
+          "text": "I'm curious if you're fan setup is sorta hamping stuff.   You have 4 exit and just 2 input fans?   Unless the bottom 2 are actually fresh air.  But even then, those are getting sucked out the exhaust of your GPU.   Doesn't look like a smooth air flow the RAD.  Maybe i'm crazy and it doesn't matter much.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about case airflow and fan configuration.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": [
+            {
+              "commentId": "ony10so",
+              "text": "Bottom 2 fans are fresh air. There's a mesh on the side for the bottom fan air intake.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Clarification on case fan intake.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "ongi4av",
+              "text": "I would flip the back fan to intake",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about flipping a case fan.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": [
+                {
+                  "commentId": "ony1egf",
+                  "text": "Interesting idea. However when the GPU is loaded but the CPU is not the hot air will have nowhere to go but through the radiator on top. So flipping it would require running radiator fans off of max(CPU, GPU) temperature.\n\nCurrently I have back exhaust fan set to GPU temperature, so when doing CPU load only it spins at idle.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about case fan and radiator fan logic.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ongjzev",
+          "text": "Probably a result of permeation. The loop is slowly losing coolant with no way to fill it up. \n\nAlso, Arctic AiO rad may appear thick, bu it's actually thinner with about 15 fpi (fins per inch). For comparison, standard 25mm thick rads have 20fpi. \n\nArctic rad was built specifically for their P12 fans, as their overall static pressure is not that high even on full blast.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Provides technical critique of the Arctic radiator design (FPI and thickness).",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Technical explanation of design choices without a clear positive or negative leaning.",
+          "replies": []
+        },
+        {
+          "commentId": "oni3fgk",
+          "text": "Repaste and see what happens.\n\n\nAnd 80 isn't really that low for a big cooler, you definitely took the plastic off the bottom of the cooler before installing it right?\u00a0",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General troubleshooting advice (repaste/plastic peel).",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": []
+        },
+        {
+          "commentId": "onidyi8",
+          "text": "100% the cooler dude had the same issue ",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User suggests the cooler is the cause of the overheating issue.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User attributes the problem to the cooler.",
+          "replies": []
+        },
+        {
+          "commentId": "onjdzws",
+          "text": "Maybe add some color to your p.C, instead of all the insulated heat Color known as black",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Joke about PC case color.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": [
+            {
+              "commentId": "onm5qhu",
+              "text": "That might get him 1-3C difference but not a bad shout tbh.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about case color and temperature.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "model": "gemma-4-31b-it"
+}

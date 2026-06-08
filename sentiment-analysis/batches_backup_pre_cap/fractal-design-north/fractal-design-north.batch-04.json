@@ -1,0 +1,195 @@
+{
+  "productName": "fractal-design-north",
+  "batchIndex": 4,
+  "totalBatches": 25,
+  "comments": [
+    {
+      "commentId": "2a8o51",
+      "text": "[Discussion] 120mm/140mm case fan test feat. Noctua IndustrialPPC, Noiseblocker, Corsair, Cougar, Cooler Master, Aerocool, Phanteks, and Fractal Design (with sound!)\n\n### Introduction\n---\n**TL;DR:**\n\n[**CLICK HERE FOR GRAPHS OF RESULTS.**](http://imgur.com/a/mzTQE)\n\n[**CLICK HERE FOR NOISE COMPARISON VIDEO.**](http://youtu.be/933KF2aqjyM)\n\n**SCROLL DOWN FOR CONCLUSION.**\n\nThe fan test is back! This time, it's being done on a Fractal Design Define R4, a medium-restriction case. While the front panel is closed off, there is a good amount space from the fan to the panel and plenty of venting on the sides and bottom of the front panel to feed the fans, giving this case decent performance. \n\nMuch like [**part 1**](http://redd.it/25nkyi) of the 120mm case fan test, this test was designed **to find out whether static pressure or airflow optimized fans provide better performance in a medium restriction case**. In addition, this tests also aims to find out **if 140mm fans are better than 120mm fans**.\n\nBut again, before we answer these questions, let's start of with some background.\n\n---\n### Background\n---\n\n[**Link to background info summary (keeps this post under 15000 characters)**](http://redd.it/25nm7c)\n\n---\n### Test setup\n---\n\n[Here is the test setup.](http://i.imgur.com/RZIuose.png?2)\n\n[Here is a diagram showing where the parts are placed.](http://i.imgur.com/gQsh8Qn.jpg)\n\n**Note: To provide the best cooling results without heavy modification, I looked for any restrictions and removed them. For the Define R4, I removed the top drive cage. Bottom drive cage left in to test static pressure.**\n\n**For all aftermarket fan tests, a Cougar Vortex 140 is the exhaust fan.**\n\n**Fan control is achieved by using the Define R4's fan controller in tandem with the NZXT GRID fan splitter. 5V speeds avoided because my system can overheat.**\n\n\n\nEach fan setup is given 30 minutes for the temperatures to stabilize. After that, the peak temperatures are recorded. CPU temperatures are for the hottest core.\n\nThe tests are repeated 3 times and the results are averaged out.\n\nThe phone used to measure loudness is placed 2 feet away from the front-left side of the case. All measurements are relative.\n\nThe only variables are the 3 sets of fans and the fan speed.\n\n---\n### The fans tested\n---\n\n**Keep in mind, the performance numbers provided by the fan manufacturer may be inaccurate. They are used largely for reference.**\n\n**Fan curves for some of the fans are provided by CoolingTechnique. They are one of the few reviewers that can measure these stats accurately and are a more reliable representation of the fan's performance.**\n\n---\n\n**Stock fans: Fractal Design Silent R2 140mm**\n\n* RPM: 1000\n* CFM: 66\n* Static Pressure: 0.84 mmH2O\n\n\n\n**Noiseblocker Eloop B12-3**\n\n* RPM: 1900\n* CFM: 71.4\n* Static Pressure: 1.99 mmH2O\n* [Fan curve](http://i.imgur.com/eZzCyo9.jpg)\n\n\n\n**Corsair SP120 High Performance Edition**\n\n* RPM: 2350\n* CFM: 62.74\n* Static Pressure: 3.1 mmH2O\n* [Fan curve (with other fans)](http://www.coolingtechnique.com/img/rece/ventole-rheobus/corsair/air-series/pressure-cfm-all.png)\n\n\n**Phanteks PH-F140SP**\n\n* RPM: 1200 +/- 250\n* CFM: 82.1\n* Static Pressure: 1.33 mmH2O\n\n**Cougar Vortex CF-V14HB**\n\n* RPM: 1200\n* CFM: 70.5\n* Static Pressure: 1.38 mmH2O\n\n**Cougar Vortex PWM CF-V12HPB**\n\n* RPM: 800-1500\n* CFM: 70.5\n* Static Pressure: 2.2 mmH2O\n* [Fan curve](http://i.imgur.com/juHDjjC.png?1)\n\n**Cooler Master JetFlo 120**\n\n* RPM: 800-2000 (1600 or 1200 with cable)\n* CFM: 95\n* Static Pressure: 2.72 mmH2O\n* [Fan curve (with other fans)]( http://www.coolingtechnique.com/img/rece/ventole-rheobus/coolermaster/jetflow_120/pressure-jetflo120.png)\n\n**Aerocool DS 120 North America edition**\n\n* RPM: 1500\n* CFM: 81.5\n* Static Pressure: 2.29 mmH2O\n\n**Noctua NF-F12 IndustrialPPC 2000 PWM**\n\n* RPM: 450-2000\n* CFM: 71.7\n* Static Pressure: 3.94 mmH2O\n\n\n**Noctua NF-A14 IndustrialPPC 2000 PWM**\n\n* RPM: 500-2000\n* CFM: 107.4\n* Static Pressure: 4.18 mmH2O\n\n---\n### Results\n---\n\n\n### [**Fans arranged by CPU Temp**](http://i.imgur.com/idIK6Xm.png)\n\n### [**Fans arranged by GPU Temp**](http://i.imgur.com/whMKbgY.png)\n\n### [**Fans arranged by Noise**](http://i.imgur.com/gsgNDyL.png)\n\n### [**Noise Comparison Video**](http://youtu.be/933KF2aqjyM)\n\n---\n### Analysis\n---\n\n**At 12V, there is only a 3C gap between the best and worst fans for CPU cooling (except for the A14 which had an 8C difference due to stall conditions). For GPU cooling, there is a large 5C gap between the worst and best fans.**\n\n**At 7V, most fans warmed up 2-3C across the board. The exceptions were the NF-F12 and Corsair SP120 which did noticeably worse at 7V. The NF-A14 did the same at 7V and 12V due to stall.**\n\n**Simply adding a Cougar Vortex 140mm exhaust at the rear and moving the stock fan up front yielded 3C better CPU temps. GPU temps were only 1C better.**\n\n\n### Stock setup (1 x Fractal Design Silent R2 Front and Back)\n\n* Quiet up to 12V. \n\n* GPU cooling is average at best. CPU cooling is poor.\n\n* Drives run hot since there is no fan to blow air to them.\n\n### 2 x Fractal Design Silent R2\n\n* Quiet up to 12V\n\n* Average CPU cooling, average GPU cooling\n\n* Less than average static pressure to cool drives.\n\n### Cougar Vortex HDB PWM 120mm\n\n* Silent at 5V, audible at 7V, lots of air movement sound at 12V\n\n* Great CPU cooling. Vanes and high blade angles help air move farther into the case.\n\n* Good GPU cooling.\n\n* Average drive cooling with average static pressure.\n\n### Noiseblocker Eloop B12-3\n\n* Faint high-pitched whine heard at all speeds (louder with more speed). Attributed to restrictions placed in front of fan (i.e. fan filters)\n\n* Otherwise quiet at 5V and 7V. Audible at 12V but not too unpleasant. Very smooth sound signature.\n\n* Great CPU and GPU cooling.\n\n* Excellent static pressure for drive cooling.\n\n* Oddly, performs more in line with 1500 RPM fans than 2000 RPM fans in terms of airflow.\n\n### Cooler Master Jetflo 120\n\n* Quiet at 5V, audible at 7V, quite loud at 12V (lots of humming, air movement sounds)\n\n* Excellent CPU cooling thanks to high blade angles.\n\n* Good GPU cooling. This fan moves fast enough that stall is an issue.\n\n* Excellent static pressure/air deflection for drive cooling.\n\n* Very power hungry. Be careful not to use with splitters.\n\n### Corsair SP120 Performance editions\n\n* Quiet at 5V, audible at 7V, loud at 12V\n\n* Mediocre cooling at lower speeds attributed to low blade angles. Excellent cooling at 12V thanks to higher maximum RPM.\n\n* Excellent static pressure delivery. This fan was definitely purpose-built for radiators and heatsinks rather than case cooling.\n\n### Phanteks PH-F140SP\n\n* Silent at 5V, audible at 7V, slightly loud at 12V\n\n* Great CPU cooling. High-angle blades and larger blade size allow air to move farther into case.\n\n* Good GPU cooling for the same reasons.\n\n* Average static pressure.\n\n### Cougar Vortex HDB 140\n\n* Silent at 5V, audible at 7V, slightly loud at 12V\n\n* Average CPU cooling, good GPU cooling.\n\n* Less than average static pressure. Definitely inferior to its 120mm version.\n\n### Aerocool DS 120 North America edition\n\n* Very quiet at 5V and 7V. Audible at 12V\n\n* Average CPU cooling, good GPU cooling.\n\n* Mediocre static pressure. Definitely an airflow-oriented design. Suited as a quiet case fan.\n\n### Noctua NF-F12 IndustrialPPC 2000 PWM\n\n* Pretty quiet at 5V, audible at 7V, loud and buzzy at 12V\n\n* Less perceivable noise than the Jetflo 120 since the high-pitched buzz is muted by the case.\n\n* High pitch buzzing attributed to focus-flow stator vane design.\n\n* Excellent CPU cooling at 12V.\n\n* Best GPU cooling of all fans at 12V! Focus flow stator design beings to see benefits closer to 2000 RPM.\n\n* Average cooling at 7V. \n\n### Noctua NF-A14 IndustrialPPC 2000 PWM\n\n* Quiet at 5V, audible at 7V, a little loud at 12V\n\n* The quietest 2000 RPM in this group!\n\n* Poor cooling overall for the Define R4.\n\n    * Large fan blades heavily affected by intake restriction at the edges. This fan aerodynamically stalls and loses a lot of flow focus, leading to less than average GPU and CPU cooling. Most of the airflow is hampered by the Define R4's fan tray.\n\n* Higher than average starting voltage. Fan requires 7V to start up. 5V okay after initial start up.\n\n---\n### Conclusion\n---\n\nSo which fan is best? Well unfortunately there is no clear answer to that question. The best choice of fan depends entirely on what the user desires in a fan and how much they are willing to pay for it. However, we can answer some questions thanks to this data set.\n\n**Static-pressure optimized fans require higher speeds in order to achieve similar air velocities compared to airflow-oriented designs. This also means they are resistant to stalling and loss of performance. The disadvantage of this is that higher speeds usually mean more noise.**  \n This was very apparent with the Noctua NF-F12 and Corsair SP120. Both fans performed worse than average at 7V, but when turned up to 12V, the fans were able to spin fast enough to move air deeper into the case. The NF-F12 PPC does it thanks to the stator vane design which begins to reap big performance benefits beyond 7V. The Corsair SP120 Performance does it thanks to sheer speed (maxes out at 2400 RPM). \n\n**Airflow-oriented designs have greater air velocity to allow air to penetrate farther into the case. They lose out in static pressure. They can also stall easily.**   \nThe Aerocool DS 120 and Cooler Master Jetflo 120 are both airflow oriented designs. They are excellent at moving air far into the case but are not too strong at static pressure. The DS 120 showed this weakness while the Jetflo 120 seems to spin fast enough to generate high static pressure regardless. However, the Jetflo 120 starts to stall as noted by slightly above average GPU cooling thanks to a loss of airflow focus at high speeds. Compare this to other 2000+ RPM fans like the NF-F12 PPC and SP120 which provide excellent GPU cooling at maximum speeds thanks to lower blade angles.\n\n**140mm fans can provide more airflow vs 120mm fans at similar RPMs. However, they have lower maximum speeds resulting in less static pressure. They are also not guaranteed to be quieter than 120mm fans. Lastly the blades might come closer to case restrictions.**  \n Almost every 140mm fan in this test showed equal to inferior performance. This is mostly attributed to their lower RPMs. The 1300RPM 140mm fans showed similar performance to the 1500RPM 120mm fans **EXCEPT** in static pressure where it's required to cool the hard drive, in which the 140mm fans were inferior to the 120mm fans.  \n\nAll 140mm fans were no quieter than the 120mm fans, mostly due to turbulence caused by fast-moving fan blades. However, they did have a perceivably lower noise pitch which was slightly easier on the ears despite the higher noise level.  \n\nThe exception was the Noctua NF-A14 PPC. At a 2000 RPM maximum, it was quieter than fans that have similar speeds (Jetflo 120, NF-F12 PPC, Corsair SP120). While there was no shortage of airflow, the fan stalled at these high speeds thanks to the fan-tray of the Define R4. This is due to the blade design of the A14 which is highly reliant on clear airflow near the edges of the fan. As a result, it suffered massive stall and a huge loss in airflow focus. Used in a different application (exhaust, heatsink, radiator, low-restriction case) I have no doubt the NF-A14 PPC would be the superior fan. \n\n\n**Because there is no best overall fan, I devised several categories where certain fans excell.**\n\n----\n\n**Best \"cheap\" fan ($15 or less).**\n\n1. **Cougar Vortex HDB PWM.**   \nCan be had for as low as $5 after rebates! An absolute steal considering its good performance.\n2. **Phanteks PH-F140SP**  \nUsually around $12. Great performance considering price.\n3. **Fractal Design Silent R2 140mm**  \nUsually $15 but can go as low as $10. Average performance. Silent at lower speeds.\n\n**Best quiet fan. (Warning: slightly subjective! Please watch noise comparison video!)**\n\n1. **Aerocool DS 120 North America edition**  \nVery quiet at 5V and 7V. Good performance at 12V at the cost of noise (still smoother-sounding than most 1500 RPM fans). Best suited as intake fans. Striking design, definitely not cheap at $20.\n\n2. **Noiseblocker Eloop B12-3**   \nAside from the faint whine from restricting intake, it's smooth and very well performing. Best suited for radiators and exhaust. 6 year warranty and lots of accessories. Not cheap at $23+ per fan.\n\n3. **Fractal Design Silent R2 140mm**  \nQuiet at 5V and 7V. A little louder at 12V, but hums quietly. Okay performance.\n\n**Best performance fan 1500RPM or less**\n\n1. **Noiseblocker Eloop B12-3**  \nWait, why is this fan down here? Well this fan has underrated RPMs meaning it spins slower than advertised ([see CoolingTechnique's measurements of the B12-3](http://www.coolingtechnique.com/img/rece/ventole-rheobus/noiseblocker/eLoop/b12-3.png).) That said, this fan provides an excellent mixture of performance and silence.\n\n2. **Cougar Vortex HDB PWM**  \nGood cooling at 12V and 7V. Reasonable price.\n\n3. **TIE: Aerocool DS 120, Phanteks PH-F140SP**  \nThe DS 120 provides good cooling at 12V but loses out at lower speeds for very low noise. The Phanteks is much cheaper, performs at 12V and 7V and is smoother than the Cougar Vortex HDB 140.\n\n\n**Best performance fan 2000RPM**\n\n1. **Noctua NF-F12 IndustrialPPC 2000**  \nDecent performance at 7V or less. At 12V this fan has both excellent static pressure and airflow focus. This gives it the best performance of all the fans here, but at the cost of noise. Though the fan is buzzy at 12V, a quiet case can muffle this higher-pitched sound, making it quieter than the CM Jetflo 120. For the Define R4 it's an excellent fan. **Very expensive at $30.**\n\n2. **TIE: Corsair SP120 Performance Edition, Cooler Master Jetflo 120**  \nSP120 provides excellent static pressure and excellent performance at full speed. Poor performance at lower speed though. Not ideal as a case fan (too loud, not enough air velocity), but definitely worthy as a radiator/heatsink fan.  \nJetflo 120 is the opposite of the Corsair fan. High blade angles provide excellent CFM and air velocity which makes it a good case fan for those that want high airflow. Excellent performance 7V and 12V. Pretty good static pressure (good enough for low FPI radiators), but the fan is prone to stalling at high speeds. Power hungry and loud. \n\n3. **Noctua NF-A14 IndustrialPPC 2000**  \nThe quietest 2000RPM fan. However, it was a poor match with the Define R4 intake. The Define R4 fan tray restricted airflow at the edges of the fan, causing aerodynamic stall and lose a ton of airflow focus and static pressure. \nThis fan will perform better in a less restricted intake, an exhaust fan, or a radiator that accepts 140mm fans. **Very expensive at $27 per fan.**",
+      "upvotes": 321,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "cisjst6",
+          "text": "Now, the total damage to my wallet for both fan tests (USD + tax):\n\n**Fan**|**Total per fans**|**Price per fan**\n:----|:----|:----\n3 x Scythe Gentle Typhoon AP-15 | $61 | $18 each\n3 x Noiseblocker B12-3 | $70 | $22 each\n3 x Cooler Master JetFlo 120 | $47 | $15 each\n3 x Cougar Vortex 120 PWM | $47 | $14 each\n3 x Silverstone AP121 | $51 | $17 each\n2 x Corsair SP120 Performance | $33 | $15 each\n2 x Cougar Vortex 140 | $31 | $14 each\n2 x Phanteks F140SP | $24 | $11 each\n2 x Aerocool DS 120 | $42 | $19 each\n2 x Noctua NF-F12 iPPC 2000 PWM | $66 in Bitcoin | $30 each\n2 x Noctua NF-A14 iPPC 2000 PWM | $54 | $25 each\n&amp;nbsp; | &amp;nbsp; | **Total Altogether**\n&amp;nbsp; | &amp;nbsp; | $516\n\n\nAre there better fans than these? Sure there are. Industrial fans from Sanyo Denki (San Ace) and Delta come in a variety of speeds and designs to suit a variety of applications. They're extremely durable, come with ball bearings, and may also be thicker to fit a thicker fan. **They also have accurate specifications that are listed on the manufacturer's website.**  They're not too expensive either. In fact, there's a good chance your power supply is using an industrial fan.\n\nThe only thing stopping me from using them though is that to get some specific fans, you either have to order them from China with predone wiring or buy them from Mouser or Newark and crimp your own connectors on to them since they come with bare leads. However, some fans are quite common (i.e. Delta AFB series, San Ace Silent series) so try checking eBay to see if they have the specific fan you want. ",
+          "upvotes": 37,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "cislht1",
+              "text": "Pm me your address please. I have some delta afb1212l fans sitting around. ",
+              "upvotes": 15,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Relevance Reasoning:",
+              "sentiment": "positive",
+              "sentimentReasoning": "Sentiment Reasoning:",
+              "replies": [
+                {
+                  "commentId": "cit3gbg",
+                  "text": "&gt;delta\n\nJust glue it to your car and achieve lift off.",
+                  "upvotes": 9,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discusses the product's performance in a non-relevant context.",
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "cit4k9f",
+                      "text": "Unfortunately that is kind of the misconception that keeps people from trying then out despite their quality. The AFB1212L has an rpm of 1900 at 12v, which is very reasonable ",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the misconception about the quality of the product.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "Presents a negative sentiment about the product.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "cisqfqf",
+              "text": "You should ask for fan donations. I'm sure there are people who upgrade fans and wouldn't mind mailing you their old ones (or extras that come pre-packaged with cases and CLCs) to help further your research. \n\nI just put two Corsair SP120 PWM Quiets on my H100i, and replaced the exhaust 140mm NZXT from my H440 with a Corsair AF140 Quiet. I don't know if you'd be interested in testing the prepackaged H100i fans or the NZXT case fan, but I don't really have a use for them. \n\nDo you sell the fans when you're done testing them? I'm sure there are also some people out there that wouldn't mind lending you some new fans so you can test them and you could send them back when you're done. There's no reason why you should have to fork over all this money on your own.",
+              "upvotes": 9,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses fan donations and potential testing of fans",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a potential use case for the fans",
+              "replies": []
+            },
+            {
+              "commentId": "cit2fra",
+              "text": "&gt; Cougar Vortex 120 PWM\n\nthanks for your hard independent work.  i did some newegg-rebate deal for cougars, so glad to know the many cougars in my case &amp; cpu sink are getting it done even running at lower 5v-7v, i agree they can be noticeable loud at full 12v, that is why i run extras but at lower speeds.\n\n",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "cit4aw3",
+              "text": "Where's the Scythe fans in the results?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses Fractal Design North's product line without mentioning Scythe.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Uninterpretable content.",
+              "replies": [
+                {
+                  "commentId": "cit4noa",
+                  "text": "Part 1 with the H440 (linked in the intro of this test). I sold 2 of 3 fans to someone though, so I couldn't test them again. I just did glamour shots of them.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses Fractal Design North H440 fans without mentioning any other products.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a personal experience with Fractal Design North fans.",
+                  "replies": [
+                    {
+                      "commentId": "cj0d0x8",
+                      "text": "It's kind of strange you didn't just include everything together. I really appreciate the effort, it just seems that it would be really easy to just add on to the list to show everything at once.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discusses the lack of comprehensive coverage of Fractal Design North's features.",
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "cj0dbwo",
+                          "text": "Different case with a different CPU cooler, so the results would be quite off (CPU cooler was WAY better than the D14 I had). \n\nAs for the Gentle Typhoons, I would like to add them back. I just need one more GT AP-15.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses personal experience with Fractal Design North and a different CPU cooler.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Presents a personal experience with the product, but does not provide any clear positive or negative sentiment.",
+                          "replies": [
+                            {
+                              "commentId": "cj0eiyu",
+                              "text": "Gotcha, thank you again. Since the AP-15s are hard to get (outside of paying a small fortune) what do you think will work best if I'm going for best sound to cooling on a 240 rad in an NCase M1? I have the V2 coming in August and am very conflicted between the-\n\nB12-3 (or 4? nobody has great tests on the 4)\n\nand the\n\nNoctua Industrial PWM 2000.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "Discusses the speaker's dilemma between two different speakers.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "Presents a personal dilemma without clear positive or negative bias.",
+                              "replies": [
+                                {
+                                  "commentId": "cj0esmp",
+                                  "text": "Depends on the radiator you use. I'm assuming you're gonna use a slimmer 240mm radiator which means it's going to have a denser fin arrangement so you'll need a high static pressure fan.\n\nThe B12-3 has that perfect balance of noise, static pressure, and airflow but that's because it has a lower RPM limit. The B12-4 performs a good deal better, but [it's louder.](http://www.youtube.com/watch?v=GNdCKlzP9iw) The Noiseblocker B12 fans are loud if they are intake restricted, so don't use these fans for pull or case intake. They should be case exhausts and push fans.\n\nThe NF-F12 Industrials have excellent performance, but they are loud at higher speeds because the flow-focus vanes generate a buzzing noise at higher speed. That said, they're really good, really expensive fans.\n\nIf you're aiming for silence and plan on doing a push setup exhausting air out, your best bet is the B12-3. The B12-4 is better but louder. The Noctuas louder, better, and more flexibile still, but the very high price tag makes it hard to recommend.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "Discusses the noise and airflow of Fractal Design North fans.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "Presents a balanced discussion of fan performance without clear positive or negative bias.",
+                                  "replies": [
+                                    {
+                                      "commentId": "cj0h3ta",
+                                      "text": "This is what I will be replicating (well I'll try to get some better connectors so they aren't bent as much).\n\nhttp://hardforum.com/showthread.php?p=1040542367&amp;highlight=#post1040542367\n\nI thought it'd be best if I just showed what I was trying to do.\n\nParts list\n\nMitx Mobo\n\n3770k Overclocked Waterblocked\n\nGigabyte R9 290 Waterblocked\n\nSingle SSD\n\n240 Rad\n\nPump\n\nRes\n\n450 SFX PSU\n\n---\n\nIdeally, I just want what is best for sound to noise performance and at idle (while web browsing) wont make any noise. If it costs an extra $10 to get better fans I'm totally ok with that. With the amount of work and money going into it already I'd be a fool to skimp on $10.\n\nSo with all of that being said, is it safe to assume you'd lean towards the Noctuas? If all fans were $0...",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": "include",
+                                      "relevanceReasoning": "Discusses the speaker's personal project and the speaker's preferences for sound quality and noise performance.",
+                                      "sentiment": "positive",
+                                      "sentimentReasoning": "Presents a personal preference for sound quality and noise performance.",
+                                      "replies": [
+                                        {
+                                          "commentId": "cj0i24g",
+                                          "text": "I'd lean to the Noctuas because I prefer a sacrifice in silence for performance. They're definitely not quiet at mid speed because the stators cause the fan to hum.\n\nIf you want silence, go for Noiseblockers.",
+                                          "upvotes": 2,
+                                          "classifyThis": true,
+                                          "relevance": "include",
+                                          "relevanceReasoning": "Discusses the trade-off between performance and noise in GPUs",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "Presents a balanced view of the trade-off between performance and noise.",
+                                          "replies": [
+                                            {
+                                              "commentId": "cj0ihen",
+                                              "text": "Thank you so much!\n\nI think I will have to sleep on it. I really do like Noctua as a company and what they do overall, and I will rarely be running anything above a snails noise. And if I am running higher, I'll likely just turn music on. But the Noiseblockers are so beautiful. Ah well, I have a month before the case comes in. Time to start looking for deals.\n\nI will do my best to let you know how it works out in such a small case! It seems like the performance might be different.",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": "include",
+                                              "relevanceReasoning": "Discusses personal experience with Fractal Design North's Noiseblockers.",
+                                              "sentiment": "positive",
+                                              "sentimentReasoning": "Presents a positive sentiment about the Noiseblockers.",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

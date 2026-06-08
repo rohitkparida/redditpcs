@@ -1,0 +1,524 @@
+{
+  "productName": "amd-radeon-rx-9070",
+  "batchIndex": 14,
+  "totalBatches": 19,
+  "comments": [
+    {
+      "commentId": "1tnfrvo",
+      "text": "RX 9070 XT cooling analysis nobody seems to be doing \ud83d\udc40\n\nNoise-normalized data tells a VERY different story than stock reviews\n\n\u26a0\ufe0f Disclaimer:\n\nThe table is sorted by NN Score only.\nThat does NOT automatically mean \u201cbest to worst\u201d overall GPU.\n\nDepending on:\n\n- sustained frequency\n- card size\n- noise preference\n- airflow setup\n- deshroud potential\n- power/connectors\n\n\u2026the ranking and best choice can change significantly.\n\n\u26a0\ufe0f XFX Mercury power connectors depend on the specific variant/SKU. Some models use 2X8-pin, while higher-end OC variants use 3X8-pin.\n\nI made a comparison table using [TechSpot](https://www.techspot.com/review/3015-amd-radeon-9070-xt-roundup/) thermal data from:\n\nBut instead of only looking at:\n\n\\- stock temperatures\n\n\\- stock noise\n\n\\- FPS\n\n\u2026I tried to analyze the behavior of the coolers themselves.\n\nSo I compared:\n\n\\- stock thermal results\n\n\\- 40 dBA noise-normalized results\n\n\\- airflow scaling (Delta)\n\n\\- card size\n\n\\- thermal efficiency relative to size\n\n\\- sustained frequency relative to thermals\n\nAnd honestly, the conclusions become VERY different once you start crossing the data instead of looking at isolated charts.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udd39 What the metrics actually mean\n\n\ud83d\udd35 NN Score (lower better)\n\nCombined thermal score during 40 dBA noise-normalized testing:\n\n\\- GPU temp\n\n\\- hotspot\n\n\\- VRAM\n\n\\- VRM\n\nThis is probably the best indicator of raw heatsink quality, because it removes a large part of the stock fan curve bias.\n\nIn other words:\n\n\u00abhow good is the cooler itself at equal noise?\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe2 Delta\n\nDifference between:\n\n\\- stock thermal score\n\n\\- noise-normalized thermal score\n\nThis metric became MUCH more interesting than I expected.\n\nLarge Delta usually means:\n\n\\- quieter/conservative stock tuning\n\n\\- strong airflow scaling\n\n\\- large thermal gains once more airflow/noise is allowed\n\n\\- excellent deshroud/high-airflow potential\n\nSmall Delta usually means:\n\n\\- stock profile already runs near normalized airflow\n\n\\- card may already be relatively audible stock\n\n\\- or the cooler gains less from additional airflow\n\nSo Delta is NOT simply:\n\n\u00ab\u201chigher good\u201d or \u201clower good\u201d.\u00bb\n\nIt mainly shows:\n\n\u00abhow the cooler responds to additional airflow and noise.\u00bb\n\nWhich becomes VERY important for:\n\n\\- deshroud mods\n\n\\- SFF airflow optimization\n\n\\- custom fan setups\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe3 Compact Efficiency\n\nCustom metric combining:\n\n\\- NN Score\n\n\\- card length\n\nFormula:\n\n\u00ab100000 / (NN Score \u00d7 Length)\u00bb\n\nThe goal is to estimate:\n\n\u00abcooling efficiency relative to physical size.\u00bb\n\nBecause raw thermal performance alone can be misleading.\n\nA massive 360 mm card SHOULD cool well.\n\nWhat becomes interesting is:\n\n\\- how much thermal performance you get\n\n\\- relative to the size penalty\n\nSo this metric rewards cards that:\n\n\\- remain compact\n\n\\- while still delivering strong normalized thermal performance\n\nThis helps reveal:\n\n\\- heatsink density efficiency\n\n\\- cooler optimization\n\n\\- compact designs punching above their weight\n\n\ud83d\udfe9 Surprisingly efficient for their size:\n\n\\- XFX Swift\n\n\\- Gigabyte Gaming\n\n\\- XFX Quicksilver\n\n\ud83d\udfe5 Relatively inefficient considering their size:\n\n\\- Hellhound\n\n\\- Taichi\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfea MHz / NN (higher better)\n\nSecondary metric combining:\n\n\\- operating frequency\n\n\\- normalized thermal score\n\nFormula:\n\n\u00abClock Frequency / NN Score\u00bb\n\nThis does NOT isolate the cooler alone.\n\nInstead, it reflects:\n\n\\- cooler performance\n\n\\- boost behavior\n\n\\- BIOS tuning\n\n\\- power behavior\n\n\\- sustained clocks at equal noise\n\nIn practice:\n\n\u00abhigher = more frequency maintained for a given thermal load.\u00bb\n\nSo this metric is more about:\n\n\u00ab\u201creal-world thermal performance efficiency\u201d\n\nthan pure heatsink quality.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udd0d Interesting findings\n\n\ud83d\udfe6 XFX Quicksilver\n\nThe Quicksilver is interesting because it highlights the difference between pure cooling capability and overall tuning/performance behavior.\n\nIt achieves the best NN Score in the roundup, which strongly suggests the heatsink itself is genuinely excellent.\n\nBut at the same time, its sustained clock frequency is relatively low compared to cards like:\n\n- Mercury\n- Nitro+\n- Gigabyte Elite\n\nSo the Quicksilver appears to prioritize:\n\n- thermal headroom\n- quieter behavior\n- conservative boost tuning\n\n\u2026rather than maximizing frequency at all costs.\n\nIn other words:\n\n\u00abit\u2019s probably one of the best pure coolers in the roundup,\nbut not necessarily the most aggressive performer out of the box.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 XFX Mercury\n\nThe \u201cfully unleashed\u201d version of the XFX philosophy.\n\nIt combines:\n\n\\- excellent NN thermals\n\n\\- very high sustained clocks\n\n\\- strong MHz / NN efficiency\n\n\\- large airflow scaling potential\n\nMeaning:\n\n\\- stock tuning is not overly aggressive\n\n\\- but the cooler still scales extremely well with airflow\n\nDownside:\n\n\\- absolutely gigantic size (360 mm)\n\nBut unlike many oversized cards:\n\n\u00abthe Mercury actually justifies its dimensions thermally.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 XFX Swift\n\nProbably one of the most interesting cards in the entire roundup.\n\nExcellent NN score + huge Delta + excellent Compact Efficiency.\n\nMeaning:\n\n\\- relatively conservative stock tuning\n\n\\- very efficient cooler density\n\n\\- extremely strong airflow scaling\n\nThis thing could become an absolute monster in:\n\n\\- deshroud builds\n\n\\- SFF airflow-focused setups\n\n\\- high-airflow custom configurations\n\nEspecially considering its more reasonable size compared to the Mercury/Quicksilver.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 ASUS Prime\n\nSurprisingly strong cooler efficiency despite its \u201cmid-tier\u201d reputation.\n\nAlso:\n\n\\- one of the easiest cards to deshroud\n\n\\- fan shroud removes very easily\n\n\\- minimal teardown required\n\nVery interesting for:\n\n\\- deshroud mods\n\n\\- SFF builds\n\n\\- low-noise airflow optimization\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 Sapphire PURE vs PULSE\n\nAfter comparing:\n\n\\- PCB photos\n\n\\- dimensions\n\n\\- thermal behavior\n\n\\- BIOS differences\n\n\u2026I\u2019m fairly convinced they are basically the same card underneath.\n\nSame PCB.\n\nSame heatsink.\n\nSame dimensions.\n\nThe PURE mainly adds:\n\n\\- ARGB\n\n\\- slightly more aggressive BIOS/fan tuning\n\nSo:\n\n\u00abPURE \u2248 PULSE + RGB + mild factory OC\u00bb\n\nTheir very similar NN behavior strongly supports this.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83e\udd14 Why I think reviewers underuse their own data\n\nMost reviews stop at:\n\n\\- stock thermals\n\n\\- stock acoustics\n\n\\- FPS\n\nBut the REALLY interesting stuff is often hidden in the relationships between variables:\n\n\\- airflow scaling\n\n\\- cooling density\n\n\\- noise sensitivity\n\n\\- efficiency per size\n\n\\- deshroud potential\n\n\\- sustained boost behavior\n\nOnce you start crossing the data instead of reading charts individually:\n\n\u00abthe rankings and conclusions change completely.\u00bb\n\nVRAM temps can absolutely vary depending on:\nSamsung vs Hynix memory\npad mounting pressure\nthermal pad variance\neven production revisions over time\nSo the VRAM part of the NN score is not a perfectly controlled variable.\nThat said, I still think the overall trends remain meaningful because the score combines:\nGPU temp\nhotspot\nVRAM\nVRM\n\u2026rather than relying on VRAM alone.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\nSorry to everyone who already commented on the previous post \u2014 I had to repost it because the image quality/formatting were not good enough and the XFX Mercury was missing.\n\nAlso:\n\n\\- the PowerColor Reaper is missing because it was not included in TechSpot\u2019s RX 9070 XT roundup data.\n\nBig thanks as well to the people in the previous thread.\nSeveral comments genuinely helped improve the updated version of the post.",
+      "upvotes": 432,
+      "classifyThis": true,
+      "relevance": "include",
+      "relevanceReasoning": null,
+      "sentiment": "neutral",
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ontm91r",
+          "text": "Lots of data and a great summary post. I have had the ASUS Prime since release day and have found it to be a great card along my journey the last 8 or so years of bouncing back and forth. Between AMD and Nvidia. I\u2019ve mostly went with PNY or ASUS cards. \n\nRX 580 &gt; 3060ti &gt; 3080 &gt; 4070 &gt; 9070XT",
+          "upvotes": 47,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "1-sentence explanation",
+          "sentiment": "neutral",
+          "sentimentReasoning": "1-sentence explanation",
+          "replies": [
+            {
+              "commentId": "onto3oj",
+              "text": "That's my personal favourite as well. Compact, easy for deshroud mod and think a good potential of cooling once modded.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment is about a specific product, which is a positive sentiment.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The comment expresses a positive sentiment about the product.",
+              "replies": [
+                {
+                  "commentId": "onu8alu",
+                  "text": "Will flash my Prime to a Tuf eventually, same PCB used. ",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The product is a high-performance graphics card with a powerful GPU, making it suitable for gaming and video editing.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user expresses excitement and confidence in the product's performance.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ontzyav",
+              "text": "I did similar than you in terms of upgrade haha\nRx 480 xfx gtr -&gt; msi 3070-&gt; xfx swift white 9070xt\n\nForeeever ago Used to have an nvidia 8600gt ft xfx cca 20 years ago as well. Was one of my first gaming gpus i can remember. Never had any issues with cooling or build quality\n\n",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "1-sentence explanation",
+              "sentiment": "neutral",
+              "sentimentReasoning": "1-sentence explanation",
+              "replies": []
+            },
+            {
+              "commentId": "ontzxuw",
+              "text": "What is your general memory temperature with the Prime 9070XT? I noticed my card is on the higher end when idle (60-70) and around (80-90) when gaming",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment does not provide enough information to determine relevance.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "onu0mal",
+                  "text": "I\u2019ll look later. Will favorite post to get back to you. ",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "1-sentence explanation",
+                  "sentiment": null,
+                  "sentimentReasoning": "1-sentence explanation",
+                  "replies": [
+                    {
+                      "commentId": "onu39kc",
+                      "text": "Thank you! ",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The AMD Radeon RX 9070 is a powerful graphics card that can handle demanding tasks.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user expresses gratitude for the product.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "onuh8wk",
+                  "text": "That's quite normal during gaming. I found that buying 2 fans to place at the bottom of the case (to hit the GPU as the recommended case airflow anyways) lowered the temp by 5-8 degrees",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment is about a specific product, which is relevant to the topic of PC hardware.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The comment suggests that the user is satisfied with the product, as they found a solution to a common issue (high temperatures) by adding fans to the case.",
+                  "replies": [
+                    {
+                      "commentId": "onuny8e",
+                      "text": "This is good to know because adding a couple more fans to the bottom of my case was my next step. ",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The AMD Radeon RX 9070 is a powerful graphics card that can enhance the performance of your PC.",
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "onv3peo",
+                  "text": "Also it depends if your card has SX Hynix (bit warmer) or Samsung (bit cooler).",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment is relevant because it provides information about the performance of the product.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The comment is positive because it suggests that the product is performing well.",
+                  "replies": [
+                    {
+                      "commentId": "onviv5o",
+                      "text": "I found out shortly after my second post that it\u2019s Hynix through gpu-Z. I understand why now it runs a tad bit hotter ",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "1-sentence explanation",
+                      "sentiment": null,
+                      "sentimentReasoning": "1-sentence explanation",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "onutaz4",
+              "text": "What made you go from the 3080 to 4070 out of curiosity? Seems like a sidegrade?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The user is curious about the performance improvement from the 3080 to the 4070",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user is excited about the performance improvement",
+              "replies": [
+                {
+                  "commentId": "onuu1ei",
+                  "text": "If memory serves, I had a non LHR 3080 and sold it for a mint. DLSS on the 40x0 was better for Microsoft Flight Simulator plus the cash in hand. ",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user's experience with the AMD Radeon RX 9070 is positive, as they sold their previous graphics card for a good price and found the DLSS to be superior for their needs.",
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "onydvi5",
+              "text": "Thats a solid upgrade path. The 9070 XT seems like a nice sweet spot. How's the coil whine on that Asus Prime? Been eyeing one but heard mixed things about their quality control lately.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment is relevant because it discusses a specific product and its features.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The comment expresses a positive sentiment towards the product, as it is seen as a solid upgrade path and a nice sweet spot.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ontrrde",
+          "text": "Only thing I would add is be careful just adding up all the temps. The XFX cards in the tests all came with Samsung memory, which runs like 10 degrees cooler vs the Hynix.\n\nFor the Reaper you can check the Hardware Unboxed videos. The second comparison with the 16 cards includes it. It is the same data as from the website.",
+          "upvotes": 24,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment provides valuable information about the performance of the AMD Radeon RX 9070 compared to other cards. It mentions the importance of considering the type of memory used, as well as the temperature differences between different types of memory. This information is relevant to the discussion of the product's performance.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The comment provides useful insights and recommendations for users, which can be seen as a positive aspect.",
+          "replies": [
+            {
+              "commentId": "onxg49o",
+              "text": "He would've known that if he didn't use AI to write his post. \n\nThe entire post is invalid because he didn't account for memory manufacturer differences.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment is relevant because it discusses a specific product and its features.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The comment is positive because it praises the product's performance.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onu0eve",
+          "text": "Did you account for differences in VRAM? Hynix is 10-15\u00b0C hotter than Samsung and that alone would f up your NN score.  \nTwo cards, one with Samsung and one with Hynix memory, will result in a completely different score.   \nWhen we look at the XFX Quicksilver the difference between Samsung and Hynix could change the place from 1 to 3 for example. Same with the Red Devil. When your card has Hynix and you swap to Samsung the card could jump from 4 to 2.  \nWithout the data which memory a card has the whole table you created is flawed.\n\nI have the Red Devil with Samsung memory and even OCed to 2718MHz and a fanspeed \\~1100rpm and my memory is cooler than the card from Techspot with stock settings. My memory sits at 78\u00b0C in a 25\u00b0C room.",
+          "upvotes": 29,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "1-sentence explanation",
+          "sentiment": null,
+          "sentimentReasoning": "1-sentence explanation",
+          "replies": [
+            {
+              "commentId": "onufued",
+              "text": "This. \n\nIt's skewed to one sample per vendor. Not a realistic comparison of real world variance between cards. ",
+              "upvotes": 10,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "1-sentence explanation",
+              "sentiment": null,
+              "sentimentReasoning": "1-sentence explanation",
+              "replies": []
+            },
+            {
+              "commentId": "onuchvt",
+              "text": "My gigabyte gaming oc with hynix memory sits at 80c on vram under load (25c room 50% humidity). Now, I may have drowned the pcb with putty and running decent 120mm fans on a deshroud mod, but hey, at least it's both cool and I can't hear it anymore\u2026 :D",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment is about a specific product, the AMD Radeon RX 9070, and it mentions the product's performance and the user's experience with it. This is relevant to the product and its performance.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The comment expresses satisfaction with the product's performance and the user's experience with it.",
+              "replies": [
+                {
+                  "commentId": "onwz5ih",
+                  "text": "mine is max 85 stock at 100% load and I cant hear it in sub10l case so it depends on the memory. ",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "1-sentence explanation",
+                  "sentiment": null,
+                  "sentimentReasoning": "1-sentence explanation",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "onwummb",
+              "text": "Backwards... Hynix performs about 8% faster",
+              "upvotes": -1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Hynix's performance is not significantly better than AMD's",
+              "sentiment": null,
+              "sentimentReasoning": "No sentiment expressed",
+              "replies": [
+                {
+                  "commentId": "onxa1x6",
+                  "text": "Hynix is not 8% faster. 8% is when you account for fast timings and OC. At stock the difference is way smaller at \\~1-3% but for this discussion it doesn't even matter. The NN score is purely temperature based and temperature wise Samsung is way better.  \nBeside that, i would never ever recommend to bring OC in a performance discussion because it is an uncontrollable variable. 2 exakt same cards can OC completely different. One could OC like crazy and you reach 2900MHz with fast timings and the other can't even get 20MHz OC on the memory without fast timings.  \nThe only reason why i bring my OCed VRAM into this discussion is to show that the NN score is flawed because we have the differences in memory vendors.  \nI also saw Hynix cards with memory temps near 100\u00b0C. That is over 20\u00b0C difference between OCed Samsung and stock Hynix. Hynix is fast yes but the temperature is scary high i wouldn't trust that the memory will not die in the next 5 years.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The AMD Radeon RX 9070 is a high-performance graphics card that offers excellent performance and value for money. It is a great choice for gamers and professionals who require high-quality graphics capabilities.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The AMD Radeon RX 9070 is a top-notch graphics card that delivers outstanding performance and value for money. It is an excellent choice for gamers and professionals who require high-quality graphics capabilities.",
+                  "replies": [
+                    {
+                      "commentId": "onxg87g",
+                      "text": "Oh no, my memory is at 100 degrees... Just buy a case with proper airflow.\n\nAlso, this is heat/performance. You want your gpu to do actual things instead of just sitting pretty and chilling.",
+                      "upvotes": 0,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment is relevant because it mentions the product's performance and overheating issues.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The comment is positive because it acknowledges the product's performance and the user's desire for it to do more.",
+                      "replies": [
+                        {
+                          "commentId": "onxlp2r",
+                          "text": "No it is not and you clearly have issue to understand what others say.",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "The comment is about a specific product, which is relevant to the topic.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The comment is sarcastic and critical of the product.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ontquc9",
+          "text": "My steel series goes \ud83d\udd25\ud83d\udd25compared to the rest.\n\n\nBut hey, 2x8.\u00a0\n\n\n\n\n",
+          "upvotes": 6,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "1-sentence explanation",
+          "sentiment": null,
+          "sentimentReasoning": "1-sentence explanation",
+          "replies": []
+        },
+        {
+          "commentId": "onwujhi",
+          "text": "You ignored wattage didn't you?",
+          "upvotes": 6,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment is about the product's power consumption, which is a relevant factor for PC hardware consumers.",
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oo3b425",
+              "text": "Hi, there is no wattage mesure in the Techspot review. But it will be very interesting. ",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "UserBenchmark's benchmarks are not reliable",
+              "sentiment": null,
+              "sentimentReasoning": "UserBenchmark's benchmarks are not reliable",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ontxk42",
+          "text": "I'm confused about the quicksilver praise.  Of course it had good thermals.  It was the lowest clock ",
+          "upvotes": 9,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "1-sentence explanation",
+          "sentiment": null,
+          "sentimentReasoning": "1-sentence explanation",
+          "replies": []
+        },
+        {
+          "commentId": "onu0iim",
+          "text": "Where is my ASRock Challenger\n :(",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The ASRock Challenger is not a valid product name.",
+          "sentiment": null,
+          "sentimentReasoning": "The sentiment cannot be determined as the product name is not valid.",
+          "replies": []
+        },
+        {
+          "commentId": "onu266x",
+          "text": "The issue is HWU didn't normalize for power draw so the data isn't really useful\n\nalso it is only noise normalized at one point",
+          "upvotes": 5,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is not relevant to the product",
+          "sentiment": null,
+          "sentimentReasoning": "The comment does not provide enough information to determine sentiment",
+          "replies": []
+        },
+        {
+          "commentId": "ontygvt",
+          "text": "Can vouch for the sapphire nitro plus, I\u2019ve got a very nice undervolt on it and temps are really good, fans are quiet too",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment is about a specific product, the AMD Radeon RX 9070, which is a graphics card. This is relevant to the topic of PC hardware consumer sentiment.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The comment expresses satisfaction with the product, specifically praising its performance and cooling capabilities.",
+          "replies": [
+            {
+              "commentId": "onuk9y4",
+              "text": "Same excellent card",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The card is not a good choice for the user's needs",
+              "sentiment": null,
+              "sentimentReasoning": "The card's performance is not as good as other options in the market",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onu0oaf",
+          "text": "Isn\u2019t the mercury 3x8 pin ",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment does not provide enough information to determine relevance.",
+          "sentiment": null,
+          "sentimentReasoning": "The comment does not provide enough information to determine sentiment.",
+          "replies": [
+            {
+              "commentId": "onu59fu",
+              "text": "i believe there's a oc and non oc mercury, the oc has 3, the regular has 2",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment does not provide enough information to determine relevance.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onu117l",
+          "text": "Hmmm... I wonder how my PowerColor Reaper 9070xt modification would compare to the other cards.\n\nI replaced the three 90mm fans for two 120mm fans, plus repaste plus new pads.\n\n[https://imgur.com/a/0TYm1uQ](https://imgur.com/a/0TYm1uQ)",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The user is asking about the performance of their modified PowerColor Reaper 9070xt, which is a high-performance gaming PC. This is relevant to the topic of PC hardware consumer sentiment.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is expressing excitement about the performance of their modified PC, which is a positive sentiment.",
+          "replies": [
+            {
+              "commentId": "onu4nev",
+              "text": "Ship it to op in this case if you're curious",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a sarcastic remark about the product, implying that it is not worth purchasing.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "onw03q7",
+              "text": "nice , have your temps dropped?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment is about a product, which is relevant to the topic.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The comment is positive because the user is expressing satisfaction with the product.",
+              "replies": [
+                {
+                  "commentId": "onyya7a",
+                  "text": "of course... \n\nHotspot never reaches a temp higher than 91\u00b0C, Vram at max 95\u00b0C\n\nBefore that, the Reaper reached 105\u00b0C Hotspot, Vram wasn't much cooler",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The product is a high-performance graphics card with impressive specifications.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The product's high-performance capabilities and impressive specifications contribute to a positive sentiment.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "onw3e1b",
+              "text": "I bet that did wonders for the sound.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "UserBenchmark's benchmarks are unreliable and often manipulated.",
+              "sentiment": null,
+              "sentimentReasoning": "UserBenchmark's benchmarks are unreliable and often manipulated.",
+              "replies": [
+                {
+                  "commentId": "onx2jpf",
+                  "text": "since I installed 2x Bequiet Silent Wings 4 120, I can't hear anything below 80% speed. 100% fan speed sounds like a hum, not like three baby banshees crying for their mom \\^\\^",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment is relevant because it mentions the product's performance and the user's experience with it.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user expresses satisfaction with the product's performance.",
+                  "replies": [
+                    {
+                      "commentId": "onyoca5",
+                      "text": "You've given me my next project lol. Thanks!",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment does not provide enough information to determine relevance.",
+                      "sentiment": null,
+                      "sentimentReasoning": "The comment does not provide enough information to determine sentiment.",
+                      "replies": [
+                        {
+                          "commentId": "onyxona",
+                          "text": "you are welcome ;)\n\n",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "1-sentence explanation",
+                          "sentiment": null,
+                          "sentimentReasoning": "1-sentence explanation",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "onvbw5c",
+          "text": "These cards don't come with the same power limits out the box. Not having this information throws everything into question. \n\nIf you own any amd card and tune and play around it you will see the clocks+power have big influence on the hot spot temps... mainly because you simply can't get the heat out even if you have monster sized air cooler. \n\nHot spots will get hot with higher core clocks, not that it is a big deal for everyone but it is what it is.\n\n\nSo don't try to read too much into precise readings because there is a big elusive variable.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment is relevant because it discusses the performance and power of the AMD Radeon RX 9070, which is a key factor in determining the card's overall performance and user experience.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The comment expresses a positive sentiment towards the AMD Radeon RX 9070, as it acknowledges the importance of performance and power in determining the card's overall performance and user experience.",
+          "replies": []
+        },
+        {
+          "commentId": "onuuj1m",
+          "text": "This seems like it was needed back when I ran a 6800XT. Routine temps to 80C during gaming in a high airflow case.\n\nMy ASUS PRIME 9070XT usually runs 55-63C and virtually silent compared to case fans in the same exact environment.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The product is a high-performance graphics card that can handle demanding tasks such as gaming and video editing. It is known for its high temperatures and noise levels, which can be a drawback for some users.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment does not express a strong positive or negative sentiment towards the product. The user acknowledges the product's high performance but also mentions the drawbacks of high temperatures and noise levels.",
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,13 +1,13 @@
 {
   "productName": "sk-hynix-platinum-p41",
   "batchIndex": 3,
-  "totalBatches": 6,
+  "totalBatches": 5,
   "comments": [
     {
       "commentId": "v3g8jk",
       "text": "SK Hynix Platinum P41 2 TB Review - Faster than Samsung and WD",
       "upvotes": 165,
-      "classifyThis": true,
+      "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
       "sentiment": null,
@@ -17,16 +17,16 @@
           "commentId": "iay9v9m",
           "text": "They're all fast enough.  Its the other stuff that matters.\n\nSK Hynix's previous model was known for its excellent power efficiency, and was a top choice to put into laptops.  This review doesn't discuss power draw and sleep states anywhere that I can see.  Neat that its fast  but the review completely skips over the single selling point (is it still super efficient compared to competitors?) that would make me choose this over my goto samsung.",
           "upvotes": 103,
-          "classifyThis": true,
+          "classifyThis": false,
           "relevance": null,
           "relevanceReasoning": null,
           "sentiment": null,
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "iaybfmi",
-              "text": "Most of the time the \"speed\" these companies advertise is pure sequential anyways which isn't really useful as a metric at this point. SSDs excel at random access and that has largely stayed fairly stagnant at the lower que depths.",
-              "upvotes": 48,
+              "commentId": "iayaczn",
+              "text": "I don't remember where I read it but early reports state it's not very efficient. Which makes sense, the P31 Gold was efficient because it used a 4 channel controller while this one uses an amped up 8 channel.",
+              "upvotes": 4,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -34,9 +34,9 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "iayctp8",
-                  "text": "Yep, for random access its either optane, or again all SSD controllers are roughly the same with maybe a *bad* outlier or two.\n\nAt today's baseline, if a difference in sequential speeds would make an every-day difference to you, you'd be looking at reviews of DAS solutions targeted for prosumer+ photography/videography, not individual drives.\n\nI'm not really sure who these reviews are meant for.  You could make it two paragraphs with SLC cache size and other non-advertised parameters, one speed chart of a long full-drive sequential to display garbage collection/throttling/cache,  and say \"everything is otherwise normal\" and include a $/gb and call it a day.",
-                  "upvotes": 36,
+                  "commentId": "iaybb7q",
+                  "text": "Makes sense.\n\nAnd a two sentence reddit comment from Random Internet Guy tells me more useful information regarding my own product purchasing decisions than a 17 \"page\" review.\n\nRIP anandtech.",
+                  "upvotes": 18,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -44,9 +44,43 @@
                   "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "iayhuwu",
-                      "text": "Yeah I'm in the same camp. I have a 970 Evo, and have zero desire to upgrade to another SSD for more sequential speeds. Only reason to upgrade is for more storage space. I've looked into getting an Optane 905p as an upgrade, since there will be actual meaningful improvements for my workloads, but the price per GB is just too high for consumers.",
-                      "upvotes": 10,
+                      "commentId": "iazah12",
+                      "text": "Well, assuming it's correct...",
+                      "upvotes": 9,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "ib64j8s",
+                      "text": "Unfortunately reviewers don't get paid a lot and, further, most sites are probably pushing for digestible information anyway. Billy at AnandTech was extremely good but he often had to write separate articles to cover technical information, plus he's now at greener pastures. I share your feels.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "iayly95",
+                  "text": "It uses a 4 channel controller\n\nhttps://www.storagereview.com/news/sk-hynix-platinum-p41-pcie-gen4-ssd-announced?amp\n\n\nWe don\u2019t know about efficiency yet because toms hardware hasn\u2019t reviewed it and most reviewers don\u2019t have equipment to be able to separate ssd power draw from system power.",
+                  "upvotes": 13,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "iayppnl",
+                      "text": "Huh interesting. A quick google sent me to Tweaktown who's review stated the Plat's controller was 8 channel.",
+                      "upvotes": 3,
                       "classifyThis": true,
                       "relevance": null,
                       "relevanceReasoning": null,
@@ -54,9 +88,9 @@
                       "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "ib03me2",
-                          "text": "Getting a used 800p and set it up as a cache device (think primocache) will yield most of the benefits. You might want to tweak it to emphasize metadata.\n\nThis won't be night/day though. Even a p5800x won't be night/day.",
-                          "upvotes": 3,
+                          "commentId": "iazapja",
+                          "text": "https://www.anandtech.com/show/17393/sk-hynix-releases-platinum-p41-ssd-going-even-faster-with-pcie-4-and-176l-nand also says  4 channel.",
+                          "upvotes": 5,
                           "classifyThis": true,
                           "relevance": null,
                           "relevanceReasoning": null,
@@ -64,9 +98,9 @@
                           "sentimentReasoning": null,
                           "replies": [
                             {
-                              "commentId": "ib12x05",
-                              "text": "&gt; This won't be night/day though. Even a p5800x won't be night/day.\n\nCan confirm. Even with a 905P it wasn't a *massive* shift. At some point Windows is the bottleneck due to how Explorer manipulates large numbers of small files.\n\nBut I'd still never go back. Which is going to make things a bit awkward once we're in the PCIe 5 era of SSDs.",
-                              "upvotes": 5,
+                              "commentId": "iazz5t9",
+                              "text": "The TechPowerUp review itself says eight channel, so there does seem to be a bit of confusion around the Aries controller. It is worth noting that the P41/Platinum was originally intended to ship quite some time ago (and indeed, the P31 Gold was at one point supposed to be labeled as Platinum), so some sites may be going off of older documentation, or SK Hynix themselves may have shifted specifics on what they ultimately ended up using.\n\nTPU:\n\n&gt;Internally, the Hynix Platinum P41 uses only in-house components made by Hynix\u2014an important competitive advantage. As the controller, Hynix uses an in-house developed ACNS075 also known as \"Aries.\" It uses **eight flash channels** and has support for NVMe version 1.4, and of course PCI-Express 4.0. \n\nTweakTown:\n\n&gt;The Platinum P41 2TB is a preferred single-sided design featuring a two-package flash array composed of SK hynix 176-layer flash behind an **8-channel SK hynix 8-channel Aries** controller, and 2GB SK hynix LPDDR4 DRAM. This is the ideal configuration for maximum compatibility and power efficiency while delivering full Gen4 throughput.  \nRead more: https://www.tweaktown.com/reviews/10110/sk-hynix-platinum-p41-2tb-ssd-the-best-yet/index.html\n\nServe The Home:\n\n&gt;The SK hynix Platinum P41 bundles 176-layer TLC NAND with SK hynix\u2019s new \u201cAries\u201d controller. Like the P31, the controller on the P41 **appears to be a 4-channel design** while most other high-end SSD controllers are 8-channel. Also included is a DDR4 DRAM cache, with the 1TB drive featuring 1GB of cache.\n\n&amp;#x200B;\n\nQuasarZone, NotebookCheck and StorageReview also have coverage, but do not specifically make mention of the controller beyond its Aries moniker.",
+                              "upvotes": 8,
                               "classifyThis": true,
                               "relevance": null,
                               "relevanceReasoning": null,
@@ -74,8 +108,147 @@
                               "sentimentReasoning": null,
                               "replies": [
                                 {
-                                  "commentId": "ib2ut30",
-                                  "text": "&gt; Can confirm. Even with a 905P it wasn't a massive shift\n\nI'm using an optane drive (large 900p) that I got on ebay at a firesale price...\n\nLike, it's nice but I don't really appreciate it. \n\nIf I had it to do over again, I probably would've gotten a smaller optane drive and just used primocache or LVM cache. \n\n\nI definitely appreciate the $80ish 800p that I slapped in my NAS though. Nearly all of my hits to that drive are either from RAM or from that optane drive. Well, the ones that aren't already cached on my desktop's optane drive. \n\n----\n\n&gt;At some point Windows is the bottleneck\n\nIt's a bit philosophical but getting data into memory in the proper format is often the limit. \n\nI'd love it if windows or linux or whatever just did a better job of automatically caching regularly used blocks into RAM. Why not toss most metadata associated with files into RAM if you have 32GB or 64GB of RAM? (for what it's worth ZFS does this)\n\nOr gasp... having a \"small\" 32GB or so optane stick that acts as a persistent page file",
+                                  "commentId": "ib63nvr",
+                                  "text": "It's 8-channel. If the bus is 1600 MT/s, you need 8 channels to saturate x4 PCIe 4.0. You also won't have the parallelization for 1.4M IOPS with 4 channels with current gen controllers. Some reviews made an assumption one way or the other - I know all 3 of the reviewers and STH went off AnandTech I imagine (which was based on older information). Jon at TT made the assumption based on performance (it's pretty obvious) at least.\n\nIt's possible to make other guesses about the Aries based on the performance and other characteristics.",
+                                  "upvotes": 2,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                },
+                                {
+                                  "commentId": "ib5muhd",
+                                  "text": "&gt; The TechPowerUp review itself says eight channel\n\nLets be honest, I trust Ryan Smith doing the math on layer and package count over a \"review\" showing a two-screen-tall listing of  Doom level load times that vary by +/- 0.1 seconds.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "ib63bni",
+                                      "text": "It's 8 channel. You can't saturate x4 PCIe 4.0 with a 4 x 1600 MT/s bus. You're also not hitting 1.4M IOPS with 4-channel interleaving at this time.",
+                                      "upvotes": 2,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "ib648vf",
+                          "text": "Yeah, I do know Jon, and from what I understand when asked about it (days ago) he stated it seemed pretty obvious. I agree with him. If the bus is 1600 MT/s (and not, say, 2400 MT/s), you cannot really saturate x4 PCIe 4.0 with just 4 channels. It would also be challenging to get that level of IOPS without more parallelization given the other characteristics of the controller and drive.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "iayxni6",
+                      "text": "4 channels , what does it mean ? that it could be incompatilbe with some pc ? pcie 3 ?",
+                      "upvotes": -3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "iayxxu0",
+                          "text": "Has nothing to do with compatibility or pcie3",
+                          "upvotes": 6,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "iaz2wag",
+                              "text": "k tnx",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "iazd17i",
+                          "text": "It's about internal connections between the controller and flash chips. It's predecessor (P31 Gold) was more power efficient than the competition by using only 4 channels instead of the usual 8.",
+                          "upvotes": 6,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "iazkvh4",
+                              "text": "I hear people talk about the number of channels that SSDs have, but what does having more or less of them actually do? Is there any benefit to have more?",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "iazm88m",
+                                  "text": "More channels allows for more potential parallelization, NAND connections and greater sequential throughput (depending on channel bandwidth), but it generally also leads to more complex controllers, boards and higher power. Basically the same issues with lots of DRAM channels.\n\nIf it's late enough in the development cycle, some drives can manage to max out the PCIe limit with fewer channels and faster NAND; a later controller design on a newer, more efficient node can also contribute to savings.",
+                                  "upvotes": 3,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "ib62sox",
+                                      "text": "&gt; If it's late enough in the development cycle, some drives can manage to max out the PCIe limit with fewer channels and faster NAND\n\nHigher bus speeds, yeah. Some sites were saying this was a 4-channel design which is clearly not the case. You'd need up to a 2400 MT/s bus to saturate x4 PCIe 4.0 but, further, you need the parallelization of 8 channels to get up to 1.4M IOPS with current controllers. It's possible to max out with slower flash, though - the E18s started with 800 MT/s B27B (versus 1200-1600 MT/s B47R) and the 8TB Sabrent Rocket 4 Plus is using 1200 MT/s BiCS5. (also, as specced, the P31 had a 1200 MT/s bus but the flash was rated 1066 MT/s originally; not sure what they ended up with)",
+                                      "upvotes": 2,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "ibabuas",
+                                          "text": "Alright, thanks for the info. I suspected that if it was a 4-channel design, it wouldn't get as hot as the reviews showed, I don't expect a large power advantage this time.",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "commentId": "iazq6gh",
+                                  "text": "It's kinda like CPU cores. More can be better if all else is the same, but it isn't itself enough to judge controllers by.",
                                   "upvotes": 1,
                                   "classifyThis": true,
                                   "relevance": null,
@@ -91,239 +264,8 @@
                       ]
                     },
                     {
-                      "commentId": "ib16by7",
-                      "text": "These reviews are all about marketing. In truth there's been some minor improvements to speed over the years (mostly in sequential, but random access has seen some improvements too over the years, albeit much less). The real benefit/change in SSD is the change in interface (the jump from sata was significant imo), the overall storage size, and the $/GB. I remember my first SSD I bought was like 100 GB, and that wasn't the cheap model either.\n\nHowever, it got to the point where SSDs are in an okay spot size wise. Most consumers can now buy a 1tb/2tb drive, and that's all they need (most consumers aren't going to have many TB's of media, game, files, etc.) And if they need storage, hard drives are probably the better product for them.\n\nSo they need to get their model to stand out. \"Why should you buy THIS 2 TB drive\". The problem is, they can't talk about stuff like dram, controller, etc, otherwise that will make their cheaper products look REALLY bad. It's best that consumers don't know that the cheap drive they bought doesn't have dram or has a really bad controller prone to failure... But talking about speed, now there's a safe, harmless way to advertise your SSD product.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                },
-                {
-                  "commentId": "ib03g9k",
-                  "text": "For what it's worth 4K QD1 is actually improving. While optane (think p5800x) might max out at 400 MBPs when doing 4KQD1 work, something like a Samsung 980 Pro can hit around 90MBPs. \n\nSure the optane is 4x faster but older SATA SSDs were doing like... 30.\n\nNow, this does degrade if you're doing concurrent writes but there certainly has been improvement - a half order of magnitude.",
-                  "upvotes": 10,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "iaz07yu",
-                  "text": "But will direct Storage have an impact on this since it's being made targeting SSDs.",
-                  "upvotes": 4,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "iazaab6",
-                      "text": "No.  If anything, nvme sequential dickwaving matters even less because your total transfer is hard-limited to a portion of your VRAM.",
-                      "upvotes": 8,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "ib04xxc",
-                          "text": "Can you explain this in more detail? I don\u2019t understand",
-                          "upvotes": 10,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "ib1jecw",
-                              "text": "Read up on what DirectStorage does again.",
-                              "upvotes": -4,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": [
-                                {
-                                  "commentId": "ib1l5nn",
-                                  "text": "Pretty sure they are more or less asking why you believe that your vram / usage of your vram will be the bottleneck.",
-                                  "upvotes": 8,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": [
-                                    {
-                                      "commentId": "ib1r8xu",
-                                      "text": "Right, they don't understand what directstorage does, the problems it solves, and where those solutions are most effective/actively being used.\n\nThere is a whole cult of \"directstorage is the next coming of christ\" that stemmed off  the console wars debate because the playstation ssd had faster sequential (at a huge tradeoff of other things due to proprietary hardware design, but here we are again,  jerking off over sequential), and I really have no interest in diving into that, **again.**\n\nhttps://docs.microsoft.com/en-us/gaming/gdk/_content/gc/system/overviews/directstorage/directstorage-overview\n\nThats a decent overview.  Go find some devblogs of how and where its used in games if you need more.",
-                                      "upvotes": -1,
-                                      "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
-                                      "replies": [
-                                        {
-                                          "commentId": "ib1vbxk",
-                                          "text": "Kinda seems like you are expecting people to do a lot of footwork with the assumption they'll come to the same conclusions as you rather than answering the question simply when doing so would require the same amount of effort as this comment took to type.\n\nIt kinda comes across as either arrogance or as if you don't really have basis for what you said as you didn't either post that previous conversation, something directly relevant or a simple explanation.\n\n[Nevertheless, I went searching imagining that with the level of confidence you espoused here it would be easy to find. What I did find was to find an article which talks about the workloads in play\n](https://compusemble.com/insights/home/the-next-gen-gaming-workload-and-directstorage-microsoft-is-making-a-push-to-make-the-full-feature-suite-of-this-technology-available-to-developers-in-2022).\n\nFor the benefit of /u/reddit_hater Im just pinging them here with the message to ctrl-f sequential.\n\nThe thing is though, this explanation says absolutely nothing about VRAM being the limitation and instead refers to use case, which isn't what your comment talked about. In fact, the fact that its high QD would make it even more likely that its storage limited rather than VRAM limited.\n\nSo I'm actually left still wondering what you meant by \"your total transfer is hard-limited to a portion of your VRAM.\" especially given that VRAM will still be at least an order of magnitude faster than storage which would still indicate that storage is the bottleneck.\n\nNo one is going to spend tons of time searching the web to prove someone's comment right. Its up to the person making the comment to at least include relevant information, which a direct storage overview definitely is not.",
-                                          "upvotes": 7,
-                                          "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
-                                          "replies": []
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "commentId": "ib1pczy",
-                          "text": "But DirectStorage should increase the QD, no?",
-                          "upvotes": 3,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "ib657mz",
-                              "text": "Ideally, yes. Phison's presentation suggested 32+ and possibly up to QD512 (e.g. Q32T16). (the other user above is talking about sequential when it's more about bandwidth - these are random reads)",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "commentId": "ib3uapb",
-                  "text": "&gt;lower que depths\n\nQueue, not \"que\".",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "ib04ure",
-              "text": "Every single one of the reviews of come out for this drive has neglected to mention the power consumption numbers, it\u2019s very frustrating. I can only hope that toms hardware, which I still haven\u2019t seen a review come out from, will go over this, that\u2019s who did it last time.",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "ib65499",
-                  "text": "&gt;  I can only hope that toms hardware, which I still haven\u2019t seen a review come out from, will go over this, that\u2019s who did it last time.\n\nTH review appears to be out now. Their power testing isn't super complex, though.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "ib0726w",
-              "text": "The lack of thermal throttling tells me it doesn't consume a lot of power.\n\nI don't need PCIe gen 4.  I'd be happy with discount on P31 Gold.",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "iayi2le",
-              "text": "Is efficiency really that important on an SSD? I'm kinda surprised that it's a big enough difference between SSDs to warrant choosing one over another. Since the SSDs probably won't be heavily loaded as often as the CPU or GPU will be, what makes it a big deal?\n\nAlso, as a follow up question - is there any efficiency difference between certain types of SSDs? E.g. DRAM vs no DRAM, 1TB vs 2TB, 2240 vs 2280, PCIE 3 vs 4, etc.",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "iaz6jnt",
-                  "text": "&gt; what makes it a big deal\n\nIts what differentiates itself from other drives.  Less power also means less heats.\n\nThe P31 had power states from 2-6 watts.  Thats not a trivial amount, and its also pretty low.  \n\nhttps://www.anandtech.com/show/16012/the-sk-hynix-gold-p31-ssd-review/7\n\nAnd you can see that the WD Black SN750,  while being a really popular desktop drive at the time, would make a poor laptop drive.  In a desktop, it never drops to a truly low power mode.  In a laptop, it drops down to low power, so no problems, right?  Wrong--It actually takes 50ms to wake back up from that low power, so its no wonder they leave it at higher power states when used in a desktop!\n\n*Actual* testing is what is needed to reveal this kind of controller behavior.  Running benchmarks is great but it doesn't reveal important characteristics.  nvme has matured to where you could categorize performance into 2-3 buckets and its this this little stuff that actually separates them.",
-                  "upvotes": 18,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "ib64y6j",
-                      "text": "&gt; The P31 had power states from 2-6 watts.  Thats not a trivial amount, and its also pretty low.\n\n[P41](https://i.imgur.com/p42PRFI.png). (2TB)\n\n&gt; Its what differentiates itself from other drives. Less power also means less heats.\n\nEfficiency matters with everything, in my opinion, but yeah - less power and less heat is particularly important with laptops.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                },
-                {
-                  "commentId": "iayo4qb",
-                  "text": "It\u2019s not really that important, but it\u2019s one of the only things that separates drives in this part of the market. Two random drives in this sort of prosumer tier probably have similar enough I/O performance that you might as well pay attention to the other details like power consumption and durability.",
-                  "upvotes": 14,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "iaz5oe3",
-                  "text": "Power use, especially idle, can make a difference for laptops.",
-                  "upvotes": 18,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "ib64s2p",
-                      "text": "Based off [readings](https://i.imgur.com/p42PRFI.png) from a retail drive, this follows typical power states - if the laptop supports everything, most NVMe drives will fall into the same envelope. That being said, TH's review has the P41 being very efficient under load, although that's with a simplified file copy.",
+                      "commentId": "ib641ew",
+                      "text": "Looks like the TH review is out now, although their power testing is a bit simple/limited. For example, the 980 PRO when reviewed got pretty close to the P31 and we have the P41 beating the P31. Being able to finish the workload faster is factor.\n\n(and it does appear to be 8-channel)",
                       "upvotes": 1,
                       "classifyThis": true,
                       "relevance": null,
@@ -333,22 +275,35 @@
                       "replies": []
                     }
                   ]
-                },
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "iaz7x01",
+          "text": "As others alluded... pretty much all of these SSDs are \"fast enough\"\n\nIf you do need more speed, it's pretty much Optane as the only game in town - mostly because of its VERY low latency and ability to sustain performance during concurrent reads and writes (something usually NOT seen in reviews) meaning no 5-10x performance hit when the drive is under heavy, mixed use.",
+          "upvotes": 15,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ib059xu",
+              "text": "Is there like a website for me to check out the various octane drives and their specs? Or is this out of the question since it\u2019s enterprise stuff.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
                 {
-                  "commentId": "ib06p87",
-                  "text": "Along with the other comments here, it can also matter as far as heat output goes. A lot of the top tier SSDs tend to thermal throttle without heatsinks and a more power efficient SSD will be able to sustain higher loads for longer.",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "ib052pc",
-                  "text": "Power matters for laptop battery life.",
-                  "upvotes": 2,
+                  "commentId": "ib06vsg",
+                  "text": "Intel ARK?\n\nAt this point I just kind of memorized their main product lines.\n\nM10 - 16/32/64GB - 16GB part is lowest performance, also 64GB part is more like the 800p line                                 \n800p 58/118GB - note the 58GB 800p and 64GB M10 are basically the same and the capacity on the 64GB part is a lie. 118GB part is occasionally on ebay for around $100 (used to be $80)            \np4801x - 100GB - used to be able to get on newegg for like $70 refurbished.\n900/905p - 280GB up to 1.5TB            \np4800x - basically the same as the 900s\np5800x - faster than the 4800x, best on the market. EXPENSIVE. \n\nFor most people it's so expensive you should only consider it for caching or as a scratch device/page file device. $10ish for the 16GB sticks is fine. $40ish for the 32GB sticks is a dash more questionable. The 58GB parts don't make much sense any more. The 100ish GB parts are fine at around $100ish, I liked them more at $70-80. After that make the jump to the 280GB 900p for like $220. Hard to justify anything higher. I'd hope that the 280GB part is caching something like 20TB of data. \n\nAlso there's other things out there (e.g. p1600x) but I haven't done a deep dive.",
+                  "upvotes": 4,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -359,6 +314,119 @@
               ]
             }
           ]
+        },
+        {
+          "commentId": "iay8n8r",
+          "text": "Other than being an excellent performer, I'm interested in it for my next PC because I'm shallow as fuck and think the sticker on it looks really nice.",
+          "upvotes": 17,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ib04sqe",
+          "text": "WHERE ARE THE POWER CONSUMPTION NUMBERS\n\nI just wanna know if it\u2019s even close to the p31 in that regard",
+          "upvotes": 6,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ib62inp",
+              "text": "Based on the TH review, which is fairly simplified with a file copy test, it's a bit more efficient than the P31.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ib0vt9e",
+          "text": "Why do they not release these in europe? I might have bought a P31 if I could but they don't sell them anywhere afaik.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ib0n1jc",
+          "text": "My K 3000 still rocking hard",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ibfjd7m",
+          "text": "Stay Away from this brand, their warranty is nonexistent at least in my region",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ibfjn0f",
+              "text": "I don't know about US but , I would stay away from this company and get a WD or a Corsair SSD\n\n&amp;#x200B;\n\nCorsair they even sent me a prepaid label international shipping and shipped it to me in just 5 days\n\n&amp;#x200B;\n\nSK hynix want me to pay 70 bucks and use a forward company because they don't ship it directly to KSA",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ix7rtvh",
+                  "text": " &gt; SK hynix want me to pay 70 bucks and use a forward company because they don't ship it directly to KSA\n\nThanks for sharing your experience. I was gonna go with this instead of the 980 pro but I guess I might go with Samsung to avoid situations like this. ill wait and see.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "idijz6g",
+          "text": "No real warranty and they refuse to honor it. They have 3-5 consumer drives and 2 were awful and the other 3 are too new to judge long term reliance. \n\nStay away from this marketing junk.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "iqc1v9t",
+          "text": "What heat sink to buy with this",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         }
       ]
     }

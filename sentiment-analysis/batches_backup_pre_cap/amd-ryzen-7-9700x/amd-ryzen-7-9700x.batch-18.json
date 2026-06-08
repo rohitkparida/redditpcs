@@ -1,0 +1,751 @@
+{
+  "productName": "amd-ryzen-7-9700x",
+  "batchIndex": 18,
+  "totalBatches": 19,
+  "comments": [
+    {
+      "commentId": "1enb9wt",
+      "text": "AMD Ryzen 7 9700X review: YouTube hates this CPU",
+      "upvotes": 235,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "lh57npz",
+          "text": "I believe that Zen 5 will sell like hot cakes, not for gamers but for people needing fast AVX 512 processor for AI. Higher tier CPUs, threadripper ... This was designed market for this architecture.\nKitguru review is the best, I am disapointed that most reviewer tested under 88W limit and complained that performance is worse than 7700x running at 120w+.\nAlso DerBauer review was good.",
+          "upvotes": 46,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses Zen 5 processor for AI and AVX-512 performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a balanced perspective on Zen 5 performance.",
+          "replies": [
+            {
+              "commentId": "lh66f03",
+              "text": "Is AVX used that much for AI workloads? Which use cases are those (Im out of the loop on scalar codes doing AI stuffs)",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses AI workloads and AVX usage without mentioning AMD Ryzen 7 9700X.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lh75r51",
+                  "text": "Numpy, PyTorch and Tensorflow all natively supports AVX-512 at this point. If you have used any of those two (If you are doing AI I'm 100% sure you did) you definitely enjoyed the benefit from AVX-512",
+                  "upvotes": 12,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the performance benefits of AVX-512 in Numpy, PyTorch, and Tensorflow.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Presents a positive sentiment about the performance benefits of AVX-512.",
+                  "replies": []
+                },
+                {
+                  "commentId": "lh74neo",
+                  "text": "AVX512 is supposedly a game changer for on-CPU AI calculations. CPU based AI is far slower without AVX512.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the relevance of AVX512 for on-CPU AI calculations.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Presents a positive sentiment about the relevance of AVX512 for on-CPU AI calculations.",
+                  "replies": [
+                    {
+                      "commentId": "lh8p4pb",
+                      "text": "Don\u2019t people run inference for LLMs on gpu ? Is the avx thing really meaningful feature over the last gen ?",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the relevance of the \"avx\" feature in the context of inference on GPUs.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "Presents a relevant discussion about the \"avx\" feature and its potential impact on inference on GPUs.",
+                      "replies": []
+                    },
+                    {
+                      "commentId": "lh7dgf5",
+                      "text": "Will AVX512 on-CPU calculations rival GPUs?",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the potential of AVX512 on-CPU calculations to rival GPUs.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Presents a neutral perspective on the potential of AVX512 on-CPU calculations.",
+                      "replies": [
+                        {
+                          "commentId": "lh8fzob",
+                          "text": "Simply put, no, by a long shot",
+                          "upvotes": 9,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "lh9892c",
+                          "text": "Makes little sense for your average AI startup, but when you\u2019re a massive operation with huge servers with tens of thousands of cores, it\u2019s performance that\u2019s left on the table.\n\nIt\u2019ll never be as fast as GPU inferencing, though.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses the performance of AMD Ryzen 7 9700X for AI startups and large-scale operations.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Presents a neutral perspective on the performance of AMD Ryzen 7 9700X for AI startups and large-scale operations.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "lh5af3o",
+              "text": "True, but reviews tend to use default setting more than anything else, hence the negative bias. On the other hand, there is no reason to upgrade from zen 4, and there shouldn't be a reason for that honestly.",
+              "upvotes": 10,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the bias in user reviews and the lack of need for an upgrade from Zen 4",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a balanced argument against upgrading without clear positive or negative bias.",
+              "replies": [
+                {
+                  "commentId": "lhhmzv9",
+                  "text": "Default settings tend to be optimal anyway. Sure you could spend a *lot* of time tinkering with customized settings and voltages, but if we are gonna be honest you're probably not gonna see big improvements doing that anyway. For the last couple generations it's been pretty obvious that ryzen comes pretty well optimized out of the box such that old school overclocking and under volting is a bit of a poor use of time.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the default settings of \"AMD Ryzen 7 9700X\" and the potential for optimization.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a neutral perspective on the topic.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lh8h3iw",
+              "text": "For Ai work, it doesn't have enough memory bandwidth.  It's better with GPUs.  If use CPU,  use server CPU with 8 or 12 channel memory.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses AI work and memory bandwidth with AMD Ryzen 7 9700X.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a clear positive bias towards the product for AI work.",
+              "replies": [
+                {
+                  "commentId": "lh8i412",
+                  "text": "But zen5 architecture will be used also in server CPUs and that was my point this is more workstation, server architecture than gaming focused. But maybe they will bring some innovation with x3D CPU line for gamers.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the use of Zen 5 architecture in AMD Ryzen 7 9700X and its potential impact on gaming and server performance.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a balanced perspective on the potential impact of Zen 5 architecture on the product's performance.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lhhmpaa",
+              "text": "Most AI LLMs are running on GPU, so anyone with serious intent for AI is not going to be using CPUs to run it. AVX-512 is at best catering to a niche.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses AI LLM usage on GPU and CPU, without mentioning AMD Ryzen 7 9700X.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lhpvif6",
+          "text": "They hate it for the clicks",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses user experience with AMD Ryzen 7 9700X.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Presents a negative sentiment about the product.",
+          "replies": []
+        },
+        {
+          "commentId": "lh519mp",
+          "text": "Meanwhile, for those of us not actually on the platform, it's become a strong contender for if we were to upgrade to AM5. I mean, honestly, why would I get a 7700X when the 9700X is faster at far lower wattage and can be overclocked to be about 20-30% faster at a comparable wattage?\n\nHonestly speaking, I'd probably be getting a 7800X3D, but if the 9700X is anything to go by, a future 9800X3D could be even better.",
+          "upvotes": 33,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experiences and comparisons with other products.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a balanced perspective on the product's performance and potential for future upgrades.",
+          "replies": [
+            {
+              "commentId": "lh51opp",
+              "text": "Only because of price.\n\n\nThe CPU is good. Like really good. But it's price can be equal to 7800x3d, making it pretty bad in comparison.\n\n\n7800x3d is just a miraculous CPU in everything for gamers.",
+              "upvotes": 47,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experience with AMD Ryzen 7 9700X and competitor products.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Presents a negative sentiment about the product's price.",
+              "replies": [
+                {
+                  "commentId": "lh52cif",
+                  "text": "Yep. But honestly isn't AMD's pricing always like this? New chips get the premium rate while older chips get discounts? I don't think I've ever bought an AMD device the year it was released, preferring to wait for the early-adopters to start selling off their old product to afford their new shinies.",
+                  "upvotes": 14,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discusses AMD's pricing strategy without mentioning AMD Ryzen 7 9700X.",
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lh9mw2h",
+                      "text": "Yes and no. Pricing is always like this with AMD, but you're forgetting that the generational performance uplift was 20-40% at the same power usage.\n\nSo, now you get 10% perf for $100 more...",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the performance uplift of AMD Ryzen 7 9700X and its pricing.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Presents a balanced view of the product's performance and pricing.",
+                      "replies": [
+                        {
+                          "commentId": "lhgj94k",
+                          "text": "The intel strategy for the last 6 years. 8700k was the last breakthrough. I have 10700k and still no real reason to upgrade that I can find aside from squeezing out maybe 15 more fps from the 4090? Play everything at 4k.\n\nI was really looking forward to a new build and repurposing the very capable 10700k machine",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses Intel's strategy and the Intel i9-9900K CPU",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Presents a neutral perspective on Intel's strategy and the Intel i9-9900K CPU.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "lz20zbi",
+                  "text": "7800x3d = \u20ac490.\n\nrx 9700x = \u20ac340.\n\ndo you ask people if they can pay \u20ac150 more for 7800x3d?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses pricing and value of AMD Ryzen 7 9700X.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Presents a comparison of AMD Ryzen 7 9700X pricing against a competitor's product.",
+                  "replies": []
+                },
+                {
+                  "commentId": "m0qiuu9",
+                  "text": "9700x is cheaper than the 7800x3d here in canada rn",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses pricing of AMD Ryzen 7 9700X in Canada.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a neutral comparison of pricing between the two products.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lh52ybi",
+              "text": "The problem is it's up against the 7800X3D which is significantly better in CPU bound games at the same price. The 9700X has marginal victories in some productivity apps, but probably not enough to matter to the target demographic.",
+              "upvotes": 17,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses AMD Ryzen 7 9700X's performance in CPU-bound games and productivity apps.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a balanced view of the product's performance in different use cases.",
+              "replies": [
+                {
+                  "commentId": "lh58lu5",
+                  "text": "I don't think the non-X3D is meant for hardcore gamers who only want the best performance. It's more like an all-rounder CPU. \n\nAnd the 9700X does not win some marginal  victories, more like most and some are pretty huge.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the non-X3D and 9700X CPUs' performance and market positioning.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a balanced view of the non-X3D and 9700X CPUs' performance and market positioning.",
+                  "replies": [
+                    {
+                      "commentId": "lh6v4g9",
+                      "text": "How many people use 6 or 8 core CPUs for hardcore productivity? As in the software it has the largest margins, is the 9700x the target demographic?\n\n\nYou would think anyone that does the majority of their computing time doing heavy productivity workloads would be in the market for the 12 or 16 core CPUs to shorten tasks. I do expect the efficiency and performance of the 9900x and 9950x to be amazing.\n\nThe largest issue is the discounted prices on the zen4 CPUs. The 7900x is $20 cheaper than the 9700x. I'd take the 12 core part for productivity any day.",
+                      "upvotes": 8,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the target demographic for AMD Ryzen 7 9700X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Presents a neutral argument about the target demographic.",
+                      "replies": [
+                        {
+                          "commentId": "lh80v9w",
+                          "text": "A lot. If people can work fine on a MacBook Air, I see no reason they cannot work with a 8 core desktop CPUs.\n\nIn non-gaming workloads, e.g. databases, it is even faster than a 7950X and is twice as fast the 7700X: [https://phoronix.com/benchmark/result/amd-ryzen-5-9600x-ryzen-9-9700x-linux-performance-benchmarks/memcached-1100.svgz](https://phoronix.com/benchmark/result/amd-ryzen-5-9600x-ryzen-9-9700x-linux-performance-benchmarks/memcached-1100.svgz)\n\nInsanely fast data encryption (like 3 times faster): [https://phoronix.com/benchmark/result/amd-ryzen-5-9600x-ryzen-9-9700x-linux-performance-benchmarks/cryptsetup-ax5e.svgz](https://phoronix.com/benchmark/result/amd-ryzen-5-9600x-ryzen-9-9700x-linux-performance-benchmarks/cryptsetup-ax5e.svgz)\n\ndecryption: [https://phoronix.com/benchmark/result/amd-ryzen-5-9600x-ryzen-9-9700x-linux-performance-benchmarks/cryptsetup-ax5d.svgz](https://phoronix.com/benchmark/result/amd-ryzen-5-9600x-ryzen-9-9700x-linux-performance-benchmarks/cryptsetup-ax5d.svgz)\n\nOr Numpy, an extremely popular Python library: [https://phoronix.com/benchmark/result/amd-ryzen-5-9600x-ryzen-9-9700x-linux-performance-benchmarks/numpy-benchmark.svgz](https://phoronix.com/benchmark/result/amd-ryzen-5-9600x-ryzen-9-9700x-linux-performance-benchmarks/numpy-benchmark.svgz)\n\nMore database results here: [https://www.phoronix.com/review/ryzen-9600x-9700x/9](https://www.phoronix.com/review/ryzen-9600x-9700x/9)",
+                          "upvotes": 7,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses non-gaming workloads and compares AMD Ryzen 7 9700X to a MacBook Air.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "Presents a positive sentiment about the performance of the AMD Ryzen 7 9700X.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "lh531uq",
+              "text": "9700X is more or less DOA at this price because:\n\n\\* 7700 non-X beats it in value;\n\n\\* 7800X3D beats it in Gaming including efficiency;\n\n\\* 7900 beats it in multi-core workloads.\n\nIt needs to cost no more than 299$ and at that point, if you want a good \"all-round CPU\", you could make a case for it.",
+              "upvotes": 33,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses AMD Ryzen 7 9700X's performance against other products.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Presents a negative sentiment about the product's value.",
+              "replies": [
+                {
+                  "commentId": "lh5dmi4",
+                  "text": "Also it's kinda funny how amd started the Space Marine 2+Unknown 9: Awakening(whatever that game is) [bundle](https://www.amd.com/en/where-to-buy/bundles/get-2-games-bundle.html) for 7700 and above at the same time, making 9000 even worse value proposition for ppl considering to buy those games.",
+                  "upvotes": 11,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses AMD's bundling strategy for Space Marine 2+Unknown 9: Awakening",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Presents a critical perspective on AMD's bundling strategy.",
+                  "replies": [
+                    {
+                      "commentId": "lh8ui7l",
+                      "text": "But that is kind of a sneaky and clever tactic in a way, no? These CPUs will be sitting on shelves later, and they're probably starting at a higher MSRP than they need to be to be profitable.\n\nMeanwhile they get people to sell the more matured CPUs that likely became cheaper to fabricate in comparison that otherwise probably wouldn't have sold.\n\n  \nSo now you have people buying the new and shiny (whether worth it or not) and people buying the old. \n\nSeems like a win/win for AMD, only loss is the publicity.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the marketing strategy of AMD's new product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Presents a neutral perspective on the marketing strategy.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "lz219di",
+                  "text": "\"7800X3D beats it in Gaming including efficiency;\"\n\n7800x3d = \u20ac490\n\n9700x = \u20ac340\n\nhow many can give \u20ac150 more for 7800x3d? i can't. it's out of my budget. with \u20ac150 i can buy ram with \u20ac100 and save the \u20ac50 for something else.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Compares AMD Ryzen 7 9700X's gaming performance to a competitor's product.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Presents a personal experience with the product.",
+                  "replies": []
+                },
+                {
+                  "commentId": "lz21lzj",
+                  "text": "you say that 9700x is DOA. this means that me with a ryzen 2700x shouldn't get 9700x for \u20ac340 while 7700x = \u20ac310, and instead buy the 7800x3d = \u20ac490 = \u20ac150 more than 9700x?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses pricing and performance comparison of AMD Ryzen 7 9700X and its competitors.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Presents a clear negative sentiment about the pricing and performance of the AMD Ryzen 7 9700X.",
+                  "replies": [
+                    {
+                      "commentId": "lz2b4g6",
+                      "text": "This comment is 4 months old right now, back then 7800X3D cost below 400 and 9700X was also about 380.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the price of the AMD Ryzen 7 9700X in the past.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Presents a historical perspective on the price of the product.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "lh53jd5",
+              "text": "Yeah, right now, this is the very best non-X3D 8-cores CPU on AM5.\n\nBut it has two big things going against it: one, the price for the performance, the R7 7700 (non-X) is not even 10% slower but it costs considerably less. And two, the performance improvement for gaming compared to the Ryzen 7000 series, is really, really small after two years.\n\nIt's really like a modern take on the Intel i7 7700K, top-dog but barely an improvement of what came before it (the i7 6700K, which was released two years earlier).\n\nIn your case, maybe wait for the 9800X3D and see if it's worth it. 5 to 10% faster than the 7800X3D wouldn't be worth the wait, though. Unless you really just want the very best, price be damned.",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses AMD Ryzen 7 9700X performance against Intel i7 7700K and AMD Ryzen 7 9800X3D.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Presents a critical analysis of AMD Ryzen 7 9700X performance and pricing against Intel i7 7700K and AMD Ryzen 7 9800X3D.",
+              "replies": [
+                {
+                  "commentId": "lz2243s",
+                  "text": "considerably isn't as much as you think. 7700x=\u20ac310. 9700x=\u20ac340. me with a ryzen 2700x, which 1 you recommend buying? x3d is out of the question cause it's too expensive. 7800x3d=\u20ac490. i can buy 9700x + motherboard.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the price difference between AMD Ryzen 7 9700X and its competitors.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a neutral comparison of AMD Ryzen 7 9700X with its competitors.",
+                  "replies": [
+                    {
+                      "commentId": "lz2bl36",
+                      "text": "I'd get the 9700X with that price difference. It's slightly faster.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses personal experience with AMD Ryzen 7 9700X.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "Presents a positive sentiment about the product.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "lh56v1h",
+              "text": "7500f is a way better buy. If you\u2019re gaming the 7800X3D is a better buy. 7700 is also a better buy\u2026\u2026",
+              "upvotes": 8,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Compares AMD Ryzen 7 9700X with other models.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a comparison of AMD Ryzen 7 9700X with other models.",
+              "replies": [
+                {
+                  "commentId": "lhagbme",
+                  "text": "7500F depends on whether you're comfortable being up a creek without a paddle if it dies.\n\nOn Amazon/Newegg, it's 180, the same price as the 7600. Aliexpress has it for 123 on Aliexpress, but I wouldn't bet on it having warranty.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the reliability of the AMD Ryzen 7 9700X",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Presents a negative sentiment about the product's reliability.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lh560qr",
+              "text": "A lot of youtube tech channels (and other review sites, too) over-emphasize generational performance. For most people it doesn't make sense to upgrade your GPU or your CPU every generation, or in many cases (at least for CPU) even every *other* generation. \n\nThat changes, obviously, if there's some specific task or performance issue you're running into, but even then it's rarely going to be worth the upgrade into the same price tier (eg. a 7600x to a 9800x3D or a 3060Ti to a 4080 or 4090 would likely be very worth the upgrade in terms of performance, but that's very different than going up a generation in the same tier). \n\nCertainly price matters if you're jumping into AM5 now, but I'd expect cuts if you're patient. Launch MSRP isn't that different (I believe it's actually lower for the 9700X than the 7700X, at least in the US)--it's just that the last generation has had lots of cuts and sales that improve the value.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the relevance of generational performance in the context of specific tasks or performance issues.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a balanced perspective on the relevance of generational performance.",
+              "replies": [
+                {
+                  "commentId": "lh5qkcl",
+                  "text": "you have a point but, a 4060ti should be noticeably faster than a 3060ti (it wasn't) 7800xt should be much faster than a 6800xt (it isn't), and a 9700x should at least be be clearly faster *and* more efficient than a 7700x, which it kinda isn't, not all at once. This is better than 14th gen and an improvement but, this is like Haswell. Good thing the x3d and 9950x have more potential.\n\nAnd the 5800xt just released. 9700x and 9600x are better than any XT cpu and intels 13th-14th gen overall, but is this saying much?",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses AMD Ryzen 7 9700X performance against other AMD and Intel products.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a balanced comparison of AMD and Intel products, with a focus on the 9700X.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lhhnbn6",
+              "text": "Just buy ryzen 7000 gen. It's cheaper for the same performance as 9000 series, and only 7% more on power consumption. \n\nAnd since 7000 series x3D is already available and 9000 series x3D isn't, there's even less reason to bother with 9000 series.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the performance and price comparison between the Ryzen 7 9000 and Ryzen 7 7000 series.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a neutral comparison of the two series.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lh534q8",
+          "text": "I just ordered 9700x. Its crazy fast with memcached.",
+          "upvotes": 10,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with AMD Ryzen 7 9700X.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents positive sentiment about the product.",
+          "replies": [
+            {
+              "commentId": "lh5yh1l",
+              "text": "Lol no it's not, 7700x still beats it in alot of instances.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses AMD Ryzen 7 9700X performance against the 7700X.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive bias towards the 7700X.",
+              "replies": [
+                {
+                  "commentId": "lh78sc2",
+                  "text": "No it does not. In Linux, 7700x looses in every test to 9700x",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses Linux performance comparison between AMD Ryzen 7 9700X and 9700x",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Presents a negative sentiment about the performance of the 9700x in Linux.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lh8uf74",
+              "text": "That's an interestingly specific use-case, particularly for a desktop CPU. How much faster for memcached is the 9700X over the 7000-series chips? Also, do you mind me asking what for?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses AMD Ryzen 7 9700X's use-case for a desktop CPU and its performance against the 7000-series chips.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a specific use-case and performance comparison.",
+              "replies": [
+                {
+                  "commentId": "lh8xd4d",
+                  "text": "2x faster",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the performance of AMD Ryzen 7 9700X without mentioning any other products or competitors.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Presents a positive sentiment about the performance of the product.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lh96dp9",
+              "text": "How big are the databases you are caching?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the size of the databases being cached by the hardware product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a neutral stance on the relevance of database size to the hardware product.",
+              "replies": [
+                {
+                  "commentId": "lh9ut3h",
+                  "text": "its social media site, havent looked.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses social media presence of the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a neutral sentiment about the social media presence.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "lh6uvvv",
+          "text": "how would this compare to a 5900x?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Compares AMD Ryzen 7 9700X to a 5900x.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a comparison between the two products.",
+          "replies": [
+            {
+              "commentId": "lh73xm3",
+              "text": "For Some specific professional developer tasks, i can see 9900x and 9950x would be a good bump. I know I'm looking forward to see if my 3900x can be retried to a backup machine",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses professional developer tasks and specific product performance.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive sentiment about the product's performance.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lh9rzpp",
+          "text": "Did anyone compare the 9700x to the Ryzen 7700 non-x? Would like to see a side-by-side comparison on those since they're the same TDP, sadly everyone is comparing 9700x vs 7700x pointing to omg insane efficiency gains, which is kinda obvious considering one has a 88w PPT while the other has 142w",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Compares AMD Ryzen 7 9700X and Ryzen 7700 non-x performance.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a relevant comparison between two products.",
+          "replies": []
+        },
+        {
+          "commentId": "lh6qrrs",
+          "text": "I love that the new generation offers the same performance while consuming much less electricity and, as a result, producing significantly less heat. It's crazy how some people can't see beyond the \"BiGgER nUmBErS BeTtEr!\"",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the energy efficiency and heat generation of the new generation of AMD Ryzen 7 9700X.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about the new generation's energy efficiency and heat generation.",
+          "replies": [
+            {
+              "commentId": "lh8pabs",
+              "text": "The thing is that's not even true. Once you compare it to lower power 7000 series parts like the 7700 non x the efficiency argument for the 9700x falls apart. The 7700 is only marginally slower than the 7700x and by extension the 9700x and has the same power consumption as the latter. It's an improvement, but a very very small one.",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Compares AMD Ryzen 7 9700X efficiency to lower power 7000 series parts.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a valid argument about the efficiency of the 9700X compared to lower power 7000 series parts.",
+              "replies": [
+                {
+                  "commentId": "lh8rewa",
+                  "text": "Look at the phoronix benchmark, it paints another story.\nI think the focus on gaming workload and some issues on windows might make it look worse than it really is.",
+                  "upvotes": 7,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses AMD Ryzen 7 9700X performance against phoronix benchmark.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a balanced view of AMD Ryzen 7 9700X performance against phoronix benchmark.",
+                  "replies": []
+                },
+                {
+                  "commentId": "lhb5pgi",
+                  "text": "Depends on benchmark. Geekbench single core it's like 2900 vs 3300. Not bad and for most who don't video rendering single core matters more",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses AMD Ryzen 7 9700X performance against a benchmark.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a neutral performance comparison.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "lh62rgq",
+          "text": "Watch for 180 with the 9900 and 9950.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the release of the new AMD Ryzen 9 9900 and 9950 series.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about the new product line.",
+          "replies": []
+        },
+        {
+          "commentId": "lh69wo0",
+          "text": "\n\nPeople seem to discuss the power limits as holding it back.\n\nI wonder if the power limits were matched to 7000 series, how would the performance stack? Are we just getting a power limited 7000 series chip?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the perceived power limit of the AMD Ryzen 7 9700X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a potential alternative scenario where the performance of the 7000 series is compared to the 9700X.",
+          "replies": [
+            {
+              "commentId": "lhhnsp0",
+              "text": "Even then, if you have to increase power consumption past it's prior gen to get any real gains, then it's *genuinely* a pointless upgrade.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the trade-off between power consumption and performance gains.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a balanced view of the trade-off between power consumption and performance gains.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lh71c2t",
+          "text": "Intels probably dropping buckets of cash on folks with all the trouble they are in. Even if they aren\u2019t a huge upgrade performance wise they are very efficient.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discusses Intel's financial situation without mentioning AMD Ryzen 7 9700X.",
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lh77a7b",
+          "text": "I'm hoping to see c cores soon and that should start to demolish intel's design in multi core tests.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses AMD Ryzen 7 9700X's potential for multi-core performance.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about the potential of AMD Ryzen 7 9700X's multi-core performance.",
+          "replies": []
+        },
+        {
+          "commentId": "lh8r37y",
+          "text": "Another click-bait..",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Not relevant to AMD Ryzen 7 9700X.",
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lh935y3",
+          "text": "I think those on the 7000 series its not worth it but for people like me on 5000 or older IF upgrading its a no brainer - great performance for lower running costs. That being said, I will probably hold on for another 2/3 years and then upgrade",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with AMD Ryzen 7 9700X and its performance and cost-effectiveness.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about the product's performance and cost-effectiveness.",
+          "replies": []
+        },
+        {
+          "commentId": "lh9igbr",
+          "text": "Man I can\u2019t wait for the 3D series of 9000s. But taking a look how much time it took to launch after the 7000x series, I think we won\u2019t see them until 2025 Q1 \ud83e\udee0",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discusses future product release timeline without mentioning AMD Ryzen 7 9700X.",
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lha8pcr",
+          "text": "cpu is gucci, price isnt.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with AMD Ryzen 7 9700X without mentioning competitor products.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about the product.",
+          "replies": []
+        },
+        {
+          "commentId": "lhalbgh",
+          "text": "Why in [Amazon.de](http://Amazon.de), .fr and .it these 9700x and 9600x are sold not amazon but some freakish 3rd party? Not buying from them, too high delivery cost etc. \n\nWhat is AMD and Amazon doing?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the availability of AMD products on non-Amazon platforms.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Presents a negative sentiment about the availability of AMD products on non-Amazon platforms.",
+          "replies": []
+        },
+        {
+          "commentId": "lhck473",
+          "text": "I'm seriously wondering if we are not getting everything possible out of this until we see X870/X850 boards, and if that is the case it's a shame. Or if future BIOS updates may have impacts. Just wondering aloud (could be in the wilds here)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses potential future BIOS updates and their impact on AMD Ryzen 7 9700X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a neutral sentiment about the potential for future BIOS updates.",
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

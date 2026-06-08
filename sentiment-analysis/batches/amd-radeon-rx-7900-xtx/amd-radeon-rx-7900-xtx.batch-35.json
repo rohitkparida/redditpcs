@@ -1,12 +1,12 @@
 {
   "productName": "amd-radeon-rx-7900-xtx",
   "batchIndex": 35,
-  "totalBatches": 36,
+  "totalBatches": 41,
   "comments": [
     {
-      "commentId": "zkyovc",
-      "text": "ASUS Radeon RX 7900 XTX TUF OC Review - Apparently 3x8pins and some OC unlocks what AMD promised us",
-      "upvotes": 595,
+      "commentId": "zjzws8",
+      "text": "AMD Radeon RX 7900 XTX Review &amp; GPU Benchmarks: Gaming, Thermals, Power, &amp; Noise",
+      "upvotes": 482,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,660 +14,90 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "j02jiik",
-          "text": "3199 MHz average OC clock for the TUF  \n3165 MHz average OC clock for the Merc  \n\nIs that the end of the clock bug rumour then? \ud83e\udd23",
-          "upvotes": 48,
+          "commentId": "izx69rx",
+          "text": "Great card to reduce price of 4080\n\nJust 100-150$ less and 7900XTX will be not worth it considering poor RT performance\n\nthanks AMD I guess?",
+          "upvotes": 21,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User provides an opinion on the value proposition and RT performance of the 7900XTX compared to the 4080.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user believes the card is not worth it due to poor raytracing performance.",
           "replies": [
             {
-              "commentId": "j02so3b",
-              "text": "If anything it lends more support to that rumor. If it easily clocks that high why are the stock clocks so low?",
-              "upvotes": 36,
+              "commentId": "izxhlmc",
+              "text": "Nvidia will definitely not be reducing the price of 4080 after these reviews came to light.",
+              "upvotes": 22,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion is focused on Nvidia's pricing strategy, not the 7900XTX itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
               "replies": [
                 {
-                  "commentId": "j02tub0",
-                  "text": "Because the stock config can't get enough power to push 3ghz",
-                  "upvotes": 22,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "j02u4hj",
-                      "text": "... but why? It's not like they're unaware of the power requirements of the chip before deciding on what to put on the card.",
-                      "upvotes": 22,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "j03uf7k",
-                          "text": "Because clocks won't help its poor RT performance and at stock it already draws more power than the 4080 anyway. GN even mentioned they noticed their reference sample dropped as low as 11v during testing. \n\nFrankly there's also the small issue that if someone is going to pay $1100 or more for an AIB 7900XTX they may as well outright buy a reference 4080 and get better everything for less power consumption.",
-                          "upvotes": 6,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "j04y34u",
-                              "text": "Clocking higher should help RT some.",
-                              "upvotes": 3,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            },
-                            {
-                              "commentId": "j05bjp1",
-                              "text": "The 7900XTX was faster in traditional rasterization than the 4080, at least in the reviews I saw.",
-                              "upvotes": 2,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "commentId": "j02vky6",
-                  "text": "\nProbably because they had an efficiency goal in mind, like they talked about at the launch event. TPU didn't show OC power draw, but if you look at the scaling it's pretty clear where it's headed:\n\n    GPU                     Avg Clock   Power\n    RX 7900 XTX Reference   2612        356\n    RX 7900 XTX TUF         2817        393\n    RX 7900 XTX TUF + OC    3199        \u221e",
-                  "upvotes": 16,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "j02zhew",
-                      "text": "Still doesn't make sense why they wouldn't make their top end product clock that high and leave the efficient products to the lower tiers, like NVidia did. Especially when their efficiency isn't actually noteworthy compared NVidia in the first place, so they're just hyping up a non-selling point. The best explanation is that the high frequencies either are too unstable or don't actually increase performance, either of which would be considered a bug.\n\nLike, I still think the rumor is likely rumormongers trying to backpedal their predictions to try to save clout, but the fact that it OCs that high points in the other direction.",
-                      "upvotes": 7,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "j04y87t",
-                          "text": "They also didn't have the launch 7970 clock to over 1ghz even though that was a common overclock and then they released a GHz clocked version down the road",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        }
-                      ]
-                    },
-                    {
-                      "commentId": "j02w6na",
-                      "text": "Whoa... 3.2GHz is actually using infinite power? Are you saying AMD is responsible for the Big Bang?",
-                      "upvotes": 11,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "j037q9s",
-                          "text": "They said that the power limit is set to the maximum +15%. They got almost 10% more performance out of it.\n\nYes it's less efficient but not THAT bad.\nI'd be interested in seeing how much performance they got from increasing the power limit and how much from reducing the voltage.",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        }
-                      ]
-                    },
-                    {
-                      "commentId": "j0364cx",
-                      "text": "This is ignoring the fact they also undervolted it, so I dont think there would be much of a difference in the end. No idea why they didnt post the power consumption with UV + OC though.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "j06ce9t",
-                      "text": "Efficiency, the 4090 is on par with less wattage. This is not good marketing wise, esp. in europe where you have to give your kidney for some energy.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                },
-                {
-                  "commentId": "j032odc",
-                  "text": "Well some other reviewers also mentioned hitting 3ghz easily. The issue being the performance doesn't scale with clock as expected. Some games it does. Some games it doesn't. Computerbase.de was even able to achieve 3145mhz using a reference card.\n\nSo there is some sort of design issue because they cannot reciprocate the clocks in a stable way in games.",
+                  "commentId": "izyeb2o",
+                  "text": "Why wouldn't they? The 4080 wasn't selling even before these reviews.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "j02c6ie",
-          "text": "Wow, looks like an entirely different beast. This is more in line with the xtx expectations.",
-          "upvotes": 62,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "j02a29z",
-          "text": "That CP2077 result with the OC+UV is pretty nuts. Practically matching the 4090 at 4K.",
-          "upvotes": 86,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "j05q5ua",
-              "text": "It's pretty awesome. But the other thing about the 7900xtx is it scales drastically different game to game.  An overclocked undervolted 4090 in cp2077 is using like 350w to outdo this performance. So this thing really is looking like it could be pretty fast but it's just a lot of power to do it.",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "j04t7yk",
-              "text": "Matching stock 4090 at raster is pretty nuts indeed. 4090 only gains \\~5% with OC anyway. Though power consumption probably is at 4090 rather than 4080 level.\n\nI'm thinking 7900XTX may really be aiming at 4090 as the naming suggests. Just that RT performance difference is too much, so they limited the power and aimed at 4080 instead.\n\nThough I'd rather them just unlocking the power, and come out with a card to match 4090 in raster, and hopefully that would close the gap with 4080 on RT as well. Being behind in RT vs 4090 is already expected anyway. Selling that hypothetical card at a bit higher price to cover the extra components cost should really pressure Nvidia.",
-              "upvotes": 10,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "j02ctns",
-          "text": "Guru3D is showing vastly different and more expected results for the TUF+ OC'd, and they have OC benchmarks in several games.\n\n[https://www.guru3d.com/articles\\_pages/asus\\_tuf\\_gaming\\_radeon\\_rx\\_7900\\_xtx\\_oc\\_review,30.html](https://www.guru3d.com/articles_pages/asus_tuf_gaming_radeon_rx_7900_xtx_oc_review,30.html)\n\nComparing the rest of the review, benchmarks otherwise seem roughly the same. So im not really sure TPU's OC'd cyberpunk results are accurate",
-          "upvotes": 66,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "j02e4j5",
-              "text": "Isn't the clock difference between these 2 OC's more than 200mhz?\n\nGuru has the boost clock at 2950 while the avg here is almost 3200.",
-              "upvotes": 33,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "j02hdhh",
-                  "text": "2800 vs 2686 mem clock as well.",
-                  "upvotes": 28,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "j02hmin",
-                  "text": "It is, but that's the thing. Its only 2 reviewers, one testing 1 game, the other testing 4.   Which makes the data unreliable.\n\nTPU has the TUF OC with OC getting +13.8% over reference.\n\nGuru3D has the TUF OC with OC getting +5% over reference.\n\nTPU has the XFX  with OC getting +10.8% over reference.\n\nGuru3D has the XFX OC with OC getting +8% over reference.\n\nTPU's TUF OC seems like a golden sample, while Guru3D's seems like a dud.\n\nOn a side note im not sure why  W1zzard (TPU) chose Cyberpunk as the one game to test, if youre going to only test one game, it should be a title with a built-in benchmark so you get 99.99% repeatable results.",
-                  "upvotes": 10,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion is focused on Nvidia's 4080 sales and pricing, not the 7900XTX.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
                   "replies": [
                     {
-                      "commentId": "j02hy6x",
-                      "text": "Cyberpunk has a built in benchmark though though i'm not sure if they tested it with it.",
-                      "upvotes": 26,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "j062w7j",
-                          "text": "Not using the integrated benchmark. I use my own test scene, which is actual in-game gameplay. Many integrated benchmarks are too light, or run too short (check the clocks graph on 35 why that can be misleading). \n\nIt's kinda easy to optimize your drivers/shader compiler for the benchmark, because you know exactly what reviewers are testing\n\nThis is even more relevant with the new dual-issue shader units on Navi 31. If this was my product I'd whip my developers to hand-optimize all the shaders in integrated benchmarks first, so reviewers get good results.",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        }
-                      ]
-                    },
-                    {
-                      "commentId": "j05r4yk",
-                      "text": "I randomly picked one popular game",
-                      "upvotes": 8,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "j02i00y",
-                      "text": "CP2077 has a built in benchmark.",
-                      "upvotes": 14,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "j05qol9",
-                      "text": "He didn't use it. I get 84 fps on my 4090 in the built in benchmark.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "j02dcsr",
-              "text": "TPU applied an undervolt where as it appears that G3D did not.",
-              "upvotes": 45,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "j062xp6",
-                  "text": "Correct, without undervolt you're not getting meaningful OC scaling",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "j02qgus",
-              "text": "Some notes:\n\nGuru3D is on a 5950x with 3600 ram  @??\n\nTPU is on a 13900k with 6000 ram @ C36\n\nThose are pretty different systems, even if you're testing at 4K",
-              "upvotes": 31,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "j02i0ja",
-              "text": "Im leaning towards TPU probably receiving a golden sample. io-tech.fi and overclocking.com only got their Powercolor Red Devils to around 2860MHz.\n\nIt could also be a skill issue; e.g. crunching to get the review out and not having time to fully delve into the overclocking methodology. But I guess we'll see when OC.net folks get their hands on these cards.",
-              "upvotes": 18,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "j05r2l4",
-                  "text": "Check the steps i wrote on the oc page, if you oc the classic way you get no meaningful oc. Max pwr and undervolt especially are a must",
-                  "upvotes": 8,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "j032ov8",
-                  "text": "How does the Red Devil HSF compare to the TUF OC HSF? e.g. are they both 3.5 slots? Does one use a vapor chamber and the other does not?\n\nI'm wondering if there are discrepancies that might explain the difference in cooling.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "j0362o7",
-                      "text": "3 slots, 3x100mm fans, 8 heatpipes. Seems like a good design, but I wouldn't put it past ASUS to have beaten it with their TUF cards, their past two generations of TUF cards have been really, really good.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                },
-                {
-                  "commentId": "j03ars8",
-                  "text": "I mean they also got the Merc over 3.1ghz.\n\nSo either AMD specicaly sent them 2 Golden samples or cards being able to reach 3ghz+ isn't that rare.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "j05qzep",
-                      "text": "Amd only sent us their own samples, the aib cards came from the aibs directly",
-                      "upvotes": 7,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "j02gcqc",
-              "text": "the clock is very different. guru has barely tuned it",
-              "upvotes": 11,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "j03k0j9",
-              "text": "Gamer\u2019s Nexus OC is not that impressive either.\n Also how does OC AMD compare to OC Nvidia? Comparing OC to stock sounds wrong to me",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "j04bs0d",
-              "text": "Guru3D memory OC is weak by a big margin. I guess like typical OC, silicon lottery matters.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "j028y2a",
-          "text": "https://tpucdn.com/review/asus-radeon-rx-7900-xtx-tuf-oc/images/oc-cyberpunk.png",
-          "upvotes": 49,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "j0299k5",
-              "text": "11.5% more performance from overclocking. That's crazy.",
-              "upvotes": 94,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "j02a82o",
-                  "text": "With some tweaking to the OC and a bit of undervolting, they got a 23.1% performance uplift over the 4080. \n\nLooks like the reference cards could be starving for power with their 2x8pin connectors? If so there's finally a compelling reason to get the AIB's again.",
-                  "upvotes": 88,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "j02awsb",
-                      "text": "That's giving me HD 7970 overclocking vibes.",
-                      "upvotes": 40,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "j02z21f",
-                          "text": "7970 is amazing to mess with. I got mine from the stock 925MHz/1375MHz to 1300MHz/1800MHz on air cooling and with a VBIOS mod to tighten the memory timings managed a 37% performance increase in Firestrike GPU score.",
-                          "upvotes": 18,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "j03slmp",
-                              "text": "Damn thats nice... I ran my 7950 @ 1200/1600 which was very nice; 1300/1800  on air is insane bios mod or not.",
-                              "upvotes": 3,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": [
-                                {
-                                  "commentId": "j03szrr",
-                                  "text": "Well my air cooling was about as good as air cooling gets. Arctic Accelero Xtreme IV with some comically noisy server fans. Maxed out at \\~1200MHz with the stock fans and was actually limited by VRM temperatures.",
-                                  "upvotes": 2,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": []
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "commentId": "j02mhts",
-                          "text": "Ironic that would be teh case.",
-                          "upvotes": 8,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        }
-                      ]
-                    },
-                    {
-                      "commentId": "j02affx",
-                      "text": "Looking forward to the LC editions getting reviewed. Could see some pretty mental gains.",
-                      "upvotes": 18,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "j02d8pb",
-                      "text": "Undervolting could give some gains on reference. I don't think any of the reviews tested this yet.",
+                      "commentId": "izykxtb",
+                      "text": "You'll have people buying the 4080 just because they were waiting for AMDs best offering. But I think it will mostly sit on shelves until a price cut. Enthusiasts are just going to wait for the 4090 and mid range folks will either wait for the 4070ti or get a last gen card.",
                       "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion is about general market trends and Nvidia's product lineup, not the 7900XTX.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": [
+                        {
+                          "commentId": "izymane",
+                          "text": "Most ppl that buy Nvidia don't think of other brands that's why they have 80% marketshare. If they can't stomach the price of the 4080 that tells you something, they may consider a cheaper RTX 3000 series card.",
+                          "upvotes": 5,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion is about Nvidia customers' brand loyalty, not the 7900XTX.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
+                          "replies": []
+                        }
+                      ]
                     }
                   ]
                 },
                 {
-                  "commentId": "j02yzk3",
-                  "text": "I remember when 10-20% was almost expected. I was able to push my R9 290 from 947MHz to 1200Mhz on water. I could even do 1250MHz with +200mv but the power draw became insane at those voltages.",
-                  "upvotes": 10,
+                  "commentId": "izxt7gd",
+                  "text": "There will still be a 4080 price cut.\n\nPeople don't see the poor 7900XTX reviews and then decide to buy a $1200 RTX 4080. \n\nThey just don't buy either product. These prices aren't sustainable in this economy.",
+                  "upvotes": 17,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "j02d2iy",
-                  "text": "Did I read it wrong, or is moving the power limit knob up 15% all that they did?\n\nIt is impressive. Pretty much 4090 perf on cyberpunk. Crazy.",
-                  "upvotes": 6,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User mentions poor reviews of the 7900XTX as a reason for not buying either card.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user refers to the reviews as 'poor' and suggests the product is not sustainable.",
                   "replies": [
                     {
-                      "commentId": "j02defs",
-                      "text": "Yeah and undervolting gave them another boost to 23.1% over 4080.",
-                      "upvotes": 26,
+                      "commentId": "izz4ubm",
+                      "text": "I hope you\u2019re right but where can you actually buy a 4080 today? They\u2019re sold out here in the states no matter where I look (online at least). Not sure we will see any price cuts unfortunately.",
+                      "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion is about the availability of the RTX 4080, not the 7900XTX.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": [
                         {
-                          "commentId": "j02mkfj",
-                          "text": "OK, the undervolting definitely helps.",
-                          "upvotes": 8,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        },
-                        {
-                          "commentId": "j02ew1z",
-                          "text": "How does that work, wouldn't undervolting lower the max clocks?",
+                          "commentId": "izz7v02",
+                          "text": "It took me all of 10s to find a $1240 Gigabyte Eagle on B&amp;H via PCPP.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "j02zuws",
-                              "text": "For the last several generations of GPUs from both Nvidia and AMD, clocks scale based on an internal table that tells the card how high to boost based on temperature. Clocks will start to decrease around 50C, depending on the manufacturer, and go down further every 5-10C. That means that, if you can keep the card cooler, it will go faster. Undervolting pushes less power into the silicon, which keeps it cooler, resulting in higher clocks.\n\nHow much you can undervolt will depend on silicon quality, but since a die has to be at least good enough to be stable at stock, most will be better than that by *some* degree. Odds are you can at least get enough of an undervolt to lower power usage and temperature by a little bit, which will translate to higher clocks.\n\nBasically, undervolting *is* overclocking now.",
-                              "upvotes": 8,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            },
-                            {
-                              "commentId": "j02f8sw",
-                              "text": "Undervolt actually lowers power use at same clocks. Effectively increasing the power limit and boosting clocks.",
-                              "upvotes": 20,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            },
-                            {
-                              "commentId": "j03c3n7",
-                              "text": "Silicon quality varies, and every die needs a different voltage to hit the desired clocks and get the right performance in their standard case.\n\nOnce you can hit the clocks, all the extra voltage does is generate more heat, which increases temps and can result in clocks dropping if your case doesn't have the airflow. It's like food, once you hit the calorie amount you need, any more makes you gain weight which reduces performance.\n\nAMD and Nvidia choose threshold voltages so that their yields are high enough and power consumption is in check. Say they have 100,000 cards and they want 90% yields. They'll pick a voltage high enough so that only 10,000 cards fail. That means by definition that 89,999 of the remaining 90,000 are overvolted to *some* degree.\n\nAlso as silicon quality goes up over time, yields increase. Now that stock voltage is giving you 95% yields, so now 94999 of every 100k cards are overvolted. That stock voltage is probably adjusted, but not immensely.\n\nAnd they can't change clocks because now suddenly your stock performance is changing based on age. This is why we often see late cycle refreshes (3600 XT, 6950 XT, etc). In the case of the 6650 XT, yields probably got so good that there's no point in reducing stock clocks and selling the inferior 6600 XT when it has the exact same cost to make as the 6650 XT.\n\nAMD and Nvidia probably check this per unit and have the card adjust itself, but not as thoroughly as an end user can for a lot of reasons:\n\n1. Risk, if a user screws up undervolting, the card will revert to its stock voltage and will still work. If AMD sets the *stock* voltage too low for the silicon, then the card is underperforming stock benchmarks, could crash, or may even brick with no way to fix it unless you flash vBios if the voltage is too low.\n\n2. Silicon also ages, and as it gets older it needs more voltage to hit the clocks. If they set the stock voltage as low as possible, then the card will crash when the silicon needs more. And every time it crashes it will go right back to that stock voltage.\n\n3. Time, neither company is going to test every unit for hours like an end user can",
-                              "upvotes": 5,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            }
-                          ]
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Factual statement about finding a 4080, not related to 7900XTX performance or opinion.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
+                          "replies": []
                         }
                       ]
                     }
@@ -678,63 +108,371 @@
           ]
         },
         {
-          "commentId": "j034nl9",
-          "text": "Power draw with the custom OC matches/exceeds the 4090 and still isn\u2019t as fast. The v/f curve is not where AMD probably hoped. So they scaled it back to something more efficient and still competitive to the 4080.  That\u2019s my guess.",
-          "upvotes": 11,
+          "commentId": "izx3y8r",
+          "text": "Why are most of the big reviewers ignoring the 7900XT in their reviews?",
+          "upvotes": 12,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "j02uwkd",
-          "text": "I really hope the multi-monitor and video playback power consumption is just a driver bug, because that's nuts.\n\n7W idle with one monitor to 99W with two? That is ridiculous. And nearly the same amount of power just to play back some video using the fixed function decoders? Something seems very wrong there.\n\nPower consumption issues aside, this is about what was expected from the launch. The reference cards would be limited, but the AIB cards would have plenty of room to go wild, and that seems to be exactly the case. An OC that puts it on par with the 4090 in Cyberpunk (no RTX\u2014raster only, obviously) at 4k is a pretty damn solid increase, and not something we have seen in a few generations now.",
-          "upvotes": 11,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Question about the 7900XT (a different model), not the 7900XTX.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
           "replies": [
             {
-              "commentId": "j02y6w7",
-              "text": "Definitely a driver bug, ans will be fixed. Some people had similar issues on some previous cards, and it got fixed.",
-              "upvotes": 4,
+              "commentId": "izx4n80",
+              "text": "Most reviewers -- us included -- post separate reviews for them because the time cost is enormous to make even 1 review, let alone try and compact all of it into one for 2 cards. It wouldn't be financially viable. That's not \"ignoring.\" That's how we always do it.",
+              "upvotes": 146,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about the process of reviewing GPUs in general, not the 7900XTX specifically.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
               "replies": [
                 {
-                  "commentId": "j02z4ow",
-                  "text": "Well, let's just hope it doesn't take over a year like it did for the RDNA2 multi display power consumption issue to be resolved. (Technically it took even longer than that, since the issue started with RDNA1 and wasn't fixed until over a year after RDNA2 launched.) \n\nI don't remember media playback being nearly that power hungry at launch on my 6800XT, so hopefully that's also just a bug, since that didn't seem to be an issue with RDNA2. It may just be that HW acceleration isn't working properly right now and that's actually being decoded on the cores rather than the fixed function decoder, which would explain the high power consumption on media playback.",
-                  "upvotes": 9,
+                  "commentId": "izx5qt8",
+                  "text": "Thanks Steve, keep the reviews flowing.",
+                  "upvotes": 17,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "j033els",
-                  "text": "Had a similar issue when I had my 980 Ti and that took Nvidia years to fix.\n\nLet's hope AMD fixes this asap.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General thank you to a reviewer, not a product critique.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
                   "replies": []
                 }
               ]
+            },
+            {
+              "commentId": "izxatcx",
+              "text": "It might have been an editing error, but I noticed GN had some 7900XT results in their XTX review (example: Tomb Raider 1440p results at [13:16](https://youtu.be/We71eXwKODw?t=796). So if you pay enough attention you can get a sneak peak at results until their 2nd video goes out ;)\n\nSites like [Ars Technica](https://arstechnica.com/gadgets/2022/12/review-amds-radeon-rx-7900-gpus-are-great-4k-gaming-gpus-with-caveats/) also cover both at the same time, but their reviews are not nearly as thorough as the big youtube channels do",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about where to find 7900XT results, not an opinion on the 7900XTX.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": [
+                {
+                  "commentId": "izxfiap",
+                  "text": "I'm actually doing many websites a disservice here. Sites like [Toms Hardware](https://www.tomshardware.com/reviews/amd-radeon-rx-7900-xtx-and-xt-review-shooting-for-the-top) and [PC World](https://www.pcworld.com/article/1431755/amd-radeon-rx-7900-xtx-radeon-rx-7900-xt-review.html) both have stellar writeups that include the 7900XT. \n\n[Digital Foundry](https://www.youtube.com/watch?v=8RN9J6cE08c) has a video review up that includes both as well, if you prefer Youtube reviews.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Providing links to reviews for the 7900XT, not an opinion on the 7900XTX.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "izx70xp",
+              "text": "more videos / articles = more money basically :&gt;",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Comment about reviewer monetization, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
             }
           ]
+        },
+        {
+          "commentId": "izx5w7k",
+          "text": "Wait, why is everyone disappointed? The 7900XTX is faster than a 4080 and cheaper, I don't understand why everyone is disappointed...",
+          "upvotes": 29,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses positive opinion on 7900XTX performance and price compared to 4080.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User describes the card as faster and cheaper than the 4080.",
+          "replies": [
+            {
+              "commentId": "izx76tr",
+              "text": "People who value raytracing and other NVIDIA features are dissatisfied .\n\nThose who expected better based on AMD\u2019s marketing projections as dissatisfied as well.",
+              "upvotes": 60,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Explains why some users are dissatisfied with the 7900XTX (RT and marketing projections).",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is explaining the reasons for others' dissatisfaction without taking a clear personal stance.",
+              "replies": [
+                {
+                  "commentId": "izx7e3y",
+                  "text": "AW OK, good I hope more people are disappointed that means I have a good chance at getting a 7900XTX tomorrow :-) I could care less about RT",
+                  "upvotes": 17,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User expresses intent to buy the 7900XTX and dismisses RT concerns.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is happy to buy the card and doesn't care about the RT performance.",
+                  "replies": [
+                    {
+                      "commentId": "izx8299",
+                      "text": "I don\u2019t care much about raytracing either. I think I will still get the card as well.\n\nMy main concerns are the coil whine mentioned by gamer nexus and the power spikes he also mentioned. I might look in to one of the partner cards if any sell at msrp.",
+                      "upvotes": 7,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "User expresses intent to buy but mentions specific technical concerns (coil whine, power spikes).",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is interested in the card but has mixed feelings due to technical issues.",
+                      "replies": [
+                        {
+                          "commentId": "izxdclr",
+                          "text": "My reference 6900xt had some serious coil whine that went away over time. Hopefully that\u2019s the case with these but I would probably go aib to be safe",
+                          "upvotes": 4,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about a 6900XT, not the 7900XTX.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "izxegfr",
+                  "text": "&gt; People who value raytracing and other NVIDIA features are dissatisfied .\n\nThen why are they expecting AMD to be better?\n\nAre they waiting to AMD make NVIDIA lower their prices or they just like to talk because they have mouth.\n\nIt is a fact that AMD has been behind NVIDIA for years, It is naive to expect something different without further notice.",
+                  "upvotes": 12,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discussion about the 7900XTX's value proposition relative to Nvidia's features.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is arguing about expectations and market positioning, not expressing a personal positive or negative sentiment toward the product itself.",
+                  "replies": [
+                    {
+                      "commentId": "izxlngd",
+                      "text": "They want AMD to be MUCH cheaper to either reflect the difference in overall value proposition or to force Nvidia to lower prices so they can buy Nvidia GPU cheaper...\n\nThey naively assumed that AMD would have lower prices even compared to the old Nvidia pricing, but the adapted to Nvidia's new \"greedy\" pricing, which couldn't possibly happen, because AMD is the \"good guys\".",
+                      "upvotes": 8,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Critique of the 7900XTX's pricing strategy relative to its value proposition.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user believes the 7900XTX's pricing does not reflect its actual value compared to Nvidia.",
+                      "replies": [
+                        {
+                          "commentId": "izxtfwv",
+                          "text": "Those are the worst types of people. They only like these new GPUs so that they can lower nvidia GPU prices, when they fail to realize nvidia is in lala land and they dont care about price cuts. Hell, nvidia even fucked over a company like apple back in the day",
+                          "upvotes": 7,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about Nvidia's pricing and general consumer behavior, not the 7900XTX.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "izxhxj7",
+              "text": "4080 is already really bad value. This doesnt help us at all",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Comment about the 4080's value, not the 7900XTX.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            },
+            {
+              "commentId": "izx73kh",
+              "text": "Same perf for raster, much slower in RT, 20% less efficient, mediocre cooling.",
+              "upvotes": 21,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Direct technical critique of the 7900XTX (raster, RT, efficiency, cooling).",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user lists several negative attributes: slower RT, less efficient, mediocre cooling.",
+              "replies": []
+            },
+            {
+              "commentId": "izx931m",
+              "text": "It matches a 4080 on average in rasterization, but the 4080 is better in everything else. Lower power consumption, better raytracing performance, better 3D rendering performance, and better drivers. Also, AMD didn't add any improvement to their H.264 encoder so, that's also still [inferior](https://youtu.be/tMH9vfvos00?t=466) to Nvidia's NVENC.",
+              "upvotes": 7,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Detailed comparison between 7900XTX and 4080 across multiple technical metrics.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user concludes that the 4080 is better in almost every way except rasterization.",
+              "replies": []
+            },
+            {
+              "commentId": "izxd364",
+              "text": "I\u2019m not sure, people must of been hoping for some giant unrealistic leap. It\u2019s good value and alternative to nvidia. If you want halo level ray tracing then maybe not but you\u2019d probably weren\u2019t the intended customer anyways. Someone that wants top level nvidia performance and willing to pay top dollar nvidia prices should just buy nvidia if that\u2019s what they want.",
+              "upvotes": 7,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User argues that the 7900XTX is good value and a good alternative to Nvidia.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user describes the card as 'good value' and a 'good alternative'.",
+              "replies": []
+            },
+            {
+              "commentId": "izxb4e3",
+              "text": "Based on the HWUB review I watched, it is barely faster than the 4080, but also less power efficient, DLSS is still a bit better than FSR and it has significantly better RT performance (for those that care).\n\nAMD kinda messed up saying the card was 50-70% faster than a 6950 XT, implying it was a good deal faster than the 4080, when in actuality HWUB found it to be 35-40% faster than the 6950 XT at best in their testing.\n\nIt's still a damn good card, and I would pick it over the 4080 due to size, but the disappointment I think comes from what AMD said it was compared to what it actually is.\n\nFor me, it's not what I was hoping it'd be at 4k, so I'd probably stay at 1440p, which means I might as well just keep my 6800 which is still good enough at 1440p and wait to see what AMD or Nvidia come up with in a year or two.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User provides a balanced view of the 7900XTX's performance, efficiency and value.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user acknowledges it's a 'damn good card' but is disappointed by AMD's marketing claims.",
+              "replies": []
+            },
+            {
+              "commentId": "izx8i12",
+              "text": "because 1 amd advertised more. 2. traditionally worse amd drivers 3. power draw bug while watching movies/some monitors  4. massive coil whine 5. power spikes 6.  low ray tracing performance\n\nno one wants to buy a pile of problems for 1k. they want solutions.\n\nEdit: also competing with a garbage placed card (4080) doesn't make it anything other than also a garbage card",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Lists several technical complaints about the 7900XTX (drivers, power draw, coil whine, RT).",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user describes the product as a 'pile of problems' and a 'garbage card'.",
+              "replies": [
+                {
+                  "commentId": "izxdhxb",
+                  "text": "&gt; traditionally worse amd drivers \n\nLaughs in Linux",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Comment about AMD drivers on Linux, not the 7900XTX specifically.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                },
+                {
+                  "commentId": "izxayuw",
+                  "text": "AFAIK AMD advertised RTX 4080 performance and even said publicly it will not perform like RTX 4090.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about AMD's marketing claims, not a personal opinion on the product's performance.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": [
+                    {
+                      "commentId": "izy8ab9",
+                      "text": "That was after how many charts of 7900XTX interpolated performances taking into account the \u201cup to\u201d values into the famous techpowerup chart that had 4090 choked with a 5800X CPU? \n\nAfter at least a dozen charts? Everyone here were dancing that it\u2019s within spitting distance of the 4090 for $600 less.\n\nThe 4080 is bad value, thus the 7900XTX is also bad value now. That $200 saved by cheaping out on power delivery and cooler makes it one of the noisiest GPU since Vega and has terrible coil whine. Taking an AIB version and that $200 difference just shrank up big time. 50W idle vs 20W on 4080 (Europe electricity prices $$) \n\nThey\u2019re both badly valued cards, but AMD somehow made something that even makes the 4080 an interesting choice and one I would take over their offering.",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Critique of the 7900XTX's power delivery, cooler, noise, and coil whine.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user describes the card as one of the noisiest GPUs and having terrible coil whine.",
+                      "replies": []
+                    },
+                    {
+                      "commentId": "izy5jyn",
+                      "text": "If I'm not mistaken they advertised much better performance than RTX 4080",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about AMD's marketing, not the product itself.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "izx8oc8",
+              "text": "Because AMD picked their best results in the benchmarks. It's no where near 50% better raster than the 6950xt, more like 35% which is very disappointing.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User expresses disappointment in the 7900XTX's rasterization performance compared to marketing claims.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user describes the performance as 'very disappointing'.",
+              "replies": []
+            },
+            {
+              "commentId": "izxe6pu",
+              "text": "They claimed much higher performance and the pricing is terrible to boot.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User critiques the performance and pricing of the 7900XTX.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user states that pricing is 'terrible to boot'.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "izxodpe",
+          "text": "Y'all are fkn weird today\n\nWe got exactly the performance we expected yet now it's not good enough?\n\nThis is a fantastic result for me, $200usd cheaper than the card it, on average, beats.",
+          "upvotes": 13,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses satisfaction with the 7900XTX's performance and price.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user calls the result 'fantastic' and notes it is cheaper than the card it beats.",
+          "replies": []
+        },
+        {
+          "commentId": "izxjvpj",
+          "text": "Please AMD, I just want to replace my 580 with something remotely not overpriced :(",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General request for a non-overpriced GPU, not specifically about the 7900XTX.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": [
+            {
+              "commentId": "izy0gah",
+              "text": "6800xt",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Recommendation for a 6800XT, not the 7900XTX.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "izx224h",
+          "text": "Not looking very good until FSR 3.0 drops at least",
+          "upvotes": 7,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses a negative outlook on the 7900XTX until FSR 3.0 is released.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user says it's 'not looking very good'.",
+          "replies": []
+        },
+        {
+          "commentId": "izy5jma",
+          "text": "So it outperforms the 4080 in just about everything other than RT ..which everyone knew this already but somehow now everyone is up in arms cuz it\u2019s not a 4090 competitor so they can get. 4080 for cheaper\u2026 everything looks about what they said to me",
+          "upvotes": 6,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User argues that the 7900XTX's performance is as expected and a good value.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user believes the card's performance is in line with expectations and that others are overreacting.",
+          "replies": []
+        },
+        {
+          "commentId": "izyp7k5",
+          "text": "Wonder whats gonna happen to all the memes of nvidia gpus  taking alot of power to run.... And the \"rip 4090\" people.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about memes and general market sentiment, not the 7900XTX specifically.",
+          "sentiment": "neutral",
+          "sentimentReasoning": " ",
+          "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

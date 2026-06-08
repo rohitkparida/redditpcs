@@ -5,6 +5,7 @@ import re
 import time
 import argparse
 import requests
+import praw
 from pathlib import Path
 from dotenv import load_dotenv
 
@@ -83,44 +84,134 @@ def scan_and_register_products():
     print(f"Product scanning complete. Added {count_added} new products to registry. Total registered: {len(registry)}")
     return registry
 
-def discover_urls_for_product(product_name: str) -> list:
-    """Query Reddit's native JSON search endpoint directly for real threads to bypass rate limits entirely."""
-    from urllib.parse import quote
+def verify_urls_with_gemini(product_name: str, candidates: list) -> tuple[list, dict]:
+    """Pass candidate URLs and Titles to Gemini to filter out giveaways, swaps, and spam, returning reasonings."""
+    if not candidates:
+        return [], {}
     
-    queries = [
-        f"{product_name} review",
-        f"{product_name} worth it"
-    ]
+    api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY_2")
+    if not api_key:
+        print("  [Gemini Warning] No GEMINI_API_KEY set. Skipping LLM verification and using raw DDG results.")
+        fallback_log = {c['url']: {"status": "keep", "reasoning": "No API key; kept raw search result."} for c in candidates}
+        return [c['url'] for c in candidates], fallback_log
+        
+    model = "gemini-2.5-flash-lite"
+    url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
     
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36"
+    # Format candidates list for prompt
+    candidates_text = ""
+    for idx, c in enumerate(candidates):
+        body_snippet = c.get('body', '')[:300].replace('\n', ' ').strip()
+        body_snippet = f"\n   Body snippet: {body_snippet}..." if body_snippet else ""
+        candidates_text += f"{idx+1}. URL: {c['url']}\n   Title: {c['title']}{body_snippet}\n"
+        
+    prompt = (
+        f"You are an expert PC hardware review auditor. Filter the following candidate Reddit threads.\n"
+        f"Keep only threads that are genuine reviews, benchmarks, user experiences, or buying/comparison discussions about '{product_name}' "
+        f"(either mentioned in the title, URL, or post body snippet).\n\n"
+        f"Strictly exclude:\n"
+        f"- Giveaways, contests, sweepstakes, or free raffles.\n"
+        f"- Buy/Sell/Trade posts (e.g. from r/hardwareswap containing '[H]' and '[W]').\n"
+        f"- Software or game piracy threads containing hardware mentions.\n"
+        f"- Spam posts or automatic bot notifications.\n\n"
+        f"Candidates:\n{candidates_text}\n"
+        f"Return ONLY a clean JSON object matching this schema:\n"
+        f"{{\n"
+        f"  \"verdicts\": [\n"
+        f"     {{\"url\": \"url1\", \"status\": \"keep\", \"reasoning\": \"reasoning text\"}},\n"
+        f"     {{\"url\": \"url2\", \"status\": \"exclude\", \"reasoning\": \"reasoning text\"}}\n"
+        f"  ]\n"
+        f"}}"
+    )
+    
+    payload = {
+        "contents": [{"parts": [{"text": prompt}]}],
+        "generationConfig": {"responseMimeType": "application/json"}
     }
     
-    reddit_urls = []
-    
-    for q in queries:
-        print(f"  [Reddit API Query]: {q}")
-        url = f"https://www.reddit.com/search.json?q={quote(q)}&limit=10"
-        try:
-            response = requests.get(url, headers=headers, timeout=10)
-            print(f"    [Reddit API Status]: {response.status_code}")
-            if response.status_code == 200:
-                data = response.json()
-                children = data.get('data', {}).get('children', [])
-                for child in children:
-                    permalink = child.get('data', {}).get('permalink')
-                    if permalink:
-                        clean_url = f"https://www.reddit.com{permalink.split('?')[0].rstrip('/')}"
-                        if clean_url not in reddit_urls:
-                            reddit_urls.append(clean_url)
-            time.sleep(1.0)
-            if len(reddit_urls) >= 15:
-                break
-        except Exception as e:
-            print(f"  [Warning] Reddit API query failed: {e}")
+    try:
+        res = requests.post(url, headers={"Content-Type": "application/json"}, json=payload, timeout=30)
+        res.raise_for_status()
+        data = res.json()
+        ai_content = data['candidates'][0]['content']['parts'][0]['text'].strip()
+        
+        # Clean potential markdown wrappers
+        if ai_content.startswith("```"):
+            lines = ai_content.splitlines()
+            if lines[0].startswith("```"):
+                lines = lines[1:]
+            if lines[-1].startswith("```"):
+                lines = lines[:-1]
+            ai_content = "\n".join(lines).strip()
             
-    print(f"  [Reddit API Success]: Found {len(reddit_urls)} real Reddit threads.")
-    return reddit_urls[:25] # Cap at 25 sources per product
+        parsed = json.loads(ai_content)
+        verdicts = parsed.get("verdicts", [])
+        
+        verified_urls = []
+        audit_log = {}
+        for item in verdicts:
+            url_str = item.get("url")
+            status = item.get("status", "keep")
+            reasoning = item.get("reasoning", "Passed verification.")
+            if url_str:
+                audit_log[url_str] = {"status": status, "reasoning": reasoning}
+                if status == "keep":
+                    verified_urls.append(url_str)
+                    
+        print(f"  [Gemini Verification Success] Verified {len(verified_urls)} / {len(candidates)} URLs.")
+        return verified_urls, audit_log
+    except Exception as e:
+        print(f"  [Warning] Gemini verification failed: {e}. Falling back to keeping raw PRAW URLs.")
+        fallback_log = {c['url']: {"status": "keep", "reasoning": f"Gemini audit failed: {e}. Kept raw result."} for c in candidates}
+        return [c['url'] for c in candidates], fallback_log
+
+def discover_urls_for_product(product_name: str) -> list:
+    """Query PRAW search directly (Google Custom Search is disabled to ensure Gemini audit runs)."""
+    print("  [PRAW Search] Querying direct PRAW search...")
+    client_id = os.getenv("REDDIT_CLIENT_ID")
+    client_secret = os.getenv("REDDIT_CLIENT_SECRET")
+    user_agent = os.getenv("REDDIT_USER_AGENT", "pc-hardware-sentiment-bot/1.0")
+
+    if not client_id or not client_secret:
+        print("  [Error] Reddit API credentials not set in .env. Cannot run PRAW search.")
+        return []
+
+    try:
+        reddit = praw.Reddit(
+            client_id=client_id,
+            client_secret=client_secret,
+            user_agent=user_agent
+        )
+        
+        # Build the exact-phrase query
+        query = f'"{product_name}" (review OR benchmark OR thoughts OR recommendation OR vs)'
+        print(f"  [PRAW Search] Querying: {query}...")
+        
+        results = reddit.subreddit('all').search(query, sort='relevance', limit=15)
+        
+        verified_urls = []
+        for s in results:
+            title = s.title.lower()
+            subreddit = s.subreddit.display_name.lower()
+            
+            # Exclude known spam/trading subreddits
+            blacklisted_subs = ['hardwareswap', 'buildapcsales', 'bapcsalescanada', 'pcpartsales', 'randomactsofgaming']
+            if subreddit in blacklisted_subs:
+                continue
+                
+            # Exclude giveaways or trades
+            if any(term in title for term in ['giveaway', 'trade', 'h:', 'w:', '[h]', '[w]']):
+                continue
+                
+            url = f"https://www.reddit.com{s.permalink.split('?')[0].rstrip('/')}"
+            verified_urls.append({"url": url, "title": s.title, "body": s.selftext})
+            
+        print(f"  [PRAW Search Success] Discovered {len(verified_urls)} raw Reddit URLs. Running Gemini validation...")
+        return verify_urls_with_gemini(product_name, verified_urls)
+        
+    except Exception as e:
+        print(f"  [Error] PRAW Search failed: {e}")
+        return [], {}
 
 def main():
     parser = argparse.ArgumentParser(description='Discover Reddit URLs for products using Gemini Search Grounding.')
@@ -160,10 +251,28 @@ def main():
                 }
                 to_process.append((slug, registry[slug]))
     else:
-        # Get pending or empty source products
+        # Get pending, empty source, or stub comment products
+        RAW_DIR = Path('raw_comments')
         for slug, item in registry.items():
-            is_pending = item.get("status") == "pending" or not item.get("sources")
-            if is_pending or args.force:
+            # Skip completed Ryzen 7 9800X3D
+            if slug == "amd-ryzen-7-9800x3d":
+                continue
+                
+            raw_file = RAW_DIR / f"raw_{slug}.json"
+            is_stub = False
+            if raw_file.exists():
+                try:
+                    with open(raw_file, 'r', encoding='utf-8') as fp:
+                        data = json.load(fp)
+                        if not data.get('comments'):
+                            is_stub = True
+                except Exception:
+                    is_stub = True
+            else:
+                is_stub = True
+                
+            is_pending = item.get("status") == "pending" or not item.get("sources") or is_stub
+            if is_pending:
                 to_process.append((slug, item))
 
     if not to_process:
@@ -180,13 +289,18 @@ def main():
             break
             
         print(f"[{processed_count + 1}/{args.limit}] Discovering URLs for: {item['name']} ({item['category']})")
-        urls = discover_urls_for_product(item['name'])
+        urls, audit_log = discover_urls_for_product(item['name'])
         
         # Update registry with immediate save
         if urls:
             registry[slug]["sources"] = urls
             registry[slug]["status"] = "ready"
             registry[slug]["lastFetched"] = time.strftime('%Y-%m-%d')
+            
+            # Save audit reasonings in auditLog
+            if "auditLog" not in registry[slug]:
+                registry[slug]["auditLog"] = {}
+            registry[slug]["auditLog"].update(audit_log)
         else:
             print(f"  [Warning] No URLs discovered for {item['name']}. Keeping in pending status.")
             

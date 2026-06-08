@@ -97,18 +97,18 @@ def main():
                 print(f"   [Error] Could not find any Reddit threads for '{item['name']}'. Skipping.")
                 continue
 
-        # Limit to top 5 threads for high relevance and speed
-        threads_to_fetch = sources[:5]
+        # Fetch all threads
+        threads_to_fetch = sources
         raw_file = RAW_DIR / f"raw_{slug}.json"
         
         # Delete empty placeholder if it exists so fetch_reddit_data can rewrite cleanly
         if raw_file.exists():
             raw_file.unlink()
 
-        # Call fetch_reddit_data.py
+        # Call fetch_reddit_praw.py
         print(f" - Scrape comments from {len(threads_to_fetch)} threads...")
         cmd = [
-            "python", "fetch_reddit_data.py",
+            "python", "fetch_reddit_praw.py",
             "--product", slug,
             "--urls"
         ] + threads_to_fetch + [

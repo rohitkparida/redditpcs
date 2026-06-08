@@ -1,7 +1,7 @@
 {
   "productName": "amd-ryzen-5-5500",
   "batchIndex": 85,
-  "totalBatches": 160,
+  "totalBatches": 116,
   "comments": [
     {
       "commentId": "sgol6e",
@@ -14,29 +14,18 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "lth38hn",
-          "text": "Tks amazing discussion",
+          "commentId": "hv224ha",
+          "text": "For people looking for laptops, the GPU and CPU power draw is tied together such that the GPU is power limited. My CPU uses 10 watts and my GPU uses 90-100 at full power. A full size desktop GPU will use between 125 and 140 watts which allows them to process faster. \n\nSome laptops will come with a RTX 3080 inside but it's limited to 60 watts which makes it perform like a 1660. They do this purely to trick none savvy buyers.\n\nIn that same vein is the MUX switch. If you buy a laptop that cannot turn off the integrated GPU and use only the dedicated GPU, then you don't have a dedicated GPU.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "lthacq2",
-              "text": "If you need specific help for a pc build, please check the newest up to date guide: https://www.reddit.com/r/buildapcforme/s/vAFB96Yv2a",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses laptop power draw and MUX switches, which is off-topic and not related to the AMD Ryzen 5 5500.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment provides general technical information about laptops without expressing a positive or negative opinion about the target product.",
+          "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

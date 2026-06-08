@@ -14,20 +14,9 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "lv5ji7u",
-          "text": "Hey man, could you help a brother configure his 9950x optimally?  \nIs core parking useless if you OC because its only function is to allow the CPU to stay under the max TDP while boosting high enough?  \nI've been trying to find info on whether coreparking helps the 9950x in games. I suppose it helps on the x3d CPUs.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "lzmtuaq",
-          "text": "Good read bro, I\u2019d love you to tune my 9950x \ud83d\ude02 I\u2019m too dumb to do it, but I had a good read",
-          "upvotes": 1,
+          "commentId": "lj74h5j",
+          "text": "How do you set your voltage?",
+          "upvotes": 2,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -35,9 +24,9 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "lzotnlm",
-              "text": "Not a problem if you contact me on Discord,\n\nThe reason for that is that I can share my screen for instance and demonstrate stuff",
-              "upvotes": 1,
+              "commentId": "lj77vzt",
+              "text": "The guide I wrote for 3rd and 4th Gen Ryzen, which I updated for 5th Gen is largely applicable to 9000 Series (or 6th Gen) and can be found here:  \n[https://www.reddit.com/r/ryzen/comments/tntrif/definitive\\_guide\\_to\\_configuring\\_3rd4th\\_gen\\_ryzen/](https://www.reddit.com/r/ryzen/comments/tntrif/definitive_guide_to_configuring_3rd4th_gen_ryzen/)\n\nIf you have any problems, you can contact me on Discord under \"michaelnager\" with the same avatar.\n\nAnd if you want to know how to configure it in BIOS then DM me and I will tell you.\n\nI didn't put it in my guide, because I didn't want people to just bung in random numbers, bricking their systems and then blaming me.",
+              "upvotes": 9,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -45,9 +34,20 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "lzoyshr",
-                  "text": "Sure what\u2019s your discord",
+                  "commentId": "lj9r48e",
+                  "text": "Thank you for sharing the guide link. I was just about to ask about it. I have a 5800X on the X570 platform and I'm going to take a look to see what I can do to improve my setup. Honestly I've been so happy with it ever since 2021 when I built it, I was blown away by the performance coming from a i7-4790K. Bricks were shat when I copied a full DVD ISO instantaneously from one NVMe to the other.",
                   "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "ljagcuo",
+                  "text": "I know you said the guide applies to all Ryzen cpus, but I'd still like to ask. What about 5800X3D? I'm away right now and I cannot reach my pc, but as far as I remember I cannot change anything in Ryzen Master. My motherboard is an ASUS ROG Strix X570-F Gaming.",
+                  "upvotes": 0,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -55,9 +55,9 @@
                   "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "lzu7nvv",
-                      "text": "Discord name is \"michaelnager\" and I have the same avatar there.",
-                      "upvotes": 1,
+                      "commentId": "ljalwoc",
+                      "text": "It doesn't apply to the X3D CPUs, but I have written a separate guide for the 7800X3D:\n\n[https://www.reddit.com/r/ryzen/comments/137i5f5/how\\_to\\_optimally\\_configure\\_the\\_ryzen\\_7800x3d/](https://www.reddit.com/r/ryzen/comments/137i5f5/how_to_optimally_configure_the_ryzen_7800x3d/)",
+                      "upvotes": 2,
                       "classifyThis": true,
                       "relevance": null,
                       "relevanceReasoning": null,
@@ -65,8 +65,8 @@
                       "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "lzu7pu6",
-                          "text": "Thanks my man, I shall contact you soon!",
+                          "commentId": "ljapw3z",
+                          "text": "Thanks! So basically I can use this for 5800X3D, right? Max out cpu vcore llc, enable PBO and find the highest stable value. I am currently running the latest bios, enabled DOCP and running a -15 as this is stable for me without touching anything else. It seems I must find the vcore llc setting and change it when I get home and hopefully I can try -25 or -30. As far as I remember, -20 wasn't stable. I used to get random restarts.",
                           "upvotes": 1,
                           "classifyThis": true,
                           "relevance": null,
@@ -74,6 +74,29 @@
                           "sentiment": null,
                           "sentimentReasoning": null,
                           "replies": []
+                        },
+                        {
+                          "commentId": "lju05rq",
+                          "text": "Thanks a lot! I maxed out Vcore LLC and did -30 all core, something previously impossible with my cpu. It's a stable 4400 MHz in R23 and 4450 in games. I will use it like this for a while just to see if I get any random restarts like I used to have. If not, I'll maybe try -35/-37 and see what happens, but I'm happy as it is anyway. It's amazing to see that changing just one setting can enable so much extra performance.\n\nOne more question if I may. I'm looking at upgrading to AM5. I mostly play in 4K (with a 4090) and while I know a 7800X3D won't do much in terms of extra fps, I think it will help a lot with 1% and 0.1% min fps and that's when games feel a lot smoother. It just so happens that a 9700X is cheaper in my country than 7800X3D (by 20-25euro). So my question is, should I go for a 9700X instead of 7800X3D? I think there is extra performance I can squeeze out of it using your guide. Or just wait until next year for a 9800X3D (or whatever name AMD decides on)?",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ljw88bw",
+                              "text": "I would wait for the 9800X3D and see if the rumours are true that it will be more configurable than any of the previous generation X3D CPUs\n\nFor instance, if I run my 9950X at the same performance level as the MAXIMUM that I could achieve with my 7950X, it does so using only 60% of the power (99 Watts CPU power vs 164.5 Watts).\n\nI have accepted your friend request on Discord, so if you want, then we can discuss it further there.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
                         }
                       ]
                     }
@@ -84,8 +107,8 @@
           ]
         },
         {
-          "commentId": "m462ii2",
-          "text": "im sad it ended. encore encore! write a damn book on being a overclocking genius.",
+          "commentId": "ljbx49r",
+          "text": "Did you tell gamer nexus already?",
           "upvotes": 1,
           "classifyThis": true,
           "relevance": null,
@@ -94,9 +117,9 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "m4bdks1",
-              "text": "I've put in way too many thousands of hours into Ryzen to be a genius.\n\nI wouldn't even consider myself to be an expert.\n\nPermanent scholar is about the most that I can aspire to.\n\n:D",
-              "upvotes": 1,
+              "commentId": "ljdlhnl",
+              "text": "Why would I do that?\n\nThe thing is though, that Steve spent a hell of a lot of his time speaking about the efficiency of the 9000 Series, and if anything, my post above showed him how it is done :D\n\nTo get my performance with my 9950X, to the maximum performance of my 7950X in CineBench R23, I had to downclcock my 9950X by nearly 700MHz per core, and reduce the voltage by 1.03 Volts.\n\nOne thing I have discovered from my friend who is spending a lot of time configuring his 14900KS with a similar philosophy to me is that with regard to voltages, it is a hell of a lot easier with Ryzen.\n\nHis main gripe with configuring his 14900KS is that the CPU P-Cores are on the same voltage rail as the Ring.",
+              "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -107,8 +130,8 @@
           ]
         },
         {
-          "commentId": "m4zsds0",
-          "text": "Do you recon you'd see similar results using a 9900x? Is that a viable processor to you?",
+          "commentId": "ljcub4d",
+          "text": "Don't see your scores on the official Cinebench Hall of Fame - why is that?",
           "upvotes": 1,
           "classifyThis": true,
           "relevance": null,
@@ -117,9 +140,9 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "m506eqe",
-              "text": "The guide is just as useful for a 9900X as for a 9950X.",
-              "upvotes": 1,
+              "commentId": "ljd3es8",
+              "text": "You might have missed the part where I wrote\n\n&gt;I benchmark to configure, I don't configure to benchmark\n\nDo you know what I meant by that?\n\nIf you do, then you will realise why I don't consider your statement to be in any way, shape or form a legitimate criticism.",
+              "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -127,148 +150,19 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "m515hji",
-                  "text": "Awesome. Starting to look more and more appealing.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "m55dlqw",
-                      "text": "I have written a guide on how to configure the 9000 Series CPUs including X3D which you can find here:\n\n[https://www.reddit.com/r/ryzen/comments/1gq1yu9/universal\\_guide\\_to\\_configuring\\_all\\_ryzen\\_9000/](https://www.reddit.com/r/ryzen/comments/1gq1yu9/universal_guide_to_configuring_all_ryzen_9000/)\n\nIf you have any problems with configuring your 9000 Series CPU you can contact me on Discord under the name \"michaelnager\" and I have the same avatar there.",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "m58azp6",
-                          "text": "Very kind. We'll have to see how things pan out.",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "lj73brc",
-          "text": "The issue is your findings doesn't change anything. Most reviewers aren't an expert in overclocking like you as shown in your post. Most reviews doesn't need to go that far into there review with the 9000 series cpus. Hw and gn did there bit of testing and found 9000 series aren't worth it for now nor in gaming nor in productivity. It will become worth in a months after the prices cuts. The thing that bugs me is that your gaming performance is same or better with the ocing? As you didn't talk about that here.\n\n&gt;So are these reviewers - and I include all the big names in this - too lazy, too stupid, or just plain too corrupt for Intel marketing dollars, to have learned to properly configure Ryzen almost five years after I wrote my first guide on how to get the most out of AMD CPUs?\n\n&gt;Have the Intel blinkers on when it comes to Ryzen and their only bloody efforts to do any kind of configuration consists exclusively of \"Moar Powa, Moar Gud\".\n\n'properly configure Ryzen' is the key sentence here. No big yt reviewer said anything about tuning intel cpu's for better power efficiency when it launched rather they just bashed it for being a nuclear power plant or the 13th - 14th issue? Did those reviews cut intel a slack?no they didn't. Those reviews are not bias rather they will do there basic tests, if the next gen cpu's perform bad out of the box then they are gonna say it. They doesn't need to go that far to make amd look nice and test there cpu in Linux for that 15% gains.\n\n&gt;To end this, I would turn back to the original question I posed, which was, given what I have shown you, would you advise your buddy to buy a 7950X or a 9950X if he (or she) came to you for advice.\n\n7950x cost 570$ where 9950x costs 830$ so a 260$ difference. For that much money you don't get any uplift in gaming! With or without pbo and a basic 6k difference in cinabench which might be worth it for some but for the majority of people it's not worth it.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "lj773zx",
-              "text": "In which universe does the 9950X cost $830?\n\nIt costs $650.",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lj78102",
-                  "text": "In my country. Either way the 200-260 dollars or euro or pound difference is consistent between the 7950x and 9950x and that's my point",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "lj7elpo",
-                      "text": "My 9950X cost me \u00a3600, which is \u00a350 less than I paid for my 7950X.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "lj87819",
-                          "text": "You can find 7950x's for 400-415\u00a3 NOW so yeah still that 200\u00a3 distance remain.",
-                          "upvotes": 0,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "lj9320o",
-              "text": "I don't think he Overclocked it... If you look at his Ryzen Master numbers, You can see he's actually using less power than the reviewers. What he's more than likely doing is optimizing his settings in ryzen master or bios to get more performance and less power draw, which also leads to lower temps and then higher stability of the CPU",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lj9trjs",
-                  "text": "You are correct, this zebra-fool cannot see the numbers..Mike Nager is showing with the Ryzen properly tuned (like you would your car engine)(at which most you-tubers don't know how or don't care to do). Most people want to slam the cpu with voltage(the intel way of doing things). thinking that is the only way to get better performance.Maybe God should over clock the Sun and make Earth a Better place :P",
+                  "commentId": "ljdck88",
+                  "text": "It wasn't a criticism - you seem pretty pleased about the result you've got so why haven't you submitted it to the Hall of Fame?",
                   "upvotes": 2,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
                   "sentiment": null,
                   "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "lj7gbas",
-              "text": "With regard to gaming, when I had configured my 9950X to the maximum performance level of my 7950X I loaded up my favourite game - Space Engineers - and I loaded the savegame that I had been playing with my 7950X and the FPS increased by 17%.\n\nThat totally surprised me",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lj86qo6",
-                  "text": "17% is pretty good actually... But that's only one game and not even a popular one \ud83d\ude05.... So my point still stand",
-                  "upvotes": 0,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "ljaov8m",
-                      "text": "After ten years, Space Engineers still has 5,000 or so daily concurrent players.\n\nThe game is popular with me, and that is the only opinion that matters to me.\n\nBut I have to say that I was gobsmacked when I saw that.",
-                      "upvotes": 2,
+                      "commentId": "ljdo2y6",
+                      "text": "Under which heading?\n\nI have never been interested in that aspect.\n\nIf they had a heading for, \"Highest performance after one year of 24/7 usage\" then my results would crucify anyone who had been running their Ryzen CPU at stock, even if they used LN2 oveclocking, because it would have degraded to such an extent.",
+                      "upvotes": 1,
                       "classifyThis": true,
                       "relevance": null,
                       "relevanceReasoning": null,
@@ -281,6 +175,109 @@
               ]
             }
           ]
+        },
+        {
+          "commentId": "ljg9xp7",
+          "text": "Interesting, out of curiosity, have you tested any other games and did you notice any other FPS increases?\n\nAnything notable in Adobe applications also such as PS/Premier?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ljjqkqw",
+              "text": "Yeah, for instance CyberPunk running 1440p Ultra, no FSR, no RT on my 7900XTX:\n\nStock: Average FPS 143.35 Min FPS 121.29 CPU Power 107 Watts\n\nMax config: Average FPS 143.52 Min FPS 121.76 CPU Power 71.4 Watts\n\nAnd now when my 9950X was configured to the maximum performance level of my 7950X (what I call my Min config):\n\nMin config: Average FPS 142.41 Min FPS 120.57 CPU Power 35.46 Watts\n\nIt's pretty obvious I am maxing out my 7900XTX, but would you rather max it out at 107 Watts of CPU usage or 35 Watts?",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ljpaxkn",
+                  "text": "So for the 9950x, is it as simple as disabling PBO in the bios, enabling XMP, setting Memory Clock and Fabric clock to the Data Rate of the RAM, and Peak Core(s) Voltage to 1.2 v ?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lr2ekvz",
+              "text": "It really shouldn\u2019t affect it that much 9950X is a beast already you would need a lot of fps to experience bottleneck but either way if you just use CCD 0 should give you close to 7800X3D performance and 9700X anyways",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "llqg0ka",
+          "text": "Hello, Michael I found your thread today. I am on 9950X, could you take a look if my settings are all kinds of wrong or what would you change? [https://ibb.co/XDVSSrz](https://ibb.co/XDVSSrz)  \n\nI had issues with 7950x3D staying stable, and I kind of mimicked a lot of the stuff minus the Vcore voltage as 7950x3D gives you none  \n  \nHard to tell what is what as people have conflicted opinions  \n  \nThis is also 6000mhz RAM at CL30 (rated)16x2 (32 GBs)Thank you",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "llsuhml",
+              "text": "Give me a shout on Discord.\n\nMy name there is \"michaelnager\" and I have the same avatar.\n\nWith the 9950X there are now two legitimate versions of configuring it and I can show you both.\n\nReddit isn't good for that kind of thing because I can't share my screen for instance.\n\nYour settings are not doing you any favours.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lohoz2a",
+          "text": "Why is your VSOC 0.918V? Are you running DDR5-8000? What's your FCLK? There're a lot of variables you didn't tell us.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lszxqdy",
+              "text": "Why on Earth would I spend a shed-load of cash to get DDR5-8000 RAM which I would have to run at garbage timings with UCLK=MEMCLK/2.\n\nI have DDR5 6000 RAM with 30-36-36-76 primary timings which I run at 6200 in Gear 1 (UCLK=MEMCLK) with the same timings and an FCLK of 2067\n\nMy secondary timings are:  \ntFAW = 28  \ntRRDL = 8  \ntRRDS = 8  \ntWR = 48  \ntREFi 65535\n\nMy voltages:  \nMEM VDD 1.35 Volts  \nMEM VDDQ 1.25 Volts  \nCPU VDDIO 1.2 Volts  \nVSOC (SMU) 1.2 Volts.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lugdz4i",
+          "text": "[https://imgur.com/a/ojfr6xz](https://imgur.com/a/ojfr6xz)\n\nHi,\n\nC23 44211  - PBO Enabled, Motherboard limits, and +200Mhz. CO CCD0 -20 CCD1 -15, CO Med / High / Max Freq - High Temps -10.\n\nRam Just Expo enabled, 6000 CL30\n\nThe performance over the 7950x is evident. Any idea to improve it?\n\nGreat thread u/Michael_Nager",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         }
       ]
     }

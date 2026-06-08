@@ -1,0 +1,477 @@
+{
+  "productName": "amd-ryzen-7-9700x",
+  "batchIndex": 21,
+  "totalBatches": 26,
+  "comments": [
+    {
+      "commentId": "1emb8su",
+      "text": "Wasted Opportunity: AMD Ryzen 7 9700X CPU Review &amp; Benchmarks vs. 7800X3D, 7700X, &amp; More",
+      "upvotes": 325,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "lgxxbpd",
+          "text": "The same performance for much less power draw is fine as the user still has the option to enable PBO.\n\nMaximizing efficiency should be the default behavior, with users left to have the option to enable additional performance at the expense of efficiency. \n\nI think GN was a little hard on the 9700X in this review. Default power consumption OOtB on desktop has been getting out of control the last few gens.",
+          "upvotes": 169,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User discusses the 9700X's power draw and efficiency compared to previous generations.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User views the focus on efficiency as a positive default behavior.",
+          "replies": [
+            {
+              "commentId": "lgy5hs8",
+              "text": "It's not a lot less power draw in games only In the render tasks is noticeable.",
+              "upvotes": 57,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User provides a technical critique regarding the power draw of the 9700X in games versus render tasks.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual observation about performance differences.",
+              "replies": [
+                {
+                  "commentId": "lgymygw",
+                  "text": "The same shit can be said for most Intel chips. You can't hold people accountable for doing it to AMD when every headline for 8 years has been about max TDP readings in synthetic benchmarks.",
+                  "upvotes": 26,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a general meta-discussion about Intel and AMD benchmarks rather than specific product insight.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lgy95a5",
+              "text": "Did pbo still void warranty? Thought it was really stupid of AMD to do that.",
+              "upvotes": 22,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a question about warranty and PBO, not a product performance or experience insight.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": [
+                {
+                  "commentId": "lgyblrk",
+                  "text": "How it is in practice remains kind of vague IMHO, because when I checked the BIOS of my Asrock B650M HDV, \"PBO limits\" was already set to \"manual\". Funnily enough the values themselves are default ones (162,000 mW PPT, 120.000 mA TDC, 180.000 mA EDC). And question here is that one could technically argue there if that sort of setting already counts as having used the precision boost overdrive feature, even when it wasn't you.",
+                  "upvotes": 9,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about BIOS settings and warranty is not a direct insight into the 9700X product itself.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": [
+                    {
+                      "commentId": "lgzt6q4",
+                      "text": "Three years ago, AMD decided to incorporate CPU overclocking capabilities into their Adrenaline GPU software suite - the initial release enabled PBO by default on compatible platforms. It went about as well as expected, and they removed the feature.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Historical discussion about AMD software and overclocking, not specific to the 9700X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "lgygdaz",
+                  "text": "Wait, really? That\u2019s outrageous.",
+                  "upvotes": 10,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort reaction to warranty discussion.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                },
+                {
+                  "commentId": "lgzsbh8",
+                  "text": "Officially, yes. In practice, they tend to consider it in the same way as Expo, where it shouldn't really factor into a potential RMA, but they absolutely reserve the right to refuse service as a result. From the footnotes of the [Ryzen CPU overview page](https://www.amd.com/en/products/processors/desktops/ryzen.html):\n\n&amp;#x200B;\n\n&gt;8. Overclocking and/or undervolting AMD processors and memory, including without limitation, altering clock frequencies / multipliers or memory timing / voltage, to operate outside of AMD\u2019s published specifications will void any applicable AMD product warranty, even when enabled via AMD hardware and/or software. This may also void warranties offered by the system manufacturer or retailer. Users assume all risks and liabilities that may arise out of overclocking and/or undervolting AMD processors, including, without limitation, failure of or damage to hardware, reduced system performance and/or data loss, corruption or vulnerability. GD-106\n\n&amp;#x200B;\n\n&gt;11. AMD\u2019s product warranty does not cover damages caused by overclocking, even when overclocking is enabled via AMD hardware and/or software. GD-26\n\n&amp;#x200B;\n\n&gt;14. Precision Boost Overdrive requires a compatible AMD Ryzen Threadripper, 3rd Gen AMD Ryzen processor, or Ryzen 5000 Series processor and a motherboard compatible with one or more of these processors. 2nd Gen AMD Ryzen processors including the Ryzen 3200G processor are not compatible with Precision Boost Overdrive. **Because Precision Boost Overdrive enables operation of the processor outside of specifications and in excess of factory settings, use of the feature invalidates the AMD product warranty and may also void warranties offered by the system manufacturer or retailer.** GD-135\n\n&amp;#x200B;\n\nFun fact, scratched or worn off lettering on the IHS can also technically [invalidate](https://www.amd.com/en/resources/support-articles/warranty/PIB.html) your warranty. Go easy when scrubbing off that thermal paste.",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Detailed discussion of warranty terms, not product performance or experience.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lgyhtfl",
+              "text": "The power draw on the 7000 series combined with the cost of upgrading platforms was the double whammy for AM5's launch. I think adoption for the 9000 series will be higher as most movers will be coming from AM4 and have more marginal gains than 7000 series users.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User compares the 9000 series adoption and power draw to the 7000 series.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is making a market prediction based on power draw and platform costs.",
+              "replies": []
+            },
+            {
+              "commentId": "lh23lmj",
+              "text": "Eh, is it better to be hard on AMD as well after the Intel videos or go easy and be called an AMD puppet?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Meta-discussion about reviewer bias, not product insight.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lgxmq3k",
+          "text": "This is... dissapointing. I was looking forward for the 9950X for heavy-multicore applications, and it's looking like it will be exactly a 7950X.\n\nEdit: I just checked der8auer's video about it. This CPU is completely power-chocked for any heavy multi-threaded workload. With similar power draw as the 7700X performs +20% compared to stock.",
+          "upvotes": 82,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses disappointment in the 9000 series performance and mentions the 9700X being power-choked.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User explicitly states the product is disappointing and power-choked.",
+          "replies": [
+            {
+              "commentId": "lgxq6s7",
+              "text": "&gt; I was looking forward for the 9950X for heavy-multicore applications, and it's looking like it will be exactly a 7950X.\n\nwhy do you think so? it won't be limited like 9700x",
+              "upvotes": 44,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Directly mentions the 9700X's power limits in a comparison with the 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a question about power limits.",
+              "replies": [
+                {
+                  "commentId": "lgxqqyd",
+                  "text": "I wrote that before noticing how power chocked the 9700X is. I did not expect AMD to leave 20% performance on the table. \n\nI guess they don't want to repeat the situation of the 7700X vs 7800X3D, in which depending on the application the 7700X could be faster than the 7800X3D. This time they want the 9800X3D to be faster at everything.",
+                  "upvotes": 41,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User critiques the 9700X's power limits and performance loss.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "User is unhappy that AMD left 20% performance on the table.",
+                  "replies": [
+                    {
+                      "commentId": "lgzgso0",
+                      "text": "I think this is more of a move towards responsible power use.\n\nThere is a very small group of people who don't care about high power limits, but the market is moving into a different direction.\n\nIt's not like the Mac Studio doesn't exist.",
+                      "upvotes": 6,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "User argues that the 9700X's power limits are a move towards responsible power use.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "User views the power efficiency as a positive trend.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "lgzme9t",
+                  "text": "Because AMD didn't reduce the TDP from the 9950X like it did with the 9700X.\nThe 9900X may also be affected by this.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the TDP reduction of the 9700X compared to the 9950X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Factual observation about TDP differences.",
+                  "replies": [
+                    {
+                      "commentId": "lgzrv0g",
+                      "text": "9900x shouldn't be affected as much. I run my 7900x in 105W ECO mode and get barely a 5% perf drop in all-core workloads compared to stock. The 9990x with 120 W should be perfectly fine.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about the 7900X and 7990X, not the 9700X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "lgxxwkg",
+              "text": "I'm calling it right now. AMD will release a microcode patch 2 to 3 weeks from now. Lmao.",
+              "upvotes": 7,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Speculation about microcode patches, not a product insight.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": [
+                {
+                  "commentId": "lgyf89q",
+                  "text": "That's if they didn't already update the microcode during the delays to be more conservative, after the Intel news.",
+                  "upvotes": 15,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Speculation about microcode and Intel news, not product insight.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                },
+                {
+                  "commentId": "lgyec44",
+                  "text": "I kinda doubt it. They must have known for months how the chip would (approximately) perform under these power limits, but they kept them anyway.",
+                  "upvotes": 14,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Speculation about AMD's internal knowledge, not product insight.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lh01i2w",
+              "text": "9950x is expected to be a beast with PBO. A user who already has it put it under a water cooling loop and beat a 7950X at 6551MHz cooled with liquid nitrogen in x265 encoding. https://hwbot.org/benchmark/hwbot_x265_benchmark_-_1080p/rankings?cores=16&amp;hardwareType=cpu",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about the 9950X, not the 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lgxtl5w",
+          "text": "Wow this is using &gt;60% LESS power than the 7700X. That's potentially a lot of performance left on the table for overclocking (assuming it doesn't crash, which might be an ask).",
+          "upvotes": 74,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User praises the 9700X's power usage compared to the 7700X.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User is impressed by the power reduction.",
+          "replies": [
+            {
+              "commentId": "lgxzv0q",
+              "text": "Isn't it more 40% less power (40w less than 105W, which is around 40% of the 105W). Still a good power improvement, but 60% is too much lmao.",
+              "upvotes": 67,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Technical correction regarding the power draw of the 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual correction.",
+              "replies": [
+                {
+                  "commentId": "lh0q1nr",
+                  "text": "I'm going off the actual recorded power numbers by GN (87.6 vs 147.6) in this video on stock all-core load, not TDP. But otherwise yes I should\u2019ve said the 7700 uses 60% more power, got it mixed up.",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User provides specific power numbers for the 9700X based on GN benchmarks.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Factual reporting of benchmark numbers.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lgy3s6l",
+              "text": "der8auer got a 20% uplift in performance removing the power constraints, he also locked the frequency on all cores to 5.4Ghz in another test so overclocking should be pretty strong.",
+              "upvotes": 32,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the 9700X's performance uplift when power constraints are removed.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User views the potential for overclocking as a positive.",
+              "replies": [
+                {
+                  "commentId": "lgyrtp8",
+                  "text": "A 20% uplift? Nice. I can\u2019t watch the video just now but did he just enable PBO or did he tweak all sorts to remove the constraints?",
+                  "upvotes": 11,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User asks about the 9700X's performance uplift via PBO.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a question about performance.",
+                  "replies": [
+                    {
+                      "commentId": "lgywbfz",
+                      "text": "PBO for one set of benchmarks and then he overclocked it to 5.4Ghz on all cores. I think it was 24k on R23 at 5.4Ghz and about 20k with PBO unlocked? Still pretty good results when the power is unlocked a little. \n\nEven with the power unlocked and overclcoked I think it only hit 170W max which is pretty good as a peak power. In games it still only hit about 90W max I think. Best to watch the video for more accurate info. https://www.youtube.com/watch?v=jPJ0Khw3kIc\n\nSounds like it was just a dirty overclock as well I bet you could bring power down and performance up a little more.",
+                      "upvotes": 7,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Provides detailed performance and power numbers for the 9700X when overclocked.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "User describes the results as 'pretty good'.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "lgy10pn",
+              "text": "Those multicore full load benchmarks just run into the TDP limit.\n\nThe 7700 performs barely worse than the 7700X while having the same cut down TDP as the 9700X.\n\nThe 7700X just has a stupid out of the box configuration that makes Zen 4 look far more inefficient than it actually is.",
+              "upvotes": 18,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the 9700X's TDP limit and compares it to the 7700.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Factual comparison of TDP and performance.",
+              "replies": []
+            },
+            {
+              "commentId": "lgy2fh0",
+              "text": "I don't get people complaining about 9000 series CPUs using less power. You can just use it as is with a puny ass cooler at inaudible noise levels or crank it up to 11 and get the performance you think this should've been giving.",
+              "upvotes": 45,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User defends the 9700X's lower power draw, arguing it allows for better cooling and noise levels.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User is satisfied with the power efficiency and flexibility.",
+              "replies": [
+                {
+                  "commentId": "lgy5w6v",
+                  "text": "People crapping on Intel for pushing their CPUs too hard out of the box, then immediately proving not doing that cripples your marketing.",
+                  "upvotes": 86,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General meta-discussion about Intel vs AMD marketing, not product insight.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": [
+                    {
+                      "commentId": "lgy7za9",
+                      "text": "Oh yeah, also that, how did I forget that.",
+                      "upvotes": 13,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort agreement with meta-discussion.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": []
+                    },
+                    {
+                      "commentId": "lgyd1vd",
+                      "text": "Just goes to show that Intel at least understood what the demand was, even if they let it blow up in their faces.",
+                      "upvotes": 19,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General meta-discussion about Intel's demand, not product insight.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "lgy7zxh",
+                  "text": "People: 7700X uses way too much power out of the box and looks inefficient, power limiting it to 65W barely loses any performance.\n\nAlso People: Why did they nerf 9700X power usage out of the box? There could have been a tiny bit more performance!\n\nThey can't win lol.",
+                  "upvotes": 49,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User discusses the trade-off between power usage and performance for the 9700X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is observing a conflict in consumer preferences.",
+                  "replies": [
+                    {
+                      "commentId": "lgze5t0",
+                      "text": "Because these are fundamentally two different groups of people \u2014 one prefers efficiency, quietness and low heat load even at the cost of performance, while the other would gladly take a 40-60W increase in power draw for improved performance.",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Explains the different consumer groups for the 9700X's power profile.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is an analytical observation.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "lgxzsuj",
+          "text": "Wouldn't call it a \"wasted opportunity\" as I'm pretty sure AMD knows exactly what it's doing!\n\nFor one thing, an octa-core CPU boosting up to \\~4.5GHz at just \\~85W is beyond impressive. It's clear AMD is aiming for power efficiency here, not all balls out performance. Personally, that's a nice trend going forward as I'm sick of seeing high-end CPUs guzzling 150W+ (250W+ in case of you know who).\n\nAnd despite the significant frequency disadvantage, it still manages to surpass the 7700X in most situations which should give you an idea about Zen5's impressive IPC. Besides, I don't think it's too far-fetched to assume the CPU will be able to manage 5GHz+ at \\~120W, possibly closer to 6GHz (or at least above 5.5GHz) at 7700X's 150W power draw.\n\nAs for the pricing, it's the classic modus operandi for AMD. They want to clear out their old inventory before offering 'discounts' on the shiny new CPUs. Plus, their competitor is having a moment worse than Pentium D as we speak, so AMD can get away with higher prices than usual\u2014or at least that's what their marketing department thinks!\n\nOf course, it's perfectly natural to judge products based on their current prices, not what they might (or might not) cost down the line.",
+          "upvotes": 46,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User provides a detailed positive critique of the 9700X's efficiency and IPC gains.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User is impressed by the efficiency and Zen 5 IPC.",
+          "replies": [
+            {
+              "commentId": "lh20tui",
+              "text": "They still haven't cleared out Zen 3 stock, hell I think they still sell Zen 2 chips.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about Zen 3 and Zen 2 stock, not the 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lh0cntb",
+          "text": "\"It's not Intel\" is both incredible sarcasm and huge praise at this stage.\n\nWhat a great tagline.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Sarcastic comment about Intel, not product insight.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": []
+        },
+        {
+          "commentId": "lgxnh2l",
+          "text": "generational bag fumbler",
+          "upvotes": 42,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User calls the product a 'generational bag fumbler', expressing strong negative opinion.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User is highly dissatisfied with the generational leap.",
+          "replies": []
+        },
+        {
+          "commentId": "lgy9a2d",
+          "text": "Since Intel's 13/14th gen started failing, I've been very conscious of how these kind of benchmark obsessed reviews might be driving the industry in the wrong direction. AMD made literally everything better, but because number did not go up a lot, it's a \"meh\".\n\nThe server market will happily take these chiplets.",
+          "upvotes": 21,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User argues that the 9000 series is better overall despite benchmark numbers not increasing significantly.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User believes AMD made everything better.",
+          "replies": []
+        },
+        {
+          "commentId": "lgyhze1",
+          "text": "I don\u2019t get GN\u2019s negativity about these, the series seems like a very solid lineup. The server chips that come from these will be very competitive.",
+          "upvotes": 17,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User views the 9000 series as a solid lineup, disagreeing with negative reviews.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User describes the lineup as 'very solid'.",
+          "replies": []
+        },
+        {
+          "commentId": "lgyukag",
+          "text": "One interesting tidbit is Steve confirmed the recall wasn't just because of a typo, but at the very least the Ryzen 9s struggled to hit advertised clock speeds.",
+          "upvotes": 5,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about Ryzen 9s and clock speeds, not the 9700X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": []
+        }
+      ]
+    }
+  ],
+  "model": "gemma-4-31b-it"
+}

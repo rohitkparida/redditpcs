@@ -1,0 +1,422 @@
+{
+  "productName": "amd-ryzen-5-5500x3d",
+  "batchIndex": 5,
+  "totalBatches": 6,
+  "comments": [
+    {
+      "commentId": "18lx32a",
+      "text": "Upgrading Ryzen 5 3600 to 5600X3D/5800X3D: Benchmarks, Memory Scaling in Old and New Games\n\nHey all,\n\nBack again with another random benchmark post. I managed to nab a 5600X3D from Microcenter a couple months ago as a drop-in upgrade for a buddy's old PC (R5 3600). While I had the CPU for less than a week, I was able to put together some quick benchmarks results to see how my 5800X3D compares with the 5600X3D and the venerable 3600.\n\nOne thing led to another however and I found myself conducting a much larger test. So instead of releasing the original post of the 5600X3D vs 5800X3D/3600 comparison, I ended up going down another rabbit hole, adding more games to the suite as well as conducting some memory scaling tests. So yeah, this ultimately became less of the 3600 vs 5600X3D I was intending to do lol\n\n# Testbed\n\nMy system has changed a bit since [I last reviewed the 6700 non-XT](https://www.reddit.com/r/Amd/comments/10v1yov/my_xfx_rx_6700_nonxt_benchmark_review_20_games/) a about year ago.\n\n* X570 Aorus Master (F37c)\n* 2x16GB GSkill TridentZ Neo DDR4 3600 (Timings modified, see below)\n* Lian Li Galahad SL 360 AIO\n* Samsung 980 Pro 2TB, Kingston NV2 2TB, Crucial 750GB game drives\n* Corsair RM850x PSU\n* Win 10 Pro (19045)\n* Dell Alienware AW34323DWF\n* GeForce RTX 4090 FE (Driver 537.58)\n\n# The Contenders\n\n* **Ryzen 5 3600 -** tested in its stock configuration\n* **Ryzen 5 5600X3D** (Curve Optimized to -30 all cores)\n* **Ryzen 5 5800X3D** (Curve Optimized to -30 all cores)\n\nYeah, I made the mistake of not testing stock performance :/. Probably a miniscule difference overall that skews the numbers towards X3D but I thought I'd point it out.\n\nFor RAM I tested two configurations:\n\n**Loose Timings and Speed** **(DDR4-3200 CL16-18-18-38) -** I downclocked my 3600 kit to 3200 and loosened the timings to simulate what \"budget\" DDR4 would perform like. This is probably more representative of what a drop-in upgrade would look like for most users.\n\n**Tight Timings (DDR4-3600 CL14-14-14-32, 170ns tRFC) -** Not ridiculous timings for B-die but it does give a noticeable uplift over stock XMP and should show the R5 3600 in its best light relative to the X3D parts.\n\nRAM tests were only conducted on the 5800X3D and 3600 as I no longer had access to the 5600X3D when I started these tests.\n\n# The Test\n\nIn the spirit of my original 5800X vs X3D comparison, I try to continue pushing the use of older games into my testing suites. With the RTX 4090, I'm also able to test CPU bottlenecks for RT as well so there's a few of those titles thrown in here as well.\n\nRemember that this is a CPU-FOCUSED test, so some of the settings will not make sense for the hardware in actual use cases (stuff like 1080p DLSS, etc.).\n\nAll games with manual runs are captured using the latest version of NVIDIA FrameView.SimCity 4 is the only game that uses a different metric. Instead of AVG FPS/1%/0.1%, SimCity 4 performance is based on the number of simulated days elapsed.\n\n\\*indicates game that was tested without the 5600X3D.\n\n|App|Settings|Test|\n|:-|:-|:-|\n|**DX7 - SimCity 4 (2003)**|1920x1080 - High, Shadows High|Custom large city with 7GB of mods, 3 minute fixed camera simulation with max (cheetah) speed, result is days elapsed (higher is better)|\n|**DX10 - Crysis Warhead (2008)**|2560x1440 - Enthusiast 0xMSAA|Manual run - Call Me Ishmael mission start|\n|\\***DX11 - Company of Heroes 2 (2013)**|2560x1440 - Max AA High|5 minutes of playback at 2x speed of a custom 4v4 AI match on a large map|\n|**DX11 - Deus Ex: Mankind Divided (2016)**|2560x1440 - Ultra No MSAA|Manual run of Prague - \u010cist\u00e1 \u010ctvr\u0165 area|\n|**DX11 - Dishonored 2 (2016)**|2560x1440 - Ultra TXAA Forced VSync off (unlimited FPS)|Manual run of Karnaca mission start|\n|\\***DX11 - Battlefield 1 (2016)**|2560x1440 - Ultra TAA|Manual run of Mud and Blood starting at first checkpoint|\n|**DX9 - A Hat in Time (2017)**|2560x1440 - Very High SMAA|Custom Map: New Hat City, Manual loop run around the center|\n|**DX11 - Kingdom Come: Deliverance (2018)**|1920x1080 - Ultra High, HD Textures On|Manual run through center of starting town Skalitz|\n|**DX11 - Borderlands 3 (2019)**|1920x1080 - Ultra|Manual run through the town of Vestige in the Bounty of Blood DLC|\n|**DX11 - Halo MCC: Halo CE Anniversary (2020)**|3440x1440 - Enhanced|Manual run of the Silent Cartographer mission|\n|**DX12 \\[RT\\] - Metro Exodus: Enhanced Edition (2021)**|1920x1080 - Ultra, RT Ultra, DLSS Quality|Manual run of The Volga mission start|\n|**DX12 - Halo Infinite S4 (2021)**|1920x1080 - Ultra|Manual run of Pelican Down mission|\n|**DX12 - Far Cry 6 (2021)**|1920x1080 - Ultra, TAA|Manual run around Clara's Camp|\n|**DX12 \\[RT\\] - The Witcher 3: Next Gen Patch 4.04 (2023)**|1920x1080 - Ultra+, RT Ultra, DLSS Quality|Manual run of Beauclair port area|\n|**DX12 - The Last of Us: Part 1 Patch 1.1.2 (2023)**|1920x1080 - Ultra|Manual run of a section Prologue mission|\n|**DX12 - Starfield Pre-DLSS Patch 1.7.36 (2023)**|1920x1080 - High (62% FSR2 Scaling), No VRS|Manual run around MAST district of New Atlantis|\n|**DX12 \\[RT\\] - Cyberpunk 2077: Phantom Liberty Patch 2.02 (2023)**|1920x1080 - High, High Crowd Density, RT Ultra, DLSS Quality, Ryzen SMT ON|Manual run of Little China night market area|\n|**DX12 - 3DMark**|Time Spy|Time Spy|\n|**OGL - GZDoom 4.3.1**|3440x1440, Hardware Rendering 16xAF|FrameView capture of demo recording for MAP01 of COMATOSE.WAD + Russian Overkill 3.0|\n\nAll of the accompanying charts are linked below ~~should be attached to this post~~, in-order (except 3DMark).\n\n**Go here for charts:** [**Imgur mirror**](https://imgur.com/a/q4iXa9E)\n\nEDIT: I am dumb and didn't realize text posts and image post are different things. Please use the Imgur link above for the charts. Sorry about that!\n\n# The Result Summary\n\nUsing the Ryzen 5 3600 with DDR4 3200 as a Baseline (Excludes 3DMark):\n\n* **R5 3600 with Tuned D4 3600** is **11.5%** faster\n* **R5 5600X3D with Tuned D4 3600** is **66.5%** faster (worst SimCity 12.4%, best Halo CE:A 99.3%)\n* **R7 5800X3D with D4 3200** is **76.7%** faster (worst Starfield (old patch) 46.8%, best Dishonored 2 117.7%)\n* **R7 5800X3D with Tuned D4 3600** is **85.8%** faster (worst Far Cry 6 57.4%, best Halo CE:A 125.1%)\n\nAs for the 5600X3D vs 5800X3D:\n\n* **R7 5800X3D with D4 3200** is **3.4%** faster (worst KC: Deliverance -8%, best TLoU 13.2%)\n* **R7 5800X3D with Tuned D4 3600** is **8.8%** faster (worst GZDoom -2.1%, best TLoU 19.5%)\n\nEveryone know it at this point: these X3D chip are *fast* and offer a massive boost over the Zen 2 parts, even when they're equipped with low latency DDR4 3600.\n\nSurprisingly, I found the 5800X3D to still scale decently well with RAM. Not as much as the 20%+ the 3600 gains in heavy RT-centric titles but still more than I was expecting.\n\nThe 5600X3D is impressive; it offers over 90% of the 5800X3D in most situations so anyone that got in on that $150 price at Microcenter last month got a killer deal on a drop-in AM4 upgrade. It's a little iffy at $230 though and being exclusive doesn't help either. Hopefully the rumored 5500X3D and 5700X3D are widely available.\n\nHope you enjoyed this little writeup and found this post informative! Next time, I'll be ~~torturing~~ benchmarking the RX 7600 at 3440x1440 Ultrawide and seeing how it fares. Should be fun.\n\nCheers!",
+      "upvotes": 410,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ke6s9vo",
+          "text": "Thanks for doing this test! I'm on a 3600 right now and those numbers look pretty solid. Here's hoping the rumors about a 5700x3d in january are true, that one sounds like a real winner to me. A little cheaper and lower TDP is right up my alley.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The AMD Ryzen 5 5500X3D is a powerful processor that can handle demanding tasks with ease. It is a great choice for users who require high performance and value for their money.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The sentiment of the comment is positive. The user expresses satisfaction with the product and its performance.",
+          "replies": []
+        },
+        {
+          "commentId": "kei4bqu",
+          "text": "Do you expect the 5800X3D to fall below $300 anytime soon? Or will 5700X3D sit in the $250-$270 range and the 5800X3D will remain $300-$320? Wondering whether to wait or pull the trigger now.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The 5800X3D is a high-performance processor that is currently priced at $300-$320. It is not expected to fall below this price range anytime soon.",
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "keihs2w",
+              "text": "I think when the 5700X3D comes out it'll drive the 5800X3D down in price. hard to say by how much though.\n\nAt this point it's up to you whether or not the extra month or two between now and the 5700X3D release is going be to worth saving the 50ish bucks for.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The AMD Ryzen 5 5500X3D is a powerful processor that can handle demanding tasks with ease. It is highly relevant to PC hardware enthusiasts and gamers who require high-performance computing capabilities. The sentiment surrounding this product is positive, as it is widely regarded as one of the best processors on the market.",
+              "sentiment": "neutral",
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ke2zr0o",
+          "text": "Fancy selling that 5600x3d to someone who can\u2019t get them in the uk?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is irrelevant to the product",
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke31v7r",
+              "text": "It's been in my friend's PC for a few months now so can't oblige to that unfortunately :P",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ke320sk",
+                  "text": "Who means more to you? A random person on Reddit or your \u201cfriend\u201d? I think we all know the answer to this question\u2026",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ke342tx",
+          "text": "I'd be really curious to see what this would look like with a 5800x and a 5800x3d",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "This product is not relevant to the discussion",
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke36v6a",
+              "text": "I did test that comparison [a year and a half ago](https://www.reddit.com/r/Amd/comments/v22n4q/tested_5800x3d_vs_5800x_in_a_bunch_of_older_games/).\nSlower GPU (3070 Ti) and the suite is almost completely old games so not sure if that's what you're looking for :D",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": null,
+              "sentiment": "negative",
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ke3vt6l",
+          "text": "any test in total war games?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "This product is not recommended for use in total war games.",
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke4my7j",
+              "text": "unfortunately no, I haven't played any of the games in the series.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": null,
+              "sentiment": "neutral",
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ke40zhj",
+          "text": "Okay, I'm upset now that all reviews don't come with sim City cheetah speed testing, that's really Interesting to see the scaling",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "This product is not relevant to the discussion",
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke4ndta",
+              "text": "it's a favorite of mine and runs legendarily bad on modern hardware with maxed out settings and boatloads of custom content. I have more in-depth testing planned for it that I intend on sharing sometime in the future.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The AMD Ryzen 5 5500X3D is a popular choice among users, despite its performance issues on modern hardware.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user expresses a positive sentiment towards the product, despite acknowledging its performance issues.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ke42cny",
+          "text": "Love my 5600x3D I just wish there was a gpu I was in love with too.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": null,
+          "sentiment": "positive",
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke54e6a",
+              "text": "voodoo 5 6000 for you",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment is relevant to the product and is positive.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The comment is positive.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ke45vpr",
+          "text": "Thanks OP!",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ke4bdl2",
+          "text": "I bought a 32gb 3600 cl18 kit to go with my 5800X3D, thinking that latency mattered less than speeds with the X3D chips, and I've had a bit of buyers remorse since I found out my sticks arent dual rank and this post brought that feeling back.. Is it worth it to look for dual rank ram at this point or should I just live with it?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The AMD Ryzen 5 5500X3D is a powerful processor that can handle demanding tasks with ease. It is worth considering dual rank RAM for optimal performance.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user's sentiment is positive, as they believe the processor is powerful and worth considering dual rank RAM for optimal performance.",
+          "replies": [
+            {
+              "commentId": "ke4f1la",
+              "text": "Don't feel bad about it, you're probably missing out on like 5-6% performance tops and won't feel the difference at all. If I'm being honest, I didn't notice a thing when running 3200 C16 until I punched the numbers into a spreadsheet.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is expressing a negative sentiment about the product, as they believe it does not provide noticeable performance improvements.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ke4se2d",
+          "text": "This is exactly what I wanted to see as 3600 user",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "This product is highly relevant for users who require high-performance computing. It is recommended for tasks such as video editing, 3D rendering, and gaming.",
+          "sentiment": "positive",
+          "sentimentReasoning": "This product is highly recommended for users who require high-performance computing. It is a great value for the price and provides excellent performance for a budget-friendly price.",
+          "replies": []
+        },
+        {
+          "commentId": "ke5j2aj",
+          "text": "I braved the 2.5hr drive each way to get the 5600X3D/B550 combo, and an quite happy with the result. I'd already ordered a DDR4-3600 RAM kit before I heard about the combo offer, so I went with that instead, and upped to 32GB. The kit I bought also plays better with the Peerless Assassin cooler I'm using.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The product is not relevant to the user's needs.",
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ke5kb3w",
+          "text": "So what's the most powerful AM4 cpu at the moment?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The AMD Ryzen 5 5500X3D is a powerful AM4-based CPU that can handle demanding tasks.",
+          "sentiment": "neutral",
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke73qa3",
+              "text": "5950X for productivity, 5800X3D for gaming",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The product is highly relevant for both productivity and gaming, as it is a powerful processor with a high core count and multiple cores. It is also known for its high-quality graphics and fast performance. However, it may not be the best choice for casual users who only need a basic processor for everyday tasks.",
+              "sentiment": "neutral",
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ke5qrb5",
+          "text": "nice. in vr, cpu is a heavy bottleneck and the 3d v cache chips do help massively",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment is relevant because it mentions the performance of the CPU and the impact of the 3D V cache chips.",
+          "sentiment": "neutral",
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ke5ukjw",
+          "text": "So 3dmark timespy depends on ddr performance",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The product is a high-performance processor, which is relevant to the topic of PC hardware.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The product is highly recommended for users who require high-performance computing.",
+          "replies": [
+            {
+              "commentId": "ke73j23",
+              "text": "yeah, it does affect the CPU score quite lot. I'm usually scoring considerably above average for the hardware combination without any other overclocks with just curve optimizer and tuned 3600 RAM.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": null,
+              "sentiment": "positive",
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ke7b8fa",
+                  "text": "I sent my 4800 CL40 to RMA. Im gonna get a 6000 CL30. It would make improvement right? Maybe 7200 CL34?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is not relevant to the product being discussed.",
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ke7l4dn",
+                      "text": "6000 cl30 would be the sweet spoot and is the recommendation for getting the most out of zen 4. anything higher doesn't really make sense.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The AMD Ryzen 5 5500X3D is a powerful processor that can handle demanding tasks with ease. It is highly recommended for users who require high performance in their computing needs.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The sentiment of the comment is positive, as the user expresses satisfaction with the product and its capabilities.",
+                      "replies": [
+                        {
+                          "commentId": "ke7li1m",
+                          "text": "Except bandwidth right?",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "The comment is relevant to the product as it refers to the performance of the product in terms of bandwidth.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "The comment is positive as it praises the product's performance.",
+                          "replies": [
+                            {
+                              "commentId": "ke7n9ow",
+                              "text": "Sure, but I think just in general zen 4 doesn't play well with speeds above 6000. You could maybe get to 6200-6400 tops with the right sticks and a good IMC. Can't say for sure but that's the consensus I usually see.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": null,
+                              "sentiment": "neutral",
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "ke7y4sv",
+                                  "text": "Have you seen anyone reach 7000-7200 at 1:1?",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "This comment is irrelevant to the product being discussed.",
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "ke7z8z5",
+                                      "text": "I dont think anyone is looking at it because it's not worth anyones time. By that I mean even if the answer is yes, forget about it.",
+                                      "upvotes": 2,
+                                      "classifyThis": true,
+                                      "relevance": "include",
+                                      "relevanceReasoning": "The product is not worth anyone's time",
+                                      "sentiment": "negative",
+                                      "sentimentReasoning": "The sentiment is negative",
+                                      "replies": [
+                                        {
+                                          "commentId": "ke7zgzh",
+                                          "text": "Is a DDR5-7200-CL34 able to run at 6000-CL28? 20% lower frequency, 20% tighter timing.",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "This product is not recommended for high-performance tasks due to its lower frequency and tighter timing.",
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "ke804rz",
+                                              "text": "You'd be about as likely to get a great die 6000 CL30 to run that. It's more about the memory controller.\n\nI'm sure the new, monolithic 8000G cpus will commonly do 7000+, you'd do this not to help the cpu but to help the igpu. Here it might be worth spending some time on one of these.\n\nBut 6000 CL30 is tight enough on chiplet ryzen. You're looking at days of work and testing, weeks if you haven't done it before, and it's not even the advertised CL latency that matters much but other values.\n\nthis is not worth our time lol",
+                                              "upvotes": 2,
+                                              "classifyThis": true,
+                                              "relevance": "include",
+                                              "relevanceReasoning": null,
+                                              "sentiment": "neutral",
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ke8mtb4",
+          "text": "I run 5950x rtx3080ti 74gb ram 4 dims in msi x570s dark wofo whatever its all 4 stocks run 3600 no issues the asrock x570 that got binned to broken usb port from wear cpuld not run 4 stocks of cosair ram but the msi does sp if board goes get x570s board",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": null,
+          "sentiment": "positive",
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "keo392u",
+          "text": "Kudos to you kind sir",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The comment is relevant to the product",
+          "sentiment": "positive",
+          "sentimentReasoning": "The sentiment of the comment is positive",
+          "replies": []
+        },
+        {
+          "commentId": "kou19ab",
+          "text": "im still on Ryzen 3600 and RTX 3060ti. Wish Asia had a 5600x3d.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": null,
+          "sentiment": "negative",
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

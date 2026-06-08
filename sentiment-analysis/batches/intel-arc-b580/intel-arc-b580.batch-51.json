@@ -1,0 +1,390 @@
+{
+  "productName": "intel-arc-b580",
+  "batchIndex": 51,
+  "totalBatches": 85,
+  "comments": [
+    {
+      "commentId": "1hcluf2",
+      "text": "Intel Arc B580 Review - Excellent Value",
+      "upvotes": 388,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "m1oz8mv",
+          "text": "TLDR:   \n\n**Pros:**      \n    Fantastic price/performance ratio   \n    Good performance for 1080p, 1440p with lowered settings   \n    Quiet operation   \n    XeSS Frame Generation   \n    12 GB VRAM   \n    Backplate included     \n    Idle fan-stop   \n    Good energy efficiency in gaming   \n    Low temperatures   \n    Support for HDMI 2.1 & DisplayPort 2.1   \n    Good video encode/decode hardware acceleration support   \n**Cons:**       \n    High idle power consumption / ASPM required   \n    Overclocking is frustrating   \n    Fan keeps switching on in idle   \n    PCIe 4.0 x8 interface   \n    No support for DLSS (yes I know it's an NV exclusive, still doesn't change the fact that you can have it on one option and not on others)   \n    Resizable BAR required for good performance",
+          "upvotes": 36,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m1ozk5l",
+              "text": ">  No support for DLSS (yes I know it's an NV exclusive, still doesn't change the fact that you can have it on one option and not on others)\n\nBut isn't that what XeSS2 is for?",
+              "upvotes": 59,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m1p0bss",
+                  "text": "Pretty much\n\nXESS upscaling running on Intel GPUs is extremely close in quality to DLSS.\n\nBut Nvidia GPU owners have the choice of any upscaler, issue is game support for XESS",
+                  "upvotes": 28,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m1tk43h",
+                      "text": "Nvidia GPU owners cannot use GPU XESS, only software XESS, which is significantly worse.",
+                      "upvotes": 8,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "m1q3tsa",
+                  "text": "IMO, both Intel and to a lesser extent AMD need to work on a driver feature where games with only DLSS are automatically modded to use XeSS internally. Like so many mods already do so.\n\nI think Tim asked Tom Peterson about modding DLSS games to use XeSS.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m1qv2d2",
+                      "text": "Or instead of doing driver fuckery which will only make the same issues appear again for a future GPU competitor, devs actually implement the API Standard Direct SR and don't ship with vendor specific dlss.",
+                      "upvotes": 6,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "m1tkb7x",
+                          "text": "herding cats is easier than making developers use competent API calls. Theres a reason Nvidia flat out disregards Drawcall orders in dx12/vulcan and rearanges them in driver how they think its best. 19/20 cases it significantly improves performance because devs fucked up somewhere.",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "m1r8cyp",
+                          "text": "Yes, but the boat for that has sailed for most titles where new development has stopped.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "m1qr5ry",
+              "text": "This review also makes no mention of all the frametime issues. GN and DF's videos do.",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "m1qp9nm",
+              "text": "Few questions, how can i know if my motherboard has ASPM? It has PCIe 3.0, will that be a big bottleneck? (Just using 1080p) Also, i\u2019ve read it uses 190W, does that mean a 550W PSU should be fine?",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m1ri0xg",
+                  "text": "ASPM is part of the PCI- Express specs even back with PCI+E Gen 1 or 2.\nJust check in your BIOS settings.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m1rlw8f",
+                      "text": "Ok but this gpu is pcie 4.0, will it work on an older motherboard on 3.0",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "m1t3iw7",
+                          "text": "yes it will",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "m1virbb",
+                          "text": "Sure, but you need to have a newish motherboard with Rebar or the card won't do well at all as seen with Alchemist.\n\nTypically that's all of the Ryzens and 10th gen intel and beyond if I'm not mistaken with a few other boards being able to do with an update.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "m1yrdl5",
+                              "text": "You mean cpu? the motherboard is a520m-hdv but the cpu is ryzen 5 5600g which should have rebar i think",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "m1yromk",
+                                  "text": "The chip itself is limited to PCIE3 for the 5600g (which would mean it's fine lol.)\n\nMost PCIE3 *motherboards* do not have Rebar to my recollection. AM4 has it though lol.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "m1ys13v",
+                                      "text": "Great, I guess I got really lucky then, right? lol",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "m1ys82d",
+                                          "text": "Yes. The B580 is an awesome card, but it's not perfect for people looking for slot in upgrades on say, someone who has a 8700K and 1060 3Gb lol",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "m3lvv50",
+                                              "text": "Quick question, do you know how bad this gpu is without rebar? I have the option to enable it but I would have to format my disk to GPT in order to enable rebar.",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "m1siz31",
+              "text": "How is PCIe 4.0 x8 a con?",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "m1q7582",
+              "text": "> No support for DLSS (yes I know it's an NV exclusive, still doesn't change the fact that you can have it on one option and not on others)\n> Resizable BAR required for good performance\n\nThese are not cons. DLSS is nvidia proprietary. This is never going to work on Intel or AMD. Resizable bar is standard now, and even nvidia uses it since the 3000 series.",
+              "upvotes": 8,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m1tkhu7",
+                  "text": "It is a con even if its a proprietary thing. DLSS is a significant factor in purchasing decision. Its one of the reasons why people choose Nvidia over AMD.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m1vgbb1",
+                      "text": "so the con is really. \"its not nvidia\"",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "m1r7xgc",
+              "text": "So why do they need to support DP2.1 and HDMI 2.1?",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m1siwvp",
+                  "text": "Why not?",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "m2czs0b",
+              "text": "What? PCIe x8 instead of x16. What's going on there?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "m1pqvve",
+          "text": "[https://www.techpowerup.com/review/intel-arc-b580/40.html](https://www.techpowerup.com/review/intel-arc-b580/40.html)\n\nI've been seeing a lot of twitter talk on OC potential. TPU has done some tests.\n\n Do take a look at the full test. Right now it seems buggy, and may not be worth it.\n\n>Stock performance 3DMark GT1: 44.5 FPS\n\n>power limit set to max: 44.8 FPS -> just tiny gains\n\n>...\n\n>voltage +80 = 44.7 FPS\n\n>\\-> just more voltage = no extra perf\n\n>voltage +90 = crash -> but why?\n\n>voltage +60 & max power = crash\n\n>...\n\n>voltage +60 & max power = 46.3 FPS (no crash this time?)\n\n>\\-> voltage and power does help, but only small gains, like 4%\n\n>voltage +50 & max power & +100 MHz clock offset = crash\n\n>...\n\n>voltage +25 (lowered) & max power & +75 MHz = 46.41 FPS -> as expected, still tiny differences\n\n>max power +50 voltage +75 MHz + 21 GHz mem = 47.7\n\n>max power +50 voltage +75 MHz + 21.5 GHz mem = crash\n\n>\\-> Tiny gains from mem OC, like +2%\n\n>mem crash loop ... giving up\n\n>Overall OC is like 44.5 FPS vs 47.7 FPS = 7.2%",
+          "upvotes": 8,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m1rxhu3",
+              "text": "> Do take a look at the full test. Right now it seems buggy, and may not be worth it.\n\nIs it though? nowadays gpus and cpus pretty much overclock themselves so long as thermals and power delivery allows it, it's not like we're in the 2000s were you could take a pentium from 3 to 4 ghz iirc and run with it\n\n\nMaybe the reason it's crashing it's because they're trying to extract performance from where there's no one left to be extracted",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "m1rlq9c",
+          "text": "if I have a NVIDIA GeForce RTX 2060, is this a solid upgrade assuming it's compatible with my other hardware?\n\nI'm very hardware illiterate, so any help is appreciated.\n\nDoes this have the same frequent issues with drivers that AMD GPU's have as well?",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m1s2irk",
+              "text": "With a RTX 2060, Hardware Unboxed in an earlier video suggested the RTX 2060 did fulfill the promise of it being a ray tracing GPU when it launched",
+              "upvotes": 0,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m1sod4j",
+                  "text": "as an actual user I have never gotten it to do ray tracing in a game without getting terrible performance, but I was asking if the Arc B580 would be a good upgrade candidate, not discussing whether or not the 2060 was good.",
+                  "upvotes": 7,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "m1pivif",
+          "text": "This is a good deal for consumers because it's an arbitrage on intel's market position. They're essentially selling this thing at a loss or breaking even to try and get reviewer/consumer good will and market share.\n\nFrom a really high level hardware perspective, it's basically a push between the 4060 ti and the b580 in terms of transistor budget. The 4060 ti uses a much denser version of 5 nm so the full die is about 190 mm2 while the b580 is a much larger 280 mm2. The die size comparison between the two does not look good for intel but truthfully, they both use about 20 billion transistors (b580 a little less).\n\nThe upside is they look competitive with nvidia now in terms of performance and feature parity for transistor budget. If they're able to scale this up and reach meaningful marketshare, I would expect the amazing performance/dollar to come down quickly, especially since Pat was fired and the intel board will not accept a zero margin or negative earning wing of intel for long.",
+          "upvotes": 10,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

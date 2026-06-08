@@ -1,7 +1,7 @@
 {
   "productName": "amd-ryzen-9-9900x",
   "batchIndex": 26,
-  "totalBatches": 39,
+  "totalBatches": 41,
   "comments": [
     {
       "commentId": "1evu8og",
@@ -14,662 +14,324 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "livtvce",
-          "text": "Just so you know, calculating percentages of temperatures like you did makes zero sense mathematically unless you use Kelvin. Going from 100 C to 50 C doesn't mean you reduced your temperatures by 50% because the position of the 0 is completely arbitrary.",
-          "upvotes": 11,
-          "classifyThis": true,
+          "commentId": "liu4qgw",
+          "text": "7950x3d is faster in productivity and gaming while using less power at stock for nearly the same price(Edit in the USA YMMV).",
+          "upvotes": 147,
+          "classifyThis": false,
           "relevance": null,
           "relevanceReasoning": null,
           "sentiment": null,
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "ljwafgt",
-              "text": "Stuff they don't teach in school",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "ohjbogx",
-                  "text": "You can calculate the percentage increase in temperature with regard to the ambient, not absolute zero.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "loq7g95",
-              "text": "Can you go into more detail? Why are the temp comparisons not good?",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lpjfqmp",
-                  "text": "You can absolutely compare temperatures, that's not the issue. The issue is using percentages to do it.\n\nWithout going into linear algebra, when comparing two measures in terms of ratios, i.e. \"my car is twice as fast as yours\", you're implicitly assuming that 0% of something is zero, otherwise the math doesn't work.\n\nThis is obvious with speed, if my speed is 0% of whatever it's zero: I'm just not moving. But temperature is a measure of the thermal energy of an object: 0 degrees Celsius (or Fahrenheit) doesn't mean the object has zero energy. It's a completely arbitrary point in the scale where water freezes. So calculating ratios of temperatures in C or F doesn't make sense and the obvious way to see it is that the ratios become unit-dependent if you use Celsius or Fahrenheit.\nNote that it does make sense if you use Kelvin, as the 0 point is a physical 0 (i.e. zero energy).\n\nThis is the reason why in physics you basically never use Celsius but only Kelvin, you really break most of the math otherwise.",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "lpodr6f",
-                      "text": "I think I understand, so it\u2019s not okay to say that 95c is 22.22% hotter than 76c because the 22.22% has no basis of relativity? Like it doesn\u2019t mean anything to say that it\u2019s 22% hotter or it\u2019s just actually not 22% hotter because of the math in kelvin?\n\nMaybe just better to say that it\u2019s 20c cooler at the similar amount of power?",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "lpopv3h",
-                          "text": "&gt; Like it doesn\u2019t mean anything to say that it\u2019s 22% hotter or it\u2019s just actually not 22% hotter because of the math in kelvin?\n\nIf you use Kelvin you could technically say that something is 22% hotter than something else, but it's a really weird thing to say because a lot of practical uses of temperature (like this one) only care about differences in temperature and not absolute temperatures.\n\n&gt; Maybe just better to say that it\u2019s 20c cooler at the similar amount of power?\n\nThis is how I'd compare temperatures in basically every occasion. Using temperature differences also has the added benefit of making Celsius functionally the same as Kelvin (since they only differ by the placement of the zero) which is a SI unit.",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "lwz7zki",
-                              "text": "If you compare it to ambient, I think percentages could start making sense again. The standard ambient temperature in engineering is 20 degrees Celsius, but needless to say you have to work with the ambient temperature that you've got.\n\nSay we have one PC where the CPU runs 30 degrees above ambient. Kelvin or Celsius doesn't matter because the step size is the same. \n\nThat means that it runs about half as hot as PC with a CPU that runs 60 degrees above ambient.",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": [
-                                {
-                                  "commentId": "lwznj46",
-                                  "text": "This makes mathematical sense, because at least you can compare the results regardless of the unit of measurement.\n\nHowever, it still feels very wrong to say \"half as hot\". \"Hotness\" in the end is a measure of thermal energy and in your case one PC doesn't have half the energy of the other.",
-                                  "upvotes": 1,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": [
-                                    {
-                                      "commentId": "lx05q93",
-                                      "text": "Fair enough. Maybe there isn't a good shorthand for saying half the temperature delta to ambient.",
-                                      "upvotes": 1,
-                                      "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
-                                      "replies": []
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    },
-                    {
-                      "commentId": "nnb71py",
-                      "text": "It makes no sense either way not Kelvin no nothing. You want the delta from ambient. And even that wouldn't be precise because the cooling system may not perform the same when refrigerating at 10C ambient or at 30C ambient.",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "livgd0w",
-          "text": "The temperature sensors in the Ryzen 9s are in a different location than the Ryzen 7s. So the temperature readings aren\u2019t really apples to apples comparisons. Power draw comparisons are though, and the 9s generally do draw less power to achieve the same workloads, but not really 10 degrees Celsius worth.",
-          "upvotes": 5,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "livglt3",
-              "text": "Well I use tdie just to get a better gauge and not average, monitoring the hottest sensor makes more sense.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "livgq1r",
-              "text": "Voltage is also more tamed",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "liviwu1",
-              "text": "Sorry I did use average in these numbers but the tdie was 1-2c higher",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "m6q8e0y",
-          "text": "For those who want to know how is a Ryzen 9900X better than a 7900X, here is a comparison on the same plateform.\n\n[https://1drv.ms/i/c/3539aac7018df5fe/IQTEM5SS6HgBRr4Xd\\_41\\_YHuAUIb7V64597S8s11bP6ausQ?width=1024](https://1drv.ms/i/c/3539aac7018df5fe/IQTEM5SS6HgBRr4Xd_41_YHuAUIb7V64597S8s11bP6ausQ?width=1024)\n\n\\- For both, the best efficiency is obtained with eco 65.\n\n\\- Eco mode 105 has a less detrimental impact on performance for the 9900X compared to the 7900X\n\n\\- Efficiency is better on the 9900X.\n\n\\- Both in eco 65 ans eco 105 modes, the 9900X efficiency outperforms the 7900X.\n\n\\- \"Tjmax 75\u00b0c -40mV\" mode enhances performances and effciency of the 9900X.\n\nIf I compare my settings, the result is :\n\n[https://1drv.ms/i/c/3539aac7018df5fe/IQSxEG4fw8LiQLN3I1uqBmBbAazoNYfzzjl2r-P5CGc1VOo?width=1024](https://1drv.ms/i/c/3539aac7018df5fe/IQSxEG4fw8LiQLN3I1uqBmBbAazoNYfzzjl2r-P5CGc1VOo?width=1024)\n\n**So the 9900X against the 7900X is : -10\u00b0c, -8% W into the electrical outlet, +12% of performances, +21% of efficiency.**\n\n;)",
-          "upvotes": 4,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mgn7nk2",
-              "text": "Thanks for sharing! I'm new in undervolting, which metrics do I meed to copy from your setup? All of them i need to set it on the bios right? Thanks in advance",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "liu7yj1",
-          "text": "I watched multiple reviews and there seems to be some issues with high multi core cc'd latency and some applications where having worse performance than zen 4 specially in gaming.\n\nI have bought 9700X and returned it a week later and replaced with 7700 until zen 6 will arrive. In my case zen 4 is running colder because I bought better thermal paste... the power limit is same.\nYou are writing that that CPU is running colder but power consumption is just 15 W higher, to me this looks like a different core issue.\nBut enjoy your new CPU :)",
-          "upvotes": 7,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "liuvvd3",
-              "text": "I\u2019ve heard that too but I don\u2019t know if it\u2019s something that can be patched in a future AGESA update, these CPU\u2019s are still new. Personally I don\u2019t think the efficiency is the result of a core issue, the advertised TDP of the chip went from 170W to 120 and voltage appears to also be less aggressive, hanging around the 1.2v range rather than 1.3 to 1.4 on the 7900X. I would only recommend upgrading from a 7900X if you just want better efficiency and thermals, who cares if it scores higher in Cinebench.",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lix6l43",
-              "text": "there is some possibility that will be fixed in software/firmware, so I'd hold off or at least keep on eye out for fixes or wait for x3d/get old x3d.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "liufovf",
-          "text": "I am looking forward to the 9950x3D",
-          "upvotes": 7,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "liuym69",
-              "text": "It\u2019ll be a good product, hopefully it meets your workload needs. All of these CPU\u2019s are good, just a matter of waiting for the value to change and to see if there are performance updates. I made my purchase decision on the better thermals.",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "livbavp",
-                  "text": "Oh it will? Do you have some insider information for knowing it\u2019ll be a \u201cgood product\u201d?",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "livbgxk",
-                      "text": "No no no, I\u2019m just saying they\u2019re all pretty good and the argument over which you can buy is having less and less impact as they\u2019re all becoming so good.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "liumnzf",
-          "text": "9000 series is really good but obviously not something 7000 series owners should be looking at",
-          "upvotes": 4,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "liuxp7i",
-              "text": "Depends if you want more thermal head room which I really need in my T1. I don\u2019t know if it was my 7900X sample but it would roast.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "liuy6a7",
-                  "text": "Well yea im sorry I meant in general most people should not upgrade to 9 from 7 heh . Obviously everyone can do what they want but value wise in most cases it does not make sense .",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "liv11jy",
-                      "text": "I think most people need to determine for themselves what\u2019s best for them. I don\u2019t really follow the gaming crowd when it comes to purchase decisions. I didn\u2019t make a recommendation to buy, especially not based on real life scenarios, synthetic benchmarks are cool but they\u2019re not the only important metric. I was just taking note that I saw C23 score improvements along with temperature and power reduction. I\u2019ve watched almost all of the reviews but still made the decision based on my needs. I considered the 7950X3D but couldn\u2019t find one used and buying it new was about $200 CAD more than the 9900X.",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "liv2qt6",
-                          "text": "I'm not even trying to say YOU should have not bought 9000 series or anything like that. My original comment was never aimed to you but more as a general thing . Like most people who already have 7000series don't need to worry about 9000series at all . I'm glad it worked out for your build",
-                          "upvotes": 3,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "liv2xv3",
-                              "text": "Ha no I know. I was just saying in general. You have a valid good point.",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            },
-                            {
-                              "commentId": "liv34ak",
-                              "text": "I just felt like my 7900X was getting too hot.",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": [
-                                {
-                                  "commentId": "liv4a11",
-                                  "text": "I can understand that . I went with 7900 non x exactly because low power in my itx case . Personally don't see any reeal reason for me to upgrade other than bench numbers lol \ud83d\ude04 then again I only do some video editing and gaming which 7900 can handle with ease so far",
-                                  "upvotes": 1,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": [
-                                    {
-                                      "commentId": "liv4xd2",
-                                      "text": "I actually regret not knowing about the non-X variant because it was shown to have the better value.",
-                                      "upvotes": 1,
-                                      "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
-                                      "replies": []
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "liufxk0",
-          "text": "thanks for the info! How do you normalize at 40 db?What do you do exactly?",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "liuuga5",
-              "text": "set fans to static speed, check out the fan control tool on github",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "liuxttm",
-                  "text": "I use a decibel meter and tune the fan speed in Fan Control to roughly 40dB.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "liv8uyy",
-                  "text": "I use tbat one, great tool. I get it, thanks!",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "liuk3zl",
-          "text": "How do you switch to Eco mode on the cpu?",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "liuxijt",
-              "text": "You can do this in two ways, through the bios (recommended) or through Ryzen Master. It\u2019s super easy on both methods but you\u2019ll have much less issues doing it through the bios. You need to access your PBO settings, Eco Mode and choose the profile you want, 65, 105 and 170W TDP. From the same area you can play around with curve optimizer, PBO thermal limits etc. I\u2019ve always had issues with Ryzen Master so I would personally go through your bios.",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lozerxe",
-                  "text": "And for ryzen 9 9900x\u00a0 make this??",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "lu59g3w",
-                  "text": "How about performance on eco mode 65W?",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "m67rf8h",
-                  "text": "whats your settings for curve optimizer? I want to know that for comparison with my results",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "llhsp4p",
-          "text": "Could you please share more details about your build? Like motherboard model, RAM, PSU etc.? Video card? I've been planning to build a 9900X/Meshroom S PC for some time and it would help me a lot.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "liv1kks",
-          "text": "That's 233pts per watt in R23 which is very efficient. Although much slower (11,359pts @ 49W), my 5700X is nearly identical in power efficiency but that required a lot of tuning and my setup is primarily focused on low power consumption.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "liv2j4f",
-              "text": "If I was a gamer I\u2019d consider the 5800X3D or 7800X3D, I definitely wouldn\u2019t upgrade for efficiency by itself (for gaming). I test pc cases and fans and thing having a 120W TDP chip over a 170W chip helps me, I\u2019m always running benchmarks, several times a day.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "livwndi",
-          "text": "https://preview.redd.it/5c2c5gem1njd1.png?width=4320&amp;format=png&amp;auto=webp&amp;s=86bf4c02e1e4b4203b9a5bf19d6471ef70e05a6a",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "livwq6c",
-          "text": "https://preview.redd.it/hc5jdp9p1njd1.png?width=4320&amp;format=png&amp;auto=webp&amp;s=15839355471c747441fd70fa3a3142f276282f17",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "livwsey",
-          "text": "https://preview.redd.it/dhvtnc4r1njd1.png?width=4320&amp;format=png&amp;auto=webp&amp;s=5900960750a5c9b07c2f141189441879ff83c9c6",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "livwu0z",
-          "text": "https://preview.redd.it/ekkuq62t1njd1.png?width=4320&amp;format=png&amp;auto=webp&amp;s=fa13d1582d1f3c2c576e035e76f7432404bcad36",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "liw5quk",
-          "text": "What's your use case OP?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "liwscf4",
-              "text": "4K 10-bit 4:2:2 HEVC Video and photo editing, decoding h.265 to ProRes, audio mixing for the videos. Game on simulators like Cities Skylines II. Light After Effects as I\u2019m trying to learn it. 80% video exciting and audio mixing. Intel would\u2019ve been a better choice with QuickSync but at the time I decided on Ryzen 7000 there were no 13900Ks or later available to buy in store.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "lj06elq",
-          "text": "Or just get a discounted 7900x, undervolt it and it would get similar power efficiency and exact same gaming perf \ud83e\udd23",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "lj07jrd",
-              "text": "My 7900X hits 95c on 105W eco mode, if it was that simple I\u2019d would be fine but you lose a ton of performance when you could\u2019ve just purchase a more efficient chip. I also don\u2019t use this for gaming.",
+              "commentId": "liuuhth",
+              "text": "Well not everywhere. These 9900X\u2019s have already began to drop in price. Here in Canada they went from $629 to $614, small amount but I think they\u2019ll even out in value as people look past it for gaming. Also the 7950X3D is still too much for air cooling in a small form factor case, something I plan to test out in the T1, it could very well be that the 9900X is still to much but I promising. Also here in Canada you can\u2019t even find a 7950X3D on the used market, have to buy brand new, $209 CAD more than the 9900X after tax.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "lxgpu8x",
-          "text": "Hi, I am in canada as well. Seeing as this post is almost 3 months old and prices have come down a lot. I am thinking 9900x (75:25 productivity and gaming). Do you know if 9900x is good with air cooling ? Or does it need liquid cooling. \n\nAnything else you would suggest for my profile.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
+              "relevance": "include",
+              "relevanceReasoning": "User discusses the 9900X's price drops and its suitability for air cooling in SFF cases compared to the 7950X3D.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user views the 9900X as a viable, more affordable alternative to the 7950X3D in their specific region and use case.",
+              "replies": [
+                {
+                  "commentId": "liv43cz",
+                  "text": "I respect everyone\u2019s opinions and feel free to express them here, however I\u2019d just like to state that this post isn\u2019t to sway anyone to buy something, I noticed improvements and thought I\u2019d share. It\u2019s true you can air cool a 7950X3D, I wouldn\u2019t recommend it but it\u2019s a possibility. If you can find a good deal on 7000 series or have it currently and are okay with its performance keep it, I agree it doesn\u2019t make sense to upgrade if it works for you. My 7900X sample ran too hot and it made the most sense to me to upgrade. Here in Toronto x3D chips are like gold and don\u2019t stay on marketplace for long; wasn\u2019t really an option for me unless I went 7800X3D but wanted more cores.",
+                  "upvotes": 20,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User shares personal experience upgrading to the 9900X because their previous 7900X ran too hot.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is satisfied with the upgrade and the thermal improvements.",
+                  "replies": [
+                    {
+                      "commentId": "liwwjvi",
+                      "text": "if your air cooler can't handle a 7950x3d, it can't handle a 9900x either which uses more watts at stock.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Technical critique regarding the 9900X's power consumption and cooling requirements.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment provides a technical comparison of wattage without a clear positive or negative leaning.",
+                      "replies": [
+                        {
+                          "commentId": "liwwxzm",
+                          "text": "Just make the best decisions for you.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Generic advice to make the best decision; no product-specific insight.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Not applicable as the comment is not relevant.",
+                          "replies": [
+                            {
+                              "commentId": "lix5qbi",
+                              "text": "yes, but decisions should be based on data",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Meta-talk about decisions being based on data; no product-specific insight.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "Not applicable as the comment is not relevant.",
+                              "replies": [
+                                {
+                                  "commentId": "lix6w3e",
+                                  "text": " They are. Just not with the 7950X3D, it cost more here and I can get similar performance with the 9900X and better single core performance. It doesn\u2019t matter if it\u2019s more efficient than the 7959X3D, it\u2019s more efficient than my 7900X. I\u2019ll be testing the air cooling after I finish some sponsored content this week.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "User compares 9900X performance and efficiency to the 7950X3D and 7900X.",
+                                  "sentiment": "positive",
+                                  "sentimentReasoning": "User highlights better single-core performance and efficiency over their previous 7900X.",
+                                  "replies": [
+                                    {
+                                      "commentId": "lix8bst",
+                                      "text": "above comments were about cooling not price. Why are you deflecting to price when talking about cooling? we can discuss price and buying options, but that is a separate discussion.",
+                                      "upvotes": -1,
+                                      "classifyThis": true,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Argumentative meta-talk about the direction of the conversation; no product insight.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "Not applicable as the comment is not relevant.",
+                                      "replies": [
+                                        {
+                                          "commentId": "lix8kt1",
+                                          "text": "I said I give you efficiency, what else is there to the discussion? Price? What\u2019s your objective here?",
+                                          "upvotes": 5,
+                                          "classifyThis": true,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "Low-effort banter/argument; no product-specific insight.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "Not applicable as the comment is not relevant.",
+                                          "replies": [
+                                            {
+                                              "commentId": "lix8xrv",
+                                              "text": "I give you efficiency but you still want to go on?",
+                                              "upvotes": 3,
+                                              "classifyThis": true,
+                                              "relevance": "exclude",
+                                              "relevanceReasoning": "Low-effort banter; no product-specific insight.",
+                                              "sentiment": "neutral",
+                                              "sentimentReasoning": "Not applicable as the comment is not relevant.",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "liwvemo",
+                  "text": "7950x3d uses less power than 9900x and I'm currently cooling it in a SFF just fine with water cooling. 2 240mm rads between it and a 4080 super, granted for certain values of fine (rpm, noise, etc), but it doesn't throttle and I keep it at 80c under full load stress testing.\n\n\n\nPlenty of sff\u00a0 cases can fit larger air tower coolers, but not 10l sandwich cases.\n\n\nI paid $335 for 7950x3d at MC with bundle, 9900x currently $500.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comparison of power consumption and price between 9900X and 7950X3D.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user suggests the 7950X3D is a better value and more efficient for their SFF build.",
+                  "replies": [
+                    {
+                      "commentId": "liwxr9u",
+                      "text": "I live in Canada, the 7950X3D is 799 plus 13% HST ($902 CAD), none available used. I don\u2019t recommend it for the T1, that\u2019s what I base most of my recommendations on as I make content around it and other 10-15L cases. All of my builds are at best 1 240 radiator and the best air cooling I can do in a T1 is a 47mm low profile air cooler. I\u2019ve have plenty of data points running 105W on the 7900X and it hitting 95C on the X47 Full Copper.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discussion of 9900X suitability for specific SFF cases (T1) and comparison to 7900X thermals.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing technical data points and regional pricing context.",
+                      "replies": [
+                        {
+                          "commentId": "lix3g71",
+                          "text": "well get a different case or do a 2 rad build in t1... others have done it. But 9900x uses MORE watts than 7950x3d at stock not less. both can run in eco modes. so what works for 9900x cooling likely works for 7950x3d.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Technical comparison of wattage between 9900X and 7950X3D.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a technical correction regarding power consumption.",
+                          "replies": [
+                            {
+                              "commentId": "lix3xqb",
+                              "text": "Even if I give you the power consumption it\u2019s not the same cost.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "Discussion of the cost of the 9900X compared to alternatives.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is focusing on the cost aspect of the decision.",
+                              "replies": [
+                                {
+                                  "commentId": "lix4f9c",
+                                  "text": "The nearest 7950X3D is 300km away for $650",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "Mention of local availability and price of a competitor chip, implying a comparison to 9900X.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is providing a factual price point for a competitor.",
+                                  "replies": [
+                                    {
+                                      "commentId": "lixazhu",
+                                      "text": "i don't have experience buying in CA, but why not just use ebay/amazon if your local stores/marketplace are a bad deal? Shipping from USA can't be that expensive for a small CPU. On amazon USA 7950x3d is often on sale .. current cheapest is $450, 489 used on ebay, $525 new on ebay. Or follow sales on slickdeals or similar. There have been multiple sub $500 sale prices from reputable sellers recently like Amazon, Newegg, Ant.",
+                                      "upvotes": 0,
+                                      "classifyThis": true,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "General advice on where to buy CPUs from the USA; no product-specific insight.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "Not applicable as the comment is not relevant.",
+                                      "replies": [
+                                        {
+                                          "commentId": "lixbnuo",
+                                          "text": "Why does it have to be the 7950X3D? Genuine honest question. To be honest I\u2019ve always assumed that chip had the same TDP as the 7950X but I\u2019ve never really looked into it because I don\u2019t game and you don\u2019t really scale up in cores when building sff.",
+                                          "upvotes": 2,
+                                          "classifyThis": true,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "Question about the 7950X3D; no direct insight into the 9900X.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "Not applicable as the comment is not relevant.",
+                                          "replies": [
+                                            {
+                                              "commentId": "lixjrvb",
+                                              "text": "Due to insulating properties of x3d cache, it's tuned down from 7950x. It runs 148 watts PPT and 112 watts on the core(practically 105 ecomode) for a R23 score of 35.5kish. 9900x IPC handily beats it, but it has 33% more cores so the 7950x3d wins in all the workflows I care about like rendering, code compiling, encoding, compression. And the x3d cache will crush the 9900x in gaming. So it's a no compromise option. And there have been many sales on it lately. If you never game, you could get a cheaper still 7950x and tune it to same watts or less of 9900x and still get better performance. Watt efficiency doesn't scale linearly so unless you need higher single core performance or you are doing a minority of specific workflows like some AI tasks that have serious architectural IPC improvements, 16 7000 series cores &gt; 12 9000 series cores at same wattage.\n\nIf you had a mixed use work/gaming build, This is an unpopular opinion, but the 7900x3d, which has been on sale as low as $280, also has alot of value and only pulls like 120 watts PPT. If I hadn't been able to get the 7950x3d for $335, I would have gotten this.",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": "include",
+                                              "relevanceReasoning": "Detailed technical comparison of IPC, core count, and performance between 9900X and 7950X3D.",
+                                              "sentiment": "negative",
+                                              "sentimentReasoning": "The user argues that the 7950X3D is a 'no compromise' option that beats the 9900X in most workflows.",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "liuvu4r",
+                  "text": "wrong the 7950x3d can be air cooled. u just need to know what ure doing. assuming if u buy that component mixed with sff....",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about air cooling the 7950X3D; no direct insight into the 9900X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Not applicable as the comment is not relevant.",
+                  "replies": [
+                    {
+                      "commentId": "liux08l",
+                      "text": "You\u2019re right you can do it but it\u2019ll come with a cost. In the T1 in 3 slot mode you\u2019ll be limited to a 47mm air cooler. The 3.25 slot configuration can fit a 53mm cooler but you will get fan turbulence. Theres still the availability issue with the 7000X3D chips on the used market.",
+                      "upvotes": -4,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about SFF cooling constraints for 7000 series chips; no direct insight into the 9900X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Not applicable as the comment is not relevant.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
             {
-              "commentId": "lxgr1jx",
-              "text": "Well if you\u2019re okay with over 90c temps under multi core load, it performs well enough. Not sure about gaming but you\u2019ll likely see no difference between air and AIO. \n\nAIO - C23 MC - 33,662 (76c TDIE)\u2026\u2026\u2026\u2026.\nAIR (X47FC) C23 MC - 30,350 (95c TDIE)",
+              "commentId": "liv919d",
+              "text": "https://www.pccasegear.com/products/59324/amd-ryzen-9-7950x-processor\n\nhttps://www.pccasegear.com/products/66312/amd-ryzen-9-9900x-processor\n\n~10% / $80 more in AUD but I agree with your point",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Direct price and performance comparison between 9900X and 7950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual price and performance percentages.",
               "replies": []
+            },
+            {
+              "commentId": "lix34m9",
+              "text": "I have to restrain myself from not buying new stuff like this cause I said imma buy a completely new PC once im done with uni \ud83d\ude2d",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Personal comment about not buying new hardware; no product insight.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Not applicable as the comment is not relevant.",
+              "replies": []
+            },
+            {
+              "commentId": "liy7t81",
+              "text": "I got the 7900x3d despite all the hate it's performance at sub 100w is amazing and runs cool",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about the 7900X3D; no direct insight into the 9900X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Not applicable as the comment is not relevant.",
+              "replies": [
+                {
+                  "commentId": "liyo2hc",
+                  "text": "the 7900x3d's biggest problem was it's MSRP pricing which made no sense.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about the 7900X3D's MSRP; no direct insight into the 9900X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Not applicable as the comment is not relevant.",
+                  "replies": [
+                    {
+                      "commentId": "liyx4s3",
+                      "text": "Agreed, I got it on sale it wad almost $100 less than the 7900x non 3D. So I really can't complain",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about the 7900X3D; no direct insight into the 9900X.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "Not applicable as the comment is not relevant.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "loyfp7g",
+              "text": "9900x is faster single threaded performance. Kinda unsurprising a cpu only 1 gen ago with more cores does better on multitasking...\u00a0",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Opinion on the 9900X's single-threaded performance and multitasking capabilities.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user acknowledges the 9900X's superior single-threaded performance.",
+              "replies": [
+                {
+                  "commentId": "lp4bua6",
+                  "text": "Single core productivity is niche and if that was really your main use, 9700x is cheaper. As to more cores being unsurprising at being better, the unique thing is it's also better at gaming until 9000 x3d.\u00a0",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Critique of the 9900X's value proposition compared to the 9700X for single-core productivity.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user provides a balanced technical perspective on use cases.",
+                  "replies": []
+                }
+              ]
             }
           ]
-        },
-        {
-          "commentId": "lxo5cnf",
-          "text": "will the thermalright SI-100 be enough to cool a 9900x?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "m7yceip",
-          "text": "Here doing research. I've decided that the 9800X3D is not worth it for me as improvements, if they exist, are not apparent at 4k. I only game at 4k, so I'm not really noticing a difference in performance between the 9800X3D and former 13600k (for 4k gaming). However, I am noticing some other small differences. Mostly 3D modeling and rendering differences, which should theoretically see a small improvement with the 9800X3D, but it just feels like a slightly weaker card. \n\nDon't get me wrong, this 9800X3D is still taking care of all of my needs, and I do appreciate the efficiency while in use/under load, however, I just cannot wrap my head around why I did a several hundred dollar platform swap, to have the same gaming experience, and questionable difference noted to overall computing performance. \n\nI'm seriously considering selling this thing and getting the 9900x. It'll most likely be paired with a 5090 in a few weeks. The only thing stopping me from getting a 9950X3D is the fact that I am using an NCase M2, and plan to swap from PA 120mm air cooler to a 240mm ROG Ryujin, simply because I don't want the hot air blowing into the cooler (from the card). \n\nI try to not let my temps ever get above 65/65 under sustained load, and I have airflow optimized very well in this case. \n\nCan you share an updated opinion, OP, on if you think the 9900x is still a worthy choice for SFF builds?\n\nThanks!",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

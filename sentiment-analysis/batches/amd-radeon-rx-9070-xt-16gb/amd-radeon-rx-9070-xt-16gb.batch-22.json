@@ -1,0 +1,379 @@
+{
+  "productName": "amd-radeon-rx-9070-xt-16gb",
+  "batchIndex": 22,
+  "totalBatches": 29,
+  "comments": [
+    {
+      "commentId": "1k38f73",
+      "text": "My new Ryzen 7 9800x3d and 9070 XT build and some help for those needing a UPS with Pure Sine Wave and undervolting and overclocking the Sapphire Pulse RX 9070 XT\n\nMy current specs are listed below. I built this entire PC through [elitehubs.com](http://elitehubs.com) u/JD\\_EliteHubs so a big thank you to the team for helping me build my dream PC. \n\nOne of the biggest issues i faced was finding a UPS that has PURE SINE WAVE output to protect my sensitive electronics and I wanted to make this post in case anyone else is going through the same thing. After hours of research I found out that only 2 models in India give Pure Sine wave output which at least has 2000va and in built batteries. \n\nThe Microtek ONLINE UPS 2KVA 1PH:1PH 72V-IB MAX+ and the Cyberpower OLS2000EC which comes with a smaller 36v batteries but I settled on them as Microtek didn't respond to a single call or email whereas Cyber power responded to my calls and emails and any doubts i had they cleared them. Cant speak regarding their customer service to warranty and parts repair but unfortunately in India I don't think there are many options so I just had to bite the bullet and see. The UPS works perfectly and it comes with a 6a plug. \n\nThe main issue I faced is that the output ports of the UPS is 6a sockets only whereas for most of us, our high end PC PSU's come with a 16a plug and no UPS that I have seen has a 16a output socket. Since my PC realistically speaking would never cross 4.2 amps I picked up a power cable from amazon (FEDUS power cable, the one with the 10amp rated 6a plug and not the 6amp rated 6aplug) and using this connected my PC to the UPS and it has been working flawlessly for the past 2 weeks, I have tested switching on and off my power to the UPS(along with the occasional power cuts) and my PC shows no issues and I can safely shutdown with no problems.\n\nNow comes the fun part. Undervolting and Overclocking the GPU. I have the Sapphire Pulse variant which has lower boost clocks then the other OC counterparts. Remember to please take this advice with a grain of salt and do your own testing. Using AMD Adrenaline you can easily undervolt and overclock your gpu. \n\nTaking advice from Blackbird PC Tech and Ancient Gameplays from Youtube, I tried multiple tests with small increments with Steel Nomad and Furmark but i settled on steel nomad as this actually gave crashes so I could find a more stable GPU overclock and undervolt. I have attached some test results and for my GPU I found that -60 mv was the most stable, Max MHZ core offset actually gives worse performance the higher you go so I did not change this, I increased the power by 10% and I get a gpu wattage draw of 340w. The last thing I changed was VRAM Tuning to +150mhz or to 2664mhz (-14mhz is the offset by default making it 2650mhz). This was the most stable one I found as +200mhz crashes in Steel nomad but not other benchmark tools. Just to recap I used a -60mv, 10% power increase, and VRAM tuning of 2664mhz(+150mhz), which gave me a score of 7250 average on steel nomad. \n\nI have also uploaded pictures of my AMD Adrenaline GLOBAL GRAPHICS settings to those interested. Just change stuff in-game if you want but in general i think that these are good for most games.\n\nI also overclocked my Ryzen 7 9800x3d and it would take me a while to explain the process. SkatterBencher's video on youtube titled  \"Ryzen 7 9800X3D Undervolt & Overclock to 5750 MHz | SkatterBencher #82\" was of great help and he goes in every little detail. I do recommend watching his channel as he also boosts your ram timings by expo/xmp.\n\nOverall I am extremely satisfied with the performance and would love any input from you guys to helping me maybe boost even further.\n\nI hope this guide helps someone who is stuck in a similar situation as i was.\n\nLast but not least\n\nAal Bormahu aak hin miiraad\n\nFUS ROH DAAAAAAHHH\n\n\n\n\\[PCPriceTracker Build\\](https://pcpricetracker.in/b/s/a71d4e20-6c11-44ee-bd0b-085d4aa3dbc8)\n\n\\*\\*Processor\\*\\* | \\[AMD Ryzen 7 9800X3D Processor with Radeon Graphics (8 Cores, 16 Threads, Up to 5.2GHz, 104MB Cache, AM5 Socket)\\](https://pcpricetracker.in/products/5cea6be16a674532a506524222b4e57a) | PrimeABGB | 49449\n\n\\*\\*Motherboard\\*\\* | \\[MSI X870 GAMING PLUS WI-FI MOTHERBOARD\\](https://pcpricetracker.in/products/38b0d4b36c670a7b37ee558a2bcda50b) | Vedant Computers | 26540\n\n\\*\\*Graphic Card\\*\\* | \\[Sapphire PULSE AMD Radeon RX 9070 XT 16GB GDDR6 Graphics Card\\](https://pcpricetracker.in/products/df0aeb0eda8bbbeae2da4c9601f9808e) | Elitehubs | 77999\n\n\\*\\*Power Supply\\*\\* | \\[Deepcool PN850M 850W 80+ Gold ATX 3.1 Fully Modula\\](https://pcpricetracker.in/products/3d56a76c0cc4125abe320f4eb2f12b13) | PrimeABGB | 9346\n\n\\*\\*Cabinet\\*\\* | \\[Cooler Master MasterBox MB520 Mesh E-ATX Mid-Tower Cabin\\](https://pcpricetracker.in/products/d4eed940863a31d29487fa24508aa0d2) | PrimeABGB | 7360\n\n\\*\\*Memory\\*\\* |  |  | \\[ADATA XPG Lancer Neon RGB 16GB ( 16GBx 2 ) 6000MHz DDR5 Ram CL30 ( Black )\\] | EliteHubs \\\\ 12030\n\n\\*\\*SSD drive\\*\\* | \\[Kingston NV3 2TB PCIe Gen 4.0 Internal SSD\\](https://pcpricetracker.in/products/e75a49caadac92c8f89d58b26062af27) | PCStudio | 11500\n\n\\*\\*CPU Cooler\\*\\* | \\[Cooler Master MasterLiquid 360L Core ARGB Liquid Cooler ( Black )\\](https://pcpricetracker.in/products/bee74b3ba94bf8293b36333408ce266d) | PrimeABGB | 8100\n\n\\*\\*Case Fans\\*\\* | \\[Cooler Master CF120 Argb Cabinet Fan (Single Pack) (R4-S2S-12AA-GP)\\](https://pcpricetracker.in/products/12ffe714a37ab0d1b3f4c6cd2b1f17b7) | PCStudio | 500\n\n\\*\\*UPS\\*\\* | \\[Cyberpower OLS2000EC PURE SINEWAVE UPS - 26000 \n\n| | \\*\\*Grand Total\\*\\* | \\*\\*INR 2,28,824\\*\\* |",
+      "upvotes": 35,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "mquju19",
+          "text": "Where did you buy the cyberpower ols2000EC UPS from and how much were you able to get it for? Would be great if you can help me with this as I am also noticing that there are hardly any good online UPS options.\n\nI wanted to DM you regarding this but it seems like only accounts whitelisted by you can DM you.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is focused on purchasing a UPS, not the GPU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking for purchasing information without expressing a positive or negative opinion on the product.",
+          "replies": [
+            {
+              "commentId": "mrdrk9b",
+              "text": "Hi I bought it via calling cyberpowers customer care number and they connected me with a local dealer near me and I went and got it from that guy. What questions do you have",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about UPS procurement, not the GPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual information about where they bought a UPS.",
+              "replies": [
+                {
+                  "commentId": "mrlt8n7",
+                  "text": "You said you were considering the online UPS of microtek right? But isn't that around 40k while this cyberpower ols2000 is around 25k. You were willing to purchase the microtek model despite the price difference?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about UPS pricing, not the GPU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking a question about UPS pricing.",
+                  "replies": [
+                    {
+                      "commentId": "mrltyn5",
+                      "text": "The price online for Microtek is highly inflated. Amazon is cheaper than their website prices. Also buying locally would be cheaper.  Right now it's selling for 34k. When I made this post it was 29k. So online I think is not the way to go and find locally for around 28k\n\nhttps://preview.redd.it/pfb07vet8zze1.jpeg?width=1080&format=pjpg&auto=webp&s=765da20fa21721f8e9d9daff1788d4de26ef3f47",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about UPS pricing and availability, not the GPU.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing factual information about UPS pricing.",
+                      "replies": [
+                        {
+                          "commentId": "mrpd3bx",
+                          "text": "I see. Good to know. Thanks. I'll inquire locally and find out the current prices.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a simple thank you regarding UPS information.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is expressing gratitude for UPS information.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "msch3zl",
+          "text": "Hey, I have the same cpu + gpu combination, could you check the micro stutter% from amd metrics to see if it goes to like 3-5% for you as well? sometimes 10-20 or even higher during loading screens. I couldn't tell them with my eyes but amd metrics keeps pointing out the 3-5%s.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "The user is discussing micro-stuttering performance metrics for the GPU/CPU combination.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is reporting a technical issue (micro-stuttering) with the product.",
+          "replies": []
+        },
+        {
+          "commentId": "n0kfs6j",
+          "text": "Curious about the backup time for your build under load and on idle",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is asking about UPS backup time, not the GPU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question about UPS performance.",
+          "replies": []
+        },
+        {
+          "commentId": "n7gpg29",
+          "text": "Hey man hows the PC going on now ? And also hows the SINEWAVE UPS ?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is asking about the PC and UPS, but does not provide insight into the GPU specifically.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a general question about the status of the build.",
+          "replies": [
+            {
+              "commentId": "n7gumnf",
+              "text": "Everything is working so far and have faced no issues with the ups. So many times it saved my ass due to frequent voltage fluctuations i experience",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about the UPS performance, not the GPU.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user is satisfied with the UPS.",
+              "replies": [
+                {
+                  "commentId": "n7h2fbw",
+                  "text": "Perfect thank you !",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a simple thank you regarding UPS information.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is expressing gratitude.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nftnale",
+          "text": "Thanks so much for this post, saves lives :D    \nI'm in the same boat currently :')   \nHad 2 doubts:  \n  \n1. I have a 16a to 6a converter that I got (Cona TOTO) for the PSU (Corsair RM850x) which has been working well but would it be safe to just use that to connect the PSU to the UPS?  \n2. You mentioned about the mcb rating of the sockets in one of the comments, can you please help understand how to measure this rating and how much it matters? Thanks!  \n  \nMy setup: 9800X3D + 5070 Ti + RM850x",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about UPS cables and MCB ratings, not the GPU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking technical questions about power delivery.",
+          "replies": [
+            {
+              "commentId": "nftss95",
+              "text": "I would advise you not to get a converter and directly just buy a new cable with the 6a plug as it will interfere with the ups giving direct flow to your pc imo. Just pick up the cable and you should be fine This is the link for the cable I used https://amzn.in/d/aFZLGnV\n\nIn order to find out the mcb rating of your room go to your mcb board and start flipping the switches till you find the one for the room you plan on keeping your pc in. Then written on that shud be something like c10 or 10a or something like that can't remember. Using that you will be able to determine what your room can handle. U need atleast 10a for the room because you need to account that not only your pc will be on but ac, fan , lights etc. 6a is a nogo ofc\nIf you have any issues do let me know I'll try to help you if I can\nDid you pick a ups model. Seeing your build you should get a 2000va ups to be on the safe side as your pc on load will be around 600watts I'm assuming and if you are gonna be connecting your monitor and other devices to the usb then the 2000va model gives ample room for the future as battery degrades over time",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about UPS cables and electrical ratings, not the GPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing technical advice on power delivery.",
+              "replies": [
+                {
+                  "commentId": "ng4bwkw",
+                  "text": "https://preview.redd.it/yohrdigw6brf1.jpeg?width=3024&format=pjpg&auto=webp&s=62257dcb283f2823a129b8ca2fff3bc1d337d5f0\n\nThanks! It says C16, so guessing I'm sorted there.   \nOrdered the cable that you recommended.   \nAnd, yes, I'm planning to get the same 2000va model that you have got.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about UPS cables and MCB ratings, not the GPU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is confirming their electrical setup.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nh0wlfl",
+          "text": "[have a look at this what do u think about this offline ups](https://www.moxikart.com/battery/luminous-2-kva-lb2000-xl-24v)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about an offline UPS, not the GPU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking for an opinion on a UPS.",
+          "replies": [
+            {
+              "commentId": "nh10ku1",
+              "text": "This is nice bro.It has Pure sinewave ,the only thing is that it doesn't have any inbuilt batteries",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about UPS specifications, not the GPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual information about a UPS.",
+              "replies": [
+                {
+                  "commentId": "nh10vpx",
+                  "text": "I does have inbuilt battery see\n\nhttps://preview.redd.it/03uzqhyisbsf1.jpeg?width=1080&format=pjpg&auto=webp&s=909531f20ef2ebe32a714979232b48e2db983f56",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about UPS batteries, not the GPU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing factual information about a UPS.",
+                  "replies": [
+                    {
+                      "commentId": "nh11afj",
+                      "text": "Doesn't it say that with old battery it's 0rs since it's unavailable? And without old battery it's 12k? U should call and ask imo. 12k for a puresinewave ups with inbuilt batteries seems too good to be true. Just confirm before you buy",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about UPS pricing and batteries, not the GPU.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a cautionary warning about a UPS.",
+                      "replies": [
+                        {
+                          "commentId": "nh12g75",
+                          "text": "Thars right bro currently im searching more info regarding this ups from different websites",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about UPS research, not the GPU.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is continuing their research on a UPS.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "nh11609",
+                  "text": "Bdw i just looked at it specs nicely now its a online ups",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about UPS specifications, not the GPU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is correcting a specification of a UPS.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nh194o3",
+          "text": "Is there any way i can connect with u",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Lacks substance; just asking to connect with the user.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking to connect.",
+          "replies": [
+            {
+              "commentId": "nh3bwgf",
+              "text": "DM me",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Lacks substance; just a request to DM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is telling the other user to DM them.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "nh32gcb",
+          "text": "I have similar issues, my power supply is msi mag a850 , will a 600va inverter be able to power it? If I connect it with ups in middle(it closes before invertor comes on) or I need a better invertor too?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about PSU and inverter performance, not the GPU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking about power supply compatibility.",
+          "replies": [
+            {
+              "commentId": "nh3iu3e",
+              "text": "Your msi mag psu comes with active pfc. You need an online ups. An inverter has a delay of 10ms whereas an online ups has zero delay (0ms). I need to know more details of your build. 600 va is not equal to 600 watts btw. 1000 va models is like 800watts and 2000va models are like 1600watts.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about UPS and inverter specifications, not the GPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing technical information about power delivery.",
+              "replies": [
+                {
+                  "commentId": "nibdfqx",
+                  "text": "Thanks for the insights, I tried a new pure sinewave invertor from a nearby electrician (he let me test it before buying) and now my pc doesn't shut down and works for a while after light out aswell.\n\nPS: the inverter is Microtek 1550 heavy duty vturbo",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about an inverter, not the GPU.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is satisfied with their new inverter.",
+                  "replies": [
+                    {
+                      "commentId": "nibgocu",
+                      "text": "Nice bro it should work fine ofc but because of that delay I just hope you don't face any issues later on",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about inverter delay, not the GPU.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a cautionary warning about an inverter.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "nh3izek",
+                  "text": "The apc ups which is on Amazon are line interactive or simulated sinewave which are not that good for active pfc psus. They also have a delay of 5ms-10ms",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about UPS types, not the GPU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing technical information about UPS types.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nheq92h",
+          "text": "After the battery dies, how do I go about getting replacement batteries and what will be the cost of repairing them or getting new batteries?\u00a0",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about UPS battery replacement, not the GPU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking about battery replacement costs.",
+          "replies": [
+            {
+              "commentId": "ni8rq64",
+              "text": "Hi since they are inbuilt batteries you will have to go through cyberpower customer care itself to have them replaced. As for the cost im not too sure but i think it cud be anywhere from 5k to 12k maybe as it has 4 12 V 9 AH batteries",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about UPS battery replacement, not the GPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing information on battery replacement.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "njqdeg2",
+          "text": "I have pretty much the same spec pc as you. I'm also using a 1200 watt simulated sine wave from cyberpower (which shoud be more than enough power to handle my 850 watt psu) . My issue is that the ups can keep my pc on when there is power cut during low usage, but when under high load like gaming, my pc instantly shuts off even tho the ups is still on. Do you have the same issue with the pure sine wave ups under high gaming load?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about UPS performance under load, not the GPU itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is reporting a power issue with their UPS.",
+          "replies": []
+        },
+        {
+          "commentId": "mo128qh",
+          "text": "U guys worry too much",
+          "upvotes": -3,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Low-effort banter/meta-talk about worrying.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing an opinion on the other users' behavior.",
+          "replies": [
+            {
+              "commentId": "mo1rbom",
+              "text": "Better to worry than lose lacs of ruppes worth of components in a power cut",
+              "upvotes": 10,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Meta-talk about the risk of power cuts, not the GPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is arguing that it is better to be cautious.",
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "model": "gemma-4-31b-it"
+}

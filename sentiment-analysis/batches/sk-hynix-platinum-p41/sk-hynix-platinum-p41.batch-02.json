@@ -1,12 +1,12 @@
 {
   "productName": "sk-hynix-platinum-p41",
   "batchIndex": 2,
-  "totalBatches": 6,
+  "totalBatches": 5,
   "comments": [
     {
-      "commentId": "1ojpo2v",
-      "text": "SK Hynix Platinum P51 - Keep or Refund?\n\nSo after some admittedly half-assed research, I found that this SSD in the previous generation (P41 Platinum) was one of the fastest if not the fastest boot drives out there. I went and assumed that this new one would have similar performance proportional to Gen 5, so I bought it, disregarding the singular review about it literally exploding.\n\nHowever, very soon after I purchased it (either the day after or just a couple days), I noticed that it wasn't being sold on Amazon anymore, and it hasn't been back up since. Certainly not a good sign, or maybe just unfortunate timing? I also can't find much in terms of video reviews or really anything reputable online.\n\nAt first, I figured that the heat sink with my MSI MAG B850 Tomahawk MAX would do the trick with this SSD. However, I hear a ton of Gen 5 drives run super hot, so I'm starting to think that the possibility of it actually being a trash product that could destroy my build is significant enough for me to reconsider purchasing it.\n\nDoes anyone use this SSD? Should I ship it back? And if so, what should I get instead? Aiming for a fast as heck boot drive for ~$100 or less.",
-      "upvotes": 2,
+      "commentId": "v3g8jk",
+      "text": "SK Hynix Platinum P41 2 TB Review - Faster than Samsung and WD",
+      "upvotes": 165,
       "classifyThis": true,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,20 +14,9 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "nm4uj17",
-          "text": "Remember to check our discord where you can get faster responses! \nhttps://discord.gg/6dR6XU6\nIf you are trying to find a price for your computer, r/PC_Pricing is our recommended source for finding out how much your PC is worth! \n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/PcBuild) if you have any questions or concerns.*",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "nm4vcn4",
-          "text": "\"gen 5 drives run hot\" ????\n\ngen 5 pcie is also the newest, and sk hynix is pretty damn good. i'd keep it.\n\ncheck the reviews, they fixed the issue w/ the write speed. also it's still being sold on newegg.",
-          "upvotes": 7,
+          "commentId": "iay9v9m",
+          "text": "They're all fast enough.  Its the other stuff that matters.\n\nSK Hynix's previous model was known for its excellent power efficiency, and was a top choice to put into laptops.  This review doesn't discuss power draw and sleep states anywhere that I can see.  Neat that its fast  but the review completely skips over the single selling point (is it still super efficient compared to competitors?) that would make me choose this over my goto samsung.",
+          "upvotes": 103,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -35,9 +24,9 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "nm4vpvx",
-              "text": "Reviews on this and the WD_Black and Samsung equivalents mostly said that Gen 5 has significantly hotter temps than Gen 4. Maybe software has been better optimized for them or something.\n\nAppreciate the reply!",
-              "upvotes": 2,
+              "commentId": "iaybfmi",
+              "text": "Most of the time the \"speed\" these companies advertise is pure sequential anyways which isn't really useful as a metric at this point. SSDs excel at random access and that has largely stayed fairly stagnant at the lower que depths.",
+              "upvotes": 48,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -45,9 +34,321 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "nm51529",
-                  "text": "Buy a NVME cooler with a active fan on it, and run the drive at max speed \ud83d\ude0c\ud83d\udc4d.",
+                  "commentId": "iayctp8",
+                  "text": "Yep, for random access its either optane, or again all SSD controllers are roughly the same with maybe a *bad* outlier or two.\n\nAt today's baseline, if a difference in sequential speeds would make an every-day difference to you, you'd be looking at reviews of DAS solutions targeted for prosumer+ photography/videography, not individual drives.\n\nI'm not really sure who these reviews are meant for.  You could make it two paragraphs with SLC cache size and other non-advertised parameters, one speed chart of a long full-drive sequential to display garbage collection/throttling/cache,  and say \"everything is otherwise normal\" and include a $/gb and call it a day.",
+                  "upvotes": 36,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "iayhuwu",
+                      "text": "Yeah I'm in the same camp. I have a 970 Evo, and have zero desire to upgrade to another SSD for more sequential speeds. Only reason to upgrade is for more storage space. I've looked into getting an Optane 905p as an upgrade, since there will be actual meaningful improvements for my workloads, but the price per GB is just too high for consumers.",
+                      "upvotes": 10,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ib03me2",
+                          "text": "Getting a used 800p and set it up as a cache device (think primocache) will yield most of the benefits. You might want to tweak it to emphasize metadata.\n\nThis won't be night/day though. Even a p5800x won't be night/day.",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ib12x05",
+                              "text": "&gt; This won't be night/day though. Even a p5800x won't be night/day.\n\nCan confirm. Even with a 905P it wasn't a *massive* shift. At some point Windows is the bottleneck due to how Explorer manipulates large numbers of small files.\n\nBut I'd still never go back. Which is going to make things a bit awkward once we're in the PCIe 5 era of SSDs.",
+                              "upvotes": 5,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "ib2ut30",
+                                  "text": "&gt; Can confirm. Even with a 905P it wasn't a massive shift\n\nI'm using an optane drive (large 900p) that I got on ebay at a firesale price...\n\nLike, it's nice but I don't really appreciate it. \n\nIf I had it to do over again, I probably would've gotten a smaller optane drive and just used primocache or LVM cache. \n\n\nI definitely appreciate the $80ish 800p that I slapped in my NAS though. Nearly all of my hits to that drive are either from RAM or from that optane drive. Well, the ones that aren't already cached on my desktop's optane drive. \n\n----\n\n&gt;At some point Windows is the bottleneck\n\nIt's a bit philosophical but getting data into memory in the proper format is often the limit. \n\nI'd love it if windows or linux or whatever just did a better job of automatically caching regularly used blocks into RAM. Why not toss most metadata associated with files into RAM if you have 32GB or 64GB of RAM? (for what it's worth ZFS does this)\n\nOr gasp... having a \"small\" 32GB or so optane stick that acts as a persistent page file",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "ib16by7",
+                      "text": "These reviews are all about marketing. In truth there's been some minor improvements to speed over the years (mostly in sequential, but random access has seen some improvements too over the years, albeit much less). The real benefit/change in SSD is the change in interface (the jump from sata was significant imo), the overall storage size, and the $/GB. I remember my first SSD I bought was like 100 GB, and that wasn't the cheap model either.\n\nHowever, it got to the point where SSDs are in an okay spot size wise. Most consumers can now buy a 1tb/2tb drive, and that's all they need (most consumers aren't going to have many TB's of media, game, files, etc.) And if they need storage, hard drives are probably the better product for them.\n\nSo they need to get their model to stand out. \"Why should you buy THIS 2 TB drive\". The problem is, they can't talk about stuff like dram, controller, etc, otherwise that will make their cheaper products look REALLY bad. It's best that consumers don't know that the cheap drive they bought doesn't have dram or has a really bad controller prone to failure... But talking about speed, now there's a safe, harmless way to advertise your SSD product.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "ib03g9k",
+                  "text": "For what it's worth 4K QD1 is actually improving. While optane (think p5800x) might max out at 400 MBPs when doing 4KQD1 work, something like a Samsung 980 Pro can hit around 90MBPs. \n\nSure the optane is 4x faster but older SATA SSDs were doing like... 30.\n\nNow, this does degrade if you're doing concurrent writes but there certainly has been improvement - a half order of magnitude.",
+                  "upvotes": 10,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "iaz07yu",
+                  "text": "But will direct Storage have an impact on this since it's being made targeting SSDs.",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "iazaab6",
+                      "text": "No.  If anything, nvme sequential dickwaving matters even less because your total transfer is hard-limited to a portion of your VRAM.",
+                      "upvotes": 8,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ib04xxc",
+                          "text": "Can you explain this in more detail? I don\u2019t understand",
+                          "upvotes": 10,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ib1jecw",
+                              "text": "Read up on what DirectStorage does again.",
+                              "upvotes": -4,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "ib1l5nn",
+                                  "text": "Pretty sure they are more or less asking why you believe that your vram / usage of your vram will be the bottleneck.",
+                                  "upvotes": 8,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "ib1r8xu",
+                                      "text": "Right, they don't understand what directstorage does, the problems it solves, and where those solutions are most effective/actively being used.\n\nThere is a whole cult of \"directstorage is the next coming of christ\" that stemmed off  the console wars debate because the playstation ssd had faster sequential (at a huge tradeoff of other things due to proprietary hardware design, but here we are again,  jerking off over sequential), and I really have no interest in diving into that, **again.**\n\nhttps://docs.microsoft.com/en-us/gaming/gdk/_content/gc/system/overviews/directstorage/directstorage-overview\n\nThats a decent overview.  Go find some devblogs of how and where its used in games if you need more.",
+                                      "upvotes": -1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "ib1vbxk",
+                                          "text": "Kinda seems like you are expecting people to do a lot of footwork with the assumption they'll come to the same conclusions as you rather than answering the question simply when doing so would require the same amount of effort as this comment took to type.\n\nIt kinda comes across as either arrogance or as if you don't really have basis for what you said as you didn't either post that previous conversation, something directly relevant or a simple explanation.\n\n[Nevertheless, I went searching imagining that with the level of confidence you espoused here it would be easy to find. What I did find was to find an article which talks about the workloads in play\n](https://compusemble.com/insights/home/the-next-gen-gaming-workload-and-directstorage-microsoft-is-making-a-push-to-make-the-full-feature-suite-of-this-technology-available-to-developers-in-2022).\n\nFor the benefit of /u/reddit_hater Im just pinging them here with the message to ctrl-f sequential.\n\nThe thing is though, this explanation says absolutely nothing about VRAM being the limitation and instead refers to use case, which isn't what your comment talked about. In fact, the fact that its high QD would make it even more likely that its storage limited rather than VRAM limited.\n\nSo I'm actually left still wondering what you meant by \"your total transfer is hard-limited to a portion of your VRAM.\" especially given that VRAM will still be at least an order of magnitude faster than storage which would still indicate that storage is the bottleneck.\n\nNo one is going to spend tons of time searching the web to prove someone's comment right. Its up to the person making the comment to at least include relevant information, which a direct storage overview definitely is not.",
+                                          "upvotes": 7,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "ib1pczy",
+                          "text": "But DirectStorage should increase the QD, no?",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ib657mz",
+                              "text": "Ideally, yes. Phison's presentation suggested 32+ and possibly up to QD512 (e.g. Q32T16). (the other user above is talking about sequential when it's more about bandwidth - these are random reads)",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "ib3uapb",
+                  "text": "&gt;lower que depths\n\nQueue, not \"que\".",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ib04ure",
+              "text": "Every single one of the reviews of come out for this drive has neglected to mention the power consumption numbers, it\u2019s very frustrating. I can only hope that toms hardware, which I still haven\u2019t seen a review come out from, will go over this, that\u2019s who did it last time.",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ib65499",
+                  "text": "&gt;  I can only hope that toms hardware, which I still haven\u2019t seen a review come out from, will go over this, that\u2019s who did it last time.\n\nTH review appears to be out now. Their power testing isn't super complex, though.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ib0726w",
+              "text": "The lack of thermal throttling tells me it doesn't consume a lot of power.\n\nI don't need PCIe gen 4.  I'd be happy with discount on P31 Gold.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "iayi2le",
+              "text": "Is efficiency really that important on an SSD? I'm kinda surprised that it's a big enough difference between SSDs to warrant choosing one over another. Since the SSDs probably won't be heavily loaded as often as the CPU or GPU will be, what makes it a big deal?\n\nAlso, as a follow up question - is there any efficiency difference between certain types of SSDs? E.g. DRAM vs no DRAM, 1TB vs 2TB, 2240 vs 2280, PCIE 3 vs 4, etc.",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "iaz6jnt",
+                  "text": "&gt; what makes it a big deal\n\nIts what differentiates itself from other drives.  Less power also means less heats.\n\nThe P31 had power states from 2-6 watts.  Thats not a trivial amount, and its also pretty low.  \n\nhttps://www.anandtech.com/show/16012/the-sk-hynix-gold-p31-ssd-review/7\n\nAnd you can see that the WD Black SN750,  while being a really popular desktop drive at the time, would make a poor laptop drive.  In a desktop, it never drops to a truly low power mode.  In a laptop, it drops down to low power, so no problems, right?  Wrong--It actually takes 50ms to wake back up from that low power, so its no wonder they leave it at higher power states when used in a desktop!\n\n*Actual* testing is what is needed to reveal this kind of controller behavior.  Running benchmarks is great but it doesn't reveal important characteristics.  nvme has matured to where you could categorize performance into 2-3 buckets and its this this little stuff that actually separates them.",
+                  "upvotes": 18,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ib64y6j",
+                      "text": "&gt; The P31 had power states from 2-6 watts.  Thats not a trivial amount, and its also pretty low.\n\n[P41](https://i.imgur.com/p42PRFI.png). (2TB)\n\n&gt; Its what differentiates itself from other drives. Less power also means less heats.\n\nEfficiency matters with everything, in my opinion, but yeah - less power and less heat is particularly important with laptops.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "iayo4qb",
+                  "text": "It\u2019s not really that important, but it\u2019s one of the only things that separates drives in this part of the market. Two random drives in this sort of prosumer tier probably have similar enough I/O performance that you might as well pay attention to the other details like power consumption and durability.",
+                  "upvotes": 14,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "iaz5oe3",
+                  "text": "Power use, especially idle, can make a difference for laptops.",
+                  "upvotes": 18,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ib64s2p",
+                      "text": "Based off [readings](https://i.imgur.com/p42PRFI.png) from a retail drive, this follows typical power states - if the laptop supports everything, most NVMe drives will fall into the same envelope. That being said, TH's review has the P41 being very efficient under load, although that's with a simplified file copy.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "ib06p87",
+                  "text": "Along with the other comments here, it can also matter as far as heat output goes. A lot of the top tier SSDs tend to thermal throttle without heatsinks and a more power efficient SSD will be able to sustain higher loads for longer.",
                   "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "ib052pc",
+                  "text": "Power matters for laptop battery life.",
+                  "upvotes": 2,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -58,131 +359,6 @@
               ]
             }
           ]
-        },
-        {
-          "commentId": "nm4ypa4",
-          "text": "its not gonna destroy your build lol\n\ntomahawk ssd heatsink should be totally fine and if its not you can just run it at pcie4",
-          "upvotes": 5,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "nm4yvin",
-              "text": "I genuinely wonder what the hell that one reviewer was doing to make it explode. Maybe he made it up",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "nm5p1oc",
-          "text": "I also have 3 P41s. Very fast, while still very good price/performance. But a good older drive isn't a guarantee for it's successor, indeed.\n\nHere's a review of the P51 from a very reputable site: https://www.techpowerup.com/review/sk-hynix-p51-platinum-2-tb/\n\nIt seems quite positive to me. Again one of the fastest drives currently around.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "nm5sg4s",
-          "text": "I would just put the heat sink on it and not think about it too much. \n\nIf you want peace of mind,  get another SSD cooler with a fan on it.  They do work.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "nm9lp7d",
-          "text": "I would keep it and pair it with a Thermalright HR10 2280 Pro heatsink and you are good to go. I have this heatsink paired with my gen 5 Crucial T700.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "nm5conw",
-          "text": "Most current Gen 5, is hotter than gen 4 and if not cooled properly you could experience throttling. Hence motherboard that have a gen 5 slot usually provides active cooling for that slot. If that's not the case you can get aftermarket active ssd heatsink with fan.\n\nHowever, all depends on your use case as well, they only get hot during heavy operations. If you're just using as boot drive and gaming while doesn't copy/render/compress or decompress files often on that drive, then it shouldn't stress your drive so much.\n\nPersonally I'd rather have a 2TB P41 for maybe the same price or just slightly more than P51 1TB because for now the performance difference aren't noticeable for day to day uses. That said, it may be a hassle to do return and P51 is still an excellent drive nevertheless.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "nm5h0t6",
-          "text": "Why not just go with sk hynix pcie 4th gen",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "nm7l1fg",
-              "text": "I thought about it at first, but Gen 5 speeds are simply ridiculous. If this drive is totally fine then I'm gonna keep it. I got it for $110 and it's $130 now",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "nm7s2vb",
-                  "text": "Just saying if you\u2019re just gaming your not going to see a difference between pcie gen 3 and 5.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "np3xflj",
-                      "text": "Yes you do",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "nm4xza2",
-          "text": "Yeah \ud83d\udc4d I agree \u261d\ufe0f. Heard that these drives were good even though I haven\u2019t used one \u261d\ufe0f.\nI\u2019m using a Gen-4 NVME SSD myself and it never \ud83d\udc4e runs hot \ud83e\udd75. Can\u2019t remember the manufacturer name now, haha \ud83d\ude02.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
         }
       ]
     }

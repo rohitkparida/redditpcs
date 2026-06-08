@@ -1,0 +1,125 @@
+{
+  "productName": "intel-core-ultra-9-285k",
+  "batchIndex": 77,
+  "totalBatches": 84,
+  "comments": [
+    {
+      "commentId": "1g8b8yy",
+      "text": "Intel Core Ultra 9 285K beats the 14900K by 13% in leaked Cinebench R23 multi-core benchmark \u2014 Ryzen 9 9950X still leads the pack by 4%",
+      "upvotes": 65,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "lsxdl7p",
+          "text": "AMD better and you don't have to deal with annoying windows bugs https://www.reddit.com/r/XMG_gg/comments/vlqn6d/psa_rendering_tasks_are_moved_to_ecores_when/ (yes, it's still a problem for a lot of software)",
+          "upvotes": -44,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lsyfziu",
+              "text": "is this not a microsoft issue",
+              "upvotes": 16,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lszi1yz",
+                  "text": "does this make it less annoying?",
+                  "upvotes": -1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lsytcvn",
+                  "text": "no, probably an Intel Thread Director issue.  Win11 just listens to what ITD tells it AFAIK",
+                  "upvotes": -6,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lszgi0k",
+                      "text": "False. The OS is the one that flags tasks with background or foreground priority and manages the resources accordingly.",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "lt04u9l",
+                          "text": "Tell me you don't know the purpose of ITD and how the Win11 scheduler works without telling me....",
+                          "upvotes": -5,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "lt0bz5z",
+                              "text": "I probably know about it better than you do. It's the CPU that gives guidance and recommendations to the OS, which makes the resource allocation decisions. Not the other way around.",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "lt105gt",
+                                  "text": "> I probably know about it better than you do.\n\nI guarantee you that you do not.\n\nUnless they've changed it W11 scheduler generally just followed whatever recommendations ITD gave it.",
+                                  "upvotes": -3,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "lt151qa",
+                                      "text": "Then please explain to us how does the CPU knows if a task is running in foreground or background, since you claim it is the one deciding whether to run it on a P core or an E core.",
+                                      "upvotes": 4,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 {
   "productName": "amd-ryzen-9-9900x",
   "batchIndex": 22,
-  "totalBatches": 39,
+  "totalBatches": 41,
   "comments": [
     {
       "commentId": "1ewbaoy",
@@ -18,10 +18,10 @@
           "text": "My budget only allows me to get either of 7900 non X or 9700X , my focus is not on gaming. \nI have already brought the PSU (850W) and UPS (480W max load, electricity is not clean here, just using the ups as safeguard) so I'm also looking for more efficient CPU. \nWhat should I get? Does the 9700x makes sense for me despite 7900 being better value?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking for advice on the 7900 and 9700X, not the 9900X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question about product choice without expressing a positive or negative opinion.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "That's the best chart I could ever ask for.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general compliment to the data chart, not a critique or experience with the product.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is expressing satisfaction with the provided information.",
           "replies": []
         },
         {
@@ -40,10 +40,10 @@
           "text": "Hmm, I wonder if the TSMC Intel chips might beat the 7800X3D in gaming if the current gap is only 5% or so...\n\nThey are making a huge jump in process node from Intel 7",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The discussion is about Intel chips and the 7800X3D, not the 9900X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is speculating about future Intel chips.",
           "replies": []
         },
         {
@@ -51,10 +51,10 @@
           "text": "Thank you for taking the time to write all of this down ! What a guy.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a thank you note to the original poster, not about the product.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is expressing gratitude.",
           "replies": []
         },
         {
@@ -62,20 +62,20 @@
           "text": "This chart basically says: If you don't own an X3D cpu then you should buy it.",
           "upvotes": -5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is providing a recommendation based on the performance data of the 9000 series, including the 9900X.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user implies that the 9000 series (including 9900X) is not as good as X3D CPUs.",
           "replies": [
             {
               "commentId": "liy90z7",
               "text": "Stick with last gen until they're the same price.",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user is advising against buying the current generation of CPUs, which includes the 9900X.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user recommends sticking with the previous generation due to price/value.",
               "replies": []
             }
           ]
@@ -85,13 +85,14 @@
           "text": "amd dropped the ball on this one stick to the older",
           "upvotes": -1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is expressing a negative opinion on the overall 9000 series launch, including the 9900X.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user explicitly states that AMD 'dropped the ball' and recommends older CPUs.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

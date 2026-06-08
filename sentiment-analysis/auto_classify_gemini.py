@@ -1,14 +1,26 @@
 import json
 import os
+import sys
 import time
 import requests
 from pathlib import Path
 from dotenv import load_dotenv
+from common import (
+    load_json, save_json,
+    is_batch_classified,
+    strip_markdown_block,
+    apply_classifications_to_batch,
+    resolve_product_name,
+)
 
 # Load environment variables from .env
 load_dotenv()
 
-API_KEYS = [k for k in [os.getenv("GEMINI_API_KEY"), os.getenv("GEMINI_API_KEY_2")] if k]
+API_KEYS = []
+# Collect all Gemini API keys from environment vars dynamically
+for key, val in sorted(os.environ.items()):
+    if key.startswith("GEMINI_API_KEY") and val.strip():
+        API_KEYS.append(val.strip())
 current_key_index = 0
 
 def get_active_key():
@@ -25,6 +37,70 @@ def rotate_key():
         return True
     return False
 
+def validate_and_repair_classifications(classifications, batch_data):
+    if not isinstance(classifications, dict):
+        return None
+    comments_list = classifications.get("comments")
+    if not isinstance(comments_list, list):
+        return None
+        
+    expected_ids = set()
+    def collect_expected(node):
+        if node.get("classifyThis") is True:
+            expected_ids.add(node["commentId"])
+        for reply in node.get("replies", []):
+            collect_expected(reply)
+    for c in batch_data.get("comments", []):
+        collect_expected(c)
+    repaired_comments = []
+    
+    for c in comments_list:
+        if not isinstance(c, dict) or "commentId" not in c:
+            continue
+        cid = c["commentId"]
+        if cid not in expected_ids:
+            continue # Extra comment or hallucinated ID
+            
+        # Repair relevance
+        relevance = c.get("relevance")
+        try:
+            relevance = int(relevance)
+            if relevance not in [0, 1]:
+                relevance = 0
+        except (TypeError, ValueError):
+            relevance = 0
+            
+        # Strict sentiment validation
+        sentiment = c.get("sentiment")
+        if not isinstance(sentiment, str) or sentiment.lower().strip() not in ["positive", "negative", "neutral"]:
+            print(f"  [Validation Failed] Invalid sentiment value: '{sentiment}' for comment {cid}")
+            return None
+        sentiment = sentiment.lower().strip()
+        
+        # Reasonings
+        relevance_reasoning = str(c.get("relevanceReasoning", ""))
+        sentiment_reasoning = str(c.get("sentimentReasoning", ""))
+        if not relevance_reasoning or not sentiment_reasoning:
+            print(f"  [Validation Failed] Missing reasoning for comment {cid}")
+            return None
+        
+        repaired_comments.append({
+            "commentId": cid,
+            "relevance": relevance,
+            "relevanceReasoning": relevance_reasoning,
+            "sentiment": sentiment,
+            "sentimentReasoning": sentiment_reasoning
+        })
+
+        
+    # We expect the model to return classifications for all of our expected comments
+    if len(repaired_comments) < len(expected_ids):
+        print(f"  [Validation Failed] Only got {len(repaired_comments)} valid comments out of {len(expected_ids)} expected.")
+        return None
+        
+    return {"comments": repaired_comments}
+
+
 def process_batch(batch_file, prompt_text, model="gemini-2.5-flash-lite"):
     """Send a single batch to Gemini API, requesting flat classifications, and merge them back locally."""
     active_key = get_active_key()
@@ -32,9 +108,7 @@ def process_batch(batch_file, prompt_text, model="gemini-2.5-flash-lite"):
         print("CRITICAL ERROR: No Gemini API keys are set in .env. Aborting.")
         return False
 
-    with open(batch_file, 'r', encoding='utf-8') as f:
-        batch_data = json.load(f)
-    
+    batch_data = load_json(batch_file)
     batch_json_str = json.dumps(batch_data, indent=2)
     combined_prompt = f"{prompt_text}\n\nAnalyze this JSON batch and return the flat classifications object as specified in the output format:\n\n{batch_json_str}"
     
@@ -49,9 +123,43 @@ def process_batch(batch_file, prompt_text, model="gemini-2.5-flash-lite"):
             }
         ],
         "generationConfig": {
-            "responseMimeType": "application/json"
-        }
+            "responseMimeType": "application/json",
+            "temperature": 0.1,
+            "topK": 1,
+            "maxOutputTokens": 8192,
+            "responseSchema": {
+                "type": "OBJECT",
+                "properties": {
+                    "comments": {
+                        "type": "ARRAY",
+                        "items": {
+                            "type": "OBJECT",
+                            "properties": {
+                                "commentId": {"type": "STRING"},
+                                "relevance": {"type": "INTEGER", "description": "0 for not relevant, 1 for relevant"},
+                                "relevanceReasoning": {"type": "STRING"},
+                                "sentiment": {
+                                    "type": "STRING", 
+                                    "enum": ["positive", "negative", "neutral"],
+                                    "description": "positive, negative, or neutral"
+                                },
+                                "sentimentReasoning": {"type": "STRING"}
+                            },
+                            "required": ["commentId", "relevance", "relevanceReasoning", "sentiment", "sentimentReasoning"]
+                        }
+                    }
+                },
+                "required": ["comments"]
+            }
+        },
+        "safetySettings": [
+            {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_NONE"},
+            {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_NONE"}
+        ]
     }
+
 
     # Dynamic fallback list: put the requested model first, then other robust models
     all_models = ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-flash-latest", "gemini-2.0-flash-lite"]
@@ -68,7 +176,15 @@ def process_batch(batch_file, prompt_text, model="gemini-2.5-flash-lite"):
             try:
                 url = f"https://generativelanguage.googleapis.com/v1beta/models/{current_model}:generateContent?key={get_active_key()}"
                 headers = {"Content-Type": "application/json"}
-                response = requests.post(url, headers=headers, json=payload, timeout=90)
+                
+                # Dynamically append minimal thinking config for Gemma models to bypass heavy reasoning latency
+                if "gemma" in current_model.lower():
+                    payload["generationConfig"]["thinkingConfig"] = {"thinkingLevel": "MINIMAL"}
+                elif "thinkingConfig" in payload["generationConfig"]:
+                    del payload["generationConfig"]["thinkingConfig"]
+                    
+                response = requests.post(url, headers=headers, json=payload, timeout=180)
+
                 
                 # Handle rate limits
                 if response.status_code == 429:
@@ -82,13 +198,17 @@ def process_batch(batch_file, prompt_text, model="gemini-2.5-flash-lite"):
                             break  # Break retry loop to try the NEXT model in the list
                     
                     wait_time = 30
-                    print(f"Rate limit hit (429) for model {current_model}. Response body: {err_msg[:200]}")
-                    print(f"Waiting {wait_time} seconds to let rolling quota reset (Attempt {attempt + 1}/{max_retries})...")
-                    time.sleep(wait_time)
-                    continue
+                    print(f"\n  [WARN] Rate limit hit (429) for model {current_model}. Response body: {err_msg[:200]}")
+                    if rotate_key():
+                        print(f"  [OK] Successfully rotated to key index {current_key_index}!")
+                        # Retry the current attempt with the new rotated key
+                        continue
+                    else:
+                        print(f"  [INFO] No alternative keys available to rotate.")
                     
                 elif response.status_code in [503, 504]:
-                    wait_time = (attempt + 1) * 15
+                    wait_times = [3, 5, 10]
+                    wait_time = wait_times[min(attempt, len(wait_times) - 1)]
                     print(f"Temporary server error {response.status_code} for model {current_model}. Waiting {wait_time} seconds (Attempt {attempt + 1}/{max_retries})...")
                     time.sleep(wait_time)
                     continue
@@ -98,44 +218,35 @@ def process_batch(batch_file, prompt_text, model="gemini-2.5-flash-lite"):
                 
                 # Extract content from Gemini response structure
                 ai_content = result['candidates'][0]['content']['parts'][0]['text']
-                
-                # Clean up potential markdown wrapper code blocks
-                cleaned_content = ai_content.strip()
-                if cleaned_content.startswith("```"):
-                    lines = cleaned_content.splitlines()
-                    if lines[0].startswith("```"):
-                        lines = lines[1:]
-                    if lines[-1].startswith("```"):
-                        lines = lines[:-1]
-                    cleaned_content = "\n".join(lines).strip()
-                
+                cleaned_content = strip_markdown_block(ai_content)
+
                 classifications = json.loads(cleaned_content)
-                comments_list = classifications.get("comments", [])
+                validated_classifications = validate_and_repair_classifications(classifications, batch_data)
+                if validated_classifications is None:
+                    raise ValueError("Post-generation validation and repair failed.")
+
+                comments_list = validated_classifications.get("comments", [])
                 class_map = {c["commentId"]: c for c in comments_list if "commentId" in c}
-                
-                # Recursive map back into our tree
-                def update_node_recursive(node):
-                    cid = node.get("commentId")
-                    if cid in class_map:
-                        node["relevance"] = class_map[cid].get("relevance")
-                        node["relevanceReasoning"] = class_map[cid].get("relevanceReasoning")
-                        node["sentiment"] = class_map[cid].get("sentiment")
-                        node["sentimentReasoning"] = class_map[cid].get("sentimentReasoning")
-                    for reply in node.get("replies", []):
-                        update_node_recursive(reply)
-                
-                for root in batch_data.get("comments", []):
-                    update_node_recursive(root)
-                
-                # Save back to the same file
-                with open(batch_file, 'w', encoding='utf-8') as f:
-                    json.dump(batch_data, f, indent=2)
+
+                apply_classifications_to_batch(batch_data, class_map)
+                batch_data["model"] = current_model
+                save_json(batch_file, batch_data)
                     
                 print(f"Successfully updated {batch_file.name} using model {current_model}")
                 return True
+
                 
             except Exception as e:
-                wait_time = (attempt + 1) * 10
+                err_str = str(e).lower()
+                if "validation" in err_str or "valueerror" in err_str:
+                    wait_time = 2
+                elif any(x in err_str for x in ["connection", "timeout", "resolution", "dns", "getaddrinfo"]):
+                    net_waits = [2, 4, 8]
+                    wait_time = net_waits[min(attempt, len(net_waits) - 1)]
+                else:
+                    gen_waits = [5, 10, 15]
+                    wait_time = gen_waits[min(attempt, len(gen_waits) - 1)]
+                
                 print(f"Error processing {batch_file.name} with model {current_model} (Attempt {attempt + 1}/{max_retries}): {e}")
                 if response is not None:
                     print(f"Response Status: {response.status_code}")
@@ -146,24 +257,8 @@ def process_batch(batch_file, prompt_text, model="gemini-2.5-flash-lite"):
                     time.sleep(wait_time)
                 else:
                     break  # Break retry loop to switch model
-                    
-    print(f"Failed to process {batch_file.name} with all fallback models.")
-    return False
-                
-    print(f"Failed to process {batch_file.name} after {max_retries} attempts.")
-    return False
-def is_classified(comment):
-    if comment.get("classifyThis") and comment.get("relevance") is not None:
-        return True
-    for reply in comment.get("replies", []):
-        if is_classified(reply):
-            return True
-    return False
 
-def is_batch_classified(batch_data):
-    for comment in batch_data.get("comments", []):
-        if is_classified(comment):
-            return True
+    print(f"Failed to process {batch_file.name} with all fallback models.")
     return False
 
 def main(product_slug, model="gemini-2.5-flash-lite"):
@@ -182,19 +277,7 @@ def main(product_slug, model="gemini-2.5-flash-lite"):
     with open(prompt_path, 'r', encoding='utf-8') as f:
         prompt_text = f.read()
 
-    # Get the proper product name from the template file or raw file (to replace the placeholder)
-    template_path = Path(f"classified/{product_slug}.template.json")
-    raw_path = Path(f"raw_comments/raw_{product_slug}.json")
-    
-    product_name = product_slug
-    if template_path.exists():
-        with open(template_path, 'r', encoding='utf-8') as f:
-            template_data = json.load(f)
-            product_name = template_data.get('productName', product_slug)
-    elif raw_path.exists():
-        with open(raw_path, 'r', encoding='utf-8') as f:
-            template_data = json.load(f)
-            product_name = template_data.get('productName', product_slug)
+    product_name = resolve_product_name(product_slug)
             
     prompt_text = prompt_text.replace("[PRODUCT_NAME_HERE]", product_name)
     print(f"Loaded product name: '{product_name}'")
@@ -206,14 +289,12 @@ def main(product_slug, model="gemini-2.5-flash-lite"):
     
     for i, batch_file in enumerate(batch_files):
         # Check if already classified
-        with open(batch_file, 'r', encoding='utf-8') as f:
-            try:
-                temp_data = json.load(f)
-                if is_batch_classified(temp_data):
-                    print(f"Skipping {batch_file.name} (Already classified)")
-                    continue
-            except Exception:
-                pass # If file is empty or invalid, we want to reprocess it
+        try:
+            if is_batch_classified(load_json(batch_file)):
+                print(f"Skipping {batch_file.name} (Already classified)")
+                continue
+        except Exception:
+            pass  # If file is empty or invalid, reprocess it
 
         success = process_batch(batch_file, prompt_text, model)
         
@@ -221,14 +302,13 @@ def main(product_slug, model="gemini-2.5-flash-lite"):
             # Wait 5 seconds to stay comfortably within 15 RPM limit (1 request every 4 seconds)
             if i < len(batch_files) - 1:
                 print("Waiting 5 seconds to respect Gemini API free tier limits (15 RPM)...")
-                time.sleep(5)
+                time.sleep(2)
         else:
             print(f"Stopping at {batch_file.name} due to error.")
             break
 
 if __name__ == "__main__":
-    import sys
-    if len(sys.argv) < 2:
+    if len(sys.argv) > 1:
         print("Usage: python auto_classify_gemini.py <product-slug> [model]")
     else:
         model_name = sys.argv[2] if len(sys.argv) > 2 else "gemini-2.5-flash-lite"

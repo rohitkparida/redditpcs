@@ -1,0 +1,444 @@
+{
+  "productName": "teamgroup-t-force-delta-rgb-ddr5-6000-cl30",
+  "batchIndex": 1,
+  "totalBatches": 27,
+  "comments": [
+    {
+      "commentId": "1crl64e",
+      "text": "I am having the worst time I ever had with my PC\n\nAbout 20 days ago, I started encountering a blue screen issue that constantly crashed my PC regardless of what I was on (discord, games, chrome, etc). I\u2019ve done multiple tests trying to confirm where the problem is but nothing seems to work. Please find below the error codes and what I have tried to do to identify and rectify the issue. \n\nBSOD Error Codes:\n*IRQL_NOT_LESS_OR_EQUAL\n*SYSTEM_THREAD_EXCEPTION_NOT_HANDLED\n*PAGE_FAULT_IN_NONPAGED_AREA\n*DRIVER_IRQL_NOT_LESS_OR_EQUAL\n*CACHE_MANAGER\n*EXCEPTION_ON_INVALID_STACK\n\nAttempts to Identify and Rectify Issues as of 20 days ago:\n\n*Reinstall Windows - I have tried this several times, continues to crash or come up with an error that it cannot be done.\n* Uninstall GPU driver and uninstalled GeForce\n* Windows Memory Diagnostics - no errors came up.\n* eject memory and try it one by one to see if one or the other has an issue\n* sfc /scannow - first time I tried it, it said it fixed something. If I try doing it again, it doesn\u2019t do anything anymore.\n* chkdsk /f /r - helped it seems?  Did it once and it was running well for an hour. Blue screen came back. \n* Tried MemTest86. Results came through and it passed. So memory isn\u2019t the issue.\n* Took out the M.2 in question. Kept the \u201cvideo game\u201d m.2 drive in. Wiped it and tried installing Windows. Got several errors and while installing it crashed. With that, I am assuming it\u2019s not the SSD either\n* Wiped secondary M.2 to install windows. Removed first M.2. Still kept crashing or BSOD\n*Removed all drives associated with the computer and ordered a 256gb ssd. Tried to install windows on it and it crashed or BSOD.\n\nSystem Information:\nCPU - Intel Core i9-14900K\nMotherboard - ROG Strix Z690-E Gaming Wifi\nMemory Sticks - Corsair DDR5 6600MT/s 2x32GB 1.40v\nGPU - Nvidia GeForce RTX 4070 Ti\nDrives\n*C Drive (Windows) - Samsung SSD M.2 970 EVO Plus 2Tb\n*D Drive (Game storage) - Samsung SSD M.2 970 EVO Plus 2Tb\n*E Drive - Western Digital Blue 8Tb\n*F Drive - Western Digital Black 6tb\n\n\n\n\n\nPresent Day:\n\nI have reached out for help on this Reddit before. I was told to get an RMA on my motherboard since the issues appeared to be coming from it.\nWell, unfortunately I am still encountering issues. Apparently my old motherboard had a \u201cHDD to Sata\u201d issue so they replaced the entire motherboard.\n\nI ordered new Ram sticks. Tried those, and I am still encountering issues.\n*New Ram Sticks - DDR5 T-Force Delta 2x16GB 6400Mhz\n\nI thought replacing the motherboard and the Ram sticks would solve my issue but that is not the case.\n\nI tried reinstalling windows to see if that could solve it, but once again, it\u2019s having the same issues again. Sometimes it BSOD before I even get to the installation.\n\n\n\n\n\nThank you for reading this far. If you have any ideas on what I can do next, I would greatly appreciate it. I am currently lost and have no idea how this problem came about.\nCould this be a CPU or Power supply issue? Could the replaced Motherboard still be faulty?",
+      "upvotes": 575,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "l3ytyn9",
+          "text": "I would bet it's the 14900k - [https://gamerant.com/intel-core-i9-stability-issues-response/](https://gamerant.com/intel-core-i9-stability-issues-response/)\n\nThe ASUS board is trying to apply some type of overclock or 'Multicore Enhancement'. Either you either have a bad chip and it should be RMAed or the ASUS board is overclocking you so close to redline it's causing Windows to crash.",
+          "upvotes": 677,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l3yvf7a",
+              "text": "Oh no. Omg.\nThis has to be the issue. Thank you for providing that link.\n\nI will have to dig into this and see if it\u2019s either the CPU or the motherboard.",
+              "upvotes": 347,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l3zo0ce",
+                  "text": "Just so you know ASUS put out BIOS updates to enable an \u201dIntel Baseline\u201d setting in bios which forces all of Intels limits and settings. \n\nYou probably have to update your bios but I\u2019m not sure how your instability may affect the bios.",
+                  "upvotes": 132,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l3zq7u1",
+                      "text": "It\u2019s always been there. What they did wrong was not have that set as the boards default. Just ASUS trying to ruin their own hardware because if you need to RMA they will then damage your hardware (call it customer induced) and send you a huge bill for \u2018repair\u2019. \n\nTale as old as time.",
+                      "upvotes": 69,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "l418gjo",
+                          "text": "Shoot. I bet my computer has been damaged in someway. I will try and see if I can set it as default.\nDef looking into an RMA for a cpu. Will do when I am home from work",
+                          "upvotes": 11,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "l401zqk",
+                          "text": "True, it has always been there. But iirc they added an explicit button to enable it with the latest BIOS updates.",
+                          "upvotes": 8,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "l42tgz4",
+                          "text": "How can they send you a bill for repair on a faulty item that is so crooked and this must be a USA thing no way this happens in EU.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "l42uljm",
+                              "text": "Watch Gamers Nexus latest video\u2026\nI build for clients. I can confirm ASUS has been doing this to consumers forever.",
+                              "upvotes": 4,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "l42urs1",
+                                  "text": "Gamers Nexus is in USA",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "l42v869",
+                                      "text": "It happens in the EU. Heard plenty of nightmare stories from friends on the other side of the pond.\n\nEdit:  ASUS still owes me back a p67 Sabretooth \ud83e\udd23",
+                                      "upvotes": 6,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "commentId": "l43hzzk",
+                              "text": "Because the laws aren't made by people who are incentivized to protect consumers.  When corporations want a bit more \"freedom\" to explore \"alternate paths to profit\", they tend to \"invest\" in the political system to help ensure that their money making schemes aren't stomped out for being anti consumer.  And since politicians can get a nice compensation package for simply doing as they're asked, many tend to go with the flow and reap the rewards.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "l42mrk3",
+                      "text": "He could also manually disable things like MCE before the update.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "l3zoftq",
+                  "text": "Definitely try this instability has been in the news a lot the past few months. Intel was chasing the top performance title and motherboard makers wanted to make their products look better than the competition. Both went with a default overclock that caused issues and even led to some CPUs much earlier.\nChances are your motherboard might already have an updated bios with better power options.",
+                  "upvotes": 11,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l41g91c",
+                      "text": "Thanks. I will update the motherboard. Hopefully that fixes it but I doubt.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "l41gt5j",
+                          "text": "You may need to me make a settings change in the bios, but here is the notes from the most recent bios update for your board.\n\n\"ROG STRIX Z690-E GAMING WIFI BIOS 3501\n\nVersion 350112.9 MB\u00a02024/04/24\n\n\"The update introduces the Intel Baseline Profile option, allowing users to revert to Intel factory default settings for basic functionality, lower power limits, and improving stability in certain games.  \n  \nUpdating this BIOS will simultaneously update the corresponding intel ME to version 16.1.30.2307. Please note after you update this BIOS, the ME version remains the updated one even if you roll back to an older BIOS later.  \n  \nBefore running the USB BIOS Flashback tool, please rename the BIOS file (SZ690E.CAP) using BIOSRenamer.\"",
+                          "upvotes": 0,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "l3zca41",
+                  "text": "update please!",
+                  "upvotes": 18,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "l40tc8e",
+                  "text": "I have a 13900k, huge regret as it suffers from the same issue as the 14900k. The fix I found that works is installing Intel Extreme Tuning Utility and under clocking the CPU. I set the P core to 53x, default is 55x in the 13900. That's what has kept my system stable with no crashes or blue screens",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "l3zyhg1",
+                  "text": "Hey, if you haven't already start an RMA with Intel, it's most likely the CPU, I had similar errors with a 13900k.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "l3zytli",
+                  "text": "Or ram. Try with one stick at the time.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l41gbpc",
+                      "text": "Tried that. Unfortunately it doesn\u2019t work. I also bought new ram and that doesn\u2019t fix it either.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "l401b39",
+                  "text": "Please keep in mind, these constant crashes might have inflicted damage to your filesystem / OS.\n\nIf it indeed is related to your CPU, be careful.\nNot a given, but every CPU related issue can have unforeseen consequences down the line.\n\nJust to be on the safe side, follow this guide.\n(Works with W10 & W11)\n\nhttps://winaero.com/how-to-repair-windows-11-with-sfc-and-dism/amp/",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "l40bi6b",
+                  "text": "I just completed a 14900k build that gave me endless issues with multiple Gigabyte boards.  Switched to Asus and made sure to do the QFlash prior to doing any Software installation.  Installation went off without a hitch.  Instructions are on their website if you've never done this before.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l41ggxa",
+                      "text": "Qflash? Ok I will look into that. Thank you!",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "l45td9y",
+                          "text": "It's a feature on newer boards (each having their own name for it) that allows a specific USB port to be used to update BIOS, whether you have anything else installed or not.  Its helpful during new builds.  Keep in mind that you can flash BIOS at any time, but in cases like yours, where a new cpu was released, it can be beneficial to be able to flash even before software installation.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "l429gme",
+                  "text": "I had loads of these issues, I just went into Intel XTU and set my power limits for PL1/2 to 253. Been problem free for a while now. Before it would draw about 340W until something got unhappy.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "l42gezu",
+                  "text": "If you get an ASUS RMA make sure to save pictures of your board first as they\u2019ve recently been exposed for ripping people off with RMAS so having proof that the board wasn\u2019t damaged when you sent it in is a good idea",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "l43tpgu",
+                  "text": "Also possibly the power supply is inconsistent in one of the rails.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "l3zzhjp",
+              "text": "Thank God I am poor",
+              "upvotes": 17,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l42wthh",
+                  "text": "Based",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "l3zx40d",
+              "text": "asus been comin up a lot lately.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l4067za",
+                  "text": "Same shit with the release of 7800x3D, where Asus burned CPUs.",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l423s3j",
+                      "text": "same scenario in both the intel instability and am5 burning chips it wasn't just asus it was ever board... the issue with asus specifically is customer support being god awful",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "l43fb3g",
+                          "text": "it's not just bad, it's fraud.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l3zb1bo",
+          "text": "Keep us up to date, can be handy in the future to see what fix you have done.",
+          "upvotes": 37,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44k2f5",
+              "text": "Will do. I\u2019ll post an update when I can. Currently raised a ticket with Intel about the issue",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l3z9sq6",
+          "text": "May not be applicable here, but one thing you can try when getting BSOD is resetting your cmos by removing the battery. It will set your BIOS back to default just incase you've made any changes that are causing the BSOD. Just wanted to mention this troubleshooting step because I didn't see it in your post. Good luck op",
+          "upvotes": 9,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l41ohcr",
+              "text": "Thank you! I will give that a shot. Thanks",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

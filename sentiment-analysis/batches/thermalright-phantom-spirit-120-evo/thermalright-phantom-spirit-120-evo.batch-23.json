@@ -1,0 +1,227 @@
+{
+  "productName": "thermalright-phantom-spirit-120-evo",
+  "batchIndex": 23,
+  "totalBatches": 25,
+  "comments": [
+    {
+      "commentId": "1r0o1ro",
+      "text": "I switched from RTX 2070 to RX 9070, here's my honest experience, tips and thoughts.\n\n# INTRO + CONTEXT\n\nBack in december I got a Gigabyte RX 9070 Gaming OC and once opened I fell in love with the grey details on the card. Also the size made my Gigabyte RTX 2070 Windforce seem like a little toy, but at the same time it fitted in my small-ish mid tower without issues.\n\nWhen I first tried playing some of my games I noticed my fps were literally DOUBLED or even TRIPLED in most of them, despite having less rgb in my case (sorry I had to). In some of them I can reach higher than 100fps at max details (WQHD res) while before I was struggling to get to 60-80 at min details.\n\n# BUILD\n\nFor the occasion I upgraded my build:\n\n* i7 9700k --> R7 7700\n* 16gb 3000 c15 --> 32gb 6000 c36 (both corsair vengeance)\n* OCZ ZT 750w bronze --> Pccooler YN1000 gold\n* Gigabyte B650 Eagle AX\n* Thermalright Phantom Spirit 120 Evo (70 celsius under load with undervolt)\n* Orico 2tb m2 e7400 (\\~6500 effective, no OS only games)\n\nMy psu was 12+ years old (and has powered 3 builds) so it was time to say goodbye, also I read newer ones can handle power spikes better and I saw one spike from 270w (oc) to 400w on the new gpu, so I think it was a good call.\n\nThe R7 7700 only shows some visible bottleneck on a couple of really unoptimized games, still way better even in Rust on my old gpu, so it feels great for now and can be upgraded down the line with an X3D.\n\nIt started as a last minute budget build in november to avoid price increases, but since also gpus were doomed to rise I finished it as soon as I could. I'll share more details if anyone's interested.\n\n# ADRENALIN HORROR\n\n*Consider the following lines as guidelines rather than a rant, hopefully this helps newcomers get started faster than I did.*\n\nI liked the idea of switching to just one app for all my needs, but...\n\nI had weeks of terror with Adrenalin, until I figured out the rules are:\n\n* never press ALT+R, instead ALT+TAB and open Adrenalin manually from taskbar\n* if you really want to press ALT+R, ensure your game is in exclusive full screen (but some games can only be borderless full screen, so don't press ALT+R if you want to forget about the issues)\n* if Adrenalin crashes silently while playing, maybe it didn\u2019t like the oc (even without driver timeout or the game crashing)\n\nI'll leave my other findings:\n\n* some games like MH:Wilds will crash on launch if you enable FSR 4 Framegen without warning you about the issue, fortunately it's a simple fix once you know it\n* everytime I rebooted or turned off-on my pc, oc kept getting reset to default in Adrenalin. As pointed out by others, disabling fast boot in Windows power management fixed it\n* Adrenalin Video and Streaming by default outputs darker images than what you see: I tried making some videos to use as live wallpaper in Oblivion Remastered in dark areas but most details were lost because of this. I didn't investigate further, but I hope there's an option in Adrenalin to fix this. Since some people tell it can give issues, I'm keeping it off for now (just making sure everything is stable)\n* sometimes I had some doubts with freesync on so I turned it off for now (I was still testing oc though)\n* when I started with 25.12.1, when launching a game I'm pretty sure I wasn't getting the top-right red square from Adrenalin saying FSR 4 upscale upgrade was turned on (among other settings). I discovered it when I downgraded to 25.9.1 (with ddu) and, after updating to 26.1.1, I now get it aswell.\n\nI also don't like the weird slow scrolling animation, but it can't be disabled.\n\nI noticed people in this sub saying Nvidia App has been buggy aswell but I never had any major issues since Geforce Experience came out, maybe I'm lucky.\n\nIf you need always working metrics there are alternatives like Afterburner+RivaTuner, CapFrameX etc. Personally I switched to CapFrameX for the time being just to make sure if I get crashes Afterburner isn't a variable, being also an oc tool. I'll try it back when I'm sure I'm stable.  \nIf you take the CapFrameX road keep in mind you can show/hide the overlay with ALT+O.\n\n# ADRENALIN SETTINGS\n\nI set FSR upscaler and framegen upgrades globally on, framegen upgrade disabled specifically in Wilds.\n\nEDIT: the latter is called \"AMD FSR Frame Generation\", not Fluid Motion Frames. I think it has been added in december 2025. It upgrades frame gen to the latest version when frame gen is turned on inside the game, it doesn't just apply frame gen to everything.\n\n# OVERCLOCK\n\nCPU: PBO enabled, curve optimizer -30\n\nGPU: +10% power, -80mv\n\nIt could reach -130mv but I'd rather keep it stock then see it crash even after days, so here I am.\n\nI always had crashes through many builds when overclocking, so I'm happy I can get some more performance without issues this time and I wonder if the old psu was the culprit back then.\n\n# UPSCALERS DRAMA\n\nOnce figured all this, my only complaint was DLSS 4 missing cause you can\u2019t unsee that thing, gold even in performance mode.\n\nHaving played MH:Wilds, BF6 and other games with DLSS 4 during last year, I instantly noticed FSR 4 being less crispy and detailed, but I knew the risk. I admit it gave me some headache at the beginning but now I can say I'm getting used to it. It's not about the framerate, but gaining clarity especially in natively blurry games. But FSR 4 upscaler is still good, hope it gets great this year.\n\nI can see why one would want to abandon the ship and refund, but I didn\u2019t want to spend 200+\u20ac more for a 5070Ti (that was the price gap for me).\n\nI was wondering if getting a 5070 for a little bit less was a better idea, but once getting used to FSR I had my answer. Putting aside the (decent) upscaler and considering the added performance and vram, the 9070 is a great price to performance gpu. I still hope next FSR upscaler implementation will reach that peak, but I'm keeping my expectations low and I'm fine with it.\n\nI'm more worried about FSR not being implemented in newer games, since already 2 games came out in january with DLSS but no FSR (one based on vulkan). Luckily I'm not planning to play them and right now I don't think FSR is vital over a standard antialiasing for visuals, except maybe for more performance.\n\n# VRAM DEBATE\n\nI also think the vram story about the 5070 (non Ti) has been a little bit exaggerated since I noticed from many benchmarks that Nvidia uses less vram (I believe thanks to compression) but it can vary between 800mb-1.3gb and probably a better upscaler can give a better result than ultra textures, but I guess it depends on the specific game and resolution.\n\nAnyway we'd still be comparing a \\~13gb gpu against a 16gb one.\n\nI have to admit that seeing I'm really using most of it in some games makes me happy about choosing my 9070 anyway.\n\n# PERFORMANCE / RAY TRACING\n\nTalking about pure performance, as I said above, 9070 delivers A LOT!\n\nI was used to Ray Tracing on my old RTX 2070, where turning it on would halve my fps usually below 60 (reason why I mostly kept it off), so I was amazed when I turned it on in Wilds without experiencing the long freeze on activation and the evident loss in performance.\n\nSame thing with shaders in Minecraft, but if I understood correctly those shouldn't be real ray tracing (even if it used to halve my fps the same with my old gpu).\n\nI usually avoid Ray Tracing anyway but I'm loving it with Lumen on in Oblivion Remastered. Though turning settings down there can make the game run better and still look good without the wow effect, so it's up to personal preference.\n\n# FRAME GENERATION\n\nI mainly use it in Wilds and Oblivion Remastered, but sometimes I find myself turning it off. Specially in Oblivion Remastered, since after a loading screen it warms up in 4-5 seconds and that game is full of loadings. I never tried it on team green so I can't tell much about that.\n\nI found a bug in Oblivion when alt-tabbing out and back in, where framegen just turns off. Turning it off and back on didn't fix it, but turning overall game settings from ultra to high and then back to ultra fixes it reliably.\n\n# GAMES I TRIED\n\n* *Now playing:* Battlefield 6, COD Black Ops 7, CS2, MH:Wilds, Oblivion Remastered, Zenless Zone Zero\n* *Just (re)tried for testing:* Cyberpunk, The Witcher 3, Starfield, Skyrim Anniversary (Nolvus), Hogwarts Legacy, Clair Obscur, Dragon Age The Veilguard, New World, Rust, Minecraft, Overwatch 2, Fortnite, Genshin Impact, Wuthering Waves, Arknights Endfield, Highguard\n\n# CONCLUSION\n\nNow that I sorted out things, I can say I'm really happy about my 9070. I'm finally back to high fps specially in Cod and Battlefield, now Oblivion Remastered and Wilds are playable and I can try some other games I avoided because of poor performance (or played with everything low, even the upscaler).\n\nIt's already a powerful card and it could get golden with updates, fingers crossed.\n\nI'm only waiting for FSR upscaling next implementation and fixes for Adrenalin, but for now I'm pretty much satisfied.",
+      "upvotes": 150,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "o4u63go",
+          "text": "you like the 9070xt for cs2? i heard some people talk about performences issues but mine has been playing quite fine. i have it paired with 5800x3d . did not want to get 5070 for the same price cuz yeah.... nvidia ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "o4xkpnb",
+              "text": "Personally yes, I needed not only a new cpu but a new gpu aswell to get back to cs2. It\u2019s indeed heavier than csgo. Then it depends on your favourite resolution and fps target, but I play it casually in 1440p and I like it. \n\nI\u2019m looking for a new monitor though cause since I went down the ips route motion clarity hasn\u2019t been so good, and that\u2019s haunting me way more than my fps range, also in other games. Looking for a honest oled to solve that issue for good.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "o4zliom",
+          "text": "I love my asrock 9070xt steel legend. At first it was a headache and had alot of little issues much like everyone describes here. I finally figured out the issues and it runs amazing now. I had less issues with my 7900xtx pc though. Windows is a pain in the ass causing a majority of the issues so no longer allow it to update windows only the security features. I found myself enjoying figuring out the problems as time went by lmao",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "o59cv8x",
+          "text": "Hey did any one play kingodome come deliverance 2 game keeps crashing I have a ryzen 5 7600x I upgraded from a rtx 2070 to a 9070xt I get really good performance high fps but my game crashes idk if it\u2019s poorly optimized",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "o59s1dq",
+              "text": "I\u2019m planning to try it later on but not soon since I\u2019m playing other games right now. Maybe after Oblivion",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "o9y3hdi",
+          "text": "Upgraded from a 6750xt and my mind has been blown. My biggest complaints are with adrenaline as well. \n\n",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "o4jqrmn",
+          "text": "Doing things known to cause instability causing instability.. i am shocked.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "o4jrghk",
+              "text": "I was having most of the issues (related to Adrenalin overlay) already without overclocking, what's there to be shocked exactly? I ddu'd drivers, left everything default, tried older versions etc with stock gpu settings and no additional software running in the background.  \nThe overlay always had issues until I found out it was borderless mode that was bugging it. But weeks have passed until I discovered it.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "o4jzz8k",
+          "text": "Informative post, thx for sharing. I've had the 9070xt since launch week, and it's been a smooth experience overall, which came from a 3090 prior. I found your note about being in fullscreen interesting if using adrenaline. I've had only one issue I think, which was tied to that now that I've read your post and it made me think back to it. Was also a game using a unity engine I might add. It was fixed by updating the drivers that I had planned to anyway. That being said, I've been very happy w mine. I've never seen a driver time out in all my years w amd, been solid. I find that most problems are tied to windows or bad uv/oc, memory xmp profiles. Fresh windows install and clean driver installs have always offered me a stable experience. The gf got a 9070xt recently up from a 3060 and it's been smooth for her as well. I don't mess w optiscaler, the majority of the games I already play support fsr4 as it is.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "o4yo134",
+              "text": "I have a 3090 as well. From what I've read the 9070 xt is only about 20% faster than 3090. Is that about what you experienced?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "o4z3d6a",
+                  "text": "Depending on the game, more in others. It closed the gap to get the fps up where I wanted it while using less power.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "o4k4kp3",
+              "text": "Glad it was informative!\n\nI'm not still 100% sure about that thing but I tried some times and it seemed consistent, so I take it for granted now. Yep Unity games for example. I'm happy drivers fixed it for you.\n\nAbout driver timeouts I've only had them when overclocking, and I think I even found a stable one now. But I would go back to stock if it couldn't keep it, I'm already used to not being to find a stable overclock and keeping everything stock, so no problem. Ram in EXPO are also working fine, and that's all I care about.\n\nIndeed a smooth experience for me aswell right now.\n\nI wonder if people having driver timeouts with november / december drivers were applying oveclock or not, because if not I've seen my frequencies go higher in stock then with september drivers. I don't remember in 26.1 stock. I even began to suspect that Adrenalin wasn't really going back to stock when disabling oc, but I haven't tested it further.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "o4maqf7",
+          "text": "Agree with everything you said, I had the same dilemma between 5070Ti and 9070XT when I was upgrading but I went with 5070Ti ($800) because of driver stability, and I don't regret it.",
+          "upvotes": 0,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "o4mbymw",
+              "text": "If my budget allowed me I would have done the same, 5070Ti for sure. I discarded it beacuse +240\u20ac was a lot for me, it\u2019s about 30% more.\n\nI\u2019m happy for you, great beast of a card!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "o4mcm3u",
+                  "text": "I didn't really need the upgrade either, I already had 4070ti but I wanted more VRAM for more comfortable VRAM headroom (3440x1440, Path tracing), and my wife needed an upgrade anyway so she got the 4070Ti.\n\nWith how expensive it is now and next generation rumored not coming until 2028, I got really lucky.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "o4mdmnu",
+                      "text": "Yep, you can now sleep well without regrets for a while. Also playing in path tracing you probably needed nvidia anyway.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "o4mhkw1",
+                          "text": "Oh yea forgot to mention another big deterrence of AMD for me was driver timeouts.\n\nI got my wife a used RX 6800, she plays a lot of Runescape 3, but for some reason she keeps getting crashes and driver timeouts. At first I thought the GPU was faulty, but after some research it turned out to be a common AMD driver issue.\n\nI was afraid 9070XT would have similar issues especially with older games, and newer games too since I often see people complaining about driver stability on this subreddit and having to roll back older driver version.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "o4mjrar",
+                              "text": "Yeah I\u2019ve seen those posts, luckily I only got some driver timeouts when oc was high, doesn\u2019t happen at stock settings or slow oc, like I expect it to be.\n\nUnlucky she got issues, I\u2019ve been reading mixed feedback about timeouts, it seems like a lottery on amd. 2 friends of mine are using an amd gpu and no driver timeouts, even with some tweaking.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

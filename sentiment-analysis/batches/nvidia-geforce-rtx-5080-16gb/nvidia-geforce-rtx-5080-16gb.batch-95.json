@@ -1,7 +1,7 @@
 {
   "productName": "nvidia-geforce-rtx-5080-16gb",
   "batchIndex": 95,
-  "totalBatches": 100,
+  "totalBatches": 101,
   "comments": [
     {
       "commentId": "1igzay4",
@@ -14,27 +14,15 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mavpj6c",
-          "text": "I understand this small uplift is partly due to using same process node. In future, will 3nm be a big enough jump over 5nm? The node looks hyper expensive too.",
+          "commentId": "mauyj9e",
+          "text": "I'm happy with my 2070 Super",
           "upvotes": 2,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
           "sentiment": null,
           "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "max14pf",
-              "text": "This is a guesstimate based on public info with no architectural change:\n\n\\-23% die area and +18% higher clocks (not performance) at same power. Estimates price N3P wafers +25% vs 4nm. Sounds like the tradeoff is worth it in a Pascal like scenario (unchanged \u00b5arch).\n\nBut that means 4% cheaper dies at \\~14% (75% clock scaling efficiency) higher performance iso-TDP. An realistic 5080 OC +10% perf at \\~400W.\n\nRealistic 6080 aggressive price: 265mm\\^2, +25.4% FPS (4K), 400W, -14% die cost. $999 with 24GB GDDR7 \\~36gbps.\n\nBut a wider and bigger 6080 will have to be downclocked massively or have a superior architectural design unless a +450W TDP is the end goal (not worth it).  \nMy bet is on a complete redesign of the SM data registers and caches, and scheduler update to increase core and frequency scaling with 60 series, because rn those are massive drawbacks of the Ampere derivative architectures (30-50 series). Clock scaling is only 75%, and core scaling is even worse. Meanwhile RDNA 1-3 scales a lot better with both.\n\nFingers crossed an architectural redesign can add more performance than it increases the die size.",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
+          "replies": []
         }
       ]
     }

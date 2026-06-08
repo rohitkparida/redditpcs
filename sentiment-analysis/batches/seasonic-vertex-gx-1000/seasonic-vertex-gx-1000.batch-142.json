@@ -1,22 +1,22 @@
 {
   "productName": "seasonic-vertex-gx-1000",
   "batchIndex": 142,
-  "totalBatches": 145,
+  "totalBatches": 142,
   "comments": [
     {
-      "commentId": "1e62264",
-      "text": "My contribution to stopping Destiny from making bad hardware decisions. [Effort Post]\n\nWatched the 5 minutes that u/NeoDestiny discussed building a PC, and he is a little lost. Not his fault. He is incredibly busy, and only losers like me keep up with the latest hardware trends.\n\n# My Background: \n\nI'm a hardware fanatic, and I build and maintain workstations/NASs for some labs in my department as a side-gig (thank god for p-card purchasing). I work with electrophysiology hardware/software as well as write machine learning code for data analysis projects. Software debugging is something I am all too familiar with.\n\n# The Problem: \n\nDestiny is having issues with his OBS hanging up. He has had some blue screens as well. Destiny most likely has OBS scripts and some ad-ons that could be the cause for his issues. He also has older hardware that might be sundowning. Finally, updating the software could be a culprit, however his reformats and reinstalling of the software might discount this specific problem. \n\n# Requirements: \n\nDestiny requires a pure streaming machine that is separate from his gaming PC. He wants the latest features. He also needs a machine that can take advantage of his 5 Gbps internet. He has discussed having storage issues in the past, so he will probably want some long-term storage in his PC. He hates water-cooling, so everything will need to be air-cooled. This build should also not trip his breaker, so efficient parts might be the way to go. The parts should have solid warranties and built to withstand daily use (no part can guarantee this 100%, but the best course of action is sticking with reputable brands). The OS will need to be Windows, because Destiny will retire if he has to deal with a terminal. Finally, the parts need to be available currently and come from mainstream e-tailers. There is always new hardware on the horizon, but a reminder that Destiny' primary needs are viewing NSFW links and GPU streaming. So, on to the hardware.\n\n# Potential Build:\n\nI will provide my best justification for this build since on the surface it seems entirely unnecessary. I think If Destiny wants all of the latest features, he should go with the sTR5 platform. The AM5 X3D chips are not the best chips for Destiny's use case, since he is not going to be gaming on this PC. Looking through the hardware review for the X3D chips such as [Gamer's Nexus](https://youtu.be/9gCzXdLmjPY?si=mfOPOl-9sE_p3Hqp) show that the primary benefit is pretty much only for gaming. More reasonable pushback with, \"Why not the 7900x or 7950x?\". That was my first idea. However, I think Destiny's primary issue is going to be PCIE lanes. I think 28 lanes might get used used up very quickly when you account for GPU, multiple SSDs (if Destiny wants that), capture card, and thunderbolt peripherals (I'll get to this later). He might also want to put in a 10 Gb nic if he wants to do more video projects and opts to connect a NAS over network. I'm not saying this is the only option, all I'm trying to say is Destiny should have options and flexibility with this build. Final thing to mention, this platform is an efficiency king.\n\nI am also going to make the case for a NVIDIA RTX 4000 SFF Ada Generation card. Before people freak out, this is a 70 watt card. Let me repeat myself. 70 watts! Destiny does not need to use an inefficient CPU to encode streams in 2024 and heat up his room. This card has multiple encoders capable of encoding multiple streams. Plus, AV1 is on YouTube, so he can take advantage of this revolutionary codec. Since he is using the encoders, it will probably be operating at half or less than half of its rated TDP. [Level1](https://www.youtube.com/watch?v=ZiPmT_JWNII) had a great overview of this card and potential use cases. While destiny is not going to machine learning, having a highly binned card from Nvidia will ensure he has a quality card that should stay rock solid over the long-term. It also should not get crazy hot.\n\n# Part Recommendations:\n\nCPU - [AMD Ryzen Threadripper 7960X](https://www.newegg.com/amd-threadripper-7960x-350w-sp6-ryzen-threadripper-7000-series/p/19-113-804?Item=19-113-804&amp;cm_sp=product-_-from-price-options) or the [7970x](https://www.newegg.com/amd-threadripper-pro-7965wx-350w-sp6-ryzen-threadripper-7000-series/p/19-113-806?Item=19-113-806&amp;cm_sp=product-_-from-price-options): I think the 24 core is more than enough for Destiny while providing him a platform that can take advantage of all the ad-in cards and peripherals he wants. It has incredible compression and decompression performance, so he should be able to take full advantage of his SSDs and internet connection (yes, downloading and uploading at 5Gbps can be incredibly taxing on a CPU). I have seen Destiny have his stream hang up when he splits vods, so this CPU should handle some of these bursty tasks as well. Again, I am making my best conjecture from personal experience with other tasks as well as some reviews, so Destiny will need to test this himself.\n\nMobo - [GIGABYTE TRX50 AERO D sTR5 (Rev 1.2)](https://www.newegg.com/gigabyte-trx50-aero-d/p/N82E16813145484?Item=N82E16813145484&amp;SoldByNewegg=1): USB4 (40 Gbps) and 2 LAN ports (10 Gbps + 2.5 Gbps) is the main stars of the show. Destiny discussed how he would want better ports with his new build, and this would allow him to reduce the number of cables going into the back of the PC. He could also take advantage of Thunderbolt docks and better external SSDs with this setup. Now, Destiny should be warned that not all the ports are PCIE 5.0. However, the trade-offs with the two features I mentioned as well as Wifi 7 (negligible feature, but still cool) is probably worth it. Reviews also seem good. It is also way cheaper than the Asus offering with arguably more usable features.\n\nGPU - [RTX 4000 SFF](https://store.nvidia.com/en-us/nvidia-rtx/products/nvidia-rtx-4000-sff-ada-generation/?nvid=em-VCNRTX4000ADALP-PB): I already went over this in the potential build section. Reminder for everyone that he is not gaming on this. The GPU needs to chug as an encoder and multi-streamer. He does not need a more expensive workstation card or a 4090. He is just encoding. Frankly, a [4060](https://www.amazon.com/MSI-RTX-4060-Architecture-2X/dp/B0C8BPW1SP?source=ps-sl-shoppingads-lpcontext&amp;ref_=fplfs&amp;psc=1&amp;smid=ATVPDKIKX0DER) would be a good alternative if he wants a low wattage offering that will encode for him. I just recommended this, because the 4000 SFF is less than HALF the TDP of a 4060. So freaking cool!!! I know it's unnecessary, but think of how unique it is :)\n\nRAM - [Kingston Fury Renegade Pro 128GB](https://newegg.com/kingston-128gb/p/N82E16820242850): Probably an unnecessary amount, but I do not know how many pictures of your mom he will be opening up. Threadripper also works best with all channels populated. This was the highest channel kit of matching ram from the supported memory list that also meet the 5200 memory speed requirement (Threadripper sortof maxes out at 5200 for memory speed).\n\nCPU Cooler - [Noctua NH-U14S TR5-SP6](https://www.amazon.com/dp/B0CHRS9RXB?maas=maas_adg_9B5E62ADF6F9D163C527BCF52245CCB8_afap_abs&amp;ref_=aa_maas&amp;tag=maas#customerReviews): There aren't a ton of supported air coolers for the sTR5 platform. Noctua is expensive, however they are incredibly reputable and easy to install with their secufirm bracket. Destiny will not have to worry in the slightest on reliability, and the CPU comes with CPU paste pre-applied. I personally use this cooler for the workstation builds in lab. I liked it enough to get the regular version for my partner's gaming PC. Cool enough and quiet.\n\nSSD - [Crucial T700 4T](https://www.newegg.com/crucial-4tb-t700/p/N82E16820156331)B: Storage has gotten so damn cheap. Destiny could get 2 of these in and run them in RAID 1. He could even put the OS on one and use the other as storage. These are rock solid and fast. PCIE 5.0 as well. I know the Samsung 990 pros are no slouch, but Destiny might as well just get the 5.0 drives if he is going through the trouble and wants to take full advantage of the sTR5 platform.\n\nLong-term storage - [Seagate IronWolf Pro 20TB](https://www.newegg.com/seagate-ironwolf-pro-st20000nt001-20tb/p/N82E16822185071): Get two of these and run them RAID 1. Are you kidding me? Look at how damn cheap storage is now. For the people wondering why I didn't recommend SSDs: people do not recommend long-term storage on flash memory. Data stored on flash can decay with time, and the drives need to constantly be active. I don't want there to be a risk for any of Destiny's data, so to be safe he should stick with a HDD.\n\nPower Supply - [Seasonic Vertex GX-1000](https://www.newegg.com/seasonic-vertex-gx-1000/p/17-320-022?Item=17-320-022&amp;cm_sp=product-_-from-price-options): I can already feel Destiny getting riled up at that unnecessary wattage number. U have a good reason. When modern PSUs operate at less than half of their total rated wattage, they do not need to spin their fan. One less component causing noise in your room. This is a minute point and probably does not matter to most people, but it is something for noise sensitive people to consider with their own builds. Besides that, Seasonic is the best brand for power supplies. Destiny could go for there platinum or titanium line-up, but that would get expensive. This is a great option with a 12 year warranty to boot. Destiny can feel confident that this power supply will stand the test of daily use. I have two lab computers using this power supply and can stand by it.\n\nPC Case - [Fractal Design North XL](https://www.newegg.com/charcoal-black-fractal-design-north-atx-mid-tower/p/N82E16811352216?Item=9SIAD6HK9F2398) or the [Fractal Design Torrent](https://www.newegg.com/white-fractal-design-torrent-atx-mid-tower/p/11-352-207?Item=11-352-207&amp;cm_sp=product-_-from-price-options): This is honestly personal preference. I think the Torrent would be a solid pick due to the airflow, but the CPU tower will be blowing air directly into the powersupply with this case. It also has a \"loud\" design language. Destiny might like the more subdued look of the Fractal North. It is indeed an elegant case. I have worked in Fractals and Phanteks cases mostly. Both brands are easy to work with and they both provide high-quality, quiet airflow fans. \n\nCapture Card - [Elgato 4k Pro](https://www.elgato.com/us/en/p/game-capture-4k-pro) or [Elgato 4k x ](https://www.elgato.com/us/en/p/game-capture-4k-x): Destiny will know his external capture requirements much better than I would. I have provided the latest gen options for him to look at.\n\n# Conclusion:\n\nI'd love the community's feedback as well as Destiny's thoughts on this build. I have some alternative builds that he can consider if he has a different use case in mind for his streaming PC. I can also totally defend these hardware choices if needed for anyone who might not understand them. I think my experience and understanding of what Destiny needs is solid. Looking forward to hearing from everyone :)",
-      "upvotes": 216,
-      "classifyThis": false,
+      "commentId": "1f6gzbf",
+      "text": "Build Review for a Rusty Builder\n\nHi guys, I'm building a PC again for the first time after about a decade and though I follow PC hardware news, I'm still very much out of the loop, and could use a quick sanity check. \n\nPrimary purpose of the PC is to game on a ultrawide with another ultrawide as a secondary monitor. \n\nParts list as follows, though I'll likely replace the fans with the Lian Li Uni Fans just for a consistent aesthetic and easier cable management:\n\n[PCPartPicker Part List](https://pcpartpicker.com/list/dkrN34)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [AMD Ryzen 7 7800X3D 4.2 GHz 8-Core Processor](https://pcpartpicker.com/product/3hyH99/amd-ryzen-7-7800x3d-42-ghz-8-core-processor-100-100000910wof) | $419.00 @ Amazon \n**CPU Cooler** | [\\*Thermalright Aqua Elite V3 66.17 CFM Liquid CPU Cooler](https://pcpartpicker.com/product/TmWJ7P/thermalright-aqua-elite-v3-6617-cfm-liquid-cpu-cooler-aqua-elite-240-white-v3) | $44.99 @ Amazon \n**Motherboard** | [ASRock B650 Steel Legend WiFi ATX AM5 Motherboard](https://pcpartpicker.com/product/MgHqqs/asrock-b650-steel-legend-wifi-atx-am5-motherboard-b650-steel-legend-wifi) |-\n**Memory** | [G.Skill Trident Z5 RGB 32 GB (2 x 16 GB) DDR5-6400 CL32 Memory](https://pcpartpicker.com/product/mfhv6h/gskill-trident-z5-rgb-32-gb-2-x-16-gb-ddr5-6400-cl32-memory-f5-6400j3239g16gx2-tz5rw) | $109.99 @ Amazon \n**Storage** | [\\*Samsung 990 Pro 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://pcpartpicker.com/product/34ytt6/samsung-990-pro-2-tb-m2-2280-pcie-40-x4-nvme-solid-state-drive-mz-v9p2t0bw) | $169.01 @ Amazon \n**Video Card** | [Gigabyte AERO OC GeForce RTX 4080 SUPER 16 GB Video Card](https://pcpartpicker.com/product/94hv6h/gigabyte-aero-oc-geforce-rtx-4080-super-16-gb-video-card-gv-n408saero-oc-16gd) | $1099.99 @ Amazon \n**Case** | [Fractal Design North ATX Mid Tower Case](https://pcpartpicker.com/product/ybNxFT/fractal-design-north-atx-mid-tower-case-fd-c-nor1c-02) | $134.99 @ Amazon \n**Power Supply** | [SeaSonic VERTEX GX-1000 1000 W 80+ Gold Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/RqYmP6/seasonic-vertex-gx-1000-1000-w-80-gold-certified-fully-modular-atx-power-supply-vertex-gx-1000) | $189.99 @ Amazon \n | *Prices include shipping, taxes, rebates, and discounts* |\n | **Total** | **$2167.96**\n | \\*Lowest price parts chosen from parametric criteria |\n | Generated by [PCPartPicker](https://pcpartpicker.com) 2024-09-01 11:14 EDT-0400 |\n\nAny comments would be really appreciated!",
+      "upvotes": 1,
+      "classifyThis": true,
       "relevance": null,
       "relevanceReasoning": null,
       "sentiment": null,
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "ldqou4o",
-          "text": "I agree with the Threadripper recommendation IF he needs all those pcie lanes.\n\nThe x3d chips are very good, but mostly for gaming and some other very specific workloads, streaming is not one of them. It would make more sense to have a 8core x3d gaming PC and an at least 16core non-x3d streaming PC.\n\nKeep in mind the 9950x (AMD skipping 8000 naming because of reasons) is going to come out very soon, maybe Destiny won't have time to wait that long, but it's at the end of this month!\n\nA 7950x or 9950x and this board [https://www.amazon.com/ASUS-X670E-Creator-content-creator-motherboard/dp/B0BDTM7VP5?th=1](https://www.amazon.com/ASUS-X670E-Creator-content-creator-motherboard/dp/B0BDTM7VP5?th=1) may be enough for his needs. It also has 10gig and 2.5gig ethernet, as well as two usb4 ports for thunderbolt connectivity and good pcie layout. But if he goes with this board, only the first m2 slot is pcie5 I think. So, he only needs one pcie5 nvme ssd. The t705 is the newer version of the t700 btw. Then he can get one or two 990pros for the other slots. Or he could even get the Sabrent 8tb nvmes for them.\n\nThe rtx 4000 ssf is cool and all, but even if the tdp is lower the noise level might be higher because of the single blower fan, compared to a 4060 or something with a better heatsink. Encoding will mostly use the dedicated encoding engine of the chip, so the power draw might not be that different between the two anyway.\n\nOne thing Destiny could do right away is buy a new PSU, test the old PC with the new PSU, see if it helps resolve the issue and if it doesn't, it's going in the new build anyway.",
-          "upvotes": 3,
+          "commentId": "ll01h8a",
+          "text": "Looks fine as is but some notes to consider:\n\n* AIO is unnecessary for a 7800X3D. I'd prefer a good quality air cooler over a cheap AIO.\n* 6000/CL30 is the widely accepted sweet spot for memory with Ryzen 7000. 6400/CL32 is a gamble and likely won't make a difference to performance.\n* 1000W is a bit overkill, but it's always nice to have headroom. I'd personally get an 850 so it's operating closer to peak of the efficiency curve when under load.",
+          "upvotes": 6,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -24,32 +24,173 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "ldqt543",
-              "text": "You're right, that does look like a good motherboard recommendation. \n\nI'm on an Asus B650E board myself, so I didn't research the X670E options.",
+              "commentId": "ll028po",
+              "text": "Thanks for the quick reply. What air coolers would you recommend? I've always gone with the Hyper 212, and I'm not sure if that's still a good option.\n\nAnd noted on the RAM. Had no idea about that sweet spot!",
               "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
               "sentiment": null,
               "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "ldrmean",
-              "text": "Yeah, I took the risk with the idea about the PCIE lanes. However, I didn\u2019t want to make this post any longer with alternate builds. Thankfully, DGG has some knowledgeable people who can back me up in the comments.\n\nI didn\u2019t see the T705 on Newegg. I might have missed it, but yeah he can grab that or even the Sabrent 8TB if he wants mega storage. 990 Pros are also highly touted. Samsung reputation is very good (hopefully the firmware issues are resolved).\n\nThe mobo might be the only issue. He might end up waiting if he wants a mobo with USB 4, 10gb, wifi 7, full pcie 5.0 support. I don\u2019t think these are necessary, but the man upgrades like 8 years at a time. I think with the pace of tech, would be good if he gets a feature packed board. \n\nThanks for the comment :)",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
+              "replies": [
+                {
+                  "commentId": "ll030ho",
+                  "text": "Phantom Spirit is the king at the moment. You may want to get the RGB version and then get low profile non-RGB memory, as the front fan will likely cover it. [Thermalright Phantom Spirit 120 SE ARGB 66.17 CFM CPU Cooler (PS120SE ARGB) - PCPartPicker](https://pcpartpicker.com/product/MzMMnQ/thermalright-phantom-spirit-120-se-argb-6617-cfm-cpu-cooler-ps120se-argb)\n\nFor memory, I'd probably be getting \"Flare\" series from G.Skill, which has EXPO profiles for AMD (like XMP for Intel).\n\nBasically this is what I'd do: [https://pcpartpicker.com/list/cnR7z6](https://pcpartpicker.com/list/cnR7z6)",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ll0b6jm",
+                      "text": "Thanks for the list! I had no idea about the EXPO profile thing either, so will definitely look into that.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ll0d69v",
+                          "text": "If you\u2019re going with an AIO and want RGB memory, look at Z5 \u201cNeo\u201d kits. Neo kits have EXPO profiles.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "ll03ldf",
+                  "text": "If you're looking for a white interior (I see the GPU and motherboard), you could also consider this which would be basically the same as the phantom spirit. A bit more expensive though. [Thermalright Peerless Assassin 120 SE WHITE ARGB 66.17 CFM CPU Cooler (PA120 SE White ARGB) - PCPartPicker](https://pcpartpicker.com/product/xMLFf7/thermalright-peerless-assassin-120-se-white-argb-6617-cfm-cpu-cooler-pa120-se-white-argb)",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
             }
           ]
         },
         {
-          "commentId": "ldq2clo",
-          "text": "Why not reach out to him directly and ask him to pay you to build it for him?",
+          "commentId": "ll031ds",
+          "text": "I would get either a Phantom Spirit 120 SE/EVO, or a 360mm aio\n\nI would get a cheaper 2tb drive, like the nm790, and like u/whudylan687 said, you are overpaying for white parts that you are putting in a black case",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ll0aspt",
+              "text": "Thanks for the Phantom Spirit and the NM790 recommendations! Will definitely consider them. The latter seems to be on sale at some retailers now!\n\nWith regard to the white parts, there's no real markup for the colour here and the few white parts in a black case pictures I've seen look pretty good. But I'll think about it!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ll18avh",
+                  "text": "IMO, white parts and a black case looks really weird, and you pay a lot more for white parts, so it makes sense to either go all white, or all black",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ll022uh",
+          "text": "good hardware however id say overpaying for white parts in a case that doesnt suit them [https://pcpartpicker.com/list/KHM934](https://pcpartpicker.com/list/KHM934)",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ll0avsv",
+              "text": "Thanks for taking the time to do the list! Am of two minds about the aesthetics but still some time before I pull the trigger on the parts.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ll14l72",
+                  "text": "no worries mate, my general rule of thumb is match the motherboard to the case to help it blend in, black on black, white on white etc, but go crazy with the other parts or just rgb to make them stand out",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ll0288f",
+          "text": "Looks good. You could probably save some money on getting some different components like the SSD and PSU, the ones you have are great but are also a good $50 more expensive than parts that will perform the same for most use cases. Also AMD used to have some issues running ram above 6000mhz, I think that's mostly been fixed but not totally sure if you could still run into some issues with a 6400mhz kit. You could also save another $100-$200 and get better raw 1440p/4k performance by buying a 7900xtx instead of the 4080 super, but if you intend to heavily lean on things like ray tracing and upscaling I would recommend sticking with the 4080\n\nEdit - forgot to mention I think it would be a good idea to get the 360ml version of that cooler for like $20 more assuming it fits in your chosen case. For $20 that upgrade seems like a no brainer to me as better cooling = more juice out of your CPU with how Ryzen 7000 series behaves",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ll09rrp",
+              "text": "Thanks! /u/9okm said the same about the 6400mhz RAM, so I'm definitely going to change to a 6000mhz kit.\n\nAlso, I did prefer 4080 because of RT and DLSS, and it turns out the price of the 7900XTX is actually more than a 4080 Super or I may have been swayed the other way. \n\nAnd as for the AIO, I want to mount it at the top, which means I'm limited to a 240mm radiator.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ll0arvq",
+                  "text": "Makes sense, build looks good then",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ll04b35",
+          "text": "Modified your build to be even whiter and slightly cheaper overall.\n\n\n[PCPartPicker Part List](https://pcpartpicker.com/list/vF2JYN)\n\nType|Item|Price\n:----|:----|:----\n**CPU** | [AMD Ryzen 7 7800X3D 4.2 GHz 8-Core Processor](https://pcpartpicker.com/product/3hyH99/amd-ryzen-7-7800x3d-42-ghz-8-core-processor-100-100000910wof) | $419.00 @ Best Buy\n**CPU Cooler** | [Thermalright Phantom Spirit 120 SE ARGB 66.17 CFM CPU Cooler](https://pcpartpicker.com/product/MzMMnQ/thermalright-phantom-spirit-120-se-argb-6617-cfm-cpu-cooler-ps120se-argb) | $35.90 @ Amazon\n**Motherboard** | [Gigabyte B650 AORUS ELITE AX ICE ATX AM5 Motherboard](https://pcpartpicker.com/product/CwjRsY/gigabyte-b650-aorus-elite-ax-ice-atx-am5-motherboard-b650-aorus-elite-ax-ice) | $209.99 @ Amazon\n**Memory** | [G.Skill Trident Z5 Neo RGB 32 GB (2 x 16 GB) DDR5-6000 CL30 Memory](https://pcpartpicker.com/product/wLbRsY/gskill-trident-z5-neo-rgb-32-gb-2-x-16-gb-ddr5-6000-cl30-memory-f5-6000j3036f16gx2-tz5nrw) | $124.99 @ Amazon\n**Storage** | [TEAMGROUP MP44 2 TB M.2-2280 PCIe 4.0 X4 NVME Solid State Drive](https://pcpartpicker.com/product/DN6NnQ/teamgroup-mp44-2-tb-m2-2280-pcie-40-x4-nvme-solid-state-drive-tm8fpw002t0c101) | $110.99 @ Newegg\n**Video Card** | [Zotac GAMING Trinity OC GeForce RTX 4080 SUPER 16 GB Video Card](https://pcpartpicker.com/product/MjCZxr/zotac-gaming-trinity-oc-geforce-rtx-4080-super-16-gb-video-card-zt-d40820q-10p) | $1069.97 @ Newegg\n**Case** | [Montech AIR 903 BASE ATX Mid Tower Case](https://pcpartpicker.com/product/rBTZxr/montech-air-903-base-atx-mid-tower-case-air-903-base-w) | $59.99 @ Amazon\n**Power Supply** | [MSI MAG A850GL PCIE5 850 W 80+ Gold Certified Fully Modular ATX Power Supply](https://pcpartpicker.com/product/zF4Zxr/msi-mag-a850gl-pcie5-850-w-80-gold-certified-fully-modular-atx-power-supply-mag-a850gl-pcie5) | $109.99 @ Amazon\n\u00a0| *Prices include shipping, taxes, rebates, and discounts* |\n\u00a0| **Total** | **$2140.82**\n\u00a0| Generated by [PCPartPicker](https://pcpartpicker.com) 2024-09-01 11:39 EDT-0400 |",
           "upvotes": 1,
           "classifyThis": true,
           "relevance": null,
@@ -58,31 +199,8 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "ldq3duh",
-              "text": "I think a subreddit post is fine. Too many people email him unnecessarily. If he reads this and wants me to build him a PC, I would be more than happy to.",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "ldqeqfs",
-          "text": "I dont understand the CPU and Ram choice . are you sure your reasoning  is just he has the money so why not",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "ldqf5m4",
-              "text": "Nope. As I explain in the post, it is for maximum lane flexibility. This will be his streaming PC, and I do not know if he would want to add additional cards or peripherals. This will allow him to take advantage of that along with having dual USB 4 and dual LAN ports. I also say that I think the 24 core is enough for his needs. It\u2019s expensive, but I doubt Destiny will care as long as it helps him make money.\n\nRAM is due to this platform running best with all channels populated. This kit meets the requirements for the speed rating as well being validated by the Mobo support list. It is also a full kit, so he doesn\u2019t have to order two kits and face ram issues.",
+              "commentId": "ll09430",
+              "text": "Thanks for taking the time to do this! Unfortunately, some of the parts you mentioned aren't available where I am, but some are! So will definitely mix and match.",
               "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
@@ -92,6 +210,64 @@
               "replies": []
             }
           ]
+        }
+      ]
+    },
+    {
+      "commentId": "1jwzdu9",
+      "text": "First time build\n\nFirst post on Reddit ever,\n\nLooking to build a PC for my wife. Also a first build. I used PC Part Picker and made a list. Was hoping to see if anyone smarter than me would be willing to review and give me some pointers? Primarily looking to play games but would love any input on compatibility and recommendations as well. Trying to go for the Pink/White theme. \n\n  \nThank you for the help!\n\n\n\nCPU: AMD Ryzen 7 9700X 3.8GHz 8-Core Processor\n\nCPU Cooler: Thermalright Peerless Assassin 120SE White ARGB\n\nMotherboard: Gigabyte B650 Aorus Elite AX ATX AM5 ICE\n\nMemory: TEAMGROUP T-Force Xtreem 32G (2x16GB) DDR5-7600 CL36 Memory\n\nStorage: Samsung 990 Pro 2TB M.2-2290 PCIe 4.0 X4 NVME SSD\n\nVideo Card: PowerColor Hellhound Sakura OC Radeon RX 7800 XT 16GB Video Card\n\nCase: Lian Li LANCOOL 205 Mesh C ATX Mid Tower Case\n\nPower Supply: SeaSonic VERTEX GX-1000 Sakura Edition 1000W",
+      "upvotes": 1,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "mmmf479",
+          "text": "6000 cl30 ram is basically just as good and you also won't really notice if you downgrade your ssd to a crucial p3 plus or something similar\u00a0",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mmmh7o2",
+              "text": "i only chose those because they had an all pink option. not sure if i will be able find it online, but that was the thought process, not exactly a technical one.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mmmi54h",
+                  "text": "You'll likely have to manual tune the memory speeds to something lower in order to maintain 1:1 MCLK to UCLK ratio. It's up to you if this is worth the hassle for the pink.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mmmhgpu",
+          "text": "Yh 6000 cl30 and maybe add some fans, argb",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         }
       ]
     }

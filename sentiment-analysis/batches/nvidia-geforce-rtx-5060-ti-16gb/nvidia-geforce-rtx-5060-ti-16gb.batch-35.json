@@ -1,7 +1,7 @@
 {
   "productName": "nvidia-geforce-rtx-5060-ti-16gb",
   "batchIndex": 35,
-  "totalBatches": 39,
+  "totalBatches": 41,
   "comments": [
     {
       "commentId": "1k9m1gp",
@@ -14,9 +14,9 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mpfd5jz",
-          "text": "This is actually Nvidias best uplift in performance gen to gen out of the 50 series but they throw away the positive review because of how they tried to bury the 8gb variant.",
-          "upvotes": 20,
+          "commentId": "mpfu4th",
+          "text": "|Metric|4060Ti-8GB|4060Ti-16GB|\n|:-|:-|:-|\n|4K Raster Performance Averaged / TechPowerUp|**72.5% / 76%**|82.2% / 83%|\n|4K RayTracing Performance Averaged / TechPowerUp|**55.7% / 46%**|86.3% / 87%|\n|3DC UltraHD/4K performance index|**230% (??!?)**|\\~240%|\n\nSomething off here. 8GB should have a much lower Index rating.",
+          "upvotes": 4,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -24,9 +24,9 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "mpfiq6q",
-              "text": "But kind of embarrassing that it cannot even match the 4070.",
-              "upvotes": 52,
+              "commentId": "mpfupk9",
+              "text": "As the (german) text says: The index value is old, from 2023. Newer benchmarks points to a lower 2160p performance of the 4060Ti. I do not change the index value f\u00fcr the 4060Ti-8G, because the 3DC Performance Index should work mostly neutral to VRAM. But I do not give the 5060Ti-8G an index value at 2160p. 8G VRAM is way too less for 2160p in 2025.",
+              "upvotes": 1,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -34,39 +34,29 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "mpfvdpl",
-                  "text": "The 4070, Which in itself wasn\u2019t a very good card. The 4070 super is what it should have been in the first place",
-                  "upvotes": 20,
+                  "commentId": "mpfvvaj",
+                  "text": "Actually, this is exactly why a 4K index *must* be provided \u2014 not omitted. If 8GB struggles at 4K, that's critical performance information users need. Hiding it under the pretext of \"too little VRAM\" gives an incomplete and misleading picture.\n\nMaking an index \"VRAM-neutral\" makes no sense when VRAM limits directly affect real-world 4K performance. Pretending otherwise disconnects the index from actual user experience \u2014 the entire point of a performance index is to reflect reality, not sanitize it.\n\nI really encourage you to rethink this logic. Omitting 4K results or artificially smoothing them out with \"VRAM-neutral\" indexing risks undermining the credibility of the analysis. Users deserve a full and honest view of how these cards actually perform under modern demands. Please consider updating the article to reflect real-world limitations instead of masking them \u2014 it would strengthen the quality and trustworthiness of your work.",
+                  "upvotes": 12,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
                   "sentiment": null,
                   "sentimentReasoning": null,
-                  "replies": []
+                  "replies": [
+                    {
+                      "commentId": "mpl29iz",
+                      "text": "Setting up a 2160p index value for the 5060Ti-8G would mean I would have to lower the 2160p index value of the 4060Ti-8. Which in turn means I'd have to lower the 2160p index values for all older 8GB cards, all the way back to the Radeon R9 390. This makes no sense. That's why the index is largely VRAM-neutral - so that I don't have to make these nonsensical changes for old cards. The index is meant to reflect the performance of the cards at the time they were sold, not the performance of older cards in 2025.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
                 }
               ]
-            },
-            {
-              "commentId": "mpfi5kc",
-              "text": "It only appears that way because there is no 4060 Ti Super to compare it to.  The 5090 benefitted from the same oversight.\n\nLook at the other 50 series vs the base 40 series models and you get similar results.",
-              "upvotes": 23,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "mpftpx0",
-              "text": "no that would be the 5090",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
             }
           ]
         }

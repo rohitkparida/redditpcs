@@ -1,7 +1,7 @@
 {
   "productName": "amd-radeon-rx-7900-xt",
   "batchIndex": 23,
-  "totalBatches": 36,
+  "totalBatches": 42,
   "comments": [
     {
       "commentId": "1j7fhzl",
@@ -14,58 +14,334 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mgxim7y",
-          "text": "I'm happy AMD's offering is competitive so there are more valid GPU choices to go around. I ordered a 9070 XT instead of waiting for a 5080. I had expected the 5080 to at least be more powerful considering it's street price. After tax most of them are more than double the price I paid for the 9070 XT. The AMD card will be a good enough improvement over my 3090 to satisfy me for now, and I can look into the GPU situation again next generation to see if I want to trade it out. The 3090 gets shuffled into my media PC and to have as a backup.",
-          "upvotes": 9,
-          "classifyThis": true,
+          "commentId": "mgwi8cc",
+          "text": "Worth mentioning, that ray tracing includes black myth wukong, which is completely broken on AMD and is basically bruteforced, so it Heavily bricks the results for ray tracing on AMD cards. It's ~5-6% better average if you exclude it (since it's a huge outlier)",
+          "upvotes": 310,
+          "classifyThis": false,
           "relevance": null,
           "relevanceReasoning": null,
           "sentiment": null,
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "mgz11pc",
-              "text": "I almost did the same, I upgraded to a 9800x3d and I\u2019ve been looking to upgrade my 3090 next. Was hoping for a founders edition 5090 or msrp model but yeah\u2026\n\nSeriously considered pulling the trigger for a 9070 xt but it feels bad going from 24gb to 16gb. I think for now I\u2019m going to wait and see if AMD (or Nvidia) will come out with a 24gb card in a year. I saw that ROCm is quite good for LLM inference, maybe by then FSR4 support will be more widespread as well.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "mgy2bmm",
-              "text": "Wow that's a powerful card to put in a media server",
+              "commentId": "mgzpy37",
+              "text": "Are they aware of this game specific bug? Hoping it gets fixed on AMD soon.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a question about a game-specific bug and does not provide insight into the product's performance or value.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a question without expressing a positive or negative opinion about the product.",
               "replies": [
                 {
-                  "commentId": "mgy395f",
-                  "text": "I occasionally run LLMs using it so I\u2019ll be able to remote into that system. I thought about reselling the 3090 but I\u2019m kind of fond of it in general.",
-                  "upvotes": 3,
+                  "commentId": "mh0ousn",
+                  "text": "It uses a NVIDIA specific fork of UE, sooooo yeah. It basically shuts out AMD cards by design. Bug implies accident.",
+                  "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses game engine forks and developer design choices, not the product itself.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is factual/technical discussion about software, not a sentiment-bearing opinion on the hardware.",
+                  "replies": []
+                },
+                {
+                  "commentId": "mgzq43b",
+                  "text": "It's not a bug per say, the devs simply optimised the game around Nvidia GPUs, almost hard coded it. So AMD has to bruteforce it I stead of normal operating.\n\n\nLike, compare it to cyberpunk, another Nvidia tech demo...",
+                  "upvotes": 7,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses game optimization and developer choices, not the product's inherent performance.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a technical explanation of why a game is optimized for Nvidia, not a sentiment on the product.",
                   "replies": [
                     {
-                      "commentId": "mgzu608",
-                      "text": "Ah that makes sense! I'm sorting out a good home to send my 3070 to",
-                      "upvotes": 1,
+                      "commentId": "mh0yzob",
+                      "text": "That feels so weird to do considering consoles are AMD powered and I'd assume most of these games sell just as many if not more copies on average on PS5.",
+                      "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a general observation about console hardware and game sales, not the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment expresses confusion about industry trends, not sentiment toward the product.",
+                      "replies": [
+                        {
+                          "commentId": "mh0zwn0",
+                          "text": "Well, Nvidia sponsored PC version, I see no surprises here.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is meta-talk about Nvidia sponsorship, not the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a cynical observation about sponsorship, not a sentiment on the product.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mh8m625",
+                  "text": "There's no bug. Game didn't optimize for AMD cards + NVIDIA has SER and OMM. When AMD cards can actually run PT games will be better optimized. UDNA should fix this issue.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses game optimization and future hardware architectures (UDNA), not the current product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a technical prediction and explanation, not a sentiment on the product.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mgxmnhi",
+              "text": "It's not an outlier tho. 9070XT just gets obliterated in full RT. \n\nhttps://ibb.co/album/HL1B1F\n\nhttps://ibb.co/album/QpQ4vD\n\nIt's actually performing better in black myth wukong than Indiana jones or alan wake 2 full RT\n\nAnd that one game isn't going to swing the performance that much in a geomean anyway\n\nThe better results you may see sometimes is just reviewers not maxing out the raytracing effect in some reviews which doesn't activate full RT. Which is why even game by game RT performance seems to be all over the place\n\nLike cyberpunk RT Ultra is 2 levels before max where RT overdrive the 5070ti is over 50% faster",
+              "upvotes": -14,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The comment provides a technical critique of the product's ray tracing performance compared to competitors.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user states the product is 'obliterated' in full RT, indicating poor performance.",
+              "replies": [
+                {
+                  "commentId": "mgzargp",
+                  "text": "Don't bother. This subreddit has a massive obsession with hating anything Nvidia excels at.",
+                  "upvotes": -3,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is meta-talk about the subreddit's bias, not the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a critique of the community, not the product.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mgwl5va",
+              "text": "Might as well exclude Avatar since it barely uses RT and skews the RT data as well, just towards AMD this time",
+              "upvotes": -36,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a discussion about benchmark data and which games to exclude, not the product's performance.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a technical discussion about data analysis, not a sentiment on the product.",
+              "replies": [
+                {
+                  "commentId": "mgwnoeg",
+                  "text": "Perhaps watch the DF video on Avatar?  It's one of the best implementations of GI and other RT features (bar the path tracing titles).\n\nIt runs well on AMD not because its RT is bad but probably because it favours AMD in raster and so when Heavy RT settings are used AMD GPU's have a bit more cushion for extra performance drop.",
+                  "upvotes": 64,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment discusses the product's performance in a specific game (Avatar) and why it performs well.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user explains why the product runs the game well, indicating a positive performance outcome.",
+                  "replies": []
+                },
+                {
+                  "commentId": "mgwo19u",
+                  "text": "Test was done at very high RT. The usual usage of it, not PT level. For BMW and Alan wake it's PT, actually, that is why it is borked. In Alan wake both vendors die anyway, so having 20 fps on AMD or 25 on 5070 - who cares. Cyberpunk RT works great on both cards and that's what will be in future games.\n\nBMW on the other hand, is completely broken on AMD. Like, it's a sabotage at this point.",
+                  "upvotes": 28,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment provides an opinionated performance critique of the product's ray tracing capabilities in specific titles.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user describes the product's performance in Black Myth Wukong as 'completely broken' and 'sabotage'.",
+                  "replies": [
+                    {
+                      "commentId": "mgwwlbn",
+                      "text": "It doesn't matter, Avatar barely has any RT features at all and skews it towards AMD.\n\nIf you're going to exclude the most intensive RT games/modes then you might as well exclude that, although it doesn't fit your AMD bias.\n\n\\&gt;Cyberpunk RT works great on both\n\nNot at max settings, which is rarely used in benchmarks for some reason...",
+                      "upvotes": -27,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a discussion about benchmark methodology and bias, not the product's performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a technical argument about data analysis, not a sentiment on the product.",
+                      "replies": [
+                        {
+                          "commentId": "mgy4hg5",
+                          "text": "The point they are making is it's a bad implementation. It runs like shit on Nvidia, and even more so on AMD because of the different RT architecture. It's a title that skews all the results down *because* it's a poor implementation. There's no point removing good implementations unless it's significantly above average. But on that note, if the variance in RT implementations is so huge, there's clearly something wrong with the way it's built into certain engines.",
+                          "upvotes": 6,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment discusses game implementation and engine variance, not the product's performance.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a technical discussion about software implementation, not a sentiment on the product.",
+                          "replies": [
+                            {
+                              "commentId": "mgz68rz",
+                              "text": "So it\u2019s the Crysis 2 (tessellation) of RT, then? It kills fps on new nvidia cards but kills way more fps on amd and older nvidia cards.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment is a general comparison to a historical game (Crysis 2), not the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is a factual/technical comparison, not a sentiment on the product.",
+                              "replies": []
+                            },
+                            {
+                              "commentId": "mgy5af7",
+                              "text": "It's not poor implementation, it's just that AMD still lacks the hardware to properly run intensive RT processes, that's all. At any point that a significant part of the processes in a game involve RT instead of traditional raster methods, AMD's performance drops like a rock. Anyone who denies this and blames \"bad implementation\" is just coping hard.\n\nThere's no software secret sauce bricking the 7900XTX in RT to favor NVIDIA, it just is that bad at RT.\n\nIt has improved with the 9000 cards, but the % of the performance drops that they experience in such contexts is STILL higher than even in the RTX 3000 cards.",
+                              "upvotes": -4,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "The comment provides a technical critique of the product's hardware architecture and its failure in intensive RT processes.",
+                              "sentiment": "negative",
+                              "sentimentReasoning": "The user states the product is 'just that bad at RT' and performance 'drops like a rock'.",
+                              "replies": [
+                                {
+                                  "commentId": "mgy6uiz",
+                                  "text": "A 1070 can do ray tracing at 1440p 60fps, trust me, I've done it. You use a method called 'ray marching' it's much more efficient, just a pain to set up a scene for. It can also do RT with multiple intersects on geometry at playable framerates, using openGL. \n\nIt's all about the implementation. Remember the videos back in 2018 of vega64 and vega56 running RT with 2-3 bounces (i.e what 99% of games with RT use now) at 1080p60, without dedicated hardware...\n\nA 3-4x faster GPU with dedicated hardware for RT should have absolutely no issue getting similar performance at higher resolutions in RT now, if it can't it's not the hardware, it's the software. Just like how deepseek is faster and needs much less power than GPT, it's not hardware doing that, it's better software. Developers have given up optimising.\n\nThe fact of the matter is too, heavy RT like in BMW doesn't even make sense when it barely makes the game look any different, and when games with supposedly 'lighter' RT perform and look better it tells you there's an issue.",
+                                  "upvotes": 3,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment is a technical discussion about ray marching and software optimization, not the product's performance.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment is a technical argument about software vs hardware, not a sentiment on the product.",
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "mgy3vhn",
+                          "text": "RTGI, RT Shadows and RT reflections are \"barely any RT features\"? Alright",
+                          "upvotes": 10,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a technical argument about what constitutes 'barely any RT features', not the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a technical argument, not a sentiment on the product.",
+                          "replies": [
+                            {
+                              "commentId": "mgy5w3q",
+                              "text": "DL2 also has all of those things on paper, but in reality they're only doing RTGI with one single bounce, most objects don't cast shadows and barely any surfaces have RT reflections(and are low res). AMD also fares ok in DL2, i wonder why...\n\nAgain, the reason AMD fares well in some RT titles and not in others simply comes down to how much it relies in RT processes.",
+                              "upvotes": -4,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "The comment discusses the product's performance in Dying Light 2, explaining why it fares well.",
+                              "sentiment": "positive",
+                              "sentimentReasoning": "The user states the product 'fares ok' in DL2, indicating a neutral to positive performance outcome.",
+                              "replies": [
+                                {
+                                  "commentId": "mgy9b5w",
+                                  "text": "If your standard for RT features is borderline path tracing then sure.\n\nWhen I think of \"barely any RT features\" I think of games like Forza Horizon 5 or Resident Evil 4 where its used minimally for a single effect. Multiple RT effects, especially if that includes RTGI is not barely using them. It may not be the heaviest RT usage when we have path traced games out there but it's a reasonably heavy amount of RT usage\n\nDL2 is also not a light RT game either, if anything it's one where the RT gap shows itself the most outside of path traced games. In the DF review they have the 5070 Ti as 30%+ faster in that game.",
+                                  "upvotes": 7,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment is a technical argument about RT features and the performance gap in Dying Light 2, not the product's performance.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment is a technical argument about RT implementation, not a sentiment on the product.",
+                                  "replies": [
+                                    {
+                                      "commentId": "mgyboth",
+                                      "text": "This discussion is not about my standards for RT, read the entire thread again, slowly.",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "The comment is a rebuttal to another user, not providing insight into the product.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The comment is a meta-discussion about the conversation, not a sentiment on the product.",
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mgwwkg4",
+                  "text": "It's not really a 'this is heavy RT WTF' moment here. The 5070 is somehow 15-20% faster in Cyberpunk's Path Tracing setting\u2014which used to be the absolute most taxing RT scenario in gaming\u2014and 73% faster in specifically Black Myth Wukong. Like, something might actually be wrong here. It would be more like including Black Myth Wukong RT for Nvidia and Borderlands 2 with PhysX for AMD.",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment provides a technical critique of the product's performance in specific RT scenarios compared to competitors.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user highlights a significant performance gap in Black Myth Wukong, indicating poor performance.",
+                  "replies": []
+                },
+                {
+                  "commentId": "mgwxj9c",
+                  "text": "\"Remove Cyberpunk, AW2 and Wukong at max settings because they're outliers and they skew the data towards NVIDIA!\"\n\n\"Btw keep Avatar and spider man because reasons\"",
+                  "upvotes": -12,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a sarcastic remark about benchmark data and bias, not the product's performance.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a sarcastic remark about data analysis, not a sentiment on the product.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mgwk913",
+              "text": "Not really going to be outlier going forward. Just easier for a game studio to bake in RT for lighting and reduce development time.",
+              "upvotes": -30,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a general discussion about the future of RT in game development, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a general technical prediction, not a sentiment on the product.",
+              "replies": [
+                {
+                  "commentId": "mgwm8ii",
+                  "text": "He's talking about Black Myth Wukong results being an outlier due to raytracing in that game being broken for AMD. Not the existence of raytracing games being an outlier.",
+                  "upvotes": 38,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a clarification of another user's point, not providing insight into the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a clarification, not a sentiment on the product.",
+                  "replies": [
+                    {
+                      "commentId": "mgwp2ze",
+                      "text": "Games that rely on RT only like Indiana Jones and Metro Exodus work well on AMD cards so IDK what that guy is talking about. Wukong just runs badly on AMD.",
+                      "upvotes": 23,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment shares personal experience/opinion on the product's performance in specific games (Indiana Jones, Metro Exodus).",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user states these games 'work well on AMD cards', indicating satisfaction with performance.",
                       "replies": []
                     }
                   ]
+                },
+                {
+                  "commentId": "mgwvzvw",
+                  "text": "No, the game specifically is an outlier. Cyberpunk with path tracing on all other AMD cards before this performed similarly with the 7900xtx falling behind even the 3060 Ti, but performance is much better with the 9070 and 9070XT. The 9070 XT performs on par with a 4070 in path tracing in Cyberpunk now and heavy RT results across the board are miles better than last generation... But Wukong still performs like shit.\n\n5070 is 15-20% faster in Cyberpunk PT and 73% faster in Black Myth Wukong for some reason.",
+                  "upvotes": 20,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment provides a technical critique of the product's RT performance across generations and in specific titles.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a balanced technical comparison of performance improvements and failures in specific titles.",
+                  "replies": []
+                },
+                {
+                  "commentId": "mgwnk6q",
+                  "text": "While technically yes, in the current form it doesn't matter. 5070 is the base there, and it's 12gb Vram dies completely in Indiana even on medium RT, while 9070 works just fine.\n\nSo. Creeping out from tech demos for nvidia means not so much, when AMD does actually a better job in other titles. Just look at cyberpunk RT (which is what your point was, not PT).",
+                  "upvotes": 6,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment compares the product's VRAM and performance in Indiana Jones compared to a competitor.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user states the product 'works just fine' and does a 'better job in other titles', indicating positive performance.",
+                  "replies": []
+                },
+                {
+                  "commentId": "mgyibax",
+                  "text": "&gt; bake in RT for lighting\n\n[Hold my beer](https://en.wikipedia.org/wiki/Thief:_The_Dark_Project)",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a joke/meme reference to an old game, not the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a joke, not a sentiment on the product.",
+                  "replies": []
                 }
               ]
             }
@@ -73,5 +349,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

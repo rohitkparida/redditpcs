@@ -1,0 +1,474 @@
+{
+  "productName": "arctic-liquid-freezer-iii-360",
+  "batchIndex": 20,
+  "totalBatches": 123,
+  "comments": [
+    {
+      "commentId": "1tlbfy6",
+      "text": "Do I need a bigger AIO? 14900k temperature spikes near 100c\n\nI've been running Arctic Liquid Freezer III 360 for about a year and a half now. For the first few months it was pretty cool with temps under 80c, but recently it has started doing these brief spikes over 90c for some types of multi-core load.\n\nSpikes occur when the CPU is not at full utilization. I managed to catch 87c on screen, but I've also seen 94c. I'm running all fans and pump at 100%.\n\nIs it normal for an AIO to lose performance like that? Do I need a 420? Maybe just repaste the current one?\n\n**UPD. The AIO radiator is room temperature after hours of benchmarking and the air exiting out is barely warm.**\n\n**I tried opening the side cover and blowing air in the case with a utility fan at max speed. Other components temps went down, but there was zero change in CPU temperature.**\n\n**I suspect there's something wrong with the AIO. I'll try remounting the contact frame and repasting first and if that fails too it's new AIO time.**\n\nUPD2. I fixed the issue by adjusting OC options in BIOS like that: https://postimg.cc/0bWMmnLJ",
+      "upvotes": 256,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ong19u7",
+          "text": "i have 2 14900kf cpus and neither come close to 100c  with similar cooler.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal experience using a similar cooler on the same CPU, providing a performance benchmark.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User reports that their CPUs do not come close to 100c, implying the cooler is effective.",
+          "replies": []
+        },
+        {
+          "commentId": "ongfbva",
+          "text": "Have you checked the settings for your fan curves yet?\n\nOr did you perhaps use some software to set your cooling to \"Ultra Quiet\" instead of \"Balanced\" or \"Performance\"?\ufffc",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Purely a troubleshooting question about fan curves and software settings.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral inquiry about settings.",
+          "replies": []
+        },
+        {
+          "commentId": "ongnvr8",
+          "text": "Set pump and fan speeds to LUDICROUS SPEED!",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Low-effort banter/joke about fan speeds.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No clear sentiment expressed toward the product.",
+          "replies": []
+        },
+        {
+          "commentId": "ongqbxi",
+          "text": "That seems like a lot for that many fans. Something may be wrong. Are you sure all the fans are pointing the right way to create that good positive airflow in there? Perhaps there's negative and turbulent airflow occuring which prevents the flow from escaping fast enough.\n\nI can see it is a very small case so that is always going to create heating problems. If you have the option - go to a normal sized case if you can.\n\nGet a BCF Contact Frame ILM and replace the stock one around the CPU. They're cheap as hell, easy to install and can take about 5-10C off temps under load. (I've only just learned about the existence of these today myself!)\n\nAnother good advice I have seen is to undervolt these specific CPUs. Keep it at max 1.35v. There's guides out there for this.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General troubleshooting advice regarding airflow, cases, and contact frames, not specific to the AIO's performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment provides technical advice without expressing a positive or negative opinion of the product.",
+          "replies": [
+            {
+              "commentId": "ongs9sl",
+              "text": "Thanks. The case is lancool 216, it's not that small. 4 intake fans create sufficient positive airflow at max speed. This particular aio already has a contact frame. Cpu is already undervolted. ",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual response about case and current setup, not an opinion on the AIO.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual statement of current hardware configuration.",
+              "replies": []
+            },
+            {
+              "commentId": "onh41f8",
+              "text": "Something is definitely wrong. The radiator and the air blowing through it are barely warm.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Observation about the radiator temperature, part of a troubleshooting process.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual observation.",
+              "replies": [
+                {
+                  "commentId": "oninb72",
+                  "text": "That explains a lot. Means the heat transfer is not happening. Maybe the contact frame is not seated properly and keeping the AIO just above the surface?  I just saw a video where it explains that you have to install it by screwing it down from each corner in a criss-cross pattern slowly, about half a turn at a time, to make sure the contact becomes even (apologies if you already know this). See here: [https://youtu.be/iYU1OskbY-Q?t=893](https://youtu.be/iYU1OskbY-Q?t=893)\n\nEither way, I would look at that surface contact being an issue one way or another. Do let us know what you find, I am curious and like to learn from others' experiences. I also plan to upgrade to a 13/14th gen and socket from i9900 that I have now, so it helps.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Troubleshooting advice regarding installation and contact frames.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral technical suggestion.",
+                  "replies": [
+                    {
+                      "commentId": "ony4ql2",
+                      "text": "Alright I fixed the issue by changing bios settings. First I remounted the contact plate and changed thermal paste to fresh kryonaut. This time I screwed the contact plate all the way in, not \"snug\". The temp spikes stayed the same, no change. So likely not a contact issue.\n\nWhat actually helped was changing OC settings like that: https://postimg.cc/0bWMmnLJhttps://postimg.cc/0bWMmnLJ",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Update on troubleshooting steps taken and the result of BIOS settings changes.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment describes a technical fix for a CPU issue, not a critique of the AIO.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "onmyc9v",
+                  "text": "I just had an idea as a spare plan if you can find the space to do so: you could always double the fans on the radiator to have both push and pull with fans on both sides.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Suggestion for push-pull configuration, general cooling advice.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral technical suggestion.",
+                  "replies": [
+                    {
+                      "commentId": "onnbofe",
+                      "text": "I tested it like that, temps are exactly the same, aio radiator is room temperature to the touch.\n\nhttps://preview.redd.it/f9pjugfro43h1.jpeg?width=4000&format=pjpg&auto=webp&s=546c982132a59c7126cdab3156ce715698c4cdab",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Factual report of test results regarding radiator temperature.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual report of a test result.",
+                      "replies": [
+                        {
+                          "commentId": "onne3xj",
+                          "text": "Then clearly you have surface contact issue. I would suggest trying PTM instead of thermal paste. Thermalright Helios is cheaper than Honeywell PTM7950 so try that.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Suggestion to use PTM instead of thermal paste, general cooling advice.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a neutral technical suggestion.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ongu1c6",
+          "text": "Been down this road I had a 13900k and there\u2019s nothing you can do to significantly lower the temps. Bios update and under volt and it still will give you problems and eventually break. Switched to AMD and never looked back. ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about Intel CPU heat issues and switching to AMD, not specific to the AIO.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment expresses a negative opinion of Intel CPUs, not the AIO.",
+          "replies": [
+            {
+              "commentId": "ongxzhq",
+              "text": "What would you do for a 5950x lol amd says they are made to run hot \ud83e\udd23",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Joke/banter about AMD CPU temperatures.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a joke.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onh0pav",
+          "text": "Literally just made a couple posts about a similar situation with a new cpu upgrade as well but amd. Check my posts one that fixed it for me was funny enough I didn\u2019t have the bracket full tightened lol ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General troubleshooting advice based on personal experience with a different CPU/platform.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical suggestion.",
+          "replies": []
+        },
+        {
+          "commentId": "onh0xme",
+          "text": "Also do try and tune the pump and fan speeds as 100% is not always the best for cooling, pumps aren\u2019t always peak efficiency at full tilt neither are fans, try and research where each should be set alongside the bios settings people have suggested",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General advice on pump and fan speeds, not specific to the product's design or performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical suggestion.",
+          "replies": []
+        },
+        {
+          "commentId": "onh7gbu",
+          "text": "Get air cooler... problem solved",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General recommendation to use an air cooler, not a critique of the AIO.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral recommendation for a different product type.",
+          "replies": []
+        },
+        {
+          "commentId": "onh808l",
+          "text": "I run a custom loop with a thick radiator, push/pull by 6 phanteks t30 and I still need to undervolt and use the 235w limits provided by intel or i run into 80c load.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion of a custom loop, not relevant to the Arctic Liquid Freezer III.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral description of a custom loop.",
+          "replies": []
+        },
+        {
+          "commentId": "oni4lo1",
+          "text": "Did you try repasting and remounting it on the cpu? You could have pump out. Use good paste, like MX-7.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General troubleshooting advice regarding repasting and remounting.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical suggestion.",
+          "replies": []
+        },
+        {
+          "commentId": "oni9fxm",
+          "text": "Fresh paste and maybe make sure the fans and fins are clean? \nIt effects airflow thus thermals.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General troubleshooting advice regarding cleaning fans and fins.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical suggestion.",
+          "replies": []
+        },
+        {
+          "commentId": "oniud6s",
+          "text": "I have the exact same aio and CPU. lock your power limits to like 300 watts; mine runs at 90 celsius using that, which is safe for an all core load for a while",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal experience using the exact same AIO and CPU combination, providing a specific temperature benchmark.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User reports that 90C is safe for all core load, implying the cooler is performing as expected.",
+          "replies": []
+        },
+        {
+          "commentId": "onjd3hv",
+          "text": "New CPU and mobo bro.\u00a0",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Low-effort suggestion to buy new hardware.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral suggestion.",
+          "replies": []
+        },
+        {
+          "commentId": "onjpqq9",
+          "text": "Pump at 100% is a bad idea. 1. It will degrade faster 2. It's not necessarily getting your CPU cooler. ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General advice on pump speed and degradation, not specific to the product's design.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical suggestion.",
+          "replies": []
+        },
+        {
+          "commentId": "onlilhh",
+          "text": "If your AIO is old then the pump is failing or the fluid has evaporated slightly. But you answered your own question really, your cooling needs attention. When was the thermal paste changed last? Is the thermal paste the one that came on the AIO... if so, oooof.\n\nOr you could go custom loop with crazy radiator surface like me 3x420mm and an external 1080mm and I'm soon adding a 1260mm, I love overclocking and silence so is the only option for me.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General troubleshooting advice regarding pump failure and fluid evaporation, not specific to the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical suggestion.",
+          "replies": []
+        },
+        {
+          "commentId": "onlykka",
+          "text": "Try undervolting and lowering the power limit on your CPU. Intel configures their CPUs from the factory to use more voltage than they need for tolerance reasons and some motherboards have auto overclocking features that make it consume even more power than that. If you undervolt your CPU and set the power limit to 200 watts you'll definitely get lower temps. In gaming you probably won't get worse performance either, it could even improve if it was thermal throttling before. You might get worse multicore performance, but the hit won't be as much as you're lowering power by. ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General advice on undervolting and power limits for Intel CPUs.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical suggestion.",
+          "replies": []
+        },
+        {
+          "commentId": "onnbg2u",
+          "text": "What do you use it for?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Question about CPU usage, not relevant to the AIO.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral inquiry.",
+          "replies": [
+            {
+              "commentId": "onnbx48",
+              "text": "Particle physics simulations. ",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual response about CPU usage (particle physics simulations).",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual statement.",
+              "replies": [
+                {
+                  "commentId": "onng2yi",
+                  "text": "No shit it\u2019s gonna be high in temp\ud83d\ude2d\n\nI actually have the same CPU and cooler and it idles at 30-40 with 50 under load from games like helldivers 2 but  if your running particle physics simulation it\u2019s gonna be high ",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User shares personal experience using the same CPU and cooler, providing temperature benchmarks for gaming.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "User reports low temperatures (30-40 idle, 50 under load), indicating high satisfaction with performance.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "onneaiv",
+          "text": "There is no amount of conventional cooling that can stop a temperature spike from running an avx2 instruction set, if that's what is causing it. Anecdotal, I have a dh-15 on a 265k and never goes above 70c at full load, but loading in to a map on helldivers 2 spikes my temps to like 94-96 for 3 or 4 seconds and then it goes right back down. I've read enough about it to learn why avx offsets are sometimes necessary. ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about AVX2 instructions and temperature spikes, not specific to the AIO.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical explanation.",
+          "replies": [
+            {
+              "commentId": "onnfbt0",
+              "text": "I'm running cinebench as a test now, I don't know what instructions it uses. I also didn't observe temps that high for a solid year with this setup.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual report of using Cinebench for testing, not an opinion on the AIO.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual statement.",
+              "replies": [
+                {
+                  "commentId": "onni4m4",
+                  "text": "I'm sure cinebench would, it's a benchmarking suite. Also, why not just replace the AIO? ",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General suggestion to replace the AIO, not a critique of the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral suggestion.",
+                  "replies": [
+                    {
+                      "commentId": "onnje4j",
+                      "text": "Yep, will do eventually. But thermal paste is cheaper than aio so I'll try to remount everything first. ",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Factual report of troubleshooting steps taken, not an opinion on the AIO.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual statement.",
+                      "replies": [
+                        {
+                          "commentId": "onnyryj",
+                          "text": "Good luck. If you find yourself at the crossroads in the near future, consider something like an nh-d15? Anything that size or quality is just as good in most circumstances. ",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "General recommendation for an air cooler (NH-D15), not a critique of the AIO.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a neutral recommendation for a different product.",
+                          "replies": [
+                            {
+                              "commentId": "onxzk4y",
+                              "text": "Alright I fixed the issue by adjusting bios. I repasted and remounted the cooler too for the peace of mind mostly, but it didn't change the temps. I'm swapping between old and new bios settings and they have identical cinebench scores, frequencies and power draw, but in the new one the 90c spikes are gone.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Update on troubleshooting results, attributing the issue to BIOS settings, not the AIO.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "Lacks a clear positive or negative leaning toward the product.",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "onoft0o",
+          "text": "For your knowledge: Your bios will tell you how long it can burst to a max wattage,The default for a 14900k is 254 watt but I forget for how long in most bios. This is normal and you will thermal throttle if you have an inadequate cooling system for that limit, which I believe is true given your statement and update. Also, Your AIO is a beast, but there is potential you're venting some GPU heat through it, but not the end of the world.  My suggestion is much the same as the other, update to latest bios, yeah it's pain at first. Then under-volt, limit the time the CPU can spend or maybe even the max wattage. Its been known for years that the 360 Freezer II maybe rated at 300 watt, but struggles to not thermal throttle under certain conditions on cpu's above 250 watts. That's the free stuff you can do. The 14900K is notorious for that heat range. We suggest you tune to not be in that so long or not allow it together there for stability. For the expensive stufff: I've fixed a 14900K that the owner didn't want to undervolt. We went custom watercooling with a D5 pump and 2-420 MM radiators on noctua G2's in push/pull recently. Yes this also meant a different case and a extra work but max temp when they keep the loop clean is 82 C. The Arctic's are good fans, the case fans you have are good as well, but There is nothing like the Noctua G2's. I'm not nocking you, but the 14900k was the Chevy Corvair of CPU's. This low maintenance one size fits all either meant limit performance or pay and put the right things on it. Even swapping to PTM on that AIO, and this is a guestimate is still going to be int he 90 C+ as its a 360 rad.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User provides a technical critique of the 360mm radiator's ability to handle high-wattage CPUs, mentioning the Freezer II as a reference.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user describes the product as a 'beast' but notes it struggles with CPUs above 250W, providing a balanced technical assessment.",
+          "replies": []
+        },
+        {
+          "commentId": "onps603",
+          "text": "I locked my 13900 to 1.34 vcore and never touched it since, also on the 0x12f bios",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Factual statement about BIOS and vcore settings, not relevant to the AIO.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral factual statement.",
+          "replies": []
+        },
+        {
+          "commentId": "onqeo62",
+          "text": "Ah I see you tried to run crisis",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Meme/joke about running 'Crisis'.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a joke.",
+          "replies": []
+        },
+        {
+          "commentId": "onre0hz",
+          "text": "Likely an AIO issue.\n\nMy 14900k with a 3080Ti HC in a custom loop together doesn't even hit those temps under full gpu and cpu load.\n\nGeneral rule of thumb is 120mm of radiator for every 100 watts of heat, 14900k unchecked can do 400 watts pretty easily.\n\nIf you want to reduce temps without losing performance then do something like -\n\n\\-.05 adaptive global svid undervolt  \nPL1 - long term 200-253 watts, whatever range ends up being the most stable for you.  \nPL2 - short term 253 watts  \nPL4 - 307 A\n\nThose settings should still let you boost to 6ghz when applicable with locked 5.7ghz pcores when gaming, locked 4.4ghz ecores when gaming and your R23 scores should still be between 36k-38k\n\nIf you use all the settings I just gave you, you may need to change adaptive down depending on silicone lottery to -.03 - -.04.\n\nEDIT: - If you use these settings and run into issue with crashes when exiting programs, you may need to also adjust load line to level 4 instead of 3. Usually isn't needed though.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General troubleshooting advice regarding undervolting and power limits, not specific to the AIO.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical suggestion.",
+          "replies": []
+        },
+        {
+          "commentId": "onsd3ij",
+          "text": ">**the air exiting out is barely warm.**\n\nbad installation - not enough pressure/there was uneven pressure during installation/mounting bracket/backplate not secured properly. Or it's just simply faulty AIO/not enough power for the Pump from BIOS settins",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Troubleshooting suggestion regarding installation pressure and pump power, not a critique of the product's design.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical suggestion.",
+          "replies": [
+            {
+              "commentId": "onun7tv",
+              "text": "I reinstalled everything just now, applied fresh kryonaut and nothing changed. Turned 4 screws on the contact plate in 45 degree increments. Screwed the cooler in until full stop. Pump is at 100%, this is the optimal speed for this aio.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual report of reinstallation steps taken, not an opinion on the AIO.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual statement.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onudf1f",
+          "text": "Ok I see part of the problem. Dont run an AIO pump at 100%, you aren't giving the heat in the liquid enough time to get dissipated by the radiator! Use 70%.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General advice on pump speed, not specific to the product's design or performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical suggestion.",
+          "replies": []
+        }
+      ]
+    }
+  ],
+  "model": "gemma-4-31b-it"
+}

@@ -1,0 +1,88 @@
+{
+  "productName": "amd-ryzen-9-9900x3d",
+  "batchIndex": 10,
+  "totalBatches": 16,
+  "comments": [
+    {
+      "commentId": "1j8z24m",
+      "text": "ASUS UEFI BIOS updates for ASUS AMD AM5 and AM4 Motherboards - Enhances system performance/support for Ryzen 9 9950X3D and 9900X3D, Ai Cache Boost to enhance performance/compute power when using AI-based tools - W9&amp;W10 - X870, X670, X470, B850, B840, B650, B550, B450, A620, PN53 - 94 motherboards\n\nhttps://preview.redd.it/ultibga214oe1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=db4504ba835af5adc0d88ba04631ad7ee1507e9a\n\nBeen a while since we last had a BIOS post in here due to all the VGA launches, so I do apologize for that. This list will cover W9 and W10, but if you haven't checked already, there are a number of updates for relevant boards from W4-W8, which I will briefly list before we get started with this update.\n\nIf you haven't updated your BIOS in the last couple of months, here are a number of related updates that you might have missed - \n\n* AM5 boards - AGESA updates, notably for PI 1.2.0.3a Patch to improve gaming performance \n* AM5 boards - System performance and high-capacity memory compatibility, including 2 DIMM memory configurations up to 6800 MT/s with AEMP enabled\n* AM5 boards - Critical security updates for the boards\n* AM4 boards - AGESA updates, notably for ComboV2 PI 1.2.0.E along with security improvements\n\nThis week we have performance and support for the upcoming Ryzen 9 9950X3D and 9900X3D processors, along with included AI Cache Boost for improved performance/power when using AI-based tools. Some AM4 boards are still receiving AGESA updates for ComboV2 PI 1.2.0.E and security updates.\n\n\\- [WK52](https://www.reddit.com/r/Amd/comments/1hq3wo2/asus_uefi_bios_updates_for_asus_amd_am5/) \\-\u00a0[WK50&amp;51](https://www.reddit.com/r/Amd/comments/1hll43y/asus_uefi_bios_updates_for_asus_amd_am5/)\u00a0\\-\u00a0[WK49](https://www.reddit.com/r/Amd/comments/1h9wh56/asus_uefi_bios_updates_for_asus_amd_am5/)\u00a0\\-\u00a0\n\n\\*PLEASE NOTE \u2013 IF YOUR MOTHERBOARD IS LISTED AND NOT YET AVAILABLE ON THE WEBSITE, IT MAY TAKE UP TO A FEW EXTRA DAYS FOR IT TO SHOW UP. PLEASE BE PATIENT.\\*\n\n**New UEFI BIOS updates For ASUS AMD motherboards \u2013 W9&amp;10**\n\n\\*Please do not ask about motherboards not listed. Please review the FAQ below for details.\n\n**What's new**\n\nAMD -\n\nFor X870, X670, B850, B840, B650, A620\n\n1. Enhanced system performance with support for 9950X3D and 9900X3D processors. \n2. Included AI Cache Boost to enhance performance and compute power when using AI-based tools.\n\nFor X470, B550, B450\n\n1. Updated AGESA version to ComboV2 PI 1.2.0.E.\n2. Implemented security updates.\n\nPN53\n\n1. Disable Wake-on-WLAN.\n2. Modify PcdCfgAcpSsid to fix system too slow when reboot.\n\n**AMD**\n\n* X series \u2013 X870, X670, X470\n* B series \u2013 B650, B840, B650, B550, B450\n* A series \u2013 A620\n* W series \u2013 \n* T series \u2013\n* MiniPC \u2013 PN53\n\n**UEFI BIOS update list noted below \u2013 A total of 94 boards with a UEFI BIOS update.**\n\n**W is in relation to the workweek; February 24th - March 9th 2025**\n\n**FAQ -**\n\n**Why is my motherboard not listed?**\n\nIf you are looking for your motherboard/model, please visit\u00a0[https://www.asus.com/us/support/](https://www.asus.com/us/support/)\u00a0and check if it has been updated recently. UEFI's BIOS updates are commonly released in waves; as such, it can take a series of motherboards, weeks, or months to have all motherboards have the same corresponding UEFI BIOS update issued. Furthermore, remember that not all updates apply or apply to all models. Due to inherent design differences and specification and feature variation, an update may only apply to a specific model.\n\n**How long are motherboards supported with UEFI BIOS updates? How long should I monitor for an update?**\n\nIn most cases, after a year, boards tend to reach a certain maturity level and see fewer updates. Mature releases can often be seen within the first six months. All non-BETA releases pass qualification and validation. If you feel you have an issue dependent on a UEFI release, please submit a support ticket. Some boards can sometimes see updates for more than 24 months. Also, user experience can vary considerably based on end-use-defined parameters and system configurations ( such as overclocking/performance tuning ). Users running stock operating parameters will experience the least amount of issues.\n\n**I want to update, but I am unsure how to update the UEFI \"BIOS\"?**\n\nIf you want guidance on how to flash/update your UEFI BIOS, please watch the video linked below. It will guide you through the flashing process and provide insight into essential items to keep in mind when flashing/updating the UEFI BIOS.\n\nHow to Flash / Update your UEFI BIOS on ASUS Motherboards -\n\n[https://www.youtube.com/watch?v=scK8AP8ZACc](https://www.youtube.com/watch?v=scK8AP8ZACc)\n\n**Should I update the UEFI if my system is stable and running without issue?**\n\nIf your system is running without issue, especially if overclocked in any way (including DRAM), it is recommended you stay on the build/release you are on. Changes to underlying auto rules and other operating parameters can change the OC experience and require you to retune a previously stable OC value. This does not mean the UEFI is not a functioning/reliable release but that changes in the underlying code base must be accounted for when tuning a system. As many of these values are low-level, it is best to retune from UEFI defaults. Verifying the UEFI's system stability is also recommended via a stress test, like Passmark Burn-in Test, OCCT, AIDA64, or a similar stress test.\n\nUsers who update from stock to stock settings will generally experience the smoothest transition experience.\n\n**Will a UEFI update improve my overclocking experience?**\n\nA UEFI update can improve multiple aspects of the OC experience, whether extending frequencies or stabilizing them, improving general system stability, or adding new options relative to overclocking. It is important to note that overclocking has inherent mitigating factors, including silicon variance, which cannot be overcome purely from a UEFI update.\n\n**Will a UEFI update change my operating experience? Power consumption, temperatures, etc?**\n\nChanges to underlying auto rules and other operating parameters can affect aspects like CPU boosting behaviors. There can also be changes to UEFI BIOS auto rules. A UEFI BIOS update can affect operating temperature, performance scores, power consumption, etc. Comparisons should be made at like-to-like values, ideally meaning the same settings, applications, etc. It is also recommended this occur at F5 defaults.\n\nSometimes, you may need to reinstall the OS after a UEFI BIOS update to gauge its stability correctly. This means that the end operating experience should be first verified with default operating values (F5) and, ideally, a fresh installation of chipset drivers, an updated build of Windows, and a non-modified Windows power profile.\n\n**What if the UEFI BIOS listed is a BETA? Should I update?**\n\nBETA UEFI releases are for enthusiasts who want access to the latest features, functions, microcode enhancements, and overall UEFI improvements. They are not recommended for day-to-day/long-term use. Users who plan to use their system in this capacity and want to ensure the best interoperability/compatibility, stability, and performance should wait for a formal release.\n\nNot every user should update/flash their UEFI BIOS. Again, if you are running without issue(s), you are advised to stay on the release you are running.\n\n***Notes to consider -***\n\n\\* When flashing, please perform the update process at UEFI BIOS defaults. Do NOT flash with an overclocked system/profile.\n\nYour warranty is still applicable under the use of a UEFI BIOS update.\n\n1. I recommend updating the UEFI BIOS on your motherboard for new PC builds. This helps to ensure the best interoperability, compatibility, and performance. If you are building a PC and have not installed the OS, I recommend updating the UEFI.\n2. Remember that flashing/updating the UEFI will reset all defined parameters/settings and operating profiles. You cannot restore defined values using a UEFI Profile, as profiles are not interoperable between builds. You should note or screenshot (F12) your values before flashing if they are complex. Upon completing a flash, I recommend you load UEFI defaults after the fact, perform a reboot, and shut down before reloading or entering any customized UEFI values.\n3. When you update the UEFI and reload UEFI defaults depending on your defined initial BOOT values, you may need to adjust CSM settings, enabling or disabling CSM. If you experience BOOT-related issues after an update, please change the CSM accordingly.\n4. Be advised that in some cases, a rollback to a prior UEFI is not possible. This can occur when an update includes a CPU microcode ( such as an AMD AEGSA or Intel ME ). This means you may be unable to \"flashback\" to a prior release.\n5. While not always necessary, some UEFI updates may require clearing the CMOS to reset the UEFI and ensure normal functionality. You may need to CLR the CMOS to have the system POST after you flash. You can clear the CMOS via the CLR CMOS button if your motherboard supports it or by removing the onboard CMOS battery for at least a few minutes. You can also attempt to locate the CLR CMOS jumper on the motherboard and short the pins to clear the CMOS.\n6. Some updates will cause PCIe remapping and reinitialization of onboard controllers/devices. In these cases, you may need to reinstall drivers including your chipset drivers, graphics drivers or other PCIe or USB linked based devices.\n\nIt is also recommended you back up your system before any flash/update. Ideally, it would be best to load UEFI BIOS defaults (F5) before performing a flash/update; do not flash with an overclocked configuration.\n\nEnsure you reboot before flashing once you have loaded (F5 defaults).\n\nThe board model/name is on the right-hand side, and the version number is on the left-hand side. To download the UEFI BIOS, please go to\u00a0[https://www.asus.com/support/](https://www.asus.com/support/)\n\nAMD UEFI BIOS Releases \u2013\n\n1. A620M-AYW WIFI - 3222\n2. A620M-F GAMING WIFI - 3222\n3. B650E MAX GAMING WIFI - 3222\n4. B650M-AYW WIFI - 3222\n5. B650M-D3H - 3222\n6. B840M MAX GAMING AX - 1022\n7. EX-B650M-V7 - 3222\n8. EX-B650M-V7 PLUS - 3222\n9. PN53 - 2.15.00\n10. PRIME A620M-A - 3222\n11. PRIME A620M-E - 3222\n12. PRIME A620M-K - 3222\n13. PRIME A620-PLUS WIFI - 3222\n14. PRIME A620-PLUS WIFI6 - 3222\n15. PRIME B550M-K - 3802\n16. PRIME B650-J - 3222\n17. PRIME B650M-A - 3222\n18. PRIME B650M-A AX - 3222\n19. PRIME B650M-A AX II - 3222\n20. PRIME B650M-A AX6 - 3222\n21. PRIME B650M-A AX6 II - 3222\n22. PRIME B650M-A II - 3222\n23. PRIME B650M-A WIFI - 3222\n24. PRIME B650M-A WIFI II - 3222\n25. PRIME B650M-F - 3222\n26. PRIME B650M-R - 3222\n27. PRIME B650-PLUS - 3222\n28. PRIME B650-PLUS WIFI - 3222\n29. PRIME B840M-A - 1022\n30. PRIME B840M-A WIFI - 1022\n31. PRIME B840-PLUS WIFI - 1022\n32. PRIME B850-PLUS - 1022\n33. PRIME B850-PLUS WIFI - 1022\n34. PRIME X670E-P - 3222\n35. PRIME X670E-PRO WIFI - 3222\n36. PRIME X670-P - 3222\n37. PRIME X670-P WIFI - 3222\n38. PRIME X870-P - 1022\n39. PRIME X870-P WIFI - 1022\n40. Pro A620M-C - 3222\n41. PRO A620M-DASH - 3222\n42. Pro B650M-CT - 3222\n43. ProArt B550-CREATOR - 3802\n44. PROART B650-CREATOR - 2904\n45. PROART X670E-CREATOR WIFI - 2904\n46. ProArt X870E-CREATOR WIFI - 1203\n47. ROG CROSSHAIR VII HERO - 5602\n48. ROG CROSSHAIR VII HERO (WI-FI) - 5602\n49. ROG CROSSHAIR X670E EXTREME - 2904\n50. ROG CROSSHAIR X670E GENE - 2904\n51. ROG CROSSHAIR X670E HERO - 2904\n52. ROG CROSSHAIR X870E HERO - 1203\n53. ROG STRIX B450-E GAMING - 5602\n54. ROG STRIX B450-F GAMING - 5602\n55. ROG STRIX B450-F GAMING II - 5602\n56. ROG STRIX B450-I GAMING - 5602\n57. ROG STRIX B550-I GAMING - 3802\n58. ROG STRIX B650-A GAMING WIFI - 3222\n59. ROG STRIX B650E-E GAMING WIFI - 3222\n60. ROG STRIX B650E-F GAMING WIFI - 3222\n61. ROG STRIX B650E-I GAMING WIFI - 3222\n62. ROG STRIX B850-A GAMING WIFI - 1022\n63. ROG STRIX B850-E GAMING WIFI - 1022\n64. ROG STRIX B850-F GAMING WIFI - 1022\n65. ROG STRIX B850-I GAMING WIFI - 1022\n66. ROG STRIX X470-I GAMING - 5602\n67. ROG STRIX X670E-A GAMING WIFI - 2904\n68. ROG STRIX X670E-E GAMING WIFI - 2904\n69. ROG STRIX X670E-F GAMING WIFI - 2904\n70. ROG STRIX X670E-I GAMING WIFI - 3222\n71. ROG STRIX X870-A GAMING WIFI - 1203\n72. ROG STRIX X870E-E GAMING WIFI - 1203\n73. ROG STRIX X870-F GAMING WIFI - 1203\n74. ROG STRIX X870-I GAMING WIFI - 1022\n75. TUF GAMING A620M-PLUS - 3222\n76. TUF GAMING A620M-PLUS WIFI - 3222\n77. TUF GAMING A620-PRO WIFI - 3222\n78. TUF GAMING B550M-E - 3802\n79. TUF GAMING B550M-E WIFI - 3802\n80. TUF GAMING B650-E WIFI - 3222\n81. TUF GAMING B650M-E - 3222\n82. TUF GAMING B650M-E WIFI - 3222\n83. TUF GAMING B650M-PLUS - 3222\n84. TUF GAMING B650M-PLUS WIFI - 3222\n85. TUF GAMING B650-PLUS - 3222\n86. TUF GAMING B650-PLUS WIFI - 3222\n87. TUF GAMING B850-E WIFI - 1022\n88. TUF GAMING B850M-PLUS - 1022\n89. TUF GAMING B850M-PLUS WIFI - 1022\n90. TUF GAMING B850-PLUS WIFI - 1022\n91. TUF GAMING X670E-PLUS - 3222\n92. TUF GAMING X670E-PLUS WIFI - 3222\n93. TUF GAMING X870-PLUS WIFI - 1022\n94. TX GAMING B650EM WIFI W - 3222",
+      "upvotes": 80,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "mham7oj",
+          "text": "The last update made Memory Context Restore fully hose my PC until I cleared CMOS. Guaranteed BSOD\u2019s on login and the BIOS would freeze if I tried to change the settings. Be careful with these.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses a specific issue with the product.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Presents a negative sentiment about the product.",
+          "replies": [
+            {
+              "commentId": "mhamlg2",
+              "text": "Last bios made 2:1 mode impossible for me. Literally 8000 2:1 for months then update and it doesn't even want to run 7200. Also couldn't change resistances at all.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experience with the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Presents a negative sentiment about the product's performance.",
+              "replies": []
+            },
+            {
+              "commentId": "mhb6eoa",
+              "text": "What board are you using?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses the hardware product without mentioning AMD Ryzen 9 9900X3D.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mhb6tyw",
+                  "text": "B650E-F",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mhb721g",
+                      "text": "I have the 670E Plus WiFi. I'm still using BIOS 1618.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses personal experiences with the product.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "Presents personal experiences with the product.",
+                      "replies": []
+                    },
+                    {
+                      "commentId": "mjm3pgu",
+                      "text": "i have same motherboard, remember this rule, every time you want to update bios, make sure you do default setting first before flashing.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the importance of updating BIOS settings before flashing.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Presents a useful piece of advice.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

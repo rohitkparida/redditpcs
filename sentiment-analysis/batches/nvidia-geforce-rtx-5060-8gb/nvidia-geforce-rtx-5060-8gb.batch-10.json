@@ -1,22 +1,22 @@
 {
   "productName": "nvidia-geforce-rtx-5060-8gb",
   "batchIndex": 10,
-  "totalBatches": 36,
+  "totalBatches": 41,
   "comments": [
     {
-      "commentId": "1kugo0x",
+      "commentId": "1kur7ty",
       "text": "Nvidia GeForce RTX 5060 Review: Better Than PS5 GPU Perf - But 8GB Is Not Enough",
-      "upvotes": 207,
-      "classifyThis": false,
+      "upvotes": 158,
+      "classifyThis": true,
       "relevance": null,
       "relevanceReasoning": null,
       "sentiment": null,
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mu4701c",
-          "text": "Not enough vram? Look at hardware unboxed's review. The 5060 beats the 4060ti with 16gb of vram in a few games, specifically elder scrolls at 1440p. In games it doesn't, it's only by a few FPS tops. \n\nHardware unboxed themselves said the card was vram starved while showing the 5060 8gb beating the 4060ti 16gb version (again, at the elder scrolls part of their review). I'd really like someone to explain that anomaly. If vram was the issue, the 4060ti 16gb should obliterate the 5060 8gb. Only, it doesn't. \n\nHere's the review of which I speak: https://youtu.be/2e1a2-VxxvQ",
-          "upvotes": -7,
+          "commentId": "mu40aue",
+          "text": "I'd like to see an Nvidia RTX 5060 vs AMD RX 9060 vs Intel B580 video.",
+          "upvotes": 58,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -24,9 +24,44 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "mu6hdgq",
-              "text": "  \nLook at the 1% low numbers at 1440p TES IV Oblivion remastered, the card is struggling.",
-              "upvotes": 7,
+              "commentId": "mu42yug",
+              "text": "Post that on a HUB video. They like to show stuff like that.",
+              "upvotes": 38,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mu7aewl",
+                  "text": "Fairly certain all those cards will be included in their 9060 XT review anyway.",
+                  "upvotes": 11,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mu41yqp",
+          "text": "What's funny is that despite the 5060 being 22% faster at 1080p, it only beats the B580 by 6% in 1440p due to 8gb vram limitations",
+          "upvotes": 126,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mu5boox",
+              "text": "The Arc cards also had an issue with high CPU overhead at lower resolutions. If that hasn't been fixed, it might contribute.",
+              "upvotes": 32,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -35,9 +70,91 @@
               "replies": []
             },
             {
-              "commentId": "mu7rfa6",
-              "text": "Average FPS isn't everything, even 1% lows don't tell the full story there's often lots of microstutters and textures not loading at full resolution.",
-              "upvotes": 3,
+              "commentId": "mu4pafa",
+              "text": "And the 1% lows will be a LOT worse",
+              "upvotes": 58,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mu5asn2",
+                  "text": "And some games actually load low res textures when it approaches the VRAM limit, even if they are taking less than 7 GB of 8GB (total VRAM usage).",
+                  "upvotes": 35,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mu5dyne",
+                      "text": "Yup, very true! Amusingly, these quite often don't take into account DLSS, FG, or RT additional VRAM usage, especially if they were added post-launch, so if you enable those features, you get severe stutter or even crashes.",
+                      "upvotes": 14,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "mu5gu13",
+                          "text": "Or lower quality assets where low-income players aren't informed that they could have prettier visuals with 12 or 16 GB.",
+                          "upvotes": 7,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "mu6bxko",
+                          "text": "Doesn't DLSS decrease VRAM usage?",
+                          "upvotes": 4,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "mu6dfjj",
+                              "text": "\u201cIt depends\u201d\n\nIt reduces the size of the framebuffer (except for DLAA), but the DLSS model and associated resources use additional VRAM. IIRC, you will see a reduction when using the larger upscaling options, like Performance on 4K, but Quality at 1440p may not see any reduction or may use more. DLAA always consumes more.\n\nFG and RT always consume more VRAM, however.",
+                              "upvotes": 10,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "mu6zjyu",
+                                  "text": "Even 'Quality' will see a (generally modest) savings in almost every case. The model used in Super Resolution is absolutely tiny, which is essential to its ability to accelerate performance - the cost is generally in frametime, not memory. That said, FG is a true hog and will usually obliterate any SR savings and then some",
+                                  "upvotes": 6,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "mu5c9mw",
+              "text": "The Nvidia cards don't have the massive CPU overhead of the ARC cards though which can cause performance issues with older CPUs",
+              "upvotes": 14,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -46,9 +163,271 @@
               "replies": []
             },
             {
-              "commentId": "muc7fit",
-              "text": "He doesn't include at the Rtx5060 review games like TLOU2, Indiana Jones, Horizon Forbidden West, etc...\n\nGames that he did test at the Rtx5060Ti 8gb review, and showed they run horribly.\n\nI don't know why he doing this, testing some games with A card, and then different games with B cards..",
+              "commentId": "mu5lr2n",
+              "text": "This isn't new news this has been know since the global illumination RT games started being released 2 years ago. These cards were probably green lit way before then.",
               "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mu3tla9",
+          "text": "What is most ridiculous is the models coming with a big triple fan cooling system but with a meager 8 GB VRAM quantity",
+          "upvotes": 79,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mu59iwn",
+              "text": "Triple fan huge cooler on a sub 200W card",
+              "upvotes": 56,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mu9s4yx",
+                  "text": "Sub 150W",
+                  "upvotes": 15,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mu5lwav",
+              "text": "Triple fan on these tier cards is stupid the mini one fan cards work just fine and there is a tiny difference between the performance of the two designs.",
+              "upvotes": 10,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mubmj2h",
+                  "text": "My favourite 3060's were the Asus Phoenix models with the single fan and that is a 175W card. They weren't even loud, just one 92mm fan was enough.\n\nApparently single fan cards aren't wanted any more though",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mu6fg9c",
+              "text": "Bigger cooler = more \u201cOC\u201d = more upcharging from MSRP",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "muazsa8",
+              "text": "I like that. Oversized cooler means half the time i run on passive cooling and the radiators are sufficient. Only need noisy fans on full load.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "muh2fqz",
+                  "text": "Same here. Give me the biggest cooler with biggest fans for the lowest amount of noise. The GPU is the most audible component of a gaming PC, there really is no overkill for the cooling solution.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mu3rvhs",
+          "text": "it's so disappointing how this would have been a good card with an x16 interface or more VRAM",
+          "upvotes": 72,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mu4y02j",
+              "text": "If it had more VRAM the 8X interface would do barely anything to performance. You have to go up to something like 3090 to start seeing meaningful impacts from 8x 3.0. But the low VRAM means increased traffic on the PCIe bus. Also had it been 16x, the low VRAM would have had a smaller performance hit as a result. Since requested data would arrive sooner and in some cases improving frame times.",
+              "upvotes": 26,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "mu4rsho",
+              "text": "&gt;...with an x16 interface or more VRAM \n\nThat's an unpopular opinion in this sub. \n\nApparently, 'low-end' cards have no business 'lugging' around x16 lanes.\n\nCost Nvidia too much money and I'm sure you realize how the company is barely scraping by and scrambling for breadcrumbs as we speak. \n\n...\n\nSorry, I'm just a bit bitter by the sheer stupidity displayed by some of the characters that often lurk in this sub.",
+              "upvotes": 20,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mu68a81",
+                  "text": "Just the other day I saw Jensen sitting under the highway underpass asking for something to eat.\n\n\nDo PC gamers not have hearts?\n\n\nYeah it might be $2,500 for an rtx 5080, but that only pays 3 small meals at the country club for the less fortunate among us.",
+                  "upvotes": 9,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "mu52cco",
+                  "text": "&gt; That's an unpopular opinion in this sub.\n\nAs of like, 2 days ago it seems lol",
+                  "upvotes": 6,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mu61q0s",
+                      "text": "Is that referring to something? Because the AMD card only sin was that it had 8GB of vram. Otherwise, it had the same characteristics as a top of the line card (meaning, not being gimped other than in VRAM).",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mub04h3",
+                  "text": "x16 lanes would be good, yes, but they are not necessary for these cards. Even putting them on PCIE4 does not bottleneck them.",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mu4s1m7",
+          "text": "Those PCIe Gen3 frametime graphs are brutal.",
+          "upvotes": 18,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "mu566x6",
+          "text": "So the bar to pass for a $300 GPU nowadays is to be better than a full console released 5 years ago for $400...\n\nI remember when I bought a 750 ti for my first real build, 130\u20ac and it was slightly better than a PS4.\n\nEdit: I was curious so I looked it up, now the 750 ti would cost around $175 accounting for inflation",
+          "upvotes": 38,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mu5ik8w",
+              "text": "Yeah even if it had more VRAM, the performance isn't exactly impressive to me.",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "mu8gzz2",
+              "text": "$203 accounting for inflation. The 750 Ti debuted for $149 in February 2014.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mu4v1kl",
+          "text": "In an ideal world, base 5060 would have 12GB GDDR7 with a 192-bit bus and x16 pcie lanes.",
+          "upvotes": 22,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mu5diu0",
+              "text": "In an ideal world, the 5070 would be the 5060 :/",
+              "upvotes": 24,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "mu510wv",
+              "text": "Even a 10GB, 160-bit bus card would make the product ***so much*** better.",
+              "upvotes": 16,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "mubkdgi",
+              "text": "Yep and it would be well received.\n\nIt also wouldn't eat into Nvidia's higher end sales in the slightest.",
+              "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,

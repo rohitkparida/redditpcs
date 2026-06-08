@@ -1,12 +1,12 @@
 {
   "productName": "asus-rog-strix-x670e-i-gaming-wifi",
   "batchIndex": 5,
-  "totalBatches": 6,
+  "totalBatches": 9,
   "comments": [
     {
-      "commentId": "1j971dk",
-      "text": "Poor performance in Minecraft with RTX on 5000?\n\nI have noticed a very odd behavior with Minecraft Bedrock Edition, where after enabling ray tracing, I get a worse than 4090 (or 3090 for that matter) level of performance, while the GPU usage hovers around 12%-20% or so.\n\nThe only way to improve the situation is to reduce chunk distance to 8 chunks to get reasonable performance in the survival world.\n\nNeon District RTX demo performs even worse, not even reaching 30 fps on 24 chunks. This map also oberserves even lower GPU usage, about 6%-7% GPU usage, while again, no single CPU thread is at full load either.\n\n[Minecraft Preview v1.21.70.24 running 20 FPS on a 5090 while at 1080p](https://preview.redd.it/61xrnz39o5oe1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=302f0a488f0bcf9a2aaa9639b98546e60e0553db)\n\nAs of writing this post, my configuration is as follows:\n\n* AMD Ryzen 9 7950X3D CPU\n* Corsair Vengeance RGB DDR5 96GB (2x48) 6000CL30 RAM\n* ASUS ROG Strix X670E-E Gaming WIFI (with latest bios, 2904) Motherboard\n* MSI RTX 5090 Vanguard SOC (with latest NV drivers, 572.70) GPU\n\nThings I have tried:\n\n* Multiple versions of Minecraft\n* Swapping DLSS file around (using Bedrock Launcher)\n* Multiple versions of NV drivers\n* Multiple BIOS revisions\n* Reverting PCIe from auto/5.0 to 4.0\n\nI am going insane, as with all other games I've tried so far (which I don't have many of, I mainly got this GPU for blender work) the performance is on the level I'd expect it to be.\n\nDoes anyone else have such issues? I haven't found anything relating to this problem so far.\n\n**EDIT:**\n\nAdditionally, I DID check that VSync is DISABLED, but that changed nothing.\n\nMy screen is a 270 Hz refresh rate screen, so that is not the problem here either.\n\nBetween the three GPUs, I never touched anything besides the card in the mobo itself initially, except for mandatory 5090 drivers (which I had also run with 3090 just fine before installing 5090!)\n\n**EDIT 2:**\n\nI have found [this](https://www.tomshardware.com/pc-components/gpus/nvidia-geforce-rtx-5090-review/5) article on Tom's Hardware, showing about the same performance I get in a survival world:\n\n[RTX 5090 \\(with 9800X3D\\) performs the worst on the chart.](https://preview.redd.it/3odqm4kgeioe1.png?width=970&amp;format=png&amp;auto=webp&amp;s=7bd5fe3d0654938064508b142d93842eb5b0e878)\n\nAnd since I ran with 7950X3D when I wrote the post, my average FPS was 41-49 or so.\n\nQuote: \"Nvidia is looking into the situation.\"\n\nI really hope this gets fixed soon as this lineup of GPUs had a ton of issues and this one just adds to the pile, which is incredibly disappointing.\n\nAdditionally, I can confirm that 9950X3D performs just slightly better than 7950X3D, raising my average FPS up to  50-55 on average in the same spot:\n\n[Average FPS slightly improved with 9950X3D](https://preview.redd.it/ww9v9sx6fioe1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=4789a56fb46d4a466654718f93cf1430f1704061)\n\nThis is still unacceptable for obvious reasons.\n\nI appreciate y'all help a lot, but as of now it seems I got the confirmation of it being NVIDIA doing shady driver magic.\n\n**EDIT 3: (Jun 3rd, 2025)**\n\nI keep receiving \"is this fixed yet?\" sometimes.\n\nWhile I share your frustration, please don't ask this question. I will issue another edit whenever more information comes out or the issue gets resolved.\n\nAs much as I understand the feelings, I have replied countless times and would prefer not to unless it brings something new to the table.\n\nThank you for understanding &lt;\u0417",
-      "upvotes": 35,
+      "commentId": "1grtu5t",
+      "text": "What Mini-ITX boards are good for AM5? All the Mini-ITX boards seem to have big problems\n\nI was thinking of building around the [ROG Strix x670E-i](https://rog.asus.com/us/motherboards/rog-strix/rog-strix-x670e-i-gaming-wifi-model/), which is an insane 450 bucks, but I'm reading some bad QC problems. The [B650 boards](https://www.tomshardware.com/pc-components/motherboards/msi-b650i-edge-wi-fi-review) seem all OK at best, except maybe [the B650E-E](https://www.tomshardware.com/reviews/asus-rog-strix-b650e-e-gaming-wi-fi-reviewhttps://www.tomshardware.com/reviews/asus-rog-strix-b650e-e-gaming-wi-fi-review). Basically, how are you making small form factor stuff with AM5 chipsets?\n\n  \nEDIT: You all are amazing. I'm gonna shop for these through black friday. Appreciate it!",
+      "upvotes": 128,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,8 +14,8 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "n4bofbx",
-          "text": "Please dont tell me its like this for Java too, I want to get the top PC 5090 setup so I can play Create mod without lag \ud83d\ude2d",
+          "commentId": "lx921ri",
+          "text": "I currently have the ASUS ROG B650E-I and Gigabyte B650i AX in my SFF systems, and they have been working well so far, no issues encountered.\n\nIf I were to build another SFF system and I'm going to run the CPU stock anyways (not planning to do any undervolting or tuning), I'd probably just save some money and even go for an A620i board too.",
           "upvotes": 2,
           "classifyThis": true,
           "relevance": null,
@@ -24,8 +24,8 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "n4dnfzz",
-              "text": "Create (and other mods) lag the game primarily because of CPU and how MC Java is coded. The game ticks the world on render thread, taking the precious time from rendering and putting it into world updating.\n\nThere is nothing that can be done about it unless Mojang put the tick code in a separate thread, which is unlikely because it might break a lot of things.",
+              "commentId": "lx94iez",
+              "text": "Of the two, which do you prefer? Those are top 2 on my list currently, hoping CES 2025 brings us some better  iTX options or something to fill the void of the X670E Gene.",
               "upvotes": 1,
               "classifyThis": true,
               "relevance": null,
@@ -34,9 +34,9 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "n4er1fk",
-                  "text": "Man im so confused, you have one hell of a beast setup, are you telling me you would lag on a Minecraft Java big world with lots of stuff like machines, airships, multiple bases etc, just a normal super loaded survival world sorta thing yk?",
-                  "upvotes": 2,
+                  "commentId": "lx98fgs",
+                  "text": "Personally I still prefer the ASUS B650E-I, 'cos it comes with 2 x M.2 slots (PCIe 5.0 in the front and PCIe 4.0 behind the motherboard), and I use both.\n\nThe GPU slot also supports PCIe 5.0 too (might be useful in the future).\n\nIn addition, it has more USB 3.2 ports and Type C ports in the rear IO too, and one of them supports DP Alt mode.\n\nOverall, its has more specs and features, though it also costs more. The choice will just depend on your particular requirements and build budget.",
+                  "upvotes": 3,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -44,9 +44,78 @@
                   "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "n4evle8",
-                      "text": "Yeup, that is correct! And yeah, the lags would eventually creep in, since the thread will get overloaded either way eventually.\n\nIt's rarely an issue TBH, but I am not the one to build so many massive things all in one area haha.\n\nIt's certainly much better than weaker rigs, but the most issues with java come from how it's core is designed, and unless you're using shaders, you should invest in something like a 9800x3d, which would still run you cheaper with a 5080 for instance, while giving you most performance on Java edition.",
-                      "upvotes": 2,
+                      "commentId": "lxajjn4",
+                      "text": "i'm also personally a big fan of that optical audio port in the IO board, not something you see with many ITX boards and personally not crazy about having a separate audio DAC",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "lxbrlct",
+                  "text": "I have that Gigabyte board. Functionally, it's been flawless with timely bios updates and no stability problems.\n\nIt has a little daughter board for some of the connections. The positive is that it is easier to work with that instead of fitting tiny connectors on the main MB. The negative is that it's more stuff in a small case.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "lx9oo4b",
+          "text": "I have the gigabyte b650 aorus ultra. Airflow is TRASH on it.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lxa6x8z",
+              "text": "I use this board with 3 M.2 drives \n\nI did swap the stock Thermalright mounting for the Axp120x67 with Noctua mounting kit for better positioning of the cooler with my case (90\u00b0 rotation + 7mm AM5 offset)\n\nWhat airflow issues are there with the motherboard?\n\n(I haven't had any concern with my VRM temps and m.2 drives under load are: 42\u00b0C for rear 2 TB Intel 670p, 38\u00b0C for 4TB Samsung 990 Pro in top slot under M 2 fan, 56\u00b0C for 8TB Corsair in bottom stack m.2 slot.)\n\nStock Thermalright mounting:\nhttps://imgur.com/gallery/iiZMejh\n\nThermalright AXP120x67 with Noctua MP78 kit w/A12x15 Chromax:\nhttps://imgur.com/gallery/XqxCPV9",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lxanoxe",
+                  "text": "I will try this!!!!! 8700g in a teeny case...",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lxbg4s5",
+                  "text": "I have the same board with a NhU12A, with all the M.2s populated (but don\u2019t remember which one is where). I\u2019ll report back later and update on VRM/M.2 temps to help OP as well",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m17soyj",
+                      "text": "Hey did you end up getting a chance to do this? I'm thinking of getting this one",
+                      "upvotes": 1,
                       "classifyThis": true,
                       "relevance": null,
                       "relevanceReasoning": null,
@@ -54,20 +123,9 @@
                       "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "n4evsp4",
-                          "text": "Additionally, since Minecraft keeps simulation distance at a reasonable amount, having multiple bases in different locations shouldn't really hit your performance, nor should the world size, since your PC is simulating only the part that is around the player, not the whole map :)",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        },
-                        {
-                          "commentId": "n4fh9ih",
-                          "text": "Man im so worried now \ud83d\ude2d you of all people should not even be experiencing lag in the slightest!!! \n\nAlso sorry by huge world i meant like random villages around, like bigger and more normal build style villages but with extra detail, not like super city's n cyberpunk type shi lol\n\nI honestly wanted to get the best 5090 GPU along with the best Motherboard and CPU, I believe it was the Ryzen 9 9950X3D?? Something like that, and also 128 gigs of ram! Literally all this for Minecraft oh and video editing lol",
-                          "upvotes": 2,
+                          "commentId": "m17y0os",
+                          "text": "Yeah, I'm sorry I never posted back! I have never had issues with my drives or temps. I did make sure everything was up to date, and have no problems, with temperatures, productivity, and gaming.\n\nI have a PBO -20 offset and manually limited CPU voltage after that scare from last year, but no undervolting. Played around with a generic undervolt for my GPU, and that seems stable.\n\nMy specs are here in my post: [https://www.reddit.com/r/sffpc/comments/11s0esl/finished\\_build\\_2\\_month\\_update\\_in\\_the\\_nr200/](https://www.reddit.com/r/sffpc/comments/11s0esl/finished_build_2_month_update_in_the_nr200/)\n\n||Stress Test Temp (OCCT 1 hr)|\n|:-|:-|\n|CPU|78 avg (82 max)|\n|GPU|81 avg (88 max)|\n|VRM (VRM MOS)|53 avg (54 max)|\n|VRM (VDDCR\\_VDD VRM)|54.9 avg (56 max)|\n|VRM (VDDCR\\_SOC VRM)|54.3 avg (55.3 max)|\n|M.2 C:/ (WD Black PCIe 3.0)|55 avg (58 max)|\n|M.2 D:/ (Crucial P3 Plus PCIe 4.0)|41 avg (49 max)|\n|M.2 E:/ (Solidigm P41 Plus PCIe 4.0)|55 avg (57 max)|",
+                          "upvotes": 1,
                           "classifyThis": true,
                           "relevance": null,
                           "relevanceReasoning": null,
@@ -75,9 +133,9 @@
                           "sentimentReasoning": null,
                           "replies": [
                             {
-                              "commentId": "n4hd5n0",
-                              "text": "Don't get 128 GBs. You will regret it. Pick 2x48 GB @ 6000 MT/s CL30 instead.\n\nRyzen doesn't go well with four DIMMs at high frequency. Otherwise, you'll be stuck at 3200-4000 MT/s, which is not optimal.  (depends on the quality of the motherboard and the built-in CPU memory controller, so it's a silicon lottery)\n\nAnd hey, I got the rig I have not just for Minecraft, haha! I do a lot of code compilation, Blender, and other tasks, as well as more cache-sensitive games (like VRChat! It benefits from big L3 cache quite a lot)\n\nBut comparatively speaking, 9950X3D would deal best in heavily loaded bases and whatnot. If we're going off vanilla MC, it wouldn't be a problem unless you're actively searching for ways to kill the FPS. And even modded, depending on how well the mod accounts for client-side ticking it might be alright to use a lot of block entities. Just gotta watch the server TPS",
-                              "upvotes": 3,
+                              "commentId": "m182q7i",
+                              "text": "No worries! I am a little intimidated by underclocking and that sort of stuff, so I'll have to look into that. But I'm glad to know that there were no heating issues. I think I'm going to make a post soon with my purchased components, would love your thoughts on what kind of clocking am going to need to do.",
+                              "upvotes": 1,
                               "classifyThis": true,
                               "relevance": null,
                               "relevanceReasoning": null,
@@ -85,9 +143,9 @@
                               "sentimentReasoning": null,
                               "replies": [
                                 {
-                                  "commentId": "n4r4fij",
-                                  "text": "Apologies for the long messages bro, just sent ya a small award to make up for it hopefully \n\nU seem very smart and good in this stuff for sure man, any chance we could chat on discord? I'm tryna build a decent non liquid cooling pc and would appreciate ur help!",
-                                  "upvotes": 2,
+                                  "commentId": "m183hc6",
+                                  "text": "Yeah no sweat. I'd love to see it! I was only looking to undervolt my CPU a bit because of temperatures. PBO makes it pretty easy, and then I manually undervolted some things based on the AM5/X3D voltage issue. Haven't looked back :)\n\nFor some reason the table deleted my gaming temp column? Those temps were from my stress test. The gaming temps were lower in CPU/GPU, but pretty much the same in VRM/M.2 temps.",
+                                  "upvotes": 1,
                                   "classifyThis": true,
                                   "relevance": null,
                                   "relevanceReasoning": null,
@@ -95,9 +153,9 @@
                                   "sentimentReasoning": null,
                                   "replies": [
                                     {
-                                      "commentId": "n4rl1u4",
-                                      "text": "Hey man, thanks a lot and it's fine!\n\nI can chat on Discord or Telegram, I added Ds on my profile, and telegram is in the links page!",
-                                      "upvotes": 2,
+                                      "commentId": "m193dvl",
+                                      "text": "It's amazing, I remember when overclocking was the wild west and you'd be worried about frying everything. That you can just change some numbers and hit 'reset' if something's off is so cool. \n\nThose temps are great, it basically points to being just fine. That's excellent. \n\nHere's my new post: \nhttps://www.reddit.com/r/sffpc/comments/1hajuj9/aorus_vs_lightning_b650i_am_i_gonna_overheat/",
+                                      "upvotes": 1,
                                       "classifyThis": true,
                                       "relevance": null,
                                       "relevanceReasoning": null,
@@ -116,55 +174,10 @@
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "commentId": "mhc5niy",
-          "text": "I just received my 5070 and the ray tracing works great, more than 80+ Fps in 4k, but for some reason I can't activate upscaling (DLSS) using this card, but I'm not sure if it's a driver issue or Minecraft is having errors with these new GPUs.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mhcmz8x",
-              "text": "That's very interesting... It might be a driver/MC issue indeed, that's what I've been pointing more and more fingers so far. \n\nAll other apps that use any modern features (like RT / DLSS / OptiX / etc) work as expected, this is just the one isolated case and it makes me so confused.\n\nJava MC runs well with shaders, it's just the bugrock quick, seemingly",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
             },
             {
-              "commentId": "mhcnfnl",
-              "text": "I have used Bedrock Launcher to change the place where the game installs, so I could replace DLSS dll file with never versions, and thus could get it to work, but unfortunately it doesn't improve FPS for me at all.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "mi2herd",
-              "text": "Same, was very confused that upscaling was greyed out (also on 5070)",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "mx2m1pz",
-              "text": "What RTX mod are you using?  I\u2019m getting bad performance with my 5070 and better RTX",
+              "commentId": "m17t4to",
+              "text": "So I'm choosing between this and an Asus board, would love an expansion on your thoughts of this",
               "upvotes": 1,
               "classifyThis": true,
               "relevance": null,
@@ -173,8 +186,8 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "mxaaxvf",
-                  "text": "I use BetterRTX 1.4 and updated DLSS or the Normal RTX, from both the normal fps are 70fps+ and with upscaling more 120Fps+ and using 4k",
+                  "commentId": "m18u5jg",
+                  "text": "Mine is crammed in the Inwin Chopin max case with an 8700g. So already stacking the deck against it. Thermal take cooler and a noctua 92x14 fan. Apu temps have improved with the noctua fan but its also a 120w chip in a VERY small space. My other complaint against the gigabyte is the need for a dongle for just about every connection. Fp, fans, etc. And if you lose any of them (like I did moving 1000 miles) replacements are a bear. That coupled with I feel like it makes cable managing worse than if they just plugged into the motherboard.",
                   "upvotes": 1,
                   "classifyThis": true,
                   "relevance": null,
@@ -188,79 +201,75 @@
           ]
         },
         {
-          "commentId": "mhc9hus",
-          "text": "Could you try not full screen, just in case? Sometimes it makes a difference for me, Minecraft RTX is just so buggy. \n\nIf it is still poor, I guess something is messed up by Nvidia, try to ask in Minecraft bug reporting platform. \n\nI am also hoping to get a 5090 and see how fast it runs on vanilla Minecraft RTX, I would be very disappointed too if it actually ran worse.",
-          "upvotes": 1,
+          "commentId": "lxapas6",
+          "text": "I'm in the same boat here. Looking to upgrade my AM4 system, and the only thing that has been holding me back is the AM5 ITX options. I'm trying to keep the motherboard cost close to 200.  \nThis HUB video --&gt; [AM5 Mini-ITX Roundup](https://www.youtube.com/watch?v=YsmStRPI47I&amp;t=1002s&amp;ab_channel=HardwareUnboxed) led me to conclude that the Aorus ultra is where the value is (currently 220 new).\n\nI'll Be pairing it with a 9800x3D and 32 gb of ram. Any thoughts or recommendations on that?",
+          "upvotes": 2,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
           "sentiment": null,
           "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mhcn5op",
-              "text": "I tried both fullscreen and windowed, and even scaled down the window to a tiny box, resulting in exactly the same performance!\n\nI'm right now at the point where I've tried everything and it's pretty much SOL, but I'm hopeful that either Mojang or Nvidia patch this one way or another, or this is just a me-issue.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mtywvzm",
-                  "text": "Now I have a 5090 and it does run slowly. Did you manage to solve it?",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "mtz8ccs",
-                      "text": "I haven't found any solutions so far. Just wait for the drivers or Mojang to fix it. \n\nThere is no manual fix in sight other than downgrading to 4090 (which nobody will do just to play Minecraft lol)\n\nIt sucks yes, but it's just nvidia bullshit, nothing more, nothing less.\n\nOne other solution is switching to Intel CPU, but that doesn't give full performance of 5090 to Minecraft anyway, so it's not worth it either.",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "mtzaf9l",
-                          "text": "Thanks for the feedbacks, and let\u2019s hope it will get solved soon. \n\nSo far I found by dropping the rendered distance to 16 for allows me to have roughly 50-60 fps at 4k, it\u2019s bearable for now. Maybe I can see how DLSS can be enabled.",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        },
-                        {
-                          "commentId": "muydn6b",
-                          "text": "Nvidia doesn't make good products anymore, I just updated from a 1070 to a new 5070 ti, I have horrible performance in rtx maps, then there's another issue that I reported to Nvidia but I never received a response, I have a ryzen processor to be exact a r7 5800xt, I would upgrade soon, if we activate rebar on bios the things gets even worse!!! Ray tracing stopped working and the world became darker, I've tried this on several Minecraft bedrock maps and the error persists, this is unacceptable, and hopefully we receive a response soon, also it would be greatly appreciated if anyone can report the same error with rebar On",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
+          "replies": []
         },
         {
-          "commentId": "mhcklg9",
-          "text": "Since this is bedrock check the nvidia control panels display settings and makesure nvidia is using its main processor the GPU. Update the drivers, Shut off DLSS temporarily and restart your computer. Be sure to select your 5090, Also if you have a 5090 you don't need 3 other damn GPUs!",
-          "upvotes": 1,
+          "commentId": "lxaxb05",
+          "text": "I have the Strix B650E-I and running with no issues. I had the same dilemma as you when I was building - not many options, questionable quality, weird design choices. This one was the only one I truly felt had no major cons aside from price when I bought it. Then it got discounted the week I was wracking my brain over the choice and it became an easy decision when it was only $20-30 bucks off from the rest of the options. \n\nI don't think the X670E-I can justify it's cost honestly",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxbotlg",
+          "text": "Asrock B650i Lightning WiFi is what I went for. \n\nMy Thoughts: \n\nGigabyte A620i AX and B650i AX:  basic, limited on power and beaten by the two asrock below on performance and price.\nAsrock A620i: Bargain and probably all most people need.  \nAsrock B650i: same as above, only a few \u00a3$ more, gives the ability to OC and UV.  No good for the 7950x but fine for everything else. Only 2 SATA.  Best priced \"does everything I reasonably need\" board.  \nMSI B650i:  Solid.  Silver. Can handle 7950x.  Doesn't really offer more than the Asrocks for most people though and a bit more expensive.  \nGigabyte B650i Aorus:  top tier performance, 3 m.2s, stupid board design.   I was tempted anyway, however it's a lot of money for an extra m.2.\nAsus B650 and X670:  don't offer the extra m.2 or anything actually useful over the gigabyte above for the same/more money. \n\n\nFor me, it was between the two Asrocks above and the gigabyte Aorus.  \nThe Asrock B650i seems to do everything I'll reasonably need and so far has had no issues.  It just works. \n\nI've also got an Asus B550i in my old PC and the Asrock has been a much better experience.  I'm kinda put off Asus now tbh.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxc9qgk",
+          "text": "I run a 7800x3d with an Asrock B650E PG-ITX. No problems so far, although I wish it had Thunderbolt. Seems like none of the AMD ITX mono\u2019s support thunderbolt.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxcptyq",
+          "text": "apparatus depend escape cooperative alive sip run outgoing seed plucky\n\n *This post was mass deleted and anonymized with [Redact](https://redact.dev/home)*",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxcyex3",
+          "text": "Got an open box ROG Strix x670e-i. Looked new (guessing it might be new but box was damaged or Asus didn't want Newegg selling for too much under list price.) Only issue was not picking up my bluetooth dongle when I swap my Thunderbolt hub over from my laptop until I replug it back in. Ultimately feel like I paid too much even after the open box discount but USB4/TB was a non-negotiable for me.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lx9615j",
+          "text": "# Gigabyte launches X870 Mini-ITX motherboard for $299\n\n[https://www.club386.com/gigabyte-launches-x870-mini-itx-motherboard-for-299/](https://www.club386.com/gigabyte-launches-x870-mini-itx-motherboard-for-299/)",
+          "upvotes": 4,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -268,149 +277,19 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "mhcncez",
-              "text": "I don't have 3 GPUs in my computer, actually! Those GPUs I brought up as my upgrade path.\n\nOriginally was using 4090, and that's when I started playing the game. Then I sold it and switched to my older 3090 instead to have \\*a\\* GPU asides from radeon iGPU.\n\nAnd after I got the 5090, I replaced the 3090 with 5090.\n\nEverything is configured properly in drivers.\n\nI have reinstalled both the game and the drivers (also running latest drivers as of writing the original post, it's mentioned there with my configuration)",
+              "commentId": "lx9nc2l",
+              "text": "mm.. I am using a Gigabyte board atm and it's mostly very solid.  Actually, not it's solid.\n\nI hate on Gigabyte because I've had to RMA Video cards from them before and because of their Power Supply shit with Newegg... but at the very least, their boards are solid.  Right now I've got the X570SI Pro AX and it's freaking great.  So, this board at $299 is pretty good.\n\nWish I could afford a new build now because it looks like I won't be able to afford the hobby going forward if the new administration gets their way x.x;\n\n  \nEdit: lol, looking at the specs this looks like a direct upgrade path from what I have now.",
               "upvotes": 1,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
               "sentiment": null,
               "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mheder7",
-                  "text": "Did you check what windows is using as its display adapter?",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "mhg3xmt",
-                      "text": "There is just one display adapter, it being 5090 itself. I tend to disable the iGPU because I never needed it in the first place, but it doesn't really change much of anything, sadly.",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "mhhcymj",
-                          "text": "Check what windows is using for Minecraft manually, Is it using the GPU? If so then check if your CPU is even powerful. Check if the parts are installed correctly.",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "mhiotm3",
-                              "text": "Please check the screenshot, specifically the GPU it uses.\n\nMinecraft does indeed run on a 5090 and produces over 1k fps with no raytracing, but as soon as it's on, the performance is lacking.\n\nAgain, iGPU is \\*\\*disabled\\*\\*, the 5090 is set as the GPU to run things on, and I'm stating it explicitly, 3d acceleration happens ON the 5090. I can't even change it to anything else.\n\nI am VERY sure it's a driver/gamecode issue, and it might become more wide-spread as more people with 5090s appear.\n\nDespite everything, I am very tech-savvy and tried a lot of things before bringing this post up, and nothing has helped so far. I'm just hoping for this to get eventually more known and get a proper fix.\n\nFor now I'm probably just attaching the 3090 to play the game on it lol",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": [
-                                {
-                                  "commentId": "mhkz8ry",
-                                  "text": "You want to avoid swapping out the GPU due to the connector issue. \n\nI'm just going to play other games unless this gets fixed.",
-                                  "upvotes": 1,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": []
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mhd8f1a",
-          "text": "AMD Ryzen 9 7950X3D CPU, did u check if the cpu is not 100%?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
+              "replies": []
+            },
             {
-              "commentId": "mhd9m9g",
-              "text": "I did not change the CPU between configurations, and it performed quite well with other GPUs, just not 5090 specifically.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mhdbi11",
-                  "text": "I'm telling you this because I also have a 5090 and it runs great on everything, including Minecraft RTX, my CPU is a 14900KS. And your Ryzen if you are in game mode, is drowned by only having 8 cores. It is a known problem. Also check that the PCIE is running at x16 and at 5.0.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "mhdranv",
-                      "text": "The CPU never got even close to 100% load. As I said, it performed perfectly fine with older GPUs, and I am very certain it can't just become worse with a new GPU(?)\n\nI am getting 9950X3D tomorrow though, but I doubt that will change much, if anything.\n\nCurrently, the overall CPU usage is just 10-16%, while no thread is even at 100% load.\n\nThe game runs the same in either 3D chiplet restricted mode (so pinned to the first 16 threads) or unlocked for all 32 threads, nothing changes whatsoever.\n\nThis should not be an issue though, as my Java MC runs 32 render chunks with fancy shaders perfectly fine well 200 fps, so I'm left in this spot where it's so confusing and seemingly nothing helps. \n\nI tried changing PCIe generation, x16, x8, 5.0 or 4.0 it does not matter at all. Both 4090 and 3090 ran the game fine on x8 4.0, while 5090 can't do it with same (or better) bandwidth, so that's definitely not the problem either.\n\nI almost want to try a clean Windows install but honestly, I'd rather not play the game than have to reconfigure dozens of applications XP",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "mhyzdsc",
-                      "text": "its minecraft itself that since the new menu update messed up something else. my performance went to 20fps or somthing on a 5090. gpu seems to be not utilized anymore",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mhe347r",
-          "text": "What does CPU usage look like? I'd try Process Lasso to put the game on just the 3D cores, or just the ones without 3D cache. Could be something with the drivers for the new cards is messing with cpu usage.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mhg3e6s",
-              "text": "I have tried both pinning it manually to the 3D cores and letting it have the full CPU, the results are indistinguishable at all. This definitely seems like a driver issue to me.",
+              "commentId": "lxan9rh",
+              "text": "this aorus x870i ice is already out among internet blogs for more than a month now, but there\u2019s no stock anywhere like for real? whats the reason gigabyte holding this out in the shelves?",
               "upvotes": 1,
               "classifyThis": true,
               "relevance": null,
@@ -420,6 +299,175 @@
               "replies": []
             }
           ]
+        },
+        {
+          "commentId": "lx8ww8z",
+          "text": "If you want cheap, you can try Jginyue B650i.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lx94177",
+              "text": "I went with this one, gonna try it this weekend and will update if it works as expected paired with a 7500F.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lxemgix",
+                  "text": "I built three ITX PCs in the last two days with this combo (thanks AliExpress sales), works great.\n\n\nUsing T-Create Henix M Die kits (6400MT/s), all work fine with XPO profile.\n\n\n2 of the 3 7500Fs I could undervolt with -30 on all cores and a +200 PBO boost, while the 3rd was only stable on -20. All 3 have performed great in benchmarks.\n\n\nReally happy with this board, turned out to be such a fantastic cheap and performant combo. I ended up paying $145 AUD per board, delivered, which is crazy considering local B650i prices.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lxay3rj",
+                  "text": "I have this pair, it works without issues.\nRAM is 6000 MHz CL30.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "lx92cx9",
+          "text": "2nd build with the Asus b650 e-i. Just built my buddies system with it. No issues so far. No coil whine from either board at all.\n\nSpecifically stayed away from the Asus x670e-i because of the external module.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lxerxtd",
+              "text": "Would you mind sharing what PSU, CPU and RAM where used?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lx98zcb",
+          "text": "just using a620i ASRock. no problem so far. paired with a 7500f",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lx9rzdz",
+          "text": "Yea is true i had some problems with RAM and Sound",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxa1ccj",
+          "text": "Been wondering this as well. Picking up a 9800X3D tomorrow to hoard until I get the rest of my parts. I\u2019ll be overclocking/undervolting, using a lot of USBs, and looking to run a higher end 50XX series card when they come. \n\nWas looking at the ASUS as well but am skeptical. I don\u2019t really *mind* spending that amount as I usually just go all out on a new build every 5-6 years or so and it\u2019s my main hobby, but I\u2019d love to put that money on other parts if I\u2019d be wasting money.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxab70p",
+          "text": "I've got my 9800x3d in a rog strix b650e-i gaming wifi and it's working just fine so far. No issues yet.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxal3qv",
+          "text": "I just ordered the 'GIGABYTE B650I AORUS ULTRA\" what's the big problem with these boards?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lxanxhb",
+              "text": "they are hit or miss, some said bios issues, some say they have RMA issues but on intel boards not amd.. i don\u2019 t know now, im kinda leaning on the x870i ice but theres no stock everywhere",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lxapwem",
+          "text": "I'm eyeing the ASRock A620i Lightning Wifi for when I decide to upgrade to AM5.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxavtu2",
+          "text": "I was wondering about the gigabyte ones, as I have previous experience with them and they are solid, but I saw a post by machines and more discussing one or two problems with it but I don\u2019t think they are major.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "lxbt3ko",
+          "text": "I went with function performance over esthetics! ASUS CSM Corporate Stable Motherboard. Very good board. I have a mini ITX version.\n\nhttps://preview.redd.it/iuebvlisp41e1.jpeg?width=1125&amp;format=pjpg&amp;auto=webp&amp;s=0656cbc641ea482d5cc4fcd8f27994c711d0172e",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         }
       ]
     }

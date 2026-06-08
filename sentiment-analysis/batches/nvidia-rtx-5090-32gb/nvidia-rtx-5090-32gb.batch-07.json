@@ -1,0 +1,112 @@
+{
+  "productName": "nvidia-rtx-5090-32gb",
+  "batchIndex": 7,
+  "totalBatches": 19,
+  "comments": [
+    {
+      "commentId": "1svuf1e",
+      "text": "Building a desktop PC that can handle Gemma 31B\n\nHey everyone, not a native speaker so please correct me if I make mistakes!\n\nWith the current trend of API providers making their models worse over time, models becoming unavailable or \"sunsetted\"/removed, it might be nice to know how to put your own system together capable of running Gemma4 31B.\n\nI will highlight decisions I made during building my own PC back in January 2026, and will be using current (2026-04-26) Dutch prices as reference.\n\n# Goal\n\nRunning Gemma4 31B (Q5\\_K\\_M) with 128K (Q8\\_0) context + mmproj (on CPU).\n\n>Why this target?\n\nWith MoE models we can get away with a single weaker GPU, but for dense models it would be really slow.\n\nRunning Q2/3 quant/s severely hurts the model's accuracy and performance. The difference between Q4/5 is also quite noticable, from Q5 to Q6 and higher depends more on non-latin use ( [https://localbench.substack.com/p/gemma-4-31b-gguf-kl-divergence](https://localbench.substack.com/p/gemma-4-31b-gguf-kl-divergence) ).\n\nWhile I understand Q8\\_0 for context isn't lossless for this model ( [https://localbench.substack.com/p/kv-cache-quantization-benchmark](https://localbench.substack.com/p/kv-cache-quantization-benchmark) ), at half the model's context (128k of 256k) I have yet to experience issues.\n\n# System parts\n\n**Buy used?**\n\nIf you're willing to bear the risk, it is a really good option (and sometimes much cheaper!)\n\nPersonally, due to the uncertain times and not being able to secure that money relatively soon in case anything goes wrong or breaks, **I did not**. So my own choices resolved buying around new hardware.\n\n**GPU**\n\nMost important part(s) of the system. You have a few options:\n\n* NVIDIA RTX 5090 32GB: 3500EU (New)\n* AMD Radeon AI R9700 Pro 32GB: 1500EU (New)\n* **2x NVIDIA RTX 5060 Ti 16GB: 2x 560EU (New)**\n* 2x AMD Radeon RX 9060 XT 16GB: 2x 480EU (New)\n* 2x NVIDIA RTX 3090 24GB: 2x 1000EU (Used)\n* 2x NVIDIA RTX 4060 Ti 16GB: 2x 450EU (Used)\n\nThe R9700 Pro is the best value for money here, and the least hassle. Only downside is how loud it is (blower-style fan).\n\nPersonally I went for two ASUS PRIME RTX 5060 Ti 16GB. I could buy one first and the other later. That specific model is very silent under load and draw very little power. MXFP4 / NVFP4 hardware support is a nice bonus, CUDA makes anything AI software related easy to set up.\n\n>What about intel?\n\nWhile their prices are really good, the performance isn't (slow hardware and unstable drivers). Look up B70 and B60 reviews on r/localllama for more info so you know what you're getting into.\n\n>What about data center GPUs?\n\nNo comment as I have too little experience with them.\n\n>Anything to be careful of?\n\nWhen buying RTX 3000 series cards: they might've been used for mining, which significantly reduced their lifespan if so. Repaste them!\n\nFor RTX 5090, be very careful as they have can catch fire due to bad 12vhpr connectors required for them ( [https://gamersnexus.net/gpus/12vhpwr-dumpster-fire-investigation-contradicting-specs-corner-cutting](https://gamersnexus.net/gpus/12vhpwr-dumpster-fire-investigation-contradicting-specs-corner-cutting) ). Undervolting is a good idea!\n\n**Motherboard**\n\nIf you choose the RTX 5090 or R9700 Pro, any used PCIE 4/5 x16 motherboard is fine.\n\nOtherwise, you really want a motherboard that supports PCIE 5.0 x8x8 mode. Not doing so results in a performance penalty, which is especially bad for the RTX 5060 Ti. Options I know supporting it include:\n\n* **ASUS PROART X870E-CREATOR WIFI: 380EU (New)**\n* ASUS PROART B850-CREATOR WIFI NEO: 270EU (New)\n* ASUS Pro WS B850M\u2011ACE SE: 400EU (New)\n* Gigabyte B850 AI TOP: 400EU (New)\n* ASRock X870E TAICHI LITE: 410EU (New)\n\nI went with the PROART X870E as it has the best chipset available for a good price and good PCIE x16 slot placement for the cards I want to use. Most 2/3-slot GPUs are actually 3/4-slot due to their cooler's size.\n\nIt also supports display routing: Connect the monitor to the motherboard's display port (HDMI or DP), during inference the GPUs can use their full 16GB each and the iGPU handles the display. When playing games, the motherboard uses the GPUs and not the iGPU without having to change cables around.\n\n>What about intel?\n\nNo clue! Too many motherboard series for me to track.\n\n**CPU**\n\nIt kinda depends.\n\n* AMD Ryzen 5 5600 AM4: 130EU\n* AMD Ryzen 5 7600 AM5: 170EU\n* **AMD Ryzen 5 9600 AM5: 200EU**\n\nIf you choose the RTX 5090 or R9700 Pro, you can get away with the the Ryzen 5 5600 or better.\n\nOtherwise, an AMD Ryzen 7600 and better will do.\n\nI went with the AMD Ryzen 5 9600X as I wanted the AVX-512 improvements from the Ryzen 9000 series for my work.\n\n>Why not 8+ cores?\n\nYou won't get much benefit of having more than 6 cores, you're getting RAM bandwidth starved ( [https://www.reddit.com/r/LocalLLaMA/comments/1qdtvgs/comment/nztj6g7](https://www.reddit.com/r/LocalLLaMA/comments/1qdtvgs/comment/nztj6g7) ).\n\n>Why not Ryzen 5500 or Ryzen 8000 series?\n\nThe AMD Ryzen 5 5500 and older doesn't support PCIE 4.0, Ryzen 8000 series doesn't have the PCIE bandwith for PCIE 5.0 x8x8 support. You need 24 PCIE 5.0 lanes usable.\n\n>What about intel?\n\nNo clue! Their power efficiency was too low for me.\n\n**RAM**\n\nYou want to have at least 32GB RAM, prefer 2x 16GB. More capacity is always really useful but a luxury.\n\nI personally have **96GB (2x 48GB) DDR5-6000 CL30** which I bought before the RAM demand increase.\n\nHaving at least 96GB is needed when running 120B MoE models, but you don't need it to run Gemma4 31B.\n\n**Other hardware**\n\nMake sure there is at least 1 slot space between the graphics cards inside your case, and that a strong fan is carrying away the heat of the GPU's backplate.\n\nIf you have an iGPU, attach the display to it to free up a little more VRAM. Every byte counts!\n\n**The software side**\n\nYou really want to use llama.cpp or koboldcpp directly for the least overhead.\n\nMake sure to specify when using two GPUs:\n\n    device = cuda0,cuda1 (or vulkan0,vulkan1 when using AMD)\n    tensor-split = 16,16 (or 24,24 when using RTX 3090)\n\nThat way llama.cpp / koboldcpp knows how to handle the dual GPU setup.\n\n# That's it!\n\n**TL;DR:**\n\n* Get the AMD Radeon AI R9700 Pro + PCIE 4.0 compatible AM4 motherboard + AMD Ryzen 5 5600 + 32GB (2x16) DDR4 3600MHz RAM if that's cheaper for the whole system combined.\n* Get 2x AMD Radeon RX 9060 XT 16GB + ASUS PROART B850-CREATOR WIFI NEO + AMD Ryzen 5 7600 + 32GB (2x16) DDR5 6000MHz RAM for the cheapest PCIE 5.0 based option I know.\n* Get 2x NVIDIA RTX 5060 Ti 16GB + ASUS PROART X870E-CREATOR WIFI + AMD Ryzen 5 9600 AM5 + 96GB (2x48) DDR5 6000MHz RAM if you want to run \\~120B MoE (Q4\\_K\\_M) models in the future with CPU offloading of experts while still being able to run \\~30B dense models at decent speed.\n\nHopefully this infodump was helpful to you! Let me know your questions or thoughts down below, I'll be happy to help where I can.",
+      "upvotes": 84,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "oic64ko",
+          "text": "Thanks for the detailed info and research!\n\n\nWhat are the reasons you go with 5060ti other than price and being new? Also how's the temp on heavy load?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oie60w3",
+              "text": "You're very welcome!\n\nThe situation when I bought my first 5060 Ti was a bit different than it is now; Back in November 2025 I was still using my AMD Radeon RX 7600 XT 16GB. While everything I wanted at the time worked on it (Mistral Magistral Small 2509 Q4\\_K\\_S with 16K Q8\\_0 context), it came with big downsides at the time:\n\n* Very energy inefficient for it's performance\n* Newer (32B) models simply wouldn't run on it\n* Image generation was really slow, like 3 minutes for 35 passes\n* Image generation required special compiled builds of ROCm to work\n\nWith that in mind, I planned on optimizing my system. I went for the RTX 5060 Ti because:\n\n* I needed 16GB minimum\n* I wanted future expandability to 32GB for running 30B dense and 120B MoE (which I did in January 2026!)\n* I REALLY didn't want a 12vhpwr connector for it's bad reputation of melting (and causing fires)\n* Support for newer formats like NVFP4 is really important to me, because I want it to last and not become obsolete in the coming 5 years\n* CUDA support, because it was hassle-free on the software side\n* It needed to be energy efficient to reduce electricity bills and future expansion for going as much off-the-grid as possible\n* It was too expensive to buy one big card for 1000+ EU at once, I had to spread the cost around\n* I also want to game on it (not max graphics, but high 1080p for current titles like Ghost of Tsushima)\n\nIn that scenario, the RTX 5060 Ti 16GB made sense to me.\n\nI went with the ASUS PRIME RTX 5060 Ti 16GB specifically because it features a beefy cooler also included for the RTX 5080 model (really overkill, but has benefit) and was the best tested for quietness while retaining it's original performance ( [https://www.techpowerup.com/review/asus-geforce-rtx-5060-ti-prime-16-gb/](https://www.techpowerup.com/review/asus-geforce-rtx-5060-ti-prime-16-gb/) ). It was 480EU, which is 10EU above MSRP of the normal RTX 5060 Ti 16GB.\n\nSince it's a PCIE 5.0 x8 card, I know I wanted PCIE 5.0 x8x8 support for my motherboard too. At the time, ASUS PROART X870E-CREATOR WIFI was the only one that made sense for the pricing. Really good IO, lots of expansion slots (for PCIE, NVME) and is really sturdily build.\n\nI traded my AMD Radeon RX 7800 XT (+ spare PC parts I had to build him a full computer) with a friend for him buying me that motherboard new (380EU) as a friend's bargain. The parts were worth much more, but selling to strangers is a hassle and he needed a PC.\n\nIn December hearing the news (Gamer's Nexus), I knew the prices would increase drastically. I wanted to get my second ASUS PRIME RTX 5060 Ti 16GB for 500EU but I cancelled my original order in January as shipments took long (Paradigit wasn't delivering) and paid 590EU for it by a different retailer (Azerty), delivered next day.\n\nTwo days after the announcement came from HardwareUnboxed ( [https://www.youtube.com/watch?v=yteN21aJEvE](https://www.youtube.com/watch?v=yteN21aJEvE) , the 5060 ti production would be cut very low), I was very happy for the price I bought it as prices shot to 750EU. My card specifically (ASUS PRIME RTX 5060 Ti 16GB) is currently 600EU.\n\n...\n\nHaving said all of that, was it worth it? Heck yeah! Sure it isn't the fastest, but perfect is the enemy of good enough.  I haven't regretted it at all, It does what I need it to.\n\nThe 2x RTX 5060 Ti 16GB setup is unmatched for it's low electricity use, while also supporting the latest formats (NVFP4) and CUDA 13, having very low noice production, and is likely to remain supported for years to come (see RTX 20 series still being supported by NVIDIA).",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ojb46o2",
+                  "text": "Holy shit, so detailed! Gonna save for when I can afford an upgrade later.\n\n\nI'm probably going with 2ndhand RTX 3060 12GB for now; much more affordable and way better than having a borderline unusable GPU (GTX 1650 4GB).\n\n\nGPU price is bad here too lol. I just checked and a new 5060ti 16GB cost the same as a used 3090.\n\n\nThanks a lot for the explanation!",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ojhc3sn",
+                      "text": "Sorry if it was a bit too much! I though it would be more useful to you to have all information, rather than too little.\n\nTL;DR is that soft factors (electricity cost, heat, noise, efficiency, longlivity) were more important to me than hard factors (like raw performance).\n\nI would strongly recommend you to buy new if you don't know how to service a 5 y/o graphics card. For the RTX 3000 series, you'll likely need to repaste it and reapply thermal pads to keep it running nicely.\n\n12GB is a ton better than 4GB, but try to aim for at least 16GB even if it's more expensive. That money you paid will carry you further. 12GB is nearly not enough already these days for even gaming in 1080p, let alone 1440p.\n\nAMD (with vulkan) is fine too, and usually quite a bit cheaper second-hand. Those include:\n\n* AMD Radeon RX 6800 XT (16GB)\n* AMD Radeon RX 7800 XT (16GB)\n* AMD Radeon RX 7900 XT (20/24GB)\n\nIf you don't absolutely require CUDA, the AMD Radeon RX 9600 XT 16GB is a very good buy new.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ojile3j",
+                          "text": "> Sorry if it was a bit too much!\n\n\nAppreciate the details, especially the motherboard. Earlier I looked for one that supported multi-GPU but didn't find much info about it, even on Reddit (understandably since multi-GPU setup before AI boom was very rare for gamers except power users). I didn't even know there's a motherboard that could swap GPUs without replugging! That means I can buy a CPU with iGPU as backup.\n\n\n> I would strongly recommend you to buy new if you don't know how to service a 5 y/o graphics card.\n\n\nCan't deny that. But honestly it feels like a waste buying old GPU for new especially when it's twice as expensive as the 2ndhand. It's pretty much just as an \"affordable stepping stone\" until I figure out my usecase, as my current GPU is basically useless for AI related stuff.\u00a0Ngl I'm kinda worried since the price is slowly rising even for old GPUs, both new and used...\n\n\n> 12GB is a ton better than 4GB, but try to aim for at least 16GB even if it's more expensive. That money you paid will carry you further. 12GB is nearly not enough already these days for even gaming in 1080p, let alone 1440p.\n\n\nPretty much agree with that. Though unfortunately 5060ti 16GB is double the cost of new 3060 12GB, triple if used. It's way out of my budget range. I still need to get at least 32GB RAM and more storage too, and they're all also getting more expensive \ud83e\udd72. I feel like this time is worse than the crypto boom a few years ago. Hope I can still afford it before regular consumers can't afford GPUs anymore, or even decent PC.\n\n\n> If you don't absolutely require CUDA, the AMD Radeon RX 9600 XT 16GB is a very good buy new.\n\n\nMy main use is for AI art, so definitely no AMD \ud83d\ude02\n\n\nThanks for sharing the info so far. Hope they were wrong that the future of PC is cloud PC. That would be dystopian.\n\n\nEdit: wtf I just checked online and there's some sort of shortage for both RAM and SSD here.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "oie6hgn",
+              "text": "For temps: 60c under full load when using Quiet mode (A physical switch on the ASUS PRIME 5060 Ti 16GB) for the first card, 50c for the second. When downvolting slightly, you get 55c and 40c. Even when running full load you can hardly hear the cards.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "oickhit",
+          "text": "What kind of PSU would be recommended for such a setup?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oidwbuj",
+              "text": "Thanks for asking!\n\nYou can get away with 750W for sure (tested it, BeQuiet! Straight Power 11, gold rating), maybe even 650W.\n\nI'm currently running the BeQuiet! Dark Power 13 850W because I wanted all protections I can get, Japanese capacitors and titanium efficiency rating.\n\nIf the power supply fails or doesn't protect for a specific scenario and it happens, it can take the whole system with it. So please don't skimp out!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

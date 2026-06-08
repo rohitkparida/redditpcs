@@ -1,514 +1,285 @@
 {
   "productName": "amd-radeon-rx-9070",
   "batchIndex": 18,
-  "totalBatches": 19,
+  "totalBatches": 25,
   "comments": [
     {
-      "commentId": "1j43rd6",
-      "text": "AMD Radeon RX 9070 XT GPU Review &amp; Benchmarks vs. 5070 Ti, 5070, 7900 XT (Sapphire Pulse)",
-      "upvotes": 627,
-      "classifyThis": false,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
+      "commentId": "1tnfrvo",
+      "text": "RX 9070 XT cooling analysis nobody seems to be doing \ud83d\udc40\n\nNoise-normalized data tells a VERY different story than stock reviews\n\n\u26a0\ufe0f Disclaimer:\n\nThe table is sorted by NN Score only.\nThat does NOT automatically mean \u201cbest to worst\u201d overall GPU.\n\nDepending on:\n\n- sustained frequency\n- card size\n- noise preference\n- airflow setup\n- deshroud potential\n- power/connectors\n\n\u2026the ranking and best choice can change significantly.\n\n\u26a0\ufe0f XFX Mercury power connectors depend on the specific variant/SKU. Some models use 2X8-pin, while higher-end OC variants use 3X8-pin.\n\nI made a comparison table using [TechSpot](https://www.techspot.com/review/3015-amd-radeon-9070-xt-roundup/) thermal data from:\n\nBut instead of only looking at:\n\n\\- stock temperatures\n\n\\- stock noise\n\n\\- FPS\n\n\u2026I tried to analyze the behavior of the coolers themselves.\n\nSo I compared:\n\n\\- stock thermal results\n\n\\- 40 dBA noise-normalized results\n\n\\- airflow scaling (Delta)\n\n\\- card size\n\n\\- thermal efficiency relative to size\n\n\\- sustained frequency relative to thermals\n\nAnd honestly, the conclusions become VERY different once you start crossing the data instead of looking at isolated charts.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udd39 What the metrics actually mean\n\n\ud83d\udd35 NN Score (lower better)\n\nCombined thermal score during 40 dBA noise-normalized testing:\n\n\\- GPU temp\n\n\\- hotspot\n\n\\- VRAM\n\n\\- VRM\n\nThis is probably the best indicator of raw heatsink quality, because it removes a large part of the stock fan curve bias.\n\nIn other words:\n\n\u00abhow good is the cooler itself at equal noise?\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe2 Delta\n\nDifference between:\n\n\\- stock thermal score\n\n\\- noise-normalized thermal score\n\nThis metric became MUCH more interesting than I expected.\n\nLarge Delta usually means:\n\n\\- quieter/conservative stock tuning\n\n\\- strong airflow scaling\n\n\\- large thermal gains once more airflow/noise is allowed\n\n\\- excellent deshroud/high-airflow potential\n\nSmall Delta usually means:\n\n\\- stock profile already runs near normalized airflow\n\n\\- card may already be relatively audible stock\n\n\\- or the cooler gains less from additional airflow\n\nSo Delta is NOT simply:\n\n\u00ab\u201chigher good\u201d or \u201clower good\u201d.\u00bb\n\nIt mainly shows:\n\n\u00abhow the cooler responds to additional airflow and noise.\u00bb\n\nWhich becomes VERY important for:\n\n\\- deshroud mods\n\n\\- SFF airflow optimization\n\n\\- custom fan setups\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe3 Compact Efficiency\n\nCustom metric combining:\n\n\\- NN Score\n\n\\- card length\n\nFormula:\n\n\u00ab100000 / (NN Score \u00d7 Length)\u00bb\n\nThe goal is to estimate:\n\n\u00abcooling efficiency relative to physical size.\u00bb\n\nBecause raw thermal performance alone can be misleading.\n\nA massive 360 mm card SHOULD cool well.\n\nWhat becomes interesting is:\n\n\\- how much thermal performance you get\n\n\\- relative to the size penalty\n\nSo this metric rewards cards that:\n\n\\- remain compact\n\n\\- while still delivering strong normalized thermal performance\n\nThis helps reveal:\n\n\\- heatsink density efficiency\n\n\\- cooler optimization\n\n\\- compact designs punching above their weight\n\n\ud83d\udfe9 Surprisingly efficient for their size:\n\n\\- XFX Swift\n\n\\- Gigabyte Gaming\n\n\\- XFX Quicksilver\n\n\ud83d\udfe5 Relatively inefficient considering their size:\n\n\\- Hellhound\n\n\\- Taichi\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfea MHz / NN (higher better)\n\nSecondary metric combining:\n\n\\- operating frequency\n\n\\- normalized thermal score\n\nFormula:\n\n\u00abClock Frequency / NN Score\u00bb\n\nThis does NOT isolate the cooler alone.\n\nInstead, it reflects:\n\n\\- cooler performance\n\n\\- boost behavior\n\n\\- BIOS tuning\n\n\\- power behavior\n\n\\- sustained clocks at equal noise\n\nIn practice:\n\n\u00abhigher = more frequency maintained for a given thermal load.\u00bb\n\nSo this metric is more about:\n\n\u00ab\u201creal-world thermal performance efficiency\u201d\n\nthan pure heatsink quality.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udd0d Interesting findings\n\n\ud83d\udfe6 XFX Quicksilver\n\nThe Quicksilver is interesting because it highlights the difference between pure cooling capability and overall tuning/performance behavior.\n\nIt achieves the best NN Score in the roundup, which strongly suggests the heatsink itself is genuinely excellent.\n\nBut at the same time, its sustained clock frequency is relatively low compared to cards like:\n\n- Mercury\n- Nitro+\n- Gigabyte Elite\n\nSo the Quicksilver appears to prioritize:\n\n- thermal headroom\n- quieter behavior\n- conservative boost tuning\n\n\u2026rather than maximizing frequency at all costs.\n\nIn other words:\n\n\u00abit\u2019s probably one of the best pure coolers in the roundup,\nbut not necessarily the most aggressive performer out of the box.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 XFX Mercury\n\nThe \u201cfully unleashed\u201d version of the XFX philosophy.\n\nIt combines:\n\n\\- excellent NN thermals\n\n\\- very high sustained clocks\n\n\\- strong MHz / NN efficiency\n\n\\- large airflow scaling potential\n\nMeaning:\n\n\\- stock tuning is not overly aggressive\n\n\\- but the cooler still scales extremely well with airflow\n\nDownside:\n\n\\- absolutely gigantic size (360 mm)\n\nBut unlike many oversized cards:\n\n\u00abthe Mercury actually justifies its dimensions thermally.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 XFX Swift\n\nProbably one of the most interesting cards in the entire roundup.\n\nExcellent NN score + huge Delta + excellent Compact Efficiency.\n\nMeaning:\n\n\\- relatively conservative stock tuning\n\n\\- very efficient cooler density\n\n\\- extremely strong airflow scaling\n\nThis thing could become an absolute monster in:\n\n\\- deshroud builds\n\n\\- SFF airflow-focused setups\n\n\\- high-airflow custom configurations\n\nEspecially considering its more reasonable size compared to the Mercury/Quicksilver.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 ASUS Prime\n\nSurprisingly strong cooler efficiency despite its \u201cmid-tier\u201d reputation.\n\nAlso:\n\n\\- one of the easiest cards to deshroud\n\n\\- fan shroud removes very easily\n\n\\- minimal teardown required\n\nVery interesting for:\n\n\\- deshroud mods\n\n\\- SFF builds\n\n\\- low-noise airflow optimization\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 Sapphire PURE vs PULSE\n\nAfter comparing:\n\n\\- PCB photos\n\n\\- dimensions\n\n\\- thermal behavior\n\n\\- BIOS differences\n\n\u2026I\u2019m fairly convinced they are basically the same card underneath.\n\nSame PCB.\n\nSame heatsink.\n\nSame dimensions.\n\nThe PURE mainly adds:\n\n\\- ARGB\n\n\\- slightly more aggressive BIOS/fan tuning\n\nSo:\n\n\u00abPURE \u2248 PULSE + RGB + mild factory OC\u00bb\n\nTheir very similar NN behavior strongly supports this.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83e\udd14 Why I think reviewers underuse their own data\n\nMost reviews stop at:\n\n\\- stock thermals\n\n\\- stock acoustics\n\n\\- FPS\n\nBut the REALLY interesting stuff is often hidden in the relationships between variables:\n\n\\- airflow scaling\n\n\\- cooling density\n\n\\- noise sensitivity\n\n\\- efficiency per size\n\n\\- deshroud potential\n\n\\- sustained boost behavior\n\nOnce you start crossing the data instead of reading charts individually:\n\n\u00abthe rankings and conclusions change completely.\u00bb\n\nVRAM temps can absolutely vary depending on:\nSamsung vs Hynix memory\npad mounting pressure\nthermal pad variance\neven production revisions over time\nSo the VRAM part of the NN score is not a perfectly controlled variable.\nThat said, I still think the overall trends remain meaningful because the score combines:\nGPU temp\nhotspot\nVRAM\nVRM\n\u2026rather than relying on VRAM alone.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\nSorry to everyone who already commented on the previous post \u2014 I had to repost it because the image quality/formatting were not good enough and the XFX Mercury was missing.\n\nAlso:\n\n\\- the PowerColor Reaper is missing because it was not included in TechSpot\u2019s RX 9070 XT roundup data.\n\nBig thanks as well to the people in the previous thread.\nSeveral comments genuinely helped improve the updated version of the post.",
+      "upvotes": 432,
+      "classifyThis": true,
+      "relevance": "include",
+      "relevanceReasoning": "The user provides a detailed technical analysis of cooling performance for various RX 9070 XT models.",
+      "sentiment": "neutral",
+      "sentimentReasoning": "The post is a data-driven analysis focusing on metrics rather than a clear positive or negative recommendation.",
       "replies": [
         {
-          "commentId": "mg6g8ps",
-          "text": "Is it weird that I have a 7900XTX and still kinda want this? I won\u2019t, because that\u2019s stupid, but still.\u00a0",
-          "upvotes": 21,
+          "commentId": "ontm91r",
+          "text": "Lots of data and a great summary post. I have had the ASUS Prime since release day and have found it to be a great card along my journey the last 8 or so years of bouncing back and forth. Between AMD and Nvidia. I\u2019ve mostly went with PNY or ASUS cards. \n\nRX 580 &gt; 3060ti &gt; 3080 &gt; 4070 &gt; 9070XT",
+          "upvotes": 47,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal experience owning the ASUS Prime RX 9070 XT and recommends it as a great card.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user explicitly states the card is a 'great card'.",
           "replies": [
             {
-              "commentId": "mg6w28q",
-              "text": "Bigger number go brrr",
-              "upvotes": 17,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "mg7283j",
-              "text": "Go take a cold shower dude. XD",
-              "upvotes": 15,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mg68tmd",
-          "text": "Bye bye 6700xt. You've served me well. Also upgrading to am5 with ryzen 7700",
-          "upvotes": 8,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mg5w40f",
-          "text": "Help me out boys. Watched the video, looks like a decent upgrade from a 3080 TI, right?",
-          "upvotes": 5,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mg63bon",
-              "text": "wondering the same but I'm on non-Ti variant. Seems like an upgrade for 1440p and better thermal but I really need that one more *push*.",
-              "upvotes": 7,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mg66r3r",
-                  "text": "From a base 3080?\n\nYou are getting approximately 55% performance uplift in raster, 25-30% in raytracing and it offers 6GB more VRAM. Performance outside of games is comparable.\n\nPersonally I would deem it an insufficient upgrade, I generally recommend waiting for closer to 100% total uplift. Meaning that you should be eyeing a 5080 (roughly +70%/+90% respectively) at the very least since it occasionally does (nearly) double your fps in games like Alan Wake.\n\nOf course, it depends on your wallet. As in - is $600 much to you? If it's 10% of your monthly wage - ehh, go for it. If it's 100% of your monthly wage - I wouldn't.\n\n3080 is still a powerful card. 9070XT is significantly faster but, at least personally, I would look for something more. Or at the very least delay an upgrade until you actually see games that you can no longer play on 3080 at the level of detail that feels good enough for you. Who knows, maybe in the meantime price drops another $100 or Nvidia releases 5080 Super with 20GB VRAM? \n\nImho it's a must have upgrade for people on 10xx/20xx GeForces, RX 5xxx, lower tier 6xxx (6700 and lower). For them it's a completely new level of smoothness. For you it's just a noticeable ugprade.",
-                  "upvotes": 8,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "mg6pxmr",
-                      "text": "Problem being the vram on the 3080 is already hitting saturation and while the 9070xt isn't a 100% performance uplift the uplift I care about is the 1% lows and higher FPS floor. The 3080 was a great value card for upper mid-range but to wait more years really sucks because I'm stuck in an awkward spot where some games can suck to run(alan wake 2, indiana jones) but not all games. Then some games I can still run comfortably, there's no easy answer for 3080 owners whether to upgrade or not",
-                      "upvotes": 6,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "mg7yo3b",
-                          "text": "I'm in the same boat. Just upgraded my motherboard, RAM and CPU (9800X3D) and my 3080 is just a huge bottleneck at this point. Outside of ray tracing, which I don't really use, the VRAM is just so restrictive. \n\nI'm really all about price to performance on graphics cards and while the 50 series performs well, the price is absolutely insane. There's no way I'm paying that, so it means I'm skipping this generation. And due to the 50 series being barely better than the 40 series, the 40 series is now astronomical too.\n\nSo...wait probably a year or two and try again with Nvidia or take a chance with AMD. Not to mention that a year from now our cards will be that much older and the VRAM even more of an issue. Hard decision.",
-                          "upvotes": 3,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "mg8d2cw",
-                              "text": "As someone with a 3080, I think I\u2019m going to wait the year. Save up for more and it looks like AMD is trying to fight back which should make the top end a tad bit easier to swallow price wise",
-                              "upvotes": 2,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            }
-                          ]
-                        },
-                        {
-                          "commentId": "mg88psx",
-                          "text": "&gt;because I'm stuck in an awkward spot where some games can suck to run(alan wake 2, indiana jones)\n\nLast I checked 3080 runs Alan Wake 2 on High with no RT/PT and stable 60 fps without any upscaling. Yes, fps drops to like 30 if you do enable ray tracing. But to be fair - everything good about this game still remains good and it still looks phenomenal at these settings. And at the same time... it doesn't get THAT much better on 9070XT due to relatively low increase in performance.\n\nAs in - looking at the reviews you go from 60 to 80 fps in the first scenario aka no RT.\n\nThen I see another review that says that 1440p + DLSS Q/FSR Q, Ultra RT (but no path tracing) is 57 fps for 9070XT and 49 fps 3080. That's only 16% uplift. Frame gen **might** make it worth it I suppose since that would be more like 100 to 49 but input lag is going to be comparable.\n\nIndiana Jones on Ultra should be hitting 80+ fps as well. Again, no PT (although turning it on with DLSS Quality is around 45ish fps and you do get DLSS4 so you can go down to Balanced and it still looks decent).\n\nSo **especially** for these titles I wouldn't spend money. If you want RT + PT then realistically you need a 5080 or higher. RX 9070XT shows a decent lead in rasterization but it's raytracing isn't much better.\n\nSo my take is - I would still wait until you really have games that run poorly. Not a \"I can crank them to Ultra, just no or limited raytracing\". Because this particular aspect of the games really doesn't change that much, it's only +25% on average if you start relying on heavy RT usage.",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "mh2en3k",
-              "text": "I don't think so. Looking at tech power up numbers (using 3090 since 3080ti is not there) it's only 28% better at 1440p and only 18% better in ray tracing 1440p. I also think you're still fine with 12gb of VRAM. For an upgrade you ideally want 50% gain minimum. 5080 would make the most sense for an upgrade but if that is too much in price I'd just wait it out. You're not gaining enough in ray tracing and raster and also losing DLSS4.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mh2pj5d",
-                  "text": "You're too late friend, I got a red devil 9070xt and I literally could not be happier with the upgrade but I appreciate your insights and effort here!",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "mh2rpat",
-                      "text": "My bad I didn't even realize this comment was 5 days ago lol. I must have had reddit on best instead of hot. Glad you're happy with it.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mg5n70b",
-          "text": "So it looks like I didn't make a bad decision paying $700 for a 7900XT early last year",
-          "upvotes": 26,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mg5ym9s",
-              "text": "I paid $620 and I feel bad about it lol",
-              "upvotes": 15,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mg657gi",
-                  "text": "Just sell it. You shouldn't have any trouble getting that money back.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "mg611qp",
-              "text": "You are stuck with FSR3 and that is a problem",
+              "commentId": "onto3oj",
+              "text": "That's my personal favourite as well. Compact, easy for deshroud mod and think a good potential of cooling once modded.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mg5juzu",
-          "text": "Eh..I need a 4k/120Hz card, with FSR 4 this seems to come close. Since I can't get a 5090 for $2k I will probably buy a 9070xt this gen and forget about it.",
-          "upvotes": 26,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mg5pj9f",
-              "text": "tbh for that resolution and refresh rate you really need to look at 5090/4090.",
-              "upvotes": 31,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User expresses a preference for the ASUS Prime model due to its size and modding potential.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user describes it as their 'personal favourite'.",
               "replies": [
                 {
-                  "commentId": "mg6covo",
-                  "text": "I do ok at 4k/120hz with a 7900xt. On most games I can run high and even ultra detail natively and still get over 100fps. It's only the biggest new games that pull me below 100fps at high detail. Honestly I'm impressed that the 9070xt easily beats a 7900xt in a lot of games, I thought it would be even closer.",
-                  "upvotes": 7,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "mg6edo5",
-                  "text": "not ultra, no gimptracing, fg and fsr 4 could easily do it.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "mg5sd5c",
-              "text": "For 4k 120hz you need a 4090 or 5090. This card won't cut it for those specs really.",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mg602bn",
-                  "text": "PSA: you are allowed to turn down settings to hit your framerate targets.... especially these days where the difference between high and ultra is visually imperceptible and sometimes still finds 30% more FPS.",
-                  "upvotes": 25,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "mg63fak",
-                      "text": "Right? I wouldn't expect to be playing 4k/120 on Ultra High + RT in everything. I usually keep a card until I have to start running new games on Medium/Low to get high enough framerates before looking to upgrade.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                },
-                {
-                  "commentId": "mg7caqm",
-                  "text": "Not really true. I play at 4k120 on my 7900xtx.  This can probably run it just fine with FSR4.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "mg5ufcc",
-              "text": "Same - need a replacement for my 6900 for 4k, and NV can S a D.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "mg6ffst",
-              "text": "Yeah I set aside funds for the 5090 but decided maybe I don't really value 4k ultra settings that much after thinking about it. I think this is a solid 4k card if you can tolerate med-high settings with no RT, which I have come to realize that I can.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mg5rydy",
-          "text": "Finished the HUB video and now this one, it's not a disappointing card but the fps bloat + true price once it hits the market does not make me happy TBH. That $600 being more like $730 just means more waiting until the hype for it is killed",
-          "upvotes": 12,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mg5kukd",
-          "text": "I was really excited about selling my 4070 Super to buy a (hopefully) $600 RX 9070 XT, but after looking at the benchmarks, I'm less certain it'd be worth the hassle to shift to AMD (love my 7800x3D though!).\n\nI wonder thought if performance will get better over time with further driver updates/game optimization?",
-          "upvotes": 12,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mg5ukok",
-              "text": "Just keep your card. Not worth side grading.",
-              "upvotes": 20,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mg69902",
-                  "text": "is it a side grade though? It's definitely better",
-                  "upvotes": 6,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "mg61q69",
-              "text": "It's a 30-50% in raster and from the same to +40% in RT. Though, eats more power.\n\n\nDepends heavily on the game, seems like there is a long road ahead for the driver optimisations for specific games for this card",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mh2fdy3",
-                  "text": "Against a 4070 super? I'm seeing +27% raster and +12% in ray tracing. Using tech power up numbers.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "mgakqaj",
-              "text": "I'd just be keeping that until UDNA/RTX 6000 at this point when we actually get a node jump again.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "mgbc3sy",
-              "text": "Plus the better coolers are $100-200 more. Pretty nuts",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mg5mlrw",
-          "text": "Weeeelp. Was looking to build a system for a friend and was eyeing that, but he plays 14 primarily.\n\nI hope this is a driver issue that can be addressed. Otherwise looks very solid.",
-          "upvotes": 6,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mg5i55i",
-          "text": "i\u2019m planning to get a SFF build and after years of wondering what GPU to use \n\ni finally came to conclusion to use AMD lol",
-          "upvotes": 4,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mg5kv3r",
-              "text": "Check the powercolor reaper. Seems to be the most SFF oriented model so far.",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mg7l21c",
-                  "text": "The Sapphire Pulse could have been a decent option for SFF had they made the card less tall and brought the thickness down just a little further.",
+                  "commentId": "onu8alu",
+                  "text": "Will flash my Prime to a Tuf eventually, same PCB used. ",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User discusses technical modification (flashing BIOS) for their RX 9070 Prime card.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a statement of intent regarding a technical mod.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ontzyav",
+              "text": "I did similar than you in terms of upgrade haha\nRx 480 xfx gtr -&gt; msi 3070-&gt; xfx swift white 9070xt\n\nForeeever ago Used to have an nvidia 8600gt ft xfx cca 20 years ago as well. Was one of my first gaming gpus i can remember. Never had any issues with cooling or build quality\n\n",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User shares their upgrade path to the XFX Swift 9070 XT.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user mentions having no issues with cooling or build quality.",
+              "replies": []
+            },
+            {
+              "commentId": "ontzxuw",
+              "text": "What is your general memory temperature with the Prime 9070XT? I noticed my card is on the higher end when idle (60-70) and around (80-90) when gaming",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a factual question about memory temperatures.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": [
+                {
+                  "commentId": "onu0mal",
+                  "text": "I\u2019ll look later. Will favorite post to get back to you. ",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort response indicating they will check data later.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
                   "replies": [
                     {
-                      "commentId": "mg7n2h3",
-                      "text": "Agreed. Looking at the general power consumption charts in a lot of these reviews there doesn't really seem to be any good reason why these massive coolers were necessary. It seems perfectly reasonable that a two slot two fan cooler would have been sufficient. Look at the old EVGA 1080 TI SC2 model as a reference point. Those drew around 300 watts and were completely fine with a smaller cooler and weren't overly noisy",
-                      "upvotes": 2,
+                      "commentId": "onu39kc",
+                      "text": "Thank you! ",
+                      "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort thank you message.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": []
                     }
                   ]
                 },
                 {
-                  "commentId": "mg5l2vt",
-                  "text": "i\u2019m planning to use the FormD T1 so the Nitro+ might fit or the Mercury\n\nor even the Red Devil",
+                  "commentId": "onuh8wk",
+                  "text": "That's quite normal during gaming. I found that buying 2 fans to place at the bottom of the case (to hit the GPU as the recommended case airflow anyways) lowered the temp by 5-8 degrees",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User provides a technical tip on lowering GPU temperatures for the RX 9070 XT.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment provides a helpful technical suggestion without strong sentiment.",
                   "replies": [
                     {
-                      "commentId": "mg5vztf",
-                      "text": "I'm currently using the FormD T1 and hoping I can get the reaper or one of those models you listed as well!",
-                      "upvotes": 3,
+                      "commentId": "onuny8e",
+                      "text": "This is good to know because adding a couple more fans to the bottom of my case was my next step. ",
+                      "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort response acknowledging information.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "onv3peo",
+                  "text": "Also it depends if your card has SX Hynix (bit warmer) or Samsung (bit cooler).",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Factual statement about memory manufacturer differences.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": [
+                    {
+                      "commentId": "onviv5o",
+                      "text": "I found out shortly after my second post that it\u2019s Hynix through gpu-Z. I understand why now it runs a tad bit hotter ",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Factual statement about their own card's memory type.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "onutaz4",
+              "text": "What made you go from the 3080 to 4070 out of curiosity? Seems like a sidegrade?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Off-topic discussion about previous GPU upgrades (3080 to 4070).",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": [
+                {
+                  "commentId": "onuu1ei",
+                  "text": "If memory serves, I had a non LHR 3080 and sold it for a mint. DLSS on the 40x0 was better for Microsoft Flight Simulator plus the cash in hand. ",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Off-topic discussion about previous GPU upgrades.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "onydvi5",
+              "text": "Thats a solid upgrade path. The 9070 XT seems like a nice sweet spot. How's the coil whine on that Asus Prime? Been eyeing one but heard mixed things about their quality control lately.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User asks about coil whine and quality control for the ASUS Prime RX 9070 XT.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is inquiring about potential issues, but hasn't expressed a definitive opinion.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ontrrde",
+          "text": "Only thing I would add is be careful just adding up all the temps. The XFX cards in the tests all came with Samsung memory, which runs like 10 degrees cooler vs the Hynix.\n\nFor the Reaper you can check the Hardware Unboxed videos. The second comparison with the 16 cards includes it. It is the same data as from the website.",
+          "upvotes": 24,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User critiques the data analysis by pointing out the impact of memory manufacturers on thermals.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user suggests the original analysis is incomplete or flawed.",
+          "replies": [
+            {
+              "commentId": "onxg49o",
+              "text": "He would've known that if he didn't use AI to write his post. \n\nThe entire post is invalid because he didn't account for memory manufacturer differences.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User claims the original post is invalid due to lack of memory manufacturer accounting.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user explicitly calls the post 'invalid'.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onu0eve",
+          "text": "Did you account for differences in VRAM? Hynix is 10-15\u00b0C hotter than Samsung and that alone would f up your NN score.  \nTwo cards, one with Samsung and one with Hynix memory, will result in a completely different score.   \nWhen we look at the XFX Quicksilver the difference between Samsung and Hynix could change the place from 1 to 3 for example. Same with the Red Devil. When your card has Hynix and you swap to Samsung the card could jump from 4 to 2.  \nWithout the data which memory a card has the whole table you created is flawed.\n\nI have the Red Devil with Samsung memory and even OCed to 2718MHz and a fanspeed \\~1100rpm and my memory is cooler than the card from Techspot with stock settings. My memory sits at 78\u00b0C in a 25\u00b0C room.",
+          "upvotes": 29,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User argues the data table is flawed due to VRAM differences and shares their own positive experience with the Red Devil.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment contains both a critique of the data and a positive report of their own card's performance.",
+          "replies": [
+            {
+              "commentId": "onufued",
+              "text": "This. \n\nIt's skewed to one sample per vendor. Not a realistic comparison of real world variance between cards. ",
+              "upvotes": 10,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User agrees that the comparison is not realistic due to sample size.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user describes the comparison as 'not a realistic comparison'.",
+              "replies": []
+            },
+            {
+              "commentId": "onuchvt",
+              "text": "My gigabyte gaming oc with hynix memory sits at 80c on vram under load (25c room 50% humidity). Now, I may have drowned the pcb with putty and running decent 120mm fans on a deshroud mod, but hey, at least it's both cool and I can't hear it anymore\u2026 :D",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User shares positive experience with a deshroud mod on their Gigabyte Gaming OC RX 9070 XT.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user states the card is 'both cool and I can't hear it anymore'.",
+              "replies": [
+                {
+                  "commentId": "onwz5ih",
+                  "text": "mine is max 85 stock at 100% load and I cant hear it in sub10l case so it depends on the memory. ",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User shares their own thermal results for the RX 9070 XT.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is reporting factual thermal data.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "onwummb",
+              "text": "Backwards... Hynix performs about 8% faster",
+              "upvotes": -1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual debate about memory performance percentages.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": [
+                {
+                  "commentId": "onxa1x6",
+                  "text": "Hynix is not 8% faster. 8% is when you account for fast timings and OC. At stock the difference is way smaller at \\~1-3% but for this discussion it doesn't even matter. The NN score is purely temperature based and temperature wise Samsung is way better.  \nBeside that, i would never ever recommend to bring OC in a performance discussion because it is an uncontrollable variable. 2 exakt same cards can OC completely different. One could OC like crazy and you reach 2900MHz with fast timings and the other can't even get 20MHz OC on the memory without fast timings.  \nThe only reason why i bring my OCed VRAM into this discussion is to show that the NN score is flawed because we have the differences in memory vendors.  \nI also saw Hynix cards with memory temps near 100\u00b0C. That is over 20\u00b0C difference between OCed Samsung and stock Hynix. Hynix is fast yes but the temperature is scary high i wouldn't trust that the memory will not die in the next 5 years.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User discusses the impact of memory vendors on RX 9070 XT thermals and reliability concerns.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user expresses concern that Hynix memory may 'die in the next 5 years' due to high temps.",
+                  "replies": [
+                    {
+                      "commentId": "onxg87g",
+                      "text": "Oh no, my memory is at 100 degrees... Just buy a case with proper airflow.\n\nAlso, this is heat/performance. You want your gpu to do actual things instead of just sitting pretty and chilling.",
+                      "upvotes": 0,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort banter/argument between users.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": [
                         {
-                          "commentId": "mg7ckdk",
-                          "text": "Formd T1 gang! Also looking at the reaper. Currently got the 6800 reference card which is 2 slot.",
+                          "commentId": "onxlp2r",
+                          "text": "No it is not and you clearly have issue to understand what others say.",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Low-effort argument between users.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
                           "replies": []
                         }
                       ]
@@ -516,296 +287,124 @@
                   ]
                 }
               ]
-            },
-            {
-              "commentId": "mg5kwjn",
-              "text": "Check the powercolor reaper. Seems to be the most SFF oriented model so far.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "mg5lx5y",
-              "text": "I fit a 7900 XTX into the NR200, so.\n\nGranted that's a huge ITX case, by most accounts. But still.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mg5m17t",
-                  "text": "do you run into difficulties when fitting a 7900 XTX into it?",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "mg5pce8",
-                      "text": "Not the NR200, no. I have the XFX model and all I had to do was slide the front of the card in first before clipping into the PCI slot. It's a pretty snug fit though; if you have a different model, I'd definitely check Youtube or something to make sure first.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
             }
           ]
         },
         {
-          "commentId": "mg5sipr",
-          "text": "Why did they go from 4k ultra RT in cyberpunk to, medium RT and then skip 1440p benchmarks entirely. I was really looking out for that in particular.",
-          "upvotes": 3,
+          "commentId": "ontquc9",
+          "text": "My steel series goes \ud83d\udd25\ud83d\udd25compared to the rest.\n\n\nBut hey, 2x8.\u00a0\n\n\n\n\n",
+          "upvotes": 6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User reports their Steel Series card is running hot ('goes fire').",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is complaining about high temperatures.",
           "replies": []
         },
         {
-          "commentId": "mg6bvfi",
-          "text": "I a but bummed out by the power draw. Great initial value and performance though. According to Linus, the non XT is also pretty power hungry.",
-          "upvotes": 3,
+          "commentId": "onwujhi",
+          "text": "You ignored wattage didn't you?",
+          "upvotes": 6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User critiques the analysis for ignoring wattage.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user suggests the analysis is missing critical data.",
           "replies": [
             {
-              "commentId": "mgaxy1n",
-              "text": "According to some reviews it seems pretty easy to undervolt to get almost identical performance at a much lower power draw.\n\nNow the question is does that apply to the 5070ti as well.",
+              "commentId": "oo3b425",
+              "text": "Hi, there is no wattage mesure in the Techspot review. But it will be very interesting. ",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mgbd1lp",
-                  "text": "I don't dare to do such settings myself, so if that's true I hope some AIB versions will do this instead.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mg5lzpe",
-          "text": "Anyone seen undervolt testing of the 9070 XT ? Would be very interesting if they just pushed it a bit too much to match 5070 XT, but throwing efficiency out the window with it",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mg64ppu",
-              "text": "I\u2019m wondering as well how well can you undervolt it. Would be good to reduce it to 250w max.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mg6ijn7",
-                  "text": "https://youtu.be/5sMOQY9ZK6M\n\n-50W from his undervolt",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mg5khpn",
-          "text": "Well thats disappointing. The GPU market still sucks ass",
-          "upvotes": 10,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mg5zrjc",
-              "text": "go back to 1080p 60 fps era if you want 100 euro cards",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mg6isbx",
-                  "text": "What?",
-                  "upvotes": 4,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mg5h9wd",
-          "text": "damn clearing even in rt",
-          "upvotes": 10,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mg5t99i",
-              "text": "I don't see anything \"clearing\" anything.It's a hit and miss.  Good job by amd but RT performance seems to be all over the place.",
-              "upvotes": 23,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mg62guo",
-                  "text": "I mean, I paid \\~$1,250 for my 4080. This card is a value in comparison..",
-                  "upvotes": 9,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "mg7lqtq",
-                  "text": "Based on HUB\u2019s and DF\u2019s numbers, the 9070 XT\u2019s RT performance comes within striking distance of the 4070 Ti Super or 5070 Ti **until** path-tracing is used. NVIDIA still leads by a lot once you\u2019re on PT settings.\n\nSo NVIDIA is currently your only option if you **really** want that Overdrive setting in Cyberpunk.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "mg5i32p",
-              "text": "Actually usable for RT in 1440p",
-              "upvotes": 16,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "mg5m3je",
-              "text": "They're not clearing anything in RT.",
-              "upvotes": 18,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual response about the availability of wattage data in the review.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
               "replies": []
             }
           ]
         },
         {
-          "commentId": "mg5qsl2",
-          "text": "Now put 24/32GB ram on it and add another 50-70usd to the price for the 9070XTX then we are golden.",
+          "commentId": "ontxk42",
+          "text": "I'm confused about the quicksilver praise.  Of course it had good thermals.  It was the lowest clock ",
+          "upvotes": 9,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User critiques the praise for the Quicksilver model, arguing it only has good thermals because of lower clocks.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is questioning the value/performance of the Quicksilver model.",
+          "replies": []
+        },
+        {
+          "commentId": "onu0iim",
+          "text": "Where is my ASRock Challenger\n :(",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Low-effort comment asking where their specific card model is in the list.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
           "replies": []
         },
         {
-          "commentId": "mg5q3ot",
-          "text": "Glad to see GN also thinks that 9070 should have been a little cheaper.\nI think if the xt was 550 and the regular was 475 they both would be making a lot more customers.\n\n\nRaster is good, power consumption is higher than the competition, price is just okay, rt is much better than last gen but still miles behind nvidia (if it has enough vram lol).\n\n\nAs a potential consumer unfortunately i amd has not won me over. I got 6750 xt because it was a better buy over 4060 and it was an easy choice. With 9070 i think if nvdia lowers and/or hits msrp prices i will go green next year",
-          "upvotes": 3,
+          "commentId": "onu266x",
+          "text": "The issue is HWU didn't normalize for power draw so the data isn't really useful\n\nalso it is only noise normalized at one point",
+          "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User argues that the data is not useful because it wasn't normalized for power draw.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user explicitly states the data 'isn't really useful'.",
+          "replies": []
+        },
+        {
+          "commentId": "ontygvt",
+          "text": "Can vouch for the sapphire nitro plus, I\u2019ve got a very nice undervolt on it and temps are really good, fans are quiet too",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares positive experience with Sapphire Nitro Plus, mentioning good undervolts and quiet fans.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user describes the card as having 'really good' temps and quiet fans.",
           "replies": [
             {
-              "commentId": "mg782l9",
-              "text": "&gt;I think if the xt was 550 and the regular was 475 they both would be making a lot more customers.\n\nHUB believes that they will be subsidizing the early available cards. If that's the case they couldn't price them that low without it being an artificial MSRP. The unfortunate reality for people on a tight budget is that if you want a cheap card you can't get one of that calibre.",
-              "upvotes": 5,
+              "commentId": "onuk9y4",
+              "text": "Same excellent card",
+              "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User agrees that the Sapphire Nitro Plus is an excellent card.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user explicitly calls it an 'excellent card'.",
               "replies": []
             }
           ]
         },
         {
-          "commentId": "mg5bcw5",
-          "text": "Hey OP \u2014 /r/AMD is in manual approval mode, this means **all submissions are automatically removed and must first be approved before they are visible to others**. This is done to prevent spam, scams, excessive self-promotion and other rule-breaking posts.\n\nYour post will be approved, provided it follows the subreddit [rules](https://www.reddit.com/r/Amd/about/rules/).\n\n**Posts regarding purchase advice, PC build questions or technical support will not be approved.** If you are looking for purchasing advice, have a PC build question or technical support problem, please visit the [Q1 2025, PC Build Questions, Purchase Advice and Technical Support Megathread](https://www.reddit.com/r/Amd/comments/1hqs820/pc_build_questions_purchase_advice_and_technical/).\n\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/Amd) if you have any questions or concerns.*",
-          "upvotes": 1,
+          "commentId": "onu0oaf",
+          "text": "Isn\u2019t the mercury 3x8 pin ",
+          "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mg5t0zb",
-          "text": "Anyone know what time EST the cards will launch???",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
+          "relevance": "exclude",
+          "relevanceReasoning": "Factual question about power connectors.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
+          "replies": [
+            {
+              "commentId": "onu59fu",
+              "text": "i believe there's a oc and non oc mercury, the oc has 3, the regular has 2",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual answer about power connectors.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
+              "replies": []
+            }
+          ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

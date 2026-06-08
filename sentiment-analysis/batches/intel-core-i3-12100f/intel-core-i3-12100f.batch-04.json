@@ -1,7 +1,7 @@
 {
   "productName": "intel-core-i3-12100f",
   "batchIndex": 4,
-  "totalBatches": 100,
+  "totalBatches": 103,
   "comments": [
     {
       "commentId": "sjfkhg",
@@ -13,6 +13,135 @@
       "sentiment": null,
       "sentimentReasoning": null,
       "replies": [
+        {
+          "commentId": "hvemb4s",
+          "text": "I have a 3950x and that is probably a better gaming cpu. That is a really big improvement in the low end price bracket.",
+          "upvotes": 18,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "hveo3ol",
+              "text": "Most games are still limited by per core (AKA single core) performance which is why CPUs like the 5600X and 12100F are better gaming CPUs than the 3950X.\n\nVery few games actually benefit from the thread count of the 3950X so for a pure gaming build a 3800X or 3900X would have been a better choice.",
+              "upvotes": 42,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "hvf21ak",
+              "text": "I for one, am glad to see competition return to the CPU market. Intel needed this shake up from AMD to get their heads out of the sand. Plus, in addition to being faster, it also provides a new architecture. I like how now Intel uses E/P-cores. Although, I am wondering if that was also spurred on by the M1 chips, seeing as how they have a similar, albeit different setup.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "hvf38kp",
+                  "text": "Big-little is much older idea than apple M1. Originally the idea was created for smart phones with the goal that the user app in the foreground would use the big core/s and everything else would run on the slow small cores which would drastically reduce overall power consumption. However PCs need a bit more sophisticated system since the users are using a lot of different apps at the same time and even some background tasks can be time critical.\n\nIntel's goal is more on silicon efficiency. They achieve high computational throughput for scalable workloads with much smaller silicon area when latency critical tasks run on big cores and throughput tasks use slower small cores. This way they can make the big cores a lot bigger without worrying about the chip becoming too large. There might be some power savings if big cores can sleep more in light loads but I think that is secondary.",
+                  "upvotes": 12,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "hvf5r10",
+                      "text": "I agree that it is older than the m-series of chips but I personally don't know of any products that had successfully implemented such an architecture outside of smartphones before. Plus, the m1-series is still very efficient, fast and on a small die. Granted, Apple is using an ARM architecture and Intel is still on X86_64, which isn't a bad thing at all. I just want to see where the future takes us and if AMD follows suit.",
+                      "upvotes": -6,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "hvf6ulj",
+                          "text": "M1 is heavily based on smart phones. Basically it's A14 from iphone 12 but with double the core count. And it's not really small at all. Given the TSMC 5N process they are actually using more transistors than competing designs. M1 pro and max are actually physically larger than 12900k although they include a lot bigger GPU.\n\n&gt;Apple is using an ARM architecture and Intel is still on X86_64\n\nThis is irrelevant.",
+                          "upvotes": 12,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "hvf78so",
+                              "text": "To which I replied that it isn't a bad thing at all....",
+                              "upvotes": -7,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "hvf7l7o",
+                                  "text": "But you brought it up as \"still on x86_64\" as if it had any practical relevance. Beyond some implications for decoder design it doesn't really affect much.",
+                                  "upvotes": 7,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "hvf93bt",
+                                      "text": "If you really want to be anal about it, yes it does have relevance. They are two completely different architectures. And through the use of Rosetta 2, the m-series is able to achieve near-native levels of performance and sometimes even better, however there are some instances where compatibility is lacking. \n\nEither way, just give credit where it is due.",
+                                      "upvotes": -7,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "hvfd2i5",
+                                          "text": "&gt; They are two completely different architectures. \n\nThey are instruction sets. They define how software is communicated to the hardware. They don't define how the processor works. \n\n&gt;Either way, just give credit where it is due.\n\nI don't get why you brought it up. Especially since you said \"still on x86\".",
+                                          "upvotes": 10,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "hvir69o",
+                      "text": "Yep, that\u2019s what I\u2019ve heard (and in fact, the little cores in Alder Lake actually aren\u2019t any more efficient than the big cores at stock clocks, making it a bit of a weird design).",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
         {
           "commentId": "hveo02p",
           "text": "Anyone know why HUB doesn't use the 3090 as a baseline for ~~GPU~~ CPU benchmark?",
@@ -210,363 +339,6 @@
               ]
             }
           ]
-        },
-        {
-          "commentId": "hvej0mk",
-          "text": "Will honestly be good enough for most people until next gen ie ps6 and Xbox next and even then expect cross gen games for two years.",
-          "upvotes": 9,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "hvf3pck",
-              "text": "&gt;Will honestly be good enough for most people until next gen\n\nI'd be pretty damn skeptical of that, unless by 'good enough', you mean never any better than console performance, and I still dont think that'll be enough for 'most' PC gamers for a whole generation.  Better hope that devs never decide to push the new machines with 30fps titles again(which would be a massive shame in my opinion).\n\nWe haven't even seen actual next-gen multiplatform games yet, either.",
-              "upvotes": 8,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "hvfycvj",
-                  "text": "That's good enough, yes.",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "hvggppi",
-                      "text": "I dont think most PC gamers got into PC gaming just to play PC games at the same level of graphics/performance as console games.\n\nNot to say there aren't still notable benefits beyond that, but as an initial pitch, better graphics and performance tend to be pretty major ones.  Otherwise, playing on a massively cheaper console makes a lot more sense for many.\n\nAs cheap as a 12100 and cheap board is, plus a 2070/2080-level GPU, even in a normal situation, a PS5/XSX is still gonna make more sense.",
-                      "upvotes": 5,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "hveo9ye",
-              "text": "well you'll need a GPU, for which the only available budget option is the 6500 XT, in which case you'd probably skip the 12100F for the 12100 to get encoding support.",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "hvew5rd",
-                  "text": "If you don't *need* the encoding - I know many do, but many don't - then I'd argue just go with the cheaper part and aim to upgrade the GPU as soon as you can afford it or prices get less insane.",
-                  "upvotes": -3,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "hvewrvs",
-                      "text": "I mean it's like $30 extra and means your PC keeps working when your GPU fails, it makes sense tbh.",
-                      "upvotes": 6,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "hvfeo0f",
-                      "text": "Crypto rises and falls based on a number of things, including an egomaniacs tweets. I wouldn't bet the usability of my PC over saving 20 bucks.",
-                      "upvotes": 4,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    },
-                    {
-                      "commentId": "hvh2b99",
-                      "text": "Assuming you do any kind of zoom, teams, cell phone video processing/transcoding, etc. you need the processor.  There probably aren't that many people that don't use video encoding at least somewhat, and AMD's support is bad to terrible in quality.",
-                      "upvotes": 0,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "hvel89q",
-              "text": "Yeah, this one is a healthy 60% faster in 1T and around 20-25% slower in nT (GB5, 12100 vs 4700S) It's a great budget CPU that you can put on on a good platform that should last you for years.",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "hveoeto",
-              "text": "Im looking to move on from my 4790, how will this compare?",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "hvervbq",
-                  "text": "It's much faster, but you should probably be looking at a ~~10400~~ 12400 if you can afford it considering how long you kept your previous cpu.",
-                  "upvotes": 12,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "hvev6m3",
-                      "text": "Why?\n\n12100 is literally 3fps behind 10600k in 10 game average.\n\nI would get 12100f over 10400 unless motherboards for lga1700 are way more expensive than 10th gen mobos.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "hvf1dqq",
-                          "text": "Somehow typed 10400 while I meant 12400. I agree with you.",
-                          "upvotes": 10,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "hvf2kxl",
-                              "text": "Thanks guys! Will keep that in mind when I finally make the upgrade in the next months. Almost feel bad about throwing out my old trusted CPU tbh :D",
-                              "upvotes": 2,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": [
-                                {
-                                  "commentId": "hvf30vl",
-                                  "text": "It's still a good CPU if you need a homeserver or something, or it could sell for a decent amount. But the upgrade will be very noticeable. When I went from a 1600 to 5800X I could even notice it in regular desktop use like the sluggish reddit and double framerates in busy games in AoE2 for example, both due to much faster single core speed.",
-                                  "upvotes": 3,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": []
-                                }
-                              ]
-                            },
-                            {
-                              "commentId": "hvf3a0d",
-                              "text": "Yeah, if someone can find cheap 12400 it's a steal right now.",
-                              "upvotes": 2,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "hvh7vlr",
-          "text": "The 11400f is actually back in stock in a lot of places now. That seems more future proof with more threaded games, with the same total mobo+CPU cost. More power usage, and heat, though. Should perform around the same as the 10600k.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "hvghwee",
-          "text": "Curious to know what process changes have enabled Intel to turn things around so quickly? Aren't thy supposed to be like two years behind or something if we listened to the \"experts\"?",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "hvetcho",
-          "text": "I know its a kit of work, but would have loved to see cheaper ram as well, nobody buying this combo and don't alderlake benefit a lot from faster memory?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "hvg03vu",
-              "text": "No, it's AMD that needs the faster RAM to perform at it's best. You can buy cheap 3200mhz DDR4 and get like 97% of the performance out of Alder Lake compared to a more premium 4000+ mhz kit, at least in gaming",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "hvfqnwq",
-              "text": "There may or may not be issues with doing too much with memory overclocking. As I understand, the locked (non-K) Alder Lake CPUs have a locked-down system agent voltage, which may limit the memory overclocking headroom anyway. But yeah, dual rank B-die, as tested here, is probably close to best-case scenario in terms of benchmark performance numbers, and yeah, it's typically fairly expensive (compared to other DDR4).",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "hvgkinh",
-          "text": "Tbh if intel made a BAD quad core in 2022 it would be like the last 10 years were meaningless",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "hvf9lka",
-          "text": "So, the last hurrah of the gaming quadcore is here.\n\nStill wouldn't buy, not with a console gen on 8/16.",
-          "upvotes": -8,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "hvg5qmz",
-              "text": "With the limited clocks, crippled cache, and GDDR latency, consoles are closer to Zen+ performance, and these chips are probably pushing close to the performance of a 2700X (which is roughly where consoles land iirc). Twice the performance per core of Zen+ or thereabouts would not be surprising to me at all.\n\nI don\u2019t generally disagree with you though, but I\u2019m not the customer for these, either. For something that will probably sell in the $120-ish range once prices settle it\u2019s pretty potent.\n\nIf they turned on ECC it would probably be a solid upgrade for my fileserver.",
-              "upvotes": 10,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "hvgrwj2",
-                  "text": "I mean, I wasn't dissing them; this is the last hurrah for gaming quadcores but they're certainly going out on a high note.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "hvh8iv7",
-          "text": "Where can you buy a 12100F though? GN released his video on it weeks ago and it\u2019s still not sold anywhere. I hope this isn\u2019t going to be another 3300X type of situation\u2026",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "hvk0flr",
-              "text": "They are on shelves right now here in Australia, but then again so was the 3300X.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "hvl6qje",
-                  "text": "Did the 3300X remain available there? Or quickly disappear like in the U.S. and then never get regularly restocked?",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "hvmxrwz",
-                      "text": "They were around for a while, I have one downstairs. I think it was more a case of AMD targeting the Asian market over Europe or the US.",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "hvxast6",
-          "text": "Remember about 5 years in past, these 4c/8t cpus were Intel's top consumer i7 ? \ud83d\ude02 Crazy how much AMD pushed them to improve, competition is really something for us consumers :-)",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
         }
       ]
     }

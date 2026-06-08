@@ -1,0 +1,480 @@
+{
+  "productName": "amd-ryzen-9-9950x3d",
+  "batchIndex": 17,
+  "totalBatches": 26,
+  "comments": [
+    {
+      "commentId": "1j8q8k1",
+      "text": "AMD Ryzen 9 9950X3D CPU Review &amp; Benchmarks vs. 9800X3D, 285K, 9950X, &amp; More",
+      "upvotes": 297,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "mh782vy",
+          "text": "tldr\n\nThey overcame the core parking issue through chipset driver. It's now as fast as 9800x3d in gaming but with the multithreaded perf of 9950x. Best of both worlds i guess.",
+          "upvotes": 409,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User provides a summary of performance and technical improvements of the 9950X3D.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User describes it as the 'best of both worlds' regarding gaming and multithreaded performance.",
+          "replies": [
+            {
+              "commentId": "mh79aek",
+              "text": "Wasn\u2019t core parking fixed on the 7950x3d as well?",
+              "upvotes": 52,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely factual question about a previous generation product (7950X3D).",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a question without expressed sentiment.",
+              "replies": [
+                {
+                  "commentId": "mh7hccq",
+                  "text": "Yes, but through the windows scheduler. This is almost certainly a better fix.",
+                  "upvotes": 67,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion focuses on the fix for the 7950X3D rather than the 9950X3D.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a technical comparison of fixes.",
+                  "replies": []
+                },
+                {
+                  "commentId": "mh7atde",
+                  "text": "https://youtu.be/QhGsQvDaEPo?t=966\n\nNah 7950x3d can be significantly slower than 7800x3d in some games, not the same for 9950x3d vs 9800x3d",
+                  "upvotes": 47,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Directly compares the 9950X3D to the 9800X3D in terms of gaming performance.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "User suggests the 9950X3D avoids the performance gaps seen in previous generations.",
+                  "replies": [
+                    {
+                      "commentId": "mh7ha3b",
+                      "text": "One game of the 7950X3D being slower than the 7800X3D is an outlier. They fixed the core parking issue quite early on, games that took advantage of v-cache heavily, like sims like MSFS, ended up being faster on a 7950X3D than the 7800X3D\n\nhttps://www.tomshardware.com/reviews/amd-ryzen-7-7800x3d-cpu-review/4",
+                      "upvotes": 39,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion is focused on the 7950X3D and 7800X3D.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a technical debate about previous generation performance.",
+                      "replies": [
+                        {
+                          "commentId": "mh80bcu",
+                          "text": "They made a hotfix so that most CPUs work as advertised, without fixing the underlying driver issues. Thats what AMD is now claiming to have fixed.",
+                          "upvotes": 20,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion is about driver fixes for previous generation CPUs.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a technical critique of AMD's driver history.",
+                          "replies": [
+                            {
+                              "commentId": "mhxd2sq",
+                              "text": "Just got a 9950X3D (coming from a 7800X3D), and some games still do not use the correct CCD - even with the newest chipset driver.  Monster Hunter Wilds is one of those games.  Using process lasso allows you to select the correct CCD, however, the performance gains with the correct CCD vs the wrong CCD are miniscule.  There are, however, far fewer low fps drops with the 3D Cache being present.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "User shares personal experience using the 9950X3D, mentioning CCD usage and FPS drops.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "User mentions both a technical issue (CCD usage) and a benefit (fewer low FPS drops).",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "mh7cvty",
+                      "text": "Huh that\u2019s really weird cuz when they fixed it way back there was no difference between the two, maybe methodology error from GN? I know there are a lot of bugs if you swap a 7950x3d into an existing windows pc https://youtu.be/4wdQpVcL_a4?si=pu4bgQfS5J6yW0hx",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion is about the 7950X3D and methodology errors.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a technical query about benchmarks.",
+                      "replies": [
+                        {
+                          "commentId": "mh7rmye",
+                          "text": "There is no error in that result. Checked, that one doesn't appear to be a methodology error. We also do not swap CPUs. As stated in the video, we have isolated drives for core parking. We do not mix and match drives ever.\n\nThere was a methodology oversight several months ago that we corrected, but it does not appear in this review as we rectified it. If interested in what that was: [https://www.youtube.com/watch?v=\\_ZDvfg-4ncg](https://www.youtube.com/watch?v=_ZDvfg-4ncg) / [https://gamersnexus.net/errors](https://gamersnexus.net/errors)\n\nHowever, in this instance, the result being discussed by you and the commenter above you is correct and verified.",
+                          "upvotes": 40,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Technical explanation from a reviewer regarding previous generation benchmarks.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a factual clarification.",
+                          "replies": [
+                            {
+                              "commentId": "mh88q5h",
+                              "text": "Thanks for the clarification Steve",
+                              "upvotes": 11,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Low-effort thank you message.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "No sentiment expressed toward the product.",
+                              "replies": []
+                            },
+                            {
+                              "commentId": "mi7rybl",
+                              "text": "PC Jesus, hail!",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Meme/Joke/Low-effort banter.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "No sentiment expressed toward the product.",
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "mh7fuf9",
+                          "text": "Avg. Performance for the 7950x3D was always  slightly better in games. But there were some outliers were the 9800x3d was better.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion is about the 7950X3D and 9800X3D.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a factual performance comparison.",
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "mhe4pms",
+                      "text": "That\u2019s not true. The core parking issue was fixed.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion is about the 7950X3D core parking issue.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual claim.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mhetqzo",
+                  "text": "7950x3d owner here, 100% they definitely fixed it\u2026 and I picked it up last fall for only $450 on Amazon.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "User shares experience with 7950X3D, not 9950X3D.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "User is satisfied with the 7950X3D and its price.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mh7kov3",
+              "text": "When will this be available to buy at msrp ?",
+              "upvotes": 8,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely factual question about availability/MSRP.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a question.",
+              "replies": [
+                {
+                  "commentId": "mh7msek",
+                  "text": "Going on sale tomorrow. It'll probably stick to MSRP.\n\nThe 9800x3D just returned to its MSRP.",
+                  "upvotes": 19,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Factual information about sales dates and MSRP.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is factual.",
+                  "replies": [
+                    {
+                      "commentId": "mh7q47j",
+                      "text": "Where which website should I look for ?",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Factual question about where to buy.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a question.",
+                      "replies": [
+                        {
+                          "commentId": "mh87850",
+                          "text": "www.amd.com",
+                          "upvotes": 4,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Factual answer providing a website link.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is factual.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mh7vcmf",
+                  "text": "If you wait a month or so, almost certainly.  Products like this will 100% sell out initially due to low pre-buffered stock and bots/online sales.  They can't just delay launch for 6 months to buffer stock at the normal production rate, and investing in bigger production lines just for the initial demand is not cost-effective.",
+                  "upvotes": 9,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General discussion about stock and production lines.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a general market analysis.",
+                  "replies": [
+                    {
+                      "commentId": "mhdu1lm",
+                      "text": "this comment has aged like fine milk.\n\ni don't see stock issues of the 9950X3D anywhere.\n\nheck i didn't even need to keep refreshing a webpage to order mine or even bother to use stock trackers.\n\nmy guess is that most people just realized they don't really need the 9950X3D over the 9800X3D for gaming and they can just save 200$ on their CPU, this is probably why there are no stock issues for the 9950X3D (at least right now)",
+                      "upvotes": 5,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "User shares experience with purchasing the 9950X3D and compares its value to the 9800X3D.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "User notes that the 9950X3D is available but suggests most gamers don't need it over the 9800X3D.",
+                      "replies": [
+                        {
+                          "commentId": "mhex613",
+                          "text": "Yeah, seems the majority of people here who mostly game shouldn\u2019t jump the gun and get the 9950x3d over the 9800x3d because you sure as shit ain\u2019t getting $300 worth of better performance lol. If you need the extra cores for higher workloads you probably already know what you need to do. Waiting was good cause now you know you can get the performance of a 9800x3d and 9950x so there is no compromise.",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Opinionated discussion on the value proposition of the 9950X3D vs 9800X3D.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "User suggests it's not worth the extra cost for gamers, but positive about the 'no compromise' performance.",
+                          "replies": []
+                        },
+                        {
+                          "commentId": "mhh4k2k",
+                          "text": "run out everywhere now in UK",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Factual statement about stock in the UK.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is factual.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mha62nt",
+                  "text": "The 9800x3d over the holidays likely soaked up a lot of demand for this so I suspect it won't be long. Most gamers will buy the 9800x3d anyways since it is cheaper so it will mainly be content creators and people who game and work on the same machine who are in the market for this part.",
+                  "upvotes": 6,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discussion on who the target audience for the 9950X3D is (content creators vs gamers).",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral analysis of market demand.",
+                  "replies": [
+                    {
+                      "commentId": "mhmfbvs",
+                      "text": "My 9800x3d has handled everything I throw at it. I think the multi core performance of it is still better than i9s from a few years back",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "User shares experience with 9800X3D, not 9950X3D.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "User is satisfied with the 9800X3D performance.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "mh7v26e",
+              "text": "so how is it decided what goes on what core?",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual question about core allocation.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a question.",
+              "replies": [
+                {
+                  "commentId": "mhcz409",
+                  "text": "Is core parking when gaming, powering down the other CCD, or, once the game is started, can other processes, like OS make use of the other CCD? Or, is the OS and the game processes just running on that one CCD with v-cache, with the other CCD entirely disabled?",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Factual question about core parking mechanics.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a question.",
+                  "replies": [
+                    {
+                      "commentId": "mhd6sjg",
+                      "text": "From what I understand, itll place the game on the CCD with the v-cache, and if other processed come up then it'll go onto the other CCD. Otherwise, if the other ccd isn't needed, then the CCD with the v-cache will just chug along while the other one is kind of sleeping",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Factual explanation of how core parking works.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual explanation.",
+                      "replies": [
+                        {
+                          "commentId": "mhde1gw",
+                          "text": "How does it know which process is the thame?",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Factual question about process identification.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a question.",
+                          "replies": [
+                            {
+                              "commentId": "mhdo9vi",
+                              "text": "I hear it requires game bar to identify the processes",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Factual answer about Game Bar requirement.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is a factual answer.",
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "mhem48s",
+                          "text": "Btw, just saw somewhere that ArsTechnica wrote this:\n\n\"AMD's driver software is responsible for deciding what apps get run on which CPU cores\"",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Factual information about driver software responsibility.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a factual statement.",
+                          "replies": []
+                        },
+                        {
+                          "commentId": "mhd9tr8",
+                          "text": "That sounds nice. I was worried the bios would just power down the other CCD entirely, making it completely useless.\n\nJayTwoCents seem to show a more dynamical process I see (which is nice I guess). Requiring using the 'balanced' powerplan, as 'performance' messes up core parking I think he says in this most recent video on youtube.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Factual discussion about BIOS and power plans.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a neutral technical discussion.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "mh7vu1a",
+              "text": "They fixed what i think made 7950x3d a bad product, pog.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User expresses opinion that the 9950X3D fixes issues that made the 7950X3D a bad product.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User is happy that the issues were fixed ('pog').",
+              "replies": [
+                {
+                  "commentId": "mli22fr",
+                  "text": "Wasn't that fixed along the way though ?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Factual question about previous generation fixes.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a question.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mh7xo04",
+              "text": "It still requires XBOX Game Bar for proper detection.",
+              "upvotes": 7,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Technical critique regarding the requirement of XBOX Game Bar for detection.",
+              "sentiment": "negative",
+              "sentimentReasoning": "User expresses a negative view of this requirement.",
+              "replies": [
+                {
+                  "commentId": "mkukauh",
+                  "text": "gross",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Reaction to the XBOX Game Bar requirement for the 9950X3D.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "User describes the requirement as 'gross'.",
+                  "replies": []
+                },
+                {
+                  "commentId": "mhdl05h",
+                  "text": "Source?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Factual question asking for a source.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a question.",
+                  "replies": [
+                    {
+                      "commentId": "mhdnl9w",
+                      "text": "[https://www.techpowerup.com/review/amd-ryzen-9-9950x3d/29.html](https://www.techpowerup.com/review/amd-ryzen-9-9950x3d/29.html)",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Factual answer providing a link to a review.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual answer.",
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mhh14x7",
+                  "text": "I'll use Linux instead.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Off-topic comment about using Linux instead of Windows.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a statement of personal preference for OS.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mh7qwe3",
+              "text": "Does that mean the improvement will be passed to the 7950x3d?\n\nEdit: Looking at the video, seems like it's looking better, so the answer is probably yes",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual question about whether improvements are passed to 7950X3D.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a question.",
+              "replies": []
+            },
+            {
+              "commentId": "mhbp8qx",
+              "text": "Love to see this. I originally built my current rig with a 3950X and loved having so many cores. When they announced the 5800X3D, it was a hard decision to halve my cores\u2026 but still worth it for games. It was always disappointing that when we finally got a x950X3D chip it wasn\u2019t perfect. Love that we can finally get the best of both worlds. I\u2019m definitely getting one in a generation or two.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User expresses desire to buy the 9950X3D because it offers the 'best of both worlds'.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User is excited about the product's capabilities and intends to purchase it.",
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "model": "gemma-4-31b-it"
+}

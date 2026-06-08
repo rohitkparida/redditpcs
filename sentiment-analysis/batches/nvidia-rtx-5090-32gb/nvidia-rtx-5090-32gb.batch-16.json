@@ -1,0 +1,250 @@
+{
+  "productName": "nvidia-rtx-5090-32gb",
+  "batchIndex": 16,
+  "totalBatches": 19,
+  "comments": [
+    {
+      "commentId": "1svwx1x",
+      "text": "Guide on building a system for 30B dense models.\n\nHey everyone, not a native speaker so please correct me if I make mistakes!\n\nWith the current trend of API models generating lower-quality results over time, price hikes and whatnot, and now very strong \\~30B dense model being released, I see interest increasing in running these models. Thing is, I don't see that many guides in decision-making for building your own system to run them.\n\nIn this post I will highlight decisions I made during building my own PC back in January 2026 ( [https://www.reddit.com/r/LocalLLaMA/comments/1qdtvgs/not\\_as\\_impressive\\_as\\_most\\_here\\_but\\_really\\_happy\\_i](https://www.reddit.com/r/LocalLLaMA/comments/1qdtvgs/not_as_impressive_as_most_here_but_really_happy_i) ).\n\nI will be using current (2026-04-26) Dutch prices (megekko.nl for new, markplaats.nl for used) as reference.\n\n# Goals\n\n* Running Qwen3.6 27B (Q5\\_K\\_M) with 200K (Q8\\_0) context + mmproj (on CPU).\n* Running Gemma4 31B (Q5\\_K\\_M) with 128K (Q8\\_0) context + mmproj (on CPU).\n\n>Why this target?\n\nWith MoE models we can get away with a single weaker GPU (like a Strix Halo or experts offloading), but for dense models it would be really slow.\n\nFrom my practical experience, difference between Q4 to Q5 is quite noticable. From Q5 to Q6 and higher depends more on non-latin use however ( [https://localbench.substack.com/p/gemma-4-31b-gguf-kl-divergence](https://localbench.substack.com/p/gemma-4-31b-gguf-kl-divergence) ).\n\nWhile I understand Q8\\_0 for context isn't lossless for Gemma4 ( [https://localbench.substack.com/p/kv-cache-quantization-benchmark](https://localbench.substack.com/p/kv-cache-quantization-benchmark) ), at half the model's context (128k of 256k) I have yet to experience issues with it in practical use.\n\n# System parts\n\n**Buy used?**\n\nIf you're willing to bear the risk, it is a really good option (and can be much cheaper!)\n\nPersonally, due to the uncertain times and not being able to secure that money relatively soon in case anything goes wrong or breaks, **I did not**. So my own choices resolved buying around new hardware.\n\n**GPU**\n\nMost important part(s) of the system. You have a few options:\n\n* NVIDIA RTX 5090 32GB: 3500EU (New)\n* AMD Radeon AI R9700 Pro 32GB: 1500EU (New)\n* **2x NVIDIA RTX 5060 Ti 16GB: 2x 560EU (New)**\n* 2x AMD Radeon RX 9060 XT 16GB: 2x 480EU (New)\n* 2x NVIDIA RTX 3090 24GB: 2x 1000EU (Used)\n* 2x NVIDIA RTX 4060 Ti 16GB: 2x 450EU (Used)\n\nThe R9700 Pro is the best value for money here. Only downside is how loud it is (blower-style fan) and the lack of CUDA (in case you need it, for inference you can use Vulkan on llama.cpp).\n\nPersonally I went for two ASUS PRIME RTX 5060 Ti 16GB. I could buy one first and the other later. That specific model is very silent under load and draw very little power. MXFP4 / NVFP4 hardware support is a nice bonus, CUDA makes anything AI software related easy to set up.\n\n>What about Intel?\n\nWhile their prices are really good, the performance isn't (slow hardware and unstable drivers). Look up B70 and B60 reviews on this subreddit for more info so you know what you're getting into.\n\n>What about datacenter GPUs? (P40, V100, MI25, MI50, etc)\n\nNo comment as I have too little experience with them. From what I've read here they can be really good, so look them up!\n\n>Anything to be careful of?\n\nWhen buying RTX 3000 series cards: they might've been used for mining, which significantly reduced their lifespan if so. Repaste them!\n\nFor RTX 5090, be very careful as they my have bad 12vhpr connectors required for them ( [https://gamersnexus.net/gpus/12vhpwr-dumpster-fire-investigation-contradicting-specs-corner-cutting](https://gamersnexus.net/gpus/12vhpwr-dumpster-fire-investigation-contradicting-specs-corner-cutting) ). Undervolting is a good idea!\n\n**Motherboard**\n\nIf you choose the RTX 5090 or R9700 Pro, any used PCIE 4/5 x16 motherboard is fine.\n\nOtherwise, you really want a motherboard that supports PCIE 5.0 x8x8 mode. Not doing so results in a performance penalty, which is especially bad for the RTX 5060 Ti. Options I know supporting x8x8 include:\n\n* **ASUS PROART X870E-CREATOR WIFI: 380EU (New)**\n* ASUS PROART B850-CREATOR WIFI NEO: 270EU (New)\n* ASUS Pro WS B850M\u2011ACE SE: 400EU (New)\n* Gigabyte B850 AI TOP: 400EU (New)\n* ASRock X870E TAICHI LITE: 410EU (New)\n\nI went with the PROART X870E as it has the best chipset available for a good price and good PCIE x16 slot placement for the cards I want to use. Most 2/3-slot GPUs are actually 3/4-slot due to their cooler's size.\n\nIt also supports display routing: Connect the monitor to the motherboard's display port (HDMI or DP), during inference the GPUs can use their full 16GB each and the iGPU handles the display. When playing games, the motherboard uses the GPUs and not the iGPU without having to change cables around.\n\n>What about Intel?\n\nDidn't research! I knew I wanted an AMD Ryzen 9000 CPU.\n\n**CPU**\n\nIt kinda depends.\n\n* AMD Ryzen 5 5600 AM4: 130EU\n* AMD Ryzen 5 7600 AM5: 170EU\n* **AMD Ryzen 5 9600 AM5: 200EU**\n\nIf you choose the RTX 5090 or R9700 Pro, you can get away with the the Ryzen 5 5600 or better.\n\nOtherwise, an AMD Ryzen 7600 and better will do.\n\nI went with the AMD Ryzen 5 9600X as I wanted the AVX-512 improvements from the Ryzen 9000 series for my work.\n\n>Why not 8+ cores?\n\nYou won't get much benefit of having more than 6 cores, you're getting RAM bandwidth starved ( [https://www.reddit.com/r/LocalLLaMA/comments/1qdtvgs/comment/nztj6g7](https://www.reddit.com/r/LocalLLaMA/comments/1qdtvgs/comment/nztj6g7) ).\n\n>Why not Ryzen 5500 or Ryzen 8000 series?\n\nThe AMD Ryzen 5 5500 and older doesn't support PCIE 4.0, Ryzen 8000 series on AM5 uses PCIE 4.0.\n\n>What about Intel?\n\nDidn't research! I knew I wanted an AMD Ryzen 9000 CPU.\n\n**RAM**\n\nYou want to have at least 32GB RAM, prefer 2x 16GB. More capacity is always really useful but a luxury.\n\nI personally have **96GB (2x 48GB) DDR5-6000 CL30** which I bought before the RAM demand increase (September 2025).\n\nHaving at least 96GB is needed when running 120B MoE models, but you don't need it to run Qwen3.6 27B nor Gemma4 31B.\n\n**Other hardware**\n\nMake sure there is at least 1 slot space between the graphics cards inside your case, and that a fan is blowing away the heat of the GPU's backplate.\n\nIf you have an iGPU, attach the display to it to free up a little more VRAM. Every byte counts!\n\n**The software side**\n\nYou really want to use llama.cpp directly for the least overhead.\n\nMake sure to specify when using two GPUs:\n\n    device = cuda0,cuda1 (or vulkan0,vulkan1 when using AMD)\n    tensor-split = 16,16 (or 24,24 when using RTX 3090)\n\nThat way llama.cpp knows how to handle the dual GPU setup.\n\n# Performance\n\nMetrics for my build (the highlighted parts).\n\nQwen3.6 27B:\n\n* Processing: 1280 t/s at 32k, 710 t/s at 100k\n* Generation: 20 t/s at 32k, 14 t/s at 100k\n\nGemma4 31B\n\n* Processing: 970 t/s at 32k, 620 t/s at 100k\n* Generation: 17 t/s at 32k, 9 t/s at 100k\n\n# That's it!\n\nHopefully this infodump was helpful to you! Let me know your questions or thoughts down below, I'll be happy to help where I can.",
+      "upvotes": 14,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "oibp71u",
+          "text": "Yeah I have two 7900xtx with less then one slot of spacing between them. Seem to be running just fine in my torrent.\n\n\nSo youve missed a very possible alternative of 7900xtx, and I think you're overselling the need for spacing (though my case is one of the best standard air cooled cases) if you UV/OC them half well and stability test them and check for output distributions aren't pumping errors from your tuning.\n\n\n\nMaybe I wouldn't want it to do a 3hr job unattended incase of thermals, but ive never seen it spike above 70 degrees mem temp at the moment on qwen27b q8 150k context.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oibt99h",
+              "text": "On 7900xtx: I was running out of space on the post body, so some GPUs had to make the cut. Good call though! It goes for \\~1000EU used in the Netherlands, same price as the RTX 3090.\n\nRegarding spacing: I wouldn't feel confident in recommending people slapping two RTX 3090's with no spacing against each other, it's not something I would do (especially since I run batches 24/7 for a month straight on those cards). \n\nBesides the case design, it also depends on the GPU design. For example, my card has half of it's back open for air passtrough, and exhaust heat through the side vents.\n\nhttps://preview.redd.it/fia0nqy50hxg1.png?width=700&format=png&auto=webp&s=5f7dc3d789a13011e20c19cac5ce8cb677658a53",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "oid05rn",
+                  "text": "1k EUR? wow i'm glad I got mine for \u00a3570 a few days ago even though that did hurt my wallet",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "oidveiq",
+                      "text": "Yeah feel the same, got my RTX 5060 Ti 16GB's for 470 EU and the later one around 590 EU. They sell close to 600EU new here. But to be fair, tech in the Netherlands is especially expensive compared to other regions like Germany.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "oibsxc5",
+          "text": "Excellent guide! You only missed talking about RAM speeds (both VRAM and RAM) and perhaps native hardware support for various number formats in different GPU chip generations.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oibvv62",
+              "text": "Thank you!\n\nI wish I had more space to include it all! To answer all your questions:\n\nFor RAM: you want the highest frequency possible with your budget / system. DDR5 will be much faster than DDR4. I went with DDR5-6000 because it aligns directly with the infinty fabric clock of the Ryzen 5 9600X, but that's more important for gaming than LLMs. If I wanted fast CPU inference, I would look for DDR5-8000 if possible (and the motherboard being stable with that clock, most X870E motherboards only can handle 7600! HardwareUnboxed tested it: [https://www.youtube.com/watch?v=keJHego7neI](https://www.youtube.com/watch?v=keJHego7neI) ).\n\nFor VRAM: look at your GPU's bandwith. The higher bandwith wins. One card with slightly lower bandwith will win over two cards with slightly higer bandwith due to slow PCIE 5.0 comminucation. For the RTX 3090 specifically this can largly be mitigated using NVLINK bridge.\n\nHarware support for formats on the consumer side:\n\n* Only Blackwell (RTX 50 series) support MXFP4 / NVFP4 natively.\n* Ada Lovelace (RTX 40 series) and RDNA 4 (RX 9000 series) introduced FP8 support.\n* Ampere (RTX 30 series) and RDNA 2 (RX 6000 series) and newer support BF16 natively.\n\nFor Intel I don't know, I haven't been interested in their cards as they are still too unstable.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "oibvduz",
+          "text": "I run 9600x w/ 2x 5060ti 16gb and 64gb ddr5. I use it in a pcie4 x8/x1 config. You really don't need pcie5 x8/x8 unless you're maxing out concurrency in vllm with multiple threads in multiagent environments. When you're in llama.cpp using pipeline parallelism you won't notice at all. For single threaded tasks I'm leaving only a small portion on the table. Paid 100 for the board.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oibyg18",
+              "text": "Sounds really nice!\n\nWhat numbers are you getting for Qwen3.6 27B and Gemma4 31B at 100k context for processing and generation in llama.cpp?\n\nAnd what board are you using?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "oibzboe",
+                  "text": "I get ~33tok/s in 27b nvfp4 vllm at 175k context. Not sure how well that holds at full context. Asus Prime b650m-a ii. ",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "oibn5su",
+          "text": "I'm like very new, I use chat gpt plus all the time, and claude based on the issue, cause I run out of credit, the question here will 2 rtx 5060ti enough or the r9700 will the experience be similar on the long term, I'm planning to keep gpt but dunno I feel kinda all models paid or free make u feel like you stuck in a loop with zero productivity like they are fooling us somehow, humans help!!! ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oiboezn",
+              "text": "Ask yourself if you want raw performance and more expandability, or less energy cost and less noise.  \nIf the former is important: get one R9700, leaves you room to expand later if needed.  \nIf the latter, get the two 5060 ti 16GB (the asus prime model in quiet mode is really good!).",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "oiboikr",
+          "text": "I\u2019m trying to buy a Mac. But always fascinated by how fast discrete cards run\u2026",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "oibx3s9",
+          "text": "Funny thing with MoE models.. they are just a little worse (Qwen3.6 35b-a3b, Gemma4 26-a4b) and works faster even at used PC worth fully like 600EUR (with Rtx3060 12Gb, 32Gb RAM etc)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oiby43g",
+              "text": "Can't say much for Qwen3.6 36B-A3B personally but a friend of mine did find noticable differences in output quality. He said it essentially reached the same conclusions in the same time period as Qwen3.6 27B but required far more tokens and a bit more steering to get there.\n\nFor roleplay I found Gemma4 26B-A4B significantly worse than 31B because it wasn't able to pick up nuance or specific subtle character traits/behaviours/speech patterns, etc.\n\nSo no, I can't fully agree with that regarding quality. But in terms of speed, yeah a MoE model will absolutely help those older systems.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "oic9b4q",
+          "text": "Anyone know how to best use it in VSCode? Which extension to bind it to vscode?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "oichs1f",
+          "text": "Intel's B60 is still hands down best bang for buck for those who can't spend 4 figures on GPU.\n\nIntel's GPUs are also more stable and performant on Linux. Why would anyone use Windblows for LLMs in the first place?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oidxkad",
+              "text": "On linux: because I'm using my PC more than only LLMs.\n\nVisual Studio 2022 virtualized is NOT fun, some games I play don't run on Linux (like Ghost of Tsushima multiplayer), dual booting had my boot partition nuked multiple times with Ubuntu 20.04. I'v learned my lesson!\n\nWonder if it'll be faster to use WSL2 or the container version of llama.cpp vs running in windows directly.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "oif8hr9",
+                  "text": "If you are using Visual Studio, then you must be developing Windows desktop apps, otherwise I just don't see any solid reasons. In terms of games, the situation is day and night difference from the days of Ubnuntu 20.04. Valve has moved mountains in terms of Windows game compatibility on Linux. Basically the only games that don't work now are the ones that require this bullshit retarded invasive kernel level anti-cheat crap. Last time I tried WSL2 on a shitty work Windows laptop it absolutely sucked ass.\n\nUltimately as others have said already (this thread or another) - Linux is first class citizen in terms of running LLMs, whereas Windows is definitely not.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "oidyd8s",
+              "text": "For the Intel B60: It's 800EU new over here (not bad!), but from what I've read before the user experience was quite bad ( [https://www.reddit.com/r/LocalLLaMA/comments/1qsenpy/dont\\_buy\\_b60\\_for\\_llms/](https://www.reddit.com/r/LocalLLaMA/comments/1qsenpy/dont_buy_b60_for_llms/) ). Has it changed much since?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "oif7emt",
+                  "text": "Base price is actually 700 euro. I've ordered mine on LDLC and paid 759 euro only because of their top notch support and EU-wide shipping. Gonna take it for a spin tomorrow. The choice for me was simple - I just don't have the budget to pay Nvidia tax at the moment, so it was either a B60 or nothing.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

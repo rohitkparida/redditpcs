@@ -1,0 +1,157 @@
+{
+  "productName": "SK Hynix Platinum P41",
+  "analyzedAt": "2026-06-05T11:21:52.366254",
+  "totalThreads": 3,
+  "threads": [
+    {
+      "url": "https://www.reddit.com/r/hardware/comments/v3g8jk/sk_hynix_platinum_p41_2_tb_review_faster_than/",
+      "subreddit": "hardware",
+      "commentCount": 35,
+      "positive": 10,
+      "negative": 6,
+      "neutral": 19,
+      "topComments": [
+        {
+          "author": "GhostMotley",
+          "text": "SK Hynix Platinum P41 2 TB Review - Faster than Samsung and WD",
+          "upvotes": 165,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "v3g8jk"
+        },
+        {
+          "author": "pastari",
+          "text": "They're all fast enough.  Its the other stuff that matters.\n\nSK Hynix's previous model was known for its excellent power efficiency, and was a top choice to put into laptops.  This review doesn't discuss power draw and sleep states anywhere that I can see.  Neat that its fast  but the review completely skips over the single selling point (is it still super efficient compared to competitors?) that would make me choose this over my goto samsung.",
+          "upvotes": 103,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "iay9v9m"
+        },
+        {
+          "author": "zeronic",
+          "text": "Most of the time the \"speed\" these companies advertise is pure sequential anyways which isn't really useful as a metric at this point. SSDs excel at random access and that has largely stayed fairly stagnant at the lower que depths.",
+          "upvotes": 48,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "iaybfmi"
+        },
+        {
+          "author": "Put_It_All_On_Blck",
+          "text": "Yeah I'm in the same camp. I have a 970 Evo, and have zero desire to upgrade to another SSD for more sequential speeds. Only reason to upgrade is for more storage space. I've looked into getting an Optane 905p as an upgrade, since there will be actual meaningful improvements for my workloads, but the price per GB is just too high for consumers.",
+          "upvotes": 10,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "iayhuwu"
+        },
+        {
+          "author": "lolubuntu",
+          "text": "As others alluded... pretty much all of these SSDs are \"fast enough\"\n\nIf you do need more speed, it's pretty much Optane as the only game in town - mostly because of its VERY low latency and ability to sustain performance during concurrent reads and writes (something usually NOT seen in reviews) meaning no 5-10x performance hit when the drive is under heavy, mixed use.",
+          "upvotes": 15,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "iaz7x01"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/hardware/comments/17i8o1f/didnt_realize_mlc_nand_could_outpace_in_some/",
+      "subreddit": "hardware",
+      "commentCount": 14,
+      "positive": 6,
+      "negative": 1,
+      "neutral": 7,
+      "topComments": [
+        {
+          "author": "evermorex76",
+          "text": "Didn't realize MLC NAND could outpace (in some cases) TLC NAND even despite faster PCIe speed (960 Pro vs Platinum P41)\n\nYes this is long. Short version is a 7 year old drive model can compete very well with a 1 year old model despite double the interface bandwidth, presumably because MLC NAND is itself faster. I'm not a storage expert, though.\n\nI've had a 512GB Samsung 960 Pro for a long time and wanted to upgrade to a faster drive to take advantage of the full PCIe 4.0 connection on my motherboard and newer flash and controllers and whatnot, but I was waiting until I could get something really good instead of just good enough, because the 960 Pro was already good enough. I finally got a few bucks extra so I got an SK Hynix Platinum P41 which is rated for more than double the read speed and nearly triple the write speed.\n\nI haven't had a lot of time to \"experience\" it, but benchmarks were interesting and almost make me think I might not actually see any difference. I cloned the old drive and have been working on adjusting partitions since the new drive is 1TB. Boot times for Windows actually seem to be noticeably higher, oddly. I didn't specifically time it before the replacement.\n\nThe numbers for the 960 Pro came from some months ago when I put in a secondary drive and decided to test them both. The 960 Pro was on the main M.2 slot connected to the CPU PCIe 4.0 (x4) lanes but the drive is only PCIe 3.0.\n\nAS SSD Benchmark shows the anticipated faster speeds, though it wasn't hitting quite the rated speeds. 2.34x sequential read and 2.92x sequential write speeds. 16% higher 4k read, but 16% lower 4k write speed. 4k-64thrd read was 29% higher with the P41, but write was 54% slower!\n\nATTO provides more detail and shows where the 960 Pro still wins hands down. At lower I/O sizes, the 960 Pro dominates the P41, nearly doubling both reads and writes for both throughput and IOPS. This is consistent up to 16KB, and becomes less overwhelming at 32KB, and only at 64KB does the P41 begin to outpace the 960 Pro. The P41 at that point continues to increase throughput as I/O size increases, but the 960 Pro never gets any faster. On the IOPS side, the 960 Pro plummets as the I/O size increases, while the P41 decreases much more slowly. By the end, the P41 is still doing more than 3x IOPS on write, and over 2x on reads.\n\nSo it seems to me that the MLC is SO fast that it probably could have still saturated a PCIe 4.0 connection even though it's now 7 years old. The P41 should have been working in pseudo-SLC mode for it to reach the 6GBps speeds I was seeing, yet it still doesn't perform as well as that old MLC at lower I/O sizes, which I bet is due to the limitations of the PCIe 3.0 connection and perhaps the older NVMe spec. (And the 960 Pro was even using Samsung's custom NVMe driver.)\n\nI'm going to run the benchmark again tomorrow, after the drive has had plenty of idle time to flush the SLC cache with all the data being copied and partitions moving around. I used GParted to move the C drive while it was still 630GB in size from the cloning, and it did it in bit-for-bit mode, so it literally wrote zeros to like 80% of the drive, despite moving it by only 300 MEGABYTES, which may have filled up the SLC cache causing the drive to write at native-TLC speeds at least partially. But given that it DID reach those high read and write speeds, it seems unlikely that it was significant, as reviews show the native-TLC speed is more like 1.5GBps.\n\nIf these tests indicate the true performance, then I can't assume I'll automatically get better performance simply due to it being a newer drive with a faster connection, despite it even being one of the highest-rated PCIe 4.0 drives (a year ago anyway). I'm not sure what my normal I/O size patterns look like. Most of my usage is web browsing these days (at least the stuff that impacts the main drive), plus playing Civilization 6 which isn't demanding on storage. But these days, even 16KB would be considered a \"tiny\" file, so it may still be that the average I/O will be much higher and into the range where the P41 is faster.\n\nIt's too bad that consumer SSDs will never have MLC again, and it's pretty expensive for enterprise drives. I'd think with process shrinks it could still be useful in terms of capacity, but obviously not for really massive storage, with a reasonable price premium for the performance.",
+          "upvotes": 17,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "17i8o1f"
+        },
+        {
+          "author": "vivaldibug2021",
+          "text": "In February or March, there was a discussion about SSD benchmarking done by the guys at PCPartPicker, and I requested them to try a 2-level MLC drive [for science](https://old.reddit.com/r/hardware/comments/1146b0s/ssd_sequential_write_slowdowns/jae0if1/) - might be tangentially related to your observations. They found it to perform unusually well, at least compared to stuff back then.",
+          "upvotes": 14,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "k6sshou"
+        },
+        {
+          "author": "Zargorz",
+          "text": "This is also why those of us with Optane love our drives. They never have performance slowdowns or hiccups. Can write the drive start to finish continuously for days. Neither will it degrade performance or start having latency issues. It just works.\n\nIf people want similar experiences from NAND. I would look at some of the used enterprise level drives targeted towards caching that are often 2-bit MLC or even SLC in some cases. May not win benchmarks compared to fast consumer drives and you pay a premium per GB. But they just like optane, just works and delivers consist performance.",
+          "upvotes": 10,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "k6sz99v"
+        },
+        {
+          "author": "Hamza9575",
+          "text": "If by optane you mean 3dxpoint. Then no ssd even at slc can beat optane, that was the point of the 3dxpoint tech and why it was developed in the first place. Sure slc ssds are better than tlc ssds but are not even close to 3sxpoint.",
+          "upvotes": 5,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "k6szviu"
+        },
+        {
+          "author": "ramblinginternetgeek",
+          "text": "&gt;If by optane you mean 3dxpoint. Then no ssd even at slc can beat optane, that was the point of the 3dxpoint tech and why it was developed in the first place. Sure slc ssds are better than tlc ssds but are not even close to 3sxpoint.\n\n[https://www.storagereview.com/review/dapustor-r5100-ssd-review](https://www.storagereview.com/review/dapustor-r5100-ssd-review)\n\nYou can get pretty close with NAND.\n\nIf you're comparing nvme vs nvme, it's \"close enough\"\n\nIf you have optane attached to a proper memory controller without the nvme overhead then things shift a bit.\n\nFor what it's worth I bought 10 years worth of Optane. My NASes and desktops swill all have 118GB, 280GB or \\~1TB optane drives in them. The optane will likely also serve as a cache for ISCSI arrays (mostly for old steam games) to help cut down on network transfers. \n\n  \nWith that said if you do full disk encryption the limit often shifts to the CPU, mitigating much of the benefit of Optane on a boot/program drive.",
+          "upvotes": 2,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "k74cg5a"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/buildapc/comments/1iycon5/ssd_more_reliable_than_a_sk_hynix_platinum_p41_2tb/",
+      "subreddit": "buildapc",
+      "commentCount": 6,
+      "positive": 4,
+      "negative": 1,
+      "neutral": 1,
+      "topComments": [
+        {
+          "author": "Plazmatic",
+          "text": "SSD More reliable than a SK hynix Platinum P41 2TB?\n\nMy SK hynix Platinum P41 2TB has started to have BSOD issue, claiming \"event 161 volmgr\" with \"\\Device\\HarddiskVolume3\", now I'm in the market looking for a new SSD.  What are good options in the $200-&gt;$300 range 2TB+? I get confused by SSD specs since there's so many things to look at, and now I realize most of the \"real\" reviews for this SSD weren't great and apparently they are prone to failure.",
+          "upvotes": 2,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "1iycon5"
+        },
+        {
+          "author": "Bigfamei",
+          "text": "WD SN580X",
+          "upvotes": 10,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "metf30g"
+        },
+        {
+          "author": "psycho_Greg",
+          "text": "Ten te\u017c si\u0119 grzeje i ma znacznie wy\u017cszy pob\u00f3r energii.\u00a0\nI nie wiem czy ma bufor DRAM",
+          "upvotes": 1,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nzishyl"
+        },
+        {
+          "author": "aragorn18",
+          "text": "Samsung 990 Pro",
+          "upvotes": 3,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "metex94"
+        },
+        {
+          "author": "fluffh34d420",
+          "text": "Jeesh. I was gonna go with the Samsung 990 and chose the hynix cuz it was like 50$ off. \n\nWhelp, guess I'll see.",
+          "upvotes": 3,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "metlmf8"
+        }
+      ]
+    }
+  ]
+}

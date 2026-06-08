@@ -1,0 +1,249 @@
+{
+  "productName": "asrock-x870-pro-rs",
+  "batchIndex": 3,
+  "totalBatches": 3,
+  "comments": [
+    {
+      "commentId": "1lmce4e",
+      "text": "X870 Pro RS wont post, green light showing, black screen, no keyboard input\n\nHeya, I had this issue since pretty much putting the system together less than a month ago.\n\nAsrock X870 Pro Rs, Ryzen 7 9800x3d, Radeon 7900xt, 2x 16 gb kingston fury ddr5ram\n\nIt started out as a crash and then i wasnt able to reboot into widows, as in total black screen.\n\nTrying to restart a couple times, it fixed itself.\n\nIt was running fine for days, then in the morning the pc would boot again. Blackscreen with the green light showing.\n\nI flashed the bios to 3.30 via usb, it ran through like described in the manual. After completion and a complete shutdown for 2 minutes.\n\nI turned on the machine and it booted, odly enough it asked me to recreate the pin for my password, without giving me an option to even enter it.\n\nOverall the only thing noticeable during the last 2 weeks was that the cpu was running up to 80+ degrees when running cpu and gpu intense programs, which i solved by applying a \"better\" thermalpaste 2 days ago and since the cpu went down to 50-60degrees.\n\nYesterday night I was still utilizing the pc fully, but today when i returned i found another black screen, it seems that it went into standby mode and never awoke.\n\nI tried the same as before, restarting the pc 50 times and flashing the bios back and forward to different versions... yet still I return to my original issue...\n\nI already tried my 2 ram sticks in each slot, accoring to the mainboard lights there is an issue if i slot no ram inside and if any of the 2 ram sticks are in slot a1 and b1. If any of the sticks are in A2 or B2, i get past the ram light which then is stuck on green.\n\nI\u00b4ve tested the grafic card in my old rig and it works fine.\n\nI\u00b4ve reseated the cpu and check all pins, there is no issue there.\n\nIve tried a cmos reset aswell, by removing battery for a couple of minutes and connecting the cmos pins.\n\nWhen i turn on the pc, every fan starts spinning, i see a red and yellow light shining for about 5 seconds then it turns into a green continues light which never changes.\n\nI am not 100% sure, but i believe it always flashed through this series of lights before showing a white light and then no lights after start up.\n\nI tried starting with no devices connected, including ssd aswell no graphic card and using the integrated to no avail.\n\nMy friend and I sadly do not have another board/cpu to test if it is either of them, but we suspect the mainboard as the culprit, specifically being stuck at the green light gives it away.\n\nI\u00b4ve been looking through posts online for the past 2 weeks and even more so since 2-3 days and no one is stuck really at the green light - indicating a boot issue.\n\nAlso all attempts to get into bios or get any further than the blackscreen fail, I cannot even see that the keyboard ever lights up indicating that i could enter bios.\n\nThe keyboard obviously works, on my old machine and i\u00b4ve also tried connecting the keyboard via usb to the top of the case instead using the mainboard slots, of which i also tried every single one.\n\nI get no boot screen instead green light and black screen when trying to connect with or without any devices connected.\n\nI also have no sound output on this mainboard only the lights which indicate a boot issue as per manual.\n\nTrying my display port or another hdmi monitor, which both work fine, does not get me anything but a black screen.\n\nYesterday i\u00b4ve been constantly monitoring the cpu and gpu while using graphic and cpu intense programs and it never showed any signs of an issue. Gpu ran smooth at 65 while the cpu hung around 50 degrees.\n\nI never receive any sign that the keyboard is connected when this is occuring. The couple of times where it worked after \"reboots and once via bios flashing\" it instantly lights up and shortly after I am able to go into the bios.\n\nI am stuck at this right now and thinking about returning my asrock x870 and replacing it.\n\nIf anyone has experienced a similar issue, i would really appreciate the help.\n\nIts sad to see so many other people having issues with the asrock boards, which is funny cause according to a numerous amount of reviews i saw little wrong with the mainboard and components.\n\nThanks for your help in advance\n\nPS: My friend and I graduated as computer technician and have always build, upgraded and troubleshoot together succesfully.\n\nWe have a feeling that there is an issue with the mainboard.\n\nI was not able to spot any failures or issues during tests after creating this computer, cpu, gpu, ram all ran within their speccs except for that ARCTIC MX-4\u00a0thermal paste i bought and applied on the cpu first, where it ran kinda hot but also within speccs, it did not crash during full load testseven when reaching 80-95 which is at the maximum it can support. Applying the new thermal paste from kryonaut reduced the number to 50-60 degrees.",
+      "upvotes": 3,
+      "classifyThis": true,
+      "relevance": "include",
+      "relevanceReasoning": "Discusses a hardware issue with the ASRock X870 Pro RS",
+      "sentiment": "negative",
+      "sentimentReasoning": "Presents a clear problem with the ASRock X870 Pro RS",
+      "replies": [
+        {
+          "commentId": "n0anlwu",
+          "text": "You're not the only one with this problem. I've also had it for the past few months. For the first 3 weeks or so the system ran perfectly, but then it started booting to green light from a cold start. Doesn't happen every time, but pretty frequently. Only resolution is to hit the case reset button once it gets stuck in that state, then it boots normally.\n\nI changed the motherboard to an MSI board and it fixed the problem. Seems to be an Asrock BIOS issue. I'm running 3.30 and there's still no resolution.\n\nMy original post - [https://www.reddit.com/r/ASRock/comments/1l2ibdw/intermittant\\_failure\\_to\\_boot\\_green\\_light\\_9800x3d/](https://www.reddit.com/r/ASRock/comments/1l2ibdw/intermittant_failure_to_boot_green_light_9800x3d/)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses a common issue with the ASRock X870 Pro RS motherboard.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a personal experience with the motherboard issue.",
+          "replies": [
+            {
+              "commentId": "n0aseju",
+              "text": "Thanks for your response, yes I get that feeling more and more when reading about it in forums. It seems to be a faulty badge of mainboards that was send out, might be small but obviously still stands out and the fact that it comes out of nowhere and in between the system is running perfectly. Makes me think there are some short circuit or other connectivity issues in the booting/bios sectors on the mobo.\n\nSad really, because a lot of other buyerse report that it is working perfectly for them.\n\nI dont have a reset button on my case (any more lol), but I\u00b4ve tested the reset manualy and it simply doesnt work anymore at all.\n\nCompletely stuck every time in the green light with no activation of keyboard or display.\n\n  \nGrftjx",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experience with ASRock X870 Pro RS and mentions a faulty badge of mainboards.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Presents a personal experience with ASRock X870 Pro RS and mentions a faulty badge of mainboards.",
+              "replies": []
+            },
+            {
+              "commentId": "n1mkrsj",
+              "text": "which board did you end up getting? Im running into the same issue now after 3 months with the PC working completely fine. Now it will randomly not boot",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experience with PC performance issues.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Presents a negative sentiment about the PC's performance.",
+              "replies": [
+                {
+                  "commentId": "n1ni0jv",
+                  "text": "I picked up a MSI MAG B650 because it was pretty cheap and I didn't particularly need PCIe5. Such a huge waste of time doing all this troubleshooting and system swaps though.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses personal experience with ASRock X870 Pro RS and MSI MAG B650.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Presents a negative sentiment about the decision to purchase the MSI MAG B650.",
+                  "replies": [
+                    {
+                      "commentId": "n1ntz96",
+                      "text": "Are you running into any issues with the msi board? Not looking forward to it but Ill definitely switch if it means no more time wasted",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "n9bv5uv",
+          "text": "Any updates? Did u use pbo?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ndhbz0y",
+          "text": "I have been facing the same issue for the past few days. How did you resolve it??",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a neutral sentiment about the product.",
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "1kxkqgs",
+      "text": "ASRock X870 Pro RS - how to completely disable PBO?\n\nHello   \nI've recently built Ryzen 7700 + ASRock X870 Pro RS (BIOS 3.25) + DDR5-6000 CL-30\n\nMy PBO setting is left at default AUTO, EXPO mode for RAM enabled (6000/CL30). \n\nSo only this one change (enabling EXPO on RAM -&gt; 6000/30), everything else on \"UEFI defaults\"\n\nDoes this mean PBO is fully disabled and my CPU is fully stock? This \"Auto\" setting kinda seems a bit vague.\n\nI just want to achieve stock performance (eg. the one presented on TechPowerup review with green bar), \n\n[Techpowerup Ryzen 7700 review, 720p performance summary](https://preview.redd.it/6pvji8dlmj3f1.png?width=481&amp;format=png&amp;auto=webp&amp;s=cc546f0416361b2f5d773e1b63665d51c037a6c3)\n\nAnd based on the recent news PBO may be not that \"mild\"... So better to be safe than sorry and completely disable it (if it gives you \\~1.5% with possible malfunction risk)",
+      "upvotes": 4,
+      "classifyThis": true,
+      "relevance": "include",
+      "relevanceReasoning": "Discusses PBO settings and stock performance",
+      "sentiment": "positive",
+      "sentimentReasoning": "PBO is fully disabled and stock performance is achieved.",
+      "replies": [
+        {
+          "commentId": "muq2psj",
+          "text": "I'm not sure you can as opportunistic boosting is the way CPUs are designed to have the great performance they have today. Just leave the \"Performance Boost\" at \"Auto\" in the \"OC Tweaker\" page in UEFI as that should just use the AMD defaults.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "muq1ktw",
+          "text": "I turned off PBO, and still the CPU got to 5.7GHz which it did not do on an earlier bios revision. On 3.25...\u00a0\nStrange behavior.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses CPU performance on a specific revision of the ASRock X870 Pro RS.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "PBO (Power Management Optimization) is a feature that can be turned on or off. It's possible that the CPU's performance was affected by the PBO being turned off. However, it's also possible that the issue lies with the specific revision of the ASRock X870 Pro RS. Without more information, it's difficult to determine the exact cause of the issue.",
+          "replies": []
+        },
+        {
+          "commentId": "mutdkio",
+          "text": "I really don't like that Auto setting for PBO too. No one seems to know definitively if Auto means hard Disabled or Enabled with AMD AGESA settings, or Enabled with Motherboard settings etc. I manually switched mine to Disabled after using Auto since I installed my new 9950x3D into a brand new X870E Nova back in late March. Hopefully nothing bad happened to my CPU. I'm not taking any chances with this one. I lost THREE 7950x3Ds running EXPO and PBO on an Asus B650E-F board, I am not trying to repeat that again. Completely stock life for me.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experiences with ASRock X870 Pro RS.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Presents a negative sentiment about the Auto setting for PBO.",
+          "replies": [
+            {
+              "commentId": "mux6hw7",
+              "text": "Does your board say what the difference between auto and enabled is? At least with my B650E Riptide, it says enabled is for motherboard limits, and auto is the default settings.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the difference between auto and enabled settings on the ASRock X870 Pro RS motherboard.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a relevant discussion about the motherboard settings.",
+              "replies": [
+                {
+                  "commentId": "muxc4tl",
+                  "text": "No there's no explanation in the BIOS what the settings do. That's why I am setting it to Disabled so it's completely off. I didn't notice any change in performance in doing so. Hopefully Auto means Disabled otherwise that's some serious BS...",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the BIOS settings of ASRock X870 Pro RS",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents a neutral stance on the impact of disabling the BIOS settings.",
+                  "replies": [
+                    {
+                      "commentId": "muz755t",
+                      "text": "I just build b650 lightning pg with ryzen 7700 i hope im safe :D what version are you on 3.25?",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "muznu0i",
+                          "text": "Yes I'm on 3.25. I can also safely say PBO set to Auto is definitely not enabled. I got the same score in Cinebench R23 with it set both to Auto and Disabled. That's comforting at least.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses personal experience with PBO settings and performance.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "PBO set to Auto is not recommended for optimal performance.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentId": "1g0vupx",
+      "text": "Opinions on the MSI Pro X870-P Wi-fi?\n\nHello everyone,\n\nI've been wanting to upgrade to AM5, and have bought most of the parts; however I still haven't picked a motherboard yet. I've been considering the MSI Pro X870-P Wi-fi, even though it's completely overkill for my system, but I haven't found many reviews of it yet.\n\nSome alternatives I've found with similar prices (keep in mind I live in Brazil, so the prices are all different here):\n\nAsrock B650E Steel Legend \n\nAsrock X670E PG Lightning \n\nAsrock X670E PRO RS\n\n\n\nHere is my build:\n\n\nCPU: Ryzen 7600X\n\nCooler: Scythe Fuma 2\n\nGPU: RX 6750 XT\n\nRAM: 2X16 GB XPG Lancer Blade 6000 MHz, CL30\n\nPSU: Corsair RM650X\n\nSSD: WD SN850X\n\nCase: Montech Air 903 Max\n\n\nI chose this motherboard because it has some interesting features that might become more relevant in the near future (mainly PCIe 5.0 M.2 and PCIe 5.0 x16), and I'm planning on carrying this motherboard up until the end of the AM5 lifespan.\n\nThanks in advance.",
+      "upvotes": 1,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "lwkjykr",
+          "text": "I just bought the x870 p msi one, i bought mainly because gigabyte sucks... and the white one from asus is overpriced.. also the taichi lite was not available in my country... so i bought this one... accorsing to various youtubers this one is the second best non extreme...",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with ASRock X870 Pro RS",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents personal experience with the product.",
+          "replies": [
+            {
+              "commentId": "mw5lskb",
+              "text": "i got prompted that the x870p wont work for the R5 7600X without a bios update, what cpu did you use?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses ASRock X870 Pro RS usage with a specific hardware configuration.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a relevant and interpretable comment.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "luzbxzo",
+          "text": "Hola, te quedaste con esa finalmente?  \nestoy en la misma duda",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experiences with the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a neutral sentiment about the product.",
+          "replies": []
+        },
+        {
+          "commentId": "ndlmrkl",
+          "text": "Acabo de adquirir esta misma placa y me ha encantado,de momento ningun problema.\n\nLa tengo con un ryzen 7 9800x3d,un samnsung 990 pro 1 tera pci 4 solo para el sistema,y dentro de nada probare una de pci 5,una rtx 5070 ti y con un monitor(que nunca los he usado,siempre con tvs y a 60 fps)y estoy flipando de lo bien que va,y 64 gigas de ram .\n\nTodo ampliable a futuro asi que hay placa para otros 10 a\u00f1os como mi anterior setup jajajaja\n\nAh por cierto,la unica pega que le veo es que las instrucciones o manual estan en todos los idiomas menos el castellano,pero bueno.....",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the user's experience with the product and mentions the availability of the product in multiple languages.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about the product and the user's experience.",
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "productName": "amd-radeon-rx-9070-xt-16gb",
+  "batchIndex": 21,
+  "totalBatches": 29,
+  "comments": [
+    {
+      "commentId": "1k38f73",
+      "text": "My new Ryzen 7 9800x3d and 9070 XT build and some help for those needing a UPS with Pure Sine Wave and undervolting and overclocking the Sapphire Pulse RX 9070 XT\n\nMy current specs are listed below. I built this entire PC through [elitehubs.com](http://elitehubs.com) u/JD\\_EliteHubs so a big thank you to the team for helping me build my dream PC. \n\nOne of the biggest issues i faced was finding a UPS that has PURE SINE WAVE output to protect my sensitive electronics and I wanted to make this post in case anyone else is going through the same thing. After hours of research I found out that only 2 models in India give Pure Sine wave output which at least has 2000va and in built batteries. \n\nThe Microtek ONLINE UPS 2KVA 1PH:1PH 72V-IB MAX+ and the Cyberpower OLS2000EC which comes with a smaller 36v batteries but I settled on them as Microtek didn't respond to a single call or email whereas Cyber power responded to my calls and emails and any doubts i had they cleared them. Cant speak regarding their customer service to warranty and parts repair but unfortunately in India I don't think there are many options so I just had to bite the bullet and see. The UPS works perfectly and it comes with a 6a plug. \n\nThe main issue I faced is that the output ports of the UPS is 6a sockets only whereas for most of us, our high end PC PSU's come with a 16a plug and no UPS that I have seen has a 16a output socket. Since my PC realistically speaking would never cross 4.2 amps I picked up a power cable from amazon (FEDUS power cable, the one with the 10amp rated 6a plug and not the 6amp rated 6aplug) and using this connected my PC to the UPS and it has been working flawlessly for the past 2 weeks, I have tested switching on and off my power to the UPS(along with the occasional power cuts) and my PC shows no issues and I can safely shutdown with no problems.\n\nNow comes the fun part. Undervolting and Overclocking the GPU. I have the Sapphire Pulse variant which has lower boost clocks then the other OC counterparts. Remember to please take this advice with a grain of salt and do your own testing. Using AMD Adrenaline you can easily undervolt and overclock your gpu. \n\nTaking advice from Blackbird PC Tech and Ancient Gameplays from Youtube, I tried multiple tests with small increments with Steel Nomad and Furmark but i settled on steel nomad as this actually gave crashes so I could find a more stable GPU overclock and undervolt. I have attached some test results and for my GPU I found that -60 mv was the most stable, Max MHZ core offset actually gives worse performance the higher you go so I did not change this, I increased the power by 10% and I get a gpu wattage draw of 340w. The last thing I changed was VRAM Tuning to +150mhz or to 2664mhz (-14mhz is the offset by default making it 2650mhz). This was the most stable one I found as +200mhz crashes in Steel nomad but not other benchmark tools. Just to recap I used a -60mv, 10% power increase, and VRAM tuning of 2664mhz(+150mhz), which gave me a score of 7250 average on steel nomad. \n\nI have also uploaded pictures of my AMD Adrenaline GLOBAL GRAPHICS settings to those interested. Just change stuff in-game if you want but in general i think that these are good for most games.\n\nI also overclocked my Ryzen 7 9800x3d and it would take me a while to explain the process. SkatterBencher's video on youtube titled  \"Ryzen 7 9800X3D Undervolt & Overclock to 5750 MHz | SkatterBencher #82\" was of great help and he goes in every little detail. I do recommend watching his channel as he also boosts your ram timings by expo/xmp.\n\nOverall I am extremely satisfied with the performance and would love any input from you guys to helping me maybe boost even further.\n\nI hope this guide helps someone who is stuck in a similar situation as i was.\n\nLast but not least\n\nAal Bormahu aak hin miiraad\n\nFUS ROH DAAAAAAHHH\n\n\n\n\\[PCPriceTracker Build\\](https://pcpricetracker.in/b/s/a71d4e20-6c11-44ee-bd0b-085d4aa3dbc8)\n\n\\*\\*Processor\\*\\* | \\[AMD Ryzen 7 9800X3D Processor with Radeon Graphics (8 Cores, 16 Threads, Up to 5.2GHz, 104MB Cache, AM5 Socket)\\](https://pcpricetracker.in/products/5cea6be16a674532a506524222b4e57a) | PrimeABGB | 49449\n\n\\*\\*Motherboard\\*\\* | \\[MSI X870 GAMING PLUS WI-FI MOTHERBOARD\\](https://pcpricetracker.in/products/38b0d4b36c670a7b37ee558a2bcda50b) | Vedant Computers | 26540\n\n\\*\\*Graphic Card\\*\\* | \\[Sapphire PULSE AMD Radeon RX 9070 XT 16GB GDDR6 Graphics Card\\](https://pcpricetracker.in/products/df0aeb0eda8bbbeae2da4c9601f9808e) | Elitehubs | 77999\n\n\\*\\*Power Supply\\*\\* | \\[Deepcool PN850M 850W 80+ Gold ATX 3.1 Fully Modula\\](https://pcpricetracker.in/products/3d56a76c0cc4125abe320f4eb2f12b13) | PrimeABGB | 9346\n\n\\*\\*Cabinet\\*\\* | \\[Cooler Master MasterBox MB520 Mesh E-ATX Mid-Tower Cabin\\](https://pcpricetracker.in/products/d4eed940863a31d29487fa24508aa0d2) | PrimeABGB | 7360\n\n\\*\\*Memory\\*\\* |  |  | \\[ADATA XPG Lancer Neon RGB 16GB ( 16GBx 2 ) 6000MHz DDR5 Ram CL30 ( Black )\\] | EliteHubs \\\\ 12030\n\n\\*\\*SSD drive\\*\\* | \\[Kingston NV3 2TB PCIe Gen 4.0 Internal SSD\\](https://pcpricetracker.in/products/e75a49caadac92c8f89d58b26062af27) | PCStudio | 11500\n\n\\*\\*CPU Cooler\\*\\* | \\[Cooler Master MasterLiquid 360L Core ARGB Liquid Cooler ( Black )\\](https://pcpricetracker.in/products/bee74b3ba94bf8293b36333408ce266d) | PrimeABGB | 8100\n\n\\*\\*Case Fans\\*\\* | \\[Cooler Master CF120 Argb Cabinet Fan (Single Pack) (R4-S2S-12AA-GP)\\](https://pcpricetracker.in/products/12ffe714a37ab0d1b3f4c6cd2b1f17b7) | PCStudio | 500\n\n\\*\\*UPS\\*\\* | \\[Cyberpower OLS2000EC PURE SINEWAVE UPS - 26000 \n\n| | \\*\\*Grand Total\\*\\* | \\*\\*INR 2,28,824\\*\\* |",
+      "upvotes": 35,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "mo1xrc2",
+          "text": "How much you got 9070xt pulse for ? And can you share cyberpower 2kva model name?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking for the price of the GPU and a UPS model, which is a factual query without opinion.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral request for information.",
+          "replies": [
+            {
+              "commentId": "mo1ya2p",
+              "text": "I got the pulse for 78000 from elithubs. On the pricier side you can find it cheaper by around 5-6 grand on other websites. Some items elitehubs were selling cheaper so eventually it balanced out. And it's the CyberPower OLS2000EC 2000va model.\nhttps://www.cyberpower.com/in/en/product/sku/ols2000ec",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides pricing information and mentions that the GPU can be found cheaper elsewhere, providing a value-based opinion.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual pricing information without a clear positive or negative sentiment toward the product itself.",
+              "replies": [
+                {
+                  "commentId": "mo20zku",
+                  "text": "Thanks .. , bro what about this 2 kva ups by cyberpower ? \nIs it good ? \nhttps://mdcomputers.in/product/cyberpower-ups-ut2200e?gad_source=1&gclid=Cj0KCQjwtpLABhC7ARIsALBOCVr35-aj_fszBtT7WMjMwlORuzzY3pWG__I30PvgoeSuIEz1kxD-wb8aAiQYEALw_wcB",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is entirely about a UPS, which is off-topic for the GPU analysis.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral request for information about a UPS.",
+                  "replies": [
+                    {
+                      "commentId": "mo216r7",
+                      "text": "This doesn't come with pure sinewave output. It's just a regular UPS. If you have a high end gaming pc I wouldn't suggest it as most modern PSUs with active PFC need pure sinewave. If you have a regular computer for work stuff and no gpu I guess it would be fine",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about UPS technology (pure sinewave), which is off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment provides technical information about UPS systems.",
+                      "replies": [
+                        {
+                          "commentId": "mo21d2z",
+                          "text": "The one you showed me is  line interactive ups. Unfortunately getting anything remotely cheap in India with a pure sinewave is not possible trust me. The cheapest option can be the OLS1000EC model but that is 1000va and since I wanted to have headroom I settled for the 2000va model",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about UPS options in India, which is off-topic.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a neutral discussion about UPS availability.",
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "mo21lj5",
+                      "text": "Also let me know your pc specs and the psu supply. I might be able to help you find one that suits your needs",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a request for PC specs to help find a UPS, which is off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a neutral request for information.",
+                      "replies": [
+                        {
+                          "commentId": "mo26s96",
+                          "text": "Have similar build as you bro ...9070xt , 850w psu but with i7-14700k - what about this model \nCan you let me know .. as i have no idea about ups \n1. Upc\nhttps://amzn.in/d/fu1WGzl\n\n2. Artis\nhttps://amzn.in/d/hFGoHec\n\nCurrently im using apc 1.1 kva model of apc ups.. its not going good .. i had same doubt about 660w output but vishal peripherals told me and convinced me its enough .. i wanted to go for 1.5 or 2kva .. but these guys made me buy this ..now im getting crashes so im planning to change ups",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is primarily about UPS issues and crashes, though it mentions owning a 9070 XT, it doesn't provide insight into the GPU's performance or value.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is focused on UPS-related crashes, not the GPU's performance.",
+                          "replies": [
+                            {
+                              "commentId": "mo27xe7",
+                              "text": "I have no idea why they would suggest that. Actually even elitehubs people had suggested me the similar models and they didn't really acknowledge the part of the pure sinewave importance and I came to realise that many people don't have the knowledge of the importance of pure sinewave UPS. The ones you have showed me are all line interactive UPS models that are good for basic computers but will cause shutdowns for our build. For high end gaming pcs, especially ones with higher psu watts, they come with active PFC and must be used with a pure sinewave output.\n\n So in my opinion you really have no choice but to go for the OLS1000EC which is really pushing it as it is a 800watt ups or the OLS2000EC(1600watts). Our build doesn't take more than 600 watt maxx including my monitor , router from what I have noticed  so technically I think it could be fine but to play it safe I decided to go for the 2000va model which supports upto 1600watts giving me ample headroom.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment is about UPS types and their importance for high-end PCs, which is off-topic.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment provides technical advice on UPS systems.",
+                              "replies": [
+                                {
+                                  "commentId": "mo29krf",
+                                  "text": "Thanks and mine is powercolor red devil 9070xt , gpu alone is consuming 350-380 sometimes with 4k gaming .. im also planning to overclock with +10% power .. so 800watts is a must for ups ..\n\nIs line interactive ups not sufficient ? As i was suggested by some redditors.. not looking for backup but just to switchoff the pc .\nYou mentioned shutdown problems with line interactive ups .. is it during power outages ? Or during normal usage ?\nVishal guy asked me to bring pc & ups and he will find solution to it ..i will try an exchange with better ups model .. only have to decide with online or line interactive ups",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "The user mentions their PowerColor Red Devil 9070 XT and its power consumption (350-380W) during 4K gaming, providing technical insight into the product's power draw.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is discussing power consumption and overclocking plans without expressing a clear positive or negative sentiment.",
+                                  "replies": [
+                                    {
+                                      "commentId": "mo2dw4w",
+                                      "text": "From the research I did from other reddit posts in this same sub reddit. When power went off using those UPS their pc just crashed and rebooted making the ups effectively useless for their usecase.",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "The comment is about UPS crashes and reboots, which is off-topic.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The comment is a neutral report of UPS failure.",
+                                      "replies": [
+                                        {
+                                          "commentId": "mo2f47i",
+                                          "text": "Thanks for info\ud83d\udc4d\ud83c\udffb will go for online ups considering the risk .",
+                                          "upvotes": 2,
+                                          "classifyThis": true,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "The comment is a neutral response to UPS advice, which is off-topic.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "The comment is a neutral expression of thanks.",
+                                          "replies": [
+                                            {
+                                              "commentId": "mo2fm1c",
+                                              "text": "Just remember that if your ups load reaches 800 watts it will trip so keep that in mind. I think realistically speaking it should be fine having a 100-200watts headroom but it's a little too close for me and due to the fact that over time the efficiency reduces I would not risk it and go for the 2000va model and have that peace of mind",
+                                              "upvotes": 2,
+                                              "classifyThis": true,
+                                              "relevance": "exclude",
+                                              "relevanceReasoning": "The comment is about UPS load and efficiency, which is off-topic.",
+                                              "sentiment": "neutral",
+                                              "sentimentReasoning": "The comment provides technical advice on UPS capacity.",
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mo3ibxf",
+          "text": "Can you share the price breakdowns if possible?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking for price breakdowns, which is a factual query without opinion.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral request for information.",
+          "replies": [
+            {
+              "commentId": "mo3ph5x",
+              "text": "Do you mean the price breakdown that i have already posted in the description if you scroll down? xD",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a response to a request for price breakdowns, which is off-topic.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral response.",
+              "replies": [
+                {
+                  "commentId": "mo3u9s3",
+                  "text": "Shit.. my bad. Thanks anyway man",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a low-effort response, which is off-topic.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral expression of thanks.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mp9h5cx",
+          "text": "I am planning to build the below system configuration and i already have Luminous Zelio+ 1700 Pure Sine Wave 1500VA/ 24V Inverter + battery exclusive for the pc, is it sufficient?\n\n\n\nCABINET : ANTEC C5 ARGB (ATX) Mid Tower Cabinet (Black)\n\nPROCESSOR: AMD RYZEN 7 9800X3D (UPTO- 5.2GHZ, CORES-8, THREADS-16)\n\nMOTHERBOARD : MSI MAG B850 TOMAHAWK MAX WIFI Motherboard \n\nSMPS : Corsair RM850x Shift 850 Watt 80 Plus Gold SMPS \n\nCOOLER : Arctic Liquid Freezer III 360 Argb Cpu Liquid Cooler (Black)\n\nRAM : G.Skill Trident Z5 Neo RGB 32GB (16GBx2) DDR5 6000MHz Desktop RAM (Matte Black) \n\nSSD : Western Digital Black SN770 2TB M.2 NVMe Internal SSD \n\nGPU : Sapphire Pulse AMD Radeon RX 9070 XT 16Gb GDDR6 Graphics Card",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking if their inverter is sufficient for a build including a 9070 XT, which is a factual query about power supply, not the GPU itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral request for information.",
+          "replies": [
+            {
+              "commentId": "mpa3c05",
+              "text": "Inverters will always have 3ms to 10ms delay no matter what even if it is puresinewave. Whereas a dedicated ups will have 0ms downtime so it protects your pc",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about the difference between inverters and UPS systems, which is off-topic.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment provides technical information about power systems.",
+              "replies": [
+                {
+                  "commentId": "mpadkpx",
+                  "text": "Although this delay should be fine as most PSUs are rated at least 16ms hold-up time",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about PSU hold-up time, which is off-topic.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral technical observation.",
+                  "replies": [
+                    {
+                      "commentId": "n1qgws1",
+                      "text": "You never know there are just too many variables.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a general comment about variables in power systems, which is off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a neutral observation.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mpadx4g",
+          "text": ">The main issue I faced is that the output ports of the UPS is 6a sockets only whereas for most of us, our high end PC PSU's come with a 16a plug and no UPS that I have seen has a 16a output socket\n\nWe get 16A/European plugs not because the products are high end, but because they are dumping excess stock here, since we feel bigger plug = premium.\n\nEven my monitors came with 16A plugs, totally unnecessary since they consume only 50-60W max.\n\nFrom your math you know 6A plug is good for 1200+W here.  \nHowever in regions with 110V mains, they can handle only 660W so they will need thicker cable for the same PSU.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about power plugs and standards, which is off-topic.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral technical explanation.",
+          "replies": [
+            {
+              "commentId": "mpagj60",
+              "text": "Yes I know holmes thanks",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a neutral response to a technical explanation, which is off-topic.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral response.",
+              "replies": [
+                {
+                  "commentId": "mpaj05k",
+                  "text": "Sorry to burst your little bubble of false elation, my dear Watson\n\n\nNothing quite stokes the ego like name calling others, after having to spend money getting the right cable. So what if they gave the wrong cable, it's \"high end\"...The logic of a fool.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a personal argument about power cables, which is off-topic.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a negative sentiment toward another user, but not the product.",
+                  "replies": [
+                    {
+                      "commentId": "mpixwok",
+                      "text": "And also it doesn't change the fact of the matter that they supply 16a plugs when most ups come with only 6a sockets. All I was trying to do is help people who are sceptical and worried about their expensive pc that most people save up years for.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about power cables and UPS sockets, which is off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a neutral explanation of the user's intent.",
+                      "replies": [
+                        {
+                          "commentId": "mpj1fxn",
+                          "text": "UPS doesn't come with the big 16A sockets, because it isn't the standard here. This is correct\n\nUs getting the big plug goes against the established standard, so is wrong",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about power plug standards, which is off-topic.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a neutral technical observation.",
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "mpiw83z",
+                      "text": "Name calling? I said holmes. Its another word for homie?",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a personal argument about the meaning of ",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a neutral clarification.",
+                      "replies": [
+                        {
+                          "commentId": "mpj0jd8",
+                          "text": "Holmes = Sherlock Holmes lol",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a personal argument about the meaning of ",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a neutral clarification.",
+                          "replies": [
+                            {
+                              "commentId": "mpj0ogp",
+                              "text": "Ah I see where you went xD no worries buddy",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment is a neutral response to a personal argument, which is off-topic.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is a neutral response.",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "mpiwf7m",
+                      "text": "And mind telling me regions in India that are using 110v ?",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a request for information about voltage in India, which is off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a neutral request for information.",
+                      "replies": [
+                        {
+                          "commentId": "mpj0xe3",
+                          "text": "Who claimed India has regions with 110V? (Though low voltages were common in rural areas)\n\nI'm saying these plugs were probably manufactured for other regions, but got dumped here",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about power plug manufacturing and distribution, which is off-topic.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a neutral technical explanation.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mpneio6",
+          "text": "Can you please tell me should i buy ups?\nDoes pc gets damage when power cut?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking if they should buy a UPS, which is off-topic.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral request for information.",
+          "replies": [
+            {
+              "commentId": "mpnemsj",
+              "text": "I'll need a little more details buddy. What's your psu. ? Ur build details?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a request for build details to provide UPS advice, which is off-topic.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral request for information.",
+              "replies": [
+                {
+                  "commentId": "mpnepgw",
+                  "text": "Super flower 1200w\n9800x3d \n4090",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a list of PC specs, which is a factual query without opinion.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral list of specifications.",
+                  "replies": [
+                    {
+                      "commentId": "mpnf1nv",
+                      "text": "Which model of super flower is it?",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a request for the PSU model, which is off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a neutral request for information.",
+                      "replies": [
+                        {
+                          "commentId": "mpnfa3l",
+                          "text": "Super Flower Leadex VII XP 1200W ATX v3.0 PSU",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a factual list of PSU specifications, which is off-topic.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a neutral list of specifications.",
+                          "replies": []
+                        },
+                        {
+                          "commentId": "mpnfr08",
+                          "text": "https://preview.redd.it/lx6xlk4xsrxe1.jpeg?width=1080&format=pjpg&auto=webp&s=616780f5f61e1c7e9925f667db2469fc600cb3f0\n\nAs you can see it has active PFC just like my psu as well. They need an online pure sinewave UPS and u will need atleast a 2kva model. You only have two options in India. The Cyberpower OLS2000EC and the Microtek Max + series",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about UPS requirements for PSUs with active PFC, which is off-topic.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment provides technical advice on UPS systems.",
+                          "replies": [
+                            {
+                              "commentId": "mpng1lc",
+                              "text": "If iam gaming and there is a power cut will it cause damage to the gpu?",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The user is asking if power cuts cause damage to the GPU, which is a general technical query about hardware damage, not a specific critique of the 9070 XT.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is a neutral request for information.",
+                              "replies": [
+                                {
+                                  "commentId": "mpnggeu",
+                                  "text": "Yes chances are always there to fry your sensitive electronics if you are not using a ups and you face power cuts and voltage drops. Using this ups the second our power guys off it has an instant switch way faster than other cheaper line interactive switches and you don't even notice that the power goes off. If you use a line interactive UPS your computer most probably will just crash and restart making the entire point of the ups useless for us.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment is about the risks of power cuts and the benefits of UPS systems, which is off-topic.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment provides technical advice on UPS systems.",
+                                  "replies": [
+                                    {
+                                      "commentId": "mpngvuu",
+                                      "text": "Bro 26k for ups?",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "The comment is a neutral response to the price of a UPS, which is off-topic.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The comment is a neutral response.",
+                                      "replies": [
+                                        {
+                                          "commentId": "mpnh5b3",
+                                          "text": "Yup. You want to protect your 2.5 lacs+ equipment. Consider it an insurance.",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "The comment is about the cost of a UPS as insurance for expensive equipment, which is off-topic.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "The comment is a neutral justification for the cost of a UPS.",
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "model": "gemma-4-31b-it"
+}

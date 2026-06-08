@@ -62,10 +62,14 @@ def merge_batches(batch_dir, master_file, output_file):
     
     # Store all votes for each commentId: {cid: {'relevance': [], 'sentiment': [], 'reasonings': []}}
     vote_registry = {}
+    models_used = set()
     
     for batch_file in batch_files:
         with open(batch_file, 'r', encoding='utf-8') as f:
             batch_data = json.load(f)
+            
+        if "model" in batch_data and batch_data["model"]:
+            models_used.add(batch_data["model"])
         
         batch_flat = flatten_batch_comments(batch_data.get('comments', []))
         for bc in batch_flat:
@@ -101,10 +105,23 @@ def merge_batches(batch_dir, master_file, output_file):
             'sentimentReasoning': reasoning.get('sentimentReasoning')
         }
 
+    # Flatten master comments recursively
+    def flatten_master_comments(nodes):
+        flat = []
+        for node in nodes:
+            # We want to create a clean copy/reference and extract it
+            flat.append(node)
+            flat.extend(flatten_master_comments(node.get('replies', [])))
+            if 'replies' in node:
+                del node['replies']
+        return flat
+
+    master_flat = flatten_master_comments(master_data.get('comments', []))
+
     # Update master comments
     merged_count = 0
     updated_comments = []
-    for m_comment in master_data['comments']:
+    for m_comment in master_flat:
         cid = m_comment['commentId']
         if cid in final_results:
             res = final_results[cid]
@@ -122,10 +139,12 @@ def merge_batches(batch_dir, master_file, output_file):
             author_map[author] = c
         else:
             # Keep highest upvoted
-            if c['upvotes'] > author_map[author]['upvotes']:
+            if c.get('upvotes', 0) > author_map[author].get('upvotes', 0):
                 author_map[author] = c
                 
     master_data['comments'] = list(author_map.values())
+    if models_used:
+        master_data['models'] = sorted(list(models_used))
     
     with open(output_file, 'w', encoding='utf-8') as f:
         json.dump(master_data, f, indent=2)

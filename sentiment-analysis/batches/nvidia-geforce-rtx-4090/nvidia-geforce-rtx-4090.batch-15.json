@@ -1,7 +1,7 @@
 {
   "productName": "nvidia-geforce-rtx-4090",
   "batchIndex": 15,
-  "totalBatches": 54,
+  "totalBatches": 56,
   "comments": [
     {
       "commentId": "1ikvtnn",
@@ -14,9 +14,9 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mbqipuy",
-          "text": "Is there anything that your system is not doing you need it to? If I were you I'd watch the 9070xt since you are on Linux to not have to deal with nvidia if it can meet your gaming and productivity needs but aside from that I doubt any upgrades are really worth it for a few years.",
-          "upvotes": 1,
+          "commentId": "mbq6l42",
+          "text": "Just a heads up, if you populate all the M.2 ports on that board, it takes lanes from your USB4 ports on the back instead of disabling PCIe slots. Only bringing it up since you said the dual 40gbit USB is a specific feature you're looking at.",
+          "upvotes": 7,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -24,53 +24,8 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "mbrlb0r",
-              "text": "Nah, as I said it's great in most cases. The point is selling the 5800X3D and motherboard while it's still good and using that money for the best gaming upgrade while I can.\n\nI am not just gaming, building packages from aur.archlinux.org (packages that are not built and uploaded to official repositories) and all that recording gameplay and converting videos. It's up for a discussion about what's better if 10-minute videos are re-encoded in 5 minutes at 80w vs 2.5 minutes at 140W, an example from a Czech test [here](https://diit.cz/clanek/recenze-amd-ryzen-7-9800x3d-asus-tuf-gaming-b850-plus-wifi/konverze-videa-ffmpeg-701-avx-512-svt-av1-x265-plovouci-meduzy) (no need for a translator to see the graph).",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mbqsbsh",
-          "text": "If you are planning to upgrade your GPU shortly which it seems you are and you've got the cash to spare then yes 9800x3d will be a worthwhile upgrade. However at your resolution, many games will small gains in max FPS the lows will likely be higher but other than a few CPU-demanding names (Spacemarine2, Tarkov, Starfield to name a few) your overall experience will be similar to what you have now.\n\nif you were to go to 5080 or 4090 you would want a higher end CPU, and to be fair the 5800x3d could be had for $300 and these GPU are easily 3-5 times the price.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mbr8rds",
-          "text": "Only if you can sell it close to it's value and use that to buy 9800x3d and other parts that you are going to need for \"cheap\".\n\nOtherwise I would wait until the next gen and then buy the 10000 series Ryzen(Zen 6 cores).",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mbremky",
-          "text": "I get the whole \"GPU-Bound\" argument, and most of the time it's true.\n\n**B U T**\n\nThe games I play are very CPU-bound, even at 4K. I play most often Helldivers 2, Warhammer Vermintide/Darktide, and Payday 3 so read my opinion with this context in mind.\n\nI am someone who owns a 4080, plays at 3840x2160 on an LG OLED, and had a 5800X3D who upgraded to a 9800X3D and it was well worth the upgrade.\n\nAll these games saw a massive benefit in that my GPU utilization was at constantly at 99% after upgrading to the 9800X3D. Even at 4K, I was still CPU-bound with the 5800X3D struggling to fully utilize my 4080 usually bouncing between 70%-90%. Sometimes going down to 50%.\n\nGames like COD Warzone, Doom Eternal, Fortnite, Overwatch, etc. don't choke the 5800X3D so depending on your library the upgrade may be completely worthless.\n\nSo my answer to your question is that from my experience, yes it's worth upgrading to the 9800X3D IF you play games that are known to be CPU-heavy. Otherwise, just stick with the 5800X3D.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mbrs0b1",
-              "text": "Thanks, it really depends on the game library. I thought my system is fine for Helldivers 2 and so far I tried only a few different settings trying to get it run ~100 FPS. There have been quite a few updates in last half a year and I also had weird crashes probably due to anti-cheat on Linux.\n\nBut the last time I played it, mangohud showed just 75% GPU utilization and in calm places and on the ship it was 90 FPS to the FPS limit while in the 'hell' parts it fell down to 35 FPS.\n\nThat said, at least according to [this limited Czech test](https://diit.cz/clanek/recenze-amd-ryzen-7-9800x3d-asus-tuf-gaming-b850-plus-wifi/helldivers-2-o-demokracii-nelze-vyjednavat) there is practically 0 difference between 9800X3D, 7800X3D and even 5700X3D on RTX 4090 on FullHD or 4k. It seems fishy, badly done test, or bad drivers/broken game update, but it can be just an unoptimized (but bloody fun) game.\n\nGames aren't just Unreal Engine 5 and Unity games, the difference between the latest Kingdom Come II and CAPCOM's Dragon's Dogma II or Monster Hunter games can be massive in terms of optimization.\n\nRelated video on the topic: [Are Bottleneck Calculators Nonsense? Do CPUs matter at 4K? Let's talk about bottlenecks... @ Daniel Owen](https://www.youtube.com/watch?v=6QGnTlGUFn0)",
+              "commentId": "mbri6io",
+              "text": "Yes, thanks for bringing it up.\n\nI watched [X870 Tomahawk review on Kitguru](https://youtu.be/Tb2farwaJ0M?t=255) where they mention the 2nd M.2 port from the bottom is shared with the bottom PCI-E.\n\nI don't remember where I read one of the M.2 port sharing with USB4 on the X870E variant but it's a similar scenario. I read through MSI's manual and haven't found any information on that which is shady or I am just blind.",
               "upvotes": 1,
               "classifyThis": true,
               "relevance": null,
@@ -79,8 +34,8 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "mbrv4uc",
-                  "text": "Helldivers 2 has seen some optimization, that's for sure. But even then, I barely saw any difference switching between 1080p and 4k. Hell I even tried running it on my CRT at 1024x768 and saw the same exact FPS as I did at 4K with the 5800X3D. With my 9800X3D installed I was curious and turned down the internal resolution and it easily hit's my hard cap of 236 FPS (Because my monitor's refresh rate is 240Hz) until the GPU is 100% utilized.",
+                  "commentId": "mbs6pko",
+                  "text": "Found this\n\n[\\*\\*USB 40Gbps Type-C ports on the back panel and M2\\_2 slot share PCIe 5.0 x4 bandwidth. Both run at PCIe 5.0 x2 when a device is installed in the M2\\_2 slot. You can switch M2\\_2 to PCIe 5.0 x4 in the BIOS, but this will disable the USB 40Gbps Type-C ports. The USB4 host controller supports up to PCIe 4.0 x4.](https://uk.msi.com/Motherboard/MAG-X870E-TOMAHAWK-WIFI/Specification)",
                   "upvotes": 2,
                   "classifyThis": true,
                   "relevance": null,
@@ -90,88 +45,8 @@
                   "replies": []
                 },
                 {
-                  "commentId": "mbvhjy1",
-                  "text": "Man you need to understand Nvidia has insanely high overhead . The 5800x3d will the fuck out of Nvidia cards even at 4k. The only cpu that doesn't bottleneck Nvidia currently is the 9800x3d. Doesn't matter what engine it is that driver overhead is gonna be there \n\nhttps://youtu.be/1FAI9TRF2-0?si=QszVMQgNIDQcyonY\n\nhttps://youtu.be/JLEIJhunaW8?si=mHoZhYuHd5HmUfuz",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mbsnls6",
-          "text": "Better use all that money to get a better GPU, the 5800x3d is still a beast.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mbtinh3",
-          "text": "This is total waste of money for gaming. Just save more for your new pc buildup.\u00a0",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mbw8iuh",
-          "text": "Depends what kinda settings you're pushing in a game. People see 1440p and just go oh GPU bound... With all the upscaling it's pretty easy to be CPU bound at 1440p and with esport titles or lighter ones you can easily push to be CPU limited. \n\nThe best way to really tell is to use an overlay and watch GPU usage without a frame rate limit. If your GPU is say 80% or lower you have some to gain if it sits at 90+% there's not a lot. Don't go by CPU usage as games can be bound far before you even get to 100% usage.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mbwux9t",
-              "text": "Indeed, good point.\n\nI run mangohud on any problematic game, and last time I noticed there was 70% GPU usage in Helldivers II, so lowering graphic settings gets me nowhere.\n\nAnyway, see EDIT #2, it's decided, I'll just finish a few questions and throw my wallet on it.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mbz9i23",
-          "text": "Id keep the whole PC and wait until next gen CPUs/GPUs for a big performance leap.\n\nI'm on a 5700X3D and 4070tiS and will be going for a 10800X3D/6080 24/32GB in 2026.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mc3bjxt",
-              "text": "Good luck, I truly hope you will be able to get these unannounced products for a good price in 2026.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mc44bmn",
-                  "text": "Hopefully everything will have settled down by then or early 2027. Right now the PC parts market is just insane. I'm not opposed to going Intel CPU or AMD GPU if they get their shit together too \ud83d\ude01",
+                  "commentId": "mbuh91n",
+                  "text": "For the X870E, they put the information in small print at the section detailing the USB4 back ports as opposed to the section detailing the m.2 ports.",
                   "upvotes": 1,
                   "classifyThis": true,
                   "relevance": null,
@@ -180,9 +55,9 @@
                   "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "mccc8an",
-                      "text": "Maybe even Intel GPU by then. :-)",
-                      "upvotes": 2,
+                      "commentId": "mbuzr3f",
+                      "text": "That's fine for me. One m.2 for OS, the other two that are not limiting anything for fast data and some games, and then I can use USB enclosures with names for other Steam libraries.\n\nJust got to get a fast enough USB enclosure.",
+                      "upvotes": 1,
                       "classifyThis": true,
                       "relevance": null,
                       "relevanceReasoning": null,
@@ -195,6 +70,74 @@
               ]
             }
           ]
+        },
+        {
+          "commentId": "mbq22gg",
+          "text": "Not really worth it if you're still sticking with the 4070.\n\nBut if you're trying to maximize the value of your old parts for sale, then I guess it's not a bad idea. You'd have a modern system and could drop in a new GPU later to have a beast of a machine.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "mbqnur2",
+          "text": "I didn't have an X3d but I had a 5950x and went to 9800x3d and it was a massive upgrade. I got around 80-100 more FPS in Rust.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "mbqbfkc",
+          "text": "If you aren\u2019t capable of doing what you want to do then it\u2019s time to upgrade",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mbrjvr8",
+              "text": "Yeah, I got the savings, so buying it's not really the issue.\n\nBut selling the mobo+CPU+(CPU cooler)+RAM at a decent price or throwing it all in a case and making it plug-and-play and selling it is the main task.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mbs3ir5",
+                  "text": "I'd buy for a first build, but i'll only have money by end of year :/",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mbreyvv",
+          "text": "You have your reasons and would use the extra IO - upgrading makes sense.  Just hold on to the 4070 Super until new cards are more available and then make your GPU upgrade, the 9800x3d is likely relevant for at least 5 years.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         }
       ]
     }

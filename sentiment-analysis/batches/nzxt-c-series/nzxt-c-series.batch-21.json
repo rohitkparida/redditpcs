@@ -1,7 +1,7 @@
 {
   "productName": "nzxt-c-series",
   "batchIndex": 21,
-  "totalBatches": 294,
+  "totalBatches": 295,
   "comments": [
     {
       "commentId": "sgol6e",
@@ -14,9 +14,9 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "huyd5t5",
-          "text": "I would highly, highly recommend Noctua air coolers for new builders.  Not only are you getting top notch performance, their customer service is unmatched.  New socket comes out in 5 years and you need mounting kit? No problem, email them and they'll send one out to you free of charge with free shipping.  Want to explore different fan configurations?  No problem, they'll ship you fan clips free of charge.  The premium they charge is worth the service they provide.",
-          "upvotes": 6,
+          "commentId": "huz1f62",
+          "text": "Good guide, a few points though:\n\n* 10105 is +100Mhz, not +200.\n* You should mention cores vs threads. 4 cores, 4 threads works badly on certain games where 4 cores, 8 threads works well.\n* the 12100F is not necessarily the entry-level CPU, due to motherboard availability/price. You need to look at the 10100/5F +  board. Plus the 10100/5F may be a fair bit cheaper.\n* the 12600 isn't really worth buying because you'd tend to go for 12500 (cheaper, barely slower) or 12600K (4 more 'little' cores). \n\nThe  CPU break points are:\n\n* 12400F \n* 12500 (IGP for office use or old games only, possible stop gap for future GPU add) - stronger IGP **and** clock speed over the 12400\n* 5600G for gaming with no GPU - much stronger on GPU than any Intel chip, weaker on CPU. However a 12100F + 6500 XT (etc.) will crush it, so think carefully before spending too much on this \n* 12600K(F) - 6 + 4 cores, much stronger than the 12600 which has only a small MHz boost\n* 12700 non-K is worth it because of the 8 cores. Overclocking is useful to fewer people, and marginal on Alder lake. \n* 5700G - this is an extremely questionable purchase because it's a relatively weak CPU for the money and the IGP is barely stronger than the 5600G, so if you're going to spend this money, either just get a 12700 (for office use), or like a 12400F and a discrete CPU.\n* \"As of 2022, the speed sweetspot is 3600MT/s at CL16 (or Cas Latency), or 4000MT/s CL18 before diminishing returns start kicking in.\"  - Kinda? This is like 50% more expensive than 3200 CL16, and the performance boost is small, plus Alder Lake is 3200 native, so in the event you bought a H610 board, then there's literally no point in buying anything faster....\n* \"PSU will be at its maximum efficiency between 50% and 75% load. \" - check again, maximum efficiency is around 40% load\n* \" especially if you're installing it in a system without PCIE 4.0 (From Ryzen 3000 and Intel 11th gen and after)\" -  the Ryzen 5600G/5700G lack PCIE 4.0\n* \"Stats like brightness, contrast, smearing/ghosting levels, colour performance are all stats that the manufacturers keep for themselves\" - brightness (in nits), and contrast (ratio) are usually published by the manufacturer\n* \"HDR (High Dynamic Range) display certification is another one that's tricky, and regulations should be tightened for these certificates. \" - it's worth noting that $200 monitors citing HDR just take the signal but don't actually offer real HDR: a HDR monitor costs like $1000\n\nAlso:\n\n* check the price of both 'F' and non-F, and neighbouring SKUs, i.e. if you want a 12400F then check the price of the 12400, and if you want a 12500 then check the price of the 12600. Each increment is around 3% faster, so for $10 it's worth it. (The 12500 also gets an IGP bump of around 15% speed over the 12400). Meanwhile 'F' is priced $30 less than non-F, which you might want to pay anyway, for the versatility, but if the real prices are, say, $15, because of discounts/shortages, then the non-F chip becomes a great deal.",
+          "upvotes": 7,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -24,124 +24,8 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "huypqr2",
-              "text": "Thing is they are ridiculously expensive. All of their coolers, every single one, can be outperformed by the cheaper, quieter and better competition. You are paying the premium on support only",
-              "upvotes": 9,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "huz5hlm",
-                  "text": "Not at all untrue, but for someone who doesn't want to bother with benchmarks and product research their support and guaranteed strong/acceptable performance can be a very tempting draw, especially since you can more or less assume they'll ship you a new mounting kit down the line. One can hope of course.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "huz6ru8",
-                      "text": "&gt; for someone who doesn't want to bother with benchmarks and product research\n\nAnd that's not how you pick a product. With coolers it's really fine, it's a piece of aluminum with a fan on it. But with PSUs ? Motherboards ? GPUs ? We should move from that mindset that there are Samsung, Noctua, Seasonic and ASUS who have good products no matter what and the rest is garbage by default. Because it's not how it works.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "huz7z27",
-                          "text": "It's not how I pick products. Seems like it's not like how you pick products. But yeah, a lot of people do pick products that way. Most probably. And it's true, brand trust isn't a good mindset in most cases. But there's exceptions. \n\nI'll always suggest EVGA video cards while their warranty remains best in the business, and likewise Noctua while their products remain reliably performant and customer service well renowned. That's different than blind brand trust, because it's based on a history of things that separate them from other brands, specifically customer service, which is well above the rest in many cases",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        }
-                      ]
-                    },
-                    {
-                      "commentId": "hv06zpa",
-                      "text": "The problem is that if you say this, people may misinterprete it. Let's use PSUs as an example. I'll say \"a better efficiency contributes to a better PSU\". Correct, right? High efficiency is always good.  But maybe something interpretes it as \"efficiency is the most important aspect of a PSU\", which is obviously not true, I look at protections first, ripple, transient etc. \n\nSame thing happens with noctua. When you say \"noctua good\", people think that they should only buy noctua and that all noctua products are the best and that they are the only brand you should buy. But for the vast majority of people, noctua isn't worth it.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "huyqjuz",
-              "text": "&gt;The premium they charge is worth the service they provide.\n\nYou're already paying for these clips and mounting kits. You can almost get two Arctic eSports 34 or Scythe Fuma 2 instead of something like NH-U14 or NH-D15, or buy one now and another a few years later if you wish. In 90% of usecases (like in all gaming usecases) these coolers would be more than enough, no need to spend 100 bucks on an overpriced Noctua cooler for a gaming rig, or on an AIO for that matter. And if you actually do need performance, there are AIOs that outperform NH-D15 while often costing just as much, at least if we also put the price of 'free' fans in the equation (so you don't need to buy 2/3 more fans if your case has none). So in the end you're paying more for Noctua with near zero benefits. Some 50$ difference may not matter for some $3k+ rig, but for your usual budget-ish gaming rig it does, you can spend that money on the parts that matter more.",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "huzi6mu",
-                  "text": "They come with current mounting kits but for future sockets, Noctua will provide them free of charge.  For example, Scythe makes you buy the LGA 1700 mounting bracket, yet they're unavailable anywhere.  \n\n\nFor fan clips, they provide them for the size of the fans the cooler ship with.  I wanted to mount a 120mm fan underneath my C14S but the 140mm fan clips were too big.  \n\n\nLastly, you can't compare the D15 to the Arctic eSports cooler lol.  Similarly sized coolers like the Dark Rock Pro 4 and Assassin 3 all end up costing around the same.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "huzjwt7",
-                      "text": "&gt; They come with current mounting kits but for future sockets, Noctua will provide them free of charge.\n\nDon't argue with that. Even though Noctua are not the only ones who do that, Arctic and i think Corsair do too.\n\nBut that isn't what i'm saying, i'm saying that you're already paying for these bits, it factored in the price.\n\n&gt; Lastly, you can't compare the D15 to the Arctic eSports cooler lol.\n\nIf you read what i said, i'm not saying that they perform the same. I'm saying that you don't need it for a gaming rig. And well, while alternative NH-D15 class air coolers being the most high-end air cooler solutions, with respective price bracket generally don't end up being any cheaper because of that, there are solutions with better value while having just a bit worse absolute performance, and often offering more effective noise normalized performance, at least in lower thermal package ranges. Things like Arctic eSports and Scythe Fuma 2. And if you actually need the highest absolute performance there is ... Noctua still isn't the go-to-choice, it's the AIOs.\n\n([sources, lot of em](https://www.youtube.com/watch?v=7VzXHUTqE7E&amp;list=PLsuVSmND84QtyyYcalFch402w3ypcp1TQ))\n\nI understand that there's a certain appeal behind Noctua products, as in, people want to buy a cooler once and get a 'free' support down the line, even if that means paying the premium price in the first place. I'm just saying that when it comes to actual performance, they don't offer anything out of ordinary, and there are products outperforming them both value wise and performance wise.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "huye3d0",
-              "text": "Definitely, I tried to convey that as well with \"quality experience\". But some people have very powerful parts and a limited budget, and brands like Arctic are doing very well right now in terms of products, price, and service, having better cooling performance for the price over Noctua, especially in the midrange price segment around the NH-U12S. But yes, you're getting the premium experience with Noctua",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "huyw34r",
-                  "text": "Yup, but it's worth mentioning that the mounting systems on some of the cheaper coolers are... well, cheap.\n\nNoctua's SecuFirm is legendary. I wouldn't recommend a cheap cooler with finicky mounting systems for a beginner.\n\nAlso, since coolers never really go bad, and Noctua has amazing support for replacement parts for their coolers, you can basically use a bigass Noctua cooler for life.",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "hv0r8qh",
-              "text": "as someone who has both a NH-D15 and a DarkRock Pro 4 i disagree. support might be better in america, but for the same price you get better cooling and less noise from bequiet!",
+              "commentId": "huz6il2",
+              "text": "&gt; \"PSU will be at its maximum efficiency between 50% and 75% load. \" - check again, maximum efficiency is around 40% load\n\nTrue, but it's really an unnecessary point, you don't choose a PSU wattage the way it sits at the load level it's the most efficient. First, because that's pointless, a good PSU rated for 750W would deliver those 750W no problem continuously given the appropriate cooling. And second, because the efficiency curve with modern PSUs is so flat past initial dip at sub 10% load that it literally doesn't matter, there's like 3% efficiency delta between the minimum and maximum.",
               "upvotes": 2,
               "classifyThis": true,
               "relevance": null,

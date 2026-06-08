@@ -1,0 +1,541 @@
+{
+  "productName": "gigabyte-x670-aorus-elite",
+  "batchIndex": 4,
+  "totalBatches": 66,
+  "comments": [
+    {
+      "commentId": "1j922ym",
+      "text": "Gaming on RTX 3080 12GB vs 9070 XT - My benchmark results\n\n# Intro\n\nGreetings!\n\nSo I have managed to get my hands on a Gigabyte Gaming OC 9070 XT at my local store (Canada Computers in Quebec), and since I am upgrading from a Gigabyte RTX 3080 12GB Gaming OC, I thought it could be fun to gather results to know EXACTLY what I am buying.\n\nAnd so I ran gaming benchmarks. Lots of gaming benchmarks. And compiled the results in an excel sheet, which I am now publishing for you guys here. Hope you find this fun or useful! I saw some people on the fence about upgrading from a 3080, so this should provide a bit more data.\n\n[Here are my findings, on google sheets.](https://docs.google.com/spreadsheets/d/118H1-Gc3btCrlDYFJZtdjQK98z3hKr5Xhc-bnhGkiWU/edit?usp=sharing)\n\n# What this is\n\nThese are my benchmarks, run on my system, using a 3080 12GB and then a 9070XT. None of the cards are overclocked manually. I am not a reviewer or professional, just an enthusiastic gamer and tech lover. These were done for fun!\n\n# Testing Methodology\n\nI ran the games that had built-in benchmarks (one exception: Stalker 2). I used CapFrameX to capture the Average FPS and the 1% Lows average. I would start the capture as soon as the first game images were visible on screen and stopped the capture when there was either the loading screen before the end results or the end results screen appeared.\n\nThe number of runs done are indicated in the sheet. All numbers are averages of the specified number of runs (most of the time, 3 run average). All tests are done at 1440p, highest settings if possible unless otherwise noted in the \"notes\" cell for each game. When DLSS or FSR is used, I mention it, along with (if possible) the version used.\n\nPC Specs:\n\nAMD Ryzen 7 7800X3D, G.Skill F5-6000J3038F16G (32GB DDR5, 6000 MHZ), GIGABYTE X670 AORUS ELITE AX, Windows 11 Pro.\n\nDrivers: Nvidia 572.16 Game Ready and Adrenalin 25.3.1\n\n**Note**: I did not stop the capture during a benchmark between scenes. This means, for example, that in Avatar Frontiers of Pandora, the loading screens (2) between the 3 scenes are *counted in the benchmark results.* This was to make my life simpler, as after all my benchmarking is mostly for fun!\n\nTModel means Transformer Model for DLSS (4). 3.1=&gt;4 for FSR means the game is using FSR 3.1, but I converted it to FSR 4 using the Adrenalin toggle for FSR 4.\n\n**Exception:** The Stalker 2 run is a quick and dirty run. I loaded the same save, and did the same actions in a very short period of gameplay (about 2-3 minutes). It was just to see what kind of uplift I could get in that game.\n\n# Results\n\n[Again, findings in my google sheet here.](https://docs.google.com/spreadsheets/d/118H1-Gc3btCrlDYFJZtdjQK98z3hKr5Xhc-bnhGkiWU/edit?usp=sharing)\n\nI am looking at a 30% performance uplift in raw raster in average, and roughly 30% as well in Raytracing. For the price I paid (\\~660 USD), I'd say that's pretty good! I was looking for an upgrade from my 3080 12 GB and it seems to be it. Gone are the days of the 50% uplift unfortunately, or even 100%. But that's okay by me. Sure, I am downclassing (going from an 80 class card to 70 class), but in the current market I'd say it's the move to do.\n\nFor those of you with a 3080 10GB, the 3080 12GB is about 6% faster. So you can take the results of these benchmark, and divide them by 1.06 to get an estimate of how the 3080 10GB would look.\n\n# Final thoughts\n\nI'd say I am happy with it, but I'm giving myself time to adjust to the Radeon suite instead of Nvidia. It's an adjustment for sure...\n\nNo overclocking done yet! But it's on my TODO list. I might report back just saying how much, in synthetics, I managed to gain. I also might make an edit or a comment detailing my experience with Radeon drivers and the AMD Adrenalin software suite.\n\nHope you enjoyed this!\n\n# EDIT (2025-04-24): \n\nIt's been a while. Card is still rock solid, works super well. \n\n**Software:** Adrenalin has been pretty great for me. I had a weird hiccup when trying to benchmark games, but after a reinstall it's been smooth sailing ever since. Easy to manoeuver around and understand. Adrenalin is good. Minor nitpick: Sometimes, the hotkey to bring up Adrenalin makes you wait a good 5-10 seconds before it pops up. No idea why. But it doesn't always happen. I'd say I am happy with Adrenalin.\n\n**Overclocking:**\n\nI overclocked it to 0 on the GPU Clock, 2800 on the Memory clock, and -40 on the undervolting. Steel Nomad (Stress Test) went from 7243.66 no OC to 7557 with OC. Little gains, but my OC is **very** stable. I could probably afford to go more reckless if I decided to tweak per title.\n\nHaven't dived into a secondary OC profile for \"efficiency\" that I would tune per game. But that's ok!\n\n**Fan Curve:** Guys, it's pretty damn near necessary for the Gigabyte 9070XT Gaming OC to tweak the fan curve. By default, the card is way, way too loud for no reason. The fans can go to 4200 RPM! The fix is pretty easy, just set a fan curve in Adrenalin. For the curious ones or people like me, **my fan curve is as follows:** Each number is the number in adrenalin for a node (P1, P2 etc.) with first number being fan speed and second number being Temperature. \\[P1: 20, 60\\] \\[P2: 50, 80\\] \\[P3: 67, 88\\] \\[P4: 100, 93\\] \\[P5: 100, 98\\]\n\nWith this fan curve, the card is much quieter, doesn't bother me anymore. It's much, MUCH quieter, while also staying cool from what I saw in HWinfo running Furmark for 20 mins. Hotspot goes to 93 Celsius I believe, in the worst case.\n\nSo that's it for the update! I am enjoying it so far.",
+      "upvotes": 282,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "mhcf46s",
+          "text": "thank you and thank you AMD. i\u2019ll be holding onto my 3070ti a bit longer (student loan debt is no joke) but its good to see somebody putting out cost effective performance uplift.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite and competitor products.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents personal experience with Gigabyte X670 Aorus Elite and competitor products.",
+          "replies": [
+            {
+              "commentId": "mhdlm6a",
+              "text": "Hopefully they stay competitive. We need competition in the GPU space, and not just in the low range!\n\nIf the games you still want to run are running well, no reason to upgrade I'd say \ud83d\ude01",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the need for competition in the GPU space",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive sentiment about the importance of competition in the GPU market",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mhchg5u",
+          "text": "Thanks for this post!! Currently on a MSI 3080 12gb Gaming x Trio, running 1440p ultrawide.  I have the Gigabyte Aorus 9070 XT coming this week and its looking like a nice 30% ish uplift.  Should be able to sell the 3080 to save some cost on the new card.  Thank you again for the benchmarks!",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experiences with the Gigabyte X670 Aorus Elite.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents positive sentiment about the product.",
+          "replies": [
+            {
+              "commentId": "mhdly9z",
+              "text": "Thank you for the kind words! I hope you're happy with your new card, and it should be nicely overclockable if you decide to dabble into that.\n\nWhat's the first game you are going to run on the new one? \ud83d\udc40",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experiences with the product and its overclocking potential.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive sentiment about the product and its potential for personal use.",
+              "replies": [
+                {
+                  "commentId": "mhdrl1r",
+                  "text": "Going to test out Monster Hunter Worlds and I am going to see if Path of Exile 2 performance is better too!",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses personal experiences with Monster Hunter Worlds and Path of Exile 2.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents personal experiences without clear positive or negative bias.",
+                  "replies": [
+                    {
+                      "commentId": "mhdt8kc",
+                      "text": "Awesome!",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mhdb1wd",
+          "text": "3080 has a 12 gb version?",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses a specific version of the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a specific version of the product without clear positive or negative bias.",
+          "replies": [
+            {
+              "commentId": "mhdpods",
+              "text": "Yes sir! It also caused quite a stir online, as it actually is \\*not\\* a real 3080, in that the 12GB version is 6% faster than the 10GB version, on average. So it's more like a 3080TI.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses Gigabyte X670 Aorus Elite's performance and online buzz.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents relevant information about the product's performance and online reception.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mhi7umj",
+          "text": "I'm coming from a 10GB 3080 so very tempted by the 9070XT as it's pretty well (ok well relatively) priced here in Aus compared to NV. The only thing holding me back is my 3080 is an EVGA... - so a bit of nostalgia but we all move on right?",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with the Gigabyte X670 Aorus Elite and a competitor product (NV), without mentioning any other products or sources.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents personal experience with the Gigabyte X670 Aorus Elite and a competitor product (NV), without clear positive or negative bias.",
+          "replies": [
+            {
+              "commentId": "mhjeoml",
+              "text": "Hey! Hopefully, these benchmarks help a bit in giving some perspective.\n\nEVGA was awesome. Wish other partners had a queue system for ordering. But yeah, we can't stick to the past. If that's the thing holding you back... best let it go. It was a great card, and a great brand. But technology moves forward.\n\nYou could always keep the 3080 around if you feel like it. Turn it into a showpiece!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experiences with EVGA and Gigabyte X670 Aorus Elite",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents personal experiences with EVGA and Gigabyte X670 Aorus Elite without clear positive or negative bias.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mih3dq4",
+          "text": "I have the 10gb version and I'm thinking about switching. 30 percent overall uplift plus tons more ram. Now to find it at 599 and not 999 \ud83e\udd23! Thank you for the review.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite and mentions a potential switch, but does not mention any competitor products.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about the product, but does not provide any clear reasoning.",
+          "replies": []
+        },
+        {
+          "commentId": "mhb8nuu",
+          "text": "30% raster over a 3080 seems low.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses Gigabyte X670 Aorus Elite's raster performance.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Presents a negative sentiment about the product's raster performance.",
+          "replies": [
+            {
+              "commentId": "mhbet79",
+              "text": "Ah! I do mention it's a 3080 12gb, so about 6% faster than a 3080. This seems to align with TechPowerUp, which rated the average increase in perf from the 3080 10GB at 42%, which if you do 3080 10GB \\*1.06, gives you an increase of only about 34-35%. Seems about right!",
+              "upvotes": 7,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses Gigabyte X670 Aorus Elite's performance increase against a 3080 10GB benchmark.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a neutral comparison of performance increase between the 3080 10GB and Gigabyte X670 Aorus Elite.",
+              "replies": []
+            },
+            {
+              "commentId": "mhbbdkb",
+              "text": "It's what I got so far in those games at least. Some games had big jumps, like Cyberpunk, but some others had a very small jump, like Stalker 2 with 20%.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experiences with Gigabyte X670 Aorus Elite gaming performance.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents personal experiences without clear positive or negative bias.",
+              "replies": []
+            },
+            {
+              "commentId": "mqv2bzc",
+              "text": "Biggest deal here is 4/6 extra gigs of VRAM.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses VRAM capacity of Gigabyte X670 Aorus Elite",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive sentiment about the product's VRAM capacity",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mhb4x9a",
+          "text": "Merci pour la comparaison. J'ai une 3080 10gb et j'\u00e9tais curieux de la diff\u00e9rence. Avec le DLSS en 1440p je trouve qu'elle fait encore vraiment bien la job, mais je commence \u00e0 voir son maximum avec certains jeux r\u00e9cent.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Compares Gigabyte X670 Aorus Elite to a 3080 10GB model",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about the performance of the Gigabyte X670 Aorus Elite.",
+          "replies": [
+            {
+              "commentId": "mhbbzte",
+              "text": "\u00c7a me fait plaisir! C'est vraiment en pensant aux gens comme toi que j'ai roul\u00e9 tout \u00e7a :).\n\nLa 3080 est vraiment bien. Mais \u00e0 10gb, tu tappes probablement d\u00e9j\u00e0 plus de limite que moi j'en tapais avec mon 12, comme sur Hogwarts Legacy. Mais en effet, 1440p \u00e7a fonctionne tr\u00e8s bien encore, m\u00eame en raw je trouve. Pour les jeux exigeant, comme tu dis, DLSS compense bien.\n\nPar contre, je dois avouer que c'est vraiment plus plaisant la VR avec mon Beyond sur la 9070XT, et Stalker 2 est nettement mieux. Mais j'h\u00e9sitais vraiment entre attendre une autre ann\u00e9e, ou acheter.\n\nJe suis curieux de voir ce que Nvidia va sortir en 2026. Peut-\u00eatre que la 5080 Super aura de l'allure.... ou pas. Mais je voulais pas les encourager cette ann\u00e9e!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experiences with the Gigabyte X670 Aorus Elite and mentions VR and Stalker 2.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents personal experiences with the product and mentions VR and Stalker 2.",
+              "replies": [
+                {
+                  "commentId": "mhbd3qn",
+                  "text": "Ouais c'est semi la s\u00e9rie 5000.. Ca va pas bien aller pour eux cette gen l\u00e0. Hogwarts est tellement mal optimis\u00e9, c'est pas une r\u00e9f\u00e9rence haha. J'y ai jou\u00e9 sur Xbox anyway \u00e0 sa sortie. R\u00e9cemment j'ai fais Indiana Jones graphique au max avec DLSS quality, 80-100fps stead. Et c'est quand m\u00eame demandant. La je joue a Avowed \u00e0 high, RT et je fais entre 70 et 100. Sur un 7700X underclocked. Ma 3080 est toujours a 99% mais \u00e7a se passe bien \ud83d\ude02",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses personal gaming experiences with the Gigabyte X670 Aorus Elite and mentions a reference to the Indiana Jones game.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Presents a positive sentiment about the product's performance and mentions a reference to a popular movie.",
+                  "replies": [
+                    {
+                      "commentId": "mhbjn10",
+                      "text": "Hahaha! Yes, comme je disais, \u00e7a fonctionne tr\u00e8s bien! Pour Hogwarts, c'\u00e9tait plus pour illustr\u00e9 les limites VRAM. Je pense que \u00e7a va commencer \u00e0 faire bobo sur les prochains jeux. Mais on verra!\n\nYes, la s\u00e9rie 5000 c'est un peu du foutage de gueule je trouve. Mais bon, le split du march\u00e9 \u00e9tait 90% nvidia 10% amd en 2024 donc.... Ils ont le monopole. On va esp\u00e9rer que \u00e7a change.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses personal experiences with the product and mentions a popular TV show.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "Presents a positive sentiment about the product's performance and mentions a popular TV show.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mhbzmvk",
+          "text": "Can someone explain 1% lows to me Im considering also upgrading from my 3060ti\n\nMy understanding is it\u2019s just a lot smoother?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the Gigabyte X670 Aorus Elite's performance in gaming and rendering.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents a neutral comparison of the product's performance in gaming and rendering.",
+          "replies": [
+            {
+              "commentId": "mhd8906",
+              "text": "Basically the higher the 1% lows the smoother it will be, yes.\n\nIf you want a more thorough explanation watch this: https://youtu.be/uXepIWi4SgM?si=X2Ang86mrNFaR4ev",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the 1% lows of Gigabyte X670 Aorus Elite's performance",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive sentiment about the product's performance",
+              "replies": [
+                {
+                  "commentId": "mhgvmk3",
+                  "text": "Thank you!",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mhdjcrb",
+              "text": "So, in a nutshell. Average FPS is the average of frames per second over the whole run, right? Well, 1% lows is looking at the lowest 1% bunch of those frames per second in the run. And then making an average of that.\n\nSo if I have say, 90 fps average with 1% avg at 45 fps, it means that 99% of the time the game is running at 90 fps, and then during gameplay it will sometimes dip down to about 45 fps on average at its lowest.\n\nIt measures fluctuation in performance and is usually indicative of if you'll experience stutters or smooth gameplay. A 100 fps average with 10 fps 1% lows average means you'll get stutters during your play! But 100 average with 50 1% means you probably won't dip under 50, meaning super smooth gameplay (in theory!)",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the concept of FPS and its relation to the 1% low FPS.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Explains the concept of 1% low FPS and its relation to the average FPS.",
+              "replies": [
+                {
+                  "commentId": "mhgvt54",
+                  "text": "Awesome thank you!",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mhc41tg",
+          "text": "Great information. Thank you. Currently on a 10GB 3080. Now I just need to find a 9070 XT in stock somewhere.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experiences with Gigabyte X670 Aorus Elite.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents positive sentiment about the product.",
+          "replies": [
+            {
+              "commentId": "mhdk9lg",
+              "text": "Thank you for the kind words! Ahh yes, the final boss: finding a card. And at MSRP it's even harder.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experience with purchasing a card at MSRP.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive sentiment about the experience of purchasing a card at MSRP.",
+              "replies": [
+                {
+                  "commentId": "mhgw1uz",
+                  "text": "Preach it.\u00a0",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses personal preference for Gigabyte X670 Aorus Elite",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Presents personal opinion without clear positive or negative bias.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mhc8jto",
+          "text": "I\u2019m really pumped about the 9070 xt if I can get one. Last year I bought my very first PC. It was used and came with a 3080 ti. Well, the 3080\u2019s ray tracing was broken. Literally everything works except for any game that has ray tracing it crashes. So it wasn\u2019t a complete waste of money but only being able to play older games has been a bummer for a thing I paid $1500 for. \n\nThen they announce the 9070 xt and it\u2019s exactly what I need. It\u2019s a huge bummer I was scammed and need to spend another $600 but still. Hopefully I can find one soon!",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with PC purchase and performance issues",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents personal experience with PC purchase and performance issues without clear positive or negative bias.",
+          "replies": [
+            {
+              "commentId": "mhdklqd",
+              "text": "Oh I am so sorry to hear about your RT situation! At least it was a good card in raw raster and with DLSS.\n\nBut hey, welcome to PC gaming! I hope you can find a 9070 XT at MSRP. Raytracing performance has been, for me, a pleasant surprise considering it's been the Achille's heel of AMD cards for a while.\n\nWhat was the first game you played a year ago on your freshly bought PC?",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experiences with PC gaming and mentions the Gigabyte X670 Aorus Elite.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents personal experiences and mentions the Gigabyte X670 Aorus Elite.",
+              "replies": [
+                {
+                  "commentId": "mhe7qic",
+                  "text": "Ha, Ocarina of Time. And it was great. Now modded OG FFVII and it\u2019s great. And when I get the 9070 I\u2019ll be going for Cyberpunk.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses personal experiences with gaming and mentions the \"Gigabyte X670 Aorus Elite\" and \"OG FFVII\" games.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Presents a positive sentiment about the \"Gigabyte X670 Aorus Elite\" and \"OG FFVII\" games.",
+                  "replies": [
+                    {
+                      "commentId": "mheag4d",
+                      "text": "haha! Solid picks! Glad to hear you're having fun, video games make for such a lovely hobby!",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses personal experiences with Gigabyte X670 Aorus Elite",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "Presents positive sentiment about the product.",
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mhcdxuh",
+          "text": "If I ever upgrade it will be when I get double and a bit more performance then my 3070. Looking at your numbers I would be disappointed but that\u2019s me enjoy your new toy \ud83d\udc4d",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents personal experience with Gigabyte X670 Aorus Elite without clear positive or negative bias.",
+          "replies": [
+            {
+              "commentId": "mhdlfe5",
+              "text": "Thanks! Yeah it's definitely a different strategy. Currently, the 9070 XT sits at about 83% more perf at 1440p than the 3070, so I think one more generation of cards and you'll be about there with either AMD or Nvidia GPUs.\n\nFor me, I buy a new GPU when the games I want to run do not run as well as I would like them to. So it could be a 3 year gap, but it could also be a 2 year gap (as was the case this time around). This time, I upgraded because I wanted to play Cyberpunk 2077 with raytracing this year, and it was just not cutting it on my 3080 12GB. I also have a high res VR headset, the Bigscreen Beyond, and my 3080 struggled to run it. These factors made me upgrade.\n\nAt 30% uplift, I am pretty happy with the card, considering the price. I was considering a 5080, which would have been more like a 40-45% uplift or so, but it's way too expensive, super hard to get at MSRP, has that dubious 12v 2x6pin power connector, and is barely an improvement (8-10%) over the 4080 super. It really was a slap in my face from Nvidia. I wish there was a proper 80 class card this time around. Maybe next year.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experiences and preferences for GPU upgrades.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents a balanced perspective on the timing of GPU upgrades.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mhclfv6",
+          "text": "Nice Work Dude! That is exactly what i we're looking for. Thanks",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents positive sentiment about personal experience with Gigabyte X670 Aorus Elite.",
+          "replies": [
+            {
+              "commentId": "mhdm5o8",
+              "text": "Thank you so much! I am so happy to be able to help out and contribute to the community.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mhcobyb",
+          "text": "I wish I wasn't a poor fuck",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experiences with Gigabyte X670 Aorus Elite",
+          "sentiment": "negative",
+          "sentimentReasoning": "Presents a negative sentiment about the product.",
+          "replies": [
+            {
+              "commentId": "mhdmbep",
+              "text": "Time to start an OnlyFans or sell feet pics! /s",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses personal financial decisions unrelated to Gigabyte X670 Aorus Elite.",
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mhcovdb",
+          "text": "Got my Gigabyte 9070xt gaming oc with $830 USD and going to replace 3080 10GB. \n\nIt is arrived and going to try it out tonight. I am not too sure how i feel with 30% uplift only. Knew it but still went for it.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents personal experience with Gigabyte X670 Aorus Elite without clear positive or negative bias.",
+          "replies": [
+            {
+              "commentId": "mhdmis5",
+              "text": "Hey! Enjoy the new card.\n\nLet me know how the testing goes!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal experiences with Gigabyte X670 Aorus Elite",
+              "sentiment": "positive",
+              "sentimentReasoning": "Presents a positive sentiment about personal experience with the product",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mhcpwux",
+          "text": "I own the 10gb variant!!! I wish nvidia didnt scammed us early buyers and gave us the full 3080 instead, i know what card will be my next",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses personal experience with Gigabyte X670 Aorus Elite.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Presents a positive sentiment about the product.",
+          "replies": [
+            {
+              "commentId": "mhdmome",
+              "text": "Happy to hear this helps you out! I made this thinking of people like you \ud83d\ude0a.\n\nWhich card are you eyeing? 9070 XT or something else? \ud83d\udc40",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses personal preferences for specific cards.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Presents personal preference without clear positive or negative bias.",
+              "replies": [
+                {
+                  "commentId": "mhe5g81",
+                  "text": "Either the 9070xt or a higher model, sadly in argentina the official vendors are litteral scalpers imahine the base price is 1800$ usd, there are high taxes but those motherfuckers want always to earn 100% on top as margin, my country is doomed",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the pricing and availability of the Gigabyte X670 Aorus Elite in Argentina.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Presents a negative sentiment about the pricing and availability of the product.",
+                  "replies": [
+                    {
+                      "commentId": "mheaami",
+                      "text": "Oh my god! 1800 USD?! That's insane!",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses Gigabyte X670 Aorus Elite pricing without mentioning any other products.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "Presents extreme negative sentiment about the pricing of Gigabyte X670 Aorus Elite.",
+                      "replies": [
+                        {
+                          "commentId": "mhf5l8i",
+                          "text": "its with all electronics even with plenty of stock of anything for example a basic usb hub that in amazon cost 15 USD in argentina cost around 50$ in mercadolibre",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses electronics prices in different countries.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Presents a neutral comparison of prices in different countries.",
+                          "replies": [
+                            {
+                              "commentId": "mhf7bjt",
+                              "text": "Oh wow! I wasn't aware of it. I am sorry that it costs so much for you. \n\nHopefully you'll find a good deal locally for the card you want!",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": "include",
+                              "relevanceReasoning": "Discusses personal experiences and purchasing advice about \"Gigabyte X670 Aorus Elite\"",
+                              "sentiment": "positive",
+                              "sentimentReasoning": "Presents a positive sentiment about the product.",
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

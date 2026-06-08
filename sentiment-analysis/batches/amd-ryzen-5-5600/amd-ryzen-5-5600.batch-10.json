@@ -18,30 +18,30 @@
           "text": "There is a bug in Lenovo's firmware that causes severe thermal throttling and miss fire of DYTC events. It happens on my Gen 3 L14. That could be the reason it's scaling down so much, since the symptoms you described are the same.\n\nWhat you can try to do is to go into low-power and then high performance, this fixes it for a while. Press fn + l then after a second or so press fn + h. It will go up to 95C - 100C again.\n\nUseful to look at ACPI events also, check if there is a flood of 6032 events.\n\nAlso, 6.10-rc1 has a few new fixes for amd_pstate. Could also try that.\n\nUPDATE: Confirmed and fixed in EC version R1YHT44W.",
           "upvotes": 8,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses Lenovo firmware bugs and general AMD pstate fixes for a laptop, not specifically the Ryzen 5 5600 desktop CPU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing technical troubleshooting information without a strong positive or negative opinion on a specific product.",
           "replies": [
             {
               "commentId": "l6wfaxn",
               "text": "u/pagefalter I tried it. As soon as the CPU temperature hits 96 \u00b0C, which typically happened within 15 to 30 seconds, the CPU throttles back to a lower frequency and the fan starts spinning hard. This time I noticed the fan spinning at almost 4400rpm.\n\nHere's a screenshot of the [CPU hitting 96 \u00b0C](https://imgur.com/ZbnqtTt). The second screenshot a second or two [after throttling kicks in](https://imgur.com/aNGghpg).",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses thermal throttling in a ThinkPad laptop, not the Ryzen 5 5600.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is reporting technical observations about CPU temperatures and fan speeds in a laptop.",
               "replies": [
                 {
                   "commentId": "l6xpsc9",
                   "text": "That throttling is normal (otherwise the CPU would shutdown to avoid melting), you need to run it longer to get into this situation:\n\n&gt; After a couple of minutes of sustained load, the temperature stabilised to about 72 \u00b0C while the CPU frequency was around 3.3GHz.\n\nNo reason for it to be at 72C if it can operate fine at 95C.\n\nMine \"locks\" at 2.9GHz 75C after a while under sustained high loads. Doing the fn + l/h trick gets it to scale normally again (goes back to ~3.4GHz 95C). I filed a bug but the Lenovo guys cannot reproduce it internally, would be nice to have a second case of this happening.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses thermal behavior and bug reporting for a Lenovo laptop, not the Ryzen 5 5600.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is explaining expected thermal behavior and reporting a bug for a laptop model.",
                   "replies": []
                 }
               ]
@@ -51,10 +51,10 @@
               "text": "Oh thanks! That's useful. I'll try that out and see how I go.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a brief acknowledgement of helpful information regarding a laptop, not the Ryzen 5 5600.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is simply thanking another user for the information.",
               "replies": []
             }
           ]

@@ -1,0 +1,592 @@
+{
+  "productName": "kingston-kc3000",
+  "batchIndex": 7,
+  "totalBatches": 8,
+  "comments": [
+    {
+      "commentId": "1hydycb",
+      "text": "NVME Kingstone KC3000 VERY LOW read speed.\n\nHi everyone,\n\nI am a bit lost here tbh... Would appreciate some guidance. I recently built my new rig (7950x3d, 4080super, 32gb RAM 6000 EXPO) with a Kingston NVME KC3000  2TB. When I got it, I remember doing a CrystalDiskMark benchmark and got pretty good (normal) results compared to reviews on internet.\n\nHowever, I have been experiencing microstutter in a lot of games (especially open world ones like Spiderman : Miles Morales, Cyberpunk 2077 (especially while driving), and a little bit on red dead redemption but less often, etc...).  \nI do not stutter in little demanding games likes valorant and LoL for example.\n\nI did everything I could concerning CPU, RAM and GPU to mitigate the stutters, some things helped but I did not get id of them completely. So I thought let me test my NVME again and, to my surprise:\n\n[TEST 1](https://preview.redd.it/ewofqpi468ce1.png?width=1536&amp;format=png&amp;auto=webp&amp;s=ed90c94b77c5c734626c5583bc76e916717a3691)\n\n[TEST2](https://preview.redd.it/zh7tlbx668ce1.png?width=935&amp;format=png&amp;auto=webp&amp;s=8400dcf422a35188699442c323e853819e9453e7)\n\n[TEST 3](https://preview.redd.it/e903l46868ce1.png?width=474&amp;format=png&amp;auto=webp&amp;s=61299ea0383455e1d6230ea95b7a3a99d1eaaa33)\n\nThese are extremly low compared to reviews online that look more like this:\n\n[ONLINE REVIEW](https://preview.redd.it/2tjwcqxc68ce1.png?width=492&amp;format=png&amp;auto=webp&amp;s=a33d00156230b74cc70f367f2c3a011a3e21fc1e)\n\nSo, my question is, how the F is this happening? Could this be the culprit of all my stuttering issues ? Should I change it ?\n\nThanks a lot to anyone who read this and thanks in advance for all guidance and advice. Wish you a great 2025 year!\n\nEDIT : I tried freeing up some space on the NVME getting to 30% free space. I have turned off the pc for a few hours and just got back to it and tested it out. Results are extremely inconsistent.. look at this: [https://imgur.com/a/kX66uan](https://imgur.com/a/kX66uan)\n\nAt first it got 1705mB/s then the normal 6900MB/s and now  Itested again and got to 3500MB/s..\n\nEDIT 2: Just got an eye on HWinfo and noticed a temperature that looks to be way to high for the disk while being idle ????\n\n\\-&gt; Drive Temperature 3 being at 59\u00b0C even when idling ?\n\nThe drive temp looks to be at 32\u00b0C as reported on CrystalDisk too but? Wtf is that ?\n\n[https://imgur.com/a/ustR7dB](https://imgur.com/a/ustR7dB)",
+      "upvotes": 1,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "m6gnlot",
+          "text": "&gt; So, my question is, how the F is this happening?\n\nIf I'm reading your results correctly, your drive is 88% full?\n\nYou're also testing your drive while booted to it, so results could easily be lower than expected. \n\nAlso, gaming is generally a read workload. I'm not counting it out as the culprit of your issues, but the dots don't connect directly. Your write results are certainly low but sequential write speeds generally don't matter for gaming workloads. \n\nWhat are your temps when you get these issues?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m6hhonr",
+              "text": "Temps are pretty much all fine, cpu/gpu never exceed mid 60s both of them wile gaming.\n\nI can understand that speed would be lower because of disk being 3/4 full and stuff, but look at the screenshots, one of the results is at less than 2gb/s and also, i've seen this disk for sure much higher before! The 2 first pictures i've run the tests at the same time one after another. Nothing was running in the backround, unless discord maybe..",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "m6gy1pw",
+          "text": "See if there's a firmware update available for your drive. IIRC there's a bug with Phison E18 controller that needs a firmware update.\n\nBut I don't think this is the cause for your microstutters.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m6hhyjd",
+              "text": "I updated it recently (maybe a month ago max)",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "m6gnjij",
+          "text": "Is your bios up to date?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m6hhvnr",
+              "text": "Roughly, I had a hard time finding the right update for my 7950x3d to work correctly so... my bios version is late 2024 so I dont think this could be the issue. (Mobo : b650 tomahawk wifi)",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m6hilzg",
+                  "text": "Microstutters unfortunately doesn\u2019t correlate with the drives if anything its more so the stability of your pc by the cpu, ram, and gpu. The bios update helps with instability issues that MAY can cause some microstutters during game. Have you tried a clean reinstall of the nvidia drivers?",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m6hj5w7",
+                      "text": "Maybe it's not related to drive but I am still worried about its performance being faulty though..\n\nI tried probably everything you could think of, from vios update/reset to windows fresh install. For sure trying DDU as well etc etc... only option probably left is to debloat windows (I used rufus to put the image on a formated usb stick), and switch to windows 10.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "m6hjgoz",
+                          "text": "Have you tried a different gpu driver that can also cause issues not all drivers play well with some gpus.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "m6hjqx6",
+                              "text": "Unfortunately, i dont have another functionnal gpu... my 1080ti fans are dead, if I try it, i'll just fry it all",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "m6hjx7h",
+                                  "text": "I was talking about the nvidia geforce drivers lol",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "m6hklfz",
+                                      "text": "Oh sorry sorry my bad!! Haha yes a couple, maybe 4 different drivers and one being a studio one!",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "m6hl7bb",
+                                          "text": "So you tried PBO with curve optimizer?",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "m6hlj97",
+                                              "text": "Yep! My 7950x3d handles -20 on the entire CCD0 (3dvcache) without any bsods or visible issues at least (microstutters were there before I started using curve opti",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "m6hb0wo",
+          "text": "Just out of curiosity, are you on Win 11?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m6hhzgu",
+              "text": "Yes!! Why?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "m6hfidt",
+          "text": "Those \"online\" reviews are testing SLC cache and your result is the direct writing speed to the TLC memory.  \nThis is normal for all drives that have SLC caching",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m6hi6i3",
+              "text": "What?? What do you mean ? Could explain a bit more in depth ?  Where do I chose TLC and SLC mode in CDM?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "m6iv8lc",
+              "text": "I read a bit more about SLC cache. So after reaching the \"SLC\" cache size, the NVME write speed drops dramatically forever untill I just free it up again ?\n\nThanks for your comment again!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m6jwtnm",
+                  "text": "Yes, that's how it works. If you have decent TLC drive, the speed should be more than enough after the SLC cache exhausted.  \nAfter a while the cache will get restored by the drive internal mechanism and you will get those high writing speeds back.   \nBtw, this is only for writing speeds. Reading speeds is always good (so in-game stutters won't be due to bad writes)",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m6r8c6m",
+                      "text": "But wait ? How long does it take for it to free the SLC cache??? it's been days that I got the disk 50% free and it still performs like a$$... Why does this guy have amazing speeds with 54% used space on the same nvme as mine, a 1TB drive though (mine is 2)  \n[https://www.youtube.com/shorts/oz5JiE3p7B8](https://www.youtube.com/shorts/oz5JiE3p7B8)",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "m6w1bzk",
+                          "text": "Should take no more than a few hours.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "m6hoken",
+          "text": "Your results do look about right for how full the drive is and did you recently clear some space? TRIM the SSD and retest but storage based interrupts can cause all kinds of stutters and freezes but I do not see your NVME suffering at all especially for a game like RDR2 that originally ran on HDD.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m6ihbxz",
+              "text": "Thznks for writing.\n\nI was wondering the same, so I kept freeing some qnd mange to get a total of around 30% of the disk free.\n\nI kept testing the disk the more i was freeing it, I thought it was helping but at some point I ended up getting 2gb/s again so...\n\nAnd I forgot to mention that RDR2 is definitly not the worst, it's the most \"PLAYABLE\"",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "m6il6ca",
+              "text": "\\&gt; EDIT : I tried freeing up some space on the NVME getting to 30% free space. I have turned off the pc for a few hours and just got back to it and tested it out. Results are extremely inconsistent.. look at this:\u00a0[https://imgur.com/a/kX66uan](https://imgur.com/a/kX66uan)\n\nAt first it got 1705mB/s then the normal 6900MB/s and now Itested again and got to 3500MB/s..",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m6iufy7",
+                  "text": "Did you run TRIM? Even so since you ran tests run it once more. If on Windows search optimize drives on the search bar and you'll see what I mean. Run that and then actually let the PC sit and idle for a couple of hours so the firmware is powered and can do garbage collection then retest. That will probably stabilize your write results here but those speeds still look within real world use. My SSDs always test a lot better on writes until after about 70ish% then it tapers down. But I still don't see this being your microstutters unless you're seeing a symptom of the controller overheating.\n\n\nEdit: yeah just saw your edits your NVMe controller is overheating. What motherboard and how's your case fan situation? Is the NVMe bare with no heatsink? If it's under a built in one on the motherboard did you use any kind of thermal pads or such?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m6jhon5",
+                      "text": "I managed to get the NVME to 62% Full. I've run the optimization on windows, but it's still inconsistent. At this point I am not even thinking about the microstutters, I am just worried my disk is faulty or something. I've run a chkdsk on cmd and got some errors.. But can't run any type of fix since it's OS disk. I'm gonna translate to english hopefully this means something to you because my OS is in french:\n\n\"C:\\\\Windows\\\\System32&gt;chkdsk c:\n\nThe type of the file system is NTFS.\n\nWARNING! The /F parameter was not specified.\n\nCHKDSK is running in read-only mode.\n\nStage 1: Examining basic file system structure...\n\nThe attribute record (80, \"\") of segment\n\nC135A is corrupt.\n\nThe attribute record (80, \"\") of segment\n\nC135B is corrupt.\n\n949769 file records processed.\n\nFile verification completed.\n\nDuration of phase (Verification of file records): 5.81 seconds.\n\n16863 large file records processed.\n\nDuration of phase (Recovering orphaned files): 5.99 milliseconds.\n\nErrors found. CHKDSK cannot continue in read-only mode.\"\n\n  \nConcerning my temps, my case is very spacey, has 6 intake fans (3 of them being 140mm) and 3 140 exaust AIO fans and one rear 120mm exaust fan. CPU and GPU temps are extremly cool.  \nHowever I've seen someone else having the exact same 59\u00b0C temp which is said to be the ASIC controller as you said. I read it's junction temps is around 120\u00b0C ?? Am I wrong ?  \nSource : [https://forums.tomshardware.com/threads/kingston-kc3000-temperature.3789655/](https://forums.tomshardware.com/threads/kingston-kc3000-temperature.3789655/)",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "m6jjbkk",
+                      "text": "Look at this guy's results with a 54% full 1TB kc3000 nvme :\nhttps://youtube.com/shorts/oz5JiE3p7B8?si=o7JnpLGpojjdcHR-\n\nNothing near the mess im getting",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "m6jxv00",
+                          "text": "Yes run chkdsk but with the /F addition. Some filesystem corruption can cause your issues for sure but as you said the drive failing can also cause the errors in the first place. You can chkdsk the system disk it just might make you restart for it. Your free space is fine it's not even so much % free as much as it is getting a drive down to just a few GB free space to handle all writes the OS has for it. You have 100s of GB free now so it's not the space used at this point.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "m6klgc2",
+                              "text": "I've run it and it supposed to have been fixed! I've also let the system idle without even moving the mouse for 60 minutes in order to let the SLC cache reset, but still! Nothing\n\nI don't get it at this point!",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "m6kx8ym",
+                                  "text": "This might be worth a read:\n\n[https://www.reddit.com/r/pcmasterrace/comments/1f1piwf/psa\\_phison\\_e18\\_based\\_ssd\\_owners\\_update\\_your/](https://www.reddit.com/r/pcmasterrace/comments/1f1piwf/psa_phison_e18_based_ssd_owners_update_your/)",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "m6l7qo7",
+                                      "text": "I am on it ! Thanks for sharing it! Appreciate it\n\nOn a side note, managed to free up even more space and things are getting worse .. XD\n\n[https://imgur.com/a/XZMphi4](https://imgur.com/a/XZMphi4)\n\nI'm not sure this is normal tbh\n\nAlso my frimware is already up to date : 31.7",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "m6v8b38",
+                                          "text": "Sorry for the late reply but what motherboard is this and what slot do you have the NVMe in? I can see from reads it is pcie4x4 but I am wanting to see the cooling setup on your board. All I can see at this point from my experience is an overheating issue or dying flash. Any way you can see the stats on the drive for amount of unrecoverable errors? Having seen as your filesystem already had a touch of corruption it could just be failing.",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "m6v9mlg",
+                                              "text": "No worries man!  This is on a Msi MAG B650 Tomahawk Wifi. In the first m.2 slot, closest to CPU with MOBO heatsink + I have an Arctic liquid Freezer III 420mm AiO that has a VRM small fan, that can help a bit (imo).\n\n  \nTbh I don't think it's an overheating issue, I've run the test and screenshot a refreshed monitoring of HWinfo. Temp didn't exceed 41\u00b0C and when it in small use (idle but system running and using internet and stuff) it stays at 34\u00b0C sometimes even less (32). \n\nWith the screenshot I have added a few other things, would that be helpful? [https://imgur.com/a/WLREQS2](https://imgur.com/a/WLREQS2)",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "npy2pzj",
+          "text": "Did you figure it out?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "npyydi1",
+              "text": "BIOS issue, when i updated it worked fine!",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ns7mr3x",
+                  "text": "so all the stuttering was because of the outdated BIOS and not by the ssd?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ns7v8m6",
+                      "text": "No it fixed my ssd speeds. Onthe stuttering side i realized that it was mostly game related and learnt to live with it",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ns7zl46",
+                          "text": "How was the experience with KC3000? Would you recommend it?",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "nsaopjf",
+                              "text": "W\u00fcrde mich auch interessieren, ich plane mit sie zu holen oder die 990 pro",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            },
+                            {
+                              "commentId": "nsgn6t4",
+                              "text": "I mean, it's pretty good! Can't remember the price exactly but I think that it's cheaper thank than 990 pro and has a longer life spawn (Write/delete cycles) and the speed difference is almost non significant!\n\nI bought a second 2TB KC3000",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "nsjpg2s",
+                                  "text": "Ohh noted, thank you!",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "nupw72h",
+          "text": "Sorry for commenting on the old post, how is the drive doing? Did you fix this?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "1co8nq2",
+      "text": "[USA-NY] [H] 15x 4TB Kingston KC3000 PCIE4 TLC/DRAM SSD [W] PayPal\n\n[https://imgur.com/a/u6AM5gb](https://imgur.com/a/u6AM5gb)\n\nLiquidating Stock from IT company. All is open box but never used.\n\nPrice is $280 per shipped to your doorstep!\n\nDM about bulk deals, but already a considerable discount from new so don't expect too much.\n\nADDRESS REQUIRED ON INVOICE TO BE ABLE TO HAVE BUYER PROTECTION.\n\nSOLD SOLD SOLD SOLD\n\n[https://www.tomshardware.com/reviews/kingston-kc3000-m2-ssd-review](https://www.tomshardware.com/reviews/kingston-kc3000-m2-ssd-review)",
+      "upvotes": 5,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "l3ccrhq",
+          "text": "* Username: /u/goudacheeseguy\n  * [Click here to send a PM to this user](https://www.reddit.com/message/compose/?to=goudacheeseguy)\n* Join date: 2017-08-15 05:36:53\n* Link karma: 120\n* Comment karma: 150\n* Confirmed trades: Trades: 10\n* Heatware: None\n\n^^This ^^information ^^does ^^not ^^guarantee ^^a ^^successful ^^swap. ^^It ^^is ^^being ^^provided ^^to ^^help ^^potential ^^trade ^^partners ^^have ^^more ^^immediate ^^background ^^information ^^about ^^with ^^whom ^^they ^^are ^^swapping. ^^Please ^^be ^^sure ^^to ^^familiarize ^^yourself ^^with ^^the ^^[RULES](https://www.reddit.com/r/hardwareswap/wiki/rules/rules) ^^and ^^other ^^guides ^^on ^^the ^^[WIKI](https://www.reddit.com/r/hardwareswap/wiki/index)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "l3cpy2x",
+          "text": "All sold?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l3cq0gc",
+              "text": "Yes, will have more in a couple days.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l3cuj3v",
+                  "text": "I'll be keeping a lookout thanks for listing",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentId": "1gkzklm",
+      "text": "Kingston KC3000 1TB\n\nHello! I want to know how is Kingston KC3000 for gaming laptops and my laptop is Lenovo LOQ 15IRX9. I was checking about its review and the performance of it is top notch but the power consumption is little bit on higher side and so does the temperature would be also on the higher side so I wanted to know how bad it will be or it shouldnt matter much? I normally only do gaming and other normal browsing and some codings on my laptop. Should I get this or other ssd that has relatively lower performance and lower power consumption?",
+      "upvotes": 1,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": []
+    }
+  ]
+}

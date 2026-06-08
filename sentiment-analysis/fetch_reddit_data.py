@@ -164,17 +164,31 @@ def main():
         for url in args.urls:
             # Normalize URL to .json if not present
             json_url = url.rstrip('/') + '.json' if not url.endswith('.json') else url
-            try:
-                response = requests.get(json_url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36'})
-                response.raise_for_status()
-                thread_data = response.json()
-                # Reddit returns a list [post_listing, comment_listing] for individual threads
-                if isinstance(thread_data, list):
-                    threads.append(thread_data) 
-                else:
-                    threads.append(thread_data)
-            except Exception as e:
-                print(f"Error fetching {url}: {e}")
+            time.sleep(2.0)  # Standard delay between requests to be polite
+            
+            retries = 3
+            success = False
+            for attempt in range(retries):
+                try:
+                    response = requests.get(json_url, headers={'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'}, timeout=15)
+                    if response.status_code == 429:
+                        backoff = (attempt + 1) * 10.0
+                        print(f"  [Rate Limited 429] Reddit blocked {url}. Waiting {backoff}s to retry...")
+                        time.sleep(backoff)
+                        continue
+                    response.raise_for_status()
+                    thread_data = response.json()
+                    if isinstance(thread_data, list):
+                        threads.append(thread_data) 
+                    else:
+                        threads.append(thread_data)
+                    success = True
+                    break
+                except Exception as e:
+                    print(f"Error fetching {url} on attempt {attempt+1}: {e}")
+                    time.sleep(2.0)
+            if not success:
+                print(f"Failed to fetch {url} after {retries} attempts.")
     else:
         print(f"Searching Reddit for: {args.product}")
         threads = search_reddit(args.product, args.limit)

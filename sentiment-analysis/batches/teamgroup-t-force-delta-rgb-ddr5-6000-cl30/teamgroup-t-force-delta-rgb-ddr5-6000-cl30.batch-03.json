@@ -1,0 +1,480 @@
+{
+  "productName": "teamgroup-t-force-delta-rgb-ddr5-6000-cl30",
+  "batchIndex": 3,
+  "totalBatches": 27,
+  "comments": [
+    {
+      "commentId": "1crl64e",
+      "text": "I am having the worst time I ever had with my PC\n\nAbout 20 days ago, I started encountering a blue screen issue that constantly crashed my PC regardless of what I was on (discord, games, chrome, etc). I\u2019ve done multiple tests trying to confirm where the problem is but nothing seems to work. Please find below the error codes and what I have tried to do to identify and rectify the issue. \n\nBSOD Error Codes:\n*IRQL_NOT_LESS_OR_EQUAL\n*SYSTEM_THREAD_EXCEPTION_NOT_HANDLED\n*PAGE_FAULT_IN_NONPAGED_AREA\n*DRIVER_IRQL_NOT_LESS_OR_EQUAL\n*CACHE_MANAGER\n*EXCEPTION_ON_INVALID_STACK\n\nAttempts to Identify and Rectify Issues as of 20 days ago:\n\n*Reinstall Windows - I have tried this several times, continues to crash or come up with an error that it cannot be done.\n* Uninstall GPU driver and uninstalled GeForce\n* Windows Memory Diagnostics - no errors came up.\n* eject memory and try it one by one to see if one or the other has an issue\n* sfc /scannow - first time I tried it, it said it fixed something. If I try doing it again, it doesn\u2019t do anything anymore.\n* chkdsk /f /r - helped it seems?  Did it once and it was running well for an hour. Blue screen came back. \n* Tried MemTest86. Results came through and it passed. So memory isn\u2019t the issue.\n* Took out the M.2 in question. Kept the \u201cvideo game\u201d m.2 drive in. Wiped it and tried installing Windows. Got several errors and while installing it crashed. With that, I am assuming it\u2019s not the SSD either\n* Wiped secondary M.2 to install windows. Removed first M.2. Still kept crashing or BSOD\n*Removed all drives associated with the computer and ordered a 256gb ssd. Tried to install windows on it and it crashed or BSOD.\n\nSystem Information:\nCPU - Intel Core i9-14900K\nMotherboard - ROG Strix Z690-E Gaming Wifi\nMemory Sticks - Corsair DDR5 6600MT/s 2x32GB 1.40v\nGPU - Nvidia GeForce RTX 4070 Ti\nDrives\n*C Drive (Windows) - Samsung SSD M.2 970 EVO Plus 2Tb\n*D Drive (Game storage) - Samsung SSD M.2 970 EVO Plus 2Tb\n*E Drive - Western Digital Blue 8Tb\n*F Drive - Western Digital Black 6tb\n\n\n\n\n\nPresent Day:\n\nI have reached out for help on this Reddit before. I was told to get an RMA on my motherboard since the issues appeared to be coming from it.\nWell, unfortunately I am still encountering issues. Apparently my old motherboard had a \u201cHDD to Sata\u201d issue so they replaced the entire motherboard.\n\nI ordered new Ram sticks. Tried those, and I am still encountering issues.\n*New Ram Sticks - DDR5 T-Force Delta 2x16GB 6400Mhz\n\nI thought replacing the motherboard and the Ram sticks would solve my issue but that is not the case.\n\nI tried reinstalling windows to see if that could solve it, but once again, it\u2019s having the same issues again. Sometimes it BSOD before I even get to the installation.\n\n\n\n\n\nThank you for reading this far. If you have any ideas on what I can do next, I would greatly appreciate it. I am currently lost and have no idea how this problem came about.\nCould this be a CPU or Power supply issue? Could the replaced Motherboard still be faulty?",
+      "upvotes": 575,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "l3zwfk8",
+          "text": "(DRIVER)IRQL_NOT_LESS_OR_EQUAL\nPAGE_FAULT_IN_NON_PAGED_AREA\n\nAre very similar, it could be that a part of your PC (for example gpu or cpu) is trying to acces a certain piece of data / driver that is necessary / essential, however the OS doesn't allow this essential action to take place, thus leading to a BSOD. So this could be a faulty driver that's really bothering.\n\n\nSYSTEM_THREAT_EXCEPTION_NOT_HANDLED\n\nWhen this one occurs, check if the error gives a file name, so you can update, repair or remove it. This error is usually also caused by a driver issue.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44kr53",
+              "text": "I feel like all of my blue screen errors are all over the place. But thank you for the definitions on those ones. I seem to get those blue screen errors even with all my drives disconnected oddly enough. \nThough I see some other comments stating it could be the cpu due to some known instability issues",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l44l8gd",
+                  "text": "I'm personally not very familiar with Intel CPU's, so it could be a CPU issue. Do you have a spare one that fits in your mobo? Or maybe you can borrow one so you can check",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l45pr0c",
+                      "text": "Unfortunately I do not have a spare nor one that can fit",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l3zybr2",
+          "text": "I work for a system integrator and we currently have an issue with ASUS Z790 boards and Corsair DDR5 memory where when XMP is turned on you would constantly get blue screens. Memtest would result in infinite errors. We've spoken to ASUS who provided a beta bios which seems to solve the issue. Is XMP turned on? The system is stable without xmp. This only affects the 14th gens CPU.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44kv0t",
+              "text": "Oh? I would say my Pc has worked fine for about 6 months. Then this situation happened.\nThough I will look into XMP and see if it\u2019s turned on.\n\nI do see a lot of other users stating it could be the CPU due to the instability issues it is having.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "l4p7r3t",
+              "text": "Tested this.\nOverclock tuner was set to Auto, which was default. XMP 1 and 2 are there. I switched it to manual mode. Left BCLK at 100.\nUnfortunately still encountering errors. No blue screens yet but still getting the \u201creferenced memory error\u201d",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l4019ln",
+          "text": "Probably the CPU. How are your CPU temps?\u00a0 Try under-clocking your CPU to give it a few extra nanoseconds to do everything.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l401po1",
+              "text": "The fact that you are getting a variety of errors and the fact that memory tests passed lead me to think it is the CPU.\u00a0 Give it a bit more time to have the voltages inside settle.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l401x2x",
+                  "text": "And you should probably run a CPU stress test.\u00a0 Like calculate pi or unzip some stuff overnight.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l44kxm4",
+                      "text": "Thanks. I have a feeling it is the CPU. I currently have an open ticket with Intel. So hopefully they have something to say",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l401d59",
+          "text": "Rerun the Asus overclocking software in the Bios until it\u2019s stable. I had to do it three or four times until I got a stable clock speed. \n\nAt least this fixed my issue 7 years ago in the 1151 chipset. Haven\u2019t done a new build in a while.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44l1cj",
+              "text": "Will do.\nTho I\u2019ll be honest, I haven\u2019t touched any settings involving overclocking.\n\nThough it appears other users are stating that the CPU is unstable and is being overclocked without being setup. Intels fault.\nLooking into it tho",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l4046k7",
+          "text": "And that\u2019s why I\u2019m glad I don\u2019t build with intel. \n\nNo offense to intel guys. They are good CPU\u2019s, unless you buy 14th gen.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l405bmp",
+              "text": "Didn't amd 7000 series had a problem where it took a lot longer time to boot unless you fix the ram speed or something. \n\nAlso how's your gpu treating you. Do you play any heavy games like cyberpunk/dragon dogma etc.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l40enhm",
+                  "text": "I wouldn\u2019t know I don\u2019t upgrade everytime a cpu is released but I\u2019m sure a quick trip to google would enlighten me, \n\nMy GPU does pretty good. I have to use upscaling to play anything at 4K but 1080p and 1440p on average about 80-100 fps in most of the games I play",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l4091fk",
+          "text": "Is your system or ram overclocked.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44l399",
+              "text": "Nothing is overclocked to my knowledge.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l40a0s1",
+          "text": "I had a faulty usb3 header and every time I'd even slightly bump the desk was an instant bsod. Couldn't figure out why the fuck it was so random till I did a desk setup with no case or gfx card plugged in. Checked piece by piece until I narrowed down the cause. Another random problem I've had was a slightly burned out molex years ago was fucked trying to figure that one out",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "l40a5v7",
+          "text": "I have this exact same issue lol",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44l4bp",
+              "text": "Yikes. Hopefully this post helps solve the issue. Do you have the same CPU?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lb100il",
+                  "text": "I think my issue was the motherboard though it could have also been the cpu, I swapped my old Ryzen 5 3600 for a Ryzen 7 7800x3d and my old Asus motherboard to a MSI Pro B650-S",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l40co33",
+          "text": "i had similar issues that wouldn't go away by reinstalling windows, i switched to arch linux and never had such issues again lolz",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44l55q",
+              "text": "Oh boy. Not sure if I can use Linux lol.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l40i9yc",
+          "text": "How do you take a pic of it ? If i get it it goes away in like 3 seconds",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44l69x",
+              "text": "A lot of patience and a tired arm from holding my phone up lol",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l40k0qh",
+          "text": "Man seeing people with expensive builds have problems gives me so much peace with my 6700xt and 8th Gen Intel",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44l8xv",
+              "text": "Lol. I\u2019m using my old PC with a 980 gpu card on it since this expensive PC is unusable",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l45difh",
+                  "text": "Hahaha",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l40rzqi",
+          "text": "14900k, that\u2019s your issue. Get in contact with Intel for rma",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44l9k7",
+              "text": "Will do thanks. Currently have an open ticket with them",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l40xctq",
+          "text": "Go into BIOS and change power limits to 253w",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44lb2q",
+              "text": "Exactly 253? Trying to see what wattage is currently to under lock this cpu",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l460d9u",
+                  "text": "Yes, as per Intels recommended limits for thr i9 13/14 series (found on their website)",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l41hew2",
+          "text": "I feel your pain, I had this issue with 4 CPUs, 13900, 13700, and 2 14700, the place I bought my pc from actually made me change every single cable, keyboard, and even mouse, they refused to believe a CPU could just die like that so many times and with different setups (but all was on an Asus z790 motherboard) \n\nBut recent post and news have proved I'm not doing anything wrong (besides gaming way to much) but it had me questioning many things and gave me anxiety.\n\nGood luck with the new CPU, the rma should be no problem, and remember to change the bios settings or firmware update",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "l41muql",
+          "text": "Had a similar infuriating issue, pushed me to go ahead and start a new build, new build did same thing, WTF?!?!\nWell the only constant between the two was my 2080ti.\nTurns out my factory over clocked 2080ti was the issue.\nApparently the factory over clock had become unstable, no matter the driver.\nI manually clocked the card down to be in line with normal stock card clock speeds, and the problem stopped, and has not come back.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "l41oh6e",
+          "text": "I had a similar issue two months ago where I kept blue screening with different codes. Thought it was mem or cpu but it ended up being a drivers issue. I solved it by upgrading from windows 10 to 11 but I only did that out of convenience. I would recommend going through all your drivers and making sure they are up to date or reinstalling your OS.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "l41owlx",
+          "text": "This was a dead cpu smoking gun.\n\nHilariously, if i could boot windows and stay stable past login and startups it was fine, but it would take 20 reboots to reach that.\n\nAnd yes, replacing the bum silicon with an exact replacement, **and changing nothing else**, fixed it.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "l41q8b4",
+          "text": "could be the new intel issue but i had this same code recently, turns out one cpu socket pin got bent and fucked with the memory so no kit would work. check ur pins.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l44ljuw",
+              "text": "I would say that I don\u2019t think it\u2019s a pin issue. Inspected it and don\u2019t see any issues. But thank you",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

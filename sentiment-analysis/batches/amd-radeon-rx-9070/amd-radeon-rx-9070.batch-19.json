@@ -1,12 +1,12 @@
 {
   "productName": "amd-radeon-rx-9070",
   "batchIndex": 19,
-  "totalBatches": 19,
+  "totalBatches": 25,
   "comments": [
     {
-      "commentId": "1j43rd6",
-      "text": "AMD Radeon RX 9070 XT GPU Review &amp; Benchmarks vs. 5070 Ti, 5070, 7900 XT (Sapphire Pulse)",
-      "upvotes": 627,
+      "commentId": "1tnfrvo",
+      "text": "RX 9070 XT cooling analysis nobody seems to be doing \ud83d\udc40\n\nNoise-normalized data tells a VERY different story than stock reviews\n\n\u26a0\ufe0f Disclaimer:\n\nThe table is sorted by NN Score only.\nThat does NOT automatically mean \u201cbest to worst\u201d overall GPU.\n\nDepending on:\n\n- sustained frequency\n- card size\n- noise preference\n- airflow setup\n- deshroud potential\n- power/connectors\n\n\u2026the ranking and best choice can change significantly.\n\n\u26a0\ufe0f XFX Mercury power connectors depend on the specific variant/SKU. Some models use 2X8-pin, while higher-end OC variants use 3X8-pin.\n\nI made a comparison table using [TechSpot](https://www.techspot.com/review/3015-amd-radeon-9070-xt-roundup/) thermal data from:\n\nBut instead of only looking at:\n\n\\- stock temperatures\n\n\\- stock noise\n\n\\- FPS\n\n\u2026I tried to analyze the behavior of the coolers themselves.\n\nSo I compared:\n\n\\- stock thermal results\n\n\\- 40 dBA noise-normalized results\n\n\\- airflow scaling (Delta)\n\n\\- card size\n\n\\- thermal efficiency relative to size\n\n\\- sustained frequency relative to thermals\n\nAnd honestly, the conclusions become VERY different once you start crossing the data instead of looking at isolated charts.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udd39 What the metrics actually mean\n\n\ud83d\udd35 NN Score (lower better)\n\nCombined thermal score during 40 dBA noise-normalized testing:\n\n\\- GPU temp\n\n\\- hotspot\n\n\\- VRAM\n\n\\- VRM\n\nThis is probably the best indicator of raw heatsink quality, because it removes a large part of the stock fan curve bias.\n\nIn other words:\n\n\u00abhow good is the cooler itself at equal noise?\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe2 Delta\n\nDifference between:\n\n\\- stock thermal score\n\n\\- noise-normalized thermal score\n\nThis metric became MUCH more interesting than I expected.\n\nLarge Delta usually means:\n\n\\- quieter/conservative stock tuning\n\n\\- strong airflow scaling\n\n\\- large thermal gains once more airflow/noise is allowed\n\n\\- excellent deshroud/high-airflow potential\n\nSmall Delta usually means:\n\n\\- stock profile already runs near normalized airflow\n\n\\- card may already be relatively audible stock\n\n\\- or the cooler gains less from additional airflow\n\nSo Delta is NOT simply:\n\n\u00ab\u201chigher good\u201d or \u201clower good\u201d.\u00bb\n\nIt mainly shows:\n\n\u00abhow the cooler responds to additional airflow and noise.\u00bb\n\nWhich becomes VERY important for:\n\n\\- deshroud mods\n\n\\- SFF airflow optimization\n\n\\- custom fan setups\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe3 Compact Efficiency\n\nCustom metric combining:\n\n\\- NN Score\n\n\\- card length\n\nFormula:\n\n\u00ab100000 / (NN Score \u00d7 Length)\u00bb\n\nThe goal is to estimate:\n\n\u00abcooling efficiency relative to physical size.\u00bb\n\nBecause raw thermal performance alone can be misleading.\n\nA massive 360 mm card SHOULD cool well.\n\nWhat becomes interesting is:\n\n\\- how much thermal performance you get\n\n\\- relative to the size penalty\n\nSo this metric rewards cards that:\n\n\\- remain compact\n\n\\- while still delivering strong normalized thermal performance\n\nThis helps reveal:\n\n\\- heatsink density efficiency\n\n\\- cooler optimization\n\n\\- compact designs punching above their weight\n\n\ud83d\udfe9 Surprisingly efficient for their size:\n\n\\- XFX Swift\n\n\\- Gigabyte Gaming\n\n\\- XFX Quicksilver\n\n\ud83d\udfe5 Relatively inefficient considering their size:\n\n\\- Hellhound\n\n\\- Taichi\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfea MHz / NN (higher better)\n\nSecondary metric combining:\n\n\\- operating frequency\n\n\\- normalized thermal score\n\nFormula:\n\n\u00abClock Frequency / NN Score\u00bb\n\nThis does NOT isolate the cooler alone.\n\nInstead, it reflects:\n\n\\- cooler performance\n\n\\- boost behavior\n\n\\- BIOS tuning\n\n\\- power behavior\n\n\\- sustained clocks at equal noise\n\nIn practice:\n\n\u00abhigher = more frequency maintained for a given thermal load.\u00bb\n\nSo this metric is more about:\n\n\u00ab\u201creal-world thermal performance efficiency\u201d\n\nthan pure heatsink quality.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udd0d Interesting findings\n\n\ud83d\udfe6 XFX Quicksilver\n\nThe Quicksilver is interesting because it highlights the difference between pure cooling capability and overall tuning/performance behavior.\n\nIt achieves the best NN Score in the roundup, which strongly suggests the heatsink itself is genuinely excellent.\n\nBut at the same time, its sustained clock frequency is relatively low compared to cards like:\n\n- Mercury\n- Nitro+\n- Gigabyte Elite\n\nSo the Quicksilver appears to prioritize:\n\n- thermal headroom\n- quieter behavior\n- conservative boost tuning\n\n\u2026rather than maximizing frequency at all costs.\n\nIn other words:\n\n\u00abit\u2019s probably one of the best pure coolers in the roundup,\nbut not necessarily the most aggressive performer out of the box.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 XFX Mercury\n\nThe \u201cfully unleashed\u201d version of the XFX philosophy.\n\nIt combines:\n\n\\- excellent NN thermals\n\n\\- very high sustained clocks\n\n\\- strong MHz / NN efficiency\n\n\\- large airflow scaling potential\n\nMeaning:\n\n\\- stock tuning is not overly aggressive\n\n\\- but the cooler still scales extremely well with airflow\n\nDownside:\n\n\\- absolutely gigantic size (360 mm)\n\nBut unlike many oversized cards:\n\n\u00abthe Mercury actually justifies its dimensions thermally.\u00bb\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 XFX Swift\n\nProbably one of the most interesting cards in the entire roundup.\n\nExcellent NN score + huge Delta + excellent Compact Efficiency.\n\nMeaning:\n\n\\- relatively conservative stock tuning\n\n\\- very efficient cooler density\n\n\\- extremely strong airflow scaling\n\nThis thing could become an absolute monster in:\n\n\\- deshroud builds\n\n\\- SFF airflow-focused setups\n\n\\- high-airflow custom configurations\n\nEspecially considering its more reasonable size compared to the Mercury/Quicksilver.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 ASUS Prime\n\nSurprisingly strong cooler efficiency despite its \u201cmid-tier\u201d reputation.\n\nAlso:\n\n\\- one of the easiest cards to deshroud\n\n\\- fan shroud removes very easily\n\n\\- minimal teardown required\n\nVery interesting for:\n\n\\- deshroud mods\n\n\\- SFF builds\n\n\\- low-noise airflow optimization\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83d\udfe6 Sapphire PURE vs PULSE\n\nAfter comparing:\n\n\\- PCB photos\n\n\\- dimensions\n\n\\- thermal behavior\n\n\\- BIOS differences\n\n\u2026I\u2019m fairly convinced they are basically the same card underneath.\n\nSame PCB.\n\nSame heatsink.\n\nSame dimensions.\n\nThe PURE mainly adds:\n\n\\- ARGB\n\n\\- slightly more aggressive BIOS/fan tuning\n\nSo:\n\n\u00abPURE \u2248 PULSE + RGB + mild factory OC\u00bb\n\nTheir very similar NN behavior strongly supports this.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\n\ud83e\udd14 Why I think reviewers underuse their own data\n\nMost reviews stop at:\n\n\\- stock thermals\n\n\\- stock acoustics\n\n\\- FPS\n\nBut the REALLY interesting stuff is often hidden in the relationships between variables:\n\n\\- airflow scaling\n\n\\- cooling density\n\n\\- noise sensitivity\n\n\\- efficiency per size\n\n\\- deshroud potential\n\n\\- sustained boost behavior\n\nOnce you start crossing the data instead of reading charts individually:\n\n\u00abthe rankings and conclusions change completely.\u00bb\n\nVRAM temps can absolutely vary depending on:\nSamsung vs Hynix memory\npad mounting pressure\nthermal pad variance\neven production revisions over time\nSo the VRAM part of the NN score is not a perfectly controlled variable.\nThat said, I still think the overall trends remain meaningful because the score combines:\nGPU temp\nhotspot\nVRAM\nVRM\n\u2026rather than relying on VRAM alone.\n\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\nSorry to everyone who already commented on the previous post \u2014 I had to repost it because the image quality/formatting were not good enough and the XFX Mercury was missing.\n\nAlso:\n\n\\- the PowerColor Reaper is missing because it was not included in TechSpot\u2019s RX 9070 XT roundup data.\n\nBig thanks as well to the people in the previous thread.\nSeveral comments genuinely helped improve the updated version of the post.",
+      "upvotes": 432,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,301 +14,460 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mg5w288",
-          "text": "I'm not super tech savy, but i'd like to know if upgrading from my reference 6800xt would be significant. I game at 4k, and I'd like to enhanced my Cyberpunk experience as much as possible. I play mostly single player games (KCD2, Playstation Studios games, etc) and I pretty much always have to tinker with some settings to get good enough performances. Also not a fan of FSR from what I've tried. I like my visuals clean.",
-          "upvotes": 1,
+          "commentId": "onu117l",
+          "text": "Hmmm... I wonder how my PowerColor Reaper 9070xt modification would compare to the other cards.\n\nI replaced the three 90mm fans for two 120mm fans, plus repaste plus new pads.\n\n[https://imgur.com/a/0TYm1uQ](https://imgur.com/a/0TYm1uQ)",
+          "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal experience modifying the cooling of their RX 9070 XT.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is describing a technical modification without expressing a strong positive or negative opinion on the product itself.",
           "replies": [
             {
-              "commentId": "mg61o6a",
-              "text": "Watch the video and compare the 7800 xt fps to the 9070 xt fps.\n\n\nThe 6800 xt should be close to the 7800 xt.",
+              "commentId": "onu4nev",
+              "text": "Ship it to op in this case if you're curious",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mg95fap",
-                  "text": "Unfortunately for them I don't think it's a 2x improvement you'd especially want (that's what you need to turn 30fps into 60fps. 50% is 30fps to 45fps). More like 50% better raster for much better RT but same vram amount and similar power consumption. It's not really amazing after 4 years though it is a little cheaper than 6800 XT MSRP so there's that. Probably the first \"okay\" upgrade but mostly if they can sell their 6800 XT to make up some value. Otherwise hold another couple of years for UDNA and RTX 6000 series which should also use a newer process node like 3nm.\n\nTech power up's review data for the Sapphire Nitro model (so a little faster than the 304w MSRP models) is averaging 79.5fps. They have 6800 xt for 53.1fps at 4K. (7800XT is just 1.5fps faster). That's close to 50% but that's really the bare minimum for an upgrade which after two gens seems kinda bad.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mg680ps",
-          "text": "I plan to upgrade my RTX 2070 to this, can't watch the video for now, but the upgrade requires me to update the monitor as well (because it only supports DVI for 1080p 144hz).  \nIs the 9070xt now good enough to get 4k with upscaling running?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mg6otvn",
-              "text": "Definitely but you may have to lower some settings is all.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort suggestion to ship the card to the OP, not providing insight into the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed.",
               "replies": []
             },
             {
-              "commentId": "mgayadb",
-              "text": "I'd advise against using the 9070 XT at 4K, but that depends on what you play.\n\nIt seems to *just* be playable on recent games at 4K, with concessions to visuals, which means it'll only get worse as years go by. The card seems to be much more suited for 1440p gaming.",
+              "commentId": "onw03q7",
+              "text": "nice , have your temps dropped?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mg68cfw",
-          "text": "Would this be worth upgrading to from a 4070? I\u2019ve concerns that the 12GB of the 4070 is rather limiting, especially for the years to come.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mg6ameu",
-              "text": "It\u2019s close to the GeForce RTX 4080 is rasterization and close to the GeForce RTX 4070 Ti Super in ray-tracing.\n\nIt\u2019s up to you.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely a question about temperatures, providing no opinion or experience.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed.",
               "replies": [
                 {
-                  "commentId": "mg6bkq9",
-                  "text": "Not really worth getting a +600\u20ac upgrade then \ud83d\ude05 maybe if I could sell the 4070 for 400\u20ac \u2026 something to think about while stock lasts for the 9070xt.",
+                  "commentId": "onyya7a",
+                  "text": "of course... \n\nHotspot never reaches a temp higher than 91\u00b0C, Vram at max 95\u00b0C\n\nBefore that, the Reaper reached 105\u00b0C Hotspot, Vram wasn't much cooler",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User provides specific thermal data from their modified RX 9070 XT.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "User indicates that temperatures dropped significantly after modification, implying a positive result.",
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "onw3e1b",
+              "text": "I bet that did wonders for the sound.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Speculative comment about sound, not based on personal experience or technical critique.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed.",
+              "replies": [
+                {
+                  "commentId": "onx2jpf",
+                  "text": "since I installed 2x Bequiet Silent Wings 4 120, I can't hear anything below 80% speed. 100% fan speed sounds like a hum, not like three baby banshees crying for their mom \\^\\^",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User shares experience with fan noise and cooling on their modified RX 9070 XT.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "User is very satisfied with the noise levels after modification.",
+                  "replies": [
+                    {
+                      "commentId": "onyoca5",
+                      "text": "You've given me my next project lol. Thanks!",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "User expresses interest in doing a similar project, not providing insight into the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "No opinion expressed.",
+                      "replies": [
+                        {
+                          "commentId": "onyxona",
+                          "text": "you are welcome ;)\n\n",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Low-effort response, not providing insight into the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "No opinion expressed.",
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "onvbw5c",
+          "text": "These cards don't come with the same power limits out the box. Not having this information throws everything into question. \n\nIf you own any amd card and tune and play around it you will see the clocks+power have big influence on the hot spot temps... mainly because you simply can't get the heat out even if you have monster sized air cooler. \n\nHot spots will get hot with higher core clocks, not that it is a big deal for everyone but it is what it is.\n\n\nSo don't try to read too much into precise readings because there is a big elusive variable.",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "Technical critique regarding power limits and their effect on hotspot temperatures.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing a technical explanation rather than a positive or negative judgment.",
+          "replies": []
+        },
+        {
+          "commentId": "onuuj1m",
+          "text": "This seems like it was needed back when I ran a 6800XT. Routine temps to 80C during gaming in a high airflow case.\n\nMy ASUS PRIME 9070XT usually runs 55-63C and virtually silent compared to case fans in the same exact environment.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal experience with the ASUS PRIME 9070 XT's thermals and noise.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User is satisfied with the temperatures and noise levels.",
+          "replies": []
+        },
+        {
+          "commentId": "onv3nrt",
+          "text": "Very interesting. Nitro+ seems pretty good for its length. Pretty happy with its overall score.\n\nI went from:\n\nXFX 8800GTS 320mb &gt; 9800 GT 1gb &gt; Ati 5850 &gt; Ati 7970 &gt; GTX 970 &gt; GTX 1080 &gt; RTX 2080ti &gt; RTX 3080 &gt; AMD 9070 XT Nitro+",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares their upgrade path and expresses satisfaction with the Nitro+ model.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User is 'pretty happy' with the overall score and the card.",
+          "replies": [
+            {
+              "commentId": "onx3l87",
+              "text": "Have yet to have a Nitro card with coil whine, really any Sapphire card in any of my AMD builds over the years.. Vapor X HD7970 &gt; Tri-X 290X &gt; Nitro Vega 64 &gt; Nitro 6900XT &gt; Nitro 9070XT. I\u2019ve become brand loyal to them when it comes to shopping or recommending AMD \ud83d\ude05. I\u2019ve been let down with some XFX and Asrock cards.\n\nASUS, Zotac &amp; MSI\u2019s on the other hand\u2026. My GTX670, Striker GTX760 SLI\u2019s, GTX1080Ti, RTX3090\u2026 Every single one screamed like a banshee. Especially on WoW. I still want to own an RTX build but the coil whine drives my pets &amp; gf mad.\n\nWould love to give an RTX5080 a go and find a brand with the best QC\u2026 My partner went through 4 GPU\u2019s and couldn\u2019t land one without bad coil whine. Even a 5080 Astral, it handled it the best but still went to shit on some games. With the scarcity of AIB options for 50 series GPU\u2019s right now, ended up with a 9070XT Pure for hers.\n\nI\u2019m glad it doesn\u2019t bother some people but it\u2019s a very underrated factor when GPU shopping imo",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User shares long-term brand loyalty to Sapphire and experience with the 9070 XT Pure.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User strongly recommends Sapphire cards and is happy with the 9070 XT Pure.",
+              "replies": [
+                {
+                  "commentId": "onxt876",
+                  "text": "I get coil whine on the 9070xt when I run local ai models. But only then.\nNever during gaming.\n\nAll my Nvidia cards have had really bad coil whine.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": "include",
+                  "relevanceReasoning": "User shares experience with coil whine on the 9070 XT during specific workloads.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "User reports experiencing coil whine, which is a negative trait.",
                   "replies": []
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "commentId": "ontnzy8",
+          "text": "Quite interesting and good coming from an xfx merc 7900 gre to 9070xt steel legend, hellhound, then xfx merc oc.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares their experience switching between multiple 9070 XT variants.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User describes the experience as 'quite interesting and good'.",
+          "replies": []
+        },
+        {
+          "commentId": "ontvlyo",
+          "text": "Great work. I have xfx quicksilver and it is by far the best cooling GPU I ever had so I can 100% recommend it.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User recommends the XFX Quicksilver based on their personal experience with cooling.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User calls it the 'best cooling GPU I ever had' and recommends it.",
+          "replies": []
+        },
+        {
+          "commentId": "ontw1gi",
+          "text": "Complete novice question: how power connectors differ?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Novice question about power connectors, not providing insight into the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No opinion expressed.",
+          "replies": [
             {
-              "commentId": "mg9b5e3",
-              "text": "I'd say hold for one more generation then upgrade in a couple of years. 12GB isn't too problematic yet, it's more like 8GB in 2020 in current games it was only just starting to show its probelms and limits but still took a couple of years before it really started to hurt for those 3070 owners and especially now after four. Besides the 9070 XT is only going to be about a 50% raster uplift for worse RT uplift and 33% more vram for the same price. Logically it makes sense to hold for something two gens newer than your 4070 which on the Radeon side should get you close if not double the performance per dollar IF UDNA is good. Well could also be named RDNA5 but either way it'll be next gen Radeon and Nvidia to watch out for.\n\nHowever a big if is that if you're American... yeah MSRP 9070 XTs may be your last chance before tariffs ruin everything until that administration is thrown out and tariffs are removed however long it'll take. Also if you're able to sell your RTX 4070 for a good price that would also make the value proposition better, I'm not sure what they go for but even 400USD would cover most of the cost of a MSRP Sapphire Pluse model 9070 XT which would make it worth it. Also yeah I'd recommend Saphhire's GPUs, they're called the EVGA of Radeon for a reason. They come with PTM 7950 on all 9070 models now anyway so you will literally never have to repaste your GPU.\n\nEdit: oh I see you're European in a reply. Yeah don't worry about American tariffs then lol, only make the jump if you can sell your 4070 to cover most of the cost of a 9070 XT otherwise it's better to wait and skip a generation. That's general rule anyway, only upgrade every other generation at most to get better value, every gen is only if you can keep selling your GPUs for good prices with each upgrade or got money to burn on flagships every gen.",
-              "upvotes": 1,
+              "commentId": "ontz4xq",
+              "text": "12vhpwr tend to burn. It's rarely an issue with rx9070xt. It's more likely on the rtx 5080/90 cards because of their higher tdp. The rtx 4000series had better balancing at least, so it wasn't that big of a deal. But the good old pcie 8pin is proven by time and hundreds of millions of devices. Just avoid the 12vhpwr on any card over 300W (or so)",
+              "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General discussion about power connectors (12vhpwr vs 8pin), not specific to the RX 9070 XT's performance or experience.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed.",
+              "replies": [
+                {
+                  "commentId": "onu7fp3",
+                  "text": "and its solved by a proper 3.1 atx psu on any card. people just blow this issue out of proportion so much",
+                  "upvotes": -3,
+                  "classifyThis": true,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General discussion about PSU and power connectors, not specific to the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No opinion expressed.",
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "onu1jrb",
+          "text": "Mercury oc has 3x8pin tho",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Factual statement about power connectors, not providing an opinion.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No opinion expressed.",
+          "replies": [
+            {
+              "commentId": "onuqmar",
+              "text": "There's a non OC mercury that is 2x8pin",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual statement about power connectors, not providing an opinion.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed.",
               "replies": []
             }
           ]
         },
         {
-          "commentId": "mg6a5nt",
-          "text": "not sure how to feel now about my pre-christmas GRE purchase lol",
+          "commentId": "onu29md",
+          "text": "Nice post. Got the Quicksilver last week, coming from a Asus KO RTX 3070 which was crazy hot. I'm very surprised by the new gpu, super quiet and cool.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User shares experience with the Quicksilver, comparing it to a previous GPU.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User is 'very surprised' by how quiet and cool the card is.",
           "replies": []
         },
         {
-          "commentId": "mg6e6e9",
-          "text": "y'all think this is a good upgrade from a 3060? i just want a nice 1440p 90fps experience. im fine with using upscaling on even balanced/performance, so y'all think it could work for rt heavy games as well?",
+          "commentId": "onu3equ",
+          "text": "Very cool (pun half-intended), based on absolutely needing to UV and tweak the fan curve on my Reaper plus it being Powercolor's base model I'm assuming it's bottom of the table haha",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User shares experience with the Reaper model, mentioning the need to undervolt and tweak fan curves.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User implies the Reaper is the 'bottom of the table' due to the need for manual tuning.",
           "replies": [
             {
-              "commentId": "mg6xima",
-              "text": "Definitely a worthwhile upgrade. Looks like it\u2019s within 5% ray tracing performance of the 5070 Ti in almost all games besides Wukong",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mg8lvzf",
-                  "text": "It's worth noting that to isolate the performance ray tracing, you need to test the GPU in path-tracing/\"full ray tracing\" scenarios (and even when doing so, the games that support \"full ray tracing\" aren't quite fully ray traced). In _these_ path traced scenarios, the 9070XT is still behind the the 5070 (non-ti), yet much closer than what previous generations of AMD cards use to be:\n\n[Cyberpunk path-tracing, 4k output, performance upscaling](https://youtu.be/pFDEa4xD9Yk?t=1052): 5070 is ~~19%~~ 9% ahead (EDIT: the 5070 is 19% ahead of the 9070 non-XT).\n\n[Black Myth Wukong, 4k output, quality upscaling, medium RT](https://youtu.be/yP0axVHdP-U?t=985): The 5070 is up 40.0 fps to 29.1 fps.\n\nHowever, the 9070XT superior raster performance is why it generally performs better in scenarios that are mixed raster and RT scenarios. In the past, this factor meant that AMD cards can be competitive with RT-on only in games with a very light RT workload (such as the Resident Evil games or Far Cry 6). **Now** AMD's flagship card can be competitive with RT-on in games that substantially use ray tracing, such as:\n\n- The 9070XT performing slightly [better than the 5070 with high RT in Dying Light 2](https://youtu.be/yP0axVHdP-U?t=1144), which is a game with a heavy use of ray tracing.\n\n- The 9070XT performing slightly better than [the 5070 in Cyberpunk with the highest non-path tracing ray tracing options](https://youtu.be/vfc3nhus12k?t=564).",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "mg6yj68",
-          "text": "Do we have any charts on the differences between all the different AIB's yet?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mg71bdx",
-          "text": "Is it worth upgrading to 9070XT from a 6800XT? Or should I have my eyes on a 5080 FE instead?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mg89hfs",
-          "text": "Any links which confirm if FSR 4 is CNN or a transformer model? Is FSR 4 supported GPUs committed to get transformers model in future?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mg8q6tp",
-          "text": "Probably the main negative of the 9070 XT is power consumption. \nIt's more efficient than the 7900 series, but still behind Nvidia there.\n\nI wonder how much they can be undervolted?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mg98ddr",
-          "text": "Is the 9070xt better than the 7900xt?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mg9ifpq",
-          "text": "How good is this AMD gen encoder comparing to nvenc now guys?\n\nI do record my game in obs with nvenc\n\nStill on my RTX3070",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mgb0uro",
-          "text": "I have a question, did AMD give a bit more infos about the RDNA 4 GPU roadmap? Are they planning to release a XTX version, or whatever they'll call it, this year?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mgb3dh5",
-          "text": "This is a good comparision but i wish they use frame gen and multiframe gen in test, if any user buy any of card they mostly open frame gen and if they bough 50 series they will open multiframe  gen",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mgclxfq",
-          "text": "How much power would the card draw if I limit my fps to 120 or 144 and keep the setting on high instead of max? would a 650w psu be enough?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mgcwsi2",
-          "text": "Managed to get a Hellhound wanted a sapphire pure but cant complain\n\nmy  6700xt Nitro+ can take a trip to CEX  four years of excellent service",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "mgf1yiu",
-              "text": "My XFX 6750 XT will also be making a trip to make way for the Pulse 9070 \ud83d\ude02\n\nOr might stick it on eBay.",
+              "commentId": "onvmapu",
+              "text": "i'd be surprised if reaper is bottom, its been surprisingly cool for me",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "mgfak9i",
-                  "text": "they are good cards still I did offer to build a competer for my middle child and keep it but she was like no its to big",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
+              "relevance": "include",
+              "relevanceReasoning": "User shares personal experience with the Reaper model's thermals.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User states the card has been 'surprisingly cool' for them.",
+              "replies": []
             }
           ]
+        },
+        {
+          "commentId": "onu3ndr",
+          "text": "U did well not including the reaper, cuz that thing is so cheap in quality it often reaps itself from its shroud (weak plastic that breaks)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User critiques the build quality of the Reaper model's shroud.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User describes the quality as 'so cheap' and mentions the plastic breaking.",
+          "replies": []
+        },
+        {
+          "commentId": "onu4c3j",
+          "text": "i LOVE my mercury, its so awesome looking, quiet (non mag version fwiw) and cool. ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal experience with the Mercury model.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User 'LOVEs' the card, praising its looks, noise and thermals.",
+          "replies": []
+        },
+        {
+          "commentId": "onu5ycy",
+          "text": "Great work, man!\n\nAnd of course I am happy that I\u2019ve chosen the xfx quicksilver \ud83d\ude42",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses satisfaction with their choice of the XFX Quicksilver.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User is 'happy' with their purchase.",
+          "replies": []
+        },
+        {
+          "commentId": "onu80ww",
+          "text": "Just picked up a gigabyte gaming OC last week, going to use it as an egpu, let's see how well the thermals are out in the open. Will probably undervolt it as well considering its loud reputation.\n\nGreat summary of data! I've been looking for something like this!",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares their plan to use a Gigabyte Gaming OC and mentions its loud reputation.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "User is neutral, as they are just stating their plan and mentioning a known reputation.",
+          "replies": []
+        },
+        {
+          "commentId": "onu8p6f",
+          "text": "I just bought a Nitro+ instead of Pure  \nI hope it runs cool tho :(",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses concern about the Nitro+ thermals after purchasing it.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "User is unsure and expressing hope, not a definitive positive or negative opinion.",
+          "replies": [
+            {
+              "commentId": "onvym9w",
+              "text": "It does! It's very cool and silent. I can't compare them since I don't have the Pure. But you won't regret the purchase!\nAlso, I'm not that much into GPU modding, but I understand that you can undervolt it a fair amount to make it run even cooler and more quiet without notably losing performance.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User shares personal experience with the Nitro+ model, recommending it.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User states it is 'very cool and silent' and that the buyer 'won't regret the purchase'.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onu9js2",
+          "text": "my xfx with hynix memory would mess up the table a bit :)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Low-effort comment about memory type, not providing meaningful insight.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No opinion expressed.",
+          "replies": []
+        },
+        {
+          "commentId": "onuabvi",
+          "text": "Thats a really good post right there",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "General praise for the post, not the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No opinion expressed.",
+          "replies": []
+        },
+        {
+          "commentId": "onudy7p",
+          "text": "I have pulse it barely goes above 60 c in general it seems most of  the 9070xt variants  are amazing for their temps ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares experience with the Pulse model's thermals.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User states the card 'barely goes above 60 c' and that most variants are 'amazing'.",
+          "replies": []
+        },
+        {
+          "commentId": "onueb7j",
+          "text": "I love my XFX Mercury. The temps are fantastic although it has three 8 pin connectors not two. ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares experience with the XFX Mercury, praising its thermals.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User 'love[s]' the card and says the temps are 'fantastic'.",
+          "replies": []
+        },
+        {
+          "commentId": "onuee3j",
+          "text": "How come my Acer Bifrost card is never in any of the comparisons \ud83d\ude05",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Purely a question about the absence of their card in comparisons, not providing insight.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No opinion expressed.",
+          "replies": []
+        },
+        {
+          "commentId": "onug0jd",
+          "text": "I switched from a yeston rx 9070 XT to the Asrock Taichi OC white. My 100% GPU load temp went from 65 C to 54 C on average. Been happy so far. Better cooling for me. ",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares experience switching from Yeston to Asrock Taichi OC, noting improved thermals.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User is 'happy so far' and notes better cooling.",
+          "replies": []
+        },
+        {
+          "commentId": "onujxej",
+          "text": "Uuuuhm. Did I mess up buying the gigabyte gaming one?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses concern about their purchase of the Gigabyte Gaming model.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User is questioning if they 'messed up' their purchase.",
+          "replies": [
+            {
+              "commentId": "onuui5g",
+              "text": "Depends whether you're trying to win internet points or simply enjoy playing games.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort response to another user, not providing insight into the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed.",
+              "replies": []
+            },
+            {
+              "commentId": "onx6vbp",
+              "text": "Its just a loud card. It cools perfectly well, just the fans are loud so it doesn't do well in noise-normalised comparisons.\n\nThe stock fan curve is also really low, probably to present it as being quieter than it is. Temps benefit a huge amount from undervolt and custom fan curve, but im sure thats the same across all models. Even using my max performance 360W setting the hotspot runs cooler than the stock settings.\n\nIts been a great card for me, but i dont really care how loud it is, just that it runs cool, which it has for 14 months so far. Those chasing whisper quiet PC's should probably avoid this model though.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": "include",
+              "relevanceReasoning": "User shares detailed experience with the Gigabyte Gaming model, discussing noise and thermals.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User states it's been a 'great card for me' and 'cools perfectly well'.",
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "onupal5",
+          "text": "I have the quicksilver card runs really well hotest ive had it is 62 degrees. It works really well. Thanks for the info though makes me appreciate my purchase more.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "include",
+          "relevanceReasoning": "User shares experience with the Quicksilver model, praising its thermals.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User states it 'runs really well' and 'works really well'.",
+          "replies": []
+        },
+        {
+          "commentId": "onuu3jf",
+          "text": "Love you for this brother",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": "exclude",
+          "relevanceReasoning": "Low-effort praise for the OP, not the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No opinion expressed.",
+          "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

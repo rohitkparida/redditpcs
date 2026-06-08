@@ -1,0 +1,273 @@
+{
+  "productName": "intel-core-ultra-9-285k",
+  "batchIndex": 64,
+  "totalBatches": 84,
+  "comments": [
+    {
+      "commentId": "1gsla7e",
+      "text": "AMD Ryzen 7 9800X3D vs. Intel Core Ultra 9 285K, 45 Game Benchmark",
+      "upvotes": 182,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "lxgakwo",
+          "text": "If anything this just proves that Intel\u2019s design team is the problem here. Can\u2019t create a good product in its own fab or with TSMC.",
+          "upvotes": 23,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lxgc3jl",
+              "text": "Alder Lake was a great product. Problem was their fabs did keep up so we got a bunch of refreshes of the same CPU instead of the planned 4nm and 20A products that were supposed to have already been shipping by now:\n\n\nhttps://www.extremetech.com/computing/325127-intel-rebrands-its-future-process-nodes-updates-roadmap\n\n\nHad we gotten the original 20A desktop processors things would probably look a lot different now. Instead those were scrapped and Arrow Lake was hastily redesigned for TSMC. Likely that late change is why Arrow Lake is such a mess.",
+              "upvotes": 15,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lxgv583",
+                  "text": "They should\u2019ve just done a respin of raptor lake on tsmc N3B. That would\u2019ve given better performance at the cost of less power improvements.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lxh4ido",
+                      "text": "Intel has already been complaining about margins with ARL and LNL thanks to outsourcing the compute tile to N3B. If the entire die was N3B rather than just the compute tile, the margins on such a product might just be dreadful. \n\nPerhaps they would be able to ask for higher ASPs with a more competeteive product, but I'm still not confident that even a monolithic ARL would be able to beat Zen 5X3D in gaming.",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "lxhfmqr",
+                          "text": "They should have proposed an 8+24 SKU which would have allowed an increase in L3 cache and make it more competitive against Zen5 X3D and make them dominate productivity benchmarks as well. They never think logically.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "lxh61ug",
+                  "text": ">Problem was their fabs did keep up so we got a bunch of refreshes of the same CPU instead of the planned 4nm and 20A products that were supposed to have already been shipping by now:\n\nEven if Intel followed the original plan of MTL in 2022 and ARL in 2023, the competitive situation in gaming would not have been that much better. \n\nMTL honestly might have been a regression vs ADL in gaming as well. There is no large core architecture update, and the chiplet issue is just as bad with MTL as it is with ARL. \n\nAnd ARL in late 2023 would still have lost to Zen 4X3D in gaming, as it does today. \n\nRPL honestly saved Intel's ass in gaming, though RPL itself was never supposed to exist lol. \n\n>Had we gotten the original 20A desktop processors things would probably look a lot different now. Instead those were scrapped and Arrow Lake was hastily redesigned for TSMC. Likely that late change is why Arrow Lake is such a mess.\n\nThere's no way N3B wasn't being co-designed (or honestly the lead design) simultaneously with any 20A dies. Not only that, but the 20A vs N3B node was never the issue, it was the chiplet/fabric issues that are plaguing ARL. ARL was almost certainly always planned to use the same chiplet config as MTL, and that's what sunk ARL, not the choice of node.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lxhdd9w",
+                      "text": ">Even if Intel followed the original plan of MTL in 2022 and ARL in 2023, the competitive situation in gaming would not have been that much better.\n\n20A would have switched from FinFET to GAAFET and introduced backside power delivery, improving energy efficency and reducing the voltages needed to clock higher.  Hard to say what a node that isn't shipping would have performed like, but good chance boost clocks would have been a lot higher given the better performing transistors and increased voltage headroom.  It is also unclear what other features/optimizations were lost when GAAFETs/backside power were ditched, so possibly IPC and latency took a hit as well.\n\n>There's no way N3B wasn't being co-designed (or honestly the lead design) simultaneously with any 20A dies.\n\nArrowlake started on 20A and has been on intel roadmaps since well before the TSMC deal was negotiated.  It was originally meant to be the first mainstream device using backside power delivery, but that got dropped with the switch to TSMC. \n\n>Not only that, but the 20A vs N3B node was never the issue, it was the chiplet/fabric issues that are plaguing ARL\n\nThe weird fabric issues are quite possibly a result of the late switch to a different node and the huge amount of extra work that entailed.  Apparently they're still thinking some of them can be improved with microcode, so its pretty evident that a lot of Arrowlake was a last minute job.  Presumably had they had more time they could have addressed a lot of this, as AMD has done.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "lxhwch6",
+                          "text": ">20A would have switched from FinFET to GAAFET and introduced backside power delivery, improving energy efficency and reducing the voltages needed to clock higher\n\nEnergy efficiency is not a problem with ARL. \n\n>Hard to say what a node that isn't shipping would have performed like, but good chance boost clocks would have been a lot higher given the better performing transistors and increased voltage headroom.\n\nJust because a node is GAAFET or has BSPD doesn't neccesarily mean it will be better than any process that doesn't have those features. Intel themselves claim that 18A only has a slight perf/watt advantage over the N3 family, the chance that 20A would have any sort of meaningful advantage over N3B is slim. And even if it did, Fmax doesn't always improve with new nodes, such as Fmax being lower on Intel 4 than Intel 7. \n\n>It is also unclear what other features/optimizations were lost when GAAFETs/backside power were ditched, so possibly IPC and latency took a hit as well.\n\nIt would be the same core, there's very little chance IPC or latency took any sort of hit. \n\n>Arrowlake started on 20A and has been on intel roadmaps since well before the TSMC deal was negotiated.\n\nARL would have been product defined late 2021 following Intel's normal design cycle, Intel's deal with TSMC would have been around the same time or even earlier. \n\n>The weird fabric issues are quite possibly a result of the late switch to a different node and the huge amount of extra work that entailed.\n\nThis doesn't make much sense. The fabric would be a purely architectural issue, and the packaging was strictly inherited from MTL, which was in place even before ARL was designed. The node switch wouldn't have changed any of this. \n\n>Apparently they're still thinking some of them can be improved with microcode, so its pretty evident that a lot of Arrowlake was a last minute job\n\nIntel often has issues no matter how rushed something is... \n\nAlso, AMD had issues with Zen 5 initially as well, and that took 2 years to launch. Sometimes you just have problems.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "lxh9jvd",
+              "text": "This doesn't make any sense, like at all. CCG pulled in 12b of revenue (the design BU of Intel). That's nearly twice the revenue of AMD as a whole. Free markets speak. The foundry is the bottleneck as they're ramping with new tools and at a 2B+ deficit for 3 consecutive quarters.\n\nThey designed Lunar Lake which is a massive success. \n\nRaptor Lake released first and outperformed all of the non-x3d parts at a lower price than 7000 series while using 7nm architecture.\n\nRelying on their own process using Pre-EUV Tools, a choice by Krzanich, led to delayed processor releases and a 2 year push back of Sapphire Rapids which is where the actual money is.\n\nN3B, what Arrow Lake is fabbed on, is a weak process missing two of the core features that were supposed to be on Arrow Lake - power via and GAA. Arrow Lake regressed to a weak Meteor Lake refresh because 20A wasn't production ready.\n\nIf your two biggest designs, ribbonFET and power via can't be put into your processors because the fab process then it's a fab issue, not design.",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lxhgu3v",
+                  "text": "Looking at the latest earnings report, CCG was saved by mobile sales. Lunar Lake design is superior to Arrow Lake. For LNL both memory controller and CPU cores remained in the same monolithic tile. Desktop took a big plunge YoY. As they keep underperforming on mainstream desktop all they deserve is to lose sales and market share.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lxhvtmr",
+                      "text": "I agree that a power reduction isn't enough innovation to justify a purchase. However, given that most of the market is non-enthusiast and we're like 1% of the planet they'll continue to sell highly in OEMs and workstations since it's an improvement in every other system metric which means they're still appealing to the market makers and so they won't lose market share or sales. Arrow Lake is also going to be a limited run chip; Intel likely won't continue paying TSMC for their overpriced N3B wafers past 2025.\n\nMeteor Lake, Arrow Lake, and Lunar Lake are all designed by the same team, but some projects get more leeway than others. In this case, Meteor Lake launched to a no-buy market so it didn't make sense to be competitive. Arrow Lake inherited the design flaws of Meteor, and Lunar was a total rebuild with SOC-packaged memory to compete in the ultralight platform. Just goes to show the secret sauce is in the packaging when it comes to mobile.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "lxi7297",
+                  "text": ">Free markets speak\n\nIn terms of which product is better? Not really. Intel simply is able to provide a lot more volume, Intel works closer with OEMs, provides deals, etc etc. Tons of reasons OEMs choose Intel over AMD regardless of which product is better. \n\n>They designed Lunar Lake which is a massive success.\n\nLNL is *really good*, but let's be real, there's some glaring short comings as well. There's a reason Intel is taking a step back with PTL in some of the design aspects of LNL. \n\n>and a 2 year push back of Sapphire Rapids which is where the actual money is.\n\nSPR had various validation issues which required a lot of delays and respins. It was the same story with ICL too. \n\n>N3B, what Arrow Lake is fabbed on, is a weak process missing two of the core features that were supposed to be on Arrow Lake - power via and GAA\n\nIntel themselves claim 18A is only slightly better than N3. 20A likely have had no noticeable advantage over N3B. \n\n>Arrow Lake regressed to a weak Meteor Lake refresh because 20A wasn't production ready.\n\nARL is bad in gaming because of the chiplet setup/fabric.",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lxkbuhb",
+                  "text": ">Free markets speak.\n\nNot in the way you're implying they do. Brand image is a huge part in sales and only slowly shifts, and B2B relations are even more long-term than that. The reason Intel has been doing so well in the past few years is because they had better and more stable products a decade ago; right now they're in the process of undoing all of that and losing customers to AMD everywhere.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lxh5z7e",
+              "text": "How\u2019s this a design problem when their fabs don\u2019t have the tech to do vertical stacking of cache and the suits don\u2019t let them add more traditional L3 cache (or even L4 like in the past)?",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lxhdy4g",
+                  "text": "Backside power basically stacks the power delivery net on a separate die below the logic die, improving power delivery and allowing the entire front metal stack to be used for logic, so had Intel 20A shipped on time Arrowlake would have had something similar (and arguably more important).  I still think Arrowlake is such a mess because they had to redo it late in the design process for a node that couldn't stack the power net vertically.",
+                  "upvotes": 6,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lxhfhxm",
+                  "text": "They do have the tech, it's not a fab issue.",
+                  "upvotes": 0,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lxqbzup",
+                      "text": "They don't. Or at least, they don't give themselves the chance. 3D stacking is TSMC packaging tech but Intel exclusively uses IFS for packaging. They are limited by the capabilities of Foveros and EMIB.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "lxqbsky",
+              "text": "Which design team?\n\nLion Cove is meh so maybe them, although same guys brought out Redwood+ on the xeon CPUs which was a good update.\n\nSkymont team is on fire. Arrowlake with just skymont, and using the huge space savings on cache would have been better than Arrowlake as it is today. Proof? Look at benchmarks of P cores 1P core with 16E cores OC to 5.2ghz matching 8P core 16E core in games.\n\n  \nI say the SOC team is what really killed Meteorlake and Arrowlake. They have Redwood+ core but chose Lion Cove without HT, they have Lunarlake tile design but chose the older Meteorlake tile design for Arrowlake, etc",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "lxgd5dl",
+              "text": "yep. Ill tell intel to hire u/Dozck as its clear he knows better than a multi billion dollar company",
+              "upvotes": -15,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lxh8bvm",
+                  "text": "Considering the company is losing market share at a rapid pace, it's clear they don't know what they are doing",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lxh9ntq",
+                      "text": "daddy us goverment will bail them out like before. Don't you worry about intel.",
+                      "upvotes": -4,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "lxj23dy",
+              "text": "It proves nothing. We don't have a conclusive answer as to why Arrow Lake performs so poorly.",
+              "upvotes": 0,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

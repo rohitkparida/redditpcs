@@ -18,30 +18,30 @@
           "text": "This is a great review.. some thankless people here :(\ngot my unit with 196gb ecc and 2tb ssd today.. (in about 2 weeks from order date)",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about the Minisforum MS-02 Ultra PC, not the Crucial Pro DDR5-5600 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing satisfaction with the review and their purchase of the PC, but not the specific RAM product.",
           "replies": [
             {
               "commentId": "nyl0j5l",
               "text": "Can you share how loud the machine is when in idle and load?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment asks about the noise levels of the PC, which is off-topic for the RAM product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual question about the PC hardware, not an opinion on the RAM.",
               "replies": [
                 {
                   "commentId": "nyrtmux",
                   "text": "I haven\u2019t stress tested it but otherwise its not loud at at all..",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the noise levels of the PC, not the RAM product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment provides a personal experience regarding the PC's noise, not the RAM.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

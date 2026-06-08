@@ -18,20 +18,20 @@
           "text": "AI slop. Can somebody delete this and ban the account?",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a meta-comment about the quality of the post, not the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing frustration with the post content, not the product.",
           "replies": [
             {
               "commentId": "o3l3wqa",
               "text": "Wish I could do it lol.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a low-effort response to another user about moderation, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion on the product is expressed.",
               "replies": []
             },
             {
@@ -39,15 +39,16 @@
               "text": "I am sure that the mods are getting onto that right quick as we speak.\n\nI wouldn't hold my breath if I were you though.\n\nAnd you could always complain to the moderators directly if you feel so inclined.\n\nRight enough they would probably ban you for wasting their time.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses moderation and reporting, which is off-topic to the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion on the product is expressed.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

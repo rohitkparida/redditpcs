@@ -18,30 +18,30 @@
           "text": "I just upgraded my PSU to a 650watt flex unit from Amazon, and it dropped it without any issues. I am running a 5060ti LP and was afraid of hitting the ceiling with the stock 350-watt PSU. I heard some rumblings that the PSU/mobo would limit the CPU's TDP if you used the stock PSU, so I opted to replace it to see. I didn't check beforehand to confirm, though. I have 2 5600 64gb chips on the front, and 2x48 chips on the back, and it is a dream machine. I might swap out the internal fans for something like Nocturna in the future, but being that my laptop with an Occulink egpu 5070ti sits literally in front of me, the sound from the ms-02 is the least of my worries.\n\nI saw in a decent number of other threads that people are interested in the dual-NVMe/dual 25 G SFP+ cards, since you can't buy them outright. I would be interested in trading someone for an NVMe RAID device with some spare drives if anyone is interested.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal experience using 5600 64gb chips in their system, describing it as a 'dream machine'.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user describes their setup, including the RAM, as a 'dream machine', indicating high satisfaction.",
           "replies": [
             {
               "commentId": "o7y4s9v",
               "text": "Do you happen to have a link? Interested in upgrading.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a request for a PSU upgrade link, unrelated to the Crucial RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual request for information without an opinion on the product.",
               "replies": [
                 {
                   "commentId": "o80ht9l",
                   "text": "[https://www.amazon.com/dp/B0GGNGLTYX](https://www.amazon.com/dp/B0GGNGLTYX)",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment provides a link to a PSU, which is off-topic regarding the RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual link provided without any sentiment.",
                   "replies": []
                 }
               ]
@@ -51,10 +51,10 @@
               "text": "They're selling the card now: https://store.minisforum.com/products/minisforum-enpba",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses a network card, which is off-topic regarding the RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual statement about the availability of a card.",
               "replies": []
             },
             {
@@ -62,30 +62,30 @@
               "text": "Could you please share which 5060ti low profile have you managed to mount? I'm curious to find some measurement on how much space there's in the case, thank you",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment asks about a GPU, which is off-topic regarding the RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual request for information.",
               "replies": [
                 {
                   "commentId": "ogqp3hm",
                   "text": "Sorry, I thought it was the ti, it's just a 5060 LP card that I had gotten off Amazon : https://www.amazon.com/dp/B0FSNZ686T.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses a GPU, which is off-topic regarding the RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual correction regarding a GPU model.",
                   "replies": [
                     {
                       "commentId": "ogvhq9f",
                       "text": "Thank you for this anyways mate",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Lacks meaningful insight into the product; it is a general thank you message.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a polite social interaction.",
                       "replies": []
                     }
                   ]
@@ -96,5 +96,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

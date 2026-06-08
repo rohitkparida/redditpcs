@@ -18,40 +18,40 @@
           "text": "I\u2019ve been running my 9800X3D at a fixed voltage of 1.28v for the better part of 12 months.",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses CPU voltage and usage, not the Arctic Liquid Freezer III 360 cooler.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is stating a factual observation about their CPU settings.",
           "replies": [
             {
               "commentId": "o3jw6ko",
               "text": "Voltage and clock?",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a factual question about CPU clock speeds and voltage.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking for technical specifications.",
               "replies": [
                 {
                   "commentId": "o3lyjjz",
                   "text": "5550mhz @ 1.28v flck 2200 soc 1.23v",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment provides technical specifications for a CPU, not the cooler.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing factual data.",
                   "replies": [
                     {
                       "commentId": "o528o6b",
                       "text": "What have you used to test that?\n\nWhat result did you get?\n\nFor instance, as I showed in the article, my 9800X3D has no problem running Super Pi 32M at 5.8 GHz at 1.2 Volts for 16 minutes back to back.\n\nDoes that mean it would be true for me to say that my 9800X3D runs at 5.8 GHz, implying that it is generally stable at that clockspeed?\n\nHell no!",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses CPU stability and benchmarking, not the cooler.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is questioning the stability of the CPU settings.",
                       "replies": []
                     }
                   ]
@@ -63,10 +63,10 @@
               "text": "It probably could of clocked higher at one point at a fixed voltage.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses CPU clocking, not the cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is speculating on CPU performance.",
               "replies": []
             },
             {
@@ -74,20 +74,20 @@
               "text": "Sucks to be you I guess.",
               "upvotes": 0,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Lacks relevance to the product; it is low-effort banter.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is expressing a negative sentiment towards another user.",
               "replies": [
                 {
                   "commentId": "o3l3a6d",
                   "text": "Ok AMD hater.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Off-topic discussion regarding AMD and user conflict.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user is accusing the other person of being a hater.",
                   "replies": []
                 }
               ]
@@ -96,5 +96,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

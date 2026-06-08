@@ -8,40 +8,40 @@
       "text": "9600X on B850I Lightning, PC worked fine for 6 weeks and suddenly no longer POSTs\n\nI restarted my computer yesterday evening after running a chipset driver update (which lives in the OS should it not be related to whether the computer POSTs or not), and the computer did not POST following the restart. Fans at full speed and no BIOS splash screen.\n\nFirst fix I tried was a CMOS reset. Didn't help.\n\nThen I pulled my GPU and switched my display cable to the mobo's integrated graphics port. Didn't help.\n\nThe reports of 9600X units dying on ASRock boards seem to be very few and far between, not necessarily any more frequent than one would expect just from random chance with any motherboard pairing... so my first thought was that I had a bad RAM module. I pulled the sticks and tried to boot the machine with one stick only, and I could not get a POST with either stick in either slot. So unless both sticks died, I guess that's not it.\n\nThen I became curious if maybe the issue really is related to issues with 9000 series and BIOS 3.15, so I loaded BIOS 3.20 on an old USB 2.0 stick per the exact instructions in the manual, and I couldn't get BIOS Flashback to ever begin... I actually don't even know where the BIOS Flashback LED is on this board because I never saw anything on the I/O panel light up after several attempts and two different USB sticks (both USB 2.0, FAT32, and MBR).\n\nI did notice in trying this that if I pulled the power cable and held the power button for several seconds to drain the caps, then plugged the machine back in and held the flashback button for a few seconds, the machine would power up... but still no flashback, just the full speed fans with no other reaction, same as if I'd hit the power button. However, any time I tried to initiate a BIOS flashback when I had *not* just done the power cable/power button routine, holding the flashback button produced no reaction at all, not even a power up.\n\nSomething very odd happened after this. After about ten failed attempts to start a BIOS flashback, I stepped away for a while to eat dinner. After I returned to my troubleshooting, I powered up the machine... and it booted to Windows! Everything seemed to be running normally now for some reason, so I decided my first order of business should be to update my BIOS to 3.20 using the instant flash tool in the BIOS, not the flashback tool. So I renamed the BIOS file on the USB stick back to the standard naming, removed the extra file needed for flashback, restarted, got to BIOS, and fired up the flash tool. It found the 3.20 ROM file on the stick, and I told it to proceed with the update... and as soon as the progress bar popped up for the BIOS update, poof... hard power down. The progress bar was on screen for less than one second before the machine lost power. \n\nTried to start it up again and get back to BIOS. No POST. Haven't gotten a POST after that.\n\nLooking for some advice here about what to try next. My plan at this point is to test a different set of RAM modules as well as a different 9600X unit, to see if either of those swaps gets things back up and running. (I've got them both on order.) Not sure which of these two swaps I should try first though... and what the chances are that the motherboard itself could be at fault here. If I hadn't gotten that mysterious successful boot and then failed instant flash in the middle of this whole process, I would have been nearly sure that this was an issue of BIOS 3.15 frying a 9000 series CPU... but once that happened, any feeling that I had a handle on the issue went out the window... I have no clue what is going on here.\n\nThis PC worked flawlessly for about 6 weeks before this all happened.\n\nPSU is a Cooler Master V850 SFX Gold ATX 3.0. (\"A tier\" and overkill for my hardware). RAM is G.Skill Flare X5 DDR5-6000 CL30 2x32GB.\n\nThoughts?",
       "upvotes": 2,
       "classifyThis": true,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
+      "relevance": "exclude",
+      "relevanceReasoning": "The user is troubleshooting a general system failure (no POST) and mentions the RAM as part of their specs, but does not provide a specific opinion or experience regarding the RAM's performance or quality.",
+      "sentiment": "neutral",
+      "sentimentReasoning": "The user is describing a technical issue with their system without attributing a specific positive or negative sentiment to the RAM itself.",
       "replies": [
         {
           "commentId": "mpc4ajy",
           "text": "It could be a coincidence, but when I assembled my system I had that EXACT same memory kit, and I couldn't get the system to fire up!  -I bought a different kit and no issue ever since.\n\nFlashback isn't working on b850i for anyone I've seen post about it... like 6-8+ people including me.\n\nidk why asrock doesn't pay attention to the support message I sent about this and update the website with a method that actually works.\n\nThe process you described for instant flash is exactly how it goes, except after it powers down it boots right back to the bios and proceeds to do the flashing.\n\nYou're on the right track, hopefully different memory solves it (i bet it will).",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user shares a personal experience where this specific memory kit caused their system not to fire up, leading them to replace it.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user experienced a system failure attributed to the same memory kit, which they consider a failure.",
           "replies": [
             {
               "commentId": "mpc5d8u",
               "text": "Very interesting.\n\nThe memory kit I ordered to test was just the same set again. I think I\u2019ll cancel that and order a different kit. Fingers crossed.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user is making a decision to cancel an order for the same RAM kit based on a negative experience shared by another user.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is avoiding the product based on reported stability issues.",
               "replies": [
                 {
                   "commentId": "mpdg0gi",
                   "text": "I've tested Adata XPG Lancer Blade and TeamGroup T-Create Expert kits, zero issues with both.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is mentioning other brands of RAM (Adata and TeamGroup) and not the G.Skill Flare X5.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual statement about other products.",
                   "replies": []
                 }
               ]
@@ -53,20 +53,20 @@
           "text": "i have a 9800x3d and that same board and like you after like 2 months it stopped posting. however, clearing cmos will allow it to boot. \n\ntry unplugging it and holding the power button for 30 seconds to completely clear that caps on the board and jump the 2 pins to reset the cmos. i know its a pain to get to. considering to get a 2 pin switch myself and mounting it in the case to save me the trouble in the future.\n\ni can get it to boot after doing that. but problem is i have to do that every time i turn off the pc to get it to post again",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing motherboard and CPU issues, not the RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is describes a technical issue with their system, but not specifically about the RAM.",
           "replies": [
             {
               "commentId": "mpftc03",
               "text": "I have same components as you, and similar experiencea as OP. My CPU is now being inspected by the store from where I bought it.\n\nHaving to do all that just to boot? I'd RMA the board asap, since the CPU looks to be working. Although it's working atm, you never know when it will die for good. At least to me it looks like your mobo is causing your booting problems.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is discussing CPU and motherboard issues, not the RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is describing a technical issue with their system, not the RAM.",
               "replies": []
             }
           ]
@@ -76,10 +76,10 @@
           "text": "Any clue what vsoc voltage you're running for those 6 weeks?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking a technical question about voltage, which is a factual/Q&A style query.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a technical question without expressing an opinion.",
           "replies": []
         }
       ]
@@ -89,23 +89,24 @@
       "text": "Unable to save BIOS settings\n\nHi, I'm trying to change some settings in the bios of my PC, the motherboard is an MSI B650 GAMING PLUS WIFI, I wanted to activate the EXPO mode, to be able to make the RAM work at 6000MT/s and activate the X3D, but when I save the settings, but after restarting everything is as before.  \nI tried changing the single setting at a time, but nothing, I also checked the CMOS battery, but it's ok, 3.12V, I have the latest non-beta update for the motherboard, so I don't understand why it doesn't work.  \nThe RAM is 32GB (2x16GB) G.Skill Flare X5 DDR5-6000 CL30.  \nThe processor is an AMD Ryzen 7 9800X3D.  \n  \nAny suggestions?",
       "upvotes": 1,
       "classifyThis": true,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
+      "relevance": "exclude",
+      "relevanceReasoning": "The user is asking for help with BIOS settings and mentions the RAM as part of their specs, but does not provide an opinion on the RAM itself.",
+      "sentiment": "neutral",
+      "sentimentReasoning": "The user is asking for technical assistance with BIOS settings.",
       "replies": [
         {
           "commentId": "n7fo0w5",
           "text": "Remember to check our discord where you can get faster responses! \nhttps://discord.gg/6dR6XU6\nIf you are trying to find a price for your computer, r/PC_Pricing is our recommended source for finding out how much your PC is worth! \n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/PcBuild) if you have any questions or concerns.*",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is an automated bot message.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is an automated message.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

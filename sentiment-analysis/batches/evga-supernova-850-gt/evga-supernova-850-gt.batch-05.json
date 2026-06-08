@@ -8,20 +8,20 @@
       "text": "SATA cable compatibility \n\nI have an EVGA Supernova 850 GT PSU.\n\nI upgraded my AIO to a Kraken elite that requires SATA power from the PSU to power the pump itself and also the RGB controller, but lost my extra cables in a move last year. \n\nWhen looking through replacement cables and searching for compatibility, I never see the GT series listed. I\u2019ve contacted EVGA but haven\u2019t heard back from them yet. \n\nWould this replacement cable from Amazon work? \n\nhttps://a.co/d/3lXW95j\n\nI don\u2019t see where it says the GT series is compatible, but I also do see that is says it ISNT compatible. Also a reviewer noted that it worked with their 650 GT. \n\nAny advice would be appreciated!",
       "upvotes": 2,
       "classifyThis": true,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
+      "relevance": "include",
+      "relevanceReasoning": "The user is asking a specific question about the compatibility of SATA cables for their EVGA SuperNOVA 850 GT PSU, which is directly related to the product.",
+      "sentiment": "neutral",
+      "sentimentReasoning": "The comment is a question seeking information and does not express a positive or negative opinion about the product itself.",
       "replies": [
         {
           "commentId": "lwlyc1k",
           "text": "I can confirm that all of the EVGA GT line power supplies use the same types of wire layouts and are compatible with each other.  Please check with [Support@EVGA.com](mailto:Support@EVGA.com) if you should ever want to verify the compatibility of cables.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "This comment directly addresses the user's question about SATA cable compatibility for the EVGA GT series PSUs, confirming compatibility.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The comment provides helpful and accurate information that resolves the user's technical query, offering a positive resolution.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "I would not risk it unless evga says different",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "This comment offers advice regarding the use of non-verified cables with the PSU, which is relevant to the product's safe operation.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The comment advises caution and implies a potential risk, which carries a negative sentiment regarding the use of unverified accessories.",
           "replies": []
         },
         {
@@ -40,40 +40,40 @@
           "text": "Did you end up figuring this out? I also have a 850 gt psu and dont have a sata cable for my new aio kraken pump lol",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "This user is asking for an update on a previous compatibility issue with the same PSU model, indicating continued relevance to the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a follow-up question seeking information and does not express a personal opinion or sentiment about the PSU.",
           "replies": [
             {
               "commentId": "m0ahiwp",
               "text": "I did. I ended up just going with the cable linked in the original post. \n\nEverything powered up just fine and had no issues other than it took jumping through a few hoops to get my system to detect the AIO even though it was functioning properly and when I finally did get it to recognize it (no shit, by unplugging the usb header to breakout cable and plugging it back in WHILE the PC is on lol)\u2026 Cam couldn\u2019t find it until I rebooted the system a few times and closed and ran Cam as administrator a few times (but from what I\u2019ve seen that seems to be a common issue with the software itself). \n\nWorth noting: EVGA did get back to me and offered free replacement cables. I just had to register my PSU with them. So that may be another option to look into if you\u2019re able. But this cable worked/is working fine for my 850!",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "This comment provides a detailed personal experience and resolution regarding SATA cable compatibility with the EVGA 850 GT PSU.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user confirms that a specific cable worked and that EVGA offered free replacement cables, indicating a positive resolution and good customer support.",
               "replies": [
                 {
                   "commentId": "m0avy2f",
                   "text": "Thanks so much boss! Really appreciate the response back",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This comment is a simple expression of gratitude and does not provide any new information or opinion about the product.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The comment expresses thanks, which is a positive social interaction but not directly related to the product's performance or features.",
                   "replies": [
                     {
                       "commentId": "m0d0sm9",
                       "text": "No problem dawg. Good luck and happy building!",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This comment is a polite closing remark and does not offer any relevant information or opinion about the product.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The comment is a friendly closing statement, conveying a positive social sentiment but is not relevant to the product analysis.",
                       "replies": []
                     }
                   ]
@@ -84,5 +84,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemini-2.5-flash-lite"
 }

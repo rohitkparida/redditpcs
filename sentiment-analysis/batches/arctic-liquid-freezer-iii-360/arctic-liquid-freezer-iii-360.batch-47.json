@@ -18,40 +18,40 @@
           "text": "After reading your previous explanation, I applied a voltage cap to my 9850X3D and reached 5.6GHz at 1.2V.\n\nHowever, since PBO CO couldn't even hit -20 with R23, I had doubts. When I ran a load test with OCCT, 5.45GHz was the limit.\n\nSo my question is: Is your 9800X3D really running stable at 5.8GHz with 1.2V?",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment focuses on CPU voltage and stability testing, not the Arctic Liquid Freezer III.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a technical question about CPU stability without expressing sentiment toward the product.",
           "replies": [
             {
               "commentId": "o4khqwf",
               "text": "I configured my 9800X3D to run the Super Pi 32M benchmark at 5.8 GHz at a maximum voltage of 1.2 Volts for shits and giggles, because I could.\n\nIn the HWBot rankings, my result would be 17th in the World for the 9800X3D, with the 16th placed result, just over one second faster on a benchmark that runs for five minutes and twenty seconds at 1.68 Volts - how bloody stable do you think that is?\n\nAnd whereas my 9800X3D could run that benchmark all day (I ran the benchmark through three times in a row with the screenshot being taken on the third run) with a sub $100 AIO, the person who got the one second faster score was probably just happy that his CPU survived one run without frying and was also running exotic cooling.\n\nIs it stable at that clockspeed for general use? Hell no.\n\nThe thing is that I used three tricks to achieve that result that probably nobody here on reddit knows about and certainly not anyone in the Tech Media/YouTube, because they have not bothered their arses to find out how to configure Ryzen, but rather are still in the caveman, \"Moar Powa, Moar Gud\" mindset.\n\nWhere others configure their systems with a hatchet, I configure my system with a scalpel.\n\nAnd no, before some smartass says it, Photoshop was not one of those tricks. :D\n\nAnyone who says they can, I am going to call a liar, until they show me a screenshot like the one that I have shown.\n\nWith PBO running CineBench R23 you are not going to get anywhere close to the result you get running your 9800X3D at 5.45 GHz using the method I described in my 9800X3D guide that I linked to above.\n\nWhen it comes to OCCT, which benchmark did you run, the SSE or the AVX?\n\nOCCT AVX. Prime95, AIDA64 Stress test or the Intel Burn-In test are not so much tests of the CPU's stability but rather the efficacy of your cooler.\n\nThere are three parameters that govern the stability of your CPU, Voltage, Clockspeed and Temperature for any given workload. Run it anywhere outside the constriction of any one of those parameters then the CPU will crash - as it should.\n\nIf you want to configure your system to run Prime95 then that isn't a problem, it's just to then call that \"stable\" and running it with your games that way is just bollock stupid.\n\nWhen speaking about \"Stable\" you have to define for yourself what you consider to be stable for the workload that you run day to day.\n\nThere's an old techie saying, that was old when I first heard it 40 or so years ago which is, \"Never configure your computer in Winter and expect it to run in Summer\".\n\nFor instance, last Summer, there were days here in the UK that my otherwise reliable 5.475 GHz at 1.2 Volts crashed during my benchmark testing after a BIOS update.\n\nNo big deal, I dropped the max clockspeed by 25 MHz and the max voltage by 0.005 Volts to 1.195 and I was back in the safe zone again until the heatwave stopped.\n\nI can't tell you what you should define \"Stable\" as for yourself.\n\nI know however that I have my definition and as per that definition my 9800X3D has run 24/7 for over a year running every task I demand of it.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion is about CPU overclocking and stability, not the performance or quality of the AIO cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is discussing technical overclocking methods and stability definitions.",
               "replies": [
                 {
                   "commentId": "o4kvfp0",
                   "text": "I set it to 1.2V and 5.6GHz using Ryzen Master.\n\nIt passed R23 without any issues.\n\n\n\nHowever, during OCCT AVX, calculation errors started occurring around 5.475GHz (possibly due to voltage drop or increased resistance from temperature?).\n\nIt reached about 78\u00b0C in OCCT, but I don't think it was excessively hot.\n\n\n\nMy room temperature varies by about 20\u00b0 between summer and winter,\n\nso naturally I adjust settings accordingly. It's currently mid-winter, so performance should be quite good.\n\n\n\nCrashing is the worst-case scenario, but I can tolerate that. The computational errors are problematic because\n\nI can't determine what underlying errors are occurring.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses CPU calculation errors and temperatures, but does not provide insight into the AIO cooler itself.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is reporting technical issues with CPU stability and voltage.",
                   "replies": [
                     {
                       "commentId": "o4lvtnq",
                       "text": "You don't need to start being nervous until you pass by 80 \u00b0C.\n\nOne thing that is constant about Ryzen CPUs is that 10 \u00b0C cooler equals about 100 MHz per core more performance.\n\nI was using Kryonaut Extreme TIM with my Arctic Liquid Freezer III, and I saw that TG had brought out a new paste called Duronaut.\n\nThe Kryonaut Extreme was only a month old, but I decided to give Duronaut a try.\n\nI was gobsmacked after applying it that my idle temps had come down by about 3.5 \u00b0C.\n\nArctic has brought out a paste called MX-7. It is cheaper than Duronaut and it looks like it can do the job, but although I have it, I haven't repasted with it yet.\n\nIf you feel like it, you can give me a shout on Discord (michaelnager, same avatar as here) and we can take a look at it together.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user mentions using the Arctic Liquid Freezer III and discusses the impact of different thermal pastes on temperatures.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user is satisfied with the cooling performance, as evidenced by their use of the product and the pursuit of further temperature reductions.",
                       "replies": []
                     }
                   ]
@@ -61,10 +61,10 @@
                   "text": "WoW! that's quite throrough. Do you know anything in terms of 9950x3d? I have it set at -20 negative with +200mhz and it runs around 5-5.1 ghz on all cores in tests and also goes to 5.9ghz maybe but mostly to 5.6x ghz but on cpuz it oscillates between lower, 1.2x, 1.3x many and a few 1.4x up to 1.417. anything I could do? I only have a 240aio in a 011D but want to move it to sub 10L formd T1 sff pc. ",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about CPU configuration and SFF PC build planning, not the Arctic Liquid Freezer III.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking for advice on CPU settings and case compatibility.",
                   "replies": []
                 }
               ]
@@ -73,5 +73,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,13 +18,14 @@
           "text": "This is a quality post",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general compliment about the post quality and does not mention the Noctua NH-U12S Redux or provide product-specific insight.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The sentiment is positive towards the post, but since it is not relevant to the product, it is marked as neutral per standard data cleaning for product sentiment.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

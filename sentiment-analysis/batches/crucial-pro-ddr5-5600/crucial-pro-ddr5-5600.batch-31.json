@@ -18,30 +18,30 @@
           "text": "Awesome review! Unfortunately, this just shows the way Lenovo is going for their new machines...",
           "upvotes": 11,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general reaction to a laptop review and does not discuss the Crucial Pro DDR5-5600 RAM specifically.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is praising the review quality but expressing general disappointment with Lenovo's direction.",
           "replies": [
             {
               "commentId": "l6vcxqn",
               "text": "Yeah. I'm dreading the day when I'll need to upgrade my T480.",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses upgrading a laptop (T480), not the specific RAM product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user expresses dread about needing a future hardware upgrade.",
               "replies": [
                 {
                   "commentId": "l6whp25",
                   "text": "I'm dreading the day when I'll need to upgrade my T410...",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is off-topic, discussing an old laptop model (T410).",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is making a joke or a comment about their very old hardware.",
                   "replies": []
                 },
                 {
@@ -49,10 +49,10 @@
                   "text": "Same. Except for the P1 Gen 7, which looks very appealing, there is no other in my radar.",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses other laptop models (P1 Gen 7), not the RAM product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is expressing interest in a different laptop model.",
                   "replies": []
                 }
               ]
@@ -61,5 +61,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

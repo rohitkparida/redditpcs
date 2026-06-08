@@ -18,20 +18,20 @@
           "text": "Missing TDP mode comparison completely ... hard to say which TDP mode is the most effective. Also the Tjmax according to AMD is 100\u00b0C so your system hitting 81.8 max means it is limiting the CPU too early ... Do you have Tjmax set to 80 in the UEFI by chance ?\n\nOther than that well done, tons of useful info.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses TDP modes and thermal limits of the MiniPC, not the Crucial RAM specifically.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing technical feedback and asking questions without a clear positive or negative sentiment toward the product.",
           "replies": [
             {
               "commentId": "odjjtkw",
               "text": "Hi, that's the default config on an AMD. \n\nEven 9950x3d &amp; 8945hs in gmktec has 80\u00b0C limit, it can go past that it you unlock it in bios. \n\nHere I believe performance mode should have unlocked unless locked by Manufacturer. ",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion is about CPU thermal limits and BIOS settings, not the RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual information about AMD CPU thermal behavior.",
               "replies": []
             },
             {
@@ -39,50 +39,50 @@
               "text": "Thank you, and good eye on the thermal stuff. \n\nTo your first question \u2014 no, I didn't change any thermal offsets or TjmaxT in the UEFI. That 81.8\u00b0C wall is just what Minisforum baked into the factory BIOS (v1.00) as the target temperature.\n\nAnd yeah, it's definitely on the conservative side when AMD says the chip can handle 100\u00b0C. My guess is they're playing it safe for noise and longevity reasons \u2014 makes sense when you've got that internal PSU sharing airspace. Would be nice if a future BIOS update opened that up to 90\u201395\u00b0C so we could see how long those 70W bursts actually hold.\n\nOn the TDP/efficiency front \u2014 fair point. I touched at it a bit with the Balanced vs Performance in Geekbench, but doing a proper perf-per-watt curve across all three modes is a solid idea. Might do that as a follow-up.\n\nAppreciate the detailed feedback, this is the kind of back-and-forth that makes these reviews worth doing",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment focuses on BIOS thermal targets and TDP efficiency of the MiniPC, not the RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is discussing technical specifications and responding to feedback in a neutral tone.",
               "replies": [
                 {
                   "commentId": "ods8gc3",
                   "text": "Be honest, why are you using AI for this comment. We can tell",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about the use of AI in writing the post, which is off-topic to the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is questioning the authenticity of the writing, which is not related to product sentiment.",
                   "replies": [
                     {
                       "commentId": "odtk8ng",
                       "text": "I sometimes use AI to phrase what I want to say after I give my thoughts as inputs, I am sorry but English is not my native language.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about the user's use of AI for translation/phrasing, not the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is explaining their communication method in a neutral tone.",
                       "replies": [
                         {
                           "commentId": "odusujd",
                           "text": "Sorry now I cannot trust any of your posts or comments because it might all be AI generated",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about trust in the author's posts due to AI use, not the product.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user expresses distrust and a negative opinion of the author.",
                           "replies": [
                             {
                               "commentId": "oduu7s0",
                               "text": "I understand your point, however, AI didn't do the benchmarks or sat for 10 days to review the MiniPC, I did!\n\nIf you have any questions regarding the technicalities or benchmarks I am happy to answer them, otherwise my main goal is not to win a contest in writing.\n\nAs an AI engineer myself I use AI tools daily in my work and life to communicate more effectively in my second language.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment is about the author's process and use of AI, not the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is defending their work and explaining their professional background.",
                               "replies": []
                             }
                           ]
@@ -97,5 +97,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

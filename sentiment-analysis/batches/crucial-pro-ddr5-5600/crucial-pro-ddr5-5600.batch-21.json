@@ -18,25 +18,26 @@
           "text": "Title: Minisforum AI X1 Pro (Ryzen AI 9 HX 370/470) \u2013 Struggling with 14B models locally (Ollama) \u2013 Looking for real-world setup advice\n\nI\u2019m trying to build a local AI workstation and want feedback from people actually running LLMs on similar AMD AI mini PCs.\n\nHardware:\n- Minisforum AI X1 Pro\n- Ryzen AI 9 HX 470 (12 cores, iGPU Radeon 890M)\n- 96GB RAM\n- 2TB SSD (system) + 4TB SSD (data/models)\n- Using AMD Adrenalin drivers (latest)\n- Windows 11\n\nGoal (important context):\nI\u2019m not just chatting with models. I\u2019m trying to build a full local AI system that can:\n- Automate browser workflows (Aspire CRM for a landscaping company)\n- Scrape and organize government bid data (SAM.gov etc.)\n- Act as a planning assistant for business operations (Penny Hill + Corb Solutions)\n- Run an offline knowledge base (documents, books, manuals, etc.)\n- Eventually execute tasks (download tools, create files, etc. with approval)\n\nSo stability matters more than raw benchmark speed.\n\n---\n\nCurrent setup:\n- Using Ollama\n- Tested:\n  - qwen2.5:14b\n  - currently downloading qwen2.5:7b-instruct\n\n- Models stored on separate SSD (D drive)\n- iGPU memory manually adjusted (tested 16GB \u2192 now 8GB)\n\n---\n\nProblem:\n14B technically runs, but is unstable:\n\n- Responds to simple prompts like \u201chello\u201d\n- When I ask slightly more complex questions (system design, tuning, etc.):\n  - CPU spikes hard\n  - fans ramp up\n  - response starts\u2026 then stalls\n  - sometimes stops responding entirely\n- After that:\n  - model won\u2019t respond again\n  - sometimes UI freezes\n  - once even caused screen blackout (system still on)\n\nThis happens in:\n- Ollama app\n- PowerShell (so not just UI issue)\n\n---\n\nWhat confuses me:\nI\u2019m seeing people say:\n- running 20B / 30B models\n- getting usable performance on similar hardware\n\nBut I\u2019m struggling with 14B stability, not even speed.\n\n---\n\nWhat I\u2019ve already adjusted:\n- Reduced dedicated GPU memory to 8GB\n- Updated drivers\n- Clean Windows install\n- Using short prompts (not huge context dumps)\n- Testing in PowerShell (not just UI)\n\n---\n\nQuestions:\n\n1. Is this just a limitation of:\n   - AMD iGPU + shared memory\n   - and current driver/runtime support?\n\n2. Is Ollama the wrong tool for this hardware?\n   - Would LM Studio or something else be more stable?\n\n3. For this type of workload (automation + planning + local knowledge base):\n   - Should I be using 7B as primary and 14B only occasionally?\n\n4. Has anyone actually gotten stable multi-turn interaction with 14B+ on this chip?\n\n5. Are there specific:\n   - settings\n   - runtimes\n   - configs\nthat make a big difference on AMD AI CPUs?\n\n---\n\nImportant clarification:\nI\u2019m not trying to replicate ChatGPT speed.\n\nI\u2019m trying to build:\n- a reliable local system\n- that I can expand with tools, automation, and offline data\n\nRight now the blocker is:\nmodel stability, not capability\n\n---\n\nAny real-world setups or advice appreciated.\nEspecially from people running:\n- AMD iGPU systems\n- Minisforum AI series\n- or similar shared-memory setups",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment focuses on system stability and LLM software configuration for a Mini PC, not the specific Crucial Pro DDR5-5600 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is seeking technical advice and reporting stability issues with their overall system setup.",
           "replies": [
             {
               "commentId": "ocy7azh",
               "text": "You need to scrap ollama and use Lemonade server. Better AMD and NPU+GPU support with hybrid instruct models",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment provides software recommendations for running AI models and does not mention the RAM product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a neutral technical suggestion regarding server software.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

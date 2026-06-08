@@ -18,60 +18,60 @@
           "text": "What do I do if I bought it Barebones?  Should I acquire the RAM and ssd new?  Which is needed to get it to run up to par?",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking for general advice on purchasing components for a barebones PC, not specifically about the Crucial Pro DDR5-5600.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a factual inquiry without expressed sentiment.",
           "replies": [
             {
               "commentId": "oduuvup",
               "text": "If you get the barebone, you can get any 5600 Mhz SODIMM RAM kit (2 sticks) and NVMe SSD,  \nI myself used Kingstone Fury 5600 Mhz 64GB Kit, and a 2TB WD BLACK SN7100 NVMe SSD Gen 4 (Up to 7250 MB/s) that I use to install when having a barebone MiniPC, and I believe it would be much cheaper if you can get your hands on used parts.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user recommends Kingston Fury RAM, not the Crucial Pro DDR5-5600.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment provides technical advice on alternative products.",
               "replies": [
                 {
                   "commentId": "odwm3iq",
                   "text": "Thanks this is super helpful .  Do you prefer this to 8745 hs for productivity/ light gaming?",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is asking for a comparison between two different CPUs/systems, not the RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual inquiry.",
                   "replies": [
                     {
                       "commentId": "odx5yg9",
                       "text": "Thank you, absolutely if you have the budget, this is best iGPU you can get.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The user is expressing satisfaction with the iGPU, not the Crucial Pro DDR5-5600 RAM.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user is happy with the overall system performance.",
                       "replies": [
                         {
                           "commentId": "of3gd4o",
                           "text": "So I purchased one barebones.  I should be getting it in a few days.  I currently am going with 64gb of Fury(2x32).  Im wondering if the SN7100 is still the best SSD given its lack of dram cache",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The user mentions using Kingston Fury RAM and asks about an SSD, not the Crucial Pro DDR5-5600.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a factual inquiry about hardware components.",
                           "replies": [
                             {
                               "commentId": "of5ikm2",
                               "text": "First Congratulations on the purchase, actually these are the same RAM kit and SSD I am using, as far for the DRAM, I wouldn't think there would be any performance issues, this drive uses HBM (Host memory buffer) which simply borrows little of the system memory to handle its work, in my benchmarks this is a top tier SSD for Gen4.",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The user is discussing the performance of a Kingston Fury RAM kit and a WD Black SSD, not the Crucial Pro DDR5-5600.",
+                              "sentiment": "positive",
+                              "sentimentReasoning": "The user is positive about the performance of the SSD they are using.",
                               "replies": []
                             }
                           ]
@@ -86,5 +86,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

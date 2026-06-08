@@ -18,30 +18,30 @@
           "text": "The TSMC article you cite never said that N4P will degrade significantly faster above 1.2V. It simply compares the performance of the two nodes at 1.2V and implies that N4X has greater performance gains above 1.2V compared to N4P. \n\nYou interpret this: \"N4X can achieve drive voltages beyond 1.2 volt\" as \"N4P can't run above 1.2 volts without degrading\". These are completely different statements.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses CPU voltage and TSMC nodes, not the Arctic Liquid Freezer III 360.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is engaging in a technical debate about CPU specifications without expressing sentiment toward the product.",
           "replies": [
             {
               "commentId": "o3k65pl",
               "text": "What is says quite plainly is that N4P has a limit of 1.2 Volts and if you want to go beyond that limit then you need to use the N4X node.\n\nNice try though - almost cute.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is part of a debate about CPU voltage limits, not the AIO cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is arguing a point about CPU silicon, not the product under analysis.",
               "replies": [
                 {
                   "commentId": "o3kk83g",
                   "text": "I mean, it doesn't say that though. There's no mention of a \"limit\" or any other way of saying limit. It merely compares operation at 1.2 volts.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment focuses on CPU voltage limits and TSMC documentation, not the cooler.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is correcting a technical claim about CPUs.",
                   "replies": []
                 },
                 {
@@ -49,10 +49,10 @@
                   "text": "It does NOT say that at all. Can you read? They compare the performance at 1.2V. It does not specify the max at all.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about CPU voltage and reading comprehension, not the AIO cooler.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is arguing about CPU specs.",
                   "replies": []
                 },
                 {
@@ -60,10 +60,10 @@
                   "text": "Huh? Can you read? It absolutely doesn\u2019t say 1.2 volts is the limit in that article, which seems to be your single source. Do you have another where it does specify 1.2 volts is the limit of the silicon?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses CPU silicon limits, not the Arctic Liquid Freezer III 360.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is questioning a technical claim about CPUs.",
                   "replies": []
                 },
                 {
@@ -71,10 +71,10 @@
                   "text": "Can you send a link to where in the article that's stated. Thanks",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment asks for a link regarding CPU voltage, not the AIO cooler.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is requesting information about CPU specs.",
                   "replies": []
                 }
               ]
@@ -83,5 +83,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

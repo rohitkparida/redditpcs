@@ -18,10 +18,10 @@
           "text": "Why? Just why? Get a metal panel with an acrylic insert.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment suggests an alternative material for the panel but does not provide a critique or experience with the product itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing a suggestion without expressing a positive or negative sentiment toward the product's performance.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "Get some Plastic sheets and cut a new panel yourself.\n\nOr get one laser cut",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment provides a DIY suggestion for a replacement panel, which is off-topic regarding the product's quality or performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is offering a helpful suggestion without expressing a sentiment toward the product.",
           "replies": []
         },
         {
@@ -40,10 +40,10 @@
           "text": "There\u2019s a chemical reaction between tile floor and glass that causes this. ",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses a general chemical reaction between tile and glass, not specific to the Corsair 4000D.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is stating a factual claim about materials science, not an opinion on the product.",
           "replies": []
         },
         {
@@ -51,10 +51,10 @@
           "text": "On the marble floor?",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a simple question about the floor type, which is not relevant to the product's performance or design.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Hest a question without any sentiment expressed.",
           "replies": []
         },
         {
@@ -62,10 +62,10 @@
           "text": "Br\u00f6ther, may I peach the Good Word of acrylic instead of glass?",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment suggests using acrylic instead of glass, which is a general material preference rather than a product critique.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing a preference for acrylic, not a sentiment toward the Corsair case.",
           "replies": []
         },
         {
@@ -73,10 +73,10 @@
           "text": "These posts are so frequent you\u2019d think people would be smarter by now but nope here we are",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a meta-comment about the frequency of posts regarding broken glass panels, not a critique of the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing frustration with the other users, not the product.",
           "replies": []
         },
         {
@@ -84,10 +84,10 @@
           "text": "Would you mind taking a quick look at my ex?",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a joke/meme and is completely off-topic.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a joke and does not express a sentiment toward the product.",
           "replies": []
         },
         {
@@ -95,30 +95,30 @@
           "text": "I hate all these posts which never mentioned in detail on how the TG were shattered.",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment expresses frustration with how users report broken glass, not the product itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is frustrated with the rest of the community, not the product.",
           "replies": [
             {
               "commentId": "oeqr2gp",
               "text": "it touched the tile floor.\n\nCeramic will insta break tempered glass panels if it touches.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment provides a general factual claim about ceramic tile and tempered glass, not specific to the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Theuser is stating a factual claim about materials science, not an opinion on the product.",
               "replies": [
                 {
                   "commentId": "oewh7bl",
                   "text": "I have ceramic kitchen top that touches TG kitchen wares for decades. Never break anything. Quality of TG matters.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses general tempered glass quality in kitchenware, which is not relevant to the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a general comparison to other glass products, not a sentiment toward the Corsair case.",
                   "replies": []
                 }
               ]
@@ -127,5 +127,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

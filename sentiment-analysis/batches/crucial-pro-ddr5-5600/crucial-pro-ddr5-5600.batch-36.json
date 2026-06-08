@@ -18,30 +18,30 @@
           "text": "Hey! THanks for your review. I am now sceptical to buy the t14 gen5 AMD model. I have been using a e14 gen5 AMD ryzen 7730u which turns out to be an excellente machine using Linux Mint.\n\nOne thing I did was to lower the TDP of my cpu from 25w to 15w which make total sense to me, the laptop is almoust inaudible when running intensive cpu task but still very capable, maybe 10-15-20% less powerfull but 100% better fan noise (almost none). \n\nThe programm is this one: [https://github.com/FlyGoat/RyzenAdj](https://github.com/FlyGoat/RyzenAdj) not sure if will work on this new Zen4 architecture.",
           "upvotes": 6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses a laptop model and CPU TDP settings, not the Crucial Pro DDR5-5600 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is discussing general laptop experiences and software tools without expressing sentiment toward the target product.",
           "replies": [
             {
               "commentId": "l7ig980",
               "text": "Thanks u/niko3100 I've never used RyzenAdj. I have seen it mentioned in this sub. Will have a play around with it over the weekend. Thanks again.\n\nJust had a quick look at the github pages, supported models only go upto Zen3/Zen3+. Did you use RyzenAdj to lower the TDP of the CPU on your E14 G5a?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a conversation about CPU TDP adjustment software and does not mention the RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a technical question about software compatibility.",
               "replies": [
                 {
                   "commentId": "l7izx2d",
                   "text": "Yes! I have 2 scripts one for lower the TDP to 15w and other for 20w. But you can literally change to any range or value using thinkpads as there is no Lenovo \"intelligent cooling\" in the middle.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses CPU TDP scripts and Lenovo cooling, not the specific RAM product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is explaining how they manage their CPU power settings.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

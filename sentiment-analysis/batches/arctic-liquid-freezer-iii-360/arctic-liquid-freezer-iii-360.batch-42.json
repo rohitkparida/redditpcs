@@ -18,30 +18,30 @@
           "text": "A complete waste of time if you have zero evidence and just say \"trust me bro\" or \"f u\" to everybody here.",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general critique of the original poster's evidence and does not mention the product.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses frustration and dismisses the post as a waste of time.",
           "replies": [
             {
               "commentId": "o3jmck8",
               "text": "Not everybody, just those who deserve it.\n\nYou sound like a Flerfer.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is low-effort banter/argument between users and is not about the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is insulting the other commenter.",
               "replies": [
                 {
                   "commentId": "o3mq59u",
                   "text": "you should edit your \"investigation\" and add a disclaimer, a direct quote from Jayz's video you used:\n\n\"I'm going to be completely redoing this test bench actually and restarting all of our GPU benchmarks again because too many things have changed over the last year...\"",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The discussion is about benchmark methodology and a specific YouTuber's video, not the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a factual correction regarding a video quote.",
                   "replies": []
                 },
                 {
@@ -49,20 +49,20 @@
                   "text": "And you sound like an AMD hater/Intel shill.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a personal attack/insult and not related to the product.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user is calling the other person an AMD hater/Intel shill.",
                   "replies": [
                     {
                       "commentId": "o3mplsh",
                       "text": "and i want him to explain why he didn't put this in his jayz numbers he quoted?\n\n\"I'm going to be completely redoing this test bench actually and restarting all of our GPU benchmarks again because too many things have changed over the last year...\"\n\nhe made a CB comparison and Jayz himself, in the video in question, says that too much has changed in the last year. here you go:\n\n[https://youtu.be/fYmRmLrWi7k?t=89](https://youtu.be/fYmRmLrWi7k?t=89)\n\nand the first number is from 2024... does that make any sense to be used in a comparison?",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The discussion is about benchmark comparisons and data validity, not the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is questioning the validity of using old benchmark numbers.",
                       "replies": []
                     }
                   ]
@@ -74,30 +74,30 @@
               "text": "There is evidence of unreliable voltage past 1.2v under load. They just didn't provide the slide. \n\nEdit: Now of course I cant find the slide. Check tsmc documentation from around the time the node was released. I'm digging for it now and I thought I kept it.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion is about CPU voltage and TSMC nodes, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is discussing technical specifications of CPU voltage.",
               "replies": [
                 {
                   "commentId": "o3v1c82",
                   "text": "for long term sustained workloads, like those in the datacenter. it's why people tell others to not manually OC ryzen with a high static voltage like 1.3V.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The discussion is about CPU overclocking and voltage, not the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing technical advice on CPU voltage.",
                   "replies": [
                     {
                       "commentId": "o3v2z53",
                       "text": "I had a TSMC slide, it was an analysis of the ryzen 9800x3D/9850x3D node. It shows the sweat spot for V/F and the cliff after 1.2v \n\nIt essentially was derived for curve optimizer offsets and you can see that the 9800x3D needs a -20 offset while the 9850x3D needs a -15 offset to hit the sweetspot within reliable voltage and boost override disabled (it just adds 200mhz to the v/f curve) \n\nOver 1.2v the reliable voltage goes off a cliff for transients and locking 1.2v leaves a lot on the table. \n\nJust my 2 cents. Also datacenters running chips at 100% utilization actually degrades the chip less than gaming/mixed workloads. I cant really give a definite answer on this other than 1.2v and enable all core sync and what you get is what you get. \n\nNot doing this may result in a lower stable frequency in the future. Degradation is very silent until it isn't and the v/f curve shifts.\n\nFor the record im not a amd bios guy, just intel. What im seeing is giving me flashbacks to \"6.2ghz per core is fine bruh im running 1.55v\", things will go very good until they go very bad.\n\nThe imc isnt much different, slightly older well studied node, dont use over 1.3v.\n\nAlso a slight correction on heat causing damage. It may appear that way but what causes it is the change in resistence in the silicon resulting in current/amp damage. So keeping it cool doesnt mean you can just run a higher voltage daily unless the motherboard is built to handle the transients. The voltage itself if given enough will just punch holes through the silicon and thin the traces, the current will actually cook the whole thing and speed up the thinning process.\n\nThe type of damage im seeing in user reports in their photos almost certainly looks like current damage. If it wasnt from right after building it, its hard to pin these cases to just user error.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The discussion is about CPU voltage, degradation and silicon behavior, not the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a detailed technical analysis of CPU voltage and degradation.",
                       "replies": []
                     }
                   ]
@@ -108,5 +108,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

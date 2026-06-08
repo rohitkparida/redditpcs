@@ -18,10 +18,10 @@
           "text": "There is not much of a point in arguing with you, but here you go, I suppose.\n\n\\&gt; PS5 does not have 16GB VRAM, it has 16GB of unified RAM that is divided between system RAM &amp; VRAM, typically into an 8/8 division, can be reallocated up to a 4/12 (practically never happens, most studios port their games over to PC where 60\\~65% of the userbase has 8GB GPUs, makes no sense to create extra work and touch up the VRAM allocation on the PS5 if it's gonna work all the same anyway).\n\nPS5 is a different architecture. You don't allocate VRAM like that, and it's all up to the game developer. Also, asset streaming is MUCH MUCH more used there, and the tech is much more mature there than over the PC space actually.\n\nDirect Storage didn't really caught up much in PC, and the fast compression/decompression from SSD in the PS5 can effectively make it so you have a bit more RAM.\n\n\\&gt; equivalent to a 4700G, which should draw 65W on its own\n\nThe 4700G boosts higher. It's likely that the 8-cores should consume about 35-40W or so. Depends on load, what parts of the cores are being used and etc.\n\n\\&gt; We then have a GPU that \"only\" gets \\~140W at peak, is driven by a downpowered CPU, has to share a 256-bit bus from 14Gbps memory modules with the CPU, only has 4MB of L2 cache &amp; has to share 8MB of L3 cache with the CPU\n\nIt doesn't share the L3 with the CPU. \n\n\\&gt; the RX 6700 gets a full 175W, has its own VRAM pool of 10GB of 16Gbps modules through its own 128-bit bus on top of the the PCIe4x16 interface and we can assume that most of the benchmarked scores we can find online are never done with a CPU that has the limitations of the PS5's CPU (i.e. a full 65W TDP or more &amp; 4 times as much cache found in desktop CPUs)\n\nMost benchmarks are ran with GPU limited loads. It's rare for games to be limited by GPUs unless you are doing high framerates or specific simulation games and etc. This is really unlikely to affect anything.\n\nFor the PCIe4x16 it's unlikely to affect anything. The PS5 doesn't need to have a PCIe bus to link between GPU &lt;-&gt; CPU.\n\n  \nTake a note of the differences between the RX 6700 and the PS5 too.\n\n\\-RX 6700 clocks +200 MHz higher\n\n\\-RX 6700 has much slower memory bandwidth (320GB/s vs 448GB/s)\n\n\\-RX 6700 has less L2 cache for GPU\n\n\\-RX 6700 has L3 cache for the GPU (Infinite Cache)\n\nAll in all, it makes it for a kind of fair comparison. \n\nIt should really be close to a RX 6700\n\n\\&gt; Closest known model? the\u00a0[RX 7600M](https://www.techpowerup.com/gpu-specs/radeon-rx-7600m.c4014)\u00a0: same CU count, 90W TDP, boost @ 2.41GHz, PCIe4x16 interface\n\n  \nPCIe4x8 actually for N33. TPU is wrong, they have the correct one for 7600 XT and co. \n\nSteam Machine likely connects it with PCIex4 actually, due to a lack of PCIe lanes from their chosen laptop CPU.\n\n  \n\\&gt; The PS5 has a downpowered, low to mid-end desktop GPU only one generation older than the entry-level, juiced up, mobile GPU of the Machine that only has the 55W RX7400 below it in the RDNA3 series, the gap is, as described by all of the above, non-existent.\n\nIt\\`s not really that downpowered and it\\`s more midend than you think. \n\nThe 7600M is barely used too, so it\\`s not really \"juiced up\". OEMs usually go for the 7700S or 7600M XT.\n\n  \nEither way, you don't really have much in arguments on why SM is about the same as PS5. Just taking a look at the memory system and cache hierarchy should make it more obvious imho.\n\n",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses PS5 and RX 6700 architecture and the Steam Machine, but does not mention or provide insight into the Intel Arc A750.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is engaging in a technical debate about console vs PC hardware without expressing a positive or negative sentiment toward the target product.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "Ps5 can\u2019t even run games at native resolution either. It\u2019s a lot of upscaling. I\u2019m not worried about the SM",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about PS5 resolution and the Steam Machine, not the Intel Arc A750.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user expresses no opinion on the Intel Arc A750.",
           "replies": []
         },
         {
@@ -40,20 +40,20 @@
           "text": "This is great analysis! I might also want to note,  PS5 and Xbox games sometimes also use Temporal Upscaling + Spatial to get to 4K (i.e: 540p -&gt; 1080p Temporal + 1080p -&gt; 4K spatial. \n\nOverall I think targeting an upscaled 1440p resolution + spatial upscale to 4K makes the most sense. (Because FSR UP by itself is sometimes more expensive on the system).",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses upscaling techniques on consoles, not the Intel Arc A750.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user expresses no opinion on the Intel Arc A750.",
           "replies": [
             {
               "commentId": "olx50do",
               "text": "Agreed, 1440p looks great on a 4k tv",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about display resolution on TVs, not the Intel Arc A750.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user expresses no opinion on the Intel Arc A750.",
               "replies": []
             }
           ]
@@ -63,13 +63,14 @@
           "text": "Also worth baring in mind, Valve have explicitly stated the Steam Machine is using \"dekstop\" class CPU+GPU. The 7600M is a good comparison though. ",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses the Steam Machine's CPU/GPU, not the Intel Arc A750.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user expresses no opinion on the Intel Arc A750.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

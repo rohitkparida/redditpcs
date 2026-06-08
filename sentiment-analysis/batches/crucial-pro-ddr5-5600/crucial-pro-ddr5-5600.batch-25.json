@@ -18,50 +18,50 @@
           "text": "I appreciate you taking the time to do the write-up! As for your cons, almost every modern ThinkPad today has an ultra low profile keyboard because that's what most people want, but I agree with you that the typing experience sucks compared to the larger keys. As for the throttling, this is also common in modern ultralight laptops and almost every one of them will thermally throttle, and this includes my P14s G4A.",
           "upvotes": 54,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion is about ThinkPad laptop keyboards and thermal throttling, not the Crucial Pro DDR5-5600 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a general discussion about laptop design trends and thermal behavior.",
           "replies": [
             {
               "commentId": "l6vmlw1",
               "text": "Thanks for chiming in u/BinkReddit Do you have any experience with any of the recent slim versions? (i.e. T14s G4a) I'm keen to know if the keyboard on those is same as this one. It's a shame that even the P14s throttles.",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is asking about laptop keyboard versions and thermal throttling, not the RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is seeking information about laptop models.",
               "replies": [
                 {
                   "commentId": "l6wi26t",
                   "text": "The P14s is literally just a T14 with a different label and slightly different boost parameters, so it will behave almost identically to a T14.\n\nUnfortunately, throttling is pretty universal because it is now part of intended operation rather than an emergency safety measure.\n\nTake the T480s for example. I have one with an 8350U in, which has a nominal tdp of 15W, and a turbo frequency of 3.6GHz. Now you will never actually get both of those at the same time, since mine pulls 47W trying to hit its all core turbo speed. So basically to get a quad core H chip down into the U series power envelope, what they did was basically just tweak the voltage curves a little, and then lie about the power consumption.\n\nThis has knock on effects for the laptop manufacturers, since Intel/AMD will say to them that this is a 15W chip, so they design their cooling solution to dissipate a nominal 15W of heat. Maybe they overbuild it to account for high ambients or to prolong the life of the fan, but still we're talking in the 20-30W range. The issue is that this 15W chip is actually a 45W chip at its rated speed, so it either needs to be power throttled to stay within its rated power envelope, or it tries to suck back 3x its advertised power, and overwhelms whatever system is cooling it.",
                   "upvotes": 23,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Technical discussion about CPU power envelopes and thermal throttling in laptops, unrelated to the RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment provides a technical explanation of CPU behavior.",
                   "replies": [
                     {
                       "commentId": "l6ynsch",
                       "text": "I get that.\n\nI had read the NBC review of T14 Gen 4 AMD and they clearly state that they did not notice any throttling or slowdown.\n\nFrom the [NBC review](https://www.notebookcheck.net/Lenovo-ThinkPad-T14-G4-AMD-Laptop-Review-Ryzen-power-in-the-compact-ThinkPad.786912.0.html#toc-6) (scroll down to the 'Heat' section):\n\n&gt;During stress test with Prime95 and Furmark, there was no throttling even after an hour of running the tools simultaneously.\n\nPerhaps that influenced my expectations for T14 models especially considering that both these machines (this T14G5a and NBC's T14G4a) are using the same/identical processor.",
                       "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about laptop reviews and CPU throttling, not the RAM.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is comparing review findings regarding laptop thermal performance.",
                       "replies": [
                         {
                           "commentId": "l6ywizf",
                           "text": "I think that's mainly a semantic distinction between what counts as throttling. When they say \"there was no throttling\", I would say \"there was no throttling, *beyond the baseline expected from stuffing a powerful 8 core CPU into a thin &amp; light*\". I'd love to see the frequency graph for that test, as well as the actual die temperatures. I'd eat my hat if the 7840U was maintaining the full 5.1GHz for the whole duration of the test. I suspect what they mean by it didn't throttle is that the CPU frequency didn't drop below the base frequency. You're only guaranteed at least 3.3GHz, anything above that is extra.\n\nMy P14s with a 6850U will be power throttled if I try to load it down. It has a maximum boost speed of 4.7GHz, but if I load it, it ramps up to about 4GHz/40W package power, with a few individual cores spiking up to 4.7 every so often, before it will slowly settle itself down to about 3.6GHz/30W as the CPU heats up.\n\n&gt; I noticed that the temperature rose until about 96 \u00b0C in high performance mode and as soon as it momentarily hit 96 \u00b0C the CPU frequency reduced from approximately 4.4GHz to 3.8Ghz.\n\nThis is intended. Basically the school of thought for CPU boosting is \"run as fast as you can, until you aproach TJmax, then back off the clock to try and hold it just underneath the limit\". IIRC on Zen 2 and Zen 3/3+, the target temperature is actually 85C by default, meaning it will run as fast as it can without going over that value. It's possible AMD set the target higher in Zen 4 to squeeze a little extra power out of it, since the Phoenix APUs seem to be faster than Rembrandt, at the expense of some efficiency.\n\n&gt; I think Lenovo will reserve the P14s G5a model for those who want sustained unthrottled performance out of it.\n\nIt's not an artificial segmentation thing. The 8840U is an 8 core CPU with a boost speed of over 5GHz. No cooler that will fit inside the footprint of a modern T series is going to be able to cope with that kind of sustained heat output",
                           "upvotes": 6,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Detailed technical explanation of CPU boosting and thermal limits, unrelated to the RAM.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment provides a technical analysis of CPU thermal management.",
                           "replies": []
                         }
                       ]
@@ -75,10 +75,10 @@
               "text": "I actually found the thin keys are better for typing fast.\u00a0\nAfter a while on the new style, I feel it takes way more effort to type on the longer travel keys. I thought the key should have registered but it's only about 2/3 they way down.",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about keyboard key travel and typing speed, not the RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user expresses a personal preference for thin keys.",
               "replies": []
             },
             {
@@ -86,20 +86,20 @@
               "text": "I don't really get how the low profile keyboard is a 'good' thing, consoomers don't buy thinkpads and business users would prefer to have a better keyboard, definitely with a 7 row layout.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Opinion on laptop keyboard layouts, unrelated to the RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user expresses a negative opinion about low profile keyboards.",
               "replies": [
                 {
                   "commentId": "l76cj6t",
                   "text": "i mean it\u2019s still a really good keyboard. the 99% of business customers aren\u2019t saying \u201cwe want classic thinkpad keyboards back!!\u201d as long as thinkpads still hold a reputation for build quality and professionalism, they will buy.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about business customer preferences for laptop keyboards, not the RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user argues that the current keyboard design is acceptable for most users.",
                   "replies": []
                 }
               ]
@@ -108,5 +108,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

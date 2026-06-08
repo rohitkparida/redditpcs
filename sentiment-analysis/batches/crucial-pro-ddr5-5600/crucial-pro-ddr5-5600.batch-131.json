@@ -18,50 +18,50 @@
           "text": "Hi. Thanks again. I was just confirming the 96 GB compatibility. These are the memory [specs](https://imgur.com/a/aotSqby) and this [Gskill Ripjaws](https://www.newegg.ca/g-skill-96gb-262-pin-ddr5-so-dimm-ddr5-5600/p/N82E16820374534) is the product I am interested in. I can see that all the requirements line up. Can you confirm if it would work?\n\nG.SKILL Ripjaws SO-DIMM 96GB (2 x 48GB) \n\n* 262-Pin DDR5 SO-DIMM DDR5 5600 (PC5 44800)\n* Laptop Memory Model F5-5600S4645A48GX2-RS\n* CAS Latency 46\n* 1.10V\n* Dual Channel Kit",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking a factual question about compatibility for a G.Skill RAM kit, not providing insight into the Crucial Pro DDR5-5600.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a request for information without an expressed opinion.",
           "replies": [
             {
               "commentId": "mayyh2r",
               "text": "ASUS won't indicate that it does, but their objection to this is that the 48 GB DIMMs run too hot. Technically, yes, the CPU can address it\u2014and like I mentioned in the post, Patrick Kennedy at STH confirmed in his review (with a different RAM kit) that the CPU will address it.\n\nI haven't been able to substantiate the claims of 48 GB DIMMs run too hot, and while I considered getting a 96 GB RAM kit, I decided to go for this 64 GB RAM kit instead (after writing this post):\n\n[https://www.newegg.com/kingston-64gb-262-pin-ddr5-so-dimm-ddr5-5600/p/N82E16820242793](https://www.newegg.com/kingston-64gb-262-pin-ddr5-so-dimm-ddr5-5600/p/N82E16820242793)\n\nWhile it's less RAM, this kit has a CAS Latency of 40, instead of a CAS Latency of 46 for the kit you've linked and the kit that Patrick used. I don't know enough about VFX workloads to say if a 96GB CPU memory capacity is needed (perhaps, GPU memory is more important?) but for gaming, this will provide a small (2-3%) performance difference, and 64GB is perfectly fine for Windows + Steam + Discord + Game, etc.\n\nEdit: also, glad you enjoyed the review!",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion focuses on G.Skill and Kingston RAM kits and general CPU memory addressing, not the Crucial Pro DDR5-5600.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user provides technical information and a personal preference for a Kingston kit over a 96GB kit.",
               "replies": [
                 {
                   "commentId": "maz1mue",
                   "text": "Thanks for detailed response. But I didn't understand the part about 48 GB \"DIMMs\". We are talking about Desktop RAMS rite, how were they even tested with this NUC in the first place. Do they actually fit? Does SODIMM 48 gb * 2 avoid this issue? Quoting your review \n\n&gt; and shared an observation that full-size (i.e., desktop) 48GB DDR5 DIMMs run hotter. DDR5 incorporates a thermal sensor that will throttle the RAM if it runs too hot, which would cause a performance penalty.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is asking for clarification on technical terminology (DIMM vs SODIMM) and thermal claims, not discussing the Crucial Pro DDR5-5600.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a request for clarification.",
                   "replies": [
                     {
                       "commentId": "maz3a6k",
                       "text": "Candidly, I still don't understand the claims about the 48 GB DIMMs running too hot, even if that's the official line from ASUS, but just to clarify, I'm using DIMM and SODIMM interchangeably. (SODIMM is a type of DIMM.)\n\nASUS doesn't officially support 48 GB SODIMMs in the ROG NUC, but they do in the NUC 14 Pro (which uses the same processor), and a comparable kit to the one you've linked has been tested and works.\n\nThat's about as helpful as I can be in answering the question.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The user is discussing ASUS official support and general SODIMM compatibility, not the Crucial Pro DDR5-5600 specifically.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing factual information about compatibility.",
                       "replies": [
                         {
                           "commentId": "mazi8w3",
                           "text": "Oh I get it now. Ok so it could be a gamble having 96 GB Ram. She might need more for her VFX software Houdini. If it comes to that later, I will simply build a new desktop. Thanks for all your help again!",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The user is discussing their potential need for more RAM for VFX software and the possibility of building a desktop, not the Crucial Pro DDR5-5600.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is expressing a decision based on their specific software needs.",
                           "replies": []
                         }
                       ]
@@ -74,5 +74,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

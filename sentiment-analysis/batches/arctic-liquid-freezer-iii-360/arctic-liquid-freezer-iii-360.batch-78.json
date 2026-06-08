@@ -18,50 +18,50 @@
           "text": "\"These HPC features will enable N4X to offer a performance boost of up to 15% over N5, or up to 4% over the even faster\u00a0**N4P at 1.2 volt**.\u00a0**N4X can achieve drive voltages beyond 1.2 volt**\u00a0and deliver additional performance. Customers can also draw on the common design rules of the N5 process to accelerate the development of their N4X products. TSMC expects N4X to enter risk production by the first half of 2023.\"\n\nin these lines u quote where does it say 1.2V is the max/limit lol, reading comprehension is key, because it refers to n4p as being optimal at 1.2v not its threshold or a boundary",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses CPU voltage and TSMC process nodes, not the Arctic Liquid Freezer III 360.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is debating technical specifications of a CPU process node without expressing sentiment toward the product.",
           "replies": [
             {
               "commentId": "o3mksvl",
               "text": "So what do you think that \"N4X can achieve drive voltages beyond 1.2 volt\" means other than N4P is not designed to go above 1.2 Volts?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is part of a technical debate about CPU voltage limits, not the cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a clarifying question about CPU voltage.",
               "replies": [
                 {
                   "commentId": "o3mnhqo",
                   "text": "for efficiency? for example they wouldn't \"drive\" something at its max voltage, putting silicon lottery aside, at some point you hit diminishing returns where the heat output/power usage etc wouldnt be worth the gains",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses CPU efficiency and heat output, not the Arctic Liquid Freezer III 360.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a technical explanation regarding CPU voltage and diminishing returns.",
                   "replies": [
                     {
                       "commentId": "o3ofva0",
                       "text": "As I wrote in the guide:\n\nTwo things degrade CPUs:\n\n1. Electronmigration, this results from excessive heat.\n2. Oxide Breakdown, this results from excessive voltage breaking down the material of the CPU itself.\n\nThe wafers have to be hardened against the maximum voltage that whatever is made on that process can withstand that voltage. Hence why TSMC talks about 1.2 Volts for their N4P process.\n\nN4X has to undergo a different treatment during the creation of chips to be able to withstand higher than 1.2 Volts.\n\nThis is one of the things that went wrong with Intel's Arizona Fab causing massive die-offs (pardon the pun) of their 13th/14th Gen CPUs.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses CPU degradation and Intel's fab issues, not the cooler.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is explaining the physics of CPU degradation.",
                       "replies": [
                         {
                           "commentId": "o3os4rv",
                           "text": "no where does it state that 1.2v is the limit by tsmc only that its the drive voltage which is\n\n* **Drive Voltage:**\u00a0The standard operating voltage specified for the process.\n\nwhich means it would account for the voltage variance being both more or less \n\n I'm not denying electromigration or oxide breakdown, but where the blame is being placed as if its being run within amd spec, it most likely wouldnt be an issue... Most commonly the issue lies with mb vendors as they implement their own OC/PBO settings and use AI for some of it, which users have reported seeing crazy spikes in voltages on certain vendors. a quick 1.3v on 1/2 cores isnt the same as 1.3v all core holding work load",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment discusses motherboard vendors and CPU voltage spikes, not the Arctic Liquid Freezer III 360.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is arguing about the source of CPU voltage issues.",
                           "replies": []
                         }
                       ]
@@ -74,5 +74,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

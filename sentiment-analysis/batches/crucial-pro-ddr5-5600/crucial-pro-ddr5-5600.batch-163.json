@@ -18,30 +18,30 @@
           "text": "I know having 96GB RAM, let alone more, is a bit superfluous, but I have for the moment one 64GB so-dimm in it, and I am considering (for no real reason or necessity) buying a second one to put in. Does anybody know what would happen if I insert more RAM than initially supported ?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking a general question about RAM capacity limits on the NUC, not providing feedback on the Crucial Pro DDR5-5600 specifically.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is inquiring about hardware compatibility without expressing a positive or negative opinion.",
           "replies": [
             {
               "commentId": "msm30m2",
               "text": "Meteor Lake is fine with 128 GB RAM, the modules just didn\u2019t exist when the CPU was made.\n\nAlso, you\u2019re getting a significant performance hit by only using one RAM stick, so please, put a second one in\u2014preferably the same size, speed, and manufacturer as the first.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment provides technical advice on RAM configuration (single vs dual channel) and CPU architecture, but does not mention the Crucial Pro DDR5-5600.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is providing factual technical guidance.",
               "replies": [
                 {
                   "commentId": "msm6w11",
                   "text": "How much a performance hit are we talking about ?\n\nI know it's not optimal having just one, but I privileged upgradability, but right now, it's not quite in budget to buy one more (especially since I also plan to upgrade my storage for multiboot and hoarding purposes)\n\n  \nPS : I bought the NUC 14 Performance, which doesn't have side lights and comes without RAM or nvme, that's why I just have the one 64GB SODIMM",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is discussing their budget and hardware choices for a NUC 14 Performance, not the Crucial Pro DDR5-5600 RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is explaining their current hardware setup and budget constraints.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,50 +18,50 @@
           "text": "I too have a Hades-Canyon that is 6 years old. \nAbout a year ago I upgraded the 2x Samsung 1tb Pro 970  with 2x sabtent 2tb Rocket plus\nAnd upgraded the 2x 16gb crucial sodimms  to 2x Samsung  3200 32gb.\n\nRecently I purchased a Serpent Canyon  because it can.hold 3x nvme SSD.\n\nIn a year or 2 I'll buy a NUC14 bare bones when the price comes down.\n\n\nGreat Review by the way.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user mentions upgrading to Samsung RAM, not the Crucial Pro DDR5-5600.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a general update on their hardware and a compliment to the reviewer.",
           "replies": [
             {
               "commentId": "lk2q2xh",
               "text": "I thought Serpent Canyon was only 2xNVMe, 1xSATA, but all three were M.2?  \nThanks for the kind feedback about the review.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion is about NVMe SSD slots in the Serpent Canyon NUC, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a factual question about hardware specifications.",
               "replies": [
                 {
                   "commentId": "lk3k4r5",
                   "text": "Yep, 2x pcie4 and 1 pcie3",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Factual answer regarding PCIe slots, unrelated to the RAM product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a purely factual statement.",
                   "replies": [
                     {
                       "commentId": "lk3r2mh",
                       "text": "I've read through so much documentation writing this review that it's no wonder I'm misremembering. How's the Arc GPU in the Serpent Canyon?",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The user is asking about the Arc GPU performance, not the RAM.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a request for information about a different component.",
                       "replies": [
                         {
                           "commentId": "ltzody8",
                           "text": "Depends on the game. In the optimized ones (Metro Redux, Ratchet and Clank, Dying Light 2 ...) the Arc A770m with its 16GB 256Bit (you'll have to buy a 4070ti super to get from NVidia), lies 0-25% behind a 4070 mobile, barely reaching the level of a 4060ti desktop. (s. notebookcheck)\n\nThere isn't that much of a performance boost between the notebook-variants of the 4060 and 4070, nearly drawing the same amount of power.\n\nIntel should have pushed the A770m (16GB) in the mobile sector. The 117W-variant runs really fine and (if cleaned regularly by blowing dust out) below 75\u00b0C. \n\nMy Serpent idles at 14W when video is connected over Thunderbolt (Optimus). I love this machine.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Detailed discussion about GPU performance and power consumption, not the RAM product.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "The user expresses love for their machine, but it is not related to the Crucial RAM.",
                           "replies": []
                         }
                       ]
@@ -74,5 +74,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

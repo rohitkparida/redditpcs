@@ -18,25 +18,26 @@
           "text": "This (5060ti 16GB) is the least bad Blackwell card released this far.\u00a0",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides an opinion on the 5060 Ti 16GB relative to other cards in the Blackwell series.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Describing it as the 'least bad' implies a relative preference or recommendation over other options.",
           "replies": [
             {
               "commentId": "mpnafhu",
               "text": "eh i think the 5070ti is the \u201cbest\u201d of the bunch. but maybe that\u2019s just bias because i bought one.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment focuses on the 5070 Ti, which is a different product than the 5060 Ti 16GB.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is discussing a different product, so sentiment toward the target product is not applicable.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

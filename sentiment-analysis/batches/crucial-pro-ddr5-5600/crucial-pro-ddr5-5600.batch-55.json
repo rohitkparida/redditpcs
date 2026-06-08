@@ -18,30 +18,30 @@
           "text": "Thank you for the detailed review. This post beats anything modern tech media pushes out everyday.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general thank you to the reviewer and does not discuss the Crucial Pro DDR5-5600 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing gratitude, but it is not related to the product being analyzed.",
           "replies": [
             {
               "commentId": "l6yifey",
               "text": "You're very kind. Thank you!",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a social interaction (thank you) and contains no information about the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The sentiment is positive toward the person, but neutral regarding the product.",
               "replies": [
                 {
                   "commentId": "l6yq1x8",
                   "text": "You're welcome :)",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a low-effort social response ('You're welcome') and is off-topic.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No opinion on the product is expressed.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

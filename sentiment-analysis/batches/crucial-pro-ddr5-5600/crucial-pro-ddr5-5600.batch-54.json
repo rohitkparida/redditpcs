@@ -18,40 +18,40 @@
           "text": "Do you find the low-res IPS panel\u2019s text-rendering sharp enough? Or would you\u2019ve gotten the oled if given another chance?",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about the laptop's display panel, not the Crucial Pro DDR5-5600 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question about screen resolution and text rendering.",
           "replies": [
             {
               "commentId": "l6wgjfc",
               "text": "I find the text to be a bit too small compared to my T480s. I was also getting headaches with prolonged use. Not sure why.\n\nI didn't even consider OLED because of power consumption concerns. I needed this to be a portable device.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the laptop's screen and power consumption, not the RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is sharing their experience with the display and their reasoning for not choosing OLED.",
               "replies": [
                 {
                   "commentId": "l6xptbs",
                   "text": "Are you sensitive to PWM dimming?",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about PWM dimming on the screen, not the RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking a question about screen sensitivity.",
                   "replies": [
                     {
                       "commentId": "l6yjzu4",
                       "text": "Now that you mention it, I could be.\n\nIs there a *consumer* way to check the PWM frequency on the screen?\n\n*Edit: Thanks for mentioning that.* *~~I found something. Let me test it out.~~* *False start :(*",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about checking PWM frequency on the screen, not the RAM.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is responding to a question about screen sensitivity.",
                       "replies": []
                     }
                   ]
@@ -61,10 +61,10 @@
                   "text": "&gt; I find the text to be a bit too small\n\nI understand, but what I'm wanting to know if you do find the text on it sharp enough? Or would you have opted for a higher res IPS panel (hypothetically) had there existed one over your current wuxga one?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about the laptop's screen resolution and sharpness, not the RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is seeking clarification on text sharpness on the IPS panel.",
                   "replies": []
                 }
               ]
@@ -73,5 +73,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

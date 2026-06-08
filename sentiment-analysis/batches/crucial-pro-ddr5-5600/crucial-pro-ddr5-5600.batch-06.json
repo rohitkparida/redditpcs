@@ -18,30 +18,30 @@
           "text": "I\u2019m very interested in this really just as my productivity / local Ai machine. I\u2019d be very interested to see you expand testing with more models and showing real world examples of what it can/can\u2019t do realistically.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about the MiniPC as a whole for productivity and AI, not specifically about the Crucial Pro DDR5-5600 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user expresses interest in the machine but does not provide a sentiment regarding the specific RAM product.",
           "replies": [
             {
               "commentId": "odjqils",
               "text": "I hear you! It\u2019s one thing to see a benchmark and another to see the machine actually helping you work.\n\nI\u2019m planning a follow-up specifically on 'Local AI Workflows' with OpenClaw, to see how much we can get from this APU. Stay tuned!",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses future testing of the MiniPC's AI workflows, not the RAM product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral response regarding the machine's capabilities.",
               "replies": [
                 {
                   "commentId": "odjtzt7",
                   "text": "Thank you! It\u2019s really hard to find any benchmarks for local ai use on this chip. If you\u2019re interested in expanding you can include n8n for your examples. Would bring a lot to the demonstrations.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment requests benchmarks for the chip/APU, not the Crucial RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is requesting information, which is a neutral action.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

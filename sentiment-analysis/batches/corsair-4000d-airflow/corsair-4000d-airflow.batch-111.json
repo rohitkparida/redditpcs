@@ -18,40 +18,40 @@
           "text": "Awesome write up. Easy for anyone to follow. Good work",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general compliment to the guide author and does not discuss the Corsair 4000D Airflow.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The sentiment is positive towards the author, but since it is not relevant to the product, it is tagged as neutral.",
           "replies": [
             {
               "commentId": "hw0wd4d",
               "text": "Thanks! Means a lot :)\n\nHow did you across this post 8 days later?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a social interaction between users and does not mention the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a polite thank you, but not relevant to the product.",
               "replies": [
                 {
                   "commentId": "hw0wqqn",
                   "text": "Honestly, reddits algorithm at work. It just showed up on my home feed and I wasn't even a member of the group",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the Reddit algorithm and is off-topic.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is neutral in tone and not relevant to the product.",
                   "replies": [
                     {
                       "commentId": "hw0wuvi",
                       "text": "Aight, gotcha :D\n\nThanks Reddit.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a short, off-topic social interaction.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is neutral and not relevant to the product.",
                       "replies": []
                     }
                   ]
@@ -62,5 +62,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

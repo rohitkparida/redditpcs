@@ -18,30 +18,30 @@
           "text": "By the way, you should post this to /r/hardware",
           "upvotes": 15,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a suggestion to post the content to another subreddit and is not about the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing a helpful suggestion without expressing a positive or negative opinion about the product.",
           "replies": [
             {
               "commentId": "cisl0aw",
               "text": "I might do that, but I'm totally fine with someone crossposting it.",
               "upvotes": 9,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a response to a posting suggestion and does not discuss the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is expressing a neutral stance on where the post is shared.",
               "replies": [
                 {
                   "commentId": "cisl1ox",
                   "text": "I figured as OP any responses would go straight to your inbox if you post it.",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the logistics of Reddit notifications and is not about the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is explaining a technical detail about Reddit's platform functionality.",
                   "replies": []
                 },
                 {
@@ -49,30 +49,30 @@
                   "text": "Also by the way, I am very surprised you don't write for anywhere. I think you could do quite well writing for a review site. ",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a compliment to the author's writing and review style, not about the product.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is praising the author's ability to write reviews.",
                   "replies": [
                     {
                       "commentId": "cisyxgq",
                       "text": "Hah, I really should. I'd actually love to, but I'd like to accumulate a little more equipment before getting real serious.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a personal response about the author's aspirations, not about the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing their own career goals.",
                       "replies": [
                         {
                           "commentId": "cisz3xp",
                           "text": "You could write for a sure you don't own, that way they could provide some needed equipment.",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a suggestion regarding employment, not about the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is giving a general career suggestion.",
                           "replies": []
                         }
                       ]
@@ -85,5 +85,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

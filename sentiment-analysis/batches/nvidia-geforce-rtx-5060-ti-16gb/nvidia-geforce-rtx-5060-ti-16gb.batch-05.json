@@ -18,40 +18,40 @@
           "text": "Can anyone explain why there are cards at near MSRP and then others that are priced like 25% higher and practically 5070 price?",
           "upvotes": 17,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking a general question about pricing discrepancies across different models, which is a factual/Q&A query without personal opinion or product-specific insight.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral inquiry about market pricing.",
           "replies": [
             {
               "commentId": "mnfij8l",
               "text": "There are Dual and Triple fan models, plus OC and non-OC models of both.  So there is going to be a wide spread of prices.",
               "upvotes": 11,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a factual answer explaining the reasons for price differences (fan count, OC status), providing no opinionated performance or experience data.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The response is purely informative and neutral in tone.",
               "replies": [
                 {
                   "commentId": "mnyos1x",
                   "text": "If you don't have superior case (chassis) cooling, I would steer kilometers and kilometers clear of the two-fan model unless you want to cook eggs on the top of the back-plate",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a strong recommendation against the two-fan model based on thermal concerns ('steer kilometers and kilometers clear').",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user expresses a negative view of the two-fan model's cooling capabilities, warning others to avoid it.",
                   "replies": [
                     {
                       "commentId": "n00qctp",
                       "text": "There's a funny thing about that rule of thumb. Intuitively, you'd think the 3 fan models would run cooler and quieter because the heatsinks would be larger and the fans can run at lower RPM.\n\nBut there are 3-fan models that seem to have a lot worse cooling/temps than some 2-fan models. You really have to watch reviews to be sure. It's kind of annoying.\n\nI think some of the card makers have caught on that 3-fan models will sell better so they'll cut corners just to make a 3-fan possible even if the end result is not better.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user shares an opinionated critique of the cooling designs of 2-fan vs 3-fan models, specifically for this product line.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user expresses frustration ('kind of annoying') and suggests manufacturers are cutting corners on 3-fan models.",
                       "replies": []
                     }
                   ]
@@ -63,10 +63,10 @@
               "text": "Same reason that's always been the case really.  AIBs love to pretend different colored bits of plastic are worth more.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a general meta-comment about AIB partners and plastic parts, not providing specific insight into the RTX 5060 Ti.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is general cynicism about GPU pricing, not a specific product sentiment.",
               "replies": []
             },
             {
@@ -74,15 +74,16 @@
               "text": "Nvidia's graphics card partners don't have a ton of the margin share of the card. But Nvidia allows partners to charge more for some cards. So they spend a little more to put fancier coolers and components on it, but charge proportionally a lot more. They might lean on visibly unique designs or features like dual bios to justify the markup.\n\nProblem is, as a buyer, it can be hard to judge the worth of what they actually put in, or cut corners on, to hit a specific amount of margin. Not just the bill of materials cost of the stuff they put in, but the actual benefit you get as a user. Will it add 2 years to the usable lifespan of the card? Will it be easier to troubleshoot or repair? Will it resist drastic changes in temperature? Did the company meaningfully choose better parts and invest more in it for more competitive performance? Or are they just selling a design that looks better in your case?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a general discussion about how GPU partners (AIBs) operate and their margins, rather than a specific critique or experience with the RTX 5060 Ti.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is an objective analysis of industry business practices.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,40 +18,40 @@
           "text": "My eyes hurt.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a reaction to the length of the post, not the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing physical discomfort due to reading a long text, which is neutral regarding the product.",
           "replies": [
             {
               "commentId": "o3pht8x",
               "text": "Visit a doctor get glasses",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is low-effort banter between users and is off-topic.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a general suggestion and does not express sentiment toward the product.",
               "replies": [
                 {
                   "commentId": "o3pi1h9",
                   "text": "I think it was more the intense drying out and burning sensation I felt about a third of the way down on the wall of hypothetical text.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a joke about the length of the text, not about the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is continuing a joke about the text length, which is neutral toward the product.",
                   "replies": [
                     {
                       "commentId": "o3pj6qs",
                       "text": "Not hypothetical text this is not an ai trick. I expressed myself the way it is. My point I need to be sure what I have to set in order to use on a product amd designed.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The user is defending their writing style and discussing AMD product settings, but not the Arctic Liquid Freezer III.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is focused on their own communication and AMD CPU settings, not the cooler.",
                       "replies": []
                     }
                   ]
@@ -62,5 +62,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,30 +18,30 @@
           "text": "Hello, thanks for the good review!\n\nJust wonder how was the cpu and gpu temp while you play the highly quality games?\n\nI want to buy one and play games for more than 8 hrs a day, so I worry the cpu/ gpu will stay &gt;80c if the cooling is not good enough.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a question about the ASUS ROG NUC's temperatures, not the Crucial Pro DDR5-5600 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question about system temperatures without expressing a positive or negative opinion.",
           "replies": [
             {
               "commentId": "m2g6vxl",
               "text": "I can test this later this week. :)",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a response to a question about the ASUS ROG NUC, not the Crucial Pro DDR5-5600 RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is simply stating they will perform a test.",
               "replies": [
                 {
                   "commentId": "m2jqme2",
                   "text": "Thanks so much bro!",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a general thank you message and does not mention the product.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is expressing gratitude.",
                   "replies": []
                 },
                 {
@@ -49,10 +49,10 @@
                   "text": "Hello, how did this temp test go?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a question about the ASUS ROG NUC's temperatures, not the Crucial Pro DDR5-C600 RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking for the results of a temperature test.",
                   "replies": []
                 }
               ]
@@ -62,15 +62,16 @@
               "text": "After about an hour of playing Like a Dragon: Infinite Wealth (HDR10 1440p High, so decently high load), the GPU was a steady 64-67 degrees, but the CPU was around 72-86 degrees, but mostly around the 75-80 range. The P-cores were around 78-90, but mostly on the lower end of that. There were brief instances where the CPU package and the P-cores would hit 100C, briefly, but the sustained temperatures were good, and the fans were not hitting 100%.\n\nThis was on performance profile, and there's a bit of headroom for performance (Infinite Wealth is either A or AAA, depending on your orientation toward things).",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the CPU and GPU temperatures of the ASUS ROG NUC, not the Crucial Pro DDR5-5600 RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual temperature data for the system.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

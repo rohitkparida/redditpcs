@@ -18,70 +18,70 @@
           "text": "What u do for living ? I am just curious",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a personal question about the user's profession and is not related to the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a curious question without expressing any sentiment toward the product.",
           "replies": [
             {
               "commentId": "mmv0q5s",
               "text": "I'm a self-employed IT professional, or simply put, a freelancer.",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a response about the user's employment status and is not related to the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual information about their job.",
               "replies": [
                 {
                   "commentId": "mmwpwh2",
                   "text": "What type of freelancer? Like what services do you provide.\n\nAnyways, that's a great setup mate :)",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment asks about freelance services and compliments the overall PC setup, but does not specifically discuss the Arctic Liquid Freezer III 360.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user expresses a positive sentiment toward the overall PC build, but not specifically the AIO.",
                   "replies": [
                     {
                       "commentId": "mmwqv8r",
                       "text": "I create animated videos for businesses in the US and Europe. I also occasionally work on website development and voiceovers, but animation is the main service I offer. BTW, I don't offer the type of animation that requires this kind of setup. The setup is purely for entertainment and enjoyment.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses the user's animation work and the purpose of the PC setup, not the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing information about their work and usage patterns.",
                       "replies": [
                         {
                           "commentId": "mmxnm9f",
                           "text": "That's great man :D I think you have got good clients. From how long you are working in this field?",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is general conversation about the user's career and clients, not the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is expressing general positive social interaction.",
                           "replies": [
                             {
                               "commentId": "mmxp3fy",
                               "text": "Yes. Almost 12 years now.",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment is a factual answer about how long the user has been working, not the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is providing a factual answer.",
                               "replies": [
                                 {
                                   "commentId": "mn02eoi",
                                   "text": "Got it, thanks man!!",
                                   "upvotes": 1,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment is a polite closing to a conversation, not related to the product.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is expressing gratitude.",
                                   "replies": []
                                 }
                               ]
@@ -98,5 +98,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

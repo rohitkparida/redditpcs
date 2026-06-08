@@ -18,30 +18,30 @@
           "text": "I am disappointed with amd cpus. The biggest issue with them is you cannot find anything related with technicals standards. Let\u2019s take intel cpus, my loved ones Xeon 1680 v2 or 4820k and 3820k. You can find technical documentation in intel website about specific cpus related with all safe voltages, absolute maximum voltages, currents in amps and more. Based on that you know how to configure your bios in order to go ahead with stock designed limits and further proceed with overclock if you like to bbq your cpu for fun. Now AMD gives you nothing, you can only watch YouTube or check Reddit for a blind shot of configurations. Simply you set auto in bios and go f yourself and cpu as well. The motherboard maker is like we have agesa and it is a default on which based  they make motherboards and I am sure that those defaults is not minimum as needed for your cpu, it is actually \u201csafe\u201d ranges of configuration which guarantees your cpu will work. Just like xmp or expo default overclock profile with  guaranteed voltages and timings that it will work if it\u2019s in your motherboard memory QVL. So this is where over voltage comes from and it\u2019s really disappointing amd doesn\u2019t provide any technical documentation with safe ranges of configuration and CPUs design. \n\nThis is the reason why I was fkin up my 9800x3d.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment focuses on AMD's lack of technical documentation and general CPU frustration, not the Arctic Liquid Freezer III 360.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses disappointment and frustration with AMD CPUs and their configuration process.",
           "replies": [
             {
               "commentId": "o3rpsw0",
               "text": "Part two\n\nA friend of mine on Discord from Sweden was talking about getting a new system, but it was bloody expensive there.\n\nSo I looked around and got him an identical system to mine as far as CPU, MoBo and RAM were concerned, and I bought it for him, configured it, and essentially cloned my system onto his.\n\nThe main thing that pissed me off about Ryzen Master is that I couldn't get it to load at boot and apply a default profile, so I had to do it manually. This wasn't really a big deal, because my systems run 24/7\n\nI tested and benchmarked the system thoroughly and it performed identical to my 3600X system.\n\nI told my friend about Ryzen Master and loading it after every boot and applying the profile, and it wasn't until three months or so later when I talked about updating his BIOS that I found out that he had not done so.\n\nAfter doing the BIOS update and configuring the system I got him to load Ryzen Master and apply the profile. I then ran some tests with him and it crashed. Tests that ran with no problem on my identical system.\n\nI used TeamViewer to remote into his system, and, long story short, after running the 3600X at stock for about 3 months I could not get it to run stably at anything above 4.15 GHz, so in three months he had lost 75 MHz per core of performance.\n\nThat was my first experience with Ryzen CPUs degrading at stock settings.\n\nWhen I got my 3950X I swapped my 3600X with his, and to no surprise, it ran happily at 4.225 GHz on his system and when I put his 3600X into my system (he had learned the lesson and loaded RM and applied the 4.15 GHz profile) I could not get it to run stably at anything above 4.15 GHz.\n\nI posted about my experience on the AMD site, and of course they ignored it.\n\nLet's face it, compared to the way that Intel handles boost AMD's boost is about as useful as tits on a bull and certainly not worth the idiotic overvolting they engage in to achieve it.\n\nSince my 3600X, I have personally had a 3950X, 5950X, 7950X, 7800X3D, 9950X and now a 9800X3D.\n\nWhen I got my 9950X I saw that PBO actually seemed to halfway do what I expected it to do. Well enough anyway to experiment with it, and I put in about a 1,000 hours of work to see if I could get it to behave itself - which I finally did.\n\nWhen I got the 9800X3D I was pleasantly surprised that it was the first ever Ryzen that I have had that out of the box was sanely configured by the BIOS. I have had fun playing with it.\n\nBTW, there is a trick I used to get my 9800X3D to run Super Pi at 5.8 GHz at below 1.2 Volts that I can show you if you are interested, and in the HWBot standing my Super Pi 32M result would be 17th in the World rankings for the 9800X3D.\n\nMoar Powa does not equal Moar Gud with Ryzen :D",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses CPU degradation, BIOS updates, and Ryzen Master, with no mention of the cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user provides a detailed account of their experience with various Ryzen CPUs, without a clear positive or negative leaning toward a specific product.",
               "replies": [
                 {
                   "commentId": "o7uku13",
                   "text": "Can you make a guide or a video on this trick? I just got a 9850x3d but haven't set it up yet. Have a lot of experience with my 5800x3d tho",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is asking for a guide on CPU overclocking tricks, which is off-topic to the cooler.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking a question without expressing a positive or negative opinion.",
                   "replies": []
                 }
               ]
@@ -51,10 +51,10 @@
               "text": "Part one\n\nMy last Intel CPU was a Haswell 4790K and I was happy with it after I removed the shite that Intel called TIM and replaced it with liquid metal, and it ran 24/7 for five years happily at 4.4 GHz with some tweaking to the Cache.\n\nEvery gen was just more of the same from Intel but involving a new motherboard, and it just wasn't worth it for what I would need to pay compared to what I would be getting back.\n\nSo after five years my system was getting a bit long in the tooth and I looked around.\n\nI had been interested in Ryzen Zen but the X370 boards were just garbage. Then came Zen+ and X470 boards and some of them were not bad and approaching what I described then as \"Intel Class\" motherboards.\n\nWhen Zen2 came out - and especially the news of AMD bringing out a 16 Core CPU - I decided to take the plunge and get a new system. Thanks to the Tech Media/YouTubers, idiots were buying the 3600 and ignoring the 3600X causing the price of the 3600 to go up, and the price of the 3600X to come down to under that of the launch price of the 3600, so I got a 3600X and a GigaByte X470 Gaming 7 WiFi board.\n\nWhen I got the system built and installed I quickly realized that everything I knew about Intel (which is all I had ever had from my original 8088 to my 4790K) was giving me a stunning lack of success with my 3600X.\n\nIn my research I came across info from TSMC that the max voltage for the 7nm node was 1.3 Volts, so I tried to limit the voltage to that in the BIOS and configure around that base. I managed to brick my OS installation a total of three times before I realized that was not the way to go.\n\nI came across Ryzen Master and decided to give that a try.\n\nI woke up one morning and realized that I had been trying to be smart and that I should just try to go with the KISS principle.\n\nTo that end, I set a max voltage for the CPU of 1.3 Volts and tried to see how much I could chicken-clock out of my 3600X with that limit. The answer was 4.225 GHz. I didn't give a crap about single core boost, because even then the games that I was interested in were Multi-Core oriented, and for my normal workload Single Core boost wasn't interesting either.\n\nThis is where I realised the flaw in AMD's thinking that they still seem to be guilty of, and that is bastardizing the power of their systems to hit that single solitary landmark of a Single-Core boost that would get them in spitting distance of Intel.\n\nI didn't give a shit about \"Single Core performance is vital to gaming performance\" because I knew that in my case that was just a load of bollocks.\n\nEven with BIOS updates, I was still stuck with loading a Ryzen Profile after boot to get my system running the way I wanted.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses Intel vs AMD CPUs and historical CPU configuration, not the cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user describes their transition from Intel to AMD and their experience with early Ryzen CPUs.",
               "replies": []
             },
             {
@@ -62,15 +62,16 @@
               "text": "If you look at my article again you will see that I added something to the end as an addendum that might clear up some questions you may still have.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a meta-comment referring the user to an addendum in an article, not about the cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a direction to more information.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

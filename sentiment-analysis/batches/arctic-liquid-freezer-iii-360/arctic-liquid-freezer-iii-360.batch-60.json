@@ -18,25 +18,26 @@
           "text": "TL;DR",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a low-effort 'TL;DR' request and does not provide insight into the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral request for a summary.",
           "replies": [
             {
               "commentId": "o3k798a",
               "text": "Yeah, fifth grade must have been the worst four years of your life.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a joke/insult directed at another user, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The sentiment is negative toward a person, but neutral regarding the product.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

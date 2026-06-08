@@ -18,20 +18,20 @@
           "text": "I'm going to save this, hard to choose the right parts in this expensive market we live in now.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general reaction to the post about PC parts pricing and does not mention the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is simply stating they will save the post for future reference.",
           "replies": [
             {
               "commentId": "jewaun9",
               "text": "I write a bi-monthly guide on r/buildapcforme (shameless plug) for builds of any budget with explainers: [https://www.reddit.com/r/buildapcforme/comments/116fy2f/february\\_best\\_buy\\_guide\\_3504000\\_automatically/](https://www.reddit.com/r/buildapcforme/comments/116fy2f/february_best_buy_guide_3504000_automatically/)\n\nApril version is pending but not a ton changed. It's not a 1:1 copy-paste for you to choose a PC, but a good way to gather inspiration/insight on what's out there.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a plug for a build guide and does not mention the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a resource for PC building.",
               "replies": []
             }
           ]
@@ -41,10 +41,10 @@
           "text": "My i6 6600 and 1070 ran some heavy duty games and I was so so pleased, honestly gaming on PC is so attainable nowadays and I can't stand people that complain about 1080p 60fps med hi settings. For most people, it's a status thing. Need the biggest heaviest hitting most expensive combo in their budget, but it's so unnecessary",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses general PC gaming hardware and preferences, not the specific product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is sharing their experience with older hardware and their opinion on gaming standards.",
           "replies": []
         },
         {
@@ -52,20 +52,20 @@
           "text": "I'm stacking used 3090s for $450-$500",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about buying used GPUs, not the CPU cooler.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is sharing their purchasing strategy for GPUs.",
           "replies": [
             {
               "commentId": "jewanjh",
               "text": "My dad had to buy a Machine Learning PC for university research, and had to pay $3600 for an i5 11400 / RTX 3090 / 64GB DDR4 / 256GB SSD in peak shortage time. Luckily didn't have to pay for it himself lol.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses a specific PC build and its cost during a shortage, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is sharing an anecdote about a high-priced PC build.",
               "replies": []
             },
             {
@@ -73,30 +73,30 @@
               "text": "I'm ignorant, why are you doing this?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a question about GPU stockpiling, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is expressing ignorance and asking for clarification.",
               "replies": [
                 {
                   "commentId": "jevpv9r",
                   "text": "It's the best value I found, particularly for machine learning\n\nLots of crypto leftovers basically \"new\" gpus at what I understand is a good price",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the value of used GPUs for machine learning, not the product.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is praising the value of used GPUs.",
                   "replies": [
                     {
                       "commentId": "jevrb1v",
                       "text": "Nice. I just looked up what they are going for secondhand for me and it's still over $1000cad or about $750usd. Good luck building your stockpile, I'm envious of those prices you're getting.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about the price of used GPUs in Canada, not the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is comparing prices and expressing envy.",
                       "replies": []
                     }
                   ]
@@ -107,5 +107,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

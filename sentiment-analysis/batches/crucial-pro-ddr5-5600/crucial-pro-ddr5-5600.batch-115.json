@@ -18,25 +18,26 @@
           "text": "Hey jose.\n\nFirst of all tyvm for such a detailed review which seems to have been much appreciated by not only myself but most everyone else who has commented.\n\nNot being heavily into the hardware side of things I was wondering if you'd be so kind as to answer my only question regarding this machine as I am almost there in a purchase and am seeing conflicting information in my own research.\n\nI want to buy primarily to use this unit as a Proxmox server/VM environment and also for Docker as well as running a TrueNAS VM for Jellyfin and my storage interface.\n\nThat said, I want more storage capacity and would like to know if I could do the following without issue:\n\n1) Fill the 2 m.2 slots on the board itself\n2) Fill the 2 m.2 slots on the PCIe x 16 GbE card\n3) Add a PCIe 4.0 or 5.0 x16 to 4x M.2 adapter for another 4 m.2's to one of the available slots\n\nI'm pretty sure this is possible via a BIOS setting and the right gear but is it in facts possible?\n\nIf it is in fact possible, could you tell me which slot as per your numbered images I would need to use and a link to an adequate PCIe to 4 x m.2 adapter which would accomplish this goal please?\n\nTruly appreciate any feedback you may be able to offer - Cheers",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a request for technical advice regarding storage expansion and does not mention or review the Crucial Pro DDR5-5600 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question about hardware compatibility without expressing a positive or negative opinion.",
           "replies": [
             {
               "commentId": "oo9nqcp",
               "text": "Hey there,\n\nI've got this unit a month ago and pretty much maxed it out with:\n\n\\- 4x 64GB DDR5 5600MT/s SODIMMs  Crucial CT2K64G56C46S5, know that if you use all 4 slots the memory speed will drop from 5600MT/s to 4400MT/s\n\n\\- a  M. 2 NVMe SSD PCIe x8 adapter with PLX88024 PCI Express 4.0 4-port M.2 (you can find it on aliexpress), this supports bifurcation, meaning each NVME drive can be handled independently , perfect for TrueNAS or any other NAS solution\n\nThis adapter has been mounted in the GPU slot and I've installed 4x WD SN850X 8TB drives on it.\n\nJust make sure you get some low-profile heatsinks for the drives.\n\nThe GPU PCIe slot does not support bifurcation via BIOS, and this limitation came from Intel, not minisforum, hence the reason you'll need a PCIe adapter with a bifurcation chip, like the one I mentioned with the PLX88024.\n\n\\- 2x WD SN850X 8TB drives in the 25GBe NIC Adapter, the PCIe slot where the NIC adapter is seated is the only one that supports bifurcation via BIOS ,I've set the bifurcation settings as x8x4x4\n\n\\- another PCIe adapter in the PCIe 4 x4 slot ( Glotrends PA20 ), this also comes with a bifurcation chip (ASMedia ASM2812) , it's the only x4 adapter which supports bifurcation AND 2x nvme drives, don't bother looking for anything else.\n\nI've installed 2x 2x WD SN850X 8TB drives in it.\n\n\\- 2x  WD SN850X 8TB drives in the NVME slots on the backside of the motherboard.\n\n\\- I replaced the Wifi card with a M.2 A+E Key NVMe SSD adapter and installed a  512GB WD SN770M nvme drive for the OS/Proxmox.\n\n\\- I replaced the stock CPU thermal paste which I believe was a no-name PTM with Honeywell PTM7950 and dropped the temps by 2-4\"c.\n\nRight now I'm looking for ways to install a couple of Noctua 40x10mm or even 40x20mm FLX  fans to better cool the nvme drives mounted in those PCIe adapters as their idle temps are between 52-57\"C, which is not alarming but I'd like to tune them a little.\n\nHope this helps.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user shares their personal experience using 4x 64GB Crucial DDR5 5600MT/s SODIMMs in their system.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user provides a factual account of their hardware configuration and the resulting memory speed drop, without expressing satisfaction or dissatisfaction.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

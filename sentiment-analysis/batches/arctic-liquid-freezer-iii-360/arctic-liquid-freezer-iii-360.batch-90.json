@@ -18,40 +18,40 @@
           "text": "Watts = Volts \\* Amps, if you undervolt your CPU and the CPU wants to draw the same power it has to ramp up the amps and amps is what causes wires (and people) to die.  You don't die from the thousands of volts of static electricity from touching a doorknob, for example, because the amperage is super small.  You undervolt your CPU, then apply voltage sag from work-loading and your amps are going to shoot up if that CPU is trying to achieve a particular power target.  Give me 12W @ 1.2V is 10A, vs give me 12W @ 1.0V which is 12A ... a 20% increase in amps.  Conversely 12W @ 1.4V is 8.57A, which is lower.  Now, that's all \"load heat\" but the wires themselves have limits before they melt.  Thin wires cannot carry as many amps.  Look up \"ampacity charts\".\n\nYour home wiring is sized to handle \"ampacity\", not voltage.  The pins on the cpu are sized for ampacity, not voltage.  Many camper systems run 24VDC instead of 12VDC because they can use thinner wire.  Same for solar systems, often going to 48V (kind of the safe limit for a lot of humans working on them.)  Why go 48V?  Because wires are expensive and smaller/thinner wires are easier to work with.\n\nHow much you want to bet that all of this is caused by the \"zomg neg-V your CPU 4 tha coolz\" hype, and all that's actually setting people up for failure?\n\nNow, overclocking can have the same effect becaues you ramp up V for stability and that increases power so, yes, you still get heat, but if the load demand doens't change you're delivering more \"work\" on the end but you're not damaging the wires (short of arcing.)",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses electrical engineering principles of voltage and amperage in CPUs, not the Arctic Liquid Freezer III 360.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing a technical explanation without expressing a positive or negative opinion about the product.",
           "replies": [
             {
               "commentId": "o3rtiq2",
               "text": "Cooler at lower power for a lot more performance works for me.\n\nYou can of course do whatever the hell you like with your CPU.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses CPU undervolting and performance, not the Arctic Liquid Freezer III 360.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is expressing a preference for undervolting, but not in relation to the product.",
               "replies": [
                 {
                   "commentId": "o3rxtxw",
                   "text": "I don't wish your CPU to die from undervolting, but hey, as you noted, do as you like with your CPU.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a response about CPU undervolting risks, not the Arctic Liquid Freezer III 360.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is expressing a concern about CPU health, not the product.",
                   "replies": [
                     {
                       "commentId": "o3s1zlr",
                       "text": "My CPU has been running very happily at 5.475 GHz at under 1.2 Volts for a year running 24/7 (that's 24 hours a day, 7 days a week).\n\nMy stock results after a year are within the margin of error after retesting (which I do after every BIOS update).\n\nMy 3950X that I bought over six years ago is still running at the same configuration I gave it, with no signs of degradation.\n\nI keep in regular touch with the person I gave the MoBo, CPU and RAM to a few years ago.\n\nIs six years a long enough lifespan for you?",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses CPU longevity and stability under specific voltage settings, not the Arctic Liquid Freezer III 360.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is sharing their experience with CPU stability, not the product.",
                       "replies": []
                     }
                   ]
@@ -62,5 +62,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

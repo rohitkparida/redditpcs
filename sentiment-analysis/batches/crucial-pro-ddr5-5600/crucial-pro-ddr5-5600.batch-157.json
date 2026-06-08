@@ -18,30 +18,30 @@
           "text": "How do you deal with the high cpu temps???",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment asks about CPU temperatures of the ROG NUC, not the Crucial Pro DDR5-5600 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question about system temperatures.",
           "replies": [
             {
               "commentId": "mn2rawe",
               "text": "I did see your post on that\u2014and while my idle temps are a bit lower, Intel (not ASUS) indicate this is within the normal operating parameters of the Meteor Lake CPU.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The response discusses CPU operating parameters and temperatures, not the Crucial RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The response provides a neutral factual statement regarding Intel's specifications.",
               "replies": [
                 {
                   "commentId": "mn3nap6",
                   "text": "So 73c-90c idle is normal according to ASUS???",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses CPU idle temperatures, which is unrelated to the Crucial Pro DDR5-5600 RAM.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user expresses disbelief or frustration regarding high idle temperatures.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -14,9 +14,9 @@
       "depth": 0,
       "threadUrl": "https://www.reddit.com/r/EVGA/comments/1gjih7b/sata_cable_compatibility/",
       "sentiment": "neutral",
-      "sentimentReasoning": "The user is asking a factual question about compatibility without expressing a positive or negative opinion of the PSU itself.",
-      "relevance": "exclude",
-      "relevanceReasoning": "The comment is a request for technical support regarding cable compatibility, not an opinion or experience with the product's performance."
+      "sentimentReasoning": "The comment is a question seeking information and does not express a positive or negative opinion about the product itself.",
+      "relevance": "include",
+      "relevanceReasoning": "The user is asking a specific question about the compatibility of SATA cables for their EVGA SuperNOVA 850 GT PSU, which is directly related to the product."
     },
     {
       "commentId": "lwlyc1k",
@@ -26,10 +26,10 @@
       "upvotes": 2,
       "depth": 1,
       "threadUrl": "https://www.reddit.com/r/EVGA/comments/1gjih7b/sata_cable_compatibility/lwlyc1k/",
-      "sentiment": "neutral",
-      "sentimentReasoning": "The response is informative and neutral in tone.",
-      "relevance": "exclude",
-      "relevanceReasoning": "This is a purely factual answer providing information about cable compatibility across the GT line."
+      "sentiment": "positive",
+      "sentimentReasoning": "The comment provides helpful and accurate information that resolves the user's technical query, offering a positive resolution.",
+      "relevance": "include",
+      "relevanceReasoning": "This comment directly addresses the user's question about SATA cable compatibility for the EVGA GT series PSUs, confirming compatibility."
     },
     {
       "commentId": "lviwa6i",
@@ -39,10 +39,10 @@
       "upvotes": 1,
       "depth": 1,
       "threadUrl": "https://www.reddit.com/r/EVGA/comments/1gjih7b/sata_cable_compatibility/lviwa6i/",
-      "sentiment": "neutral",
-      "sentimentReasoning": "The user is providing a cautious recommendation regarding third-party cables.",
-      "relevance": "exclude",
-      "relevanceReasoning": "This is a general warning about cable safety, not a critique of the product's design or performance."
+      "sentiment": "negative",
+      "sentimentReasoning": "The comment advises caution and implies a potential risk, which carries a negative sentiment regarding the use of unverified accessories.",
+      "relevance": "include",
+      "relevanceReasoning": "This comment offers advice regarding the use of non-verified cables with the PSU, which is relevant to the product's safe operation."
     },
     {
       "commentId": "m0a2b0s",
@@ -53,12 +53,13 @@
       "depth": 1,
       "threadUrl": "https://www.reddit.com/r/EVGA/comments/1gjih7b/sata_cable_compatibility/m0a2b0s/",
       "sentiment": "neutral",
-      "sentimentReasoning": "The user is simply seeking information.",
-      "relevance": "exclude",
-      "relevanceReasoning": "The user is asking a question about cable availability, which is a purely factual/Q&A interaction."
+      "sentimentReasoning": "The comment is a follow-up question seeking information and does not express a personal opinion or sentiment about the PSU.",
+      "relevance": "include",
+      "relevanceReasoning": "This user is asking for an update on a previous compatibility issue with the same PSU model, indicating continued relevance to the product."
     }
   ],
   "models": [
+    "gemini-2.5-flash-lite",
     "gemma-4-31b-it"
   ]
 }

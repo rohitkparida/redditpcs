@@ -18,10 +18,10 @@
           "text": "ID cooling are very good for the price. I\u2019ve got the big one with two fans on an i7 12700",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses ID Cooling products, not the Thermalright Peerless Assassin 120 SE.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing a general positive opinion about ID Cooling, but it is not relevant to the target product.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "350$??? Damn.. Cheapest rx 6700 xt i can find is 420$ (sad moment)",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about GPU pricing, which is off-topic for the CPU cooler analysis.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing disappointment about GPU prices, but it is not relevant to the target product.",
           "replies": []
         },
         {
@@ -40,25 +40,26 @@
           "text": "Literally the only thing that has gotten cheaper are SSDs and maybe ddr5 memory. Literally every other core component is more expensive.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses general PC component pricing trends, not the specific product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing a general opinion on pricing, but it is not relevant to the target product.",
           "replies": [
             {
               "commentId": "jewf2b4",
               "text": "* 32GB DDR5 went from $400+ to $120 in 2 years which is really fast. \n* 32GB DDR4 went from $170 to $60. You can just check this in the PCPartpicker historical data.\n* Mainstream motherboards with similar naming has gotten more expensive, but cheaper options have gotten much better as well. For example, the Gigabyte B550m DS3H was a super basic, but good allround value ($110). The Gigabyte B650m DS3H is $149.99, but also comes with more USB, USB-C, bios-flashback, 2x PCIe 4.0 M.2 slots, and very solid VRMs \n* Power supplies have gotten more expensive (especially 850W models due to people being scared of ridiculous power draw components as of late), I'll give you that. For budget builders however, there are still decent C-tier offerings like the Thermaltake BM2 (650W for $55), or the Bitfenix Formula Bronze 550W ($45) which is fine for lower power builds. You shouldn't skimp on your PSU, but you can't expect everyone to spend $130+ on a power supply\n* Ryzen 7600(X) dropped from $300 to $230\n* Latest i5 at $300 is what it's been since like 9th gen with the 9600K being $300 at release if I'm not mistaken. Considering steep inflation this is not too bad.  \n* Intel 13th gen has decent $110-130 B760 boards (which is what it's been for a long time for these boards) which are decently equipped as well\n* Cheap $20 got really good, $35 got amazing (Thermalright Peerless Assassin), $60 has become the norm for high end aircoolers, and the old 'standard' models like the NH-D15 and Dark Rock Pro 4 are just needlessly overpriced and you shouldn't buy them. \n* This applies to coolers too, but material costs have exploded the past two years during covid. Yet you can get good airflow cases and coolers for the same price or cheaper than before due to competition.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user explicitly mentions the Thermalright Peerless Assassin as being 'amazing' for its price point.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user describes the product as 'amazing' and recommends it over more expensive alternatives.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

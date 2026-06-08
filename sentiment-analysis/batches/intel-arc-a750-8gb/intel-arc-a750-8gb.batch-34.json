@@ -18,30 +18,30 @@
           "text": "I am very curious how this would perform on lesser cpus due to the drivers. Reviewers are using a minimum Ryzen 5000 series cpu these days, plenty of people can use rebar on lesser cpus if their mobo vendor provided support. What about Ryzen 1000 or Intel 8th gen?\n\nIntel ARC is probably a lot worse than it looks. And it already looks very very bad. They need some partners to soak up the cost of RMAs that will undoubtedly devour profit margins like a swarm of locusts. Maybe EVGA hasn't taken enough loss at the tail end of Nvidia's 30 series.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user expresses a negative opinion on the product's performance and stability, predicting high RMA rates.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes the product as looking 'very very bad' and predicts profit-devouring RMAs.",
           "replies": [
             {
               "commentId": "irulb11",
               "text": "Without rBAR: \u201323% over a parcours of 25 games ([TPU](https://www.techpowerup.com/review/intel-arc-a770-pcie-3-resizable-bar/28.html)). So forget older systems for Arc A700.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides technical critique regarding the performance loss without ReBAR, which is critical for the A750/A770 series.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user advises to 'forget older systems' due to a significant performance drop.",
               "replies": [
                 {
                   "commentId": "iruscod",
                   "text": "Both Ryzen 1000+ and 8th gen Intel support Rebar. Alder Lake represents a fair leap over ol Sky Lake, and each Ryzen generation improved quite significantly.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is purely factual regarding CPU and motherboard support for ReBAR, without opinion on the A750.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment provides technical facts without expressing a positive or negative sentiment toward the product.",
                   "replies": []
                 }
               ]
@@ -53,25 +53,26 @@
           "text": "AMD cards with an idle draw of 5W? Did they finally fix their issue with the VRAM running at 100%, driving up energy consumption, as long as a second display is connected?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The discussion is focused on AMD cards and their idle power draw, not the Intel Arc A750.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is off-topic regarding the target product.",
           "replies": [
             {
               "commentId": "irsrj2j",
               "text": "from the same page no, 6750xt jumps from 7w to 39w (6700xt 33w). it's recent chip so recent drivers too. yet still below arc. video playback is 20w for 6750xt, while arc is at 50w...\n\nhttps://www.techpowerup.com/review/intel-arc-a770/38.html https://www.techpowerup.com/review/asus-radeon-rx-6750-xt-strix-oc/35.html",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Directly compares the power consumption of the Intel Arc series against AMD cards.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user highlights that Arc's power draw is significantly higher than AMD's in both idle and video playback.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

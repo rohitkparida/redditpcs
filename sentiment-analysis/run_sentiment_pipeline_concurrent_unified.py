@@ -21,6 +21,19 @@ BATCHES_DIR = Path('batches')
 CLASSIFIED_DIR = Path('classified')
 STATE_FILE = Path('pipeline_state.json')
 _STATE_LOCK = threading.Lock()
+_SUMMARY_LOCK = threading.Lock()
+
+def append_to_github_summary(slug, status, detail):
+    summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
+    if not summary_file:
+        return
+    with _SUMMARY_LOCK:
+        try:
+            with open(summary_file, "a", encoding="utf-8") as f:
+                now_str = datetime.now().strftime("%H:%M:%S")
+                f.write(f"| **{slug}** | {status} | {detail} | {now_str} |\n")
+        except Exception as e:
+            print(f"Warning: Failed to write to step summary: {e}")
 
 CLASSIFIED_DIR.mkdir(exist_ok=True)
 
@@ -78,11 +91,13 @@ def process_single_product(slug, model_name, registry, db_file_path):
     ok, msgs = pv.validate_scrape(slug)
     if not pv.report(f"{slug} Scrape", ok, msgs):
         mark_state(slug, "failed", step="scrape_validation", error=" | ".join(msgs))
+        append_to_github_summary(slug, "❌ Failed", f"Scrape validation failed: {' | '.join(msgs)}")
         return False
 
     if not template_file.exists() or not classified_file.exists():
         if not pipeline_core.create_product_templates(slug, raw_comments_file, template_file, classified_file, reg_item):
             mark_state(slug, "failed", step="template_creation", error="failed to write templates")
+            append_to_github_summary(slug, "❌ Failed", "Template creation failed")
             return False
 
     # Validate split batches before classifying
@@ -90,6 +105,7 @@ def process_single_product(slug, model_name, registry, db_file_path):
     ok, msgs = pv.validate_split(slug)
     if not pv.report(f"{slug} Split", ok, msgs):
         mark_state(slug, "failed", step="split_validation", error=" | ".join(msgs))
+        append_to_github_summary(slug, "❌ Failed", f"Split validation failed: {' | '.join(msgs)}")
         return False
 
     # --- STEP 2: Auto Classify ---
@@ -99,12 +115,14 @@ def process_single_product(slug, model_name, registry, db_file_path):
     except Exception as e:
         mark_state(slug, "failed", step="classify", error=str(e))
         print(f"[{slug}] [Error] Gemini auto-classification failed: {e}")
+        append_to_github_summary(slug, "❌ Failed", f"Gemini auto-classification error: {e}")
         return False
 
     # Post-classification validation
     ok, msgs = pv.validate_classification(slug)
     if not pv.report(f"{slug} Classify", ok, msgs):
         mark_state(slug, "failed", step="classify_validation", error=" | ".join(msgs))
+        append_to_github_summary(slug, "❌ Failed", f"Classification validation failed: {' | '.join(msgs)}")
         return False
 
     # --- STEPS 3 & 4: Merge, Consensus, DB Metrics ---
@@ -112,6 +130,7 @@ def process_single_product(slug, model_name, registry, db_file_path):
     ok = pipeline_core.compute_and_write_metrics(slug, classified_file, db_file_path)
     if not ok:
         mark_state(slug, "failed", step="merge+consensus", error="merge metrics error")
+        append_to_github_summary(slug, "❌ Failed", "Merge + consensus calculation error")
         return False
 
     # Validate DB write
@@ -120,6 +139,7 @@ def process_single_product(slug, model_name, registry, db_file_path):
 
     mark_state(slug, "done", step="complete")
     print(f"[{slug}] SUCCESS: Completed sentiment pipeline!")
+    append_to_github_summary(slug, "✅ Completed", "Classified, merged, and consensus generated successfully")
     return True
 
 def run_preflight_checks(args, active_slugs):
@@ -183,8 +203,20 @@ def main():
     parser.add_argument("--model", default="gemini-2.5-flash-lite", help="Gemini API model name to use")
     parser.add_argument("--workers", type=int, default=2, help="Number of parallel workers (default: 2)")
     parser.add_argument("--limit", type=int, default=None, help="Limit the number of products to process in this run")
+    parser.add_argument("--skip", default="", help="Comma-separated product slugs to skip")
     parser.add_argument("slugs", nargs="*", help="Optional product slugs to process")
     args = parser.parse_args()
+
+    # Initialize GITHUB_STEP_SUMMARY if present
+    summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
+    if summary_file:
+        try:
+            with open(summary_file, "w", encoding="utf-8") as f:
+                f.write("### 🚀 Cloud Sentiment Analysis Progress\n\n")
+                f.write("| Product | Status | Details | Updated At (UTC) |\n")
+                f.write("| :--- | :--- | :--- | :--- |\n")
+        except Exception:
+            pass
 
     if not REGISTRY_PATH.exists():
         print("Product registry not found.")
@@ -226,6 +258,14 @@ def main():
             resumed_slugs.append(slug)
         active_slugs = resumed_slugs
         print(f"Resuming: skipped {original_count - len(active_slugs)} completed products.")
+
+    # Apply skip list
+    skip_slugs = []
+    if args.skip:
+        skip_slugs = [s.strip() for s in args.skip.split(",") if s.strip()]
+    if skip_slugs:
+        active_slugs = [s for s in active_slugs if s not in skip_slugs]
+        print(f"Skipping products: {skip_slugs}")
 
     # Apply limit
     total_pending = len(active_slugs)

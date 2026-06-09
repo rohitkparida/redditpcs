@@ -12,14 +12,50 @@
     "updated_at": "2026-06-07T19:22:49"
   },
   "amd-radeon-rx-7900-gre": {
-    "status": "pending",
-    "step": "validator_fix_recheck",
+    "status": "review",
+    "step": "complete",
+    "reason": "concentrated_evidence",
+    "warnings": [
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-03.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-04.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-05.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-09.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-11.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-12.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-13.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-16.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-18.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-20.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-23.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-25.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-27.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-28.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-30.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-32.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-33.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-34.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-37.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-39.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-40.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-43.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-44.json",
+      "zero_include_batch:amd-radeon-rx-7900-gre.batch-47.json"
+    ],
+    "metrics": {
+      "survivingThreads": 5,
+      "candidateComments": 710,
+      "includedComments": 82,
+      "contributingThreads": 5,
+      "largestThreadShare": 0.5121951219512195,
+      "includeRate": 0.19248826291079812,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/amd-radeon-rx-7900-gre.classified.json",
+      "database": "../src/data/gpus.json"
+    },
     "error": "",
-    "reason": "",
-    "warnings": [],
-    "metrics": {},
-    "artifacts": {},
-    "updated_at": "2026-06-09T19:20:54"
+    "updated_at": "2026-06-09T13:53:44"
   },
   "amd-radeon-rx-7900-xt": {
     "status": "pending",

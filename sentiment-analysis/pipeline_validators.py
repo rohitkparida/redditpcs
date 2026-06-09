@@ -9,6 +9,20 @@ Call these after each step in run_sentiment_pipeline.py.
 
 import json
 from pathlib import Path
+from dataclasses import dataclass, field
+
+
+@dataclass
+class ClassificationValidationResult:
+    structurally_complete: bool
+    anomalies: list[str] = field(default_factory=list)
+    structural_errors: list[str] = field(default_factory=list)
+    total_expected: int = 0
+    total_complete: int = 0
+
+    @property
+    def completeness_pct(self):
+        return self.total_complete / self.total_expected if self.total_expected else 0.0
 
 
 # ─────────────────────────────────────────────────────────────
@@ -238,6 +252,57 @@ def validate_classification(slug: str) -> tuple[bool, list[str]]:
     hard_errors = [e for e in errors if not e.startswith("[Classify Warning]")]
     passed = len(hard_errors) == 0
     return passed, errors
+
+
+def inspect_classification(slug: str) -> ClassificationValidationResult:
+    """Separate structural completeness failures from non-blocking quality anomalies."""
+    batch_dir = Path("batches") / slug
+    if not batch_dir.exists():
+        return ClassificationValidationResult(
+            structurally_complete=False,
+            structural_errors=[f"[Classify] Batch directory for '{slug}' does not exist."],
+        )
+
+    result = ClassificationValidationResult(structurally_complete=True)
+    total_include = 0
+    for batch_file in sorted(batch_dir.glob("*.json")):
+        try:
+            with open(batch_file, "r", encoding="utf-8") as f:
+                batch = json.load(f)
+        except Exception as exc:
+            result.structural_errors.append(f"[Classify] Failed to parse '{batch_file.name}': {exc}")
+            continue
+
+        batch_total = batch_complete = batch_include = 0
+        def inspect_nodes(nodes):
+            nonlocal batch_total, batch_complete, batch_include, total_include
+            for node in nodes:
+                if node.get("classifyThis", True):
+                    batch_total += 1
+                    result.total_expected += 1
+                    if node.get("relevance") is not None:
+                        batch_complete += 1
+                        result.total_complete += 1
+                    if node.get("relevance") == "include":
+                        batch_include += 1
+                        total_include += 1
+                inspect_nodes(node.get("replies", []))
+        inspect_nodes(batch.get("comments", []))
+        if batch_complete != batch_total:
+            result.structural_errors.append(
+                f"[Classify] '{batch_file.name}' has {batch_total - batch_complete} unclassified comment(s)."
+            )
+        if batch_total > 3 and batch_include == 0:
+            result.anomalies.append(f"zero_include_batch:{batch_file.name}")
+
+    if result.total_expected:
+        include_rate = total_include / result.total_expected
+        if include_rate < 0.05:
+            result.anomalies.append(f"anomalous_include_rate_low:{include_rate:.4f}")
+        elif include_rate > 0.95:
+            result.anomalies.append(f"anomalous_include_rate_high:{include_rate:.4f}")
+    result.structurally_complete = not result.structural_errors
+    return result
 
 
 # ─────────────────────────────────────────────────────────────

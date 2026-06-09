@@ -113,9 +113,10 @@ def process(slug, product, model):
             return False
         checkpoint(slug, "in_progress", "classify", warnings=warnings, metrics=preliminary)
         classification = auto_classify_gemini.main(slug, model)
-        ok, messages = validators.validate_classification(slug)
-        if not ok:
-            completeness = auto_classify_gemini.product_completeness(slug)
+        classification_result = validators.inspect_classification(slug)
+        warnings = warnings + classification_result.anomalies
+        if not classification_result.structurally_complete:
+            completeness = classification_result.completeness_pct
             metrics = {**preliminary, "classificationCompleteness": completeness}
             if completeness >= 0.90:
                 merge_batches.merge_batches(BATCHES / slug, classified_file, classified_file)
@@ -124,7 +125,7 @@ def process(slug, product, model):
                            {"classified": str(classified_file)})
                 return True
             checkpoint(slug, "failed", "classification", "classification_incomplete", warnings, metrics,
-                       error=" | ".join(messages))
+                       error=" | ".join(classification_result.structural_errors))
             return False
         merge_batches.merge_batches(BATCHES / slug, classified_file, classified_file)
         final, reasons = pipeline_core.final_evidence_metrics(classified_file)

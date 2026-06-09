@@ -534,6 +534,23 @@ class TestValidators(unittest.TestCase):
         self.assertTrue(ok)
         self.assertEqual(msgs, [])
 
+    def test_inspect_classification_keeps_zero_include_as_anomaly(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old_cwd = os.getcwd()
+            os.chdir(tmp)
+            try:
+                batch = {"comments": [
+                    make_batch_comment(str(i), relevance="exclude", sentiment="neutral")
+                    for i in range(5)
+                ]}
+                self._write_json(Path("batches/product-a/batch.json"), batch)
+                result = pv.inspect_classification("product-a")
+                self.assertTrue(result.structurally_complete)
+                self.assertEqual(result.completeness_pct, 1.0)
+                self.assertTrue(any(a.startswith("zero_include_batch:") for a in result.anomalies))
+            finally:
+                os.chdir(old_cwd)
+
     def test_registry_fails_when_product_has_no_urls(self):
         registry = {
             "product-a": {"sources": []},

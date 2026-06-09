@@ -1,7 +1,7 @@
 {
-  "productName": "amd-radeon-rx-7900-xtx",
+  "productName": "AMD Radeon RX 7900 XTX",
   "batchIndex": 15,
-  "totalBatches": 41,
+  "totalBatches": 53,
   "comments": [
     {
       "commentId": "1j7fhzl",
@@ -14,103 +14,242 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mgwlzy4",
-          "text": "This is many number, and I many stupid\u2026\n\nIs there a TLDR?",
-          "upvotes": 27,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is asking for a TLDR and not providing any insight or opinion on the product.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is a request for information without any emotional leaning.",
+          "commentId": "mgwi8cc",
+          "text": "Worth mentioning, that ray tracing includes black myth wukong, which is completely broken on AMD and is basically bruteforced, so it Heavily bricks the results for ray tracing on AMD cards. It's ~5-6% better average if you exclude it (since it's a huge outlier)",
+          "upvotes": 309,
+          "classifyThis": false,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "mgwmq1l",
-              "text": "TLDR, just look at the average row for each set. It's normalized to a 5070, so if the average line for a card is 110%, that means it's 10% faster than a 5070.",
-              "upvotes": 30,
+              "commentId": "mgwl5va",
+              "text": "Might as well exclude Avatar since it barely uses RT and skews the RT data as well, just towards AMD this time",
+              "upvotes": -36,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is explaining how to read the data table, which is purely factual/instructional.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a factual explanation without any sentiment.",
-              "replies": []
-            },
-            {
-              "commentId": "mgwth3l",
-              "text": "for rasterization without raytracing, 5070 &lt;= 9070 &lt;= 7900xt within 10% and 5070ti = 9070xt &lt;= 7900xtx so check if 7000 series is cheaper than corresponding 9000 series when buying  \nif you want raytracing it's basically reversed, 5070 &gt; 9070 &gt; 7900xt within 10% and 5070ti &gt; 9070xt &gt; 7900xtx within 20%",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user provides a performance comparison between the 7900 XTX and other GPUs, including the 9000 series and RTX 50 series.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing a balanced comparison of rasterization and ray tracing performance without a clear positive or negative leaning.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "mgwwv2v",
-                  "text": "Also don't forget access to FSR4 when choosing between 9000 and 7000 cards. It's apparently a night and day difference",
-                  "upvotes": 14,
+                  "commentId": "mgwnoeg",
+                  "text": "Perhaps watch the DF video on Avatar?  It's one of the best implementations of GI and other RT features (bar the path tracing titles).\n\nIt runs well on AMD not because its RT is bad but probably because it favours AMD in raster and so when Heavy RT settings are used AMD GPU's have a bit more cushion for extra performance drop.",
+                  "upvotes": 66,
                   "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user discusses the importance of FSR4, which is a technical critique regarding the choice between 7000 and 9000 series cards.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is highlighting a technical feature difference without expressing a clear positive or negative sentiment toward the 7900 XTX specifically.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "mgwo19u",
+                  "text": "Test was done at very high RT. The usual usage of it, not PT level. For BMW and Alan wake it's PT, actually, that is why it is borked. In Alan wake both vendors die anyway, so having 20 fps on AMD or 25 on 5070 - who cares. Cyberpunk RT works great on both cards and that's what will be in future games.\n\nBMW on the other hand, is completely broken on AMD. Like, it's a sabotage at this point.",
+                  "upvotes": 29,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "mgy4dki",
-                      "text": "Just because of FSR4, I'd trade my 7900XTX for a 9070XT. The ghosting and disocclussion artifacts are terrible for FSR3. \n\nHowever, I still feel like we will see an int8 quantitized variant of FSR4 for RDNA3. Call it FSR4 lite if you will. I tend to play with XESS mostly because of this. I think AMD might get away with just a regular quantitized version of the model that performs a bit worse. Thankfully, RDNA3 has a lot of regular compute available.",
-                      "upvotes": 6,
+                      "commentId": "mgwwlbn",
+                      "text": "It doesn't matter, Avatar barely has any RT features at all and skews it towards AMD.\n\nIf you're going to exclude the most intensive RT games/modes then you might as well exclude that, although it doesn't fit your AMD bias.\n\n\\&gt;Cyberpunk RT works great on both\n\nNot at max settings, which is rarely used in benchmarks for some reason...",
+                      "upvotes": -28,
                       "classifyThis": true,
-                      "relevance": "include",
-                      "relevanceReasoning": "The user shares personal experience with the 7900 XTX, specifically criticizing FSR3 artifacts and stating they would trade it for a 9070 XT.",
-                      "sentiment": "negative",
-                      "sentimentReasoning": "The user expresses disappointment with FSR3 ghosting and disocclusion artifacts on their 7900 XTX.",
-                      "replies": []
-                    },
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "mgy4hg5",
+                          "text": "The point they are making is it's a bad implementation. It runs like shit on Nvidia, and even more so on AMD because of the different RT architecture. It's a title that skews all the results down *because* it's a poor implementation. There's no point removing good implementations unless it's significantly above average. But on that note, if the variance in RT implementations is so huge, there's clearly something wrong with the way it's built into certain engines.",
+                          "upvotes": 7,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "mgz68rz",
+                              "text": "So it\u2019s the Crysis 2 (tessellation) of RT, then? It kills fps on new nvidia cards but kills way more fps on amd and older nvidia cards.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            },
+                            {
+                              "commentId": "mgy5af7",
+                              "text": "It's not poor implementation, it's just that AMD still lacks the hardware to properly run intensive RT processes, that's all. At any point that a significant part of the processes in a game involve RT instead of traditional raster methods, AMD's performance drops like a rock. Anyone who denies this and blames \"bad implementation\" is just coping hard.\n\nThere's no software secret sauce bricking the 7900XTX in RT to favor NVIDIA, it just is that bad at RT.\n\nIt has improved with the 9000 cards, but the % of the performance drops that they experience in such contexts is STILL higher than even in the RTX 3000 cards.",
+                              "upvotes": -3,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "mgy6uiz",
+                                  "text": "A 1070 can do ray tracing at 1440p 60fps, trust me, I've done it. You use a method called 'ray marching' it's much more efficient, just a pain to set up a scene for. It can also do RT with multiple intersects on geometry at playable framerates, using openGL. \n\nIt's all about the implementation. Remember the videos back in 2018 of vega64 and vega56 running RT with 2-3 bounces (i.e what 99% of games with RT use now) at 1080p60, without dedicated hardware...\n\nA 3-4x faster GPU with dedicated hardware for RT should have absolutely no issue getting similar performance at higher resolutions in RT now, if it can't it's not the hardware, it's the software. Just like how deepseek is faster and needs much less power than GPT, it's not hardware doing that, it's better software. Developers have given up optimising.\n\nThe fact of the matter is too, heavy RT like in BMW doesn't even make sense when it barely makes the game look any different, and when games with supposedly 'lighter' RT perform and look better it tells you there's an issue.",
+                                  "upvotes": 3,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "mgy3vhn",
+                          "text": "RTGI, RT Shadows and RT reflections are \"barely any RT features\"? Alright",
+                          "upvotes": 10,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "mgy5w3q",
+                              "text": "DL2 also has all of those things on paper, but in reality they're only doing RTGI with one single bounce, most objects don't cast shadows and barely any surfaces have RT reflections(and are low res). AMD also fares ok in DL2, i wonder why...\n\nAgain, the reason AMD fares well in some RT titles and not in others simply comes down to how much it relies in RT processes.",
+                              "upvotes": -4,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "mgy9b5w",
+                                  "text": "If your standard for RT features is borderline path tracing then sure.\n\nWhen I think of \"barely any RT features\" I think of games like Forza Horizon 5 or Resident Evil 4 where its used minimally for a single effect. Multiple RT effects, especially if that includes RTGI is not barely using them. It may not be the heaviest RT usage when we have path traced games out there but it's a reasonably heavy amount of RT usage\n\nDL2 is also not a light RT game either, if anything it's one where the RT gap shows itself the most outside of path traced games. In the DF review they have the 5070 Ti as 30%+ faster in that game.",
+                                  "upvotes": 8,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "mgyboth",
+                                      "text": "This discussion is not about my standards for RT, read the entire thread again, slowly.",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "mgwwkg4",
+                  "text": "It's not really a 'this is heavy RT WTF' moment here. The 5070 is somehow 15-20% faster in Cyberpunk's Path Tracing setting\u2014which used to be the absolute most taxing RT scenario in gaming\u2014and 73% faster in specifically Black Myth Wukong. Like, something might actually be wrong here. It would be more like including Black Myth Wukong RT for Nvidia and Borderlands 2 with PhysX for AMD.",
+                  "upvotes": 7,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "mgwxj9c",
+                  "text": "\"Remove Cyberpunk, AW2 and Wukong at max settings because they're outliers and they skew the data towards NVIDIA!\"\n\n\"Btw keep Avatar and spider man because reasons\"",
+                  "upvotes": -10,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "mgwk913",
+              "text": "Not really going to be outlier going forward. Just easier for a game studio to bake in RT for lighting and reduce development time.",
+              "upvotes": -32,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mgwm8ii",
+                  "text": "He's talking about Black Myth Wukong results being an outlier due to raytracing in that game being broken for AMD. Not the existence of raytracing games being an outlier.",
+                  "upvotes": 41,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
                     {
-                      "commentId": "mgxtbgb",
-                      "text": "I\u2019ve heard that too, so it makes it a lot harder.\n\nPeople recommend 7800\u2019s, buuuuuut you\u2019re giving up what seems like an important advancement, even if the raw power holds up for 1440p gaming.",
-                      "upvotes": 3,
+                      "commentId": "mgwp2ze",
+                      "text": "Games that rely on RT only like Indiana Jones and Metro Exodus work well on AMD cards so IDK what that guy is talking about. Wukong just runs badly on AMD.",
+                      "upvotes": 23,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user is discussing the 7800 and general advancements, not specifically the 7900 XTX.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The comment is a general discussion about GPU advancements.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": []
                     }
                   ]
                 },
                 {
-                  "commentId": "mgxt78s",
-                  "text": "You are beautiful, thank you.\n\nI suppose ray tracing is a personal preference?\n\nI don\u2019t think I\u2019ve used it much, or perhaps ever? I have a 3060 and haven\u2019t ever thought explicitly about enabling it.\n\nBut\u2026in your experience and preference\u2026do you like it and think it\u2019s worth it?",
+                  "commentId": "mgwvzvw",
+                  "text": "No, the game specifically is an outlier. Cyberpunk with path tracing on all other AMD cards before this performed similarly with the 7900xtx falling behind even the 3060 Ti, but performance is much better with the 9070 and 9070XT. The 9070 XT performs on par with a 4070 in path tracing in Cyberpunk now and heavy RT results across the board are miles better than last generation... But Wukong still performs like shit.\n\n5070 is 15-20% faster in Cyberpunk PT and 73% faster in Black Myth Wukong for some reason.",
+                  "upvotes": 21,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "mgwnk6q",
+                  "text": "While technically yes, in the current form it doesn't matter. 5070 is the base there, and it's 12gb Vram dies completely in Indiana even on medium RT, while 9070 works just fine.\n\nSo. Creeping out from tech demos for nvidia means not so much, when AMD does actually a better job in other titles. Just look at cyberpunk RT (which is what your point was, not PT).",
+                  "upvotes": 7,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "mgyibax",
+                  "text": "&gt; bake in RT for lighting\n\n[Hold my beer](https://en.wikipedia.org/wiki/Thief:_The_Dark_Project)",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is discussing their current 3060 and asking about ray tracing in general, not the 7900 XTX.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a request for opinion on a general feature.",
-                  "replies": [
-                    {
-                      "commentId": "mgzazq9",
-                      "text": "It's absolutely personal preference. But you're going to have to try it out wherever it's offered; don't just let random people on a subreddit influence you into ignoring it. \n\nAnd keep in mind, whatever framerate you're gonna get with ray tracing on your RTX 30 series is gonna be much better on an Nvidia 50 series *or* a Radeon 9000 series.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user is giving general advice on ray tracing and mentioning the 50 series and 9000 series, not the 7900 XTX.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The comment is general advice without specific sentiment toward the 7900 XTX.",
-                      "replies": []
-                    },
-                    {
-                      "commentId": "mgyjz9s",
-                      "text": "personal preference mostly, if you want the highest quality in every game on 1440+ resolution you might want to try raytracing, but you're going to pay a premium since you would ideally want 5070ti+.\u00a0\u00a0\ni'd still go with amd for the lower price if that's not the case",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user is discussing general AMD vs Nvidia preferences and the 5070 Ti, not specifically the 7900 XTX.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "Lacks specific sentiment toward the 7900 XTX.",
-                      "replies": []
-                    }
-                  ]
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
                 }
               ]
             }
@@ -118,6 +257,5 @@
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

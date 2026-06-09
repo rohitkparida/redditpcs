@@ -1,7 +1,7 @@
 {
-  "productName": "nzxt-c-series",
+  "productName": "NZXT C Series",
   "batchIndex": 6,
-  "totalBatches": 295,
+  "totalBatches": 301,
   "comments": [
     {
       "commentId": "iko4gj",
@@ -14,9 +14,9 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "g3m2mtg",
-          "text": "Am I reading this right? The 3090 has over 10,000 shaders? \n\nThe 3080 has over 8,000? \n\nThat's insane",
-          "upvotes": 71,
+          "commentId": "g3m1ntf",
+          "text": "3070 better than 2080 Ti for $500? Holy shit that's nuts. \n\nTime to see what AMD's Big Navi can bring and then upgrade from my R9 390. It's-happening.jpg",
+          "upvotes": 698,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -24,9 +24,9 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "g3md4u3",
-              "text": "I'm not familiar with card specs. What are shaders and I assume the higher the better?",
-              "upvotes": 38,
+              "commentId": "g3m2f22",
+              "text": "thats just in rtx mode tho",
+              "upvotes": 40,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -34,9 +34,9 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "g3muatv",
-                  "text": "VeritasLuxMea, means well, but unfortunately appears to know very little about this. \n\nThere's no such thing as a \"shader\" when it comes to hardware.  A shader is graphics API terminology for a program that runs on the GPU.  Today there's an artificial distinction between a \"kernel\" and a \"shader\", with shader not having access to normal pointer arithmetic, and some other limitations, and kernel being relegated to just the compute space (though you still have \"compute shaders\", and compute shaders end up being the same compiled assembly you would have seen with kernels, hence why I say it is artificial). \n\nWhat they are confused about is the terminology \"Shader Core\".  This is a generalized terminology for either Cuda Cores or the \"cores\"/lanes inside of compute units on AMD side, sometimes media refers to the individual lanes inside the compute units as compute units on AMD, but AMD's compute units are actually akin to [NVidia's Streaming Multiprocessors](https://en.wikipedia.org/wiki/Pascal_\\(microarchitecture\\)#Streaming_Multiprocessor_%22Pascal%22) (SM).   Shader Core corresponds to Cuda core on the chart above. \n\nA Cuda core is simply a lane in an [SIMD](https://en.wikipedia.org/wiki/SIMD) unit, typically refered to as a [\"Warp\"](https://en.wikipedia.org/wiki/Thread_block_\\(CUDA_programming\\)#Warps) on the Nvidia side ([Wavefront on AMD](https://en.wikipedia.org/wiki/Graphics_Core_Next#Wavefront), and historically in parallel processing academia).  This warp processes 32 arithmetic operations at the same time, but unlike on CPU [SIMD analogs](https://en.wikipedia.org/wiki/Streaming_SIMD_Extensions), each lane in the warp has it's own register space associated with it, as well as other specialized SIMD per lane functions.  Think of these as a bunch of 32bit floating point units that operate in lock step. \n\nIf you double the amount of cuda cores, you double the amount of arithmetic throughput. *Effectively* doubling the amount of cuda cores doubles the speed of your graphics card.  But there's more to your FPS than just floating point speed, and it's game dependent. \n\nCUDA cores have little *specifically* to do with rasterization.  They are used in *every* part of rendering.  They do the bulk of the GPU work in general.  Rasterization typically uses Cuda cores in the vertex shader which generates vertices to draw, then those vertices are sent off to a hardware triangle fragment generation unit, which typically is a per SM or per multiple SM thing, but it really depends on the architecture.  Point is, it is a separate piece of hardware not related to Cuda cores.  The hardware geometry unit generates things called \"fragment\" which are like pixels where triangles were drawn.  These aren't just pixels, because they don't necessarily correspond 1:1 to a screen window, and aren't actually drawn until the end of your *fragment shader's* execution.  When you perform transparent triangle rasterization, you'll have multiple fragments in the same \"pixel\" space.  You also don't have to render to a \"screen\", you can render to any old framebuffer.   You can think of Cuda cores as running for each pixel, though I believe they actually operate over a 2x2 fragments.  Here they read from textures to color the fragment, perform special post processing effects, or any number of things.\n\nCUDA cores are even used in raytracing, RT cores figure out with what and where the rays bounced, CUDA cores effectively fill the same job they did before with the rasterization pipeline, but instead of fragments generated from triangles, they operate on fragments generated from ray intersections. \n\nCUDA cores are just the main method to do arithmetic on the GPU.  \n\nThese SIMD lanes are called CUDA cores because of marketing, they reference the [CUDA GPU Compute API](https://en.wikipedia.org/wiki/CUDA).",
-                  "upvotes": 85,
+                  "commentId": "g3m6pk4",
+                  "text": "Is it though? I don't think they have said so either way.",
+                  "upvotes": 50,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -45,9 +45,44 @@
                   "replies": []
                 },
                 {
-                  "commentId": "g3mep15",
-                  "text": "Shaders do the bulk of the work involved in rasterization performance. The leaks showed the 3090 would have about 5,000 shaders and the 3080 would have around 4,000.  \n\nIt turns out Nvidia found a way to get their shaders to do 2 computations per clock instead of 1, so they effectively have 2x the rasterization performance.  \n\nIt is a very welcome but wholly unexpected announcement.",
-                  "upvotes": 41,
+                  "commentId": "g3m7adu",
+                  "text": "That\u2019s a good point. I wonder what it is in normal operation.",
+                  "upvotes": 13,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "g3m1902",
+          "text": "Still can't believe the 3070 performs similar to 2080ti at $499 it's insane!",
+          "upvotes": 583,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "g3m6w4r",
+              "text": "I just bought a 2070s for $499 rip",
+              "upvotes": 291,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "g3m9ahd",
+                  "text": "any chance of returning for refund?",
+                  "upvotes": 97,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -55,9 +90,9 @@
                   "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "g3mlnm1",
-                      "text": "This is fucking balls to the wall. No wonder AMD is silent if they knew this was coming they must be actively working on RDNA2 to crank it to the max.",
-                      "upvotes": 21,
+                      "commentId": "g3ma6ts",
+                      "text": "Maybe, I\u2019ve only had it for a week. Only problem is I kinda need it until then. Until the $499 card comes out, that is.",
+                      "upvotes": 94,
                       "classifyThis": true,
                       "relevance": null,
                       "relevanceReasoning": null,
@@ -65,9 +100,114 @@
                       "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "g3myvyw",
-                          "text": "I'll be pleasantly surprised if amd had an answer to this, but I really don't think they will.\n\nI hope they do, I much prefer an amd gpu to run hackintosh, but the price/perf for Nvidia just dropped so hard it's unbelievable. Slightly cheaper than 2000 series and basically double the performance. The only thing amd had going for them was price/perf. I don't even know if they can sell a competing chip for a similar price without losing profit like they had to do with Radeon 7.",
-                          "upvotes": 16,
+                          "commentId": "g3mabbk",
+                          "text": "is it anything graphically intense? Or is it just so your pc can work?",
+                          "upvotes": 35,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "g3mat14",
+                              "text": "Yup, just so my pc can work. I need CAD and matlab. My cpu doesn\u2019t have integrated graphics.",
+                              "upvotes": 36,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "g3mb7pv",
+                                  "text": "get [this](https://www.amazon.com/dp/B01DOFD3RY?tag=pcpapi-20&amp;linkCode=ogi&amp;th=1&amp;psc=1&amp;pldnSite=1), cheapest gpu I can find, it doesn't have dp though so make sure your monitor has an hdmi port (it probably will)",
+                                  "upvotes": 89,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "g3md6jd",
+                                      "text": "Good idea, I might just do that.",
+                                      "upvotes": 43,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "g3m2748",
+              "text": "do we know the PSU req for a 3070 ? seems like it hits the perfect sweetspot between price/performance",
+              "upvotes": 70,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "g3m38uh",
+                  "text": "TDP of 220W. That's an imperfect match for PSU strength, but a 500-600W PSU should do fine.",
+                  "upvotes": 83,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "g3m43nd",
+                  "text": "Depends entirely on your CPU. TDP of 220W + say 20% for OC/AIB/boosting is still under 300W. With the ever popular 3600 drawing under 90W it'll fit into a 550W PSU nicely.",
+                  "upvotes": 29,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "g3m3jk9",
+                  "text": "I believe 650W is recommended for 3070 and 750W for 3080/3090",
+                  "upvotes": 21,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "g3m97jd",
+                      "text": "on nvidia's official site for the 3070 a 650w is recommended",
+                      "upvotes": 26,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "g3mf0wn",
+                          "text": "It\u2019s because they have to factor in people using a shit PSU",
+                          "upvotes": 21,
                           "classifyThis": true,
                           "relevance": null,
                           "relevanceReasoning": null,
@@ -80,40 +220,6 @@
                   ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "commentId": "g3m1agd",
-          "text": "IDGAF about the cards that have been revealed today, but their pricing is encouraging me about the 3060 - the confirmed prices are all **below** the leaked prices (Jen-Sun probably made them up back-stage again), so the 3060 I actually want *might* not come in at the exorbitant $400 rumoured price...",
-          "upvotes": 62,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "g3m3kef",
-              "text": "My guess is that it would be around $400, given the 3070 and 3080 were the same as 2070S and 2080S prices",
-              "upvotes": 28,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "g3m5xe8",
-              "text": "&gt;made them up back-stage again\n\nNah, this time it's from the comfort of his kitchen.",
-              "upvotes": 11,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
             }
           ]
         }

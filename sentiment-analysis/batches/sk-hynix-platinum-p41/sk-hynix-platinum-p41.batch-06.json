@@ -1,0 +1,263 @@
+{
+  "productName": "SK Hynix Platinum P41",
+  "batchIndex": 6,
+  "totalBatches": 6,
+  "comments": [
+    {
+      "commentId": "17i8o1f",
+      "text": "Didn't realize MLC NAND could outpace (in some cases) TLC NAND even despite faster PCIe speed (960 Pro vs Platinum P41)\n\nYes this is long. Short version is a 7 year old drive model can compete very well with a 1 year old model despite double the interface bandwidth, presumably because MLC NAND is itself faster. I'm not a storage expert, though.\n\nI've had a 512GB Samsung 960 Pro for a long time and wanted to upgrade to a faster drive to take advantage of the full PCIe 4.0 connection on my motherboard and newer flash and controllers and whatnot, but I was waiting until I could get something really good instead of just good enough, because the 960 Pro was already good enough. I finally got a few bucks extra so I got an SK Hynix Platinum P41 which is rated for more than double the read speed and nearly triple the write speed.\n\nI haven't had a lot of time to \"experience\" it, but benchmarks were interesting and almost make me think I might not actually see any difference. I cloned the old drive and have been working on adjusting partitions since the new drive is 1TB. Boot times for Windows actually seem to be noticeably higher, oddly. I didn't specifically time it before the replacement.\n\nThe numbers for the 960 Pro came from some months ago when I put in a secondary drive and decided to test them both. The 960 Pro was on the main M.2 slot connected to the CPU PCIe 4.0 (x4) lanes but the drive is only PCIe 3.0.\n\nAS SSD Benchmark shows the anticipated faster speeds, though it wasn't hitting quite the rated speeds. 2.34x sequential read and 2.92x sequential write speeds. 16% higher 4k read, but 16% lower 4k write speed. 4k-64thrd read was 29% higher with the P41, but write was 54% slower!\n\nATTO provides more detail and shows where the 960 Pro still wins hands down. At lower I/O sizes, the 960 Pro dominates the P41, nearly doubling both reads and writes for both throughput and IOPS. This is consistent up to 16KB, and becomes less overwhelming at 32KB, and only at 64KB does the P41 begin to outpace the 960 Pro. The P41 at that point continues to increase throughput as I/O size increases, but the 960 Pro never gets any faster. On the IOPS side, the 960 Pro plummets as the I/O size increases, while the P41 decreases much more slowly. By the end, the P41 is still doing more than 3x IOPS on write, and over 2x on reads.\n\nSo it seems to me that the MLC is SO fast that it probably could have still saturated a PCIe 4.0 connection even though it's now 7 years old. The P41 should have been working in pseudo-SLC mode for it to reach the 6GBps speeds I was seeing, yet it still doesn't perform as well as that old MLC at lower I/O sizes, which I bet is due to the limitations of the PCIe 3.0 connection and perhaps the older NVMe spec. (And the 960 Pro was even using Samsung's custom NVMe driver.)\n\nI'm going to run the benchmark again tomorrow, after the drive has had plenty of idle time to flush the SLC cache with all the data being copied and partitions moving around. I used GParted to move the C drive while it was still 630GB in size from the cloning, and it did it in bit-for-bit mode, so it literally wrote zeros to like 80% of the drive, despite moving it by only 300 MEGABYTES, which may have filled up the SLC cache causing the drive to write at native-TLC speeds at least partially. But given that it DID reach those high read and write speeds, it seems unlikely that it was significant, as reviews show the native-TLC speed is more like 1.5GBps.\n\nIf these tests indicate the true performance, then I can't assume I'll automatically get better performance simply due to it being a newer drive with a faster connection, despite it even being one of the highest-rated PCIe 4.0 drives (a year ago anyway). I'm not sure what my normal I/O size patterns look like. Most of my usage is web browsing these days (at least the stuff that impacts the main drive), plus playing Civilization 6 which isn't demanding on storage. But these days, even 16KB would be considered a \"tiny\" file, so it may still be that the average I/O will be much higher and into the range where the P41 is faster.\n\nIt's too bad that consumer SSDs will never have MLC again, and it's pretty expensive for enterprise drives. I'd think with process shrinks it could still be useful in terms of capacity, but obviously not for really massive storage, with a reasonable price premium for the performance.",
+      "upvotes": 17,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "k6ty9br",
+          "text": "An empty drive will benchmark way better than a near-full one, keep in mind",
+          "upvotes": 5,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "k6ueldm",
+              "text": "Oh none of these was actually near \"full\", other than being partitioned (though I leave about 10% unpartitioned). I wanted a larger drive so I could consolidate the two I was using without having to shrink them, as sometimes I DO end up temporarily using a lot more space, so I could stick another larger drive in the second slot for another use. But it would only benchmark worse if it were so full that the pseudo-SLC cache available was reduced to the point that the benchmark run used it up, and then would get even worse if the benchmarks were writing enough data to use up unallocated blocks and prevent garbage collection before the next run, so that the NAND needed to perform the erase cycles during the tests. I've only actually got 354GB of data used out of the 932GB real space on the drive.\n\nInterestingly, my first pass test this morning was actually worse than it was last night on the P41, however I had not forced TRIM to run and it was only about 5 hours of idle time in Windows. And I realized that BOTH runs in ATTO were actually slightly slower than the Inland (microcenter brand) PCIe3 drive in the secondary M.2 slot, at least up to the point that the PCIe3 bandwidth became a limitation.\n\nI've got time to let things settle and do more testing, and see how the real usage feels, but it's really starting to look like in my particular use case the extra cost for this drive may not be justified. Having higher max throughput on the occasional times that I'm writing a really large amount of very large files is nice, but I'm not sure it's \"twice the price\" nice or that it happens often enough. In the past, I did a lot more stuff that could have made it justifiable, and I've still got that mindset when I look at parts.\n\nSeeing that the random performance, which is the bulk of usage, is actually WORSE than even a cheap drive or my old main drive, is quite disappointing. I just hadn't really considered the possibility that such an old drive could have been so far ahead of the pack back then that it remains a good choice today.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "k6smfad",
+          "text": "Gotta be careful when comparing MLC drives with other types of NAND, as MLC (multiple layered cells) can mean *anything* worse than SLC and not just 2 layers per cell. ~~Samsung afaik has so far always used MLC in reference to 2 bits per cell.~~\n\nAlso for general PC usage (and gaming) the important stuff is performance at low Queue Depths which afaik hasn't been improving much at all in the consumer space (which I think you started to notice).\n\n&gt; At lower I/O sizes, the 960 Pro dominates the P41, nearly doubling both reads and writes for both throughput and IOPS. This is consistent up to 16KB, and becomes less overwhelming at 32KB, and only at 64KB does the P41 begin to outpace the 960 Pro.\n\nMake sure to TRIM new partitions after cloning disks (disk defragment in Windows will do this).",
+          "upvotes": 16,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "k6tf82p",
+              "text": "&gt;Samsung afaik has so far always used MLC in reference to 2 bits per cell.\n\nThe best of my recollection is the opposite. Samsung from any old data sheets I've read will use the terms 2-bit MLC(usually older Pro series drives) and 3-bit MLC for any TLC drive. This was a real pain in the ass for me personally since I met some stubborn people who claimed 3-bit MLC was not TLC.",
+              "upvotes": 17,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "k6uf5gm",
+                  "text": "Yeah that's what I'm noticing, like this drive lists 3bit MLC in its specification https://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-860-evo-2-5--sata-iii-500gb-mz-76e500b-am/#specs",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "k6tnapk",
+              "text": "I wasn't using Samsung information reading about the type of NAND, but rather reviews, so I know it was actually 2-bit MLC, as everyone in the world ended up never using the term MLC for 3-bit when TLC came around. I don't know what dumbass thought \"multi\" was a good prefix in the first place and that has always driven me nuts.\n\nI have a scheduled task to run TRIM on all SSD partitions once a week (the built-in Windows setting doesn't seem to really do it), and wasn't thinking about it since I was still in the process of finishing the setup.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "k6uewnu",
+                  "text": "Apparently I was wrong, Samsung did use MLC for 3bits per cell... it's mentioned in the specifications for this drive: https://www.samsung.com/us/computing/memory-storage/solid-state-drives/ssd-860-evo-2-5--sata-iii-500gb-mz-76e500b-am/#specs\n\nSome other companies did as well back then, but they've mostly settled on it meaning 2bits per cell these days.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "k6tyioz",
+          "text": "I stand by my 2 1TB 970 Pros, they've never let me down",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "k6uiufr",
+              "text": "Until somewhat recently, I would have said buy Samsung no matter what if you want near-top performance along with guaranteed reliability. The issues they had with the 980 and 990 series, and their response to it, dropped them off my radar entirely. (And they know they screwed up and need to recover mind share. Those drives haven't been NOT on sale at massive discounts for a year.) The 970 Pro is just WAY outside my budget given my needs now, especially since it's only a little faster than the 960 Pro and still PCIe3. And of course they stopped using MLC even in the Pro after the 970. The \"980 that's not even an EVO\" didn't sit well with me either.\n\nThe 970 EVO Plus would have been a contender in my selection, being the same price as the P41, but the PCIe4 interface does help with sequential throughput considerably. However seeing the apparently abysmal performance at low I/O sizes, which the Samsung drives are better at it seems from reviews, is making me reconsider whether I care so much about those max throughput numbers. The 970 EVO Plus is a decent upgrade over the 960 Pro in all respects. It will all depend on how well the P41 does after it's settled in for several days so that all the caching and TRIM has gotten to the maximum performance state.",
+              "upvotes": 0,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "k6vhf8p",
+          "text": "That\u2019s why the snappiest feeling drives are actually Intel Optane which has insanely good low queue depth performance and much lower latency than NAND.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "k6vl9fo",
+              "text": "And only 5 times the price for \"snappy\" back when consumer Optane existed! And now 20 times the price for an enterprise drive as the only option.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "commentId": "1iycon5",
+      "text": "SSD More reliable than a SK hynix Platinum P41 2TB?\n\nMy SK hynix Platinum P41 2TB has started to have BSOD issue, claiming \"event 161 volmgr\" with \"\\Device\\HarddiskVolume3\", now I'm in the market looking for a new SSD.  What are good options in the $200-&gt;$300 range 2TB+? I get confused by SSD specs since there's so many things to look at, and now I realize most of the \"real\" reviews for this SSD weren't great and apparently they are prone to failure.",
+      "upvotes": 2,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "metf30g",
+          "text": "WD SN580X",
+          "upvotes": 10,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "nzishyl",
+              "text": "Ten te\u017c si\u0119 grzeje i ma znacznie wy\u017cszy pob\u00f3r energii.\u00a0\nI nie wiem czy ma bufor DRAM",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "metex94",
+          "text": "Samsung 990 Pro",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "nzisg3r",
+              "text": "No nie.\u00a0\n\n\nMam tego Szajsunga 1TB i Solidigm P44 Pro.\u00a0\n\n\nTo ten drugi go zjada pod wzgl\u0119dem kultury pracy, mimo zaj\u0119to\u015bci 95% nadal \u015bmiga a\u017c mi\u0142o, przy obci\u0105\u017ceniu 5,3W mam, Samsung ma wi\u0119kszy pob\u00f3r.\u00a0\n\n\nSamsung te\u017c si\u0119 bardziej grzeje.\u00a0\n\n\nNo i przede wszystkich 40% dro\u017cszy bez powodu.\u00a0\nTylko \u0142osie (tacy jak ja) kupili ten przep\u0142acony szajs, gdy konkurencja ma lepsze i ta\u0144sze rozwi\u0105zania.\u00a0\n\n\nStabilniejsze z lepsz\u0105 kultura pracy.\nSamsung nie m\u00f3wi\u0119, \u017ce jest z\u0142y. Ale bior\u0105c pod uwag\u0119 DU\u017bO wy\u017csz\u0105 cen\u0119 to absolutnie nie warto..\u00a0",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "metippm",
+          "text": "Fuck i just put one of these in my new build.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "metjvtg",
+              "text": "Same. It\u2019s supposed to be a quality brand. Testing looked solid. I guess I\u2019ll see. I had a WD gold ssd fail after just a year, and in the past 10 years I\u2019ve had 3 HDDs completely fail on me. so I have horrible luck with storage in general.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "metlmf8",
+                  "text": "Jeesh. I was gonna go with the Samsung 990 and chose the hynix cuz it was like 50$ off. \n\nWhelp, guess I'll see.",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "nzjrswh",
+                      "text": "To dobrze. Wybra\u0142e\u015b ta\u0144szy, szybszy, bo. Niezawodny, i co najwa\u017cniejsze ch\u0142odniejszy z ni\u017cszym poborem pr\u0105du dysk.\u00a0\n\n\nPszkoda, \u017ce nie da si\u0119 ich wyrwa\u0107, kupi\u0142bym ich jeszcze par\u0119... Bior\u0105c pod uwag\u0119 fakt, \u017ce Samsung idzie w cyferki i ma overpriced ceny produkt\u00f3w...\u00a0\n\n\nSigdm P55 Pro, SK Hynix P41 Platinium albo z nowszych niestety Crucial T500, ale ostatni traci na pr\u0119dko\u015bci przy maks obci\u0105\u017ceniu i zaj\u0119to\u015bci.\u00a0",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "nzn0uc5",
+                          "text": "Okaza\u0142o si\u0119, \u017ce mia\u0142e\u015b racj\u0119! Nap\u0119d jest fantastyczny. Mam go zainstalowanego od ponad roku i nie mia\u0142em \u017cadnych problem\u00f3w. Jest szybki, niezawodny i fajny, dok\u0142adnie tak, jak m\u00f3wi\u0142e\u015b.\n\n\n\nCiesz\u0119 si\u0119, \u017ce si\u0119 na niego zdecydowa\u0142em.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

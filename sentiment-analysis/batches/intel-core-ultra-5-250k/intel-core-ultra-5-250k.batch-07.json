@@ -1,468 +1,292 @@
 {
-  "productName": "intel-core-ultra-5-250k",
+  "productName": "Intel Core Ultra 5 250K Plus",
   "batchIndex": 7,
-  "totalBatches": 8,
+  "totalBatches": 10,
   "comments": [
     {
-      "commentId": "1s1kr7l",
-      "text": "TechPowerUp | Intel Core Ultra 5 250K Plus Review - Disrupting AMD's Entry-Level",
-      "upvotes": 95,
+      "commentId": "1s1jfvp",
+      "text": "Intel Core Ultra 5 250K Plus Review - Disrupting AMD's Entry-Level",
+      "upvotes": 137,
       "classifyThis": true,
-      "relevance": "exclude",
-      "relevanceReasoning": "This is a link to a review article, not a user opinion or experience.",
-      "sentiment": "neutral",
-      "sentimentReasoning": "The text is a title of a review, which is factual and neutral.",
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "oc24pea",
-          "text": "[The changes to geekbench scores due to binary optimization are insane.](https://tpucdn.com/review/intel-core-ultra-5-250k-plus/images/binary-optimization.png)",
-          "upvotes": 35,
+          "commentId": "oc2j2t8",
+          "text": "There we go. Intel finally got it.\n\nThe solution to people complaining about P vs E cores and hyperthreading is to just ship as many P cores as AMD has total cores and then add as many E cores as AMD has total threads.",
+          "upvotes": 47,
           "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "Discusses specific performance metrics (Geekbench scores) and binary optimization of the product.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is observing a technical detail without expressing a clear positive or negative sentiment.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "oc32dk5",
-              "text": "I wonder if that's how Apple has always managed to be so far ahead in benchmarks. Their ARM binaries are just more optimised than regular ARM code.",
-              "upvotes": 26,
+              "commentId": "oc2qkde",
+              "text": "LMAO, it's so funny because it's true, well noticed.",
+              "upvotes": 23,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The discussion has shifted to Apple Silicon and ARM architecture in general, moving away from the specific product.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a general technical speculation about Apple's benchmarks.",
-              "replies": [
-                {
-                  "commentId": "oc3h6n8",
-                  "text": "I'd be willing to bet regular ARM binaries are already better than regular x86 binaries on average in this context. \n\nARM on desktops, laptops and servers is a relatively recent phenomenon and therefore the ARM targets you need to support are all relatively modern. x86 binaries are still commonly compiled to support a wide range of CPUs, and that comes with a performance penalty.\n\nFor reference, this article shows how much more performance Intel was able to extract out of x86 with software optimisations: https://www.phoronix.com/review/clear-linux-amd-epyc-9965/5",
-                  "upvotes": 20,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "General technical discussion about ARM vs x86 binaries, not specific to the product's performance or value.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment provides a technical explanation of ISA differences.",
-                  "replies": []
-                },
-                {
-                  "commentId": "odgobp4",
-                  "text": "I'd agree if Geekbench was the only benchmark Apple lead in. It isn't.",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Continuing the off-topic discussion about Apple Silicon benchmarks.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a factual disagreement about Apple's lead in benchmarks.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "oc2hx4i",
-              "text": "Maybe x86 CPUs don't suck as much as we thought they did and all they really need is better x86 binaries... ",
-              "upvotes": 24,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "Speculates on the performance potential of x86 CPUs (including the product) based on binary optimization.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is speculating on technical improvements rather than expressing satisfaction or disappointment.",
-              "replies": [
-                {
-                  "commentId": "oc3etgw",
-                  "text": "An 8% bump is nice, but they're still a good bit behind current gen Apple Silicon. Single core is worse than an M4, and multi-core is about on par with M4 Max.",
-                  "upvotes": 15,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "Directly compares the product's performance (8% bump) to Apple Silicon.",
-                  "sentiment": "negative",
-                  "sentimentReasoning": "The user expresses that the product is still 'a good bit behind' Apple Silicon.",
-                  "replies": []
-                },
-                {
-                  "commentId": "odngvr1",
-                  "text": "Everyone already knew that ISA isnt the problem.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "General comment about ISA, not specific to the product.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a general technical statement.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "oc683d9",
-              "text": "This is what I am most curious about. What exactly are they doing?\nAnybody familiar with [Wirth's law](https://en.wikipedia.org/wiki/Wirth%27s_law) understands that software isn't exactly fast.\n\nIt doesn't help that programming is generally taught without much regard for memory management, one of the most pressing reasons today's software is so slow. Just think how utterly ridiculous the idea of `std::unique_ptr` is.  \nInstead, use an arena (or several): have a single lifetime per arena, and not one insanity-driving lifetime per variable.\nBut whatever, I don't want to rant all day (see Better Software Conference and the people involved).\n\nBut binary optimization\u2013optimizing at the machine-code level, with no source code, no intent, nothing other than the actual instructions\u2013is rather hard to get much out of. I'd imagine most, if not all, AAA binaries are signed as well.",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "A rant about software engineering and memory management, not specific to the product.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a technical rant about programming practices.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             }
           ]
         },
         {
-          "commentId": "oc2v8pr",
-          "text": "Similar price to a 9600X, similar gaming performance to non X3D parts, similar multithreaded performance to 9900X, seems pretty decent.",
-          "upvotes": 35,
+          "commentId": "oc196dq",
+          "text": "Probably my next processor if the RAM prices come down. Almost perfect for $200 price range. Almost no reason to get the AMD 9700x(little faster in gaming). Multicore is not that much slower than a 7950x. Should easily last a few years.",
+          "upvotes": 39,
           "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "Compares the product's price and performance to AMD Ryzen 9600X and 9900X.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user describes the product as 'pretty decent' based on its value proposition.",
-          "replies": []
-        },
-        {
-          "commentId": "oc1x8he",
-          "text": "The 270k Plus also disrupts the high end. At current pricing, it makes zero sense to buy a 9950X3D/9950X/etc.",
-          "upvotes": 44,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "Discusses the value of the 270k Plus (a related model in the same family) and its impact on the high end.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user states it 'disrupts the high end' and makes other high-end chips 'zero sense to buy'.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "oc2eucn",
-              "text": "Super high end chips were never contestants for value though. People pay 200 percent for 10 percent gains",
+              "commentId": "oc1cn9o",
+              "text": "Price to performance is pretty great for this chip. I might go for the 270k plus for the next 5 years.",
               "upvotes": 25,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "General discussion about high-end chip value, not specific to the product.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a general observation about halo products.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "oc2qfx4",
-                  "text": "There's value there if you need that specific level of performance and there's no alternatives that offer it. \n\nBut now there's alternatives.",
-                  "upvotes": 17,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "Argues that the 270k Plus provides a viable alternative to more expensive high-end CPUs.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user is supporting the value proposition of the Intel Core Ultra series.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "oc6px0m",
-              "text": "It's always zero sense to buy them **for value** because they're halo products.",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "General comment about halo products and value, not specific to the product.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a general statement about market positioning.",
-              "replies": []
-            },
-            {
-              "commentId": "oc31f6q",
-              "text": "Unless platform longevity matters to you.",
-              "upvotes": -6,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "General discussion about platform longevity, not specific to the product's performance or value.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a general statement about platform longevity.",
-              "replies": [
-                {
-                  "commentId": "oc352vo",
-                  "text": "It does matter to me, but I still wouldn't pay twice the price for a CPU that is about 10% ahead. AM5 only has one or two generations left anyway.\n\nAM5 is nice, and I don't regret my decision to go X870E + 9950X3D, but AM5 is not worth paying twice the price for the 9950X3D. 270k Plus is absurd value, anyone buying a 9950X-class CPU going forward just shouldn't, and go for the 270k Plus.",
-                  "upvotes": 29,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "Directly compares the 270k Plus to the 9950X3D and recommends it over the AMD part.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user calls the 270k Plus 'absurd value' and advises against buying a 9950X-class CPU.",
-                  "replies": []
-                },
-                {
-                  "commentId": "oc39f7x",
-                  "text": "Doesn't matter when the price is that different. Even a 270k + 2 motherboards is still cheaper than a 9950x3d + a mobo",
-                  "upvotes": 16,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "Discusses the cost-effectiveness of the product family (270k) compared to AMD's high-end offerings.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user emphasizes that the product is significantly cheaper than the competition.",
-                  "replies": []
-                },
-                {
-                  "commentId": "oc4irob",
-                  "text": "Upgrading to a CPU that's only a couple of generations newer generally isn't a good value. By the time you actually need a new CPU, the socket will be long gone.",
+                  "commentId": "oc1fhnz",
+                  "text": "Yes, almost insane. Gaming is good enough and productivity is not much behind 7950x/ 9900x. Though Nova Lake is probably by the end of the year. ",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "General discussion about CPU upgrade cycles and value, not specific to the product.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a general observation about upgrade paths.",
-                  "replies": []
-                },
-                {
-                  "commentId": "odngyef",
-                  "text": "It doesnt. Neither it does for 99,9% of the buyers. Platform longevitiy is for rich people who upgrade CPUs way too often.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "General comment about platform longevity and buyer demographics, not specific to the product.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a general observation about consumer behavior.",
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "ocp3s8y",
-          "text": "Only things holding me back to go for a full Intel system is practically now dead lga 1851 platform and  lack of higher end gaming gpus.\n",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "Discusses the LGA 1851 platform associated with the product, citing it as a reason for hesitation.",
-          "sentiment": "negative",
-          "sentimentReasoning": "The user is hesitant to buy due to the 'practically now dead' platform.",
-          "replies": [
-            {
-              "commentId": "odzo1c2",
-              "text": "I\u2019m curious how LGA 1851 is dead",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "A question about the platform, not an opinion or experience.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a factual question.",
-              "replies": [
-                {
-                  "commentId": "odzp338",
-                  "text": "New 200s plus models are the last cpus of lga 1851. It'll not receive any new series. That's why people are saying there is no reason to go for 200s plus unless you're already on the lga 1851. ",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "Discusses the longevity of the LGA 1851 platform and advises against buying the 200s plus models unless already on the platform.",
-                  "sentiment": "negative",
-                  "sentimentReasoning": "The user advises against the purchase based on platform longevity issues.",
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "oc6rrjg",
-          "text": "I wish TechPowerUp, TomsHardware or LTT had done a comparison with AM4 cpus. Even if it's just the 5800x3d. These cpu's are just the kind of offerings that value conscious customers might be interested in finally doing a ddr5 platform upgrade for. Considering the RAMpocalypse we're currently experiencing, seeing how much more performance they can get compared to maxing out an existing system is really useful consumer information. Thankfully Hardware Unboxed thought of that with their comparisons. I can only assume the others decided it was too much effort to test 3 different chipsets as opposed to two.",
-          "upvotes": 6,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "Discusses the product family as a potential upgrade path for value-conscious customers on AM4.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is discussing the utility of the product for a specific user segment without a clear positive or negative leaning.",
-          "replies": [
-            {
-              "commentId": "oc7vxl3",
-              "text": "pretty sure gamersnexus did",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Mention of a reviewer (GamersNexus) and not an opinion on the product.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a factual statement about who did the review.",
-              "replies": [
-                {
-                  "commentId": "oc7x1t5",
-                  "text": "Probably the spiciest take I could make on r/hardware but I don't really care for \"tech jesus\" so I tend to resort to his content after checking techpowerup and hwunboxed. Still i'm glad he like hwunboxed is bothering to support AM4 with his reviews.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Discussion about reviewers and content creators, not the product itself.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is an opinion about a reviewer's content.",
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "oc3rgeu",
-          "text": "Intel will never catch up to AMD.",
-          "upvotes": -30,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "General opinion on Intel's competitiveness against AMD, which includes the product.",
-          "sentiment": "negative",
-          "sentimentReasoning": "The user states Intel will 'never catch up' to AMD.",
-          "replies": [
-            {
-              "commentId": "oc4301n",
-              "text": "What? They've already beat them now with these 2 chips",
-              "upvotes": 19,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "Directly rebuts the claim that Intel hasn't caught up, citing the new 200s series chips.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user claims Intel has 'already beat them now with these 2 chips'.",
-              "replies": []
-            },
-            {
-              "commentId": "oc4okfr",
-              "text": "Your comment history is pure cancer\u2026",
-              "upvotes": 16,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Personal attack on another user, not about the product.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is an insult.",
-              "replies": [
-                {
-                  "commentId": "oc6llnq",
-                  "text": "It's gotta be a bot. I can't imagine anyone living their life like that.",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Discussion about whether another user is a bot, not about the product.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a general observation about another user.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "oc71y5d",
-                      "text": "Unfortunately, there are plenty of terminally online real people like this. Sad isn't it?",
+                      "commentId": "oc1gnwk",
+                      "text": "Kinda curious to see what Nova Lake benchamarks are like and if it's worth to wait for. DDR5 prices making me hold back on upgrading too lol",
                       "upvotes": 5,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "Discussion about 'terminally online' people, not about the product.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The comment is a general observation about people.",
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "commentId": "1tewe5d",
-      "text": "Intel Core Ultra 5 250K Plus vs AMD Ryzen 5 7600X3D faceoff \u2014 Battle for the fastest mid-range gaming CPU",
-      "upvotes": 5,
-      "classifyThis": true,
-      "relevance": "exclude",
-      "relevanceReasoning": "This is a title of a faceoff article, not a user opinion.",
-      "sentiment": "neutral",
-      "sentimentReasoning": "The text is a factual title.",
-      "replies": []
-    },
-    {
-      "commentId": "1tgk0ew",
-      "text": "Intel Core Ultra 5 250K Plus vs AMD Ryzen 5 7600X3D faceoff \u2014 Battle for the fastest mid-range gaming CPU",
-      "upvotes": 1,
-      "classifyThis": true,
-      "relevance": "exclude",
-      "relevanceReasoning": "This is a title of a faceoff article, not a user opinion.",
-      "sentiment": "neutral",
-      "sentimentReasoning": "The text is a factual title.",
-      "replies": []
-    },
-    {
-      "commentId": "1rmxqb9",
-      "text": "Intel Core Ultra 5 250K Plus Benchmarks Reveal Performance Expectations for Arrow Lake Refresh",
-      "upvotes": 7,
-      "classifyThis": true,
-      "relevance": "exclude",
-      "relevanceReasoning": "This is a title of a benchmark article, not a user opinion.",
-      "sentiment": "neutral",
-      "sentimentReasoning": "The text is a factual title.",
-      "replies": [
-        {
-          "commentId": "o93yqy9",
-          "text": "Hoping that people will buy massively this processor, Intel Core Ultra CPUs are very good",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "Expresses a hope that people buy the processor and states that Core Ultra CPUs are 'very good'.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user explicitly states the CPUs are 'very good'.",
-          "replies": [
-            {
-              "commentId": "o943uhs",
-              "text": "So why people dont buy core ultra cpus if they are \"good\" ?",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "A question about why people don't buy the CPUs, not an opinion or experience.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a factual question.",
-              "replies": [
-                {
-                  "commentId": "o947qgr",
-                  "text": "People who knows how to do research and want best bang for your buck buys the core ultra. Nothing from amd can beat the 265k in value.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "Claims that the Core Ultra series (specifically the 265k) has the best value ('best bang for your buck').",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user claims the product family has unbeatable value.",
-                  "replies": [
-                    {
-                      "commentId": "o94beaj",
-                      "text": "ryzen 9700?",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "A short question mentioning a competitor's product, not an opinion.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The comment is a factual question.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "o94bv61",
-                          "text": "More expensive than the 265k and equals it in gaming but loses in other task.",
-                          "upvotes": 2,
+                          "commentId": "oc1hp9f",
+                          "text": "Yes, by the time DDR5 is down Nova Lake might be months away. Plus LGA1954 is getting 3-4 generation upgrades.\n\nEven 15% single core uplift would make a new Nova Lake 5 series similar to a 9950x for $250-300 in productivity, and gaming should also be a bit quicker.",
+                          "upvotes": 4,
                           "classifyThis": true,
-                          "relevance": "include",
-                          "relevanceReasoning": "Compares the 265k to the Ryzen 9700, stating it is cheaper and better in non-gaming tasks.",
-                          "sentiment": "positive",
-                          "sentimentReasoning": "The user argues the product is more cost-effective and versatile than the competitor.",
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
                           "replies": [
                             {
-                              "commentId": "o94ceah",
-                              "text": "well , depends on the country probabily because on mine is the same price.",
-                              "upvotes": 3,
+                              "commentId": "oc1ihe4",
+                              "text": "Oh shit 4? Guess I'm waiting for Nova Lake then lol",
+                              "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": "include",
-                              "relevanceReasoning": "Discusses the pricing of the product in their country, which relates to value.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The user is providing a factual statement about pricing in their region.",
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
                               "replies": []
+                            },
+                            {
+                              "commentId": "ocan3q7",
+                              "text": "When did they mention that type of support for the new socket? Sincerely doubt they're ever gonna shift from the two year cadence theyve swore by it for decades at this point. Truthfully tho the pricepoints they hit with these two new chips are a step in that AMDish consumer friendly direction that they may need to consider if they want to seriously win back some mind share but idk if they'll go to such lengths",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "ocbuimv",
+                                  "text": "It's been rumoured quite a bit now.\u00a0\n\n\nhttps://www.techspot.com/news/109087-intel-lga-1954-socket-could-support-four-cpu.html\n\n\nEven Robert Hallock hinted at it a few days ago in an interview.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
                             }
                           ]
+                        },
+                        {
+                          "commentId": "oc1hu54",
+                          "text": "Arrow Lake refresh has great pricing;  but Nova Lake's platform should last a few generations after NVL.  ",
+                          "upvotes": 4,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
                         }
                       ]
                     }
                   ]
                 },
                 {
-                  "commentId": "o945mlt",
-                  "text": "That's the \"winner takes it all\"\n\nIntel Core Ultra 7 265K is good, but Ryzen 7 9800X3D is still better for gaming, so everyone buys AMD\n\n",
+                  "commentId": "oc7j5hw",
+                  "text": "Was thinking the same wanting to upgrade my platform from my 12700k finally. Price to performance is awesome.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "Compares the Intel Core Ultra 7 265K to the Ryzen 7 9800X3D for gaming performance.",
-                  "sentiment": "negative",
-                  "sentimentReasoning": "The user states that the AMD chip is 'still better for gaming', implying the Intel chip is inferior in that specific use case.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": []
                 }
               ]
+            },
+            {
+              "commentId": "oc2yab0",
+              "text": "I think ram pricing will be bad the rest of the year. Maybe next year if ai implodes. ",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
             }
           ]
+        },
+        {
+          "commentId": "oc4funf",
+          "text": "Im loving the 250k plus as an option. What arrow lake should've been from the start. Its a shame new mobos next gen and Nova is coming soon. ",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "oc20dfd",
+          "text": "Real question, is it worth upgrading from my ryzen 5 7600x?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oc2a3c5",
+              "text": "Unless you absolutely need to upgrade, wait for zen 6 or zen 7.",
+              "upvotes": 14,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "oc261ts",
+              "text": "No, because you will have to switch motherboard too\n\njust get a 9xxx cpu from amd if you need a upgrade today",
+              "upvotes": 9,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "oc3h6pz",
+              "text": "The actual real question you should be asking - *do I feel the need to upgrade?*",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "oc25vcm",
+              "text": "At that point buy the 9950X as it would cost the same as the mobo+cpu.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "oc4fzu3",
+              "text": "Zen6 is coming this year isnt it? Id wait it out. Zen6 is going to curb stomp the entire product stack on the amd side and I suspect Nova lake will do the same to arrow lake refresh. \n\nLooks like both are 2027 releases from leaks so idk. I probably wouldnt switch to a dead platform though.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "oc2s7a9",
+              "text": "Not unless you're using all that multithreaded performance",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "oc4j06u",
+          "text": "I strongly believe that processor in particular is aimed not only for anyone who wants to build a new pc, but for the ones who have a core ultra 225f/225 because on the OC comparison the gains in performance are very minimal on the 250k plus, unlike the 245k, making it a very good choice if you only have a B860 motherboard without the need to overclock",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ofphqtr",
+              "text": "100%, I've been using a i5-11400 since 2021 and it was essentially the same price point as this when it came out. Been looking to upgrade cpu/ram/mb and seems to be a decent time. Got 32GB DDR5 6400Mghz Ram for 350. Used to be like 700 few months a go I feel like.  ",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "oc5w1hm",
+          "text": "The geekbench results with IBOT is impressive. It's close to a M4 now with it enabled in single core score.\n- https://www.techpowerup.com/review/intel-core-ultra-5-250k-plus/25.html\n\n- https://browser.geekbench.com/v6/cpu/8786129",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

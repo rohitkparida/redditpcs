@@ -1,224 +1,37 @@
 {
-  "productName": "crucial-t705-gen-5",
+  "productName": "Crucial T705 (Gen 5)",
   "batchIndex": 1,
-  "totalBatches": 2,
+  "totalBatches": 1,
   "comments": [
-    {
-      "commentId": "1pgtog6",
-      "text": "Where can I install my second M2 SSD on my X870 AORUS TACHYON ICE motherboard without dropping to X8 speed?\n\nHello, there aren't many review videos or information shared about this motherboard. I think there's something called lane sharing, but I don't know if this motherboard has it or not. I've listed my questions below. I would really appreciate your help.\n\n1-Does this motherboard have 1 Gen 5 slot and 2 PCI 4 slots? If so, I have an XPG Mars 980 Blade and a Crucial T705, both of which are Gen 5 SSDs. I installed the XPG Mars 980 Blade Gen 5 SSD in the Gen 5 slot, i.e., the slot closest to the CPU. If I install the second Crucial T705 in a Gen 4 slot, will that cause a problem?  \n\n\n2-Should i use the XPG Mars 980 Blade's cooler or the motherboard's m2 cooler?  \n\n\n3-The Crucial T705 and XPG Mars 980 Blade SSDs have labels on them containing product information, including \u201cwarranty void if removed.\u201d Should I remove the label for better cooling?  \n\n\n4- Which Gen 4 slot should I install my Crucial T705 in without reducing the graphics card speed (TO USE AT X16 SPEED)?\n\nI found this text on the motherboard's website, but I still couldn't understand what it said lol (my bad)\n\nMotherboard Website:\n\n[https://www.gigabyte.com/Motherboard/X870-AORUS-TACHYON-ICE/sp#sp](https://www.gigabyte.com/Motherboard/X870-AORUS-TACHYON-ICE/sp#sp)\n\n\n\n\\* The PCIEX8 slot shares bandwidth with the PCIEX16 slot. When the PCIEX8 slot is populated, the PCIEX16 slot operates at up to x8 mode.\n\n\\* The PCIEX16 slot can only support a graphics card or an NVMe SSD. If only one graphics card is to be installed, be sure to install it in the PCIEX16 slot.",
-      "upvotes": 6,
-      "classifyThis": true,
-      "relevance": "exclude",
-      "relevanceReasoning": "The user is asking technical questions about motherboard slot compatibility and lane sharing, not providing an opinion or experience with the T705.",
-      "sentiment": "neutral",
-      "sentimentReasoning": "The comment is a factual inquiry about hardware installation.",
-      "replies": [
-        {
-          "commentId": "nstv0a3",
-          "text": "None of the M.2 slots share lanes.\n\nUse \n\nM2A\\_CPU PCIe 5.0 x4 (right side vertical)\n\nand\n\nM2B\\_SB PCIe 4.0 x4 slots (left side bottom slot)\n\n  \nM2D\\_SB is limited to two lanes.",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "This is a factual answer regarding motherboard slots, not a review of the T705.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The response is purely technical and factual.",
-          "replies": [
-            {
-              "commentId": "nstz5dl",
-              "text": "My Gen 5 xpg mars 980 blade is already installed in M2A\\_CPU PCIe 5.0 x4. M2B\\_SB Should I install the second M2 in the slot near the bottom of the photo sir ?",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is asking for installation help, not discussing the product's performance or value.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a request for technical assistance.",
-              "replies": [
-                {
-                  "commentId": "nstzz14",
-                  "text": "Yes the bottom one in  your picture",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "This is a simple directional answer about motherboard slots.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The response is a factual instruction.",
-                  "replies": [
-                    {
-                      "commentId": "nsu16yx",
-                      "text": "Thanks for clarifying sir, lastly i  couldn't see the M2B\\_SB M2D\\_SB text on the motherboard, how did you see them? I only saw the m2a\\_cpu text on the motherboard, but I couldn't see the others on the mobo, i was just wondering how you see it, i mean did  you see it from the photo i just uploaded or from the website?",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user is asking about how to identify slots on the motherboard.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The comment is a request for information.",
-                      "replies": [
-                        {
-                          "commentId": "nsu1e8i",
-                          "text": "It was shown in the manual. I cannot post images on this subreddit.\n\nGigabyte sort of hints this based on the order in specifications as well. Also there is no M2C slot which is odd.",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "The response provides information about the motherboard manual.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The response is factual.",
-                          "replies": [
-                            {
-                              "commentId": "nsu3bh2",
-                              "text": "On the motherboard's website, where it says storage interface, it says:\n\n1 x M.2 connector (M2A\\_CPU), integrated in the CPU, supporting Socket 3, M key, type 25110/22110/2580/2280 SSDs:\n\n1 x M.2 connector (M2D\\_SB), integrated in the Chipset, supporting Socket 3, M key, type 22110/2280 PCIe 4.0 x2 SSDs\n\n1 x M.2 connector (M2B\\_SB), integrated in the Chipset, supporting Socket 3, M key, type 22110/2280 PCIe 4.0 x4/x2 SSDs\n\n\n\nI know m2a\\_, it is written on the motherboard, but there is no picture or text about which m2d\\_sb and ms2b\\_sb are.",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "The user is quoting motherboard specifications to ask for clarification on slot location.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The comment is a factual inquiry.",
-                              "replies": [
-                                {
-                                  "commentId": "nsu3ppi",
-                                  "text": "[https://imgur.com/a/IcpoAJu](https://imgur.com/a/IcpoAJu)\n\nIn the downloaded manual.",
-                                  "upvotes": 1,
-                                  "classifyThis": true,
-                                  "relevance": "exclude",
-                                  "relevanceReasoning": "The user is providing a link to a manual.",
-                                  "sentiment": "neutral",
-                                  "sentimentReasoning": "The response is helpful but factual.",
-                                  "replies": [
-                                    {
-                                      "commentId": "nsu4j1c",
-                                      "text": "ah, i didn't see that appreciate you boss",
-                                      "upvotes": 1,
-                                      "classifyThis": true,
-                                      "relevance": "exclude",
-                                      "relevanceReasoning": "This is a low-effort thank you message.",
-                                      "sentiment": "neutral",
-                                      "sentimentReasoning": "The comment is a simple expression of gratitude.",
-                                      "replies": []
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "nsu8itd",
-          "text": "Why gigabyte change socket location sideways on this model?",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The discussion is about motherboard socket location, not the T705 SSD.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is a question about motherboard design.",
-          "replies": [
-            {
-              "commentId": "nsucec9",
-              "text": "The Tachyon is their XOC motherboard. It's a two dimm with a rotated socket and dimm area so the signal integrity is much stronger and more stable.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The response explains motherboard design for overclocking, not the T705.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The response is a technical explanation.",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "nsw2ldw",
-          "text": "You can check Mobo Maps to give you  a Visual representation . Sometimes the mauals wording is a bit vague..... this will give you allow you to double check:\n\nhttps://mobomaps.com/",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is suggesting a website for motherboard maps, not discussing the T705.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The response is a helpful suggestion.",
-          "replies": [
-            {
-              "commentId": "nsx1r3l",
-              "text": "It's a pretty useful site, I double-checked it, thanks for  introducing me to this site brother",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is thanking the previous commenter for the website suggestion.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a simple expression of gratitude.",
-              "replies": [
-                {
-                  "commentId": "nsxh1ta",
-                  "text": "You're welcome. Their database of motherboards seems to be growing day by day. You can customize your build for optimal performance in just a few seconds. \n\nI used it to figure out how many nvmes I could use before impacting performance. Also double checked slots to use to prevent lane sharing. .My manual did not make it clear at all.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is discussing motherboard lane sharing and NVMe slots in general, not the T705 specifically.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "Lacks a specific opinion on the T705.",
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "nsv3ykd",
-          "text": "Ehh, I stick with asus extreme for that. Based on spec its more aligned to Hero Board.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is discussing motherboard preferences (Asus vs Gigabyte), not the T705.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is an opinion on motherboards.",
-          "replies": []
-        },
-        {
-          "commentId": "nunhi7c",
-          "text": "[https://mobomaps.com/board-viewer.html?board=gigabyte-x870-aorus-tachyon-ice](https://mobomaps.com/board-viewer.html?board=gigabyte-x870-aorus-tachyon-ice)",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is providing a link to a motherboard map.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The response is a factual link.",
-          "replies": []
-        }
-      ]
-    },
     {
       "commentId": "1p9om48",
       "text": "PC Building advice/suggestions (UK)\n\nTL;DR: skip to bottom, last edit - discarded DDR5 build due to price surge\n\nHello everyone,\n\nI put together a PC build, but it's been years over 8 years since I've updated my system and lost track of manufacturers.\n\nAny advice for things to swap around that might be better than what I picked?  \nWould like to keep it under 2.5k, I am not precious about any of the components brands, having RGB or how it looks\n\nMy initial budget was 2k, but it's the usual... \"Just for \u00a350 more I get the next version\"  \nSo, also totally willing to downgrade if you think the performance difference doesn't justify the price increase, e.g. going for a Ryzen 7 7800X3D\n\noriginal: [https://uk.pcpartpicker.com/list/PsNMBq](https://uk.pcpartpicker.com/list/PsNMBq)  \ncurrent: [https://uk.pcpartpicker.com/list/KtVxnp](https://uk.pcpartpicker.com/list/KtVxnp)\n\nStill researching GPU's due to so many variations/brands - this is usually what I take the longest to pick\n\nThank you in advance!\n\n\\----\n\nEdit: As suggested (some brand changes of MoBo / NVMe )  \ndowngraded  \n\\- CPU 9900X3D -&gt; 9800X3D  \n\\- RAM (CL30 -&gt; CL36)\n\nUpgraded  \n\\- GPU 5070 ti -&gt; 5080\n\nThank you\u00a0[u/dzone25](https://www.reddit.com/user/dzone25/)\u00a0and\u00a0[u/N7Tom](https://www.reddit.com/user/N7Tom/)\u00a0for input/help\n\n\\----\n\nEdit2: Changed AIO Cooler  \nLower price, higher RPM and potentially quieter  \nEdit3: Changed NVMe for another without heatsink to use the one included in motherboard.  \nWas afraid the bulky heatsink wouldn't provide enough clearance\n\nPhanteks Glacier One 360 -&gt; Corsair NAUTILUS 360  \nCrucial T700 w/ heatsink -&gt; Crucial T705\n\nN.B.: more things might change until I pull the trigger, also will probably bump the post for a \"last minute\" review\n\n\\----\n\nEdit4: I was not aware of the current price surge on DDR4/5, so to avoid dealing with this I have put together yet another setup to tie me over for the next 1-4 years or until things stabilise.  \nEverything should carry over except MoBo, CPU and Memory, so at the moment it would be a loss of around \u00a3200, but gives me the flexibility to potentially wait until next gen\n\nI am not totally happy with the CPU, also became aware that AM4 X3D is no longer produced, so as previously feel free to suggestions\n\n[https://uk.pcpartpicker.com/list/LxMRZc](https://uk.pcpartpicker.com/list/LxMRZc)  \nNote: the DDR4 is what I currently have and will keep it\n\n\\---\n\nFinal edit\n\nAfter jumping into discord to have a bit of quicker feedback I ended up going with an i5 14600k  \n[https://uk.pcpartpicker.com/list/TMcCfd](https://uk.pcpartpicker.com/list/TMcCfd)\n\nThank you to all that have helped me!",
       "upvotes": 2,
       "classifyThis": true,
-      "relevance": "include",
-      "relevanceReasoning": "The user mentions swapping to the Crucial T705 in their build list, showing a product choice/recommendation for their own setup.",
-      "sentiment": "positive",
-      "sentimentReasoning": "The user chose the T705 over the T700 with heatsink for better motherboard clearance, indicating a preference for the T705.",
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
       "replies": [
         {
           "commentId": "nrdjp1c",
           "text": "What's your use case?\n\n\nDouble check everything is compatible (I've just done it quickly) but here's a cheaper build that would get you a 5080. Some sacrifices but nothing noticeable for gaming if that's all you want.\n\n\nhttps://uk.pcpartpicker.com/list/wrKjfd",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The discussion is about general PC build advice and GPU choices, not the T705.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is general build advice.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
               "commentId": "nrdll3g",
               "text": "Thank you for the suggestion, this is similar to what u/dzone25 suggested\n\nI might bump the memory to 64gb\n\nUse case is mostly for gaming, watching streams/tv shows - might end up having 2 screens and TV connected at same time, if computer doesn't struggle",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing their use case and memory capacity, not the T705.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a description of use case.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             }
           ]
@@ -228,40 +41,40 @@
           "text": "What's your primary use case for the build &amp; at what resolution?\n\nA 9900X3D tends to be a bit of an overpriced, overkill for most people who aren't using it to it's full potential.\n\n6000MHz RAM is great, CL30 is slightly overkill (especially considering it costs an arm and a leg right now) if you have an X3D chip. X3D chips have a cache that does some of the work a CL30 kit would be doing that benefits non-X3D CPUs a lot more than X3D ones.\n\nFor context, an X3D + CL40 RAM tends to perform better than non-X3D + CL30. At today's stupid ass RAM prices - that's important to consider.\n\nYou have a budget that allows you to go balls to the walls and get the 5080 for long term future proofing if you go for 7800X3D/9800X3D + CL36 or so RAM (in today's prices). Which if your goal is 4K gaming / long term future proofing for games, a 5080 is king.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The discussion is about CPU and RAM choices, not the T705.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is general hardware advice.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
               "commentId": "nrdkjf4",
               "text": "Mostly for gaming, my current PC is starting to struggle due to CPU bottleneck\n\nupgrading from a i5 7600K, GeForce 1070 Ti, DDR4 64gb 3200MHz CL16 (upgraded form 32gb thinking it was the bottleneck)  \nAt the moment I have a 1080p 144Hz monitor, will consider to buy a new one probably 1440p in the future\n\nPersonally I do not see a big difference going above 1440p, but might just lack of time around 4k screens\n\nThank you for suggesting X3D with CL40/36 - will play around with part picker and see if i can go for a 5080 :)",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing CPU bottlenecks and monitor resolution, not the T705.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a description of hardware status.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
                   "commentId": "nrdls3h",
                   "text": "Okie doke - 5070ti is more than good enough at 1440p if you wanted to reduce your budget, but if it's more a \"build and forget about it for a few years\", your budget allows for a 5080 easily.\n\nI think work towards the % of the total cost increasing for the GPU but decreasing for the rest, right now it's too heavily skewed towards components you might not need.\n\nIn theory - you could even do 7800X3D + 6000MHz CL36 + B650 Motherboard, if you don't need the highest spec of each of those components.\n\nPersonally - I'd aim for 9800X3D + 5080, with some reductions for RAM",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The discussion is about GPU and CPU combinations, not the T705.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is general hardware advice.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
                       "commentId": "nrdr0z8",
                       "text": "yes, I've updated the main post with basically what you suggested.\n\nu/N7Tom kindly made other changes as well and gave me a new list  \nFrom which I've upgraded the RAM - mostly because I think 32gb isn't enough nowadays, unless you're only doing a single thing\n\nThank you both for the input",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user is thanking others for build advice, not discussing the T705.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The comment is a simple expression of gratitude.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": []
                     }
                   ]
@@ -275,10 +88,10 @@
           "text": "I became aware of the memory price surge and refuse to pay over 3x.  \nSo, I've updated the main post with a new setup to tie me over\n\nIf anyone has the knowledge and patience, please let me know what you would change\n\nThank you!",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is discussing memory price surges, not the T705.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is about RAM pricing.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": []
         }
       ]
@@ -288,30 +101,30 @@
       "text": "Second SSD Quandary\n\nFirst question:  Any rabid fans of either the Crucial T705 or T710?\n\nSo, my quandary is; I finished a PC build about 3 weeks ago.  I installed a 2TB Samsung 990 Pro as my only SSD.  Now I'm shopping for a second drive.  However, I'm torn on a couple of different options:\n\n\\- I can simply add a second Gen 4 SSD, either 2TB or 4TB, for storage--perhaps another 990 Pro, or something less expensive.\n\n\\- I can add a Gen 5 SSD to the primary Gen 5-compatible slot, make that my OS drive, and relegate the 990 Pro to secondary storage.\n\n\\-- I could save a little $$ by keeping the Gen 5 to 1TB (3TB total storage)\n\n\\-- I could spend more and get the Gen 5 at 2TB (4TB total storage)\n\n\\- I would have liked to keep the SSDs in the Samsung family because of the Wizard software, but the 9100 Pro prices did not come down like they did for Prime Days--so not near the bargain.  Thus, my initial question about the Crucial T705 and T710--both at better prices, but the Crucial software (i.e. to image Windows from the 990 Pro) does not receive as many favorable reviews.\n\nTHOUGHTS???\n\nADDED from below:\n\nI use my PC for both productivity (office functions, complex graphing, some video and photo editing) and occasional gaming at 1440P. Key components include:\n\n\\- MSI Z890 Tomahawk with Intel Core Ultra 7 (265KF)\n\n\\- RTX 5060 Ti 16 GB\n\n\\- Corsair Vengeance RAM 2x16GB, 6000MHz, CL36 (should have bought CL30 while prices were still good).\n\nI guess I'm considering the Gen 5 because it almost seems a waste to have the mobo that will support it, but not use it. However, as \"VoraciousGorak\" notes (comments); probably not worth the premium price right now...?",
       "upvotes": 1,
       "classifyThis": true,
-      "relevance": "include",
-      "relevanceReasoning": "The user is specifically asking for opinions and recommendations on the Crucial T705 and T710.",
-      "sentiment": "neutral",
-      "sentimentReasoning": "The user is seeking information and expresses a mix of interest in the price but concern about the software.",
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
       "replies": [
         {
           "commentId": "nqxuf7w",
           "text": "Imo the SSD in itself is amazing. Works like a charm and gets everything done in no time. But the software.. gosh it\u2019s a shame.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user shares their personal experience using the SSD, praising its performance but criticizing the software.",
-          "sentiment": "negative",
-          "sentimentReasoning": "While the hardware is praised, the overall sentiment is negative due to the strong criticism of the software ('gosh it's a shame').",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
               "commentId": "nqy0yoe",
               "text": "Thanks.  I appreciate your insight.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "This is a low-effort thank you message.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a simple expression of gratitude.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             }
           ]
@@ -321,20 +134,20 @@
           "text": "It is not currently worth paying a premium for Gen 5. There are few applications that are slowed by even Gen 3 drives, much less a good Gen 4 drive. I slapped a few SN850X drives in my AM5 PCs with no regrets.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user provides an opinion on the value proposition of Gen 5 SSDs like the T705, advising against paying the premium.",
-          "sentiment": "negative",
-          "sentimentReasoning": "The user advises against the purchase based on poor value for most users.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
               "commentId": "nqy12yv",
               "text": "Thanks.  I've been considering the SN850X as well.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "This is a low-effort response acknowledging a suggestion.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a simple acknowledgment.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             }
           ]
@@ -344,26 +157,36 @@
           "text": "What workloads?\n\nThe only workload you listed here is OS, which doesn't really benefit from the increased specs of Gen4 or Gen5 to begin with.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is asking about workloads to determine if Gen 5 is necessary, not providing an opinion on the T705 itself.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is a factual inquiry about workloads.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
               "commentId": "nqy267k",
               "text": "Good point.  I use my PC for both productivity (office functions, complex graphing, some video and photo editing) and occasional gaming at 1440P.  Key components include:\n\n\\- MSI Z890 Tomahawk with Intel Core Ultra 7 (265KF)\n\n\\- RTX 5060 Ti 16 GB\n\n\\- Corsair Vengeance RAM 2x16GB, 6000MHz, CL36 (should have bought CL30 while prices were still good).\n\nI guess I'm considering the Gen 5 because it almost seems a waste to have the mobo that will support it, but not use it.  However, as \"VoraciousGorak\" notes; probably not worth the premium price right now....",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is repeating their use case and acknowledging that Gen 5 might not be worth the premium price.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a description of use case and a general observation.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             }
           ]
         }
       ]
+    },
+    {
+      "commentId": "1oedvxt",
+      "text": "I built my first pc! It\u2019s an Itx build in the NZXT H1 v2. 9070 XT Reaper with 7800x3D CPU (not pictured)\n\nMy friends really aren\u2019t into pc building but I\u2019m proud of this and wanted to share it with people who would understand so I made a Reddit account to post here lol.\n\nI wanted to build a powerful pc that was small form factor but I didn\u2019t wanna break the bank in terms of how much both of those things can cost. (I also had no experience pc building at all) So after lots of research, patience and luck this is what I got:\n\nCase: Nzxt H1 v2 I got this off eBay for $150 and I chose it because of the style, ease of building, and the 750w psu. I was most nervous about the case since it was used and I\u2019d heard mixed reviews about the cooler and psu going bad but it works great!\n\nMotherboard: Gigabyte x870i aorus pro ice I actually got pretty lucky here. I wouldn\u2019t have gone for such an expensive board but I got it for $155 on Mac.Bid brand new!\n\nCPU: 7800x3D I got from Jawa for $325. I saw that it would pair well with the gpu and since I got such a good deal on the case and mb I didn\u2019t mind spending this on the cpu. It didn\u2019t come with a box though so it\u2019s not pictured.\n\nGpu: 9070xt Reaper I knew I wanted something strong that would last a while and this one only needs a 750w power supply according to the manufacturer. And the best part is I got it at msrp! Microcenter had it for $599! I had to buy it.\n\nRam: T-create expert 32gb ddr5 cl30 6000mhz Technically free? It was on sale on Newegg for $95 but it got lost in the mail so I got a refund. Few weeks later it showed up lol\n\nSSD: Crucial t705 gen 5 ssd 2tb On sale at Amazon for ~$160\n\nOverall I\u2019m really proud of this and surprised it even turned on first try lol. Lmk your thoughts!",
+      "upvotes": 5,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": []
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

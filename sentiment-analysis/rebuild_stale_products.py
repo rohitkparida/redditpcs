@@ -8,6 +8,7 @@ Dry-run by default. Use --apply after any active pipeline run has finished.
 import argparse
 import json
 import os
+import shutil
 from datetime import datetime
 from pathlib import Path
 
@@ -100,6 +101,14 @@ def rebuild_product(slug, registry_item, state):
     if not pipeline_core.create_product_templates(
         slug, raw_file, template_file, classified_file, registry_item
     ):
+        if batch_dir.exists():
+            shutil.rmtree(batch_dir)
+        state[slug] = {
+            "status": "manual_review",
+            "step": "thread_prefilter",
+            "error": "Thread prefilter removed every source thread.",
+            "updated_at": datetime.now().strftime("%Y-%m-%dT%H:%M:%S"),
+        }
         return False, "thread prefilter/template rebuild failed"
 
     split_batches_correctly.split_into_batches_correct(
@@ -162,11 +171,16 @@ def main():
             registry_item = registry.get(slug)
             if not registry_item:
                 report["products"][slug]["rebuildStatus"] = "skipped: missing registry entry"
+                save_json_atomic(REPORT_PATH, report)
                 continue
-            ok, message = rebuild_product(slug, registry_item, state)
+            try:
+                ok, message = rebuild_product(slug, registry_item, state)
+            except Exception as e:
+                ok, message = False, f"rebuild failed: {e}"
             report["products"][slug]["rebuildStatus"] = message
             print(f"  {'Rebuilt' if ok else 'Skipped'} {slug}: {message}")
-        save_json_atomic(STATE_PATH, state)
+            save_json_atomic(STATE_PATH, state)
+            save_json_atomic(REPORT_PATH, report)
 
     save_json_atomic(REPORT_PATH, report)
     print(f"Wrote report to {REPORT_PATH}")

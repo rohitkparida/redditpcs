@@ -1,12 +1,12 @@
 {
-  "productName": "amd-ryzen-7-7800x3d",
+  "productName": "AMD Ryzen 7 7800X3D",
   "batchIndex": 45,
-  "totalBatches": 58,
+  "totalBatches": 128,
   "comments": [
     {
-      "commentId": "18gijir",
-      "text": "HUB - AMD Ryzen 7 7800X3D vs. Intel Core i9 14900K, 21 Game Benchmark",
-      "upvotes": 324,
+      "commentId": "18ogzwt",
+      "text": "AMD Ryzen 7 7800X3D vs. Intel Core i9-14900K",
+      "upvotes": 384,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,570 +14,305 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "kd1csyv",
-          "text": "I sort of chime in on this a lot, but the gaming world desperately needs a series of benchmarks that test games that, you know, actually \\*use\\* the cpu as it's primary method of advancing the game.\n\nSo stellaris, rimworld, factorio, etc. Games where the computation of a tic is not done on the GPU or not limited by it at all.\n\ndoing low resolution runs of games that are not limited by the CPU at all is likely not properly testing what the 3D cache is bringing to the table. \n\nMy guess would be that if you were to reconfigure tests to take that into account, intel would probably still win here or there, in cases where their CPUs have enough cache or where the devs have optimized for what cache they do have (civ6), and get absolutely destroyed by games where the optimization is lacking or the data involved is such that having extra cache really helps.\n\nBut with that all said, this is a nice review. It's interesting to see how far intel has fallen from being competitive.\n\nIt's like 25% more energy, same performance, 25% more expensive. So for gaming there's really no choice here at all.",
-          "upvotes": 31,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user compares the 7800X3D to Intel CPUs, discussing energy efficiency and gaming performance.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user concludes there is 'no choice' but the 7800X3D for gaming due to better efficiency and value.",
+          "commentId": "kehtu07",
+          "text": "TLDR: the 7800x3d is better or equal in 90% of cases, uses much less power, and is a cheaper total cost than the 14900k. 14900k is better for high thread workloads or memory dependent workloads.",
+          "upvotes": 484,
+          "classifyThis": false,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "kd1pqp3",
-              "text": "it's probably pretty hard to bench properly but WoW is definitely up there too, when i got my 5800x3d it almost doubled my fps in cities upgrading from the 3600",
-              "upvotes": 15,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user discusses the 5800X3D, not the 7800X3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
+              "commentId": "keipv0d",
+              "text": "Does it really use \"much less power\"? I have a 4090 and im not playing at 1080p. At 4k 85% of the system power draw is the 4090. I've tested a 12900k, a 14900k and a 7800x 3d, the 12900k pulls around 20 up to 70w in games at 4k (obviously depends on the game), the 7800x 3d pulls 40 to 55 and the 14900k 30 to 90w. Overall, there is really no difference between them at normal gaming scenarios.",
+              "upvotes": -13,
+              "classifyThis": false,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "kd1uon1",
-                  "text": "Yeah that's a good example of a game where the computational aspects can grow exponentially and where the GPU isn't really the most important thing.\n\nI wonder if there's a WoW benchmark for that? You'd need to simulate an area with 100s of people in it. Or whatever the limit is. I haven't played WoW since like 2003(?)",
-                  "upvotes": 6,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The discussion is about WoW benchmarks and general CPU limitations, not specifically the 7800X3D.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-                  "replies": [
-                    {
-                      "commentId": "kd1w8ne",
-                      "text": "> I wonder if there's a WoW benchmark for that?\n\nunfortunately there isn't afaik otherwise i'm sure we'd see it in way more benchmark suites from reviewers\n\n> You'd need to simulate an area with 100s of people in it. Or whatever the limit is. I haven't played WoW since like 2003(?)\n\nthey use sharding now so it never gets too crazy high outside of expansion launches but even like 100-150 odd in a compactish area is enough to be cpu limited by even the beefiest cpus",
-                      "upvotes": 4,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The discussion is about WoW sharding and general CPU bottlenecks, not the 7800X3D.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-                      "replies": [
-                        {
-                          "commentId": "kd24mwo",
-                          "text": "My experience with wow was a long time ago, i remember going to a marketplace and my computer rendering like 1 frame every minute.\n\nThen they'd schedule the updates for the one night i'd be able to play and my ISDN line would spend like 24 hours updating everything.\n\nAnd then I was paying per month for that? yeah, no. I had so many friends who just left the planet earth for a few years.",
-                          "upvotes": -1,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "The user is sharing a personal anecdote about old hardware and WoW, unrelated to the 7800X3D.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-                          "replies": []
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "commentId": "kd26z28",
-                  "text": "I've seen similar comments and youtube videos for Final Fantasy XIV and Star Citizen. No gain in benchmarks but big gains in actual gameplay.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user discusses the benefits of 3D V-Cache (which powers the 7800X3D) in actual gameplay versus benchmarks.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user notes 'big gains in actual gameplay' for V-Cache CPUs.",
-                  "replies": [
-                    {
-                      "commentId": "kd2n0ah",
-                      "text": "Vcache gives a huge improvement in the FFXIV benchmark, around +65%, but it's focused in the heaviest CPU scene. It's underrepresented in the final performance number that it spits out in large part because the people who made the benchmark made a mathematical error. It's one that's easy to overlook if you're a game developer rather than a statistics guy, but critically important.\n\nThe contribution of the different benchmark scenes is added up using an arithmetic mean when it's supposed to be using a geometric mean, and as a result, scenes with more FPS make up an unfairly large proportion of the scoring. \n\nWhen there is a large FPS difference such as some scenes having 100fps and other scenes having 600fps, this heavily distorts the results - and when those two scenes have massive difference in scaling (e.g. the 100fps scene being a vcache/ram hyperscaler while the 600fps scene fits into 32MB of cache) then that final distorted performance number that it gives you is also ruining the scaling data.\n\nTo eli5 this.. running the 100fps bit 10% faster gives you 10 more score per second, but running the 600fps bit 10% faster gives you 60 more score per second. That's not an effective way to measure performance, it's heavily warped and it's warped in the opposite direction that we might want to warp things even if we did.\n\nI would recommend capturing each scene with an external tool like capframex and just cutting out the lowest performance city scene in the middle.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": "include",
-                      "relevanceReasoning": "The user provides a technical critique of benchmarks regarding V-Cache performance improvements.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is providing a technical explanation of how benchmarks are calculated rather than expressing a positive or negative opinion of the product itself.",
-                      "replies": [
-                        {
-                          "commentId": "kd3t8z5",
-                          "text": "Interesting. Thanks for the info.",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "Low-effort response that does not provide insight into the product.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-                          "replies": []
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "commentId": "kd2rcck",
-                  "text": "Even on flight path bench i got ~2.7x from 3900x to 5800x3d with all at spec. A bit more from the vcache, but Matisse to Vermeer was also huge and going from 6c to 8c on the CCD also helps quite measurably.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user discusses the 3900x and 5800x3d, not the 7800X3D.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "kd3katn",
-              "text": "[In Factorio the 7800X3D absolutely destroys the 13900K.](https://www.techspot.com/articles-info/2657/bench/Fact.png)\n\nAlso in [Microsoft Flight Simulator](https://files.catbox.moe/4babkz.png) and [Assetto Corsa Competizione](https://www.techspot.com/articles-info/2657/bench/ACC.png). In these games the CPU is generally the bottleneck because of all the physics calculations happening.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user explicitly states that the 7800X3D 'absolutely destroys' the 13900K in specific games.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user uses strong positive language ('absolutely destroys') to describe the product's performance.",
-              "replies": [
-                {
-                  "commentId": "kd3xav1",
-                  "text": "Holy smokes. That makes me feel better about my 5800x3d.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is talking about their 5800x3d, not the 7800X3D.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "kd2gl51",
-              "text": "I don't give a wooden nickel for any of those games you listed. What good does showing how much faster the 3D cache is in those games for the majority of gamers who don't play them? It's like showing a Radeon user how much better Nvidia is at AI. What do they care if all they do is game?",
-              "upvotes": -1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is arguing about the validity of certain benchmarks, not providing insight into the 7800X3D itself.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-              "replies": [
-                {
-                  "commentId": "kd2lhfl",
-                  "text": "I'd actually like to see benchmarks on how much better Nvidia is at AI than AMD if I was looking at a review of two video cards.",
+                  "commentId": "keivhc0",
+                  "text": "How is 55 vs 90 not a noticeable difference?",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is discussing GPU benchmarks (Nvidia vs AMD), not the 7800X3D CPU.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "kd44uky",
-          "text": "One thing people forget as well, is that 14900k is intels current newest gen as of October, 7800x3d is 6 months earlier/amds last release, it'll always flip flop per amd and Intel release waves as well, with that being said I can't wait for the next X800x3d",
-          "upvotes": 5,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user discusses the release timing of the 7800X3D relative to Intel's latest gen.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is providing factual context about release dates without a clear positive or negative leaning.",
-          "replies": []
-        },
-        {
-          "commentId": "kdccpdw",
-          "text": "7800X3D great for gaming but 14900k owns it in productivity encoding, CB 24 and rendering video/audio etc. it's just good for gaming barely wait till more stable bios come out.",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user compares the 7800X3D's gaming performance against the 14900k's productivity performance.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user balances the product's strength (gaming) with its weakness (productivity).",
-          "replies": []
-        },
-        {
-          "commentId": "kd1pq6p",
-          "text": "7800x3d outperforms Intel's best whilst using significantly less power... \n\nSame story, nothing to see here....",
-          "upvotes": 14,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user claims the 7800X3D outperforms Intel's best while using less power.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user expresses satisfaction with the product's performance and power efficiency.",
-          "replies": [
-            {
-              "commentId": "kd29f16",
-              "text": "Another comparison of two different class of cards with brain dead commenters acting like this is an own.\n\nCompare it against the 14700k and then do your dunking. Like the 7800x3d is the best gaming cpu hands down in every area. Why do people insist on being stupid and doing bad comparisons?",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user asserts that the 7800X3D is the 'best gaming cpu hands down'.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user provides a very strong positive recommendation for the product.",
-              "replies": []
-            },
-            {
-              "commentId": "kd2gv82",
-              "text": "... Unless you use your PC for anything that is low load. Then AMD draws a crap ton more power all because of their shitty chiplet design.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user critiques AMD's chiplet design regarding power draw at low loads.",
-              "sentiment": "negative",
-              "sentimentReasoning": "The user describes the design as 'shitty' and complains about power draw.",
-              "replies": []
-            },
-            {
-              "commentId": "kd3pojz",
-              "text": "14900k is between 50-80% faster in anything outside of gaming. The much cheaper 14700k offers similar gaming performance for much less, why would intel sell an i9 for this much when their i7 gets the same gaming performance? You'd think they should tune the i7 down so it doesn't overshadow the i9 no? Or maybe, they're not selling i9s to only play video games.",
-              "upvotes": -1,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user compares the 7800X3D to Intel's i7 and i9 in terms of gaming and productivity.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user provides a balanced comparison of use cases (gaming vs productivity).",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "kd26iae",
-          "text": "Easy win",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user calls the 7800X3D an 'easy win' in the context of the comparison.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user expresses a positive opinion of the product's value/performance.",
-          "replies": []
-        },
-        {
-          "commentId": "kd3kk4u",
-          "text": "ryzen 7 7800x3d supremacy",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user expresses 'supremacy' for the 7800X3D.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user uses highly positive language to describe the product.",
-          "replies": []
-        },
-        {
-          "commentId": "kd3v2xh",
-          "text": "It\u2019s been known for a while that the 13900k/14900k only beat a 7800x3d when paired with 8000mt/s ram and with an overclock. Only buy them if 1, money isn\u2019t a factor for you, and 2, you love tinkering.\n\nFor literally every else there is no reason to get anything more than a 7800x3d for gaming",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user recommends the 7800X3D for gaming over Intel's high-end chips.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user states there is 'no reason to get anything more' than the 7800X3D for gaming.",
-          "replies": []
-        },
-        {
-          "commentId": "kd6ba4i",
-          "text": "It's a no brainer that the 7800X3D is the better buy for gamers.\n\nAntonis_32 sums it up perfectly.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user states the 7800X3D is the 'better buy for gamers'.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user provides a clear positive recommendation.",
-          "replies": []
-        },
-        {
-          "commentId": "kdd3cfb",
-          "text": "I'll get the 8800x3d and 5090 in due time.\n\n5900x and 6900xt is enough for now",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is talking about future purchases (8800x3d) and current hardware (5900x), not the 7800X3D.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-          "replies": []
-        },
-        {
-          "commentId": "kd2w0rg",
-          "text": "Got my 7800x3d for only 320 bucks, for gaming it is definitely worth it.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user shares their purchase price and states the product is 'definitely worth it'.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user expresses satisfaction with the value and performance.",
-          "replies": []
-        },
-        {
-          "commentId": "kd2l1eg",
-          "text": "If I was to chose between the 7800x3d and my current cpu I\u2019m pick my 12900k. Dealt with enough of amds BS with my 3900X, 2600X, 2400G and 3300G so far my 12900k has ran flawlessy unlike the mentioned CPU\u2019s.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user expresses a preference for Intel over AMD based on past bad experiences with AMD CPUs.",
-          "sentiment": "negative",
-          "sentimentReasoning": "The user rejects the 7800X3D in favor of Intel due to perceived reliability issues with AMD.",
-          "replies": [
-            {
-              "commentId": "kd2z3r0",
-              "text": "Definitely a skill issue. No one has all these problems with all those CPUs.",
-              "upvotes": -2,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is arguing with another user about 'skill issues', not providing product insight.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-              "replies": [
-                {
-                  "commentId": "kd32b9j",
-                  "text": "Yah because amd totally doesn\u2019t have memory issues that haven\u2019t been documented for years\n\nAlso usb dropouts that plagued am4 5XX motherboards",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user mentions memory and USB issues associated with AMD platforms (AM4/AM5).",
-                  "sentiment": "negative",
-                  "sentimentReasoning": "The user highlights documented technical flaws of the AMD platform.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "kd3tiu5",
-                      "text": "That's been long fixed.",
-                      "upvotes": 0,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user is making a general claim about fixes, not providing specific 7800X3D insight.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-                      "replies": [
-                        {
-                          "commentId": "kd3tuj1",
-                          "text": "Wasnt fixed when I was using amd and from what I have heard am5 still has memory issues",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": "include",
-                          "relevanceReasoning": "The user claims AM5 (the platform for 7800X3D) still has memory issues.",
-                          "sentiment": "negative",
-                          "sentimentReasoning": "The user expresses a negative opinion regarding the stability of the platform.",
-                          "replies": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "kdo8rw8",
-              "text": "Yeah I'm currently choosing between 12900k and 7800x3d and I'm leaning 12900k solely because the microcenter bundles I'm looking at have serious issues on the amd side. Ram instability issues, motherboard issues, while I hear many people also having good experience it seems like there's a 25-35% chance in my estimation of getting screwed if you go amd.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user is choosing between 12900k and 7800x3d and expresses concern over AMD stability.",
-              "sentiment": "negative",
-              "sentimentReasoning": "The user is leaning away from the 7800X3D due to perceived risks of instability.",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "kd46xg7",
-          "text": "Yeah for a processor almost as good for half price I would go this route too.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user suggests the product is a good route because it is 'almost as good for half price'.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user expresses a positive opinion on the value proposition.",
-          "replies": []
-        },
-        {
-          "commentId": "kzdu6t6",
-          "text": "\\*looks around\\*\n\nIs it safe?   I am an intel person myself, but benchmarks are benchmarks.  I am heavily considering the 7800x3D.  But I have to add a caveat with that.   The soul purpose for the CPU upgrade is to use with Star Citizen.   Which I can tell you the minimum PC specs just went up in the test build.   To give context the i9-10900K is bottle necked in the test version with a RTX3080.\n\nIt would be helpful if some of you AMD guys, can explain differences between the 7950x3d vs 7800x3d in terms of performance for an extremely intensive game as Star Citizen.  Note:  I do not care about power consumption.\n\nIf you want to compare Star Citizen to a game like Cyberpunk, Let me put it to you like this:  DLSS works in Cyberpunk it doesn't work in Star Citizen on an i9-10900k with an RTX3080.  0 performance gains.  And that is in a closed test environment with a very small fraction of the population having access at this time.\n\nI am already swayed by price and performance for the 7800x3d, but I want to know if it will become obsolete in the near future.  I've ran on my 10900k for 3+ years now without issue until now with the newest update in testing for Star Citizen.\n\nIf it helps, I shop for hardware based on minimum FPS benchmarks, not average or peak.  I build my PC's around minimum frame rates first and foremost.\n\nThanks for any advice you can provide.  My only real concern is I have had bad luck with AMD's in the past that left a bad taste in my mouth.  But, I am willing to give them another chance provided it doesn't cost me hundreds of dollars like it did before.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user is considering the 7800X3D for Star Citizen and asks for comparisons with the 7950x3d.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is seeking information and is 'swayed by price and performance' but remains cautious.",
-          "replies": []
-        },
-        {
-          "commentId": "l1u5xr0",
-          "text": "I know this Thread is kind of old, i currently have a intel 13700f, looking to get something different. I've been looking at 14900kf or the 7800x3d. I don't stream, i do run a a dual monitor set up, one to game on and the other one i watch twitch, discord, or youtube on. Would the 7800x3d be able handle that?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user is asking if the 7800X3D can handle a specific multi-monitor gaming/streaming setup.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is asking a question without expressing a positive or negative opinion.",
-          "replies": []
-        },
-        {
-          "commentId": "kd2g40p",
-          "text": "*The text of this post is no longer accessible. It was deleted using [Redact](https://redact.dev/home), possibly for reasons related to privacy, security, or digital footprint reduction.*\n\nobtainable ring paint ghost joke crowd nail possessive humorous flag",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The comment is deleted/redacted and contains nonsense text.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-          "replies": []
-        },
-        {
-          "commentId": "kd2icw0",
-          "text": "now do 7900X3D  vs 14900K :P",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is asking for a different comparison (7900X3D vs 14900K).",
-          "sentiment": "neutral",
-          "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-          "replies": []
-        },
-        {
-          "commentId": "kd2m16j",
-          "text": "is this a fan boy video ?",
-          "upvotes": -6,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is asking if the video is 'fan boy' material, not discussing the product.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-          "replies": []
-        },
-        {
-          "commentId": "kd19xhx",
-          "text": "I'll just post here what my reply was to his tweet, which is that there are some advantages to having an objectively more powerful CPU for gaming. Shader compilation, whether done ahead of time in games like The Last of Us Part 1 or in real-time during gameplay, is a very CPU intensive activity and does benefit from a faster CPU. These aren't things that show up in your usual frame rate benchmarks as they get rounded off after multiple runs but do affect your gameplay in a different way. If you are GPU bound, which most people are, the differences in these two CPUs will be minimal in terms of frame rates but you will certainly spend less time on the shader compilation screen with the 14900K than you would with the 7800X3D.",
-          "upvotes": -16,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user discusses a potential drawback of the 7800X3D regarding shader compilation times compared to the 14900K.",
-          "sentiment": "negative",
-          "sentimentReasoning": "The user highlights a specific performance disadvantage of the product.",
-          "replies": [
-            {
-              "commentId": "kd1f01i",
-              "text": "That few seconds of saved time isn't worth the extra $200 lol",
-              "upvotes": 17,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user argues that the shader compilation disadvantage is not worth the extra cost of Intel.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user implies the 7800X3D is the better value despite the minor drawback.",
-              "replies": [
-                {
-                  "commentId": "kd2rdro",
-                  "text": "No one said it was. It was an answer to his question about what are the potential drawbacks of the Ryzen chips vs the Intel. This is one of them.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user clarifies that they were identifying a drawback of the Ryzen chips.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is providing a factual clarification about a product drawback.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "kd1c76y",
-              "text": "how much faster are those compile times?\n\nbecause buying intel for that specific use case in gaming is stupid when now you basically have to bear with 100+w of heat for roughly the same performance as 7800X3D\n\nand i didn't mention that intel CPU's are memory bandwidth sensitive + you need a motherboard which allows for full overclocking support because undervolting is locked behind those options\n\nnow you get why it is pointless to buy intel this gen; whatever it can do better it generally has a major flaw making it effectively worse at that job than competitor",
-              "upvotes": 10,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user argues that buying Intel is 'stupid' compared to the 7800X3D due to heat and performance.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user strongly recommends the 7800X3D over the competitor.",
-              "replies": []
-            },
-            {
-              "commentId": "kd1hlcv",
-              "text": "If that was the main issue for you wouldn't you use for example the 7950x3d? Both gaming and productivity with some caveats at times. \n\nDidn't double check but isn't the 7950x3d faster than the 14900k in productivity yet they should be somewhat the same price?",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing the 7950x3d, not the 7800X3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "Not applicable as the comment is not relevant to the specific product.",
-              "replies": [
-                {
-                  "commentId": "kd2squn",
-                  "text": "Sure. HUB's tweet wasn't about Intel at all. It was about 7800X3D drawbacks so anything with more cores will work. I mentioned Intel since that was the other chip mentioned in this video.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user mentions that the discussion was about 7800X3D drawbacks.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is clarifying the context of a discussion about drawbacks.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "kd1k0z3",
-              "text": "What are you even basing this off of?\nAlex from Digital Foundry recently swapped from his 12900K review unit to a 7800X3D PC.  [He observed nearly the same exact frame time behavior for both processors during shader compilation.](https://youtu.be/AlBC5FWAAp4?t=559). Most of these games aren\u2019t even coded to take advantage of eight cores, let alone the extra e cores to gracefully handle shader compilation.",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user argues that the 7800X3D's shader compilation is nearly identical to a 12900K.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user is defending the product's performance against claims of it being significantly slower.",
-              "replies": [
-                {
-                  "commentId": "kd2s3nx",
-                  "text": "A 12900K is not the same as 14900K. And shader compilation tasks are not game logic driven. They will literally use every single ounce of processing power that is available and max out all cores. The more cores you have the better.",
-                  "upvotes": 0,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user argues that more cores (like in Intel chips) are better for shader compilation than the 7800X3D.",
-                  "sentiment": "negative",
-                  "sentimentReasoning": "The user highlights a performance limitation of the 7800X3D's core count.",
-                  "replies": [
-                    {
-                      "commentId": "kd2vce5",
-                      "text": "Explain the nearly identical shader compilation frame time graph between the 7800X3D to the 12900K then,  what are those extra 8 e cores doing?  Not much because these games can only run the hardware as the game engine limits them to.",
+                      "commentId": "keiwcti",
+                      "text": "Because 35w are no big deal unless we are talking mobile CPUs while idle.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": "include",
-                      "relevanceReasoning": "The user argues that the 7800X3D's performance in shader compilation is comparable to Intel's.",
-                      "sentiment": "positive",
-                      "sentimentReasoning": "The user is defending the product's performance.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "kd5s2t5",
-                          "text": "I can't tell if you are being deliberately obtuse by repeatedly bringing up 12900K in a discussion regarding 14900K. The 12900K is slower and basically on par with the 13600K, so it doesn't have that much more of an advantage even in core heavy tasks over the 7800X3D. The 7800X3D is also faster in general in games in general so the 12900K cannot make up that gap. \n\nAs for shader compilations, literally just fire up any game with a pre compilation step at launch and watch the core usage in RTSS. Literally every single thread will light up 100% like you are running Cinebench in the background.",
-                          "upvotes": 0,
+                          "commentId": "keiz7zv",
+                          "text": "Whenever Intel chips are more efficient - LOL AMD SO BAD SO MUCH POWER\n\nWhenever Intel chips are power hungry beasts - Well ackshually no one really cares about power consumption\n\nAlso I have a really hard time believing the 14900k was drawing THIRTY WATTS under any kind of gaming load",
+                          "upvotes": 6,
                           "classifyThis": true,
-                          "relevance": "include",
-                          "relevanceReasoning": "The user argues that the 7800X3D is faster in general games than the 12900K.",
-                          "sentiment": "positive",
-                          "sentimentReasoning": "The user asserts the product's superiority in gaming.",
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
                           "replies": [
                             {
-                              "commentId": "kd6echk",
-                              "text": "Do you even understand what a frame time graph represents, and why it\u2019s significant when two architecturally different CPUs display nearly the same exact frame time behavior?\n\nYour e cores mean nothing if the game engine can\u2019t utilize them properly, which happens during shader compilation.   Your glorified atom e cores are the same exact ones across 12th, 13th, and 14th gen CPUs. \n\nVery high IPC & clockspeed is what affects shader comps the most, not more e cores running near 4GHz at best.",
+                              "commentId": "kej0lpr",
+                              "text": "Intel chips are not power hungry beasts though. In fact if you take every single CPU and lock it to 100w, Intel CPUs are more efficient in games than AMD (of course, x3d not included). So is the 7950x a power hungry beast? Is the 7900x? Of course not.\n\n  \nFor not gaming workloads Intel cpus are generally more efficient. The 7950x is the only amd cpu actually that can compete in efficiency with Intel, it's around 5-10% more efficient than the 14900k with both @ 125w. Lower down the stack though it's a massacre. If you compare an i5 with an R5 and i7 with an R7, yeah, no contest. Intel walks all over amd.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": "include",
-                              "relevanceReasoning": "The user argues that IPC and clock speed are more important than e-cores for shader compilation, favoring the 7800X3D's architecture.",
-                              "sentiment": "positive",
-                              "sentimentReasoning": "The user is defending the technical architecture of the product.",
-                              "replies": []
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "kej1tb0",
+                                  "text": "You didn't watch the gn video did you",
+                                  "upvotes": 7,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "kej21ld",
+                                      "text": "I sure did, he tested 2 workloads at iso wattage, blender and photoshop. In blender the 14700k was leading the entire chart in efficiency, only losing to a threadripper that costs thousands of euros.  \n\n\nDid you watch the GN video?",
+                                      "upvotes": 4,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "kf5lqdk",
+                                          "text": "Yeah the single result where the 14700k didn't get crushed and oh look right below it dozens of amd CPUs. Before intel reappears half way down the chart.\n\nWhen did they do testing locked to 100w as your original comment claimed cause guess what the and CPUs don't even use that much. \n\nLiterally every game bench mark has intel at the bottom of the chart for the 14th gen and the 13th gen just barely manages to get into fights with zen 3 and the 7600x while being massively slower in the games. The only one that seems to even be decently efficient is the damn i3 from 12th gen.\n\nBlender and photoshop are the only tests where intel doesn't end up exclusively failing and even in blender only the 14700k manages to compete the rest end up mostly sitting in the bottom half of the chart.\n\nTL;DR  you didn't watch the gn video",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "kf5rr3b",
+                                              "text": "You do realize that if reviewers actually tested the non k and the T versions of Intel CPUS there wouldn't be a single AMD cpu on the top 20 efficiency CPUs list? Not a single one, lol.\n\n&#x200B;\n\nAre you saying that the 13900k is massively slower than the 7600x? What?   \n\n\nYeah man, cool, you are too far gone into the amd mania to be reasoned with. Cool, cya bud",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "keiwd49",
+                      "text": "When your computer with a 4090 is pulling around 600watts, I don't know, do you feel like it's a big difference? Let's say you have a GOLD PSU with 90% efficiency, the x3d PC will be pulling around 660from the wall and the 14900k 700w. That's a 6% difference. Now add in your monitor and speakers and suddenly you are hitting over 800 watts and the difference between the 2 systems is within 5% or less.\n\nAnd remember, that's just the extreme scenario of TLOU, most games do not push the CPU that high. I mean I have a video playing 4k maxed out Dirt 2 at 120fps, my 12900k was between 22 and 28 watts.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "keiz16m",
+                          "text": "And on every other build that isn't 4k low intensity games on a 4090?",
+                          "upvotes": 4,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "keizstw",
+                              "text": "I explained it already, the 12900k hits (peak) 75w on cyberpunk but it averages out around 60-65. So 65w on one of the heaviest games. Does the 3d draw less on cyberpunk? Yeah, around 10-15w less. Does it matter? You tell me",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "kej0383",
+                                  "text": "Its different for the 13/14900K by the way: [https://youtu.be/O4wcW-Rvy\\_s?t=724](https://youtu.be/o4wcw-rvy_s?t=724)",
+                                  "upvotes": 2,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "kej0rz0",
+                                      "text": "It's really not, I have both a 13 and a 14900k. They both stay under 100w at 4k in eg. cyberpunk\n\n4k + PT + DLSS Q + FG , averages around 90w on a 14900k",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "kej3bs6",
+                                          "text": "At 4K you're not making that CPU work. You need it for productivity?",
+                                          "upvotes": 6,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "kej42kh",
+                                              "text": "Well what resolution are you going to play at with a 4090 though? I don't need it for anything, Im just collecting / testing cpus. My main PC has a 12900k and im not swapping it for the world",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
                             }
                           ]
                         }
                       ]
                     }
                   ]
+                },
+                {
+                  "commentId": "keiycak",
+                  "text": "Depends on the game \nSome modern games are quite cpu intensive\nWith a 5800x3d Im seeing 90-100% usage in cp2077 and 70-80% in the finals\nGranted im on 1440p low-high settings trying to push 240fps \n\nThe better power effiency is much appreciated since it doesnt dump a bunch of heat into my room\n\nIf i were to use say a 13700k/14700k that would be closer to 200w while gaming\n\nIt all depends on use case so researching what part works best for you is always recommended",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "kej1jb9",
+                      "text": "You are seeing 100%  usage cause your cpu has 8 outdated cores, so it's pegged.   \n\n\nThis is 12900k on cyberpunk with RT, it's pulling 55 to 80w. How much less is your 5800x 3d pulling ?? \n\n&#x200B;\n\nhttps://youtu.be/bEdPqdlkkg0?t=33",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "kejdylp",
+                          "text": "CP2077 is pretty well optimized for high core counts tho, even usage across cores so effiency is still pretty good, your res and settings are also different\n\n5800x3d/7900xtx 1440p native high preset and im pushing 150+ frames\n\nMore frames=more work for cpu\n\nCPU is limited to 95w atm i think, havent seen it pull more than that at full load at least\n\nAMD has generally not been that good either for CP2077 with a bunch of usage% issues(mostly fixed as of 2.0 it seems)\n\nFor the finals tho the x3d cpus seem the best for targeting high framerates\n\nIntel still has some issues with scheduling in that game so might see improvements in the future\n\nA better comparison would be to use the same settings and tier of gpu",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "keji5wz",
+                              "text": "Even with the resolution at 720p (and PT on) the 12900k does not exceed 110w. That's a peak. So.. I don't know, I don't consider that a lot",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "kejmex3",
+                                  "text": "Ye 110w under gaming load isnt a lot, frankly a 12900k wouldnt suit my use case, i dont need a lot of multicore performance, single thread performance is the most important metric for the games i play, already having an am4 board made the 5800x3d a no brainer for me. Will probably upgrade when the 8800x3d comes out unless intel has a better offering for high refresh rate gaming",
+                                  "upvotes": 2,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "kek4oph",
+                  "text": "Are you trying to tell us it uses less power in 4k minesweeper or did you have an actual point?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "kek6fu5",
+                  "text": "How do you evaluate power consumption ?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
                 }
               ]
             },
             {
-              "commentId": "kd1ssyz",
-              "text": "So is your argument that people should spend an extra $200 for a 14900K so that they *might* potentially have a slightly shorter shader compilation time which is a temporary issue at worst?",
+              "commentId": "kel5u2y",
+              "text": "7800x3d is also more unstable, gets hotter, even though is uses less power. Great CPU for those who just plug and play, but I would vote for 5800x3d any day over 7800x3d. \nI personally use intel, since I value stability and 1% lows, but if you\u2019re going for the X3D chip, go for 5800x over 7800x imo. I\u2019ve tested all 3.",
               "upvotes": 0,
               "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user questions if the 7800X3D's minor drawback is worth the extra cost of an Intel CPU.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user implies the 7800X3D is the more sensible purchase.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "kd2sjmm",
-                  "text": "There is no question of *might*. The 14900K is an objectively more powerful CPU and will always finish compilation tasks faster. And my post was a reply to HUB's question on Twitter about hypothetical 7800X3D drawbacks. I never said it was buying advice.",
-                  "upvotes": 1,
+                  "commentId": "kely2ri",
+                  "text": "The instability usually comes from people using incorrect ram that isn't on qvl list. The hot part well kind of. It hits 86c maximum instead of 95 c which tends to be lower than many of the intel parts at full tilt now. Plus to get better 1% lows you need MUCH more expensive components",
+                  "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user identifies the 7800X3D's slower compilation as an objective drawback.",
-                  "sentiment": "negative",
-                  "sentimentReasoning": "The user points out a specific performance deficiency.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": []
                 }
               ]
@@ -586,6 +321,5 @@
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

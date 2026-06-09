@@ -1,0 +1,179 @@
+{
+  "productName": "AMD Ryzen 7 9700X",
+  "batchIndex": 39,
+  "totalBatches": 42,
+  "comments": [
+    {
+      "commentId": "1enb9wt",
+      "text": "AMD Ryzen 7 9700X review: YouTube hates this CPU",
+      "upvotes": 235,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "lh57npz",
+          "text": "I believe that Zen 5 will sell like hot cakes, not for gamers but for people needing fast AVX 512 processor for AI. Higher tier CPUs, threadripper ... This was designed market for this architecture.\nKitguru review is the best, I am disapointed that most reviewer tested under 88W limit and complained that performance is worse than 7700x running at 120w+.\nAlso DerBauer review was good.",
+          "upvotes": 46,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lh66f03",
+              "text": "Is AVX used that much for AI workloads? Which use cases are those (Im out of the loop on scalar codes doing AI stuffs)",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lh75r51",
+                  "text": "Numpy, PyTorch and Tensorflow all natively supports AVX-512 at this point. If you have used any of those two (If you are doing AI I'm 100% sure you did) you definitely enjoyed the benefit from AVX-512",
+                  "upvotes": 12,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lh74neo",
+                  "text": "AVX512 is supposedly a game changer for on-CPU AI calculations. CPU based AI is far slower without AVX512.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lh8p4pb",
+                      "text": "Don\u2019t people run inference for LLMs on gpu ? Is the avx thing really meaningful feature over the last gen ?",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "lh7dgf5",
+                      "text": "Will AVX512 on-CPU calculations rival GPUs?",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "lh8fzob",
+                          "text": "Simply put, no, by a long shot",
+                          "upvotes": 9,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "lh9892c",
+                          "text": "Makes little sense for your average AI startup, but when you\u2019re a massive operation with huge servers with tens of thousands of cores, it\u2019s performance that\u2019s left on the table.\n\nIt\u2019ll never be as fast as GPU inferencing, though.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "lh5af3o",
+              "text": "True, but reviews tend to use default setting more than anything else, hence the negative bias. On the other hand, there is no reason to upgrade from zen 4, and there shouldn't be a reason for that honestly.",
+              "upvotes": 10,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lhhmzv9",
+                  "text": "Default settings tend to be optimal anyway. Sure you could spend a *lot* of time tinkering with customized settings and voltages, but if we are gonna be honest you're probably not gonna see big improvements doing that anyway. For the last couple generations it's been pretty obvious that ryzen comes pretty well optimized out of the box such that old school overclocking and under volting is a bit of a poor use of time.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lh8h3iw",
+              "text": "For Ai work, it doesn't have enough memory bandwidth.  It's better with GPUs.  If use CPU,  use server CPU with 8 or 12 channel memory.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lh8i412",
+                  "text": "But zen5 architecture will be used also in server CPUs and that was my point this is more workstation, server architecture than gaming focused. But maybe they will bring some innovation with x3D CPU line for gamers.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lhhmpaa",
+              "text": "Most AI LLMs are running on GPU, so anyone with serious intent for AI is not going to be using CPUs to run it. AVX-512 is at best catering to a niche.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lhpvif6",
+          "text": "They hate it for the clicks",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,22 +1,22 @@
 {
-  "productName": "thermalright-phantom-spirit-120-evo",
+  "productName": "Thermalright Phantom Spirit 120 EVO",
   "batchIndex": 19,
-  "totalBatches": 25,
+  "totalBatches": 20,
   "comments": [
     {
-      "commentId": "1r0o1ro",
-      "text": "I switched from RTX 2070 to RX 9070, here's my honest experience, tips and thoughts.\n\n# INTRO + CONTEXT\n\nBack in december I got a Gigabyte RX 9070 Gaming OC and once opened I fell in love with the grey details on the card. Also the size made my Gigabyte RTX 2070 Windforce seem like a little toy, but at the same time it fitted in my small-ish mid tower without issues.\n\nWhen I first tried playing some of my games I noticed my fps were literally DOUBLED or even TRIPLED in most of them, despite having less rgb in my case (sorry I had to). In some of them I can reach higher than 100fps at max details (WQHD res) while before I was struggling to get to 60-80 at min details.\n\n# BUILD\n\nFor the occasion I upgraded my build:\n\n* i7 9700k --> R7 7700\n* 16gb 3000 c15 --> 32gb 6000 c36 (both corsair vengeance)\n* OCZ ZT 750w bronze --> Pccooler YN1000 gold\n* Gigabyte B650 Eagle AX\n* Thermalright Phantom Spirit 120 Evo (70 celsius under load with undervolt)\n* Orico 2tb m2 e7400 (\\~6500 effective, no OS only games)\n\nMy psu was 12+ years old (and has powered 3 builds) so it was time to say goodbye, also I read newer ones can handle power spikes better and I saw one spike from 270w (oc) to 400w on the new gpu, so I think it was a good call.\n\nThe R7 7700 only shows some visible bottleneck on a couple of really unoptimized games, still way better even in Rust on my old gpu, so it feels great for now and can be upgraded down the line with an X3D.\n\nIt started as a last minute budget build in november to avoid price increases, but since also gpus were doomed to rise I finished it as soon as I could. I'll share more details if anyone's interested.\n\n# ADRENALIN HORROR\n\n*Consider the following lines as guidelines rather than a rant, hopefully this helps newcomers get started faster than I did.*\n\nI liked the idea of switching to just one app for all my needs, but...\n\nI had weeks of terror with Adrenalin, until I figured out the rules are:\n\n* never press ALT+R, instead ALT+TAB and open Adrenalin manually from taskbar\n* if you really want to press ALT+R, ensure your game is in exclusive full screen (but some games can only be borderless full screen, so don't press ALT+R if you want to forget about the issues)\n* if Adrenalin crashes silently while playing, maybe it didn\u2019t like the oc (even without driver timeout or the game crashing)\n\nI'll leave my other findings:\n\n* some games like MH:Wilds will crash on launch if you enable FSR 4 Framegen without warning you about the issue, fortunately it's a simple fix once you know it\n* everytime I rebooted or turned off-on my pc, oc kept getting reset to default in Adrenalin. As pointed out by others, disabling fast boot in Windows power management fixed it\n* Adrenalin Video and Streaming by default outputs darker images than what you see: I tried making some videos to use as live wallpaper in Oblivion Remastered in dark areas but most details were lost because of this. I didn't investigate further, but I hope there's an option in Adrenalin to fix this. Since some people tell it can give issues, I'm keeping it off for now (just making sure everything is stable)\n* sometimes I had some doubts with freesync on so I turned it off for now (I was still testing oc though)\n* when I started with 25.12.1, when launching a game I'm pretty sure I wasn't getting the top-right red square from Adrenalin saying FSR 4 upscale upgrade was turned on (among other settings). I discovered it when I downgraded to 25.9.1 (with ddu) and, after updating to 26.1.1, I now get it aswell.\n\nI also don't like the weird slow scrolling animation, but it can't be disabled.\n\nI noticed people in this sub saying Nvidia App has been buggy aswell but I never had any major issues since Geforce Experience came out, maybe I'm lucky.\n\nIf you need always working metrics there are alternatives like Afterburner+RivaTuner, CapFrameX etc. Personally I switched to CapFrameX for the time being just to make sure if I get crashes Afterburner isn't a variable, being also an oc tool. I'll try it back when I'm sure I'm stable.  \nIf you take the CapFrameX road keep in mind you can show/hide the overlay with ALT+O.\n\n# ADRENALIN SETTINGS\n\nI set FSR upscaler and framegen upgrades globally on, framegen upgrade disabled specifically in Wilds.\n\nEDIT: the latter is called \"AMD FSR Frame Generation\", not Fluid Motion Frames. I think it has been added in december 2025. It upgrades frame gen to the latest version when frame gen is turned on inside the game, it doesn't just apply frame gen to everything.\n\n# OVERCLOCK\n\nCPU: PBO enabled, curve optimizer -30\n\nGPU: +10% power, -80mv\n\nIt could reach -130mv but I'd rather keep it stock then see it crash even after days, so here I am.\n\nI always had crashes through many builds when overclocking, so I'm happy I can get some more performance without issues this time and I wonder if the old psu was the culprit back then.\n\n# UPSCALERS DRAMA\n\nOnce figured all this, my only complaint was DLSS 4 missing cause you can\u2019t unsee that thing, gold even in performance mode.\n\nHaving played MH:Wilds, BF6 and other games with DLSS 4 during last year, I instantly noticed FSR 4 being less crispy and detailed, but I knew the risk. I admit it gave me some headache at the beginning but now I can say I'm getting used to it. It's not about the framerate, but gaining clarity especially in natively blurry games. But FSR 4 upscaler is still good, hope it gets great this year.\n\nI can see why one would want to abandon the ship and refund, but I didn\u2019t want to spend 200+\u20ac more for a 5070Ti (that was the price gap for me).\n\nI was wondering if getting a 5070 for a little bit less was a better idea, but once getting used to FSR I had my answer. Putting aside the (decent) upscaler and considering the added performance and vram, the 9070 is a great price to performance gpu. I still hope next FSR upscaler implementation will reach that peak, but I'm keeping my expectations low and I'm fine with it.\n\nI'm more worried about FSR not being implemented in newer games, since already 2 games came out in january with DLSS but no FSR (one based on vulkan). Luckily I'm not planning to play them and right now I don't think FSR is vital over a standard antialiasing for visuals, except maybe for more performance.\n\n# VRAM DEBATE\n\nI also think the vram story about the 5070 (non Ti) has been a little bit exaggerated since I noticed from many benchmarks that Nvidia uses less vram (I believe thanks to compression) but it can vary between 800mb-1.3gb and probably a better upscaler can give a better result than ultra textures, but I guess it depends on the specific game and resolution.\n\nAnyway we'd still be comparing a \\~13gb gpu against a 16gb one.\n\nI have to admit that seeing I'm really using most of it in some games makes me happy about choosing my 9070 anyway.\n\n# PERFORMANCE / RAY TRACING\n\nTalking about pure performance, as I said above, 9070 delivers A LOT!\n\nI was used to Ray Tracing on my old RTX 2070, where turning it on would halve my fps usually below 60 (reason why I mostly kept it off), so I was amazed when I turned it on in Wilds without experiencing the long freeze on activation and the evident loss in performance.\n\nSame thing with shaders in Minecraft, but if I understood correctly those shouldn't be real ray tracing (even if it used to halve my fps the same with my old gpu).\n\nI usually avoid Ray Tracing anyway but I'm loving it with Lumen on in Oblivion Remastered. Though turning settings down there can make the game run better and still look good without the wow effect, so it's up to personal preference.\n\n# FRAME GENERATION\n\nI mainly use it in Wilds and Oblivion Remastered, but sometimes I find myself turning it off. Specially in Oblivion Remastered, since after a loading screen it warms up in 4-5 seconds and that game is full of loadings. I never tried it on team green so I can't tell much about that.\n\nI found a bug in Oblivion when alt-tabbing out and back in, where framegen just turns off. Turning it off and back on didn't fix it, but turning overall game settings from ultra to high and then back to ultra fixes it reliably.\n\n# GAMES I TRIED\n\n* *Now playing:* Battlefield 6, COD Black Ops 7, CS2, MH:Wilds, Oblivion Remastered, Zenless Zone Zero\n* *Just (re)tried for testing:* Cyberpunk, The Witcher 3, Starfield, Skyrim Anniversary (Nolvus), Hogwarts Legacy, Clair Obscur, Dragon Age The Veilguard, New World, Rust, Minecraft, Overwatch 2, Fortnite, Genshin Impact, Wuthering Waves, Arknights Endfield, Highguard\n\n# CONCLUSION\n\nNow that I sorted out things, I can say I'm really happy about my 9070. I'm finally back to high fps specially in Cod and Battlefield, now Oblivion Remastered and Wilds are playable and I can try some other games I avoided because of poor performance (or played with everything low, even the upscaler).\n\nIt's already a powerful card and it could get golden with updates, fingers crossed.\n\nI'm only waiting for FSR upscaling next implementation and fixes for Adrenalin, but for now I'm pretty much satisfied.",
-      "upvotes": 150,
-      "classifyThis": true,
+      "commentId": "1jrbhua",
+      "text": "I guess I'll be switching back to air cooling\n\nI got my first AIO in 2022, when I made a new build and wanted some nice aesthetics. Yesterday by pure coincidence I noticed something shimmery on one of my CPU cooling hoses. Long story short, my radiator decided to leak after 2.5 years. I've spent the whole day inspecting everything and it seems the coolant went mostly on the GPU cooler and not the PCB. The last 3 pictures were on my old phone from 2022 when I first got the AIO. Unfortunately the quality isn't too good. But I enhanced the brightness and zoomed in and in fact I was able to spot the damage on my fins where it's leaking from now. So I guess if you buy an AIO, make sure it's 100% damage free before installing. At the time I thought it was just a cosmetic defect, as some bent fins usually don't cause a leakage and the system ran fine for 2.5 years, but here we are. Ordered a Thermalright Phantom Spirit 120 EVO, which should be here tomorrow.",
+      "upvotes": 357,
+      "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
       "sentiment": null,
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "o4l5p4l",
-          "text": "Welcome to the non XT club, paired with a 5700x3d this card is the only one i could afford and i'm really happy with it.",
-          "upvotes": 14,
+          "commentId": "mle5u3p",
+          "text": "Please do. Liquid cooling is silly.",
+          "upvotes": -1,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -24,216 +24,8 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "o4rhp5w",
-              "text": "Just made the same switch as you to the 9070 and it\u2019s absolutely brilliant coming from a 6700xt \n\nI was contemplating the 9070xt but couldn\u2019t be bothered switching PSU over \ud83d\ude05",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "o4rnyie",
-                  "text": "Same thing here, but luckily the cheapest 9070XT was not available,i have 750w gold psu it can handle it but that's not really ideal. I get my 9070 close to the XT levels with some overclocking so i'm good hehe.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "o4kva3h",
-          "text": "Its so interesting how different experiences are between different people. I never have to tinker with my pc with 9070xt and my buddy literally never does anything with his 7800xt. Idk if he's even updated the drivers in months but his pc seems to be immune to issues. Then my sff 2080ti build pisses me off every other week with one thing or another but my old 3060ti system never gave me a day of issues whether it had the 2060 super or 3060ti in it.\n\nIts almost like windows finds someone's install and decides \"this ssd specifically, good luck!\" \ud83d\ude02",
-          "upvotes": 7,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "o4jtrhe",
-          "text": "Also went from 2070S to 9070XT. Yes the FPS gain was impressive, but the Adrenaline Software is my biggest disappointment with this card. Recording on HDR monitor not working, Countless times that the adrenaline defaulted to it\u2019s settings. Windows update messing up the drivers.\n\nI can count on my fingers how many times I had to reinstall the drivers on my previous card compared to my current GPU, especially at the beginning. But once you fix all the issues, this card is a beast.",
-          "upvotes": 22,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "o4jvnvr",
-              "text": "Why don't you just use obs or something else to record",
-              "upvotes": 13,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "o4jvt22",
-              "text": "I totally agree with you. I was losing my mind on the overlay because sometimes I had to reboot since I didn't find a way to make it crash while it was bugged. And I googled a lot but info weren't always helpful.\n\nI still play SDR being on an IPS so I didn't know about that, but right now I'd use a third party app to record until they fix things.\n\nKnowing how to deal with Adrenalin is key, after that everything works perfectly fine.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "o4lib9i",
-              "text": "I've never had the adrenaline settings reset themselves before. Nor windows messing up the drivers tbh. Also on 9070xt",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "o4qxgs4",
-                  "text": "I had my tuning settings reset once or twice on me, but I think I was setting a slightly too aggressive undervolt and power increase. I've removed the power increase and lowered the undervolt and so far so good. ",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "o4r5bwh",
-                      "text": "It automatically resets if a driver timeout is detected, so yeah thats probably the reason",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "o4stuo0",
-                          "text": "Yeah but usually it gives an error on screen saying driver timeout doesn\u2019t it? I didn\u2019t get that at all.",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "o4t5ely",
-                              "text": "Have you checked the notification tab in adrenaline?",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": [
-                                {
-                                  "commentId": "o4t69lj",
-                                  "text": "Yeah, it did say it reset but didn\u2019t say driver timeout. I forget what it said off the top of my head, but when the notification came, I didn\u2019t get any crashes or anything.",
-                                  "upvotes": 1,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": [
-                                    {
-                                      "commentId": "o4t7fwo",
-                                      "text": "Huh, weird. Next time that happens mayve you'll think me and tell me, cuz now i wanna know xD",
-                                      "upvotes": 2,
-                                      "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
-                                      "replies": [
-                                        {
-                                          "commentId": "o4t7m0e",
-                                          "text": "lol I\u2019ll try and remember, but that\u2019s only happened once.",
-                                          "upvotes": 1,
-                                          "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
-                                          "replies": []
-                                        },
-                                        {
-                                          "commentId": "o5g5bvz",
-                                          "text": "So just an update, tuning settings haven't reset themselves at all yet since then and I haven't had any other errors pop up in the Adrenalin notifications. I do however experience adrenaline closing on it's own from time-to-time still but with no game crashes, error reports, error notifications or anything. Just the app itself decides to close from the system tray. Also with testing, whatever small under-volt I've set seems to stay active even after Adrenalin closed itself. So thankfully it won't impact my performance if it closes but I'm really confused as to why this happens.",
-                                          "upvotes": 1,
-                                          "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
-                                          "replies": [
-                                            {
-                                              "commentId": "o5gn3yz",
-                                              "text": "Yeah I have the same thing happening, the performance overlay closes as well... But as long as my OC/UV still works, you know it's whatever... Thanks for the update :D",
-                                              "upvotes": 2,
-                                              "classifyThis": true,
-                                              "relevance": null,
-                                              "relevanceReasoning": null,
-                                              "sentiment": null,
-                                              "sentimentReasoning": null,
-                                              "replies": []
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "o4lldoj",
-              "text": "OBS can help with HDR recording and it comes out great with the AV1 codec (in my case 7900xtx). Let me know if you need help setting it up to be near about fire and forget.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "o4lrg1c",
-              "text": "I never had any problem recording with adrenalin.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "o4rh40n",
-              "text": "I barrely ever use HDR. im usually on 10bit Color mode via adrenaline. looks way better.",
+              "commentId": "mle988x",
+              "text": "I do like how quiet an AIO is vs air cooling though. I work in I.T. and always go air on our builds here for absolute reliability. I have both air and AIO setups at home though. I like that you can't hear the AIO spin up under load. With air I can always tell when the CPU is being taxed.",
               "upvotes": 1,
               "classifyThis": true,
               "relevance": null,
@@ -245,9 +37,9 @@
           ]
         },
         {
-          "commentId": "o4l6lur",
-          "text": "Use sharpness slider to get same crispy image as dlss4.",
-          "upvotes": 9,
+          "commentId": "mldv0kc",
+          "text": "This is the way",
+          "upvotes": 0,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -256,20 +48,9 @@
           "replies": []
         },
         {
-          "commentId": "o4lggou",
-          "text": "You should set Sharpness to 50% in Adrenalin",
-          "upvotes": 4,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "o4jmjv7",
-          "text": "Framegen \u201con\u201d set globally is wild.",
-          "upvotes": 27,
+          "commentId": "mlfb402",
+          "text": "I tried an AIO once and couldn't stand the pump noise and liquid gurgling. Now I'm all Noctua. I wish I had the Noctua edition GPU, but at least my GPU is silent when idle.",
+          "upvotes": 0,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -277,86 +58,105 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "o4jn1iy",
-              "text": "It's just the upgrade to the latest version when supported and turned on in game, so why is it wild?",
+              "commentId": "mlfk05o",
+              "text": "Gurgling? man, you musta mounted that way bad, or the unit had not been filled properly (or sat on a shelf for years).\n\nBut you should do like me, run a full custom loop and fill all the rada with NF-A12x25 - just costs a fortune, but i wont have to get new fans for like a decade xD",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mlflgan",
+          "text": "Air cooling ftw.",
+          "upvotes": 0,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "mle4m55",
+          "text": "I\u2019ll never go back to AIO. Air cooled or fully submerged for me.",
+          "upvotes": -1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "mlf0fp3",
+          "text": "AiOs suck.  If you're going for water, do a custom loop with hard tubing and dont skimp on the fittings.",
+          "upvotes": -6,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mlf1vla",
+              "text": "I feel like there is more room for leaking from a custom loop than an aio",
+              "upvotes": 7,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "mldesn8",
+          "text": "Can I get a air cooler variant of a AIO? There's a certain build i like the look of for \u00a31.8k and I'm thinking of building it but it has a AIO...",
+          "upvotes": -10,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mldh8d9",
+              "text": "wtf is \"air cooler variant of a AIO\"? an AIR cooler that works with WATER somehow?",
               "upvotes": 9,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
               "sentiment": null,
               "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "o4jo50v",
-                  "text": "You said the upscaler and framegen were set \u201con\u201d globally. Those are two different settings, with the FSR 4 upgrade being the upscaler. The framegen (AMD Fluid Motion Frames) being set to on globally is wild to me unless you\u2019re playing at 4K or something.",
-                  "upvotes": -5,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "o4jop6b",
-                      "text": "I meant FSR 4 frame gen upgrade, not Fluid Motion Frames. It's the setting below FSR 4 upscaler upgrade. I agree it would be wild otherwise, I haven't tried Fluid Motion Frames yet.",
-                      "upvotes": 8,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "o4jpnha",
-                          "text": "Oh ok. That must be a new setting that came with redstone that I don\u2019t have because Anti Lag is below FSR4 in my Adrenalin and I refuse to update because currently 25.11.1 has been an absolute dream for me.",
-                          "upvotes": -2,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "o4jqrim",
-                              "text": "Yep, they probably added it in december. It's this one:\n\n[https://imgur.com/a/igUeByO](https://imgur.com/a/igUeByO)",
-                              "upvotes": 2,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": [
-                                {
-                                  "commentId": "o4jr3fv",
-                                  "text": "Oh yeah, I definitely don\u2019t have that.",
-                                  "upvotes": 0,
-                                  "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
-                                  "replies": []
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "commentId": "o4kwxin",
-                  "text": "Setting it to \"on\" globally enables it in the driver level, in all games, including those that do not natively support it.\n\nUsually this is a horrible experience.",
-                  "upvotes": -3,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
+              "replies": []
+            },
+            {
+              "commentId": "mldha4a",
+              "text": "AIO means all in one liquid cooler.\n\nAn AIO and an air cooler are two different things. A good air cooler is typically quieter while just as effective (or better, check ltt vid!) as a liquid cooler, but a liquid cooler looks, pun intended, cooler.\n\nI just go air cooler cuz its so much cheaper, less hassle, and leaves me unworried about leaks.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "mldl742",
+              "text": "\u201cair cooler variant of an AIO\u201d \ud83d\ude02\ud83d\ude02\ud83d\ude02 sure you can, pairs especially good with the air powered variant of the 6090.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
             }
           ]
         }

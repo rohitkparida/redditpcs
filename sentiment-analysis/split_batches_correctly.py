@@ -117,7 +117,8 @@ def split_into_batches_correct(input_file, output_dir, max_chars=MAX_CHARS_PER_B
         data = json.load(f)
 
     product_name = data.get('productName', 'unknown')
-    product_slug = product_name.lower().replace(' ', '-')
+    # The output directory is already keyed by the registry slug and is safe for filenames.
+    product_slug = Path(output_dir).name
     trees = data.get('comments', [])
     
     if not trees:

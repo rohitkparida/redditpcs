@@ -1,12 +1,12 @@
 {
-  "productName": "amd-ryzen-7-7800x3d",
+  "productName": "AMD Ryzen 7 7800X3D",
   "batchIndex": 22,
-  "totalBatches": 58,
+  "totalBatches": 128,
   "comments": [
     {
-      "commentId": "12ck44o",
-      "text": "AMD Ryzen 7 7800X3D CPU Review & Benchmarks",
-      "upvotes": 419,
+      "commentId": "1gn7lmn",
+      "text": "AMD Ryzen 7 9800X3D vs. AMD Ryzen 7 7800X3D, 45 Game Benchmark",
+      "upvotes": 388,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,9 +14,9 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "jf1z56d",
-          "text": "For me the power charts were most interesting. The fact that this thing can beat or come close the 13900k and the 7950X3D while sipping on power is very impressive. It seems like for gaming only, this is a no brainer. For me, it is time to upgrade my i7 8700k to this, assuming I can actually find stock of this tomorrow.",
-          "upvotes": 179,
+          "commentId": "lw99q5j",
+          "text": "If only laptops had same X3d cpus that are impressively efficient and works extremely well at low power budgets which laptops needs.",
+          "upvotes": 44,
           "classifyThis": false,
           "relevance": null,
           "relevanceReasoning": null,
@@ -24,167 +24,210 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "jf3kmpg",
-              "text": "The funny thing is AMD's *load* power draw is fantastic but its idle power draw is miserable. My 7700k build would idle around 81-84w at the wall power draw. That's with XMP and a healthy all core overclock. Meanwhile my 7950x3D even with EXPO turned off and absolutely no PBO/CO settings, idles a solid 18-20w higher at around 99-102w. If I dare enable EXPO then idle power draw shoots up even further to around 116w at idle. That's a 40w delta from Intel to AMD.\n\nGranted that was me going from a 4 core processor to a 16 core one, and doubling RAM capacity, but considering how these Ryzen chips supposedly sleep cores in a C6 deep sleep state often, it seems ridiculous that it should draw this much power. The answer is it's the stupid SOC part of the chip, it draws considerably more power than the monolthic Intel die with integrated memory controller on the same piece of silicon as the cores. Sucks man. I leave my PC on 24/7 as a server and just for the sake of not thermal/power cycling the components so they live longer.",
-              "upvotes": 11,
+              "commentId": "lw9j33k",
+              "text": "I would love to see x3d consoles. That would fucking kick.",
+              "upvotes": 1,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user discusses the 7950x3D and general AMD vs Intel idle power draw, rather than providing specific insight into the 7800X3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The discussion is a technical critique of power draw without a clear positive or negative leaning towards the specific product.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "jf3nrwd",
-                  "text": "This is very interesting. At the wall power draw would be the whole system though right? Like a wall socket power meter that the PSU is plugged into? That is not exactly isolating the CPU itself, since things the the mobo, ram, video card, fans and all that are also drawing power.\n\nI am definitely interested in seeing what the idle power draw for this 7800X3D will be considering the load power is like 86 watts, at least as per the Blender run power consumption slide in this video. It has got to be way less than that right?\n\nAnd I am interested in say the 13700k's idle power draw as the most direct competitor to this chip, at least in price.",
-                  "upvotes": 2,
+                  "commentId": "lw9zye1",
+                  "text": "Steamdeck 2 with x3D would be honestly awesome.",
+                  "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user expresses direct interest in the 7800X3D's idle power draw and compares it to the 13700k.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is an inquiry about performance and power draw without a stated positive or negative opinion.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "jf3smbc",
-                      "text": "Yes it's the whole system but in this case I am comparing the same PSU, disk drives, graphics card, sound card, USB devices and monitor. The only change here is the motherboard, RAM and CPU. I know for a fact DDR5 consumes the same or less power as DDR4, and this particular motherboard isn't doing anything exceptionally draining on power vs the old one, same brand and class board even. The real difference is the way Ryzen SOC works vs Intel monolithic die and IMC. When people say \"the 7800x3D was measured at 86w in Blender\" what they really mean is just the CPU as reported from the software sensors. The total system power draw is going to be way above that at the wall. For instance when my 7700k build would pull around 81w at the wall, the CPU's software sensor was reading around 9-10w. Meanwhile my 7950x3D pulling around 116w at the wall shows 40w on the software sensor. 30 additional watts vs the 7700k's sensor, and it basically comes out to exactly that at the wall (with some leakage from PSU efficiency loss.)",
-                      "upvotes": 3,
+                      "commentId": "lwcy4yi",
+                      "text": "Man, imagine SteamDeck, OLED, x3D CPU, 4TB storage, with DLSS/PSSR-equivalent upscaling, would be a dream.",
+                      "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "This is a continuation of a technical debate regarding power measurement methods and the 7950x3D.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The comment focuses on the methodology of power measurement rather than product sentiment.",
-                      "replies": [
-                        {
-                          "commentId": "jf3z68p",
-                          "text": "That does seem like a very comparable system for this idle comparison. \n\nI have a wall power meter as well but it is the PC + monitors + soundbar. My i7 8700k + RTX 3090 + Odyssey G9 49 inch monitor + MSI 24 inch monitor pulls 305ish watts while idle and 516ish watts when in game.",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "The user shares their own system power draw with an 8700k, which is off-topic to the 7800X3D.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user is providing factual power draw numbers for an unrelated CPU.",
-                          "replies": [
-                            {
-                              "commentId": "jf40sw8",
-                              "text": "That sounds about right. I have my monitor and Logitech Z-5500 setup hooked into the power readout too but my idle measurements are with both devices completely disabled so the systems are in the most fair testing conditions possible. With the monitor and speakers powered on, previous build would idle around 175w, the new one idles around 207w. So the monitor and speakers are around 90w combined.",
-                              "upvotes": 2,
-                              "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "The user is continuing a conversation about general system power draw, not the 7800X3D.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The user is sharing measurements for their own unrelated system.",
-                              "replies": []
-                            }
-                          ]
-                        }
-                      ]
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "lwa6sij",
+                      "text": "It would kick ass! Amd is apparently doing apu's with x3d vcache so maybe a steam deck 2 with x3d and rdna 3. I would buy that.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
                     }
                   ]
                 },
                 {
-                  "commentId": "jf3ru5j",
-                  "text": "I somehow doubt a full system at the wall is particularly comparable, given these systems probably had a number of differences, at a minimum GPU and the ram, possibly including GPU and PSU.",
-                  "upvotes": 2,
+                  "commentId": "lw9nhf3",
+                  "text": "Most consoles player don\u2019t have high refresh rate. And the additional cost doesn\u2019t make sense.",
+                  "upvotes": 0,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is debating the comparability of power measurements, not the 7800X3D product.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is part of a meta-discussion about testing methodology.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "jf3u206",
-                      "text": "Exact same GPU and PSU, as well as sound card, fan setup, all LEDs disabled, same USB devices, same monitor. The only change here is motherboard (from an Intel to AMD platform with a similar class board from the same manufacturer), RAM (from 4 sticks of DDR4 1.35v down to 2 sticks of DDR5 at 1.1v) and the CPU.\n\nThe only fair thing to say here is the core count did a 4x increase and that's worth something at the wall, it can't come free. The problem is even if you take a 8 core Intel chip and compare it to an 8 core Ryzen chip, the Intel will give the AMD one an absolute thrashing in idle power consumption. All else being equal.\n\nI'm more curious to see how bad the performance gap at load compares when you normalize the test around a fixed CPU power budget. If the 13900k is constrained to say, 85w like a typical 7950x3D will run many cores at, how badly does the Intel chip suffer.",
-                      "upvotes": 6,
+                      "commentId": "lw9ovg3",
+                      "text": "I don't have high refresh rate as a PS5 player not because I don't want it, but because my PS5 doesn't want it lmao. \n\nConsoles struggle with 60@1080 while not on Performance graphics, high refresh rate is unrealistically with this hardware.",
+                      "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user discusses the 7950x3D and general AMD vs Intel power budget, not the 7800X3D specifically.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The comment focuses on a technical comparison between AMD and Intel platforms.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "lwa67ft",
+                      "text": "A lot of tvs now support high refresh rate. There's no reason not to try and support it as an option. It isn't like it costs anything to allow it compared to not and the cost of x3d isn't drastically different on its own either because it'd still have huge improvements over traditional cpu design. Plus it'd make stuff like the ps5p price easier to swallow.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "jf5k2dr",
-                          "text": "I don't know why people are so shocked when infinity fabric imposes a *constant* power overhead anytime the CPU is running, 10w there doesn't surprise me at all.  And AMD's chipsets/etc have always been a little less efficient than Intel's (which is why they're not used on laptops in most situations, and why X300 motherboards exist).\n\nlike yeah probably 10-20w is pretty much within expected reason and that could be measured as 20-30w at the wall",
-                          "upvotes": 2,
+                          "commentId": "lwaag4n",
+                          "text": "You can\u2019t push 4k 120+ without gpu like 4090. \n\nIf you think ps5p is expensive hard too swallow, adding x3d will increase the price.",
+                          "upvotes": 0,
                           "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "The user discusses the Infinity Fabric and general AMD efficiency, which is general meta-talk.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user is explaining technical reasons for power overhead.",
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
                           "replies": []
                         }
                       ]
-                    }
-                  ]
-                },
-                {
-                  "commentId": "jf71xnm",
-                  "text": "13700k, 2 x 32GiB @6000, 2 x pcie3 NVMe, 6800xt on a 1440p@240Hz monitor\n\nAnd I got the tower to run on 40 Watt on the plug when idle... well the monitor probably also eats a lot, but I did not measure it so far.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user shares specs and idle power for a 13700k system, which is off-topic.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is providing factual data for a competitor's product.",
-                  "replies": [
+                    },
                     {
-                      "commentId": "jf77eir",
-                      "text": "Jesus Christ 40w at the wall for the whole tower? Really? That's so insanely good for that spec machine to the point I question the authenticity of it. Crazy low power draw. My CPU alone pulls as much power by itself nevermind the rest of the system.",
-                      "upvotes": 1,
+                      "commentId": "lw9nvwc",
+                      "text": "Some people don't use anything better than 1080p 60hz. \n\nBut some people play in 4k or 120hz. \n\nPlus the frame increase will help in more taxing games, that would typically be locked at 30.",
+                      "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user responds to the 13700k power draw, not the 7800X3D.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is expressing surprise at another user's system results.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "jf7nn61",
-                          "text": "I specifically selected this components for low idle and low load.\n\nZ690 and not a Z7xx, PCIE3 NVMe (also because they are cheap and fast enough for all my needs), ddr5 running at 1.2v, \"QPI\" link speed set to 8 x pcie3 (saves like 1watt vs pcie4 :P)\n\nAlso the 13700k is heavily undervolted/underclocked/and power limited. The power limit is only set to prevent AVX load from making the system unstable. Other load stays under the limit all by itself. But \nI get over 24000 points in CB R23 with the tower using ~145 watt on the plug. (Default power wasting mode gives ~30000 points on this CPU, using something like 300(?) watt on the plug)\nThis settings have no influence on the idle power usage.\n\nSo far I'm only unhappy that the linux drivers for the 6800xt can't manage to keep the memory clock low on the high refresh monitor. It uses over 20 watt more on idle. :'(",
-                          "upvotes": 2,
+                          "commentId": "lw9opxp",
+                          "text": "It\u2019s not gonna help because consoles have weak gpu.",
+                          "upvotes": -3,
                           "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "The user provides detailed technical info on their 13700k undervolting, not the 7800X3D.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user is explaining their specific system configuration.",
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
                           "replies": [
                             {
-                              "commentId": "jf7sdy2",
-                              "text": "Crazy results man, very solid home PC setup for just general use like browsing/streaming/gaming. I don't know about PCIE 3.0 x8 for the GPU though, surely that would have a noticeable impact on performance with a 6800 XT?",
-                              "upvotes": 1,
+                              "commentId": "lw9pfqz",
+                              "text": "Ah yes, that's why the ps5 has 4k capabilities. Weak gpu. \n\nIt means a weaker 6 core cpu with x3d architecture, delivering the same game performe at a reduced tdp.  Meaning stronger gpu at the same power envelope. \n\nOr the ps5 Pro that has stronger hardware will have a better gpu with higher fps potential. X3d helps there.",
+                              "upvotes": 0,
                               "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "The user asks about PCIE 3.0 performance for a 6800 XT, which is off-topic.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The user is asking a technical question about GPU bandwidth.",
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
                               "replies": [
                                 {
-                                  "commentId": "jf7sqc3",
-                                  "text": "I did not limit the interface of the GPU, I limited the interface to the chipset on the board.\n\nThe only high bandwidth device connected to that chipset is the second NVMe with 4 pcie3 lanes, and the chipset itself is connected with 8 lanes to the CPU.",
-                                  "upvotes": 2,
+                                  "commentId": "lw9vdmz",
+                                  "text": "> Ah yes, that's why the ps5 has 4k capabilities. Weak gpu.\n\nLol you think it's anywhere near 4k native ultra on PC? It's like 720p upscaled medium",
+                                  "upvotes": 4,
                                   "classifyThis": true,
-                                  "relevance": "exclude",
-                                  "relevanceReasoning": "The user explains their chipset interface settings, which is off-topic.",
-                                  "sentiment": "neutral",
-                                  "sentimentReasoning": "The user is providing a technical explanation for their hardware setup.",
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
                                   "replies": [
                                     {
-                                      "commentId": "jf7wucs",
-                                      "text": "Interesting, so the GPU is still PCIE 4.0 x16? And there's no loss to performance on the chipset driven SSD? That's pretty neat didn't know you could do that. I would have expected it not to draw more power if it's not actively using the extra bandwidth mode.",
-                                      "upvotes": 1,
+                                      "commentId": "lw9vyjz",
+                                      "text": "Well then maybe we will see actual 4k with amd x3d and RDNA 4.",
+                                      "upvotes": 0,
                                       "classifyThis": true,
-                                      "relevance": "exclude",
-                                      "relevanceReasoning": "The user asks about the SSD performance on the chipset, which is off-topic.",
-                                      "sentiment": "neutral",
-                                      "sentimentReasoning": "The user is expressing curiosity about hardware behavior.",
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    },
+                                    {
+                                      "commentId": "lw9vzjj",
+                                      "text": "Well then maybe we will see actual 4k with amd x3d and RDNA 4.",
+                                      "upvotes": 0,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                },
+                                {
+                                  "commentId": "lw9q5pg",
+                                  "text": "Bro consoles don't even run most games at a native 4K 60fps, they barely have 4k \"capabilities\" lol",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                },
+                                {
+                                  "commentId": "lw9u8b1",
+                                  "text": "My Apple TV can do 4k.",
+                                  "upvotes": 0,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "lw9uinn",
+                                      "text": "It can stream 4k. So can my TV. And phone. And laptop. I'm willing to bet it can't play games at 4k though. \n\nWhat was the selling point of the ps5 again?",
+                                      "upvotes": 0,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
                                       "replies": [
                                         {
-                                          "commentId": "jf8530n",
-                                          "text": "There is double the pcie lanes from the chipset to the CPU then the SSD could use. And anything else like usb mouse/keyboard/sound + network uses an insignificant amount of bandwidth.\n\nOf course if I would connect as many devices as possible to the board I could saturate the 8 lanes.\n\nAnd yes, the card is still using the maximum pcie speed.",
-                                          "upvotes": 1,
+                                          "commentId": "lw9yfz6",
+                                          "text": "There are games that run in 4K on Apple TV, like Dungeon Hunters, Alto\u2019s Adventure, and Rayman Mini. So where\u2019s my money?\n\nThe PS5\u2019s selling point is similar to any other console. it\u2019s about value gaming.\n\nPlus, the PS5 has been out for four years now, making its GPU a few generations old.\n\nThere\u2019s nothing wrong with gaming on the PS5. It\u2019s perfectly usable. But saying it has a strong GPU and asking for an X3D CPU doesn\u2019t make sense.",
+                                          "upvotes": -2,
                                           "classifyThis": true,
-                                          "relevance": "exclude",
-                                          "relevanceReasoning": "The user explains pcie lanes on their specific motherboard, which is off-topic.",
-                                          "sentiment": "neutral",
-                                          "sentimentReasoning": "The user is providing factual technical information about their setup.",
-                                          "replies": []
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "lw9yx12",
+                                              "text": "Holy shit, a smart TV can play the most basic, simple, easy to run games in high resolution!!!!!! \n\nSo can my 10 year old laptop. That's hardly a brag.",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
                                         }
                                       ]
                                     }
@@ -197,400 +240,55 @@
                       ]
                     }
                   ]
-                },
-                {
-                  "commentId": "jfsunxy",
-                  "text": "Guru3D shows idle power is all pretty comparable. \n\n[https://www.guru3d.com/articles\\_pages/ryzen\\_7\\_7800x3d\\_processor\\_review,5.html](https://www.guru3d.com/articles_pages/ryzen_7_7800x3d_processor_review,5.html)",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user references a review showing that the 7800X3D idle power is comparable to others.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is presenting a factual reference to a review.",
-                  "replies": [
-                    {
-                      "commentId": "jfsvgj5",
-                      "text": "I don't know how they're getting those numbers but I don't believe it. My system pull can't go below 99w. My 7700k was sitting at 81w in the same conditions.",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": "include",
-                      "relevanceReasoning": "The user disputes the review's idle power numbers for their system, which includes a 7800X3D (implied by context of thread).",
-                      "sentiment": "negative",
-                      "sentimentReasoning": "The user is disappointed that their system power draw is higher than reported in reviews.",
-                      "replies": [
-                        {
-                          "commentId": "jfsvxo4",
-                          "text": "Maybe you need to subtract out your monitor or any external HDD running?",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "The user is asking a clarifying question about power measurement, which is factual/Q&A.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user is asking for clarification on measurement.",
-                          "replies": [
-                            {
-                              "commentId": "jfsxedw",
-                              "text": "I always turn off my monitor when measuring tower draw and both systems have the same drive setup.",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "The user describes their testing conditions, which is meta-talk about measurements.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The user is describing their methodology.",
-                              "replies": [
-                                {
-                                  "commentId": "jh3z1nm",
-                                  "text": "I just did a 7800x3d build. After Win10 clean install, my UPS showed 78-80w idle (stock CPU, 6000mhz EXPO on) with no monitor. CPU itself was using 18-20w.",
-                                  "upvotes": 1,
-                                  "classifyThis": true,
-                                  "relevance": "include",
-                                  "relevanceReasoning": "The user shares their personal experience with a new 7800x3d build and its idle power.",
-                                  "sentiment": "positive",
-                                  "sentimentReasoning": "The user is reporting satisfactory power consumption numbers (18-20w for CPU).",
-                                  "replies": [
-                                    {
-                                      "commentId": "jh462ss",
-                                      "text": "Wow I wonder how that is. Maybe the extra CCD does it?",
-                                      "upvotes": 1,
-                                      "classifyThis": true,
-                                      "relevance": "exclude",
-                                      "relevanceReasoning": "The user asks a question about CCDs, which is a factual/technical question.",
-                                      "sentiment": "neutral",
-                                      "sentimentReasoning": "The user is speculating on the cause of the power draw.",
-                                      "replies": []
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "commentId": "jgjd3zl",
-                  "text": "That's because the 7950 shuts down more than half of its cores",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user provides a factual explanation about the 7950, not the 7800X3D.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is stating a factual point about CPU core sleep states.",
-                  "replies": []
                 }
               ]
-            },
-            {
-              "commentId": "jf4url3",
-              "text": "I\u2019ve been thinking about upgrading my 8700k@5ghz for a bit now.  This might make me do it.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user expresses intent to upgrade to the 7800X3D based on its performance.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user is positively inclined toward purchasing the product.",
-              "replies": [
-                {
-                  "commentId": "jf5tl0d",
-                  "text": "Same here, I have been casually keeping an eye on CPUs since Intel 13th gen came out. Now seems like a good time to upgrade!",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user expresses a positive desire to upgrade to a new CPU, implying the 7800X3D based on the context of the thread.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user thinks it is a good time to upgrade.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "jf5oad9",
-              "text": " doing the same with gpus, i compared my old 1080ti vs new 6900xt at power efficiency, they both great for game i play but 1080ti draw 150w+ on same settings, and getting ~x2 fps (both undervolted)",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user discusses GPU efficiency (1080ti vs 6900xt), which is off-topic.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is comparing GPU power efficiency.",
-              "replies": [
-                {
-                  "commentId": "jf5thbq",
-                  "text": "I used to just look at raw performance, but with energy prices how they are, power usage and efficiency seems like something to keep an eye one, right?",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user discusses general energy prices and efficiency, which is meta-talk.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is sharing a general opinion on energy costs.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "jf6ti6i",
-              "text": "Same here, time for my 8700k to rest. Are you gonna sell yours?",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user expresses intent to upgrade their 8700k, implying the 7800X3D given the context.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user is positively inclined toward purchasing the product.",
-              "replies": [
-                {
-                  "commentId": "jf6wn3e",
-                  "text": "My 8700k will not be resting. If my preorder of the 7800X3D works, I will be moving over my CPU + mobo + RAM over to my wife's computer which has an i7 2600 in it right now.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user mentions preordering the 7800X3D.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user has committed to purchasing the product.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "jfj91af",
-              "text": "I also have 8700k. I'm doing same think. 7800x3d and my new 7900xtx.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user states they are upgrading to a 7800x3d.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user is positively inclined toward purchasing the product.",
-              "replies": [
-                {
-                  "commentId": "jfjor6b",
-                  "text": "That is going to be a cool combo! I look forward to seeing it on r/battlestations",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is commenting on another user's build, which is low-effort banter.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is being friendly.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "jfuwek6",
-              "text": "Moving from my 8086k this month, but the gamer gremlins gobbled up all the odds and ends I need.\n\nI'm building for a potential 7950X3D/8950XT3D++ setup down the road, but for now I want single CCD on Win10 with no game bar bullshit, etc.\n\nI'll be using this for productivity a minority of the time, so I couldn't justify a 16 core yet.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user explains why they are choosing a single CCD chip (the 7800X3D) over a 16 core chip for their needs.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user is choosing the product because it fits their specific needs.",
-              "replies": []
-            },
-            {
-              "commentId": "jf47srn",
-              "text": "If Ur selling I'll give you $250 for the CPU and mobo",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is making a purchase offer for an old CPU, which is off-topic.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is attempting to buy used hardware.",
-              "replies": []
-            },
-            {
-              "commentId": "jf65kax",
-              "text": "From what I\u2019ve seen with my 7950x3D, it must be optimized differently in different games to perform best.\n\nI don\u2019t think reviewers have time for that. So the 7950x3D results don\u2019t reflect what you can actually get with it.\n\nFor exemple, in total war you can get 7800x3D performance without the atrocious low 1% fps.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user discusses the 7950x3D and how it compares to 7800x3D performance in specific games, but it's primarily about the 7950x3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing a technical critique of the 7950x3D.",
-              "replies": []
             }
           ]
         },
         {
-          "commentId": "jf20ggv",
-          "text": "Definitely upgrading my 6700k for this one.\nTop-notch gaming perf + good power efficiency and low thermals on load, basically a no brainer",
-          "upvotes": 85,
+          "commentId": "lwb7p2w",
+          "text": "Wish they would've tested Silent Hill 2 Remake and Dragon's Dogma 2. They are the most CPU limited games I played this year. SH2 Remake drops into the lower 50's upper 40's in the prison area on my 5800x3D with 3600MTs CL16 RAM, depending on which direction you're looking. \n\nI found some SH2 9800x3D videos on YT, but it was all just the beginning of the game. The harder to run areas are actually the big \"dungeon\" like areas. \n\nDD2 got a lot of updates and runs a lot better than it did at launch, but still very heavy on the CPU.",
+          "upvotes": 9,
           "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user calls the 7800X3D a 'no brainer' due to gaming performance, efficiency, and thermals.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user is highly satisfied with the product's value proposition.",
-          "replies": [
-            {
-              "commentId": "jf4nl15",
-              "text": "6600k to 7800x3d here \ud83d\ude06 hopefully if we can get our hands on em \ud83e\udd1e",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user expresses intent to upgrade to the 7800x3d.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user is positively inclined toward purchasing the product.",
-              "replies": []
-            },
-            {
-              "commentId": "jf76gqp",
-              "text": "I'm going to wait for the 7800X3D to go on sale and then might do the same thing. My target price is probably around $300-350 for the CPU, $120-160 for a quality motherboard, $70-100 for CL30 6000 DDR5. Basically around $600-650ish with tax. \n\nI don't need a new CPU right away because honestly I'm still satisfied with the 6700k, I guess I could try to sell it after but I've never thought that is worth the hassle and I don't know anyone would want it. Probably would replace a 2500k backup build, but then that would go into my closet probably. I guess that's fine but would continue to not be used. \n\nI don't really play new games, it would mostly be for older games and indies. Starfield and ES6 if they are good I'll get eventually. Mostly I replay FO3, FNV, Skyrim, Amalur, which honestly they all will obviously run fine, not sure if there is even a real improvement for any of those, any issues are probably engine related.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user discusses their target price for the 7800X3D and potential upgrade path.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is considering the product but is not yet convinced of the necessity.",
-              "replies": []
-            }
-          ]
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         },
         {
-          "commentId": "jf20pr9",
-          "text": "The question is how to find one in stock tomorrow?",
-          "upvotes": 28,
+          "commentId": "lw9jfdv",
+          "text": "Yup finally time for me to make the upgrade. Gonna be a sick jump from a 5600x lol. Super excited for this!",
+          "upvotes": 16,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is asking about stock availability, which is purely factual/logistical.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is asking about where to find the product.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "jf21ofa",
-              "text": "Camping out stock alerts tomorrow morning. If you aren't on it within the first few minutes you aren't getting one.",
-              "upvotes": 20,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing stock alerts and logistics, which is off-topic.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing advice on how to get the product.",
-              "replies": [
-                {
-                  "commentId": "jf2aa86",
-                  "text": "What Time\nThey go live at microcenter?",
-                  "upvotes": 5,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is asking about store hours, which is a factual/logistical question.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is asking for information.",
-                  "replies": [
-                    {
-                      "commentId": "jf2b890",
-                      "text": "I don't even know if they will list them online, they didn't for the 4090s for a long time (I didn't pay attention to the 7950x3d launch). If they get them in stock best bet is to be at a store when they open, or actually before they open.\n\nAMD's direct site so far rumors point to 9am Eastern based on what I could find of the 7950x3d launch.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user is discussing store listing and launch times, which is logistical.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is sharing rumors about launch times.",
-                      "replies": []
-                    },
-                    {
-                      "commentId": "jf2uuwf",
-                      "text": "Should be 9am, that's when my microcenter opens",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user is confirming store hours, which is logistical.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is confirming information.",
-                      "replies": []
-                    }
-                  ]
-                },
-                {
-                  "commentId": "jf2q6ty",
-                  "text": "Yeah, the reviews are way too strong on this one.  It will be 110% sold out for months.  \n\nGood luck to every bird that tries to get the worm early!  \n\nMay the one with the most bots win!",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user notes that reviews are 'way too strong' for the product, implying high demand.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user is acknowledging the high quality based on reviews.",
-                  "replies": []
-                },
-                {
-                  "commentId": "jf3cowj",
-                  "text": "Where/How are you getting stock alerts?",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is asking about stock alerts, which is logistical.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is seeking information on stock.",
-                  "replies": [
-                    {
-                      "commentId": "jf3lree",
-                      "text": "Falcodrin Discord Server. AMD processors are US only on there though. I don't know if linking discord servers is allowed on here but you can find them through their Twitch channel. Should show up if you google that too.",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user is providing information on where to get stock alerts, which is logistical.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is helping other users find the product.",
-                      "replies": [
-                        {
-                          "commentId": "jfcsbks",
-                          "text": "You rock, I was totally able t get one due to this!",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "The user is thanking another user for a stock alert, which is low-effort banter.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user is expressing gratitude.",
-                          "replies": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "jf2ipm3",
-              "text": "Don't fret over it. There might be an initial flock to them, but obsessing to get it at release just supports the overall crappy market we've had lately. I don't think they'd sell out instantly and have no additional stock on the way. If you can get it easily tomorrow, go for it, but don't be too worried.",
+              "commentId": "lwbl18s",
+              "text": "Godspeed \ud83e\udee1",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing the general market for tech and stock issues, which is meta-talk.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing general market advice.",
-              "replies": []
-            },
-            {
-              "commentId": "jf34r1n",
-              "text": "It might be a little struggle to buy at launch, give it a week stocks will be much better. Not to mention amount of people already on AM5 or building new rig is much less, so the competition is not as intense as it was when 5800X3D was released on a several year old AM4.\n\nLast year I was able to buy 5800X3D only a week post launch by setting Newegg email alert, and I was even 15-20 minutes late.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing stock trends and historical comparisons to the 5800X3D, which is logistical.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is predicting stock availability.",
-              "replies": [
-                {
-                  "commentId": "jf35wht",
-                  "text": "I set a 7950x3d Newegg email a month ago, and it just finally came in yesterday.\n\nI would not be optimistic on getting a 7800 for quite a while unless you snag it tomorrow right away.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is discussing stock for the 7950x3d and general availability for the 7800, which is logistical.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is sharing their experience with stock.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "jf76pbg",
-              "text": "Just walk in and buy, CPUs really aren't that tough to get. There's not as much demand on tech right now in general, costs are high and inflation has lowered consumer spending. Crypto bubble is dead and everyone has their WFH setups already with remote being phased out anyway.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing general consumer spending and tech demand, which is meta-talk.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing an analysis of the tech market.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             }
           ]
+        },
+        {
+          "commentId": "lwcvl9a",
+          "text": "I will upgrade in 3-4 years.",
+          "upvotes": 7,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         }
       ]
     }

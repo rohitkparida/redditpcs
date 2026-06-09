@@ -1,0 +1,292 @@
+{
+  "productName": "AMD Ryzen 5 5500X3D",
+  "batchIndex": 9,
+  "totalBatches": 12,
+  "comments": [
+    {
+      "commentId": "18lx32a",
+      "text": "Upgrading Ryzen 5 3600 to 5600X3D/5800X3D: Benchmarks, Memory Scaling in Old and New Games\n\nHey all,\n\nBack again with another random benchmark post. I managed to nab a 5600X3D from Microcenter a couple months ago as a drop-in upgrade for a buddy's old PC (R5 3600). While I had the CPU for less than a week, I was able to put together some quick benchmarks results to see how my 5800X3D compares with the 5600X3D and the venerable 3600.\n\nOne thing led to another however and I found myself conducting a much larger test. So instead of releasing the original post of the 5600X3D vs 5800X3D/3600 comparison, I ended up going down another rabbit hole, adding more games to the suite as well as conducting some memory scaling tests. So yeah, this ultimately became less of the 3600 vs 5600X3D I was intending to do lol\n\n# Testbed\n\nMy system has changed a bit since [I last reviewed the 6700 non-XT](https://www.reddit.com/r/Amd/comments/10v1yov/my_xfx_rx_6700_nonxt_benchmark_review_20_games/) a about year ago.\n\n* X570 Aorus Master (F37c)\n* 2x16GB GSkill TridentZ Neo DDR4 3600 (Timings modified, see below)\n* Lian Li Galahad SL 360 AIO\n* Samsung 980 Pro 2TB, Kingston NV2 2TB, Crucial 750GB game drives\n* Corsair RM850x PSU\n* Win 10 Pro (19045)\n* Dell Alienware AW34323DWF\n* GeForce RTX 4090 FE (Driver 537.58)\n\n# The Contenders\n\n* **Ryzen 5 3600 -** tested in its stock configuration\n* **Ryzen 5 5600X3D** (Curve Optimized to -30 all cores)\n* **Ryzen 5 5800X3D** (Curve Optimized to -30 all cores)\n\nYeah, I made the mistake of not testing stock performance :/. Probably a miniscule difference overall that skews the numbers towards X3D but I thought I'd point it out.\n\nFor RAM I tested two configurations:\n\n**Loose Timings and Speed** **(DDR4-3200 CL16-18-18-38) -** I downclocked my 3600 kit to 3200 and loosened the timings to simulate what \"budget\" DDR4 would perform like. This is probably more representative of what a drop-in upgrade would look like for most users.\n\n**Tight Timings (DDR4-3600 CL14-14-14-32, 170ns tRFC) -** Not ridiculous timings for B-die but it does give a noticeable uplift over stock XMP and should show the R5 3600 in its best light relative to the X3D parts.\n\nRAM tests were only conducted on the 5800X3D and 3600 as I no longer had access to the 5600X3D when I started these tests.\n\n# The Test\n\nIn the spirit of my original 5800X vs X3D comparison, I try to continue pushing the use of older games into my testing suites. With the RTX 4090, I'm also able to test CPU bottlenecks for RT as well so there's a few of those titles thrown in here as well.\n\nRemember that this is a CPU-FOCUSED test, so some of the settings will not make sense for the hardware in actual use cases (stuff like 1080p DLSS, etc.).\n\nAll games with manual runs are captured using the latest version of NVIDIA FrameView.SimCity 4 is the only game that uses a different metric. Instead of AVG FPS/1%/0.1%, SimCity 4 performance is based on the number of simulated days elapsed.\n\n\\*indicates game that was tested without the 5600X3D.\n\n|App|Settings|Test|\n|:-|:-|:-|\n|**DX7 - SimCity 4 (2003)**|1920x1080 - High, Shadows High|Custom large city with 7GB of mods, 3 minute fixed camera simulation with max (cheetah) speed, result is days elapsed (higher is better)|\n|**DX10 - Crysis Warhead (2008)**|2560x1440 - Enthusiast 0xMSAA|Manual run - Call Me Ishmael mission start|\n|\\***DX11 - Company of Heroes 2 (2013)**|2560x1440 - Max AA High|5 minutes of playback at 2x speed of a custom 4v4 AI match on a large map|\n|**DX11 - Deus Ex: Mankind Divided (2016)**|2560x1440 - Ultra No MSAA|Manual run of Prague - \u010cist\u00e1 \u010ctvr\u0165 area|\n|**DX11 - Dishonored 2 (2016)**|2560x1440 - Ultra TXAA Forced VSync off (unlimited FPS)|Manual run of Karnaca mission start|\n|\\***DX11 - Battlefield 1 (2016)**|2560x1440 - Ultra TAA|Manual run of Mud and Blood starting at first checkpoint|\n|**DX9 - A Hat in Time (2017)**|2560x1440 - Very High SMAA|Custom Map: New Hat City, Manual loop run around the center|\n|**DX11 - Kingdom Come: Deliverance (2018)**|1920x1080 - Ultra High, HD Textures On|Manual run through center of starting town Skalitz|\n|**DX11 - Borderlands 3 (2019)**|1920x1080 - Ultra|Manual run through the town of Vestige in the Bounty of Blood DLC|\n|**DX11 - Halo MCC: Halo CE Anniversary (2020)**|3440x1440 - Enhanced|Manual run of the Silent Cartographer mission|\n|**DX12 \\[RT\\] - Metro Exodus: Enhanced Edition (2021)**|1920x1080 - Ultra, RT Ultra, DLSS Quality|Manual run of The Volga mission start|\n|**DX12 - Halo Infinite S4 (2021)**|1920x1080 - Ultra|Manual run of Pelican Down mission|\n|**DX12 - Far Cry 6 (2021)**|1920x1080 - Ultra, TAA|Manual run around Clara's Camp|\n|**DX12 \\[RT\\] - The Witcher 3: Next Gen Patch 4.04 (2023)**|1920x1080 - Ultra+, RT Ultra, DLSS Quality|Manual run of Beauclair port area|\n|**DX12 - The Last of Us: Part 1 Patch 1.1.2 (2023)**|1920x1080 - Ultra|Manual run of a section Prologue mission|\n|**DX12 - Starfield Pre-DLSS Patch 1.7.36 (2023)**|1920x1080 - High (62% FSR2 Scaling), No VRS|Manual run around MAST district of New Atlantis|\n|**DX12 \\[RT\\] - Cyberpunk 2077: Phantom Liberty Patch 2.02 (2023)**|1920x1080 - High, High Crowd Density, RT Ultra, DLSS Quality, Ryzen SMT ON|Manual run of Little China night market area|\n|**DX12 - 3DMark**|Time Spy|Time Spy|\n|**OGL - GZDoom 4.3.1**|3440x1440, Hardware Rendering 16xAF|FrameView capture of demo recording for MAP01 of COMATOSE.WAD + Russian Overkill 3.0|\n\nAll of the accompanying charts are linked below ~~should be attached to this post~~, in-order (except 3DMark).\n\n**Go here for charts:** [**Imgur mirror**](https://imgur.com/a/q4iXa9E)\n\nEDIT: I am dumb and didn't realize text posts and image post are different things. Please use the Imgur link above for the charts. Sorry about that!\n\n# The Result Summary\n\nUsing the Ryzen 5 3600 with DDR4 3200 as a Baseline (Excludes 3DMark):\n\n* **R5 3600 with Tuned D4 3600** is **11.5%** faster\n* **R5 5600X3D with Tuned D4 3600** is **66.5%** faster (worst SimCity 12.4%, best Halo CE:A 99.3%)\n* **R7 5800X3D with D4 3200** is **76.7%** faster (worst Starfield (old patch) 46.8%, best Dishonored 2 117.7%)\n* **R7 5800X3D with Tuned D4 3600** is **85.8%** faster (worst Far Cry 6 57.4%, best Halo CE:A 125.1%)\n\nAs for the 5600X3D vs 5800X3D:\n\n* **R7 5800X3D with D4 3200** is **3.4%** faster (worst KC: Deliverance -8%, best TLoU 13.2%)\n* **R7 5800X3D with Tuned D4 3600** is **8.8%** faster (worst GZDoom -2.1%, best TLoU 19.5%)\n\nEveryone know it at this point: these X3D chip are *fast* and offer a massive boost over the Zen 2 parts, even when they're equipped with low latency DDR4 3600.\n\nSurprisingly, I found the 5800X3D to still scale decently well with RAM. Not as much as the 20%+ the 3600 gains in heavy RT-centric titles but still more than I was expecting.\n\nThe 5600X3D is impressive; it offers over 90% of the 5800X3D in most situations so anyone that got in on that $150 price at Microcenter last month got a killer deal on a drop-in AM4 upgrade. It's a little iffy at $230 though and being exclusive doesn't help either. Hopefully the rumored 5500X3D and 5700X3D are widely available.\n\nHope you enjoyed this little writeup and found this post informative! Next time, I'll be ~~torturing~~ benchmarking the RX 7600 at 3440x1440 Ultrawide and seeing how it fares. Should be fun.\n\nCheers!",
+      "upvotes": 410,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ke1xlf9",
+          "text": "great you shared those numbers",
+          "upvotes": 44,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ke213qy",
+          "text": "Nobody beleives me when I say going from a 3600 to a 5600 can double fps, and yet... (most of the titles tested here would perform the same on 5600X3D vs 5600 non-x. I'd love it if you tested DCS, MSFS2020, tarkov, and other stuff that actually uses vcache)",
+          "upvotes": 17,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke2tbxh",
+              "text": "\n\nI got 5600 coming from a 2600, I am pleased with the results, not sure whether I have a motherboard good enough to handle 5800x3d (Asus TUF B450M-PLUS GAMING)",
+              "upvotes": 7,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ke3kg0m",
+                  "text": "That mobo can 100% handle a 5800X3D. Just make sure the VRM temps are sane (under 100C) and it's good to go.",
+                  "upvotes": 9,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "ke2waex",
+                  "text": "Your motherboard will be very, very fine to drop a 5800X3D on it. You'll probably looking at a maximal of 4-8% performance lose vs B550. But don't forget to update your MoBo if you do so!",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "ke5380f",
+                  "text": "It'll have no problems in games.\nUse curve optimizer, just not -30 if you don't want to go back and fix anything later.\n\n Lower PPT, TDC and EDC some too, this would help if your VRMs are badly cooled. Shader compilation and high load productivity hammering all cores can send a lot of amperage through this CPU.\n\n5600x3d would definitely only 'need' some curve optimizer but it'll also be that much slower where two more cores matters.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ke7okx0",
+              "text": "I believe you brother. At 1440p with a 7900XT my FPS straight up doubled in a lot of my games going from a 5950X to a 7800X3D.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "kebmjur",
+              "text": "My fps was doubled when I went to 5800x from 1800x with my 1080ti.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "kivowj1",
+              "text": "ive been sitting here contemplating if i should get one cause ive had my Ryzen 5 3600 since 2019 lmao. I might just cop the 5600 today",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ke1qqoq",
+          "text": "I'm using some 3200mhz b-die, but I've never tried to OC it or massage the timings (with my 5800x3d) does anyone have a recommended guide for that?",
+          "upvotes": 18,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke1ubax",
+              "text": "https://github.com/integralfx/MemTestHelper/blob/oc-guide/DDR4%20OC%20Guide.md",
+              "upvotes": 16,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ke2dsyt",
+                  "text": "This is the one, was super helpful for my mem tuning",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ke2ntjk",
+              "text": "For a 5800X3D, the goal is DDR4 3800 / FCLK 1900. Most Zen 3 chips do 1900 FCLK, but there are exceptions. If that happens, use DDR4 3733 / FCLK 1866 instead. These are the timings I used in my previous daily PC:\n\nhttp://jedi95.com/ss/52695bfd33afd879.png\n\nDepending on the silicon lottery and your cooling situation, you probably won't be able to run these exactly. Listed below are the changes you will probably need to make from that template.\n\n\n\nCPU Voltage settings:\n\nSOC voltage: 1.150v\n\nVDDG CCD: 1.000v\n\nVDDG IOD: 1.100v\n\nCLDO VDDP: 1.000v\n\n\n\nOption 1 (If you can keep the RAM below ~50C):\n\nVDIMM 1.460v - 1.500v\n\ntCL 14\n\ntRCDRD 14-15 (Depends on silicon lottery)\n\ntRP 14-15 (Depends on silicon lottery)\n\ntRC 38\n\ntWTRL 8\n\ntWR 10\n\ntRFC 250-280 (Depends on silicon lottery)\n\ntCWL 14\n\ntRTP 6\n\n\nOption 2 (If the RAM is going to run &gt;50C):\n\nVDIMM 1.400v - 1.440v\n\ntCL 16\n\ntRCDRD 16\n\ntRP 16\n\ntRC 44\n\ntWTRL 10\n\ntWR 12\n\ntRFC 280-300 (Depends on silicon lottery)\n\ntCWL 16\n\ntRTP 8",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ke32tsp",
+                  "text": "is that with 4 DIMMs too? jeez, my bin definitely was not great and I couldn't get my system to post at all at FCLK 1900.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ke3fc22",
+                      "text": "Might be an FCLK hole. Between two motherboards &amp; RAM kits my 5800X3D does NOT like 1900MHz. Can go higher and lower but for 1933Mhz+ encountered WHEA errors.",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "ke50b1k",
+                  "text": "I couldn't get my 5800x3d to run 1900fclk. But I didn't take my soc past 1.1v or my ram past 1.4v. I'm running 4 16gb dimms of hynix Trident. I've only worked with b die so I don't know the voltage limits or temp limits of hynix. Mine don't pass 45c while gaming though. Wonder if I can throw more voltage at it to try to hit 3800/1900. On a x570 aorus elite",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ke1u1qq",
+              "text": "I'm sure buildzoid has a video for it on his YouTube somewhere.\n\nThe channel is Actually Hardcore Overclocking or something like that.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ke2mask",
+          "text": "Will the 5600x 3d be available outside USA?",
+          "upvotes": 3,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke34vj3",
+              "text": "dont think so",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ke36lo9",
+                  "text": "Then, for an upgrade from 3600, best $ for performance should I go for 5800x 3d or just 5800x? I have an old 1080 ti and on am4 platform. I am using 1440p resolution",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ke37o93",
+                      "text": "If u have the money, I would personally get the x3d, I mean u can see all the numbers to compare in the OP's results lol. But also would think about GPU upgrade. If u instead get ryzen 5700x + GPU upgrade that would be more performance than just a CPU upgrade.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "ke4e09o",
+                      "text": "5600, 5700X or 5800X3D. Only consider 5600X or 5800X if they are similar priced to the other models of same core count.\n\nThe 5800X3D is on another level compared to the other Ryzen 5000 parts, so well worth it if you have the budget for it.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "keaku36",
+              "text": "there are rumors that 5700x3d could also appear in 2024 and not only in the USA.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ke2wvd0",
+          "text": "Funny enough, I just updated my 3700 to an 5800x3d today. Thanks for sharing the results. I didn\u2019t run tests (besides a quick 3mark, plus 2k points here) but I feel at least destiny 2 runs noticeably better at 1440p. \n\nI was debating moving to a ddr5 platform for a while but I didn\u2019t want to invest that much. Now I\u2019m pondering if I should get new 3600 ram to replace my 3200.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

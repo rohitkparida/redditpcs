@@ -1,219 +1,91 @@
 {
-  "productName": "intel-arc-a750-8gb",
+  "productName": "Intel Arc A750 8GB",
   "batchIndex": 11,
-  "totalBatches": 34,
+  "totalBatches": 23,
   "comments": [
     {
-      "commentId": "1tdid85",
-      "text": "Machine GPU vs PS5 GPU // a deductive breakdown (&amp; a mental one too)\n\nHello everyone, welcome to my TED Talk\u2122 about \"Why the PS5 GPU isn't better than the Machine GPU by any significant metric\"\n\nhttps://preview.redd.it/nw61qsk5k71h1.png?width=1024&amp;format=png&amp;auto=webp&amp;s=3723fa10c038f6f56f4a88e2ee0f500fb521e41d\n\nI have :\n\n* time to kill\n* too much love for the game\n* severe autism\n* fallen down a rabbit hole\n* been pissed off by the people claiming the PS5 is better than the Machine in performance\n* forgotten to take my meds\n\nPick any/several of those, I don't care.\n\n**Get a snack, we're about to embark in on a marvelous journey of technical specs &amp; numbers aplenty.**\n\n# Machine GPU only has 8GB VRAM, PS5 has 16!\n\n* PS5 does not have 16GB VRAM, it has 16GB of unified RAM that is divided between system RAM &amp; VRAM, typically into an 8/8 division, can be reallocated up to a 4/12 (practically never happens, most studios port their games over to PC where 60\\~65% of the userbase has 8GB GPUs, makes no sense to create extra work and touch up the VRAM allocation on the PS5 if it's gonna work all the same anyway).\n* 1080p gaming in nearly all games rarely even approaches 8GB VRAM unless texture/effects are set to the higher end of the quality setting scale, which is NEVER the case on the PS5.\n* Here's [a chart of widely played games with intense graphics that hit above 8GB VRAM](https://www.hardware-corner.net/games-8gb-vram-list/) **when set to 1440p high/ultra.** (*Notice how most of them don't even go over the threshold by a lot.*)\n\n# Valve claims 4K@60FPS, bullshit!\n\n* Valve claims 4K@60FPS ***with FSR***, AMD's upscaling method.\n* Consoles run games upscaled, this is guaranteed to almost always be the case for 1440p &amp; 4K, some games run 1080p upscaled.\n* AMD ***finally*** announced FSR4.1 support for RDNA3 &amp; RDNA2 GPUs (respectively planned for July &amp; \"2027\") so the PS5 doesn't have the argument of having better upscaling quality with PSSR over FSR3/3.1 anymore.\n\n# PS5 GPU is equivalent to an RX6700, far beyond the specs of the Machine GPU!\n\n* the [PS5 GPU](https://www.techpowerup.com/gpu-specs/playstation-5-gpu.c3480) has an RDNA2 GPU packing 36 compute units, which is also what makes up an [RX 6700](https://www.techpowerup.com/gpu-specs/radeon-rx-6700.c3716)\n* Except the PS5 in its entirety [uses 200\\~220W](https://www.ecoenergygeek.com/ps5-power-consumption/#0-how-many-watts-does-a-ps5-use), which includes the CPU (x8 Zen2 cores, 8MB cache, equivalent to a 4700G, which should draw 65W on its own, let's cut that in half to 35W, aka the 4700GE, for argument's sake), SSD &amp; RAM (let's say equivalent to 10W for both combined), all the I/O (wifi, ethernet, 2.4G dualsense, the HDMI port, give it 10W for the whole thing) and the roughly 10% inefficiency expected from the PSU (we can probably ignore the cooling fan)\n* We then have a GPU that \"only\" gets \\~140W at peak, is driven by a downpowered CPU, has to share a 256-bit bus from 14Gbps memory modules with the CPU, only has 4MB of L2 cache &amp; has to share 8MB of L3 cache with the CPU\n* the RX 6700 gets a full 175W, has its own VRAM pool of 10GB of 16Gbps modules through its own 128-bit bus on top of the the PCIe4x16 interface and we can assume that most of the benchmarked scores we can find online are never done with a CPU that has the limitations of the PS5's CPU (i.e. a full 65W TDP or more &amp; 4 times as much cache found in desktop CPUs)\n\n**If you followed me so far, I think it's safe to say equaling the PS5's GPU to an RX 6700 is NOT an accurate metric.**\n\n* There have been many videos comparing the PS5 to a PC build of some sort, trying to emulate its performance, mostly in cost-based build challenges :\n* Performance &amp; Quality comparison [with an A770](https://youtu.be/LfpXMuMvcWQ?t=460) (Notes : this is a 2y/o video, Intel driver's were inconsistent, had considerable CPU overhead &amp; this was done on Windows, also I know this comes with 16GB VRAM but this is a focus on the performance level, this will come up later)\n* Performance &amp; Quality comparison [with an RX 6600](https://youtu.be/iHkBcqW-ExY?t=1000) (Notes : this is a 6months old video, running SteamOS; here's [their logic](https://youtu.be/iHkBcqW-ExY?=488) behind the pick of the GPU, this will also come up later)\n* You can look up more performance comparison on your own but I consider that it is safe to say, in sheer performance, the PS5 lands between those two landmarks that we can place on a performance scale.\n\n# Oh look, a performance scale!\n\nhttps://preview.redd.it/ggpgn5tsz61h1.png?width=685&amp;format=png&amp;auto=webp&amp;s=3bcef516d50a6e9b765cf766303cbb184a3b755b\n\n**The two GPUs mentioned above span a 17% performance amplitude, that's a decent window for the Machine to aim into**\n\n# What does the Machine's GPU pack:\n\n* RDNA3 GPU made up of 28CU, pushing 110W @ 2.45GHz (specs sheet says \"max sustained\" clock, I'll presume this is what the Boost clock is; VRAM bandwidth undeterminate, I presume it's the same 18Gbps GDDR6 all RDNA3 GPUs got)\n* Closest known model? the [RX 7600M](https://www.techpowerup.com/gpu-specs/radeon-rx-7600m.c4014) : same CU count, 90W TDP, boost @ 2.41GHz, PCIe4x16 interface, cooled by laptop-grade thermal blocks, performance about equal to a desktop RTX 2070\n\n**Oh, how convenient, that's juuust ahead of the RX 6600 from earlier!**\n\nhttps://preview.redd.it/8irj959k171h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=a62eb9ad04115ad7ebc122e87dbf2228625455fe\n\n* Difference to the profit of the Machine GPU : +20W TDP, +40MHz boost clock, cooled by a huge fucking block of an air cooler (will likely sustain boost clocks a hell of a lot better &amp; longer than the 7600M in laptops)\n* Coincidentally, [the XT variant](https://www.techpowerup.com/gpu-specs/radeon-rx-7600m-xt.c4013) has interesting specs too : 32CUs, 120W TDP, boost @ 2.47GHz, so that means the Machine GPU ***CANNOT*** out perform this particular model, since it has physically more compute unites &amp; a teeny tiny little bit more juice &amp; clocks as well\n* Why does the 7600M XT matter? Well, let's look at the chart :\n\nhttps://preview.redd.it/fji71eq2371h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=2c282be18e5d038706590c4b70443d9d10e2c8c9\n\n**Just 2% ahead of the A770 from the first PS5 comparison video? AND equal to the 2070 SUPER?? Now that's very practical!**\n\n# Let's compile all this data:\n\nhttps://preview.redd.it/337p58l4771h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=2da54cc715f457a45b531b06c0339d65488faff1\n\n**We can deduce it's equal or very close to equal to PS5 GPU performance**\n\n# Extra considerations:\n\n* Machine's CPU is significantly better, feeding the GPU more data more consistently\n* PS5's OS is BSD-based, not Linux-based (which makes sense for various licensing reasons from Sony's position)\n* Recently released [PS5 Linux project](https://github.com/ps5-linux/ps5-linux-loader) allowed for [Linux gaming testing on PS5](https://videocardz.com/newz/ps5-linux-tested-steam-games-come-close-to-native-console-performance); in all tests, Linux ran equal or a liiitle bit better\n\n**The PS5 Linux project at this time can't allocate more than 6GB of the VRAM, and yet still equals or edges ahead of the PS5 in the same games at same resolution &amp; quality.**\n\n**It runs games which are made for Windows, running through the Proton compatibility layer, whereas the PS5 gets its own custom-optimized editions, just for it. Imagine if it was Linux-optimized, before even thinking about the hardware optimization.**\n\n* This project was only operational recently, which mean most of this isn't fully fleshed out, dynamic allocation maxes out at 6GB VRAM, it doesn't boost properly/can't be overclocked, etc...\n* I think we can safely assume there's overhead that can be reduced, putting Linux ahead of the PS5's OS down the line because PS5 is basically entirely dependent on Sony software engineering to improve performance; Machine benefits from Linux community (including Valve) to ever improve &amp; optimize software\n   * Example #1 : [MESA 26.0 update](https://videocardz.com/newz/mesa-26-0-open-source-graphics-library-for-linux-releases-significant-imporvmenets-to-raytraicng-on-radeon-gpus) packs decent improvements to AMD GPUs RT performance\n   * Ex #2 : [dmemcg Linux kernel patch](https://videocardz.com/newz/valve-developer-improves-linux-vram-handling-for-8gb-gpus-with-new-kernel-patches) evicts non-game apps out of VRAM when game requires more space (look up benchmarks before/after patch, this greatly helps 8GB -or less- GPUs)\n   * Ex #3 : [Proton compat layer](https://videocardz.com/newz/valve-proton-11-0-beta-1-released-adds-support-for-x-plane-12-breath-of-fire-iv-and-more) gets ever better, no need to wait for a Linux port of a Windows game the same way console games have to get ported to PC\n   * Ex #4 : [Microsoft wants Windows to be as good as SteamOS in gaming](https://videocardz.com/newz/microsofts-windows-secrete-k2-plan-aims-to-cut-windows-11-bloat-and-improve-gaming-performance) (this is not a joke, they realized Linux was getting better at running Windows games than Windows LMAO)\n\n# But the PS5 is older, shouldn't the Machine be better?\n\nThe PS5 has a downpowered, low to mid-end desktop GPU only one generation older than the entry-level, juiced up, mobile GPU of the Machine that only has the 55W RX7400 below it in the RDNA3 series, the gap is, as described by all of the above, non-existent.\n\nI'll bring your attention over to NvidAI, where the RTX5050 is the FIRST entry-level GPU to beat the GTX1080Ti.\n\nIt took them 5 generations over the span of a decade to finally achieve that (and it still has more VRAM than the 5050 LMAO).\n\n# Why didn't you compare it with the PS5 Pro since it's gonna be closer in price?\n\n* it was not a cost-based comparison\n* people who know nothing about hardware were pissing me off saying that the base PS5 was more powerful\n* PS5s are subsidized, I wonder what would be the real price if it wasn't &amp; how much consideration would buyers have knowing the Machine can do all the PC-stuff (i.e. running non-game software, having the freedom of choosing what system you want to install, etc...) that consoles can't\n\n# Conclusion:\n\n**The Steam Machine GPU is equal in performance to the PS5 GPU &amp; can be expected to be supported longer &amp; better than PS5.**\n\n# If after all that you're still not convinced, then I don't know what to tell you.\n\ngo buy a PS5 if you think it's so much better than the Machine, I guess",
-      "upvotes": 295,
-      "classifyThis": false,
+      "commentId": "1i5i1mj",
+      "text": "Intel Arc B570 Meta Review\n\n- compilation of 11 launch reviews with ~3920 gaming benchmarks at 1080p, 1440p, 2160p\n- only benchmarks at real games compiled, not included any 3DMark &amp; Unigine benchmarks\n- geometric mean in all cases\n- standard raster performance without ray-tracing and/or DLSS/FSR/XeSS\n- extra ray-tracing benchmarks (without DLSS/FSR/XeSS) after the standard raster benchmarks\n- stock performance on (usually) reference/FE/LE boards, no overclocking\n- factory overclocked cards were normalized to reference clocks/performance, but just for the overall performance average (so the listings show the original result, just the performance index has been normalized)\n- exeption: for Arc A580 and Arc B570 performance of factory overclocked cards were used as \"normal\", because there are no models with reference clocks available (only factory overclocked models on the market)\n- missing results were interpolated (for a more accurate average) based on the available &amp; former results\n- performance average is (some) weighted in favor of reviews with more benchmarks\n- power draw based on numbers from 9 sources, always for the graphics card only\n- current retailer prices according to Geizhals (GER/Germany, on Jan 19) and Newegg (USA, on Jan 19)\n- performance/price ratio for 1080p raster performance and 1080p ray-tracing performance (higher is better)\n- for the full results and some more explanations check [3DCenter's launch analysis](https://www.3dcenter.org/artikel/launch-analyse-intel-arc-b570)\n\nThe Arc B570 has the special situation that there are no reference clock cards, only factory overclocked models. For this reason, the performance of these factory overclocked models is shown here, as they are actually available on the market (in contrast to a reference design). Incidentally, ComputerBase simulated the reference clock, so the real clock rate of the Arc B570 fell from &amp;#8804;2750 MHz to &amp;#8804;2650 MHz.\n\nNote: The launch reviews evaluated were primarily carried out with top processors (e.g. Core i9-14900K or Ryzen 7 9800X3D). As is known, however, the Battlemage-based graphics cards lose more performance with weaker processors than other graphics cards of the same performance level (see corresponding reports from Hardware Canucks or Hardware Unboxed). This point is not reflected with the following benchmark evaluations and should therefore be taken into account when assessing the Arc B570.  \n\n&amp;nbsp;\n\nRaster 1080p|6600|7600|7600XT|3060|4060|A580|A750|A770|B570|B580\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|RDNA2 8GB|RDNA3 8GB|RDNA3 16GB|Ampere 12GB|Ada 8GB|ACM 8GB|ACM 8GB|ACM 16GB|BMG 10GB|BMG 12GB\nComputerBase|-|119.7%|-|-|128.1%|-|-|101.9%|_100%_|121.9%\nGamers Nexus|84.8%|107.1%|-|91.9%|113.1%|82.3%|93.6%|101.8%|_100%_|114.8%\nHardware&amp;Co|81.9%|100.7%|116.7%|92.7%|110.5%|-|84.3%|93.8%|_100%_|115.5%\nHW Upgrade|-|106.4%|116.4%|-|111.8%|-|-|-|_100%_|117.8%\nKitGuru|-|100.2%|110.9%|89.3%|105.6%|79.6%|89.1%|98.2%|_100%_|115.0%\nOverclocking|-|116.5%|-|-|117.1%|-|91.9%|98.9%|_100%_|122.0%\nPCGH|77.9%|100.3%|115.0%|89.5%|106.5%|81.6%|-|103.1%|_100%_|115.6%\nPurePC|78.9%|105.4%|-|94.5%|113.9%|-|93.2%|-|_100%_|115.7%\nTechPowerUp|79%|99%|109%|93%|108%|79%|89%|98%|_100%_|114%\nTom's HW|77.8%|91.5%|117.7%|100.4%|115.8%|-|85.7%|99.2%|_100%_|118.1%\n**avg 1080p Raster Perf.**|**81.6%**|**101.9%**|**115.6%**|**94.0%**|**111.5%**|**80.2%**|**88.7%**|**99.0%**|**_100%_**|**116.4%**\n\n&amp;nbsp;\n\nRaster 1440p|6600|7600|7600XT|3060|4060|A580|A750|A770|B570|B580\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|RDNA2 8GB|RDNA3 8GB|RDNA3 16GB|Ampere 12GB|Ada 8GB|ACM 8GB|ACM 8GB|ACM 16GB|BMG 10GB|BMG 12GB\nGamers Nexus|80.6%|103.4%|-|90.5%|106.1%|82.8%|97.3%|106.9%|_100%_|114.8%\nHardware&amp;Co|75.9%|91.0%|111.4%|89.5%|106.1%|-|86.4%|96.5%|_100%_|116.5%\nHW Upgrade|-|96.5%|104.9%|-|101.8%|-|-|-|_100%_|116.6%\nKitGuru|-|95.7%|108.0%|88.5%|101.6%|80.7%|92.2%|103.5%|_100%_|117.6%\nOverclocking|-|109.6%|-|-|110.1%|-|-|-|_100%_|124.1%\nPCGH|-|94.2%|111.3%|88.7%|96.7%|-|-|106.2%|_100%_|118.2%\nPurePC|73.9%|98.1%|-|91.5%|107.5%|-|93.2%|-|_100%_|116.3%\nTechPowerUp|75%|93%|105%|91%|104%|81%|93%|102%|_100%_|116%\nTechSpot|-|98.6%|-|-|101.4%|-|-|-|_100%_|114.3%\nTom's HW|68.6%|81.4%|116.4%|98.3%|109.9%|-|88.1%|103.7%|_100%_|122.0%\n**avg 1440p Raster Perf.**|**75.0%**|**93.7%**|**110.1%**|**90.7%**|**104.1%**|**81.3%**|**91.4%**|**102.5%**|**_100%_**|**117.8%**\n\n&amp;nbsp;\n\nRaster 2160p|6600|7600|7600XT|3060|4060|A580|A750|A770|B570|B580\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|RDNA2 8GB|RDNA3 8GB|RDNA3 16GB|Ampere 12GB|Ada 8GB|ACM 8GB|ACM 8GB|ACM 16GB|BMG 10GB|BMG 12GB\nKitGuru|-|84.9%|102.7%|86.8%|94.1%|79.0%|92.7%|103.7%|_100%_|116.9%\nPCGH|-|92.7%|116.7%|96.6%|94.0%|-|-|120.2%|_100%_|133.0%\nTechPowerUp|64%|74%|100%|88%|95%|80%|90%|103%|_100%_|119%\n\n&amp;nbsp;\n\nRayTracing 1080p|6600|7600|7600XT|3060|4060|A580|A750|A770|B570|B580\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|RDNA2 8GB|RDNA3 8GB|RDNA3 16GB|Ampere 12GB|Ada 8GB|ACM 8GB|ACM 8GB|ACM 16GB|BMG 10GB|BMG 12GB\nComputerBase|-|100.0%|-|-|120.7%|-|-|110.9%|_100%_|123.1%\nGamers Nexus|68.2%|89.7%|-|99.6%|125.7%|89.9%|98.4%|106.5%|_100%_|116.4%\nHardware&amp;Co|40.8%|40.1%|77.2%|97.2%|123.2%|-|78.3%|99.4%|_100%_|122.3%\nKitGuru|-|77.6%|96.7%|108.5%|130.5%|83.4%|94.0%|108.8%|_100%_|126.6%\nPCGH|60.5%|70.9%|101.9%|106.2%|111.6%|82.6%|-|111.6%|_100%_|126.4%\nTechPowerUp|60%|57%|90%|103%|124%|85%|96%|110%|_100%_|127%\nTom's HW|57.3%|64.7%|81.9%|93.4%|108.2%|-|84.0%|94.7%|_100%_|119.3%\n**avg 1080p RayTr Perf.**|**60.5%**|**67.2%**|**93.4%**|**101.7%**|**119.2%**|**81.8%**|**91.0%**|**106.3%**|**_100%_**|**123.4%**\n\n&amp;nbsp;\n\nRayTracing 1440p|6600|7600|7600XT|3060|4060|A580|A750|A770|B570|B580\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|RDNA2 8GB|RDNA3 8GB|RDNA3 16GB|Ampere 12GB|Ada 8GB|ACM 8GB|ACM 8GB|ACM 16GB|BMG 10GB|BMG 12GB\nKitGuru|-|65.9%|94.2%|106.2%|119.9%|83.2%|95.1%|114.2%|_100%_|129.6%\nPCGH|-|73.0%|113.2%|120.1%|118.6%|-|-|132.4%|_100%_|142.2%\nTechPowerUp|47%|49%|84%|100%|101%|82%|93%|111%|_100%_|129%\nTom's HW|46.0%|53.0%|77.7%|89.3%|100.9%|-|86.9%|102.4%|_100%_|120.1%\n\n&amp;nbsp;\n\nRayTracing 2160p|6600|7600|7600XT|3060|4060|A580|A750|A770|B570|B580\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|RDNA2 8GB|RDNA3 8GB|RDNA3 16GB|Ampere 12GB|Ada 8GB|ACM 8GB|ACM 8GB|ACM 16GB|BMG 10GB|BMG 12GB\nKitGuru|-|72.3%|111.7%|130.9%|133.0%|98.9%|112.8%|151.1%|_100%_|159.6%\nPCGH|-|70.6%|125.5%|140.5%|130.1%|-|-|164.1%|_100%_|158.8%\nTechPowerUp|63%|63%|90%|97%|96%|81%|90%|125%|_100%_|-\n\n&amp;nbsp;\n\nAt a glance|6600|7600|7600XT|3060|4060|A580|A750|A770|B570|B580\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n&amp;nbsp;|RDNA2 8GB|RDNA3 8GB|RDNA3 16GB|Ampere 12GB|Ada 8GB|ACM 8GB|ACM 8GB|ACM 16GB|BMG 10GB|BMG 12GB\navg 1080p Raster Perf.|81.6%|101.9%|115.6%|94.0%|111.5%|80.2%|88.7%|99.0%|_100%_|116.4%\navg 1440p Raster Perf.|75.0%|93.7%|110.1%|90.7%|104.1%|81.3%|91.4%|102.5%|_100%_|117.8%\navg 1080p RayTr Perf.|60.5%|67.2%|93.4%|101.7%|119.2%|81.8%|91.0%|106.3%|_100%_|123.4%\nTDP|132W|165W|190W|170W|115W|185W|225W|225W|150W|190W\nReal Power Draw|131W|160W|190W|172W|124W|197W|208W|223W|140W|163W\nEnergy Eff. (1080p&amp;nbsp;Rast.)|87%|89%|85%|77%|126%|57%|60%|62%|_100%_|_100%_\nMSRP|$329|$269|$329|$329|$299|$179|$249|$349|$219|$249\nRetail GER|217\u20ac|267\u20ac|329\u20ac|280\u20ac|300\u20ac|220\u20ac|218\u20ac|315\u20ac|270\u20ac|299\u20ac\nPerf/Price&amp;nbsp;GER 1080p Raster|101%|103%|95%|91%|100%|98%|110%|85%|_100%_|105%\nPerf/Price&amp;nbsp;GER 1080p RayTr|75%|68%|77%|98%|107%|100%|113%|91%|_100%_|111%\nRetail US|$190|$250|$315|$280|$300|-|$279|$359|$230|$250\nPerf/Price&amp;nbsp;US 1080p Raster|99%|94%|84%|77%|86%|-|73%|63%|_100%_|107%\nPerf/Price&amp;nbsp;US 1080p RayTr|73%|62%|68%|84%|91%|-|75%|68%|_100%_|113%\n\n&amp;nbsp;\n\nPersonal opinion: The Arc B570 lacks an interesting feature/point. Either Intel should have equipped the B570 with 12 GB of VRAM as well, or set the list price at an attractive $199. For the (financially) small gap between the Arc B570 and B580 there is simply not enough \u201cbang for the buck\u201d. Compared to the competitors from AMD &amp; nVidia, however, things look okay, provided the B570 is available close to the MSRP.\n\nHowever, the Radeon RX 7600 remains a strong opponent, especially as the VRAM advantage of the B570 over it is only slight. The GeForce RTX 3060 12GB also offers roughly the same performance/price ratio in the German market (but currently not in the US market). This means that the Arc B570 cannot really set itself apart from the competition.\n\n&amp;nbsp;\n\nList of Arc B570 reviews evaluated for this performance analysis:\n\n- [ComputerBase](https://www.computerbase.de/artikel/grafikkarten/intel-arc-b570-test.90986/)\n- [Gamers Nexus](https://www.youtube.com/watch?v=m9uK4D35FlM)\n- [Hardware &amp; Co](https://hardwareand.co/dossiers/gpu/test-de-l-intel-arc-b570-tout-dependra-du-prix-en-boutique)\n- [Hardware Upgrade](https://www.hwupgrade.it/articoli/skvideo/6961/intel-arc-b570-alla-prova-una-scheda-imperfetta-per-chi-ha-meno-di-300-euro_index.html)\n- [KitGuru](https://www.kitguru.net/components/graphic-cards/dominic-moass/intel-arc-b570-review-ft-asrock/)\n- [Overclocking](https://overclocking.com/test-asrock-arc-b570-challenger-oc/)\n- [PC Games Hardware](https://www.pcgameshardware.de/Arc-B570-Grafikkarte-280999/Tests/vs-RTX-4060-vs-B580-Test-Review-Benchmarks-1463521/)\n- [PurePC](https://www.purepc.pl/test-kart-graficznych-intel-arc-b570-vs-geforce-rtx-4060-vs-radeon-rx-7600)\n- [TechPowerUp](https://www.techpowerup.com/review/sparkle-b570-guardian/)\n- [TechSpot](https://www.techspot.com/review/2943-intel-arc-b570/)\n- [Tom's Hardware](https://www.tomshardware.com/pc-components/gpus/intel-arc-b570-review-asrock-challenger-oc-tested)\n\n&amp;nbsp;\n\nSource: [3DCenter.org](https://www.3dcenter.org/artikel/launch-analyse-intel-arc-b570)",
+      "upvotes": 81,
+      "classifyThis": true,
       "relevance": null,
       "relevanceReasoning": null,
       "sentiment": null,
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "olvxbfu",
-          "text": "I would say they are about equal in raw performance but console optimization makes systems like the PS5 or the switch 2 punch well above their weight.\n\nAlso the PS5 is a 2020 system.... selling a more expensive system with similar performance 6 years later isn't a win for valve in my opinion.\n\nAll the steam machine does is show us what amazing value consoles are giving us gamers. A PS5 digital released for 400 bucks in 2020....now 6 years later valve barely matches it's performance for double the price....\n\nEven before AI fucked up component prizes, the steam machine was rumored to be more expensive than the PS5. It was not the best value then and is even worse now.\n\n",
-          "upvotes": 69,
+          "commentId": "m84df9o",
+          "text": "Agreed. The one positive about B580 for me was Intel correctly sold it as a passable 1440p, Ray Tracing and Upscaling GPU that was a good fill for that 4060/7600XT/3060 Ti performance range it's in.\n\nB570 is like a flawed very late version of Radeon/NVidia GPUs with AMD's strategy of -10% pricing, and that -10% pricing probably won't actually exist.\n\nAnd it remains to be seen how good these Intel GPUs will look in a few months. If AMD and/or NVidia are competitive whatsoever, these Intel GPUs are dead.",
+          "upvotes": 35,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The comment discusses the general value and performance of the 'Steam Machine' vs PS5, not the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is comparing two different gaming systems without focusing on the specific Intel product.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "olxst3l",
-              "text": "I can put on steam notifications or follow steam dB to buy 5 or 10 games at the price of 1 on the ps store. Steam provides local pricing, super frequent discounts, and big discounts. Epic Games straight up gives away a free AAA game every now and then. GOG lets me buy DRM free games that are not just a license but actual ownership of the games. You are almost certainly going to be spending less overall if you consider the cost over the years after purchasing.  \n\nAlso the steam machine lets you access a library that you can play on any hardware anywhere natively. The PS does not do that. You are hardware locked to Sony. On the steam machine, I get the ability to mod and emulate and even pirate games, or use it as a full fledged computer becsuse that is exactly what it is.  \n\nEdit.) A good example would be that a steam machine can actually play the Sony exclusive bloodborne on a better frame rate than even the ps5 pro because it is a locked 30 fps there.",
-              "upvotes": 20,
+              "commentId": "m84ghoo",
+              "text": "The B570 is probably mostly b580 dies so I bet its price will crash pretty quickly.\n\nIts not priced well, it needed to be 200 even probably.",
+              "upvotes": 17,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The discussion is about Steam vs PlayStation ecosystems and software, not the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is arguing for the benefits of the Steam ecosystem.",
-              "replies": []
-            },
-            {
-              "commentId": "olwg6vj",
-              "text": "To be fair though, the PS5 is now also more expensive than at launch ;). But indeed it\u2019s likely similar PS5 some cases the Steam Machine will be faster in other the PS5.\n",
-              "upvotes": 11,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The comment discusses the pricing and performance of the PS5 and Steam Machine.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing a neutral comparison of system prices.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "olwt7vg",
-                  "text": "a second hand fat ps5 can be had for 400 bucks. and has more storage than the steam machine. not the best comparison but I love both system",
-                  "upvotes": 7,
+                  "commentId": "m84idpr",
+                  "text": "Not just probably. B570 and B580 are based on the same BMG-G21 die.",
+                  "upvotes": 16,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The comment discusses second-hand PS5 pricing and storage.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is sharing a personal preference for both systems.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "m84xw68",
+                  "text": "If it's failed dies then it will not have decent supply and price will probably remain same.",
+                  "upvotes": 10,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "olzyj5y",
-                      "text": "In a few years I can get a second hand Steam Machine for cheaper as well.",
-                      "upvotes": 8,
+                      "commentId": "m863sog",
+                      "text": "Yeah, similar to 7800 XT vs 7700 XT initially. Later on AMD dedicated more supply to the 7700 XT via artificial cutdowns so they could reduce the ASP to 400 and sell more units.",
+                      "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The comment discusses the future second-hand value of a Steam Machine.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is making a speculative point about used hardware.",
-                      "replies": []
-                    },
-                    {
-                      "commentId": "oly47wy",
-                      "text": "Comparing new system prices to used is never a useful comparison. Obviously you can find cheaper systems used - this has applied to every hardware release ever, and says very little about whether the new system is a good deal.",
-                      "upvotes": 7,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The comment is a meta-discussion about how to compare new vs used hardware prices.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is critiquing the logic of a previous comparison.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": []
                     }
                   ]
                 },
                 {
-                  "commentId": "olx417f",
-                  "text": "Machine will be even more expensive lol",
-                  "upvotes": 4,
+                  "commentId": "m874h1e",
+                  "text": "&gt;Its not priced well, it needed to be 200 even probably.\n\nSure... but I'll bet they're following the AMD strategy here and overpricing it slightly so that you can feel good at the \"bargain\" you're getting when this thing hits $200... which it almost certainly will within 6 months, assuming there's any availability.",
+                  "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The comment discusses the expected price of the Steam Machine.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is making a prediction about pricing.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "olxs0f0",
-                      "text": "My backlog and steam sales will help soften the blow of an expensive Steam Machine. ",
-                      "upvotes": 5,
+                      "commentId": "m8f4va4",
+                      "text": "Will definitely be picking it up if it hits $200.",
+                      "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The comment discusses Steam sales and game backlogs.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is discussing how to offset the cost of a system.",
-                      "replies": [
-                        {
-                          "commentId": "olxylli",
-                          "text": "Yeah sure. Keep coping lol . It\u2019s a terrible deal ",
-                          "upvotes": -1,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "The comment is a low-effort rebuttal regarding the value of the Steam Machine.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user is expressing a negative opinion about a deal, but not about the Intel GPU.",
-                          "replies": [
-                            {
-                              "commentId": "olyax6z",
-                              "text": "What's a better deal then? Give me the price points, compare game and access costs too.\n\nChange my mind! I'm willing to listen.",
-                              "upvotes": 6,
-                              "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "The comment is asking for a price comparison between gaming systems.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The user is asking for information.",
-                              "replies": []
-                            },
-                            {
-                              "commentId": "oly5dmr",
-                              "text": "I love PC and valve games since 08 but it\u2019s insane how many of these guys dont see the problem of paying 800+ for 6yr old hardware. ",
-                              "upvotes": 0,
-                              "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "The comment discusses the cost of hardware relative to its age for the Steam Machine.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The user is criticizing the value proposition of the system.",
-                              "replies": [
-                                {
-                                  "commentId": "oly63l9",
-                                  "text": "It\u2019s some sort of brainwashing mixed with fanboyism. If it has atleast 12-16gb VRAM and even slight better cpu and stuff then I\u2019ll get the hype\u2026.but for those specs in 2026? Nahhh",
-                                  "upvotes": 0,
-                                  "classifyThis": true,
-                                  "relevance": "exclude",
-                                  "relevanceReasoning": "The comment discusses VRAM and CPU specs for a hypothetical 2026 system.",
-                                  "sentiment": "neutral",
-                                  "sentimentReasoning": "The user is expressing disappointment in rumored specs.",
-                                  "replies": [
-                                    {
-                                      "commentId": "oly6mps",
-                                      "text": "PC gamers were usually the ones bashing console players for playing on old hardware in the past, now since Valve is doing a console like PC, they\u2019re all of a sudden ok with it. Reddit has a crazy fetish for Gabe Newall.",
-                                      "upvotes": 4,
-                                      "classifyThis": true,
-                                      "relevance": "exclude",
-                                      "relevanceReasoning": "The comment is a meta-commentary on Reddit's perception of Valve and Gabe Newell.",
-                                      "sentiment": "neutral",
-                                      "sentimentReasoning": "The user is criticizing community behavior.",
-                                      "replies": [
-                                        {
-                                          "commentId": "olys78c",
-                                          "text": "Exactly. Old hardware at premium prices. Atleast consoles launched at 299-499. But well it\u2019s valve not Sony so it\u2019s okay I guess ",
-                                          "upvotes": 3,
-                                          "classifyThis": true,
-                                          "relevance": "exclude",
-                                          "relevanceReasoning": "The comment discusses the pricing of consoles vs Valve hardware.",
-                                          "sentiment": "neutral",
-                                          "sentimentReasoning": "The user is criticizing the premium price of the hardware.",
-                                          "replies": []
-                                        },
-                                        {
-                                          "commentId": "olyb265",
-                                          "text": "Reddit is not a person",
-                                          "upvotes": 3,
-                                          "classifyThis": true,
-                                          "relevance": "exclude",
-                                          "relevanceReasoning": "The comment is a pedantic correction about 'Reddit' not being a person.",
-                                          "sentiment": "neutral",
-                                          "sentimentReasoning": "The user is making a factual correction.",
-                                          "replies": [
-                                            {
-                                              "commentId": "olybs1k",
-                                              "text": "Obviously you know what I meant by saying reddit, Mr.Semantics. How\u2019s Mrs.Pedantic doing btw?",
-                                              "upvotes": -2,
-                                              "classifyThis": true,
-                                              "relevance": "exclude",
-                                              "relevanceReasoning": "The comment is a sarcastic response to a pedantic correction.",
-                                              "sentiment": "neutral",
-                                              "sentimentReasoning": "The user is engaging in banter.",
-                                              "replies": []
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "commentId": "olws2y4",
-                  "text": "But in all cases the steam machine has all the freedome of a pc.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The comment discusses the freedom of using a PC/Steam Machine.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is highlighting a benefit of the platform.",
-                  "replies": [
-                    {
-                      "commentId": "olxowgw",
-                      "text": "For its terrible price it better lmaoo. That\u2019s the absolute minimum hahah",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The comment discusses the price of the Steam Machine.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is criticizing the price.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": []
                     }
                   ]
@@ -221,65 +93,169 @@
               ]
             },
             {
-              "commentId": "olxt5on",
-              "text": "Amazing value for hardware, but then they proce gouge you on software and subscriptions \ud83e\udd37",
-              "upvotes": 2,
+              "commentId": "m88ulty",
+              "text": "B570 probably isnt a volume product. Just defective dies and in a vacuum it's decent value, only looks bad against intels own b580 which is a net positive for Intel. Against 3050 it's amazing. They have 6+ months to get good sales before Nvidia releases their new gen which is decent. Nvidia will take back their lead but b580 could just drop to 220ish and still be in a class of its own as 5060 will be 300 still.",
+              "upvotes": 4,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The comment discusses hardware value vs software costs for consoles.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is criticizing software pricing.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "olyaniq",
-                  "text": "PS plus is definitely a rip off but the games themselves are on par with steam and have been for a very long time now\u2026. ",
-                  "upvotes": 2,
+                  "commentId": "m8i4jw2",
+                  "text": "As long as 5060 still has 8GB, it doesn't even matter what performance it has, 8GB in 2026 (most people will get it in 2026 statistically) is pure trash and I'm **not** a vRAM maniac, but it's ridiculous.",
+                  "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The comment discusses PS Plus and Steam game pricing.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is comparing subscription services.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m8jnn8p",
+                      "text": "I agree but I'm hoping they do 3gb modules on a 128 bit bus for 12gb of VRAM. But we shall see. 8gb really should only be on 200 or less cards.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "m8if3pm",
+                  "text": "Yea Nvidia is gonna have to drop 5060 pricing to $249 to really compete with the B580 at 220. B570 could be the first 199 great value card we've had in a long time.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m8jn2rp",
+                      "text": "I don't think Nvidia will drop the price. 5060 will probably be a good bit faster than the b580 and be worth it's premium at 300. B580 will just take the low end sales as Nvidia doesn't care much for that market as seen by their 250 dollar 3050. B570 at 200 would be amazing value. Especially with 10gb of VRAM.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "m84wt4l",
+              "text": "Yea I'm sure the 5060 will beat the pants out of the B570 in pricing.",
+              "upvotes": -1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "m85uxrd",
+          "text": "The B570 would be pretty good value if the B580 did not exist. Should have been priced at $200 then it might actually be worth getting over B580.",
+          "upvotes": 11,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m8722sq",
+              "text": "isn't there some sort of strategy where you introduce a crappy version of a product to serve as a 'backstop' for the more expensive version you want to sell?  so like, intel will limit supply of b570s so that the b580 can't drop below them in price.  \n\nthat's my understanding of this sort of product, but i'm repeating it to see if i'm way off base.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m873k87",
+                  "text": "B570 most likely only exists so that Intel can sell defective B580. It's not a uncommon practice.\u00a0\n\n\nThe process of making chips is a delicate pricesd and some chips will have issues. So instead of trashing those chips you release a cut down version of your cpu/gpu so you can still sell it.",
+                  "upvotes": 8,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": []
                 }
               ]
             },
             {
-              "commentId": "om1ajhz",
-              "text": "The biggest selling point of the Machine is Steam. If you have a bunch of games already on Steam then, compared with buying a PS5 and then also buying games for it, you\u2019ve already got an amazing catalog of games to play for \u201cfree\u201d. If you\u2019re starting from zero in either ecosystem then of course it\u2019s a different discussion but I assume anyone even considering a Machine is already in the Steam ecosystem.",
-              "upvotes": 1,
+              "commentId": "m8760i9",
+              "text": "Also worth noting that an A770 can be had for \\~$200 in some markets these days.",
+              "upvotes": 3,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The comment discusses the value of the Steam library when buying a Steam Machine.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is explaining the value proposition of the ecosystem.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
-            },
+            }
+          ]
+        },
+        {
+          "commentId": "m84ihzt",
+          "text": "It seriously isn't priced well. But some people think this is the next best thing since sliced bread lmfao. Just pay Abit more for the b580 which is going to last better in the long run.\n\nWhat's even funnier that other than america, everywhere the prices are way above what it was marketed. UK got it for 300$+ from KitGuruTech, Asia barely sees any stock of these cards and is going to be overpriced from import taxes and shitty retailers here. In the end it might end up more expensive than the red and green competition. It's hilarious that some people think their world is just surrounded by American prices. \n\nLet's not forget the cpu overhead issue, some might say overblown, but this card is targeted at the budget segment with gamers playing old or eSports titles mostly",
+          "upvotes": 19,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
             {
-              "commentId": "omk5ukk",
-              "text": "Price is just a small part of the whole equation here  \nThe fact that you'll be pay much more than hardware-to-hardware comparison profit buying games and PS+ subscription just makes your point even more ridiculous  \nAnd that's even not to mention of other steam machine's advantages, like community ecosystem, cheap games on sale, endless game catalog, mods, emulators, ability to connect other stores (epic, gog, xbox) and do basically anything on a real PC without leaving your couch  \nYou must be kidding",
-              "upvotes": 1,
+              "commentId": "m864602",
+              "text": "Even in America, it's quite difficult to get either card for MSRP.",
+              "upvotes": 7,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The comment discusses the overall advantages of the Steam ecosystem over consoles.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is arguing in favor of the Steam Machine's versatility.",
-              "replies": []
-            },
-            {
-              "commentId": "om0tc8p",
-              "text": "Console optimization is not what it used to be. Digital Foundry benchmarked their hacked PS5 running Linux. In the video there is barely any performance difference. There were even games that ran better on Linux. Completely nuts.\n\n\nhttps://youtube.com/watch?v=W8QDhsOmJ8A",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The comment discusses Linux performance on a hacked PS5.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is sharing benchmark information.",
-              "replies": []
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m875jcy",
+                  "text": "It'll probably change somewhat when the new stuff from Nvidia and AMD launches, for better or worse.\n\nIntel has about a 6 month window to build market share in the low-to-mid tier segment, it seems.\n\nOnce the 5060/Ti and 9060 hit, I think the sales will slow considerably.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "m8aluz8",
+                  "text": "That as well. I mentioned it so many times about these street prices yet get downvoted because it's just a vendetta to hate Intel arc. Lmfao",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
             }
           ]
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

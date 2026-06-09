@@ -1,12 +1,12 @@
 {
-  "productName": "intel-core-ultra-5-245k",
+  "productName": "Intel Core Ultra 5 245K",
   "batchIndex": 13,
-  "totalBatches": 29,
+  "totalBatches": 27,
   "comments": [
     {
-      "commentId": "1gdyk03",
-      "text": "Intel Core Ultra 5 245K Benchmarks, Oddly Slow For Gaming!",
-      "upvotes": 135,
+      "commentId": "1gbpn1p",
+      "text": "[GN] Intel Core Ultra 5 245K CPU Review & Benchmarks vs. 5700X3D, 13700K, & More",
+      "upvotes": 122,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,9 +14,9 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "lu5pmy4",
-          "text": "So, wait 6 months and get the 7700X?",
-          "upvotes": 16,
+          "commentId": "lto53ix",
+          "text": "I wouldn't have released this series.\u00a0 It's much worse logistically than even rocketlake.\u00a0\n\n\nPat would probably square it as a necessary step, but it's embarrassing that all this leading edge connectivity and tiles lead to a weaker series than the supposedly simpler Ryzen cpus.\u00a0",
+          "upvotes": 23,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -24,9 +24,9 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "lu6c5qc",
-              "text": "Why not now?",
-              "upvotes": 13,
+              "commentId": "lton5y5",
+              "text": "They had to get the ball rolling but I suppose they could have kept it laptop only for now.\n\nI remember when the first Intel 10nm CPUs were coming out people were concerned that the early 10nm silicon wouldn\u2019t be able to outperform the ultra tuned factory-overclocked 14nm++++++++ offerings.",
+              "upvotes": 9,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -34,157 +34,19 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "lu6ulso",
-                  "text": "AMD  previous gen CPUs price drop from 6-12 months after release of new gen (Ryzen 8000 doesn't count due to inferior performances).",
-                  "upvotes": -5,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "lu6f0za",
-              "text": "Get a 7700 tray.\n\nRyzen 7900 also worth a shout-out since it comes with a Wraith Prism cooler.",
-              "upvotes": 8,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "lu749fk",
-          "text": "AMD made a chip that only had marginal improvements and they got dragged thru shit for it.\n\nMeanwhile, Arrow Lake is seeing regressions across the board, and it's just \"Oddly slow\"\n\nOkay.",
-          "upvotes": 8,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "lubi5sc",
-              "text": "HW unboxed got really ticked off by AMD's marketing for zen5, AMD showed incorrect benchmarks and uplift etc. and that really upset them to the point where even though zen 5 is pretty decent now with updates /value they still treat it harshly.\n\nThe AMD lying in their mind is way worse than intel making a e waste level CPU.",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "lu5p5zz",
-          "text": "In games where the 200 series fall apart they use significantly less power than their AMD equivalents, usually when they're on par they also draw the same power and intel occasionally eeks out a win with less power draw (against non-X3D parts).\n\n\n\n\nhowever I've seen the 285k drop to near 7600X power draw (while also delivering 7600X performance). Could that suggest poor utilization of the CPU? That would be fixable via software right?",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "lu608lh",
-              "text": "> however I've seen the 285k drop to near 7600X power draw (while also delivering 7600X performance). Could that suggest poor utilization of the CPU? That would be fixable via software right?\n\nI guess it depends on the nature of the architecture. Some things you just can't really fix with software. AMD had problems with early Zen that was related to their architectural layout ~ Intel might be in a very similar boat.\n\nWith Zen, AMD did have a long-term plan to bring out the gradual progressions that we've been seeing with the chiplets and IO die, getting to where we are now.\n\nBut... I wonder what Intel's plan is, assuming they have one...",
-              "upvotes": 8,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lu902mo",
-                  "text": "We don't have to sit here and speculate about what the problem is and if Intel can/will fix it. The problem is the memory latency due to the reuse of Meteor Lake's not very good SoC tile layout. 285K has like 80-100ns of memory latency vs the 50-60 you see on AM5 and LGA1700 CPUs. Memory latency is the exact thing that held back Zen 1 and 2 on the gaming performance front, so it's 100% growing pains on the use of tiles. \n\nWe already have an example of these cores in Lunar Lake where the crappy SoC layout isn't used and the latency problem is a nonissue. Rumors I've heard suggest that Nova Lake will not have this problem so we should see Intel's gaming performance bounce back somewhat next gen while keeping the nice efficiency gains they made this gen.",
-                  "upvotes": 6,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "lu715z5",
-                  "text": ">But... I wonder what Intel's plan is, assuming they have one...\n\nI sure do hope they start utilizing the base tile for something. For cache/PHY and even not so hot logic.",
+                  "commentId": "ltos9fs",
+                  "text": "Released after the superior Lunar Lake because Intel wanted good publicity first.\u00a0 Intel has become a fairly lame company.\u00a0 The ecore team is basically propping them up.",
                   "upvotes": 3,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
                   "sentiment": null,
                   "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "lu6aty8",
-          "text": "Does this have anything to do with the lack of hyperthreading in (for) games?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "lu9i9pu",
-              "text": "Some titles actually gained performance if HT is disabled.",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "lu5kpqg",
-          "text": "At this point, I think something is off, typically, before the madness of 13 and 14th gen, you buy an i5 to OC the snot out of it and match the higher tier of perf a 9600K for example can hang with the big boys ( in gaming / lightly threaded stuff) with a 5 Ghz OC. \n\nbut it seems that none of the mainstream video reviewers are doing that, and TPU who did a light / easy OC (remove power limit and +100mV and crank the P cores to 5.5, which more or less matches the much more expensive stuff), showed tiny increases.\n\nWhat the heck has happened when juicing the thing and running it is not doing that much, while disabling all except 1 P core and have all E cores enabled is doing more or as much as juicing the thing to run harder...\n\nnot to mention a 310 dollar price point, when these things were usually closer to 250/200, the whole point of buying I5 and OC for gaming was so it was cheap for top tier perf if you know what you are doing (IE know you may burn out and you need better mobo VRM and proper cooling) and is willing to gamble...",
-          "upvotes": -3,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "lu5ndhi",
-              "text": "The days of large gaming gains with OC are gone my friend. If you gain 10% you are on the extreme end",
-              "upvotes": 66,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lu5oeig",
-                  "text": "yeah, but you'd think that in theory, with how cool these are supposed to be and a relatively large gap in perf between stock 245, 265 and 285 is in gaming\n\nOcing should help 245 reach 265 level perf, since even 285 only boosts up to 5.7 on 1 P, then 5.6 or so with 2P active. once you get to 3+ it gets to 5.4. this is out of the box 285 behavior. The 265 is similar with 5.5 Ghz only possible with 1 or 2 cores active out of the box.\n\nso in theory, with a 5.5 all core on the P cores, a 245 should see similar gaming perf as a 265, if not like 285 on more threaded (more than 2 thread) games. \n\nbut that isn't what is happening. Which is what is weird. in theory they are all the same arch, and outside of core counts, if you boost xyz speed should mean they should match, and for gaming that dont need more than really 6P cores, this result makes no sense. \n\nsure, even with that boost, given how much power they'd use and now you need likely at least a expensive cooler (think at least a no frills 240 AIO, so ~75 bucks), a 5700X3D build is still attractive for saving money and gaming esp with them being sub 200 dollars out of the damned box even if its last gen.",
-                  "upvotes": -9,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "lu5rhf6",
-                      "text": "> so in theory, with a 5.5 all core on the P cores, a 245 should see similar gaming perf as a 265, if not like 285 on more threaded (more than 2 thread) games. \n\nThere's also a difference in cache amount, the lower the stack the less there is.   \nGiven how - from what I've heard so far - the Core Ultra series suffer from higher memory latencies than previous series, it would make sense that more cache has a - comparatively - disproportionate impact on latency sensitive workloads like gaming since it helps mitigate that latency.",
-                      "upvotes": 18,
+                      "commentId": "ltpbmra",
+                      "text": "> The ecore team is basically propping them up.\n\nFor which they've currently been deprioritized. It's honestly incredible.",
+                      "upvotes": 7,
                       "classifyThis": true,
                       "relevance": null,
                       "relevanceReasoning": null,
@@ -192,43 +54,9 @@
                       "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "lu5vpge",
-                          "text": "> There's also a difference in cache amount, the lower the stack the less there is.\n\nThere may also be performance inconsistencies on individual 245k CPUs I suspect. We already saw this with previous generations where SKUs with disabled cores. Would perform slightly differently based on which cores was disabled. Since you could end up with a CPU with better or worse worst case latency when it came to core to core communication based on which cores in the ring were fused off.\n\nSince ARL has a somewhat wonky core distribution with a mix of P/E cores. There could potentially be a rather large difference in latency depending on which p-cores are disabled.",
+                          "commentId": "ltpso8h",
+                          "text": "I hate that you were right about this shitshow.\u00a0\u00a0",
                           "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        },
-                        {
-                          "commentId": "lu5s867",
-                          "text": "hmm, then all things points to latency being an issue then, the rumored / sketchy 1P core with all E core setup was also suspected due to latency of inter P core communication being bad and causing problems.\n\nI thought that the L1 and L2 are the same per core, just the L3 is different with a bigger pool that is shared.\n\nmaybe that is enough of a difference...",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        }
-                      ]
-                    },
-                    {
-                      "commentId": "lu8rwhv",
-                      "text": "It's simple, they are already pushed close to their limits.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "lu8symk",
-                          "text": "I mean, they are not right, the 245 only goes to 5 ghz max and more like 4.7 multicore and 285 goes to 5.7 to 5.5 multicore\n\nim not asking to say why cant the 245 hit say 6 ghz or something, but if the 245 hits 5.5 like what 285 is doing multicore, it should also do similar to 285 in games where you don't need all that extra cores\n\nbut again it could at this point be cache / latency related which means straight up OC isn't enough and invalidate the whole thing.",
-                          "upvotes": 0,
                           "classifyThis": true,
                           "relevance": null,
                           "relevanceReasoning": null,
@@ -236,89 +64,8 @@
                           "sentimentReasoning": null,
                           "replies": [
                             {
-                              "commentId": "luctqan",
-                              "text": ">  cache / latency related\n\nthat's exactly what it is, the tile design is great for manufacturing efficiency, power efficiency, etc but introduces a ton of latency that they'll have to address in future package design",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            },
-                            {
-                              "commentId": "luflilw",
-                              "text": "Sure, that's more due to binning than any inheret silicon capability though. Just because the high bin can clock high doesn't mean the lower bin can.",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "lu5o31d",
-              "text": "chips dont have a whole lot of frequency head room nowadays, since there is competition no reason to left a lot on the table.\n\nI would assume the poor performance its cause this chip only has 6 threads it can use for gaming, since no SMT/HT and the e-cores don't work for gaming work loads.",
-              "upvotes": 13,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "lu5p1di",
-                  "text": "but that is the thing right, there is only a difference of 2 P cores between them\n\nand most games I know don't need all 8 cores, or else 5600X3D would suffer so much but we know it wasn't the case.\n\nand as I said, the even more baffling bit is if you go with just 1 P cores and all E cores active, that was actually gaining performance in games.",
-                  "upvotes": 4,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "lu5pgsk",
-                      "text": ">else 5600X3D would suffer so much but we know it wasn't the case.\n\nthat one has 12 threads tho, that's why I mentioned the lack of HT/SMT.\n\n  \nDo you have a link for the 1P core test giving more performance? cause that doesn't make any sense based on e-core IPC.",
-                      "upvotes": 4,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": [
-                        {
-                          "commentId": "lu5q259",
-                          "text": "Precisely why something seems off.",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": []
-                        },
-                        {
-                          "commentId": "lu5q2w4",
-                          "text": "https://www.overclock.net/posts/29383397/\n\n\nthere are rumors and hearsay for now, since its so developing.\n\nbut yeah, things like that are happening and its just baffling.\n\nmaybe the latency is so shit that this is somehow better.",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
-                          "replies": [
-                            {
-                              "commentId": "lu5qt6o",
-                              "text": "That screenshot looks super sketchy going by the power and usage numbers on both pics, GPU is at lower power and usage but pumping more FPS somehow, along with 7 cores disabled on the CPU but only 2% usage difference?\n\nHis second pic he is pumping like 100 extra FPS with 20% lower GPU usage somehow\n\nidk bout that one chief, but hey, might just be platform bugs",
+                              "commentId": "ltq63bj",
+                              "text": "I genuinely wish it were otherwise. But as I said at the time, I was only conveying what I had good reason to believe to be true. It's frustrating, really.",
                               "upvotes": 4,
                               "classifyThis": true,
                               "relevance": null,
@@ -327,28 +74,53 @@
                               "sentimentReasoning": null,
                               "replies": [
                                 {
-                                  "commentId": "lu5r390",
-                                  "text": "like I said, super early and only in dedicated threads like that massive 171 page monster...\n\nIt could be just bullshit, and I realized they did an OC on the E cores.\n\nwhy I was hoping more legit video outfits would maybe delve deeper into this\n\nbut yeah, there are discussions on the latency possibilities, and how because how the P cores are nestled inbetween e cores, you get similar issues with inter CCD stuff for AMD but now its inter P cores?\n\nbut at this point, all of it is super messy and yeah as you said sketchy esp with power and usage numbers.",
+                                  "commentId": "ltqi84t",
+                                  "text": "You're pretty accurate. That's cool.\n\n\nLet us know when something good is going to come out of Intel. Until then, x3d it is.",
                                   "upvotes": 2,
                                   "classifyThis": true,
                                   "relevance": null,
                                   "relevanceReasoning": null,
                                   "sentiment": null,
                                   "sentimentReasoning": null,
-                                  "replies": []
+                                  "replies": [
+                                    {
+                                      "commentId": "ltr0bhb",
+                                      "text": "Hah, depends how much of the roadmap survives before the fabs (and management) drag the whole company to its grave. *That* remains a shit show, don't let the PR fool you. \n\nBut PTL (+WCL) should make for a solid mobile lineup, and when NVL eventually arrives to desktop, should reverse most of the damage from ARL. Minus the likely absence of an X3D competitor.",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "ltrusrw",
+                                          "text": "Why would they worry when the government will bail them out if necessary?",
+                                          "upvotes": 0,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "ltrv6d6",
+                                              "text": "The government won't even give them the CHIPS Act money. I don't see a bailout happening. If it comes to that, Intel would at least be broken up. \n\nMoreover, Intel can and will pretend everything is fine right up until they collapse. Doesn't give much time for an intervention.",
+                                              "upvotes": 2,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
                                 }
                               ]
-                            },
-                            {
-                              "commentId": "lu60xhq",
-                              "text": "Leave it to the OCN guys for being at the bleeding edge",
-                              "upvotes": 2,
-                              "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
-                              "replies": []
                             }
                           ]
                         }
@@ -359,9 +131,9 @@
               ]
             },
             {
-              "commentId": "lu5rrif",
-              "text": "The tiny increases are because Intel pushes their designs to the max by default, because they have to.\n\nThey don't leave any meat on the bone.  I'm a 14900KS user and outside of exotic loops using a chiller or full on LN2 it's basically at the maximum to be had with intels Extreme profile, yeah there's wiggle room upwards but not enough to call it anything more than a fine tuning.\n\nThese breaking point stock overclocks bit them in the arse with 13th/14th generation because of how delicate the razors edge is that they walk.\n\nThey do this because they have to as stated earlier.  After failing to innovate from 14nm for so damned long they got into this habit of trying to squeeze the last drop of performance out of their CPUs to try and appear competitive, hence why in China Intel is referred to as \"the toothpaste company\", as people try to squeeze the last remnants of toothpaste out of a tube so does Intel try to squeeze their CPUs.\n\nIf they didn't the curtain would be drawn back and the Great Oz would be revealed to be nothing but an asthmatic dinosaur sitting in a hoveround chair.\n\nI think it's telling that Intels fab construction in Arizona is delayed and off target while TSMC who broke ground only a few months prior in Arizona began engineering wafer production back in April and has recently been reported to have achieved a 4% efficiency increase over its native fabs..\n\nThat price point for this CPU is ridiculous. Gelsingers got to do Intels earnings call on Halloween and I swear  its probably his own personal horror movie, after seeing that price I'm eating popcorn and watching with a grin.",
-              "upvotes": 28,
+              "commentId": "ltogy4o",
+              "text": "Yeah, I had already compared Raptor lake to rocket lake months ago... kind of like a bad generation that barely beats the old one... but this is even worse... there are numerous performance regressions, inconsistent performance etc. Not even productivity performance is always better than 14th gen or amd 7000..",
+              "upvotes": 8,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -370,9 +142,9 @@
               "replies": []
             },
             {
-              "commentId": "lu5xv3p",
-              "text": "Just buy 7700x at that point",
-              "upvotes": 7,
+              "commentId": "ltthbm9",
+              "text": "Not only the cpu's, think about the abundance of motherboards that will stay on the shelves. How the fuck did Gigabyte manage to push out 17 z890 while only 10 x870?, the same applies to the other vendors.\n\nAnd at this point Intel won't even tell if this platform will be used for another generation",
+              "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -381,20 +153,9 @@
               "replies": []
             },
             {
-              "commentId": "lu6pb68",
-              "text": "> At this point, I think something is off, typically, before the madness of 13 and 14th gen, you buy an i5 to OC the snot out of it \n\nA few things:\n\n* 15 years ago, it wasn't core count that mattered, but clock speed. The only difference between the budget and the flagship SKUs were clock speed and cache. If a CPU had the same cache, it could be OC'd to match a flagship. The $270 Q6600 could be OC'd to [match the $1000 QX6850](https://www.anandtech.com/show/2303). Today, however, the SKUs are generally differentiated by number of cores. The clock speed is almost redlined out-of-the-box, and you pay more for more cores.\n* Intel limited multiplier overclocking to K SKUs and then charged a premium for them. There were some workarounds such like BCLK overclocking but Intel told mobo manufacturers to stop that. That all but killed budget overclocking.",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            },
-            {
-              "commentId": "lu5xhen",
-              "text": "13600K started at 300+ too.",
-              "upvotes": 4,
+              "commentId": "ltsfe19",
+              "text": "Rocket Lake i5s were decent IMO.  Could get an i5 11400F + mobo a fair bit cheaper than a R5 3600 + mobo, and the perf difference wasn't that big.\n\nIt was the i9s and maybe i7s that were questionable.",
+              "upvotes": 1,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -405,9 +166,9 @@
           ]
         },
         {
-          "commentId": "lu7mqa4",
-          "text": "The Cinabench results for this and all the other Ultra 200 processors are very good. Obviously Cinabench isn't the be all end all of CPU benchmarks, but it usually isn't as far off as it is here. Does that mean that there is potential performance on the table and there is potential that Microsoft will update Windows to better support these cpus and get more performance?",
-          "upvotes": 1,
+          "commentId": "ltoeu13",
+          "text": "I'm expecting this product, especially the 285K to be discounted heavily after two weeks.",
+          "upvotes": 17,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -415,17 +176,52 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "luab6g3",
-              "text": "One hint is Linux benchmarks. Some look better with similar tests but it\u2019s still not a blowout. \n\nI suspect Microsoft will fix something and get a few percent out of them like the amd fix.",
-              "upvotes": 2,
+              "commentId": "ltoxdej",
+              "text": "I hope Intel has to sell these at a loss due to TSMC 3nm not being cheap",
+              "upvotes": -1,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
               "sentiment": null,
               "sentimentReasoning": null,
-              "replies": []
+              "replies": [
+                {
+                  "commentId": "ltqymnv",
+                  "text": "Intel deserves to suffer with all of their corrupt business practices and undeserved subsidies by the government.",
+                  "upvotes": 9,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ltsarao",
+                      "text": "It's not about deserved or undeserved subsidies, it's a national economic and security interest to have a national manufacturer capable of producing high end chips. Same thing would happen in other industries, like US gov would never let Boeing go out of business.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
+        },
+        {
+          "commentId": "ltntyij",
+          "text": "Losing to 13600K in 7zip \n\nNice joke Intel, now release the real Core Ultra 200S",
+          "upvotes": 77,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         }
       ]
     }

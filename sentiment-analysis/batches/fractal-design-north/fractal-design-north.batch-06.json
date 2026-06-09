@@ -1,7 +1,7 @@
 {
-  "productName": "fractal-design-north",
+  "productName": "Fractal Design North",
   "batchIndex": 6,
-  "totalBatches": 25,
+  "totalBatches": 24,
   "comments": [
     {
       "commentId": "2a8o51",
@@ -14,162 +14,34 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "cisk99m",
-          "text": "Which fans do you use in your pc? ",
+          "commentId": "cissvx2",
+          "text": "Wouldn't a better methodology be to pick a few sets of safe temperature levels, tune each fan setup to keep all components at or below their safe temperatures at, say, each of idle, gaming, and x264+furmark load? You would then publish the noise level each fan configuration produced at each load level.\n\nIn practice, that's what builders are usually doing. You configure your fan controller to keep your CPU below 80\u00b0, your disks below 40\u00b0, and your GPU below whatever the manufacturer says (with acknowledgement that smarter fan control algorithms are quieter than dumber fan control algorithms), and then you live with whatever noise you get. Unless it's totally offensive, in which case you go on the internet and buy quieter fans.\n\nUnfortunately, the published specifications for PC cooling fans are woefully insufficient for predicting how they will perform in any given application, or even how they compare to each other. The best you could do, I think, is give people an idea of how different fans compare when installed in a typical setup and removing the same amount of heat.",
           "upvotes": 8,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Purely a question about the user's PC setup, not providing insight into the Fractal Design North.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is a simple inquiry without any expressed sentiment.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "ciskum5",
-              "text": "Currently using the Aerocool DS120 since it's so quiet.\n\nHowever, I'm doing another test soon that involves experimenting with opening up vents, removing drive cages, and mounting the fans internally so I'll end up switching between the Noctua NF-F12 Industrials and Fractal Design Silent R2 fans for that.",
-              "upvotes": 13,
+              "commentId": "cistoqx",
+              "text": "The one problem I see with this method is that the fan speeds would vary with ambient temperature due to these custom fan curves. While you can compensate ambient temperature from hardware temperatures (1C rise in ambient usually equals 1C rise in hardware temps), you can't do the same with noise levels. \n\nThis is even more of a problem when you have fans that have interesting noise characteristics. Some fans introduce harmonic resonances at specific speeds. Therefore, it's better to ramp the fan's RPM and find out which RPMs produce what kinds of noise and how loud they would be since noise is more directly tied to RPM.\n\nFinally, this fan curve idea can fail depending on the case and fan you're testing. Take the Noctua NF-A14 PPC I tested with the Define R4. Note that the hard drive actually got hotter moving from 7V to 12V rather than cooler. This is because the fan tray of the case caused the fan to stall aerodynamically, causing lots of unstable airflow. A fan curve may misinterpret this data and try to spin the fan faster, which can cause more stall.\n\nIt's better to show a direct relationship of variables. In this case, a fan's noise and air output (which is tied to cooling capacity) is closely related to the fan's RPM. The fan's RPM is related to the voltage supplied to it. This is how many sites test their fans (Vortez, CoolingTechnique, etc.)",
+              "upvotes": 4,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Discusses Aerocool and Noctua fans, and mentions Fractal Design Silent R2 fans, but does not relate to the Fractal Design North case.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is describing their testing process and fan choices.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "ciskzl0",
-                  "text": "I'll have to look into the aerocool fans. By the way , nice review it is in depth and easy to understand. Can I also ask what fans would you recommend as an intake for a filtered mesh front panel?",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Discusses fan recommendations for a filtered mesh front panel in general, not specifically the Fractal Design North.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user expresses positive sentiment towards the review provided by the original poster.",
-                  "replies": [
-                    {
-                      "commentId": "cislfmn",
-                      "text": "Depends on the case and your budget. \n\nI wouldn't hesitate recommending the Cougar Vortex PWM or the Phanteks F140SP when they're on sale since they're cheap and perform well for their price.\n\nThe Aerocool DS fans are on sale on Newegg too so you have that too.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "Provides general fan recommendations (Cougar, Phanteks, Aerocool) unrelated to the Fractal Design North.",
-                      "sentiment": "positive",
-                      "sentimentReasoning": "The user recommends these fans based on their performance and price.",
-                      "replies": []
-                    }
-                  ]
-                },
-                {
-                  "commentId": "cisl9ha",
-                  "text": "Would the Aerocool DS140 be any better?",
+                  "commentId": "cisw37v",
+                  "text": "&gt; The one problem I see with this method is that the fan speeds would vary with ambient temperature due to these custom fan curves. While you can compensate ambient temperature from hardware temperatures (1C rise in ambient usually equals 1C rise in hardware temps), you can't do the same with noise levels. \n\nOne option would be to set your AC to keep an uncommonly low ambient and test at a few different delta-Ts. That would allow people to pick the set of results appropriate for their environment.\n\n&gt;This is even more of a problem when you have fans that have interesting noise characteristics. Some fans introduce harmonic resonances at specific speeds. Therefore, it's better to ramp the fan's RPM and find out which RPMs produce what kinds of noise and how loud they would be since noise is more directly tied to RPM.\n\nThat would be a good thing to mention in a review of a particular fan model, and would certainly influence my choice of fan. However, two fans can produce substantially different air flow at the same RPM, and even though noise is strongly influenced by RPM (noise power proportional to RPM^5 IIRC), fans can differ there too.  Same-RPM testing doesn't facilitate comparison between fans, unless they happen to be very similar in either noise or flow, and very different in the other.\n\n&gt;Finally, this fan curve idea can fail depending on the case and fan you're testing. Take the Noctua NF-A14 PPC I tested with the Define R4. Note that the hard drive actually got hotter moving from 7V to 12V rather than cooler. This is because the fan tray of the case caused the fan to stall aerodynamically, causing lots of unstable airflow. A fan curve may misinterpret this data and try to spin the fan faster, which can cause more stall.\n\nI hadn't considered the possibility of stall. Your case fan system turning into a relaxation oscillator could make for a very unpleasant day. I only have rear exhaust fans, and my case's inlet is very unrestrictive, so I haven't run into this problem. It seems like the solution would be to find the voltage/pwm duty ratio/etc. that causes the fan to stall, and limit your controller's maximum output to a little below that value.\n\n&gt;It's better to show a direct relationship of variables. In this case, a fan's noise and air output (which is tied to cooling capacity) is closely related to the fan's RPM. The fan's RPM is related to the voltage supplied to it. This is how many sites test their fans (Vortez, CoolingTechnique, etc.)\n\nThe problem is that these can't be directly compared between fans. People care about the relationship between noise and air output.  What RPM the fan is spinning at is simply an implementation detail.  The voltage that produces that RPM is an implementation detail of an implementation detail.\n\nIf you have an automated test process, you could plot curves of noise vs. delta-T at a few different power levels. Linux makes it easy to access temperature sensors and PWM controllers under `/sys/class/hwmon`. In the process of developing my current fan control scheme, I produced a python module to interface to these, and a dial-a-yield thermal stress tester that uses prime95 and Intel Power Gadget in a feedback loop.\n\nUnfortunately, I haven't put it on github because the code is ugly, I'm unfamiliar with Python packaging, and parts of it, like the PID controller module, are pretty general and should probably be broken out separately.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Question about Aerocool DS140 fans, unrelated to the Fractal Design North.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a factual question.",
-                  "replies": [
-                    {
-                      "commentId": "cislgr3",
-                      "text": "I heard the DS 140 has some vibration issues according to user reviews so I ended up going with the 120mm models. ",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "Discusses vibration issues with Aerocool DS140 fans, unrelated to the Fractal Design Design North.",
-                      "sentiment": "negative",
-                      "sentimentReasoning": "The user expresses a negative opinion about the Aerocool DS140 fans.",
-                      "replies": [
-                        {
-                          "commentId": "cisljdf",
-                          "text": "Would you recommend 140mm fans?",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "General question about 140mm fans, unrelated to the Fractal Design North.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The comment is a simple inquiry.",
-                          "replies": [
-                            {
-                              "commentId": "cislnfm",
-                              "text": "Typically they don't have steep blade angles so they have equal or less air velocity than their 120mm counterparts (as demonstrated by the Cougar Vortex V14 vs the V12 in my test). This makes them not so great as intake fans. Their higher CFM per RPM makes them more ideal as exhaust fans.\n\nHowever, the Phanteks F140SP/HP and Cryorig XT140 are an exception because they have a pretty sharp curve to their blades. They serve well as 140mm intake, radiator, and heatsink fans.\n\nNow if only NZXT would release their new FX140 fans on their X41 and X61 radiators... I would die to test those.",
-                              "upvotes": 2,
-                              "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "Technical discussion about 140mm vs 120mm fans in general, unrelated to the Fractal Design North.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The user is providing a technical explanation of fan performance.",
-                              "replies": [
-                                {
-                                  "commentId": "cislqv8",
-                                  "text": "&gt; Now if only NZXT would release their new FX140 fans on their X41 and X61 radiators... I would die to test those.\n\nIs [this](http://www.vortez.net/articles_pages/nzxt_120mm_and_140mm_enthusiast_fan_review,3.html) them?\n\n&gt;  Cryorig XT140\n\nI like the look of them.",
-                                  "upvotes": 1,
-                                  "classifyThis": true,
-                                  "relevance": "exclude",
-                                  "relevanceReasoning": "Discusses NZXT and Cryorig fans, unrelated to the Fractal Design North.",
-                                  "sentiment": "neutral",
-                                  "sentimentReasoning": "The user is sharing a link and expressing a mild interest in the look of Cryorig fans.",
-                                  "replies": [
-                                    {
-                                      "commentId": "cislts8",
-                                      "text": "Nah, those NZXTs are the old versions. The new ones come with the new X41 and X61 radiators.\n\nCryorig is a new company but they are such a great startup already.",
-                                      "upvotes": 2,
-                                      "classifyThis": true,
-                                      "relevance": "exclude",
-                                      "relevanceReasoning": "Discusses NZXT and Cryorig, unrelated to the Fractal Design North.",
-                                      "sentiment": "positive",
-                                      "sentimentReasoning": "The user expresses positive sentiment towards Cryorig as a great startup.",
-                                      "replies": [
-                                        {
-                                          "commentId": "cislw2g",
-                                          "text": "Ah, I'll look out for both when they come out",
-                                          "upvotes": 1,
-                                          "classifyThis": true,
-                                          "relevance": "exclude",
-                                          "relevanceReasoning": "Off-topic discussion about fans from other brands, unrelated to the Fractal Design North.",
-                                          "sentiment": "neutral",
-                                          "sentimentReasoning": "The user is simply stating their intention to look into the product.",
-                                          "replies": []
-                                        },
-                                        {
-                                          "commentId": "cisy1pp",
-                                          "text": "Cryorig has awesome coolers, I love Cryorig. ",
-                                          "upvotes": 1,
-                                          "classifyThis": true,
-                                          "relevance": "exclude",
-                                          "relevanceReasoning": "Expresses love for Cryorig coolers, unrelated to the Fractal Design North.",
-                                          "sentiment": "positive",
-                                          "sentimentReasoning": "The user explicitly states they love Cryorig.",
-                                          "replies": []
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        },
-                        {
-                          "commentId": "cisvx0j",
-                          "text": "Damn you need to verify that claim :D",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "Banter between users, unrelated to the Fractal Design North.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The comment is a low-effort response.",
-                          "replies": []
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "commentId": "citm2sf",
-                  "text": "boy am I looking forward to this. I have three Slient R2s in my case right now. ",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Mentions using Silent R2 fans, but does not provide insight into the Fractal Design North case.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user is looking forward to the test results.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": []
                 }
               ]
@@ -178,6 +50,5 @@
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

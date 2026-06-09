@@ -1,0 +1,346 @@
+{
+  "productName": "AMD Ryzen 7 7800X3D",
+  "batchIndex": 100,
+  "totalBatches": 128,
+  "comments": [
+    {
+      "commentId": "18gijir",
+      "text": "HUB - AMD Ryzen 7 7800X3D vs. Intel Core i9 14900K, 21 Game Benchmark",
+      "upvotes": 324,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "kd0r8ka",
+          "text": "TLDR:    \nCurrent pricing:   \n14900K ~ 580 USD   \n7800X3D ~ 360 USD   \n14900K better productivity CPU   \nAt 1080P 7800X3D 5% faster     \nAt 1440P 7800X3D 4% faster   \nAt 4K 7800X3D 1% faster   \nTotal System Power at 1080P with RTX 4090:    \n7800X3D 425W     \n14900K 555W",
+          "upvotes": 314,
+          "classifyThis": false,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "kd157qk",
+              "text": "No brainer that the 7800X3D is the better buy because of the price alone.",
+              "upvotes": 259,
+              "classifyThis": false,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "kd15vjf",
+                  "text": "The power consumption is also a huge pro for me. In most games, My 7800X3D (heavily tuned) consumers around 60W, and I can get the whole system below 350W with an undervolted 4090. In the summer, that's a huge difference in how hot the room gets. I do wish the IHS was thinner though, as CPU temperatures are about 1:1 with how many Watts are used by the CPU, which is atrocious in terms of thermal transfer efficiency.",
+                  "upvotes": 136,
+                  "classifyThis": false,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "kd22aph",
+                      "text": "350 watt power consumption with that combination? My 2700x + RX 5700 (while a factory overclocked variant) on stock settings consume like 280 watts! Talk about impressive!\n\nThe 7800x3D and 4090 are quite powerful and quintessentially efficient for what a powerhouse they are",
+                      "upvotes": 11,
+                      "classifyThis": false,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "kd2e8me",
+                          "text": "Yeah I call bull. My 7950x3D and 4090 draw over 200w just sitting idle at the freaking Windows desktop. To only go up an additional 150w from there under load means he's significantly hamstringing his GPU.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "kd2hmza",
+                              "text": "Perhaps it is possible to undervolt too much and only sacrifice minor performance hits? the 4090 can be quite efficient",
+                              "upvotes": 5,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            },
+                            {
+                              "commentId": "kd45ttf",
+                              "text": "What on earth are you running screen wise at the desktop to take 200w?!   \n I use 40-60 watts at desktop idle with much more inefficient chips.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "kd4hne0",
+                                  "text": "It's the AMD board that's responsible for a huge chunk of it. My total system power draw on an old 7700k and 1080 Ti build was around 160w, and even plopping the 4090 in that same machine brought it down an additional 10w because it idles at ~5w while the 1080 Ti idled at 15w. However, since replacing the motherboard, CPU and RAM to the AM5 build, suddenly I'm seeing 200w+ at the wall just while sitting at the desktop. It's absurd. If I don't tweak SoC and VDD voltages and just let EXPO do its thing, then it goes up even higher to around 225w.\n\nYeah under load this system spanks the old 7700k especially when you consider it has 4x the number of cores, but at idle, that pesky IO chiplet die is making the system overall draw significantly more power than Intel does.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "kd5c4bi",
+                                      "text": "Have you tried eco mode? I'll need to check my numbers but I think my 7900x isnt even hitting that much and it doesn't lose much if any performance in eco mode from what I can tell. Auto OC, with expo 6400 32c. It might also be the iGPU. I didnt measure power consumption with it on but it caused a bunch of issues trying to take over hardware accelerated non-gaming apps and was active even when the driver was uninstalled. You have to go to amd cbs/nbio/gfx configuration in bios to actually disable it. Very plausible it could be eating up a significant chunk of power on nothing at all. The only use case for it if you're not using an AMD 7000 GPU is to run an additional monitor if you're maxed out",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "kd5l583",
+                                          "text": "I keep the integrated GPU fully disabled in the BIOS so it's definitely not that. I'm not sure eco mode would help the idle power draw since I understand it as lowering the limits for boosting, so shouldn't affect idle power draw. It's just the way AMD systems run apparently, they just draw a lot more power at baseline because of the chiplet design. They make up for it under load by being very efficient and only drawing around 70w at most typically.",
+                                          "upvotes": 2,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "commentId": "kd5zoie",
+                                      "text": "That's insane, okay I'm on AM4 and DDR4, but that's still chiplet with an IO die - but you're at 4x the consumption just from the AM5 motherboard? Something seems really weird there.",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "kd77p8j",
+                                          "text": "Just to be clear, I'm talking about total system power. As in how much the power supply is pulling from the outlet. My previous Intel system was sitting at around 150w with the same GPU, so moving to AMD increased idle power draw by approximately 50w. Disabling EXPO reduces the gap to about 20w but then I lose a ton of performance.",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": []
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "commentId": "kdg2op9",
+                              "text": "> My 7950x3D and 4090 draw over 200w just sitting idle at the freaking Windows desktop. \n\n\"Press X to doubt.\" These AMD's CPUs consume \"only\" around 30 watts when idle. So the issue is with 4090, your setup or software. Why even bring this package deal here? Check how much 7950x3D draws with something like HWInfo.\n\n4090 idles probably also at around 30-40 watts. What may increase this a fair bit is display count, resolution, refresh rates (e.g. constantly running at max instead of using VRR?).",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "kdhuiqj",
+                                  "text": "My 4090 pulls 5-7w at idle. It reduced idle power draw by about 10w over my old 1080 Ti. Since the card is its own encapsulated device, that reading is total for the whole card. The CPU power reading is ONLY for package power and doesn't even look at the motherboard chipset which is where the rest of the power draw comes from. Also, 30w is not what an EXPO enabled 7950x3D idles at. Try 40w. That's 30w more than an Intel chip at idle. With their power hungry chipset, the idle draw of the total system is significantly higher than Intel rigs. I'm telling you the exact numbers it was at the outlet reading my battery backup. 150w from the Intel rig, 200w from the AMD one. Only change in parts was motherboard, CPU and RAM. Everything else is the same. Just putting those parts in raised my idle total system power draw by 50w.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "kdknwoc",
+                                      "text": "Ok, but you made it sound like 7950x3D is consuming 100-200 watts when idle, which is not the case. My 5800x3D eats around 33. So 7950x3D eating even 40 watts is not a big difference to me. But I'll test it once it gets here.\n\nI read that running the RAM at EXPO speeds as opposed to non-OC is what makes a noticeable difference in AMD CPU's idle power draw.",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "kdkq3j7",
+                                          "text": "If I can't run EXPO, then the system is pointless to me. It loses significant performance by turning it off. And that's where the major gap up comes from. Unless you're checking your power draw at the wall, you have no idea how much your system actually pulls. Those sensors for just the CPU are extremely misleading and this is why reviewers show total system power instead.",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "kdkx9r9",
+                                              "text": ">Unless you're checking your power draw at the wall, you have no idea how much your system actually pulls.\n\nI do check at the wall of the whole case and with hwinfo. It's even less than I thought as without hwinfo launched it shows 64w at idle (at wall of the system without monitors). With hwinfo launched \u2013 77w at wall.\n\n64w correlates with the stats shown by hwinfo: 5800x3D \u2013 \\~32w, 3090 \u2013 26w. But again, this is with AM4.\n\nSetup:\n\n5800x3D at -30, uv'ed 3090, 32GB @ 3600mhz cl14 1.45v, 1 x  4k display @ 60hz, asus b550 itx board, sf750 platinum psu @ 220v, 1 x m.2.",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "commentId": "kd2q281",
+                              "text": "7800X3D is half the TDP of the 7950X3D...",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "kd3dhhk",
+                                  "text": "All core load is the only place that number matters. In gaming workloads, my CPU is routinely sitting at 50-70w, no more.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "kd31cmq",
+                      "text": "actually in term of idle power consumption , Intel has upperhand.",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "kd33b8e",
+                          "text": "Yeah, hands down. I had a 7900X before the 7800X3D and that was consuming ~65W at idle when the memory was running at 6400 MT/s. A 13900K idles around 9W or so. The 7800X3D is acceptable at around 35W at idle. That's about the same as my old 10700K was using at idle when running a constant 5.1GHz overclock with all power saving features disabled.",
+                          "upvotes": 6,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "kdb2xyz",
+                              "text": "7000 series is pretty terrible with idle power consumption. That is the biggest blemish on the line-up. It seems like a lot of places don't test idle consumption either, which is unfortunate because a lot of machines spend most of their existence at idle. \n\nIf you actually heavily utilize your computer regularly then you'll come out ahead with 7000 series, but if it's mostly a web browsing or word processing machine, with only occasional heavy loads then Intel probably comes out ahead.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "kfnjust",
+                                  "text": "Or you could do what I and many other people did, build an AM4 system with a 5600G / 5700G APU. I only play older / lighter games occasionally and mostly use the PC for productivity (mostly idling, sometimes single-core limited) so the 5600G performs easily enough.\n\n5000 gen have great idle power consumption. Typical idle power draw on 5600G is 20-30W for the whole system. That's also the range intel gen 10-11 was in for idle power consumption, but 5000G has 3-4x the integrated graphics performance.\n\nIt won't work for you if you intend to play AAA games,  but for people who don't care about those, these are still great and now super affordable choices.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            },
+                            {
+                              "commentId": "kdedfpg",
+                              "text": "Are these numbers (13900K, 7800X3D) coming from your experience or is this coming from some test, website?\n\nUnfortunately most of reviewers ignore idle power usage. I have hard time finding many sources for this.\n\n8 hours of browsing/youtube \\* 30W = 240W difference. In real life scenario, with some undervoltage, the difference in gaming may not be as high as in unlimited FPS benchmarks, so depending on user profile/preferences/usage AMD may not be that much better.  \n\n\nOne thing though, the price difference between 7800x3d and 14900K is pretty big so even if Intel looks better in idle, it may not be worth it. I wonder though how 13600/13700 would do in casual+some playing efficiency comparison...",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "kdfndpg",
+                                  "text": "The \\~30W metric for the 7800X3D is from my experience, running the CPU with -30 Curve Optimizer (undervolted by 0.15 V). The number for the 13900K is from a [Video](https://youtu.be/JHWxAdKK4Xg?si=wHR2svs1eu7VHcJ9) discussing this topic. \n\nThe horrific numbers - like 500W used by the CPU alone - you usually see for a 13900K or a 14900K are usually from a very hard benchmark session, and during gaming, both of those CPUs are much more reasonable, and it's also recommended to turn off the e-cores on the Intels, for more consistent framerates (and sometimes higher performance as well) and that will also result in lower power consumption during gaming. \n\nThe 7800X3D is just incredibly efficient while under load. As I said above, in most games, it just consumes around 60W. The 7900X I had before was around 100-140W while gaming, which is very much comparable with the 13900K or the 14900K. The 7950X3D would be similar, due to it having two CCDs. AMD's chiplet design wastes some power with the inter-CCD communication, so that is why the 7800X3D is an outlier. It's clocked much lower than the non-X3D single CCD chips and thus runs on much lower voltage. A 7700X would go up to 1.4V at max boost clock, while the 7800X3D usually stays around 1V for me. Since power consumption scales with voltage-squared, you can see why this chip in particular is so efficient.",
+                                  "upvotes": 3,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "l63pztt",
+                      "text": "Curious, do you know of anything in the 12th gen line up that gets \"relatively\" close to the 7800X3D? like within 10-15%",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "l657oqp",
+                          "text": "With high-clocking, hand-tuned memory, and E-cores disabled, 8-core Alder Lake CPUs should still be competitive. The 13900K with DDR5-8400 is faster than the 7800X3D in most games. The 7800X3D is very memory bandwidth limited, and at DDR5-8000+ Intel CPUs approach a 70-100% advantage on memory bandwidth over the 7800X3D. \n\nThe more memory a game uses (not talking about VRAM primarily, but that may also play some role), the less impact the extra cache on the 7800X3D has.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "kd9dv90",
+                      "text": " it makes it effectively half the price considering the power consumption in the long run.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

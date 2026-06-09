@@ -1,0 +1,240 @@
+{
+  "productName": "WD Black SN850X",
+  "batchIndex": 5,
+  "totalBatches": 5,
+  "comments": [
+    {
+      "commentId": "1gcpkj7",
+      "text": "WD Black SN850X 8TB Performance Results - WD Black SN850X 8TB SSD review: The no-compromise 8TB champion",
+      "upvotes": 188,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ltwk7fy",
+          "text": "I have a 4TB SSD, and the block size in the formatting is so large that it wastes a lot of space of smaller files. All that extra space does have a penalty.",
+          "upvotes": 6,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ltz1dgy",
+              "text": "Then you're formatting it wrong.\n\nYou can use 'normal' 4k blocks all you want with a large SSD, provided you're using a non-ancient file system.\n\nEven vFAT should support 4k blocks for a 4TB device, but its possible some disk formatting software might choose something silly, like 32k blocks, if they want compatibility with some legacy devices.\n\nBut really, friends don't let friends use vFAT unless there are no other reasonable options.  (multi-os removable drive, requirement for certain USB boot situations, etc).",
+              "upvotes": 22,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lui1wzy",
+                  "text": "Yeah, i have 4k blocks everywhere from 512GB to 8TB. All on NTFS btw, works fine.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lty6ky3",
+              "text": "What do you mean block size? Is it only related to speed or just redundancy?",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lty8gjd",
+                  "text": "Filesystems allocate space for files in chunks, so that the chunks can be spread out to fill space. (This is what disk fragmentation is, but it doesn't have a performance penalty on SSDs like it did on HDDs, so defragmenting SSDs isn't a thing.)\n\nThe chunks all need to be a fixed size for everything to work, so when the drive is formatted you pick a chunk size, called the block size. For bigger drives, the block size is usually bigger too, but the tradeoff is that the minimum space taken up by a tiny file is one block. Lots of tiny files, combined with a large block size, means lots of mostly-empty blocks - AKA wasted space.\n\nIt's worth noting that block sizes, even on massive drives, are usually measured in Kilobytes, so it's not usually a problem... Also why people don't really talk about it, or spread \"optimal block size\" wisdom. The default is usually a good choice.",
+                  "upvotes": 16,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lui21z3",
+                      "text": "well, technically you can defragment ssds, its just.... actually detrimental for average use case. having file spread out overmultiple controllers improves read times. not to mention extra wear from extra writes. SSD firmware usually move files around anyway to level off wearing.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "luivvg7",
+                          "text": "I suppose when I said defragmenting SSDs isn't a thing, I didn't mean that you *can't*, but that it wasn't a thing anyone would ever want to do, for all the reasons you outlined",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "m1r6s37",
+                      "text": "You forgot to mention that larger blocksizes result in better IOPS, because each block has an adress, and they are randomly stored, therfore the controller must look up every block that constituates a single file. For large files 4K blocks means many adresses to look up, if you make a blocksize of 32KB on partitions that have large files, you now have 8 times less adresses to lookup per 32KB bits of that file. If you have MKV movie files of 50GB (50.000.000KB) you see how you can remove a lot of address lookups for loading that file. But also for writing this has advantages, because you store 8 times less addresses to your FAT. This makes the wear and tear smaller for your SSD's. The only downside is when you have files smaller then 32KB, then they still take 32KB space... not advisable on an OS partition. But for Media or Documents paritions, 32KB is the best size. If you don't want to gamble you cans till go for 16K (you win 4 times less adresses lookups) I did on my OS drive, because I have a big drive, and I don't really care about the penalty of lossed storage. On a drive of 1TB or higher you don't notice. The percentage of micro files is tiny.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ludnhw3",
+          "text": "Great, now make it cheap.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ludp649",
+          "text": "This is currently on sale in Canada for ~$850 CAD. I grabbed one, couldn't resist that price.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lvscxch",
+              "text": "Hey, where at was it on sale?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lvsdk58",
+                  "text": "Hey, it was at Canada Computers, I think the sale ended now, but it's on sale there now for $900, $495 off.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lvsgu13",
+                      "text": "Thanks!! It looks like Sandisk canada main website also running the sale.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "lvyjwum",
+                          "text": "$880 Canadian on the Sandisk website, but you can get a coupon for 10-20% off by visiting the US site and doing the surpise savings email sign up.\n\nWith 20% coupon, it's coming out to $704 pre tax.\n\nCoupons expire tomorrow. I don't think it will go any lower for BF deals.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "lvz0joi",
+                              "text": "Thanks, was able to get a 20% off the USA site and used on Canadian site, cheers",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ltx7dx4",
+          "text": "16TB PCIE Gen 5 SSDs for $1000 and you have a deal. This ain't it.",
+          "upvotes": -12,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "1tls89a",
+      "text": "Question about a WD SN850X 2TB\n\nHello,\n\nForgive me if this doesn't belong here but I found a WD SN850X 2TB for sale near me for a decent price. However, looking over the drive I can't help but notice the memory controller appears to be different than all the other stock images I've seen of this same drive. It appears to be a Sandisk a101-001192-b2 controller from what I can find online but nothing is coming up as to it's use on the SN850X 2TB. The PCB on the drive is black and everything else looks to match up save for that controller. Is this a label swap drive? Thanks!\n\n[Picture of the drive in question.](https://imgur.com/a/1VdO44m)\n\nUpdate: I found a drive on one of the Amazon review pictures (thanks Baddger lol) that also shows a controller with the A101 prefix so I'm assuming this one is legit.",
+      "upvotes": 0,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "onhxkvc",
+          "text": "Sandisk makes the drives...[Amazon link](https://www.amazon.com/WD_BLACK-SN850X-Internal-Gaming-Solid/dp/B0B7CMZ3QH?th=1)",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "oni06zt",
+              "text": "Yeah, sorry, I get that just the iterations of the drive i've seen in the images on the internet show a Sandisk 20-82-20035-B2 controller. And I can't get any clear images of the updated drives after Sandisk acquired WD i guess the \"powered by Sandisk\" boxes. ",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

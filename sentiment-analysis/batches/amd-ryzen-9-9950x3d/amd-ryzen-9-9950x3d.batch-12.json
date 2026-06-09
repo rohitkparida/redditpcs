@@ -1,12 +1,12 @@
 {
-  "productName": "amd-ryzen-9-9950x3d",
+  "productName": "AMD Ryzen 9 9950X3D",
   "batchIndex": 12,
-  "totalBatches": 26,
+  "totalBatches": 36,
   "comments": [
     {
-      "commentId": "1j8q8sq",
-      "text": "AMD Ryzen 9 9950X3D CPU Review &amp; Benchmarks vs. 9800X3D, 285K, 9950X, &amp; More",
-      "upvotes": 319,
+      "commentId": "1j8qnm3",
+      "text": "AMD Ryzen 9 9950X3D Review",
+      "upvotes": 400,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,9 +14,9 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mh7qqun",
-          "text": "I look forward to the UserStenchmark reviews.",
-          "upvotes": 166,
+          "commentId": "mh7d3uh",
+          "text": "Is there any point in upgrading to AM5 if all you do is game and you've already got a 5800X3D? Seems like that one still runs every game without issue.",
+          "upvotes": 62,
           "classifyThis": false,
           "relevance": null,
           "relevanceReasoning": null,
@@ -24,20 +24,114 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "muubdgx",
-              "text": "9950x3d at Microcenter @$679.99\n\nSteve's quote is at $545, a big jump to $134.00",
-              "upvotes": 1,
+              "commentId": "mh7jpca",
+              "text": "Your lows could improve significantly, but with their current inflated prices from people going crazy I wouldn't do it. If next gen improves the CPU internal latency it'll be a much better upgrade",
+              "upvotes": 19,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The comment provides factual pricing information without any personal opinion, experience, or critique.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is stating a price difference without expressing a positive or negative opinion on the product itself.",
-              "replies": []
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mhcylgq",
+                  "text": "i thought they fixed the internal latency",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mhczfo7",
+                      "text": "The scheduling for 2 CCD CPUs is done correctly now with no input from the user, and there's aren't CCXs anymore, but AMD still is bottlenecked by the fabric/FCLK as the memory controller is in the separate IO die. \n\nThe 9800x3d is still a bit worse in lows compared to intel's monolithic 13900/14900 in some cases if you look at benchmarks, but getting there involves more work than just putting in the CPU. The rumored CoWoS from AMD could be a big improvement on this side of things, along with hopefully lowering the idle consumption",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "mhdxrxc",
+                          "text": "The scheduling works in windows. It\u2019s not fixed in general.  If you dual boot another os, it\u2019s still a concern.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "mhe38zt",
+                              "text": "Fair, but for linux users I'd say they're more willing to manually set the cpu affinity",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "mhe4c5x",
+                                  "text": "CPU affinity is only part of the problem. Ideally, you want the OS scheduler to prioritize processes on one ccd or the other.  A similar problem exists with Intel CPUs and p vs e cores.  Intel has thread director and amd does not have an equivalent. \n\nIntel did port thread director support to Linux. Many operating systems are not Linux or windows though. \n\nIn my case, I\u2019m an os developer as a hobby. I\u2019d like guidance from amd and intel on scheduling behavior recommendations.  I have to code the solution myself.  \n\nI haven\u2019t had an opportunity to test an x3d part, but with the intel 14700k, there is a significant performance loss with random scheduling.",
+                                  "upvotes": 2,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "mh7ui6q",
+              "text": "I upgraded from 5800X3D to 9800X3D because I wanted more performance in Escape from Tarkov, Rust, and COD: Warzone, and in those games I had a significant performance improvement.\n\nHowever, there are some games where the upgrade barely made a difference, maybe average framerate slightly higher but still mostly GPU bound.\n\nSo I'd say it depends on what games you play and if you're happy with your system's current performance. If you play at 4k, like to crank the graphics up to max, and/or play a lot of single player games, the upgrade is probably not worth it at this point.\n\nWith Zen6 on the horizon a few years out, possibly moving up to 12 core CCDs, that might be worth waiting for if you're happy with the 5800X3D today.\n\nFor reference, I play at 3440x1440 180 hz ultrawide screen with a 3090 (9070 XT should be arriving tomorrow as an upgrade). I re-used the old 5800X3D in a second build after the upgrade. I also enjoy tinkering with tech and the upgrade process in general so I tend to upgrade more frequently.",
+              "upvotes": 12,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mi9lg2f",
+                  "text": "Your loading time to the server in Rust is now faster? Can you feel the difference?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mia59va",
+                      "text": "Even with Rust installed on a Samsung 990 Pro SSD with the 9800X3D, it can still take a while to load into the server initially.\n\nThere is an option in the Experimental section of options in Rust which can improve load speed when joining a server. Go check it out and enable it (the dropdown will say 'Partial' as the option to enable it).\n\nThat option doesn't change anything about the first time you load into a server each wipe, that still takes a while, but it caches some of the stuff so the next time you load into that same server, it will go quite a bit faster.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

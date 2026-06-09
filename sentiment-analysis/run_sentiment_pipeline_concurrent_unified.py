@@ -269,6 +269,8 @@ def main():
         original_count = len(active_slugs)
         resumed_slugs = []
         for slug in active_slugs:
+            if state.get(slug, {}).get("status") == "manual_review":
+                continue
             classified_file = CLASSIFIED_DIR / f"{slug}.classified.json"
             if state.get(slug, {}).get("status") == "done" and classified_file.exists():
                 try:

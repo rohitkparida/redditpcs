@@ -1,0 +1,259 @@
+{
+  "productName": "Intel Core Ultra 9 285K",
+  "batchIndex": 91,
+  "totalBatches": 135,
+  "comments": [
+    {
+      "commentId": "1gb36mg",
+      "text": "Intel Core Ultra 9 285K, Ultra 7 265K and Ultra 5 245K Review Roundup",
+      "upvotes": 143,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ltizz8e",
+          "text": "I might get crucified for asking this here but I\u2019m being genuine. I\u2019m running a 9700k and I want to upgrade because it bottle necks the living hell out of my 3080 Ti which I will mostly upgrade to 5th gen. \n\nShould I be looking at these chips for gaming given the bad reviews, hop on the 14th gen train or possibly look at AMD. I\u2019m so torn! I was really hoping 15th would be the pick. \n\nBudget isn\u2019t necessarily a concern but I certainly don\u2019t need the absolute best if it\u2019s going to cost me 5k to upgrade. Helpppp! Hahaha",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ltj1cvw",
+              "text": "9800X3D launches early november\n\neven if its just 5 - 10% better than a 7800X3D, its still much faster than a 285k",
+              "upvotes": 8,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ltj1vw0",
+                  "text": "Yeah I think you\u2019re right. It\u2019s probably time to give AMD another shot. I had terrible issues with AMD CPU\u2019s and GPU\u2019s like 10 years ago but they\u2019ve come a long way. I\u2019ve waited this long to upgrade. I\u2019ll check out the 9800X3D. Thank you!!",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ltjtl6u",
+                      "text": "AMD CPUs 10 years ago are like Bulldozer family chips, they were bad even compared to AMD's K10\n\nsince Zen 1, AMD have been pretty great (Zen 1 was mediocre for games vs 7/8th gen but insane for productivity)\n\nand when Zen 2 launched, even gaming performance was close enough\n\npersonally i had a Ryzen 3600 and now a 5800X, and built both a 7800X3D and i9 13900 builds for friends\n\nthe 7800X3D is just superior to that 13900 in almost every category that a gamer should care about, also never had any issue with my own build (both with 3600 and 5800)",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ltjuje2",
+                          "text": "Good info to have. Thanks for sharing. I\u2019ll definitely look into the 9800X3D then because intels been having nothing but problems these last few gens.",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "ltj22w4",
+              "text": "I'm in your shoes, canceled my preorder. Going AMD prob.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ltk0xla",
+                  "text": "Yeah really thinking about it now. I\u2019ve been waiting and waiting for this 15th and I\u2019m quite disappointed.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "ltk24gl",
+              "text": "Amd or an lga1700 chip.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ltj4j2f",
+          "text": "Any thoughts on why there is such a difference between the synthetic benchmarks and real-world performance?\n\nNot sure I agree with the comments that suggest this CPU with much better efficiency within the ballpark of the fastest CPUs on the market is the end of the world as one corner of Reddit seems to suggest, but I get why it\u2019s disappointing given the expectations based on synthetics.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ltob69g",
+              "text": "It depends on the workload. The 200 series has a lot of its performance in the Skymont E-cores which are considerably wider. A workload which can feed the E-cores well is going to be highly performant.\n\nReal-world workloads are usually not ideal, because it is hard to properly parallelize workloads. In some cases, it is impossible. In some cases it is infeasible. So this means there are many cases where only a few threads can do meaningful progress in the program. You can run those on P-cores, but that's not where this generations focus is.\n\nYour typical game, running 1080p low settings in order to maximize the CPU bottleneck, is latency sensitive. But many workloads are far more throughput sensitive. If you are compiling a program for instance, what you care about is how fast your compile finishes. Having stronger E-cores improves the throughput considerably.\n\nThe other big thing is that Intel is now also a chiplet design with a separate memory controller. This means memory access latency is likely worse on this generation as a result. Many latency-sensitive tasks are essentially memory-bound nowadays. If you can lower the amount of memory reads you have, you can process much faster. Chiplet designs have a lot of benefits however, so it's likely to become the norm for a while.\n\nPersonally, I think a lot of the \"Gaming CPU benchmarks\" are somewhat naive and synthetic in their form. Your Counter Strike 2 certainly benefits from a low frametime, and I would expect such an engine to have optimizations for it. But a game like Starfield or Baldur's Gate 3 is unlikely to sport any optimization at that level. Starfield, for instance, is GPU bound on consoles, and if they can deliver a frame every 33ms, they are probably happy with the CPU performance. Also testing games like Jedi Survivor, or Dragons Dogma 2 is a bit problematic, because we know the engines are relatively weak and poses troubles in all kinds of ways. Yes, throwing more hardware at the problem might help, but if you want high FPS, you are looking at rewriting the software.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "ltjnzkt",
+              "text": "Simple, it's a new CPU layout, windows needs time to be optimized for it.  Games need to be optimized for it.  Etc..   And since all these people do their tests at 1080p low.. and their fps measurements are 300+ FPS...  who cares?   Most people have at most a 120hz screen.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ltj7n7u",
+          "text": "Amazing that a cpu I bought 3 - 4 years ago is out performing in a lot of areas the top of line latest release from intel",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ltjz4mx",
+          "text": "I rooting for intel cause competition is good. But  man both team red and blue whiffed hard this gen",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ltk7sa7",
+          "text": "Haven\u2019t been following this super closely, is this a Windows issue or just actually bad? Seems strange they\u2019d be such a downgrade like that even if they\u2019re more efficient.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ltl8e4e",
+              "text": "It is most likely a hardware limitation. This is Intel\u2019s foray into chiplet architecture - it\u2019s not surprising they are having some trouble. AMD have years of experience that Intel doesn\u2019t here. I would expect their second attempt with this new architecture layout to be a lot better, just as AMD\u2019s was, but we\u2019re not there yet of course!\n\nNow, I do think software can mitigate SOME of the worst effects (again, we saw similar on the AMD side), but only that, not in general.\n\nBasically this is all down to latency. Intel\u2019s architecture has much further to go when loading fresh data. This is an inherent drawback of chiplet architectures. Steps have to be taken in hardware to mitigate these issues. This is why AMD\u2019s X3D series have proven so effective: sidestepping the latency problem by simply putting a ton of cache on-die",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ltkv8sd",
+          "text": "any review of the 245K with a midrange graphic card?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ltlbsuu",
+          "text": "so, the leaks last week were true. Its a serious flop. But why? What are we missing?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ltmilpw",
+              "text": "Part of it is probably memory latency, it's been reported it's about over 100ns memory latency even on 8000Mhz RAM. This is an issue with chiplet or \"tile\" based processors. AMD has more experience with this technology since Zen 1 and has had generations of chips now that optimized the links between chiplets and memory",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ltlnrrb",
+          "text": "How much of this mess do you guys think will be fixed by software updates (microcode, BIOS, drivers, Windows updates or games/apps themselves)?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ltmksko",
+              "text": "I think it will fix stability but not performance.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ltm6p5e",
+          "text": "Another unfinished product for top dollar.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "productName": "AMD Ryzen 9 9950X",
+  "batchIndex": 38,
+  "totalBatches": 44,
+  "comments": [
+    {
+      "commentId": "1es12bl",
+      "text": "AMD Ryzen 9 9950X CPU Review &amp; Benchmarks vs. 7950X, 9700X, 14900K, &amp; More",
+      "upvotes": 301,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "li2hrf8",
+          "text": "What on earth, why would the 9950X need the X3D game bar optimizer junk?",
+          "upvotes": 79,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "li2p2ba",
+              "text": "Apparently this is why it's needed: https://x.com/RyanSmithAT/status/1823708259490128197\n\n&gt; I'm working on a bit of a mystery this morning, following the launch of the Ryzen 9 9950X. The core-to-core latencies are nearly 2.5x (100ns) higher than they were on 7950X. These are very high latencies for on-chip comms. And it's not obvious why it's any higher than 7950X.",
+              "upvotes": 67,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "li2kkz3",
+              "text": "It's for core parking. I really don't get why the fuck AMD is using a fucking feature on windows that nobody uses and is ass for core parking. Why don't they just integrate core parking on their Ryzen master?",
+              "upvotes": 57,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "li2mms1",
+                  "text": "I bet it's a UX experience thing.  Gamebar is built into windows, not everyone installs Ryzen master.  \n\nThat doesn't make it good, and they've worked with MS on cpu scheduling, but the real solution to this is probably a kernel level optimisation that microsoft wouldn't want to do (and need to support in perpetuity), so it ends up on something like gamebar.  \n\nIt also creates an unfortunate problem that if you wanted to write say a program that does a lot of maths like a game, but is say scientific or numerical computing, getting to be correctly identified by game bar is probably not happening.",
+                  "upvotes": 30,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "li2oo46",
+                      "text": "Pretty sure all Gamebar is doing is providing the API that answers \"am I a game?\" And it requires Game Mode to be able to work. The actual core parking is handled by the driver provided by AMD chip set package.",
+                      "upvotes": 16,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "li2pfij",
+                          "text": "Right, which keeps it all out of the kernel, and means that if in 2035 or 2045 no one is trying to use CCD parking, it just won't exist in windows version 14 or 25 or whatever we're up to by then.",
+                          "upvotes": 6,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "li2xjhh",
+                      "text": "The steps required to make this shit work mentioned by GamersNexus are FAR beyond what any casual gamer would usually do. Installing some amd software seems way easier.",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "li2mzqt",
+                      "text": "i thought it had a black/white list too? that you could manually edit",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "lij7dof",
+                      "text": "If it wasnt for custom cooler curve managed by Ryzen Master i would uninstall it. Its trash.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "li2otyb",
+                  "text": "I know it's for core parking, the question was why it's needed.",
+                  "upvotes": 6,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "li34gg6",
+                  "text": "It requires the windows scheduler to cooperate, and is a feature that\u2019s been in active use on servers for decades. Consumers are just starting to see NUMA issues, so they are now exposed to the problem and the solution.",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "li39qmv",
+              "text": "I was gonna get the 9950X to avoid the scheduling mess, well that's money saved for now at least.",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "li2wbva",
+              "text": "Once you remember the reason why the X3D optimizer is needed in the first place, then it makes sense.\n\nWhile the X3D has a CCD with that massive cache, it's the accessing of cache on the opposite CCD that causes the most problems. So while the cache on the 9950X is the same size on both CCDs, the cross-CCD access remains the bottleneck, so parking the cores on one CCD in a game prevents ANY cross-CCD cache access from happening. In most games, this will be a benefit though it means in game it functions like a 9700X.\n\nPretty lame to not have access to the main selling point of a 16c/32t CPU for gaming.",
+              "upvotes": 11,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "li3wpcf",
+                  "text": "what about the 7950x? doesn't it also have 2 CCDs that need cross-CCD access? i don't think gamebar is required for the 7950x unless i'm mistaken.",
+                  "upvotes": 7,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "li56sz2",
+                      "text": "From what other sources are saying, the cross-CCD latency is higher on the 9950X vs the 7950X, so maybe AMD found that parking half the cores of the new processor as necessary to prevent it from causing the processor to fall behind the 7950X in some tests. Most games don't seem to scale much beyond 8 cores, so having all 16 cores available to the 7950X may not be much of a benefit compared to the latency increase of the 9950X. Both chips fail to come close to the 7 series X3D chips in either case.",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "li2zyoc",
+                  "text": "&gt; Pretty lame to not have access to the main selling point of a 16c/32t CPU for gaming.\n\nThe 9950X is still going to have slightly better binned chiplets, which I think is the main benefit of the 9950X in gaming. You also lose out on moving the non-game processes to the other CCD if all its cores are parked, but I'm not sure if that ever worked out in practice. I'm not sure if any remotely mainstream game is able to put more than 8 cores to use in a way that's noticeable.\n\nGaming has never been a real selling point of 16 core CPUs. The people that buy them for gaming do it because they're the \"best\"/most expensive CPUs even if it's only 2% faster (thanks to high clocks) than the 8 core version.",
+                  "upvotes": 3,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

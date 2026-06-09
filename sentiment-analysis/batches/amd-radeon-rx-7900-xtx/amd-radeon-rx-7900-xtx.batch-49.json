@@ -1,0 +1,237 @@
+{
+  "productName": "AMD Radeon RX 7900 XTX",
+  "batchIndex": 49,
+  "totalBatches": 53,
+  "comments": [
+    {
+      "commentId": "zkyovc",
+      "text": "ASUS Radeon RX 7900 XTX TUF OC Review - Apparently 3x8pins and some OC unlocks what AMD promised us",
+      "upvotes": 595,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "j02jiik",
+          "text": "3199 MHz average OC clock for the TUF  \n3165 MHz average OC clock for the Merc  \n\nIs that the end of the clock bug rumour then? \ud83e\udd23",
+          "upvotes": 48,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "j02so3b",
+              "text": "If anything it lends more support to that rumor. If it easily clocks that high why are the stock clocks so low?",
+              "upvotes": 36,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "j02tub0",
+                  "text": "Because the stock config can't get enough power to push 3ghz",
+                  "upvotes": 22,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "j02u4hj",
+                      "text": "... but why? It's not like they're unaware of the power requirements of the chip before deciding on what to put on the card.",
+                      "upvotes": 22,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "j03uf7k",
+                          "text": "Because clocks won't help its poor RT performance and at stock it already draws more power than the 4080 anyway. GN even mentioned they noticed their reference sample dropped as low as 11v during testing. \n\nFrankly there's also the small issue that if someone is going to pay $1100 or more for an AIB 7900XTX they may as well outright buy a reference 4080 and get better everything for less power consumption.",
+                          "upvotes": 6,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "j04y34u",
+                              "text": "Clocking higher should help RT some.",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            },
+                            {
+                              "commentId": "j05bjp1",
+                              "text": "The 7900XTX was faster in traditional rasterization than the 4080, at least in the reviews I saw.",
+                              "upvotes": 2,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "j02vky6",
+                  "text": "\nProbably because they had an efficiency goal in mind, like they talked about at the launch event. TPU didn't show OC power draw, but if you look at the scaling it's pretty clear where it's headed:\n\n    GPU                     Avg Clock   Power\n    RX 7900 XTX Reference   2612        356\n    RX 7900 XTX TUF         2817        393\n    RX 7900 XTX TUF + OC    3199        \u221e",
+                  "upvotes": 16,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "j02zhew",
+                      "text": "Still doesn't make sense why they wouldn't make their top end product clock that high and leave the efficient products to the lower tiers, like NVidia did. Especially when their efficiency isn't actually noteworthy compared NVidia in the first place, so they're just hyping up a non-selling point. The best explanation is that the high frequencies either are too unstable or don't actually increase performance, either of which would be considered a bug.\n\nLike, I still think the rumor is likely rumormongers trying to backpedal their predictions to try to save clout, but the fact that it OCs that high points in the other direction.",
+                      "upvotes": 7,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "j04y87t",
+                          "text": "They also didn't have the launch 7970 clock to over 1ghz even though that was a common overclock and then they released a GHz clocked version down the road",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "j02w6na",
+                      "text": "Whoa... 3.2GHz is actually using infinite power? Are you saying AMD is responsible for the Big Bang?",
+                      "upvotes": 11,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "j037q9s",
+                          "text": "They said that the power limit is set to the maximum +15%. They got almost 10% more performance out of it.\n\nYes it's less efficient but not THAT bad.\nI'd be interested in seeing how much performance they got from increasing the power limit and how much from reducing the voltage.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "j0364cx",
+                      "text": "This is ignoring the fact they also undervolted it, so I dont think there would be much of a difference in the end. No idea why they didnt post the power consumption with UV + OC though.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "j06ce9t",
+                      "text": "Efficiency, the 4090 is on par with less wattage. This is not good marketing wise, esp. in europe where you have to give your kidney for some energy.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "j032odc",
+                  "text": "Well some other reviewers also mentioned hitting 3ghz easily. The issue being the performance doesn't scale with clock as expected. Some games it does. Some games it doesn't. Computerbase.de was even able to achieve 3145mhz using a reference card.\n\nSo there is some sort of design issue because they cannot reciprocate the clocks in a stable way in games.",
+                  "upvotes": 5,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "j02c6ie",
+          "text": "Wow, looks like an entirely different beast. This is more in line with the xtx expectations.",
+          "upvotes": 62,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "j02a29z",
+          "text": "That CP2077 result with the OC+UV is pretty nuts. Practically matching the 4090 at 4K.",
+          "upvotes": 86,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "j05q5ua",
+              "text": "It's pretty awesome. But the other thing about the 7900xtx is it scales drastically different game to game.  An overclocked undervolted 4090 in cp2077 is using like 350w to outdo this performance. So this thing really is looking like it could be pretty fast but it's just a lot of power to do it.",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "j04t7yk",
+              "text": "Matching stock 4090 at raster is pretty nuts indeed. 4090 only gains \\~5% with OC anyway. Though power consumption probably is at 4090 rather than 4080 level.\n\nI'm thinking 7900XTX may really be aiming at 4090 as the naming suggests. Just that RT performance difference is too much, so they limited the power and aimed at 4080 instead.\n\nThough I'd rather them just unlocking the power, and come out with a card to match 4090 in raster, and hopefully that would close the gap with 4080 on RT as well. Being behind in RT vs 4090 is already expected anyway. Selling that hypothetical card at a bit higher price to cover the extra components cost should really pressure Nvidia.",
+              "upvotes": 10,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,422 +1,54 @@
 {
-  "productName": "amd-ryzen-9-9900x3d",
+  "productName": "AMD Ryzen 9 9900X3D",
   "batchIndex": 17,
-  "totalBatches": 17,
+  "totalBatches": 23,
   "comments": [
     {
-      "commentId": "1j9kwad",
-      "text": "AMD Ryzen 9 9900X3D Review - KitGuru",
-      "upvotes": 75,
-      "classifyThis": true,
-      "relevance": "exclude",
-      "relevanceReasoning": "The comment is just a link/title to a review, providing no personal opinion or insight.",
-      "sentiment": "neutral",
-      "sentimentReasoning": "The text is a factual title of a review.",
+      "commentId": "1j8z24m",
+      "text": "ASUS UEFI BIOS updates for ASUS AMD AM5 and AM4 Motherboards - Enhances system performance/support for Ryzen 9 9950X3D and 9900X3D, Ai Cache Boost to enhance performance/compute power when using AI-based tools - W9&amp;W10 - X870, X670, X470, B850, B840, B650, B550, B450, A620, PN53 - 94 motherboards\n\nhttps://preview.redd.it/ultibga214oe1.png?width=1920&amp;format=png&amp;auto=webp&amp;s=db4504ba835af5adc0d88ba04631ad7ee1507e9a\n\nBeen a while since we last had a BIOS post in here due to all the VGA launches, so I do apologize for that. This list will cover W9 and W10, but if you haven't checked already, there are a number of updates for relevant boards from W4-W8, which I will briefly list before we get started with this update.\n\nIf you haven't updated your BIOS in the last couple of months, here are a number of related updates that you might have missed - \n\n* AM5 boards - AGESA updates, notably for PI 1.2.0.3a Patch to improve gaming performance \n* AM5 boards - System performance and high-capacity memory compatibility, including 2 DIMM memory configurations up to 6800 MT/s with AEMP enabled\n* AM5 boards - Critical security updates for the boards\n* AM4 boards - AGESA updates, notably for ComboV2 PI 1.2.0.E along with security improvements\n\nThis week we have performance and support for the upcoming Ryzen 9 9950X3D and 9900X3D processors, along with included AI Cache Boost for improved performance/power when using AI-based tools. Some AM4 boards are still receiving AGESA updates for ComboV2 PI 1.2.0.E and security updates.\n\n\\- [WK52](https://www.reddit.com/r/Amd/comments/1hq3wo2/asus_uefi_bios_updates_for_asus_amd_am5/) \\-\u00a0[WK50&amp;51](https://www.reddit.com/r/Amd/comments/1hll43y/asus_uefi_bios_updates_for_asus_amd_am5/)\u00a0\\-\u00a0[WK49](https://www.reddit.com/r/Amd/comments/1h9wh56/asus_uefi_bios_updates_for_asus_amd_am5/)\u00a0\\-\u00a0\n\n\\*PLEASE NOTE \u2013 IF YOUR MOTHERBOARD IS LISTED AND NOT YET AVAILABLE ON THE WEBSITE, IT MAY TAKE UP TO A FEW EXTRA DAYS FOR IT TO SHOW UP. PLEASE BE PATIENT.\\*\n\n**New UEFI BIOS updates For ASUS AMD motherboards \u2013 W9&amp;10**\n\n\\*Please do not ask about motherboards not listed. Please review the FAQ below for details.\n\n**What's new**\n\nAMD -\n\nFor X870, X670, B850, B840, B650, A620\n\n1. Enhanced system performance with support for 9950X3D and 9900X3D processors. \n2. Included AI Cache Boost to enhance performance and compute power when using AI-based tools.\n\nFor X470, B550, B450\n\n1. Updated AGESA version to ComboV2 PI 1.2.0.E.\n2. Implemented security updates.\n\nPN53\n\n1. Disable Wake-on-WLAN.\n2. Modify PcdCfgAcpSsid to fix system too slow when reboot.\n\n**AMD**\n\n* X series \u2013 X870, X670, X470\n* B series \u2013 B650, B840, B650, B550, B450\n* A series \u2013 A620\n* W series \u2013 \n* T series \u2013\n* MiniPC \u2013 PN53\n\n**UEFI BIOS update list noted below \u2013 A total of 94 boards with a UEFI BIOS update.**\n\n**W is in relation to the workweek; February 24th - March 9th 2025**\n\n**FAQ -**\n\n**Why is my motherboard not listed?**\n\nIf you are looking for your motherboard/model, please visit\u00a0[https://www.asus.com/us/support/](https://www.asus.com/us/support/)\u00a0and check if it has been updated recently. UEFI's BIOS updates are commonly released in waves; as such, it can take a series of motherboards, weeks, or months to have all motherboards have the same corresponding UEFI BIOS update issued. Furthermore, remember that not all updates apply or apply to all models. Due to inherent design differences and specification and feature variation, an update may only apply to a specific model.\n\n**How long are motherboards supported with UEFI BIOS updates? How long should I monitor for an update?**\n\nIn most cases, after a year, boards tend to reach a certain maturity level and see fewer updates. Mature releases can often be seen within the first six months. All non-BETA releases pass qualification and validation. If you feel you have an issue dependent on a UEFI release, please submit a support ticket. Some boards can sometimes see updates for more than 24 months. Also, user experience can vary considerably based on end-use-defined parameters and system configurations ( such as overclocking/performance tuning ). Users running stock operating parameters will experience the least amount of issues.\n\n**I want to update, but I am unsure how to update the UEFI \"BIOS\"?**\n\nIf you want guidance on how to flash/update your UEFI BIOS, please watch the video linked below. It will guide you through the flashing process and provide insight into essential items to keep in mind when flashing/updating the UEFI BIOS.\n\nHow to Flash / Update your UEFI BIOS on ASUS Motherboards -\n\n[https://www.youtube.com/watch?v=scK8AP8ZACc](https://www.youtube.com/watch?v=scK8AP8ZACc)\n\n**Should I update the UEFI if my system is stable and running without issue?**\n\nIf your system is running without issue, especially if overclocked in any way (including DRAM), it is recommended you stay on the build/release you are on. Changes to underlying auto rules and other operating parameters can change the OC experience and require you to retune a previously stable OC value. This does not mean the UEFI is not a functioning/reliable release but that changes in the underlying code base must be accounted for when tuning a system. As many of these values are low-level, it is best to retune from UEFI defaults. Verifying the UEFI's system stability is also recommended via a stress test, like Passmark Burn-in Test, OCCT, AIDA64, or a similar stress test.\n\nUsers who update from stock to stock settings will generally experience the smoothest transition experience.\n\n**Will a UEFI update improve my overclocking experience?**\n\nA UEFI update can improve multiple aspects of the OC experience, whether extending frequencies or stabilizing them, improving general system stability, or adding new options relative to overclocking. It is important to note that overclocking has inherent mitigating factors, including silicon variance, which cannot be overcome purely from a UEFI update.\n\n**Will a UEFI update change my operating experience? Power consumption, temperatures, etc?**\n\nChanges to underlying auto rules and other operating parameters can affect aspects like CPU boosting behaviors. There can also be changes to UEFI BIOS auto rules. A UEFI BIOS update can affect operating temperature, performance scores, power consumption, etc. Comparisons should be made at like-to-like values, ideally meaning the same settings, applications, etc. It is also recommended this occur at F5 defaults.\n\nSometimes, you may need to reinstall the OS after a UEFI BIOS update to gauge its stability correctly. This means that the end operating experience should be first verified with default operating values (F5) and, ideally, a fresh installation of chipset drivers, an updated build of Windows, and a non-modified Windows power profile.\n\n**What if the UEFI BIOS listed is a BETA? Should I update?**\n\nBETA UEFI releases are for enthusiasts who want access to the latest features, functions, microcode enhancements, and overall UEFI improvements. They are not recommended for day-to-day/long-term use. Users who plan to use their system in this capacity and want to ensure the best interoperability/compatibility, stability, and performance should wait for a formal release.\n\nNot every user should update/flash their UEFI BIOS. Again, if you are running without issue(s), you are advised to stay on the release you are running.\n\n***Notes to consider -***\n\n\\* When flashing, please perform the update process at UEFI BIOS defaults. Do NOT flash with an overclocked system/profile.\n\nYour warranty is still applicable under the use of a UEFI BIOS update.\n\n1. I recommend updating the UEFI BIOS on your motherboard for new PC builds. This helps to ensure the best interoperability, compatibility, and performance. If you are building a PC and have not installed the OS, I recommend updating the UEFI.\n2. Remember that flashing/updating the UEFI will reset all defined parameters/settings and operating profiles. You cannot restore defined values using a UEFI Profile, as profiles are not interoperable between builds. You should note or screenshot (F12) your values before flashing if they are complex. Upon completing a flash, I recommend you load UEFI defaults after the fact, perform a reboot, and shut down before reloading or entering any customized UEFI values.\n3. When you update the UEFI and reload UEFI defaults depending on your defined initial BOOT values, you may need to adjust CSM settings, enabling or disabling CSM. If you experience BOOT-related issues after an update, please change the CSM accordingly.\n4. Be advised that in some cases, a rollback to a prior UEFI is not possible. This can occur when an update includes a CPU microcode ( such as an AMD AEGSA or Intel ME ). This means you may be unable to \"flashback\" to a prior release.\n5. While not always necessary, some UEFI updates may require clearing the CMOS to reset the UEFI and ensure normal functionality. You may need to CLR the CMOS to have the system POST after you flash. You can clear the CMOS via the CLR CMOS button if your motherboard supports it or by removing the onboard CMOS battery for at least a few minutes. You can also attempt to locate the CLR CMOS jumper on the motherboard and short the pins to clear the CMOS.\n6. Some updates will cause PCIe remapping and reinitialization of onboard controllers/devices. In these cases, you may need to reinstall drivers including your chipset drivers, graphics drivers or other PCIe or USB linked based devices.\n\nIt is also recommended you back up your system before any flash/update. Ideally, it would be best to load UEFI BIOS defaults (F5) before performing a flash/update; do not flash with an overclocked configuration.\n\nEnsure you reboot before flashing once you have loaded (F5 defaults).\n\nThe board model/name is on the right-hand side, and the version number is on the left-hand side. To download the UEFI BIOS, please go to\u00a0[https://www.asus.com/support/](https://www.asus.com/support/)\n\nAMD UEFI BIOS Releases \u2013\n\n1. A620M-AYW WIFI - 3222\n2. A620M-F GAMING WIFI - 3222\n3. B650E MAX GAMING WIFI - 3222\n4. B650M-AYW WIFI - 3222\n5. B650M-D3H - 3222\n6. B840M MAX GAMING AX - 1022\n7. EX-B650M-V7 - 3222\n8. EX-B650M-V7 PLUS - 3222\n9. PN53 - 2.15.00\n10. PRIME A620M-A - 3222\n11. PRIME A620M-E - 3222\n12. PRIME A620M-K - 3222\n13. PRIME A620-PLUS WIFI - 3222\n14. PRIME A620-PLUS WIFI6 - 3222\n15. PRIME B550M-K - 3802\n16. PRIME B650-J - 3222\n17. PRIME B650M-A - 3222\n18. PRIME B650M-A AX - 3222\n19. PRIME B650M-A AX II - 3222\n20. PRIME B650M-A AX6 - 3222\n21. PRIME B650M-A AX6 II - 3222\n22. PRIME B650M-A II - 3222\n23. PRIME B650M-A WIFI - 3222\n24. PRIME B650M-A WIFI II - 3222\n25. PRIME B650M-F - 3222\n26. PRIME B650M-R - 3222\n27. PRIME B650-PLUS - 3222\n28. PRIME B650-PLUS WIFI - 3222\n29. PRIME B840M-A - 1022\n30. PRIME B840M-A WIFI - 1022\n31. PRIME B840-PLUS WIFI - 1022\n32. PRIME B850-PLUS - 1022\n33. PRIME B850-PLUS WIFI - 1022\n34. PRIME X670E-P - 3222\n35. PRIME X670E-PRO WIFI - 3222\n36. PRIME X670-P - 3222\n37. PRIME X670-P WIFI - 3222\n38. PRIME X870-P - 1022\n39. PRIME X870-P WIFI - 1022\n40. Pro A620M-C - 3222\n41. PRO A620M-DASH - 3222\n42. Pro B650M-CT - 3222\n43. ProArt B550-CREATOR - 3802\n44. PROART B650-CREATOR - 2904\n45. PROART X670E-CREATOR WIFI - 2904\n46. ProArt X870E-CREATOR WIFI - 1203\n47. ROG CROSSHAIR VII HERO - 5602\n48. ROG CROSSHAIR VII HERO (WI-FI) - 5602\n49. ROG CROSSHAIR X670E EXTREME - 2904\n50. ROG CROSSHAIR X670E GENE - 2904\n51. ROG CROSSHAIR X670E HERO - 2904\n52. ROG CROSSHAIR X870E HERO - 1203\n53. ROG STRIX B450-E GAMING - 5602\n54. ROG STRIX B450-F GAMING - 5602\n55. ROG STRIX B450-F GAMING II - 5602\n56. ROG STRIX B450-I GAMING - 5602\n57. ROG STRIX B550-I GAMING - 3802\n58. ROG STRIX B650-A GAMING WIFI - 3222\n59. ROG STRIX B650E-E GAMING WIFI - 3222\n60. ROG STRIX B650E-F GAMING WIFI - 3222\n61. ROG STRIX B650E-I GAMING WIFI - 3222\n62. ROG STRIX B850-A GAMING WIFI - 1022\n63. ROG STRIX B850-E GAMING WIFI - 1022\n64. ROG STRIX B850-F GAMING WIFI - 1022\n65. ROG STRIX B850-I GAMING WIFI - 1022\n66. ROG STRIX X470-I GAMING - 5602\n67. ROG STRIX X670E-A GAMING WIFI - 2904\n68. ROG STRIX X670E-E GAMING WIFI - 2904\n69. ROG STRIX X670E-F GAMING WIFI - 2904\n70. ROG STRIX X670E-I GAMING WIFI - 3222\n71. ROG STRIX X870-A GAMING WIFI - 1203\n72. ROG STRIX X870E-E GAMING WIFI - 1203\n73. ROG STRIX X870-F GAMING WIFI - 1203\n74. ROG STRIX X870-I GAMING WIFI - 1022\n75. TUF GAMING A620M-PLUS - 3222\n76. TUF GAMING A620M-PLUS WIFI - 3222\n77. TUF GAMING A620-PRO WIFI - 3222\n78. TUF GAMING B550M-E - 3802\n79. TUF GAMING B550M-E WIFI - 3802\n80. TUF GAMING B650-E WIFI - 3222\n81. TUF GAMING B650M-E - 3222\n82. TUF GAMING B650M-E WIFI - 3222\n83. TUF GAMING B650M-PLUS - 3222\n84. TUF GAMING B650M-PLUS WIFI - 3222\n85. TUF GAMING B650-PLUS - 3222\n86. TUF GAMING B650-PLUS WIFI - 3222\n87. TUF GAMING B850-E WIFI - 1022\n88. TUF GAMING B850M-PLUS - 1022\n89. TUF GAMING B850M-PLUS WIFI - 1022\n90. TUF GAMING B850-PLUS WIFI - 1022\n91. TUF GAMING X670E-PLUS - 3222\n92. TUF GAMING X670E-PLUS WIFI - 3222\n93. TUF GAMING X870-PLUS WIFI - 1022\n94. TX GAMING B650EM WIFI W - 3222",
+      "upvotes": 80,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mhk4nct",
-          "text": "They should probably just stop messing with this CPU line. Its in no-mans land. Worse for gaming than the cheaper 8-core. And more expensive than just the regular non x3d chips if productivity is your concern. \n\nI would bet they'll sell fewer than 1-2% of all 9000-series x3d chips in this 12-core configuration.",
-          "upvotes": 31,
+          "commentId": "mi6ou3y",
+          "text": "I'm running 870E-E with a 9800x3d paired with 2x16GB, G-skill, Royals, 8000Mhz, EXPO (QvL-listed memory kit).\n\nThe kit is running perfectly on 1104, even on EXPO Tweaked and have been flawless. The 1203 bios introduces instability in general, especially when using expo. Random crashes during light browsing and desktop use as well as in high- and low demanding games.\n\nReverting back to 1104 fixed the instability issues, and I can once again use my memory kit in EXPO Tweaked without issues.\n\nStaying on 1104 until they fix the instability issues.",
+          "upvotes": 3,
           "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User provides an opinionated performance and value critique of the 9900X3D.",
-          "sentiment": "negative",
-          "sentimentReasoning": "The user describes the CPU as being in 'no-mans land' and worse for gaming than cheaper options.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "mhnbj5c",
-              "text": "They probably aren't actively making it. It's just trickling down from 9950x3d production line that failed to make it for whatever reason.",
-              "upvotes": 45,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Speculative discussion about manufacturing process (binning) rather than product performance or experience.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a technical speculation without a clear positive or negative sentiment toward the product's utility.",
-              "replies": [
-                {
-                  "commentId": "mporsuy",
-                  "text": "100%. Same with the 9070 vs 9070XT.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Off-topic comparison to GPU models (9070 vs 9070XT).",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a brief agreement with a technical speculation.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "mhp3db6",
-              "text": "You are missing an important aspect of the situation. When they produce 8 core ccds (core complex dies), there can sometimes be a defect. They disable a defective core and fuse off certain parts of the die to make it into a functional 6 core part. They will have some amount of defective 3d v-cache parts that can be made into a 6 core. It makes no sense to just throw viable product into the trash so they will repackage it into a lower tier product. The issue with these parts is simply that the price sucks for the performance losses. They need to shave at least another $150 off these because at $599, these suck. I don't even really think these should cost more than a 9800x3d.",
-              "upvotes": 14,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "User critiques the price-to-performance ratio of the product.",
-              "sentiment": "negative",
-              "sentimentReasoning": "The user states that at $599, the product 'sucks' and needs a significant price drop.",
-              "replies": [
-                {
-                  "commentId": "mhyikuc",
-                  "text": "Even at a lower cost it still won't sell, because productivity doesn't care about the cache and prefers the higher clocks via lower thermal requirements at a significant price cut of the 9900x; and gamers need that 8 core cache if they're spending that much.  It would have to be priced lower than a 9900x, and that's just stupid because that cache isn't cheap and it would cannibalize the 9900x sales.\n\nThey have seen the failure of the 79003d and the demand for *two* generations of x6003d chips, and still did the same fucking thing with zen5.  Something something definition of insanity...",
-                  "upvotes": 0,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "User discusses the product's lack of market fit and value proposition.",
-                  "sentiment": "negative",
-                  "sentimentReasoning": "The user argues the product is a failure and a 'blunder' by AMD.",
-                  "replies": [
-                    {
-                      "commentId": "mi58opf",
-                      "text": "You didn't read my post. You fundamentally don't understand why these chips are even made in the first place. Producing silicon wafers is not a perfect process. There is a binning and defect mitigation step in the manufacturing of chips. They only make 8 core ccds. The fact is that some of the 8 core ccds have defects or insufficient clocks or other problems. These can still be used by fusing off certain parts of the chip or by reducing the clocks or other variables. This is how these lower end skus are typically created right now for AMD. There is literally no reason *not* to sell these products for AMD. The alternative would be throwing away extremely expensive silicon. I doubt it is a priority for them. They will just price drop until it moves. The x6003d chips were even a Microcenter exclusive because they produced so few of them.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "Purely technical discussion about silicon binning and manufacturing, not product performance or user experience.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The comment is an objective technical explanation.",
-                      "replies": [
-                        {
-                          "commentId": "mi59ddp",
-                          "text": "So why not make 96003d, which has two previous generations of proof that the market wants it, instead of 99003d's that clearly have no place in the market unless so drastically discounted it cascades pricing chaos throughout the entire product stack?  Clearly you didn't read if you think I don't know how binning works.\n\nLike i am damned sure that 76003d are all 79003d that got their regular ccd scrapped in desperation to sell the unmoving sku, and then they went and did the same blunder again.\n\nNo one wants a 99003d because it's more bloody expensive than both a x and a 9800, and does each of their respective roles worse.  The only way to sell a 993d is pricing it below both, and that not only torpedoes the profit margin on very expensive vcache but now also cannibalizes sales from those two skus, and you can't drop their prices without defeating the whole point of discounting the 993d.  There is no winning move if that sku exists.\n\nThat's just typical AMD marketing at work.",
-                          "upvotes": 0,
-                          "classifyThis": true,
-                          "relevance": "include",
-                          "relevanceReasoning": "User argues that the 9900X3D has no place in the market due to pricing and performance.",
-                          "sentiment": "negative",
-                          "sentimentReasoning": "The user claims no one wants the product because it is more expensive and performs worse than alternatives.",
-                          "replies": [
-                            {
-                              "commentId": "micaoul",
-                              "text": "Clearly, you don't understand it. What do you think they do with 6 core ccds that are good samples? They don't waste it on a 9600x. They will use it for 9900x, or now they will use it for the 9900x3d. Why would AMD waste good ccds on cheaper parts when they can charge more for a 9900 model?    Nothing you are saying is even true or makes sense. They are just maximizing profits. I think AMD has a better idea of what is selling and what's not, and the x600x3d parts are a Microcenter only exclusive. How many do you think really exist? Proof that the market wants it isn't proof AMD wants to sell it.",
-                              "upvotes": 2,
-                              "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "Discussion about AMD's profit maximization and business strategy, not the product's performance or value.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The comment is a business-centric argument.",
-                              "replies": [
-                                {
-                                  "commentId": "mich3vq",
-                                  "text": "&gt; proof that the market wants it isn't proof AMD wants to sell it\n\nAnd therein lies the problem, AMD's marketing department doesn't know how business works.",
-                                  "upvotes": 4,
-                                  "classifyThis": true,
-                                  "relevance": "exclude",
-                                  "relevanceReasoning": "Meta-talk about AMD's marketing department, not the product itself.",
-                                  "sentiment": "neutral",
-                                  "sentimentReasoning": "The comment is a general critique of AMD's business sense.",
-                                  "replies": []
-                                }
-                              ]
-                            },
-                            {
-                              "commentId": "mpouphy",
-                              "text": "No, it's called having more business sense than the average 5 year old - it costs the same money to produce a 9600 as the 9800. They'd be clueless idiots to sell them as 6 core chips for $100+ less money when they can sell every single 9800 they can make at full price.\n\nOnce they have enough 9800 CCDs that won't run all 8 cores, they'll put out a limited 9600X3D to dump the bad CCDs rather than throw them in the trash and eat the production cost.",
-                              "upvotes": 2,
-                              "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "Discussion about manufacturing costs and binning strategy, not product performance.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The comment is a technical/business explanation.",
-                              "replies": [
-                                {
-                                  "commentId": "mpovjsh",
-                                  "text": "And i wish you had to have better reading comprehension than a 5 year old to comment here, so i don't have to read off-topic drivel like this.  Not a single sentence i wrote spoke of bricking good 8 core ccd to make 9600 over 9800, lol.",
-                                  "upvotes": 1,
-                                  "classifyThis": true,
-                                  "relevance": "exclude",
-                                  "relevanceReasoning": "Interpersonal conflict/banter between users, not about the product.",
-                                  "sentiment": "neutral",
-                                  "sentimentReasoning": "The comment is an argument about reading comprehension.",
-                                  "replies": [
-                                    {
-                                      "commentId": "mpp24xt",
-                                      "text": "That's more out of your ignorance than staying on topic, because that's exactly what the 6 core chips are - 8 core chips that either flunk running all 8 cores, or flunk running at the 8 core's frequency. There's no such thing as a 6 core CCD - it's an 8 core with 2 cores disabled.",
-                                      "upvotes": 1,
-                                      "classifyThis": true,
-                                      "relevance": "exclude",
-                                      "relevanceReasoning": "Technical explanation of how 6-core CCDs are made, not product performance.",
-                                      "sentiment": "neutral",
-                                      "sentimentReasoning": "The comment is a factual technical statement.",
-                                      "replies": []
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "commentId": "mpotqyp",
-                  "text": "At launch time, they price the \"broken CCD SKU\" deliberately too close to the \"good CCD\" SKU, because they really don't want to sell a chip that costs the same to make for $100 less and end up selling chips they could have sold for more money. Later in the product's lifecycle, they drop the price of the \"broken\" ones because they have enough of them that it makes sense to start trying to sell them.\n\nThe 6 core CPUs are actually the exception to this rule, because they need to sell something at the cheap end of the pricing spectrum. This is probably why you don't see a 9600X3D until near the end of the series's lifecycle.\n\nThey follow the same pattern with all their product lines (except 6 core non-X3D) - 7900XTX and XT, 9070Xt and 9070, 9900 vs 9950 X and X3D - in all cases, the lower SKU is priced so close to the higher one that it doesn't make sense not to pay a little more for the higher one, and in all cases, later in the lifecycle the price gap widens.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Discussion of pricing patterns and product lifecycles, not specific product performance.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a general analysis of AMD's pricing strategy.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "mhnv3d6",
-              "text": "Is the point of these two chips not to target the niche of people who want productivity and gaming on the same machine? The 9800x3D may be the best gaming CPU, but in video editing and motion graphics (and any program that requires renders really) the more cores the better.",
-              "upvotes": 10,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "User discusses the target audience (productivity and gaming) for the 9900X3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is posing a question about the product's intended niche.",
-              "replies": [
-                {
-                  "commentId": "mhqvhew",
-                  "text": "That\u2019s my conclusion. A hell of a chip for gaming and a hell of a chip for productivity. \n\nMy dad\u2019s friend was looking to build a new computer and was going to put a X3D chip in it. I asked if he\u2019s going to be gaming at all, no. I recommended to go for a non X3D higher core chip since he\u2019d be focused on photo/video editing.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "User describes the product as a 'hell of a chip' for both gaming and productivity.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user expresses high satisfaction with the product's capabilities.",
-                  "replies": [
-                    {
-                      "commentId": "mhrky20",
-                      "text": "Yeah. I'm somewhat tempted by the 9950x3d but I just don't really see myself needing the extra 4 cores in any scenario: I'd like to see the gaming benchmarks before settling on it.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": "include",
-                      "relevanceReasoning": "User expresses interest in the 9950X3D but compares it to their needs, implying a comparison of the 9900X3D line.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is undecided and waiting for benchmarks.",
-                      "replies": []
-                    },
-                    {
-                      "commentId": "mi26mmg",
-                      "text": "Sure, but that's the thing-even if you do game but do not require the extra oomph from 3d cache, the regular chips still get the job done plenty, and you're saving money while getting your editing core count needs covered.",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": "include",
-                      "relevanceReasoning": "User discusses the value of regular chips over X3D chips for certain workloads.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is providing a balanced view on cost vs performance for editing.",
-                      "replies": [
-                        {
-                          "commentId": "mz341it",
-                          "text": "I can attest to this, been on a 7950x for almost 3 years (broke it though)\nAnd its served me well through the time I've had it. Been\u00a0 runching out top tier 1440p gaming.\nHowever, due to bracketed reasons above, I've been looking for a new chip and seriously eying the 9900x. Im benches, its pretty neck to neck with a 7800x3d in gaming albeit 20% slower in multicore compared to the 7950x i had... but the multi tasking is still there. And to be fair, only got the 7950x cause it was top sku at the time and I was a not so informed first time builder.\u00a0\n\n\nLoved the multi tasking ability, still wanting a Lil better gaming performance. For reasons also stated above, that's why I'm looking at a 9900x. That and the cost of a replacement 7950x is about the same. So I would be getting the same level of multicore performance I was actually using while also getting the same gaming performance of the best ryzen 7000 gaming chip period... and for anywhere around 380-420 bucks.\u00a0\n\n\nSounds like a decent deal for mine or similar scenarios.\u00a0\nI could just go for the 9950x, but I'm not doing anything that serious to warrant the 4 extra cores and much higher price. 9900x give everything i want and need, x3d is just a price hike for +20% in 1080p bottleneck scenario gaming.\u00a0",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": "include",
-                          "relevanceReasoning": "User compares the 9900X to the 9900X3D, discussing gaming performance and cost.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user finds the 9900X a 'decent deal' and views the X3D as a price hike for marginal gains.",
-                          "replies": []
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "mhqe3yk",
-              "text": "They're crap at launch price, but if this goes down in price the way the 7900X3D did it could eventually be a good deal.",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "User critiques the launch price but suggests it could be a good deal later.",
-              "sentiment": "negative",
-              "sentimentReasoning": "The user describes the product as 'crap' at launch price.",
-              "replies": []
-            },
-            {
-              "commentId": "mhyhceq",
-              "text": "Option 1: 9950 cores were duds, can the whole wafer chunk.\n\nOption 2: 9950 cores were duds, sell it anyways.\n\nThe dumb thing they are doing here is releasing a 12 core chip to save how many dud ccds are lying around.  There is no market niche for this sku:  Gamers want 8 cores; productivity users want the 9900x for better performance and less cost; mixed users still want the full 8 core cache; and it sure as shit isn't a budget option either.  It should have been a 14 core cpu with 8 cache cores and a dud 6 core standard ccd.\n\nUnless vcache cores are etched as such on the wafer and *must* be paired with the cache, there is no reason to make a 99003d as they are.  But even then, just release a 96003d earlier with those dud cache ccds, because the market has shown those actually will sell.  To have two generations of sales records to prove this and still do the same thing is insane.",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "User argues there is no market niche for the 9900X3D and critiques its design.",
-              "sentiment": "negative",
-              "sentimentReasoning": "The user calls the product's release 'insane' and claims it has no market niche.",
-              "replies": [
-                {
-                  "commentId": "mm851uo",
-                  "text": "For some engineering reasons, the amd ccds have to be equal core counts to work properly. Hence why we don't have an 8 + 4 variant or even an 8 + 6. They also probably don't have many that fail to the point of only having 4 good cores.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Technical explanation of CCD core counts, not product performance.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a factual technical statement.",
-                  "replies": []
-                },
-                {
-                  "commentId": "mpozzrg",
-                  "text": "Right, this is why they price the 9900 so close to the 9950 that it makes no sense not to pay a little more for the 9950.  That pricing is intentional, they want to discourage people from buying the 9900s!\n\nLater, when they have enough of the \"duds\", they increase the price gap so it makes more sense for some people to buy the 9900.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Discussion of pricing strategy and 'duds', not product performance.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a general analysis of AMD's pricing.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "n98ggkw",
-              "text": "wat? the 9900x3d beats the 9800x3d easy in gaming",
+              "commentId": "mkb2115",
+              "text": "Been almost 2 weeks since you posted. How has it been going. Still smooth?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "User makes a direct performance claim about the 9900X3D beating the 9800X3D in gaming.",
-              "sentiment": "positive",
-              "sentimentReasoning": "The user claims the product outperforms a competitor/alternative.",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mi8kxv7",
-          "text": "The people not at all interested in purchasing it are the ones most affected by it",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Vague comment with no specific insight into the product.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is a general observation about consumer behavior.",
-          "replies": []
-        },
-        {
-          "commentId": "micb358",
-          "text": "12 core is perfect for production, you can run a game and multiple instances of anything and wont fall behind or notice anything slowing down. 9950x3d is for nasa tasks so in reality nobody can really push it to its limits where you gonna get hinder its performance. In my opinion 9900x3d is way better option for a regular joe that does multitasking applications.",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User argues the 9900X3D is a better option for multitasking and production.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user describes the product as 'perfect' for production and a 'way better option'.",
-          "replies": [
-            {
-              "commentId": "midfuhs",
-              "text": "I gotta admit, I feel somewhat lost now. The 9900x3d was going to be my first AMD cpu in nearly 15 years and now, with everyone kind of shitting on it, Im not really sure where to turn. I need something that will work well for both gaming and productivity and I, maybe naively, thought this would be a good/decent fit. I think you might be the first person who echoed my thoughts about it.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "User expresses uncertainty about the product after hearing negative feedback.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is undecided and feels 'lost' regarding the purchase.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "mihrij3",
-                  "text": "get the 9900 x3d. The pricing is a bit bad but overall it is a great CPU for Gaming and productivity. When u need NASA performance for rendering then the 9950X3D is the better choice. Would AMD sell 9900 X3D for 100 US Dollar lesser this CPU would be the Best Pick. Alot of benchmarks did show that the 9900 X3D not has the top max fps but more stable FPS than a 9800 X3D in several games.",
+                  "commentId": "mkcaoas",
+                  "text": "Speaking of the devil. Haven't had time for an update with all the stuff I have been trying to fix and thoroughly test.  \nBut here it is!  \n  \nI went back to 1104, everything *seemed to run fine* the first couple of days from roll-back, but then I started to get problems with freezing and hard locks, again.  \n  \nI figured that there where two explanations for why I thought it was fixed. \n\n1. My time in front of the computer was less then regular the first couple of days after the rollback, so therefore I didn't encounter an error, which in turn made me believe it was \"fixed\".   \n  \nAnd when testing:  \n  \n2. I just had luck, that it just \"decided\" to not freeze the first couple of days I was testing stuff out. \n\nEither way, this made me think that - *I must have screwed something up along the way when flashing the BIOS to 1203 the first time.*\n\n**Even though,** I flashed from default settings in BIOS. I didn't interrupt or in any way, shape or form use the computer during the BIOS update and I let it finish the update by itself. No power outages during the update. You know, standard procedures.  \n  \nI've flashed motherboards so many times, but I this time I figured, I might as well test and go all in.\n\nSo I did a clean sweep.\n\n* Cleared CMOS\n* Cleared out driver, chipset and firmware updates.\n   * I cleared out stuff that I knew I easily could remove and replace without messing up Windows completely.\n\n* Re-flashed the 1104\n* Flashed up to the 1203 update\n* Updated firmware and drivers from ASUS website to the newest ones\n   * Flashing to latest firmware, updating drivers, latest chipset drivers\n\nAnd lo and behold, it has been up and running past 5 days with 1203, without any freezing or hard locks.\n\nI've sunk more than enough hours into Monster Hunter: Wilds and Khazan: The First Berserker to safely say it's now stable again. Before the clean sweep, those kind of hours had been a major issue for stability.\n\nSo my specific problem were \"user-error\", I guess? Or just, some sort of issue that presented itself when flashing, and then fixed itself when just clearing out **almost everything out** and re-do it.\n\n**TLDR**: Maybe user error**(?)**, cleaned drivers, chipset and firmware, re-flashed 1104, flashed to 1204, re-installed drivers, chipset and drivers. cleared CMOS, System is now stable again for over 5 days. Tested in light- and heavy workloads. 1203 is stable.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "User recommends the 9900X3D for gaming and productivity, despite the price.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user calls it a 'great CPU' and notes it has more stable FPS.",
-                  "replies": [
-                    {
-                      "commentId": "min1n4e",
-                      "text": "I very well may just do this. Especially if 9950X3D stock continues to be nil.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": "include",
-                      "relevanceReasoning": "User expresses intent to purchase the 9900X3D due to stock issues of the 9950X3D.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is considering the product as a viable alternative.",
-                      "replies": []
-                    }
-                  ]
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
                 }
               ]
             }
           ]
-        },
-        {
-          "commentId": "mhj60mn",
-          "text": "If not for the price, it's a great CPU, it is comparable to 9950x3d in gaming and retains the productivity of 9900x which is a single core champ",
-          "upvotes": 10,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User describes the product as a 'great CPU' if not for the price.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user expresses satisfaction with the performance and productivity.",
-          "replies": [
-            {
-              "commentId": "mhk1e5q",
-              "text": "I don't see it as comparable. It's up to 20% slower in 1%s in some games. That's an entire CPU gen of performance. In the Pharaoh example the regular 9950x has better minimums than the 9900x3D. In some games 6 cores is not enough.",
-              "upvotes": 15,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "User critiques the gaming performance (1% lows) of the 9900X3D compared to the 9950X.",
-              "sentiment": "negative",
-              "sentimentReasoning": "The user claims the product is 'up to 20% slower' in some games.",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "mhw6tch",
-          "text": "well tbh most if this benchmarks arent even realistic.\n\ni have a lot of programs in the background,  with process lasso if can push those on the second ccd and let the games on decide through cache optimizer",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User shares personal experience using Process Lasso to optimize the 9900X3D.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is discussing technical optimization without a clear positive or negative leaning.",
-          "replies": []
-        },
-        {
-          "commentId": "mhygb5q",
-          "text": "Why this one exist if it\u2019s 9950x3D ?",
-          "upvotes": 4,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User asks why the product exists compared to the 9950X3D, questioning its value.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "Lacks a clear positive or negative sentiment; it is a question about product positioning.",
-          "replies": []
-        },
-        {
-          "commentId": "mp7lg60",
-          "text": "The 9900x3d Sucks For B06 Warzone I Used To Get 3-5ms On Warzone I Seen It Hit 270 Fps With 4080 Now I Get 8-11ms I Get Like 90Fps On Rebirth",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User reports poor performance in Warzone, specifically citing FPS and latency drops.",
-          "sentiment": "negative",
-          "sentimentReasoning": "The user explicitly states the product 'Sucks' for their specific game.",
-          "replies": []
-        },
-        {
-          "commentId": "msvhkcs",
-          "text": "I think that the 9900x3d is interesting for people that want to have a lower watt usage and dont need the extra performance. Right now in europe there is a 150 euro price difference , i would rather save that money and spend it on an aio or ddr5 ram sticks. Its not bad gaming performance is good enough in most cases to allow 144fps in most wqhd games. While 8 core is a substantial step down for me. I want to watch youtube use discord for streaming and play a game at the same time while talking to friends. I think thats gonna be hard for an 8 core cpu.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User discusses the product's value, power usage and suitability for multitasking.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user finds the product 'interesting' and 'good enough' for their specific needs.",
-          "replies": []
-        },
-        {
-          "commentId": "mhid221",
-          "text": "I usually like Kitguru's content, but I'm not particularly interested in the 9900x3d.",
-          "upvotes": -32,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "User expresses lack of interest in the product, providing no insight into its performance or value.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is a statement of personal preference/disinterest.",
-          "replies": []
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

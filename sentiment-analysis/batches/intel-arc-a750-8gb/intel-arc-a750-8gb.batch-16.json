@@ -1,12 +1,12 @@
 {
-  "productName": "intel-arc-a750-8gb",
+  "productName": "Intel Arc A750 8GB",
   "batchIndex": 16,
-  "totalBatches": 34,
+  "totalBatches": 23,
   "comments": [
     {
-      "commentId": "1tdid85",
-      "text": "Machine GPU vs PS5 GPU // a deductive breakdown (&amp; a mental one too)\n\nHello everyone, welcome to my TED Talk\u2122 about \"Why the PS5 GPU isn't better than the Machine GPU by any significant metric\"\n\nhttps://preview.redd.it/nw61qsk5k71h1.png?width=1024&amp;format=png&amp;auto=webp&amp;s=3723fa10c038f6f56f4a88e2ee0f500fb521e41d\n\nI have :\n\n* time to kill\n* too much love for the game\n* severe autism\n* fallen down a rabbit hole\n* been pissed off by the people claiming the PS5 is better than the Machine in performance\n* forgotten to take my meds\n\nPick any/several of those, I don't care.\n\n**Get a snack, we're about to embark in on a marvelous journey of technical specs &amp; numbers aplenty.**\n\n# Machine GPU only has 8GB VRAM, PS5 has 16!\n\n* PS5 does not have 16GB VRAM, it has 16GB of unified RAM that is divided between system RAM &amp; VRAM, typically into an 8/8 division, can be reallocated up to a 4/12 (practically never happens, most studios port their games over to PC where 60\\~65% of the userbase has 8GB GPUs, makes no sense to create extra work and touch up the VRAM allocation on the PS5 if it's gonna work all the same anyway).\n* 1080p gaming in nearly all games rarely even approaches 8GB VRAM unless texture/effects are set to the higher end of the quality setting scale, which is NEVER the case on the PS5.\n* Here's [a chart of widely played games with intense graphics that hit above 8GB VRAM](https://www.hardware-corner.net/games-8gb-vram-list/) **when set to 1440p high/ultra.** (*Notice how most of them don't even go over the threshold by a lot.*)\n\n# Valve claims 4K@60FPS, bullshit!\n\n* Valve claims 4K@60FPS ***with FSR***, AMD's upscaling method.\n* Consoles run games upscaled, this is guaranteed to almost always be the case for 1440p &amp; 4K, some games run 1080p upscaled.\n* AMD ***finally*** announced FSR4.1 support for RDNA3 &amp; RDNA2 GPUs (respectively planned for July &amp; \"2027\") so the PS5 doesn't have the argument of having better upscaling quality with PSSR over FSR3/3.1 anymore.\n\n# PS5 GPU is equivalent to an RX6700, far beyond the specs of the Machine GPU!\n\n* the [PS5 GPU](https://www.techpowerup.com/gpu-specs/playstation-5-gpu.c3480) has an RDNA2 GPU packing 36 compute units, which is also what makes up an [RX 6700](https://www.techpowerup.com/gpu-specs/radeon-rx-6700.c3716)\n* Except the PS5 in its entirety [uses 200\\~220W](https://www.ecoenergygeek.com/ps5-power-consumption/#0-how-many-watts-does-a-ps5-use), which includes the CPU (x8 Zen2 cores, 8MB cache, equivalent to a 4700G, which should draw 65W on its own, let's cut that in half to 35W, aka the 4700GE, for argument's sake), SSD &amp; RAM (let's say equivalent to 10W for both combined), all the I/O (wifi, ethernet, 2.4G dualsense, the HDMI port, give it 10W for the whole thing) and the roughly 10% inefficiency expected from the PSU (we can probably ignore the cooling fan)\n* We then have a GPU that \"only\" gets \\~140W at peak, is driven by a downpowered CPU, has to share a 256-bit bus from 14Gbps memory modules with the CPU, only has 4MB of L2 cache &amp; has to share 8MB of L3 cache with the CPU\n* the RX 6700 gets a full 175W, has its own VRAM pool of 10GB of 16Gbps modules through its own 128-bit bus on top of the the PCIe4x16 interface and we can assume that most of the benchmarked scores we can find online are never done with a CPU that has the limitations of the PS5's CPU (i.e. a full 65W TDP or more &amp; 4 times as much cache found in desktop CPUs)\n\n**If you followed me so far, I think it's safe to say equaling the PS5's GPU to an RX 6700 is NOT an accurate metric.**\n\n* There have been many videos comparing the PS5 to a PC build of some sort, trying to emulate its performance, mostly in cost-based build challenges :\n* Performance &amp; Quality comparison [with an A770](https://youtu.be/LfpXMuMvcWQ?t=460) (Notes : this is a 2y/o video, Intel driver's were inconsistent, had considerable CPU overhead &amp; this was done on Windows, also I know this comes with 16GB VRAM but this is a focus on the performance level, this will come up later)\n* Performance &amp; Quality comparison [with an RX 6600](https://youtu.be/iHkBcqW-ExY?t=1000) (Notes : this is a 6months old video, running SteamOS; here's [their logic](https://youtu.be/iHkBcqW-ExY?=488) behind the pick of the GPU, this will also come up later)\n* You can look up more performance comparison on your own but I consider that it is safe to say, in sheer performance, the PS5 lands between those two landmarks that we can place on a performance scale.\n\n# Oh look, a performance scale!\n\nhttps://preview.redd.it/ggpgn5tsz61h1.png?width=685&amp;format=png&amp;auto=webp&amp;s=3bcef516d50a6e9b765cf766303cbb184a3b755b\n\n**The two GPUs mentioned above span a 17% performance amplitude, that's a decent window for the Machine to aim into**\n\n# What does the Machine's GPU pack:\n\n* RDNA3 GPU made up of 28CU, pushing 110W @ 2.45GHz (specs sheet says \"max sustained\" clock, I'll presume this is what the Boost clock is; VRAM bandwidth undeterminate, I presume it's the same 18Gbps GDDR6 all RDNA3 GPUs got)\n* Closest known model? the [RX 7600M](https://www.techpowerup.com/gpu-specs/radeon-rx-7600m.c4014) : same CU count, 90W TDP, boost @ 2.41GHz, PCIe4x16 interface, cooled by laptop-grade thermal blocks, performance about equal to a desktop RTX 2070\n\n**Oh, how convenient, that's juuust ahead of the RX 6600 from earlier!**\n\nhttps://preview.redd.it/8irj959k171h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=a62eb9ad04115ad7ebc122e87dbf2228625455fe\n\n* Difference to the profit of the Machine GPU : +20W TDP, +40MHz boost clock, cooled by a huge fucking block of an air cooler (will likely sustain boost clocks a hell of a lot better &amp; longer than the 7600M in laptops)\n* Coincidentally, [the XT variant](https://www.techpowerup.com/gpu-specs/radeon-rx-7600m-xt.c4013) has interesting specs too : 32CUs, 120W TDP, boost @ 2.47GHz, so that means the Machine GPU ***CANNOT*** out perform this particular model, since it has physically more compute unites &amp; a teeny tiny little bit more juice &amp; clocks as well\n* Why does the 7600M XT matter? Well, let's look at the chart :\n\nhttps://preview.redd.it/fji71eq2371h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=2c282be18e5d038706590c4b70443d9d10e2c8c9\n\n**Just 2% ahead of the A770 from the first PS5 comparison video? AND equal to the 2070 SUPER?? Now that's very practical!**\n\n# Let's compile all this data:\n\nhttps://preview.redd.it/337p58l4771h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=2da54cc715f457a45b531b06c0339d65488faff1\n\n**We can deduce it's equal or very close to equal to PS5 GPU performance**\n\n# Extra considerations:\n\n* Machine's CPU is significantly better, feeding the GPU more data more consistently\n* PS5's OS is BSD-based, not Linux-based (which makes sense for various licensing reasons from Sony's position)\n* Recently released [PS5 Linux project](https://github.com/ps5-linux/ps5-linux-loader) allowed for [Linux gaming testing on PS5](https://videocardz.com/newz/ps5-linux-tested-steam-games-come-close-to-native-console-performance); in all tests, Linux ran equal or a liiitle bit better\n\n**The PS5 Linux project at this time can't allocate more than 6GB of the VRAM, and yet still equals or edges ahead of the PS5 in the same games at same resolution &amp; quality.**\n\n**It runs games which are made for Windows, running through the Proton compatibility layer, whereas the PS5 gets its own custom-optimized editions, just for it. Imagine if it was Linux-optimized, before even thinking about the hardware optimization.**\n\n* This project was only operational recently, which mean most of this isn't fully fleshed out, dynamic allocation maxes out at 6GB VRAM, it doesn't boost properly/can't be overclocked, etc...\n* I think we can safely assume there's overhead that can be reduced, putting Linux ahead of the PS5's OS down the line because PS5 is basically entirely dependent on Sony software engineering to improve performance; Machine benefits from Linux community (including Valve) to ever improve &amp; optimize software\n   * Example #1 : [MESA 26.0 update](https://videocardz.com/newz/mesa-26-0-open-source-graphics-library-for-linux-releases-significant-imporvmenets-to-raytraicng-on-radeon-gpus) packs decent improvements to AMD GPUs RT performance\n   * Ex #2 : [dmemcg Linux kernel patch](https://videocardz.com/newz/valve-developer-improves-linux-vram-handling-for-8gb-gpus-with-new-kernel-patches) evicts non-game apps out of VRAM when game requires more space (look up benchmarks before/after patch, this greatly helps 8GB -or less- GPUs)\n   * Ex #3 : [Proton compat layer](https://videocardz.com/newz/valve-proton-11-0-beta-1-released-adds-support-for-x-plane-12-breath-of-fire-iv-and-more) gets ever better, no need to wait for a Linux port of a Windows game the same way console games have to get ported to PC\n   * Ex #4 : [Microsoft wants Windows to be as good as SteamOS in gaming](https://videocardz.com/newz/microsofts-windows-secrete-k2-plan-aims-to-cut-windows-11-bloat-and-improve-gaming-performance) (this is not a joke, they realized Linux was getting better at running Windows games than Windows LMAO)\n\n# But the PS5 is older, shouldn't the Machine be better?\n\nThe PS5 has a downpowered, low to mid-end desktop GPU only one generation older than the entry-level, juiced up, mobile GPU of the Machine that only has the 55W RX7400 below it in the RDNA3 series, the gap is, as described by all of the above, non-existent.\n\nI'll bring your attention over to NvidAI, where the RTX5050 is the FIRST entry-level GPU to beat the GTX1080Ti.\n\nIt took them 5 generations over the span of a decade to finally achieve that (and it still has more VRAM than the 5050 LMAO).\n\n# Why didn't you compare it with the PS5 Pro since it's gonna be closer in price?\n\n* it was not a cost-based comparison\n* people who know nothing about hardware were pissing me off saying that the base PS5 was more powerful\n* PS5s are subsidized, I wonder what would be the real price if it wasn't &amp; how much consideration would buyers have knowing the Machine can do all the PC-stuff (i.e. running non-game software, having the freedom of choosing what system you want to install, etc...) that consoles can't\n\n# Conclusion:\n\n**The Steam Machine GPU is equal in performance to the PS5 GPU &amp; can be expected to be supported longer &amp; better than PS5.**\n\n# If after all that you're still not convinced, then I don't know what to tell you.\n\ngo buy a PS5 if you think it's so much better than the Machine, I guess",
-      "upvotes": 295,
+      "commentId": "1ca12b0",
+      "text": "Graphics cards Dollars-per-FPS tables at various settings\n\nSorted by price. Minimum 35 FPS needed to make each list. Since these lists are dominated by AMD, I was less strict when considering cards from Intel and nVidia for each list for those who prefer cards from these companies.\n\nPerformance data taken from [Tom's Hardware](https://www.tomshardware.com/reviews/gpu-hierarchy,4388.html). FPS score is an average over several games that includes weighted 1% low scores.\n\nAll price data from today. Price data mostly from Amazon with some (especially for older cards) taken from Newegg. Price data includes refurbished and used prices (also especially for older cards).\n\n---\n\n1080p Medium settings\n\nCard | Price | $/FPS\\* | FPS\n--- | --- | --- | ---\nIntel Arc A380 | 100$ | 1.84$ | 54.3 FPS\nRadeon RX 580 8GB | 129$ | 2.09$ | 61.7 FPS\nRadeon RX 6500 XT | 140$ | 2.13$ | 65.8 FPS\nIntel Arc A580 | 180$ | 1.78$ | 101.1 FPS\nRadeon RX 6600 | 190$ | 1.64$ | 116.2 FPS\nRadeon RX 5700 XT | 200$ | 1.60$ | 124.9 FPS\nRadeon RX 6650 XT | 220$ | 1.60$ | 137.1 FPS\nRadeon RX 6700 10GB | 240$ | 1.65$ | 145.7 FPS\nRadeon RX 7600 XT | 330$ | 2.18$ | 151.2 FPS\nRadeon RX 6700 XT | 330$ | 2.09$ | 158.1 FPS\nRadeon RX 6750 XT|  340$ | 2.10$ | 161.6 FPS\nGeForce RTX 4060 Ti | 375$ | 2.34$ | 160.1 FPS\nRadeon RX 6800 | 381$ | 2.26$ | 168.7 FPS\nGeForce RTX 3070 Ti | 400$ | 2.50$ | 159.8 FPS\nRadeon RX 7700 XT | 400$ | 2.33$ | 171.6 FPS\nRadeon RX 6800 XT | 410$ | 2.37$ | 173.2 FPS\nGeForce RTX 4060 Ti 16GB | 440$ | 2.72$ | 161.7 FPS\nGeForce RTX 3080 | 480$ | 2.86$ | 167.6 FPS\nRadeon RX 7800 XT | 500$ | 2.79$ | 179.1 FPS\nRadeon RX 7900 GRE | 541$ | 2.94$ | 184.3 FPS\nGeForce RTX 4070 Super | 590$ | 3.19$ | 185.1 FPS\nRadeon RX 7900 XT | 700$ | 3.73$ | 187.6 FPS\nGeForce RTX 4070 Ti Super | 800$ | 4.22$ | 189.4 FPS\nRadeon RX 7900 XTX | 950$ | 4.99$ | 190.3 FPS\nGeForce RTX 4080 Super | 1000$ | 5.19$ | 192.7 FPS\nGeForce RTX 4090 | 1780$ | 9.10$ | 195.7 FPS\n\n---\n\n1080p Ultra settings\n\nCard | Price | $/FPS\\* | FPS\n--- | --- | --- | ---\nRadeon RX 580 8GB | 129$ | 3.65$ | 35.3 FPS\nIntel Arc A580 | 180$ | 2.76$ | 65.1 FPS\nRadeon RX 6600 | 190$ | 2.91$ | 65.2 FPS\nRadeon RX 5700 XT | 200$ | 2.73$ | 73.3 FPS\nIntel Arc A750 | 210$ | 2.97$ | 70.8 FPS\nRadeon RX 6650 XT | 220$ | 2.83$ | 77.7 FPS\nRadeon RX 6700 10GB | 240$ | 2.79$ | 86.1 FPS\nIntel Arc A770 8GB | 260$ | 3.45$ | 75.3 FPS\nRadeon RX 7600 | 260$ | 3.17$ | 82 FPS\nGeForce RTX 4060 | 295$ | 3.47$ | 84.9 FPS\nIntel Arc A770 16GB | 300$ | 3.90$ | 76.9 FPS\nRadeon RX 7600 XT | 330$ | 3.59$ | 91.9 FPS\nRadeon RX 6700 XT | 330$ | 3.33$ | 99.1 FPS\nRadeon RX 6750 XT | 340$ | 3.30$ | 102.9 FPS\nGeForce RTX 4060 Ti | 375$ | 3.74$ | 100.4 FPS\nRadeon RX 6800 | 381$ | 3.32$ | 114.6 FPS\nRadeon RX 7700 XT | 400$ | 3.45$ | 116.1 FPS\nRadeon RX 6800 XT | 410$ | 3.34$ | 122.7 FPS\nGeForce RTX 4060 Ti 16GB | 440$ | 4.37$ | 100.6 FPS\nRadeon RX 7800 XT | 500$ | 3.87$ | 129.3 FPS\nRadeon RX 7900 GRE | 541$ | 3.98$ | 135.8 FPS\nGeForce RTX 4070 | 550$ | 4.51$ | 122.0 FPS\nRadeon RX 6950 XT | 550$ | 4.21$ | 130.5 FPS\nGeForce RTX 4070 Super | 590$ | 4.40$ | 134.2 FPS\nRadeon RX 7900 XT | 700$ | 4.86$ | 143.9 FPS\nGeForce RTX 4070 Ti Super | 800$ | 5.62$ | 142.3 FPS\nRadeon RX 7900 XTX | 950$ | 6.38$ | 149.0 FPS\nGeForce RTX 4080 Super | 1000$ | 6.74$ | 148.3 FPS\nGeForce RTX 4090 | 1780$ | 11.55$ | 154.1 FPS\n\n---\n\n1440p Ultra settings\n\nCard | Price | $/FPS\\* | FPS\n--- | --- | --- | ---\nIntel Arc A580 | 180$ | 3.69$ | 48.8 FPS\nIntel Arc A750 | 210$ | 3.91$ | 53.7 FPS\nRadeon RX 6650 XT | 220$ | 4.04$ | 54.5 FPS\nRadeon RX 6700 10GB | 240$ | 3.82$ | 62.8 FPS\nIntel Arc A770 8GB | 260$ | 4.52$ | 57.5 FPS\nRadeon RX 7600 | 260$ | 4.54$ | 57.3 FPS\nGeForce RTX 4060 | 295$ | 4.82$ | 61.2 FPS\nIntel Arc A770 16GB | 300$ | 5.02$ | 59.8 FPS\nRadeon RX 7600 XT | 330$ | 5.01$ | 65.9 FPS\nRadeon RX 6700 XT | 330$ | 4.50$ | 73.4 FPS\nRadeon RX 6750 XT | 340$ | 4.40$ | 77.2 FPS\nGeForce RTX 3070 | 369$ | 4.75$ | 77.7 FPS\nGeForce RTX 4060 Ti | 375$ | 4.96$ | 75.6 FPS\nRadeon RX 6800 | 381$ | 4.27$ | 89.2 FPS\nRadeon RX 7700 XT | 400$ | 4.31$ | 92.7 FPS\nRadeon RX 6800 XT | 410$ | 4.14$ | 99.0 FPS\nGeForce RTX 3080 | 480$ | 4.98$ | 96.4 FPS\nRadeon RX 7800 XT | 500$ | 4.73$ | 105.8 FPS\nRadeon RX 7900 GRE | 541$ | 4.75$ | 113.9 FPS\nGeForce RTX 4070 Super | 590$ | 5.37$ | 109.8 FPS\nRadeon RX 7900 XT | 700$ | 5.56$ | 125.9 FPS\nGeForce RTX 4070 Ti | 750$ | 6.44$ | 116.5 FPS\nGeForce RTX 4070 Ti Super | 800$ | 6.56$ | 122.0 FPS\nRadeon RX 7900 XTX | 950$ | 7.02$ | 135.3 FPS\nGeForce RTX 4080 Super | 1000$ | 7.52$ | 133.0 FPS\nGeForce RTX 4090 | 1780$ | 12.18$ | 146.1 FPS\n\n---\n\n4k Ultra settings\n\nCard | Price | $/FPS\\* | FPS\n--- | --- | --- | ---\nIntel Arc A770 16GB | 300$ | 8.50$ | 35.3 FPS\nRadeon RX 7600 XT | 330$ | 8.89$ | 37.1 FPS\nRadeon RX 6700 XT | 330$ | 8.17$ | 40.4 FPS\nRadeon RX 6750 XT | 340$ | 7.94$ | 42.8 FPS\nGeForce RTX 3070 | 369$ | 8.31$ | 44.4 FPS\nGeForce RTX 4060 Ti | 375$ | 9.47$ | 39.6 FPS\nRadeon RX 6800 | 381$ | 7.51$ | 50.7 FPS\nRadeon RX 7700 XT | 400$ | 7.77$ | 51.5 FPS\nRadeon RX 6800 XT | 410$ | 7.08$ | 57.9 FPS\nGeForce RTX 3080 | 480$ | 7.74$ | 62.0 FPS\nRadeon RX 7800 XT | 500$ | 8.03$ | 62.3 FPS\nRadeon RX 7900 GRE | 541$ | 7.81$ | 69.3 FPS\nGeForce RTX 4070 | 550$ | 9.62$ | 57.2 FPS\nRadeon RX 6950 XT | 550$ | 8.20$ | 67.1 FPS\nGeForce RTX 4070 Super | 590$ | 8.93$ | 66.1 FPS\nGeForce RTX 3080 Ti | 685$ | 9.96$ | 68.8 FPS\nRadeon RX 7900 XT | 700$ | 8.62$ | 81.2 FPS\nGeForce RTX 4070 Ti Super | 800$ | 10.18$ | 78.6 FPS\nRadeon RX 7900 XTX | 950$ | 9.99$ | 95.1 FPS\nGeForce RTX 4080 Super | 1000$ | 10.88$ | 91.9 FPS\nGeForce RTX 4090 | 1780$ | 15.55$ | 114.5 FPS\n\n---\n\n\\*Lower $/FPS values are better.",
+      "upvotes": 1328,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,171 +14,182 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "olvqtgm",
-          "text": "Why did you assume that the 6600 is weaker than the 7600M? If you look for tests, you will find the opposite.",
+          "commentId": "l0qmm9i",
+          "text": "I get downvoted every time I say the 4090 is abysmal value. Here's numerical data that shows it's *by far* the worst GPU in cost-per-frame at every resolution.\n\nI'm sure I'll still get downvoted.",
           "upvotes": 8,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Discussion is about AMD RX 6600 and RX 7600M, not the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is questioning a technical assumption about AMD GPUs.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "olxloid",
-              "text": "\\&gt;7600M stands higher than the 6600 on the scale with a 5% difference\n\nhmmm, I wonder was well, why could I possibly assume the lower standing GPU is weaker than the one sitting above...",
-              "upvotes": 2,
+              "commentId": "l0qzrmx",
+              "text": "People hopefully don't buy it because they think it's a bargain. It's an expensive high end product. Getting high FPS 4k performance is a realworld usecase, so not a stupid vanity product either.",
+              "upvotes": 7,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Discussion is about AMD GPUs, not the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is responding to a technical argument about AMD GPUs.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "olxm48t",
-                  "text": "Because you're obviously playing in numbers, not games, otherwise you would know that the 6600 would give more fps",
-                  "upvotes": 3,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Discussion is about AMD GPUs, not the Intel Arc A750.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is arguing about FPS performance of AMD GPUs.",
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "olvudtx",
-          "text": "The better question is why do you think comparing the steam machine to a 6 year old device will make it look good.\u00a0",
-          "upvotes": 11,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Discussion is about the 'Steam Machine' and PS5, not the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is questioning the validity of the comparison.",
-          "replies": [
-            {
-              "commentId": "oly6ejo",
-              "text": "They are replying to others who are comparing it to the PS5. ",
-              "upvotes": 8,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Discussion is about the 'Steam Machine' and PS5, not the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing context for the conversation.",
-              "replies": []
-            },
-            {
-              "commentId": "olxkan4",
-              "text": "I don't care about how it looks, you buy it if you want it, I couldn't care less",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Off-topic discussion about buying preferences, not the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user expresses indifference.",
-              "replies": []
-            },
-            {
-              "commentId": "om08ugi",
-              "text": "6 years old is nothing for a gaming PC. Most Steam gamers are still rocking 8 GB or less of VRAM and 16 GB or less of RAM with 1080p resolution. You are allowed to tweak all the graphics settings on PC games, remember that.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "General discussion about PC gaming hardware and VRAM, not specific to the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is discussing general PC gaming trends.",
-              "replies": [
-                {
-                  "commentId": "on7ft8m",
-                  "text": "Sure, but those folks are also not buying a $1,000 PC that performs similarly as a PS5. ",
+                  "commentId": "l0r12gl",
+                  "text": "There was a small but loud minority in the early 40 series days that spread the false idea that the 4090 was \"the best value\" of the 40 series. That wasn't true then, and it's definitely not true now. It's been the worst cost-per-frame the entire time.\n\nBut yeah, you're not buying a $1600 GPU for value, hopefully.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Discussion about the cost of a PC vs PS5, not the Intel Arc A750.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is arguing about value proposition.",
-                  "replies": []
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l0rjw1m",
+                      "text": "Counterpoint- 4090 was released late 2022. If you bought a 4090 at that time you would now have 1.5 years with the best performing GPU in the world. Resale for a 4090 is close to original MSRP of $1600, so you\u2019d be able to get all your money back if you wanted.",
+                      "upvotes": 4,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
                 }
               ]
+            },
+            {
+              "commentId": "l0r8zbc",
+              "text": "&gt; I get downvoted every time I say the 4090 is abysmal value.\n\nWell duh. Around here I could've gotten an entire PC with a 4070ti for the price I paid for the 4090 alone, and would still have some money left to spare.\n\nNo one buys the fastest graphics card around because they are looking for a bargain, my dude. They buy it because they want the best out there.",
+              "upvotes": 6,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "l0ragnd",
+              "text": "I am not sure what is the point of comparing $ per frame for 4090. It's a halo card which traditionally never have good value.",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "l0u22er",
+              "text": "As a 4090 owner I shall not downvote you.  I was well aware of what I was spending my money on, but I'm just trying to drive my 4k 165hz monitor as fast as possible.  Wasn't looking for performance per dollar at all.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "l0u2zx3",
+              "text": "I mean, for 4090 owners, I don't think best value is the bottom line. I'd assume it's simply - what is the best?",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
             }
           ]
         },
         {
-          "commentId": "olvldts",
-          "text": "No way",
-          "upvotes": 3,
+          "commentId": "l0pqbkw",
+          "text": "Hmm, looks like the RX 6700 10GB is at a nice price point where the next step is considerably more expensive. I wonder what it costs here in the EU? \n\n[checks prices]\n\n\u20ac600. \n\nHooooookay. Guess the 1070 will still have to do.",
+          "upvotes": 6,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Low-effort response, off-topic from the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is expressing disbelief.",
-          "replies": []
-        },
-        {
-          "commentId": "olwgd05",
-          "text": "And people still say it\u2019s gonna cost around 1k. ",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Discussion about the cost of a 'Steam Machine', not the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is commenting on the expected price.",
-          "replies": []
-        },
-        {
-          "commentId": "om09y2x",
-          "text": "I'll updoot, but I want to point out an important caveat and the same reason we're seeing discrepancy between Steam Deck and handhelds like Switch 2. Games are customized and optimized for Consoles, not for PC. The Steam Machine may be equivalent on paper, and have more room for customizing graphics, but it'll likely never equal the PS5 in performance. It won't do enough numbers to warrant it, and while it may end up being a benchmark for devs for the PC space  it won't require the same effort catering to Steam Deck does so it likely won't be specifically optimized for that platform. It's not Apples to Apples, it's Apples to Oranges. ",
-          "upvotes": 3,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Discussion about console optimization vs PC, not the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is discussing technical differences in optimization.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "om0d27p",
-              "text": "PS5 Linux runs Windows games through Proton on the PS5 hardware and achieves same performance (or slightly edges ahead) at same resolution and same visual quality\n\nGame studios were (un?)surprisingly appealed by getting the Deck Verified badge, between that and the \"FPS estimation based on your hardware\" metric Steam announced to implement soon, I genuinely doubt studios wouldn't take the Machine as the lowest common denominator to achieve optimized performance on; if it works well enough on that thing, it'll only work better on everything even a little bit more performant",
-              "upvotes": 1,
+              "commentId": "l0q69r5",
+              "text": "The 6700 is barely in stock anywhere, that's why the price is high. You can get the 6750XT for under 400\u20ac.\n\n\nA few months ago you could get 6700XT for 300-330\u20ac but seems like the stock is gone.",
+              "upvotes": 6,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Discussion about PS5 Linux and Proton, not the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "Laying out a technical argument about performance.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "om0f5uj",
-                  "text": "I haven't looked into the PS5 Linux, but 4k@60, even with FSR is far from the common denominator. The Steam Deck is in an interesting position as one of the most adopted PC handhelds, but the Machine is just one small niche PC in a sea of many. I hope I'm wrong, but I don't think the machine will even break Steam Deck numbers. ",
+                  "commentId": "l0qih8i",
+                  "text": "I think retailers are trying to get rid of AMD 6000 series. The prices seem to be dropping on those.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Discussion about the 'Steam Machine' and Steam Deck, not the Intel Arc A750.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is expressing doubt about the product's adoption.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "l0q7d2n",
+                  "text": "Man, still, the 1070 is such a fucking OP monster. The 6750XT, while fine for 350 now (about as much as I got my 1070 for back in the day), seems to only get something like 2x the performance of the 1070, if my googling is correct.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "om0g0sx",
-                      "text": "oh I have zero expectations that it beats the Deck in sales, I just want it to be popular enough to force devs to take it seriously; if they won't optimize for the Deck, at least maybe they will for the Machine?",
-                      "upvotes": 1,
+                      "commentId": "l0t9g67",
+                      "text": "On average. But for example Star Citizen the difference is 38fps vs 90fps in cities, sure it may \"only\" be a bit over double but 38 is below adaptive sync threshold and thus unplayable",
+                      "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "Discussion about the 'Steam Machine' and Steam Deck, not the Intel Arc A750.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is expressing a hope for developer optimization.",
-                      "replies": [
-                        {
-                          "commentId": "om0i7yo",
-                          "text": "Some have optimized for the Deck because among the latest PC handhelds it's the most popular, highest selling, and also the lowest denominator power-wise. The Machine will be competing with pre-builts, customs, and any other standard computer, even the Deck and other handheld PC's on some levels.\n\n\nI feel like everyone here knows price and performance will make and break it's chances as well. So we'll just have to see pricing and reviews before we can really predict how it'll be adopted. Tbf I hope the pricing is good, and it is well adopted. I would like it if it was good enough to become the benchmark and reasonably priced. ",
-                          "upvotes": 2,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "Discussion about the 'Steam Machine' and pre-builts, not the Intel Arc A750.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user is discussing market adoption and pricing.",
-                          "replies": []
-                        }
-                      ]
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "l0rpvyb",
+              "text": "I'm in the EU and the 6700 is 310\u20ac. i guess it depends on the country.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l0s52jx",
+                  "text": "Same. For 320 euro, XFX 6700 non-XT with the \"Swift QICK 309\" ... lets ignore the name, has an 6750 XT cooler on it, long, heavy enough, 3 fan, absolute overkill and silent for this model. Awsum'.\nEven the silly ovepriced 4050, I mean 4060, costs almost 400 euro.\n \nThe wild 6600 XT and 6650 XT however vanished long ago, RTX 3060 are still expensiver and thus annoying.\n \nThen at 440 euro there is the RX 6800 non-XT. The 6800 XT and 6950 no longer found and consumed too much anyway.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l0szmw1",
+                      "text": "Yeah bought mine 6800 roughly for 370 \u20ac. The box was open so it was little cheaper but brand new was like 20 \u20ac more. So still good price I think but at the same price there are 7700xt. RTX 4060ti is similar price but they are bit slower and 4070ti is selling at least 530\u20ac in my country. So this rx6800 was no-brainer for me :D",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
                     }
                   ]
                 }
@@ -187,18 +198,63 @@
           ]
         },
         {
-          "commentId": "om1y2ur",
-          "text": "Equal lmfao it ran silent hill f without Lumen lighting turning it into a PS3 game and still could not maintain a 60 fps\n\nIt could not run CP2077 in any settings at 60 fps\n\nEqual my ass",
-          "upvotes": 3,
+          "commentId": "l0pt1a5",
+          "text": "Love your work! This is what I did to pick my 4070 Super, I've gotta say I'm pretty happy - better price to perf than a 4070 Ti or 4070 Ti Super and still has DLSS features.\n\nThe 7900 GRE is tasty though.",
+          "upvotes": 4,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Discussion about the performance of a 'Steam Machine' in specific games, not the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is expressing disappointment in the performance of the device being discussed.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": []
+        },
+        {
+          "commentId": "l0q36tp",
+          "text": "German Tech News Outlet computerbase.de does great reviews and charts for this:\nhttps://www.computerbase.de/2024-02/grafikkarten-preis-leistungs-verhaeltnis/#diagramm-fps-euro-in-1920-1080-streudiagramm",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "l0quq46",
+          "text": "6900 XT not existing",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l0shrat",
+              "text": "Lol thank you, I eventually searched for it and found your comment.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l0tqx7v",
+                  "text": "I was also looking for this one",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

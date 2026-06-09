@@ -1,12 +1,12 @@
 {
-  "productName": "amd-ryzen-5-5500x3d",
+  "productName": "AMD Ryzen 5 5500X3D",
   "batchIndex": 5,
-  "totalBatches": 6,
+  "totalBatches": 12,
   "comments": [
     {
-      "commentId": "18lx32a",
-      "text": "Upgrading Ryzen 5 3600 to 5600X3D/5800X3D: Benchmarks, Memory Scaling in Old and New Games\n\nHey all,\n\nBack again with another random benchmark post. I managed to nab a 5600X3D from Microcenter a couple months ago as a drop-in upgrade for a buddy's old PC (R5 3600). While I had the CPU for less than a week, I was able to put together some quick benchmarks results to see how my 5800X3D compares with the 5600X3D and the venerable 3600.\n\nOne thing led to another however and I found myself conducting a much larger test. So instead of releasing the original post of the 5600X3D vs 5800X3D/3600 comparison, I ended up going down another rabbit hole, adding more games to the suite as well as conducting some memory scaling tests. So yeah, this ultimately became less of the 3600 vs 5600X3D I was intending to do lol\n\n# Testbed\n\nMy system has changed a bit since [I last reviewed the 6700 non-XT](https://www.reddit.com/r/Amd/comments/10v1yov/my_xfx_rx_6700_nonxt_benchmark_review_20_games/) a about year ago.\n\n* X570 Aorus Master (F37c)\n* 2x16GB GSkill TridentZ Neo DDR4 3600 (Timings modified, see below)\n* Lian Li Galahad SL 360 AIO\n* Samsung 980 Pro 2TB, Kingston NV2 2TB, Crucial 750GB game drives\n* Corsair RM850x PSU\n* Win 10 Pro (19045)\n* Dell Alienware AW34323DWF\n* GeForce RTX 4090 FE (Driver 537.58)\n\n# The Contenders\n\n* **Ryzen 5 3600 -** tested in its stock configuration\n* **Ryzen 5 5600X3D** (Curve Optimized to -30 all cores)\n* **Ryzen 5 5800X3D** (Curve Optimized to -30 all cores)\n\nYeah, I made the mistake of not testing stock performance :/. Probably a miniscule difference overall that skews the numbers towards X3D but I thought I'd point it out.\n\nFor RAM I tested two configurations:\n\n**Loose Timings and Speed** **(DDR4-3200 CL16-18-18-38) -** I downclocked my 3600 kit to 3200 and loosened the timings to simulate what \"budget\" DDR4 would perform like. This is probably more representative of what a drop-in upgrade would look like for most users.\n\n**Tight Timings (DDR4-3600 CL14-14-14-32, 170ns tRFC) -** Not ridiculous timings for B-die but it does give a noticeable uplift over stock XMP and should show the R5 3600 in its best light relative to the X3D parts.\n\nRAM tests were only conducted on the 5800X3D and 3600 as I no longer had access to the 5600X3D when I started these tests.\n\n# The Test\n\nIn the spirit of my original 5800X vs X3D comparison, I try to continue pushing the use of older games into my testing suites. With the RTX 4090, I'm also able to test CPU bottlenecks for RT as well so there's a few of those titles thrown in here as well.\n\nRemember that this is a CPU-FOCUSED test, so some of the settings will not make sense for the hardware in actual use cases (stuff like 1080p DLSS, etc.).\n\nAll games with manual runs are captured using the latest version of NVIDIA FrameView.SimCity 4 is the only game that uses a different metric. Instead of AVG FPS/1%/0.1%, SimCity 4 performance is based on the number of simulated days elapsed.\n\n\\*indicates game that was tested without the 5600X3D.\n\n|App|Settings|Test|\n|:-|:-|:-|\n|**DX7 - SimCity 4 (2003)**|1920x1080 - High, Shadows High|Custom large city with 7GB of mods, 3 minute fixed camera simulation with max (cheetah) speed, result is days elapsed (higher is better)|\n|**DX10 - Crysis Warhead (2008)**|2560x1440 - Enthusiast 0xMSAA|Manual run - Call Me Ishmael mission start|\n|\\***DX11 - Company of Heroes 2 (2013)**|2560x1440 - Max AA High|5 minutes of playback at 2x speed of a custom 4v4 AI match on a large map|\n|**DX11 - Deus Ex: Mankind Divided (2016)**|2560x1440 - Ultra No MSAA|Manual run of Prague - \u010cist\u00e1 \u010ctvr\u0165 area|\n|**DX11 - Dishonored 2 (2016)**|2560x1440 - Ultra TXAA Forced VSync off (unlimited FPS)|Manual run of Karnaca mission start|\n|\\***DX11 - Battlefield 1 (2016)**|2560x1440 - Ultra TAA|Manual run of Mud and Blood starting at first checkpoint|\n|**DX9 - A Hat in Time (2017)**|2560x1440 - Very High SMAA|Custom Map: New Hat City, Manual loop run around the center|\n|**DX11 - Kingdom Come: Deliverance (2018)**|1920x1080 - Ultra High, HD Textures On|Manual run through center of starting town Skalitz|\n|**DX11 - Borderlands 3 (2019)**|1920x1080 - Ultra|Manual run through the town of Vestige in the Bounty of Blood DLC|\n|**DX11 - Halo MCC: Halo CE Anniversary (2020)**|3440x1440 - Enhanced|Manual run of the Silent Cartographer mission|\n|**DX12 \\[RT\\] - Metro Exodus: Enhanced Edition (2021)**|1920x1080 - Ultra, RT Ultra, DLSS Quality|Manual run of The Volga mission start|\n|**DX12 - Halo Infinite S4 (2021)**|1920x1080 - Ultra|Manual run of Pelican Down mission|\n|**DX12 - Far Cry 6 (2021)**|1920x1080 - Ultra, TAA|Manual run around Clara's Camp|\n|**DX12 \\[RT\\] - The Witcher 3: Next Gen Patch 4.04 (2023)**|1920x1080 - Ultra+, RT Ultra, DLSS Quality|Manual run of Beauclair port area|\n|**DX12 - The Last of Us: Part 1 Patch 1.1.2 (2023)**|1920x1080 - Ultra|Manual run of a section Prologue mission|\n|**DX12 - Starfield Pre-DLSS Patch 1.7.36 (2023)**|1920x1080 - High (62% FSR2 Scaling), No VRS|Manual run around MAST district of New Atlantis|\n|**DX12 \\[RT\\] - Cyberpunk 2077: Phantom Liberty Patch 2.02 (2023)**|1920x1080 - High, High Crowd Density, RT Ultra, DLSS Quality, Ryzen SMT ON|Manual run of Little China night market area|\n|**DX12 - 3DMark**|Time Spy|Time Spy|\n|**OGL - GZDoom 4.3.1**|3440x1440, Hardware Rendering 16xAF|FrameView capture of demo recording for MAP01 of COMATOSE.WAD + Russian Overkill 3.0|\n\nAll of the accompanying charts are linked below ~~should be attached to this post~~, in-order (except 3DMark).\n\n**Go here for charts:** [**Imgur mirror**](https://imgur.com/a/q4iXa9E)\n\nEDIT: I am dumb and didn't realize text posts and image post are different things. Please use the Imgur link above for the charts. Sorry about that!\n\n# The Result Summary\n\nUsing the Ryzen 5 3600 with DDR4 3200 as a Baseline (Excludes 3DMark):\n\n* **R5 3600 with Tuned D4 3600** is **11.5%** faster\n* **R5 5600X3D with Tuned D4 3600** is **66.5%** faster (worst SimCity 12.4%, best Halo CE:A 99.3%)\n* **R7 5800X3D with D4 3200** is **76.7%** faster (worst Starfield (old patch) 46.8%, best Dishonored 2 117.7%)\n* **R7 5800X3D with Tuned D4 3600** is **85.8%** faster (worst Far Cry 6 57.4%, best Halo CE:A 125.1%)\n\nAs for the 5600X3D vs 5800X3D:\n\n* **R7 5800X3D with D4 3200** is **3.4%** faster (worst KC: Deliverance -8%, best TLoU 13.2%)\n* **R7 5800X3D with Tuned D4 3600** is **8.8%** faster (worst GZDoom -2.1%, best TLoU 19.5%)\n\nEveryone know it at this point: these X3D chip are *fast* and offer a massive boost over the Zen 2 parts, even when they're equipped with low latency DDR4 3600.\n\nSurprisingly, I found the 5800X3D to still scale decently well with RAM. Not as much as the 20%+ the 3600 gains in heavy RT-centric titles but still more than I was expecting.\n\nThe 5600X3D is impressive; it offers over 90% of the 5800X3D in most situations so anyone that got in on that $150 price at Microcenter last month got a killer deal on a drop-in AM4 upgrade. It's a little iffy at $230 though and being exclusive doesn't help either. Hopefully the rumored 5500X3D and 5700X3D are widely available.\n\nHope you enjoyed this little writeup and found this post informative! Next time, I'll be ~~torturing~~ benchmarking the RX 7600 at 3440x1440 Ultrawide and seeing how it fares. Should be fun.\n\nCheers!",
-      "upvotes": 410,
+      "commentId": "1n3qb4z",
+      "text": "[Gamers Nexus] AM4 Lives: AMD Ryzen 5 5500X3D CPU Review &amp; Benchmarks",
+      "upvotes": 139,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,360 +14,176 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "ke6s9vo",
-          "text": "Thanks for doing this test! I'm on a 3600 right now and those numbers look pretty solid. Here's hoping the rumors about a 5700x3d in january are true, that one sounds like a real winner to me. A little cheaper and lower TDP is right up my alley.",
-          "upvotes": 2,
+          "commentId": "nbfev7n",
+          "text": "Its awesome to see AM4 still alive, while Intel requires a new mobo for every generation...",
+          "upvotes": 20,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is discussing the potential 5700x3d, not the 5500X3D or specific performance of the 5600X3D.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is expressing hope for a future product release.",
-          "replies": []
-        },
-        {
-          "commentId": "kei4bqu",
-          "text": "Do you expect the 5800X3D to fall below $300 anytime soon? Or will 5700X3D sit in the $250-$270 range and the 5800X3D will remain $300-$320? Wondering whether to wait or pull the trigger now.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Discussion regarding pricing for the 5800X3D and 5700X3D, not the 5500X3D.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is asking a question about pricing.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "keihs2w",
-              "text": "I think when the 5700X3D comes out it'll drive the 5800X3D down in price. hard to say by how much though.\n\nAt this point it's up to you whether or not the extra month or two between now and the 5700X3D release is going be to worth saving the 50ish bucks for.",
-              "upvotes": 2,
+              "commentId": "nbfj34s",
+              "text": "I mean this is no different than if intel released a 14599K with a 5% performance reduction to the 14600k\u2026 simply repackaging worse dies on a bad yield CPU isn\u2019t anything special",
+              "upvotes": 71,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Discussion regarding pricing and the 5700X3D, not the 5500X3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing a speculative answer about pricing.",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "ke2zr0o",
-          "text": "Fancy selling that 5600x3d to someone who can\u2019t get them in the uk?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is asking to buy a 5600X3D, which is not a product review or experience sharing.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is making a purchase request.",
-          "replies": [
-            {
-              "commentId": "ke31v7r",
-              "text": "It's been in my friend's PC for a few months now so can't oblige to that unfortunately :P",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is declining a purchase request for a 5600X3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing a factual answer.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "ke320sk",
-                  "text": "Who means more to you? A random person on Reddit or your \u201cfriend\u201d? I think we all know the answer to this question\u2026",
-                  "upvotes": 4,
+                  "commentId": "nbfk5kv",
+                  "text": "Ye, for all intents and purposes AM4 died with the 5800X3D launch. That was the last actual meaningful launch. \n\nIntel will still be selling LGA1700 CPUs for years to come. Doesn't mean it isn't a dead platform, unless Bartlett Lake is actually launched for desktop.",
+                  "upvotes": 42,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Low-effort banter between users, not relevant to the product.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is making a joke.",
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "ke342tx",
-          "text": "I'd be really curious to see what this would look like with a 5800x and a 5800x3d",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Request for a comparison between 5800x and 5800x3d, not the 5500X3D.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is asking for information.",
-          "replies": [
-            {
-              "commentId": "ke36v6a",
-              "text": "I did test that comparison [a year and a half ago](https://www.reddit.com/r/Amd/comments/v22n4q/tested_5800x3d_vs_5800x_in_a_bunch_of_older_games/).\nSlower GPU (3070 Ti) and the suite is almost completely old games so not sure if that's what you're looking for :D",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Mention of a previous comparison between 5800x and 5800x3d, not the 5500X3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing a link to a previous test.",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "ke3vt6l",
-          "text": "any test in total war games?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "General question about game tests, not specific to the 5500X3D.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is asking a question.",
-          "replies": [
-            {
-              "commentId": "ke4my7j",
-              "text": "unfortunately no, I haven't played any of the games in the series.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Factual answer about not having played specific games, not related to the 5500X3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing a factual answer.",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "ke40zhj",
-          "text": "Okay, I'm upset now that all reviews don't come with sim City cheetah speed testing, that's really Interesting to see the scaling",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Discussion about SimCity testing methodology, not specific to the product performance.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is expressing interest in a specific test.",
-          "replies": [
-            {
-              "commentId": "ke4ndta",
-              "text": "it's a favorite of mine and runs legendarily bad on modern hardware with maxed out settings and boatloads of custom content. I have more in-depth testing planned for it that I intend on sharing sometime in the future.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Discussion about the game SimCity, not about the product itself.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is discussing their preferences and future plans.",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "ke42cny",
-          "text": "Love my 5600x3D I just wish there was a gpu I was in love with too.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User shares personal experience and satisfaction with the 5600X3D.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user says they 'Love my 5600x3D'.",
-          "replies": [
-            {
-              "commentId": "ke54e6a",
-              "text": "voodoo 5 6000 for you",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Joke about GPUs, not relevant to the CPU product.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is making a joke.",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "ke45vpr",
-          "text": "Thanks OP!",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Low-effort thank you message.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is expressing gratitude.",
-          "replies": []
-        },
-        {
-          "commentId": "ke4bdl2",
-          "text": "I bought a 32gb 3600 cl18 kit to go with my 5800X3D, thinking that latency mattered less than speeds with the X3D chips, and I've had a bit of buyers remorse since I found out my sticks arent dual rank and this post brought that feeling back.. Is it worth it to look for dual rank ram at this point or should I just live with it?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Discussion about RAM configuration for a 5800X3D, not the 5500X3D.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is expressing buyer's remorse over RAM, not the CPU itself.",
-          "replies": [
-            {
-              "commentId": "ke4f1la",
-              "text": "Don't feel bad about it, you're probably missing out on like 5-6% performance tops and won't feel the difference at all. If I'm being honest, I didn't notice a thing when running 3200 C16 until I punched the numbers into a spreadsheet.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Technical discussion about RAM performance impact on X3D chips, not specific to the 5500X3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing technical advice.",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "ke4se2d",
-          "text": "This is exactly what I wanted to see as 3600 user",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Low-effort response expressing interest in the benchmarks, not providing a product opinion.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is expressing a positive sentiment towards the post content, not the product.",
-          "replies": []
-        },
-        {
-          "commentId": "ke5j2aj",
-          "text": "I braved the 2.5hr drive each way to get the 5600X3D/B550 combo, and an quite happy with the result. I'd already ordered a DDR4-3600 RAM kit before I heard about the combo offer, so I went with that instead, and upped to 32GB. The kit I bought also plays better with the Peerless Assassin cooler I'm using.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User shares personal experience and satisfaction with the 5600X3D combo.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user says they are 'quite happy with the result'.",
-          "replies": []
-        },
-        {
-          "commentId": "ke5kb3w",
-          "text": "So what's the most powerful AM4 cpu at the moment?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "General question about AM4 CPUs, not providing insight into the 5500X3D.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is asking a question.",
-          "replies": [
-            {
-              "commentId": "ke73qa3",
-              "text": "5950X for productivity, 5800X3D for gaming",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Factual answer about the most powerful AM4 CPU for gaming, mentioning 5800X3D, not 5500X3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing a factual answer.",
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "ke5qrb5",
-          "text": "nice. in vr, cpu is a heavy bottleneck and the 3d v cache chips do help massively",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User provides an opinion on how 3D V-Cache chips (including the 5500X3D) generally help in VR.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user states that the chips 'do help massively'.",
-          "replies": []
-        },
-        {
-          "commentId": "ke5ukjw",
-          "text": "So 3dmark timespy depends on ddr performance",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Factual question about 3DMark benchmarks and RAM performance, not specific to the 5500X3D.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is asking a question.",
-          "replies": [
-            {
-              "commentId": "ke73j23",
-              "text": "yeah, it does affect the CPU score quite lot. I'm usually scoring considerably above average for the hardware combination without any other overclocks with just curve optimizer and tuned 3600 RAM.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Factual discussion about 3DMark scores and RAM tuning, not specific to the 5500X3D.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is providing technical details about their system.",
-              "replies": [
-                {
-                  "commentId": "ke7b8fa",
-                  "text": "I sent my 4800 CL40 to RMA. Im gonna get a 6000 CL30. It would make improvement right? Maybe 7200 CL34?",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Discussion about DDR5 RAM, not relevant to the AM4 5500X3D.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is asking about RAM upgrades.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "ke7l4dn",
-                      "text": "6000 cl30 would be the sweet spoot and is the recommendation for getting the most out of zen 4. anything higher doesn't really make sense.",
-                      "upvotes": 2,
+                      "commentId": "nbgjd2b",
+                      "text": "Nah the 5700x3d because it was actually affordable.",
+                      "upvotes": 14,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "Discussion about Zen 4 DDR5 RAM, not relevant to the 5500X3D.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is providing technical advice on RAM.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "ke7li1m",
-                          "text": "Except bandwidth right?",
-                          "upvotes": 1,
+                          "commentId": "nbgyobv",
+                          "text": "it was?",
+                          "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "Discussion about RAM bandwidth, not relevant to the 5500X3D.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user is asking a question about RAM.",
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
                           "replies": [
                             {
-                              "commentId": "ke7n9ow",
-                              "text": "Sure, but I think just in general zen 4 doesn't play well with speeds above 6000. You could maybe get to 6200-6400 tops with the right sticks and a good IMC. Can't say for sure but that's the consensus I usually see.",
-                              "upvotes": 2,
+                              "commentId": "nbhii62",
+                              "text": "I remember it hitting 170 euros in the netherlands, the 5800x3d was never below 300.",
+                              "upvotes": 8,
                               "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "Discussion about Zen 4 and RAM speeds, not relevant to the 5500X3D.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The user is glLightfv a technical explanation about RAM.",
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            },
+                            {
+                              "commentId": "nbhe17y",
+                              "text": "It was like $130 for Ali express at one point.",
+                              "upvotes": 6,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
                               "replies": [
                                 {
-                                  "commentId": "ke7y4sv",
-                                  "text": "Have you seen anyone reach 7000-7200 at 1:1?",
+                                  "commentId": "nbhvtwq",
+                                  "text": "For whatever reason mine was going to be 140 but they had it even cheaper with klarna, So I got mine out the door at 123, then I sold my 5600X for 80 bucks \n\nAll in all, a $40 upgrade, which is insane",
+                                  "upvotes": 3,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            },
+                            {
+                              "commentId": "nbk5bqj",
+                              "text": "it was selling for 200CAD at one point (~160USD?)",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "nbh3slw",
+                      "text": "At least you can still find AM4 boards at retail at reasonable prices now. You cannot say the same about Intel platforms from 2017.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "nbm6ysb",
+                          "text": "what no.... they are crap boards and ddr4 are getting more expensive and they are crap sticks as well. no good am4 stuff left, at least when I looked.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "nbh6x7l",
+                          "text": "So what, so that the 10 people who has a motherboard that breaks long enough after purchases that had they gone Intel it would be EOL can get one?\n\nThat is a extremely niche positive. While motherboards do break more often than CPUs. They as all electronics follow the bathtub curve. If it didn't break in the first year of you owning it, it is not likely to break within the reasonable life time of the product either. Baring some glaring issue like the capacitor plague or specific design flaws with that model.\n\nAnd if you are using that 2017 platform and upgrading it along the way. You will pay a price for it. A 5800X3D will be held back by PCIe 3.0 before it becomes obsolete as a CPU. Do you then get a new board for a dead platform to gain 4.0? Nullifying the main advantage vs going with a newer contemporary Alder Lake platforms or just getting a at the time new 4.0 AM4 board?",
+                          "upvotes": -1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "nc6bai4",
+                              "text": "&gt; A 5800X3D will be held back by PCIe 3.0 before it becomes obsolete as a CPU.\n\nDoubt.\n\n[5090 loses ~8% at 3.0x16](https://www.techpowerup.com/review/nvidia-geforce-rtx-5090-pci-express-scaling/11.html) in the ~worst (eyeballed) tested game.\n\n[5800X3D vs 9800X3D is down 24% in the same game](https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/18.html).\n\nYou could quibble about \"held back\" being a different standard than \"obsolete\" (I am typing this on a Haswell!), or construct scenarios with under-VRAMed GPUs in heavy swapping, or an high-queue-depth IO-bound workload.  I think only the last one would be honest, though, and such workloads are rare.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            },
+                            {
+                              "commentId": "nc8cfmm",
+                              "text": "My msi x370 carbon has a word for ya https://www.3dmark.com/3dm/120628256",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "nc8qvpn",
+                                  "text": "Grats on losing performance on a $1500 graphics card I guess? And before you say \"it's only marginal\". The thing with PCIe is that it does not hit every title evenly.\n\nRather most are not affected at all while some titles are [severely](https://tpucdn.com/review/nvidia-geforce-rtx-4090-pci-express-scaling/images/metro-exodus-3840-2160.png) impacted.",
                                   "upvotes": 1,
                                   "classifyThis": true,
-                                  "relevance": "exclude",
-                                  "relevanceReasoning": "Discussion about RAM timing at 1:1, not relevant to the 5500X3D.",
-                                  "sentiment": "neutral",
-                                  "sentimentReasoning": "The user is asking a question about RAM.",
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
                                   "replies": [
                                     {
-                                      "commentId": "ke7z8z5",
-                                      "text": "I dont think anyone is looking at it because it's not worth anyones time. By that I mean even if the answer is yes, forget about it.",
-                                      "upvotes": 2,
+                                      "commentId": "nc9h3eb",
+                                      "text": "So you call a 12% loss at the very worst severe although it still goes beyond my 4k144 monitor ? Okay, I'll keep that in mind and regret my purchase in silence. \ud83d\udc4b",
+                                      "upvotes": 1,
                                       "classifyThis": true,
-                                      "relevance": "exclude",
-                                      "relevanceReasoning": "Discussion about RAM tuning, not relevant to the 5500X3D.",
-                                      "sentiment": "sentimentReasoning own a technical opinion on RAM tuning effort.",
-                                      "sentimentReasoning": "The user is giving a technical opinion on RAM tuning.",
-                                      "replies": [
-                                        {
-                                          "commentId": "ke7zgzh",
-                                          "text": "Is a DDR5-7200-CL34 able to run at 6000-CL28? 20% lower frequency, 20% tighter timing.",
-                                          "upvotes": 1,
-                                          "classifyThis": true,
-                                          "relevance": "exclude",
-                                          "relevanceReasoning": "Discussion about RAM frequencies and timings, not relevant to the 5500X3D.",
-                                          "sentiment": "neutral",
-                                          "sentimentReasoning": "The user is asking a question about RAM.",
-                                          "replies": [
-                                            {
-                                              "commentId": "ke804rz",
-                                              "text": "You'd be about as likely to get a great die 6000 CL30 to run that. It's more about the memory controller.\n\nI'm sure the new, monolithic 8000G cpus will commonly do 7000+, you'd do this not to help the cpu but to help the igpu. Here it might be worth spending some time on one of these.\n\nBut 6000 CL30 is tight enough on chiplet ryzen. You're looking at days of work and testing, weeks if you haven't done it before, and it's not even the advertised CL latency that matters much but other values.\n\nthis is not worth our time lol",
-                                              "upvotes": 2,
-                                              "classifyThis": true,
-                                              "relevance": "exclude",
-                                              "relevanceReasoning": "Technical discussion about memory controllers and DDR5 RAM, not relevant to the 5500X3D.",
-                                              "sentiment": "neutral",
-                                              "sentimentReasoning": "The user is providing a technical explanation.",
-                                              "replies": []
-                                            }
-                                          ]
-                                        }
-                                      ]
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
                                     }
                                   ]
                                 }
@@ -376,45 +192,103 @@
                           ]
                         }
                       ]
+                    },
+                    {
+                      "commentId": "nbhdyi5",
+                      "text": "You are forgetting all the 1600X owners that still see any 5XXX series CPU as a great upgrade.",
+                      "upvotes": 0,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "nbjalyz",
+                          "text": "And why is that? Because AMD started at a very low point. The 1000 &gt; 5000 series jump is not normal in that time period. AMD started at similar performance level of Haswell, which was 4 years old at the time. \n\nReddit is heavily biased towards entusiasts when it comes to PC hardware discussions. People upgrading every other generation is not the norm.  \n\nHad you instead bought a 8700K back in 2017, you would still be using a chip that is perfectly passable today. Sure the fastest AM4 has to offer is considerably faster for things like gaming. But it is not nearly the same leap as someone who jumped on Ryzen 1 and is now comparing vs a 5800X3D. The jump from a 8700K to 5800 series is closer to \"normal\" progress in the 5 year period from 2017 until the last major AM4 launch.\n\nNormally, most consumers would see no reason to upgrade in that time frame. If you bought a 7800X3D at launch, by the time that thing is obsolete for a normal consumer and they would consider a upgrade. You would be looking at a whole new platform. Because the last X3D chip released for AM5 will itself be old news by then.",
+                          "upvotes": 8,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "nbg9cdz",
+                  "text": "yep, remember that amd was not willing to enable support for the zen3 cpus on older mobos until the very end of the am4 platforms life. That was something that many including I thought was such a f-you to us that bought their platform.",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "nbyad9v",
+                  "text": "Imo, the big draw is that AMD keeps manufacturing old parts for a long time, so new parts cause pricing to be pushed further down.\n\nThis puts pressure on the used market and older parts. It also means that there will be a much larger amount of Zen 3 in the used market relative to anything else. That reduces the \"end of the line\" proce creep that the strongest parts for a socket often have.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "nbgy0ay",
+                  "text": "Intel even did that a while ago, with their non e Core CPUs which were announced at the beginning of this year. So, basically the same, just a slightly worse version of the existing product. But in there no one cared",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "nbg950v",
+              "text": "proper ddr4 ram is very expensive though if u want that, or if u need a new am4 mobo well there are no good left to be bought. only a couple of meh models left in retail. At least when I sourced the retail channels so to speak.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "nbidlnr",
+                  "text": "That is the most negative thing I have heard about a platform having a 10 year longevity. You are good at finding small details in a sea of positive news. lol",
+                  "upvotes": -1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "nbievkx",
+                      "text": "there was a lot of negativity before am4 got obsolete. The biggest thing is that AMD did not want us to run zen3 cpus on older boards which they let us when the platform was end of line.\n\nThat was much more negative than the fact that fast ddr4 sticks and the vast amount of am4 boards that once were avaible are not anymore. How many owners of earlier am4 boards were forced to upgrade to a new board when they went with zen3 cpus when they did not really needed that at all.\n\nThat was negative, not that some components are rare now.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
                     }
                   ]
                 }
               ]
             }
           ]
-        },
-        {
-          "commentId": "ke8mtb4",
-          "text": "I run 5950x rtx3080ti 74gb ram 4 dims in msi x570s dark wofo whatever its all 4 stocks run 3600 no issues the asrock x570 that got binned to broken usb port from wear cpuld not run 4 stocks of cosair ram but the msi does sp if board goes get x570s board",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Discussion about a 5950x and motherboard, not relevant to the 5500X3D.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is sharing their system specs and motherboard experience.",
-          "replies": []
-        },
-        {
-          "commentId": "keo392u",
-          "text": "Kudos to you kind sir",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "Low-effort comment expressing gratitude, not providing product insight.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is providing a compliment.",
-          "replies": []
-        },
-        {
-          "commentId": "kou19ab",
-          "text": "im still on Ryzen 3600 and RTX 3060ti. Wish Asia had a 5600x3d.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User expresses a desire to purchase the 5600X3D (related to 5500X3D product line), showing positive demand.",
-          "sentiment": "positive",
-          "sentimentReasoning": "The user is expressing a desire for the product to be available in their region.",
-          "replies": []
         }
       ]
     }

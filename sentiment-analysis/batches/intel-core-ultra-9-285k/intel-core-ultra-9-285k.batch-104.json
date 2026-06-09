@@ -1,0 +1,248 @@
+{
+  "productName": "Intel Core Ultra 9 285K",
+  "batchIndex": 104,
+  "totalBatches": 135,
+  "comments": [
+    {
+      "commentId": "1gsla7e",
+      "text": "AMD Ryzen 7 9800X3D vs. Intel Core Ultra 9 285K, 45 Game Benchmark",
+      "upvotes": 182,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "lxgib9m",
+          "text": "Yeah, it needs more cache. No matter how wide you make your uarch or how good your prefetchers are, they can\u2019t pull miracles. \n\nIntel wants to preserve their margins so much that they\u2019re willing to destroy their cpu design business (maybe the whole company) to do it. Absolutely insane that they still don\u2019t have an answer to vcahce after these many years.",
+          "upvotes": 32,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lxh0arr",
+              "text": "They don\u2019t care. Desktop market is smaller than the laptop market by a large margin and hardcore gamers/PC building is an even smaller subset of that market. They\u2019re not going to rework a whole design methodology for a tiny market segment that\u2019s crazy price sensitive.",
+              "upvotes": 25,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lxh3v9e",
+                  "text": "Idk why Intel would ignore this segment, when AMD isn't. X3D for Zen 5 is purely for gamers esentially, Turin has no X3D skus planned. Client is of larger importance for Intel than AMD too. \n\nThey wouldn't have to rework a whole design methodology either, they could just design one new compute tile with extra cache and move some other IP blocks around. Doesn't even have to be 3D stacked... \n\nAdditional cache doesn't even have to be just beneficial for the gaming market either, Intel has added extra cache previously for the iGPU, for example.",
+                  "upvotes": 6,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lxh8iiz",
+                      "text": "1) Turin X3D was rumored years ago so clearly they had a design in some capacity. Way easier to use a chop of that platform than for intel to design something basically from scratch. \n\n2) \u201cjust design one new compute tile with extra cache\u201d is an insane amount of work for a subset of the entire desktop market. Not to mention just throwing on dookie slow cache (it has to be fast) is a horrible use of N3 wafers. \n\n3) Desktops like 10-15M/q, gaming PCs (OEM) are a fraction of regular office PCs, DIY is even smaller, and DIY that care about this level of performance is even smaller. The volume intel needs to sustain a product line is significantly more than what their smaller competitors can get away with. They\u2019ve killed countless products due to this requirement alone.",
+                      "upvotes": 14,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "lxha46x",
+                          "text": ">2) \u201cjust design one new compute tile with extra cache\u201d is an insane amount of work for a subset of the entire desktop market. Not to mention just throwing on dookie slow cache (it has to be fast) is a horrible use of N3 wafers.\n\nApparently this is what they are doing for NVL according to the latest rumors. they will have 2 types of the compute tile one with the regular 36MB L3 and one with 144MB L3. don't how accurate it is though.",
+                          "upvotes": 6,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "lxhz922",
+                          "text": ">Turin X3D was rumored years ago so clearly they had a design in some capacity. Way easier to use a chop of that platform than for intel to design something basically from scratch.\n\nSource? \n\nI find it hard to believe that AMD chopped Turin X3D rather than it never being set it stone in any sort of roadmap. \n\n>\u201cjust design one new compute tile with extra cache\u201d is an insane amount of work for a subset of the entire desktop market.\n\nIntel has done this exact same thing with an eDRAM chiplet in the past. As I mentioned before, it could be helpful for more than just gaming. \n\nIt's not as if you are designing something from scratch either... \n\n>Not to mention just throwing on dookie slow cache (it has to be fast) is a horrible use of N3 wafers.\n\nI would hope that Intel's ringbus frequency issues would be fixed by the time a hypothetical ARL-X3D or ARL-extra cache variant launches. I also think you are exaggerating how much area the L3 SRAM blocks take up on ARL. Just looking at a die shot, it would increase the die area no doubt, but it wouldn't explode costs. If Intel is truly are worried about cost, then they could add the extra cache on a separate tile or 3d stack it on the base tile if necessary, like what they are doing on CLF. They could also use what they are learning with designing this for CLF to use on a X3D sku for client in the future. \n\n>Desktops like 10-15M/q, gaming PCs (OEM) are a fraction of regular office PCs, DIY is even smaller, and DIY that care about this level of performance is even smaller.\n\nDesktop is \\~15% of Intel product's total revenue. Even if most of that is OEMs and such, the segment that these flagship skus are going to be targeting are going to be much more profitable, and also give you mindshare that Intel is losing thanks to not having the best gaming processor in the market for a couple years now. \n\n>\u00a0The volume intel needs to sustain a product line is significantly more than what their smaller competitors can get away with. They\u2019ve killed countless products due to this requirement alone.\n\nIt's very telling that AMD is focusing on this segment while Intel isn't. AMD, whose a much smaller player in the market, finds it a worthwhile spend of resources to provide a CPU for this market, while Intel, the much bigger player, can't, because it's not important enough? Doesn't make sense. \n\nIntel might need to sustain more volume, sure, but it doesn't even seem like Intel has any sort of designs ready to compete with AMD, which is more of the main problem than Intel simply not caring enough about the segment.\n\nI also find it a bit ironic how you claim Intel has killed countless products due to volume requirements like that alone, when Intel is like the poster child of waste in terms of designing extra dies. Perhaps they are trying to change that due to the new financial issues they are facing.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "lxkjode",
+                      "text": "Cause Intel doesn't have $$$ now. x3d is I guess 1-2% of total desktop/mobile CPU sales.\n\n\nAlso, CPU designs take what, 4 years from arch to market? It was 2 years ago that x3d actually became obviously better so the earliest we could see Intel x3d is 2026?",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "lxh6wov",
+                      "text": "Because AMD's revenue in the ~~diy desktop~~ gaming market declined 70% YoY in last earnings. There is no money in gamers and it's just for marketing tactics. AMD is still, comparably, a pretty small company that is trying to garner market share where it matters- mobile and server.",
+                      "upvotes": -5,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "lxhuuq6",
+                          "text": "AMD's gaming revenue is for the GPUs and the processors that go into Xboxs and PS5s, not DIY CPUs.",
+                          "upvotes": 4,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "lxid26i",
+                              "text": "Sure. Edited above. Client revenue, then, which would encompass desktop CPU sales (and way more than just gamers) is still less than half of datacenter, 2B, compared to the 4.5B in datacenter which scales up to 5.8B when you factor in embedded which includes EPYC processors. The **gaming market being down 70% YoY** **is still representative** of gamer purchases and their influence on desktop sales, it may not be a 70% decrease but there is almost certainly a decrease as they're related markets.\n\nGamers are a marketing tactic, not a primary sales source.",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "lxmwmn1",
+                                  "text": ">Client revenue, then, which would encompass desktop CPU sales (and way more than just gamers) is still less than half of datacenter, 2B, compared to the 4.5B in datacenter \n\nFor Intel, client revenue is 7.3 billion dollars, compared to the 3.3 billion in DC. As I said in my earlier comment, client is more important for Intel than AMD. \n\nAnd as you are highlighting here, client is not that large of a market for AMD, so is it not very telling that AMD is still investing into providing X3D skus for the gaming market? If the segment is so small for AMD, and yet AMD is still providing skus for it, that should be very telling on how important that segment really is. \n\n>compared to the 4.5B in datacenter which scales up to 5.8B when you factor in embedded which includes EPYC processors.\u00a0\n\nIt also includes GPUs and FPGAs... \n\n>he\u00a0**gaming market being down 70% YoY**\u00a0**is still representative**\u00a0of gamer purchases and their influence on desktop sales, it may not be a 70% decrease but there is almost certainly a decrease as they're related markets.\n\nNot really. AMD is marking the market being down that much due to semicustom sales- aka slowing down of sales of playstations and consoles. \n\n>Gamers are a marketing tactic, not a primary sales source.\n\nThey are a sizable market, more importantly perhaps, the margins here are going to be better than deals with simple office PCs.",
+                                  "upvotes": 0,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "lxhdvbz",
+                  "text": "Desktop and enthusiast market is indeed small, but its also the heaviest because of its importance in creating product image. A products image here can affect consumer buying descion in general and even small/medium business choices. I bet 9800x3d eased up laptop market for amd",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lxl0dm6",
+                  "text": "The enthusiast/desktop market is smaller, but it also punches well above its weight. \n\nHobbyists are also the only people who do gen-on-gen or every-other-gen upgrades. \n\nIt's also worth mentioning that the desktop and laptop space aren't as distinct as you seem to think.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lxh31km",
+              "text": ">Yeah, it needs more cache. No matter how wide you make your uarch or how good your prefetchers are, they can\u2019t pull miracles.\n\nIt needs better memory latency. If they remained monolithic and had RPL levels of latency, they prob still would have lost to Zen 5X3D, but by a \\~10% margin, not the whopping 30% margins we are seeing today. \n\n>Intel wants to preserve their margins so much that they\u2019re willing to destroy their cpu design business (maybe the whole company) to do it. Absolutely insane that they still don\u2019t have an answer to vcahce after these many years.\n\nFoveros Direct is not ready yet. They literally don't have the technology (unless maybe they also went to TSMC for packaging as well).",
+              "upvotes": 7,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lxhelsq",
+                  "text": "And that gap will be much wider with the RTX 5090.",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "lxhi13r",
+              "text": "The worst part is they were the first ones to do something like this with the i7 5775c.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "lxh8afz",
+          "text": "It's going to be funny that Battlemage comes out as a great GPU and people would start using Battlemage + AMD CPU on mid tier to entry level gaming PC, an inverse of what we experienced with Polaris + Intel CPU.",
+          "upvotes": 13,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lxk51s2",
+              "text": "I just upgraded my Linux box from a 11900k to a ryzen 7900 today. It\u2019s got an arc a750 and I\u2019m hoping to do a battle mage upgrade depending on benchmarks",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "lxp69qt",
+              "text": "Funny enough, i use a Intel CPU with a AMD GPU, 11900K and RX 6700XT, they pair great for me (gaming and amateur video editing for my gameplays on Overwatch 2), but i have a second machine that i use for work (capturing live video feed from my workbench to live stream for customers on my computer repair shop) and this machine uses a Ryzen 5 5600 and a Intel Arc A750 GPU, and i have to say, the AV1 encoder is neat AF, the quality is far better than everything that i saw to this day. I'm really excited to see what Intel will launch with battlemage.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "lxqk93v",
+              "text": "They delayed it so much... i don't see Battlemage competing with RDNA4 and Blackwell unless Intel sells it at a loss or they deliver a miracle.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

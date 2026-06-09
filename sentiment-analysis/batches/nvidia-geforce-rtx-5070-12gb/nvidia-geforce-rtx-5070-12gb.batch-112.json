@@ -1,7 +1,7 @@
 {
-  "productName": "nvidia-geforce-rtx-5070-12gb",
+  "productName": "NVIDIA GeForce RTX 5070 12GB",
   "batchIndex": 112,
-  "totalBatches": 120,
+  "totalBatches": 125,
   "comments": [
     {
       "commentId": "1k0lndt",
@@ -14,15 +14,51 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "mnloklx",
-          "text": "A bit disappointing that it can match up to the regular 4070",
-          "upvotes": 1,
+          "commentId": "mney2ld",
+          "text": "15% over 4060 ti + 15% from overclocking if its ASUS TUF (price of 5070) or 12% if its Zotac.\n\nAlso the highest TDP per CUDA core. If you have a golden wafer, this can oc to 4GHz. Just joking, its probably stopped at 3300MHz and if the motherboard supports v4.0 16x lanes, it will be v4.08x because card is 8x lanes and mobo is v4.0.\n\nI think its a good card for learning CUDA. Because it supports some extra features with its SM120 architecture and cheaper than 5070.",
+          "upvotes": 6,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
           "sentiment": null,
           "sentimentReasoning": null,
-          "replies": []
+          "replies": [
+            {
+              "commentId": "mo72sha",
+              "text": "Dude, most motherboards (besides early AM5) have PCIE 5.0 support. Even early intel LGA1700 boards had PCIE 5.0 support right from the start.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mo8ian0",
+                  "text": "But are they directly from cpu or through chipset? It is important. Having chipset vs direct communication makes performance different.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mp3v4mt",
+                      "text": "DIRECTLY from the CPU. they've always had this, my i3 is literally one of those CPUs, we just didn't have any GPUs that used PCIE 5.0 till the 50 series.\n\nPCIE 5.0 was introduced in 2019, but wasn't adopted till 2022 when intels 12th gen and AMD Ryzen 7th gen was released.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
         }
       ]
     }

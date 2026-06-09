@@ -1,7 +1,7 @@
 {
-  "productName": "kingston-fury-beast-ddr5-6000-cl30",
+  "productName": "Kingston Fury Beast DDR5-6000 CL30",
   "batchIndex": 2,
-  "totalBatches": 8,
+  "totalBatches": 6,
   "comments": [
     {
       "commentId": "1jfstm6",
@@ -17,16 +17,27 @@
           "commentId": "miv9cf2",
           "text": "Hi, I can share a few tips and tricks.\n\ntRRDS/L/FAW don't show any performance improvement below 8-12-32  -you can look at the test speed in Karhu to see settings other than my recommendation are slower.\n\nI run tCL26 on my 2x32 kit... for me it needs 1.54v VDD -but this does make it so the memory needs a fan blowing on them to not exceed 50c during heavy memory stress tests.  Your kit probably does not need more than the default expo 1.4v for VDD to run tCL28.  -and actually there's no need to increase VDDIO or VDDQ at all (sometimes need a minor bump for 6400 1:1 if you end up trying that at any point)\n\nVsoc higher than 1.2v isn't needed for 6000 speed.\n\ntWR can run 48\n\ntRTP 12\n\ntWTRS/L -4 and 16\n\nThe main performance gains are from Maxed out tREFI (65535) but that also generates more heat.. a lot of people use 50,000 as it performs better than stock, but less heat.\n\nYou can set tRFC to 383\n\nThere's further gains to be found, but they're pretty minor and it takes some stability testing to know what's ideal for you motherboard/memory kit.   -specifically the 4 SD/DD's and 2 SCL's\n\n\\-the SD/DD's you can use between 7 and 9 (have to test to know what is best, or just set 9 for all 4 will be fine), for the 2 SCL's you can do 6 or 7.  There's also GDM off and NItro settings (1-2-0 is best performance but needs stability testing to verify).\n\nThat's about it... highest possible FCLK gives better performance too.. most people can do 2133, slightly more rare is 2200 but a good percent can do it.\n\nJust as I see you did... there's no reason to mess with tRP, tRC or tRAS -basically nothing to gain from lower.\n\nGood luck to ya!  Happy tuning and testing!",
           "upvotes": 11,
-          "classifyThis": false,
+          "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
           "sentiment": null,
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "mivxyjn",
-              "text": "I have a few follow-up questions.\n\nFCLK 2133 MHz Stability and Trade-Offs: You mentioned most Zen 4 CPUs can handle FCLK 2133 MHz (1:1), with some reaching 2200 MHz. For a 9800X3D, what\u2019s the best way to test FCLK stability (specific stress tests), and what latency penalty have you observed in 1:2 mode (impact on AIDA64 latency or gaming FPS)?\n\ntREFI Heat vs. Performance Trade-Off: You suggested tREFI 50,000 as a balanced option, or 65,535 for max performance with more heat. What performance difference have you seen between 50,000 and 65,535 (Ex. in AIDA64 bandwidth/latency or gaming FPS), and how much does RAM temperature increase with 65,535 (Ex. in Karhu or AIDA64)? Would you recommend active cooling for my kit at 65,535?\n\ntRFC 383 Stability and Approach: You recommended tRFC 383 (down from stock 886). Is this a safe starting point for most 2x32GB Hynix A-die kits, or should I step down gradually (e.g., 600, 500, 383) to avoid errors? Have you seen stability issues with dual-rank kits at 383?\n\nAdvanced Settings Effort vs. Gains: For the SD/DD (7-9), SCL (6-7), GDM Off, and Nitro 1-2-0 settings, what performance uplift have you seen (Ex. in AIDA64 bandwidth/latency or gaming FPS)? Are these worth pursuing for a gaming-focused setup, or should I focus on primary/secondary timings first?\n\nEdge Cases for 1.4V at tCL 28: You recommended 1.4V VDD for tCL 28, have you seen any edge cases where dual-rank 2x32GB kits struggle at this voltage? Should I be prepared to bump to 1.42V if I encounter instability?\n\nThanks so much, I appreciate it!",
-              "upvotes": 1,
+              "commentId": "mivg3wg",
+              "text": "Thank you!",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "mo8tl84",
+              "text": "I was able to push 6000 at 2200 FCLK 65,535 tREFi with max temps 42-45c depending on the test. Thinking about trying to push 6400. \n\nWhat voltage changes other changes do you recommend if going 6400?\n\nThanks",
+              "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -34,9 +45,9 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "miw33vm",
-                  "text": "Great questions, I like the analytical approach :)\n\nFor Fclk a test was recommended by a few top contributors on a memory OC forum... it's to run TestMem5 with Anta Absolute profile while playing music.. if the music stutters, then the FCLK is too high... that's more to determine the very edge of  stability though.  And some Zen 4 can do 2200.  -VDDGIO and VDDCCD bumped up to 0.950v-1v helps stabilize higher FCLK (2133-2200 usually need this extra voltage, default is 0.9v).  Fclk is unrelated to 1:2 mode.  And 1:2 mode is only for running 8000+ speeds.. there's no other benefit.\n\nHigher tREFI has the lowest latency... it's basically how long the memory is allowed to leave data stored in it's memory banks... it requires keeping power applied to memory for it to retain the data transferred to it... this is why running it higher ends up creating extra heat.  Between 50,000 and 65535 is not a huge change for gaming.. and probably 3-5C difference between the two.  Most \"overclocking enthusiast type\" people run 65535.  But 2x32 kits do tend to run hotter regardless, so either way it's good to keep them cool.. and if you are adding a fan anyways, may as well run 65535.  -an 80mm fan is what most people use, or just any 120-140mm you have lying around that can be wedged in, haha.\n\ntRFC running 383 is dead stable for any Hynix A-die at 6000-6200... needs to be looser for 6400-8000+ or if the memory is exceeding 50-55C.  People say low tRFC can cause stability issue when memory is over 50C, however before I had a fan on my memory I was often seeing 62C+ in memory stress testing and still didn't have any errors or issues with 383 tRFC.\n\nThe \"advanced settings\" can get you another 5-8% or so memory performance... it helps with 1% lows and max fps... but it's hard to say whether you'll notice that difference or if it's worth it for you testing stability with any of those.\n\nFor CL28 at 6000, I've seen a couple people with lower quality memory kits need more than 1.4vdd, I think 1.45v was the most anyone needed.\n\nBtw, you can see memory temps in a free app, HWinfo",
-                  "upvotes": 2,
+                  "commentId": "moo1gww",
+                  "text": "hey... 6400 usually just needs increase to VSOC.. you can start with 1.3v to verify 6400 is stable, and then lower it in steps while testing for stability.\n\n1.3v VSOC tends to destabilize 2200 FCLK though.  This is a reason some people end up not running 6400.  Or 6400 can need higher values for Nitro, which then makes it perform worse than 6200 with minimum Nitro.",
+                  "upvotes": 3,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -44,8 +55,8 @@
                   "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "miwqsyt",
-                      "text": "Thanks so much, great insight!\n\nI just tested your recommended settings including FCLK 2133, tRFC 383, tREFI 50,000, and I enabled DRAM Performance Mode: Competitive from AMD AGESA default, which tweaked the advanced/tertiary settings along your reccs as well. \n\nTested in AIDA64 extreme and it was stable at CL28 with good temps, verified in HWINFO64. Max Mem Temp 49.8c, CPU Max Temp 66.8c.\n\nGoing to run OCCT CPU + RAM stress test next then MemTest86 for 1-2 cycles. \n\nI may try pushing FCLK closer to 2200 and testing with TestMem5 w/ Anta Absolute profile + music too, thanks for the recc!\n\nFor pushing tREFI closer to 65,535, would this fan setup be ok or would you recommend something else? [JONSBO NF-1/NF-2 PC Memory Cooling Radiator 4Pin PWM 5V 3PIN ARGB RAM Dual 5020 Fans RAM Heatsink Cooler for DDR4 DDR5](https://www.aliexpress.us/item/3256807321967513.html?src=google&amp;pdp_npi=4%40dis%21USD%2117.07%218.78%21%21%21%21%21%40%2112000044538518654%21ppc%21%21%21&amp;src=google&amp;albch=shopping&amp;acnt=708-803-3821&amp;isdl=y&amp;slnk=&amp;plac=&amp;mtctp=&amp;albbt=Google_7_shopping&amp;aff_platform=google&amp;aff_short_key=UneMJZVf&amp;gclsrc=aw.ds&amp;albagn=888888&amp;ds_e_adid=&amp;ds_e_matchtype=&amp;ds_e_device=m&amp;ds_e_network=x&amp;ds_e_product_group_id=&amp;ds_e_product_id=en3256807321967513&amp;ds_e_product_merchant_id=668016006&amp;ds_e_product_country=US&amp;ds_e_product_language=en&amp;ds_e_product_channel=online&amp;ds_e_product_store_id=&amp;ds_url_v=2&amp;albcp=20542171673&amp;albag=&amp;isSmbAutoCall=false&amp;needSmbHouyi=false&amp;gad_source=1&amp;gbraid=0AAAAAD6I-hHM8ctJksjdswXCSsI2XJJza&amp;gclid=EAIaIQobChMIuLrAy4-ajAMVdA-tBh38jgXOEAQYAiABEgKp4vD_BwE&amp;gatewayAdapt=glo2usa)\n\nCan\u2019t thank you enough for your help!",
+                      "commentId": "moo9akx",
+                      "text": "Hey thanks Sam, so for my kit and current temps, what would you do? Stand pat or go 6200?\n\nWhat setting would you adjust if going 6200?",
                       "upvotes": 1,
                       "classifyThis": true,
                       "relevance": null,
@@ -54,9 +65,9 @@
                       "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "miwv5tt",
-                          "text": "You're welcome :)\n\nSounds like you're well on your way!\n\nA cooler like you linked probably works fine, but I suppose my opinion is that it might be more noisey and/or not move as much air..or maybe it's awesome, I just don't know.  A lot of people buy a Noctua or \"Be Quiet\" brand 80mm case fan and then just rig up some way for it to be suspended (even twisty ties or zip ties) as they are basically silent while moving a whole lot of air.\n\nAn internet friend just ordered this: [https://www.aliexpress.us/item/3256807295624673.html?gatewayAdapt=glo2usa4itemAdapt](https://www.aliexpress.us/item/3256807295624673.html?gatewayAdapt=glo2usa4itemAdapt)\n\nfor use with a 120mm fan.. but it looks like it was designed to attach to an AIO, or maybe it wouldn't be the right dimensions to actually be over the memory, idk.\n\nPersonally, I had a spare 140mm fan so I just did the twisty ties method, but I'm thinking about that bracket for long-term.. or to get a Noctua 80mm instead and probably stick to twisty ties, haha.",
-                          "upvotes": 2,
+                          "commentId": "mooo1hj",
+                          "text": "yw :)\n\nI'd first test to find the minimum VSOC needed for 6200... if it's under like 1.26v I'd stay with 6200.\n\nmy 9700x needs the full 1.3v to run 6200, and I prefer not running that much to the memory controller.  x3D tend to have better IMC though, so you might likely be able to do 1.26v or less.\n\nSometimes you need to bump VDD to like 1.43v for 6200 to stabilize.  The rest of the setup between 6000-6200 usually doesn't change.  I've seen a few people need 1 looser tRCD or SCL's.",
+                          "upvotes": 3,
                           "classifyThis": true,
                           "relevance": null,
                           "relevanceReasoning": null,
@@ -64,8 +75,19 @@
                           "sentimentReasoning": null,
                           "replies": [
                             {
-                              "commentId": "mix32wj",
-                              "text": "Good to know, thanks!",
+                              "commentId": "moou03b",
+                              "text": "Thanks, appreciate the insight!",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            },
+                            {
+                              "commentId": "moyxbgo",
+                              "text": "Sam \u201dtheman\u201d iamyammy \n\nDo you have zentimings pics you can share for 6200 CL28 and 6200 CL26? I would love to push 6200 CL26 if possible but if not I will pursue CL28 per your method above. Thank you good sir",
                               "upvotes": 1,
                               "classifyThis": true,
                               "relevance": null,
@@ -74,8 +96,8 @@
                               "sentimentReasoning": null,
                               "replies": [
                                 {
-                                  "commentId": "mj07vxz",
-                                  "text": ":) happy to have helped.\n\nBtw, Mandela effected..... I soooooo am!  I can't even count the number of things I noticed and wondered what the heck was going on (before I ever read about this phenomenon)!  Only later I googled about it and find others noticed the same exact things... and what a strange amount of these Mandela effects \"just so happen\" to be in a Simpsons episode!",
+                                  "commentId": "mp1cpoc",
+                                  "text": "no, I dont have one.. but it's all the same from 6000.... lower tCL just needs a little bump to VDD, the rest is usually identical timings.  It varies with memory kit.\n\nso:\n\nCL28 for 6200 is around 1.38-1.45 VDD\n\nCL26 for 6200 probably 1.45v or more for VDD",
                                   "upvotes": 2,
                                   "classifyThis": true,
                                   "relevance": null,
@@ -84,8 +106,8 @@
                                   "sentimentReasoning": null,
                                   "replies": [
                                     {
-                                      "commentId": "mj0i06b",
-                                      "text": "Not to get too metaphysical/quantum with you, but it\u2019s because we phase shift to alternate parallel realities based on our vibration. Check out Bashar if you want to learn more. A caveat- the level of truth you will learn about the nature of existence will change you, most likely for the better. Just depends on if you want to lift the veil of ignorance or not. Going down the Bashar rabbit hole is akin to taking the red pill. I for one am very happy I took it as it\u2019s changed my life for the better.",
+                                      "commentId": "mp1ed0l",
+                                      "text": "Got it, thank you sir.\n\nI\u2019m going to identify stable VSoC voltage first. Start with 1.25V and if stable will reduce until I find min stable VSoC.\n\nIf 1.26V is unstable, I\u2019ll try increasing VDD to 1.43V from stock 1.40V and loosening RCD to 38 from 36 and tRDRDSCL to 6 from 5 and tWRWRSCL to 12 from 10 if needed.\n\nTo push CL26 I\u2019ll try increasing VDD to 1.45V+",
                                       "upvotes": 2,
                                       "classifyThis": true,
                                       "relevance": null,
@@ -94,8 +116,8 @@
                                       "sentimentReasoning": null,
                                       "replies": [
                                         {
-                                          "commentId": "mj1nykm",
-                                          "text": "I'll have to check out Bashar, haven't heard of that.. but I am more suspecting super high-level psyops is responsible for the various Mandela effects rather than parallel realities.. idk.  There's a lot of strange things going on with our vibrational nature these days.. a whole lot of funding, research, and decades of data was collected in inconceivably-thorough EMF bombardment testing and it's effects on humans, especially humans placed into \"altered states of consciousness\".  \n\nAnd/or the chemtrails, and/or 2G-5G signals, and/or Starlink tech, and/or bluetooth, and/or Wifi... and/or HAARP, and/or CERN.  I feel like any of those could also be the cause of the Mandela effects.\n\nReality has become far more like the Matrix movie than most people would ever guess.  Agent Smith needs a good kick in the face, lol.. and literally, no \"common person\" would have any idea just how advanced are the AI programs that are not public information... but that's a whole other level of sketchy stuff to overlay on top of the much more straightforward \"parallel realities based on our vibration\".",
+                                          "commentId": "mp1gqj6",
+                                          "text": "Solid gameplan! :)",
                                           "upvotes": 2,
                                           "classifyThis": true,
                                           "relevance": null,
@@ -104,31 +126,8 @@
                                           "sentimentReasoning": null,
                                           "replies": [
                                             {
-                                              "commentId": "mj2a2ou",
-                                              "text": "Yeah there\u2019s a lot of noise out there, some more harmful than others. CERN is playing with forces they do not fully understand, it is possible for them to open up a wormhole or potentially cause some disruptions in the fabric of space time. There is a reason why there are so many UFO sightings around nuclear facilities, our advanced interplanetary friends checking up on us to make sure we don\u2019t inadvertently destroy the planet. \n\nCheck out the double-slit experiment, collapsing the wave function, etc. Basically, it\u2019s been proven since all the way back in 1801 that observation fundamentally affects how matter behaves. Subatomic particles like protons and electrons, act as waves (light energy) while not being observed, but when a living being or even a camera or video recording device is present to observe them, they collapse the wave function and act as particles, as matter. This is some of the most fundamental evidence that our 3D space time reality is a simulation of sorts, albeit more nuanced and complicated than a computer simulation. \n\nWhen you begin to understand that this is just one dimension of reality, of existence, it starts to make more sense. Think of the higher dimensions as a sort of tesseract or quasicrystal. Researchers recently created a model of an 8-dimensional quasicrystal in a computer simulation. The shadow cast by the 8D quasicrystal was a 4D quasicrystal, like a tesseract\u2014made up of many 3D spaces. The shadow cast by that 4D quasicrystal was a 3D shadow [sauce](https://quantumgravityresearch.org/portfolio/a-deep-link-between-3d-and-8d/). This aligns with the theory that this 3D reality is a shadow of a higher dimension made up of light, where time is not linear. Time is a construct of this reality, much like gravity relative motion (speed), and of course they are interrelated. If we entertain the possibility we exist on some higher dimensional plane as beings of energy, and focus a concentrated version of our consciousness into these 3D lives, collapsing the wave function from energy into matter, we can begin to think of this reality as a sort of simulation for our higher consciousness. \n\nThink of this reality as a dream we agree to enter into with temporary amnesia in order to experience change, transformation, challenge, growth, to learn lessons, etc. We never leave the higher dimension, we\u2019re just dreaming that we have as we focus our consciousness into matter for a time, enter the quasicrystal simulation as it were, in order for existence, for creation to experience itself from a unique point of view, a unique perspective, thus then allowing creation to expand. When we die, we wake from the dream. If we imagine that scenario, our bodies are merely space suits for our spirits. \n\nBashar explains it well, he\u2019s chock full of wisdom and truth from the higher dimension. Here are a few videos to dip your toes in the water if you\u2019re interesting in learning more.\n\n[Bashar on your mission in life](https://www.tiktok.com/t/ZP8YKQvyN/)\n\n[Bashar\u2019s Story](https://www.tiktok.com/t/ZP8YKU7WD/)\n\n[Bashar\u2019s Story cont.](https://www.tiktok.com/t/ZP8YKU3JU/)\n\n[Bashar on why we\u2019re here](https://www.tiktok.com/t/ZP8YKXJEG/)\n\n[Bashar - Everything you need to know](https://www.tiktok.com/t/ZP8YKbU1H/)\n\n[Darryl Anka, channeler of Bashar on the 5 Laws of Existence](https://www.tiktok.com/t/ZP8YK9SVn/)\n\nCheck them out when you have a few minutes, it\u2019s like drinking straight universal wisdom and truth from a fire hose. No cult, no hidden agenda, just knowledge about how reality actually functions from a messenger. Pretty cool stuff.",
-                                              "upvotes": 3,
-                                              "classifyThis": true,
-                                              "relevance": null,
-                                              "relevanceReasoning": null,
-                                              "sentiment": null,
-                                              "sentimentReasoning": null,
-                                              "replies": []
-                                            }
-                                          ]
-                                        },
-                                        {
-                                          "commentId": "mj1qak6",
-                                          "text": "Metaphysical stuff is one of my favorite topics, haha.  I have my degree in electronic technologies... and then went off and lived in a rainforest for 7 years... lol, it gave me some extreme contrast in regards to perspectives of life.\n\n...and then suddenly one day there were various mandela stuff going on.  I thought Chevron changed their sign and couldn't figure out why they rearranged the colors... then I saw a VW dealer and noticed it was changed too... and then another 10+ things all in a couple days.  Literally I thought a bunch of companies just had decided to make minor changes to their logos and company names.  \n\nBut all record of the original versions is scrubbed, lol... except sometimes evidence still remains of the pre-mandela effected.  You've seen some of those?  That's one of the top things that makes it not seem like parallel realities and instead some strange high-level experimenting going on.",
-                                          "upvotes": 2,
-                                          "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
-                                          "replies": [
-                                            {
-                                              "commentId": "mj2nye5",
-                                              "text": "My first encounter with the Mandela Effect was realizing our current reality recognizes the Berenstein Bears as the Beren*stain* Bears. I had all the books as a kid and clearly remember it was Berenstein, but somewhere along the line we\u2019ve shifted to a slightly alternate parallel reality. It\u2019s some multiverse type stuff, pretty wonky. Bashar explains it well.",
+                                              "commentId": "mp342mx",
+                                              "text": "Sorry to bother you again\u2026 last questions I promise\u2026\n\n1. I kept tRFC at 383, tRFC2 at 481, and tRFCsb at 391 when tuning 6200 CL28, confirmed min stable VSoC 1.25V.  \n\nSome advice suggested scaling these to tRFC 465, tRFC2 496, and tRFCsb 404 at 6200 MHz for proper refresh timing. \n\nFor CL26, I\u2019ve seen recommendations to tighten tRFC to 435 (with tRFC2 464, tRFCsb 378) for better performance. \n\nDo you agree with adjusting these values, or is it better to stick with my current settings at 6200-28/26?\n\n2. For 6200-26, I\u2019m planning to increase MEM VDD to 1.45V (from 1.4V) per your recc. I don\u2019t need to also raise CPU VDDIO to 1.45V from 1.4V to match since we\u2019re stable there at CL28, yes?\n\nThanks for your help!",
                                               "upvotes": 1,
                                               "classifyThis": true,
                                               "relevance": null,
@@ -138,17 +137,6 @@
                                               "replies": []
                                             }
                                           ]
-                                        },
-                                        {
-                                          "commentId": "okxue1g",
-                                          "text": "Came for the RAM info but just lol",
-                                          "upvotes": 1,
-                                          "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
-                                          "replies": []
                                         }
                                       ]
                                     }
@@ -161,15 +149,155 @@
                       ]
                     },
                     {
-                      "commentId": "mo5mdry",
-                      "text": "Hey friend, I was able to push FLCK 2200 and tREFI 65,535 at VDDGIO/VDDCCD at 1v, stable no errors in TestMem5 Anta Absolute w/Music and AIDA64 stress test, safe temps. I haven't tested it at 0.975v yet.  Thank you again for your great help and advice!  \n\nI'm working on trying to push 9800X3D core clocks 0&amp;1 (VCache cores) closer to 5425 Max and higher avg than stock.  Currently at PBO Advanced, PL Mobo, Scaler 7x, CO -30 (0&amp;1), -35 (2-7). I've been able to push max clocks \\~5330, but still falling short of goal. \n\nDebating ECLK/BCLK2 adjustment and curve shaper adjustments similar to Scatterbencher's recc's.  \n  \nHe recommends setting aSynchronous ECLK/BCLK2 from 100 to 105.5 MHz.  \n  \nCurve Shaper:   \n  \nFor all, set Low, Med, and High Temperature to Enable   \n  \nFor min, low, and med frequency, set Sign to Negative and Magnitude to 30   \n  \nFor high and max frequency, set Sign to Positive and Magnitude to 15\n\nDo you think this would be a good idea? Thanks!",
+                      "commentId": "mp2n0t9",
+                      "text": "Can you tell me what optimal/miminum Nitro settings are? Trying to confirm if my Nitro settings are optimal or not. Thanks",
                       "upvotes": 1,
                       "classifyThis": true,
                       "relevance": null,
                       "relevanceReasoning": null,
                       "sentiment": null,
                       "sentimentReasoning": null,
-                      "replies": []
+                      "replies": [
+                        {
+                          "commentId": "mp3magx",
+                          "text": "6400 is usually 1-3-1.. sometimes 1-2-1 works",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "mp3qq24",
+                              "text": "Thanks. I\u2019m still working on trying to find stability at 6200-26. I found VDD &lt;1.48v caused system to reject the profile and revert back to 4800. Increasing to 1.48v allowed system to maintain 6200-26, but unstable. Even after increasing VDD to 1.5v, immediately fails AIDA memory and cache stress test. 1.25v VSoC was stable at 6200-28, but debating increasing to 1.26v to see if that helps. Could also try to loosen tRCD/SCL and increase VDDIO to 1.45v to see if that helps. \n\nWhat would your next step be? \n\nIf I can\u2019t get 26 stable I\u2019ll revert to 28. Just trying to think through next logical setting to tweak.",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "mp418qh",
+                                  "text": "you're welcome.\n\ncl26 can be tricky to get stable.  My kit needs 1.54v for VDD to be stable at 6000 CL26\n\nA lot of people start with 1.6v VDD for initial testing and then lower it until instability shows up.\n\nVSOC only ever needs increasing when stepping up mt/s..\n\nVDDIO and VDDQ usually only need more than the expo default for 6400+",
+                                  "upvotes": 2,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "mp5ghi6",
+                                      "text": "Got it stable at 1.59V :)",
+                                      "upvotes": 2,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    },
+                                    {
+                                      "commentId": "mp4mop0",
+                                      "text": "Very helpful as always, thank you so much. I\u2019ve got everything I need to figure it out from here now. Will see what the temps look like and if it makes sense or not. \n\nI really wish Noctua made fans that weren\u2019t brown and beige, but may have to bite that bullet. We shall see. Cannot thank you enough!!",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    },
+                                    {
+                                      "commentId": "mp95yf8",
+                                      "text": "So I got 6200-26 2200 FCLK Nitro 1-2-1 stable at 1.58 VDD, but what I\u2019ve seen is my 3D Mark scores dropped 400 (Time Spy Extreme) - 700 points (First Strike Ultra) vs when I was at 6000-28 2200 FCLK with nitro 2-3-1.  I just changed Nitro to 2-3-1 and scored improved by 350 in FSU.\n\nThinking maybe I need to reduce FCLK to reduce IMC stress to allow for better performance, thoughts?",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    },
+                                    {
+                                      "commentId": "mp97pwr",
+                                      "text": "I figured out the issue, when my kit reverted to 4800 JEDEC setting it must\u2019ve turned my PBO settings off so resetting them",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "mp9n52v",
+                                          "text": "xD -that same thing has happened to me, sometimes the bootup with unstable setup reverts the whole bios\n\nSo now your 3dmark score is higher than when running 6000?",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "mp9ujd5",
+                                              "text": "It\u2019s odd, even after re-setting my PBO OC tune, my 6200-26 2200 1-2-1 (and 2-3-1) scores are slightly under what they were at 6000-28 2200 2-3-1. \n\nMy min stable VDD ended up being 1.58v, I also tried 1.59v but still no score improvement. I have confirmed stability with TestMem5 anta absolut w/music, Y-Cruncher, Prime95, AidaExtreme.\n\nReally surprised I\u2019m not seeing a score lift from the change. I didn\u2019t think I had to reduce FCLK unless going to 6400 2133\u2026 any recc on what I should try to tweak?",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "mp2sttb",
+                      "text": "Current Nitro settings:\n\n- ProcODT Pu/Pd - 480 \u03a9 \n- ProcCADS - 30 \u03a9 \n- RttNomRd - 48 \n- RttNomWr - 48 \n- RttWr - 240 \n- RttPark - 34 \n- RttParkDqs - 34",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "mp3mild",
+                          "text": "those are not nitro settings, lol... those are the resistances used for end to end terminations..\n\n[https://www.overclock.net/posts/29460124/](https://www.overclock.net/posts/29460124/)\n\nThere's a good post about it... not many people change the Proc and Rtt's, but this guy has played with them and found some better settings",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "mp3pgog",
+                              "text": "Oh ok thanks for clarifying, will check it out",
+                              "upvotes": 1,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
                 }

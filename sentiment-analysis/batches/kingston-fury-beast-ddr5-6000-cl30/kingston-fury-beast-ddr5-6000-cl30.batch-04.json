@@ -1,7 +1,7 @@
 {
-  "productName": "kingston-fury-beast-ddr5-6000-cl30",
+  "productName": "Kingston Fury Beast DDR5-6000 CL30",
   "batchIndex": 4,
-  "totalBatches": 8,
+  "totalBatches": 6,
   "comments": [
     {
       "commentId": "1jfstm6",
@@ -14,30 +14,8 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "o49vqwe",
-          "text": "I\u2019ve been getting a lot of questions on this, so will share this as additional guide/resources.\n\nRecommended Guides:\n\n[Guide 1](https://www.reddit.com/r/overclocking/s/oridx2SBLl)\n\n[Guide 2](https://www.reddit.com/r/overclocking/s/aVo57L8Oaw)\n\nFinal stable result (optimal for my silicon): 6000-CL26 2200 FCLK 65,535 tREFI, 1-2-0 Nitro (Optimal Nitro is dependent on memory speed MT/s, FCLK, and other factors.\n\n[ZenTimings / AIDA64 Cache &amp; Mem Benchmark](https://imgur.com/gallery/am5-memory-tune-optimal-2x32-kf-beast-6000-30-tuning-to-6000-26-timings-sub-timings-nitro-3H8kvbQ)\n\nDeep dive on Nitro:\n\n**DDR5 Nitro Mode Guide (AMD Ryzen AM5 Platform)**\n\n**What is DDR5 Nitro Mode?**  \nNitro Mode is an advanced tuning option available in many AMD BIOS implementations (typically found under AMD Overclocking \u2192 DDR and Infinity Fabric Frequency/Timings \u2192 DDR Options). It allows manual tightening of the low-level PHY-to-IMC signaling timings on DDR5 platforms. These adjustments reduce memory access latency and can improve read/write/copy bandwidth, often resulting in 1\u20135% real-world gains in latency-sensitive applications (e.g., games with better 1% lows, productivity workloads, or synthetic benchmarks like AIDA64).\n\n**Key Nitro Parameters**  \nThe settings are usually displayed as three values in this order:  \n**Nitro RX Data \u2013 Nitro TX Data \u2013 Nitro Control Line**  \n\nCommon tight/aggressive preset examples:  \n- 1-2-0 (very strong, low-latency target on good silicon)  \n- 1-2-1 or 2-2-0 (slightly looser but often more stable)  \n- 2-3-1 (typical looser default when EXPO is enabled at higher speeds)\n\nLower numbers = tighter signaling = potentially lower latency (e.g., 0.5\u20131 ns drop in AIDA64) and slightly higher bandwidth, but they require better IMC silicon quality, voltage tuning, and stability testing.\n\n**Recommended Supporting Settings for Optimal Nitro**  \nTo achieve and stabilize tight Nitro values (e.g., 1-2-0) at high speeds like DDR5-6000+ with strong FCLK:\n\n- DDR5 Nitro Mode: **Enabled**  \n- DDR5 Robust Training Mode: **Enabled** (recommended \u2013 performs more thorough memory training on boot; takes longer to POST but significantly improves stability at aggressive Nitro presets)  \n- Rx Burst Length: **8x**  \n- Tx Burst Length: **8x**  \n- Gear Down Mode (GDM): **Disabled** (critical for lowest possible latency; enabling GDM relaxes timings but usually adds ~1\u20132 ns penalty)  \n- UCLK DIV1 Mode: **UCLK = MCLK** (Gear 1 mode \u2013 essential for best latency at 6000\u20136400 MT/s)  \n- FCLK: 2000\u20132200+ MHz (higher FCLK reduces inter-core/CCX latency dramatically; 2133\u20132200 is elite territory on strong silicon)  \n- Voltages (tune carefully for marginal stability):  \n  - VSOC: 1.25\u20131.35 V (higher often needed for tight Nitro + high FCLK)  \n  - VDDG CCD / VDDG IOD: ~0.95\u20131.05 V  \n  - VDDP: ~0.90\u20131.00 V  \n  - VDCI: Predictive mode usually best  \n  - DRAM VDIMM: 1.35\u20131.45 V+ (depending on kit and primaries)  \n\n**Typical Performance at Tight Nitro (e.g., 6000 MT/s CL26\u201330 + 2200 FCLK + 1-2-0 + GDM off)**  \n- AIDA64 latency: ~56\u201358 ns  \n- Read bandwidth: 70\u201380 GB/s+ (on strong setups)  \n- Noticeable improvements in game frame-time consistency and synthetic scores  \n\n**Stability Testing Recommendations**  \nTight Nitro can pass quick tests but fail under heavy or real-world load. Use a combination of:  \n- TestMem5 (TM5) with anta777 extreme preset (3\u201310+ cycles)  \n- Karhu RAM Test (24+ hours preferred for deep validation)  \n- HCI Memtest (multiple instances to 1000\u20132000%+ coverage)  \n- y-cruncher VT3 stress mode (run while playing music or light tasks \u2013 audio glitches or crashes reveal instability)  \n- OCCT Memory test (Large Data Set)  \n- Daily usage + games/browsing for weeks  \n\n**Important Notes**  \n- Not every Ryzen chip can stably run 1-2-0 (or even 1-2-1) at high FCLK and tight primaries \u2013 this is heavily dependent on IMC silicon quality.  \n- Newer AGESA versions (1.0.0.7 series and later) greatly improve high-FCLK and Nitro compatibility.  \n- Always verify applied timings with ZenTimings after boot.  \n- Start conservative (e.g., 2-3-1), enable Robust Training, then tighten step-by-step while stress testing.  \n\nThis configuration (especially 6000\u20136400 MT/s + high FCLK + tight Nitro + GDM off) represents one of the best low-latency sweet spots for current AM5 DDR5 overclocking.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "o49vrri",
-          "text": "Memory benchmark testing deep-dive:\n\n**DDR5 RAM Overclock Stability Testing Guide (AMD Ryzen AM5 Platform)**\n\n**Overview**  \nWhen overclocking or tightening DDR5 memory (e.g., high MT/s speeds, low CL timings, aggressive Nitro presets, high FCLK), thorough stability testing is essential. No single test catches everything \u2014 different tools stress the RAM, IMC (integrated memory controller), voltages, and signaling in unique ways. Errors can appear as crashes, BSODs (WHEA on AMD), audio artifacts, freezes, or silent corruption. A solid combo of dedicated memory testers + real-world/combined stress ensures daily usability.\n\n**Recommended Testing Suite**  \nFollow this tiered approach: Start with quick/aggressive tests to catch obvious issues, then move to deeper validation. Run tests at stock cooling + ambient temps; monitor RAM temps (via HWiNFO \u2014 keep under ~50\u201355\u00b0C to avoid thermal-related errors).\n\n1. **TestMem5 (TM5) with Extreme @anta777 Preset** (Primary quick/aggressive RAM tester)  \n   - **Why?** Fast, highly effective at finding subtle timing/voltage errors early \u2014 community gold standard for DDR5 overclocks. The \"Extreme @anta777\" config (download from GitHub integralfx/MemTestHelper or similar trusted sources) is tuned to hammer memory hard.  \n   - **How to run:**  \n     - Load the extreme@anta777.cfg (it should apply on launch in recent versions).  \n     - Run **at least 3 cycles** for initial screening (\u22481\u20132 hours on 64 GB kits).  \n     - For confidence: **5\u201310+ cycles** (or overnight if paranoid).  \n     - **+ Music playing test variant:** Run TM5 in the background while playing music (Spotify/YouTube/etc.) or doing light tasks. Instability can cause **audio glitches** (crackling, stuttering, skipping, slowdowns) even if no hard error pops up \u2014 a quick real-world check for marginal setups.  \n   - **Pass criteria:** Zero errors across all cycles. Any error = back to BIOS for voltage/timing tweaks.\n\n2. **Karhu RAM Test** (Deep, thorough validation)  \n   - **Why?** Excellent for long-run detection of errors that slip past quicker tests; stresses large data sets and cache.  \n   - **How to run:** Enable CPU cache stress if available; use default or high RNG settings.  \n     - Aim for **24+ hours** (or at minimum 8\u201312 hours) for true 24/7 stability.  \n   - **Pass criteria:** No errors. Often considered one of the strongest for overclocked DDR5.\n\n3. **y-cruncher (VT3 or VST mode)** (Combined CPU + IMC + RAM stress with real-world feel)  \n   - **Why?** Heavy all-core compute that pounds the IMC/RAM; great for detecting controller instability (especially high FCLK/Nitro on AM5).  \n   - **How to run:** Use VT3 (AVX512) or VST algo; run multi-hour loops.  \n     - **Music playing test:** Run y-cruncher while playing music or browsing \u2014 audio artifacts (stuttering, crackling) or system freezes often show up here when pure memtests pass. Excellent \"daily feel\" check.  \n     - Typical: **2\u20136+ hours** (or overnight loops). Some run 5\u201310 full passes.  \n   - **Pass criteria:** No calculation errors, crashes, or audio glitches.\n\n4. **HCI Memtest** (Classic coverage tester \u2014 optional but useful)  \n   - **Why?** Good for percentage-based coverage; stresses specific memory regions.  \n   - **How to run:** Launch multiple instances to cover 90\u2013100%+ of RAM (e.g., 400\u20131000%+ per instance on 64 GB).  \n     - Run to **1000\u20132000%+ coverage** total.  \n   - **Pass criteria:** Zero errors.\n\n5. **Additional/Combined Tools for Extra Coverage**  \n   - **OCCT Memory test** (Large Data Set mode, SSE/AVX): Good combined CPU+RAM stress; run 1\u20134 hours.  \n   - **MemTest86+** (bootable USB): Basic hardware fault check or very long runs; less aggressive for tuned overclocks.  \n   - **Prime95** (blend or large-FFT custom): IMC-heavy; use sparingly as it's older.  \n   - **Daily real-world usage:** After passing the above, game/browse/render for days/weeks \u2014 subtle instability often shows here first.\n\n**Typical Testing Flow for a New Tune**  \n1. Apply settings \u2192 boot \u2192 verify with ZenTimings/AIDA64.  \n2. Quick screen: TM5 anta777 extreme **3 cycles** (+ music playing in background).  \n3. Deeper: Karhu **8\u201324 hours**.  \n4. Combined/real-world: y-cruncher **multi-hour** (+ music playing).  \n5. Paranoid/final: Loop TM5 10+ cycles + Karhu overnight + y-cruncher.  \n6. Monitor: Use HWiNFO for temps/voltages; check Event Viewer for WHEA errors post-test.\n\n**Notes**  \n- Different tests catch different errors: TM5 excels at early detection, Karhu at depth, y-cruncher at IMC/AVX realism.  \n- On AM5 DDR5 (especially 6000+ MT/s with tight Nitro/GDM off), y-cruncher often reveals marginal IMC issues.  \n- If errors appear late in cycles \u2192 check RAM temps or marginal voltages.  \n- No setup is \"100% stable forever\" \u2014 but passing this suite means reliable 24/7 use for most.  \n\nThis combo (especially TM5 anta777 + Karhu + y-cruncher with music) is widely recommended in 2026 overclocking communities for DDR5 on AM5. Adjust runtimes based on paranoia level.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "ocvuz0z",
-          "text": "OP im a owner of the same kit... I have a 9950x at 1.25vsoc 6200/2067 with cl28 and optimal timings everywhere else.\n\nI read in this thread you touched cl26. Mind sharing your current zentimings? I want to compare notes :) [https://imgur.com/a/m8zh57f](https://imgur.com/a/m8zh57f)",
+          "commentId": "mnev38p",
+          "text": "I have to go on 64Go to be comfortable on Star Citizen and your shares make me hesitate to take either:  \n64 GB (2 x 32 GB) DDR5 6,000 MT/s CL30 FURY Beast EXPO  \n64 GB (2 x 32 GB) DDR5 6 400 MT/s CL32 FURY Beast EXPO  \nTo benefit from your excellent timings, if I have to choose the most relevant, you would advise me which kit for the OC?  \nI think the KF564C32BBEK2-64 should be easier to OC at 6400CL28 and less (even if it is a bit more expensive)  \nI\u2019m going to partner with a 7800X3D and a 9800X3D because I have two drives at home:)  \nAnd I think your timing will be perfect for these two X3D!!!",
           "upvotes": 1,
           "classifyThis": true,
           "relevance": null,
@@ -46,9 +24,277 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "ocy9w9z",
-              "text": "I notice that my read speed is 86500 mb/s vs your 70160 mb/s at 6000 cl26. Did you try higher mclk? I like your result. Much better voltages than me. However, wouldn't you want more data at same latency? cl28 6200 vs cl26 6000 - or did you have trouble stabilizing 6200+?",
+              "commentId": "mnhbgox",
+              "text": "Recommend confirming mobo compatibility as that is a key factor that influenced me going with KF Beast. Check QVL. I\u2019m not an expert on 6400\n\nChoose 6400 CL32 if:\n- Your motherboard and CPU can stably support 6400 MT/s\n- You want higher raw bandwidth (better for some productivity or bandwidth-hungry tasks)\n- You\u2019re optimizing for benchmarks or maximum overclocking\n\nChoose 6000 CL30 if:\n- You want higher stability and better compatibility (especially for AMD Expo or Intel XMP profiles)\n- Lower voltage, less heat\n- Better suited for daily use or gaming-focused rigs with tight timings\n\nBelow link are the recommendations I followed (In this thread) which worked for my kit. I believe user is using a 6400 kit so may want to ask them as I don\u2019t have any experience with 6400.\n\nhttps://www.reddit.com/r/overclocking/s/mSsz68oZ9A",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mnms1mt",
+                  "text": "Merci pour tes pr\u00e9cisions !\n\nAu final, j'ai pris les deux kits et le 6400CL32 passe avec mon 9800X3D en expo sans timing resserr\u00e9.\n\nCe weekend, je vais voir lequel des 2 kits est le plus stable \u00e0 6400CL28 avec beaucoup de chance, sinon je viserais 6200CL28.\n\nWait and see :)",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mnn8bzk",
+                      "text": "Great to hear and good luck with CL28! There are many experts in this sub who should be able to help if needed. Best",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "mnq62dp",
+                          "text": "Merci c'est agr\u00e9able d'avoir de l'aide de qualit\u00e9 comme la votre, cette communaut\u00e9 est g\u00e9niale !\n\nLe kit 6400CL32 passe \u00e0 30 36 36 sans modifier les autres timings avec FBLK \u00e0 2133 ! \n\nCela me semble un bon d\u00e9but pour le CL28 qui en revanche plante sans autre modification.\n\nJe suppose que pour que CL28 fonctionne, je dois maintenant modifier les timings, mais surtout les voltages et le VSOC en priorit\u00e9 je suppose de 1,2 vers 1,25 et le VDD de 1,4 vers 1,45\n\nEn revanche, impossible sur ma GIGABYTE AORUS ELITE AX de trouver le VSOC dans les menus, une suggestion ?\n\nMerci",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "mv04q09",
+          "text": "I have the 16x2 (32gb) variant. Can i apply these to that? \n\nNew to ram oc here",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mv0ectt",
+              "text": "I would look for a 2x16 guide. I\u2019m not an expert on 2x16, but pretty sure there are some differences in how they respond. May have different Voltage and timings ranges. There should be a lot of guides for 2x16 as it\u2019s more common",
               "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "mv0f8xp",
+                  "text": "How much total difference did you get from ram tweaking in cpu performance and games?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "mv0oleh",
+                      "text": "I have my kit tuned to 6000 CL26 at 2200 FCLK and 65,535 tREFI, optimal Nitro settings and timings/sub-timings and the boost has been noticeable. \n\nBenchmark / Workload                 Est. Uplift vs EXPO\nLatency (AIDA64)                        \ud83d\udd3b ~10\u201315 ns lower\nMemory Bandwidth.                    \ud83d\udd3a ~5\u20138% higher\n1%/0.1% Lows in Games             \ud83d\udd3a ~8\u201315% better\nFrame Consistency                     \ud83d\udd3a Noticeably smoother\nMin FPS Uplift in Benchmarks   \ud83d\udd3a ~5\u201310%\nOverall Responsiveness             \ud83d\udd3a Noticeably snappier",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "mylw5qy",
+                          "text": "Hey, great post! Can I ask something? In your Edit2, you mentioned pushing FCLK up to 2200 with a RAM cooling fan. Was Edit1 with 2133 also done with the RAM cooling fan?\n\nI'm asking because I have the exact same Kingston Fury 2x32GB CL30 6000 kit as yours, just without the RGB, since I needed low-profile sticks to fit under my Peerless Assassin 120 cooler.\n\nSince I can\u2019t install a RAM fan due to space limitations with the PA120, I\u2019m wondering if your Edit 1 settings would work for me. At what point did you add the RAM fan? Thanks in advance!",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        },
+                        {
+                          "commentId": "n1zqaet",
+                          "text": "It might be that you didn't see my question. Can you please reply me?",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "o0nvbre",
+              "text": "Did you find an answer to this?, in the same situation:P",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "o0nww50",
+                  "text": "Lol no. Didnt oc. Everything seems to be working fine as is. I dnt wanna waste time on tweaking",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "o0nxlqn",
+                      "text": "Nice to hear, thx",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "n0977oz",
+          "text": "Are you still utilizing the same tune for your Kingston ram? I recently got it and was looking to tune it similarly to your, but was wondering how it was holding up.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "n0av11z",
+              "text": "CL26 requires higher VDD. \n\nI had initially used VDD 1.54v and VSOC 1.20 but was able to reduce to 1.50v VDD and 1.15v VSOC after changing to BIOS 3.25. 6000-CL28 I was running stable at 1.40v VDD. \n\n1.45v VDD 1.25 VSOC was stable for 6200 CL28, but I wanted to do 6000-26 at 2200 FCLK vs 6200 at 2066 FCLK. \n\nPushing 6400 requires you to stay at or under 1.30 VSOC. \n\nTypically you need 0.10 increase in VSOC to go up 200 ms so you can only run 6400 at 1.30v VSOC if you can run 6200 at 1.20v VSOC and 6000 at 1.10v VSOC, which is rare. If you\u2019re trying to push higher, find minimum stable VSoC at 6000 and 6200. If you need more than 1.20v VSOC to be stable at 6200 then you probably won\u2019t be able yo push 6400 since &gt;1.30v VSOC is not good/safe.\n\nCL26 gives a great latency improvement but runs hotter. I use a Corsair memory cooling fan setup with a Noctua 60x25mm 4-pin fan swapped to keep my temps under 50c max.  I also have really good fan cooling apart from that. \n\nIf you don\u2019t want to invest in a dedicated DRAM fan the. cL28 is the best bet.  I\u2019ll share some helpful guilds as well.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "n0ascnp",
+              "text": "I\u2019m currently doing a 6000-26, 2200 FCLK, with optimal timings and nitro.\n\nHere is a summary:\nAM5 DDR5 RAM Tune \u2014 Current\nCPU: Ryzen 7 9800X3D\nBoard: X870E Nova WiFi (BIOS 3.25)\nKit: 64GB DDR5 (2\u00d732GB KF560C30)\nSpeed: 6000 MT/s\nMCLK/UCLK: 3000 MHz / 3000 MHz\nFCLK: 2200 MHz\n1:1 \nCmd Rate: 1T\nGear Down Mode: Enabled\nBank Group Swap: Enabled\nBank Group Swap Alt: Disabled\nPowerDown: Enabled (Disabled during testing)\nEco Mode off\nMemory Context Restore: Enabled (Disabled during testing)\nZen Gaming Memory Profile Mode Enabled (gives reduced latency)\n\nNitro settings: 1-2-0 x8 x8 (optimal for 6000)\n\nPrimary Timings:\n\ntCL:      26\ntRCDWR:   36\ntRCDRD:   36\ntRP:      36\ntRAS:     56\ntRC:      92\n\nSecondary / Tertiary Timings\n\ntRRDS:    6\ntRRDL:    12\ntFAW:     32\ntWR:      48\ntRFCns:   127.667\ntRFC2:    480\ntRFCsb:   390\ntREFI:    65535\ntCWL:     26\ntRTP:     16\ntWTRS:    4\ntWTRL:    16\ntWRRD:    6\ntWRWRSD:  7\ntWRWRDD:  8\ntWRWRDR:  1\ntRDWR:    16\ntRDWRSD:  8\ntRDWRDD:  7\ntRDWRDR:  1\ntRDRDSC:  6\ntRDRDSD:  6\ntRDRDDR:  6\ntCKE:     0\ntMODPDA:  32\ntMODPD:   32\ntPHYRDL:  12\ntPHYRWR:  6\n\nVoltages\n\nVSOC (SMU): 1.15V\nCLDO VDDP:  ~1.15V\nMEM VDD:    1.50V\nMEM VDDQ:   1.40V\nMEM VPP:    1.80V\nVDD Misc:   1.10V\nCPU VDDIO:  1.40V\n\nProcODT &amp; Termination\n\nProcODT:    48 \u03a9\nProcODT Alt: Hi-Z\nProcODT CADs: 30.0 \u03a9\nRTTNomWr:   RZQ/5 (48)\nRTTNomRd:   RZQ/5 (48)\nRTTWr:      RZQ/1 (240)\nRTTParkWr:  RZQ/7 (34)\nRTTParkRd:  RZQ/7 (34)",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "n0f1ris",
+                  "text": "Awesome. Thanks for all the guidance. I'll be going through the guides you listed as well. I'm newer to this and really just game, so i was looking for some midground that is better than just expo, but still pretty stable. This is where I'm currently at, so if you have any tweaks you can see, I'd be happy for the feedback. \n\n  \n[https://imgur.com/a/G60mNco](https://imgur.com/a/G60mNco)",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "n0fo9q4",
+                      "text": "Best and easiest thing for you to dial in if you want to push past default EXPO is tune 6000-28 with optimal timings and nitro. Ideally, you want to push to 2200 FCLK and 65,535 tREFI if stable as those give the best performance boost. Temps should still be well on safe range at CL28",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "n0g5gg9",
+                          "text": "Ok, I'll look into that. Thanks",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "commentId": "n0avntq",
+              "text": "These are very helpful guides:\n\nhttps://www.reddit.com/r/overclocking/s/JNAknZmnSG\n\nhttps://www.reddit.com/r/overclocking/s/FSLsuemnyB",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "n31a7c0",
+          "text": "Hi, back to memory tuning after 20 years from my last PC... My 2x32GB Kingston Fury Beast KF560C30BWEAK2-64 does not even boot with  6000 CL30 Profile set in Bios on Asrock B850M Steel Legend WiFi\u00a0(with latest BIOS)\n\nIt is a pain in the ass as each time i choose the wrong mem settings i need to reset the bios, remove RTX 5070, boot with internal GPU, set PCI-E x16 to gen5 and PCI-E X8 to Gen4, mount the RTX 5070 and reboot (otherwise no HDMI signal at all).\n\nWhat is the best tool to tweak and test memory params on the fly?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "n334xxj",
+              "text": "This guide is very helpful:\n\nhttps://www.reddit.com/r/overclocking/s/Nov8YygBsQ",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "nzyygk2",
+          "text": "Hey there! How did it go?\nWhat speeds do you get in a memory benchmark?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "o477lez",
+              "text": "Will DM you my optimal results",
+              "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,

@@ -1,7 +1,7 @@
 {
-  "productName": "be-quiet-pure-power-12-m-850w",
+  "productName": "Be Quiet! Pure Power 12 M 850W",
   "batchIndex": 36,
-  "totalBatches": 39,
+  "totalBatches": 41,
   "comments": [
     {
       "commentId": "18tzgnw",
@@ -14,88 +14,123 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "kfk6p1q",
-          "text": "*CPU*\n\nI would recommend considering Single Thread performance for which Intel is simply unbeatable. This gives more of the \"snappy\" feeling especially in gaming.\n\n&amp;#x200B;\n\n||AMD Ryzen 7 7800X3D|Intel Core i5-14600K|\n|:-|:-|:-|\n|Single Thread Rating|3757|4314|\n\nRef1: [https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+7800X3D&amp;id=5299](https://www.cpubenchmark.net/cpu.php?cpu=AMD+Ryzen+7+7800X3D&amp;id=5299)\n\nRef2: [https://www.cpubenchmark.net/cpu.php?id=5720&amp;cpu=Intel+Core+i5-14600K](https://www.cpubenchmark.net/cpu.php?id=5720&amp;cpu=Intel+Core+i5-14600K)\n\nMotherboard will thus be a MSi MEG-Z790-ACE.\n\nCooler Noctua DH15 with Thermal Grizzly Kryonaut paste.\n\n\\*In case you do alot of CPU-bound work (ie. not for gaming), you might want to pickup the i9-14900K.\n\n*SSD/Storage*\n\nGet the Samsung 990 Pro NVMe 4TB and use it for both OS + Files storage. You will thank me later. Also, ensure to partition it properly (use Linux fdisk) to ensure alignment to 1MiB (2048s at 512 sector size). Depending on usage profile leave some space at the end. (mostly read:write &gt;3:1 \\*\\*7.5% overprovision, mixed 14% overprovision,  high writing load like Database 28% overprovision).\n\n* 100 MiB EFI (fdisk type EFI - eXpert S GUID Bit 63)\n* 128 MiB MSR (fdisk type Microsoft Reserved eXpert S GUID Bit 63)\n* 200 GiB OS (NTFS)\n* 572 MiB Recovery (fdisk eXpert Required / S GUID Bit 63)\n* 4TB x (100% - 7.5%\\*\\*) - 800MiB - 200GiB\n* Overprovision (see above\\*\\*)\n\nNB: 4 TB = 3.63 TiB = 3,725 GiB\n\nBonus points #A: set it to Advanced Format 4k sectors using nvme cli (Linux only - just boot using a bootable USB stick with the distro of your choice)\n\nBonus points #B: format all SSD's to 16k NTFS cluster to match the 16k page size of the NAND flash.\n\nBonus points #C: format the Seagate Exos at 64KB NTFS cluster.\n\nBonus points #D: install smartmontools for Windows (or use Linux) and ensure the Seagate Exos has SCTERC disabled unless you're doing RAID/ZFS/BTRFS (smartctl -l scterc,0,0,p /dev/sdX where X is your drive). This will ensure your data will not get lost. Normally the Enterprise disks are set to 7 seconds timeout so that the RAID/ZFS/BTRFS redundancy can reconstruct the data faster from the other mirrors. If you use it as single disk you run a higher risk when a sector is unreadable to directly loose that data instead of giving the ECC max chances to re-try as much as possible.\n\n*Power*\n\nAverage load: CPU 125W, GPU 420W, Storage 3 x 9W = 572W.\n\nPSU peak power should be double the average load as good electrical engineering practice (that's also the efficiency maximum usually if you look at 80Gold/Platinum/Titanium at 50%), so would recommend a 1100W .. 1200W PSU like a Corsair HX1200.",
+          "commentId": "kfhwawe",
+          "text": "Great parts list!\n\nI just recently built a very similar pc with the same cpu, mb, the sapphire pulse 7900xtx, 32 gb 6000 cl 30 ram, ak 620 cooler and a rm1000x psu.\n\n850 should be enough for those parts as mine never pull more than 600w, even with cyberpunk ultra settings.\n\nThe pc has been great, no stutters or any issues, the only thing I noticed is a little bit of coil whine.\n\nI've read online that 64 gb ram on am5 can't really run at the max advertised speeds due to some stability issues.\nNot sure about the details but you might want to look into it.\n\nGood luck with putting it together and I hope you enjoy yours as much as I do mine!",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The comment focuses on CPU, SSD, and general PSU wattage recommendations, but does not provide a specific opinion or experience with the Be Quiet! Pure Power 12 M.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user provides technical advice without a clear positive or negative sentiment toward the specific product.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "kflnrh5",
-              "text": "thanks a lot for your very detailed feedback. I will consider your steps when I make the final buys and espacally when I'll install the PC, I'll be comming back to this very coment again :-)",
+              "commentId": "kfi529g",
+              "text": "Currently running 64gb @ 6000mhz CL30 Dominator Platinums on an AM5 build, 7950x3d cpu, no issues whatsoever.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "kfi3bpb",
+              "text": "thanks a lot.\n\nIf the RAM runs a little bit below the maximum advertised speed I can live with that :D",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "This is a thank you message and does not contain any product feedback.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is expressing gratitude, which is not a sentiment toward the product.",
-              "replies": []
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "kfiew0q",
+                  "text": "Running 64Gb 6000mhz cl30 ram with expo without issues myself.  As long as your ram is in the Mobo's qvl list it should work fine.  I have an asrock x670e steel legend though for my mobo.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
             }
           ]
         },
         {
-          "commentId": "kfhhl66",
-          "text": "Ive heard bad things about BeQuiet for power supplies and other products from them but if you did your research you probably know more than me!! Looks like a killer unit, have loads of fun friend!",
-          "upvotes": 1,
+          "commentId": "kfi0bz9",
+          "text": "https://pcpartpicker.com/list/sFhsMV heres a slightly modified build i made for you.\n\nI found a newer model hdd, and theres a 20tb one for another ~$50, if need be. \n\nNewer mobo, imo its worth getting a good high end board, especially with the rest of the build in mind.\n\nI picked a different set of ram, new mobo is DDR5 so i picked a 2x32 set of 6400mt/s at 10ns. \n\nBasically picked the same PSU at 1000w, its always good to keep the psu cap higher than usage by to keep efficiency up on the curve, and you could upgrade over time or later and not need another psu. You could also  get the 13 series of be quiet!s, or even a 1200w as they arent much more expensive. Just suggestions tho, the build looks great! Go big or go home! Good luck man!",
+          "upvotes": 3,
           "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "The user mentions having heard 'bad things' about Be Quiet! power supplies, providing a general brand opinion.",
-          "sentiment": "negative",
-          "sentimentReasoning": "The user expresses a negative perception of the brand's power supplies based on hearsay.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "kfhoojs",
-              "text": "Thank you friend.\n\nI hope it works well. One can always be unlucky but generally it is considered A-Tier by many Lists",
-              "upvotes": 3,
+              "commentId": "kfi0zhm",
+              "text": "Hey can you look at mine build as well? I would be very grateful. \n\nCan afford better GPU at the moment but I think I will change it in the future.\n\nAlso I'm thinking about 16GB of ram instead of 32GB I don't think I need that much.\n\n\nhttps://pcpartpicker.com/list/Dks628",
+              "upvotes": 1,
               "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "The user refers to the product being 'A-Tier' on many lists, which is a technical critique/opinion on its quality.",
-              "sentiment": "positive",
-              "sentimentReasoning": "Classifying the product as A-Tier indicates a positive view of its quality.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "kfhw0xg",
-                  "text": "then you shouldn't worry",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "This is a reply to the A-Tier comment, confirming the product's quality.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "Telling the user they 'shouldn't worry' based on the A-Tier status is a positive endorsement.",
-                  "replies": []
-                },
-                {
-                  "commentId": "kfixyn4",
-                  "text": "Absolutely agreed, if it\u2019s a tier? Godspeed my friend. Emphasis on speed \ud83d\ude08",
+                  "commentId": "kfixj8p",
+                  "text": "go for 32 gigs of ram, it can be had for like 20 more than what you\u2019re getting and it\u2019s 100% worth it. i have 32 and honestly would\u2019ve gotten more",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "The user agrees that the A-Tier status makes the product a good choice.",
-                  "sentiment": "positive",
-                  "sentimentReasoning": "The user expresses agreement and wishes the builder 'Godspeed', implying the product is a safe choice.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "kfi214b",
+              "text": "hello thanks a ton for your input.\n\n&amp;#x200B;\n\nI think I might switch my RAM to your suggestion.\n\nThe MOBO seems to be a bit OP for what it does according to articles and posts :-=",
+              "upvotes": 0,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "kfiaeii",
+                  "text": "Ill be honest i have the intel model of the board, and i just grabbed it bc its good for me and looked reasonably priced. Definitely research a few models, but i do recommend gigabyte, msi, or potentially a high end asus rog as those are typically a good investment from what ive heard.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "kfjrkrq",
-                      "text": "I think you still have Corsair RM850X on Amazon at a discounted price. Not too sure about MSI mobo.. last time I heard they had issues with RAM overclocking. I would prefer a Gigabyte, gaming x ax",
+                      "commentId": "kfljhxh",
+                      "text": "true, altough I heard a lot of bad things about ASUS B650 MoBos from various sources",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user recommends a Corsair PSU instead, but does not critique the Be Quiet! unit specifically.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is suggesting an alternative without explicitly criticizing the target product.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "kfll65s",
-                          "text": "Got gigabyte x670 elite AX. Damn it was mystery to boot first few times, even tho it came updated. Maybe it didn't like my RAM at first. Otherwise I think I can't complain about it. 7800x3d sits in it. Had to turn off auto boost in bios, coz it had weird temp spikes and my fans were going a bit crazy. \nHad rm850x in my old case, got rm1000x for a new one and I think I am gonna swap 850 instead of 1000, because the new rm1000x is louder than 850 and is doing some funky sound every time it stops/starts fan.",
+                          "commentId": "kflmop9",
+                          "text": "Yea u gotta get the high end strix or whatever models, very expensive but look to be a good option in that price range. at least from what ive seen. Im p sure theyre a but op for the build tho.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "The user discusses their experience with a Corsair PSU and a Gigabyte motherboard, not the Be Quiet! PSU.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user is discussing other products.",
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
                           "replies": []
                         }
                       ]
@@ -107,328 +142,153 @@
           ]
         },
         {
-          "commentId": "kfiz944",
-          "text": "How do you spend 3000 euro on a PC and not get the 4090 is beyond me.",
-          "upvotes": 1,
+          "commentId": "kfhhgqb",
+          "text": "For that price couldn\u2019t you get a 4090?",
+          "upvotes": 2,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is criticizing the GPU choice, not the PSU.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is expressing an opinion on the GPU.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "kfjat0d",
-              "text": "They recently went up on price tbf.",
-              "upvotes": 2,
+              "commentId": "kfhjfdy",
+              "text": "No, 4090 is much higher priced.",
+              "upvotes": 6,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing GPU pricing, not the PSU.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is discussing GPU pricing.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             },
             {
-              "commentId": "kfljs7f",
-              "text": "cause the 4090 is 2.2-2.4k alone",
-              "upvotes": 1,
+              "commentId": "kfhoj7k",
+              "text": "No, sadly not. a good 4090 would increase the price by about 1.2k",
+              "upvotes": 6,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing GPU pricing, not the PSU.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is discussing GPU pricing.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "kfhpjk2",
+              "text": "4090s are like $2,200-2,700 usd alone, nearly double the price",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             }
           ]
         },
         {
-          "commentId": "kvrcgsg",
-          "text": "After checking comments didn't saw anyone bringing this up. With a setup like this you are not future proofing your build. If next gen gpu is released and they go with pcie 5 you wont be able to upgrade. Is that something you have considered? Asrock Riptide Wifi has Pcie5 and m2 pcie5 with 2 or 3 m2 pcie4 slots. Check the price on this mobo, you might consider putting extra i don't know 40 euro to future proof your build.",
-          "upvotes": 1,
+          "commentId": "kfhtb13",
+          "text": "Everything looks great even though i am a newb i just had a question. I've been thinking about replacing my PC as well and specifically about storage. I have an HDD and a SSD, i used to only have the HDD then i bought an SSD and i somehow put my Windows on the SSD (forgot how). When i buy my new system I'd like to buy a fancy new super fast storage as well and i wanted to ask you: what are you gonna do for your Windows? Is it possible to just install Windows again on the new storage or do you want to install your old storage (like i would want to), and if, how do you bring over the OS? Appreciate if you could help me out",
+          "upvotes": 2,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is discussing motherboard future-proofing and PCIe 5.0, not the PSU.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is discussing motherboard features.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "kfhu930",
+              "text": "I am propably going to install Win 11 on my new M.2 SSD.\n\nWhy? Cause M.2 is extremly fast, thus making it good for the OS to operate.\n\nWhy Win11? I have to switch at some point anyway. Might as well do it now when I have to setup everything new anyway",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "kfhwcu2",
+                  "text": "hmm okay okay thx, would anything you had on your old system (user profile etc but i dont know much about that) get lost? Also, how or where do you connect all your storage devices?",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "kfhtev6",
+          "text": "If money is not a problem I would go for a 1000w PSU, just because why not?",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": []
         },
         {
-          "commentId": "kfhady2",
-          "text": "Personally I\u2019d rather run a 1000w psu, but you should be okay with 850. Do you really need 64gb? The imc in the 7 series isn\u2019t very good, so there\u2019s a good chance you wind be able to run that kit at the expo 6000 speed. Really think hard about if you rather run a 32gb kit at 6000-6400 or a 64gb kit at 5000 ish",
-          "upvotes": 0,
+          "commentId": "kfhuc8l",
+          "text": "Nice build! I have been thinking of a similar build recently (same CPU, GPU, etc). \nI\u2019ve read some about the PSU and saw some say that it may run quieter, more stable and efficient if the wattage is a little higher than what you need.\n\nIf the electricity is expensive where you live, you may want to look into this a bit more due to efficiency reasons.",
+          "upvotes": 2,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user suggests a 1000W PSU but does not provide a specific opinion on the Be Quiet! Pure Power 12 M.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is providing general wattage advice.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "kfhyila",
+          "text": "Just built an almost identical build (basically just different cases) two weeks ago, also replacing a 5+ year old PC. The moment you boot up it\u2019s all going to feel worth it. Definitely do 2x32GB RAM over 4x16, and be ready to update bios JUST in case (have a thumb drive available with newest drivers). I\u2019d also say just get the 1000W PSU as someone else said. \n\nSeriously I was agonizing over price for ever but I have not regretted a single penny since putting it together.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "kfhbmtq",
-              "text": "would 4x16 at 6000 work? Or does the total number of ram matter for that fact?",
+              "commentId": "kfi2twz",
+              "text": "that is very good to hear, thank you",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is asking about RAM configuration, not the PSU.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is asking a technical question about RAM.",
-              "replies": [
-                {
-                  "commentId": "kfhhybv",
-                  "text": "2\u00d732 is preferable",
-                  "upvotes": 11,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is providing advice on RAM, not the PSU.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is providing advice on RAM.",
-                  "replies": []
-                },
-                {
-                  "commentId": "kfhi40z",
-                  "text": "It likely won\u2019t work, there\u2019s a chance, just not a good one. 4 sticks of single rank (16gb each) or 2 sticks of dual rank (32gb each) is pretty tough for the integrated memory controller (imc) in the cpu to run, and the imc in ryzen 7xxx isn\u2019t very good",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is providing advice on RAM, not the PSU.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user provide advice on RAM.",
-                  "replies": []
-                },
-                {
-                  "commentId": "kfhpze1",
-                  "text": "Get 2x24GiB 6000-6400 c30/32",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is providing advice on RAM, not the PSU.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is providing advice on RAM.",
-                  "replies": []
-                },
-                {
-                  "commentId": "kfhvxnn",
-                  "text": "2x 32 is preferable for stability, 4x 16 will work but probably not with expo on",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is providing advice on RAM, not the PSU.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "es the user is providing advice on RAM.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "kfho2on",
-              "text": "I've had 0 issues from my kit of 64gb 6000 Mhz from G.Skill.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing their experience with G.Skill RAM, not the PSU.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is discussing RAM.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             }
           ]
         },
         {
-          "commentId": "kfhgauf",
-          "text": "Good build!",
-          "upvotes": 1,
+          "commentId": "kfimtjl",
+          "text": "Build looks great, but you're going to have a bad time if you're installing current gen games on a platter drive.",
+          "upvotes": 2,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is giving a general compliment to the build, not the PSU specifically.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is giving a general compliment.",
-          "replies": [
-            {
-              "commentId": "kfhoesj",
-              "text": "Thank you, a big part of it is based around discussions on this very sub",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is responding to a compliment, not discussing the PSU.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is responding to a compliment.",
-              "replies": []
-            }
-          ]
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         },
         {
-          "commentId": "kfhq1vz",
-          "text": "Looks awesome, but do you really need all that PC?",
-          "upvotes": 0,
+          "commentId": "kfj6015",
+          "text": "Please tell me how that ps120se does. I just put it in my 3900x after 3 years. Things look good but I'm worried about how x3ds just try to keep getting to max Temps.",
+          "upvotes": 2,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is questioning the necessity of the high-end build, not the PSU specifically.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is questioning the build's necessity.",
-          "replies": [
-            {
-              "commentId": "kfhqhd6",
-              "text": "No, I propably dont to be honest.\n\nBut I wanted to treat myself with something very nice for once.",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is responding to a question about the build's necessity, not the PSU.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is explaining their personal preference.",
-              "replies": []
-            },
-            {
-              "commentId": "kfibnh0",
-              "text": "\"looks awesome, but\"  \n\n\nthose comments grind my gears lmao  \n\n\nbUt dO yOu ReAlLy neED aLl tHaT pC?  \n\n\nBruh, not everyone on this planet is a penny pincher. They clearly wanna get something nice for themselves.",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is arguing about the necessity of high-end PCs, not the PSU.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is arguing about the build's necessity.",
-              "replies": [
-                {
-                  "commentId": "kidfebs",
-                  "text": "yes, why gAmErS need a pc like this for shitty \"AAA\" games they'll forget in a week or jack off to playing some CoMpEteTiVe eSpOrT crap? Watch moovies, browse crapdit? please.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is criticizing the need for high-end PCs in general, not the PSU.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is criticizing the build's purpose.",
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "kfhsp99",
-          "text": "i would highly highly highly recommend the taichi b650e lite. it has been so far an extraordinary motherboard and i cant say good enough things about it. i was gonna get the aorus b650m elite ax but i reas countless nightmares about it so i returned it before i did my build and i am so happy with the taichi",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is recommending a motherboard, not the PSU.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is recommending a motherboard.",
-          "replies": [
-            {
-              "commentId": "kfi3pz7",
-              "text": "a little heafty price tag :-)",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing the price of a motherboard, not the PSU.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is discussing motherboard pricing.",
-              "replies": [
-                {
-                  "commentId": "kfi4wri",
-                  "text": "its 240$",
-                  "upvotes": 0,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Lduplicate ID in input, but discussing motherboard pricing.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is discussing motherboard pricing.",
-                  "replies": [
-                    {
-                      "commentId": "kficolb",
-                      "text": "Around 380\u20ac+ here",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user is discussing the price of a motherboard, not the PSU.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is discussing motherboard pricing.",
-                      "replies": []
-                    },
-                    {
-                      "commentId": "kflk0pg",
-                      "text": "&gt;taichi b650e lite\n\n350\u20ac in austria",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The user is discussing the price of a motherboard, not the PSU.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is discussing motherboard pricing.",
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "kfhupez",
-          "text": "I recently did a very very similar build to you if you need any further inspiration for parts. \n\nhttps://pcpartpicker.com/list/xKGvsh",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is sharing a build link, not providing a specific opinion on the PSU.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is sharing a build link.",
-          "replies": [
-            {
-              "commentId": "kfi3ma6",
-              "text": "nice build. First build I see also utilising the 4 TB M.2\n\nI was thinking about getting the Fractual North as well for a while but decided against it due to the vibe I got from the game nexus review. Dunno, it was all positive but it didnt really click for me but I defenetly see why one would pick it",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing a case and an SSD, not the PSU.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is discussing a case and an SSD.",
-              "replies": [
-                {
-                  "commentId": "kfkzr0u",
-                  "text": "Initially I was going to do a white build with the 216 but getting all the parts was proving difficult/expensive so pivoted to a non RGB black build which the north mesh/tg has proven great for.\n\nAll in all a really solid case and amazingly easy to build in so really just go with what you like the look of better. For a point against white cases I've heard some tend to yellow over time where there is plastic so black cases definitely win for longevity. \n\nAs for the Lexar 4TB M.2 there's been some amazing deals for it in Australia hence why I picked it, and it's a really solid drive.",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is discussing a case and an SSD, not the PSU.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is discussing a case and an SSD.",
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "kfhyc2s",
-          "text": "I have a B660 Tomahawk and it's amazing. Basically just the Intel version. I love it! But I'm thinking of getting the Z690 Force WiFi from MSI because I'm going to build my son a PC and use the b660 and the i5-12400 inside it.\n\nId get the Lian Li Lancool 3. Much more room for the first time builder. You're gonna want it for that beefy GPU. And it looks great too",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is discussing a motherboard and a case, not the PSU.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is discussing a motherboard and a case.",
-          "replies": [
-            {
-              "commentId": "kfi30we",
-              "text": "Hey, I thought about the Lian 3 as well, but it is 1) more expensive and 2) its thermal ratings is worse than 216 or the 2 Mesh.\n\nIt is my 3rd PC I am building, yet the last one is 5 years ago, I hope I will manage with the space",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The user is discussing a case, not the PSU.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is discussing a case.",
-              "replies": [
-                {
-                  "commentId": "kfi3foj",
-                  "text": "Oh okay! I have it, I get 32\u00b0C temps under load, typically 19-23\u00b0C idle. I think the reason I didn't go with the 216 (I think it was the 216) was Gamers Nexus showed there was some odd kinda bar you had to scoot over to fit the motherboard or GPU? Idk it was something like that and for a first time builder I was like nope! Even not a first time builder I don't wanna mess with stuff like that. I think the Lancool 3 price reflects the 4 140mm fans you get with it, 3 being RGB.\n\nDefinitely going with Lian Li Dynamic Evo (one of the models not sure which!) next PC build. If it's still around then when I build my next one in 5 years. Maybe I'll rebuild it in one in a year or 2\ud83d\ude01",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is discussing a case, not the PSU.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is discussing a case.",
-                  "replies": []
-                }
-              ]
-            }
-          ]
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

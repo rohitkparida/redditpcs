@@ -1,7 +1,7 @@
 {
-  "productName": "intel-core-ultra-9-285k",
+  "productName": "Intel Core Ultra 9 285K",
   "batchIndex": 6,
-  "totalBatches": 84,
+  "totalBatches": 135,
   "comments": [
     {
       "commentId": "1gb4spc",
@@ -14,95 +14,84 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "ltiw8gs",
-          "text": "Well guess I can go ahead and cancel my 285k and mobo preorder, looking at the 9800 or 7800 now. What a bummer, was very stoked for these chips for gaming",
-          "upvotes": 50,
+          "commentId": "ltjolwt",
+          "text": "Hey intel, can you pls do a 12P core monolithic CPU? Drop the NPU and iGPU and bump up the L3 by a meg or two per slice. And with AVX512 turned back on?\n\nkthxbai",
+          "upvotes": 69,
           "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User is canceling a preorder of the 285K based on performance reviews.",
-          "sentiment": "negative",
-          "sentimentReasoning": "User expresses disappointment and decides not to buy the product.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "ltiyhs0",
-              "text": "like 14 or 15 days until the 9000 series 3d chips come",
-              "upvotes": 71,
+              "commentId": "ltkbh8o",
+              "text": "That\u2019s exactly what will beat AMD in things that people care about so they\u2019re never gonna do that lmao they\u2019re gonna try and me 2 AMD with chiplets (tiles)",
+              "upvotes": 25,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Discussion about the release date of AMD chips.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "Factual statement about AMD product timeline.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "ltiz35t",
-                  "text": "If the leaks are true, I think I'm okay with nabbing a 7800 and rolling with that. Don't think the price difference will make up for the 8% improvement",
-                  "upvotes": 16,
+                  "commentId": "ltkf8eg",
+                  "text": "Well, client desktop users (primarily gamers) would possibly want it. But such an architecture wouldn\u2019t be a good fit for laptops nor servers. And let\u2019s face it, enthusiast desktops are a small share of the overall x86 market revenue. Ryzen 9000 is Zen5 scaled down from servers, and Arrow Lake S is just Arrow Lake H scaled up from laptops.\n\nOTOH, doesn\u2019t seem like it would be too much effort. They\u2019ve got all the basic blocks already, just putting them together in a different configuration for a market with different needs.\n\nAnd at this rate, what\u2019s one more TSMC die ;)",
+                  "upvotes": 9,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Discussion about AMD 7800X3D and 9000 series, not the Intel 285K.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "User is weighing options between AMD products.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "ltizklx",
-                      "text": "7800X3D prices are over MSRP, and like $100 more than mere months ago.",
-                      "upvotes": 54,
+                      "commentId": "ltkfmdo",
+                      "text": "You know that server Xeons are literally all P-cores right? The only place tiles might make sense is in mobile or combining many P core tiles for the XCC Xeons.",
+                      "upvotes": 9,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "Discussion about AMD 7800X3D pricing.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "Factual statement about market pricing.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "ltizt15",
-                          "text": "Oh snap, good to know. Thanks for the heads up on that. I haven't looked at AMD stuff at all.",
-                          "upvotes": 9,
+                          "commentId": "ltkh9rg",
+                          "text": "Currently AFAIK all all-P-core and all all-E-core intel server CPUs utilize a mesh bus, with a negative impact on latency compared to the ring bus in client CPUs. \n\nOf course the ring bus stops scaling well after (presumably) 12 stops.",
+                          "upvotes": 11,
                           "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "General response to AMD pricing information.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "Neutral acknowledgment of information.",
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
                           "replies": [
                             {
-                              "commentId": "ltj5jju",
-                              "text": "yep, stock basically dried up as they get ready for launch.",
-                              "upvotes": 14,
+                              "commentId": "ltkhlo4",
+                              "text": "Ring bus has historically only been used up to 10 cores per ring. Even a 10P core only desktop CPU with extra L3 cache would\u2019ve been fantastic.",
+                              "upvotes": 3,
                               "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "Discussion about AMD stock levels.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "Factual statement about stock availability.",
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
                               "replies": [
                                 {
-                                  "commentId": "ltj63uz",
-                                  "text": "Guess ill just cop an AM5 motherboard and wait it out",
-                                  "upvotes": 7,
+                                  "commentId": "ltkj3fp",
+                                  "text": "Raptor Lake and Arrow Lake have 12 ring stops for cores",
+                                  "upvotes": 4,
                                   "classifyThis": true,
-                                  "relevance": "exclude",
-                                  "relevanceReasoning": "User is deciding to buy an AMD motherboard.",
-                                  "sentiment": "neutral",
-                                  "sentimentReasoning": "Neutral statement of intent to purchase AMD hardware.",
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
                                   "replies": [
                                     {
-                                      "commentId": "ltj7yx0",
-                                      "text": "If you have a Microcenter nearby take a look at their bundles. You can often get great deals on a CPU+Mobo, and usually the math works out to getting the RAM for free.",
-                                      "upvotes": 11,
+                                      "commentId": "ltkj79w",
+                                      "text": "Wait youre right. I was thinking of P core only designs that they did though.",
+                                      "upvotes": 4,
                                       "classifyThis": true,
-                                      "relevance": "exclude",
-                                      "relevanceReasoning": "General advice on where to buy CPU/Mobo bundles.",
-                                      "sentiment": "neutral",
-                                      "sentimentReasoning": "Helpful advice on purchasing bundles.",
-                                      "replies": []
-                                    },
-                                    {
-                                      "commentId": "ltn7r69",
-                                      "text": "Maybe just wait the 2 weeks to the official launch and independent benchmarks, see where things stand? Who knows, maybe the 9800X3D will be better than the rumors, we could sure use some positive CPU news right now.",
-                                      "upvotes": 1,
-                                      "classifyThis": true,
-                                      "relevance": "exclude",
-                                      "relevanceReasoning": "Discussion about waiting for AMD 9800X3D benchmarks.",
-                                      "sentiment": "neutral",
-                                      "sentimentReasoning": "User is hoping for positive news from AMD.",
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
                                       "replies": []
                                     }
                                   ]
@@ -110,61 +99,86 @@
                               ]
                             }
                           ]
-                        },
-                        {
-                          "commentId": "ltjayyd",
-                          "text": "Holy. In my region 7800X3D and 7900X3D are the same price now",
-                          "upvotes": 5,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "Discussion about AMD 7800X3D and 7900X3D pricing.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "Factual statement about regional pricing.",
-                          "replies": []
-                        },
-                        {
-                          "commentId": "ltlnobt",
-                          "text": "7900X3D is a bargain, and pretty much identical in gaming if you're not playing at 1080p.",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "Opinion on AMD 7900X3D value.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "Positive opinion of an AMD product.",
-                          "replies": []
                         }
                       ]
                     },
                     {
-                      "commentId": "ltj6bbz",
-                      "text": "The 7800X3D price spiked recently, I would just wait for the 9800X3D and see if the MSRP is good or causes the 7800X3D to drop a bit.",
-                      "upvotes": 12,
+                      "commentId": "ltkqe2t",
+                      "text": "> But such an architecture wouldn\u2019t be a good fit for laptops nor servers\n\nActually, the 12+0 Bartlett Lake was explicitly for servers. They don't like hybrid.",
+                      "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "Discussion about AMD 7800X3D and 9800X3D pricing and timing.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "Neutral advice on timing of purchase.",
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
                       "replies": [
                         {
-                          "commentId": "ltj7169",
-                          "text": "Yeah will do! Just got myself an AM5 board and now ill wait.",
+                          "commentId": "ltkvoh2",
+                          "text": "Of course, but I\u2019m really struggling to imagine the sort of server workloads that need the low latency of a ring bus and are also happy with a paltry 12 cores/socket. Game servers? High frequency trading? Test and measurement? \n\nJust doesn\u2019t seem like a big addressable market. Edge compute with ECC RAM, maybe.",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ltkx5u9",
+                              "text": "There are probably some use cases that benefit from the ST perf like games, but predominantly the idea is that Bartlett Lake could be *cheap*. You don't need an 8ch Xeon for a simple file or web server.",
+                              "upvotes": 4,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "ltnfz0s",
+                  "text": "> That\u2019s exactly what will beat AMD in things that people care about so they\u2019re never gonna do that lmao they\u2019re gonna try and me 2 AMD with chiplets (tiles)\n\nSomehow, I don't think 12P cores would \"beat\" AMD either.\n\nBut it would still be better than what Intel is providing now... which is quite bizarre, actually...",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ltng8tp",
+                      "text": "A monolithic 12P CPU with super low latency memory access and 36mb of L3 would be like the 10900K was back then.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ltngy03",
+                          "text": "> A monolithic 12P CPU with super low latency memory access and 36mb of L3 would be like the 10900K was back then.\n\nNot the fairest comparison ~ X3D didn't exist back then. AMD was winning in most productivity benchmarks in that time, but was losing in games because they couldn't match Intel's crazy frequencies or low latency memory.\n\nBut AMD has most certainly caught up in every way with X3D. 96MB of L3 on-die is nothing to sneeze at.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "User is waiting for AMD chips.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "Neutral statement of intent.",
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
                           "replies": []
                         },
                         {
-                          "commentId": "ltpk537",
-                          "text": "Yup. I got mine for $350, and on amazon right now the lowest it goes is a little under $500. Its an absolute BEAST of a chip, but not worth $500 especially since 9800x3d should knock it down in price (surely)",
-                          "upvotes": 1,
+                          "commentId": "lto9b6y",
+                          "text": ">would be like the 10900K was back then.\n\n...crashing in Minecraft?",
+                          "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "Opinion on AMD 7800X3D value and performance.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "Positive opinion of AMD chip, but negative on current price.",
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
                           "replies": []
                         }
                       ]
@@ -174,261 +188,76 @@
               ]
             },
             {
-              "commentId": "ltk83ce",
-              "text": "Why on earth did you preorder? And what signal exactly did you get from intel in the last 9 months to get you \"stoked\"??",
-              "upvotes": 38,
+              "commentId": "ltkhq2s",
+              "text": ">\u00a0Drop the NPU\n\nWith how Microsoft is pushing Co-Pilot, this will never happen",
+              "upvotes": 10,
               "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "Critique of preordering the Intel 285K.",
-              "sentiment": "negative",
-              "sentimentReasoning": "User expresses disbelief and negative view of Intel's recent history.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "ltkbe0q",
-                  "text": "Seriously. \n\nThere was no universe where the 285 was going to match the 7800x3D in gaming performance, even with 2x the power draw. \n\nI guess hopium got him \"stoked\".",
-                  "upvotes": 24,
+                  "commentId": "ltm3alx",
+                  "text": "Intel is taking the stupid approach here though. They're wasting die space on an NPU that is underpowered and not compliant with Copilot, and anyone running a high end chip is going to have a GPU anyway that is much better for AI workloads. So it's a waste of space that has no value for anyone.\n\nAMD's approach is more intelligent. Their desktop CPUs don't have NPU,s but their mobile APU's do, since they're more likely to be run with no GPU. And their NPU's are powerful enough for Copilot.",
+                  "upvotes": 16,
                   "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "Comparison of 285K gaming performance and power draw against 7800X3D.",
-                  "sentiment": "negative",
-                  "sentimentReasoning": "User claims the 285K will not match AMD's performance despite higher power draw.",
-                  "replies": []
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ltrvadk",
+                      "text": "> NPU,s \n\nSince you're doing this intentionally: NPU does not own \"but\", APU does not own \"do\", and NPU does not own \"are\". That makes no sense since you're not talking about *an* APU or NPU, nor can you possess verbs (or conjunctions). And of course NPUs and APUs are not verbs or conjunctions, so it isn't a a contraction.\n\nJust because it's an acronym doesn't really change anything.",
+                      "upvotes": 0,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
                 },
                 {
-                  "commentId": "ltkp0ci",
-                  "text": "> Why on earth did you preorder?\n\nWell, if you can just cancel free of charge, a pre-order isn't the worst idea if you expect supply problems.",
-                  "upvotes": 5,
+                  "commentId": "ltkjpeo",
+                  "text": "That clearly hasn\u2019t stopped intel from releasing Arrow Lake, which does not meet the minimum TOPS required for copilot branding",
+                  "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "Discussion about preordering the 285K.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "Neutral discussion on the logic of preordering.",
-                  "replies": [
-                    {
-                      "commentId": "ltnawkb",
-                      "text": "Sure, but I am more interested in the idea of why they ever wanted the product in the first place that they were even stoked about it. \n\nIntel lies about it's products, blames consumers and board partners about their issues and now announces a product that - by their own admission! - regresses in performance. And this person was so \"stoked\" to have one, they ordered one sight unseen. Just...why??",
-                      "upvotes": 3,
-                      "classifyThis": true,
-                      "relevance": "include",
-                      "relevanceReasoning": "Strong critique of Intel's product strategy and the 285K's performance regression.",
-                      "sentiment": "negative",
-                      "sentimentReasoning": "User expresses strong disappointment and distrust of Intel.",
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "ltkubpu",
-              "text": "Why would you preorder a computer part without even knowing how it performs?",
-              "upvotes": 9,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "Questioning the decision to preorder the 285K without benchmarks.",
-              "sentiment": "negative",
-              "sentimentReasoning": "User is critical of the decision to preorder.",
-              "replies": [
-                {
-                  "commentId": "ltnnfuz",
-                  "text": "Same reason people preorder video-games without knowing what they'll actually be like.\n\nThey live on hopes and dreams rather than factual information.",
-                  "upvotes": 5,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "General discussion about preordering habits.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "Neutral comparison to video games.",
-                  "replies": [
-                    {
-                      "commentId": "ltqgo2e",
-                      "text": "At least video games offer a new(ish) experience and sometimes funny bugs before the game is updated/fixed to what it should've been at launch.       \n     \nBut a CPU? Why the fuck would you pre-order a CPU? Stock is basically never an issue.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": "include",
-                      "relevanceReasoning": "Critique of preordering a CPU like the 285K.",
-                      "sentiment": "negative",
-                      "sentimentReasoning": "User is critical of the preordering process for CPUs.",
-                      "replies": []
-                    },
-                    {
-                      "commentId": "luhmdlp",
-                      "text": "> Same reason people preorder video-games without knowing what they'll actually be like.\n\nStupidity?",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "Low-effort banter about preordering.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "Joke about stupidity.",
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "commentId": "ltjc71c",
-              "text": "Make it a preorder because it will probably sell out quickly. Now everyone eyes with 7800/9800",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "Discussion about the 285K's availability and market demand.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "Neutral observation about preorders and demand.",
-              "replies": []
-            },
-            {
-              "commentId": "ltjswr4",
-              "text": "This is why we don\u2019t preorder kids.",
-              "upvotes": 5,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "Critique of preordering the 285K.",
-              "sentiment": "negative",
-              "sentimentReasoning": "User is critical of the preordering decision.",
-              "replies": [
-                {
-                  "commentId": "ltk0sls",
-                  "text": "This is why we use commas, kids.",
-                  "upvotes": 29,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Off-topic discussion about grammar/commas.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "Neutral comment on grammar.",
-                  "replies": [
-                    {
-                      "commentId": "ltkixmg",
-                      "text": "Sheeeeit",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "Low-effort banter.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "Neutral reaction.",
-                      "replies": []
-                    },
-                    {
-                      "commentId": "luhmf4w",
-                      "text": "He was talking to kids. Kids dont use commas.",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "Off-topic discussion about grammar/commas.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "Neutral comment on grammar.",
-                      "replies": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "ltk43py",
-          "text": "I wonder if the gaming PC build advise subs/threads are still going to be a bunch of, \"but I really want an Intel CPU. I just feel like Intel is better. I've always bought Intel\" Then every comment in a state of confusion of, \"but why. Benchmarks. Power draw. CPUs killing themselves\"",
-          "upvotes": 21,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "Discussion about consumer preference for Intel CPUs despite performance/power issues.",
-          "sentiment": "negative",
-          "sentimentReasoning": "User is critical of blind loyalty to Intel.",
-          "replies": []
-        },
-        {
-          "commentId": "ltjg2mt",
-          "text": "What a disaster for Intel. Do you think this chip needs some more software optimization?",
-          "upvotes": 17,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "User describes the 285K launch as a 'disaster' and asks about optimization.",
-          "sentiment": "negative",
-          "sentimentReasoning": "User expresses strong negative sentiment toward the product launch.",
-          "replies": [
-            {
-              "commentId": "ltjkhb7",
-              "text": "Even being very generous regarding what Intel could fix, it is still going to lose to AMD on cost, efficiency, and (usually) performance.  It is a dead platform.  Worse than 14th gen, and we know how well that \"waste of sand\" went.",
-              "upvotes": 34,
-              "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "Comparison of 285K against AMD on cost, efficiency, and performance.",
-              "sentiment": "negative",
-              "sentimentReasoning": "User claims the 285K is a 'dead platform' and worse than previous generations.",
-              "replies": [
-                {
-                  "commentId": "ltjumq7",
-                  "text": "It's intover",
-                  "upvotes": 13,
-                  "classifyThis": true,
-                  "relevance": "include",
-                  "relevanceReasoning": "Reaction to the 285K's failure.",
-                  "sentiment": "negative",
-                  "sentimentReasoning": "User expresses a sense of finality regarding Intel's failure.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": []
                 }
               ]
             },
             {
-              "commentId": "ltlccpp",
-              "text": "I love that AMD has heterogeneous cores too. Don\u2019t need to worry about BIG.little",
-              "upvotes": 1,
+              "commentId": "ltlo43x",
+              "text": "Too sensible, won't happen.",
+              "upvotes": 6,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Discussion about AMD's core architecture.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "Positive opinion of AMD's architecture.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             },
             {
-              "commentId": "ltph8jp",
-              "text": "This chip must never appear on the market in the first place.",
-              "upvotes": 1,
+              "commentId": "ltn2fqw",
+              "text": "#I DONT WANT E CORES. I DONT WANT E CORES. I DONT WANT E CORES.",
+              "upvotes": 0,
               "classifyThis": true,
-              "relevance": "include",
-              "relevanceReasoning": "Opinion that the 285K should not have been released.",
-              "sentiment": "negative",
-              "sentimentReasoning": "User expresses strong negative opinion of the product.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "ltj5lta",
-          "text": "weird how it is a gaming regression and then tops starfield even against 7800x3d.",
-          "upvotes": 22,
-          "classifyThis": true,
-          "relevance": "include",
-          "relevanceReasoning": "Observation about the 285K's performance in Starfield compared to 7800X3D.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "User is noting a specific performance anomaly.",
-          "replies": [
-            {
-              "commentId": "ltn86iw",
-              "text": "Starfield generally is very GPU heavy. Especially in any higher resolutions, it's extremely GPU-bound.",
-              "upvotes": 4,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "Discussion about Starfield's GPU bound nature.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "Factual statement about game performance.",
-              "replies": [
-                {
-                  "commentId": "ltnj9lh",
-                  "text": "I would have expected it to be cpu heavy considering the game state saving every object you throw at it, bit I guess they cull the npcs, unlike dragons dogma...",
-                  "upvotes": 2,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "Discussion about Starfield's engine and NPC culling.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "Technical discussion about game engine.",
-                  "replies": []
-                }
-              ]
             }
           ]
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

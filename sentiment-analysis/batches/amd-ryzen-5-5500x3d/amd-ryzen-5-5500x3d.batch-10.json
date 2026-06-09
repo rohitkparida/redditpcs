@@ -1,0 +1,307 @@
+{
+  "productName": "AMD Ryzen 5 5500X3D",
+  "batchIndex": 10,
+  "totalBatches": 12,
+  "comments": [
+    {
+      "commentId": "18lx32a",
+      "text": "Upgrading Ryzen 5 3600 to 5600X3D/5800X3D: Benchmarks, Memory Scaling in Old and New Games\n\nHey all,\n\nBack again with another random benchmark post. I managed to nab a 5600X3D from Microcenter a couple months ago as a drop-in upgrade for a buddy's old PC (R5 3600). While I had the CPU for less than a week, I was able to put together some quick benchmarks results to see how my 5800X3D compares with the 5600X3D and the venerable 3600.\n\nOne thing led to another however and I found myself conducting a much larger test. So instead of releasing the original post of the 5600X3D vs 5800X3D/3600 comparison, I ended up going down another rabbit hole, adding more games to the suite as well as conducting some memory scaling tests. So yeah, this ultimately became less of the 3600 vs 5600X3D I was intending to do lol\n\n# Testbed\n\nMy system has changed a bit since [I last reviewed the 6700 non-XT](https://www.reddit.com/r/Amd/comments/10v1yov/my_xfx_rx_6700_nonxt_benchmark_review_20_games/) a about year ago.\n\n* X570 Aorus Master (F37c)\n* 2x16GB GSkill TridentZ Neo DDR4 3600 (Timings modified, see below)\n* Lian Li Galahad SL 360 AIO\n* Samsung 980 Pro 2TB, Kingston NV2 2TB, Crucial 750GB game drives\n* Corsair RM850x PSU\n* Win 10 Pro (19045)\n* Dell Alienware AW34323DWF\n* GeForce RTX 4090 FE (Driver 537.58)\n\n# The Contenders\n\n* **Ryzen 5 3600 -** tested in its stock configuration\n* **Ryzen 5 5600X3D** (Curve Optimized to -30 all cores)\n* **Ryzen 5 5800X3D** (Curve Optimized to -30 all cores)\n\nYeah, I made the mistake of not testing stock performance :/. Probably a miniscule difference overall that skews the numbers towards X3D but I thought I'd point it out.\n\nFor RAM I tested two configurations:\n\n**Loose Timings and Speed** **(DDR4-3200 CL16-18-18-38) -** I downclocked my 3600 kit to 3200 and loosened the timings to simulate what \"budget\" DDR4 would perform like. This is probably more representative of what a drop-in upgrade would look like for most users.\n\n**Tight Timings (DDR4-3600 CL14-14-14-32, 170ns tRFC) -** Not ridiculous timings for B-die but it does give a noticeable uplift over stock XMP and should show the R5 3600 in its best light relative to the X3D parts.\n\nRAM tests were only conducted on the 5800X3D and 3600 as I no longer had access to the 5600X3D when I started these tests.\n\n# The Test\n\nIn the spirit of my original 5800X vs X3D comparison, I try to continue pushing the use of older games into my testing suites. With the RTX 4090, I'm also able to test CPU bottlenecks for RT as well so there's a few of those titles thrown in here as well.\n\nRemember that this is a CPU-FOCUSED test, so some of the settings will not make sense for the hardware in actual use cases (stuff like 1080p DLSS, etc.).\n\nAll games with manual runs are captured using the latest version of NVIDIA FrameView.SimCity 4 is the only game that uses a different metric. Instead of AVG FPS/1%/0.1%, SimCity 4 performance is based on the number of simulated days elapsed.\n\n\\*indicates game that was tested without the 5600X3D.\n\n|App|Settings|Test|\n|:-|:-|:-|\n|**DX7 - SimCity 4 (2003)**|1920x1080 - High, Shadows High|Custom large city with 7GB of mods, 3 minute fixed camera simulation with max (cheetah) speed, result is days elapsed (higher is better)|\n|**DX10 - Crysis Warhead (2008)**|2560x1440 - Enthusiast 0xMSAA|Manual run - Call Me Ishmael mission start|\n|\\***DX11 - Company of Heroes 2 (2013)**|2560x1440 - Max AA High|5 minutes of playback at 2x speed of a custom 4v4 AI match on a large map|\n|**DX11 - Deus Ex: Mankind Divided (2016)**|2560x1440 - Ultra No MSAA|Manual run of Prague - \u010cist\u00e1 \u010ctvr\u0165 area|\n|**DX11 - Dishonored 2 (2016)**|2560x1440 - Ultra TXAA Forced VSync off (unlimited FPS)|Manual run of Karnaca mission start|\n|\\***DX11 - Battlefield 1 (2016)**|2560x1440 - Ultra TAA|Manual run of Mud and Blood starting at first checkpoint|\n|**DX9 - A Hat in Time (2017)**|2560x1440 - Very High SMAA|Custom Map: New Hat City, Manual loop run around the center|\n|**DX11 - Kingdom Come: Deliverance (2018)**|1920x1080 - Ultra High, HD Textures On|Manual run through center of starting town Skalitz|\n|**DX11 - Borderlands 3 (2019)**|1920x1080 - Ultra|Manual run through the town of Vestige in the Bounty of Blood DLC|\n|**DX11 - Halo MCC: Halo CE Anniversary (2020)**|3440x1440 - Enhanced|Manual run of the Silent Cartographer mission|\n|**DX12 \\[RT\\] - Metro Exodus: Enhanced Edition (2021)**|1920x1080 - Ultra, RT Ultra, DLSS Quality|Manual run of The Volga mission start|\n|**DX12 - Halo Infinite S4 (2021)**|1920x1080 - Ultra|Manual run of Pelican Down mission|\n|**DX12 - Far Cry 6 (2021)**|1920x1080 - Ultra, TAA|Manual run around Clara's Camp|\n|**DX12 \\[RT\\] - The Witcher 3: Next Gen Patch 4.04 (2023)**|1920x1080 - Ultra+, RT Ultra, DLSS Quality|Manual run of Beauclair port area|\n|**DX12 - The Last of Us: Part 1 Patch 1.1.2 (2023)**|1920x1080 - Ultra|Manual run of a section Prologue mission|\n|**DX12 - Starfield Pre-DLSS Patch 1.7.36 (2023)**|1920x1080 - High (62% FSR2 Scaling), No VRS|Manual run around MAST district of New Atlantis|\n|**DX12 \\[RT\\] - Cyberpunk 2077: Phantom Liberty Patch 2.02 (2023)**|1920x1080 - High, High Crowd Density, RT Ultra, DLSS Quality, Ryzen SMT ON|Manual run of Little China night market area|\n|**DX12 - 3DMark**|Time Spy|Time Spy|\n|**OGL - GZDoom 4.3.1**|3440x1440, Hardware Rendering 16xAF|FrameView capture of demo recording for MAP01 of COMATOSE.WAD + Russian Overkill 3.0|\n\nAll of the accompanying charts are linked below ~~should be attached to this post~~, in-order (except 3DMark).\n\n**Go here for charts:** [**Imgur mirror**](https://imgur.com/a/q4iXa9E)\n\nEDIT: I am dumb and didn't realize text posts and image post are different things. Please use the Imgur link above for the charts. Sorry about that!\n\n# The Result Summary\n\nUsing the Ryzen 5 3600 with DDR4 3200 as a Baseline (Excludes 3DMark):\n\n* **R5 3600 with Tuned D4 3600** is **11.5%** faster\n* **R5 5600X3D with Tuned D4 3600** is **66.5%** faster (worst SimCity 12.4%, best Halo CE:A 99.3%)\n* **R7 5800X3D with D4 3200** is **76.7%** faster (worst Starfield (old patch) 46.8%, best Dishonored 2 117.7%)\n* **R7 5800X3D with Tuned D4 3600** is **85.8%** faster (worst Far Cry 6 57.4%, best Halo CE:A 125.1%)\n\nAs for the 5600X3D vs 5800X3D:\n\n* **R7 5800X3D with D4 3200** is **3.4%** faster (worst KC: Deliverance -8%, best TLoU 13.2%)\n* **R7 5800X3D with Tuned D4 3600** is **8.8%** faster (worst GZDoom -2.1%, best TLoU 19.5%)\n\nEveryone know it at this point: these X3D chip are *fast* and offer a massive boost over the Zen 2 parts, even when they're equipped with low latency DDR4 3600.\n\nSurprisingly, I found the 5800X3D to still scale decently well with RAM. Not as much as the 20%+ the 3600 gains in heavy RT-centric titles but still more than I was expecting.\n\nThe 5600X3D is impressive; it offers over 90% of the 5800X3D in most situations so anyone that got in on that $150 price at Microcenter last month got a killer deal on a drop-in AM4 upgrade. It's a little iffy at $230 though and being exclusive doesn't help either. Hopefully the rumored 5500X3D and 5700X3D are widely available.\n\nHope you enjoyed this little writeup and found this post informative! Next time, I'll be ~~torturing~~ benchmarking the RX 7600 at 3440x1440 Ultrawide and seeing how it fares. Should be fun.\n\nCheers!",
+      "upvotes": 410,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ke34fj5",
+          "text": "Speaking from personal experience, going from a 3600 to a 5600X3D, made a profound improvement in usability and speed. Even simple things like boot times, and starting applications are significantly faster than before, with less time feeling like you were waiting.\n\nNot to mention the significant improvement in FPS (even at 1440p with a 1080ti) in several games.  My kid is extremely happy with the upgrade.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ke1rv3j",
+          "text": "Recently took my 5800x3d rig from DDR4 3200C16 to 3600C14 just cause I got a good deal on it... so im glad to see this.  Appreciate the effort and sharing of info.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke2az88",
+              "text": "Where did you find 3600c14? I cant even find a brand here that has that",
+              "upvotes": 0,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ke2fk8h",
+                  "text": "https://www.microcenter.com/product/641789/teamgroup-t-force-xtreem-argb-32gb-(2-x-16gb)-ddr4-3600-pc4-28800-cl14-dual-channel-desktop-memory-kit-tf10d432g3600hc-black",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ke2jn5k",
+                      "text": "Thanks!",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ke2sdn8",
+                          "text": "sure thing",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "ke2e8oy",
+                  "text": "probly tuned it",
+                  "upvotes": 0,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "ke2fopb",
+                      "text": "not yet but I should.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ke2gjvb",
+                          "text": "doesnt do much tbh",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ke20d17",
+          "text": "Great work and great post. Love my 5800X3D. I have it set up with 4x8 GB 3600mhz CL16-18-18-38  Crucial Ballistix Elite Micron E-Die and it's been great",
+          "upvotes": 6,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke298gz",
+              "text": "I love my Micron E-Die, I run 2x16gb Dual Rank sticks at 3800mhz CL16-20-16-38, still using my 5800x though at 1440p, can't justify the move to the X3D chip at this resolution.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ke4zynq",
+                  "text": "do you have a guide to oc this ram? i believe i have the same stick that are also dual rank  e-dies, bought 2 years ago from amazon.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ke2p3et",
+          "text": "I currently have 5600x but thinking about upgrading it (without changing the socket so I don\u2019t have to change MOBO). Any recommendations? Those results look very nice.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ke2plb1",
+          "text": "I'm curious how the 5700x3D will do once it it is released early next year (supposedly end of January). Assuming it will list around $250, so it's definitely got me interested.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke540ku",
+              "text": "with 10% lower clocks, I think it'll be near identical to a 5600x3d in most games, just noticeably better in MT.\n\nLighter games are going to suffer some at 4.1ghz but it'll have consistent framerates, perhaps the most consistent of them all.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "ke31imj",
+              "text": "If they price it a solid 40-50$ below I'd expect it to comfortably obsolete the 5800X3D. With how close the 5600X3D is already it's probably going to cutting it close to margin of error.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ke31y6s",
+                  "text": "True dat. Not crazy about it's low base clock (3.0, turbo to 4.1), but willing to wait on reviews before I buy.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "ke3czee",
+          "text": "bought a 5800X3D today to upgrade my 3700X. I can see that gains will be noticeable and close to what I expected.  \nDidn't feel like doing a full system upgrade to 7800X3D and will instead do it at some point when next-gen X3D is out.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ke6ixth",
+          "text": "Actually just bought a 5800x3d to shove in place of my 1600 af (which is essentially a 3600 performance wise as far as I remember) so this is cool to see. I don't think I'm gonna get much gaming performance out of the upgrade now since I still have a 3060 ti but I'm thinking of buying maybe either an rtx 3090 or 4070 if I see one for a good deal, so maybe one of those can push it a bit.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "ke6s9vo",
+          "text": "Thanks for doing this test! I'm on a 3600 right now and those numbers look pretty solid. Here's hoping the rumors about a 5700x3d in january are true, that one sounds like a real winner to me. A little cheaper and lower TDP is right up my alley.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "kei4bqu",
+          "text": "Do you expect the 5800X3D to fall below $300 anytime soon? Or will 5700X3D sit in the $250-$270 range and the 5800X3D will remain $300-$320? Wondering whether to wait or pull the trigger now.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "keihs2w",
+              "text": "I think when the 5700X3D comes out it'll drive the 5800X3D down in price. hard to say by how much though.\n\nAt this point it's up to you whether or not the extra month or two between now and the 5700X3D release is going be to worth saving the 50ish bucks for.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "ke2zr0o",
+          "text": "Fancy selling that 5600x3d to someone who can\u2019t get them in the uk?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "ke31v7r",
+              "text": "It's been in my friend's PC for a few months now so can't oblige to that unfortunately :P",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "ke320sk",
+                  "text": "Who means more to you? A random person on Reddit or your \u201cfriend\u201d? I think we all know the answer to this question\u2026",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

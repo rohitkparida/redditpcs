@@ -375,6 +375,23 @@ class TestSplitIntoBatches(unittest.TestCase):
             batch_files = list(out_dir.glob("*.json")) if out_dir.exists() else []
             self.assertEqual(len(batch_files), 0)
 
+    def test_batch_filename_uses_safe_output_directory_slug(self):
+        comments = [make_comment("1", text="hello")]
+        with tempfile.TemporaryDirectory() as tmp:
+            raw_path = self._make_raw_file(tmp, comments)
+            with open(raw_path, "r", encoding="utf-8") as f:
+                raw = json.load(f)
+            raw["productName"] = "Noctua NH-D15 / NH-D15S"
+            with open(raw_path, "w", encoding="utf-8") as f:
+                json.dump(raw, f)
+
+            out_dir = Path(tmp) / "batches" / "noctua-nh-d15-nh-d15s"
+            split_batches_correctly.split_into_batches_correct(raw_path, str(out_dir), max_chars=500)
+
+            batch_files = list(out_dir.glob("*.json"))
+            self.assertEqual(len(batch_files), 1)
+            self.assertTrue(batch_files[0].name.startswith("noctua-nh-d15-nh-d15s.batch-"))
+
     def test_splitter_node_cap(self):
         # Build a pathological tree: nested list of 100 short comments under 15,000 chars total
         def build_chain(depth):

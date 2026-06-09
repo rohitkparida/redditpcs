@@ -1,0 +1,296 @@
+{
+  "productName": "Intel Core Ultra 9 285K",
+  "batchIndex": 94,
+  "totalBatches": 135,
+  "comments": [
+    {
+      "commentId": "1exk7lq",
+      "text": "Intel Core Ultra 9 285K \u201cArrow Lake\u201d CPU Blazes Past Core i9-14900KS & Ryzen 9 9950X In Benchmark Leak",
+      "upvotes": 275,
+      "classifyThis": false,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "lj6mlwq",
+          "text": "If they surpassed 14900K by 11 % even with no HTT, it sounds great. But let's wait about confirmation, other benchmarks/usecases, power draw, voltage and degradation analysis.",
+          "upvotes": 466,
+          "classifyThis": false,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "lj791zx",
+              "text": "Lmao degradation analysis. So nobody should buy the CPU for years?\n\nThe hyperbole is getting out of hand.",
+              "upvotes": -224,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "lj796sw",
+                  "text": "Have you considered time travel?",
+                  "upvotes": 82,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lj7e3rn",
+                  "text": "Yeah, no one should buy the CPU for years. The past 2 years of CPUs intel released are actually broken. The list of stuff they released in the last 2 years that works is small and growing smaller every week. Your comment is ridiculous, and anyone considering buying Intel products until they earn any trust back is the definition of insane.",
+                  "upvotes": 120,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lj7psys",
+                      "text": "The degradation is due to temps due to the insane power draw. If the CPUs continue to have a high watt draw then it'll be worth investigating but they've been rumored to use 100w less power than their 14th gen counterparts.",
+                      "upvotes": -67,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "lj7twuv",
+                          "text": "Just trust me bro, please\u00a0",
+                          "upvotes": 22,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "lj908nq",
+                              "text": "If there's another reason why they're degrading I'm happy to be informed, but this was my understanding of the root cause. Nothing about what I said is saying to blindly trust Intel, just that there are changes in this upcoming architecture and one of those changes could have an impact on what was defined as the cause of the degradation. If Intel CPUs are running at 100w lower TDP and still degrading it will be catastrophic for them.",
+                              "upvotes": -5,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "ljwccgg",
+                                  "text": "It's the voltage spikes going too high. That's why you see instability even in cases where there's not a ton of heat. Heat is a direct result of current and voltage (the product of which is watts), but there are issues even when voltage is high but current is low",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                },
+                                {
+                                  "commentId": "lj9zec7",
+                                  "text": "the temps arent the issue, more like a symptom or secondary issue. The issue is transient voltage spikes up above 1.6v during single core workloads. Its not heat causing degradation. Anything under 100 should not be causing excessive degradation. Youll shorten the life but its not going to cause the failures that have been reported. Think about how many old dusty systems, prebuilts in crappy cases, old game consoles, etc that likely thermal throttle without the users even knowing. In most cases you clean those systems up, add some fans, repaste and youre good to go, the cpu will probably be still kicking for years after. But voltage? THAT causes degradation. At no point should your processor ever be requesting more than 1.5v and even that is getting up to scary levels. Thats why many people are undervolting to try to mitigate these issues, including the temps. But the real problem is that even when setting a negative voltage offset it in the BIOS it was still spiking above 1.6v during single core workloads. Jayz2cents on youtube has a recent vid showing the issue and the momentary spikes which seems to be exactly what the 0x129 microcode update targets. Overall temps and voltages/power usage is mostly the same, but the transient spikes have come down along with some lost performance.",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": [
+                                    {
+                                      "commentId": "lja4qhi",
+                                      "text": "The performance cost alone is absolutely ridiculous. I would never buy the affected chips, ever. 11th and 12th gen allll the way.\u00a0",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "ljfflvs",
+                                          "text": "even with the performance hit my 14700kf probably still beats both of its 11th and 12th gen counterparts",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": [
+                                            {
+                                              "commentId": "ljfjasr",
+                                              "text": "For sure, I was talking more out of principle\u00a0",
+                                              "upvotes": 1,
+                                              "classifyThis": true,
+                                              "relevance": null,
+                                              "relevanceReasoning": null,
+                                              "sentiment": null,
+                                              "sentimentReasoning": null,
+                                              "replies": []
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "commentId": "ljabbmi",
+                                      "text": "the transient voltage issue is something that can literally be measured on the release date. people can make their decision based on that.",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": [
+                                        {
+                                          "commentId": "ljwclli",
+                                          "text": "But don't they need Intel's feedback on safe specs to make that decision? If Intel is saying X is safe, how is someone (average consumer) to determine that it's not?",
+                                          "upvotes": 1,
+                                          "classifyThis": true,
+                                          "relevance": null,
+                                          "relevanceReasoning": null,
+                                          "sentiment": null,
+                                          "sentimentReasoning": null,
+                                          "replies": []
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "commentId": "ljehzt0",
+                                      "text": "Thanks for the info!",
+                                      "upvotes": 1,
+                                      "classifyThis": true,
+                                      "relevance": null,
+                                      "relevanceReasoning": null,
+                                      "sentiment": null,
+                                      "sentimentReasoning": null,
+                                      "replies": []
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "lj7fxtj",
+                  "text": "2 generations of fuck ups. I'll avoid Intel until further notice. Thanks.",
+                  "upvotes": 45,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lj7i6ts",
+                  "text": "I mean, the people who want to test it (and are not afraid of potentially wasting like $600) sure can buy it, there will be many of them, in fact. But there will be a lot more who simply don't follow hardware news and will just buy the newer bigger number better CPU number bigger number, better, number.",
+                  "upvotes": 13,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lj8fb3t",
+                  "text": "Uh, yeah?!? After you buy an expensive defect item you are gonna buy the next version right away?  \nYou must love burnung money and headaches.",
+                  "upvotes": 4,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lj7jsv3",
+                  "text": "Yep, you'd be a clown to buy anything from Intel at this point.",
+                  "upvotes": 10,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "lj7koye",
+                  "text": "Yes, you should not buy Intel for years. If ever again. I'm not, and I've never even looked at another CPU brand to buy before. If anything this should be how most people view it.",
+                  "upvotes": 10,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "lja02jj",
+                      "text": "did you say the same after AMD processors started melting sockets?",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "ljaq6vb",
+                          "text": "When I was a kid and the RRoD was destroying Xbox 360s Microsoft made it right by repairing or replacing affected consoles that's the lense I am viewing this through. So yeah if AMD is buring sockets then yes obviously you should wait a few years to upgrade or depending on their response never buy. Until either or both companies get their shit together. Could be the time to only buy Grey for awhile. Like I really think it should be obvious if both companies are fucking shitty right now don't buy from either and wait.",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "ljaul0k",
+                              "text": "7/10 dodge",
+                              "upvotes": 0,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "commentId": "ljabkzp",
+                      "text": "i people did that amd and nvidia would literally have gone bankrupt years ago. amd many times over, and nvidia 2 times over.",
+                      "upvotes": 0,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

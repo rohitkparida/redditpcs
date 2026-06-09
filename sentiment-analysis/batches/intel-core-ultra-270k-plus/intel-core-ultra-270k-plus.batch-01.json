@@ -1,7 +1,7 @@
 {
-  "productName": "intel-core-ultra-270k-plus",
+  "productName": "Intel Core Ultra 270K Plus",
   "batchIndex": 1,
-  "totalBatches": 20,
+  "totalBatches": 26,
   "comments": [
     {
       "commentId": "1s1h2uy",
@@ -146,6 +146,122 @@
                   "sentiment": null,
                   "sentimentReasoning": null,
                   "replies": []
+                }
+              ]
+            },
+            {
+              "commentId": "oc0reqn",
+              "text": "So Intel is in a similar shoe regarding CPU as AMD is on the GPU market.\n\nThey offer more than competitive, sometimes better price to performance ratio products for the mid-range segment, but they are out of party for high end applications. \n\nJust like how intel can't do anything to match 9800x3D or 9950x3D, AMD can't match 5080-5090 from Nvidia \n\nInteresting. I root for better competition, as it means better prices for us.",
+              "upvotes": 91,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "oc1rokg",
+                  "text": "I would say it's a bit more complicated in GPU land. Here you get comparable productivity and a bit lower gaming performance. In GPU land it's not just \"slower than top end\" - it's substantially different experience at times, with different upscaling quality, MUCH less prominent ML denoiser, generationally different PT performance ect.",
+                  "upvotes": 41,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "oc2mbwf",
+                      "text": "AMD's HW encode asic and ecosystem is also *still* pretty significantly lagging Nvidia.",
+                      "upvotes": 6,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "oc4ix9o",
+                          "text": "I can confirm that with RDNA4, AMD cards are now no longer complete ass at HW encoding.",
+                          "upvotes": 3,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "oc59ljh",
+                              "text": "VCE had acceptable HEVC encoding since 'Arctic Islands'. Introduced broken AV1 encoding in VCN 4.0; and finally nine years after VCE 3.4 got usable H.264 encoding (which is being phased out for AV1). Not a great track record.",
+                              "upvotes": 4,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        },
+                        {
+                          "commentId": "oc37l4t",
+                          "text": "the 9070xt is pretty decent at streaming to twitch and has higher quality than my 3080 did.  Im sure nvidias is still faster/more efficient for something like encoding full videos in software, but AMD has caught up significantly for live streaming at least.",
+                          "upvotes": 8,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "oc4rl1o",
+                              "text": "Still no 4:2:2 or 4:4:4 subsampling support (enc OR dec).\u00a0 No lossless support.\u00a0 10-bit encoding is half baked and unsupported in most implementations.\u00a0 Practically unusable AV1 encoder on VCN 4.\n\n\nThe AMD AMF plugin for OBS is effectively unmaintained, still far behind Xaymar's abandoned one in terms of functionality.\u00a0\u00a0\n\n\nDocumentation for AMF isn't great, poor VCN product matrix (compared to NV's great support matrix page for NVENC/DEC), bad performance documentation.\n\n\nIt took nearly a decade for AMD to make a passable H.264 hw asic.\u00a0 Honestly embarrassing.\u00a0\u00a0",
+                              "upvotes": 10,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "commentId": "oc1043u",
+                  "text": "&gt;intel can't do anything to match 9800x3D or 9950x3D\n\nIf you're playing games at 1440p or 4k, no point in getting a X3D now especially with how expensive it is compared to 270k Plus.\n\nAt higher resolutions, they match the AMD ones. At times even with better 1% lows. \n\nIf you wanna solely play at 1080p, yeah the X3Ds are better.",
+                  "upvotes": -6,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "oc1dyjo",
+                      "text": "&gt;If you're playing games at 1440p or 4k, no point in getting a X3D \n\nTell me you know nothing about frametimes without telling me...",
+                      "upvotes": 17,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "oc1bqih",
+                      "text": "Most games I play are still CPU limited even at 4k. So let's not do blanket statements.",
+                      "upvotes": 47,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
                 }
               ]
             }

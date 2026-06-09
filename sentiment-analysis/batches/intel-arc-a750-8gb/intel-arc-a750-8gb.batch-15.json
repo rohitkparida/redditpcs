@@ -1,12 +1,12 @@
 {
-  "productName": "intel-arc-a750-8gb",
+  "productName": "Intel Arc A750 8GB",
   "batchIndex": 15,
-  "totalBatches": 34,
+  "totalBatches": 23,
   "comments": [
     {
-      "commentId": "1tdid85",
-      "text": "Machine GPU vs PS5 GPU // a deductive breakdown (&amp; a mental one too)\n\nHello everyone, welcome to my TED Talk\u2122 about \"Why the PS5 GPU isn't better than the Machine GPU by any significant metric\"\n\nhttps://preview.redd.it/nw61qsk5k71h1.png?width=1024&amp;format=png&amp;auto=webp&amp;s=3723fa10c038f6f56f4a88e2ee0f500fb521e41d\n\nI have :\n\n* time to kill\n* too much love for the game\n* severe autism\n* fallen down a rabbit hole\n* been pissed off by the people claiming the PS5 is better than the Machine in performance\n* forgotten to take my meds\n\nPick any/several of those, I don't care.\n\n**Get a snack, we're about to embark in on a marvelous journey of technical specs &amp; numbers aplenty.**\n\n# Machine GPU only has 8GB VRAM, PS5 has 16!\n\n* PS5 does not have 16GB VRAM, it has 16GB of unified RAM that is divided between system RAM &amp; VRAM, typically into an 8/8 division, can be reallocated up to a 4/12 (practically never happens, most studios port their games over to PC where 60\\~65% of the userbase has 8GB GPUs, makes no sense to create extra work and touch up the VRAM allocation on the PS5 if it's gonna work all the same anyway).\n* 1080p gaming in nearly all games rarely even approaches 8GB VRAM unless texture/effects are set to the higher end of the quality setting scale, which is NEVER the case on the PS5.\n* Here's [a chart of widely played games with intense graphics that hit above 8GB VRAM](https://www.hardware-corner.net/games-8gb-vram-list/) **when set to 1440p high/ultra.** (*Notice how most of them don't even go over the threshold by a lot.*)\n\n# Valve claims 4K@60FPS, bullshit!\n\n* Valve claims 4K@60FPS ***with FSR***, AMD's upscaling method.\n* Consoles run games upscaled, this is guaranteed to almost always be the case for 1440p &amp; 4K, some games run 1080p upscaled.\n* AMD ***finally*** announced FSR4.1 support for RDNA3 &amp; RDNA2 GPUs (respectively planned for July &amp; \"2027\") so the PS5 doesn't have the argument of having better upscaling quality with PSSR over FSR3/3.1 anymore.\n\n# PS5 GPU is equivalent to an RX6700, far beyond the specs of the Machine GPU!\n\n* the [PS5 GPU](https://www.techpowerup.com/gpu-specs/playstation-5-gpu.c3480) has an RDNA2 GPU packing 36 compute units, which is also what makes up an [RX 6700](https://www.techpowerup.com/gpu-specs/radeon-rx-6700.c3716)\n* Except the PS5 in its entirety [uses 200\\~220W](https://www.ecoenergygeek.com/ps5-power-consumption/#0-how-many-watts-does-a-ps5-use), which includes the CPU (x8 Zen2 cores, 8MB cache, equivalent to a 4700G, which should draw 65W on its own, let's cut that in half to 35W, aka the 4700GE, for argument's sake), SSD &amp; RAM (let's say equivalent to 10W for both combined), all the I/O (wifi, ethernet, 2.4G dualsense, the HDMI port, give it 10W for the whole thing) and the roughly 10% inefficiency expected from the PSU (we can probably ignore the cooling fan)\n* We then have a GPU that \"only\" gets \\~140W at peak, is driven by a downpowered CPU, has to share a 256-bit bus from 14Gbps memory modules with the CPU, only has 4MB of L2 cache &amp; has to share 8MB of L3 cache with the CPU\n* the RX 6700 gets a full 175W, has its own VRAM pool of 10GB of 16Gbps modules through its own 128-bit bus on top of the the PCIe4x16 interface and we can assume that most of the benchmarked scores we can find online are never done with a CPU that has the limitations of the PS5's CPU (i.e. a full 65W TDP or more &amp; 4 times as much cache found in desktop CPUs)\n\n**If you followed me so far, I think it's safe to say equaling the PS5's GPU to an RX 6700 is NOT an accurate metric.**\n\n* There have been many videos comparing the PS5 to a PC build of some sort, trying to emulate its performance, mostly in cost-based build challenges :\n* Performance &amp; Quality comparison [with an A770](https://youtu.be/LfpXMuMvcWQ?t=460) (Notes : this is a 2y/o video, Intel driver's were inconsistent, had considerable CPU overhead &amp; this was done on Windows, also I know this comes with 16GB VRAM but this is a focus on the performance level, this will come up later)\n* Performance &amp; Quality comparison [with an RX 6600](https://youtu.be/iHkBcqW-ExY?t=1000) (Notes : this is a 6months old video, running SteamOS; here's [their logic](https://youtu.be/iHkBcqW-ExY?=488) behind the pick of the GPU, this will also come up later)\n* You can look up more performance comparison on your own but I consider that it is safe to say, in sheer performance, the PS5 lands between those two landmarks that we can place on a performance scale.\n\n# Oh look, a performance scale!\n\nhttps://preview.redd.it/ggpgn5tsz61h1.png?width=685&amp;format=png&amp;auto=webp&amp;s=3bcef516d50a6e9b765cf766303cbb184a3b755b\n\n**The two GPUs mentioned above span a 17% performance amplitude, that's a decent window for the Machine to aim into**\n\n# What does the Machine's GPU pack:\n\n* RDNA3 GPU made up of 28CU, pushing 110W @ 2.45GHz (specs sheet says \"max sustained\" clock, I'll presume this is what the Boost clock is; VRAM bandwidth undeterminate, I presume it's the same 18Gbps GDDR6 all RDNA3 GPUs got)\n* Closest known model? the [RX 7600M](https://www.techpowerup.com/gpu-specs/radeon-rx-7600m.c4014) : same CU count, 90W TDP, boost @ 2.41GHz, PCIe4x16 interface, cooled by laptop-grade thermal blocks, performance about equal to a desktop RTX 2070\n\n**Oh, how convenient, that's juuust ahead of the RX 6600 from earlier!**\n\nhttps://preview.redd.it/8irj959k171h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=a62eb9ad04115ad7ebc122e87dbf2228625455fe\n\n* Difference to the profit of the Machine GPU : +20W TDP, +40MHz boost clock, cooled by a huge fucking block of an air cooler (will likely sustain boost clocks a hell of a lot better &amp; longer than the 7600M in laptops)\n* Coincidentally, [the XT variant](https://www.techpowerup.com/gpu-specs/radeon-rx-7600m-xt.c4013) has interesting specs too : 32CUs, 120W TDP, boost @ 2.47GHz, so that means the Machine GPU ***CANNOT*** out perform this particular model, since it has physically more compute unites &amp; a teeny tiny little bit more juice &amp; clocks as well\n* Why does the 7600M XT matter? Well, let's look at the chart :\n\nhttps://preview.redd.it/fji71eq2371h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=2c282be18e5d038706590c4b70443d9d10e2c8c9\n\n**Just 2% ahead of the A770 from the first PS5 comparison video? AND equal to the 2070 SUPER?? Now that's very practical!**\n\n# Let's compile all this data:\n\nhttps://preview.redd.it/337p58l4771h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=2da54cc715f457a45b531b06c0339d65488faff1\n\n**We can deduce it's equal or very close to equal to PS5 GPU performance**\n\n# Extra considerations:\n\n* Machine's CPU is significantly better, feeding the GPU more data more consistently\n* PS5's OS is BSD-based, not Linux-based (which makes sense for various licensing reasons from Sony's position)\n* Recently released [PS5 Linux project](https://github.com/ps5-linux/ps5-linux-loader) allowed for [Linux gaming testing on PS5](https://videocardz.com/newz/ps5-linux-tested-steam-games-come-close-to-native-console-performance); in all tests, Linux ran equal or a liiitle bit better\n\n**The PS5 Linux project at this time can't allocate more than 6GB of the VRAM, and yet still equals or edges ahead of the PS5 in the same games at same resolution &amp; quality.**\n\n**It runs games which are made for Windows, running through the Proton compatibility layer, whereas the PS5 gets its own custom-optimized editions, just for it. Imagine if it was Linux-optimized, before even thinking about the hardware optimization.**\n\n* This project was only operational recently, which mean most of this isn't fully fleshed out, dynamic allocation maxes out at 6GB VRAM, it doesn't boost properly/can't be overclocked, etc...\n* I think we can safely assume there's overhead that can be reduced, putting Linux ahead of the PS5's OS down the line because PS5 is basically entirely dependent on Sony software engineering to improve performance; Machine benefits from Linux community (including Valve) to ever improve &amp; optimize software\n   * Example #1 : [MESA 26.0 update](https://videocardz.com/newz/mesa-26-0-open-source-graphics-library-for-linux-releases-significant-imporvmenets-to-raytraicng-on-radeon-gpus) packs decent improvements to AMD GPUs RT performance\n   * Ex #2 : [dmemcg Linux kernel patch](https://videocardz.com/newz/valve-developer-improves-linux-vram-handling-for-8gb-gpus-with-new-kernel-patches) evicts non-game apps out of VRAM when game requires more space (look up benchmarks before/after patch, this greatly helps 8GB -or less- GPUs)\n   * Ex #3 : [Proton compat layer](https://videocardz.com/newz/valve-proton-11-0-beta-1-released-adds-support-for-x-plane-12-breath-of-fire-iv-and-more) gets ever better, no need to wait for a Linux port of a Windows game the same way console games have to get ported to PC\n   * Ex #4 : [Microsoft wants Windows to be as good as SteamOS in gaming](https://videocardz.com/newz/microsofts-windows-secrete-k2-plan-aims-to-cut-windows-11-bloat-and-improve-gaming-performance) (this is not a joke, they realized Linux was getting better at running Windows games than Windows LMAO)\n\n# But the PS5 is older, shouldn't the Machine be better?\n\nThe PS5 has a downpowered, low to mid-end desktop GPU only one generation older than the entry-level, juiced up, mobile GPU of the Machine that only has the 55W RX7400 below it in the RDNA3 series, the gap is, as described by all of the above, non-existent.\n\nI'll bring your attention over to NvidAI, where the RTX5050 is the FIRST entry-level GPU to beat the GTX1080Ti.\n\nIt took them 5 generations over the span of a decade to finally achieve that (and it still has more VRAM than the 5050 LMAO).\n\n# Why didn't you compare it with the PS5 Pro since it's gonna be closer in price?\n\n* it was not a cost-based comparison\n* people who know nothing about hardware were pissing me off saying that the base PS5 was more powerful\n* PS5s are subsidized, I wonder what would be the real price if it wasn't &amp; how much consideration would buyers have knowing the Machine can do all the PC-stuff (i.e. running non-game software, having the freedom of choosing what system you want to install, etc...) that consoles can't\n\n# Conclusion:\n\n**The Steam Machine GPU is equal in performance to the PS5 GPU &amp; can be expected to be supported longer &amp; better than PS5.**\n\n# If after all that you're still not convinced, then I don't know what to tell you.\n\ngo buy a PS5 if you think it's so much better than the Machine, I guess",
-      "upvotes": 295,
+      "commentId": "1ca12b0",
+      "text": "Graphics cards Dollars-per-FPS tables at various settings\n\nSorted by price. Minimum 35 FPS needed to make each list. Since these lists are dominated by AMD, I was less strict when considering cards from Intel and nVidia for each list for those who prefer cards from these companies.\n\nPerformance data taken from [Tom's Hardware](https://www.tomshardware.com/reviews/gpu-hierarchy,4388.html). FPS score is an average over several games that includes weighted 1% low scores.\n\nAll price data from today. Price data mostly from Amazon with some (especially for older cards) taken from Newegg. Price data includes refurbished and used prices (also especially for older cards).\n\n---\n\n1080p Medium settings\n\nCard | Price | $/FPS\\* | FPS\n--- | --- | --- | ---\nIntel Arc A380 | 100$ | 1.84$ | 54.3 FPS\nRadeon RX 580 8GB | 129$ | 2.09$ | 61.7 FPS\nRadeon RX 6500 XT | 140$ | 2.13$ | 65.8 FPS\nIntel Arc A580 | 180$ | 1.78$ | 101.1 FPS\nRadeon RX 6600 | 190$ | 1.64$ | 116.2 FPS\nRadeon RX 5700 XT | 200$ | 1.60$ | 124.9 FPS\nRadeon RX 6650 XT | 220$ | 1.60$ | 137.1 FPS\nRadeon RX 6700 10GB | 240$ | 1.65$ | 145.7 FPS\nRadeon RX 7600 XT | 330$ | 2.18$ | 151.2 FPS\nRadeon RX 6700 XT | 330$ | 2.09$ | 158.1 FPS\nRadeon RX 6750 XT|  340$ | 2.10$ | 161.6 FPS\nGeForce RTX 4060 Ti | 375$ | 2.34$ | 160.1 FPS\nRadeon RX 6800 | 381$ | 2.26$ | 168.7 FPS\nGeForce RTX 3070 Ti | 400$ | 2.50$ | 159.8 FPS\nRadeon RX 7700 XT | 400$ | 2.33$ | 171.6 FPS\nRadeon RX 6800 XT | 410$ | 2.37$ | 173.2 FPS\nGeForce RTX 4060 Ti 16GB | 440$ | 2.72$ | 161.7 FPS\nGeForce RTX 3080 | 480$ | 2.86$ | 167.6 FPS\nRadeon RX 7800 XT | 500$ | 2.79$ | 179.1 FPS\nRadeon RX 7900 GRE | 541$ | 2.94$ | 184.3 FPS\nGeForce RTX 4070 Super | 590$ | 3.19$ | 185.1 FPS\nRadeon RX 7900 XT | 700$ | 3.73$ | 187.6 FPS\nGeForce RTX 4070 Ti Super | 800$ | 4.22$ | 189.4 FPS\nRadeon RX 7900 XTX | 950$ | 4.99$ | 190.3 FPS\nGeForce RTX 4080 Super | 1000$ | 5.19$ | 192.7 FPS\nGeForce RTX 4090 | 1780$ | 9.10$ | 195.7 FPS\n\n---\n\n1080p Ultra settings\n\nCard | Price | $/FPS\\* | FPS\n--- | --- | --- | ---\nRadeon RX 580 8GB | 129$ | 3.65$ | 35.3 FPS\nIntel Arc A580 | 180$ | 2.76$ | 65.1 FPS\nRadeon RX 6600 | 190$ | 2.91$ | 65.2 FPS\nRadeon RX 5700 XT | 200$ | 2.73$ | 73.3 FPS\nIntel Arc A750 | 210$ | 2.97$ | 70.8 FPS\nRadeon RX 6650 XT | 220$ | 2.83$ | 77.7 FPS\nRadeon RX 6700 10GB | 240$ | 2.79$ | 86.1 FPS\nIntel Arc A770 8GB | 260$ | 3.45$ | 75.3 FPS\nRadeon RX 7600 | 260$ | 3.17$ | 82 FPS\nGeForce RTX 4060 | 295$ | 3.47$ | 84.9 FPS\nIntel Arc A770 16GB | 300$ | 3.90$ | 76.9 FPS\nRadeon RX 7600 XT | 330$ | 3.59$ | 91.9 FPS\nRadeon RX 6700 XT | 330$ | 3.33$ | 99.1 FPS\nRadeon RX 6750 XT | 340$ | 3.30$ | 102.9 FPS\nGeForce RTX 4060 Ti | 375$ | 3.74$ | 100.4 FPS\nRadeon RX 6800 | 381$ | 3.32$ | 114.6 FPS\nRadeon RX 7700 XT | 400$ | 3.45$ | 116.1 FPS\nRadeon RX 6800 XT | 410$ | 3.34$ | 122.7 FPS\nGeForce RTX 4060 Ti 16GB | 440$ | 4.37$ | 100.6 FPS\nRadeon RX 7800 XT | 500$ | 3.87$ | 129.3 FPS\nRadeon RX 7900 GRE | 541$ | 3.98$ | 135.8 FPS\nGeForce RTX 4070 | 550$ | 4.51$ | 122.0 FPS\nRadeon RX 6950 XT | 550$ | 4.21$ | 130.5 FPS\nGeForce RTX 4070 Super | 590$ | 4.40$ | 134.2 FPS\nRadeon RX 7900 XT | 700$ | 4.86$ | 143.9 FPS\nGeForce RTX 4070 Ti Super | 800$ | 5.62$ | 142.3 FPS\nRadeon RX 7900 XTX | 950$ | 6.38$ | 149.0 FPS\nGeForce RTX 4080 Super | 1000$ | 6.74$ | 148.3 FPS\nGeForce RTX 4090 | 1780$ | 11.55$ | 154.1 FPS\n\n---\n\n1440p Ultra settings\n\nCard | Price | $/FPS\\* | FPS\n--- | --- | --- | ---\nIntel Arc A580 | 180$ | 3.69$ | 48.8 FPS\nIntel Arc A750 | 210$ | 3.91$ | 53.7 FPS\nRadeon RX 6650 XT | 220$ | 4.04$ | 54.5 FPS\nRadeon RX 6700 10GB | 240$ | 3.82$ | 62.8 FPS\nIntel Arc A770 8GB | 260$ | 4.52$ | 57.5 FPS\nRadeon RX 7600 | 260$ | 4.54$ | 57.3 FPS\nGeForce RTX 4060 | 295$ | 4.82$ | 61.2 FPS\nIntel Arc A770 16GB | 300$ | 5.02$ | 59.8 FPS\nRadeon RX 7600 XT | 330$ | 5.01$ | 65.9 FPS\nRadeon RX 6700 XT | 330$ | 4.50$ | 73.4 FPS\nRadeon RX 6750 XT | 340$ | 4.40$ | 77.2 FPS\nGeForce RTX 3070 | 369$ | 4.75$ | 77.7 FPS\nGeForce RTX 4060 Ti | 375$ | 4.96$ | 75.6 FPS\nRadeon RX 6800 | 381$ | 4.27$ | 89.2 FPS\nRadeon RX 7700 XT | 400$ | 4.31$ | 92.7 FPS\nRadeon RX 6800 XT | 410$ | 4.14$ | 99.0 FPS\nGeForce RTX 3080 | 480$ | 4.98$ | 96.4 FPS\nRadeon RX 7800 XT | 500$ | 4.73$ | 105.8 FPS\nRadeon RX 7900 GRE | 541$ | 4.75$ | 113.9 FPS\nGeForce RTX 4070 Super | 590$ | 5.37$ | 109.8 FPS\nRadeon RX 7900 XT | 700$ | 5.56$ | 125.9 FPS\nGeForce RTX 4070 Ti | 750$ | 6.44$ | 116.5 FPS\nGeForce RTX 4070 Ti Super | 800$ | 6.56$ | 122.0 FPS\nRadeon RX 7900 XTX | 950$ | 7.02$ | 135.3 FPS\nGeForce RTX 4080 Super | 1000$ | 7.52$ | 133.0 FPS\nGeForce RTX 4090 | 1780$ | 12.18$ | 146.1 FPS\n\n---\n\n4k Ultra settings\n\nCard | Price | $/FPS\\* | FPS\n--- | --- | --- | ---\nIntel Arc A770 16GB | 300$ | 8.50$ | 35.3 FPS\nRadeon RX 7600 XT | 330$ | 8.89$ | 37.1 FPS\nRadeon RX 6700 XT | 330$ | 8.17$ | 40.4 FPS\nRadeon RX 6750 XT | 340$ | 7.94$ | 42.8 FPS\nGeForce RTX 3070 | 369$ | 8.31$ | 44.4 FPS\nGeForce RTX 4060 Ti | 375$ | 9.47$ | 39.6 FPS\nRadeon RX 6800 | 381$ | 7.51$ | 50.7 FPS\nRadeon RX 7700 XT | 400$ | 7.77$ | 51.5 FPS\nRadeon RX 6800 XT | 410$ | 7.08$ | 57.9 FPS\nGeForce RTX 3080 | 480$ | 7.74$ | 62.0 FPS\nRadeon RX 7800 XT | 500$ | 8.03$ | 62.3 FPS\nRadeon RX 7900 GRE | 541$ | 7.81$ | 69.3 FPS\nGeForce RTX 4070 | 550$ | 9.62$ | 57.2 FPS\nRadeon RX 6950 XT | 550$ | 8.20$ | 67.1 FPS\nGeForce RTX 4070 Super | 590$ | 8.93$ | 66.1 FPS\nGeForce RTX 3080 Ti | 685$ | 9.96$ | 68.8 FPS\nRadeon RX 7900 XT | 700$ | 8.62$ | 81.2 FPS\nGeForce RTX 4070 Ti Super | 800$ | 10.18$ | 78.6 FPS\nRadeon RX 7900 XTX | 950$ | 9.99$ | 95.1 FPS\nGeForce RTX 4080 Super | 1000$ | 10.88$ | 91.9 FPS\nGeForce RTX 4090 | 1780$ | 15.55$ | 114.5 FPS\n\n---\n\n\\*Lower $/FPS values are better.",
+      "upvotes": 1328,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,253 +14,257 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "olvxmk8",
-          "text": "I agree with everything you\u2019re saying, but I do want to put this into context:\n\nYou\u2019re spending a lot of time and energy comparing the Steam Machine to a device that came out 6 years ago, and it seems like it\u2019s trading blows (more or less).  Next year the PS6 will release for roughly (rumored) about $700.  \ud83d\ude33\n\nJust putting a real world reality spin to all of these theoretical numbers, is all.  \ud83e\udee1",
-          "upvotes": 19,
+          "commentId": "l0pin82",
+          "text": "So basically at 1080p the best value is generally in the $190-250 range with the 6600, 5700 xt, and 6650 xt still leading the pack.\n\nFor 1440p and higher the curve seems to peak around the $400-600 point with cards like the 6800, 4070, 7800 xt, or 7900 gre.\n\nAmd generally a better value than nvidia too in terms of pure fps per dollar.",
+          "upvotes": 122,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The comment discusses the Steam Machine and PS5/PS6, but does not mention or provide insight into the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The user is providing a real-world context to a technical comparison without a clear positive or negative sentiment toward the target product.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "olxci1j",
-              "text": "considering how (allegedly) significantly more powerful the PS6 APU is supposed to be on the latest tech AMD will provide then &amp; how much RAM/SSD it's supposed to pack, I would find it absolutely miraculous if they can keep pricing below 850",
-              "upvotes": 4,
+              "commentId": "l0q8ltr",
+              "text": "I don\u2019t think $/frame is particularly useful, because most people would rather get the best performance they can afford, rather than the best value. And those aren\u2019t the same. This is helpful when you\u2019re deciding if spending an extra $50 to get the next step up is worth it vs something like an extra SSD IMO.",
+              "upvotes": 14,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The comment is about PS6 APU and pricing, not the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is speculating on hardware specs and pricing for a future console.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "olxl6n5",
-                  "text": "If prices normalize next year for the PS6 to reach that price, it stands to reason that Valve could source it's components at a lower price as well.",
-                  "upvotes": 3,
+                  "commentId": "l0qg10h",
+                  "text": "Useful for budget builders imho",
+                  "upvotes": 55,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The comment discusses Valve's component sourcing and PS6 pricing, not the Intel Arc A750.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is speculating on market pricing.",
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "olwlxtt",
-              "text": "Try $900, plus additional cost for separate disk drive and stand,  and releasing in over 2 nears time and not one, and that might land closer to how the PS6 will ship.",
-              "upvotes": 6,
-              "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The comment is about PS6 pricing and release date, not the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is speculating on pricing.",
-              "replies": [
-                {
-                  "commentId": "olwte67",
-                  "text": "the ps5 was a 800 dollar kit sold for 500 in 2020. Sony can subsidise their hardware, steam can't with the SM",
-                  "upvotes": 4,
-                  "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The comment discusses Sony's hardware subsidies, not the Intel Arc A750.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is discussing business models of console manufacturers.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "olxkyn8",
-                      "text": "I'm seeing estimated more in line with 600-650 USD here: [https://www.reddit.com/r/hardware/comments/ha231v/estimated\\_production\\_cost\\_for\\_ps5\\_and\\_xboxsx/](https://www.reddit.com/r/hardware/comments/ha231v/estimated_production_cost_for_ps5_and_xboxsx/)\n\nA 650 kit sold for 500 isn't that big of a gap. It's also said that after about 1-2 years the PS5 became profitable. So Sony wasn't subsidizing the hardware for long.",
-                      "upvotes": 2,
-                      "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The comment is about PS5 production costs, not the Intel Arc A750.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is providing factual information about production costs.",
-                      "replies": []
-                    },
-                    {
-                      "commentId": "olxgmcq",
-                      "text": "Weird that they started turning a profit on it a year after release at the original MSRP if they cost $800 to produce back then.",
+                      "commentId": "l0w0pzk",
+                      "text": "Extremely. That\u2019s me in a nutshell, poor with poor friends, I\u2019ve never done a high end build for myself or anyone because the goal is always under $1000. You have to pick best value when it comes to that because if your GPU budget is $300 or less your goal isn\u2019t actually to spend $300, it\u2019s to perform for less or cut corners elsewhere if $350 means way more performance/$",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The comment is about PS5 profitability, not the Intel Arc A750.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is expressing confusion about profitability timelines.",
-                      "replies": [
-                        {
-                          "commentId": "olxhav6",
-                          "text": "they turned a profit on the disk version, the digital version was subsidised up until 2025",
-                          "upvotes": 3,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "The comment is about PS5 digital edition subsidies, not the Intel Arc A750.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user is providing factual information about subsidies.",
-                          "replies": [
-                            {
-                              "commentId": "olxi5bj",
-                              "text": "Any source on them taking 5 years to overcome [a $40 per unit subsidy?](https://www.thefpsreview.com/2020/10/06/they-blew-it-sony-losing-40-on-every-ps5-digital-edition-sold-according-to-analyst/) Because my source also says that the PS5 didn't cost anywhere near $800 to produce.",
-                              "upvotes": 1,
-                              "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "The comment is about PS5 production costs, not the Intel Arc A750.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The user is questioning the accuracy of a previous claim.",
-                              "replies": [
-                                {
-                                  "commentId": "olxjibq",
-                                  "text": "oh no im going of memory, any source you see that contradicts me is probably correct lol",
-                                  "upvotes": 4,
-                                  "classifyThis": true,
-                                  "relevance": "exclude",
-                                  "relevanceReasoning": "The comment is a general conversation about memory and sources, not the Intel Arc A750.",
-                                  "sentiment": "neutral",
-                                  "sentimentReasoning": "The user is admitting a lack of source.",
-                                  "replies": [
-                                    {
-                                      "commentId": "olxjozy",
-                                      "text": "No worries. Happens to everybody lol.",
-                                      "upvotes": 2,
-                                      "classifyThis": true,
-                                      "relevance": "exclude",
-                                      "relevanceReasoning": "The comment is a general social interaction, not the Intel Arc A750.",
-                                      "sentiment": "neutral",
-                                      "sentimentReasoning": "The user is being polite.",
-                                      "replies": []
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
                     }
                   ]
                 },
                 {
-                  "commentId": "om0j5zb",
-                  "text": "Right.  So I don\u2019t know what source you have or you just pulled that out of thin air, but Moore\u2019s Law Is Dead was the one who broke that rumor from an inside source at SONY.  He\u2019s not perfect on rumors, but he\u2019s close.\n\nAny source for your numbers?  \ud83e\udd14",
-                  "upvotes": 1,
+                  "commentId": "l0r9kjk",
+                  "text": "I don't understand how t$/frame is NOT useful. When shopping for a GPU you basically have two options that can be the \"determining\" factor in the choice:\n1. Budget. You just have a number you want to spend and you take the best GPU that comes below that. Basically you choose from the above table the one that's best value AND hits the price point you want.\n2. Performance target. You select the best value GPU for a given performance. Again, in a given performance bracket, you'd sort the GPUs by which is the best value and go with that.\n\n\nOf course in reality then you need to weigh in Nvidia features vs. AMD rasterisation performance and memory reserves but that's then a separate and a lot more subjective evaluation.",
+                  "upvotes": 27,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The comment is about PS6 rumors and sources, not the Intel Arc A750.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The user is questioning the source of information.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "om1wpqv",
-                      "text": "Current price of PS5 Pro on Sony Store is: $899\n\nhttps://www.playstation.com/en-us/ps5/ps5-pro/\n\nAre folk really thinking they are going to get a PS6 when it releases a lot cheaper than a PS5 Pro?",
-                      "upvotes": 1,
+                      "commentId": "l0rb7i2",
+                      "text": "I agree with you. If I have a card for $500 and one for $600 and the frame rate is barely better I can use cost per frame along with the average fps to decide the $600 card is worth the extra $100 or not. I love these analyses and started looking at them more when reviewers started doing it about a year or two ago.",
+                      "upvotes": 10,
                       "classifyThis": true,
-                      "relevance": "exclude",
-                      "relevanceReasoning": "The comment is about PS5 Pro pricing, not the Intel Arc A750.",
-                      "sentiment": "neutral",
-                      "sentimentReasoning": "The user is providing factual pricing information.",
-                      "replies": [
-                        {
-                          "commentId": "om1xoul",
-                          "text": "I don\u2019t know what to think.  But I did recite what a legit/industry-approved leaker in tech industry had said someone from SONY\u2019s camp had relayed to them concerning details of the PS6.\n\nYour emotions on this tells me you don\u2019t like the idea that it might be cheaper than a PS5 Pro?  \ud83e\udd74",
-                          "upvotes": 1,
-                          "classifyThis": true,
-                          "relevance": "exclude",
-                          "relevanceReasoning": "The comment is about PS6 rumors, not the Intel Arc A750.",
-                          "sentiment": "neutral",
-                          "sentimentReasoning": "The user is defending their source.",
-                          "replies": [
-                            {
-                              "commentId": "om21q7k",
-                              "text": "Sony's own history teaches us what to expect, when we look at the price of the PS4 Pro and then the subsequent release price of the PS5.  On the launch of the PS5, they *raised* the price when compared to how much the PS4 Pro cost.\n\nSo saying the price is potentially $900 for a PS6 is being *hopeful* they don't actually raise the price any further at this stage... (which I doubt they will now).\n\nRecent price moves with the PS5 Pro are about setting expectations.  Simply look at the what Sony is telling everyone today on their official site, don't expect miracles price wise.  They will be launching cutting edge technology into a market where hardware prices are still high... And the Sony CEO himself recently said he doesn't seem them coming down any time soon.",
-                              "upvotes": 2,
-                              "classifyThis": true,
-                              "relevance": "exclude",
-                              "relevanceReasoning": "The comment is about Sony's pricing history, not the Intel Arc A750.",
-                              "sentiment": "neutral",
-                              "sentimentReasoning": "The user is analyzing pricing trends.",
-                              "replies": [
-                                {
-                                  "commentId": "om22ses",
-                                  "text": "I don\u2019t know, dude\u2026\ud83d\ude05 I\u2019m just relaying a rumor from a credible leaker.\n\nIt still sounds like you\u2019re pretty emotional about this.  Answer this question: is it \u2018alright\u2019 if the PS6 comes at a price of $700-$800?  \ud83d\ude33",
-                                  "upvotes": 1,
-                                  "classifyThis": true,
-                                  "relevance": "exclude",
-                                  "relevanceReasoning": "The comment is about PS6 pricing rumors, not the Intel Arc A750.",
-                                  "sentiment": "neutral",
-                                  "sentimentReasoning": "The user is relaying a rumor.",
-                                  "replies": [
-                                    {
-                                      "commentId": "om242dr",
-                                      "text": "Ask Sony... It's their business.\n\nAlso, you're not reading emotions right.\n\nI know the leaker you quoted is credible, but he also didn't have a way of knowing that Sony was going to increase prices. So he seems way off base given the current market valuation, where the price of the PS5 Pro is a dollar less than $900.",
-                                      "upvotes": 2,
-                                      "classifyThis": true,
-                                      "relevance": "exclude",
-                                      "relevanceReasoning": "The comment is about PS5 Pro and PS6 pricing, not the Intel Arc A750.",
-                                      "sentiment": "neutral",
-                                      "sentimentReasoning": "The user is arguing against a rumor based on current market data.",
-                                      "replies": [
-                                        {
-                                          "commentId": "om3ulp0",
-                                          "text": "You didn\u2019t answer my question: is it ok?  \ud83d\ude33",
-                                          "upvotes": 1,
-                                          "classifyThis": true,
-                                          "relevance": "exclude",
-                                          "relevanceReasoning": "The comment is a general question about PS6 pricing, not the Intel Arc A750.",
-                                          "sentiment": "neutral",
-                                          "sentimentReasoning": "The user is pressing for an answer.",
-                                          "replies": [
-                                            {
-                                              "commentId": "om4fqgx",
-                                              "text": "I already answered you when I said, \"ask Sony\", as they are the ones who will make the decision.\n\nRight now the PS5 Pro 1TB is $700\nAnd the PS Pro 2 TB is $900\n\nSo now Sony have started charging up to $900 for the current console generation, will they charge up to $900 for their next generation? \n\nYes.... Obviously.\n\nThe PS6 therefore will reach $900 in valuation.  This issue is, will that be the 1TB or the 2TB version?\n\nIf it is the 2TB version, then then the 1TB version of the PS6 could land at a lower price point. That would be how it could get to $700 to $800 as you speculated.\n\nHowever, we have seen that Sony classically adds on upto $100 for the price difference between generations, so ultimately we will have to wait and see what they will do.\n\nAnd considering Sony's CEO has recently said they don't know themselves when the PS6 is going to be released, that suggests the wait will still be a while away.",
-                                              "upvotes": 2,
-                                              "classifyThis": true,
-                                              "relevance": "exclude",
-                                              "relevanceReasoning": "The comment is about PS6 pricing and Sony's business strategy, not the Intel Arc A750.",
-                                              "sentiment": "neutral",
-                                              "sentimentReasoning": "The user is speculating on future pricing.",
-                                              "replies": []
-                                            }
-                                          ]
-                                        }
-                                      ]
-                                    }
-                                  ]
-                                }
-                              ]
-                            }
-                          ]
-                        }
-                      ]
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
                     }
                   ]
+                },
+                {
+                  "commentId": "l0rq3nb",
+                  "text": "\"most people\" have 1650s, 2060s, and 3060s. WHat you call \"most people\" are just a small group of overly vocal yuppies on message boards. Those guys are the \"whales\" who will just drop top dollar on \"the best\" no matter what it is or how much it costs.\n\nFor most of us, optimizing around the price/performance curve is generally  best. Maybe we'll go one tier or two above the optimized point if we can afford it, but no more than that. It's literally not worth the money.",
+                  "upvotes": 11,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "l0rl11a",
+                  "text": "In my opinion, $/frame can be very useful, but only at a certain point in the process. Step 1 would be figuring out at least ball park what kind of framerate and quality settings you are shooting for, or in other words what class of GPU you are shopping for. Then you can use $/frame to identify value within that class.\n\nIt is not useful without some amount of context of what a buyer is wanting their GPU to achieve though. For example, a $50 card that can only render 10 fps in Popular Game X at 1440p is technically better value than one that costs $400 but can do 60 fps. Doesn't automatically make it worth it buying the $50 one.",
+                  "upvotes": 7,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "l0rlznp",
+                      "text": "Right. The context is more important than the figure. For example the actual cost and the actual frame rate you can expect.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    },
+                    {
+                      "commentId": "l0rwqwi",
+                      "text": "&gt;It is not useful without some amount of context of what a buyer is wanting their GPU to achieve though. For example, a $50 card that can only render 10 fps in Popular Game X at 1440p is technically better value than one that costs $400 but can do 60 fps. Doesn't automatically make it worth it buying the $50 one.\n\nTo be fair, the only people who set out to buy a GPU without knowing what they need are people who can't be bothered to do the most basic research, or people who have stupid amounts of disposable income who will probably just buy a 4090 because it's the best on the market regardless of what their use case is.\n\nThe average joe who has a budget and has been gaming on pc for years is going to have a pretty good idea of what they need and this chart certainly helps them figure out where to best spend their money.",
+                      "upvotes": 2,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                },
+                {
+                  "commentId": "l0rc31u",
+                  "text": "Also purchase price/frame ignores power consumption (and, therefore, running costs).",
+                  "upvotes": 0,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                },
+                {
+                  "commentId": "l0x4qom",
+                  "text": "I decided to buy a card that kills it at 1440p, nut will also handle 4k for when I upgrade my monitor.  I'd assume lots of people are gonna want to do the same with 1080 to 1440...",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "commentId": "l0pky1t",
+          "text": "Damn that 7900xtx seems pretty cost efficient high end card.",
+          "upvotes": 58,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
             {
-              "commentId": "om88pyu",
-              "text": "But remember, it will be $700 + $800 in online fees",
-              "upvotes": 1,
+              "commentId": "l0ptcjf",
+              "text": "As a 7900xtx owner i couldn\u2019t be more happy with mine, esp considering i play @1440p.",
+              "upvotes": 11,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The comment is about PS6 costs and online fees, not the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is mentioning additional costs.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             },
             {
-              "commentId": "oly6kde",
-              "text": "You think the ps6 will launch for 200 dollars less than the ps5 pro just got its price increased to? ",
+              "commentId": "l0wfr2n",
+              "text": "I went ahead and Got the 7900XTX figured if it was that bad I would return it and I had a Nvidia GPU. Well after using it I dont miss DLSS.. Heck I can't even tell a difference between FSR and DLSS when im playing games when I fully expected to. Im sure its there I just don't see it. The Colors look better on the AMD gpu for me compared to my Nvidia and I can still Raytrace Ultra at every game that is out right now.  The power consumption is like $8 dollars more over an entire year. Im glad I didnt get the 4080 super and I wouldn't trade it back for one either. AMD's Frame gen AFMF literally doubles my frames which is complete overkill for the 7900XTX but it still works great when I want to use it. Love my 7900XTX the raw power just can't be beat could careless for Nvidia software not worth the extra 300 for me. for me it was $900 for the XTX or $1,200 for the 4080 super. 300 dollar difference. You can get a XTX on Newegg right now for $799 Nothing comes close to that much power at that low of a price. It just doesn't feel right to me paying more for a weaker card just because of DLSS.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The comment is about PS6 and PS5 Pro pricing, not the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The user is questioning the likelihood of a price drop.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "l73nogh",
+                  "text": "With FSR 3.1, NVidia is no longer in the lead at upscaling; the race is tied!",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "l0pel91",
+          "text": "While this is really important list, I have noticed /found out that some of the cards sold on Amazon as \"new\" are random \"Refurbished\" or random B tier quality cards. Which on itself is fine. But adding them together with actually real new cards can be misleading. Then again it is not what is judged here, and it is intentionally misleading or that info is even withheld. \n\nAll I mean, that it would also be really beneficial to know such list from \"legit\" cards and cards that are still being manufactured.  Because essentially one could even take into account all the marketplace listings for such. But that is being unrealistic and unreliable.",
+          "upvotes": 20,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "l0pw895",
+          "text": "Somebody already has thought of this, it updates live and it also tracks used prices.\n\nhttps://bestvaluegpu.com/best-graphics-card/",
+          "upvotes": 21,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "log102y",
+              "text": "Bless",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l0psa66",
+          "text": "That 6700 at $240 is currently an amazing deal with its 10GB of VRAM, but it's become incredibly rare to find anywhere. It's bene a while since I've seen it in the US at all.\n\nUsually the 6700XT is the only one you'll find, which has dropped a lot in value. It's more expensive now than it was a year ago.\n\nLastly, I think it's a shame 1440p medium is always absent from these types of charts (I know that's not on you OP :)). I get 1080p medium as it's the lowest end, but I'd wager most people (especially those who already have a 1440p screen) would rather compromise a bit on settings - especially the 'ultra' category with mostly vastly diminishing returns - than go down in fps or especially resolution. Obviously you can extrapolate but I don't know if that translates one to one.\n\nUsing the 6700XT as an example, 1080p Medium to 1080p Ultra you go from 153fps to 99fps; a 35% drop. Going from 1080p Ultra to 1440p Ultra you end up at 73 fps; a 26% drop. I'd love to think 1440p medium would result in 112fps (26% down on 153fps), but I'm not sure if settings vs resolution scaling actually translates that directly like that.\n\nEither way great lists. Would be extra nice if you could also sort by price per frame rather than just price.",
+          "upvotes": 16,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "l0pmcyb",
+          "text": "Kinda makes me feel bad I replaced my RX580 two weeks ago",
+          "upvotes": 8,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "l0qj04g",
+              "text": "I just bought two RX 550s a couple weeks ago for an office computer. I like them because they were cheap and could be powered from just the board.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": []
             }
           ]
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

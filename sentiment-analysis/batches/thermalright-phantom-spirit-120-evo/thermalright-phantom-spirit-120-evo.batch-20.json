@@ -1,22 +1,22 @@
 {
-  "productName": "thermalright-phantom-spirit-120-evo",
+  "productName": "Thermalright Phantom Spirit 120 EVO",
   "batchIndex": 20,
-  "totalBatches": 25,
+  "totalBatches": 20,
   "comments": [
     {
-      "commentId": "1r0o1ro",
-      "text": "I switched from RTX 2070 to RX 9070, here's my honest experience, tips and thoughts.\n\n# INTRO + CONTEXT\n\nBack in december I got a Gigabyte RX 9070 Gaming OC and once opened I fell in love with the grey details on the card. Also the size made my Gigabyte RTX 2070 Windforce seem like a little toy, but at the same time it fitted in my small-ish mid tower without issues.\n\nWhen I first tried playing some of my games I noticed my fps were literally DOUBLED or even TRIPLED in most of them, despite having less rgb in my case (sorry I had to). In some of them I can reach higher than 100fps at max details (WQHD res) while before I was struggling to get to 60-80 at min details.\n\n# BUILD\n\nFor the occasion I upgraded my build:\n\n* i7 9700k --> R7 7700\n* 16gb 3000 c15 --> 32gb 6000 c36 (both corsair vengeance)\n* OCZ ZT 750w bronze --> Pccooler YN1000 gold\n* Gigabyte B650 Eagle AX\n* Thermalright Phantom Spirit 120 Evo (70 celsius under load with undervolt)\n* Orico 2tb m2 e7400 (\\~6500 effective, no OS only games)\n\nMy psu was 12+ years old (and has powered 3 builds) so it was time to say goodbye, also I read newer ones can handle power spikes better and I saw one spike from 270w (oc) to 400w on the new gpu, so I think it was a good call.\n\nThe R7 7700 only shows some visible bottleneck on a couple of really unoptimized games, still way better even in Rust on my old gpu, so it feels great for now and can be upgraded down the line with an X3D.\n\nIt started as a last minute budget build in november to avoid price increases, but since also gpus were doomed to rise I finished it as soon as I could. I'll share more details if anyone's interested.\n\n# ADRENALIN HORROR\n\n*Consider the following lines as guidelines rather than a rant, hopefully this helps newcomers get started faster than I did.*\n\nI liked the idea of switching to just one app for all my needs, but...\n\nI had weeks of terror with Adrenalin, until I figured out the rules are:\n\n* never press ALT+R, instead ALT+TAB and open Adrenalin manually from taskbar\n* if you really want to press ALT+R, ensure your game is in exclusive full screen (but some games can only be borderless full screen, so don't press ALT+R if you want to forget about the issues)\n* if Adrenalin crashes silently while playing, maybe it didn\u2019t like the oc (even without driver timeout or the game crashing)\n\nI'll leave my other findings:\n\n* some games like MH:Wilds will crash on launch if you enable FSR 4 Framegen without warning you about the issue, fortunately it's a simple fix once you know it\n* everytime I rebooted or turned off-on my pc, oc kept getting reset to default in Adrenalin. As pointed out by others, disabling fast boot in Windows power management fixed it\n* Adrenalin Video and Streaming by default outputs darker images than what you see: I tried making some videos to use as live wallpaper in Oblivion Remastered in dark areas but most details were lost because of this. I didn't investigate further, but I hope there's an option in Adrenalin to fix this. Since some people tell it can give issues, I'm keeping it off for now (just making sure everything is stable)\n* sometimes I had some doubts with freesync on so I turned it off for now (I was still testing oc though)\n* when I started with 25.12.1, when launching a game I'm pretty sure I wasn't getting the top-right red square from Adrenalin saying FSR 4 upscale upgrade was turned on (among other settings). I discovered it when I downgraded to 25.9.1 (with ddu) and, after updating to 26.1.1, I now get it aswell.\n\nI also don't like the weird slow scrolling animation, but it can't be disabled.\n\nI noticed people in this sub saying Nvidia App has been buggy aswell but I never had any major issues since Geforce Experience came out, maybe I'm lucky.\n\nIf you need always working metrics there are alternatives like Afterburner+RivaTuner, CapFrameX etc. Personally I switched to CapFrameX for the time being just to make sure if I get crashes Afterburner isn't a variable, being also an oc tool. I'll try it back when I'm sure I'm stable.  \nIf you take the CapFrameX road keep in mind you can show/hide the overlay with ALT+O.\n\n# ADRENALIN SETTINGS\n\nI set FSR upscaler and framegen upgrades globally on, framegen upgrade disabled specifically in Wilds.\n\nEDIT: the latter is called \"AMD FSR Frame Generation\", not Fluid Motion Frames. I think it has been added in december 2025. It upgrades frame gen to the latest version when frame gen is turned on inside the game, it doesn't just apply frame gen to everything.\n\n# OVERCLOCK\n\nCPU: PBO enabled, curve optimizer -30\n\nGPU: +10% power, -80mv\n\nIt could reach -130mv but I'd rather keep it stock then see it crash even after days, so here I am.\n\nI always had crashes through many builds when overclocking, so I'm happy I can get some more performance without issues this time and I wonder if the old psu was the culprit back then.\n\n# UPSCALERS DRAMA\n\nOnce figured all this, my only complaint was DLSS 4 missing cause you can\u2019t unsee that thing, gold even in performance mode.\n\nHaving played MH:Wilds, BF6 and other games with DLSS 4 during last year, I instantly noticed FSR 4 being less crispy and detailed, but I knew the risk. I admit it gave me some headache at the beginning but now I can say I'm getting used to it. It's not about the framerate, but gaining clarity especially in natively blurry games. But FSR 4 upscaler is still good, hope it gets great this year.\n\nI can see why one would want to abandon the ship and refund, but I didn\u2019t want to spend 200+\u20ac more for a 5070Ti (that was the price gap for me).\n\nI was wondering if getting a 5070 for a little bit less was a better idea, but once getting used to FSR I had my answer. Putting aside the (decent) upscaler and considering the added performance and vram, the 9070 is a great price to performance gpu. I still hope next FSR upscaler implementation will reach that peak, but I'm keeping my expectations low and I'm fine with it.\n\nI'm more worried about FSR not being implemented in newer games, since already 2 games came out in january with DLSS but no FSR (one based on vulkan). Luckily I'm not planning to play them and right now I don't think FSR is vital over a standard antialiasing for visuals, except maybe for more performance.\n\n# VRAM DEBATE\n\nI also think the vram story about the 5070 (non Ti) has been a little bit exaggerated since I noticed from many benchmarks that Nvidia uses less vram (I believe thanks to compression) but it can vary between 800mb-1.3gb and probably a better upscaler can give a better result than ultra textures, but I guess it depends on the specific game and resolution.\n\nAnyway we'd still be comparing a \\~13gb gpu against a 16gb one.\n\nI have to admit that seeing I'm really using most of it in some games makes me happy about choosing my 9070 anyway.\n\n# PERFORMANCE / RAY TRACING\n\nTalking about pure performance, as I said above, 9070 delivers A LOT!\n\nI was used to Ray Tracing on my old RTX 2070, where turning it on would halve my fps usually below 60 (reason why I mostly kept it off), so I was amazed when I turned it on in Wilds without experiencing the long freeze on activation and the evident loss in performance.\n\nSame thing with shaders in Minecraft, but if I understood correctly those shouldn't be real ray tracing (even if it used to halve my fps the same with my old gpu).\n\nI usually avoid Ray Tracing anyway but I'm loving it with Lumen on in Oblivion Remastered. Though turning settings down there can make the game run better and still look good without the wow effect, so it's up to personal preference.\n\n# FRAME GENERATION\n\nI mainly use it in Wilds and Oblivion Remastered, but sometimes I find myself turning it off. Specially in Oblivion Remastered, since after a loading screen it warms up in 4-5 seconds and that game is full of loadings. I never tried it on team green so I can't tell much about that.\n\nI found a bug in Oblivion when alt-tabbing out and back in, where framegen just turns off. Turning it off and back on didn't fix it, but turning overall game settings from ultra to high and then back to ultra fixes it reliably.\n\n# GAMES I TRIED\n\n* *Now playing:* Battlefield 6, COD Black Ops 7, CS2, MH:Wilds, Oblivion Remastered, Zenless Zone Zero\n* *Just (re)tried for testing:* Cyberpunk, The Witcher 3, Starfield, Skyrim Anniversary (Nolvus), Hogwarts Legacy, Clair Obscur, Dragon Age The Veilguard, New World, Rust, Minecraft, Overwatch 2, Fortnite, Genshin Impact, Wuthering Waves, Arknights Endfield, Highguard\n\n# CONCLUSION\n\nNow that I sorted out things, I can say I'm really happy about my 9070. I'm finally back to high fps specially in Cod and Battlefield, now Oblivion Remastered and Wilds are playable and I can try some other games I avoided because of poor performance (or played with everything low, even the upscaler).\n\nIt's already a powerful card and it could get golden with updates, fingers crossed.\n\nI'm only waiting for FSR upscaling next implementation and fixes for Adrenalin, but for now I'm pretty much satisfied.",
-      "upvotes": 150,
-      "classifyThis": false,
+      "commentId": "1co1ftx",
+      "text": "Thermalright Phantom Spirit 120 EVO vs SE\n\nHello, experts! If I may ask your opinion about one thing, I'm considering buying a Thermalright Phantom Spirit 120 for my Ryzen 7 7800X3D. I know EVO is better than SE, but prices in my country (Italy) are 64\u20ac for the first and 40\u20ac for the second. Is it worth the difference? Maybe I can also wait for lower price. Thanks!",
+      "upvotes": 16,
+      "classifyThis": true,
       "relevance": null,
       "relevanceReasoning": null,
       "sentiment": null,
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "o4mus7d",
-          "text": "Adrenalin software has it's versions, dont look at the newer, disable auto update, just install the newest stable version people recommends. After a while using that one, check the community if there is a more stable newer one, if not keep using the current one. I know it's wierd but not always newer one is the best in Radeon crapfosft.",
-          "upvotes": 2,
+          "commentId": "l3azizq",
+          "text": "they'll both work pretty equal.\n\nthe main cooling towers are practically the same, 7x6mm heatpipes and same pure copper nickel plated base.\n\nmain difference being the fans. the evo fans are higher rpm and so \"technically\" have higher cfm at max rpm.\n\nevo looks nicer, in my opinion, but i wouldn't pay an extra 24\u20ac for the evo over the 40\u20ac se for looks",
+          "upvotes": 20,
           "classifyThis": true,
           "relevance": null,
           "relevanceReasoning": null,
@@ -24,32 +24,9 @@
           "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "o4n5y3m",
-              "text": "Yeah that\u2019s why I rolled back from 25.12 to 25.9.1 but Adrenalin overlay was bugging a bit more and stock frequencies were lower, I didn\u2019t notice any other difference between that one and 25.12 so after a couple days I went to 26.1, which some people tell solved many things from previous branch updates.\n\nIt\u2019s the same for Nvidia, there are better versions sometimes based on feedback so I\u2019m used to it.\n\nSince it\u2019s going good anyway I\u2019m staying on latest version, also cause they added fsr ota. Whenever a new driver comes out I check the megathread anyway for user feedback.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "o4p86we",
-          "text": "The 9070 beats the brakes off the 5070. DLSS and MFG are the only wins the 5070 has. 9070 is faster at raster, on par for ray tracing, and you can crank textures to max at 4k. \n\nAlso the OC versions let you flash the XT bios on them for even more performance.",
-          "upvotes": 2,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "o4p9ye7",
-              "text": "Yep totally, I\u2019ve been watching video benchmarks again today and it\u2019s just better aside from them, the gap is real.\n\nI knew about the XT bios and that should be safe enough, but I wouldn\u2019t go through that right now. Maybe when it\u2019s out of warranty and gets old.",
-              "upvotes": 1,
+              "commentId": "lgsopuq",
+              "text": "Maybe I'm late, but it's not only the looks, but the dimensions also change, right? I saw the EVO version has more space between fans and RAM slots?",
+              "upvotes": 5,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -57,67 +34,9 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "o4pcd0d",
-                  "text": "I have no experience with dlss that isn't on a laptop, but I have a 7900XT, so upscaling is a forbidden word for me. If I can't have a playable experience at ultra I'll dial back the shadows and GI and bam, 20% instant uplift with no FSR or XeSS. I think AMD GPUs using more ram is related to SAM, certain games like diablo 4 or tarkov just allocate almost all my vram. Tarkov is also an unoptimized pile of garbage. My friends bought that game for me and I despise it.",
+                  "commentId": "lypwy9y",
+                  "text": "Did you ever find out if the evo has more space?",
                   "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "o4jwthu",
-          "text": "switched from rx 6600 to 9070xt...adrensline in the rx 6600 was perfect. no crash in the app anything 25.8 or 25.7  alt tabbing alt z alt r, it can t crash ...now with 9070xt on 26.1 you can t touch anything \ud83e\udd23 sometimes crashes or not opening in the desktop \ud83e\udd23\n\n\nsometimes my mouse get s locked and i need to log out use account...\n\nand yes i do ddu during the switch from rx 6600...\n\ni was considerating to buy an 5070 or 5070ti but prices are bad, 5070 600+\u20ac cost same as 9070xt or Little less and 5070ti is 950+\u20ac\n\ni",
-          "upvotes": 5,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "o4jzf3h",
-              "text": "Well at least it's not an old neglected bug but hopefully they'll fix it during this year xD  \nYes my mouse also got locked in some cases, it's like the overlay opens but it's invisible.  \nI had the lock issue only on older drivers I think (25.9 for sure).  \nSometimes pressing it again disabled the overlay but for just 1 second before auto reopening (and still invisible). When I was lucky pressing alt+r closed the invisible overlay so no need to reboot.\n\nMaybe someone's lucky here, but I guess we'll have to wait and avoid using the hotkey. Playing in borderless makes it easy alt-tabbing anyway.\n\nBack in december I remember the 5070 being lower than the 9070 (non XT), in january prices increased in general and maybe dlss 4.5 gave people fomo. Not a great deal imho, dlss 4.0 was the game changer anyway.",
-              "upvotes": 2,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "o4js3kd",
-          "text": "The vram debate gonna be decided once Sony announced their next gen console, so far the rumor put it between 30gb and 24gb, but i won't hold me breath",
-          "upvotes": 5,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "o4k9pdr",
-              "text": "Except thats not vram, thats shared memory (ram/vram).",
-              "upvotes": 10,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "o4kftzq",
-                  "text": "Yes, so assuming 8gb reserved (probably less), so anything below 16gb will be in the redline",
-                  "upvotes": 4,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -125,22 +44,93 @@
                   "sentimentReasoning": null,
                   "replies": [
                     {
-                      "commentId": "o4l3nvm",
-                      "text": "Judging by two console generations already, if you add the PC architecture overheads, GPU VRAM = Console VRAM is the only safe bet.",
-                      "upvotes": 2,
+                      "commentId": "lyq1xs1",
+                      "text": "Yeah, the EVO has more space, but at the end I didn't buy it.",
+                      "upvotes": 3,
                       "classifyThis": true,
                       "relevance": null,
                       "relevanceReasoning": null,
                       "sentiment": null,
                       "sentimentReasoning": null,
-                      "replies": []
+                      "replies": [
+                        {
+                          "commentId": "lytgcei",
+                          "text": "Do you know the specs off the top of your head? Or are they on like the amazon page or manufacturer page? Thanks.  Also, what made you not get the evo?",
+                          "upvotes": 1,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": [
+                            {
+                              "commentId": "lyth70q",
+                              "text": "No, it's been a while since then but I recall reading it somewhere. Don't know if Reddit, manufacturer or YouTube video, sorry.\n\nI didn't got it because I couldn't gather enough info to trust it was going to be enough or better than what I have.",
+                              "upvotes": 3,
+                              "classifyThis": true,
+                              "relevance": null,
+                              "relevanceReasoning": null,
+                              "sentiment": null,
+                              "sentimentReasoning": null,
+                              "replies": [
+                                {
+                                  "commentId": "lytjrhk",
+                                  "text": "Gotcha okie doke! Thanks for the reply :)",
+                                  "upvotes": 1,
+                                  "classifyThis": true,
+                                  "relevance": null,
+                                  "relevanceReasoning": null,
+                                  "sentiment": null,
+                                  "sentimentReasoning": null,
+                                  "replies": []
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
                     }
                   ]
-                },
+                }
+              ]
+            },
+            {
+              "commentId": "lm86zvy",
+              "text": "Sorry to necro your comment, but could I just replace my SE\u2019s fans with EVO fans if I want the higher rpm and not pay for both? If they\u2019re the exact same, then the fans should be interchangeable, right",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "l3bqqdw",
+          "text": "You can look at this review: [https://www.youtube.com/watch?v=cgkggcBBW8Q](https://www.youtube.com/watch?v=cgkggcBBW8Q)\n\nBasically the SE is a bit better (lower temps, lower noise) but the EVO looks better (to me). If you think the SE looks good it's the better deal.",
+          "upvotes": 17,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "mfglvqj",
+              "text": "But the EVO has lower noise in the video you linked?",
+              "upvotes": 4,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
                 {
-                  "commentId": "o4kh2ri",
-                  "text": "Today I'm learning something new :o",
-                  "upvotes": 1,
+                  "commentId": "mfh3zdl",
+                  "text": "If you compare noise vs RPM yes but the SE is better at pushing heat away. If you compare temperature vs noise the SE is better, it's less noisy to get the same CPU temperature.",
+                  "upvotes": 5,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
@@ -149,11 +139,80 @@
                   "replies": []
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "commentId": "l3aw5wh",
+          "text": "The 7800X3D can be easily cooled by either cooler. Go with the cheaper model.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "1i24cwa",
+      "text": "Thermalright Peerless Assassin 120 vs. Thermalright Phantom Spirit 120 EVO - Which one is better? \n\nWhich one between these two is better in your opinion?",
+      "upvotes": 1,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "m7bdaqd",
+          "text": "whichever is cheaper",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "m7ikq6l",
+          "text": "I\u2019m loving my EVO. Granted prices in the EU are a bit janky so since common consensus said EVO is slightly better, and I found it better looking, I paid the extra ~15 EUR to get it over Thermalright\u2019s other options. It\u2019s cooling a 9800x3d right now with no problems.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        }
+      ]
+    },
+    {
+      "commentId": "1h3mhbu",
+      "text": "Noctua NH-U12A vs Thermalright Phantom Spirit 120 EVO or just go artic freezer 3 for 9800x3d\n\nIm making a new build and im kinda tired of rgb/aio (my actual pc is a o11 full rgb even the cable and i want to change with a full black pc or a fractal north) do i need the artic freezer 3 or i can choose between those 2 cooler and what do you suggest between the two? Thank you",
+      "upvotes": 0,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "lzrshix",
+          "text": "The 9800X3D runs quite cool, but Noctua\u2019s tower coolers are relatively inconsistent on AM5 CPUs. So I would go with a Phantom Spirit 120 EVO, or maybe a Peerless Assassin 120 SE Black if you want a straight black no-ARGB cooler.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
             {
-              "commentId": "o4jszj4",
-              "text": "Is the rumor from before or after the price increases? Seems like a lot even if it's from before  \nUnless they plan to raise the price like the 5 Pro and make it standard",
-              "upvotes": 1,
+              "commentId": "lzs3ymf",
+              "text": "Can i buy the Phantom Spirit 120 EVO and put Noctua NF-A12x25\u00a0fan on it? Will it run worse? I kinda wanted all my fans to be the noctua ones.",
+              "upvotes": 2,
               "classifyThis": true,
               "relevance": null,
               "relevanceReasoning": null,
@@ -161,42 +220,42 @@
               "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "o4kg287",
-                  "text": "From before but it was resurfaced yesterday, so either they scale down the spec, or raise the price considerably, but then again we might see AI bubble popping sooner than expected which lead to reasonable pricing for dram ",
+                  "commentId": "lzs90wp",
+                  "text": "You absolutely can. 120mm x 25mm fans have a standard size and screw hole position. Most CPU coolers use wire clips to attach the fan to the cooler that just slot into those screw holes, so any 120x25mm fan should work.\n\nGetting a Phantom Spirit (or Peerless Assassin) and doing a Noctua fan swap is a cheaper way of getting excellent cooling with low noise than buying an NH-D12 or NH-D14.",
                   "upvotes": 2,
                   "classifyThis": true,
                   "relevance": null,
                   "relevanceReasoning": null,
                   "sentiment": null,
                   "sentimentReasoning": null,
-                  "replies": [
-                    {
-                      "commentId": "o4kgwme",
-                      "text": "I hope so, I'm set for now but I don't like being locked out by prices. And that's probably why many of us decided to upgraded right now lol\n\nI helped a friend making a build 1/2 months after mine (1 month ago) and I was frustrated I had to scale it down with the same budget I used because of ram. But I warned him in december so I did my best.",
-                      "upvotes": 1,
-                      "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
-                      "replies": []
-                    }
-                  ]
+                  "replies": []
                 }
               ]
-            },
-            {
-              "commentId": "o4o2tun",
-              "text": "It won't matter for a very long time. PS6 will be plagued by extremely long crossgen period. Worse than PS5.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
             }
           ]
+        }
+      ]
+    },
+    {
+      "commentId": "1g4gaqp",
+      "text": "thermalright phantom spirit 120 evo vs se\n\nHi, I'm thinking of buying one of those 2 heatsinks for a Ryzen 7 7800x3d, on Amazon Spain the price difference is \u20ac4, [evo 44\u20ac] [se 40\u20ac] but I'm undecided, I don't care about the noise or the appearance, I'm only interested in the temperature difference, which one do you recommend?\n\nThank you very much!",
+      "upvotes": 1,
+      "classifyThis": true,
+      "relevance": null,
+      "relevanceReasoning": null,
+      "sentiment": null,
+      "sentimentReasoning": null,
+      "replies": [
+        {
+          "commentId": "ls36q4l",
+          "text": "If you want to save $15 just go SE, difference would be barely noticeable if at all.",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
         }
       ]
     }

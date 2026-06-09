@@ -1,12 +1,12 @@
 {
-  "productName": "intel-arc-a750-8gb",
+  "productName": "Intel Arc A750 8GB",
   "batchIndex": 23,
-  "totalBatches": 34,
+  "totalBatches": 23,
   "comments": [
     {
-      "commentId": "1tdid85",
-      "text": "Machine GPU vs PS5 GPU // a deductive breakdown (&amp; a mental one too)\n\nHello everyone, welcome to my TED Talk\u2122 about \"Why the PS5 GPU isn't better than the Machine GPU by any significant metric\"\n\nhttps://preview.redd.it/nw61qsk5k71h1.png?width=1024&amp;format=png&amp;auto=webp&amp;s=3723fa10c038f6f56f4a88e2ee0f500fb521e41d\n\nI have :\n\n* time to kill\n* too much love for the game\n* severe autism\n* fallen down a rabbit hole\n* been pissed off by the people claiming the PS5 is better than the Machine in performance\n* forgotten to take my meds\n\nPick any/several of those, I don't care.\n\n**Get a snack, we're about to embark in on a marvelous journey of technical specs &amp; numbers aplenty.**\n\n# Machine GPU only has 8GB VRAM, PS5 has 16!\n\n* PS5 does not have 16GB VRAM, it has 16GB of unified RAM that is divided between system RAM &amp; VRAM, typically into an 8/8 division, can be reallocated up to a 4/12 (practically never happens, most studios port their games over to PC where 60\\~65% of the userbase has 8GB GPUs, makes no sense to create extra work and touch up the VRAM allocation on the PS5 if it's gonna work all the same anyway).\n* 1080p gaming in nearly all games rarely even approaches 8GB VRAM unless texture/effects are set to the higher end of the quality setting scale, which is NEVER the case on the PS5.\n* Here's [a chart of widely played games with intense graphics that hit above 8GB VRAM](https://www.hardware-corner.net/games-8gb-vram-list/) **when set to 1440p high/ultra.** (*Notice how most of them don't even go over the threshold by a lot.*)\n\n# Valve claims 4K@60FPS, bullshit!\n\n* Valve claims 4K@60FPS ***with FSR***, AMD's upscaling method.\n* Consoles run games upscaled, this is guaranteed to almost always be the case for 1440p &amp; 4K, some games run 1080p upscaled.\n* AMD ***finally*** announced FSR4.1 support for RDNA3 &amp; RDNA2 GPUs (respectively planned for July &amp; \"2027\") so the PS5 doesn't have the argument of having better upscaling quality with PSSR over FSR3/3.1 anymore.\n\n# PS5 GPU is equivalent to an RX6700, far beyond the specs of the Machine GPU!\n\n* the [PS5 GPU](https://www.techpowerup.com/gpu-specs/playstation-5-gpu.c3480) has an RDNA2 GPU packing 36 compute units, which is also what makes up an [RX 6700](https://www.techpowerup.com/gpu-specs/radeon-rx-6700.c3716)\n* Except the PS5 in its entirety [uses 200\\~220W](https://www.ecoenergygeek.com/ps5-power-consumption/#0-how-many-watts-does-a-ps5-use), which includes the CPU (x8 Zen2 cores, 8MB cache, equivalent to a 4700G, which should draw 65W on its own, let's cut that in half to 35W, aka the 4700GE, for argument's sake), SSD &amp; RAM (let's say equivalent to 10W for both combined), all the I/O (wifi, ethernet, 2.4G dualsense, the HDMI port, give it 10W for the whole thing) and the roughly 10% inefficiency expected from the PSU (we can probably ignore the cooling fan)\n* We then have a GPU that \"only\" gets \\~140W at peak, is driven by a downpowered CPU, has to share a 256-bit bus from 14Gbps memory modules with the CPU, only has 4MB of L2 cache &amp; has to share 8MB of L3 cache with the CPU\n* the RX 6700 gets a full 175W, has its own VRAM pool of 10GB of 16Gbps modules through its own 128-bit bus on top of the the PCIe4x16 interface and we can assume that most of the benchmarked scores we can find online are never done with a CPU that has the limitations of the PS5's CPU (i.e. a full 65W TDP or more &amp; 4 times as much cache found in desktop CPUs)\n\n**If you followed me so far, I think it's safe to say equaling the PS5's GPU to an RX 6700 is NOT an accurate metric.**\n\n* There have been many videos comparing the PS5 to a PC build of some sort, trying to emulate its performance, mostly in cost-based build challenges :\n* Performance &amp; Quality comparison [with an A770](https://youtu.be/LfpXMuMvcWQ?t=460) (Notes : this is a 2y/o video, Intel driver's were inconsistent, had considerable CPU overhead &amp; this was done on Windows, also I know this comes with 16GB VRAM but this is a focus on the performance level, this will come up later)\n* Performance &amp; Quality comparison [with an RX 6600](https://youtu.be/iHkBcqW-ExY?t=1000) (Notes : this is a 6months old video, running SteamOS; here's [their logic](https://youtu.be/iHkBcqW-ExY?=488) behind the pick of the GPU, this will also come up later)\n* You can look up more performance comparison on your own but I consider that it is safe to say, in sheer performance, the PS5 lands between those two landmarks that we can place on a performance scale.\n\n# Oh look, a performance scale!\n\nhttps://preview.redd.it/ggpgn5tsz61h1.png?width=685&amp;format=png&amp;auto=webp&amp;s=3bcef516d50a6e9b765cf766303cbb184a3b755b\n\n**The two GPUs mentioned above span a 17% performance amplitude, that's a decent window for the Machine to aim into**\n\n# What does the Machine's GPU pack:\n\n* RDNA3 GPU made up of 28CU, pushing 110W @ 2.45GHz (specs sheet says \"max sustained\" clock, I'll presume this is what the Boost clock is; VRAM bandwidth undeterminate, I presume it's the same 18Gbps GDDR6 all RDNA3 GPUs got)\n* Closest known model? the [RX 7600M](https://www.techpowerup.com/gpu-specs/radeon-rx-7600m.c4014) : same CU count, 90W TDP, boost @ 2.41GHz, PCIe4x16 interface, cooled by laptop-grade thermal blocks, performance about equal to a desktop RTX 2070\n\n**Oh, how convenient, that's juuust ahead of the RX 6600 from earlier!**\n\nhttps://preview.redd.it/8irj959k171h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=a62eb9ad04115ad7ebc122e87dbf2228625455fe\n\n* Difference to the profit of the Machine GPU : +20W TDP, +40MHz boost clock, cooled by a huge fucking block of an air cooler (will likely sustain boost clocks a hell of a lot better &amp; longer than the 7600M in laptops)\n* Coincidentally, [the XT variant](https://www.techpowerup.com/gpu-specs/radeon-rx-7600m-xt.c4013) has interesting specs too : 32CUs, 120W TDP, boost @ 2.47GHz, so that means the Machine GPU ***CANNOT*** out perform this particular model, since it has physically more compute unites &amp; a teeny tiny little bit more juice &amp; clocks as well\n* Why does the 7600M XT matter? Well, let's look at the chart :\n\nhttps://preview.redd.it/fji71eq2371h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=2c282be18e5d038706590c4b70443d9d10e2c8c9\n\n**Just 2% ahead of the A770 from the first PS5 comparison video? AND equal to the 2070 SUPER?? Now that's very practical!**\n\n# Let's compile all this data:\n\nhttps://preview.redd.it/337p58l4771h1.png?width=687&amp;format=png&amp;auto=webp&amp;s=2da54cc715f457a45b531b06c0339d65488faff1\n\n**We can deduce it's equal or very close to equal to PS5 GPU performance**\n\n# Extra considerations:\n\n* Machine's CPU is significantly better, feeding the GPU more data more consistently\n* PS5's OS is BSD-based, not Linux-based (which makes sense for various licensing reasons from Sony's position)\n* Recently released [PS5 Linux project](https://github.com/ps5-linux/ps5-linux-loader) allowed for [Linux gaming testing on PS5](https://videocardz.com/newz/ps5-linux-tested-steam-games-come-close-to-native-console-performance); in all tests, Linux ran equal or a liiitle bit better\n\n**The PS5 Linux project at this time can't allocate more than 6GB of the VRAM, and yet still equals or edges ahead of the PS5 in the same games at same resolution &amp; quality.**\n\n**It runs games which are made for Windows, running through the Proton compatibility layer, whereas the PS5 gets its own custom-optimized editions, just for it. Imagine if it was Linux-optimized, before even thinking about the hardware optimization.**\n\n* This project was only operational recently, which mean most of this isn't fully fleshed out, dynamic allocation maxes out at 6GB VRAM, it doesn't boost properly/can't be overclocked, etc...\n* I think we can safely assume there's overhead that can be reduced, putting Linux ahead of the PS5's OS down the line because PS5 is basically entirely dependent on Sony software engineering to improve performance; Machine benefits from Linux community (including Valve) to ever improve &amp; optimize software\n   * Example #1 : [MESA 26.0 update](https://videocardz.com/newz/mesa-26-0-open-source-graphics-library-for-linux-releases-significant-imporvmenets-to-raytraicng-on-radeon-gpus) packs decent improvements to AMD GPUs RT performance\n   * Ex #2 : [dmemcg Linux kernel patch](https://videocardz.com/newz/valve-developer-improves-linux-vram-handling-for-8gb-gpus-with-new-kernel-patches) evicts non-game apps out of VRAM when game requires more space (look up benchmarks before/after patch, this greatly helps 8GB -or less- GPUs)\n   * Ex #3 : [Proton compat layer](https://videocardz.com/newz/valve-proton-11-0-beta-1-released-adds-support-for-x-plane-12-breath-of-fire-iv-and-more) gets ever better, no need to wait for a Linux port of a Windows game the same way console games have to get ported to PC\n   * Ex #4 : [Microsoft wants Windows to be as good as SteamOS in gaming](https://videocardz.com/newz/microsofts-windows-secrete-k2-plan-aims-to-cut-windows-11-bloat-and-improve-gaming-performance) (this is not a joke, they realized Linux was getting better at running Windows games than Windows LMAO)\n\n# But the PS5 is older, shouldn't the Machine be better?\n\nThe PS5 has a downpowered, low to mid-end desktop GPU only one generation older than the entry-level, juiced up, mobile GPU of the Machine that only has the 55W RX7400 below it in the RDNA3 series, the gap is, as described by all of the above, non-existent.\n\nI'll bring your attention over to NvidAI, where the RTX5050 is the FIRST entry-level GPU to beat the GTX1080Ti.\n\nIt took them 5 generations over the span of a decade to finally achieve that (and it still has more VRAM than the 5050 LMAO).\n\n# Why didn't you compare it with the PS5 Pro since it's gonna be closer in price?\n\n* it was not a cost-based comparison\n* people who know nothing about hardware were pissing me off saying that the base PS5 was more powerful\n* PS5s are subsidized, I wonder what would be the real price if it wasn't &amp; how much consideration would buyers have knowing the Machine can do all the PC-stuff (i.e. running non-game software, having the freedom of choosing what system you want to install, etc...) that consoles can't\n\n# Conclusion:\n\n**The Steam Machine GPU is equal in performance to the PS5 GPU &amp; can be expected to be supported longer &amp; better than PS5.**\n\n# If after all that you're still not convinced, then I don't know what to tell you.\n\ngo buy a PS5 if you think it's so much better than the Machine, I guess",
-      "upvotes": 295,
+      "commentId": "y09iho",
+      "text": "Intel Arc A750 &amp; A770 Meta Review\n\n- compilation of 11 launch reviews with ~2240 gaming benchmarks at all resolutions\n- only benchmarks at real games compiled, not included any 3DMark &amp; Unigine benchmarks\n- geometric mean in all cases\n- standard rasterizer performance without ray-tracing and/or DLSS/FSR/XeSS\n- extra ray-tracing benchmarks after the standard rasterizer benchmarks (at 1080p)\n- stock performance on (usual) reference/FE boards, no overclocking\n- factory overclocked cards _(results marked in italics)_ were normalized to reference clocks/performance, but just for the overall performance average (so the listings show the original result, just the index has been normalized)\n- missing results were interpolated (for a more accurate average) based on the available &amp; former results\n- performance average is (moderate) weighted in favor of reviews with more benchmarks\n- retailer prices and all price/performance calculations based on German retail prices of price search engine \"Geizhals\" on October 9, 2022\n- for the full results plus some more explanations check [3DCenter's launch analysis](https://www.3dcenter.org/artikel/launch-analyse-intel-arc-a750-a770)\n\n&amp;nbsp;\n\n1080p|Tests|6600|6600XT|6650XT|3050|3060|3060Ti|A750|A770LE\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\n[ComputerBase](https://www.computerbase.de/2022-10/intel-arc-a770-a750-limited-test/)|(10)|-|-|_124%_|81%|114%|143%|100%|107%\n[Eurogamer](https://www.eurogamer.net/digitalfoundry-2022-intel-arc-7-a770-a750-review)|(8)|-|116.4%|-|-|101.6%|131.2%|100%|108.5%\n[KitGuru](https://www.kitguru.net/components/graphic-cards/dominic-moass/intel-arc-a750-limited-edition-review/)|(10)|95.1%|_110.8%_|-|-|_97.6%_|128.0%|100%|108.4%\n[Le Comptoir](https://www.comptoir-hardware.com/articles/cartes-graphiques/46698-preview-intel-arc-a770-le-16-go-a-a750-le.html)|(10)|93.8%|-|_115.5%_|-|101.8%|135.3%|100%|109.2%\n[PCGamer](https://www.pcgamer.com/intel-arc-a770-limited-edition-review-performance-benchmarks/)|(9)|99.8%|119.3%|-|78.4%|106.8%|-|100%|109.9%\n[PCGH](https://www.pcgameshardware.de/Intel-Arc-Grafikkarte-267650/Tests/A770-A750-Test-Benchmarks-Preis-Release-1404382/)|(20)|-|112.7%|118.0%|72.9%|100.3%|-|100%|107.1%\n[PC Watch](https://pc.watch.impress.co.jp/docs/column/hothot/1445247.html)|(10)|-|-|-|-|_104.2%_|-|100%|110.9%\n[PCWorld](https://www.pcworld.com/article/1341464/intel-arc-a770-a750-graphics-card-review.html)|(11)|98.7%|-|-|-|99.3%|-|100%|106.0%\n[TechPowerUp](https://www.techpowerup.com/review/intel-arc-a750/)|(25)|100%|116%|-|76%|104%|132%|100%|106%\n[TechSpot](https://www.techspot.com/review/2542-intel-arc-a770-a750/)|(10)|99.7%|112.1%|119.1%|75.3%|104.7%|130.6%|100%|105.8%\n[Tom's Hardware](https://www.tomshardware.com/reviews/intel-arc-a750-limited-edition-review)|(8)|95.4%|111.5%|113.7%|72.6%|98.8%|128.4%|100%|111.9%\n**average 1080p performance**||**98.4%**|**113.8%**|**118.4%**|**74.6%**|**102.5%**|**131.6%**|**100%**|**107.9%**\n\n&amp;nbsp;\n\n1440p|Tests|6600|6600XT|6650XT|3050|3060|3060Ti|A750|A770LE\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\nComputerBase|(10)|-|-|_112%_|74%|107%|137%|100%|109%\nEurogamer|(8)|-|104.6%|-|-|95.8%|126.0%|100%|108.7%\nKitGuru|(10)|86.6%|_102.4%_|-|-|_93.6%_|124.5%|100%|110.9%\nLe Comptoir|(10)|85.0%|-|_104.2%_|-|97.1%|130.6%|100%|110.1%\nPCGamer|(9)|92.3%|111.5%|-|74.8%|103.7%|-|100%|112.6%\nPCGH|(20)|-|104.2%|109.6%|69.5%|97.0%|-|100%|108.8%\nPC Watch|(10)|-|-|-|-|_101.7%_|-|100%|114.4%\nPCWorld|(11)|86.9%|-|-|-|94.2%|-|100%|108.2%\nTechPowerUp|(25)|87%|103%|-|69%|96%|125%|100%|107%\nTechSpot|(10)|86.6%|98.3%|105.2%|68.7%|94.4%|123.8%|100%|106.9%\nTom's Hardware|(8)|85.7%|102.0%|104.1%|69.1%|95.4%|126.7%|100%|112.7%\n**average 1440p Performance**||**88.4%**|**103.3%**|**107.8%**|**69.4%**|**97.0%**|**127.2%**|**100%**|**109.4%**\n\n&amp;nbsp;\n\n2160p|Tests|6600|6600XT|6650XT|3050|3060|3060Ti|A750|A770LE\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\nEurogamer|(8)|-|93.4%|-|-|92.9%|124.3%|100%|110.2%\nKitGuru|(10)|75.8%|_89.0%_|-|-|_96.8%_|132.0%|100%|120.5%\nPCGamer|(9)|80.9%|99.0%|-|68.9%|97.2%|-|100%|112.6%\nPCGH|(20)|-|96.5%|102.2%|69.4%|99.8%|-|100%|117.6%\nPC Watch|(11)|-|-|-|-|_104.5%_|-|100%|123.6%\nTechPowerUp|(25)|74%|88%|-|64%|92%|122%|100%|109%\n**average 2160p Performance**||**78.5%**|**93.3%**|**~98%**|**67.0%**|**96.4%**|**127.3%**|**100%**|**114.6%**\n\n&amp;nbsp;\n\nRT@1080p|Tests|6600|6600XT|6650XT|3050|3060|3060Ti|A750|A770LE\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\nComputerBase|(4)|-|-|_84%_|74%|115%|148%|100%|111%\nLe Comptoir|(10)|60.1%|-|_73.7%_|-|101.4%|138.9%|100%|107.3%\nPCGH|(10)|-|80.2%|83.8%|73.7%|103.5%|-|100%|119.4%\nTechPowerUp|(8)|67.1%|78.5%|-|67.2%|93.2%|120.7%|100%|107.6%\nTom's Hardware|(5)|62.1%|73.9%|76.1%|65.2%|93.0%|125.0%|100%|114.3%\n**average RT Performance**||**66.5%**|**76.7%**|**80.5%**|**70.3%**|**100.1%**|**131.8%**|**100%**|**112.3%**\n\n&amp;nbsp;\n\n&amp;nbsp;|6600|6600XT|6650XT|3050|3060|3060Ti|A750|A770LE\n|:--|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|\nGen &amp; Mem|RDNA2 8GB|RDNA2 8GB|RDNA2 8GB|Ampere 8GB|Ampere 12GB|Ampere 8GB|Alchemist 8GB|Alchemist 16GB\n1080p Perf|98.4%|113.8%|118.4%|74.6%|102.5%|131.6%|100%|107.9%\n1440p Perf|88.4%|103.3%|107.8%|69.4%|97.0%|127.2%|100%|109.4%\n2160p Perf|78.5%|93.3%|~98%|67.0%|96.4%|127.3%|100%|114.6%\nRT@1080p Perf|66.5%|76.7%|80.5%|70.3%|100.1%|131.8%|100%|112.3%\nU.S. MSRP|$329|$379|$399|$249|$329|$399|$289|$349\nGER Retail|290\u20ac|380\u20ac|380\u20ac|300\u20ac|380\u20ac|470\u20ac|~350\u20ac|~420\u20ac\nPrice/Perf 1080p|119%|105%|109%|87%|94%|98%|100%|90%\nPrice/Perf 1440p|107%|95%|99%|81%|89%|95%|100%|91%\nPrice/Perf 2160p|95%|86%|90%|78%|89%|95%|100%|95%\nPrice/Perf RayTracing|80%|71%|74%|82%|92%|98%|100%|94%\nofficial TDP|132W|160W|180W|130W|170W|200W|225W|225W\nIdle Draw|4W|5W|~5W|9W|13W|10W|40W|46W\nGaming Draw|131W|159W|177W|129W|172W|202W|208W|223W\nEfficiency 1440p|140%|135%|127%|112%|117%|131%|100%|102%\n\n&amp;nbsp;\n\nSource: [3DCenter.org](https://www.3dcenter.org/artikel/launch-analyse-intel-arc-a750-a770)",
+      "upvotes": 102,
       "classifyThis": false,
       "relevance": null,
       "relevanceReasoning": null,
@@ -14,80 +14,81 @@
       "sentimentReasoning": null,
       "replies": [
         {
-          "commentId": "omk7n3t",
-          "text": "I have a beefy PC and play on my 65\" 4k TV time to time via long HDMI cable  \nMy TV to couch distance is like 3m, so I sincerely don't understand which freaking 4k I should want to see there.  \nI barely can see a difference between 1080p and 1440p from that distance.  \nThe only thing I want is 100+ fps, I cannot go back comfortably to even 60 fps after years of playing on higher refresh rates.  \n30 fps feels as a slideshow torture.  \n  \nSteam machine makes perfect sense to me for such purpose.",
-          "upvotes": 1,
+          "commentId": "irriltu",
+          "text": "Last gamers Nexus benchmarks the A770 was right behind the 3070 in some cases. So once Intel fixes the driver issues I  really want to see how it shines",
+          "upvotes": 17,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is discussing their personal TV setup and general preferences for high refresh rates, not the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is a general discussion about gaming preferences without a specific sentiment toward the product.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": [
             {
-              "commentId": "omkd6db",
-              "text": "can your TV even support 60+Hz? at the very least Vsync?\n\nI recently ran some benchmarks on my DIY Cube and I was wondering why my capped 60fps felt choppy, I saw I just never enabled Vsync and holy fuck does it make a difference when the frames are properly paced to the screen's refresh rate...",
-              "upvotes": 1,
+              "commentId": "irrslgm",
+              "text": "Even if the drivers get sorted, I don't think that solves the old titles issues? I know they are emulating directx9, so I imagine that will take more than driver optimizations to sort out. Next intel cards might be out before that is fixed.",
+              "upvotes": 6,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The discussion is about TV refresh rates and Vsync, which is off-topic to the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a technical question about display settings, not a sentiment-bearing opinion on the product.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "omkk7m0",
-                  "text": "Yes, my TV has 120Hz support (119Hz shown by windows display settings for some reason)  \nAnd I use active HDMI cable (one way transmission) as normal 10m cable does not give me 60+Hz (shorter cable like 2m did, but now my PC is placed further).  \nAs an additional reason of issues - HDMI standards hell, there can be incompatibility between ports and plugs, which can cause fallbacks to supported video modes.  \nThe lesson I learned - don't buy cheap cables, and for 5+m distance buy active cable if 60+Hz is needed.",
+                  "commentId": "irs42qf",
+                  "text": "That's certainly the million dollar question, and unless they absolutely nail this, it's going to lock out a significant portion of gamers (such as CSGO players).",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The user is discussing HDMI cables and TV support, which is unrelated to the Intel Arc A750.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment provides technical advice on cables, not a sentiment on the product.",
-                  "replies": []
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "irsaq94",
+                      "text": "I don't necessarily think it's locking out older gamers. A decent-spec modern PC with a higher-end Arc card should hit 150+ FPS in CS:GO. Keeping in mind most people also don't run a monitor with a refresh rate higher than 144Hz, I don't think this will make the card completely out of reach for budget/mid-range gamers.",
+                      "upvotes": 3,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": [
+                        {
+                          "commentId": "irss7yd",
+                          "text": "&gt;I want to agree with you, and I do, but not the statement of \"a few months\". These drivers clearly need a year or two of additional work to be used as a daily driver. If I didn't play so many older games, I'd be really tempted to try these cards out for a budget dx12/vulkan gaming build though.\n\nnot for a game like CS go where 144 hz is minimum to be competitive. Flash bangs / smoke grenades can drop the FPS to below 144 hz",
+                          "upvotes": 2,
+                          "classifyThis": true,
+                          "relevance": null,
+                          "relevanceReasoning": null,
+                          "sentiment": null,
+                          "sentimentReasoning": null,
+                          "replies": []
+                        }
+                      ]
+                    }
+                  ]
                 }
               ]
-            }
-          ]
-        },
-        {
-          "commentId": "omsmtex",
-          "text": "https://preview.redd.it/mey6pjdhj72h1.jpeg?width=480&amp;format=pjpg&amp;auto=webp&amp;s=8eb11d4a78b303514142482b21621e43b4b01b69\n\n",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The comment consists only of an image link, which is low-effort/meme content.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "No text sentiment provided.",
-          "replies": []
-        },
-        {
-          "commentId": "olwogrx",
-          "text": "PS5 doesn\u2019t have 16 GB of RAM, it\u2019s shared between the system and the graphics so the Ps5 can use up to 10 for games but this will rarely happen outside of Sony exclusive games. \n\nIt\u2019s not far beyond it. DF did a video showing the SM get nearly double the frame rate in cyberpunk at 1080p ultra with TAA. To get similar frame rates the PS5 has to drop the internal resolution below 1080p and gets a much muddier image.\n\nSM has a zen 4 CPU and RDNA 3 graphics. The Ps5 is zen 2 and RDNA 2, it\u2019s not far superior to the SM at all.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The discussion is about the Steam Machine and PS5 hardware specs, not the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is a factual comparison between consoles and a specific PC build, not the A750.",
-          "replies": [
+            },
             {
-              "commentId": "oly5q48",
-              "text": "PS5 can use 12-13GB for games. ",
+              "commentId": "irssuug",
+              "text": "Right, and I think it was Steve (GN) that said alot of the older games where it falls behind, it's still plenty fps avaliable.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": "exclude",
-              "relevanceReasoning": "The comment is a factual statement about PS5 RAM allocation, unrelated to the Intel Arc A750.",
-              "sentiment": "neutral",
-              "sentimentReasoning": "The comment is a purely factual statement.",
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
               "replies": [
                 {
-                  "commentId": "oly6ysl",
-                  "text": "Which it will only ever use for first party games. ",
-                  "upvotes": 1,
+                  "commentId": "irul2t9",
+                  "text": "True. Maybe 50% fps disadvantage for Arc A700 on older games. But still way over 100 fps.",
+                  "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": "exclude",
-                  "relevanceReasoning": "The comment is a discussion about PS5 game optimization, unrelated to the Intel Arc A750.",
-                  "sentiment": "neutral",
-                  "sentimentReasoning": "The comment is a factual observation about console gaming.",
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
                   "replies": []
                 }
               ]
@@ -95,29 +96,121 @@
           ]
         },
         {
-          "commentId": "oly77re",
-          "text": "To be honest, comparing a PS5 with a PC doesn't make sense.\n\nDo you want a PS5? \u2192 Buy a PS5.\nDo you want a small PC to play your Steam library? \u2192 Buy a Steam Machine.\n\n\nThat's it.",
-          "upvotes": 1,
+          "commentId": "irregsz",
+          "text": "So all in all, A770 is just beating RTX 3060 and the RTX 3060 Ti smacks them both around.\n\nSounds about right to me. Hopefully they're able to get drivers better, but I don't have any hope for non-DX12 games.",
+          "upvotes": 12,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The user is discussing the general choice between a PS5 and a Steam Machine, not the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is a general recommendation based on user needs, not a sentiment on the A750.",
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
           "replies": []
         },
         {
-          "commentId": "olwqo68",
-          "text": "Machine nears PS6 GPU LOL",
+          "commentId": "irt3sgs",
+          "text": "As much as I want Intel to succeed in the GPU market, and as much as the feature suite is extremely compelling and fully competitive with Nvidia, there\u2019s really no reason to buy either of these cards when the RX 6600, RX 6600 XT and RX 6650 XT are all such amazing $200-300 options.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "irr7yx0",
+          "text": "Holy shit, the idle draw. I've missed that part up until now. That's a no thank you from me. That and a bit too much power draw in general.",
+          "upvotes": 4,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "irsqzj9",
+              "text": "same, I noticed it recently too. I thought it's just inefficient at gaming and for casual use it would be ok. Can't buy with this idle / multimonitor draw. If you're European then when long term running costs are considered, it's straight up 6700xt/3070 price point competitor.",
+              "upvotes": 3,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "irssdwa",
+                  "text": "Right, I am i Europe. So I'd much rather run an undervolted 6700xt for efficiency.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "irsmbb0",
+          "text": "I am very curious how this would perform on lesser cpus due to the drivers. Reviewers are using a minimum Ryzen 5000 series cpu these days, plenty of people can use rebar on lesser cpus if their mobo vendor provided support. What about Ryzen 1000 or Intel 8th gen?\n\nIntel ARC is probably a lot worse than it looks. And it already looks very very bad. They need some partners to soak up the cost of RMAs that will undoubtedly devour profit margins like a swarm of locusts. Maybe EVGA hasn't taken enough loss at the tail end of Nvidia's 30 series.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": "exclude",
-          "relevanceReasoning": "The comment is a joke/meme about the Steam Machine and PS6, unrelated to the Intel Arc A750.",
-          "sentiment": "neutral",
-          "sentimentReasoning": "The comment is a joke.",
-          "replies": []
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "irulb11",
+              "text": "Without rBAR: \u201323% over a parcours of 25 games ([TPU](https://www.techpowerup.com/review/intel-arc-a770-pcie-3-resizable-bar/28.html)). So forget older systems for Arc A700.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "iruscod",
+                  "text": "Both Ryzen 1000+ and 8th gen Intel support Rebar. Alder Lake represents a fair leap over ol Sky Lake, and each Ryzen generation improved quite significantly.",
+                  "upvotes": 2,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "irsqzak",
+          "text": "AMD cards with an idle draw of 5W? Did they finally fix their issue with the VRAM running at 100%, driving up energy consumption, as long as a second display is connected?",
+          "upvotes": 1,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "irsrj2j",
+              "text": "from the same page no, 6750xt jumps from 7w to 39w (6700xt 33w). it's recent chip so recent drivers too. yet still below arc. video playback is 20w for 6750xt, while arc is at 50w...\n\nhttps://www.techpowerup.com/review/intel-arc-a770/38.html https://www.techpowerup.com/review/asus-radeon-rx-6750-xt-strix-oc/35.html",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
         }
       ]
     }
-  ],
-  "model": "gemma-4-31b-it"
+  ]
 }

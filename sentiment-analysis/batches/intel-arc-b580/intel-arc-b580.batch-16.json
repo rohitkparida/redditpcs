@@ -1,7 +1,7 @@
 {
-  "productName": "intel-arc-b580",
+  "productName": "Intel Arc B580",
   "batchIndex": 16,
-  "totalBatches": 85,
+  "totalBatches": 55,
   "comments": [
     {
       "commentId": "1hclqyz",
@@ -13,6 +13,166 @@
       "sentiment": null,
       "sentimentReasoning": null,
       "replies": [
+        {
+          "commentId": "m1p508f",
+          "text": "This is awesome. It\u2019s about time someone stepped up to nvidia. \n\nI\u2019ll wait for the high end option but I\u2019m excited for an intel gpu in my system",
+          "upvotes": 7,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m1pmc9c",
+              "text": "Rofl. Step up?  This is barely matching 2nd lowest card from last gen.  This is going after 7700xt instead.",
+              "upvotes": -4,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": [
+                {
+                  "commentId": "m1rmo1g",
+                  "text": "7700XT is $400. This is $250.",
+                  "upvotes": 1,
+                  "classifyThis": true,
+                  "relevance": null,
+                  "relevanceReasoning": null,
+                  "sentiment": null,
+                  "sentimentReasoning": null,
+                  "replies": [
+                    {
+                      "commentId": "m1rusq3",
+                      "text": "And?   Intel is not chasing Nvidia.  They want a piece of AMD pie.",
+                      "upvotes": 1,
+                      "classifyThis": true,
+                      "relevance": null,
+                      "relevanceReasoning": null,
+                      "sentiment": null,
+                      "sentimentReasoning": null,
+                      "replies": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "commentId": "m1pzjcq",
+          "text": "Should I sell my 4060 that I picked up brand new for $200 and pick up this bad boy instead? lol",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m1qeyqy",
+              "text": "Hell no if you got a 4060 for $200",
+              "upvotes": 5,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "m1p56g9",
+          "text": "Looks great. Makes me want to build another PC just so I can support this product.",
+          "upvotes": 5,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m1qlzu2",
+              "text": "Hell, If my kid was old enough to start gaming I would seriously consider making a quick budget build and throwing this in",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "m1p9ipc",
+          "text": "It's interesting how much further behind it falls in certain titles, while absolutely crushing the 4060 in others, especially in synthetic benchmarks.\n\nI'm no expert on GPUs, but could that indicate a lot of potential driver headroom for the card, or is it some kind of fundamental flaw that is unlikely to be rectified? We know Intel has a fairly large driver team, given their massive improvements in driver compatibility. If there is driver headroom I'd be fairly confident that they are going to pursue it.\n\nSadly there is still a major driver issue in PUBG according to Der8auer. Hopefully that is a quick fix.",
+          "upvotes": 5,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": [
+            {
+              "commentId": "m1penkp",
+              "text": "There's all sorts of internal bottlenecks within the GPU architecture that can be hit that can explain severe differences between games. Every single part of designing a high-performance architecture is about decisions and compromises.\n\nYou can optimize something for really fast geometry processing, but that leads to poor utilization of said hardware in games using Nanite, which bypass the fixed-function geometry hardware.\n\nYou can instead optimize something for the modern mesh shader pipeline, but this means that you'll likely be losing performance in traditional/older games due to the opportunity costs.\n\nAn example of this is the AMD NGG pipeline. This basically treats all geometry work as a primitive shader draw. This means it's nice and optimal when you're actually running primitive shaders, but it maps poorly to older kinds of rendering like geometry shaders. In pessimistic scenarios, it can lead to a drastic underutilization of the shader cores due to requirements imposed by the primitive shader pipeline.\n\n> As noted above, each NGG shader invocation can only create up to 1 vertex + up to 1 primitive. This mismatches the programming model of SW GS and makes it difficult to implement (*). In a nutshell, for SW GS the hardware launches a large enough workgroup to fit every possible output vertex. This results in poor HW utilization (most of those threads just sit there doing nothing while the GS threads do the work), but there is not much we can do about that.\n\n(*) Note for the above: Geometry shaders can output an arbitrary amount of vertices and primitives in a single invocation.\n\nhttps://timur.hu/blog/2022/what-is-ngg\n\nThis is the sort of bottleneck that you can't really solve with just driver changes. You can sometimes do some translation work to automatically convert what would be slow to something that would be fast, but you're usually limited on this sort optimization.",
+              "upvotes": 12,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "m1pexue",
+              "text": "Yeah, when I saw that I assumed drivers fixes would be coming.",
+              "upvotes": 2,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            },
+            {
+              "commentId": "m1q54hz",
+              "text": "It's a bit of both. It could be that the games it pulls ahead in really love VRAM, and the ones where 4060 pulls ahead don't, in which case other driver optimisations would be needed to bring performance up to bridge that gap. \n\nAs for other driver optimisations, what it'll be is that certain API calls are faster on Nvidia, and others on Intel. The graphics pipelines of the games where Intel performs better are probably using more of the API calls that they excel at, and same for Nvidia.\n\nAPI calls might have a dedicated hardware implementation on the GPU (sometimes called native support), or a software implementation that stitches together a load of lower level hardware features to get the same effect. Hardware implementations are obviously usually significantly faster than software implementations. The performance of a software implementation of an API call depends on a bunch of stuff, like how many lower level hardware features need to be utilised to achieve the result, how fast those low level hardware features are, and how optimised the code is.\n\nIf an API call is already utilising a hardware implementation and is lagging behind the competition's hardware implementation, there's practically no chance of driver updates increasing performance. If it's a software implementation, then there is potentially room for improvement (sometimes large ones), but that depends on how well written the software implementation is in the first place.\n\nWith Intel being pretty new to the desktop GPU scene, I'd imagine a) they're probably adding a significant amount of new hardware features each generation, which could be used to optimise their software implementation of API calls, and b) their software implementations haven't been optimised to the same degree that Nvidia or AMD's have yet.\n\nI think unless you are an Intel GPU engineer, it's very hard to tell how much faster the GPUs can get from driver optimisations alone.",
+              "upvotes": 1,
+              "classifyThis": true,
+              "relevance": null,
+              "relevanceReasoning": null,
+              "sentiment": null,
+              "sentimentReasoning": null,
+              "replies": []
+            }
+          ]
+        },
+        {
+          "commentId": "m1pgxhz",
+          "text": "So basically if you\u2019re aiming to spend $300 or less on a GPU, get this. We\u2019ll have to see if Nvidia or AMD launch anything compelling for that price point next year but for now this is the clear pick for that price bracket. Wild. I\u2019m building my fianc\u00e9e a PC using my old 2070 super and I\u2019m debating getting one of these instead.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
+        {
+          "commentId": "m1pmxwj",
+          "text": "Battlemage is a banger.",
+          "upvotes": 2,
+          "classifyThis": true,
+          "relevance": null,
+          "relevanceReasoning": null,
+          "sentiment": null,
+          "sentimentReasoning": null,
+          "replies": []
+        },
         {
           "commentId": "m1p4ptu",
           "text": "This is the step in the right direction but DLSS is still an important factor. VRAM on 4060 sucks, but it can be managed.\n\nThe biggest issue is this: Can anyone guarantee that this card will be supported in 2 or 3 years? Will ARC division even exist at Intel considering their internal mess?\n\nCompetition is good, but I think the order of desirability is still Geforce > Radeon > ARC. However, it's getting closer. Hopefully Intel's board has patience and allows for product to grow.",
@@ -130,323 +290,6 @@
         {
           "commentId": "m1pni8f",
           "text": "I hope they stick iterating on this products",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "m1ps05q",
-          "text": "Nice! I'm not the target audience for this since I already have an RX 6800, but it's nice to see Intel put out a good product.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "m1q3zcd",
-          "text": "Nice, this is great news. Well done Arc team.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "m1ryha1",
-          "text": "It is genuinely shocking that the 580 puts up a decent fight against my 3080. So much for putting more money up front to \u2018future proof\u2019.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "m1s2g34",
-          "text": "Just ordered. Go intel!",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "m1utfap",
-              "text": "From where?",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "m1s6bq6",
-          "text": "Can you run LLMs with these ?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "m1tjsmq",
-          "text": "Would be a shame if Intel went and axed its GPUs because of its business failings elsewhere right now, can't help but feel like the next gen will be at the mercy of execs who might be eyeing GPUs for the chopping block if they don't start pulling serious profit with it.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "m4b4608",
-              "text": "I remember when amd produced the bulldozer series, they were at a low point, the ATI gpu group saved them... Maybe Intel was watching...",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "m1uriam",
-          "text": "Hi, I wanted to know that my motherboard Msi a320m pro Max . pci gen 3 compatible with this GPU pls tell",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "m58az4s",
-              "text": "Unlikely, but borderline possible if only via a custom EFI driver. It really wants the REBAR feature to be enabled in your BIOS.  Check if your mainboard got that.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "m1uttit",
-          "text": "I haven't been following Intel as closely as some others, but I'm seriously thrilled that they're making such great progress in the GPU market. I don't know if they'll be able to create a RTX xx90 competitor in the near term, but I hope they take AMD's former place as the budget card king. Hell, they probably need it since their CPU market share is tanking.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "m1xvjk2",
-              "text": "Intel said this gen they're only targeting the low and mid range. Next gen they will have a high end offering, and after that they will have a very high end offering. \n\nI imagine that will at least be competing with the 5070.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "m1y1e6i",
-                  "text": "Hey, I\u2019m willing to consider them if they can beat them on price and they come with some fat VRAM.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "commentId": "m1ym8m9",
-          "text": "You would think Intel's stock would bounce back up after they fix their CPU issue and are producing half decent graphics cards now. \n\nI don't get why people think artificial intelligence is going to generate so much money but I'm tempted to invest in Nvidia too because it looks like they're going to be making a lot of money",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "m2b5mwh",
-          "text": "Nice work intel, just wondering though -- how would this card compare to a 2080 Ti? \n  \nI have been looking for an upgrade that won't break the budget, but thus far it seems like I would just be wasting money unless I went something fairly high-end (I could be wrong, not the most hardware educated user)\n  \nEdit: 1440p @ 170hz is my resolution",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "m2eevn8",
-          "text": "whats the best cpu that would fit for it mostly budget for me",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "m2h5be7",
-          "text": "I came pretty close to buying a 7800XT and even contemplated a 7900XTX however I'm in no rush to build and I'm glad I waited. This will be my first rig and I actually would prefer a budget build. Fair play to Intel, I'll be keeping my eyes on you! Looks like you have a future customer.\n\nAn AMD cpu and an Intel GPU? Who would of thought it?",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "mtmyhb7",
-          "text": "Im a little late to the party here, but honestly, big props to intel for these GPUs. One of the first times I can remember Intel putting out a very competitve item ever. A great GPU at a competitive price point is pretty insane and very out of character for Intel. Im seriously considering getting a B580, even at its current marked up price.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": []
-        },
-        {
-          "commentId": "m1qy5tj",
-          "text": "Intel reminds me of old AMD GPU. Bit of hiccups here and there, but competitive price. Most of all, actually innovative instead of just trying to be Nvidia B.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "m1u15fj",
-              "text": "AMD making a desktop gpu using chiplets *am I a joke to you?*",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "m1pjuth",
-          "text": "I say hold on to your wallets first, buy it if the 5060, 8600xt still have 8gb. \n\nThe need for resizeable bar is still a bummer as well as old game support since most buyers of this card will try to replace there 1660 or RX580.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "m1psdmc",
-              "text": "The 5060 was leaked to have 8GB wasn\u2019t it? Unless that was the laptop version",
-              "upvotes": 3,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": [
-                {
-                  "commentId": "m1pyq22",
-                  "text": "The memory bus was leaked, but it's still unclear if it will be an 8 GB card or 16 GB. Likely was originally planned to be 8 GB but poor sales on 4060 Ti and 4070 Ti may force Nvidia to make it 16 GB. 3060 experienced a similar thing, originally planned to be 6 GB but 2060 flopping forced them to adjust (also shown with adjustment to 8 GB for 2060 Super, and in this gen 4060 Ti 16 GB and 4070 Ti Super). Unfortunately they haven't gotten around to 3 GB GDDR7 modules or we would be getting 12 GB.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                },
-                {
-                  "commentId": "m1ro590",
-                  "text": "There was a video cards article a bit ago saying it was confirmed 8GB and the 5070 12GB.",
-                  "upvotes": 1,
-                  "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
-                  "replies": []
-                }
-              ]
-            },
-            {
-              "commentId": "m1qp05s",
-              "text": "> I say hold on to your wallets first\n\nWith Trumpy tarrifs incoming I wouldn't hold off on any tech purchase.",
-              "upvotes": -3,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "m1pm2jh",
-          "text": "If they made an 8800xt killer for less money I would totally jump on board. I\u2019m impressed and hopefully they do go for the higher midrange. I\u2019m on a 7800xt and would love to use xess and the RT performance.",
-          "upvotes": 1,
-          "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
-          "replies": [
-            {
-              "commentId": "m1qf8rv",
-              "text": "They're beating the 4060 with a 4070ti sized die. I think they're a little way of making a 8800xt killer. Maybe a month before the 9800xt launches like Intels past 2 launches now.",
-              "upvotes": 1,
-              "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
-              "replies": []
-            }
-          ]
-        },
-        {
-          "commentId": "m1qjnuk",
-          "text": "All of these reviews sound truly awesome. I wish Intel the best success, they really deserve it now.",
           "upvotes": 1,
           "classifyThis": true,
           "relevance": null,

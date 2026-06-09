@@ -23,6 +23,14 @@ def save_json(path, data: dict):
         json.dump(data, f, indent=2)
 
 
+def list_batch_files(batch_dir: Path) -> list[Path]:
+    """Return sorted batch files, excluding status and metadata sidecars."""
+    return sorted(
+        path for path in Path(batch_dir).glob("*.json")
+        if not path.name.startswith("_")
+    )
+
+
 # ─────────────────────────────────────────────────────────────
 # Batch classification state checks
 # ─────────────────────────────────────────────────────────────

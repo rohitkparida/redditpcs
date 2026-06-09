@@ -59,36 +59,17 @@
     "updated_at": "2026-06-09T19:32:36"
   },
   "amd-radeon-rx-7900-xt": {
-    "status": "review",
-    "step": "classification",
-    "reason": "incomplete_classification",
-    "warnings": [
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-03.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-09.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-10.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-13.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-16.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-28.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-33.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-37.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-40.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-44.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-45.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-52.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-53.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-54.json",
-      "zero_include_batch:amd-radeon-rx-7900-xt.batch-55.json"
-    ],
+    "status": "pending",
+    "step": "classification_resume",
+    "reason": "retry_after_shared_batch_filter_fix",
+    "warnings": [],
     "metrics": {
       "survivingThreads": 5,
       "candidateComments": 870,
       "classificationCompleteness": 0.9080459770114943
     },
-    "artifacts": {
-      "classified": "classified/amd-radeon-rx-7900-xt.classified.json"
-    },
-    "error": "",
-    "updated_at": "2026-06-09T16:10:24"
+    "artifacts": {},
+    "error": ""
   },
   "amd-radeon-rx-7900-xtx": {
     "status": "done",
@@ -309,17 +290,17 @@
     "updated_at": "2026-06-09T14:38:07"
   },
   "amd-ryzen-5-9600x": {
-    "status": "failed",
-    "step": "split_validation",
-    "reason": "invalid_batches",
+    "status": "pending",
+    "step": "classification_resume",
+    "reason": "retry_after_shared_batch_filter_fix",
     "warnings": [],
     "metrics": {
       "survivingThreads": 5,
-      "candidateComments": 725
+      "candidateComments": 725,
+      "classificationCompleteness": 0.05103448275862069
     },
     "artifacts": {},
-    "error": "[Split] Batch file '_classification_status.json' has 0 classifiable comments.",
-    "updated_at": "2026-06-09T16:15:07"
+    "error": ""
   },
   "amd-ryzen-7-7700": {
     "status": "insufficient_sources",

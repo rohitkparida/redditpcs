@@ -2,6 +2,7 @@ import json
 import os
 from pathlib import Path
 from collections import Counter
+from common import list_batch_files
 
 def flatten_batch_comments(nodes):
     """Recursively flatten the batch comment tree."""
@@ -57,7 +58,7 @@ def merge_batches(batch_dir, master_file, output_file):
     with open(master_file, 'r', encoding='utf-8') as f:
         master_data = json.load(f)
     
-    batch_files = sorted(list(Path(batch_dir).glob('*.json')))
+    batch_files = list_batch_files(Path(batch_dir))
     print(f"Merging {len(batch_files)} batches from {batch_dir}...")
     
     # Store all votes for each commentId: {cid: {'relevance': [], 'sentiment': [], 'reasonings': []}}

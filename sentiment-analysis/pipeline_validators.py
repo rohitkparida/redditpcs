@@ -10,6 +10,7 @@ Call these after each step in run_sentiment_pipeline.py.
 import json
 from pathlib import Path
 from dataclasses import dataclass, field
+from common import list_batch_files
 
 
 @dataclass
@@ -116,7 +117,7 @@ def validate_split(slug: str) -> tuple[bool, list[str]]:
     batch_dir = Path("batches") / slug
     raw_file = Path("raw_comments") / f"raw_{slug}.json"
 
-    if not batch_dir.exists() or not list(batch_dir.glob("*.json")):
+    if not batch_dir.exists() or not list_batch_files(batch_dir):
         return False, [f"[Split] Batch directory for '{slug}' is missing or empty."]
 
     # Count comments in batches (classifyThis=True only)
@@ -129,7 +130,7 @@ def validate_split(slug: str) -> tuple[bool, list[str]]:
         return total
 
     batch_total = 0
-    for bf in sorted(batch_dir.glob("*.json")):
+    for bf in list_batch_files(batch_dir):
         try:
             with open(bf, "r", encoding="utf-8") as f:
                 b = json.load(f)
@@ -188,7 +189,7 @@ def validate_classification(slug: str) -> tuple[bool, list[str]]:
     total_classified = 0
     total_include = 0
 
-    for bf in sorted(batch_dir.glob("*.json")):
+    for bf in list_batch_files(batch_dir):
         try:
             with open(bf, "r", encoding="utf-8") as f:
                 b = json.load(f)
@@ -265,7 +266,7 @@ def inspect_classification(slug: str) -> ClassificationValidationResult:
 
     result = ClassificationValidationResult(structurally_complete=True)
     total_include = 0
-    for batch_file in sorted(batch_dir.glob("*.json")):
+    for batch_file in list_batch_files(batch_dir):
         try:
             with open(batch_file, "r", encoding="utf-8") as f:
                 batch = json.load(f)
@@ -379,7 +380,7 @@ def validate_merge(slug: str) -> tuple[bool, list[str]]:
                 get_batch_authors(n.get("replies", []), id_map)
 
         batch_ids = set()
-        for bf in batch_dir.glob("*.json"):
+        for bf in list_batch_files(batch_dir):
             try:
                 with open(bf, "r", encoding="utf-8") as f:
                     b = json.load(f)

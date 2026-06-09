@@ -5,6 +5,7 @@ import sys
 import re
 from pathlib import Path
 import openvino_genai as ov_genai
+from common import list_batch_files
 
 # Define base directories
 BASE_DIR = Path(r"c:\Users\Public\Work\redditpcs\sentiment-analysis")
@@ -325,7 +326,7 @@ def main(product_slug, pipe=None, category_name="hardware product", on_activity=
     config.temperature = 0.1  # Highly deterministic
     
     # Process all batch files in the product directory
-    batch_files = sorted(list(batch_dir.glob('*.json')))
+    batch_files = list_batch_files(batch_dir)
     print(f"Found {len(batch_files)} batches for {product_slug}")
     
     for bf in batch_files:

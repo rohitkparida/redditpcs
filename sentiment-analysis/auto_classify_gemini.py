@@ -10,6 +10,7 @@ from common import (
     is_batch_classified,
     strip_markdown_block,
     apply_classifications_to_batch,
+    list_batch_files,
     resolve_product_name,
 )
 
@@ -292,10 +293,7 @@ def main(product_slug, model="gemini-2.5-flash-lite"):
     print(f"Loaded product name: '{product_name}'")
 
     # Get all JSON files in the batch dir, sorted by name
-    batch_files = sorted(
-        path for path in batch_dir.glob("*.json")
-        if path.name != "_classification_status.json"
-    )
+    batch_files = list_batch_files(batch_dir)
     
     print(f"Found {len(batch_files)} batches for {product_slug}")
     
@@ -338,7 +336,7 @@ def main(product_slug, model="gemini-2.5-flash-lite"):
 
 def product_completeness(product_slug):
     expected = complete = 0
-    for batch_file in (Path("batches") / product_slug).glob("*.json"):
+    for batch_file in list_batch_files(Path("batches") / product_slug):
         batch = load_json(batch_file)
         def count(nodes):
             nonlocal expected, complete

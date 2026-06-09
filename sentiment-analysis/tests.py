@@ -19,6 +19,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 import create_template
 import auto_classify_gemini
+import common
 import merge_batches
 import split_batches_correctly
 import pipeline_validators as pv
@@ -234,6 +235,16 @@ class TestFlattenBatchComments(unittest.TestCase):
         self.assertEqual(result, [])
 
 class TestGeminiClassificationValidation(unittest.TestCase):
+    def test_list_batch_files_excludes_sidecars(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            batch_dir = Path(tmp)
+            (batch_dir / "product.batch-01.json").write_text("{}", encoding="utf-8")
+            (batch_dir / "_classification_status.json").write_text("{}", encoding="utf-8")
+            self.assertEqual(
+                [path.name for path in common.list_batch_files(batch_dir)],
+                ["product.batch-01.json"],
+            )
+
 
     def _batch(self):
         return {
@@ -285,6 +296,10 @@ class TestGeminiClassificationValidation(unittest.TestCase):
                     make_batch_comment("b"),
                 ]}
                 (batch_dir / "batch.json").write_text(json.dumps(batch), encoding="utf-8")
+                (batch_dir / "_classification_status.json").write_text(
+                    json.dumps({"comments": [make_batch_comment("sidecar", relevance="include")]}),
+                    encoding="utf-8",
+                )
                 self.assertEqual(auto_classify_gemini.product_completeness("product"), 0.5)
             finally:
                 os.chdir(old_cwd)
@@ -620,6 +635,25 @@ class TestValidators(unittest.TestCase):
                 self.assertTrue(result.structurally_complete)
                 self.assertEqual(result.completeness_pct, 1.0)
                 self.assertTrue(any(a.startswith("zero_include_batch:") for a in result.anomalies))
+            finally:
+                os.chdir(old_cwd)
+
+    def test_validate_split_ignores_status_sidecar(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old_cwd = os.getcwd()
+            os.chdir(tmp)
+            try:
+                self._write_json(Path("batches/product-a/product-a.batch-01.json"), {
+                    "comments": [make_batch_comment("a")]
+                })
+                self._write_json(Path("batches/product-a/_classification_status.json"), {
+                    "failedBatches": []
+                })
+                self._write_json(Path("raw_comments/raw_product-a.json"), {
+                    "comments": [make_comment("a")]
+                })
+                ok, messages = pv.validate_split("product-a")
+                self.assertTrue(ok, messages)
             finally:
                 os.chdir(old_cwd)
 

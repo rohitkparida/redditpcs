@@ -18,30 +18,30 @@
           "text": "Did you try to downclock the gpu to something like 2000mhz?",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a technical question about GPU downclocking and does not mention the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a neutral technical question.",
           "replies": [
             {
               "commentId": "l0dikb1",
               "text": "I don't know. Is this safe? Is that all I need to change?\n\nEDIT: Returning to add that capping core clocks to 80% (2050Mhz I think?) didn't stop the crashes.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses GPU clock settings and crashes, not the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is reporting a result of a technical test without a clear sentiment toward the product.",
               "replies": [
                 {
                   "commentId": "l0djedm",
                   "text": "Yes it is safe lowering the gpu clock. You can do it in Adrenalin of afterburner. If the issue is fixed by downclocking it means the card is not stable at stock settings. (some reported that amd driver was pushing gpu clock too high into instability or defective card). Give it a try. Good luck!",
                   "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment provides technical advice on GPU stability and does not mention the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing helpful, neutral technical advice.",
                   "replies": []
                 },
                 {
@@ -49,10 +49,10 @@
                   "text": "This is also my recommendation. Just downclock it 100mhz in the amd adrenaline software and see if it helps.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment recommends downclocking the GPU, which is unrelated to the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a neutral technical recommendation.",
                   "replies": []
                 },
                 {
@@ -60,10 +60,10 @@
                   "text": "Had ur exact issues with 7900xt, constant driver timeout, did downlock to 2500 instead of 2900, with downvolting(from 1100mv to 1000mv), entirely fixed it, never crashed since. I think the issue is that wow will pump ur clock/voltage higher than what u set up, so u have to lower clock and voltage by a good margin",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses GPU downclocking and downvolting to fix driver timeouts, not the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is sharing a personal experience with GPU settings to solve a problem.",
                   "replies": []
                 }
               ]
@@ -75,13 +75,14 @@
           "text": "just to add another data point, I experience this as well with a 7800x3d and a 7900xtx in both wow and helldivers 2. very frustrating",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about GPU and CPU stability issues in specific games, not the PSU.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses frustration with their system stability.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

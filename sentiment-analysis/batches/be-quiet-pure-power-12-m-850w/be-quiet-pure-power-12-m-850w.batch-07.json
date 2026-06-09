@@ -18,40 +18,40 @@
           "text": "It's a DDR5 system and only RAM tests you mentioned you did was reseating the RAM. Try running a memory test like karhul/HCI with a heaven benchmark(for the heat from the GPU) at the same time to see if your RAM is even stable.\nAnd most technican don't think to run RAM tests with GPU load at the same time, they just run RAM test alone. I'v had RAM instability myself that did not showitself on tests when running only the test, but with the extra heat from GPU it popped right up.",
           "upvotes": 11,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses RAM stability and testing methods, not the Be Quiet! PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing technical advice on how to troubleshoot RAM.",
           "replies": [
             {
               "commentId": "l0eicxu",
               "text": "But he said a 3060 on the same machine didn't crash?",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a question about GPU compatibility and crashes, unrelated to the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a clarifying question.",
               "replies": [
                 {
                   "commentId": "l0eoe5c",
                   "text": "That doesn't really tell you much as different driver stacks can have significantly different dynamics when running on the system, even if we exclude possible total performance differences. If something is marginal, it may be something one driver happens to lean on more. Or even it still fails but in a different, less obvious way.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses driver stacks and system dynamics, not the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is explaining technical concepts regarding drivers.",
                   "replies": [
                     {
                       "commentId": "l0g2c9b",
                       "text": "I'd choose the different, less obvious way any day. I've burned too many keys for my friends by crashing. I got benched during progression because I'd die too much. Missing textures or flickering shadows I can live with. This though? It's depressing.",
                       "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment expresses frustration with game crashes, not the PSU.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user is expressing disappointment and depression over game instability.",
                       "replies": []
                     }
                   ]
@@ -63,20 +63,20 @@
               "text": "Forgot to add this to my vast list of things I've tried but I've tested my memory both with Window's own tool and with MemTest86. \n\nAlso, my RAM is on the [QVL list.](https://www.gskill.com/qvl/165/396/1662622664/F5-6000J3636F16GX2-FX5-QVL)",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses RAM QVL lists and memory tests, not the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual information about their RAM.",
               "replies": [
                 {
                   "commentId": "l0dcokf",
                   "text": "I had very consistent crashes when AM5 came out and Expo was, well, criminally undercooked. Three different kits, all same issue. DOCP/Intel ram not even on qvl - no issue.\u00a0 That does not seem to be your issue though.",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses AM5 and Expo RAM instability, not the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is sharing a past experience with RAM instability.",
                   "replies": []
                 },
                 {
@@ -84,40 +84,40 @@
                   "text": "Memtest86 and windows memory diagnostic is useless on Ryzen man i'v run full test sweeps on it with 0 errors while HCI takes less then 1-2minutes to spew out errors. It's because they don't get the IMC hot enough to produce errors.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses memory diagnostic tools for Ryzen, not the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a technical critique of memory testing tools.",
                   "replies": [
                     {
                       "commentId": "l0fqzd3",
                       "text": "I hear you. Could you please elaborate a bit more on how I should test my RAM?",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a request for more information on RAM testing, not the PSU.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is asking for help.",
                       "replies": [
                         {
                           "commentId": "l0gtpi7",
                           "text": "Personally i use Karhul but it costs, a free alternative is to use HCI free version but then u gotta manually run it for each thread a instace and then devided up the RAM, a bit of a hassel.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment discusses RAM testing software, not the PSU.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is recommending software for RAM testing.",
                           "replies": [
                             {
                               "commentId": "l0kbsrl",
                               "text": "\"DRAM calculator for Ryzen\" has a built in memory test that will automate HCI instancing for you. Just need to specify a few GB short of the amount of RAM you have and then run it.",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment discusses a DRAM calculator for Ryzen, not the PSU.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is suggesting a tool for RAM testing.",
                               "replies": []
                             }
                           ]
@@ -131,10 +131,10 @@
                   "text": "Still I think it would be a good test to lower your RAM speed. Just set it to something very conservative and test, just to try to isolate the problem...",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment suggests lowering RAM speed to isolate the problem, not the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing troubleshooting advice.",
                   "replies": []
                 }
               ]
@@ -144,20 +144,20 @@
               "text": "It has nothing to do with ram instability, its the amduw23g display driver. Having used my 7900xtx across a system that had a 5800x3D with 32 Gb ram and now a 7800x3D with 32 Gb ram, i can tell you, ram has nothing to do with wow creating driver timeouts.\n\nI used an RTX 3070 with my 5800x3D system as well, no issues, my wife is now using that and has zero issues as well as she is always telling people in our dungeon parties that I'll be back online in a couple of seconds.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses GPU drivers and RAM instability, not the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is arguing that the issue is driver-related.",
               "replies": [
                 {
                   "commentId": "l0di8m3",
                   "text": "Bad or unstable ram can definately cause them. It just wasnt what caused it for you.",
                   "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses RAM instability causing crashes, not the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a technical opinion on RAM stability.",
                   "replies": []
                 }
               ]
@@ -166,5 +166,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,30 +18,30 @@
           "text": "Try to turn off resize bar and then turn it on again. \n\nTurning it off might cause things you have open to crash and that's fine. Turn it on again after it's off, might cause another crash, that's also fine. \n\nSee if that helps",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment provides troubleshooting advice for GPU settings (resize bar), which is unrelated to the Be Quiet! PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing helpful, neutral technical advice.",
           "replies": [
             {
               "commentId": "l0d8o7s",
               "text": "Forgot to add this to my vast list of things I've tried but I have tried to turn that off too. Didn't help.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is discussing their attempts to fix GPU driver timeouts, not the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is reporting a failed troubleshooting step.",
               "replies": [
                 {
                   "commentId": "l0i0pam",
                   "text": "Well, as an unfortunate update, I can report my WoW crashed as well today. It is not the first time either. I had a 7900 XTX for about a month or two, and I had a crash tonight on WoW. I was having some at the beginning, but after reinstalling drivers and other stuff they stopped. I am hoping for this to not be something reocurring but yeah, not great news.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses GPU crashes in World of Warcraft, unrelated to the PSU.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user is expressing frustration with GPU crashes.",
                   "replies": []
                 }
               ]
@@ -53,10 +53,10 @@
           "text": "Are you using any other driver features besides what you mentioned, like Radeon Boost/Chill? Unrelated game, but for me Radeon Chill was causing BG3 to crash every \\~30 minutes (unrecoverable Vulkan error and driver timeout together)",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses Radeon driver features and crashes, unrelated to the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a clarifying question for troubleshooting.",
           "replies": []
         },
         {
@@ -64,10 +64,10 @@
           "text": "I have the same exact issue on my system and I'm currently playing WOTLK Classic.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is reporting a GPU driver issue in a specific game, unrelated to the PSU.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is experiencing a technical issue.",
           "replies": []
         },
         {
@@ -75,30 +75,30 @@
           "text": "Just for a test try to run your RAM with 5600MHz.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment suggests changing RAM speed, which is unrelated to the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing a troubleshooting suggestion.",
           "replies": [
             {
               "commentId": "l0g3ja8",
               "text": "But I have turned off EXPO entirely - meaning it had dropped to 4800 and it didn't make a difference.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is discussing RAM settings (EXPO), unrelated to the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is reporting the result of a troubleshooting step.",
               "replies": [
                 {
                   "commentId": "l0gec2a",
                   "text": "That is bad. I swish you luck, that the next driver version fixes it.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Hopes for a driver fix, which is unrelated to the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is expressing a general wish for a fix.",
                   "replies": []
                 }
               ]
@@ -110,13 +110,14 @@
           "text": "Try updating your [Visual C++ (32bit &amp; 64bit)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#latest-microsoft-visual-c-redistributable-version) and [old DX libraries](https://www.microsoft.com/en-us/download/details.aspx?id=35). I was having some horrible crashing problems with varying games (I don't play WoW atm) and it fixed everything for me. I had black screens, frozen screens, and generic driver timeouts. Best of luck to you.\n\nI also recommend making sure you're on 64bit discord; doubt it'll change anything but hey may as well make sure :P.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment suggests updating software libraries, unrelated to the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing helpful troubleshooting advice.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

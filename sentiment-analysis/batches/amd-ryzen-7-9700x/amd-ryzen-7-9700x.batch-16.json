@@ -18,60 +18,60 @@
           "text": "Bad launch. I suspect it\u2019s failed AGESA update on B650 and X670 older Zen motherboards that don\u2019t have the right memory or power/boost profiles correctly enabled for these new Zen 5 CPUs.  I would hold off on judgement until the new X870 boards are reviewed.\n\nAll Core boost seems to be a lot lower only hitting 4.5-4.6Ghz(GN review, not HUB) rather than 5.0-5.2 on older 7000 series.  There\u2019s something clearly wrong.",
           "upvotes": 40,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses launch issues, clock speeds, and performance concerns for the 9700X.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Expresses disappointment in the launch and believes something is 'clearly wrong' with performance.",
           "replies": [
             {
               "commentId": "lgy0ypt",
               "text": "HUB says they spoke with AMD, and that their results were only slightly below AMDs own internal numbers.",
               "upvotes": 57,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses performance results relative to AMD's internal numbers.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Reports factual information from a reviewer without a strong personal opinion.",
               "replies": [
                 {
                   "commentId": "lgy4ird",
                   "text": "Interesting. Then..that would suck, falls in line with the performance lies AMD has been recently doing. Cough AM4 XT processors..cough.  But why??!",
                   "upvotes": 20,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Critiques AMD's performance claims and compares them to previous product lines.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Calls the performance 'suck' and refers to 'performance lies'.",
                   "replies": [
                     {
                       "commentId": "lgy5fct",
                       "text": "Yeah it seems to me like Zen5 fell short of expectations and they pivoted to focusing on the efficiency improvements instead. At least with announcing a 16% IPC improvement and then getting &lt;5% gaming uplift is very painful.",
                       "upvotes": 26,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the gap between IPC improvements and actual gaming uplift for Zen 5.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "Describes the gaming uplift as 'very painful' and says it fell short of expectations.",
                       "replies": [
                         {
                           "commentId": "lgybc17",
                           "text": "DerBauer just released his review, and he hit what my thoughts were.  Power limits, the 40% efficiency is gimping these new processors.\n\n[https://www.youtube.com/watch?v=jPJ0Khw3kIc](https://www.youtube.com/watch?v=jPJ0Khw3kIc)\n\nHe did a quick All core clock and the Cinebench R23 numbers jumped 25% increase.  Looking forward to his follow-up on this by tweaking PBO along with PPT/TDU/EDC and Curve Optimizer / Shaper.",
                           "upvotes": 13,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses power limits and performance gains after tweaking PBO.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Discusses technical adjustments and potential gains without a clear positive or negative lean.",
                           "replies": [
                             {
                               "commentId": "lgycmzl",
                               "text": "Bit confused on that, TechPowerUp did a 5.3 all core OC only got a 10% improvement for Cinebench 2024.\n\nIn any case, it still makes no difference for gaming performance, remains at almost no improvement.",
                               "upvotes": 10,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "Discusses Cinebench and gaming performance improvements for the 9700X.",
+                              "sentiment": "negative",
+                              "sentimentReasoning": "States that gaming performance remains at 'almost no improvement'.",
                               "replies": []
                             }
                           ]
@@ -83,20 +83,20 @@
                       "text": "AMD has a tendency of shooting itself it the foot at the exact worst moment.  Just keeping up appearances I guess.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Expresses an opinion on AMD's product strategy and execution.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "Claims AMD is 'shooting itself in the foot'.",
                       "replies": [
                         {
                           "commentId": "lh3fnhn",
                           "text": "It's okay. Intel has shot itself in both feet, is now bleedling profusely while sat in a restaurant with it's wife and is pretending everything is fine.",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Off-topic discussion comparing Intel's current state to AMD's.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Not applicable as the comment is excluded.",
                           "replies": []
                         }
                       ]
@@ -110,10 +110,10 @@
               "text": "x870 boards have no insane differences over  x670 boards, otherwise they will be the exact same lol",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses motherboard chipsets (X870 vs X670) rather than the CPU itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Not applicable as the comment is excluded.",
               "replies": []
             },
             {
@@ -121,20 +121,20 @@
               "text": "Wait it\u2019s x870? What about x770?",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual question about motherboard chipsets.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Not applicable as the comment is excluded.",
               "replies": [
                 {
                   "commentId": "lgyfqaz",
                   "text": "no x770",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Factual answer about motherboard chipsets.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Not applicable as the comment is excluded.",
                   "replies": []
                 }
               ]
@@ -146,20 +146,20 @@
           "text": "So is it even worth the upgrade from a 5800x to the x3d or 5700x3d for less money. Theres improvments but I just don\u2019t know if its 2-300$ worth of improvements",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Asks if the 9700X is worth the upgrade from older CPUs.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Expresses uncertainty about the value proposition.",
           "replies": [
             {
               "commentId": "lgy83fv",
               "text": "Not really man, wait till 9800X3D reviews and see if the gains are substantial enough to upgrade.",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Advises against upgrading to the 9700X now, suggesting waiting for the 9800X3D.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Recommends against the current product in favor of a future one.",
               "replies": []
             },
             {
@@ -167,10 +167,10 @@
               "text": "Not really. If you want an upgrade, the 7800x3D is your best bet. 5800x is still a fine CPU though.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Recommends the 7800X3D over the 9700X for an upgrade.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Suggests a different product as the 'best bet' instead of the 9700X.",
               "replies": []
             }
           ]
@@ -180,10 +180,10 @@
           "text": "7800X3D won't be dethroned for a long time",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the 9700X's inability to dethrone the 7800X3D.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Implies the 9700X is not the top performer.",
           "replies": []
         },
         {
@@ -191,20 +191,20 @@
           "text": "Super disappointing! I wonder if the 9800X3D will be faster than the 7800X3D.\n\nToo bad for everyone who waited for this CPU.",
           "upvotes": 16,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Expresses disappointment in the 9700X and mentions those who waited for it.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Explicitly states 'Super disappointing!'.",
           "replies": [
             {
               "commentId": "lgyen8u",
               "text": "Considering the bones it will be based off of- seems like the perf difference between the 9800x3d and 7800x3d will be nothing to write home about. Unless they increase the cache by quite a bit.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Speculates on the performance of the future 9800X3D based on the 9700X's architecture.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Speculative discussion about future products.",
               "replies": []
             }
           ]
@@ -214,20 +214,20 @@
           "text": "Power starved.  \n7700X has an additional 40W to work with out of the box, which would explain why single core increase in Cinebench is sizeable but there's nearly nothing in MT.  \nI guess a 10% IPC increase isn't able to mitigate a 40% lower powed budget.",
           "upvotes": 26,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Critiques the power budget and multi-threaded performance of the 9700X.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Describes the CPU as 'Power starved'.",
           "replies": [
             {
               "commentId": "lgxv5zn",
               "text": "But the PBO results are also not great.",
               "upvotes": 30,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses PBO results for the 9700X.",
+              "sentiment": "negative",
+              "sentimentReasoning": "States that results are 'not great'.",
               "replies": []
             }
           ]
@@ -237,10 +237,10 @@
           "text": "It doesn\u2019t suck. This sensational bullshit is ridiculous. The new chips run at a much lower tdp and once OC\u2019d to the TDP of the 7000 series sit about 20-25% increased performance.",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Tells the others that the 9700X doesn't suck and discusses TDP and OC performance.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Defends the product and highlights performance gains when overclocked.",
           "replies": []
         },
         {
@@ -248,13 +248,14 @@
           "text": "Disappointing, look forward to seeing how the x3d models performs when released.",
           "upvotes": 12,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Expresses disappointment in the 9700X.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Explicitly states 'Disappointing'.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

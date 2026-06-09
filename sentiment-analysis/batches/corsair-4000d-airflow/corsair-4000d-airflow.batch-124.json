@@ -18,25 +18,26 @@
           "text": "!remindme",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a bot command for a reminder and contains no product feedback.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a functional command without any expressed sentiment.",
           "replies": [
             {
               "commentId": "hwsocfi",
               "text": "For? :D",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a short conversational question unrelated to the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral inquiry.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,30 +18,30 @@
           "text": "The outlier results on Linux by Phoronix...\n\n&gt;The Ryzen 7 9700X delivered 1.195x the performance of the Core i5 14600K competition or 1.15x the performance of the prior generation Ryzen 7 7700X. The Ryzen 5 9600X came in at 1.35x the performance of the Core i5 14500 and 1.25x the performance of the Ryzen 5 7600X. Or if still on Zen 3 for comparison, the Ryzen 5 9600X was 1.82x the performance of the Ryzen 5 5600X.\n\n...makes me wonder if Windows itself is something of a bottleneck. Granted I haven't looked closely at reviews yet, just the conclusions from Phoronix and this HUB review and some headlines, but it does make me wonder.",
           "upvotes": 167,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses performance metrics of the 9700X compared to competitors and previous generations.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Presents benchmark data and questions the impact of the OS without a strong positive or negative bias.",
           "replies": [
             {
               "commentId": "lgxvy31",
               "text": "Probably because Phoronix's Linux software tests are compiled with all the latest optimizations in the compiler, while all the other sites use old software.",
               "upvotes": 94,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses compiler optimizations and software testing methodology rather than the product itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a technical explanation of benchmark results.",
               "replies": [
                 {
                   "commentId": "lgzmek9",
                   "text": "Phoronix isn't gaming focused like HUB. There is just not much of an uplift for games.",
                   "upvotes": 24,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Provides an opinion on the gaming performance uplift of the product.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "States there is 'not much of an uplift for games', implying disappointment.",
                   "replies": []
                 }
               ]
@@ -51,30 +51,30 @@
               "text": "Probably coz Phoronix has fresh re-compiles of their benchmarks which likely leveraged the improved AVX512 capabilities of the Ryzen 9000 series. Wendell also saw some good uplift in his benchmarks which were still on Windows but more workstation oriented than the usual gaming-focused outlets.",
               "upvotes": 37,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the product's AVX512 capabilities and workstation performance.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Highlights 'good uplift' in workstation benchmarks.",
               "replies": [
                 {
                   "commentId": "lgz1w1h",
                   "text": "well shouldn\u2019t be ignored in the overall scheme of things especially with windows moving the way it is raw linux performance shouldn\u2019t be ignored, i\u2019ve been dual booting for 6 mi this now",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discusses Linux vs Windows OS performance in general terms.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Expresses a general preference for Linux performance.",
                   "replies": [
                     {
                       "commentId": "lgz6k2a",
                       "text": "Rather than Windows it's more about the apps. \n\nSadly unless AMD sponsors them most publishers probably aren't going to recompile their games for AVX512 just to make Ryzen 9000 look good, but future games might include such optimizations. [3DNow! did get support from quite a number of games and publishers](https://web.archive.org/web/20001109071400/http://www1.amd.com/products/cpg/3dnow/optimized/).",
                       "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the likelihood of game developers optimizing for the product's AVX512 features.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Provides a realistic, neutral assessment of software support.",
                       "replies": []
                     }
                   ]
@@ -86,30 +86,30 @@
               "text": "Not likely. It's just that the tests are quite different. It's clear from the Phoronix tests that AMD designed Zen 5 for the data centre. AVX512 performance is much improved and power consumption is better.\n\nFor end users, and especially gamers, this doesn't matter.",
               "upvotes": 37,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Critiques the product's target audience, suggesting it's better for data centers than gamers.",
+              "sentiment": "negative",
+              "sentimentReasoning": "States that for gamers, the improvements 'don't matter'.",
               "replies": [
                 {
                   "commentId": "lgy7dar",
                   "text": "Gamers maybe unless you include emulators many of which do use AVX256 and AVX512... but AVX512 is heavily used in Handbrake for instance which a lot of end user use. As well as many media and content creation applications that require heavy compute to do what they do.\n\nZen 5 should run RPCS3 noticeably better. This is also a case where the application IS going to have the features enabled for sure.",
                   "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Argues that the product's AVX512 features are useful for specific end-user applications like emulators.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Suggests the product will run specific software 'noticeably better'.",
                   "replies": [
                     {
                       "commentId": "lgyjb6h",
                       "text": "Maybe not :(  \n\"So sorry to disappoint the RPCS3 community here. As much as they love AVX512, they primarily only use 128-bit AVX512 - which does not significantly benefit from Zen5's improvements to the vector unit.\"\n\n[http://www.numberworld.org/blogs/2024\\_8\\_7\\_zen5\\_avx512\\_teardown/](http://www.numberworld.org/blogs/2024_8_7_zen5_avx512_teardown/)\n\n\"**~512-bit is required for significant performance gain.~**\n\n\u00a0Zen5's improvement to the AVX512 is that it doubles up the the width of (nearly) everything that was 256-bit to 512-bit. All the datapaths, execution units, etc... they are now natively 512-bit. There is no more \"double-pumping\" from Zen4 - at least on the desktop and server cores with the full AVX512 capability.\n\n\u00a0Consequently, the only way to utilize all this new hardware is to use 512-bit instructions. None of the 512-bit hardware can be split to service 256-bit instructions at twice the throughput. The upper-half of all the 512-bit hardware is \"use it or lose it\". The only way to use them is to use 512-bit instructions.\n\n\u00a0As a result, Zen5 brings little performance gain for scalar, 128-bit, and 256-bit SIMD code. It's 512-bit or bust.\n\n\u00a0So sorry to disappoint the RPCS3 community here. As much as they love AVX512, they primarily only use 128-bit AVX512 - which does not significantly benefit from Zen5's improvements to the vector unit.\"",
                       "upvotes": 15,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Provides technical evidence that the product's AVX512 improvements may not benefit specific software like RPCS3.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "Expresses disappointment and concludes that the performance gain is limited.",
                       "replies": []
                     }
                   ]
@@ -121,10 +121,10 @@
               "text": "Phoronix's benchmarks should be more representative of the Zen 5 vs Zen 4 Epyc improvements. Zen 5 seems to be flat in many consumer tasks, but improve greater in server workloads.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Compares the product's performance in consumer tasks versus server workloads.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Observes that performance is 'flat' for consumers but improved for servers.",
               "replies": []
             },
             {
@@ -132,10 +132,10 @@
               "text": "Windows is definitely a bottleneck, why I'm glad steam is doing good work on Linux with proton/are Deck.",
               "upvotes": 37,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses OS bottlenecks and Steam/Proton, not the specific hardware product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Expresses satisfaction with Linux gaming progress.",
               "replies": []
             },
             {
@@ -143,30 +143,30 @@
               "text": "Stability issue aside, why is the 14600K and not the 14700K considered the competitor of the 9700X?",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Questions the competitive positioning of the 9700X against Intel's lineup.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Asks a clarifying question about product competition.",
               "replies": [
                 {
                   "commentId": "lgy5gcy",
                   "text": "price point, MSRP at launch of the 14600k is closer to the 9700x",
                   "upvotes": 21,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Provides a factual answer regarding MSRP and price points.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Purely factual response about pricing.",
                   "replies": [
                     {
                       "commentId": "lgy73ro",
                       "text": "I see. Thanks for the answer.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort response acknowledging the answer.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Simple acknowledgment.",
                       "replies": []
                     }
                   ]
@@ -176,10 +176,10 @@
                   "text": "Probably based on price?",
                   "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Provides a factual guess about pricing.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Purely factual/speculative guess about pricing.",
                   "replies": []
                 }
               ]
@@ -191,10 +191,10 @@
           "text": "So glad I got my 7800x3d for 263\u20ac brand new 2 months ago.",
           "upvotes": 15,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discusses a different product (7800x3d) rather than the 9700X.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User is happy with their purchase of a different CPU.",
           "replies": []
         },
         {
@@ -202,30 +202,30 @@
           "text": "I would argue that a power - focused architecture doesn\u2019t mean at all that the product \u201csucks\u201d.\n\nIntel is eating shit right now because they slipped all of their power targets, and here we have a product with 5-20% IPC increases using like 2/3rds of the power and it \u201csucks\u201d.",
           "upvotes": 19,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Defends the product's power efficiency and IPC increases.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Argues against the claim that the product 'sucks' by highlighting efficiency.",
           "replies": [
             {
               "commentId": "lh2i91i",
               "text": "2/3rds of the power compared to the highly inefficient 7600X/7700X, if you add the regular 7600/7700 in the mix, it's not that impressive anymore, in fact, it's pretty meh when you factor in the higher price (compared to 7600/7700) and lack of any integrated coolers - especially since 9600X/9700X would have worked very well with a Wraith Stealth/Prism respectively.\n\nThe only good thing is the Linux performance, so servers/data centers might actually see a nice uplift, where the most money is at, for a regular \"reddit\" consumer, however, this gen doesn't look that great right now.",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Critiques the value proposition, pricing, and lack of coolers for the 9700X/9600X.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Describes the product as 'pretty meh' and 'not that great' for regular consumers.",
               "replies": [
                 {
                   "commentId": "lh2ndjs",
                   "text": "it's crazy how everybody coping rn is acting like the 7600 and 7700 don't exist",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Implies the 9000 series is not a compelling upgrade over existing 7000 series non-X models.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Uses the term 'coping' to suggest that positive views of the product are delusional.",
                   "replies": []
                 }
               ]
@@ -234,5 +234,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

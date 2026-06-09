@@ -18,30 +18,30 @@
           "text": "I'm bookmarking this for future reference because it's the internet and folks will argue. Totally appreciate your hard work putting it all together!",
           "upvotes": 17,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general thank you to the author of a tier list and does not discuss the specific product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing appreciation for the effort put into the list, but it is not a sentiment regarding the product itself.",
           "replies": [
             {
               "commentId": "hxzxc0x",
               "text": "Thanks, I'm glad it's a useful resource.",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a polite response from the author and contains no product-specific information.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The sentiment is neutral as it is a simple acknowledgment of thanks.",
               "replies": [
                 {
                   "commentId": "hxzyugr",
                   "text": "It'll definitely help for pointing folks in the right direction. It's not like back in my days in which comparisons meant flipping through pages of a Computer Shopper, inventory checking was with phone calls, and between mailing a check and receiving the parts, 4-6 weeks was expected.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the history of PC part shopping and is not relevant to the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is reminiscing about the past, which is neutral in terms of product sentiment.",
                   "replies": []
                 },
                 {
@@ -49,10 +49,10 @@
                   "text": "Any update with the 700 series mobos?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a factual question about updates for 700 series motherboards, not an opinion or experience with the specific product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral request for information.",
                   "replies": []
                 }
               ]
@@ -61,5 +61,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

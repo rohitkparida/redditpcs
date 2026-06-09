@@ -18,30 +18,30 @@
           "text": "I believe that Zen 5 will sell like hot cakes, not for gamers but for people needing fast AVX 512 processor for AI. Higher tier CPUs, threadripper ... This was designed market for this architecture.\nKitguru review is the best, I am disapointed that most reviewer tested under 88W limit and complained that performance is worse than 7700x running at 120w+.\nAlso DerBauer review was good.",
           "upvotes": 46,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user discusses the target market for Zen 5 (including 9700X) and critiques how reviewers tested the performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user provides a balanced view, seeing value for AI workloads while expressing disappointment in review methodologies.",
           "replies": [
             {
               "commentId": "lh66f03",
               "text": "Is AVX used that much for AI workloads? Which use cases are those (Im out of the loop on scalar codes doing AI stuffs)",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a technical question about AVX usage in AI, not an opinion or experience with the 9700X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual inquiry without sentiment.",
               "replies": [
                 {
                   "commentId": "lh75r51",
                   "text": "Numpy, PyTorch and Tensorflow all natively supports AVX-512 at this point. If you have used any of those two (If you are doing AI I'm 100% sure you did) you definitely enjoyed the benefit from AVX-512",
                   "upvotes": 12,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a factual explanation of software support for AVX-512, not a critique of the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment provides technical information without emotional leaning.",
                   "replies": []
                 },
                 {
@@ -49,20 +49,20 @@
                   "text": "AVX512 is supposedly a game changer for on-CPU AI calculations. CPU based AI is far slower without AVX512.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a general technical statement about AVX-512 and CPU AI calculations.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual claim about technology.",
                   "replies": [
                     {
                       "commentId": "lh8p4pb",
                       "text": "Don\u2019t people run inference for LLMs on gpu ? Is the avx thing really meaningful feature over the last gen ?",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a question about general AI hardware usage (GPU vs CPU) rather than the 9700X specifically.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a question seeking information.",
                       "replies": []
                     },
                     {
@@ -70,20 +70,20 @@
                       "text": "Will AVX512 on-CPU calculations rival GPUs?",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a general technical question about CPU vs GPU performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a question seeking information.",
                       "replies": [
                         {
                           "commentId": "lh8fzob",
                           "text": "Simply put, no, by a long shot",
                           "upvotes": 9,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "This is a short answer to a general technical question about GPUs.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a factual answer.",
                           "replies": []
                         },
                         {
@@ -91,10 +91,10 @@
                           "text": "Makes little sense for your average AI startup, but when you\u2019re a massive operation with huge servers with tens of thousands of cores, it\u2019s performance that\u2019s left on the table.\n\nIt\u2019ll never be as fast as GPU inferencing, though.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "This is a general discussion about server-scale AI operations, not the 9700X.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment provides a technical perspective without sentiment toward the product.",
                           "replies": []
                         }
                       ]
@@ -108,20 +108,20 @@
               "text": "True, but reviews tend to use default setting more than anything else, hence the negative bias. On the other hand, there is no reason to upgrade from zen 4, and there shouldn't be a reason for that honestly.",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user discusses the value proposition and upgrade path from Zen 4 to Zen 5/9700X.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user explicitly states there is no reason to upgrade from Zen 4.",
               "replies": [
                 {
                   "commentId": "lhhmzv9",
                   "text": "Default settings tend to be optimal anyway. Sure you could spend a *lot* of time tinkering with customized settings and voltages, but if we are gonna be honest you're probably not gonna see big improvements doing that anyway. For the last couple generations it's been pretty obvious that ryzen comes pretty well optimized out of the box such that old school overclocking and under volting is a bit of a poor use of time.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user discusses the optimization and performance of Ryzen CPUs out of the box.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is discussing technical optimization without a clear positive or negative recommendation for the 9700X specifically.",
                   "replies": []
                 }
               ]
@@ -131,20 +131,20 @@
               "text": "For Ai work, it doesn't have enough memory bandwidth.  It's better with GPUs.  If use CPU,  use server CPU with 8 or 12 channel memory.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user critiques the memory bandwidth of the product for AI workloads.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user argues the product is insufficient for AI work compared to server CPUs.",
               "replies": [
                 {
                   "commentId": "lh8i412",
                   "text": "But zen5 architecture will be used also in server CPUs and that was my point this is more workstation, server architecture than gaming focused. But maybe they will bring some innovation with x3D CPU line for gamers.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user discusses the architecture and target market of the Zen 5 line.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is analyzing the product's design intent without expressing strong satisfaction or dissatisfaction.",
                   "replies": []
                 }
               ]
@@ -154,10 +154,10 @@
               "text": "Most AI LLMs are running on GPU, so anyone with serious intent for AI is not going to be using CPUs to run it. AVX-512 is at best catering to a niche.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user argues that the AVX-512 feature of the CPU is only for a niche market.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user dismisses a key feature of the architecture as being for a niche, implying limited value for most users.",
               "replies": []
             }
           ]
@@ -167,13 +167,14 @@
           "text": "They hate it for the clicks",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a meta-comment about YouTube reviewers and clickbait, not the product itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is about content creators, not the hardware.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

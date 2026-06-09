@@ -18,40 +18,40 @@
           "text": "https://preview.redd.it/59uejl9irctg1.png?width=1024&format=png&auto=webp&s=9afbae7e51972fd10a7757f0ac6306616ed3986a",
           "upvotes": 356,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is just a link to an image and provides no opinion or insight.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No sentiment expressed in a link.",
           "replies": [
             {
               "commentId": "oefm0gh",
               "text": "https://preview.redd.it/oy5hgn44ndtg1.png?width=1024&format=png&auto=webp&s=8ff55fcfe0f0a2d872a3d0edb5bfa556b4e9b718",
               "upvotes": 88,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is just a link to an image and provides no opinion or insight.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No sentiment expressed in a link.",
               "replies": [
                 {
                   "commentId": "oefti0u",
                   "text": "The reflection is such a beautiful little detail. Thanks for the conflagration.",
                   "upvotes": 11,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a joke about a reflection in an image, not a product critique.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is commenting on a meme/image, not the product quality.",
                   "replies": [
                     {
                       "commentId": "oeftqwg",
                       "text": "Well, the first time I forgot and was like FUCK THE GLASS IS REFLECTIVE lmao",
                       "upvotes": 7,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort banter regarding a reflection in an image.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "No meaningful sentiment toward the product.",
                       "replies": []
                     }
                   ]
@@ -61,10 +61,10 @@
                   "text": "Oh shit, he lost a 5090...",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Comment is about the GPU (5090) mentioned in the image, not the case.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No sentiment expressed toward the product.",
                   "replies": []
                 }
               ]
@@ -74,10 +74,10 @@
               "text": "This made me cackle. Thanks. :D",
               "upvotes": 18,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely a reaction to a meme/joke, not a product review.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No sentiment toward the product.",
               "replies": []
             },
             {
@@ -85,20 +85,20 @@
               "text": "Thr panel's name? Chuck Norris.",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "A joke naming the panel, not a technical critique.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No sentiment toward the product.",
               "replies": [
                 {
                   "commentId": "oefc5q8",
                   "text": "RIP Chuck. ",
                   "upvotes": -1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort banter following a joke.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No sentiment toward the product.",
                   "replies": []
                 }
               ]
@@ -110,10 +110,10 @@
           "text": "You looked at it on a tile floor.\n\nTile is the natural enemy of tempered glass.",
           "upvotes": 28,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "General advice about tempered glass and tile floors, not specific to the 4000D.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No sentiment toward the product.",
           "replies": []
         },
         {
@@ -121,10 +121,10 @@
           "text": "NOW you have AIRFLOW",
           "upvotes": 25,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "A joke about the glass breaking, not a meaningful product critique.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No sentiment toward the product.",
           "replies": []
         },
         {
@@ -132,13 +132,14 @@
           "text": "Tiles + Tempered Glass = Shattered Glass",
           "upvotes": 21,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "General statement about tempered glass properties, not a product-specific critique.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No sentiment toward the product.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

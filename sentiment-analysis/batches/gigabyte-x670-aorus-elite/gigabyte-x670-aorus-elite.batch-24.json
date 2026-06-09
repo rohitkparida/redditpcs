@@ -18,30 +18,30 @@
           "text": "You noted the Gigabyte B660M Aorus Pro DDR4 has weak audio support which is bad for gamers. Does it mean if I plug my headphones in it will sound terrible? Also Gigabyte listed Hi-Fi audio, is this false advertisement.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses the Gigabyte B660M Aorus Pro, not the X670 Aorus Elite.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question about audio support.",
           "replies": [
             {
               "commentId": "hy1ylau",
               "text": "the Gigabyte B660M Aorus Pro DDR4 uses the older realtek 887, or maybe the 892, gigabyte has chosen to obfuscate the actual codec, some sites have said it's an 892.  \n\nEither way, these are old outdated audio codecs compared to newer ones. \n\n&gt; Does it mean if I plug my headphones in it will sound terrible? \n\nIt depends, the codec on that board is only rated for headphones up to 32 ohms. However, there are a lot of very good 32 ohm headphones out there. I have no idea what ohms your headphones are rated for but many users will be fine as many gaming headphones are only rated at 32 ohms. The realtek 887 and 892 have been on mobos for over a decade and have been providing acceptable sound since like 2009. \n\nFailing that, you can always buy an external headphone amp, and these can be used for years and across multiple builds. \n\n&gt; Also Gigabyte listed Hi-Fi audio, is this false advertisement.\n\nHi-Fi audio doesn't really mean anything anymore. Hi-Fi technically just means the audio equipment is able to faithfully reproduce music, like if you were listening in person. Basically they meant reproducing audio without say the fuzz of cheap radios from back then and such. \n\nEven the lowest end codec on mobos now is technically Hi-Fi.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the Gigabyte B660M Aorus Pro, not the X670 Aorus Elite.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical explanation about audio codecs.",
               "replies": [
                 {
                   "commentId": "hy3ofya",
                   "text": "My X570 Formula has a post code built in, one of the few ROG boards to have 2 USB 3 case headers too (and a USB C)",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the ASUS ROG X570 Formula, not the X670 Aorus Elite.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is stating a factual feature of their own motherboard.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

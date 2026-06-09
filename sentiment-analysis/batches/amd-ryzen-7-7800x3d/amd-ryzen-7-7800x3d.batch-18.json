@@ -28,70 +28,70 @@
               "text": "Just a question, does this mean that the gpu is a bottleneck at this stage? At 4k with a 5090, the **average fps** would increase by a similar margin?",
               "upvotes": 25,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a factual question about GPU bottlenecks and FPS at 4K, not providing an opinion or experience with the 7800X3D.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a technical question without expressing a positive or negative sentiment.",
               "replies": [
                 {
                   "commentId": "lwalenv",
                   "text": "This GPU hasn't been released yet. But what I can guarantee is that some games are CPU bound even @ 4k, MS flight simulator is a good example.",
                   "upvotes": 24,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment provides general technical information about CPU bottlenecks at 4K, not specific to the 7800X3D.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a factual answer to a technical question.",
                   "replies": [
                     {
                       "commentId": "lwcibqy",
                       "text": "BG3 is another. 4K, 1080P, the game is bound by CPU in Act 3. And to be fair, in all games with upscaling, kick on performance mode and you basically get CPU bound again because internal rendering resolution is back at 1080P.\n\nCPUs are MUCH more relevant now with upscaling in the picture.",
                       "upvotes": 17,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses general CPU relevance in gaming and upscaling, not specifically the 7800X3D.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing technical concepts of CPU bottlenecks and upscaling.",
                       "replies": [
                         {
                           "commentId": "lwid7c3",
                           "text": "That's what I was wondering. If ingame display is 4k but DLSS is on with performance mode, rendering at 1080p does CPU matter as if we are rendering at in game 1080p?\u00a0",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a factual question about how DLSS rendering resolution affects CPU importance, not specific to the 7800X3D.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is asking a technical question.",
                           "replies": [
                             {
                               "commentId": "lwiowd4",
                               "text": "Yeah, you pretty much get frames and 1% lows close to the 1080P results, making the CPU still very relevant even at 4K.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment provides a general technical explanation of how upscaling affects CPU relevance at 4K, not specific to the 7800X3D.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is providing a factual technical explanation.",
                               "replies": [
                                 {
                                   "commentId": "lwip1zx",
                                   "text": "Any video/YouTuber who thoroughly investigated this?",
                                   "upvotes": 1,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment is a request for a video or YouTuber who has investigated the topic, not an opinion on the 7800X3D.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is asking for a request for information.",
                                   "replies": [
                                     {
                                       "commentId": "lwix1a3",
                                       "text": "HUB always updates the DLSS/FSR comparisons when major revisions come out but it's not CPU focused comparison [FSR 3.1 vs DLSS 3.7 vs XeSS 1.3 Upscaling Battle, 5 Games Tested](https://www.youtube.com/watch?v=YZr6rt9yjio&ab_channel=HardwareUnboxed)\n\nWhile they do not compare it directly to native 1080 FPS, you can look up the FPS numbers here at 4K, Ratchet & Clank for example Tim's using a 4070, sadly so you can't really compare apples to apples with the 4090 used here. There's also a frame time cost for using DLSS, but it is diminished the higher up the GPU stack you move, and if the game has post processing on their images, then the DLSS cost maybe lower than native post processing. (From Nvidia)\n\n[Daniel Owen's video](https://youtu.be/5k4EevOYEKY?si=lC6QNTZDohFv6ULC&t=605) covers this topic in this video. But he also been adding onto it in his latest CPU Bottlenecks videos with more details on the different types of bottlenecking.\n\nTo be honest, that's why I upgraded from 7800X3D to 9800X3D because I can finally lock my BG3 4K DLSS performance mode to 240FPS for my 4K 240Hz OLED (outside Act 3), before that my 7800X3D was stuck at 160-180 and I couldn't lock it at 240Hz.",
                                       "upvotes": 1,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "include",
+                                      "relevanceReasoning": "The user shares personal experience upgrading from a 7800X3D to a 9800X3D to achieve higher FPS in BG3 at 4K.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The user describes a performance difference between the two CPUs, but doesn't express a clear positive or negative sentiment toward the 7800X3D itself, just that it was insufficient for their specific high-end target.",
                                       "replies": []
                                     },
                                     {
@@ -99,20 +99,20 @@
                                       "text": "Just as we discussed it, HUB just released a new [Video](https://youtu.be/5GIvrMWzr9k?si=bh2g0bE39QEnvmfI) to address this",
                                       "upvotes": 1,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "The comment is simply sharing a link to a video, not providing an opinion or experience with the 7800X3D.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The user is sharing a resource.",
                                       "replies": [
                                         {
                                           "commentId": "lwnpo35",
                                           "text": "Wow. What a coincidence. Awesome. Thanks\u00a0",
                                           "upvotes": 1,
                                           "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "The comment is low-effort banter/thanks, not providing insight into the product.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": " ",
                                           "replies": []
                                         }
                                       ]
@@ -130,10 +130,10 @@
                       "text": "Thanks to DLSS it's not even that hard to get CPU limited even in 4K, especially in games without raytracing and if you're trying to drive a 240Hz panel. DLSS Performance looks pretty good in 4K and has an internal resolution of 1080p, so we're not that far off the typical 1080p high benchmarks which HUB does.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses general technical concepts of CPU limits and DLSS at 4K, not specifically the 7800X3D.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing technical concepts.",
                       "replies": []
                     }
                   ]
@@ -143,30 +143,30 @@
                   "text": "For more graphical complex games, you will be in fact GPU bound. Games like Counterstrike would perform well in 4k, but most of modern games won't have that effect.\n\nThat being said, I wouldn't bet on a massive increase in 4k. You can check out your momentary CPU and GPU load with the AMD overlay to get an idea if your preferred game would profit from it.",
                   "upvotes": 23,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment provides general advice on GPU vs CPU bottlenecks at 4K, not specific to the 7800X3D.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing general technical advice.",
                   "replies": [
                     {
                       "commentId": "lw9wy7a",
                       "text": "counterstrike is much harder to run actually, with a 4090 @ 4k you are hard GPU bottlenecked.\u00a0\n\n\n1 fps difference between 7600x and 9800x3d @ 4k, even in 1% low.\n\n\nhttps://tpucdn.com/review/amd-ryzen-7-9800x3d/images/counter-strike-2-3840-2160.png",
                       "upvotes": 16,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses performance differences between 7600x and 9800x3d, not the 7800X3D.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing factual benchmark data.",
                       "replies": [
                         {
                           "commentId": "lwdlj0o",
                           "text": "When 230 FPS is a bottleneck :D",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a joke/meme about FPS bottlenecks, not providing insight into the 7800X3D.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is making a joke.",
                           "replies": []
                         }
                       ]
@@ -178,30 +178,30 @@
                   "text": "You can see for yourself here:\n\n[https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/](https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/)\n\nJust like the 7800X3D, some games benefit from it in 4k, most don't.\n\nOn average, you can see a 0,3% increase in performance from the 7800X3D a 2,2% inscrease from a Ryzen 5 9600X.\n\n  \nBG3 receives a huge boost when the 9800X3D is overclocked, compared to the 7800X3D.  Other games vary.  Once RT is enabled, there's no practical difference.\n\n  \nThe benefits are increased for strategy games, like Total War, 4X games like Civilization or Paradox, etc.   Playing a game like Warhammer 40k: Space Marines 2 would not make much difference with any CPU in 4k.",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a performance comparison between the 7800X3D and 9800X3D at 4K, citing benchmarks.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is presenting factual benchmark data comparing the two products.",
                   "replies": [
                     {
                       "commentId": "lwauwrr",
                       "text": "The problem with looking at benchmarks of games at 4k native on ultra settings is that it only really tells you how well a gpu performs in isolation at 4k. \n\nTurn down the settings from ultra to high, shifting some of the burden back to the cpu, then suddenly the 3600x that someone bought because they keep seeing people on the internet say cpu doesn't matter at 4k [isn't looking so hot](https://www.youtube.com/watch?v=98RR0FVQeqs).\n\nIf someone is shopping for a cpu and intends to game at 4k I actually think looking at 1440p benchmarks would be more worthwhile to get an approximation of performance with more realistic settings and upscaling. Unless of course you're one of those people who like to play at native resolution only and can actually spot the difference between ultra and high settings, in which case you do you.",
                       "upvotes": 11,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses general benchmarking methodology for CPUs at 4K, not specifically the 7800X3D.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing benchmarking methodology.",
                       "replies": [
                         {
                           "commentId": "lwbhs5u",
                           "text": "Thanks, I didn't know that! :)",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a simple thank you, not providing insight into the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is expressing gratitude.",
                           "replies": []
                         },
                         {
@@ -209,20 +209,20 @@
                           "text": "you don't look neither at 4k, nor at 1440p for cpu reviews at all. you watch cpu reviews for cpu reviews (which are at \"low\" resolutions) and then draw a venn diagram with gpu reviews, because cpus don't (\\*) scale with resolution.  \nif the cpu can hit it at 480p, it will hit it at 4k, if your gpu is strong enough to stomach the load at 4k.\n\nliterally in your own linked video, the numbers from 1080p don't go down in higher resolutions until the gpu starts becoming the bottleneck.\n\n(\\*) they scale in the sense that objects/geometry/polygons that are too small get discarded from the frame, reducing the amount of draw calls issued, freeing them up for other objects the lower the resolution.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment discusses general CPU scaling and benchmarking resolution, not specifically the 7800X3D.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is discussing technical concepts.",
                           "replies": [
                             {
                               "commentId": "lwr88ub",
                               "text": "yes agree. That's why I find it weird why people get really mad at reviewers for not doing cpu reviews above 1080p. There is no point for that!",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Lowe-effort comment agreeing with another user's point about benchmarking resolution, not specific to the 7800X3D.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is agreeing with a technical point.",
                               "replies": []
                             }
                           ]
@@ -232,10 +232,10 @@
                           "text": "I don\u2019t like upscaling on PC (even with an Nvidia 4070 Super) because I can absolutely see motion/trailing artifacts. Even with DLSS. (don\u2019t even talk about FSR)\n\nI do agree with you about Ultra vs High settings.\n\nBut still, I don\u2019t play games like Flight Sim or strategy games. For me I\u2019m pretty sure 7800x3d is fine for single player shooters",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user expresses an opinion that the 7800X3D is 'fine' for single player shooters, based on their usage patterns.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "The user is expressing satisfaction with the product's performance for their specific use case.",
                           "replies": []
                         },
                         {
@@ -243,10 +243,10 @@
                           "text": "I would always look on 4k as well as the 1080p tests. But at 4k I test GPUs and at 1080p the CPUs :D At 4k when you become GPU bound teh differences between CPUs is artifically flattened. But 1080p you can get the picture. Especially when you see one CPU performing really well in 1% lows and .1% lows. I think that is important, as else if you cheap out on the CPU you might still play Cyberpunk but are wondering why you got micro stutters all the time. That's the potential issue I do see here. Even worse if you face older low core-count games.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment discusses general CPU benchmarking and the importance of 1% lows, not specifically the 7800X3D.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is discussing technical concepts.",
                           "replies": []
                         },
                         {
@@ -254,10 +254,10 @@
                           "text": "Recent games don't perform well at 4k, you have to resort to aggressive upscaling and reduce the quality... the gaming market is sad.",
                           "upvotes": -1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a general complaint about the gaming market and 4K performance, not specific to the 7800X3D.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is expressing a general negative sentiment about the gaming industry.",
                           "replies": []
                         }
                       ]
@@ -267,10 +267,10 @@
                       "text": "if its use DLSS/FSR then the resolution is below 4K and the CPU will become bottleneck again",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a general technical statement about DLSS/FSR and CPU bottlenecks, not specific to the 7800X3D.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a technical explanation.",
                       "replies": []
                     }
                   ]
@@ -280,10 +280,10 @@
                   "text": "Probably not. Processors stall a lot. This would be easily verified with 720p, or upscaling. If hardware unboxed was held back by the GPU, I'd expect a comment on that in their review. Somebody would've had to go super low res for this CPU during testing if there were any spare, sizeable gains to be had.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses general CPU performance and GPU limits in reviews, not specifically the 7800X3D.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a technical opinion on benchmarking.",
                   "replies": []
                 },
                 {
@@ -291,10 +291,10 @@
                   "text": "It can mean either. The averages could be gpu limited while the 1% aren't, or the 1% could be gpu limited while the average aren't.\n\nThat's why it's better to not have a gpu limit at all. He should have tested at 720p to be sure.",
                   "upvotes": 0,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses general GPU and CPU limits, not specifically the 7800X3D.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a technical explanation.",
                   "replies": []
                 }
               ]
@@ -303,5 +303,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

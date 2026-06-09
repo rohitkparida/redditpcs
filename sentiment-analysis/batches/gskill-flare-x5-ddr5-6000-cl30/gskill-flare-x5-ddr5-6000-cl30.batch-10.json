@@ -8,40 +8,40 @@
       "text": "This is your daily dose of T1 post\n\nIn August I finally pulled the trigger and built my first PC.\n\nSpecs:\n\n* Case: Ncase T1 (4.0 Riser Cable)\n* CPU: AMD Ryzen 7800X3D\n* CPU Cooler: Thermalright AXP90-X47 Full Copper\n* CPU Fan: Noctua A9x14 HS-PWM, swapped out Thermalright fan\n* RAM: 32GB G.Skill Flare X5 DDR5-6000 CL30\n* Motherboard: AsRock B650I Lightning Wifi\n* GPU: Asus Prime RTX 5070 Ti\n* SSD: Kingston KC3000 2TB\n* PSU: Corsair SF850\n* Top Fans: Arctic P12 PWM PST A-RGB (2x)\n\n**Build Config:**\n\nOriginally, I built it in 3-Slot mode, but decided to switch to 2.75-Config because CPU idle temps were pretty high (55-60\u00b0C, Temp spike to 65-70 when starting an application), so I wanted to give CPU more breathing room (hasnt gotten better). I am currently still debating if I should go 3-Slot again and print a fan duct for slightly better temps.\n\nMy CPU is set to Tjmax=89\u00b0C and PBO Offset of -20 to help lower the temps.\n\nGPU undervolted to 2737MHz@890mV with stock Fan-Curve (0rpm mode).\n\nCPU-Fan via FanControl; Top Fans should change accordingly whether GPU or CPU is hotter although its CPU 99% of time lol\n\n3D-Printed Hole Plugs\u00a0[https://www.printables.com/model/528062-formd-t1-v21-m19-hole-plugs](https://www.printables.com/model/528062-formd-t1-v21-m19-hole-plugs)\n\n**Temps:**\n\nFurmark 4K: GPU at 65\u00b0C, 250W after couple of minutes\n\nCinebench R23: 17381pts, CPU 87\u00b0C(did hit thermal limit tho), 85W Power Draw\n\n3D-Mark: 22901pts, CPU at around 70\u00b0C, GPU at 55\u00b0C\n\nCyberpunk(WQHD, max Settings): during normal gaming around 55-60fps, sometimes lower, sometimes higher; CPU usually at 72\u00b0C and GPU chills at 60\u00b0C\n\n**Thoughts/questions:**\n\nInitially, I was going for Phanteks, but I'm glad I chose Fans with a little bit of RGB, does look pretty neat while gaming at night( thanks to tinytechtweaks Blog :) ). I am glad to be able to play all games in max settings now, the only concerning thing are my CPU temps: Is idle temp of 50-60, temp spike to around 70( thats why I did FanControl hysteresis to 6s) normal? Thermal throttling in C23 is normal, right? Does anybody have an idea what I can try to better it, what GPU stand I should 3D-print or some other appreciated tips? I would be very grateful for some feedback :)\n\nShoutout to\u00a0[r/SFFPC](https://www.reddit.com/r/SFFPC/),\u00a0[r/FormD](https://www.reddit.com/r/FormD/), Optimum, Devyn\n\nUpvote1Downvote0Go to commentsShare",
       "upvotes": 121,
       "classifyThis": true,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
+      "relevance": "include",
+      "relevanceReasoning": "The user shares their personal experience building a PC and discusses the performance and thermals of various components, including the G.Skill Flare X5 RAM.",
+      "sentiment": "neutral",
+      "sentimentReasoning": "The user details their build and performance metrics but primarily asks for feedback on CPU temps, indicating a neutral stance on the RAM itself within the context of the overall build.",
       "replies": [
         {
           "commentId": "ne7okll",
           "text": "You said daily dose but where is my Phantek t30s, 9800x3d, and 5090FE? /s",
           "upvotes": 11,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This comment is a sarcastic reply to the original post and does not discuss the G.Skill Flare X5 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a joke and not relevant to the product's sentiment.",
           "replies": [
             {
               "commentId": "nekaz4n",
               "text": "I am different compared to others\ud83d\ude36\u200d\ud83c\udf2b\ufe0f\n\nOr maybe just not as rich lol",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This comment is a reply to a joke and does not discuss the G.Skill Flare X5 RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a response to banter and not relevant to the product's sentiment.",
               "replies": [
                 {
                   "commentId": "nekjfow",
                   "text": "Nah I'm just being sarcastic about other sff build posts. \ud83d\ude02",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This comment clarifies a previous joke and does not discuss the G.Skill Flare X5 RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a clarification of a joke and not relevant to the product's sentiment.",
                   "replies": []
                 }
               ]
@@ -53,10 +53,10 @@
           "text": "Hiya! Remember, you can also post your build on the SFFPC Discord server in the completed-builds channel! We have revised our system, and now the highest voted build post each month will be recognized as the SFFPC Build of the Month! Use this link to join our Discord! https://discord.gg/sffpc\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/sffpc) if you have any questions or concerns.*",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is an automated message from a bot and is not relevant to the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Automated bot messages are not relevant to product sentiment.",
           "replies": []
         },
         {
@@ -64,20 +64,20 @@
           "text": "Is all the RGB from the fans?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This comment asks a question about RGB lighting, which is not directly related to the G.Skill Flare X5 RAM's performance or features.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The question is about aesthetics (RGB) and not the core performance or value of the RAM.",
           "replies": [
             {
               "commentId": "nekbcdd",
               "text": "Hi, yes it is. Downside is you have one/two more cables to take care of",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This comment answers a question about RGB lighting and does not discuss the G.Skill Flare X5 RAM's performance or features.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual answer about RGB cables and not relevant to the product's sentiment.",
               "replies": []
             }
           ]
@@ -87,20 +87,20 @@
           "text": "Something I read elsewhere is that turning off the integrated GPU can lower CPU temps too. I tried it and it seems to help my setup",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This comment discusses disabling integrated GPUs for CPU temps and is not related to the G.Skill Flare X5 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is about CPU temperature management unrelated to the RAM.",
           "replies": [
             {
               "commentId": "nekhykg",
               "text": "Seems plausible since there will be no power draw from iGPU, but that does mean when my GPU dies, I have to steal the old GPU from my parents because otherwise there will be no picture right? \ud83d\ude02",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This comment is a humorous reply to a suggestion about disabling integrated GPUs and does not discuss the G.Skill Flare X5 RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a joke and not relevant to the product's sentiment.",
               "replies": []
             }
           ]
@@ -110,40 +110,40 @@
           "text": "Very nice build. The ideal situation for CPU overheating would be to use M3 standoffs to create a gap between the GPU and the CPU. For example, I have the GPU in 2.5 slot mode, so I added 10mm M3 standoffs to create that gap. Your MOBO will be moved closer to the side panel and will not be in contact with the GPU.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This comment provides advice on PC building regarding GPU and CPU spacing, but does not specifically mention or evaluate the G.Skill Flare X5 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The advice is general PC building advice and not specific to the RAM's performance or value.",
           "replies": [
             {
               "commentId": "neknm6p",
               "text": "Thank you, I took a quick look at your setup,  also somebody with rgb :D and whaat your CPU temps are absolutely crazy! Higher score than me with no thermal limit and same cpu cooler.   \n  \nMay I ask which standoff screws you used for the cpu cooler? If I remember correctly I used the intel ones(shorter than AMD)  because a comment under a yt video said so. (https://www.youtube.com/watch?v=LR4aNK87ZPE&ab\\_channel=Ivo)\n\nI understand your suggestion, but doesn't that usually only apply to blower-style GPU's like FE cards? To have  a little bit of space so the hot air  thats blowing to the mobo can \"escape\"? The hot air in my card escapes through the \"sides\" of the gpu(or in my case, through top and bottom)?",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This comment discusses CPU cooler standoffs and GPU heat dissipation, not the G.Skill Flare X5 RAM itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The discussion is focused on CPU cooling and GPU heat management, not the RAM.",
               "replies": [
                 {
                   "commentId": "nekps5a",
                   "text": "Yes, exactly, I used the shorter ones too.\nYa  i understand your reasoning about the GPU, but I don't know. I'd try using the spacers to see the actual difference. I know it's a bit stressful having to reassemble part of the case, maybe when you have some free time \u263a\ufe0f",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This comment continues the discussion about CPU cooler standoffs and does not mention the G.Skill Flare X5 RAM.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is about PC building components and not specific to the RAM.",
                   "replies": [
                     {
                       "commentId": "nex5z5t",
                       "text": "okay thanks for the clarification on the screws. I guess I'll have to give it a shot, I also want to have the temps you have",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This comment is a follow-up to a discussion about CPU cooler standoffs and does not mention the G.Skill Flare X5 RAM.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is part of a technical discussion about PC building, not the RAM.",
                       "replies": []
                     }
                   ]
@@ -157,20 +157,20 @@
           "text": "Did you start with the GPU and then built around it? I am pretty much going to be building something identical to this, any tips?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This comment asks for general PC building tips and does not specifically inquire about or discuss the G.Skill Flare X5 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The question is about general build advice, not specific to the RAM.",
           "replies": [
             {
               "commentId": "nvkp9j7",
               "text": "Sorry for my late comment, gpu was not the first factor. First was which case I\u2019m gonna using and what\u2019s the budget. I knew case is T1 and I wanted to go to like 2000 euros. I knew 5070 was not enough of an performance jump for me so I went with the next model, in this case 5070ti.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This comment explains the reasoning behind a PC build choice but does not specifically mention or evaluate the G.Skill Flare X5 RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment explains build choices but does not focus on the RAM.",
               "replies": []
             }
           ]
@@ -180,10 +180,10 @@
           "text": "sorry can't help you",
           "upvotes": -3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This comment is a brief statement of inability to help and does not discuss the G.Skill Flare X5 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is unhelpful and not relevant to the product's sentiment.",
           "replies": []
         }
       ]
@@ -193,30 +193,30 @@
       "text": "Build Check Gaming PC\n\nDear All,\n\nid like to build myself a gaming pc and i've spent some time picking components that fit my wallet and hopefully also fit to eachother. I tried to put thought into it and pre-checked with chatty.\n\nId love to hear your comments if my build makes sense, if you spot any major weaknesses or incompatibilities or if you agree with my plans. Its geared towards a gaming PC that should last a few years. Also I'd love your opinion if this will cost me much more cash than a pre built gaming PC. Im located in Europe in case that makes a difference for pricing/availibility of parts.\n\nThanks a lot for your time & help!\n\nHere's whats on my mind:\n\n* **CPU:** AMD Ryzen 7 **7800X3D**\n* **GPU:** NVIDIA GeForce **RTX 5070 Ti 16 GB**\n* **Mainboard:** MSI **MAG B650 Tomahawk WiFi**\n* **RAM:** G.SKILL **Flare X5 DDR5-6000 CL30**, 32 GB (2\u00d716, EXPO)\n* **SSD:** Samsung **990 PRO NVMe**, **2 TB**\n* **CPU-K\u00fchler:** Thermalright **Peerless Assassin 120 SE**\n* **Geh\u00e4use:** Kolink **Observatory HF Mesh PWM** (Midi-Tower)\n* **Netzteil:** be quiet! **Pure Power 12 M**, **750 W**, ATX 3.1",
       "upvotes": 0,
       "classifyThis": true,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
+      "relevance": "include",
+      "relevanceReasoning": "The user lists the G.Skill Flare X5 DDR5-6000 CL30 as a component in their planned PC build and asks for feedback.",
+      "sentiment": "neutral",
+      "sentimentReasoning": "The user is seeking validation for their component choices, including the RAM, without expressing a personal opinion on its performance yet.",
       "replies": [
         {
           "commentId": "o3xitqr",
           "text": "Looks fine to me, but I would questions the expensive NVMe drive. Makes no real difference compared to any other NVMe if your workload is just gaming.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This comment discusses the value of an NVMe drive and does not specifically address the G.Skill Flare X5 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is about storage and not relevant to the RAM's sentiment.",
           "replies": [
             {
               "commentId": "o48jqqb",
               "text": "Thanks you for your help \ud83d\ude07\ud83e\udee1",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This comment is a simple thank you and does not discuss the G.Skill Flare X5 RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a polite response and not relevant to the product's sentiment.",
               "replies": []
             }
           ]
@@ -226,20 +226,20 @@
           "text": "All good. Solid gaming build. The PSU is good match, but I suggest 850W for a few more money for possible future upgrades.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This comment provides general advice on PSU wattage and does not specifically mention or evaluate the G.Skill Flare X5 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The advice is about the power supply and not relevant to the RAM's sentiment.",
           "replies": [
             {
               "commentId": "o48jr7y",
               "text": "Thanks you for your help \ud83d\ude07\ud83e\udee1",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This comment is a simple thank you and does not discuss the G.Skill Flare X5 RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a polite response and not relevant to the product's sentiment.",
               "replies": []
             }
           ]
@@ -249,25 +249,26 @@
           "text": "More than a prebuilt, yes probably, but the experience, satisfaction, customization, and knowledge of your own build is priceless. That's a solid build and you should be very happy with it. The 750 watts is technically enough power, but it only costs a bit more for a 850 or 100 watt PSU. If you can do it, it'll be better for efficiency and load, plus leave room for upgrades down the road.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This comment discusses the value of building a PC versus buying pre-built and offers general advice on PSU wattage, not specifically about the G.Skill Flare X5 RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is about the overall PC build experience and PSU, not specific to the RAM.",
           "replies": [
             {
               "commentId": "o48jq6x",
               "text": "Thanks you for your help \ud83d\ude07\ud83e\udee1",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This comment is a simple thank you and does not discuss the G.Skill Flare X5 RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a polite response and not relevant to the product's sentiment.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemini-2.5-flash-lite"
 }

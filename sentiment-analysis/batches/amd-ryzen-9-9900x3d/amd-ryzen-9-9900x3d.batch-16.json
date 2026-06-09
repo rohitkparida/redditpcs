@@ -18,20 +18,20 @@
           "text": "The last update made Memory Context Restore fully hose my PC until I cleared CMOS. Guaranteed BSOD\u2019s on login and the BIOS would freeze if I tried to change the settings. Be careful with these.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses BIOS updates and system stability issues generally, without mentioning the Ryzen 9 9900X3D specifically.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user reports BSODs and system freezes after a BIOS update.",
           "replies": [
             {
               "commentId": "mhamlg2",
               "text": "Last bios made 2:1 mode impossible for me. Literally 8000 2:1 for months then update and it doesn't even want to run 7200. Also couldn't change resistances at all.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment focuses on memory stability and BIOS settings, not the specific CPU product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is dissatisfied with the loss of memory overclocking stability after an update.",
               "replies": []
             },
             {
@@ -39,30 +39,30 @@
               "text": "What board are you using?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a factual question about motherboard hardware, not an opinion on the CPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking for information without expressing a sentiment.",
               "replies": [
                 {
                   "commentId": "mhb6tyw",
                   "text": "B650E-F",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a factual answer providing a motherboard model, not related to the CPU's performance or experience.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a factual answer.",
                   "replies": [
                     {
                       "commentId": "mhb721g",
                       "text": "I have the 670E Plus WiFi. I'm still using BIOS 1618.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment mentions a motherboard and BIOS version, which is off-topic regarding the CPU product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing factual information about their own setup.",
                       "replies": []
                     },
                     {
@@ -70,10 +70,10 @@
                       "text": "i have same motherboard, remember this rule, every time you want to update bios, make sure you do default setting first before flashing.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment provides general BIOS flashing advice, which is not a specific critique or experience with the CPU.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is offering helpful, neutral advice.",
                       "replies": []
                     }
                   ]
@@ -84,5 +84,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

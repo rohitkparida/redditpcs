@@ -18,30 +18,30 @@
           "text": "The only thing I can see you not having tested is using MSI AB to create a curve where the gpu gets more volt at lower frequencies.\n\n\nWoW is exceptional at crashing undervolting as the main GPU usage is pretty low on high end GPUs. In a dungeon it varies a lot.\n\n\nI don't use AMD GPUs since I had a weirdly similar with an HD5850 (I think?) a century ago. It always crashed in Battlefield because it did not get enough power with stock settings. Running it with more volt solved the problem.\n\n\nChrome flickering with the 3060 is a Nvidia driver bug btw. If you switch to Nvidia, use the 537.58 driver for WoW. Many layer ones cause microstutter. Nvidia is not perfect either, but the main problem is the ancient engine still underneath WoWs modern glow these days.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses GPU voltage curves and driver issues, not the Be Quiet! PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing technical advice on GPU stability without expressing sentiment toward the product.",
           "replies": [
             {
               "commentId": "l0frudz",
               "text": "Could you elaborate a little bit more on the \"WoW is exceptional at crashing undervolting as the main GPU usage is pretty low on high end GPUs\" part? I'm not really sure how I should go about setting that curve.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a follow-up question about GPU undervolting, not the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking for clarification on a technical point.",
               "replies": [
                 {
                   "commentId": "l0m4arl",
                   "text": "Aha! The one thing you havent tried then, I feel for you, you have done so much fucking troubleshooting. \n\n  \nWhen in MSI AB, press CTRL+F to open the curve editor. What you want to do here is the opposite of undervolting (so you can google a guide for undervolting AMD cards, I dont know if it differs), so you want  higher watt / frequency. For example, if its at 1v @ 2000mhz, try it at 1.05 @ 2000mhz. \n\nYou can also just raise core voltage setting in MSI AB, dont know if that works.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment provides instructions on using MSI Afterburner for GPU voltage, not the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is offering technical assistance to another user.",
                   "replies": []
                 }
               ]
@@ -53,30 +53,30 @@
           "text": "What are the quality of the DP/HDMI cables you use?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment asks about cable quality, which is unrelated to the PSU's performance or quality.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question for troubleshooting.",
           "replies": [
             {
               "commentId": "l0ehv6f",
               "text": "why would an HDMI/DP cable cause a game crash? Dropping signal and backscreen sure, but crashing an application?",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the relationship between cables and application crashes, not the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is questioning the logic of a troubleshooting step.",
               "replies": [
                 {
                   "commentId": "l0elrld",
                   "text": "Driver instability could cause anything to crash.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses driver instability, not the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is making a general technical statement.",
                   "replies": []
                 }
               ]
@@ -85,5 +85,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

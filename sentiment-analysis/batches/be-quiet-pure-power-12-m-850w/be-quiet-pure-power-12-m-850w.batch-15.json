@@ -18,10 +18,10 @@
           "text": "I had some system shutdowns in wow classic (with a 7900xtx) at certain times like just after exiting a dungeon. It seemed to be related to heat as it occurred more often when my room was warm. I fixed it by a combination of turning on my air conditioning and limiting the game to 110 fps + mid-high settings.\u00a0\n\n\n\u00a0Edit: also had driver timeouts with DX12 but not DX11.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses GPU heat and driver timeouts in a game, not the Be Quiet! PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is describing a technical issue and its resolution without expressing sentiment toward the product in question.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "Sorry if this was already in your list of things you have tried, or if someone else has already mentioned this, but have you tried setting Max Frequency in GPU Tuning under the Performance tab in the AMD Adrenaline Software to something lower? I was getting driver timeouts in a lot of games and setting it to 95% seems to have stopped them.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment provides troubleshooting advice for GPU frequency, unrelated to the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is offering helpful technical advice.",
           "replies": []
         },
         {
@@ -40,10 +40,10 @@
           "text": "Possibly the same issue that happens in any of the kingdom hearts games about 15mins after playing the game, never got fixed either",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses game crashes in Kingdom Hearts, unrelated to the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is noting a similar issue in another game.",
           "replies": []
         },
         {
@@ -51,20 +51,20 @@
           "text": "The Microsoft store app for Spotify was causing my wow to hang frequently, after uninstalling the app and reinstalling the regular windows application of Spotify my issue went away.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses Spotify app conflicts, unrelated to the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is sharing a fix for a software conflict.",
           "replies": [
             {
               "commentId": "l0g3gms",
               "text": "I do have the regular windows app for Spotify and not the one from Microsoft Store.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a factual statement about which Spotify app is used, unrelated to the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a factual response.",
               "replies": []
             }
           ]
@@ -74,10 +74,10 @@
           "text": "I had this on DX12 but it's stable on DX11. Ofc it sucks to run DX11 but what can you do...",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses DirectX versions and stability, unrelated to the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing frustration with software settings.",
           "replies": []
         },
         {
@@ -85,20 +85,20 @@
           "text": "I get driver timeouts if I have Discord or watch Twitch or YouTube on my second monitor. So either I turn it off, or I don't have anything up on my second monitor while playing a game.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses driver timeouts caused by second monitor activity, unrelated to the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is describing a technical behavior.",
           "replies": [
             {
               "commentId": "l0oesu0",
               "text": "I usually also have discord, twitch and/or youtube open on my 2nd screen, last 2 in firefox.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a factual statement about their setup, unrelated to the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a factual response.",
               "replies": []
             }
           ]
@@ -108,13 +108,14 @@
           "text": "[https://www.youtube.com/watch?v=4LCZq-iACU4&amp;t](https://www.youtube.com/watch?v=4LCZq-iACU4&amp;t=1s)",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is just a YouTube link, unrelated to the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is sharing a resource.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

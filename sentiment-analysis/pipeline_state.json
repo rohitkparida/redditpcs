@@ -369,16 +369,53 @@
     "updated_at": "2026-06-09T14:49:21"
   },
   "amd-ryzen-7-7800x3d": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "review",
+    "step": "classification",
+    "reason": "incomplete_classification",
+    "warnings": [
+      "zero_include_batch:amd-ryzen-7-7800x3d.batch-21.json",
+      "zero_include_batch:amd-ryzen-7-7800x3d.batch-79.json",
+      "zero_include_batch:amd-ryzen-7-7800x3d.batch-87.json"
+    ],
+    "metrics": {
+      "survivingThreads": 12,
+      "candidateComments": 2581,
+      "classificationCompleteness": 0.9926385122045719
+    },
+    "artifacts": {
+      "classified": "classified/amd-ryzen-7-7800x3d.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:32"
+    "updated_at": "2026-06-09T19:34:54"
   },
   "amd-ryzen-7-9700x": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [
+      "zero_include_batch:amd-ryzen-7-9700x.batch-10.json",
+      "zero_include_batch:amd-ryzen-7-9700x.batch-12.json",
+      "zero_include_batch:amd-ryzen-7-9700x.batch-19.json",
+      "zero_include_batch:amd-ryzen-7-9700x.batch-21.json",
+      "zero_include_batch:amd-ryzen-7-9700x.batch-23.json",
+      "zero_include_batch:amd-ryzen-7-9700x.batch-24.json",
+      "zero_include_batch:amd-ryzen-7-9700x.batch-27.json"
+    ],
+    "metrics": {
+      "survivingThreads": 5,
+      "candidateComments": 834,
+      "includedComments": 245,
+      "contributingThreads": 5,
+      "largestThreadShare": 0.27755102040816326,
+      "includeRate": 0.4351687388987567,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/amd-ryzen-7-9700x.classified.json",
+      "database": "../src/data/cpus.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:32"
+    "updated_at": "2026-06-09T17:55:48"
   },
   "amd-ryzen-7-9800x3d": {
     "status": "insufficient_sources",
@@ -398,46 +435,215 @@
     "updated_at": "2026-06-09T10:23:59"
   },
   "amd-ryzen-9-9900x": {
-    "status": "failed",
-    "step": "classify_validation",
-    "error": "[Classify] 'amd-ryzen-9-9900x.batch-01.json' has 13 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-02.json' has 21 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-04.json' has 25 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-06.json' has 21 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-07.json' has 18 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-08.json' has 20 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-09.json' has 10 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-12.json' has 25 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-13.json' has 18 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-14.json' has 24 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-15.json' has 15 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-17.json' has 9 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'amd-ryzen-9-9900x.batch-18.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'amd-ryzen-9-9900x.batch-20.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'amd-ryzen-9-9900x.batch-25.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'amd-ryzen-9-9900x.batch-28.json' has 6 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9900x.batch-29.json' has 7 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'amd-ryzen-9-9900x.batch-36.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'amd-ryzen-9-9900x.batch-37.json' has 11 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'amd-ryzen-9-9900x.batch-41.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'amd-ryzen-9-9900x.batch-42.json' has 13 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'amd-ryzen-9-9900x.batch-48.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic.",
-    "updated_at": "2026-06-09T09:36:09"
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [
+      "zero_include_batch:amd-ryzen-9-9900x.batch-01.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-02.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-04.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-06.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-07.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-08.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-09.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-12.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-13.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-14.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-15.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-17.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-20.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-28.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-29.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-37.json",
+      "zero_include_batch:amd-ryzen-9-9900x.batch-42.json"
+    ],
+    "metrics": {
+      "survivingThreads": 5,
+      "candidateComments": 653,
+      "includedComments": 71,
+      "contributingThreads": 5,
+      "largestThreadShare": 0.323943661971831,
+      "includeRate": 0.21712538226299694,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/amd-ryzen-9-9900x.classified.json",
+      "database": "../src/data/cpus.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-09T17:10:32"
   },
   "amd-ryzen-9-9900x3d": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [
+      "zero_include_batch:amd-ryzen-9-9900x3d.batch-15.json",
+      "zero_include_batch:amd-ryzen-9-9900x3d.batch-16.json",
+      "zero_include_batch:amd-ryzen-9-9900x3d.batch-18.json",
+      "zero_include_batch:amd-ryzen-9-9900x3d.batch-19.json",
+      "zero_include_batch:amd-ryzen-9-9900x3d.batch-20.json",
+      "zero_include_batch:amd-ryzen-9-9900x3d.batch-21.json"
+    ],
+    "metrics": {
+      "survivingThreads": 5,
+      "candidateComments": 347,
+      "includedComments": 72,
+      "contributingThreads": 4,
+      "largestThreadShare": 0.4722222222222222,
+      "includeRate": 0.3287671232876712,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/amd-ryzen-9-9900x3d.classified.json",
+      "database": "../src/data/cpus.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:32"
+    "updated_at": "2026-06-09T17:27:39"
   },
   "amd-ryzen-9-9950x": {
-    "status": "failed",
-    "step": "classify_validation",
-    "error": "[Classify] 'amd-ryzen-9-9950x.batch-01.json' has 13 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9950x.batch-02.json' has 21 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9950x.batch-06.json' has 21 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9950x.batch-07.json' has 18 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9950x.batch-08.json' has 20 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9950x.batch-13.json' has 18 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9950x.batch-32.json' has 24 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9950x.batch-33.json' has 15 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9950x.batch-35.json' has 10 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'amd-ryzen-9-9950x.batch-39.json' has 15 comments but 0 included \u2014 possible prompt failure or all comments excluded.",
-    "updated_at": "2026-06-09T09:09:45"
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [
+      "zero_include_batch:amd-ryzen-9-9950x.batch-01.json",
+      "zero_include_batch:amd-ryzen-9-9950x.batch-02.json",
+      "zero_include_batch:amd-ryzen-9-9950x.batch-06.json",
+      "zero_include_batch:amd-ryzen-9-9950x.batch-07.json",
+      "zero_include_batch:amd-ryzen-9-9950x.batch-08.json",
+      "zero_include_batch:amd-ryzen-9-9950x.batch-13.json",
+      "zero_include_batch:amd-ryzen-9-9950x.batch-32.json",
+      "zero_include_batch:amd-ryzen-9-9950x.batch-33.json",
+      "zero_include_batch:amd-ryzen-9-9950x.batch-35.json",
+      "zero_include_batch:amd-ryzen-9-9950x.batch-39.json"
+    ],
+    "metrics": {
+      "survivingThreads": 5,
+      "candidateComments": 815,
+      "includedComments": 143,
+      "contributingThreads": 5,
+      "largestThreadShare": 0.34965034965034963,
+      "includeRate": 0.29606625258799174,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/amd-ryzen-9-9950x.classified.json",
+      "database": "../src/data/cpus.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-09T17:29:59"
   },
   "amd-ryzen-9-9950x3d": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [
+      "zero_include_batch:amd-ryzen-9-9950x3d.batch-12.json",
+      "zero_include_batch:amd-ryzen-9-9950x3d.batch-22.json"
+    ],
+    "metrics": {
+      "survivingThreads": 4,
+      "candidateComments": 674,
+      "includedComments": 168,
+      "contributingThreads": 4,
+      "largestThreadShare": 0.31547619047619047,
+      "includeRate": 0.3792325056433409,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/amd-ryzen-9-9950x3d.classified.json",
+      "database": "../src/data/cpus.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:33"
+    "updated_at": "2026-06-09T18:04:18"
   },
   "arctic-liquid-freezer-ii-360": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-02.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-03.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-04.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-05.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-06.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-07.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-09.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-13.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-14.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-16.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-17.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-22.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-23.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-25.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-26.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-27.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-30.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-31.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-32.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-33.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-34.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-35.json",
+      "zero_include_batch:arctic-liquid-freezer-ii-360.batch-36.json"
+    ],
+    "metrics": {
+      "survivingThreads": 12,
+      "candidateComments": 904,
+      "includedComments": 31,
+      "contributingThreads": 9,
+      "largestThreadShare": 0.3870967741935484,
+      "includeRate": 0.061630218687872766,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/arctic-liquid-freezer-ii-360.classified.json",
+      "database": "../src/data/coolers.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:33"
+    "updated_at": "2026-06-09T18:37:57"
   },
   "arctic-liquid-freezer-iii-360": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [],
+    "metrics": {
+      "survivingThreads": 7,
+      "candidateComments": 389,
+      "includedComments": 82,
+      "contributingThreads": 6,
+      "largestThreadShare": 0.45121951219512196,
+      "includeRate": 0.3106060606060606,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/arctic-liquid-freezer-iii-360.classified.json",
+      "database": "../src/data/coolers.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:33"
+    "updated_at": "2026-06-09T18:24:02"
   },
   "asrock-b650-pg-lightning": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_candidate_volume"
+    ],
+    "metrics": {
+      "survivingThreads": 3,
+      "candidateComments": 19,
+      "includedComments": 3,
+      "contributingThreads": 2,
+      "largestThreadShare": 0.6666666666666666,
+      "includeRate": 0.3333333333333333,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/asrock-b650-pg-lightning.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:33"
+    "updated_at": "2026-06-09T18:24:45"
   },
   "intel-core-ultra-270k-plus": {
     "status": "done",
@@ -488,10 +694,26 @@
     "updated_at": "2026-06-09T09:13:13"
   },
   "asus-rog-strix-x670e-i-gaming-wifi": {
-    "status": "failed",
-    "step": "classify_validation",
-    "error": "[Classify] 'asus-rog-strix-x670e-i-gaming-wifi.batch-04.json' has 23 comments but 0 included \u2014 possible prompt failure or all comments excluded.",
-    "updated_at": "2026-06-09T09:01:03"
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_source_diversity",
+    "warnings": [
+      "zero_include_batch:asus-rog-strix-x670e-i-gaming-wifi.batch-04.json"
+    ],
+    "metrics": {
+      "survivingThreads": 3,
+      "candidateComments": 165,
+      "includedComments": 30,
+      "contributingThreads": 2,
+      "largestThreadShare": 0.9,
+      "includeRate": 0.2459016393442623,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/asus-rog-strix-x670e-i-gaming-wifi.classified.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-09T18:25:14"
   },
   "deepcool-ak620": {
     "status": "done",
@@ -524,10 +746,60 @@
     "updated_at": "2026-06-09T09:36:03"
   },
   "crucial-pro-ddr5-5600": {
-    "status": "failed",
-    "step": "classify_validation",
-    "error": "[Classify Warning] 'crucial-pro-ddr5-5600.batch-02.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-03.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-04.json' has 7 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-05.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-06.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-07.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-08.json' has 6 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-09.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-10.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-101.json' has 8 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-102.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-103.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-105.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-106.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-107.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-108.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-11.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-110.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-111.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-112.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-113.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-114.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-116.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-117.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-118.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-119.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-12.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-121.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-122.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'crucial-pro-ddr5-5600.batch-123.json' has 11 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-124.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-125.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-126.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-127.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-128.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-129.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-13.json' has 6 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-130.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-131.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'crucial-pro-ddr5-5600.batch-132.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-133.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-134.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-135.json' has 8 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-136.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-137.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-138.json' has 4 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-139.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-14.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-140.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-141.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-142.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-144.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-145.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-146.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-147.json' has 4 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'crucial-pro-ddr5-5600.batch-148.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'crucial-pro-ddr5-5600.batch-149.json' has 6 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-15.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-150.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-151.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-152.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-153.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-154.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-155.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-156.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-157.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-158.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-159.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-16.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-160.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-161.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-162.json' has 4 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-163.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-164.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-165.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-166.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-167.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-168.json' has 4 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-169.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-17.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-170.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-171.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-172.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-173.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-19.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-20.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-21.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-22.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-23.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-24.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-25.json' has 8 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-26.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-27.json' has 4 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'crucial-pro-ddr5-5600.batch-29.json' has 6 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-30.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-31.json' has 4 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'crucial-pro-ddr5-5600.batch-32.json' has 4 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'crucial-pro-ddr5-5600.batch-33.json' has 4 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-34.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-35.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-36.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-37.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-38.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-39.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-40.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-41.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-42.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-43.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-44.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-45.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-46.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-47.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-48.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'crucial-pro-ddr5-5600.batch-49.json' has 4 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-50.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-51.json' has 6 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'crucial-pro-ddr5-5600.batch-52.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-53.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-54.json' has 5 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-55.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-56.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-57.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-58.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-59.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-60.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-61.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-62.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-63.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-64.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-65.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-66.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-67.json' has 6 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-68.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-69.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-70.json' has 4 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-71.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-72.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-73.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-74.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-75.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-76.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-77.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-78.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-79.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-80.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-81.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-82.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-83.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-84.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-85.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-86.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-87.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-88.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-89.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-90.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-91.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-92.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-94.json' has 7 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-95.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-96.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'crucial-pro-ddr5-5600.batch-97.json' has 15 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-98.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'crucial-pro-ddr5-5600.batch-99.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] Include rate is 3.0% \u2014 suspiciously low. Check prompt or source quality.",
-    "updated_at": "2026-06-09T09:36:03"
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-04.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-08.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-101.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-103.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-118.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-122.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-123.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-126.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-13.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-131.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-132.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-135.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-138.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-147.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-148.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-149.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-162.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-168.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-25.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-27.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-29.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-31.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-32.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-33.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-40.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-48.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-49.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-51.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-52.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-54.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-67.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-70.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-94.json",
+      "zero_include_batch:crucial-pro-ddr5-5600.batch-97.json",
+      "anomalous_include_rate_low:0.0302"
+    ],
+    "metrics": {
+      "survivingThreads": 5,
+      "candidateComments": 464,
+      "includedComments": 7,
+      "contributingThreads": 4,
+      "largestThreadShare": 0.42857142857142855,
+      "includeRate": 0.035,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/crucial-pro-ddr5-5600.classified.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-09T19:40:37"
   },
   "kingston-kc3000": {
     "status": "failed",
@@ -590,16 +862,51 @@
     "updated_at": "2026-06-09T13:12:36"
   },
   "corsair-sf750-platinum": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_candidate_volume"
+    ],
+    "metrics": {
+      "survivingThreads": 4,
+      "candidateComments": 39,
+      "includedComments": 7,
+      "contributingThreads": 3,
+      "largestThreadShare": 0.42857142857142855,
+      "includeRate": 0.2916666666666667,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/corsair-sf750-platinum.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:34"
+    "updated_at": "2026-06-09T19:28:57"
   },
   "corsair-vengeance-rgb-ddr5-6000-cl30": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_candidate_volume",
+      "zero_include_batch:corsair-vengeance-rgb-ddr5-6000-cl30.batch-01.json",
+      "zero_include_batch:corsair-vengeance-rgb-ddr5-6000-cl30.batch-02.json",
+      "anomalous_include_rate_low:0.0154"
+    ],
+    "metrics": {
+      "survivingThreads": 3,
+      "candidateComments": 65,
+      "includedComments": 1,
+      "contributingThreads": 1,
+      "largestThreadShare": 1.0,
+      "includeRate": 0.029411764705882353,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/corsair-vengeance-rgb-ddr5-6000-cl30.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:34"
+    "updated_at": "2026-06-09T19:38:54"
   },
   "teamgroup-mp44l": {
     "status": "pending",
@@ -626,10 +933,32 @@
     "updated_at": "2026-06-09T13:12:38"
   },
   "fractal-design-north": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "zero_include_batch:fractal-design-north.batch-03.json",
+      "zero_include_batch:fractal-design-north.batch-04.json",
+      "zero_include_batch:fractal-design-north.batch-05.json",
+      "zero_include_batch:fractal-design-north.batch-16.json",
+      "zero_include_batch:fractal-design-north.batch-17.json",
+      "zero_include_batch:fractal-design-north.batch-18.json"
+    ],
+    "metrics": {
+      "survivingThreads": 2,
+      "candidateComments": 93,
+      "includedComments": 3,
+      "contributingThreads": 1,
+      "largestThreadShare": 1.0,
+      "includeRate": 0.075,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/fractal-design-north.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:34"
+    "updated_at": "2026-06-09T19:53:43"
   },
   "asus-rog-strix-b650e-f": {
     "status": "done",
@@ -638,16 +967,91 @@
     "updated_at": "2026-06-09T00:20:23"
   },
   "gskill-flare-x5-ddr5-6000-cl30": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "zero_include_batch:gskill-flare-x5-ddr5-6000-cl30.batch-02.json",
+      "zero_include_batch:gskill-flare-x5-ddr5-6000-cl30.batch-03.json",
+      "zero_include_batch:gskill-flare-x5-ddr5-6000-cl30.batch-04.json",
+      "zero_include_batch:gskill-flare-x5-ddr5-6000-cl30.batch-05.json",
+      "zero_include_batch:gskill-flare-x5-ddr5-6000-cl30.batch-06.json",
+      "zero_include_batch:gskill-flare-x5-ddr5-6000-cl30.batch-08.json",
+      "zero_include_batch:gskill-flare-x5-ddr5-6000-cl30.batch-09.json",
+      "zero_include_batch:gskill-flare-x5-ddr5-6000-cl30.batch-11.json",
+      "anomalous_include_rate_low:0.0132"
+    ],
+    "metrics": {
+      "survivingThreads": 4,
+      "candidateComments": 228,
+      "includedComments": 2,
+      "contributingThreads": 2,
+      "largestThreadShare": 0.5,
+      "includeRate": 0.010752688172043012,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/gskill-flare-x5-ddr5-6000-cl30.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:34"
+    "updated_at": "2026-06-09T20:25:48"
   },
   "corsair-4000d-airflow": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [
+      "zero_include_batch:corsair-4000d-airflow.batch-02.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-07.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-08.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-100.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-11.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-120.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-125.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-13.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-130.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-132.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-133.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-134.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-135.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-136.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-137.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-138.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-139.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-141.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-143.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-22.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-25.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-28.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-29.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-31.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-37.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-53.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-55.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-60.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-63.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-64.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-66.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-67.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-82.json",
+      "zero_include_batch:corsair-4000d-airflow.batch-95.json",
+      "concentration_warning:0.6338"
+    ],
+    "metrics": {
+      "survivingThreads": 10,
+      "candidateComments": 1044,
+      "includedComments": 71,
+      "contributingThreads": 7,
+      "largestThreadShare": 0.6338028169014085,
+      "includeRate": 0.09806629834254144,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/corsair-4000d-airflow.classified.json",
+      "database": "../src/data/cases.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:33"
+    "updated_at": "2026-06-09T20:22:26"
   },
   "lexar-nm790": {
     "status": "pending",
@@ -674,10 +1078,26 @@
     "updated_at": "2026-06-09T13:12:38"
   },
   "crucial-t705-gen-5": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_candidate_volume"
+    ],
+    "metrics": {
+      "survivingThreads": 3,
+      "candidateComments": 16,
+      "includedComments": 4,
+      "contributingThreads": 2,
+      "largestThreadShare": 0.75,
+      "includeRate": 0.5,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/crucial-t705-gen-5.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:34"
+    "updated_at": "2026-06-09T19:41:16"
   },
   "lian-li-lancool-216-207": {
     "status": "insufficient_sources",
@@ -714,10 +1134,51 @@
     "updated_at": "2026-06-09T13:12:35"
   },
   "be-quiet-pure-power-12-m-850w": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-02.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-03.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-05.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-06.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-07.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-08.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-10.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-12.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-13.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-15.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-16.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-17.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-18.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-19.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-20.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-21.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-22.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-23.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-24.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-25.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-26.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-28.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-30.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-33.json",
+      "zero_include_batch:be-quiet-pure-power-12-m-850w.batch-41.json"
+    ],
+    "metrics": {
+      "survivingThreads": 2,
+      "candidateComments": 357,
+      "includedComments": 13,
+      "contributingThreads": 1,
+      "largestThreadShare": 1.0,
+      "includeRate": 0.06190476190476191,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/be-quiet-pure-power-12-m-850w.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:33"
+    "updated_at": "2026-06-09T18:54:14"
   },
   "intel-core-ultra-9-285k": {
     "status": "pending",
@@ -732,64 +1193,304 @@
     "updated_at": "2026-06-09T13:12:35"
   },
   "asrock-b650m-pro-rs": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "low_candidate_volume"
+    ],
+    "metrics": {
+      "survivingThreads": 2,
+      "candidateComments": 6,
+      "includedComments": 1,
+      "contributingThreads": 1,
+      "largestThreadShare": 1.0,
+      "includeRate": 0.2,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/asrock-b650m-pro-rs.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:33"
+    "updated_at": "2026-06-09T18:25:00"
   },
   "asrock-x870-pro-rs": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "low_candidate_volume",
+      "zero_include_batch:asrock-x870-pro-rs.batch-01.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 1,
+      "candidateComments": 5,
+      "includedComments": 0,
+      "contributingThreads": 0,
+      "largestThreadShare": 0,
+      "includeRate": 0.0,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/asrock-x870-pro-rs.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:33"
+    "updated_at": "2026-06-09T18:25:14"
   },
   "asus-tuf-gaming-b650-plus-wifi": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_candidate_volume"
+    ],
+    "metrics": {
+      "survivingThreads": 4,
+      "candidateComments": 26,
+      "includedComments": 5,
+      "contributingThreads": 2,
+      "largestThreadShare": 0.6,
+      "includeRate": 0.38461538461538464,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/asus-tuf-gaming-b650-plus-wifi.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:33"
+    "updated_at": "2026-06-09T18:26:18"
   },
   "be-quiet-pure-base-500dx": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-02.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-03.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-05.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-06.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-07.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-08.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-10.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-11.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-12.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-13.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-14.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-15.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-17.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-18.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-19.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-20.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-21.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-22.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-23.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-24.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-26.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-27.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-28.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-29.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-30.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-32.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-33.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-35.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-37.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-38.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-40.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-41.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-43.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-44.json",
+      "zero_include_batch:be-quiet-pure-base-500dx.batch-45.json"
+    ],
+    "metrics": {
+      "survivingThreads": 12,
+      "candidateComments": 1126,
+      "includedComments": 48,
+      "contributingThreads": 9,
+      "largestThreadShare": 0.4375,
+      "includeRate": 0.05734767025089606,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/be-quiet-pure-base-500dx.classified.json",
+      "database": "../src/data/cases.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:33"
+    "updated_at": "2026-06-09T19:20:23"
   },
   "corsair-rm750e-atx-30": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-02.json",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-03.json",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-04.json",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-06.json",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-08.json",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-09.json",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-10.json",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-14.json",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-16.json",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-17.json",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-18.json",
+      "zero_include_batch:corsair-rm750e-atx-30.batch-21.json",
+      "anomalous_include_rate_low:0.0205"
+    ],
+    "metrics": {
+      "survivingThreads": 1,
+      "candidateComments": 146,
+      "includedComments": 1,
+      "contributingThreads": 1,
+      "largestThreadShare": 1.0,
+      "includeRate": 0.009345794392523364,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/corsair-rm750e-atx-30.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:34"
+    "updated_at": "2026-06-09T19:27:03"
   },
   "corsair-vengeance-ddr5-6000": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "zero_include_batch:corsair-vengeance-ddr5-6000.batch-01.json",
+      "zero_include_batch:corsair-vengeance-ddr5-6000.batch-02.json"
+    ],
+    "metrics": {
+      "survivingThreads": 2,
+      "candidateComments": 186,
+      "includedComments": 18,
+      "contributingThreads": 2,
+      "largestThreadShare": 0.8333333333333334,
+      "includeRate": 0.10344827586206896,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/corsair-vengeance-ddr5-6000.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:34"
+    "updated_at": "2026-06-09T19:41:53"
   },
   "deepcool-lt720-360mm-aio": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "low_candidate_volume",
+      "zero_include_batch:deepcool-lt720-360mm-aio.batch-03.json"
+    ],
+    "metrics": {
+      "survivingThreads": 2,
+      "candidateComments": 47,
+      "includedComments": 3,
+      "contributingThreads": 1,
+      "largestThreadShare": 1.0,
+      "includeRate": 0.15,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/deepcool-lt720-360mm-aio.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:34"
+    "updated_at": "2026-06-09T19:44:17"
   },
   "fractal-design-torrent": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [
+      "zero_include_batch:fractal-design-torrent.batch-04.json",
+      "zero_include_batch:fractal-design-torrent.batch-07.json",
+      "zero_include_batch:fractal-design-torrent.batch-08.json",
+      "zero_include_batch:fractal-design-torrent.batch-10.json",
+      "zero_include_batch:fractal-design-torrent.batch-11.json",
+      "zero_include_batch:fractal-design-torrent.batch-12.json",
+      "zero_include_batch:fractal-design-torrent.batch-13.json",
+      "zero_include_batch:fractal-design-torrent.batch-14.json",
+      "zero_include_batch:fractal-design-torrent.batch-15.json",
+      "zero_include_batch:fractal-design-torrent.batch-16.json",
+      "zero_include_batch:fractal-design-torrent.batch-17.json",
+      "zero_include_batch:fractal-design-torrent.batch-18.json",
+      "zero_include_batch:fractal-design-torrent.batch-19.json"
+    ],
+    "metrics": {
+      "survivingThreads": 8,
+      "candidateComments": 503,
+      "includedComments": 55,
+      "contributingThreads": 7,
+      "largestThreadShare": 0.45454545454545453,
+      "includeRate": 0.15406162464985995,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/fractal-design-torrent.classified.json",
+      "database": "../src/data/cases.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:34"
+    "updated_at": "2026-06-09T20:17:59"
   },
   "gigabyte-b650-gaming-x-ax": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_candidate_volume"
+    ],
+    "metrics": {
+      "survivingThreads": 3,
+      "candidateComments": 48,
+      "includedComments": 14,
+      "contributingThreads": 2,
+      "largestThreadShare": 0.8571428571428571,
+      "includeRate": 0.45161290322580644,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/gigabyte-b650-gaming-x-ax.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:34"
+    "updated_at": "2026-06-09T19:55:29"
   },
   "gigabyte-x670-aorus-elite": {
-    "status": "pending",
-    "step": "rebuild_complete",
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "zero_include_batch:gigabyte-x670-aorus-elite.batch-03.json",
+      "zero_include_batch:gigabyte-x670-aorus-elite.batch-04.json",
+      "zero_include_batch:gigabyte-x670-aorus-elite.batch-06.json",
+      "zero_include_batch:gigabyte-x670-aorus-elite.batch-12.json",
+      "zero_include_batch:gigabyte-x670-aorus-elite.batch-16.json",
+      "zero_include_batch:gigabyte-x670-aorus-elite.batch-29.json",
+      "zero_include_batch:gigabyte-x670-aorus-elite.batch-35.json",
+      "zero_include_batch:gigabyte-x670-aorus-elite.batch-38.json",
+      "zero_include_batch:gigabyte-x670-aorus-elite.batch-40.json",
+      "zero_include_batch:gigabyte-x670-aorus-elite.batch-48.json",
+      "anomalous_include_rate_low:0.0079"
+    ],
+    "metrics": {
+      "survivingThreads": 2,
+      "candidateComments": 126,
+      "includedComments": 1,
+      "contributingThreads": 1,
+      "largestThreadShare": 1.0,
+      "includeRate": 0.014285714285714285,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/gigabyte-x670-aorus-elite.classified.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T13:12:34"
+    "updated_at": "2026-06-09T20:21:53"
   },
   "gskill-trident-z5-neo-ddr5-6000-cl30": {
     "status": "pending",
@@ -937,5 +1638,50 @@
     "artifacts": {},
     "reviewResolution": "Current roots are comparison questions outside the approved allowlist; insufficient trustworthy product-focused evidence.",
     "updated_at": "2026-06-09T16:59:46"
+  },
+  "corsair-rmx-series-rm850xrm1000x": {
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "low_candidate_volume"
+    ],
+    "metrics": {
+      "survivingThreads": 1,
+      "candidateComments": 5,
+      "includedComments": 2,
+      "contributingThreads": 1,
+      "largestThreadShare": 1.0,
+      "includeRate": 0.6666666666666666,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/corsair-rmx-series-rm850xrm1000x.classified.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-09T19:27:16"
+  },
+  "crucial-p3-plus": {
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_candidate_volume"
+    ],
+    "metrics": {
+      "survivingThreads": 5,
+      "candidateComments": 47,
+      "includedComments": 21,
+      "contributingThreads": 5,
+      "largestThreadShare": 0.5714285714285714,
+      "includeRate": 0.7,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/crucial-p3-plus.classified.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-09T19:40:37"
   }
 }

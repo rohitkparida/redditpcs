@@ -8,20 +8,20 @@
       "text": "13700k temperature issues and how I solved them\n\nWell this is more of a dump of how I tamed the 13700k from frying my pc.\nBackstory is I had a delidded 8700k running at 5ghz, didn't really want to push it too far. But I had it paired with a Thermaltake Riing TT 360mm AIO.\nI was hitting mid 60c temps under cinebench R23 and mid 50's when gaming. Perfect \ud83d\udc4c\n\nUpgraded to the 13700k and holy shit I was not ready for it. Constantly hitting 100c in cinebench and thermal throttling left right and center. Hitting 70's in gaming. Wasn't happy with this at all. So tried undervolting, limiting power to 200w even down to 150w but still the temps were out of control.. and barely improving. I managed to run cinebench R23 with the temps fluctuating between 95-100c with the power limits and undervolting, think I had it set down to 1.200v so a heavy undervault, but this all just means the cpu boost is now nowhere near the marketed 5.3ghz. I was hitting 5.0ghz under throttling. So my cinebench score was suffering. Max I saw was 28010, miles off the reviewer and benchmarked scores I've seen for the chip (30k mark)\n\nSo I bought the thermalright contact plate, followed the gamersnexus installation method with quarter screw turn each corner to ensure it's perfectly flat. And purchased a new 360mm AIO the deepcool LT720, put my own thermal grizzly kryonaught paste on and removed the pre applied from the cooler.\nFor a fair comparison I removed all power limits so the cpu can now suck it's ridiculous 300w of juice again under boost and set the voltage back to defaults but applied a minimal negative voltage offset of -0.100v and to my surprise I was now hitting 75c maximum temps in the Cinebench R23 test, so no thermal thottling in sight and the boost clocks remained stable at 5.329ghz, the Cinebench score was now matching reviewers scores in the 30k range and my computer was much quieter due to fans not going balls to the wall! \nGaming temps are now mid 50's in BF2042 which is a hard hitting cpu game. \n\nHonestly can't believe the difference. And definitely recommend the contact plate and ensure it's correctly installed with the quarter turns on each screw corner till it's perfectly tight. I'm sure the new cooler also played a part as my AIO was 5 years old and likely less then optimal cooling performance it once had, however I don't think it's as good as the new deepcool LT720 either.. \n\nHope this helps some of you there \ud83d\udc4c",
       "upvotes": 26,
       "classifyThis": true,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
+      "relevance": "include",
+      "relevanceReasoning": "User shares personal experience using the Deepcool LT720 and reports significant temperature drops.",
+      "sentiment": "positive",
+      "sentimentReasoning": "The user is highly satisfied with the cooling performance and noise levels of the LT720.",
       "replies": [
         {
           "commentId": "j9yeyjl",
           "text": "The 13700k is not hard to tame, contact frame and disable multicore enhancements in your BIOS that push it beyond intels 253w guidance... you can further tune things with under volting or power limit tweaks but I haven't found this necessary.  A decent dual tower 120mm air cooler or 240/280mm AIO are plenty.\n\nThe contact frames are not hard to install, with the cheap Thermalright option just reverse the screw at each corner until it clicks, full turn each to start and then half turns until you meet resistance ... quarter turn more and done.",
           "upvotes": 6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses general CPU cooling advice and contact frames, not the specific product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment provides general technical advice without expressing a positive or negative opinion on the LT720.",
           "replies": []
         },
         {
@@ -29,60 +29,60 @@
           "text": "I just bought a thermal alright contact frame yesterday for my 13700k. It was hitting 99c in cinebench with an nhd15. Hopefully I can drop a few c. Glad it worked for you.",
           "upvotes": 7,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing their experience with an NH-D15 air cooler and a contact frame.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is not relevant to the Deepcool LT720.",
           "replies": [
             {
               "commentId": "jam1lm6",
               "text": "I have a nhd15s (one fan), undervolt 0.1 on the 13700k and max 88 in cinebench 10min. Your result seems strange...",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about NH-D15S air cooler performance and undervolting.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is not relevant to the Deepcool LT720.",
               "replies": [
                 {
                   "commentId": "janja0t",
                   "text": "Yea well I can\u2019t undervolt my 13700k at all without crashing so only thing I can do is set power limit to 253 watts.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about CPU undervolting and power limits.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is not relevant to the Deepcool LT720.",
                   "replies": [
                     {
                       "commentId": "janmbpl",
                       "text": "silicon lottery... my old 8700k was the worst chip ever made ;)",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a general comment about the 'silicon lottery'.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is not relevant to the Deepcool LT720.",
                       "replies": [
                         {
                           "commentId": "janrorg",
                           "text": "Yep I got like the worst 13700k ever made. Disappointed cause I can\u2019t even get any decent overclock. Bought a k chip just to leave it stock. Couldn\u2019t return it either cause I had to wait a month to put my pc together so by the time I realized it was a total dud it was to late. Then I see these other people with huge undervolts like you at am pretty disappointed.",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about CPU quality and overclocking capabilities.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is not relevant to the Deepcool LT720.",
                           "replies": [
                             {
                               "commentId": "jaq87yb",
                               "text": "like u, with my 8700k, I saw people at 5GZ and mine cannot go up even a little bit and no possibility to play with a minus in voltage, need to let my motherboard do stock config and call it a day.   \nWith my 13700k, I m happy to be able to undervolt to win in term of temp. (I m on air, DH 15S and keep under 90 in Cinebench).\n\nSo yeah, I understand, now it's even more important to have a good chip that can go down a little bit in voltage because it helps a lot. Overclock it's just a gimmick from the past.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Discussion about CPU voltage and air cooling (DH 15S).",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is not relevant to the Deepcool LT720.",
                               "replies": []
                             }
                           ]
@@ -100,30 +100,30 @@
           "text": "Im confused as some say 13th gen can go high voltages as above 1.5v which wouldn't degrade the cpu, however high power output would, areas above the max tdp which is 253w. I've seen people running 280-290w as well. What would be the safe thing to do?",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "General question about CPU voltage and degradation.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is not relevant to the Deepcool LT720.",
           "replies": [
             {
               "commentId": "j9xvr4z",
               "text": "I guess it depends what you want out of your cpu, I'd you want to overclock it beyond the intel 5.3ghz boost clocks then yeah it will need more volts and in turn chew more watts but my goal was lower temps for lower fan speeds and noise. So I'm happy for it to be at 5.3ghz with quieter operation then going for overclocks. 5.3ghz is plenty enough for my needs haha \ud83d\udc4d",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is discussing their own goals for CPU frequency and noise, but not specifically the LT720's performance.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Lacks specific opinion on the product itself.",
               "replies": [
                 {
                   "commentId": "jb070h9",
                   "text": "Fair enough. Good to read that there are people out there who know their happy place when it comes to core frequency :D",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General social banter between users.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is not relevant to the Deepcool LT720.",
                   "replies": []
                 }
               ]
@@ -132,5 +132,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

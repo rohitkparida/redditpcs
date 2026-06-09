@@ -18,25 +18,26 @@
           "text": "Good guide, a few points though:\n\n* 10105 is +100Mhz, not +200.\n* You should mention cores vs threads. 4 cores, 4 threads works badly on certain games where 4 cores, 8 threads works well.\n* the 12100F is not necessarily the entry-level CPU, due to motherboard availability/price. You need to look at the 10100/5F +  board. Plus the 10100/5F may be a fair bit cheaper.\n* the 12600 isn't really worth buying because you'd tend to go for 12500 (cheaper, barely slower) or 12600K (4 more 'little' cores). \n\nThe  CPU break points are:\n\n* 12400F \n* 12500 (IGP for office use or old games only, possible stop gap for future GPU add) - stronger IGP **and** clock speed over the 12400\n* 5600G for gaming with no GPU - much stronger on GPU than any Intel chip, weaker on CPU. However a 12100F + 6500 XT (etc.) will crush it, so think carefully before spending too much on this \n* 12600K(F) - 6 + 4 cores, much stronger than the 12600 which has only a small MHz boost\n* 12700 non-K is worth it because of the 8 cores. Overclocking is useful to fewer people, and marginal on Alder lake. \n* 5700G - this is an extremely questionable purchase because it's a relatively weak CPU for the money and the IGP is barely stronger than the 5600G, so if you're going to spend this money, either just get a 12700 (for office use), or like a 12400F and a discrete CPU.\n* \"As of 2022, the speed sweetspot is 3600MT/s at CL16 (or Cas Latency), or 4000MT/s CL18 before diminishing returns start kicking in.\"  - Kinda? This is like 50% more expensive than 3200 CL16, and the performance boost is small, plus Alder Lake is 3200 native, so in the event you bought a H610 board, then there's literally no point in buying anything faster....\n* \"PSU will be at its maximum efficiency between 50% and 75% load. \" - check again, maximum efficiency is around 40% load\n* \" especially if you're installing it in a system without PCIE 4.0 (From Ryzen 3000 and Intel 11th gen and after)\" -  the Ryzen 5600G/5700G lack PCIE 4.0\n* \"Stats like brightness, contrast, smearing/ghosting levels, colour performance are all stats that the manufacturers keep for themselves\" - brightness (in nits), and contrast (ratio) are usually published by the manufacturer\n* \"HDR (High Dynamic Range) display certification is another one that's tricky, and regulations should be tightened for these certificates. \" - it's worth noting that $200 monitors citing HDR just take the signal but don't actually offer real HDR: a HDR monitor costs like $1000\n\nAlso:\n\n* check the price of both 'F' and non-F, and neighbouring SKUs, i.e. if you want a 12400F then check the price of the 12400, and if you want a 12500 then check the price of the 12600. Each increment is around 3% faster, so for $10 it's worth it. (The 12500 also gets an IGP bump of around 15% speed over the 12400). Meanwhile 'F' is priced $30 less than non-F, which you might want to pay anyway, for the versatility, but if the real prices are, say, $15, because of discounts/shortages, then the non-F chip becomes a great deal.",
           "upvotes": 6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment provides general CPU, RAM, PSU, and monitor advice and does not mention the Corsair 4000D Airflow.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing factual corrections to a guide without expressing a positive or negative opinion about the product in question.",
           "replies": [
             {
               "commentId": "huz6il2",
               "text": "> \"PSU will be at its maximum efficiency between 50% and 75% load. \" - check again, maximum efficiency is around 40% load\n\nTrue, but it's really an unnecessary point, you don't choose a PSU wattage the way it sits at the load level it's the most efficient. First, because that's pointless, a good PSU rated for 750W would deliver those 750W no problem continuously given the appropriate cooling. And second, because the efficiency curve with modern PSUs is so flat past initial dip at sub 10% load that it literally doesn't matter, there's like 3% efficiency delta between the minimum and maximum.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses PSU efficiency curves and is completely off-topic regarding the Corsair 4000D Airflow.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The discussion is technical and does not relate to the product's sentiment.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

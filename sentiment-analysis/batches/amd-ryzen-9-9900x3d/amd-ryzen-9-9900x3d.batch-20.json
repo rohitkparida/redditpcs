@@ -18,20 +18,20 @@
           "text": "Upgraded to 3222 on B650E-E and pretty sure it's wiped out my audio. Device isn't even shown anymore (enabled in bios).\n\nAnyone else had same issue?\n\n  \n\\*\\*Edit\\*\\*  \nCMOS reset resolved this, so there must be some weird state after bios update even though I did load optimized defaults etc. Beware you may want to do the same as part of BIOS update! I was getting other weird behaviours like windows reboot not actually triggering system reboot, now all fixed.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses motherboard BIOS update issues and audio loss, not the Ryzen 9 9900X3D processor.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user describes a technical issue and its resolution without expressing a sentiment toward the product in question.",
           "replies": [
             {
               "commentId": "mjm42ax",
               "text": "did you do reset default setting before updating bios? always do this before updating",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a factual question about BIOS update procedures, not an opinion or experience with the Ryzen 9 9900X3D.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral inquiry about technical settings.",
               "replies": []
             }
           ]
@@ -41,20 +41,20 @@
           "text": "I don't know if I'm the only one but this update killed my 7800x3d experience completely. The CPU temp is reaching 90 degrees celsius and it basically cuts the PC power off and dies.  \nThe only case I could operate my PC is when I tuned the max CPU state to 99% in windows power settings.\n\nI did multiple bios updates and I know the drill, load optimised defaults, update bios, update chipset drivers, and then do the tweaks and OC. In my case it was basically expo profile 1 and pbo -20.\n\nI've sent my CPU to warranty today, we'll see what they say but the issues started when I updated the bios.\n\nAh the Mobo is ASUS B650E-I.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing their experience with a Ryzen 7 7800X3D, not the Ryzen 9 9900X3D.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses strong dissatisfaction due to overheating and system crashes.",
           "replies": [
             {
               "commentId": "mn3wkkm",
               "text": "Did you find a solution to this? This also happened to my ASUS B550 + 5950X system. It runs hotter/performance is lower for any given temperature. I didn't have much thermal headroom and now with the new AGESA I have significantly lower performance.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is discussing a Ryzen 9 5950X on a B550 motherboard, not the Ryzen 9 9900X3D.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user reports lower performance and higher temperatures after a BIOS update.",
               "replies": []
             }
           ]
@@ -64,13 +64,14 @@
           "text": "RMA cpu and made a compeletely new build with 360 aio and a bigger case.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general statement about RMAing a CPU and rebuilding a PC, without mentioning the Ryzen 9 9900X3D.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment describes an action taken without expressing a specific sentiment toward the product.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

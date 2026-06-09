@@ -18,13 +18,14 @@
           "text": "This is fantastic. Thanks for taking the time to educate me. I always learn something.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general thank you to the guide author and does not mention the Corsair 4000D Airflow or provide product-specific insight.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The sentiment is positive toward the guide, but since it is not relevant to the product, it is marked neutral/not applicable.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -28,70 +28,70 @@
               "text": "I think 1% and 0.1% lows testing is more susceptible to variance. I doubt there is any meaningful difference in real life.",
               "upvotes": 54,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses general benchmarking methodology (1% lows) rather than the product itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is expressing a technical opinion on data variance without a positive or negative lean toward the product.",
               "replies": [
                 {
                   "commentId": "jf2aydh",
                   "text": "You don't need to think. They are.   \n\n\n[https://en.wikipedia.org/wiki/Extreme\\_value\\_theory](https://en.wikipedia.org/wiki/Extreme_value_theory)  \n\n\nThere's an entire branch of theory around it.   \n\n\nYou can also simulate it in 1 line of code. 1% lows for 100FPS average, for 10 minutes with a 20 frame standard deviation. This will be a \"better case scenario\" since rare events are less rare than in games. \n\nrep(rnorm(100\\*60\\*10, mean = 100, sd = 20) %>% quantile(.001), 100000)",
                   "upvotes": 46,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a technical discussion about Extreme Value Theory and statistics, not the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a mathematical explanation.",
                   "replies": [
                     {
                       "commentId": "jf2kite",
                       "text": "Huuuuge shoutout for bringing up Extreme Value Theory out here in the Reddit wild. I haven\u2019t thought about that in a while, but absolutely relevant here",
                       "upvotes": 26,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a meta-discussion about statistics and theory, not the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is expressing appreciation for the mention of a specific theory.",
                       "replies": [
                         {
                           "commentId": "jf2weby",
                           "text": "I worked with someone who used to estimate the likelihood of a rocket blowing up when satellites were being launched. EVT was his bread and butter.\n\nI absolutely think that there needs to be a reworking around measuring performance. 1% lows is intuitive enough for a lay person but REALLY I'd like to see something like a standard deviation based off of frame times. Have that cluster of 50ms frames basically blow up the +/- figure.\n\nThere's also an element of temporal autocorrelation too. 1ms + 49ms is MUCH worse than 25ms + 25ms. In the former, 98% of your time is spent on one laggy frame, in the latter, it's a 50-50 blend of not bad frames.",
                           "upvotes": 27,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment discusses how to measure performance metrics in general, not the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is suggesting improvements to performance measurement standards.",
                           "replies": [
                             {
                               "commentId": "jf4qvna",
                               "text": "Are there any publications that just show a histogram of frame times? That seems like such an obvious visualization. DF did box and whisker plots last time I checked, which was fantastic.",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment asks about general visualization of frame times, not the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is asking a question about data visualization.",
                               "replies": [
                                 {
                                   "commentId": "jf5bdta",
                                   "text": "[Igor's Lab has quantile plots (inverse CDF), which are even better than histograms](https://www.igorslab.de/en/amd-ryzen-7-7800x3d-in-gaming-and-workstation-test-ultra-fast-gaming-in-a-different-energy-dimension/3/), although they're denominated in FPS instead of ms. There's also the \"frame time variance\" chart which [measures the difference between consecutive frame times](https://www.igorslab.de/en/fps-percentile-frame-time-variances-power-consumption-and-efficiency-simply-clear-igorslab-internal/5/).  (I.e., if the frames are presented at times [10, 20, 30, 45, 50, 55], then the frame times are [10, 10, 15, 5, 5], and the frametime variances are [0, 5, 10, 0].)",
                                   "upvotes": 3,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment discusses general benchmarking tools and links to external reviews, but does not provide a personal opinion on the product.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is providing factual information about where to find specific charts.",
                                   "replies": [
                                     {
                                       "commentId": "jf6vurn",
                                       "text": "Oh, beautiful. Will definitely read igor's more in the future. I've just been sticking to the reddit summaries lately (:",
                                       "upvotes": 2,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "The comment is a general comment about reading reviews, not the product.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The user is expressing satisfaction with finding a new source of information.",
                                       "replies": []
                                     }
                                   ]
@@ -101,20 +101,20 @@
                                   "text": "I can't recall seeing any lately. I believe GN will show frame time plots but those are hard to read.",
                                   "upvotes": 2,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment discusses general review methodology, not the product.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is expressing an opinion on the readability of certain plots.",
                                   "replies": [
                                     {
                                       "commentId": "jf4zd4b",
                                       "text": "https://www.eurogamer.net/digitalfoundry-2020-amd-radeon-rx-6900-xt-review?page=2\n\nDF does it so well. It's shocking that this has not become the standard.",
                                       "upvotes": 3,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "The comment discusses a GPU review from 2020, which is off-topic.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The user is praising a specific review style.",
                                       "replies": []
                                     }
                                   ]
@@ -126,10 +126,10 @@
                               "text": "I'd absolutely love to see more of those metrics in reviews as it's by far the most important metric for a fluid VR experience.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment discusses general metrics for VR experiences, not the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is expressing a desire for more specific metrics.",
                               "replies": []
                             }
                           ]
@@ -143,50 +143,50 @@
                   "text": "1% and especially 0.1% lows can be deceiving because there's multiple different reasons why a few frames can drop. They're absolutely something to pay attention to, but often they're only good enough to say that something's up and you need to look at the frametime graph and correlate that with the benchmark itself to get an idea of what's going on.\n\nYou shouldn't compare the relative ratio between the lows and average fps across different benchmarks for similar reasons.",
                   "upvotes": 34,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the general nature of 1% and 0.1% lows, not the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a technical explanation of benchmarking metrics.",
                   "replies": [
                     {
                       "commentId": "jf28n29",
                       "text": "1% and especially 0.1% are a skill issue  \n\nIf you know what you are doing, all the frames are the same.",
                       "upvotes": -15,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a joke/meme about 'skill issue', which is low-effort banter.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a joke.",
                       "replies": [
                         {
                           "commentId": "jf3w8c1",
                           "text": "10/10 bait",
                           "upvotes": 11,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a reaction to a joke, not the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is identifying the previous comment as bait.",
                           "replies": [
                             {
                               "commentId": "jf5u88u",
                               "text": "The trust you have in your teletuber is misplaced.  \n\nIf you want to remove the low 1%, limit your frames.",
                               "upvotes": 0,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment is part of a banter thread about frame limiting, not the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is providing a technical tip on frame limiting.",
                               "replies": [
                                 {
                                   "commentId": "jf6y99p",
                                   "text": "More.",
                                   "upvotes": 3,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment is low-effort banter, not the product.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is simply saying 'More'.",
                                   "replies": []
                                 }
                               ]
@@ -202,30 +202,30 @@
                   "text": "Every time I say this I get downvoted to oblivion and told that I'm an idiot \n\nI prefer 5% lows for that reason",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses a preference for 5% lows, which is a general benchmarking metric discussion.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is expressing a personal preference for a specific metric.",
                   "replies": [
                     {
                       "commentId": "jffu2s1",
                       "text": "You were correctly downvoted to oblivion because a 5%-low stutter happens 3 times per second at 60fps. Sure it's a better metric than average fps, but not by much. It completely ignores stutter that happens less often (eg once per second) which is pretty obnoxious. \n\nNormally distributed noise in 99%ile latency is a non-issue. Just take more samples until the confidence interval is sufficiently small.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses the technical validity of 5% lows, not the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is arguing against the use of a specific metric.",
                       "replies": [
                         {
                           "commentId": "jfi0541",
                           "text": ">You were correctly downvoted to oblivion because a 5%-low stutter happens 3 times per second at 60fps. \n\nMaybe if you're dealing with a game that has horrible framepacing. A single solitary, momentary dip can make 1% lows look like the game has horrible performance.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment discusses general framepacing issues, not the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is arguing for the use of 1% lows in certain scenarios.",
                           "replies": []
                         }
                       ]
@@ -237,20 +237,20 @@
                   "text": "For Cyberpunk, the low 1% numbers for the 7800X3D and generally better 1%s with higher core AMD CPUs seem to be cosistent across multiple reviews.\n\nWould be interesting to know if the deciding factor is more cores in general or specifically the presence of some higher clocked standard cores.\n\ni.e. would a 16-core 3D part beat the 7950X3D in games that like lots of threads?",
                   "upvotes": 18,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user discusses the 7800X3D's performance in Cyberpunk, specifically mentioning 1% lows across multiple reviews.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is analyzing performance data and posing a technical question about core counts.",
                   "replies": [
                     {
                       "commentId": "jf24tu2",
                       "text": "I bet a driver tweaking will help with that one.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a general speculation about driver updates, not a specific critique of the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is speculating on a potential fix.",
                       "replies": []
                     }
                   ]
@@ -261,5 +261,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,10 +18,10 @@
           "text": "I remember I had a similar or maybe exact this problem with my 6800 XT, however i don't have it anymore since more than 2 years. I have my gpu undervolted+power limit reduced to - 6%(max for my card), maybe you could try that, I also don't have free sync enabled neither in the driver nor monitor/game. You can reduce the power limit directly in the adrenaline driver I guess it's worth a shot to try it out.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses GPU undervolting and power limits for a 6800 XT, not the Be Quiet! PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing technical troubleshooting advice without expressing sentiment toward the product.",
           "replies": []
         },
         {
@@ -29,40 +29,40 @@
           "text": "Did you try the gpo workaround? It should be fixed with lasr drivers but maybe the issue is still here in WoW",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses a GPO workaround for GPU driver issues, not the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a technical question about a software workaround.",
           "replies": [
             {
               "commentId": "l0fs1co",
               "text": "I'm sorry, I don't know about this. W11 has occasionally given me some kind of security errors, although it almost always was a different program. Can you elaborate?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses Windows 11 security errors, not the PSU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking for clarification on a technical issue.",
               "replies": [
                 {
                   "commentId": "l0fsgu5",
                   "text": "Sorry the phone tricked me, was talking about mpo issues : https://www.reddit.com/r/Amd/comments/yvyqc7/disabling_multiplane_overlay_mpo_fixed_all/",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses MPO issues related to AMD GPUs, not the PSU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a link to a fix for GPU issues.",
                   "replies": [
                     {
                       "commentId": "l0of996",
                       "text": "tried this months ago, didn't fix it.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a response about a GPU driver fix not working, not the PSU.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is reporting that a specific software fix did not work.",
                       "replies": []
                     }
                   ]
@@ -76,10 +76,10 @@
           "text": "Hmm sucks man :( I'm not having any issues yet with my r5900 and 7700xt. I did have across the board usb dropouts before but after swapping to another audio interface that completely fucked off. Only wow thing that I have now is when settings get reset it takes 7 years to launch in dx12 mode. Best of luck man",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses CPU and GPU stability and USB dropouts, not the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is sharing their experience with other hardware components.",
           "replies": []
         },
         {
@@ -87,10 +87,10 @@
           "text": "I know this is a strange suggestion, but you could try Linux. It's a lot to learn, and Wow is not a Steam game so you'll have to set up Lutris etc. Dual boot of course, it works well to have both Linux and Windows installed!\n\nSo afaik Wow runs fine on Linux, AMD GPUs are great in Linux, etc. If you're desperate enough it could be worth a shot! \ud83d\ude42\n\nRight now I'm running OpenSuse Tumbleweed. The new Ubuntu 24.04 around the corner could be nice also...",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment suggests switching to Linux, which is unrelated to the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is making a general software recommendation.",
           "replies": []
         },
         {
@@ -98,13 +98,14 @@
           "text": "I have a RX 7800 XT Nitro+ and absolutely no crashes since I set the game to use DX11 instead of DX12",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses GPU settings (DX11 vs DX12) for a 7800 XT, not the PSU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is reporting stability with a specific game setting.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

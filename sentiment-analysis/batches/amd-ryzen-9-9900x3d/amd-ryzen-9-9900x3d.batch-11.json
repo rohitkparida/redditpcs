@@ -18,10 +18,10 @@
           "text": "Wow, what a beast. Loses nothing in productivity and still crazy good in games. It's a win win for someone who does both.\n\nIt will be very interesting if/when AMD is able to have 16 cores on one CCD.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides an opinion on the product's performance in both productivity and gaming.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user describes the product as a 'beast' and a 'win win'.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "I can't wait to play my favorite game Cinebench",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a joke about Cinebench, not a meaningful insight into the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a meme/joke and does not express a genuine sentiment toward the product.",
           "replies": []
         },
         {
@@ -40,10 +40,10 @@
           "text": "Got my 9950x3d last week love it :-)",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user shares their personal experience of owning and loving the product.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user explicitly states they 'love it'.",
           "replies": []
         },
         {
@@ -51,13 +51,14 @@
           "text": "Typo on CB24's power draw? 257W seems a bit high.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a purely factual question regarding a potential typo in power draw data.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is questioning a data point without expressing a positive or negative opinion on the product itself.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

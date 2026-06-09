@@ -18,10 +18,10 @@
           "text": "Did you sell a kidney or a heart for the 3080?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a joke about the cost of the GPU, not related to the CPU cooler.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a lighthearted joke and does not express a sentiment toward the product.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "I have a feeling that the 3080 will crash your pc so hard that your psu will burn",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses the PSU and GPU, not the CPU cooler.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a prediction of system failure related to power, not the product.",
           "replies": []
         },
         {
@@ -40,40 +40,40 @@
           "text": "I\u2019m slightly confused as to why you don\u2019t just put your soundcard in the top or bottom most slot? It can be in any pci-e slot, not just the small slots.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about motherboard slot configuration and sound cards.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a technical question about motherboard layout.",
           "replies": [
             {
               "commentId": "g81hzi2",
               "text": "It currently IS at the bottom most pciex16 slot which automatically sets both PciE slots at x8. If I set it on top most x4 slot then my nvme drive takes the hit as they share the same lane. It's annoying but it is what it is.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses motherboard lanes and NVMe drives.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a technical explanation of motherboard constraints.",
               "replies": [
                 {
                   "commentId": "g81idx8",
                   "text": "Oh noes!!! I didn\u2019t realize you had a stubby motherboard in there! On the plus side 8x vs 16x lane probably isn\u2019t much of an impact if any on the 3080 from reports I\u2019ve seen, we\u2019re still not close to saturating lanes",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about GPU PCIe lanes, not the CPU cooler.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral technical discussion about performance impact.",
                   "replies": [
                     {
                       "commentId": "g81jsz0",
                       "text": "But my userbenchmark score...",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a joke about UserBenchmark scores.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a low-effort joke.",
                       "replies": []
                     }
                   ]
@@ -87,30 +87,30 @@
           "text": "Excuse my ignorance as I have no experience with top-of-the-line parts, but is it really necessary to have that many fans? there has to be a point of diminishing returns",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about general fan count and diminishing returns, not specifically the Arctic cooler.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a general question about PC building.",
           "replies": [
             {
               "commentId": "g81jmrr",
               "text": "It's alright pleb.\n\nNo it isn't. Some of us like paying for diminishing returns.  Seriously though, it's just an aesthetics thing for me.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about aesthetics and fan count, not the performance of the Arctic cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is about personal preference for aesthetics.",
               "replies": [
                 {
                   "commentId": "g81w6gf",
                   "text": "I've seen a handful of builds with this aesthetic, just couldn't tell if it was for style points or not. but looks great 8/8",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about the overall build aesthetic, not the CPU cooler.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is positive about the build, but not the product.",
                   "replies": []
                 }
               ]
@@ -122,50 +122,50 @@
           "text": "You have a very similar rig as to what I\u2019m trying to build. \nhttps://pcpartpicker.com/list/34TH9N\n\nQuestions:\n\n1. 10900k vs 10980 XE? \nI\u2019ve been eying to decide between the two\n\n2. Mobo:\nWhy the Apex vs the Extreme?\n\n3. Case: why surprisingly? \n\n4. Why does the riser cable help if the graphics card covers the slot? \n\n5. Fans - Why these particular ones? I\u2019m new to fans, was thinking Noctua or NZXT?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment asks about CPU, motherboard, case, and general fans, but not specifically the Arctic cooler.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a set of factual questions about the build.",
           "replies": [
             {
               "commentId": "g81pq4w",
               "text": "1) Um depends on your usage I guess. That's double the price though so make sure you really need that extra specs of the 10980 XE.\n\n2) Because my wallet actually has a bottom lol\n\n3) LoL It's very common to see this case in new builds, I was being sarcastic.\n\n4) Hopefully I will be able to fit it behind the gpu and mount the audio card on another slot.\n\n5) Again, cost. Noctua fans are the best hands down.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses CPUs, motherboards, and general fans (Noctua), not the Arctic cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment provides technical advice and budget considerations.",
               "replies": [
                 {
                   "commentId": "g81q07s",
                   "text": "Thank you for the details.\n\n4. So a riser cable basically allows you to use the slot at a distance, but then the card will kind of be dangling in the case somewhere? \n\n5. Any particular Noctua fans that you considered?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about riser cables and Noctua fans.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a technical question.",
                   "replies": [
                     {
                       "commentId": "g81rdrj",
                       "text": "4. xD Yeah quite possibly. I'm really unsure about how that one will pan out eventually but I couldn't think of anything else. Worst case scenario, I will have to keep running my gpu at x8.\n\n5.  Noctua NF-A12x25 PWM 120mm. Best ones around. I think noctua has promised to release these in black but haven't heard anything for quite some time.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about riser cables and Noctua fans.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a technical explanation and recommendation for Noctua fans.",
                       "replies": [
                         {
                           "commentId": "g81rr0c",
                           "text": "5. Yeah, I\u2019ll have to do more research on fans. Noctua seems to have black ones too, just not the same model.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about Noctua fans.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a neutral statement about fan research.",
                           "replies": []
                         }
                       ]
@@ -181,20 +181,20 @@
           "text": "What in particular about the boards features did you want it for",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about motherboard features.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a technical question.",
           "replies": [
             {
               "commentId": "g81suks",
               "text": "Vrms pretty much and it allows for good ram OCing.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about motherboard VRMs and RAM overclocking.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a technical explanation.",
               "replies": []
             }
           ]
@@ -204,10 +204,10 @@
           "text": "Sound card?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about sound cards.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a short, off-topic question.",
           "replies": []
         },
         {
@@ -215,10 +215,10 @@
           "text": "I\u2019ve always been curious if you really needed a sound card.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about sound cards.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral question about sound cards.",
           "replies": []
         },
         {
@@ -226,20 +226,20 @@
           "text": "Looking great! Thinking of buying that cpu cooler, bur 240 version. How's yours doing? Is the performance good? My cpu is a ryzen 5 3600",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is asking about the performance of the Arctic Liquid Freezer II cooler.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing interest in buying the product but has not yet formed an opinion.",
           "replies": [
             {
               "commentId": "g81vtk3",
               "text": "One of the best AiOs surely. I didn't have time to perform any tests or play games today because of setting up my friend's rig and replying to the comments here but if I recall correctly I was getting an idle temp of 34 celcius on the 10900k.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user shares their personal experience with the product, including idle temperatures.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user describes the cooler as 'one of the best AiOs surely' and reports good idle temperatures.",
               "replies": []
             }
           ]
@@ -249,25 +249,26 @@
           "text": "Is the 750 PSU working well? I have close to the same setup but worried the 3080 will hog the power",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about the PSU, not the CPU cooler.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a technical question about power supply.",
           "replies": [
             {
               "commentId": "g81ywtw",
               "text": "Everything is in order so far but I didn't have the time to game or stress the gpu today. If you have a good PSU you shouldn't worry.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about the PSU, not the CPU cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral statement about PSU stability.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

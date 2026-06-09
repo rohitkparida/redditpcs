@@ -18,13 +18,14 @@
           "text": "Bookmarked",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a single word indicating the user has saved the post, which does not provide any insight into the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment expresses no opinion or sentiment about the product.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemini-2.5-flash-lite"
 }

@@ -18,30 +18,30 @@
           "text": "Wouldn't a better methodology be to pick a few sets of safe temperature levels, tune each fan setup to keep all components at or below their safe temperatures at, say, each of idle, gaming, and x264+furmark load? You would then publish the noise level each fan configuration produced at each load level.\n\nIn practice, that's what builders are usually doing. You configure your fan controller to keep your CPU below 80\u00b0, your disks below 40\u00b0, and your GPU below whatever the manufacturer says (with acknowledgement that smarter fan control algorithms are quieter than dumber fan control algorithms), and then you live with whatever noise you get. Unless it's totally offensive, in which case you go on the internet and buy quieter fans.\n\nUnfortunately, the published specifications for PC cooling fans are woefully insufficient for predicting how they will perform in any given application, or even how they compare to each other. The best you could do, I think, is give people an idea of how different fans compare when installed in a typical setup and removing the same amount of heat.",
           "upvotes": 8,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses general fan testing methodology and not the Fractal Design North case specifically.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing a constructive critique of testing methods without expressing a positive or negative opinion on a product.",
           "replies": [
             {
               "commentId": "cistoqx",
               "text": "The one problem I see with this method is that the fan speeds would vary with ambient temperature due to these custom fan curves. While you can compensate ambient temperature from hardware temperatures (1C rise in ambient usually equals 1C rise in hardware temps), you can't do the same with noise levels. \n\nThis is even more of a problem when you have fans that have interesting noise characteristics. Some fans introduce harmonic resonances at specific speeds. Therefore, it's better to ramp the fan's RPM and find out which RPMs produce what kinds of noise and how loud they would be since noise is more directly tied to RPM.\n\nFinally, this fan curve idea can fail depending on the case and fan you're testing. Take the Noctua NF-A14 PPC I tested with the Define R4. Note that the hard drive actually got hotter moving from 7V to 12V rather than cooler. This is because the fan tray of the case caused the fan to stall aerodynamically, causing lots of unstable airflow. A fan curve may misinterpret this data and try to spin the fan faster, which can cause more stall.\n\nIt's better to show a direct relationship of variables. In this case, a fan's noise and air output (which is tied to cooling capacity) is closely related to the fan's RPM. The fan's RPM is related to the voltage supplied to it. This is how many sites test their fans (Vortez, CoolingTechnique, etc.)",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion is about fan performance and the Define R4 case, not the Fractal Design North.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is explaining technical details about fan RPM and noise, which is neutral in tone.",
               "replies": [
                 {
                   "commentId": "cisw37v",
                   "text": "&gt; The one problem I see with this method is that the fan speeds would vary with ambient temperature due to these custom fan curves. While you can compensate ambient temperature from hardware temperatures (1C rise in ambient usually equals 1C rise in hardware temps), you can't do the same with noise levels. \n\nOne option would be to set your AC to keep an uncommonly low ambient and test at a few different delta-Ts. That would allow people to pick the set of results appropriate for their environment.\n\n&gt;This is even more of a problem when you have fans that have interesting noise characteristics. Some fans introduce harmonic resonances at specific speeds. Therefore, it's better to ramp the fan's RPM and find out which RPMs produce what kinds of noise and how loud they would be since noise is more directly tied to RPM.\n\nThat would be a good thing to mention in a review of a particular fan model, and would certainly influence my choice of fan. However, two fans can produce substantially different air flow at the same RPM, and even though noise is strongly influenced by RPM (noise power proportional to RPM^5 IIRC), fans can differ there too.  Same-RPM testing doesn't facilitate comparison between fans, unless they happen to be very similar in either noise or flow, and very different in the other.\n\n&gt;Finally, this fan curve idea can fail depending on the case and fan you're testing. Take the Noctua NF-A14 PPC I tested with the Define R4. Note that the hard drive actually got hotter moving from 7V to 12V rather than cooler. This is because the fan tray of the case caused the fan to stall aerodynamically, causing lots of unstable airflow. A fan curve may misinterpret this data and try to spin the fan faster, which can cause more stall.\n\nI hadn't considered the possibility of stall. Your case fan system turning into a relaxation oscillator could make for a very unpleasant day. I only have rear exhaust fans, and my case's inlet is very unrestrictive, so I haven't run into this problem. It seems like the solution would be to find the voltage/pwm duty ratio/etc. that causes the fan to stall, and limit your controller's maximum output to a little below that value.\n\n&gt;It's better to show a direct relationship of variables. In this case, a fan's noise and air output (which is tied to cooling capacity) is closely related to the fan's RPM. The fan's RPM is related to the voltage supplied to it. This is how many sites test their fans (Vortez, CoolingTechnique, etc.)\n\nThe problem is that these can't be directly compared between fans. People care about the relationship between noise and air output.  What RPM the fan is spinning at is simply an implementation detail.  The voltage that produces that RPM is an implementation detail of an implementation detail.\n\nIf you have an automated test process, you could plot curves of noise vs. delta-T at a few different power levels. Linux makes it easy to access temperature sensors and PWM controllers under `/sys/class/hwmon`. In the process of developing my current fan control scheme, I produced a python module to interface to these, and a dial-a-yield thermal stress tester that uses prime95 and Intel Power Gadget in a feedback loop.\n\nUnfortunately, I haven't put it on github because the code is ugly, I'm unfamiliar with Python packaging, and parts of it, like the PID controller module, are pretty general and should probably be broken out separately.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a technical discussion about fan curves and thermal stress testing, unrelated to the Fractal Design North.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is engaging in a technical debate about testing methodology, which is neutral.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

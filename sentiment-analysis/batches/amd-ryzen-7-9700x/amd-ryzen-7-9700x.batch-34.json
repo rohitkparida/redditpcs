@@ -18,10 +18,10 @@
           "text": "So can we draw any guesstimates about 9800x3d from conclusions?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment asks about a different product, the 9800X3D, rather than the 9700X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question without expressing a positive or negative opinion.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "I'm at a loss for why they branded these X chips.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user expresses a critical opinion about the branding of the 9700X (X chips).",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is dissatisfied with the branding choices.",
           "replies": []
         },
         {
@@ -40,10 +40,10 @@
           "text": "Maybe AMD should have learned from Intel and not rush shipping faulty stuff out. Well looks like it wasn't just a printing error. I'm sure those who were dumping on Intel will have an equally outraged mindset.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general critique of AMD and Intel, not specific to the 9700X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is general corporate critique rather than product-specific sentiment.",
           "replies": []
         },
         {
@@ -51,10 +51,10 @@
           "text": "This thing is being hampered due to their 65w limitation clearly.\n\nUnfortunately it may be the worst chip of the new lineup and therefore the worst one to have come out from NDA.\n\nI'd like to think the 9950X for example shines a lot better and the eventual 9800X3D etc",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides a technical critique regarding the 9700X's power limits and its position in the lineup.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes it as potentially the 'worst chip of the new lineup'.",
           "replies": []
         },
         {
@@ -62,10 +62,10 @@
           "text": "Wonder when 9800X3D drops. This will be my time to upgrade.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing upgrading to a 9800X3D, not the 9700X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing intent to buy a different product.",
           "replies": []
         },
         {
@@ -73,10 +73,10 @@
           "text": "Intel is facing very heavy criticism. But let's analyze the facts impartially. Data in hand tell us that the Amd counterpart makes CPUs like the 9700x that by default go to 4.5ghz consuming 80w while with pbo enabled so about 5.4 ghz they consume 170w. And it is an 8\\\\16 core. A 14700k at 5.5 ghz with undervolt and the right settings reaches 200w without performance drops and it is a 14\\\\28 core with a less recent production process. Intel in my opinion made a mistake, that is, not having given the novice user a simple method to manage the CPU, they should work more from this point of view with the motherboard manufacturers. The bios should be able to give each CPU the right indispensable in terms of voltages regardless of whether an eco mode or a performance mode is used.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides a direct performance and power consumption comparison between the 9700X and the 14700K.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user implies the 9700X is less efficient in terms of core count and performance per watt compared to the Intel chip.",
           "replies": []
         },
         {
@@ -84,10 +84,10 @@
           "text": "So am i reading correctly that the 9700x would be a great homelab machine that idles most of the time and gets good thermals?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking a factual question about the th\u00f4ng tin from the review, not sharing an opinion or experience.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is seeking clarification on product specifications.",
           "replies": []
         },
         {
@@ -95,10 +95,10 @@
           "text": "so when is the best time to buy 7800x3d ? is it now or later ?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking about the 7800X3D, not the 9700X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question about a different product.",
           "replies": []
         },
         {
@@ -106,13 +106,14 @@
           "text": "Crazy how the main redeeming factor of Zen 5 is 'It's not Intel'.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is critiquing the overall Zen 5 architecture, which includes the 9700X.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user suggests the only reason to buy it is because Intel is currently failing.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

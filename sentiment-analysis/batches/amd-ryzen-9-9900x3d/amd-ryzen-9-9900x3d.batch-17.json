@@ -18,30 +18,30 @@
           "text": "I'm running 870E-E with a 9800x3d paired with 2x16GB, G-skill, Royals, 8000Mhz, EXPO (QvL-listed memory kit).\n\nThe kit is running perfectly on 1104, even on EXPO Tweaked and have been flawless. The 1203 bios introduces instability in general, especially when using expo. Random crashes during light browsing and desktop use as well as in high- and low demanding games.\n\nReverting back to 1104 fixed the instability issues, and I can once again use my memory kit in EXPO Tweaked without issues.\n\nStaying on 1104 until they fix the instability issues.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing the Ryzen 9 9800X3D, not the 9900X3D.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user reports instability and random crashes with a specific BIOS version.",
           "replies": [
             {
               "commentId": "mkb2115",
               "text": "Been almost 2 weeks since you posted. How has it been going. Still smooth?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a follow-up question about system stability for a 9800X3D build, not providing insight into the 9900X3D.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral inquiry for an update.",
               "replies": [
                 {
                   "commentId": "mkcaoas",
                   "text": "Speaking of the devil. Haven't had time for an update with all the stuff I have been trying to fix and thoroughly test.  \nBut here it is!  \n  \nI went back to 1104, everything *seemed to run fine* the first couple of days from roll-back, but then I started to get problems with freezing and hard locks, again.  \n  \nI figured that there where two explanations for why I thought it was fixed. \n\n1. My time in front of the computer was less then regular the first couple of days after the rollback, so therefore I didn't encounter an error, which in turn made me believe it was \"fixed\".   \n  \nAnd when testing:  \n  \n2. I just had luck, that it just \"decided\" to not freeze the first couple of days I was testing stuff out. \n\nEither way, this made me think that - *I must have screwed something up along the way when flashing the BIOS to 1203 the first time.*\n\n**Even though,** I flashed from default settings in BIOS. I didn't interrupt or in any way, shape or form use the computer during the BIOS update and I let it finish the update by itself. No power outages during the update. You know, standard procedures.  \n  \nI've flashed motherboards so many times, but I this time I figured, I might as well test and go all in.\n\nSo I did a clean sweep.\n\n* Cleared CMOS\n* Cleared out driver, chipset and firmware updates.\n   * I cleared out stuff that I knew I easily could remove and replace without messing up Windows completely.\n\n* Re-flashed the 1104\n* Flashed up to the 1203 update\n* Updated firmware and drivers from ASUS website to the newest ones\n   * Flashing to latest firmware, updating drivers, latest chipset drivers\n\nAnd lo and behold, it has been up and running past 5 days with 1203, without any freezing or hard locks.\n\nI've sunk more than enough hours into Monster Hunter: Wilds and Khazan: The First Berserker to safely say it's now stable again. Before the clean sweep, those kind of hours had been a major issue for stability.\n\nSo my specific problem were \"user-error\", I guess? Or just, some sort of issue that presented itself when flashing, and then fixed itself when just clearing out **almost everything out** and re-do it.\n\n**TLDR**: Maybe user error**(?)**, cleaned drivers, chipset and firmware, re-flashed 1104, flashed to 1204, re-installed drivers, chipset and drivers. cleared CMOS, System is now stable again for over 5 days. Tested in light- and heavy workloads. 1203 is stable.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is discussing troubleshooting and stability for a 9800X3D system, not the 9900X3D.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user concludes that their system is now stable after a clean reinstall and BIOS update.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,30 +18,30 @@
           "text": "I'm kind of dense about this stuff but in the CPU section I don't see the 5900x recommended, should it be avoided?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is asking about a CPU (5900x), which is off-topic relative to the Corsair 4000D Airflow case.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question without expressing a positive or negative opinion.",
           "replies": [
             {
               "commentId": "hv07qvf",
               "text": "The 5900X was GREAT when it came out, but it has pretty much been superceded by the 12900K. It's basically faster in every application for the same price. \n\nI am going to add it to the list though, but for a different reason: the 5900X is possible to be cooled by a high quality air cooler at full load why the 12900k kinda isn't.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion is focused on CPU performance and cooling comparisons between the 5900X and 12900K, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user provides a technical comparison of CPUs.",
               "replies": [
                 {
                   "commentId": "hv0a2q1",
                   "text": "That's very interesting, thanks for your input!!",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a general thank you message and does not mention the product.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is expressing gratitude.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

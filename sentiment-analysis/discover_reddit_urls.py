@@ -15,6 +15,27 @@ load_dotenv()
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 DATA_DIR = Path('../src/data')
 REGISTRY_PATH = Path('product_registry.json')
+HARDWARE_SUBREDDIT_ALLOWLIST = [
+    'buildapc',
+    'buildapcforme',
+    'hardware',
+    'intel',
+    'amd',
+    'nvidia',
+    'sffpc',
+    'overclocking',
+    'watercooling',
+    'pcmasterrace',
+    'battlestations',
+    'monitors',
+]
+BLACKLISTED_SUBREDDITS = {
+    'hardwareswap',
+    'buildapcsales',
+    'bapcsalescanada',
+    'pcpartsales',
+    'randomactsofgaming',
+}
 
 def slugify(text: str) -> str:
     """Slugify product names to match key formats."""
@@ -85,15 +106,21 @@ def scan_and_register_products():
     return registry
 
 def verify_urls_with_gemini(product_name: str, candidates: list) -> tuple[list, dict]:
-    """Pass candidate URLs and Titles to Gemini to filter out giveaways, swaps, and spam, returning reasonings."""
+    """Use Gemini to keep only threads whose primary subject is the target product."""
     if not candidates:
         return [], {}
     
     api_key = os.getenv("GEMINI_API_KEY") or os.getenv("GEMINI_API_KEY_2")
     if not api_key:
-        print("  [Gemini Warning] No GEMINI_API_KEY set. Skipping LLM verification and using raw DDG results.")
-        fallback_log = {c['url']: {"status": "keep", "reasoning": "No API key; kept raw search result."} for c in candidates}
-        return [c['url'] for c in candidates], fallback_log
+        print("  [Gemini Warning] No GEMINI_API_KEY set. Failing safe and discarding unverified PRAW results.")
+        fallback_log = {
+            c['url']: {
+                "status": "exclude",
+                "reasoning": "No API key available for Gemini audit; discarded unverified raw result."
+            }
+            for c in candidates
+        }
+        return [], fallback_log
         
     model = "gemini-2.5-flash-lite"
     url = f"https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent?key={api_key}"
@@ -107,9 +134,12 @@ def verify_urls_with_gemini(product_name: str, candidates: list) -> tuple[list, 
         
     prompt = (
         f"You are an expert PC hardware review auditor. Filter the following candidate Reddit threads.\n"
-        f"Keep only threads that are genuine reviews, benchmarks, user experiences, or buying/comparison discussions about '{product_name}' "
-        f"(either mentioned in the title, URL, or post body snippet).\n\n"
+        f"Target product: '{product_name}'.\n"
+        f"Your task is binary relevance checking only: decide whether each thread's PRIMARY subject is this exact product.\n"
+        f"Keep only threads that are genuine reviews, benchmarks, user experiences, troubleshooting, or buying/comparison discussions centered on '{product_name}'.\n\n"
         f"Strictly exclude:\n"
+        f"- Threads where the product is only a side mention, a system-spec mention, or one option among many without being the primary focus.\n"
+        f"- Threads that are about a different model, a broader brand line, or a different product variant.\n"
         f"- Giveaways, contests, sweepstakes, or free raffles.\n"
         f"- Buy/Sell/Trade posts (e.g. from r/hardwareswap containing '[H]' and '[W]').\n"
         f"- Software or game piracy threads containing hardware mentions.\n"
@@ -149,23 +179,40 @@ def verify_urls_with_gemini(product_name: str, candidates: list) -> tuple[list, 
         
         verified_urls = []
         audit_log = {}
+        verdict_map = {}
         for item in verdicts:
             url_str = item.get("url")
-            status = item.get("status", "keep")
+            status = item.get("status", "exclude")
             reasoning = item.get("reasoning", "Passed verification.")
             if url_str:
-                audit_log[url_str] = {"status": status, "reasoning": reasoning}
+                verdict_map[url_str] = {"status": status, "reasoning": reasoning}
                 if status == "keep":
                     verified_urls.append(url_str)
+
+        for candidate in candidates:
+            candidate_url = candidate["url"]
+            if candidate_url in verdict_map:
+                audit_log[candidate_url] = verdict_map[candidate_url]
+            else:
+                audit_log[candidate_url] = {
+                    "status": "exclude",
+                    "reasoning": "Gemini audit did not return a verdict for this candidate; excluded fail-safe."
+                }
                     
         print(f"  [Gemini Verification Success] Verified {len(verified_urls)} / {len(candidates)} URLs.")
         return verified_urls, audit_log
     except Exception as e:
-        print(f"  [Warning] Gemini verification failed: {e}. Falling back to keeping raw PRAW URLs.")
-        fallback_log = {c['url']: {"status": "keep", "reasoning": f"Gemini audit failed: {e}. Kept raw result."} for c in candidates}
-        return [c['url'] for c in candidates], fallback_log
+        print(f"  [Warning] Gemini verification failed: {e}. Failing safe and discarding raw PRAW URLs.")
+        fallback_log = {
+            c['url']: {
+                "status": "exclude",
+                "reasoning": f"Gemini audit failed: {e}. Discarded unverified raw result."
+            }
+            for c in candidates
+        }
+        return [], fallback_log
 
-def discover_urls_for_product(product_name: str) -> list:
+def discover_urls_for_product(product_name: str) -> tuple[list, dict]:
     """Query PRAW search directly (Google Custom Search is disabled to ensure Gemini audit runs)."""
     print("  [PRAW Search] Querying direct PRAW search...")
     client_id = os.getenv("REDDIT_CLIENT_ID")
@@ -174,7 +221,7 @@ def discover_urls_for_product(product_name: str) -> list:
 
     if not client_id or not client_secret:
         print("  [Error] Reddit API credentials not set in .env. Cannot run PRAW search.")
-        return []
+        return [], {}
 
     try:
         reddit = praw.Reddit(
@@ -187,16 +234,19 @@ def discover_urls_for_product(product_name: str) -> list:
         query = f'"{product_name}" (review OR benchmark OR thoughts OR recommendation OR vs)'
         print(f"  [PRAW Search] Querying: {query}...")
         
-        results = reddit.subreddit('all').search(query, sort='relevance', limit=15)
-        
+        subreddit_query = "+".join(HARDWARE_SUBREDDIT_ALLOWLIST)
+        results = reddit.subreddit(subreddit_query).search(query, sort='relevance', limit=25)
+
         verified_urls = []
         for s in results:
             title = s.title.lower()
             subreddit = s.subreddit.display_name.lower()
             
-            # Exclude known spam/trading subreddits
-            blacklisted_subs = ['hardwareswap', 'buildapcsales', 'bapcsalescanada', 'pcpartsales', 'randomactsofgaming']
-            if subreddit in blacklisted_subs:
+            if subreddit in BLACKLISTED_SUBREDDITS:
+                continue
+            if subreddit not in HARDWARE_SUBREDDIT_ALLOWLIST:
+                continue
+            if getattr(s, "over_18", False):
                 continue
                 
             # Exclude giveaways or trades

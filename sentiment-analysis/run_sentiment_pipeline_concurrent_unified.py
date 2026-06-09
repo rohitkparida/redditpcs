@@ -20,8 +20,10 @@ REGISTRY_PATH = Path('product_registry.json')
 BATCHES_DIR = Path('batches')
 CLASSIFIED_DIR = Path('classified')
 STATE_FILE = Path('pipeline_state.json')
+MANUAL_REVIEW_FILE = Path('needs_manual_review.json')
 _STATE_LOCK = threading.Lock()
 _SUMMARY_LOCK = threading.Lock()
+_MANUAL_REVIEW_LOCK = threading.Lock()
 
 def append_to_github_summary(slug, status, detail):
     summary_file = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -78,6 +80,26 @@ def mark_state(slug: str, status: str, step: str = "", error: str = ""):
         except Exception as e:
             print(f"[{slug}] Warning: Failed to write pipeline state: {e}")
 
+def flag_for_manual_review(slug: str, reason: str, details: str = ""):
+    with _MANUAL_REVIEW_LOCK:
+        reviews = {}
+        if MANUAL_REVIEW_FILE.exists():
+            try:
+                with open(MANUAL_REVIEW_FILE, 'r', encoding='utf-8') as f:
+                    reviews = json.load(f)
+            except Exception:
+                reviews = {}
+
+        reviews[slug] = {
+            "reason": reason,
+            "details": details,
+            "updated_at": datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
+        }
+        save_path = MANUAL_REVIEW_FILE.with_suffix('.tmp')
+        with open(save_path, 'w', encoding='utf-8') as f:
+            json.dump(reviews, f, indent=2)
+        save_path.replace(MANUAL_REVIEW_FILE)
+
 def process_single_product(slug, model_name, registry, db_file_path):
     print(f"\n[START] Pipeline executing for product: {slug}")
     
@@ -90,6 +112,8 @@ def process_single_product(slug, model_name, registry, db_file_path):
     mark_state(slug, "in_progress", step="scrape_validation")
     ok, msgs = pv.validate_scrape(slug)
     if not pv.report(f"{slug} Scrape", ok, msgs):
+        if any("sourceThreads is empty" in msg for msg in msgs):
+            flag_for_manual_review(slug, "empty_source_threads", " | ".join(msgs))
         mark_state(slug, "failed", step="scrape_validation", error=" | ".join(msgs))
         append_to_github_summary(slug, "❌ Failed", f"Scrape validation failed: {' | '.join(msgs)}")
         return False

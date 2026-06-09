@@ -17,6 +17,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent))
 
 import create_template
+import auto_classify_gemini
 import merge_batches
 import split_batches_correctly
 import pipeline_validators as pv
@@ -107,6 +108,45 @@ class TestFlattenComments(unittest.TestCase):
         result = create_template.flatten_comments(nodes)
         self.assertEqual(len(result), 5)
 
+    def test_thread_prefilter_keeps_matching_root(self):
+        trees = [{
+            "commentId": "root1",
+            "text": "Lian Li Lancool 216 review after 6 months",
+            "threadUrl": "https://www.reddit.com/r/buildapc/comments/abc123/lian_li_lancool_216_review/",
+            "subreddit": "buildapc",
+            "upvotes": 10,
+            "replies": []
+        }]
+        kept, excluded = create_template.filter_threads_for_product("Lian Li Lancool 216", trees)
+        self.assertEqual(len(kept), 1)
+        self.assertEqual(excluded, [])
+
+    def test_thread_prefilter_drops_non_hardware_subreddit(self):
+        trees = [{
+            "commentId": "root2",
+            "text": "Lian Li Lancool 216 looks cool in my furry art setup",
+            "threadUrl": "https://www.reddit.com/r/furry/comments/abc123/lian_li_lancool_216/",
+            "subreddit": "furry",
+            "upvotes": 10,
+            "replies": []
+        }]
+        kept, excluded = create_template.filter_threads_for_product("Lian Li Lancool 216", trees)
+        self.assertEqual(kept, [])
+        self.assertEqual(len(excluded), 1)
+
+    def test_thread_prefilter_drops_weak_product_match(self):
+        trees = [{
+            "commentId": "root3",
+            "text": "My full PC parts list for 2026",
+            "threadUrl": "https://www.reddit.com/r/buildapc/comments/abc123/parts_list/",
+            "subreddit": "buildapc",
+            "upvotes": 10,
+            "replies": []
+        }]
+        kept, excluded = create_template.filter_threads_for_product("AMD Ryzen 7 9800X3D", trees)
+        self.assertEqual(kept, [])
+        self.assertEqual(len(excluded), 1)
+
 
 # ═══════════════════════════════════════════════════════════════
 # merge_batches.resolve_majority_vote
@@ -187,6 +227,46 @@ class TestFlattenBatchComments(unittest.TestCase):
     def test_empty_input(self):
         result = merge_batches.flatten_batch_comments([])
         self.assertEqual(result, [])
+
+class TestGeminiClassificationValidation(unittest.TestCase):
+
+    def _batch(self):
+        return {
+            "comments": [
+                make_batch_comment("a", classify_this=True),
+                make_batch_comment("b", classify_this=True),
+            ]
+        }
+
+    def _classification(self, cid):
+        return {
+            "commentId": cid,
+            "relevance": 1,
+            "relevanceReasoning": "on topic",
+            "sentiment": "positive",
+            "sentimentReasoning": "positive experience",
+        }
+
+    def test_rejects_missing_classification(self):
+        result = auto_classify_gemini.validate_and_repair_classifications(
+            {"comments": [self._classification("a")]},
+            self._batch(),
+        )
+        self.assertIsNone(result)
+
+    def test_rejects_duplicate_id_hiding_missing_id(self):
+        result = auto_classify_gemini.validate_and_repair_classifications(
+            {"comments": [self._classification("a"), self._classification("a")]},
+            self._batch(),
+        )
+        self.assertIsNone(result)
+
+    def test_accepts_exact_expected_ids(self):
+        result = auto_classify_gemini.validate_and_repair_classifications(
+            {"comments": [self._classification("a"), self._classification("b")]},
+            self._batch(),
+        )
+        self.assertEqual({c["commentId"] for c in result["comments"]}, {"a", "b"})
 
 
 # ═══════════════════════════════════════════════════════════════

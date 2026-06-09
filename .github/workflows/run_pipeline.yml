@@ -20,6 +20,11 @@ permissions:
   contents: write
   actions: write
 
+# Do not let two long-running pipeline jobs race to publish generated files.
+concurrency:
+  group: sentiment-analysis-pipeline-main
+  cancel-in-progress: false
+
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
@@ -52,19 +57,41 @@ jobs:
 
       - name: Commit and Push Progress
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
           git add sentiment-analysis/classified/
           git add sentiment-analysis/batches/
           git add sentiment-analysis/pipeline_state.json
+          git add sentiment-analysis/needs_manual_review.json
           git add src/data/
-          # Commit only if there are changes
+
           if git diff --staged --quiet; then
             echo "No changes to commit."
-          else
-            git commit -m "[Bot] Sync sentiment analysis progress"
-            git push https://x-access-token:${{ secrets.PAT_TOKEN || github.token }}@github.com/${{ github.repository }}.git HEAD:main
+            exit 0
           fi
+
+          git commit -m "[Bot] Sync sentiment analysis progress [skip ci]"
+
+          # Human commits can land during a long run. Rebase immediately before
+          # publishing and retry if main advances again between rebase and push.
+          for attempt in 1 2 3; do
+            git fetch origin main
+            if ! git rebase origin/main; then
+              echo "Rebase conflict while publishing generated results."
+              git rebase --abort
+              exit 1
+            fi
+
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+
+            echo "Push attempt ${attempt} failed; retrying after $((attempt * 10)) seconds..."
+            sleep $((attempt * 10))
+          done
+
+          echo "Failed to publish pipeline progress after 3 attempts."
+          exit 1
 
       - name: Trigger next run if products remain
         if: steps.run_step.outputs.has_remaining == 'true'

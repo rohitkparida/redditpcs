@@ -53,6 +53,7 @@ def validate_and_repair_classifications(classifications, batch_data):
     for c in batch_data.get("comments", []):
         collect_expected(c)
     repaired_comments = []
+    returned_ids = set()
     
     for c in comments_list:
         if not isinstance(c, dict) or "commentId" not in c:
@@ -60,6 +61,10 @@ def validate_and_repair_classifications(classifications, batch_data):
         cid = c["commentId"]
         if cid not in expected_ids:
             continue # Extra comment or hallucinated ID
+        if cid in returned_ids:
+            print(f"  [Validation Failed] Duplicate classification returned for comment {cid}")
+            return None
+        returned_ids.add(cid)
             
         # Repair relevance
         relevance = c.get("relevance")
@@ -93,9 +98,13 @@ def validate_and_repair_classifications(classifications, batch_data):
         })
 
         
-    # We expect the model to return classifications for all of our expected comments
-    if len(repaired_comments) < len(expected_ids):
-        print(f"  [Validation Failed] Only got {len(repaired_comments)} valid comments out of {len(expected_ids)} expected.")
+    # Exact ID equality prevents duplicates from hiding an omitted classification.
+    if returned_ids != expected_ids:
+        missing_ids = sorted(expected_ids - returned_ids)
+        print(
+            f"  [Validation Failed] Got {len(returned_ids)} valid comment IDs out of "
+            f"{len(expected_ids)} expected. Missing: {missing_ids[:5]}"
+        )
         return None
         
     return {"comments": repaired_comments}

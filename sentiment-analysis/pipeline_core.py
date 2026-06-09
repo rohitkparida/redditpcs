@@ -31,6 +31,24 @@ def create_product_templates(slug: str, raw_comments_file, template_file, classi
             raw = json.load(f)
 
         raw['productName'] = reg_item.get("name")
+        filtered_threads, excluded_threads = create_template.filter_threads_for_product(
+            reg_item.get("name", slug),
+            raw.get('comments', [])
+        )
+        if excluded_threads:
+            print(
+                f"    Thread pre-filter excluded {len(excluded_threads)} / "
+                f"{len(raw.get('comments', []))} root thread(s) before classification."
+            )
+        if not filtered_threads:
+            print("    [Error] Thread pre-filter removed every thread. Skipping unsafe classification run.")
+            return False
+
+        raw['comments'] = filtered_threads
+        raw['sourceThreads'] = [thread.get('threadUrl') for thread in filtered_threads if thread.get('threadUrl')]
+
+        with open(raw_comments_file, 'w', encoding='utf-8') as f:
+            json.dump(raw, f, indent=2)
 
         with open(template_file, 'w', encoding='utf-8') as f:
             json.dump(raw, f, indent=2)

@@ -1,5 +1,82 @@
 import json
+import re
 from pathlib import Path
+
+GENERIC_PRODUCT_TOKENS = {
+    "a", "an", "and", "or", "the", "for", "with", "without", "review", "vs",
+    "pc", "pcs", "computer", "gaming", "desktop", "edition"
+}
+THREAD_SUBREDDIT_ALLOWLIST = {
+    "buildapc",
+    "buildapcforme",
+    "hardware",
+    "intel",
+    "amd",
+    "nvidia",
+    "sffpc",
+    "overclocking",
+    "watercooling",
+    "pcmasterrace",
+    "battlestations",
+    "monitors",
+}
+
+def normalize_text(text):
+    return re.sub(r"\s+", " ", re.sub(r"[^a-z0-9]+", " ", (text or "").lower())).strip()
+
+def extract_product_tokens(product_name):
+    tokens = [t for t in normalize_text(product_name).split() if t and t not in GENERIC_PRODUCT_TOKENS]
+    alpha_tokens = [t for t in tokens if t.isalpha()]
+    model_tokens = [t for t in tokens if any(ch.isdigit() for ch in t)]
+    return tokens, alpha_tokens, model_tokens
+
+def thread_matches_product(thread, product_name):
+    """Conservatively keep only threads whose root post clearly matches the product."""
+    combined = normalize_text(f"{thread.get('text', '')} {thread.get('threadUrl', '')}")
+    subreddit = (thread.get("subreddit") or "").lower()
+
+    if not combined:
+        return False, "Root thread has no usable text."
+    if subreddit and subreddit not in THREAD_SUBREDDIT_ALLOWLIST:
+        return False, f"Subreddit '{subreddit}' is outside the hardware allowlist."
+
+    normalized_product = normalize_text(product_name)
+    if normalized_product and normalized_product in combined:
+        return True, "Exact normalized product phrase appears in the root thread."
+
+    tokens, alpha_tokens, model_tokens = extract_product_tokens(product_name)
+    if not tokens:
+        return False, "Product name did not yield matchable tokens."
+
+    matched_tokens = [t for t in tokens if t in combined]
+    matched_alpha = [t for t in alpha_tokens if t in combined]
+    matched_model = [t for t in model_tokens if t in combined]
+
+    if model_tokens and matched_model:
+        required_alpha = min(2, len(alpha_tokens)) if alpha_tokens else 0
+        if len(matched_alpha) >= required_alpha:
+            return True, "Matched model token(s) plus brand/family token(s) in the root thread."
+
+    minimum_token_matches = max(2, min(len(tokens), 3))
+    if len(matched_tokens) >= minimum_token_matches:
+        return True, "Matched enough product tokens in the root thread."
+
+    return False, "Root thread does not clearly identify the product as its primary subject."
+
+def filter_threads_for_product(product_name, trees):
+    kept = []
+    excluded = []
+    for thread in trees:
+        keep, reason = thread_matches_product(thread, product_name)
+        if keep:
+            kept.append(thread)
+        else:
+            excluded.append({
+                "threadUrl": thread.get("threadUrl"),
+                "subreddit": thread.get("subreddit"),
+                "reason": reason,
+            })
+    return kept, excluded
 
 def flatten_comments(nodes):
     """Recursively flatten the comment tree for the master store."""

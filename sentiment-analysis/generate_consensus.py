@@ -53,6 +53,49 @@ def select_representative_comments(classified_file: Path, max_comments: int = 15
     return product_name, top_pos, top_neg
 
 
+def _extract_final_consensus(raw: str) -> str:
+    """
+    Gemma thinking models dump reasoning before the answer.
+    This extracts the final clean 2-sentence consensus by:
+    1. Stripping markdown (bullets, asterisks, backticks)
+    2. Splitting into sentences and taking the last 2 clean ones
+    """
+    import re
+    # Remove markdown artifacts
+    text = re.sub(r'[`*_#]', '', raw)
+    # Remove lines that look like reasoning (contain colons at start, "Draft", "Sentence N:", self-checks)
+    lines = text.split('\n')
+    clean_lines = []
+    skip_patterns = ['draft', 'sentence 1:', 'sentence 2:', 'two sentences', 'positives?', 'negatives?',
+                     'neutral/', 'no hype', 'no markdown', 'raw text', 's1 ', 's2 ', 'tone:', 'rule']
+    for line in lines:
+        stripped = line.strip()
+        if not stripped:
+            continue
+        lower = stripped.lower()
+        if any(p in lower for p in skip_patterns):
+            continue
+        clean_lines.append(stripped)
+
+    # Re-join and split into sentences
+    joined = ' '.join(clean_lines)
+    # Split on sentence boundaries
+    sentences = re.split(r'(?<=[.!?])\s+', joined.strip())
+    # Filter out very short fragments
+    sentences = [s.strip() for s in sentences if len(s.strip()) > 30]
+
+    if len(sentences) >= 2:
+        # Take the last 2 sentences (most likely the final clean answer)
+        result = ' '.join(sentences[-2:])
+    elif sentences:
+        result = sentences[-1]
+    else:
+        # Fallback: return cleaned raw
+        result = ' '.join(joined.split())
+
+    return result
+
+
 def call_gemini_for_consensus(product_name: str, top_pos: list, top_neg: list, model: str = "openrouter/free") -> str:
     """Send the curated positive and negative opinions to Gemini API directly (for speed), with failover and OpenRouter backup."""
     pos_str = "\n".join([f"- [Upvotes: {c.get('upvotes', 0)}] {c.get('text')}" for c in top_pos])
@@ -76,9 +119,9 @@ RULES FOR THE SUMMARY:
 2. Sentence 1: Focus on the major positives—what makes the community love this product, its primary strength, and why it is highly recommended.
 3. Sentence 2: Focus on the major trade-offs, concerns, or criticisms mentioned by the community (e.g. high pricing, productivity limitations, heat, power requirements, availability).
 4. Tone: Completely neutral, down-to-earth, and objective. Avoid corporate jargon, marketing hype, and hype words (do NOT use "powerhouse", "game-changer", "revolution", "seamless", "ultimate", "testament"). Read like a high-end designer explaining facts honestly.
-5. Do not include markdown formatting or backticks around the response. Return raw text only.
+5. Do not include markdown formatting, backticks, bullet points, asterisks, or any chain-of-thought reasoning. Output ONLY the final 2-sentence consensus and nothing else.
 
-Write the 2-sentence consensus:"""
+Write the 2-sentence consensus (final answer only, no drafts, no self-checks):"""
 
     # Gather potential keys
     keys = []
@@ -94,7 +137,7 @@ Write the 2-sentence consensus:"""
 
         for idx, key in enumerate(keys):
             try:
-                url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={key}"
+                url = f"https://generativelanguage.googleapis.com/v1beta/models/gemma-4-31b-it:generateContent?key={key}"
                 headers = {"Content-Type": "application/json"}
                 payload = {
                     "contents": [{"parts": [{"text": prompt}]}]
@@ -102,9 +145,10 @@ Write the 2-sentence consensus:"""
                 response = requests.post(url, headers=headers, json=payload, timeout=20)
                 if response.status_code == 200:
                     result = response.json()
-                    text = result["candidates"][0]["content"]["parts"][0]["text"].strip().replace('`', '')
+                    raw = result["candidates"][0]["content"]["parts"][0]["text"].strip()
+                    text = _extract_final_consensus(raw)
                     print(f"  [Consensus] Generated consensus successfully using Gemini API (Key {idx+1})")
-                    return " ".join(text.split())
+                    return text
                 elif response.status_code == 429:
                     has_429 = True
                     print(f"  [Consensus] Gemini API Key {idx+1} failed with status 429 (Rate Limit). Trying next...")

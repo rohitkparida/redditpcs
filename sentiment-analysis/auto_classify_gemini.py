@@ -315,6 +315,23 @@ def main(product_slug, model="gemini-2.5-flash-lite"):
         else:
             print(f"Stopping at {batch_file.name} due to error.")
             break
+    return product_completeness(product_slug)
+
+
+def product_completeness(product_slug):
+    expected = complete = 0
+    for batch_file in (Path("batches") / product_slug).glob("*.json"):
+        batch = load_json(batch_file)
+        def count(nodes):
+            nonlocal expected, complete
+            for node in nodes:
+                if node.get("classifyThis") is True:
+                    expected += 1
+                    if node.get("relevance") is not None:
+                        complete += 1
+                count(node.get("replies", []))
+        count(batch.get("comments", []))
+    return complete / expected if expected else 0.0
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:

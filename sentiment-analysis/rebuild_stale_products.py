@@ -67,8 +67,7 @@ def inspect_product(slug, include_rate_threshold, max_nodes):
         metrics["includedComments"] = sum(1 for c in comments if c.get("relevance") == "include")
         metrics["unclassifiedComments"] = sum(1 for c in comments if c.get("relevance") is None)
         metrics["includeRate"] = metrics["includedComments"] / len(comments)
-        if metrics["includeRate"] < include_rate_threshold:
-            reasons.append(f"include_rate_below_{include_rate_threshold:.0%}")
+        # Include rate is an anomaly signal, not proof that artifacts are stale.
         if metrics["unclassifiedComments"]:
             reasons.append("classified_output_contains_unclassified_comments")
     elif classified_file.exists():

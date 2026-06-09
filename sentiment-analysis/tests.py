@@ -22,6 +22,9 @@ import merge_batches
 import split_batches_correctly
 import pipeline_validators as pv
 import rebuild_stale_products
+import discover_reddit_urls
+import pipeline_core
+import run_pipeline_stateful
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -428,7 +431,12 @@ class TestSplitIntoBatches(unittest.TestCase):
 
 class TestStaleProductDetection(unittest.TestCase):
 
-    def test_flags_low_include_rate_and_oversized_batch(self):
+    def _write_json(self, path, data):
+        Path(path).parent.mkdir(parents=True, exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f)
+
+    def test_flags_oversized_batch_but_not_low_include_rate_alone(self):
         with tempfile.TemporaryDirectory() as tmp:
             old_classified = rebuild_stale_products.CLASSIFIED_DIR
             old_batches = rebuild_stale_products.BATCHES_DIR
@@ -451,19 +459,62 @@ class TestStaleProductDetection(unittest.TestCase):
                     ]}
                 )
                 reasons, metrics = rebuild_stale_products.inspect_product(slug, 0.10, 25)
-                self.assertIn("include_rate_below_10%", reasons)
+                self.assertNotIn("include_rate_below_10%", reasons)
                 self.assertIn("batch_exceeds_25_nodes", reasons)
                 self.assertEqual(metrics["largestBatchNodes"], 26)
             finally:
                 rebuild_stale_products.CLASSIFIED_DIR = old_classified
                 rebuild_stale_products.BATCHES_DIR = old_batches
 
-    def _write_json(self, path, data):
-        Path(path).parent.mkdir(parents=True, exist_ok=True)
-        with open(path, "w", encoding="utf-8") as f:
-            json.dump(data, f)
 
+class TestStatefulPipelineMetrics(unittest.TestCase):
 
+    def test_adaptive_queries_include_aliases_and_intents(self):
+        queries = discover_reddit_urls.build_search_queries("Product X", ["PX"])
+        self.assertEqual(len(queries), 6)
+        self.assertTrue(any('"PX"' in query and "troubleshooting" in query for query in queries))
+
+    def test_preliminary_metrics_record_both_warnings(self):
+        raw = {"comments": [make_comment("root", replies=[make_comment("reply")])]}
+        metrics, warnings = pipeline_core.preliminary_evidence_metrics(raw)
+        self.assertEqual(metrics["survivingThreads"], 1)
+        self.assertEqual(metrics["candidateComments"], 2)
+        self.assertEqual(
+            set(warnings),
+            {"low_preliminary_source_diversity", "low_candidate_volume"},
+        )
+
+    def test_final_metrics_detect_thin_and_concentrated_evidence(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "classified.json"
+            comments = [
+                {"commentId": str(i), "relevance": "include",
+                 "threadUrl": "https://reddit.com/r/x/comments/thread1/post/comment"}
+                for i in range(10)
+            ]
+            path.write_text(json.dumps({"comments": comments}), encoding="utf-8")
+            metrics, reasons = pipeline_core.final_evidence_metrics(path)
+            self.assertEqual(metrics["includedComments"], 10)
+            self.assertEqual(metrics["contributingThreads"], 1)
+            self.assertEqual(metrics["largestThreadShare"], 1.0)
+            self.assertEqual(
+                set(reasons),
+                {"insufficient_included_evidence", "insufficient_included_source_diversity"},
+            )
+
+    def test_zero_time_budget_submits_no_products(self):
+        original_get_mode = run_pipeline_stateful.get_pipeline_mode
+        run_pipeline_stateful.get_pipeline_mode = lambda: "running"
+        try:
+            processed, unscheduled, mode, reason = run_pipeline_stateful.run_rolling_window(
+                ["product-a"], {"product-a": {}}, "test-model", 1, 0
+            )
+            self.assertEqual(processed, 0)
+            self.assertEqual(unscheduled, 1)
+            self.assertEqual(mode, "running")
+            self.assertEqual(reason, "time_budget_reached")
+        finally:
+            run_pipeline_stateful.get_pipeline_mode = original_get_mode
 
 # ═══════════════════════════════════════════════════════════════
 # pipeline_validators

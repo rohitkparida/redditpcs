@@ -37,7 +37,7 @@ def extract_comment_tree(comment, depth=1):
                 node['replies'].append(reply_node)
     return node
 
-def fetch_product(product_slug: str, urls: list, output_path):
+def fetch_product(product_slug: str, urls: list, output_path, max_retries=3, backoff_seconds=2):
     """
     Fetch Reddit comment trees for a single product and write to output_path.
     Called directly by fetch_all_pending_comments.py (no subprocess needed).
@@ -59,8 +59,11 @@ def fetch_product(product_slug: str, urls: list, output_path):
     all_roots = []
     print(f"Fetching {len(urls)} threads via PRAW...")
 
+    failed_urls = []
     for idx, url in enumerate(urls):
-        try:
+        fetched = False
+        for attempt in range(max_retries):
+          try:
             print(f"  [{idx+1}/{len(urls)}] Fetching: {url}")
             submission = reddit.submission(url=url)
             submission.comments.replace_more(limit=0)
@@ -83,9 +86,14 @@ def fetch_product(product_slug: str, urls: list, output_path):
                         post_node['replies'].append(comment_node)
 
             all_roots.append(post_node)
-
-        except Exception as e:
-            print(f"  [Error] Failed to fetch {url} via PRAW: {e}")
+            fetched = True
+            break
+          except Exception as e:
+            print(f"  [Error] Failed to fetch {url} via PRAW (attempt {attempt + 1}/{max_retries}): {e}")
+            if attempt < max_retries - 1:
+                time.sleep(backoff_seconds * (attempt + 1))
+        if not fetched:
+            failed_urls.append(url)
 
     def get_all_urls(nodes):
         urls_found = []
@@ -101,7 +109,8 @@ def fetch_product(product_slug: str, urls: list, output_path):
         'productName': product_slug,
         'sourceThreads': unique_threads[:20],
         'analyzedAt': time.strftime('%Y-%m-%d'),
-        'comments': all_roots
+        'comments': all_roots,
+        'fetchFailures': failed_urls,
     }
 
     output_path = Path(output_path)
@@ -113,7 +122,7 @@ def fetch_product(product_slug: str, urls: list, output_path):
 
     total_count = count_comments(all_roots)
     print(f"Saved {total_count} comments across {len(all_roots)} trees to {output_path.name}")
-    return True
+    return bool(all_roots)
 
 
 def main():

@@ -1,5 +1,8 @@
 # Real Sentiment Analysis Pipeline
 
+Operational publishing and conflict-resolution policy:
+[PIPELINE_OPERATIONS.md](PIPELINE_OPERATIONS.md)
+
 Complete workflow to replace placeholder sentiment data with real per-comment classifications.
 
 ## Overview (Hybrid Workflow)

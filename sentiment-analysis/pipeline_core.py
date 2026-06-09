@@ -14,6 +14,67 @@ from pathlib import Path
 import merge_batches
 import create_template
 import generate_consensus
+import split_batches_correctly
+
+
+MIN_INCLUDED_COMMENTS = 30
+MIN_CONTRIBUTING_THREADS = 3
+LOW_CANDIDATE_WARNING = 75
+
+
+def walk_comments(nodes):
+    for node in nodes:
+        yield node
+        yield from walk_comments(node.get("replies", []))
+
+
+def preliminary_evidence_metrics(raw: dict) -> tuple[dict, list[str]]:
+    roots = raw.get("comments", [])
+    metrics = {
+        "survivingThreads": len(roots),
+        "candidateComments": sum(1 for _ in walk_comments(roots)),
+    }
+    warnings = []
+    if metrics["survivingThreads"] < MIN_CONTRIBUTING_THREADS:
+        warnings.append("low_preliminary_source_diversity")
+    if metrics["candidateComments"] < LOW_CANDIDATE_WARNING:
+        warnings.append("low_candidate_volume")
+    return metrics, warnings
+
+
+def final_evidence_metrics(classified_file) -> tuple[dict, list[str]]:
+    with open(classified_file, "r", encoding="utf-8") as f:
+        data = json.load(f)
+    included = [c for c in data.get("comments", []) if c.get("relevance") == "include"]
+    thread_counts = {}
+    for comment in included:
+        url = comment.get("threadUrl", "")
+        thread_id = url.split("/comments/")[1].split("/")[0] if "/comments/" in url else url
+        thread_counts[thread_id] = thread_counts.get(thread_id, 0) + 1
+    largest = max(thread_counts.values(), default=0)
+    metrics = {
+        "includedComments": len(included),
+        "contributingThreads": len(thread_counts),
+        "largestThreadShare": largest / len(included) if included else 0,
+        "includeRate": len(included) / len(data.get("comments", [])) if data.get("comments") else 0,
+    }
+    reasons = []
+    if metrics["includedComments"] < MIN_INCLUDED_COMMENTS:
+        reasons.append("insufficient_included_evidence")
+    if metrics["contributingThreads"] < MIN_CONTRIBUTING_THREADS:
+        reasons.append("insufficient_included_source_diversity")
+    return metrics, reasons
+
+
+def prepare_product_artifacts(slug, reg_item, raw_comments_file, template_file, classified_file):
+    if not create_product_templates(slug, raw_comments_file, template_file, classified_file, reg_item):
+        return False
+    split_batches_correctly.split_into_batches_correct(
+        str(raw_comments_file), str(Path("batches") / slug),
+        max_chars=split_batches_correctly.MAX_CHARS_PER_BATCH,
+        max_nodes=split_batches_correctly.MAX_NODES_PER_BATCH,
+    )
+    return True
 
 
 def create_product_templates(slug: str, raw_comments_file, template_file, classified_file, reg_item: dict) -> bool:

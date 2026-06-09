@@ -212,7 +212,22 @@ def verify_urls_with_gemini(product_name: str, candidates: list) -> tuple[list, 
         }
         return [], fallback_log
 
-def discover_urls_for_product(product_name: str) -> tuple[list, dict]:
+def build_search_queries(product_name: str, aliases=None) -> list[str]:
+    names = [product_name] + list(aliases or [])
+    queries = []
+    for name in names:
+        for suffix in (
+            "(review OR benchmark OR thoughts OR recommendation OR vs)",
+            "(issue OR problem OR troubleshooting OR experience)",
+            "(build OR upgrade OR installed)",
+        ):
+            query = f'"{name}" {suffix}'
+            if query not in queries:
+                queries.append(query)
+    return queries
+
+
+def discover_urls_for_product(product_name: str, aliases=None, target_count=5, search_limit=25) -> tuple[list, dict]:
     """Query PRAW search directly (Google Custom Search is disabled to ensure Gemini audit runs)."""
     print("  [PRAW Search] Querying direct PRAW search...")
     client_id = os.getenv("REDDIT_CLIENT_ID")
@@ -230,34 +245,35 @@ def discover_urls_for_product(product_name: str) -> tuple[list, dict]:
             user_agent=user_agent
         )
         
-        # Build the exact-phrase query
-        query = f'"{product_name}" (review OR benchmark OR thoughts OR recommendation OR vs)'
-        print(f"  [PRAW Search] Querying: {query}...")
-        
         subreddit_query = "+".join(HARDWARE_SUBREDDIT_ALLOWLIST)
-        results = reddit.subreddit(subreddit_query).search(query, sort='relevance', limit=25)
-
-        verified_urls = []
-        for s in results:
-            title = s.title.lower()
-            subreddit = s.subreddit.display_name.lower()
-            
-            if subreddit in BLACKLISTED_SUBREDDITS:
-                continue
-            if subreddit not in HARDWARE_SUBREDDIT_ALLOWLIST:
-                continue
-            if getattr(s, "over_18", False):
-                continue
-                
-            # Exclude giveaways or trades
-            if any(term in title for term in ['giveaway', 'trade', 'h:', 'w:', '[h]', '[w]']):
-                continue
-                
-            url = f"https://www.reddit.com{s.permalink.split('?')[0].rstrip('/')}"
-            verified_urls.append({"url": url, "title": s.title, "body": s.selftext})
-            
-        print(f"  [PRAW Search Success] Discovered {len(verified_urls)} raw Reddit URLs. Running Gemini validation...")
-        return verify_urls_with_gemini(product_name, verified_urls)
+        candidates = {}
+        combined_log = {}
+        verified = []
+        for query in build_search_queries(product_name, aliases):
+            print(f"  [PRAW Search] Querying: {query}...")
+            results = reddit.subreddit(subreddit_query).search(query, sort='relevance', limit=search_limit)
+            new_candidates = []
+            for s in results:
+                title = s.title.lower()
+                subreddit = s.subreddit.display_name.lower()
+                if subreddit in BLACKLISTED_SUBREDDITS or subreddit not in HARDWARE_SUBREDDIT_ALLOWLIST:
+                    continue
+                if getattr(s, "over_18", False):
+                    continue
+                if any(term in title for term in ['giveaway', 'trade', 'h:', 'w:', '[h]', '[w]']):
+                    continue
+                url = f"https://www.reddit.com{s.permalink.split('?')[0].rstrip('/')}"
+                if url not in candidates:
+                    candidate = {"url": url, "title": s.title, "body": s.selftext}
+                    candidates[url] = candidate
+                    new_candidates.append(candidate)
+            accepted, audit_log = verify_urls_with_gemini(product_name, new_candidates)
+            combined_log.update(audit_log)
+            verified.extend(url for url in accepted if url not in verified)
+            if len(verified) >= target_count:
+                break
+        print(f"  [PRAW Search Success] Verified {len(verified)} unique Reddit URLs.")
+        return verified, combined_log
         
     except Exception as e:
         print(f"  [Error] PRAW Search failed: {e}")

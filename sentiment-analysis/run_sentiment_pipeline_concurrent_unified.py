@@ -15,6 +15,8 @@ import threading
 import auto_classify_gemini
 import pipeline_validators as pv
 import pipeline_core
+import discover_reddit_urls
+import fetch_reddit_praw
 
 REGISTRY_PATH = Path('product_registry.json')
 BATCHES_DIR = Path('batches')
@@ -66,7 +68,8 @@ def save_state(state: dict):
         json.dump(state, f, indent=2)
     tmp.replace(STATE_FILE)
 
-def mark_state(slug: str, status: str, step: str = "", error: str = ""):
+def mark_state(slug: str, status: str, step: str = "", error: str = "", reason: str = "",
+               warnings=None, metrics=None, artifacts=None):
     with _STATE_LOCK:  # Serialize all state reads+writes across threads
         try:
             state = load_state()
@@ -74,6 +77,10 @@ def mark_state(slug: str, status: str, step: str = "", error: str = ""):
                 "status": status,
                 "step": step,
                 "error": error,
+                "reason": reason,
+                "warnings": warnings or [],
+                "metrics": metrics or {},
+                "artifacts": artifacts or {},
                 "updated_at": datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
             }
             save_state(state)

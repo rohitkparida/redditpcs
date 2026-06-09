@@ -1,0 +1,38 @@
+name: Control Sentiment Pipeline
+
+on:
+  workflow_dispatch:
+    inputs:
+      action:
+        description: 'pause, drain, resume, or status'
+        required: true
+        default: 'status'
+
+permissions:
+  actions: write
+  contents: read
+
+jobs:
+  control:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Apply control action
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN || github.token }}
+          ACTION: ${{ github.event.inputs.action }}
+        run: |
+          case "$ACTION" in
+            resume) MODE=running ;;
+            pause) MODE=paused ;;
+            drain) MODE=draining ;;
+            status) MODE=$(gh variable get PIPELINE_MODE --repo "${{ github.repository }}" 2>/dev/null || echo paused) ;;
+            *) echo "Unknown control action: $ACTION"; exit 1 ;;
+          esac
+
+          if [ "$ACTION" != "status" ]; then
+            gh variable set PIPELINE_MODE --repo "${{ github.repository }}" --body "$MODE"
+          fi
+
+          echo "Pipeline mode: $MODE"
+          gh run list --repo "${{ github.repository }}" --workflow run_pipeline.yml --limit 3
+

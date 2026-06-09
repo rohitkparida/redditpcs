@@ -19,6 +19,10 @@ on:
         description: 'Automatically dispatch another chunk when products remain'
         required: false
         default: 'false'
+      max_minutes:
+        description: 'Soft processing budget before draining active products'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -47,7 +51,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests python-dotenv
+          pip install requests python-dotenv praw
 
       - name: Setup environment variables
         run: |
@@ -56,8 +60,14 @@ jobs:
       - name: Run Pipeline Chunk
         id: run_step
         working-directory: sentiment-analysis
+        env:
+          GH_TOKEN: ${{ secrets.PAT_TOKEN || github.token }}
+          INPUT_MAX_MINUTES: ${{ github.event.inputs.max_minutes }}
+          DEFAULT_MAX_MINUTES: ${{ vars.PIPELINE_MAX_MINUTES || '300' }}
         run: |
-          python run_sentiment_pipeline_concurrent_unified.py --model gemma-4-31b-it --resume --workers ${{ github.event.inputs.workers || '3' }} --limit ${{ github.event.inputs.limit || '30' }} --skip "${{ github.event.inputs.skip || 'nzxt-c-series' }}"
+          MAX_MINUTES="${INPUT_MAX_MINUTES:-$DEFAULT_MAX_MINUTES}"
+          echo "Using soft time budget: ${MAX_MINUTES} minutes"
+          python run_pipeline_stateful.py --model gemma-4-31b-it --resume --workers ${{ github.event.inputs.workers || '3' }} --limit ${{ github.event.inputs.limit || '30' }} --max-minutes "$MAX_MINUTES" --skip "${{ github.event.inputs.skip || 'nzxt-c-series' }}"
 
       - name: Commit and Push Progress
         run: |
@@ -65,6 +75,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add sentiment-analysis/classified/
           git add sentiment-analysis/batches/
+          git add sentiment-analysis/raw_comments/
+          git add sentiment-analysis/product_registry.json
           git add sentiment-analysis/pipeline_state.json
           git add sentiment-analysis/needs_manual_review.json
           git add src/data/
@@ -78,10 +90,13 @@ jobs:
 
           # Human commits can land during a long run. Rebase immediately before
           # publishing and retry if main advances again between rebase and push.
+          # If generated JSON conflicts, fail loudly for semantic reconciliation
+          # per sentiment-analysis/PIPELINE_OPERATIONS.md; never choose ours/theirs blindly.
           for attempt in 1 2 3; do
             git fetch origin main
             if ! git rebase origin/main; then
               echo "Rebase conflict while publishing generated results."
+              echo "Reconcile useful artifacts per sentiment-analysis/PIPELINE_OPERATIONS.md."
               git rebase --abort
               exit 1
             fi
@@ -98,7 +113,7 @@ jobs:
           exit 1
 
       - name: Trigger next run if products remain
-        if: steps.run_step.outputs.has_remaining == 'true' && github.event.inputs.continue_chain == 'true'
+        if: steps.run_step.outputs.has_remaining == 'true' && steps.run_step.outputs.pipeline_mode == 'running' && github.event.inputs.continue_chain == 'true'
         run: |
           if [ -z "${{ secrets.PAT_TOKEN }}" ]; then
             echo "WARNING: PAT_TOKEN is not set. Cannot trigger next run automatically."
@@ -108,5 +123,5 @@ jobs:
               -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
               -H "Accept: application/vnd.github.v3+json" \
               https://api.github.com/repos/${{ github.repository }}/actions/workflows/run_pipeline.yml/dispatches \
-              -d "{\"ref\":\"main\", \"inputs\": {\"skip\": \"${{ github.event.inputs.skip || 'nzxt-c-series' }}\", \"limit\": \"${{ github.event.inputs.limit || '30' }}\", \"workers\": \"${{ github.event.inputs.workers || '3' }}\", \"continue_chain\": \"true\"}}"
+              -d "{\"ref\":\"main\", \"inputs\": {\"skip\": \"${{ github.event.inputs.skip || 'nzxt-c-series' }}\", \"limit\": \"${{ github.event.inputs.limit || '30' }}\", \"workers\": \"${{ github.event.inputs.workers || '3' }}\", \"max_minutes\": \"${{ github.event.inputs.max_minutes }}\", \"continue_chain\": \"true\"}}"
           fi

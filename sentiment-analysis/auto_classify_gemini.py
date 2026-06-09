@@ -292,10 +292,11 @@ def main(product_slug, model="gemini-2.5-flash-lite"):
     print(f"Loaded product name: '{product_name}'")
 
     # Get all JSON files in the batch dir, sorted by name
-    batch_files = sorted(list(batch_dir.glob("*.json")))
+    batch_files = sorted(batch_dir.glob("batch*.json"))
     
     print(f"Found {len(batch_files)} batches for {product_slug}")
     
+    failed_batches = []
     for i, batch_file in enumerate(batch_files):
         # Check if already classified
         try:
@@ -313,8 +314,22 @@ def main(product_slug, model="gemini-2.5-flash-lite"):
                 print("Waiting 5 seconds to respect Gemini API free tier limits (15 RPM)...")
                 time.sleep(2)
         else:
-            print(f"Stopping at {batch_file.name} due to error.")
-            break
+            failed_batches.append(batch_file)
+            print(f"Recording {batch_file.name} as failed and continuing where safe.")
+
+    # A second pass helps batch-specific malformed/omitted responses, but not a provider outage.
+    for batch_file in failed_batches:
+        print(f"Second-pass retry for {batch_file.name}...")
+        process_batch(batch_file, prompt_text, model)
+    pending_batches = [
+        batch_file.name for batch_file in batch_files
+        if not is_batch_classified(load_json(batch_file))
+    ]
+    status_file = batch_dir / "_classification_status.json"
+    save_json(status_file, {
+        "failedBatches": sorted(set(pending_batches)),
+        "completeness": product_completeness(product_slug),
+    })
     return product_completeness(product_slug)
 
 

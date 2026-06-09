@@ -12,6 +12,7 @@ import sys
 import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 # Make sure we can import from the same directory
 sys.path.insert(0, str(Path(__file__).parent))
@@ -271,6 +272,57 @@ class TestGeminiClassificationValidation(unittest.TestCase):
             self._batch(),
         )
         self.assertEqual({c["commentId"] for c in result["comments"]}, {"a", "b"})
+
+    def test_product_completeness_counts_partial_batches(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old_cwd = os.getcwd()
+            os.chdir(tmp)
+            try:
+                batch_dir = Path("batches/product")
+                batch_dir.mkdir(parents=True)
+                batch = {"comments": [
+                    make_batch_comment("a", relevance="include", sentiment="positive"),
+                    make_batch_comment("b"),
+                ]}
+                (batch_dir / "batch.json").write_text(json.dumps(batch), encoding="utf-8")
+                self.assertEqual(auto_classify_gemini.product_completeness("product"), 0.5)
+            finally:
+                os.chdir(old_cwd)
+
+    def test_main_continues_after_failed_batch_then_retries_it(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old_cwd = os.getcwd()
+            os.chdir(tmp)
+            try:
+                batch_dir = Path("batches/product")
+                batch_dir.mkdir(parents=True)
+                for number in range(1, 4):
+                    (batch_dir / f"batch-{number:02}.json").write_text(
+                        json.dumps({"comments": [make_batch_comment(str(number))]}),
+                        encoding="utf-8",
+                    )
+                Path("REDDIT_CLASSIFICATION_PROMPT.md").write_text(
+                    "[PRODUCT_NAME_HERE]", encoding="utf-8"
+                )
+                calls = []
+
+                def process(batch_file, *_args):
+                    calls.append(batch_file.name)
+                    return batch_file.name != "batch-01.json" or calls.count(batch_file.name) > 1
+
+                with patch.object(auto_classify_gemini, "get_active_key", return_value="key"), \
+                     patch.object(auto_classify_gemini, "resolve_product_name", return_value="Product"), \
+                     patch.object(auto_classify_gemini, "process_batch", side_effect=process), \
+                     patch.object(auto_classify_gemini.time, "sleep"):
+                    auto_classify_gemini.main("product")
+
+                self.assertEqual(calls, [
+                    "batch-01.json", "batch-02.json", "batch-03.json", "batch-01.json"
+                ])
+                status = json.loads((batch_dir / "_classification_status.json").read_text(encoding="utf-8"))
+                self.assertNotIn("_classification_status.json", status["failedBatches"])
+            finally:
+                os.chdir(old_cwd)
 
 
 # ═══════════════════════════════════════════════════════════════

@@ -186,23 +186,29 @@ def validate_classification(slug: str) -> tuple[bool, list[str]]:
             nonlocal total_classified, total_include
             batch_include = 0
             batch_total = 0
+            batch_unclassified = 0
             for n in nodes:
                 if n.get("classifyThis", True):
                     batch_total += 1
                     total_classified += 1
                     rel = n.get("relevance")
                     if rel is None:
-                        errors.append(
-                            f"[Classify] '{bf.name}' has unclassified comment (relevance=None). "
-                            f"Classification may have been interrupted."
-                        )
+                        batch_unclassified += 1
                     elif rel == "include":
                         batch_include += 1
                         total_include += 1
-                check_nodes(n.get("replies", []))
-            return batch_total, batch_include
+                child_total, child_include, child_unclassified = check_nodes(n.get("replies", []))
+                batch_total += child_total
+                batch_include += child_include
+                batch_unclassified += child_unclassified
+            return batch_total, batch_include, batch_unclassified
 
-        bt, bi = check_nodes(b.get("comments", []))
+        bt, bi, bu = check_nodes(b.get("comments", []))
+        if bu:
+            errors.append(
+                f"[Classify] '{bf.name}' has {bu} unclassified comment(s) out of {bt}. "
+                f"Classification may have been interrupted."
+            )
         if bt > 0 and bi == 0:
             if bt <= 3:
                 # Small batch — warn only, don't fail (all comments may legitimately be off-topic)

@@ -15,6 +15,10 @@ on:
         description: 'Number of parallel workers'
         required: false
         default: '3'
+      continue_chain:
+        description: 'Automatically dispatch another chunk when products remain'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
@@ -94,7 +98,7 @@ jobs:
           exit 1
 
       - name: Trigger next run if products remain
-        if: steps.run_step.outputs.has_remaining == 'true'
+        if: steps.run_step.outputs.has_remaining == 'true' && github.event.inputs.continue_chain == 'true'
         run: |
           if [ -z "${{ secrets.PAT_TOKEN }}" ]; then
             echo "WARNING: PAT_TOKEN is not set. Cannot trigger next run automatically."
@@ -104,5 +108,5 @@ jobs:
               -H "Authorization: token ${{ secrets.PAT_TOKEN }}" \
               -H "Accept: application/vnd.github.v3+json" \
               https://api.github.com/repos/${{ github.repository }}/actions/workflows/run_pipeline.yml/dispatches \
-              -d "{\"ref\":\"main\", \"inputs\": {\"skip\": \"${{ github.event.inputs.skip || 'nzxt-c-series' }}\", \"limit\": \"${{ github.event.inputs.limit || '30' }}\", \"workers\": \"${{ github.event.inputs.workers || '3' }}\"}}"
+              -d "{\"ref\":\"main\", \"inputs\": {\"skip\": \"${{ github.event.inputs.skip || 'nzxt-c-series' }}\", \"limit\": \"${{ github.event.inputs.limit || '30' }}\", \"workers\": \"${{ github.event.inputs.workers || '3' }}\", \"continue_chain\": \"true\"}}"
           fi

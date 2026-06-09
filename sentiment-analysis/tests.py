@@ -21,6 +21,7 @@ import auto_classify_gemini
 import merge_batches
 import split_batches_correctly
 import pipeline_validators as pv
+import rebuild_stale_products
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -408,6 +409,43 @@ class TestSplitIntoBatches(unittest.TestCase):
                     f"Batch {bf.name} has {node_count} nodes, exceeding cap of {split_batches_correctly.MAX_NODES_PER_BATCH}"
                 )
 
+class TestStaleProductDetection(unittest.TestCase):
+
+    def test_flags_low_include_rate_and_oversized_batch(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            old_classified = rebuild_stale_products.CLASSIFIED_DIR
+            old_batches = rebuild_stale_products.BATCHES_DIR
+            rebuild_stale_products.CLASSIFIED_DIR = Path(tmp) / "classified"
+            rebuild_stale_products.BATCHES_DIR = Path(tmp) / "batches"
+            slug = "stale-product"
+            try:
+                self._write_json(
+                    rebuild_stale_products.CLASSIFIED_DIR / f"{slug}.classified.json",
+                    {"comments": [
+                        {"commentId": str(i), "relevance": "include" if i == 0 else "exclude"}
+                        for i in range(20)
+                    ]}
+                )
+                self._write_json(
+                    rebuild_stale_products.BATCHES_DIR / slug / "batch.json",
+                    {"comments": [
+                        make_batch_comment(str(i), classify_this=True, relevance="exclude")
+                        for i in range(26)
+                    ]}
+                )
+                reasons, metrics = rebuild_stale_products.inspect_product(slug, 0.10, 25)
+                self.assertIn("include_rate_below_10%", reasons)
+                self.assertIn("batch_exceeds_25_nodes", reasons)
+                self.assertEqual(metrics["largestBatchNodes"], 26)
+            finally:
+                rebuild_stale_products.CLASSIFIED_DIR = old_classified
+                rebuild_stale_products.BATCHES_DIR = old_batches
+
+    def _write_json(self, path, data):
+        Path(path).parent.mkdir(parents=True, exist_ok=True)
+        with open(path, "w", encoding="utf-8") as f:
+            json.dump(data, f)
+
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -487,6 +525,29 @@ class TestValidators(unittest.TestCase):
                 ok, msgs = pv.validate_scrape(slug)
                 self.assertFalse(ok)
                 self.assertTrue(any("Duplicate" in m for m in msgs))
+            finally:
+                os.chdir(old_dir)
+
+    def test_validate_classification_summarizes_unclassified_per_batch(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            slug = "test-product"
+            batch = {
+                "comments": [
+                    make_batch_comment("a", relevance=None),
+                    make_batch_comment("b", relevance=None),
+                    make_batch_comment("c", relevance="include", sentiment="positive"),
+                    make_batch_comment("d", relevance="include", sentiment="positive"),
+                ]
+            }
+            self._write_json(Path(tmp) / "batches" / slug / "batch-01.json", batch)
+            old_dir = os.getcwd()
+            os.chdir(tmp)
+            try:
+                ok, msgs = pv.validate_classification(slug)
+                self.assertFalse(ok)
+                unclassified_msgs = [m for m in msgs if "unclassified comment" in m]
+                self.assertEqual(len(unclassified_msgs), 1)
+                self.assertIn("2 unclassified comment(s) out of 4", unclassified_msgs[0])
             finally:
                 os.chdir(old_dir)
 

@@ -5,7 +5,8 @@ from pathlib import Path
 
 # The output token budget math:
 # 40 nodes × ~87 output tokens/node = ~3,480 tokens → safe under 8,192 ceiling
-MAX_NODES_PER_BATCH = 40
+# Gemini reasoning output is verbose; 25 nodes leaves room for complete JSON responses.
+MAX_NODES_PER_BATCH = 25
 MAX_CHARS_PER_BATCH = 15000
 
 def get_char_count(node):

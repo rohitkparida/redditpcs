@@ -137,7 +137,7 @@ def process(slug, product, model):
             return False
         review_reasons = []
         if final["largestThreadShare"] > 0.50:
-            review_reasons.append("concentrated_evidence")
+            warnings.append(f"concentration_warning:{final['largestThreadShare']:.4f}")
         if not 0.05 <= final["includeRate"] <= 0.95:
             review_reasons.append("anomalous_include_rate")
         if not pipeline_core.compute_and_write_metrics(slug, classified_file, db_file):

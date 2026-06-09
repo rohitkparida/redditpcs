@@ -516,6 +516,22 @@ class TestStatefulPipelineMetrics(unittest.TestCase):
         finally:
             run_pipeline_stateful.get_pipeline_mode = original_get_mode
 
+    def test_concentration_is_recorded_in_metrics_not_an_insufficient_reason(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "classified.json"
+            comments = []
+            for i in range(31):
+                thread = "thread1" if i < 20 else f"thread{i % 3 + 2}"
+                comments.append({
+                    "commentId": str(i),
+                    "relevance": "include",
+                    "threadUrl": f"https://reddit.com/r/x/comments/{thread}/post/comment",
+                })
+            path.write_text(json.dumps({"comments": comments}), encoding="utf-8")
+            metrics, reasons = pipeline_core.final_evidence_metrics(path)
+            self.assertGreater(metrics["largestThreadShare"], 0.50)
+            self.assertEqual(reasons, [])
+
 # ═══════════════════════════════════════════════════════════════
 # pipeline_validators
 # ═══════════════════════════════════════════════════════════════

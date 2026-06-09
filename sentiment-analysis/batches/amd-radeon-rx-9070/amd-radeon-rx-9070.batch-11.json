@@ -28,20 +28,20 @@
               "text": "25-30% of supply is msrp from what I heard. Those are the base models too if that matters to you",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about MSRP supply percentages is factual/market talk rather than product performance or experience.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual information about supply without expressing a personal opinion on the product itself.",
               "replies": [
                 {
                   "commentId": "mgah3e6",
                   "text": "Yeah it matters. I'm not willing to pay more than 50 over msrp. Value of the card lies at the msrp. I even raised my max I would spend for a new card after realising 500 for a 70 class is never going to happen.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User expresses an opinion on the value proposition of the card relative to its MSRP.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is stating their budget constraints and value expectations rather than praising or criticizing the card's quality.",
                   "replies": []
                 }
               ]
@@ -51,20 +51,20 @@
               "text": "I wish I could say the same. My 1070 will probably be the video card until it's death at this rate \ud83d\ude2d",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "User is talking about their current GPU and financial inability to upgrade, not the RX 9070.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a general expression of frustration about their situation, not the product.",
               "replies": [
                 {
                   "commentId": "mgn9c19",
                   "text": "Wasnt able to get one.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort comment about not being able to purchase the card.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No opinion on the product performance or quality is expressed.",
                   "replies": []
                 },
                 {
@@ -72,10 +72,10 @@
                   "text": "We had a 5070ti at MSRP in my region today. I bought it. (actually 10-20\u20ac cheaper than the cheapest 9070xt I can find in stores). Good Luck AMD, u almost had me :(",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Direct comparison between the RX 9070 XT and a competitor (RTX 5070 Ti) regarding price and purchase decision.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user chose a competitor's product because it was cheaper and better value.",
                   "replies": []
                 }
               ]
@@ -87,10 +87,10 @@
           "text": "I have a GTX 1080\nIf price is right, it might be time.",
           "upvotes": 28,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses interest in upgrading to the product based on price.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is considering the purchase but hasn't made a definitive positive or negative judgment.",
           "replies": []
         },
         {
@@ -98,30 +98,30 @@
           "text": "I wonder what's going on with the numbers for FFXIV. Damn shame too, because that's one of the games I play most of the time.",
           "upvotes": 71,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Critique of the product's performance in a specific game (FFXIV).",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is disappointed by the performance numbers for a game they play frequently.",
           "replies": [
             {
               "commentId": "mg5guag",
               "text": "Hoping this is a driver issue, since it doesn\u2019t match close to AMD\u2019s deck. It really is nonsensically low performance.",
               "upvotes": 17,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Opinionated discussion on the product's performance being 'nonsensically low'.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user describes the performance as nonsensically low, indicating strong dissatisfaction.",
               "replies": [
                 {
                   "commentId": "mg5hv8r",
                   "text": "Yeah, same. I was very disappointed by the card for the first 5 minutes since I skipped straight to the FFXIV results. I was like, \"wait this is it?\". But hopefully it's just a bug.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Personal experience/opinion on the card's performance in FFXIV.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user explicitly states they were 'very disappointed' by the card.",
                   "replies": []
                 }
               ]
@@ -131,40 +131,40 @@
               "text": "Have any other reviewers benchmarked FFXIV? I'm in the same boat as you, I was hoping for a 9070 XT with FFXIV, but if this isn't just some weird bug with their setup I'm worried.\n\nEDIT: I found a benchmark for FFXIV on Club386 (idk this site at all, no idea if it is reliable). They were getting 167 AVG fps at 1440P and 82 fps at 4k. So if these numbers can be believed, then there is something buggy going on as they are significantly higher than GN.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discussion of benchmarks and concerns about the product's performance.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is 'worried' about the performance results in FFXIV.",
               "replies": [
                 {
                   "commentId": "mg5q7gt",
                   "text": "Not as far as I'm aware, but I'm glad at least GN did.  \n\nLike I said to one of the other guys in this thread, I'm getting results on my 2080 Ti that are pretty consistent with what they've been reporting in the 50xx reviews. So I assume this is something specific to the 9070 XT.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Opinion on the product's performance being specific to the RX 9070 XT.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user assumes the performance issues are specific to the 9070 XT, implying a negative view.",
                   "replies": [
                     {
                       "commentId": "mg5t3jl",
                       "text": "I found some more benchmarks on a site \"tuttotech\", so may not be reliable. They benchmarked just a 9070 OC, so not even an XT. On FFXIV, they got 285 FPS at 1440p, and 157 fps at 4k. This numbers really seem fishy on their site, but it gives me hope that there was just something going on with GN's setup. Who knows though.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discussion of benchmarks and hope for the product's performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is searching for data to disprove the negative benchmarks, but remains uncertain.",
                       "replies": [
                         {
                           "commentId": "mg5u5pp",
                           "text": "That seems exceptionally high. 285 is higher than a 4090.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Comment about benchmark numbers being fishy/unrealistic, not the product itself.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is questioning the validity of a benchmark, not the product's quality.",
                           "replies": []
                         }
                       ]
@@ -178,30 +178,30 @@
               "text": "Lots of people lock XIV at 60fps because some animations break beyond that anyways. I play that game too and the 6600xt I have plays it well at 1440p, it really isn't that big a deal imho",
               "upvotes": 14,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about game engine limitations and other GPUs, not the RX 9070.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is arguing that the performance drop is not a big deal, but not praising the product.",
               "replies": [
                 {
                   "commentId": "mg5gem4",
                   "text": "It is a big deal when it's barely faster than the RTX3080. I hope it's at least cheaper than the current 7900XT price.",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comparison of the product's performance to an older card (RTX 3080) and value concerns.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user is dissatisfied that the card is 'barely faster' than a 3080.",
                   "replies": [
                     {
                       "commentId": "mg5mc75",
                       "text": "Was going to upgrade from my 3070 TI and that\u2019s my main game. Doesn\u2019t seem really worth it.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "User decides against purchasing the product based on performance benchmarks.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user states the upgrade 'doesn't seem really worth it'.",
                       "replies": []
                     }
                   ]
@@ -211,10 +211,10 @@
                   "text": "It is for me since this is my main game. There's no point in buying a GPU that doesn't handle my main game well...\n\nAlso, there are plugins to fix the issues past 60 FPS.",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User expresses that the product does not handle their main game well.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user states there is 'no point in buying' a GPU that doesn't handle their game well.",
                   "replies": []
                 }
               ]
@@ -224,20 +224,20 @@
               "text": "It's not just FFXIV, Elden Ring and CS2 also have significant drops in framerate in the techpowerup review, I hope this gets fixed, otherwise I will not get one.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Technical critique of framerate drops in multiple games.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user will 'not get one' unless the performance issues are fixed.",
               "replies": [
                 {
                   "commentId": "mg6g0wx",
                   "text": "Yeah, me neither. I was holding out to see what's up, but since FFXIV is a very important game to me, I won't get a 9070 XT unless it's fixed.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User decides against purchasing the product based on performance issues.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user explicitly states they 'won't get a 9070 XT unless it's fixed'.",
                   "replies": []
                 }
               ]
@@ -247,10 +247,10 @@
               "text": "Amd is known to have some outliers. You can look at forza 5 on rdna2 cards vs rdna3 and how the 6950xt would sometimes beat the 7900xt. I think this was fixed later on with a driver update but it was a year+ later.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General discussion about AMD's driver history, not specific to the RX 9070's performance.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing general context about AMD's past behavior.",
               "replies": []
             },
             {
@@ -258,20 +258,20 @@
               "text": "When i previously had a 5700xt ffxiv ran terribly or caused crashes frequently. I don't know what it is with AMD and that game",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about an older GPU (5700 XT) and a specific game, not the RX 9070.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is describing a past experience with a different product.",
               "replies": [
                 {
                   "commentId": "mg6t09g",
                   "text": "Weird. I have a 5700 XT and haven't had a crash with the game in years.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about an older GPU (5700 XT), not the RX 9070.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is sharing a personal experience with a different product.",
                   "replies": []
                 }
               ]
@@ -283,13 +283,14 @@
           "text": "I'm so happy. I'm on Linux (where I much prefer AMD's drivers over Nvidia's), and I've been wanting to buy a replacement for my RX 5700 XT for a while now. This is perfect for my needs.",
           "upvotes": 17,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses satisfaction and intent to purchase the product as a replacement for an old card.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user says they are 'so happy' and the card is 'perfect for my needs'.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

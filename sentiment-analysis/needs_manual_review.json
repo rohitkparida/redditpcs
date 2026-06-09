@@ -3,5 +3,66 @@
     "reason": "empty_source_threads",
     "details": "[Scrape] sourceThreads is empty \u2014 no Reddit threads were recorded.",
     "updated_at": "2026-06-09T10:03:33"
+  },
+  "amd-radeon-rx-9060-xt-8gb": {
+    "reason": "insufficient_included_source_diversity",
+    "metrics": {
+      "survivingThreads": 2,
+      "candidateComments": 143,
+      "includedComments": 41,
+      "contributingThreads": 2,
+      "largestThreadShare": 0.6341463414634146,
+      "includeRate": 0.45054945054945056,
+      "classificationCompleteness": 1.0
+    },
+    "updated_at": "2026-06-09T14:06:09"
+  },
+  "amd-radeon-rx-9070": {
+    "reason": "insufficient_included_source_diversity",
+    "metrics": {
+      "survivingThreads": 2,
+      "candidateComments": 357,
+      "includedComments": 113,
+      "contributingThreads": 2,
+      "largestThreadShare": 0.5752212389380531,
+      "includeRate": 0.4346153846153846,
+      "classificationCompleteness": 1.0
+    },
+    "updated_at": "2026-06-09T14:23:39"
+  },
+  "amd-ryzen-5-5600": {
+    "reason": "insufficient_included_source_diversity",
+    "metrics": {
+      "survivingThreads": 3,
+      "candidateComments": 357,
+      "includedComments": 40,
+      "contributingThreads": 2,
+      "largestThreadShare": 0.925,
+      "includeRate": 0.15625,
+      "classificationCompleteness": 1.0
+    },
+    "updated_at": "2026-06-09T14:38:07"
+  },
+  "amd-ryzen-7-7700": {
+    "reason": "insufficient_included_evidence",
+    "metrics": {
+      "survivingThreads": 4,
+      "candidateComments": 418,
+      "includedComments": 28,
+      "contributingThreads": 3,
+      "largestThreadShare": 0.5357142857142857,
+      "includeRate": 0.10294117647058823,
+      "classificationCompleteness": 1.0
+    },
+    "updated_at": "2026-06-09T14:49:21"
+  },
+  "amd-radeon-rx-7900-xt": {
+    "reason": "incomplete_classification",
+    "metrics": {
+      "survivingThreads": 5,
+      "candidateComments": 870,
+      "classificationCompleteness": 0.9080459770114943
+    },
+    "updated_at": "2026-06-09T14:54:22"
   }
 }

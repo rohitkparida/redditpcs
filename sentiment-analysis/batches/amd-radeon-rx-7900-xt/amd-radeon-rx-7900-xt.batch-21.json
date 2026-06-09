@@ -18,30 +18,30 @@
           "text": "Maaaaaan, and I was fuckin waiting to buy one.\n\nWelp, see yall when RDNA4 releases",
           "upvotes": 168,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses a decision not to buy the product based on the review/price.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is disappointed and has decided to wait for the next generation instead of purchasing.",
           "replies": [
             {
               "commentId": "j01e07s",
               "text": "Since the 7900 XTX is about the same as 4080 in raster but no where near in raytracing, it *should* be cheaper than the 4080, but since the 4080 is terrible value at $1200 and *should* be cheaper than both of these are, maybe around $800, that means the XTX should cost maybe $700, at most.  \nThey/we really F'ed up by making/letting this happen.",
               "upvotes": 22,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User provides a direct performance and value comparison between the 7900 series and the RTX 4080.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user believes the pricing is incorrect and that the value proposition is poor.",
               "replies": [
                 {
                   "commentId": "j04d9re",
                   "text": "The 4080 should be $800 max, 3080 was $700",
                   "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment focuses exclusively on the pricing of the NVIDIA RTX 4080 and 3080, not the RX 7900 XT.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual statement about competitor pricing without expressing a sentiment toward the target product.",
                   "replies": []
                 }
               ]
@@ -51,40 +51,40 @@
               "text": "&gt;Welp, see yall when RDNA4 releases\n\nI bet that will also finally be the year of the Linux desktop.  /s",
               "upvotes": 110,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a joke about Linux desktop adoption, which is off-topic to the hardware performance of the GPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a joke and does not express a sentiment toward the product.",
               "replies": [
                 {
                   "commentId": "j01uypn",
                   "text": "2022 is the year of the Linux desktop thanks to the Steam Deck. I've seen hundreds of them in the wild on planes, trains, etc.",
                   "upvotes": 16,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about the Steam Deck and Linux, which is unrelated to the RX 7900 XT.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is off-topic and does not express a sentiment toward the product.",
                   "replies": [
                     {
                       "commentId": "j023mv5",
                       "text": "- desktop\n\n- steamdeck",
                       "upvotes": 20,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort banter regarding the definition of 'desktop'.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a joke and does not express a sentiment toward the product.",
                       "replies": [
                         {
                           "commentId": "j02u9j8",
                           "text": "Just put it on your desk",
                           "upvotes": 17,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Low-effort banter/joke about putting a Steam Deck on a desk.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a joke and does not express a sentiment toward the product.",
                           "replies": []
                         }
                       ]
@@ -97,5 +97,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

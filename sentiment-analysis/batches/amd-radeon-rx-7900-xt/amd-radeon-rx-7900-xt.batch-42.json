@@ -18,10 +18,10 @@
           "text": "I got a Radeon 7600 at Best Buy for like 250 bucks. Not going to go broke occasionally playing league and battlefield lol",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing the Radeon 7600, not the RX 7900 XT.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a factual statement about a purchase and usage habits.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "just got a hellhound xt for 9999sek... basically 1k usd... let see how it performs compared to the 6900xt.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user mentions purchasing a 'hellhound xt' (referring to the 7900 XT) and intends to compare its performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is stating a purchase and a plan to test performance without expressing a clear positive or negative opinion.",
           "replies": []
         },
         {
@@ -40,20 +40,20 @@
           "text": "Damn the 9070XT puts up similar numbers as the 7900xtx for about half the price",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares the performance and price of the 9070XT against the 7900XTX (related product family).",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is impressed by the value proposition of the newer card compared to the 7900 series.",
           "replies": [
             {
               "commentId": "mh89tw1",
               "text": "what half price?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a purely factual question about pricing and does not provide insight into the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a simple question.",
               "replies": []
             }
           ]
@@ -63,30 +63,30 @@
           "text": "[Current situation in one photo](https://i.imgur.com/4Jt9qy4.jpeg)",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment consists of a link to an image, which is low-effort/meme content.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No sentiment expressed in the text.",
           "replies": [
             {
               "commentId": "mgy34cm",
               "text": "unironic nvidia shill lmao",
               "upvotes": -1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is low-effort banter/insult calling someone a 'shill'.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is an insult, but not directed at the product's performance or value.",
               "replies": [
                 {
                   "commentId": "mgy57uq",
                   "text": "Nvidia shill? I am promoting AMD. They did it! They delted Nvidia.",
                   "upvotes": -2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is general meta-talk about promoting AMD as a brand rather than specific product feedback on the 7900 XT.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is expressing brand loyalty, but not specific product sentiment.",
                   "replies": []
                 }
               ]
@@ -95,5 +95,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,30 +18,30 @@
           "text": "As per techpowerup's review, the power efficiency of the XTX is worse than the 4080's.\nThat's... very disappointing.\n\nThe rest is fine.",
           "upvotes": 175,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User discusses power efficiency of the 7900 XTX/XT series compared to the 4080.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User expresses disappointment regarding the power efficiency.",
           "replies": [
             {
               "commentId": "izx33ri",
               "text": "yea this is worse than expected, but the 4080 is great\n\nlooks like RDNA3 drivers have bugs with power usage in multi-monitor idle, and video playback\n\nor maybe it's due to MCM?\n\nhttps://www.techpowerup.com/review/amd-radeon-rx-7900-xtx/37.html",
               "upvotes": 78,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User discusses driver bugs and power usage issues specific to RDNA3 (7900 series).",
+              "sentiment": "negative",
+              "sentimentReasoning": "User describes the power usage as 'worse than expected' and mentions bugs.",
               "replies": [
                 {
                   "commentId": "izy0alt",
                   "text": "The 4080 would be a phenomenal $800 GPU.\n\nIt's a very bad $1200 GPU.",
                   "upvotes": 57,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Comment focuses entirely on the pricing of the Nvidia 4080, not the AMD product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
                   "replies": []
                 }
               ]
@@ -51,40 +51,40 @@
               "text": "It was to be expected, Nvidia has a node advantage this time. A monolithic die built on N4 vs 7 dies built on N6/N5 isn't exactly an even fight, they'd have to pull a miracle to win in efficiency.",
               "upvotes": 39,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Technical critique regarding the chiplet design (MCM) and node advantage of the 7900 series.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical explanation for the efficiency gap without a clear positive or negative leaning.",
               "replies": [
                 {
                   "commentId": "izxp8ra",
                   "text": "4N*, not N4. 4N is an Nvidia custom N5 node.\n\nIt's funny you mention miracles because looking back that was kinda what Ampere was, being competitive with RDNA2 in efficiency despite using a tweaked 10 nm Samsung node from 2017 vs TSMC 7 nm.",
                   "upvotes": 61,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion is about Nvidia's node and Samsung nodes, not the 7900 XT/XTX.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
                   "replies": [
                     {
                       "commentId": "izxrkq1",
                       "text": "Yeah that's kind of what I was getting at, RDNA2 just barely inched ahead of Nvidia in efficiency (rasterization only) despite the significant node advantage. It was clear that once Nvidia moved on to an equal/better node, they'd be more efficient.",
                       "upvotes": 23,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Comparison of RDNA2 and Nvidia efficiency, providing context for the 7900 series' current performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is analyzing historical efficiency trends.",
                       "replies": [
                         {
                           "commentId": "izys7e5",
                           "text": "As much as some would hate to admit, Nvidia is better, they know it so they do whatever the hell they want.",
                           "upvotes": 12,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "General comment about Nvidia being better, not specific to the 7900 XT.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
                           "replies": []
                         }
                       ]
@@ -94,10 +94,10 @@
                       "text": "N4 4N are both derivatives of N5, its the same shit. You dont need to nitpick this much.",
                       "upvotes": 5,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Nitpicking about node names (N4 vs N5), off-topic from product performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": []
                     }
                   ]
@@ -107,20 +107,20 @@
                   "text": "True, if this gives them the flexibility on cost though it's definitely worth it. It's still much more efficient than last gen.",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Opinion on the value of the chiplet design for the 7900 series and its efficiency over last gen.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "User states it is 'definitely worth it' and more efficient than the previous generation.",
                   "replies": [
                     {
                       "commentId": "izxj02l",
                       "text": "Agreed. This gen goes to Nvidia, at least at the higher end, but I wonder if going to chiplets in GPUs first will give AMD the advantage to close the gap in the long run for future generations. Or perhaps even give them an advantage on the lower end.",
                       "upvotes": 13,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discussion on the long-term advantage of AMD's chiplet approach in GPUs.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Speculative discussion about future generations.",
                       "replies": []
                     }
                   ]
@@ -134,20 +134,20 @@
           "text": "Does Nvidia have access to AMD unreleased products performance?\n\nOtherwise how did they know to release 4080 at $1200 and would match 7900 xtx at Raster they're basically banking on their RT and their software features worth more $200 than AMD if it doesn't sell just drop $200",
           "upvotes": 65,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Comparison of the 7900 XTX rasterization performance and pricing against the 4080.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "User is questioning pricing strategies and performance matching.",
           "replies": [
             {
               "commentId": "izxaz17",
               "text": "Both AMD and Nvidia have a very good idea of what each other are up to.",
               "upvotes": 120,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General meta-talk about corporate competition between AMD and Nvidia.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
               "replies": []
             },
             {
@@ -155,20 +155,20 @@
               "text": "No. AMD priced it as such because they knew they could not get away with it beeing closer to the 4080 in price. Even at this price, most people spending 1200 probably wont bother saving 17% to get the same performance but without the Nvidia features so AMD really priced it as high as they possibly could without straight giving up the current generation to Nvidia. And lets not forget the 4080 is already not selling well at this price.",
               "upvotes": 19,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Analysis of the 7900 XTX pricing and its lack of features compared to the 4080.",
+              "sentiment": "negative",
+              "sentimentReasoning": "User suggests AMD 'could not get away with' higher pricing due to lack of features.",
               "replies": [
                 {
                   "commentId": "izyr8ip",
                   "text": "I'd get the 4080 just for the added features that I use.",
                   "upvotes": 12,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User expresses a preference for the 4080 over the 7900 series due to features.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Implicitly negative toward the 7900 XT/XTX by choosing the competitor.",
                   "replies": []
                 }
               ]
@@ -178,20 +178,20 @@
               "text": "There is a reason that for the last 10 years they've stopped leap frogging each other. Now when a GPU comes out they are too often neck-and-neck with each other. Like the Rx 480 being within 2% of the 1060 I just can't see as some coincidence. Same with the 6800xt and 3080. They know what the other is doing probably over a year in advance. Maybe multiple years.",
               "upvotes": 13,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General discussion about GPU market trends over the last 10 years.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
               "replies": [
                 {
                   "commentId": "izyr4xg",
                   "text": "The 4090 is way more powerful than a 7900XTX.\n\nI have yet to see a normalized wattage benchmark to compare the two...",
                   "upvotes": 11,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Direct comparison of the 7900 XTX power/performance against the 4090.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "User notes the 4090 is 'way more powerful' than the 7900 XTX.",
                   "replies": []
                 }
               ]
@@ -203,30 +203,30 @@
           "text": "Incredible how the 4090 seems like the only new GPU that has a purpose (top performance). No more 3080 for 700$ or 6800XT for 650$... we'll see how this plays out for Nvidia and AMD in the 2023 economy.",
           "upvotes": 64,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discussion on the value proposition of the current GPU generation, including AMD's offerings.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User implies the current generation lacks purpose and value compared to previous ones.",
           "replies": [
             {
               "commentId": "izyx91t",
               "text": "Yeah this generation sucks ass. It's like the Turing generation all over again except everyone is charging twice the price. Guess I'm waiting another 2 years to replace my ancient GPU \ud83d\ude43",
               "upvotes": 32,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Opinion on the current GPU generation (including 7900 XT), stating it 'sucks ass'.",
+              "sentiment": "negative",
+              "sentimentReasoning": "User explicitly states the generation 'sucks ass' and will wait to upgrade.",
               "replies": [
                 {
                   "commentId": "izzt9y9",
                   "text": "I\u2019m with you, my 1080 Ti continues it\u2019s service for another two years.",
                   "upvotes": 9,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "User is talking about their own 1080 Ti, not the 7900 XT.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
                   "replies": []
                 }
               ]
@@ -238,10 +238,10 @@
           "text": "amd hype train giveth, amd hype train taketh away",
           "upvotes": 194,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Comment on the 'hype train' for AMD products, implying disappointment.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User is expressing cynicism regarding AMD's marketing vs reality.",
           "replies": []
         },
         {
@@ -249,13 +249,14 @@
           "text": "HUB's review of the 7900XT was brutal and short: [https://www.youtube.com/watch?v=NFu7fhsGymY](https://www.youtube.com/watch?v=NFu7fhsGymY)\n\nSteve told all the AIBs to not sample him custom 7900XT's, HUB won't be reviewing any.",
           "upvotes": 16,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Reference to a 'brutal' review of the 7900 XT by Hardware Unboxed.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User highlights a negative review of the product.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

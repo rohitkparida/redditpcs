@@ -28,40 +28,40 @@
               "text": "Are the gains that impressive? I'm seeing about +5 FPS on average, nowhere near double digit % improvements. Did I miss something?",
               "upvotes": 11,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is asking a factual question about performance gains based on a review, without providing a personal opinion or experience.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a query for clarification on data.",
               "replies": [
                 {
                   "commentId": "j02okoc",
                   "text": "% gains. Going from 62 to 69FPS is an 11.5% increase.",
                   "upvotes": 42,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is providing a factual mathematical calculation of percentage gains.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is purely factual.",
                   "replies": [
                     {
                       "commentId": "j02oxk8",
                       "text": "Was that just one game? Looking at their \"Averages\" page, there's nothing near that % gap.",
                       "upvotes": 15,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The user is questioning the data in a review, which is factual/Q&A rather than an opinionated critique of the product itself.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a neutral inquiry about data consistency.",
                       "replies": [
                         {
                           "commentId": "j02pr14",
                           "text": "It's in the Overclock section; https://www.techpowerup.com/review/asus-radeon-rx-7900-xtx-tuf-oc/39.html",
                           "upvotes": 19,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The user is providing a link to a review, which is a factual reference.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a factual reference.",
                           "replies": []
                         },
                         {
@@ -69,40 +69,40 @@
                           "text": "Yeah it was just one game as a test. Would be interesting to see a more indepth piece on if the gains are similiar across the board.",
                           "upvotes": 16,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The user is expressing a desire for more data, which is a factual/Q&A request.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Lacks a clear positive or negative leaning regarding the product.",
                           "replies": [
                             {
                               "commentId": "j02pqxe",
                               "text": "What I'm saying is, on their \"Averages\" section of the article, you can see the difference across all of the games they tested.\n\nAt 1080p it was a 1.6% increase for the OC on average.\n\n1440 was 2.4 % increase.\n\n4k was  2% increase.\n\nSeems pretty similar to other recent GPU overclocking \"capabilities\" 2% increase for +50 watts isn't very impressive.",
                               "upvotes": 8,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "The user provides an opinionated performance critique regarding the poor efficiency of the overclocking capabilities.",
+                              "sentiment": "negative",
+                              "sentimentReasoning": "The user describes the 2% increase for +50 watts as 'not very impressive'.",
                               "replies": [
                                 {
                                   "commentId": "j02q15p",
                                   "text": "My guy the spoiler is in the name haha. ASUS Radeon RX 7900 XTX TUF OC\n\nThe card is called OC. Those results in the averages are what the card achieves with the factory overclock Asus applied to it.\n\nThe Cyberpunk result is a manual Overclock + Undervolt on top of that done by the reviewer.",
                                   "upvotes": 26,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The user is correcting a misunderstanding about the product name and review methodology, which is factual/Q&A.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment is a factual correction.",
                                   "replies": [
                                     {
                                       "commentId": "j02q7wx",
                                       "text": "Ahh OK thanks for pointing that out. Kinda wish they ran the whole battery of tests with their manual OC + undervolt.",
                                       "upvotes": 6,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "The user is expressing a desire for more tests, which is a factual/Q&A request.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "Lacks a clear positive or negative leaning.",
                                       "replies": []
                                     }
                                   ]
@@ -122,10 +122,10 @@
               "text": "&gt; It definitely seems like something went wrong here for these cards in the design process be it a hardware, software flaw. \n\nI'm not sure if anything really went wrong or they just missed expectations slightly. We have seen something similar in the past with the RX480-580-590. Those were all the same silicon essentially, but as time went on the quality got better. The fastest RX 480's on the market had an advertised boost speed of 1342Mhz (Sapphire Nitro+ OC) while the RX 580 went up to 1450Mhz (Sapphire Nitro+ OC / XFX GTR-S Black Edition OC). We then had another large jump to 1600Mhz (XFX 50th Anniversary Edition). All of that was due to a minor node shrink (GF 14nm to GF 12nm), some behind the scenes silicon tweaks, and an increase to power budget.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a technical critique and comparison to previous AMD generations to explain performance variations.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical explanation without a clear positive or negative bias.",
               "replies": []
             },
             {
@@ -133,10 +133,10 @@
               "text": "As more AIB reviews pop up we're starting to see that this isn't a guaranteed overclock unfortunately.  So while maybe the clocks we see lend a bit to the possible design issues rumor, it's still definitely silicon lottery as well.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides an opinionated critique on the consistency of overclocks on the 7900 XTX.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user notes that overclocking is 'not a guaranteed' result and attributes it to the 'silicon lottery'.",
               "replies": []
             },
             {
@@ -144,10 +144,10 @@
               "text": "My theory is the hardware bug was fixed but affected too many units to throw out (and would reduce supply or delay the launch). So they put the bugged ones in the reference cards and gave AIB's the fixed ones for the OC cards, and that's why the clock disparity is so large.\n\nBut to keep the variation from going *too* wide and confusing customers, they made AIB's leave some performance in the tank with their stock overclocks.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a technical critique/theory regarding potential design flaws in the reference cards.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user suggests the reference cards may have 'bugged' hardware to avoid waste.",
               "replies": []
             },
             {
@@ -155,40 +155,40 @@
               "text": "I am inclined to believe the respin rumor more and more.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user expresses an opinion on the likelihood of a hardware respin for the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is supporting a rumor of a design flaw requiring a respin.",
               "replies": [
                 {
                   "commentId": "j02vex8",
                   "text": "My personal (completely unsubstantiated, pure speculation) theory has been that AMD is going to start running a \u2018tick-tock\u2019 yearly release schedule as a way to leverage the engineering effort they put into the chiplet design. \n\nFull design on one year, die shrink of the GCDs on the following. It would let AMD outcompete Nvidia on the \u201coff\u201d years where Nvidia doesn\u2019t have a new product. If Nvidia chooses to compete and also release shrunk designs, they have to redesign the full chip and bleed money. If they don\u2019t, AMD gets to make up ground and potentially steal the performance crown from Nvidia for a while.",
                   "upvotes": 15,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is speculating about AMD's general release schedule and strategy, which is off-topic from the specific product performance.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is general speculation about company strategy.",
                   "replies": [
                     {
                       "commentId": "j04fih9",
                       "text": "Kinda related but I reckon 4/5nm is gonna be it for a while. Might be ample time for both manufacturers to have real refreshes.",
                       "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The user is discussing general node shrink technology, which is off-topic from the specific product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a general technical discussion.",
                       "replies": [
                         {
                           "commentId": "j04mo2n",
                           "text": "I mean, look at the improvement between N10 and the 7nm n22 and they were basically on the same node? I reckon we'll see the same level of improvement on shared capabilities with the 8000 series at least, before any 4nm shennanigans.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The user is discussing general GPU architecture and future series, which is off-topic from the specific product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a general technical discussion.",
                           "replies": []
                         }
                       ]
@@ -198,10 +198,10 @@
                       "text": "I really like this theory.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Lacks meaningful insight into the product; it is a low-effort response to a theory about company strategy.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a simple agreement with a general theory.",
                       "replies": []
                     },
                     {
@@ -209,10 +209,10 @@
                       "text": "I made a similar call - RDNA seems to be already on a tick-tock cycle, looking back on RDNA 1 and 2. My differing view is that, rather than node, it's 'improve some under the hood thing, like bringing out semimcm or upping AI perf, then focus on improving straight gaming perf.' Odd RDNAs will be the former, evens will be the latter.\n\nEdit: as a result however, expect odd RDNA drivers to potentially be a bit janky on average at launch.",
                       "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The user is speculating about future RDNA generations and drivers, which is off-topic from the current product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is general speculation about future products.",
                       "replies": []
                     }
                   ]
@@ -226,30 +226,30 @@
           "text": "At least everyone in this sub has now been reminded *why* other releases at this tier have been blasted with power far beyond their efficiency peaks.",
           "upvotes": 42,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides an opinionated critique on the power efficiency of high-tier GPUs, including the 7900 XTX.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user implies that the product's efficiency peaks are poor compared to the power it is blasted with.",
           "replies": [
             {
               "commentId": "j03w55n",
               "text": "Isn't the 4090 not even getting as much power as they thought it would need? Looking at the 4090 cooler being very oversized for the power it consumes, it seems like they expected it to gobble even more power when they designed the cooler.",
               "upvotes": 28,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is discussing the RTX 4090, which is a competitor product, without a direct comparison to the 7900 XTX in this specific comment.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a general discussion about the 4090's cooler.",
               "replies": [
                 {
                   "commentId": "j043ka4",
                   "text": "Yes og board design can handle 800 watts easy",
                   "upvotes": 14,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is discussing the 4090's board design, which is off-topic from the 7900 XTX.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual statement about the 4090.",
                   "replies": []
                 },
                 {
@@ -257,10 +257,10 @@
                   "text": "Yes because early on they probably thought AMD's flagship was gonna be pushing 3GHz+ and be a monster, possibly with multiple GCDs on the package. They were probably pushing like a 600W 4090 and maybe something insane like a 750-800W 4090Ti to try and compete. Then they got wind of the XTX's actual specs, laughed, and greatly dialed back their TDPs.",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a direct comparison between the 4090 and the 7900 XTX's specs to explain TDP decisions.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user suggests that Nvidia 'laughed' at the XTX's actual specs, implying the product is underpowered.",
                   "replies": []
                 }
               ]
@@ -269,5 +269,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

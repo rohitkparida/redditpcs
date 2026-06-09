@@ -48,10 +48,15 @@
     "updated_at": "2026-06-09T13:12:31"
   },
   "amd-radeon-rx-9070-xt-16gb": {
-    "status": "manual_review",
-    "step": "thread_prefilter",
-    "error": "Thread prefilter removed every source thread.",
-    "updated_at": "2026-06-09T13:13:04"
+    "status": "insufficient_sources",
+    "step": "manual_review_resolved",
+    "error": "",
+    "reason": "insufficient_verified_sources",
+    "warnings": [],
+    "metrics": {},
+    "artifacts": {},
+    "reviewResolution": "Some product-relevant discussions exist, but all current roots are outside the approved subreddit allowlist and the set mixes prebuilt/comparison noise.",
+    "updated_at": "2026-06-09T16:59:46"
   },
   "amd-ryzen-5-5500": {
     "status": "pending",
@@ -96,10 +101,15 @@
     "updated_at": "2026-06-09T13:12:32"
   },
   "amd-ryzen-7-9800x3d": {
-    "status": "manual_review",
-    "step": "thread_prefilter",
-    "error": "Thread prefilter removed every source thread.",
-    "updated_at": "2026-06-09T13:13:04"
+    "status": "insufficient_sources",
+    "step": "manual_review_resolved",
+    "error": "",
+    "reason": "no_surviving_threads",
+    "warnings": [],
+    "metrics": {},
+    "artifacts": {},
+    "reviewResolution": "Raw artifact contains zero source threads and zero roots.",
+    "updated_at": "2026-06-09T16:59:46"
   },
   "amd-ryzen-7-9850x3d": {
     "status": "done",
@@ -390,10 +400,15 @@
     "updated_at": "2026-06-09T13:12:34"
   },
   "lian-li-lancool-216-207": {
-    "status": "manual_review",
-    "step": "thread_prefilter",
-    "error": "Thread prefilter removed every source thread.",
-    "updated_at": "2026-06-09T13:13:05"
+    "status": "insufficient_sources",
+    "step": "manual_review_resolved",
+    "error": "",
+    "reason": "corrupt_legacy_discovery",
+    "warnings": [],
+    "metrics": {},
+    "artifacts": {},
+    "reviewResolution": "Every root is unrelated, deleted, spam, or adult content; none discusses the target cases.",
+    "updated_at": "2026-06-09T16:59:46"
   },
   "intel-core-ultra-5-250k-plus": {
     "status": "pending",
@@ -402,10 +417,15 @@
     "updated_at": "2026-06-09T13:12:35"
   },
   "phanteks-nv5-nv7": {
-    "status": "manual_review",
-    "step": "thread_prefilter",
-    "error": "Thread prefilter removed every source thread.",
-    "updated_at": "2026-06-09T13:13:05"
+    "status": "insufficient_sources",
+    "step": "manual_review_resolved",
+    "error": "",
+    "reason": "corrupt_legacy_discovery",
+    "warnings": [],
+    "metrics": {},
+    "artifacts": {},
+    "reviewResolution": "Every root is unrelated to the target cases; legacy discovery matched model-number noise.",
+    "updated_at": "2026-06-09T16:59:46"
   },
   "intel-core-i7-14700k": {
     "status": "pending",
@@ -606,21 +626,36 @@
     "updated_at": "2026-06-09T13:12:39"
   },
   "intel-core-ultra-7-265f": {
-    "status": "manual_review",
-    "step": "thread_prefilter",
-    "error": "Thread prefilter removed every source thread.",
-    "updated_at": "2026-06-09T13:13:04"
+    "status": "insufficient_sources",
+    "step": "manual_review_resolved",
+    "error": "",
+    "reason": "insufficient_verified_sources",
+    "warnings": [],
+    "metrics": {},
+    "artifacts": {},
+    "reviewResolution": "Current roots are generic prebuilt/comparison discussions and do not make the exact 265F the primary subject.",
+    "updated_at": "2026-06-09T16:59:46"
   },
   "intel-core-ultra-7-265kf": {
-    "status": "manual_review",
-    "step": "thread_prefilter",
-    "error": "Thread prefilter removed every source thread.",
-    "updated_at": "2026-06-09T13:13:04"
+    "status": "insufficient_sources",
+    "step": "manual_review_resolved",
+    "error": "",
+    "reason": "wrong_product_variant",
+    "warnings": [],
+    "metrics": {},
+    "artifacts": {},
+    "reviewResolution": "Current potentially relevant roots discuss the 265K or broader Arrow Lake family, not the exact 265KF.",
+    "updated_at": "2026-06-09T16:59:46"
   },
   "super-flower-leadex-vii": {
-    "status": "manual_review",
-    "step": "thread_prefilter",
-    "error": "Thread prefilter removed every source thread.",
-    "updated_at": "2026-06-09T13:13:05"
+    "status": "insufficient_sources",
+    "step": "manual_review_resolved",
+    "error": "",
+    "reason": "insufficient_verified_sources",
+    "warnings": [],
+    "metrics": {},
+    "artifacts": {},
+    "reviewResolution": "Current roots are comparison questions outside the approved allowlist; insufficient trustworthy product-focused evidence.",
+    "updated_at": "2026-06-09T16:59:46"
   }
 }

@@ -292,7 +292,10 @@ def main(product_slug, model="gemini-2.5-flash-lite"):
     print(f"Loaded product name: '{product_name}'")
 
     # Get all JSON files in the batch dir, sorted by name
-    batch_files = sorted(batch_dir.glob("batch*.json"))
+    batch_files = sorted(
+        path for path in batch_dir.glob("*.json")
+        if path.name != "_classification_status.json"
+    )
     
     print(f"Found {len(batch_files)} batches for {product_slug}")
     

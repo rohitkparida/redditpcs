@@ -297,10 +297,13 @@ class TestGeminiClassificationValidation(unittest.TestCase):
                 batch_dir = Path("batches/product")
                 batch_dir.mkdir(parents=True)
                 for number in range(1, 4):
-                    (batch_dir / f"batch-{number:02}.json").write_text(
+                    (batch_dir / f"product.batch-{number:02}.json").write_text(
                         json.dumps({"comments": [make_batch_comment(str(number))]}),
                         encoding="utf-8",
                     )
+                (batch_dir / "_classification_status.json").write_text(
+                    json.dumps({"failedBatches": []}), encoding="utf-8"
+                )
                 Path("REDDIT_CLASSIFICATION_PROMPT.md").write_text(
                     "[PRODUCT_NAME_HERE]", encoding="utf-8"
                 )
@@ -308,7 +311,7 @@ class TestGeminiClassificationValidation(unittest.TestCase):
 
                 def process(batch_file, *_args):
                     calls.append(batch_file.name)
-                    return batch_file.name != "batch-01.json" or calls.count(batch_file.name) > 1
+                    return batch_file.name != "product.batch-01.json" or calls.count(batch_file.name) > 1
 
                 with patch.object(auto_classify_gemini, "get_active_key", return_value="key"), \
                      patch.object(auto_classify_gemini, "resolve_product_name", return_value="Product"), \
@@ -317,7 +320,8 @@ class TestGeminiClassificationValidation(unittest.TestCase):
                     auto_classify_gemini.main("product")
 
                 self.assertEqual(calls, [
-                    "batch-01.json", "batch-02.json", "batch-03.json", "batch-01.json"
+                    "product.batch-01.json", "product.batch-02.json",
+                    "product.batch-03.json", "product.batch-01.json"
                 ])
                 status = json.loads((batch_dir / "_classification_status.json").read_text(encoding="utf-8"))
                 self.assertNotIn("_classification_status.json", status["failedBatches"])

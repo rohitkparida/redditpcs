@@ -28,90 +28,90 @@
               "text": "I have a few follow-up questions.\n\nFCLK 2133 MHz Stability and Trade-Offs: You mentioned most Zen 4 CPUs can handle FCLK 2133 MHz (1:1), with some reaching 2200 MHz. For a 9800X3D, what\u2019s the best way to test FCLK stability (specific stress tests), and what latency penalty have you observed in 1:2 mode (impact on AIDA64 latency or gaming FPS)?\n\ntREFI Heat vs. Performance Trade-Off: You suggested tREFI 50,000 as a balanced option, or 65,535 for max performance with more heat. What performance difference have you seen between 50,000 and 65,535 (Ex. in AIDA64 bandwidth/latency or gaming FPS), and how much does RAM temperature increase with 65,535 (Ex. in Karhu or AIDA64)? Would you recommend active cooling for my kit at 65,535?\n\ntRFC 383 Stability and Approach: You recommended tRFC 383 (down from stock 886). Is this a safe starting point for most 2x32GB Hynix A-die kits, or should I step down gradually (e.g., 600, 500, 383) to avoid errors? Have you seen stability issues with dual-rank kits at 383?\n\nAdvanced Settings Effort vs. Gains: For the SD/DD (7-9), SCL (6-7), GDM Off, and Nitro 1-2-0 settings, what performance uplift have you seen (Ex. in AIDA64 bandwidth/latency or gaming FPS)? Are these worth pursuing for a gaming-focused setup, or should I focus on primary/secondary timings first?\n\nEdge Cases for 1.4V at tCL 28: You recommended 1.4V VDD for tCL 28, have you seen any edge cases where dual-rank 2x32GB kits struggle at this voltage? Should I be prepared to bump to 1.42V if I encounter instability?\n\nThanks so much, I appreciate it!",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment consists of technical questions about overclocking and stability testing, but does not provide a personal experience, recommendation, or opinion on the product itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking for technical guidance without expressing a positive or negative sentiment toward the product.",
               "replies": [
                 {
                   "commentId": "miw33vm",
                   "text": "Great questions, I like the analytical approach :)\n\nFor Fclk a test was recommended by a few top contributors on a memory OC forum... it's to run TestMem5 with Anta Absolute profile while playing music.. if the music stutters, then the FCLK is too high... that's more to determine the very edge of  stability though.  And some Zen 4 can do 2200.  -VDDGIO and VDDCCD bumped up to 0.950v-1v helps stabilize higher FCLK (2133-2200 usually need this extra voltage, default is 0.9v).  Fclk is unrelated to 1:2 mode.  And 1:2 mode is only for running 8000+ speeds.. there's no other benefit.\n\nHigher tREFI has the lowest latency... it's basically how long the memory is allowed to leave data stored in it's memory banks... it requires keeping power applied to memory for it to retain the data transferred to it... this is why running it higher ends up creating extra heat.  Between 50,000 and 65535 is not a huge change for gaming.. and probably 3-5C difference between the two.  Most \"overclocking enthusiast type\" people run 65535.  But 2x32 kits do tend to run hotter regardless, so either way it's good to keep them cool.. and if you are adding a fan anyways, may as well run 65535.  -an 80mm fan is what most people use, or just any 120-140mm you have lying around that can be wedged in, haha.\n\ntRFC running 383 is dead stable for any Hynix A-die at 6000-6200... needs to be looser for 6400-8000+ or if the memory is exceeding 50-55C.  People say low tRFC can cause stability issue when memory is over 50C, however before I had a fan on my memory I was often seeing 62C+ in memory stress testing and still didn't have any errors or issues with 383 tRFC.\n\nThe \"advanced settings\" can get you another 5-8% or so memory performance... it helps with 1% lows and max fps... but it's hard to say whether you'll notice that difference or if it's worth it for you testing stability with any of those.\n\nFor CL28 at 6000, I've seen a couple people with lower quality memory kits need more than 1.4vdd, I think 1.45v was the most anyone needed.\n\nBtw, you can see memory temps in a free app, HWinfo",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment provides technical advice on memory tuning and stability testing, but does not share a personal experience or opinion on the product's quality or value.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The tone is helpful and technical, but does not express a positive or negative sentiment toward the product.",
                   "replies": [
                     {
                       "commentId": "miwqsyt",
                       "text": "Thanks so much, great insight!\n\nI just tested your recommended settings including FCLK 2133, tRFC 383, tREFI 50,000, and I enabled DRAM Performance Mode: Competitive from AMD AGESA default, which tweaked the advanced/tertiary settings along your reccs as well. \n\nTested in AIDA64 extreme and it was stable at CL28 with good temps, verified in HWINFO64. Max Mem Temp 49.8c, CPU Max Temp 66.8c.\n\nGoing to run OCCT CPU + RAM stress test next then MemTest86 for 1-2 cycles. \n\nI may try pushing FCLK closer to 2200 and testing with TestMem5 w/ Anta Absolute profile + music too, thanks for the recc!\n\nFor pushing tREFI closer to 65,535, would this fan setup be ok or would you recommend something else? [JONSBO NF-1/NF-2 PC Memory Cooling Radiator 4Pin PWM 5V 3PIN ARGB RAM Dual 5020 Fans RAM Heatsink Cooler for DDR4 DDR5](https://www.aliexpress.us/item/3256807321967513.html?src=google&amp;pdp_npi=4%40dis%21USD%2117.07%218.78%21%21%21%21%21%40%2112000044538518654%21ppc%21%21%21&amp;src=google&amp;albch=shopping&amp;acnt=708-803-3821&amp;isdl=y&amp;slnk=&amp;plac=&amp;mtctp=&amp;albbt=Google_7_shopping&amp;aff_platform=google&amp;aff_short_key=UneMJZVf&amp;gclsrc=aw.ds&amp;albagn=888888&amp;ds_e_adid=&amp;ds_e_matchtype=&amp;ds_e_device=m&amp;ds_e_network=x&amp;ds_e_product_group_id=&amp;ds_e_product_id=en3256807321967513&amp;ds_e_product_merchant_id=668016006&amp;ds_e_product_country=US&amp;ds_e_product_language=en&amp;ds_e_product_channel=online&amp;ds_e_product_store_id=&amp;ds_url_v=2&amp;albcp=20542171673&amp;albag=&amp;isSmbAutoCall=false&amp;needSmbHouyi=false&amp;gad_source=1&amp;gbraid=0AAAAAD6I-hHM8ctJksjdswXCSsI2XJJza&amp;gclid=EAIaIQobChMIuLrAy4-ajAMVdA-tBh38jgXOEAQYAiABEgKp4vD_BwE&amp;gatewayAdapt=glo2usa)\n\nCan\u2019t thank you enough for your help!",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user shares their personal experience of successfully tuning the RAM to CL28 and reports stable performance and good temperatures.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user is satisfied with the results of the tuning and the product's stability.",
                       "replies": [
                         {
                           "commentId": "miwv5tt",
                           "text": "You're welcome :)\n\nSounds like you're well on your way!\n\nA cooler like you linked probably works fine, but I suppose my opinion is that it might be more noisey and/or not move as much air..or maybe it's awesome, I just don't know.  A lot of people buy a Noctua or \"Be Quiet\" brand 80mm case fan and then just rig up some way for it to be suspended (even twisty ties or zip ties) as they are basically silent while moving a whole lot of air.\n\nAn internet friend just ordered this: [https://www.aliexpress.us/item/3256807295624673.html?gatewayAdapt=glo2usa4itemAdapt](https://www.aliexpress.us/item/3256807295624673.html?gatewayAdapt=glo2usa4itemAdapt)\n\nfor use with a 120mm fan.. but it looks like it was designed to attach to an AIO, or maybe it wouldn't be the right dimensions to actually be over the memory, idk.\n\nPersonally, I had a spare 140mm fan so I just did the twisty ties method, but I'm thinking about that bracket for long-term.. or to get a Noctua 80mm instead and probably stick to twisty ties, haha.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The discussion has shifted to RAM cooling solutions (fans), which is an accessory, not the RAM kit itself.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is providing advice on cooling accessories, not expressing sentiment about the RAM kit.",
                           "replies": [
                             {
                               "commentId": "mix32wj",
                               "text": "Good to know, thanks!",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Low-effort response that does not provide meaningful insight into the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is a simple acknowledgment of information.",
                               "replies": [
                                 {
                                   "commentId": "mj07vxz",
                                   "text": ":) happy to have helped.\n\nBtw, Mandela effected..... I soooooo am!  I can't even count the number of things I noticed and wondered what the heck was going on (before I ever read about this phenomenon)!  Only later I googled about it and find others noticed the same exact things... and what a strange amount of these Mandela effects \"just so happen\" to be in a Simpsons episode!",
                                   "upvotes": 2,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Completely off-topic discussion about the Mandela Effect.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment is unrelated to the product.",
                                   "replies": [
                                     {
                                       "commentId": "mj0i06b",
                                       "text": "Not to get too metaphysical/quantum with you, but it\u2019s because we phase shift to alternate parallel realities based on our vibration. Check out Bashar if you want to learn more. A caveat- the level of truth you will learn about the nature of existence will change you, most likely for the better. Just depends on if you want to lift the veil of ignorance or not. Going down the Bashar rabbit hole is akin to taking the red pill. I for one am very happy I took it as it\u2019s changed my life for the better.",
                                       "upvotes": 2,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Completely off-topic discussion about parallel realities and vibration.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The comment is unrelated to the product.",
                                       "replies": [
                                         {
                                           "commentId": "mj1nykm",
                                           "text": "I'll have to check out Bashar, haven't heard of that.. but I am more suspecting super high-level psyops is responsible for the various Mandela effects rather than parallel realities.. idk.  There's a lot of strange things going on with our vibrational nature these days.. a whole lot of funding, research, and decades of data was collected in inconceivably-thorough EMF bombardment testing and it's effects on humans, especially humans placed into \"altered states of consciousness\".  \n\nAnd/or the chemtrails, and/or 2G-5G signals, and/or Starlink tech, and/or bluetooth, and/or Wifi... and/or HAARP, and/or CERN.  I feel like any of those could also be the cause of the Mandela effects.\n\nReality has become far more like the Matrix movie than most people would ever guess.  Agent Smith needs a good kick in the face, lol.. and literally, no \"common person\" would have any idea just how advanced are the AI programs that are not public information... but that's a whole other level of sketchy stuff to overlay on top of the much more straightforward \"parallel realities based on our vibration\".",
                                           "upvotes": 2,
                                           "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "Completely off-topic discussion about psyops and the Matrix.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "The comment is unrelated to the product.",
                                           "replies": [
                                             {
                                               "commentId": "mj2a2ou",
                                               "text": "Yeah there\u2019s a lot of noise out there, some more harmful than others. CERN is playing with forces they do not fully understand, it is possible for them to open up a wormhole or potentially cause some disruptions in the fabric of space time. There is a reason why there are so many UFO sightings around nuclear facilities, our advanced interplanetary friends checking up on us to make sure we don\u2019t inadvertently destroy the planet. \n\nCheck out the double-slit experiment, collapsing the wave function, etc. Basically, it\u2019s been proven since all the way back in 1801 that observation fundamentally affects how matter behaves. Subatomic particles like protons and electrons, act as waves (light energy) while not being observed, but when a living being or even a camera or video recording device is present to observe them, they collapse the wave function and act as particles, as matter. This is some of the most fundamental evidence that our 3D space time reality is a simulation of sorts, albeit more nuanced and complicated than a computer simulation. \n\nWhen you begin to understand that this is just one dimension of reality, of existence, it starts to make more sense. Think of the higher dimensions as a sort of tesseract or quasicrystal. Researchers recently created a model of an 8-dimensional quasicrystal in a computer simulation. The shadow cast by the 8D quasicrystal was a 4D quasicrystal, like a tesseract\u2014made up of many 3D spaces. The shadow cast by that 4D quasicrystal was a 3D shadow [sauce](https://quantumgravityresearch.org/portfolio/a-deep-link-between-3d-and-8d/). This aligns with the theory that this 3D reality is a shadow of a higher dimension made up of light, where time is not linear. Time is a construct of this reality, much like gravity relative motion (speed), and of course they are interrelated. If we entertain the possibility we exist on some higher dimensional plane as beings of energy, and focus a concentrated version of our consciousness into these 3D lives, collapsing the wave function from energy into matter, we can begin to think of this reality as a sort of simulation for our higher consciousness. \n\nThink of this reality as a dream we agree to enter into with temporary amnesia in order to experience change, transformation, challenge, growth, to learn lessons, etc. We never leave the higher dimension, we\u2019re just dreaming that we have as we focus our consciousness into matter for a time, enter the quasicrystal simulation as it were, in order for existence, for creation to experience itself from a unique point of view, a unique perspective, thus then allowing creation to expand. When we die, we wake from the dream. If we imagine that scenario, our bodies are merely space suits for our spirits. \n\nBashar explains it well, he\u2019s chock full of wisdom and truth from the higher dimension. Here are a few videos to dip your toes in the water if you\u2019re interesting in learning more.\n\n[Bashar on your mission in life](https://www.tiktok.com/t/ZP8YKQvyN/)\n\n[Bashar\u2019s Story](https://www.tiktok.com/t/ZP8YKU7WD/)\n\n[Bashar\u2019s Story cont.](https://www.tiktok.com/t/ZP8YKU3JU/)\n\n[Bashar on why we\u2019re here](https://www.tiktok.com/t/ZP8YKXJEG/)\n\n[Bashar - Everything you need to know](https://www.tiktok.com/t/ZP8YKbU1H/)\n\n[Darryl Anka, channeler of Bashar on the 5 Laws of Existence](https://www.tiktok.com/t/ZP8YK9SVn/)\n\nCheck them out when you have a few minutes, it\u2019s like drinking straight universal wisdom and truth from a fire hose. No cult, no hidden agenda, just knowledge about how reality actually functions from a messenger. Pretty cool stuff.",
                                               "upvotes": 3,
                                               "classifyThis": true,
-                                              "relevance": null,
-                                              "relevanceReasoning": null,
-                                              "sentiment": null,
-                                              "sentimentReasoning": null,
+                                              "relevance": "exclude",
+                                              "relevanceReasoning": "Completely off-topic discussion about quantum physics and simulation theory.",
+                                              "sentiment": "neutral",
+                                              "sentimentReasoning": "The comment is unrelated to the product.",
                                               "replies": []
                                             }
                                           ]
@@ -121,20 +121,20 @@
                                           "text": "Metaphysical stuff is one of my favorite topics, haha.  I have my degree in electronic technologies... and then went off and lived in a rainforest for 7 years... lol, it gave me some extreme contrast in regards to perspectives of life.\n\n...and then suddenly one day there were various mandela stuff going on.  I thought Chevron changed their sign and couldn't figure out why they rearranged the colors... then I saw a VW dealer and noticed it was changed too... and then another 10+ things all in a couple days.  Literally I thought a bunch of companies just had decided to make minor changes to their logos and company names.  \n\nBut all record of the original versions is scrubbed, lol... except sometimes evidence still remains of the pre-mandela effected.  You've seen some of those?  That's one of the top things that makes it not seem like parallel realities and instead some strange high-level experimenting going on.",
                                           "upvotes": 2,
                                           "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "Completely off-topic discussion about personal history and logos.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "The comment is unrelated to the product.",
                                           "replies": [
                                             {
                                               "commentId": "mj2nye5",
                                               "text": "My first encounter with the Mandela Effect was realizing our current reality recognizes the Berenstein Bears as the Beren*stain* Bears. I had all the books as a kid and clearly remember it was Berenstein, but somewhere along the line we\u2019ve shifted to a slightly alternate parallel reality. It\u2019s some multiverse type stuff, pretty wonky. Bashar explains it well.",
                                               "upvotes": 1,
                                               "classifyThis": true,
-                                              "relevance": null,
-                                              "relevanceReasoning": null,
-                                              "sentiment": null,
-                                              "sentimentReasoning": null,
+                                              "relevance": "exclude",
+                                              "relevanceReasoning": "Completely off-topic discussion about the Berenstein Bears.",
+                                              "sentiment": "neutral",
+                                              "sentimentReasoning": "The comment is unrelated to the product.",
                                               "replies": []
                                             }
                                           ]
@@ -144,10 +144,10 @@
                                           "text": "Came for the RAM info but just lol",
                                           "upvotes": 1,
                                           "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "Low-effort comment that does not provide meaningful insight into the product.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "The user is simply reacting to the off-topic conversation.",
                                           "replies": []
                                         }
                                       ]
@@ -165,10 +165,10 @@
                       "text": "Hey friend, I was able to push FLCK 2200 and tREFI 65,535 at VDDGIO/VDDCCD at 1v, stable no errors in TestMem5 Anta Absolute w/Music and AIDA64 stress test, safe temps. I haven't tested it at 0.975v yet.  Thank you again for your great help and advice!  \n\nI'm working on trying to push 9800X3D core clocks 0&amp;1 (VCache cores) closer to 5425 Max and higher avg than stock.  Currently at PBO Advanced, PL Mobo, Scaler 7x, CO -30 (0&amp;1), -35 (2-7). I've been able to push max clocks \\~5330, but still falling short of goal. \n\nDebating ECLK/BCLK2 adjustment and curve shaper adjustments similar to Scatterbencher's recc's.  \n  \nHe recommends setting aSynchronous ECLK/BCLK2 from 100 to 105.5 MHz.  \n  \nCurve Shaper:   \n  \nFor all, set Low, Med, and High Temperature to Enable   \n  \nFor min, low, and med frequency, set Sign to Negative and Magnitude to 30   \n  \nFor high and max frequency, set Sign to Positive and Magnitude to 15\n\nDo you think this would be a good idea? Thanks!",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user reports their personal experience of successfully pushing the RAM to FCLK 2200 and tREFI 65,535 with stability and safe temperatures.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user is satisfied with the performance and stability of the RAM kit after tuning.",
                       "replies": []
                     }
                   ]
@@ -179,5 +179,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,40 +18,40 @@
           "text": "Man, Intel really needs to get onto the whole 3D cash thing. For straight gaming they just cant compete it seems.",
           "upvotes": 12,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user expresses an opinion on Intel's gaming competitiveness compared to AMD's 3D V-Cache, which directly impacts the value proposition of the 245K.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user believes Intel cannot compete in straight gaming.",
           "replies": [
             {
               "commentId": "ltnlnh3",
               "text": "[More cache won't boost gaming performance by a lot for Intel, at least it could be said about their 13&14th generations](https://youtu.be/9LP4dUV03SQ).\nAlso X3D cache is TSMC technology, so maybe with future generations Intel will try something with it, but I doubt it.",
               "upvotes": 30,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a technical discussion about cache architecture and TSMC technology, not a specific critique or experience with the 245K.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual/technical explanation without a clear positive or negative sentiment toward the product.",
               "replies": [
                 {
                   "commentId": "ltnr15o",
                   "text": "X3D is TSMC packaging tech, but Intel still uses in house packaging with Emib and Foveros",
                   "upvotes": 20,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Purely technical discussion about packaging technology (Emib/Foveros) and not about the product's performance or value.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual statement about Intel's packaging tech.",
                   "replies": [
                     {
                       "commentId": "ltpbuct",
                       "text": "There are also alternative techniques. If Intel wanted to, they could do it.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General technical speculation about cache techniques, not specific to the 245K's performance or user experience.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a neutral technical speculation.",
                       "replies": []
                     }
                   ]
@@ -61,10 +61,10 @@
                   "text": "x3d is a joint ownership by amd and tsmc isnt it?",
                   "upvotes": 8,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "A factual question about the ownership of X3D technology.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a simple question.",
                   "replies": []
                 },
                 {
@@ -72,20 +72,20 @@
                   "text": "Raptor Lake is a \u00a0different architecture though, so that video or any thoughts regarding cache based on Raptor Lake is mostly useless.\n\nArrow Lake performs decently well in applications, the gaming performance doesn\u2019t match that at all though. IPC is up quite a bit compared to Raptor Lake too.\nArrow Lake reacts well to \u00a0faster RAM, something that Raptor Lake didn\u2019t. Due too tiling there seems to be a latency issue though. RAM latency and inter-core latency are up compared to Raptor Lake, that\u2019s why the faster RAM helps a bit with performance. So L4 cache could absolutely be something that can boost Intel\u2018s new architecture going forward, if architectural optimisations and microcode can\u2019t alleviate the latency issues.\u00a0",
                   "upvotes": 12,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a technical critique of the Arrow Lake architecture (which the 245K is part of), specifically mentioning gaming performance and latency issues.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user highlights that gaming performance doesn't match application performance and mentions latency issues.",
                   "replies": [
                     {
                       "commentId": "ltocosj",
                       "text": "> Raptor Lake is a  different architecture though, so that video or any thoughts regarding cache based on Raptor Lake is mostly useless.\n\nYup, cache scaling would be much greater when performance is held back by memory latency.\n\nIf the core is already well fed by fast memory like with RPL, then more cache will be less of a improvement.",
                       "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Technical discussion about cache scaling and memory latency, not a specific opinion on the 245K.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a neutral technical explanation.",
                       "replies": []
                     },
                     {
@@ -93,10 +93,10 @@
                       "text": "Yep. The latency difference between L3 and memory is up to \\~65-70ns on Arrow from \\~45ns on Raptor, which leaves a lot more room for improvement.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Factual statement about latency numbers for Arrow Lake, without an opinionated critique.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual technical detail.",
                       "replies": []
                     }
                   ]
@@ -106,10 +106,10 @@
                   "text": "That video shows that as long as core counts are sufficient, there's a slight performance improvement going from even 33MB to 36MB. \n\n3D V-Cache doesn't add 3MB. It adds *64MB*. How much reduction in cache misses would an extra 3MB net you? tripling the L3 certainly would be more noticeable.",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Technical argument about cache sizes and misses, not a specific critique of the 245K.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral technical argument.",
                   "replies": []
                 },
                 {
@@ -117,50 +117,50 @@
                   "text": "With increase in latency that arrow lake brought, more cache would be absolutely useful.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user argues that more cache would be useful for Arrow Lake due to the increased latency, implying a deficiency in the current product.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user is pointing out a deficiency in the architecture's design.",
                   "replies": [
                     {
                       "commentId": "luhydgy",
                       "text": "It won't happen sadly, Intel is skipping on this generation(no refresh).\nHonestly if they will support at least 3 real generations of CPUs on this socket, I will consider the next generation of CPUs if they fix gaming performance to X3D level, but if platform longevity will be lower/and/or gaming performance will be behind amd there's no way.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user explicitly states they will not consider the next generation if gaming performance remains behind AMD's X3D, which is a direct critique of the current generation's gaming performance.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user expresses disappointment and a 'don't buy' sentiment based on gaming performance.",
                       "replies": [
                         {
                           "commentId": "lui2hmo",
                           "text": "im not saying its going to happen, im just saying that the situation is different now so those claims by Intel are outdated.\n\nI dont get why are people so obsessed with socket support. 99% of users upgrade CPUs so rarely they will always have different socket needed. Even for enthusiast like me i had one CPU on AM4 and the next upgrade does to AM5, removing any benefit from long AM4 support. The vast majority of sales are prebuilds anyway and noones upgrading CPUs for that.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about socket longevity and upgrade paths, which is a general platform discussion rather than a specific product critique.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a neutral discussion about user upgrade habits.",
                           "replies": [
                             {
                               "commentId": "lui36k8",
                               "text": "\"\u00a0obsessed \" is quite a stretch, people who got Zen1 on B350/X370 motherboards and originally owned a Ryzen 1600 as an example, can switch to 5800X3D and get huge improvements to performance - 3 full generations and X3D later as an option without changing memory and motherboard - i advice you to check newest Z890 prices, if we only going to get one generation of CPUs with these motherboard prices & gaming performance - it's simply a scam compared to what AMD offers with their AM4/5 platform support.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "The user calls the current Intel platform (Z890) and gaming performance a 'scam' compared to AMD, which is a direct critique of the value proposition.",
+                              "sentiment": "negative",
+                              "sentimentReasoning": "The user uses the word 'scam' to describe the value and performance of the new platform.",
                               "replies": [
                                 {
                                   "commentId": "luiapeb",
                                   "text": "But thats the thing. The vast majority of people upgrade more than 3 generations later. And this is already a niche scenario where you had a first gen ryzen on a board that supports 5800x3D but for some reason you want to update now without going for DDR5 memory.\n\nIt wont if you get 1 or 2 generations with those motherboards, by the time most people update the socked has already changed multiple times.",
                                   "upvotes": 1,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "General discussion about upgrade cycles and socket support, not specific to the 245K's performance or value.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment is a neutral argument about upgrade cycles.",
                                   "replies": []
                                 }
                               ]
@@ -178,20 +178,20 @@
               "text": "They did a long time ago: the 5775C was the spiritual predecessor as that CPU had 128MB L4 cache. That allowed the 5775C to [actually beat the 6700K/7700K](https://web.archive.org/web/20161206174229/http://techreport.com/review/28751/intel-core-i7-6700k-skylake-processor-reviewed/14) in gaming despite being clocked 500MHz lower. This particular finding by Tech Report caused the value of the 5775C to skyrocket as it was an in-socket upgrade for LGA 1150 (Haswell) users. The 5775C eventually got beat once Intel went past 4C and released the 6C/12T 8700K.\n\nWhy they never pursued this further is a headscratcher.",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Historical discussion about the 5775C and older CPUs, not relevant to the 245K.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual historical account.",
               "replies": [
                 {
                   "commentId": "ltqeqec",
                   "text": "The eDRAM cache was large and expensive, and the benefit was not nearly to the extent of the current X3D parts because it was substantially slower than L3. It was primarily meant to help with iGPU bandwidth. On most other reviews the 5775C was trading blows or losing to the 6700k or even 4790k, so Intel probably just preferred to sell those instead.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Technical explanation of older eDRAM cache, not relevant to the 245K.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral technical explanation.",
                   "replies": []
                 },
                 {
@@ -199,10 +199,10 @@
                   "text": "yep the 5775c when overclocked(and i think the l4 can be some too?) can more or less keep pace with current gen console cpu because of the cache",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about the 5775C and console CPUs, not relevant to the 245K.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral technical observation.",
                   "replies": []
                 }
               ]
@@ -212,10 +212,10 @@
               "text": "heck even l4 cache",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort comment about L4 cache, not providing meaningful insight into the 245K.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral, low-effort remark.",
               "replies": []
             }
           ]
@@ -225,50 +225,50 @@
           "text": "I'm not in a huge rush, but I'm really not sure what to go for a mid tier build for home at this point (from scratch). Productivity based, Audio, Photo, Video and 3D, games will be fine anyway I'm guessing. 9900x? 265K? 14700K? I guess I'll just wait for the 50 series and see what the situation is then ahah.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is considering the 265K (a sibling product in the same family) as a mid-tier build option, which reflects on the overall family's value and consideration.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is undecided and weighing options without a clear positive or negative leaning.",
           "replies": [
             {
               "commentId": "ltqpz87",
               "text": "14700k is great for this",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Recommendation for the 14700K, not the 245K.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user recommends the 14700K.",
               "replies": [
                 {
                   "commentId": "ltqwz4c",
                   "text": "Thanks for your input, appreciate it.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Purely a thank you message, not providing insight into the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral expression of gratitude.",
                   "replies": [
                     {
                       "commentId": "lttm7iy",
                       "text": "The microcode nerfed it a bit tho and still vant be sure it wont degrade. 9900x has huge efficiency benefit over it anyways.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about the 14700K and 9900X, not the 245K.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user mentions microcode nerfs and degradation issues for the 14700K.",
                       "replies": [
                         {
                           "commentId": "lttrn6k",
                           "text": "Thanks for adding to this. Could you elaborate on the benefits of 9900x over the 14700k? Obviously understand if not as we are all busy, but much appreciated anyway!",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "A factual question about the 9900X vs 14700K, not about the 245K.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": " ",
                           "replies": []
                         }
                       ]
@@ -284,10 +284,10 @@
           "text": "so if any of these things is even remotely interesting it'll be the 265k then? with the same number of p cores as the 285k but cheaper",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is discussing the value proposition of the 265K (sibling product) relative to the 285K, which is relevant to the overall product line's value.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question about the value of the 265K.",
           "replies": []
         },
         {
@@ -295,13 +295,14 @@
           "text": "Imagine if you actually did work instead of only games\u2026\ud83e\udd21",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Sarcastic comment about gaming vs work, not providing meaningful insight into the 245K.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a sarcastic remark.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

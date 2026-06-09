@@ -18,20 +18,20 @@
           "text": "5% faster for 20+% more powerusage - yay",
           "upvotes": 64,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User provides an opinion on the performance-to-power ratio of the product.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is dissatisfied with the small performance gain relative to the increase in power usage.",
           "replies": [
             {
               "commentId": "o27w5jk",
               "text": "Death, taxes, and the V/F curve",
               "upvotes": 47,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General comment about voltage/frequency curves, not specific to the product's performance or experience.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a general observation without a clear positive or negative sentiment toward the product.",
               "replies": []
             },
             {
@@ -39,40 +39,40 @@
               "text": "Interesting to see if they still randomly die. Could be more often with that power usage.",
               "upvotes": 17,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses potential stability/failure rates of the product based on power usage.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Expresses concern and skepticism about the product's longevity and reliability.",
               "replies": [
                 {
                   "commentId": "o285cet",
                   "text": "It's a \\~0.65% failure rate based on the biggest retailers with RMA data, hardly novel, and only a bit above the 7800X3D.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Provides specific data on failure rates for the product compared to the 7800X3D.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is presenting factual data to counter a negative claim without expressing a personal opinion.",
                   "replies": [
                     {
                       "commentId": "o28tbh2",
                       "text": "That's about the same failure rate as the 12VHPWR connector, funny how the response is so different.",
                       "upvotes": 18,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The discussion has shifted to comparing failure rates with GPU connectors, which is off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is not about the product's performance or value.",
                       "replies": [
                         {
                           "commentId": "o2dn06i",
                           "text": "i'll give you two guesses on that one",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Low-effort banter/meta-talk.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "No sentiment expressed toward the product.",
                           "replies": []
                         },
                         {
@@ -80,10 +80,10 @@
                           "text": "We got lulled into a good decade of basically zero failure rates with CPUs that probably make them having a low failure rate more prominent than components that do fail regularly.",
                           "upvotes": 4,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "General discussion about CPU failure rates in general, not specific to the 9850X3D.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "No sentiment expressed toward the product.",
                           "replies": []
                         },
                         {
@@ -91,30 +91,30 @@
                           "text": "I agree with the premise of your comment. However, devils advocate. We dont really know why AMD CPUs are failing, but we know that the connector is failing because its just a bad design.",
                           "upvotes": -1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about hardware failure design in general, off-topic from the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "No sentiment expressed toward the product.",
                           "replies": [
                             {
                               "commentId": "o2ehaon",
                               "text": "You missed the point and are showing your bias. Is it bad design if it\u2019s within typical hardware failure rate?",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Argument about failure rates and design, off-topic from the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "No sentiment expressed toward the product.",
                               "replies": [
                                 {
                                   "commentId": "o2kgsfx",
                                   "text": "Yes? Failure rate is not a necessary requirement for a design to be bad. Merging all lines at the card end would be bad design even if failure rate was 0, for example.",
                                   "upvotes": 0,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "General design argument, off-topic from the product.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "No sentiment expressed toward the product.",
                                   "replies": []
                                 }
                               ]
@@ -132,40 +132,40 @@
               "text": "TPU has it at equal power usage in synthetic tests, and 7% more in gaming. Haven't seen HUB's yet, but that's a massive difference between reviews.",
               "upvotes": 11,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses performance and power usage differences between different reviews of the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is comparing review data without a clear positive or negative leaning.",
               "replies": [
                 {
                   "commentId": "o285pnx",
                   "text": "TPU also has just 1-2% more performance on the 9850X3D, could HUB be using a mobo that has more aggressive PBO ?",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the product's performance gains over the 9800X3D.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is questioning the actual performance increase.",
                   "replies": [
                     {
                       "commentId": "o28cfaf",
                       "text": "Overall it looks just like really an overclocked 9800X3D, with some tests I see that limit to 5.2Ghz being actually identical to 9800X3Ds lmao. AMD just overclocked 9800X3Ds for $30, presumably being more stable than a manual overclock. It's up to buyers if they consider that worth the $30 more.",
                       "upvotes": 8,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Provides an opinion on the product being a factory overclocked 9800X3D and its value proposition.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user considers the $30 difference to be a fair price for stability, but views the product as essentially an overclocked version of a previous model.",
                       "replies": [
                         {
                           "commentId": "o295p94",
                           "text": "Does limiting the 9850X3D to 5.2\u202fGHz improve power efficiency compared to a stock 9800X3D? If not, then it\u2019s basically just a factory overclocked 9800X3D.",
                           "upvotes": 5,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Questions the power efficiency of the product compared to the 9800X3D.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is asking a technical question about efficiency.",
                           "replies": []
                         },
                         {
@@ -173,10 +173,10 @@
                           "text": "The fact that it's only 30 bucks for that is surprising/nice at least",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Expresses an opinion on the price difference between the product and the 9800X3D.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "The user finds the $30 price difference to be 'surprising/nice'.",
                           "replies": []
                         }
                       ]
@@ -188,10 +188,10 @@
                   "text": "Derbauer's results are in line with HUB's generally.  \n\nTPU can be great for GPU testing, but they are not great at CPU testing.  If the CPU is not being fully utilized and you're regularly GPU limited, you will probably not see much if any difference in power consumption on average.  They \\*are\\* the same CPU at the end of the day, after all.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the product's power consumption and the nature of the CPU architecture.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a technical explanation of power consumption.",
                   "replies": []
                 }
               ]
@@ -201,30 +201,30 @@
               "text": "Ain't called Zen 5% for nothing.",
               "upvotes": 13,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Meme/joke about the performance increase (Zen 5%).",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No meaningful insight provided.",
               "replies": [
                 {
                   "commentId": "o285t5f",
                   "text": "Well, it's Zen 15% now.",
                   "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Meme/joke continuing the 'Zen 5%' joke.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No meaningful insight provided.",
                   "replies": [
                     {
                       "commentId": "o2d8a5l",
                       "text": "Zen 5% x3(D).",
                       "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Meme/joke continuing the 'Zen 5%' joke.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "e.g., No meaningful insight provided.",
                       "replies": []
                     }
                   ]
@@ -236,20 +236,20 @@
               "text": "Truly an Intel Kaby Lake moment right there lol. I also don't like how the Ryzen 5's core counts has been the same for nearly a decade at this point, I really hope that Zen 6 will be different this time around.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about core counts and Zen 6, off-topic from the 9850X3D.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No sentiment expressed toward the product.",
               "replies": [
                 {
                   "commentId": "o2830se",
                   "text": "Even though IDGAF about the V/F curve, the only thing keeping me from putting my 9800x3d in a box to put the 9850x3d into service are the rumors that Zen 6 will be &gt; 8 cores per ccd.\n\n\nBest part of holding off for that is that if that doesn't pan out I won't be bothered to make a change until the next platform.\u00a0 If it does I'll make the switch the (x?)x950x3d variant for general compute purposes more than anything (folding @ home mostly).\u00a0 Either way I'll feel like a winner.\n\n\nI am a winner, right?",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User discusses their decision to hold off on buying the 9850X3D in favor of Zen 6.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is weighing their options and doesn't express a clear positive or negative sentiment toward the product itself.",
                   "replies": []
                 }
               ]
@@ -259,15 +259,16 @@
               "text": "That's how it always is for high end hardware. I'd say AMD won this one",
               "upvotes": -1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides a general opinion on the product's positioning in the high-end hardware market.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user states that 'AMD won this one'.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

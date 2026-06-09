@@ -18,30 +18,30 @@
           "text": "Just so you know, calculating percentages of temperatures like you did makes zero sense mathematically unless you use Kelvin. Going from 100 C to 50 C doesn't mean you reduced your temperatures by 50% because the position of the 0 is completely arbitrary.",
           "upvotes": 11,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a mathematical argument about temperature percentages and does not provide insight into the product itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is correcting a mathematical error without expressing a positive or negative opinion of the CPU.",
           "replies": [
             {
               "commentId": "ljwafgt",
               "text": "Stuff they don't teach in school",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort banter about school education.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed regarding the product.",
               "replies": [
                 {
                   "commentId": "ohjbogx",
                   "text": "You can calculate the percentage increase in temperature with regard to the ambient, not absolute zero.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Continues the mathematical debate about temperature measurement.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No opinion expressed regarding the product.",
                   "replies": []
                 }
               ]
@@ -51,70 +51,70 @@
               "text": "Can you go into more detail? Why are the temp comparisons not good?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Asking for clarification on a mathematical point.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed regarding the product.",
               "replies": [
                 {
                   "commentId": "lpjfqmp",
                   "text": "You can absolutely compare temperatures, that's not the issue. The issue is using percentages to do it.\n\nWithout going into linear algebra, when comparing two measures in terms of ratios, i.e. \"my car is twice as fast as yours\", you're implicitly assuming that 0% of something is zero, otherwise the math doesn't work.\n\nThis is obvious with speed, if my speed is 0% of whatever it's zero: I'm just not moving. But temperature is a measure of the thermal energy of an object: 0 degrees Celsius (or Fahrenheit) doesn't mean the object has zero energy. It's a completely arbitrary point in the scale where water freezes. So calculating ratios of temperatures in C or F doesn't make sense and the obvious way to see it is that the ratios become unit-dependent if you use Celsius or Fahrenheit.\nNote that it does make sense if you use Kelvin, as the 0 point is a physical 0 (i.e. zero energy).\n\nThis is the reason why in physics you basically never use Celsius but only Kelvin, you really break most of the math otherwise.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Detailed explanation of Kelvin vs Celsius for temperature ratios.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No opinion expressed regarding the product.",
                   "replies": [
                     {
                       "commentId": "lpodr6f",
                       "text": "I think I understand, so it\u2019s not okay to say that 95c is 22.22% hotter than 76c because the 22.22% has no basis of relativity? Like it doesn\u2019t mean anything to say that it\u2019s 22% hotter or it\u2019s just actually not 22% hotter because of the math in kelvin?\n\nMaybe just better to say that it\u2019s 20c cooler at the similar amount of power?",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Seeking clarification on temperature math.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "No opinion expressed regarding the product.",
                       "replies": [
                         {
                           "commentId": "lpopv3h",
                           "text": "&gt; Like it doesn\u2019t mean anything to say that it\u2019s 22% hotter or it\u2019s just actually not 22% hotter because of the math in kelvin?\n\nIf you use Kelvin you could technically say that something is 22% hotter than something else, but it's a really weird thing to say because a lot of practical uses of temperature (like this one) only care about differences in temperature and not absolute temperatures.\n\n&gt; Maybe just better to say that it\u2019s 20c cooler at the similar amount of power?\n\nThis is how I'd compare temperatures in basically every occasion. Using temperature differences also has the added benefit of making Celsius functionally the same as Kelvin (since they only differ by the placement of the zero) which is a SI unit.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Further discussion on temperature measurement units.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "No opinion expressed regarding the product.",
                           "replies": [
                             {
                               "commentId": "lwz7zki",
                               "text": "If you compare it to ambient, I think percentages could start making sense again. The standard ambient temperature in engineering is 20 degrees Celsius, but needless to say you have to work with the ambient temperature that you've got.\n\nSay we have one PC where the CPU runs 30 degrees above ambient. Kelvin or Celsius doesn't matter because the step size is the same. \n\nThat means that it runs about half as hot as PC with a CPU that runs 60 degrees above ambient.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Discussion on ambient temperature and percentages.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "No opinion expressed regarding the product.",
                               "replies": [
                                 {
                                   "commentId": "lwznj46",
                                   "text": "This makes mathematical sense, because at least you can compare the results regardless of the unit of measurement.\n\nHowever, it still feels very wrong to say \"half as hot\". \"Hotness\" in the end is a measure of thermal energy and in your case one PC doesn't have half the energy of the other.",
                                   "upvotes": 1,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Discussion on the definition of 'hotness' and thermal energy.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "No opinion expressed regarding the product.",
                                   "replies": [
                                     {
                                       "commentId": "lx05q93",
                                       "text": "Fair enough. Maybe there isn't a good shorthand for saying half the temperature delta to ambient.",
                                       "upvotes": 1,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Concluding a mathematical debate.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "No opinion expressed regarding the product.",
                                       "replies": []
                                     }
                                   ]
@@ -130,10 +130,10 @@
                       "text": "It makes no sense either way not Kelvin no nothing. You want the delta from ambient. And even that wouldn't be precise because the cooling system may not perform the same when refrigerating at 10C ambient or at 30C ambient.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Argument about temperature delta from ambient.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "No opinion expressed regarding the product.",
                       "replies": []
                     }
                   ]
@@ -147,20 +147,20 @@
           "text": "The temperature sensors in the Ryzen 9s are in a different location than the Ryzen 7s. So the temperature readings aren\u2019t really apples to apples comparisons. Power draw comparisons are though, and the 9s generally do draw less power to achieve the same workloads, but not really 10 degrees Celsius worth.",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Provides technical critique regarding temperature sensor locations and power draw comparisons between Ryzen 9s and 7s.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user provides a balanced technical observation about power draw and temperature readings.",
           "replies": [
             {
               "commentId": "livglt3",
               "text": "Well I use tdie just to get a better gauge and not average, monitoring the hottest sensor makes more sense.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion on which temperature sensor (tdie) to monitor.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed regarding the product.",
               "replies": []
             },
             {
@@ -168,10 +168,10 @@
               "text": "Voltage is also more tamed",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Mentions that voltage is more tamed on the product.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Tamed voltage is generally seen as a positive technical attribute for stability and thermals.",
               "replies": []
             },
             {
@@ -179,10 +179,10 @@
               "text": "Sorry I did use average in these numbers but the tdie was 1-2c higher",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Clarification on whether average or tdie temperatures were used.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed regarding the product.",
               "replies": []
             }
           ]
@@ -192,20 +192,20 @@
           "text": "For those who want to know how is a Ryzen 9900X better than a 7900X, here is a comparison on the same plateform.\n\n[https://1drv.ms/i/c/3539aac7018df5fe/IQTEM5SS6HgBRr4Xd\\_41\\_YHuAUIb7V64597S8s11bP6ausQ?width=1024](https://1drv.ms/i/c/3539aac7018df5fe/IQTEM5SS6HgBRr4Xd_41_YHuAUIb7V64597S8s11bP6ausQ?width=1024)\n\n\\- For both, the best efficiency is obtained with eco 65.\n\n\\- Eco mode 105 has a less detrimental impact on performance for the 9900X compared to the 7900X\n\n\\- Efficiency is better on the 9900X.\n\n\\- Both in eco 65 ans eco 105 modes, the 9900X efficiency outperforms the 7900X.\n\n\\- \"Tjmax 75\u00b0c -40mV\" mode enhances performances and effciency of the 9900X.\n\nIf I compare my settings, the result is :\n\n[https://1drv.ms/i/c/3539aac7018df5fe/IQSxEG4fw8LiQLN3I1uqBmBbAazoNYfzzjl2r-P5CGc1VOo?width=1024](https://1drv.ms/i/c/3539aac7018df5fe/IQSxEG4fw8LiQLN3I1uqBmBbAazoNYfzzjl2r-P5CGc1VOo?width=1024)\n\n**So the 9900X against the 7900X is : -10\u00b0c, -8% W into the electrical outlet, +12% of performances, +21% of efficiency.**\n\n;)",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Shares personal experience and direct performance/efficiency comparisons between 9900X and 7900X.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user reports significant improvements in temperature, power consumption and performance.",
           "replies": [
             {
               "commentId": "mgn7nk2",
               "text": "Thanks for sharing! I'm new in undervolting, which metrics do I meed to copy from your setup? All of them i need to set it on the bios right? Thanks in advance",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Asking for help with undervolting settings.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed regarding the product.",
               "replies": []
             }
           ]
@@ -215,20 +215,20 @@
           "text": "I watched multiple reviews and there seems to be some issues with high multi core cc'd latency and some applications where having worse performance than zen 4 specially in gaming.\n\nI have bought 9700X and returned it a week later and replaced with 7700 until zen 6 will arrive. In my case zen 4 is running colder because I bought better thermal paste... the power limit is same.\nYou are writing that that CPU is running colder but power consumption is just 15 W higher, to me this looks like a different core issue.\nBut enjoy your new CPU :)",
           "upvotes": 7,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses performance issues, latency and gaming performance compared to Zen 4.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses disappointment and returned a 9700X due to performance issues.",
           "replies": [
             {
               "commentId": "liuvvd3",
               "text": "I\u2019ve heard that too but I don\u2019t know if it\u2019s something that can be patched in a future AGESA update, these CPU\u2019s are still new. Personally I don\u2019t think the efficiency is the result of a core issue, the advertised TDP of the chip went from 170W to 120 and voltage appears to also be less aggressive, hanging around the 1.2v range rather than 1.3 to 1.4 on the 7900X. I would only recommend upgrading from a 7900X if you just want better efficiency and thermals, who cares if it scores higher in Cinebench.",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses efficiency, TDP and voltage of the 9900X compared to the 7900X.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user recommends upgrading for better efficiency and thermals.",
               "replies": []
             },
             {
@@ -236,10 +236,10 @@
               "text": "there is some possibility that will be fixed in software/firmware, so I'd hold off or at least keep on eye out for fixes or wait for x3d/get old x3d.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Advises holding off on purchase due to potential software/firmware fixes.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user suggests waiting for fixes or other models, implying current state is not ideal.",
               "replies": []
             }
           ]
@@ -249,40 +249,40 @@
           "text": "I am looking forward to the 9950x3D",
           "upvotes": 7,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Expressing anticipation for a different product (9950x3D).",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No opinion expressed regarding the 9900X.",
           "replies": [
             {
               "commentId": "liuym69",
               "text": "It\u2019ll be a good product, hopefully it meets your workload needs. All of these CPU\u2019s are good, just a matter of waiting for the value to change and to see if there are performance updates. I made my purchase decision on the better thermals.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Mentions making a purchase decision based on better thermals of the new CPUs.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user is satisfied with the thermals of the product.",
               "replies": [
                 {
                   "commentId": "livbavp",
                   "text": "Oh it will? Do you have some insider information for knowing it\u2019ll be a \u201cgood product\u201d?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Sarcastic question about insider information.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No opinion expressed regarding the product.",
                   "replies": [
                     {
                       "commentId": "livbgxk",
                       "text": "No no no, I\u2019m just saying they\u2019re all pretty good and the argument over which you can buy is having less and less impact as they\u2019re all becoming so good.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "General opinion that the new CPUs are all becoming very good.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user expresses a positive general view of the product line.",
                       "replies": []
                     }
                   ]
@@ -293,5 +293,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

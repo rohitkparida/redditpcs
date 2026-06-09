@@ -18,50 +18,50 @@
           "text": "For a new 3700x/3800x build, should I get a X570 board or x470?\n\nNot planning to OC or get an nvme ssd for a few months.\n\nIn the UK I can get a ASUS ROG Hero VII for the same price as the X570 aorus elite that I am considering.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about motherboard selection (X570 vs X470) and does not mention the Noctua cooler.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question about hardware compatibility and selection.",
           "replies": [
             {
               "commentId": "et9zd7c",
               "text": "I would honestly get the X470 if it's less. Unless you need PCIE 4 there isn't much point getting X570. The Crosshair series all have massively overbuilt power delivery so any of them will work just fine, even with the 16C variant.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses motherboard power delivery and PCIe 4.0, not the Noctua cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing technical advice on motherboards.",
               "replies": [
                 {
                   "commentId": "etah0s4",
                   "text": "What about out of box memory support? x570 is something like 3200 or higher compared to x470 2933 if I remember correctly. Will x570 overclock ram better than x470? Which will be more likely to hit that 3733 CL17 sweet spot or the 4200-4400 bragging rights insanity?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment focuses on memory support and RAM overclocking on different motherboards.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking technical questions about RAM performance.",
                   "replies": [
                     {
                       "commentId": "etallkv",
                       "text": "X570 is more likely to achieve the higher speeds since they advertise them. However most signs point to the IMC in the CPU being the limiting factor on memory speeds, not the motherboards themselves.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses CPU IMC and motherboard memory speed capabilities.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a technical explanation about memory speeds.",
                       "replies": [
                         {
                           "commentId": "etat15g",
                           "text": "Good to know, thanks",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "This is a short thank-you message and contains no product feedback.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is expressing gratitude.",
                           "replies": []
                         }
                       ]
@@ -74,5 +74,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

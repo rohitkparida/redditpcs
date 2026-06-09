@@ -18,40 +18,40 @@
           "text": "https://preview.redd.it/0yxektir5pme1.jpeg?width=1170&amp;format=pjpg&amp;auto=webp&amp;s=8d05e285141462765fcb481c3a126b8f635b9248",
           "upvotes": 129,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is just a link to an image, providing no meaningful insight or opinion on the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No sentiment expressed in a link.",
           "replies": [
             {
               "commentId": "mfzi8s8",
               "text": "![gif](giphy|cOK2BRdrjECQT64hLr)\n\n\ud83e\udd21",
               "upvotes": 18,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment consists of a gif and an emoji, which is low-effort banter/meme content.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No clear sentiment expressed toward the product.",
               "replies": [
                 {
                   "commentId": "mg1zdxs",
                   "text": "The fact people told me to wait for the 50 series instead of buying a 4070 Super but getting one anyway is so satisfying.",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User expresses satisfaction with their decision to buy a 4070 Super instead of waiting for the 5070, implying a comparison of value.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user feels 'satisfied' with their purchase of the previous generation card over the new one.",
                   "replies": [
                     {
                       "commentId": "mg2gdv2",
                       "text": "That's super.",
                       "upvotes": 7,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort response that does not provide meaningful insight into the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "No clear sentiment expressed.",
                       "replies": []
                     },
                     {
@@ -59,40 +59,40 @@
                       "text": "Still should've waited imo. 40 series prices would've been a lot lower than you paid by then",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "User provides an opinion on the timing of the purchase and the value proposition of the 40 series vs 50 series.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a general recommendation on timing and pricing, without a clear positive or negative leaning toward the 5070 itself.",
                       "replies": [
                         {
                           "commentId": "mh9o1qs",
                           "text": "No, the 40 series especially 4070 super and Ti super have dramatically risen in price ever since the 50 series released and is even hard to find with very limited stock atm",
                           "upvotes": 4,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses the market availability and price trends of the 4070 Super in relation to the 50 series launch.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Factual observation about market trends and pricing.",
                           "replies": [
                             {
                               "commentId": "mhjblsp",
                               "text": "Why is this?\n\nOnly reason I could think is exactly the people who were waiting for the 5070, realize it's just a 4070 super, and just buy the 4070 super which increases the demain/price again.",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "User suggests that the 5070 is essentially just a 4070 Super, which is a direct performance/value comparison.",
+                              "sentiment": "negative",
+                              "sentimentReasoning": "The user implies the 5070 is not a significant enough upgrade to justify its existence over the 4070 Super.",
                               "replies": [
                                 {
                                   "commentId": "mhjq0es",
                                   "text": "Also because 4070 super was literally only released just last year (January), so it\u2019s still a very capable and \u201crecent\u201d card.",
                                   "upvotes": 1,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Discussion about the release date of the 4070 Super, which is purely factual/meta-talk.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "No opinion expressed.",
                                   "replies": []
                                 }
                               ]
@@ -104,10 +104,10 @@
                           "text": "false",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "One-word response ('false') that provides no meaningful insight.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "No clear sentiment expressed.",
                           "replies": []
                         }
                       ]
@@ -120,5 +120,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,10 +18,10 @@
           "text": "Thanks for posting this! That's just the sort of data roundup I wanted to see!",
           "upvotes": 11,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general thank you to the poster and does not provide insight into the product itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing gratitude, which is positive toward the poster but neutral regarding the product.",
           "replies": []
         },
         {
@@ -29,30 +29,30 @@
           "text": "Thanks for the hard work! Though, is there a reason the B580 didn't make the roundup?",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a question about the exclusion of another product (B580) and does not discuss the RX 9060 XT.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question without expressing an opinion on the product.",
           "replies": [
             {
               "commentId": "mxbl3xv",
               "text": "Primarily space problems (tables become too wide) or the higher time expenditure for a card that is clearly outside the performance potential of the 9060XT.",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment explains the methodology of the data roundup rather than providing a critique or experience with the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The response is a factual explanation of why a card was excluded from the table.",
               "replies": [
                 {
                   "commentId": "mxc893l",
                   "text": "Gotcha \ud83d\udc4d",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort response ('Gotcha') that provides no product insight.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a simple acknowledgment.",
                   "replies": []
                 }
               ]
@@ -64,20 +64,20 @@
           "text": "Will you do one for the 8gb version when there are more reviews?",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a request for future data on a different variant of the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question about future content.",
           "replies": [
             {
               "commentId": "mxbmaih",
               "text": "Maybe in a very much shorter version of it. First, we will see, how many review the 8GB variant will get.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a response about the possibility of future data collection, not a product review.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The response is a neutral statement about future plans.",
               "replies": []
             }
           ]
@@ -87,13 +87,14 @@
           "text": "Honestly it seems like a good gaming card, it has almost all the performance of a 5060Ti but at a significantly lower price in the UK.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides an opinion on the product's value and performance compared to a competitor.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user describes it as a 'good gaming card' with a 'significantly lower price'.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

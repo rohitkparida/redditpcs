@@ -18,20 +18,20 @@
           "text": "Is it really $300? Microcenter, Newegg and Amazon all have it listed at $350. ",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Purely factual question about pricing without providing an opinion or experience.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking for clarification on the price.",
           "replies": [
             {
               "commentId": "ocxr4nb",
               "text": "MSRP is a lie :D",
               "upvotes": 0,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort banter/joke about MSRP.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a general joke about pricing trends.",
               "replies": []
             }
           ]
@@ -41,20 +41,20 @@
           "text": "Upgrading my 12600k to this. My next upgrade will be DDR6 system.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User shares their intent to upgrade to the product.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The decision to upgrade indicates a positive view of the product's value or performance.",
           "replies": [
             {
               "commentId": "ocr7gun",
               "text": "Only makes sense if you already have the DDR5. If you're on 12600K + DDR4, just wait for DDR6. Buying new DDR5 just isn't worth it.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides a recommendation against buying the product if the user is on a specific hardware configuration.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user advises against the purchase, stating it isn't worth it.",
               "replies": []
             }
           ]
@@ -64,10 +64,10 @@
           "text": "I have a 12900KS. Debating on this right now.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User is debating whether to purchase the product based on their current hardware.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is undecided and hasn't expressed a clear positive or negative leaning.",
           "replies": []
         },
         {
@@ -75,10 +75,10 @@
           "text": "It looks like Maxon learned their lesson and brought their Cinebench scores up. That 2000 average multicore score for a good PC was a stupid idea in Cinebench24.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion is about Cinebench software and scoring, not the CPU itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment focuses on software updates rather than product sentiment.",
           "replies": []
         },
         {
@@ -86,20 +86,20 @@
           "text": "This CPU could cost $10 and people still wouldn't get it because the DDR5-8200 that was used in this video literally costs over $1000. If only Intel had launched this 8 months ago.",
           "upvotes": -4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Critique of the product's value proposition relative to the cost of required high-end RAM.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user suggests the product is undesirable due to the high cost of supporting components.",
           "replies": [
             {
               "commentId": "oclb7h7",
               "text": "There is no diff in gaming (which is all this video about) using 6000 and 8800 ddr5 kit in TPU test",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Technical discussion regarding gaming performance and RAM speeds for the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical correction without a strong emotional leaning.",
               "replies": []
             }
           ]
@@ -109,20 +109,20 @@
           "text": "2.52x power consumption for 2x MT vs 9700x",
           "upvotes": -15,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Technical critique regarding power consumption compared to a competitor.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is highlighting poor power efficiency relative to performance.",
           "replies": [
             {
               "commentId": "ockpl4i",
               "text": "If anyone's blindly comparing it against the 9700x because it's in the same price range then you don't need the cores anyway.\n\n9950x is the comparison here.",
               "upvotes": 25,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Opinion on the correct competitor for comparison to evaluate the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is arguing about the methodology of comparison rather than the product's quality.",
               "replies": []
             },
             {
@@ -130,10 +130,10 @@
               "text": "Feel free to power-limit it to 200W then and you'll easily flip the ratios. ",
               "upvotes": 21,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Technical suggestion on how to improve the product's efficiency via power-limiting.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is offering a technical workaround to a negative point.",
               "replies": []
             },
             {
@@ -141,10 +141,10 @@
               "text": "Almost as if performance to power consumption wasn't linear... \n\nI bet it would perform better at the same power limit.",
               "upvotes": 22,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Opinion on the product's performance-to-power ratio.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is speculating on performance potential without a definitive positive or negative stance.",
               "replies": []
             }
           ]
@@ -154,10 +154,10 @@
           "text": "People will find a way to hate on intel stilli",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "General meta-talk about people hating Intel, not specific to the product's merits.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a general observation about brand perception.",
           "replies": []
         },
         {
@@ -165,10 +165,10 @@
           "text": "So basically pay \\~$450 for mobo+270k or $470 for mobo+9900x with a potential upgrade route to zen 6/7. You technically get better multi-core perf with the 270k. But more headroom for upgrades with Ryzen.\n\nOverall, both are compelling options. Get more production perf now or better gaming perf, and longevity for later. Though if im being honest, the x900x from AMD has always been super niche. The 270k will likely consume the $300-400 segment",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Direct comparison between the product and a competitor, discussing value and performance.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user describes the product as a compelling option and predicts it will dominate its price segment.",
           "replies": []
         },
         {
@@ -176,10 +176,10 @@
           "text": "AMD have moved on to AI. They have no interest in consumer cpus anymore. Don\u2019t expect a response. ",
           "upvotes": -9,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Off-topic discussion about AMD's corporate strategy regarding AI.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment does not discuss the Intel product.",
           "replies": []
         },
         {
@@ -187,50 +187,50 @@
           "text": "It's really funny that Z890 boards to use K series feature can cost up to x3 or x4 times more than the powerful Intel cpu you can put in them.\n\nIn my country a 300 eur 270K is the most powerful cpu that can be installed into a 1.400 eur Maximus Extreme.\n\nThis is nuts.",
           "upvotes": -6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Critique of the overall platform cost (motherboards) associated with the CPU.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses frustration that the platform cost is 'nuts' compared to the CPU price.",
           "replies": [
             {
               "commentId": "oclbt34",
               "text": "The performance gain from removing PL for this one is less than 1%. Why would you need a Z mobo if not for Z mobo connectivities?",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Technical critique regarding the necessity of high-end motherboards for this specific CPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is questioning the need for expensive boards based on performance gains.",
               "replies": [
                 {
                   "commentId": "ocle8d9",
                   "text": "so you say that the Z890 chipset is useless?\n\ndo you mean that first Intel has created a useless chipset, and then every single motherboard manufacturer has produced an entire lineup of useless mainboard?\n\nmy point of views is the huge price gap beetween high end motherboards and these cpus, even some B860 MBs are priced above the most expensive cpu that you can install on them. \n\nthis is a \"thing\" of current times, because in the past the high end cpus was the most expensive component and when people choosed an HEDT platform for example, it was common spend twice or more the price of the MB to buy the best cpus supported by the platform....\n\nlike with threadripper cpu and relevant platform, or past Intel Extreme edition processor where the most overpriced motherboard was not even 1/3 of the cost of the top of the line cpu, now the table has turned.\n\none can surely said that you can buy that cheapest board out there with a 270K in QVL and it will work, but then, whats the point of every other existent board and platform that have reached so higher price-per-performance ratio?",
                   "upvotes": -5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Detailed critique of the price-to-performance ratio of the platform supporting the CPU.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user argues that the motherboard market has gone 'insane' and the platform is overpriced.",
                   "replies": [
                     {
                       "commentId": "oclhdvw",
                       "text": "Connectivities? Aesthetics? OC enthusiasts exist? Why are you so surprised that high end products have worse p/p? It's the same for every other parts. Shiny watercooled 2000W GPU for +3% performance. Shiny watercooled mobo for -2 VRM temp. It has always been this way and you're acting like intel just invented high end parts yesterday.\u00a0",
                       "upvotes": 10,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General discussion about high-end PC parts and aesthetics, not specific to the product's performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is defending the existence of luxury hardware.",
                       "replies": [
                         {
                           "commentId": "oclz0e4",
                           "text": "My suprise is due to the fact that some decades ago we would have an enthusiast aesthetics OC enthusiast board like a Rampage Formula priced 250 eur and the top of the line Intel CPU like the Core 2 Quad QX9650 priced at about 1000 euro. The cost of the cpu was 4 time the cost of the most expensive enthusiast motherboard avalaible on the market. Because is the CPU that define the general performance on the system, not the motherboard.\n\nAlso, good motherboard where a thing with some cpus, the OC margin on cpu was huge (over 1ghz gained over base clock). Today? Not anymore.\n\nNowadays even if is the always the CPU the main core component that define the performance of general purpose calculation, the motheboard cost many time the price of the CPU, and the OC margin is gone.\n\nIf is only a matter of color, led and built in display, the motherboard market has long gone totally insane.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Historical comparison of CPU and motherboard pricing, not a critique of the product itself.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is discussing industry trends over decades.",
                           "replies": []
                         }
                       ]
@@ -244,30 +244,30 @@
               "text": "Z890 boards are under $200 dollars with more than good enough vrms to power 250 watts\n\nYou have no idea what you are talking about \n",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about motherboard pricing, not the CPU product itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is arguing about motherboard costs.",
               "replies": [
                 {
                   "commentId": "oclzezj",
                   "text": "Can you read? I've clearly written that **some** MBs \"**can cost**\", not that \"all MB cost\". Board like Maximus and Godlike with Z890 chipset exists and cost 4x the price ot the most powerful cpu that you can install on them. This is a fact.",
                   "upvotes": -2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Argument about motherboard pricing, not the CPU product itself.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is clarifying their point about motherboard costs.",
                   "replies": [
                     {
                       "commentId": "ocm2ahx",
                       "text": "Did you wake up and discovered that manufacturers sell overpriced expensive boards? ",
                       "upvotes": 12,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General comment about overpriced motherboards.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is making a general statement about hardware manufacturers.",
                       "replies": []
                     },
                     {
@@ -275,10 +275,10 @@
                       "text": "Yea and? \n\nAM5 has similar cost boards, LGA 1700 had them as well, it's nothing new to have stupid priced boards these days.",
                       "upvotes": 6,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General comment about motherboard pricing across different platforms.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is stating that expensive boards are common across brands.",
                       "replies": []
                     }
                   ]
@@ -289,5 +289,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

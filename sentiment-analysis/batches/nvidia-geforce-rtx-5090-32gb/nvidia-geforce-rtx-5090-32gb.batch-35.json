@@ -18,25 +18,26 @@
           "text": "Only 250% better than my 2080ti :-(",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is commenting on the performance gain of the RTX 5090 compared to their own hardware (RTX 2080 Ti).",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user uses a sad face and sarcasm to express disappointment that the performance increase is 'only' 250%.",
           "replies": [
             {
               "commentId": "m9ily0z",
               "text": "17 ---&gt; 60 fps",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a low-effort, purely factual/mathematical calculation of FPS based on the previous comment's percentage.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment provides a numerical range without expressing a personal opinion or sentiment.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

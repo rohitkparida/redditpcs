@@ -18,30 +18,30 @@
           "text": "If the cards become MSRP after a few months, 9070 XT is the only logical choice imo. 20% better raster and 16gb VRAM. I don't really care about RT, but even that is on avg better",
           "upvotes": 8,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User compares the product to a competitor and recommends the competitor based on raster performance and VRAM.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user views the RTX 5070 as the less logical choice compared to the 9070 XT.",
           "replies": [
             {
               "commentId": "mgzgyxd",
               "text": "it\u2019s not a straightforward choice despite the better raster performance and cheaper price. DLSS is supported by significantly more games than FSR.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User provides a technical critique regarding DLSS support as a counter-argument to the competitor's advantage.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is presenting a balanced technical trade-off without a strong positive or negative emotional leaning.",
               "replies": [
                 {
                   "commentId": "mh0cgp8",
                   "text": "assuming this is the only point against it, optiscaler is making this extinct/even, 2 days after release and that free tool has FSR4 usable in alot (most?) DLSS implemented games that people just messed around with to see if the free tool worked with it.\n\n[https://github.com/cdozdil/OptiScaler](https://github.com/cdozdil/OptiScaler)",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discussion on software tools (OptiScaler) that mitigate the competitive advantage of NVIDIA's DLSS.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing technical information about a third-party tool.",
                   "replies": []
                 },
                 {
@@ -49,10 +49,10 @@
                   "text": "Agreed",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User agrees with the technical point about software tools affecting the product's value proposition.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Simple agreement with a neutral technical point.",
                   "replies": []
                 }
               ]
@@ -62,30 +62,30 @@
               "text": "if the cards become MSRP, why wouldnt you buy a 5070ti at MSRP instead?",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User asks about the value proposition of the 5070 Ti compared to the 5070.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a clarifying question about product choice.",
               "replies": [
                 {
                   "commentId": "mhcqx18",
                   "text": "150 bucks difference",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discussion of the price difference between the 5070 and 5070 Ti.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is stating a factual price difference.",
                   "replies": [
                     {
                       "commentId": "mhcrh9c",
                       "text": "Sounds like an easy choice.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "User comments on the ease of choice between the 5070 and 5070 Ti based on price.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is making a general observation about the decision process.",
                       "replies": []
                     }
                   ]
@@ -97,30 +97,30 @@
               "text": "Has basically been confirmed already that the true retail of the 9070xt will be 650-700 usd.",
               "upvotes": -6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is purely about the retail price of a competitor's product (9070 XT).",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
               "replies": [
                 {
                   "commentId": "mgxg9um",
                   "text": "Source?",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a simple question asking for a source regarding a competitor's price.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "N/A",
                   "replies": [
                     {
                       "commentId": "mh29jwj",
                       "text": "all over the internet, amd offered discounts to retailers to achieve msrp.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is purely about AMD's pricing strategies for their cards.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": []
                     }
                   ]
@@ -131,5 +131,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

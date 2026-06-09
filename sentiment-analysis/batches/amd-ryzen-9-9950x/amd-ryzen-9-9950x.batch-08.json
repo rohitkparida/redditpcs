@@ -28,80 +28,80 @@
               "text": "To perhaps expand on what juGGaKNot4 said: these tests are trying to show the difference between the CPUs, because reviewers are not able to test every single game, with each different setting, at every resolution, with every GPU.  They test a set of games that they use to extrapolate general performance.  By running at higher resolutions, you're potentially introducing other limitations which makes comparing *just* the CPUs hard.  \n\nHypothetical example: We test the CPUs when playing `$Game1`.  The 14900k gets 140.2 FPS, the 285k gets 140.4 FPS, and the 9800X3D gets 140.3 FPS.  This test shows us that they are all relatively the same, so we can conclude that these CPUs all perform roughly the same.  But if we run at 1080p, we get 160.4 FPS, 165.3 FPS, and 182.1 FPS.  Now we can see that the 14900k and 285k perform similarly, but the 9800X3D performs 13.5% better than the 14900k.  Now we see the CPUs do have a performance difference.\n\nNext we test with `$Game2`, `$Game3`, etc. and find that the 9800X3D performs 12.2%, 15.1%, etc. better than the 14900k.  With this data, we extrapolate that in situations where the CPU matters, the 9800X3D performs ~13-14% better than the 14900k.\n\nYou're right, the tests most reviewers do don't directly map to end users.  No one pairs a 4090 and a Ryzen 2600, yet reviewers tests that combination.  No one pairs a GT 1010 and a 7800X3D, yet reviewers test that combination.  But that's because they aren't reviewing a build, they're reviewing a part.  So they're trying to create tests that show _only_ the performance impact of the part and the competing parts.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses general CPU benchmarking methodology rather than providing specific insights or opinions on the Ryzen 9 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is explaining how reviewers extrapolate performance data without expressing a positive or negative opinion of a specific product.",
               "replies": [
                 {
                   "commentId": "lwg29vd",
                   "text": "&gt; You're right, the tests most reviewers do don't directly map to end users. No one pairs a 4090 and a Ryzen 2600, yet reviewers tests that combination. No one pairs a GT 1010 and a 7800X3D, yet reviewers test that combination. But that's because they aren't reviewing a build, they're reviewing a part. So they're trying to create tests that show only the performance impact of the part and the competing parts.\n\nI totally understand. But, in gaming, there is often an upper bound where the performance is no longer relevant. The VAST majority of end users will be insensitive beyond a certain FPS. The VERY FEW esports professionals that will notice such a difference won't index on a geometric mean and would instead just focus on how the CPU does in their specific games.\n\nBasically, I think for many games, we've already hit a point where the increase in CPU performance isn't even relevant anymore. And if there's a subset of games where that still is the case (e.g. games where the CPU does struggle or it's not a total blowout of 400+ FPS), maybe that's where gaming benchmarks should focus their attention.",
                   "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The discussion is about the relevance of high FPS in gaming benchmarks generally, not the 9950X specifically.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is debating benchmarking standards, not the product's performance.",
                   "replies": [
                     {
                       "commentId": "lwg3d1i",
                       "text": "Oh you're absolutely right, we're starting to see the plateau of hardware for games, the same way that we saw the plateau for hardware for word processors back with the Pentiums and before.  But that doesn't mean we can't use games to express performance differences between CPUs.\n\nPersonally, I'd like to see reviewers start testing with locking their CPUs and GPUs to certain power draw limits and checking performance, or locking performance to see how much power is required to get to a certain target.  e.g. The 9800X3D uses XX watts to produce 60 FPS, while the 14900k use YY watts.  It's a _lot_ more difficult and complicated than it seems, but I feel like aiming for that would be more useful to the average person than seeing another CPU pass 700 FPS in Siege.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment focuses on how reviewers should test power draw and performance, which is meta-talk about benchmarking.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is suggesting improvements to testing methods.",
                       "replies": [
                         {
                           "commentId": "lwg43a3",
                           "text": "Now we're cooking and I'm more aligned with this.\n\nI think I'm basically advocating for more standardized and meaningful benchmarking. For games, I'm OK to have benchmarks still to show relative differences, **as long as we have a line in the sand somewhere that says \"if you have at least this level of CPU, you will not be CPU limited and can focus on other aspects of your build\".**\n\nBasically, let people burn their money if they've got money to burn, but inform all the people that have a budget on what are the useful numbers to focus on.",
                           "upvotes": 5,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about standardized benchmarking and budget advice generally, not the 9950X.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is advocating for better consumer information in reviews.",
                           "replies": [
                             {
                               "commentId": "lwga1qe",
                               "text": "That line is impossible to draw because it depends on the games.\n\nSomeone who is happy with 60 FPS will have different requirements to someone who is happy at 120 FPS and they will have different requirements to someone who primarily plays games where simulation rate is the primary performance metric. On top of that for a lot of people they might be playing with a lot of mods loaded in their game of choice which totally changes what is required to hit their frame rate target.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment discusses the variables that affect CPU requirements in games, which is general gaming talk.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is explaining why a universal 'line in the sand' for CPU performance is impossible.",
                               "replies": [
                                 {
                                   "commentId": "lwgccdh",
                                   "text": "[Sure, but the average FPS at 1080p for even the lowest CPU (2700x) is 90 FPS at 1080p from TPU (one of my preferred benchmarks).](https://www.techpowerup.com/review/amd-ryzen-7-9800x3d/18.html)\n\nBy 3700X, we're already beyond 120 FPS average, and at 450-500 FPS in the range of 12700k/5900x in CS2, e.g.\n\nI actually love TPU because they even call out what they think of the 720p benches:\n\n&gt; On popular demand from comments over the past several CPU reviews, we are including game tests at 720p (1280x720 pixels) resolution. All games from our CPU test suite are put through 720p using a RTX 4090 graphics card and Ultra settings. This low resolution serves to highlight theoretical CPU performance, because games are extremely CPU-limited at this resolution. Of course, nobody buys a PC with an RTX 4090 to game at 720p, **but the results are of academic value** because a CPU that can't do 144 frames per second at 720p will never reach that mark at higher resolutions. So, these numbers could interest high-refresh-rate gaming PC builders with fast monitors. **Our 720p tests hence serve as synthetic tests** in that they are not real world (720p isn't a real-world PC-gaming resolution anymore) even though the game tests themselves are not synthetic (they're real games, not 3D benchmarks).",
                                   "upvotes": 3,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment discusses TPU's benchmarking methodology and the academic value of 720p tests.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is defending the use of synthetic-style gaming tests.",
                                   "replies": [
                                     {
                                       "commentId": "lwgv4a5",
                                       "text": "Future games will be more CPU demanding than current games, knowing which CPUs perform best allows you to make better choices at your budget to buy parts that will last the longest.\n\nStuff like Homeworld 3 where the 9800X3D is the only part where the 1% lows are still above 60 FPS.\n\nGNs review also shows how much faster it is in Stellaris simulation rate, something that gives you scope to play deeper into the end game or to throw in more AI empires and get a different challenge out of it.\n\nOn top of that we have DLSS where the render resolution can actually be 1080p or lower depending on the quality setting and output resolution making the 1080p and 720p tests potentially even more real world than they have been for a long long time. Especially if more games have path tracing options in them.",
                                       "upvotes": 2,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "While mentioning the 9800X3D, it does not provide a specific critique or experience with the 9950X.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The user is discussing the importance of CPU-bound games and future-proofing.",
                                       "replies": [
                                         {
                                           "commentId": "lwlvw5x",
                                           "text": "CPU-bound games don't look like CPU-unintensive games running at 200+ FPS.\n\nCPU-bound games are spending cycles in simulation and game logic, not render set-up and the graphics driver.\n\nAnd it's not about *resolution*. If you don't like the frame rate and you turn upscaling on, and it substantially helps, that means the game was GPU-bound and might still be.",
                                           "upvotes": 0,
                                           "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "The comment is a technical explanation of CPU-bound games versus GPU-bound games.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "The user is providing a technical correction.",
                                           "replies": []
                                         }
                                       ]
@@ -111,10 +111,10 @@
                                       "text": "If they tested the correct CS2 (cities skylines 2) they would see they would have issue hitting 60 with those CPUs.",
                                       "upvotes": 2,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "The comment mentions a specific game (Cities Skylines 2) and general CPU performance, but not the 9950X.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The user is making a point about game optimization.",
                                       "replies": []
                                     }
                                   ]
@@ -128,10 +128,10 @@
                           "text": "&gt;  It's a lot more difficult and complicated than it seems\n\nAnd *how*.\n\nJust taking your examples, power draw limits (as implemented with PPT or PL1/2) are misleading because if you set them so low that the clock speed in every frame is governed by the power limit (so all CPUs use the same total energy), you're going *really* low in most games, and also including an unrealistic amount of clock-speed-switching overhead in the benchmark.\n\nOr if you use frame rate limits and measuring power, then you're testing the cleverness of the CPUs frequency governor firmware. And you better be checking 1% lows, because one way to get low power usage is to keep the clock frequency barely above sufficient and follow load changes slowly.\n\nIf I had to do this \"right\" -- that is, as a test of \"inherent\" efficiency, I'd use fixed clocks and a 2-pass or maybe 3-pass (because non-linearity) test to adjust clocks to match performance.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a highly technical discussion on how to measure CPU efficiency correctly.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is discussing measurement methodology.",
                           "replies": []
                         },
                         {
@@ -139,10 +139,10 @@
                           "text": "We need Kyle to come back and restart the [H] highest playable settings paradigm of testing.\n\nInstead of keeping the image quality fixed and comparing output FPS that method had a target FPS and would scale the IQ to hit that FPS. Was a good alternative to the typical bigger bar better reviews.",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about a specific reviewer's testing paradigm (Kyle from [H]), not the 9950X.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is expressing a preference for a different testing style.",
                           "replies": []
                         }
                       ]
@@ -154,30 +154,30 @@
                   "text": "&gt; They test a set of games that they use to extrapolate general performance. \n\nThey test a set of games that loads the CPU in identical way and then extrapolate that to games that load CPU in different ways. \n\n&gt;This test shows us that they are all relatively the same, so we can conclude that these CPUs all perform roughly the same.\n\nNo, we cannot conclude that. Test the same CPUs in a different game and youll end up with wildly different results.\n\n\n&gt;Next we test with $Game2, $Game3, etc. and find that the 9800X3D performs 12.2%, 15.1%, etc. better than the 14900k. With this data, we extrapolate that in situations where the CPU matters, the 9800X3D performs ~13-14% better than the 14900k.\n\nNot if your second and third game are the same thing as first game while you ignore all other aspects of CPU.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment critiques the extrapolation of CPU performance data in general.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is arguing against a specific logic used in benchmarking.",
                   "replies": [
                     {
                       "commentId": "lwknj2g",
                       "text": "I feel like you're being needlessly pedantic.  What benefit does your post bring?",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is low-effort banter/argument between users.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is calling another user pedantic.",
                       "replies": [
                         {
                           "commentId": "lwprm0f",
                           "text": "The benefit of pointing out that current testing methodology is not representative of workloads where CPU workload matters most.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about benchmarking methodology and representative workloads.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is justifying their previous point about testing.",
                           "replies": []
                         }
                       ]
@@ -191,10 +191,10 @@
               "text": "According to steam hardware survey over half of gamers still game at 1080p.\n\nSo right off the bat the data is useful to most gamers.\n\nAlso for comparison when think about cars\nWould you test a truck by drag racing it or by towing things? What about a Ferrari? The right type of teat for the right type of part.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the Steam hardware survey and the utility of 1080p data generally.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is defending the relevance of 1080p benchmarks.",
               "replies": []
             },
             {
@@ -202,50 +202,50 @@
               "text": "The tests were on 2k resolution.",
               "upvotes": -5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a factual claim about the resolution of the tests, not an opinion on the 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is stating a perceived fact.",
               "replies": [
                 {
                   "commentId": "lwfqzie",
                   "text": "&gt; The tests were on 2k resolution.\n\nDid you see the quote I grabbed? It came from this post. It says they were mostly at 720p/1080p for gaming.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a correction regarding the resolution of the tests.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is correcting another user's claim.",
                   "replies": [
                     {
                       "commentId": "lwfr3jl",
                       "text": "2k is 1080",
                       "upvotes": -2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a debate about the definition of '2k' resolution.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is arguing about terminology.",
                       "replies": [
                         {
                           "commentId": "lwfrl56",
                           "text": "I regret using the 2k term, I'll amend to 1440p. Reality is \"true 2k\" is not 1080p or 1440p. I should have been more clear.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a correction of terminology regarding resolution.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is clarifying their terminology.",
                           "replies": [
                             {
                               "commentId": "lwgi4fz",
                               "text": "I'm assuming you are referring to 2048x1080 as \"true 2k\"? That's a 1080 resolution.",
                               "upvotes": 0,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment is a technical correction about resolution definitions.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is providing a technical clarification.",
                               "replies": []
                             }
                           ]
@@ -260,5 +260,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

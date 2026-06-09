@@ -18,50 +18,50 @@
           "text": "Is it normal that my 3600 is running at 1.45 volt",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about CPU voltage, not the Noctua cooler.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question about their CPU voltage.",
           "replies": [
             {
               "commentId": "etcy1ca",
               "text": "The auto voltage has been setting it pretty highbfor some reason. AMD has said that 1.34 is the highest sustainable voltage, so I'd go and manually change that.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses CPU voltage limits and manual settings, not the cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing technical advice on CPU voltage.",
               "replies": [
                 {
                   "commentId": "etdnvn7",
                   "text": "Do you have a source for this?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a request for a source regarding CPU voltage, not the cooler.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking for a source for a technical claim.",
                   "replies": [
                     {
                       "commentId": "etdsp7e",
                       "text": "I was wrong, it's 1.325v. Apparently HardwareUnboxed actually killed one of his chips leaving it on auto voltage.\n\nReddit.com/r/Amd/comments/cahr5r/max_safe_all_core_voltage_for_zen_2_is_1325v/",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses CPU voltage and chip failure, not the cooler.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is correcting a technical detail about CPU voltage.",
                       "replies": [
                         {
                           "commentId": "etdu9og",
                           "text": "Thank you. When BIOSs are all sorted out I can see myself undervolting the shit out my chip and enabling PBO...",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about undervolting a CPU and enabling PBO, not the cooler.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is expressing a plan to optimize their CPU settings.",
                           "replies": []
                         }
                       ]
@@ -75,30 +75,30 @@
               "text": "My 3900X also reports as running at ~1.45v, not sure if it is normal. No PBO or overclocking at all turned on.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about CPU voltage reporting on a 3900X, not the cooler.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is sharing their experience with CPU voltage.",
               "replies": [
                 {
                   "commentId": "etd580x",
                   "text": "What mobo you using?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a question about the motherboard, not the cooler.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking for technical specifications.",
                   "replies": [
                     {
                       "commentId": "etf6lfy",
                       "text": "Asus Crosshair 7 Hero.\n\nTurns out this is normal according to AMD:\nhttps://old.reddit.com/r/Amd/comments/cbbfce/3900x_being_overvolted_on_amd_ryzen_power_plans/etefuer/",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about CPU overvolting and power plans, not the cooler.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a link to confirm that CPU overvolting is normal.",
                       "replies": []
                     }
                   ]
@@ -109,5 +109,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

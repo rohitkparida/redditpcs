@@ -18,30 +18,30 @@
           "text": "its just a KS from AMD instead of intel.",
           "upvotes": 36,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares the product's positioning to Intel's KS series.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a factual comparison of product strategy without a clear positive or negative lean.",
           "replies": [
             {
               "commentId": "o2chwm3",
               "text": "At least it's at a reasonable price point, instead of the way overpriced KS strategy of Intel.",
               "upvotes": 15,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides an opinion on the product's price point compared to Intel.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user views the pricing as 'reasonable' compared to the competitor.",
               "replies": [
                 {
                   "commentId": "o2gs0fk",
                   "text": "Yeah, then again the 9800X3D isn't sold at its MSRP right now, so more AMD trying to 'reset' the price a bit for each sold.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user discusses the product's MSRP and market availability.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user expresses skepticism about AMD's pricing strategy and MSRP availability.",
                   "replies": []
                 }
               ]
@@ -53,60 +53,60 @@
           "text": "tldr: it\u2019s not worth the premium.\n\nedit: I am a hypocrite I just bought it for my new system.",
           "upvotes": 26,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user shares their purchase decision and an opinion on the product's value.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user explicitly states it is 'not worth the premium'.",
           "replies": [
             {
               "commentId": "o2b5e6u",
               "text": "it is if you plug your 5090 to a calculator screen",
               "upvotes": 14,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a joke about calculator screens and GPUs, not providing meaningful insight into the CPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a joke and does not express a genuine sentiment toward the product.",
               "replies": [
                 {
                   "commentId": "o2cm4m9",
                   "text": "your 1000$ oled calculator screen that runs at 720hz. lol.\n\nBut yeah, it's a waste of money for a cpu that won't even be the fastest for a year when zen 6 comes out.",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides an opinion on the product's value and longevity.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user calls it a 'waste of money' and predicts it will be quickly outdated.",
                   "replies": [
                     {
                       "commentId": "o2cne26",
                       "text": "I think they're just milking all those enthusiasts suffering from FOMO, and they're a lot. They will buy this overclocked 9800X3D, then they will get the 9950X3D-2 but at the same time they will be keeping an eye on Zen 6 pre-orders.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user critiques the product's target audience and AMD's marketing strategy.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user suggests AMD is 'milking' enthusiasts through FOMO.",
                       "replies": [
                         {
                           "commentId": "o2pd0ah",
                           "text": "bro personally attacked me",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The user is reacting to the previous comment's description of enthusiasts, not the product itself.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is engaging in banter and not expressing a sentiment about the CPU.",
                           "replies": [
                             {
                               "commentId": "o2pd8pm",
                               "text": "sorry, I also replied to this other comment you just made, if you're happy with it then just keep it, even if doesn't make any sense for anything 5080 and below.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "The user discusses the product's utility for specific GPU pairings (5080 and below).",
+                              "sentiment": "negative",
+                              "sentimentReasoning": "The user suggests the purchase 'doesn't make any sense' for most users.",
                               "replies": []
                             }
                           ]
@@ -121,5 +121,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

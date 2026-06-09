@@ -18,20 +18,20 @@
           "text": "Was it released in UD today ? I can\u2019t find any listings .",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a purely factual question about product availability.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question without expressing a positive or negative opinion.",
           "replies": [
             {
               "commentId": "o2d2dp8",
               "text": "Tomorrow.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a purely factual answer regarding the release date.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The response is a factual statement with no emotional leaning.",
               "replies": []
             }
           ]
@@ -41,30 +41,30 @@
           "text": "Nice up-bin, but it is still the same chip, so a bit of a nothingburger. If you were still planning on upgrading (with today's RAM and SSD prices, lul) and targeting 9800X3D, this is a fair improvement to buy instead if you not tight on money, but otherwise this does not matter in the slightest.\n\nThe actual upgrades are about an year away. Non-X3Ds maybe bit earlier, but Zen 6 X3Ds, actual improvements over what already exists, maybe an year from now. And Intel may have something useful again by then as well.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides an opinion on the product's value and compares it to the 9800X3D.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user views it as a 'nothingburger' but a 'fair improvement' for those not tight on money, resulting in a neutral overall stance.",
           "replies": [
             {
               "commentId": "o2o943x",
               "text": "Would it be worth $20 more assuming you're upgrading anyways?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a factual question about pricing and value without providing an opinion.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a question about potential value without expressing a sentiment.",
               "replies": [
                 {
                   "commentId": "o2pemrk",
                   "text": "Many who buy 9800X3D or 9850X3D are just going for the fastest gaming CPU. At that point the price does not matter.\n\nIf you are price sensitive, 9800X3D is better value, since the difference is tiny.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user discusses the value proposition and compares the 9850X3D to the 9800X3D.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user provides a balanced view on value versus performance for different types of buyers.",
                   "replies": []
                 }
               ]
@@ -76,10 +76,10 @@
           "text": "It seems like Linus was super wrong in his review. He said it doesn't take more power and it's not just a binned 9800 lol",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user critiques the technical aspects of the product (binning and power) based on a review.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is expressing disappointment or skepticism regarding the product's nature as a 'binned 9800'.",
           "replies": []
         },
         {
@@ -87,13 +87,14 @@
           "text": "*APOLOGIES turned out to be a slightly misseated GPU, took apart put back together \n\ni've been trying to bugfix crashing in BF6, the only software that does this to my machine so could be rubbish game engine code however turning off EXPO seems to do it for people but I feel is unacceptable. So I'm wondering if an improved IMC on 9850x3d worth going for vanilla EXPO cl30 6000mhz",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is asking if the 9850X3D's IMC is an improvement for stability issues, which is a technical critique/query.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is seeking technical advice on stability and IMC performance without expressing a clear positive or negative sentiment toward the product itself.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

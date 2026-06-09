@@ -18,20 +18,20 @@
           "text": "AMD made a chip that only had marginal improvements and they got dragged thru shit for it.\n\nMeanwhile, Arrow Lake is seeing regressions across the board, and it's just \"Oddly slow\"\n\nOkay.",
           "upvotes": 8,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user discusses performance regressions in the Arrow Lake series, which includes the 245K.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses disappointment and frustration over performance regressions.",
           "replies": [
             {
               "commentId": "lubi5sc",
               "text": "HW unboxed got really ticked off by AMD's marketing for zen5, AMD showed incorrect benchmarks and uplift etc. and that really upset them to the point where even though zen 5 is pretty decent now with updates /value they still treat it harshly.\n\nThe AMD lying in their mind is way worse than intel making a e waste level CPU.",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user describes the Intel CPU as 'e waste level', a direct critique of the product's value.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user uses extremely negative language to describe the product's quality.",
               "replies": []
             }
           ]
@@ -41,30 +41,30 @@
           "text": "In games where the 200 series fall apart they use significantly less power than their AMD equivalents, usually when they're on par they also draw the same power and intel occasionally eeks out a win with less power draw (against non-X3D parts).\n\n\n\n\nhowever I've seen the 285k drop to near 7600X power draw (while also delivering 7600X performance). Could that suggest poor utilization of the CPU? That would be fixable via software right?",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares the power draw and performance of the 200 series (including 245K) against AMD equivalents.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user provides a balanced view of power efficiency versus performance.",
           "replies": [
             {
               "commentId": "lu608lh",
               "text": "> however I've seen the 285k drop to near 7600X power draw (while also delivering 7600X performance). Could that suggest poor utilization of the CPU? That would be fixable via software right?\n\nI guess it depends on the nature of the architecture. Some things you just can't really fix with software. AMD had problems with early Zen that was related to their architectural layout ~ Intel might be in a very similar boat.\n\nWith Zen, AMD did have a long-term plan to bring out the gradual progressions that we've been seeing with the chiplets and IO die, getting to where we are now.\n\nBut... I wonder what Intel's plan is, assuming they have one...",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user discusses architectural issues affecting the performance of the new Intel chips.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is speculating on architectural flaws without a clear positive or negative lean.",
               "replies": [
                 {
                   "commentId": "lu902mo",
                   "text": "We don't have to sit here and speculate about what the problem is and if Intel can/will fix it. The problem is the memory latency due to the reuse of Meteor Lake's not very good SoC tile layout. 285K has like 80-100ns of memory latency vs the 50-60 you see on AM5 and LGA1700 CPUs. Memory latency is the exact thing that held back Zen 1 and 2 on the gaming performance front, so it's 100% growing pains on the use of tiles. \n\nWe already have an example of these cores in Lunar Lake where the crappy SoC layout isn't used and the latency problem is a nonissue. Rumors I've heard suggest that Nova Lake will not have this problem so we should see Intel's gaming performance bounce back somewhat next gen while keeping the nice efficiency gains they made this gen.",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a technical critique regarding memory latency in the 285K/Arrow Lake architecture.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user identifies a specific technical flaw (memory latency) that hinders gaming performance.",
                   "replies": []
                 },
                 {
@@ -72,10 +72,10 @@
                   "text": ">But... I wonder what Intel's plan is, assuming they have one...\n\nI sure do hope they start utilizing the base tile for something. For cache/PHY and even not so hot logic.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user suggests improvements for the base tile architecture of the current Intel generation.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is making a technical suggestion for future iterations.",
                   "replies": []
                 }
               ]
@@ -87,25 +87,26 @@
           "text": "Does this have anything to do with the lack of hyperthreading in (for) games?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a factual question about hyperthreading and does not provide an opinion or experience.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question without expressing a sentiment.",
           "replies": [
             {
               "commentId": "lu9i9pu",
               "text": "Some titles actually gained performance if HT is disabled.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a factual statement about performance gains with HT disabled, lacking personal opinion or recommendation.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a factual observation.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

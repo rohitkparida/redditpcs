@@ -18,40 +18,40 @@
           "text": "What the hell is that name... Was the i3, i5, i7 blahblah too simple for them?",
           "upvotes": -18,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment focuses on the naming convention rather than the product's performance or value.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses frustration and dislike toward the new branding.",
           "replies": [
             {
               "commentId": "oc0vly0",
               "text": "> Was the i3, i5, i7 blahblah too simple for them?\n\nUltra has replaced the \"i\", and there's a random plus at the end, otherwise it's the same. It was already Core i7 not just i7.",
               "upvotes": 13,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a factual explanation of the branding change without opinion on the product itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The tone is purely informative and objective.",
               "replies": [
                 {
                   "commentId": "oc0xddf",
                   "text": "But as far as I see, they still have core processors. There are intel core and intel core ultra processors ",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the existence of different processor lines, which is factual/meta-talk.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is simply stating an observation about the product lineup.",
                   "replies": [
                     {
                       "commentId": "oc1d9ym",
                       "text": "they do, looking at Ark, but those have really bastard names (253NPE ?) which makes me think they're prebuilt SKUs.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The discussion is about SKU naming and prebuilts, not the product's performance or utility.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is speculating on SKU types based on naming.",
                       "replies": []
                     },
                     {
@@ -59,10 +59,10 @@
                       "text": "As far as i understand it:\n\nCore ultra has all the newest things. New cpu, gpu, npu, whatever.\n\nCore non-ultra are rebrands. iirc there's even \"core 9 200-series\" for laptops that are just raptor lake refreshes ",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a factual breakdown of the difference between Core and Core Ultra lines.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The information is provided as a technical explanation without sentiment.",
                       "replies": []
                     }
                   ]
@@ -74,10 +74,10 @@
               "text": "Yeah I've lost the track of the intel's branding as well",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about the user's confusion with branding, not the product's quality.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is expressing personal confusion regarding marketing.",
               "replies": []
             }
           ]
@@ -87,10 +87,10 @@
           "text": "So informative video tille. Shit journalism. ",
           "upvotes": -30,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a critique of the video title/journalism, not the product.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is expressing anger toward the content creator.",
           "replies": []
         },
         {
@@ -98,13 +98,14 @@
           "text": "So in regards to gaming it's at 9600X levels but with 50% more power consumption",
           "upvotes": -2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides an opinionated performance comparison regarding gaming and power consumption.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user highlights poor efficiency (50% more power) for equivalent performance.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,30 +18,30 @@
           "text": "9000 series is really looking to be a joke huh? This is early 2010's Intel levels of stagnation good lord.",
           "upvotes": 155,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses a strong negative opinion on the performance stagnation of the 9000 series.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes the product line as a 'joke' and compares it to a period of stagnation.",
           "replies": [
             {
               "commentId": "li2ijqu",
               "text": "It is only good for workloads utilizing AVX-512 with full 512-bit instructions, apparently there is little improvement for 128 and 256-bit AVX-512 instructions. There seems to be some nice improvements on code compilation times though.\n\n9950X does seem to be the best or at least trading blows with 14900K for single thread performance, but memory bandwidth bottleneck is a major issue in most scenarios.",
               "upvotes": 81,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides technical critique regarding AVX-512 performance and memory bandwidth bottlenecks for the 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user provides a balanced technical analysis of strengths and weaknesses.",
               "replies": [
                 {
                   "commentId": "li2ya3f",
                   "text": "To me, this seems like a chip that's designed for data center applications and the consumer/ gamer market is definitely an afterthought. \n\nThe Anandtech review showed some encoding workloads were far below the 7950x and some were quite higher. Some renderings were also much improved and some not so much. AI deepspeech and Tensorflow were much improved over Zen 4. I think that alone says a lot about AMDs goal for Zen 5.\n\nIt seems like a strange chip, like they wanted to try new things on the design, improve only certain workloads, and only those workloads were precedent. Desktop is not where Zen 5 design shines.\n\nThe upside is I doubt these sell well and we'll be getting great 7000 and 9000 deals in the coming months.",
                   "upvotes": 33,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the target market and performance in specific workloads like AI and rendering for the 9950X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user views the chip as a specialized tool rather than a general consumer product, without a clear positive or negative lean.",
                   "replies": []
                 },
                 {
@@ -49,30 +49,30 @@
                   "text": "Seems pretty similar to Intel 11th gen where the biggest benefit over 10th gen was AVX512 use.",
                   "upvotes": 52,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Compares the 9950X's benefit to a previous Intel generation's AVX-512 use.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a comparison without an explicit positive or negative sentiment.",
                   "replies": [
                     {
                       "commentId": "li39oll",
                       "text": "Except that shit CHUGS power for the performance it offers",
                       "upvotes": 16,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about Intel's power consumption, not the AMD Ryzen 9 9950X.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user is criticizing Intel's power efficiency.",
                       "replies": [
                         {
                           "commentId": "li3fmge",
                           "text": "It is more elegantly referred to as *the Intel tax...*",
                           "upvotes": 23,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Off-topic discussion about Intel's pricing/tax.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user is expressing a negative view of Intel.",
                           "replies": []
                         }
                       ]
@@ -84,10 +84,10 @@
                   "text": "9950X on TSMC N4 trading blows with the 13900k on old ass Intel 7. This bodes well for Arrow Lake on N3/20A.",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Directly compares the 9950X's performance to the Intel 13900k.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is stating a performance parity observation.",
                   "replies": []
                 }
               ]
@@ -97,50 +97,50 @@
               "text": "It's not really stagnation, they redesigned significant portions of the compute does to facilitate the future growth of the architecture and platform as a whole. It's a miracle they maintained performance with such drastic changes.\n\nAVX512 performance is insane (that's where this 30-45% performance boost came from). We also see huge gains in the data centre space with zen5.\n\nNone of this really helps the average consumer or average gamer as such it looks bad. I am excited to see what happens with zen6 now which I hope has a significant IO die enhancement to remove some of the memory bandwidth constraints from the CPU (faster memory support). Maybe some fclock improvements as well maybe a 2400-2800mhz fclock might help as well\u00bf?\n\nI dunno from my gamer POV zen5 is a big fat MEH, from my datacentre POV I'm super pumped for what Epyc brings to the DC.",
               "upvotes": 68,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses architectural changes and performance for gamers vs data centers for the Zen 5 series.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is mixed; excited for data centers but 'MEH' for gamers.",
               "replies": [
                 {
                   "commentId": "li35vep",
                   "text": "&gt; It's a miracle they maintained performance with such drastic changes.\n\nNah dude, that's a level of marketing spin I can't get behind. Consumers don't care that the chip \"facilitates future growth of the architecture\", and neither does the company's bottom line. The ~25% increase in transistor count vs Zen 4 needs to be paid for by *someone*, and gamers most certainly will not, and neither will most data centers imo.\n\nIf a new, clean-sheet architecture doesn't provide more performance *right now*, you might as well not launch it.",
                   "upvotes": 48,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Critiques the value proposition and immediate performance gains for consumers.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user argues that architectural changes don't justify the product's launch if performance isn't higher right now.",
                   "replies": [
                     {
                       "commentId": "li3bep6",
                       "text": "&gt; The ~25% increase in transistor count vs Zen 4 needs to be paid for by someone\n\nIt doesn't, because the die isn't larger than zen 4. More transistors can (and in this case, do) result from purely layout changes rather than a larger die or node shrink.\n\n&gt; If a new, clean-sheet architecture doesn't provide more performance right now\n\nIt's still ~5% faster at lower power on a marginally smaller die. This sub is treating zen 5 like the second coming of bulldozer and it's really rather ridiculous",
                       "upvotes": 25,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Defends the 9000 series' efficiency and performance gains over Zen 4.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user argues the chip is faster at lower power and criticizes the negative community reaction.",
                       "replies": [
                         {
                           "commentId": "li3hobm",
                           "text": "&gt; It doesn't, because the die isn't larger than zen 4.\n\nHow much density improvement is from the N4P node, though? Surely it's not 0%?",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Technical discussion about TSMC node density, not specifically about the 9950X's performance or value.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is asking a factual question about node density.",
                           "replies": [
                             {
                               "commentId": "li3jr59",
                               "text": "~4% according to TSMC",
                               "upvotes": 6,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Purely factual answer about TSMC node density.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is providing a factual statistic.",
                               "replies": []
                             }
                           ]
@@ -150,20 +150,20 @@
                           "text": "&gt;It's still \\~5% faster at lower power on a marginally smaller die. This sub is treating zen 5 like the second coming of bulldozer and it's really rather ridiculous\n\nPeople are treating it as if it was meh, which it really is. \n\nThe die is smaller because the team behind the L3 knocked it out of the park- significantly smaller while also decreasing L3 latency in cycles, while maintaining the same frequency (I think, not sure about L3 clocks, but I believe it's the same). \n\nThe core area itself is much bigger, while being on a denser node, and only brings a generational uplift on the FP and AVX-512 side. INT is just straight up bad. \n\nThe power doesn't look great either.",
                           "upvotes": 9,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Critiques the core area, INT performance and power consumption of Zen 5.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user describes the product as 'meh' and notes that INT performance is 'straight up bad'.",
                           "replies": [
                             {
                               "commentId": "li7y470",
                               "text": "In this very thread - let alone the other 200 comments here or 1000+ across reviews - there are comments saying it's a joke and that AMD shouldn't have bothered launching it.\n\nI agree it's meh, but the histrionics go well beyond that.",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "Discusses the general reception of the 9000 series.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user agrees it is 'meh' but argues against the extreme negative reactions.",
                               "replies": []
                             }
                           ]
@@ -173,10 +173,10 @@
                           "text": "It's closer to a return of the snoozetastic post-Haswell refreshes Intel was giving up until a few years ago, but as others have pointed out Zen5 looks like it's got a lot of interesting architectural improvements that are being held back by shortcomings elsewhere in the design.  AMD itself has signaled that Zen6 should better utilize the new architecture, and I'm interested to see how that goes, but in the meantime I'm gonna keep chugging along with my 5950X and not worry about a complete new build for another year or two.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Opinion on the architectural improvements of Zen 5 and decision not to upgrade.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user finds the improvements interesting but not enough to trigger an upgrade.",
                           "replies": []
                         }
                       ]
@@ -186,10 +186,10 @@
                       "text": "&gt; and neither will most data centers imo\n\nDon't tell me you're basing this on Windows benchmarks.",
                       "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Off-topic discussion about benchmarks and OS.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is questioning the basis of another user's benchmark data.",
                       "replies": []
                     }
                   ]
@@ -199,20 +199,20 @@
                   "text": "That was my takeaway as well, AMD is teeing up the next few generations with some big structural changes that had to happen (as opposed to using the same cores for 7 gens) for future gains. Also check back in a year when they have optimized 9000 series further, AMD is good at finding more performance after a 8 months or so than it did when it was released.",
                   "upvotes": 18,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Positive outlook on the future of the 9000 series and AMD's optimization history.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user expresses confidence in future performance gains through optimization.",
                   "replies": [
                     {
                       "commentId": "li451ey",
                       "text": "&gt; AMD is teeing up the next few generations with some big structural changes that had to happen\n\nwhich hoinestly good year to do it. intel have dying chips and their own big change that could go ether way. so like yeah safest year they could do it",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Opinion on the timing of the 9000 series launch relative to Intel's situation.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user views the launch timing as a 'safest year' for AMD.",
                       "replies": []
                     }
                   ]
@@ -222,20 +222,20 @@
                   "text": "Where can I read about this new AVX512 speedup related things? I have 7900 and want to know difference.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Purely factual question about AVX-512 speedup.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking for information.",
                   "replies": [
                     {
                       "commentId": "li576hu",
                       "text": "I think it's just that it has avx512 and older didn't.\n\nCheck the Phoronix Linux reviews",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Purely factual answer about AVX-512 support.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a factual answer.",
                       "replies": []
                     }
                   ]
@@ -247,20 +247,20 @@
               "text": "New gen product pricing is always to clear stock of previous gen. Remember when Nvidia 4000-series and Radeon 7000-series were launching? People were recommending the 3000-series and 6000-series more back then too. These companies don't want the initial price to be too good compared to the previous gen, because that just makes the last gen collect dust in shelves. They ALWAYS go down in price months after, when the sales surge of last gen abates.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General discussion about product pricing strategies and GPU launches, not specific to the 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is explaining a general market trend.",
               "replies": [
                 {
                   "commentId": "li2obag",
                   "text": "Yeah but even for those gpus, 3000 series didn't make 4000 series seem entirely irrelevant and bad by comparison lol. 7000 series is currently doing that to 9000 series for AMD.\n\nHell even rtx 20 series, which wasn't super well received, still wasn't totally irrelevant at launch due to 10 series.\n\nLike, the new gen of anything isn't supposed to look worse than the last gen even if it's more expensive.",
                   "upvotes": 14,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Compares the 9000 series to previous GPU generations to argue that the 9000 series is irrelevant by comparison to the 7000 series.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user argues that the 7000 series makes the 9000 series look 'irrelevant and bad'.",
                   "replies": []
                 },
                 {
@@ -268,10 +268,10 @@
                   "text": "Then why did they price Zen 5 launch prices lower than Zen 4 despite inflation increasing since Zen 4 launch?",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discussion of Zen 5 launch pricing relative to Zen 4.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking a question about pricing strategy.",
                   "replies": []
                 }
               ]
@@ -280,5 +280,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

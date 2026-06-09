@@ -18,40 +18,40 @@
           "text": "9060XT16 425\u20ac here GTFO AMD.   \nB580 270\u20ac 7600XT16 330\u20ac 7800XT 465\u20ac 9070XT 700\u20ac.   \nFrom a forever AMD user, their insane pricing forced me to go Intel",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses a strong opinion on the pricing of the 9060XT and shares their decision to switch brands based on it.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is frustrated with AMD's pricing, using aggressive language like 'GTFO AMD'.",
           "replies": [
             {
               "commentId": "mxcujfm",
               "text": "Current price of a 16GB 9060XT on Amazon.de is 398 Euros. And that is with a 19% sales tax. That is pretty much MSRP.",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is purely factual, providing the current price of the card on a specific retailer site.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is stating a fact about pricing without expressing a positive or negative opinion.",
               "replies": [
                 {
                   "commentId": "mxd15tb",
                   "text": "Wouldn't MSRP be around 360 euros? 349 dollars are 301 euros, 301 \\* 1.39 = 358.19 euros. 398 euros is an 11% markup over MSRP.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a factual calculation of MSRP and tax markups, lacking personal opinion or experience.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is performing a mathematical calculation without expressing sentiment.",
                   "replies": [
                     {
                       "commentId": "mxe1fxa",
                       "text": "Yeah it's still higher than MSRP, but the cheapest currently available cards on Amazon.de are OC'ed cards, so I'll give them a bit of wriggle room for that. \n\nAlso things do generally tend to be more expensive in the EU, not just because of the VAT but the prices are often a little higher for other reasons. Lack of competition I guess since the EU isn't really the \"one big market everyone can shop in\" that it's supposed to be. Many shops have limitations on which EU countries they ship to. Like Mindfactory only ships within Germany and Amazon only ships certain item to certain countries.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The discussion has shifted to general EU market dynamics and shipping limitations rather than the product itself.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing market logistics and competition in the EU, not the product's quality or value.",
                       "replies": []
                     }
                   ]
@@ -62,5 +62,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

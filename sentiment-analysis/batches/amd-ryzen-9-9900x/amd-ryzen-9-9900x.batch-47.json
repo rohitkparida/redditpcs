@@ -18,40 +18,40 @@
           "text": "So can we finally stop with any positive things to say about Zen 5? It loses to Zen 4, loses to Intel, the only thing it has is a few AVX512 workloads on Linux. \n\nAlso, you should definitely remove Tom's hardware review for gaming at least as, hopefully someone can correct me, but I'm pretty sure they used different RAM and PBO settings to test Zen 5 vs Zen 4",
           "upvotes": -13,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user expresses a strong negative opinion on the performance of Zen 5 (which includes the 9900X) compared to Zen 4 and Intel.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user claims the product 'loses' to competitors and suggests there is nothing positive to say about it.",
           "replies": [
             {
               "commentId": "liygkax",
               "text": "What are you on about? Cant you read? It doesnt lose to zen4. \nIts just not as much as an improvement as everyone hoped (including amd themselves), and its currently too expensive compared to zen4. \nBut for the same price you would be stupid to pick zen4 over zen5.",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user discusses the value proposition and performance improvement of Zen 5 over Zen 4.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user provides a balanced view, noting it is an improvement but currently too expensive.",
               "replies": [
                 {
                   "commentId": "liyn2hu",
                   "text": "Is there any reason to hope that there will be a bigger improvement between 7x3d and 9x3d than there was between the regular 7x and 9x series? Or should we expect to see similarly small gains with the 3d chips?",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is asking a speculative question about future X3D chips, not providing insight into the 9900X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a question about future products.",
                   "replies": [
                     {
                       "commentId": "lizcjac",
                       "text": "The only thing i can think of is the 9800x3d reaching a bit higher clock speed than 7800x3d. More inline with the 7700x and 9700x. \nSince the 9700x can do 7700x+ speed with 7700 power budget.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The discussion focuses on the 9800X3D and 9700X, not the 9900X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is speculating on clock speeds of other models.",
                       "replies": []
                     },
                     {
@@ -59,30 +59,30 @@
                       "text": "No. There is no reason to assume the 9800x3d will be substantially faster besides hopium. Upcoming intel cpus could be decent for gaming.",
                       "upvotes": -1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The discussion is about the 9800X3D and Intel CPUs, not the 9900X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is expressing skepticism about future product gains.",
                       "replies": [
                         {
                           "commentId": "liz8gsm",
                           "text": "I\u2019m not interested in gaming. Well I am, but not *just* gaming, my main use case is machine learning. Usually only one of those two use cases at a time, but I\u2019d definitely love to be able to game while my code is running in the background. I\u2019m currently running a 3700x, and I\u2019m committed to upgrading to a 16-core AMD cpu no matter what, but I\u2019m not really in any hurry, so I have time to endlessly debate between 7950x vs 9950x and their respective 3d counterparts.",
                           "upvotes": 0,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user is comparing the 7950X and 9950X for their specific machine learning use case, which is relevant to the high-end Ryzen 9000 series.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is stating their intent to upgrade and debating between options without a clear positive or negative leaning.",
                           "replies": [
                             {
                               "commentId": "lize9o0",
                               "text": "Even a 7600 does very well in gaming. Just because it isnt as good as the top of the line cpus doesnt make it bad. Any of the 16 core cpus will do very well in gaming. \n\nLook at how well 7700 is doing in the hardware unboxed [9950x review](https://www.techspot.com/articles-info/2881/bench/CP2077-p.webp)\nThats basicly your worst case option of the 4cpus you mentioned.",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The user is discussing the 7600 and 7700, not the 9900X.",
+                              "sentiment": "positive",
+                              "sentimentReasoning": "The user is praising the performance of lower-end Zen 4 CPUs.",
                               "replies": []
                             }
                           ]
@@ -97,5 +97,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

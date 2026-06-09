@@ -18,40 +18,40 @@
           "text": "Something I don\u2019t see mentioned basically ever is that the 9800x3d is so much faster at shader compilation than the 7800x3d",
           "upvotes": 23,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses the Ryzen 7 9800X3D, not the Ryzen 9 9900X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is stating a technical observation about shader compilation speed.",
           "replies": [
             {
               "commentId": "lwhkc9w",
               "text": "I would like to see loading times in games being benchmarked and how much it is affected by CPU as well",
               "upvotes": 9,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a general request for loading time benchmarks and does not mention the 9900X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is expressing a desire for more data.",
               "replies": [
                 {
                   "commentId": "lwhxhsn",
                   "text": "&gt;I would like to see loading times in games benchmarks in general being affected by CPU as well \n\nShader compilation times won't just impact loading times, but compilation stutter as well, so you're not just waiting less in some games, but also have smoother gameplay in others.",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses shader compilation and stuttering in general, not the 9900X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing technical explanation.",
                   "replies": [
                     {
                       "commentId": "lwji5xj",
                       "text": "Yeah Im all on board with that train of thought, i always think of a CPU upgrade as increasing the quality of the frames :). I always prefer higher fps (120+) instead of graphic quality as well so the fastest cpu is a must. I just dont see a lot of tests for loading times in general and I think its somewhat of a forgotten aspect of an upgrade.\n\nI usually watch digital foundry coverage for frame times and such",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses general CPU upgrades and preferences for high FPS, not the 9900X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is sharing personal preferences for CPU performance.",
                       "replies": []
                     },
                     {
@@ -59,10 +59,10 @@
                       "text": "That is correct, but difficult to measure. There is probably scenarios where the 9800X3D loses to Intel too, such as loading screens and traversal/shader stutters.\n\nHow much value you put on that is personal, ideally our games wouldn't stutter to begin with but well, it's very hard to find an Unreal or Unity game that runs butter smooth so here we are.\n\nPersonally I prefer to focus on boosting the overall performance but if your favourite game has a lot of loading screens and CPU related stutters, and if your framerate is already good enough... yeah maybe you can do better than a 9800X3D, or maybe the 9800X3D will be a massive lead over the 7800X3D even at 4k ultra.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses the 9800X3D and general CPU performance, not the 9900X.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing technical trade-offs and performance scenarios.",
                       "replies": []
                     }
                   ]
@@ -74,20 +74,20 @@
               "text": "Where did you see this at?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a simple question asking for a source, not providing insight into the 9900X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking for clarification.",
               "replies": [
                 {
                   "commentId": "lwivjf1",
                   "text": "It\u2019s part of the \u201cproduction\u201d workload. Compilation computing is going to be uplifted a lot in these scenarios too. I suppose I should have said \u201cshould be much faster\u201d\n\nCompilation isn\u2019t something that really benefits from the x3d so having this improvement as well is great. As more games use dx12 and Vulcan and require shader compilation, reviewers should focus on it more.",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses compilation workloads and the X3D series in general, not the 9900X.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is explaining technical details about compilation.",
                   "replies": []
                 }
               ]
@@ -99,13 +99,14 @@
           "text": "Very useful aggregate of reviews. The 9800X3D is able to maintain the application performance of its non-X3D counterpart, in comparison to previous iterations. I expect the 9900X3D and 9950X3D to be similar in this area, providing both their standard application performance and enhanced gaming performance.",
           "upvotes": 11,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user mentions the 9900X3D (a variant of the 9900X family) and discusses expected performance characteristics based on the 9800X3D.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user expresses positive expectations for the 9900X3D's application and gaming performance.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

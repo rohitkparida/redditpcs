@@ -8,30 +8,30 @@
       "text": "AMD Radeon RX 7900 GRE Review: The Most Exciting RDNA 3 Card Yet",
       "upvotes": 91,
       "classifyThis": true,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
+      "relevance": "exclude",
+      "relevanceReasoning": "This is a title of a review, providing no personal opinion or technical critique.",
+      "sentiment": "neutral",
+      "sentimentReasoning": "The text is a headline and does not express a personal sentiment.",
       "replies": [
         {
           "commentId": "ks9xqcw",
           "text": "I think the reason why they state its exciting is because Digital Foundry values ray tracing more than most other channels/sites. As the 7900 GRE performs surprisingly well in raytracing vs its rasterization performance compared to the 7800 XT due to the higher amount of CU's.\n\n&amp;#x200B;\n\n###",
           "upvotes": 30,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the 7900 GRE's raytracing performance relative to the 7800 XT.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user describes the performance as 'surprisingly well'.",
           "replies": [
             {
               "commentId": "ksadvxq",
               "text": "This is correct. It matches its main price competitor in ray tracing and wildly outperforms it in non ray traced titles.",
               "upvotes": 16,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Directly compares the 7900 GRE to its price competitor in terms of performance.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user states it 'wildly outperforms' its competitor in non-ray traced titles.",
               "replies": []
             },
             {
@@ -39,40 +39,40 @@
               "text": "&gt;As the 7900 GRE performs surprisingly well in raytracing vs its rasterization performance compared to the 7800 XT due to the higher amount of CU's.\n\nI think the average computer hardware enthusiast is still not privy to the fact that Radeon 6000/7000 have their RT Accelerators built into the CU's rather than having separate, dedicated RT cores like Nvidia's approach with the RTX cards, so the full benefit of the bolstered CU count here isn't as immediately apparent to some. \n\nI believe AMD opted for the same approach with their AI Accelerators introduced in Radeon 7000 series, too - making them a part of the CU's. So, there may be even more future applications that'll see a larger-than-expected performance benefit on the 7900 GRE relative to the 7800 XT than people might expect.",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides technical critique regarding the CU count and RT accelerators in the 7900 GRE.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The discussion is technical and objective without a clear positive or negative leaning.",
               "replies": [
                 {
                   "commentId": "l9sbr4t",
                   "text": "You can wait for it... not only do the developers have deals with Nvidia, but they also prefer RTX cards and their technology to AMD's. AMD is content with open-source software without updating it itself, and they're keeping their fingers crossed.  \nAMD has always played cat-and-mouse with Nvidia by responding to their technology, dirty and fast.  \nAnother example is NVENC, which is on the hardware and software side, and AMF, which is on the software side.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General discussion about AMD vs Nvidia software and drivers, not specific to the 7900 GRE.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is general meta-talk about the brand rather than the specific product.",
                   "replies": [
                     {
                       "commentId": "l9v62t4",
                       "text": "&gt;Another example is NVENC, which is on the hardware and software side, and AMF, which is on the software side.\n\nMaybe this wasn't always the case, but AMF uses hardware encoding on the GPU. It's not software encoding like x264 or such. You can check this yourself by monitoring the Video Codec graph for the GPU in Task Manager when utilizing AMF. \n\nIt's also improved quite a bit over time and is generally considered to be competitive with NVENC now, though current-gen GPUs from both sides now support AV1 encoding and would be the superior choice to either, when it can be used.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about AMF and AV1 encoding generally, not specific to the 7900 GRE.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a technical correction regarding encoding software.",
                       "replies": [
                         {
                           "commentId": "la2dopn",
                           "text": "They got dedicated hardware for it or they just use the GPU that bottleneck or Ryzen like in the old time ? From what I know they got a part of hardware in RDNA3 for encoding nowdays but it's so bad compared to Nvidia, I tried it and it was blocky even on 6000Mbps.  \nRDNA3 only problem is Hotspot getting some \\~100\u00b0 sometimes for the 7900 series.  \nAV1 is supported on Adrenaline but still not on OBS or streamlabs, who wants to use streaming on Adrenaline that get leaks your data because it captures everything at start lol.  \nI tried it it took me 30w more to do Streaming with the 7900, AV1 is for recording not sure about streaming.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Mentions the 7900 series hotspot temperatures and streaming performance.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user complains about 'blocky' encoding and high hotspot temperatures.",
                           "replies": []
                         }
                       ]
@@ -88,50 +88,50 @@
           "text": "This card should have launched as 7800 non xt and 7900xt should have been the 7800xt.",
           "upvotes": 67,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Opinion on the product's naming and market positioning.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is critiquing the naming scheme rather than the product's performance or value.",
           "replies": [
             {
               "commentId": "ksawx5s",
               "text": "And then we wouldn't have a stupid XTX naming scheme",
               "upvotes": 28,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about naming schemes in general, not the product itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is about naming conventions.",
               "replies": [
                 {
                   "commentId": "ksbmous",
                   "text": "Embrace the XTX naming scheme, how else would a gamer know what the gamer card is unless it has at least two X's in the name?\n\nPersonally I'm waiting for the 7979 XTXT to launch ngl.",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Joke about naming schemes and future products.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a meme/joke.",
                   "replies": [
                     {
                       "commentId": "kscotaf",
                       "text": "I'm just waiting for the RX 9001 XXX.",
                       "upvotes": 6,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Joke about future product names.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a meme/joke.",
                       "replies": [
                         {
                           "commentId": "kzd596b",
                           "text": "XFX RX 9001 XXX",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Low-effort banter about product names.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a meme/joke.",
                           "replies": []
                         }
                       ]
@@ -141,10 +141,10 @@
                       "text": "Still waiting for the 6969XXX",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort banter about product names.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a meme/joke.",
                       "replies": []
                     },
                     {
@@ -152,10 +152,10 @@
                       "text": "XTX should go back to what it used to be - the overclocked/best bin edition of the XT.\n\nNo extra shaders, no extra memory.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about the XTX naming convention generally, not the 7900 GRE.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is about naming conventions.",
                       "replies": []
                     }
                   ]
@@ -167,10 +167,10 @@
               "text": "you people will always have something to complain about",
               "upvotes": 11,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General comment directed at other users, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is meta-talk.",
               "replies": []
             }
           ]
@@ -180,20 +180,20 @@
           "text": "What a weird turn of events, DF championing the 7900 GRE whole other reviewers are bearish on it.",
           "upvotes": 22,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the varying opinions of reviewers regarding the 7900 GRE.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is observing a discrepancy in reviews without expressing a personal preference.",
           "replies": [
             {
               "commentId": "ksb6u4q",
               "text": "HWU benched a reference card.\n\nDF and GN benched overclocked cards.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides technical context on how the 7900 GRE was benched by different reviewers.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual statement about benchmarking methodology.",
               "replies": []
             },
             {
@@ -201,15 +201,16 @@
               "text": "My thoughts exactly. Im thinking its something to do with their high performance numbers that are not really consistent with the two other reviews I just skimmed through (gamersnexus and hardwareunboxed). DF are saying its almost %20 faster than 7800xt for only %10 more.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the 7900 GRE's performance and value relative to the 7800 XT.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user notes it is 'almost 20% faster' for only '10% more' cost.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

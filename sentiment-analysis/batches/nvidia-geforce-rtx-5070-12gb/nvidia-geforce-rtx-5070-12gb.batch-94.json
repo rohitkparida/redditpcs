@@ -18,30 +18,30 @@
           "text": "Still rocking the 4070 GDDR6X, looks like I can skip this gen",
           "upvotes": -1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is deciding whether to upgrade to the RTX 5070 based on their current hardware.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user concludes they can skip this generation, implying the product is not a compelling upgrade.",
           "replies": [
             {
               "commentId": "mfzudap",
               "text": "You say it like it\u2019s an old card. Most aren\u2019t even close to a 40 series \ud83d\ude02",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a general remark about GPU ownership and does not provide insight into the RTX 5070.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a general observation without a positive or negative opinion on the product.",
               "replies": [
                 {
                   "commentId": "mfzy9dr",
                   "text": "You're absolutely right! But I did upgrade to the 4070 from a 3060ti which i gave to my brother. \ud83d\ude43\n\nStill trying to squeeze out any performance out of  my 5800x3d CPU",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user discusses their previous upgrade path and current CPU, not the RTX 5070.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment focuses on other hardware and personal history rather than the product under analysis.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

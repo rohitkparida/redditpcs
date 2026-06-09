@@ -18,20 +18,20 @@
           "text": "I think reviewers are being too harsh. The focus clearly was efficiency and they made really good progress there.",
           "upvotes": -20,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides an opinion on the product's efficiency and defends it against reviewers.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user believes the product made 'really good progress' in efficiency.",
           "replies": [
             {
               "commentId": "lu5ztkq",
               "text": "> I think reviewers are being too harsh. The focus clearly was efficiency and they made really good progress there.\n\nNot nearly as much as it seems ~ not for the performance you're getting. If you're efficient yet slow, something is wrong...\n\nMeanwhile the X3D chips are very efficient but not too much worse at productivity.",
               "upvotes": 25,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user compares the product's performance and efficiency to X3D chips.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user argues that being efficient yet slow is a failure and prefers the competition.",
               "replies": []
             },
             {
@@ -39,20 +39,20 @@
               "text": "Efficiency is \"performance per watt\". If the performance isn't there, the efficiency isn't either. At least for gaming, this is a very inefficient CPU, and for productivity it's better than 14th gen, but worse than the competition.\n\nI don't think this warrants being praised for its efficiency.",
               "upvotes": 20,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user critiques the product's gaming efficiency and productivity performance relative to competitors.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user explicitly states the CPU is inefficient for gaming and doesn't warrant praise.",
               "replies": [
                 {
                   "commentId": "luck8kf",
                   "text": "Not really. TPU has the 245k as being \\~5% slower than the 7700x, \\~10% slower than the 9700x, \\~20% slower than the 7800x3d, and the same fps as the 5800x3d in 720p gaming on average across 13? games. \n\nTheir power results have the 7700x and 9700x as using \\~15% more power in gaming, though it uses \\~5% more power than the 5800x3d. The only CPUs blowing the 245k out of the water in gaming efficiency is the 7800x3d cpus, but those CPUs are pretty much a class of their own. This is a pretty efficient CPU for gaming compared to literally every other CPU in the market, especially when the comparison is stock behavior.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a detailed technical comparison of FPS and power usage against several other CPUs.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user concludes it is a 'pretty efficient CPU for gaming compared to literally every other CPU in the market'.",
                   "replies": []
                 }
               ]
@@ -62,10 +62,10 @@
               "text": "Good progress compared to RPL, not really impressive compared to Zen 5, which is slightly behind ARL in process node.\n\nBottom line being, efficiency isn't critical in desktop as long as the heat is manageable.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user compares the product's efficiency to previous Intel generations and Zen 5.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user acknowledges progress over RPL but notes it's not impressive compared to Zen 5, resulting in a balanced view.",
               "replies": []
             },
             {
@@ -73,10 +73,10 @@
               "text": "Sure but these mid range chips aren't much more efficient while being slower and all of them are still worse than a year old 7800x3d in gaming and efficiency. Zero reason to buy any of these Intel chips unless your hobby is cinebench.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user gives a direct recommendation against buying the chip based on gaming performance.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user states there is 'zero reason to buy' these chips for gaming.",
               "replies": []
             },
             {
@@ -84,20 +84,20 @@
               "text": "Der8bauer has waaaaaaaaaaaay better review than these clickbaiters.\n\nAnd he explains, why such perfomance is a thing.",
               "upvotes": -14,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses a specific reviewer (Der8bauer) rather than the product's performance or features.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is about the quality of a review, not the product itself.",
               "replies": [
                 {
                   "commentId": "lu6g9m2",
                   "text": "I watched it and he doesn't explain it.",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a rebuttal about a reviewer's content, not a critique of the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment focuses on the reviewer's explanation, not the product's sentiment.",
                   "replies": []
                 }
               ]
@@ -106,5 +106,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

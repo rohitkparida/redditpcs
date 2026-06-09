@@ -18,20 +18,20 @@
           "text": "Ryzen 5 5500 seems to be a disappointment, especially with the lack of PCIe 4.0 support and lacklustre gaming performance against an i3 12th gen, i think spending slightly more for a R5 5600 seems to be the better choice, or if buying new getting a i5 11400 paired with B560 makes more sense, which should be close to pricing ofR5 5500 paired with B450.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user recommends spending more for the R5 5600 over the 5500, providing a direct value comparison.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user views the R5 5600 as the better choice compared to the 5500.",
           "replies": [
             {
               "commentId": "i3q6epf",
               "text": "hopefully the 5500 will fall to like 120-130. should have launched there.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment focuses on the pricing of the Ryzen 5 5500, not the 5600.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is expressing a hope for a price drop on a different product.",
               "replies": []
             }
           ]
@@ -41,20 +41,20 @@
           "text": "Would a 5500 be compatible with a B450M Mortar, considering the beta bios supports the 5600x/5800x etc. Or would  a new bios be required for these new 5500/5600 chips.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a purely factual question about motherboard compatibility.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a question without an expressed opinion on product performance or value.",
           "replies": [
             {
               "commentId": "i3kihtj",
               "text": "I'm actually surprised they brought Vermeer, Cezanne and Renoir compatibility only with a recent beta update and didn't release anything for basically one year and a half... On the point, I think it *might* work with the latest Beta BIOS, it's based on AGESA 1.2.0.5, while according to Asus my motherboard works with the 5500 since the BIOS based on AGESA 1.2.0.3, but there are two big issues, first of all the 5500 (and the other new CPUs) aren't listed in the compatibility list, as you might have already noticed; in second lieu AGESA 1.2.0.5 was apparently [quite bugged](https://forum-en.msi.com/index.php?threads/agesa-code-1-2-0-5-instability.373607/). If you're willing to try the unstable Beta I would, for peace of mind, ask direct confirmation about the compatibility to MSI; otherwise you could try to wait until the end of the month when MSI [should](https://www.msi.com/news/detail/MSI-AMD-500---400--and-300-series-Motherboards-Are-Ready-to-Optimize-the-Latest-Ryzen--5000---4000-Series-Processors139843) release new (beta) BIOS updates for the \"non-MAX\" B450 mobos (the update is based on AGESA 1.2.0.6 Patch C for the 5800X3D, but of course it will also include compatibility with the 5500 you're interested into and it should be more stable).\n\nI hope it helps.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion is focused on BIOS updates and motherboard compatibility for the 5500.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The response provides technical information without sentiment regarding the 5600's performance.",
               "replies": []
             }
           ]
@@ -64,13 +64,14 @@
           "text": "I did not know that overclocking the 12400 was a thing. Will it void the warranty since you have to twinkle certain bios settings and is not what Intel intended for the 12400?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about overclocking an Intel i5-12400, which is off-topic.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a question about Intel hardware warranty.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

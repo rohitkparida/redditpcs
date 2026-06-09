@@ -18,20 +18,20 @@
           "text": "The gap between the 7900XT and XTX looks huge, didn't realize",
           "upvotes": 16,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses the performance gap between AMD Radeon 7900XT and XTX, which is off-topic to the RTX 5090.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is making a factual observation about AMD cards without expressing a positive or negative sentiment toward the target product.",
           "replies": [
             {
               "commentId": "mauy82p",
               "text": "Yeah feeling really good about my 7900xtx. And even compared to the 5080, not feeling too bad about not waiting.",
               "upvotes": 17,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user compares their current AMD card to the RTX 5080/5090 series performance data provided in the thread, expressing an opinion on whether it was worth waiting.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user expresses satisfaction with their current hardware and feels 'good' about not waiting for the new NVIDIA cards.",
               "replies": []
             },
             {
@@ -39,10 +39,10 @@
               "text": "The first time AMD has actually achieved a big difference between the two top models. Previously, the problem with AMD was that the difference between the top models was too small.",
               "upvotes": 9,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment focuses on AMD's product segmentation strategy and is off-topic to the RTX 5090.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a general critique of AMD's historical product differences.",
               "replies": []
             },
             {
@@ -50,15 +50,16 @@
               "text": "Difference between 7900 XT and XTX is 17-18% in 4K Raster/RT",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment provides purely factual performance percentages for AMD cards, which is off-topic to the RTX 5090.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a purely factual statement of performance data.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

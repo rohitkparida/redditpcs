@@ -28,10 +28,10 @@
               "text": "\\&gt; or if Linux needs anything similar to get full performance\n\nArrow Lake on Linux at launch was already more performant in a lot of cases than on Windows, and I have no doubt the additional tweaks for the refresh have made their way to the kernel already. Just gotta run a bleeding edge kernel and that's it.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion focuses on Linux kernel performance generally rather than specific insights into the 270K Plus.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical observation about Linux performance without a strong positive or negative lean.",
               "replies": []
             },
             {
@@ -39,10 +39,10 @@
               "text": "&gt;- You need to install a special scheduler/optimiser package beyond the usual chipset drivers on Windows, call the \"Platform Performance Package\". No word on whether this will be delivered via Windows update in the future, or if Linux needs anything similar to get full performance\n\nThe Intel Platform Performance Package just rolls up a number of things into a single installer: ~~chipset drivers~~, Dynamic Tuning Technology (DTT) drivers used by Intel Application Optimization (APO), the APO UI, the Processor Power Management (PPM) Provisioning Package - and probably some things I've forgotten - that have been needed to get expected performance from Arrow Lake under Windows ever since it launched (and DTT and APO are both even older). Z890 motherboard manufacturers have been providing the Intel PPP for about a month already, and even my Lenovo Meteor Lake-based laptop received it via Vantage around the same time. It's now also available directly from intel.com: https://www.intel.com/content/www/us/en/download/869519/intel-platform-performance-package.html\n\nI'm especially interested to see how the Intel Binary Optimization Tool (IBOT) delivers, and how well it is maintained and improved. It is included in APO Advanced Mode on supported platforms ( https://www.intel.com/content/www/us/en/support/articles/000102604/processors.html ). I'm hoping it'll also work on the original Arrow Lake CPUs, if not older ranges.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely factual explanation of the Intel Platform Performance Package and drivers, lacking personal opinion or critique.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The tone is informative and technical.",
               "replies": []
             }
           ]
@@ -52,10 +52,10 @@
           "text": "i saw 250KF Plus msrp is $174\n\nnow THATS nuts. too bad they didnt do a 270KF Plus.",
           "upvotes": 6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Expresses an opinion on the value of the 250KF Plus and a desire for a 270KF Plus version.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user describes the price as 'nuts' in a positive context of value.",
           "replies": []
         },
         {
@@ -63,10 +63,10 @@
           "text": "I might get a bundle to play with\n\nI already have ram thanks for asking ",
           "upvotes": 8,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses intent to purchase a bundle, indicating a recommendation/interest in the product line.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Intent to buy indicates a positive sentiment toward the product.",
           "replies": []
         },
         {
@@ -74,90 +74,90 @@
           "text": "Intel is back!\n\n*(moved from 4th place in ST performance to third)*",
           "upvotes": 62,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Opinionated comment on Intel's performance ranking relative to competitors.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The comment is sarcastic, implying that moving from 4th to 3rd place is not a significant 'comeback'.",
           "replies": [
             {
               "commentId": "oc0rby5",
               "text": "Yeah, great result for a $300 CPU.",
               "upvotes": 104,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Opinion on the value of the CPU at a $300 price point.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Describes the result as 'great' for the price.",
               "replies": [
                 {
                   "commentId": "oc0wepv",
                   "text": "Intel @ $300 is not AMD @ $300 due to Intel's mobo schenanigans, tho. ",
                   "upvotes": 9,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Comparison between Intel and AMD regarding motherboard costs and ecosystem value.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Criticizes Intel's 'mobo shenanigans' as a negative factor in overall value.",
                   "replies": [
                     {
                       "commentId": "oc0ydbc",
                       "text": "Depends on the user, its good if you upgrade every generation for incremental performance gains.\n\nBut, to me, being able to reuse my motherboard is not anywhere near the top of my priorities. When my fiance and I upgrade her off her AM4 board its going in a local server chassis, storage, or sold, at a certain point a motherboard upgrade is necessary for many features and it just so happens to be when CPU performance stops cutting it.\n\nThese new chips look really promising. She has a 4090 and plays on 1440p ultrawide, the performance is identical in gaming for her use case.\n\nI bring all this up to say that for us Intel @ 300$ is absolutely the same as AMD @ 300$, I know which one I would pick.",
                       "upvotes": 35,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Shares personal experience/opinion on the performance and value of the new chips for their specific use case.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "Describes the chips as 'really promising' and a good pick for their needs.",
                       "replies": [
                         {
                           "commentId": "oc11i6q",
                           "text": "Its all relative.\n\nA friend of mine went from 1600AF to 5800X3D on the same motherboard.",
                           "upvotes": 11,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discusses a friend's upgrade path on an old AM4 platform, not the 270K Plus.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Factual statement about a friend's hardware change.",
                           "replies": [
                             {
                               "commentId": "oc9h5lh",
                               "text": "So your friend kept his 6 year old outdated out of warranty motherboard and upgraded to a 450$ msrp mediocre CPU on an EOL platform- instead of spending the same 450$ to buy a 12700f + a brand new b660 mobo that had upgradability. Yeah, great argument for upgradabiltiy, LOL. ",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Argument about old AMD and Intel platforms (12700f, 5800X3D), not the 270K Plus.",
+                              "sentiment": "negative",
+                              "sentimentReasoning": "The user is arguing that the 5800X3D was a 'mediocre CPU' and a 'scam'.",
                               "replies": [
                                 {
                                   "commentId": "oca8913",
                                   "text": "5800X3D mediocre cpu? it was 10% faster than 12700K and within distance of 13700K/285K and its the same price $450. Its literally still \"competitive\" with intel current offerings 4 year later.\n\n12700f is a worse product and is compared to 5700X3D (350 vs 250)",
                                   "upvotes": 2,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Comparison between old CPUs (5800X3D, 12700f), not the 270K Plus.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "Technical comparison of performance metrics.",
                                   "replies": [
                                     {
                                       "commentId": "occ7gci",
                                       "text": "Yes, very mediocre. According to hubs test it was 6 to 9% faster than a 12700f, a 310$ CPU (on time of 3d's release). \n\nIt is as competitive as the 12700f is (in gaming),, while it absolutely sucks bonkers in every other workload and it's on a long dead platform. All of that for just 450$. That's a scam. ",
                                       "upvotes": 1,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Discussion of old hardware (12700f, 5800X3D) and platform longevity.",
+                                      "sentiment": "negative",
+                                      "sentimentReasoning": "Calls the 5800X3D a 'scam' and says it 'sucks bonkers'.",
                                       "replies": [
                                         {
                                           "commentId": "occwxne",
                                           "text": "Yes, the 5700X3D ($250) is about 8% faster than 12700f a ($325) cpu.",
                                           "upvotes": 2,
                                           "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
+                                          "relevance": "exclude",
+                                          "relevanceReasoning": "Factual comparison of old CPUs (5700X3D, 12700f).",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "Statement of performance percentages.",
                                           "replies": []
                                         }
                                       ]
@@ -173,10 +173,10 @@
                           "text": "Yeah, the dead end platform argument is totally irrelevant to me. I just build a system that has plenty of power for what I need at the time, and keep it for like a decade.\n\n\nI only find it useful to upgrade when a new system for a reasonable price can give me a fundamentally different experience. You are not getting a fundamentally different experience by upgrading your CPU after 4 years, unless you go from a 4 year old low end chip to a new high end one, but you probably wouldn't do that on a cheap low end board with weak power delivery and limited features anyway.",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "General discussion on PC building philosophy and upgrade cycles, not specific to the 270K Plus.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Neutral explanation of personal hardware habits.",
                           "replies": []
                         },
                         {
@@ -184,10 +184,10 @@
                           "text": "Exactly.  I have a 7700X, but now I want to ugprade to this.  I have a 7900 XTX, so it doesn't matter what the \"bottleneck\" will be for games because the absolute worst case scenario will be a net zero performance change in games, and better at everything else by far.  A huge gain for work where I have to run solidworks sims and render videos.",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "User expresses desire to upgrade to this product for productivity gains (Solidworks, rendering).",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "Expects 'huge gain for work' and better performance in everything else.",
                           "replies": []
                         }
                       ]
@@ -197,10 +197,10 @@
                       "text": "I\u2019m sorry, but the *vast* majority of PC gamers aren\u2019t upgrading often enough for this to actually matter. Most people build a new PC if they\u2019re upgrading, rather than making incremental improvements or moving up as new hardware releases. ",
                       "upvotes": 13,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General meta-talk about how gamers upgrade their PCs, not specific to the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Observation about consumer behavior.",
                       "replies": []
                     }
                   ]
@@ -212,30 +212,30 @@
               "text": "Plenty of people still need to run x86 software that doesn't work or doesn't work well under emulation, want to play games that require a dedicated GPU, want a traditional socketed desktop CPU with replaceable RAM, or just don't like being stuck with MacOS/Windows 11.\n\nThe on-paper performance of Snapdragon/Apple chips is meaningless if it's not available in the package you want and can't run the workloads you want it to run.",
               "upvotes": 27,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General discussion about x86 vs ARM (Apple/Snapdragon), not specific to the 270K Plus.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Argument for the necessity of x86 architecture.",
               "replies": [
                 {
                   "commentId": "oc0yxfz",
                   "text": "I've been on Apple Silicon since launch and I haven't had any software that I couldn't run either natively or without Rosetta, and my experience with Prism on Windows has been similar.\n\nFor most people the workloads are fine, unless you're specifically into gaming",
                   "upvotes": 0,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion of Apple Silicon and Windows on ARM, not the 270K Plus.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Personal experience with ARM-based software compatibility.",
                   "replies": [
                     {
                       "commentId": "oc1jw9u",
                       "text": "Its different for apple since they routinely chop off compatibilty baggage from macos, and force devs to update.\n\nOne of windows's main selling points especially for enterprise is its deep backward compatibility and immense software library.\n\nI too havent had any issues using macos but I dont expect to be able to open up a 6 year old program on it let alone a 20 year old one. They don't even support 32 bit applications at all anymore.",
                       "upvotes": 19,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion of OS compatibility and backward compatibility, not the 270K Plus.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Technical explanation of OS differences.",
                       "replies": []
                     },
                     {
@@ -243,10 +243,10 @@
                       "text": "oh so those abandonware 32 bit excel addins work just fine on MacOS?",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Off-topic comment about Excel add-ins on MacOS.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Sarcastic question about software compatibility.",
                       "replies": []
                     }
                   ]
@@ -257,5 +257,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

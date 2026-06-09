@@ -18,30 +18,30 @@
           "text": "Any chance for games to make more use of AVX512? Or do they already do it?",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general technical question about AVX512 in games, not specific to the 9900X's performance or experience.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question without expressing a positive or negative opinion.",
           "replies": [
             {
               "commentId": "lj1bywq",
               "text": "I\u2019m going to go out on a limb and say it will be quite while before we see that in a real way, if ever, because not that many games even use AVX2 from my research.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses general game engine capabilities regarding AVX2/AVX512, which is off-topic from the specific product analysis.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a neutral technical observation about game development.",
               "replies": [
                 {
                   "commentId": "lj3fymt",
                   "text": "Physics mods in Skyrim are the only time that I've ever used it in a game.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a personal anecdote about a specific game mod, which is off-topic from the product's performance.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is sharing a neutral experience with a game mod.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

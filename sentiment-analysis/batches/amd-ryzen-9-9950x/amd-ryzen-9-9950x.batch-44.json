@@ -18,30 +18,30 @@
           "text": "I wonder why there is almost no coverage of 7950X3D in their benchmarks?",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a question about the absence of a specific CPU in benchmarks, not an opinion on the 9950X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question without expressing a positive or negative sentiment.",
           "replies": [
             {
               "commentId": "li32hmh",
               "text": "Yeah. I noticed that too. Hardware Unboxed has them. I think right now 7950x3D is best of both worlds\u00a0",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion focuses on the 7950X3D, not the 9950X.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user expresses a positive opinion about the 7950X3D being the 'best of both worlds'.",
               "replies": [
                 {
                   "commentId": "li3ov6z",
                   "text": "Yea it doesn't lose much productivity performance and it has very good gaming performance.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about the performance of the 7950X3D, not the 9950X.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user highlights the good gaming and productivity performance of the 7950X3D.",
                   "replies": []
                 }
               ]
@@ -51,10 +51,10 @@
               "text": "This was the second thing I noticed. It's  not even present in the game benchmarks. I just assume gaming =&gt; 7950X3D = 7800X3D +/- 1%.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about the 7950X3D and 7800X3D, not the 9950X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is making a factual assumption about gaming performance.",
               "replies": []
             }
           ]
@@ -64,10 +64,10 @@
           "text": "So cheaper 7000 it's better buy, if the extra ~30% avx512 performance won't be needed",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is comparing the 9950X (implied by the context of the review video) to the cheaper 7000 series, discussing value and performance gains.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user suggests that the 7000 series is a 'better buy' because the 9950X's performance gains are too niche.",
           "replies": []
         },
         {
@@ -75,10 +75,10 @@
           "text": "Pretty rarely does 5 or 10 or even 15% better CHIP performance in then7800x3d to 9800x3d space actually do much for gameplay.\n\nGPUs are too far behind. \n\nEven at 1080p",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The discussion is about the 7800X3D and 9800X3D, not the 9950X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is discussing general CPU performance and GPU bottlenecks.",
           "replies": []
         },
         {
@@ -86,13 +86,14 @@
           "text": "Hello guys, I want a cpu for productivity and I like AMD but why did people recommended me Intel CPU when I saw this video most AMD CPU are on top",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking for general CPU recommendations for productivity, not providing specific insight into the 9950X.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question without a clear positive or negative leaning.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

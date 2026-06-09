@@ -38,20 +38,20 @@
                   "text": "[To be absolutely fair though, here's the list of boards with DDR5.](https://pcpartpicker.com/products/motherboard/#xcx=0&amp;sort=price&amp;s=40&amp;mt=ddr5&amp;page=1&amp;X=0,20000)  Those are the most comparable to the AM5 boards in terms of specs, a lot of the really cheap LGA1700 boards are DDR4.  But of course both the entry-level Intel and AMD may lack PCIe 5 support, or only have it on NVMe, or other weird bullshit.\n\n(PS: it's easier to just select Socket: LGA1700 unless you want to filter for specific chipsets! ;)\n\nNow of course... does that really matter to users?  DDR4 is still very competitive in gaming and if it allows you to go with a cheaper CPU and a cheaper motherboard maybe that's not an awful decision for losing 5% here and there.  13600K is a very competitive CPU for the price, so is 5800X3D, and if you have memory already and maybe a motherboard then AM5 still looks like an overall bad deal even if \"it's got DDR5\".\n\nAnd Zen4's memory controller is *really fucking bad*, like it probably won't POST with 4 sticks unless they're single-rank and low-speed.  [wendell talks about it here,](https://www.youtube.com/watch?v=P58VqVvDjxo) but it's not really limited to 128GB, it's any dual-rank sticks, and even a lot of single-rank sticks don't do great with 4 slots, and you are going to significantly reduce available bandwidth (from 70GB/s with 2 sticks down to about 50GB/s - this is not insignificant). You are basically buying the ddr5 equivalent of the early super finicky b350 boards.\n\nHUB being HUB of course they completely shat on DDR5 for a year straight when it was Intel-exclusive, it *just isn't ready yet guys*, meaning AMD hadn't launched theirs yet, but the moment AM5 launched that was the moment DDR5 was ready and you were a big moron if you were still buying DDR4.  Truth be told it still is not ready yet, things haven't changed from july or august really other than AMD having their product out now (and it's much worse than Intel in terms of memory controller).  The launch gouging was winding down within a couple months, decent RAM came out within a couple months, but the AMD platform just isn't there yet.  \n\nWe will see what prices do in the future, AMD is supposedly designing their platform around smart power stages, which drives up the cost relative to AM4 (and LGA1700), and AMD is intent on selling you 2 chipsets even if they aren't needed (de facto this is just moneygrubbing from AMD - nobody actually connects more than 3 pcie slots even on a $1300 board, nobody really needs the expansion from the second chipset, it's just a way for AMD to capture a little more revenue selling you something that's hardly even used).  Prices may not come down as much as people are hoping, and when AMD says \"cheaper boards are coming\" what they most likely mean is A620, ie even shittier and worse boards, not so much that decent B650/X670 boards are going to come way down.\n\nEven as someone who is really into the idea of a AVX-512 + v-cache system, I'm really dubious about that memory controller and I think it's probably better to just wait a year and see what happens.  I expect 8000 series chips and better motherboards and lower prices will fix most of the complaints.",
                   "upvotes": 11,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion focuses on AM5 motherboards and memory controllers rather than the Ryzen 7 7700 specifically.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user expresses strong dissatisfaction with the AM5 platform's memory controller and motherboard pricing.",
                   "replies": [
                     {
                       "commentId": "j3o6jh1",
                       "text": "&gt; And Zen4's memory controller is \n&gt; really fucking bad\n&gt; , like it probably won't POST with 4 sticks\n\nIts oddly picky.   Some sets of 4 sticks, using two pairs of different brand/IC, can work at DDR 6000 speeds.  Others won't even boot at min speed.   I recall an early Zen 4 RAM performance review with one Samsung pair and one Hynix pair working fine together at 6000. \n\nIntel is more consistent, but with 4 sticks you generally stuck at slow speeds.\n\nIf this is anything like AM4, next gen CPUs on this gen motherboards will clock much higher RAM wise, so its not likely a mobo or AM5 issue, but a Zen 4 I/O die memory controller one.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Focuses on general Zen 4 memory controller issues, not the specific product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user provides a technical observation about RAM stability without a clear positive or negative leaning.",
                       "replies": []
                     }
                   ]
@@ -63,10 +63,10 @@
               "text": "https://www.microcenter.com/product/659693/gigabyte-b650m-ds3h-amd-am5-microatx-motherboard\n160, 140 if buy it with cpu",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Provides a link to a motherboard, which is off-topic for the CPU product analysis.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Purely factual information about a motherboard price.",
               "replies": []
             }
           ]
@@ -76,20 +76,20 @@
           "text": "A 7700 being almost the same as a 7700x, with less power, and a free cooler sounds awesome.\n\nBut when do these even go on sale?",
           "upvotes": 33,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Directly discusses the Ryzen 7 7700's performance, power, and included cooler.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user describes the product as sounding 'awesome' due to its efficiency and value.",
           "replies": [
             {
               "commentId": "j3m9iyp",
               "text": "Tomorrow",
               "upvotes": 15,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Short reply about sale dates, providing no insight into the product itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Factual statement about timing.",
               "replies": []
             },
             {
@@ -97,10 +97,10 @@
               "text": "The price diff in my country is 10\u20ac",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses price difference between CPUs in a specific country, which is purely factual/Q&A.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Neutral statement of price difference.",
               "replies": []
             }
           ]
@@ -110,10 +110,10 @@
           "text": "Before i pull the trigger and get myself one of these Non X versions i want to see what the X3D models perform like gonna hold off untill they release some specs for those",
           "upvotes": 16,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses intent to buy a Non-X version (like the 7700) but is comparing it to upcoming X3D models.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is undecided and waiting for more information.",
           "replies": []
         },
         {
@@ -121,80 +121,80 @@
           "text": "The power consumption differences vs actual performance differences vs the X parts are eye-opening.  Its clear that X parts were pushed far beyond their ideal volt/freq curve to look better against the then-upcoming Raptor Lake.\n\nIn the blender test, the 7900 had total system power usage of 201W vs 7900X at 302W, a difference of 50%, yet for all that extra power usage, in that test 7900X was only 12% faster.\n\nIMO Zen 4 would have looked much more impressive had it released as 95W and 105WTDP parts with the \\*option to set to 170W mode without invalidating any kind of \"OC\" warranty.",
           "upvotes": 39,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the power consumption and performance of Zen 4 Non-X parts compared to X parts.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user views the efficiency of the Non-X parts as a significant advantage.",
           "replies": [
             {
               "commentId": "j3mue97",
               "text": "I mean it's the opposite, they released them in extreme mode, but you can take them down and not lose much performance.",
               "upvotes": 21,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the power management of Zen 4 CPUs.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical counter-point regarding power levels.",
               "replies": [
                 {
                   "commentId": "j3n0v0f",
                   "text": "The problem is the mobos were massively overbuilt since stock power usage went up so much. Even entry level.",
                   "upvotes": 14,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion shifts to motherboard build quality and power usage.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Technical observation about motherboard design.",
                   "replies": [
                     {
                       "commentId": "j3n14ir",
                       "text": "That's fair enough but I also think it's also just priced really high by the motherboard manufacturers. For instance my $350 Asus Prime Pro doesn't come with a full mobo backplate. For $350, it most definitely should.",
                       "upvotes": 12,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Complaints about a specific Asus motherboard, off-topic for the CPU.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "User is dissatisfied with the lack of a backplate on an expensive board.",
                       "replies": [
                         {
                           "commentId": "j3nrz27",
                           "text": "I agree with that too. AIB's are being absolute clowns. Why does the Gigabyte B650M, the *cheapest* board, have 2.5GbE and 3 display ports. But no integrated wifi.",
                           "upvotes": 9,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about motherboard features (Wifi), off-topic for the CPU.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "User is critical of Gigabyte's motherboard feature set.",
                           "replies": [
                             {
                               "commentId": "j3q734k",
                               "text": "For some, no wifi is actually a feature",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Discussion about motherboard wifi, off-topic.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "Neutral observation about user preferences.",
                               "replies": [
                                 {
                                   "commentId": "j3qhs17",
                                   "text": "Except to save money, why wouldn't you want integrated wifi/bluetooth?",
                                   "upvotes": 3,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "Discussion about motherboard wifi, off-topic.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "Questioning the value of omitting wifi.",
                                   "replies": [
                                     {
                                       "commentId": "j3rh4au",
                                       "text": "Except my laptop and phone, everything at my place is using wired Ethernet. So I have no use for wifi on a desktop PC. And so yes, I want to save money by not paying for something I don\u2019t need.",
                                       "upvotes": 2,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Discussion about motherboard wifi, off-topic.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "User explains their personal preference for wired Ethernet.",
                                       "replies": []
                                     },
                                     {
@@ -202,10 +202,10 @@
                                       "text": "Im wondering the same thing.",
                                       "upvotes": 1,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Discussion about motherboard wifi, off-topic.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "neutral expression of curiosity.",
                                       "replies": []
                                     }
                                   ]
@@ -219,10 +219,10 @@
                           "text": "ASUS doesn't really do backplates that's more of an MSI/Gigabyte thing",
                           "upvotes": 5,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about motherboard backplates, off-topic.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Factual statement about brand differences.",
                           "replies": []
                         }
                       ]
@@ -232,20 +232,20 @@
                       "text": "There is nothing over built about these boards. Same standard built boards line x570.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about motherboard build quality, off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Neutral technical comparison.",
                       "replies": [
                         {
                           "commentId": "j3opgm6",
                           "text": "B650 is about the same price as X570. X670 boards are built a lot better though.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about motherboard pricing, off-topic.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Neutral technical comparison.",
                           "replies": []
                         }
                       ]
@@ -257,20 +257,20 @@
                   "text": "The counter your point, most users never touch their bios and don't change their power levels beyond the Windows power modes (which basically does little besides locking the cpu to max clock). \n\nSaying that you can fiddle with it and drop the power levels is good advice *for enthusiasts*, but not for more casual users who just want a good cpu for work.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the usability of power levels for casual users of Zen 4 CPUs.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a balanced perspective on user experience.",
                   "replies": [
                     {
                       "commentId": "j3oh8c6",
                       "text": "Sure I can understand that, but I also do not think those kind of people would generally build their own PC. I think if you are building a high-end PC with a 7950x that you would be willing to make adjustments.",
                       "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the target audience for high-end Zen 4 CPUs.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Neutral opinion on user behavior.",
                       "replies": []
                     }
                   ]
@@ -284,10 +284,10 @@
           "text": "Finally, decent temps. Only thing missing are logically priced mobos and AM5 is on.",
           "upvotes": 8,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Mentions 'decent temps' for the product line, which is a key performance metric.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User is satisfied with the thermal performance.",
           "replies": []
         },
         {
@@ -295,10 +295,10 @@
           "text": "7900 is really a good value vs 7900x, same gaming performance for 100w less\n\nand you almost loose nothing in other applications, that we won't never-ever use",
           "upvotes": 22,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Directly compares the 7900 (Non-X) to the 7900X, praising its value and efficiency.",
+          "sentiment": "positive",
+          "sentimentReasoning": "User explicitly states it is 'really a good value'.",
           "replies": []
         },
         {
@@ -306,25 +306,26 @@
           "text": "Just checked DDR5 MOBOs for both Intel and AMD, had no idea they were both expensive. So only the DDR4 boards are cheap?",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about motherboard pricing and DDR5, off-topic.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Neutral question about motherboard costs.",
           "replies": [
             {
               "commentId": "j3phivq",
               "text": "Yup. DDR5 signaling is more sensitive than DDR4, needs more copper and design consideration.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Technical explanation of DDR5 signaling, off-topic.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Purely factual technical explanation.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

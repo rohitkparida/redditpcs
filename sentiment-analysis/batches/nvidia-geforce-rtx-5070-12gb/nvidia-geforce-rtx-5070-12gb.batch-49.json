@@ -18,40 +18,40 @@
           "text": "(It's a 4070 super with dlss 4)",
           "upvotes": 47,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares the RTX 5070 to a 4070 Super, suggesting minimal hardware difference.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a factual comparison without a strong positive or negative emotional tone.",
           "replies": [
             {
               "commentId": "mfzggn3",
               "text": "The 40 series is getting most of DLSS4 anyways. The only thing they aren\u2019t getting is the 4x frame gen.",
               "upvotes": 27,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion has shifted to DLSS 4 compatibility across the 40 series, rather than the 5070 specifically.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual information about feature availability.",
               "replies": [
                 {
                   "commentId": "mg37prv",
                   "text": "so a worthless feature.",
                   "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user is critiquing a key feature (4x frame gen) of the RTX 5070.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user explicitly calls the feature 'worthless'.",
                   "replies": [
                     {
                       "commentId": "mgd7xen",
                       "text": "I like it.. makes cyberpunk feels that much more smoother",
                       "upvotes": 7,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user shares personal experience using the product's features in a specific game.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user states they 'like it' and that it makes the game feel 'smoother'.",
                       "replies": []
                     }
                   ]
@@ -61,10 +61,10 @@
                   "text": "3x and 4x",
                   "upvotes": -2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort comment providing only technical specifications (3x and 4x).",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is purely factual/technical.",
                   "replies": []
                 }
               ]
@@ -74,10 +74,10 @@
               "text": "It's a 4070 S with DLSS4 minus Multi Frame Generation",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user compares the RTX 5070 to the 4070 Super, highlighting a specific missing feature.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a technical comparison without clear positive or negative leaning.",
               "replies": []
             },
             {
@@ -85,10 +85,10 @@
               "text": "DLSS 4 works on all RTX cards. Just not frame gen junk.\u00a0",
               "upvotes": 11,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion is about general DLSS 4 compatibility, not the specific performance or value of the 5070.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user refers to frame generation as 'junk'.",
               "replies": []
             },
             {
@@ -96,10 +96,10 @@
               "text": "DLSS 4 and higher real price = scam",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user comments on the value proposition of the RTX 5070 relative to its price.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user explicitly calls the pricing a 'scam'.",
               "replies": []
             },
             {
@@ -107,10 +107,10 @@
               "text": "With *MFG",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort correction of a previous comment.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a simple technical correction.",
               "replies": []
             },
             {
@@ -118,15 +118,16 @@
               "text": "So... it's a 4070 Super then.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user concludes that the RTX 5070 is essentially the same as the 4070 Super.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The implication is that the new card is not a meaningful upgrade, suggesting poor value.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

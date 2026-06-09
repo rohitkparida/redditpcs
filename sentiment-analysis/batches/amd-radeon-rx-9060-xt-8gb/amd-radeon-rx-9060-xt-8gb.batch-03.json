@@ -18,50 +18,50 @@
           "text": "The gap (both price and performance) to the 9070 is so large, wonder would there be a 9065 XT or something?",
           "upvotes": 32,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user discusses the price and performance gap of the RX 9060 XT relative to the 9070.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question about potential product tiers without expressing a clear positive or negative opinion.",
           "replies": [
             {
               "commentId": "mx97ndf",
               "text": "There is a more cut down RX 9070 GRE already, but for now it's staying China only.",
               "upvotes": 52,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion has shifted to the RX 9070 GRE, which is a different product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment provides factual information about the availability of another card.",
               "replies": [
                 {
                   "commentId": "mxchdt4",
                   "text": "too bad they saved on the VRAM on that again",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment refers to the VRAM of the RX 9070 GRE, not the RX 9060 XT.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user expresses disappointment regarding the VRAM of a different product.",
                   "replies": [
                     {
                       "commentId": "mxe6lj7",
                       "text": "The issue is that the 9070 and 9070 XT are both 256bit bus cards. So, any dies with an imperfect memory controller would have to go in the garbage if the GRE was also 256bit. With 192bit, they can salvage those dies and pair them with 12GB of VRAM.\n\nIt's the same reason Intel has both the B570 and B580 despite them being so close in price.",
                       "upvotes": 6,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The discussion is about the technical architecture of the 9070 series, not the RX 9060 XT.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a technical explanation of memory controllers and binning.",
                       "replies": [
                         {
                           "commentId": "mxhblgk",
                           "text": "Yeah, I suspect lowbins with intact memory controllers become the lowest tier 9070 SKUs.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is about the 9070 SKUs, not the RX 9060 XT.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is speculating on the binning process for a different product.",
                           "replies": []
                         }
                       ]
@@ -77,13 +77,14 @@
           "text": "Good work Op. You dropped this, king \ud83d\udc51",
           "upvotes": 50,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a low-effort comment praising the original poster, not the product.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is expressing gratitude and praise toward the author of the post.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

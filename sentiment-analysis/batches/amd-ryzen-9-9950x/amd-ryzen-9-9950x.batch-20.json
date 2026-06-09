@@ -28,50 +28,50 @@
               "text": "so how is it decided what goes on what core?",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely a technical question about core allocation without providing opinion or experience.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a factual question.",
               "replies": [
                 {
                   "commentId": "mhcz409",
                   "text": "Is core parking when gaming, powering down the other CCD, or, once the game is started, can other processes, like OS make use of the other CCD? Or, is the OS and the game processes just running on that one CCD with v-cache, with the other CCD entirely disabled?",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Purely a technical question about core parking and CCD behavior.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking a factual question.",
                   "replies": [
                     {
                       "commentId": "mhd6sjg",
                       "text": "From what I understand, itll place the game on the CCD with the v-cache, and if other processed come up then it'll go onto the other CCD. Otherwise, if the other ccd isn't needed, then the CCD with the v-cache will just chug along while the other one is kind of sleeping",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Provides a factual explanation of how the CPU's CCDs work without personal opinion.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The explanation is neutral and factual.",
                       "replies": [
                         {
                           "commentId": "mhde1gw",
                           "text": "How does it know which process is the thame?",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Purely a technical question about process identification.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is asking a factual question.",
                           "replies": [
                             {
                               "commentId": "mhdo9vi",
                               "text": "I hear it requires game bar to identify the processes",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Factual statement about the requirement of Game Bar for process identification.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The statement is neutral and factual.",
                               "replies": []
                             }
                           ]
@@ -81,10 +81,10 @@
                           "text": "Btw, just saw somewhere that ArsTechnica wrote this:\n\n\"AMD's driver software is responsible for deciding what apps get run on which CPU cores\"",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Citing a factual source about driver software responsibility.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The statement is neutral and factual.",
                           "replies": []
                         },
                         {
@@ -92,10 +92,10 @@
                           "text": "That sounds nice. I was worried the bios would just power down the other CCD entirely, making it completely useless.\n\nJayTwoCents seem to show a more dynamical process I see (which is nice I guess). Requiring using the 'balanced' powerplan, as 'performance' messes up core parking I think he says in this most recent video on youtube.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Expresses a positive opinion on the dynamical process of core parking, which is a technical critique of the product's design.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "The user describes the process as 'nice' and expresses relief that the other CCD is not useless.",
                           "replies": []
                         }
                       ]
@@ -109,20 +109,20 @@
               "text": "They fixed what i think made 7950x3d a bad product, pog.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides an opinionated comparison between the 9950X3D and the 7950X3D, praising the fix for a known issue.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user uses the term 'pog' and states that a previous bad product was fixed.",
               "replies": [
                 {
                   "commentId": "mli22fr",
                   "text": "Wasn't that fixed along the way though ?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Purely a question about whether a fix was applied to older models.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking a factual question.",
                   "replies": []
                 }
               ]
@@ -132,20 +132,20 @@
               "text": "It still requires XBOX Game Bar for proper detection.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Technical critique regarding the dependency on XBOX Game Bar for proper detection.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is highlighting a limitation or requirement that is generally viewed as a negative trait.",
               "replies": [
                 {
                   "commentId": "mkukauh",
                   "text": "gross",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Expresses a negative opinion on the requirement of XBOX Game Bar.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user uses the word 'gross' to describe the requirement.",
                   "replies": []
                 },
                 {
@@ -153,20 +153,20 @@
                   "text": "Source?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort request for a source.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking for a source.",
                   "replies": [
                     {
                       "commentId": "mhdnl9w",
                       "text": "[https://www.techpowerup.com/review/amd-ryzen-9-9950x3d/29.html](https://www.techpowerup.com/review/amd-ryzen-9-9950x3d/29.html)",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Providing a link to a review, which is purely factual/informational.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The link is neutral.",
                       "replies": []
                     }
                   ]
@@ -176,10 +176,10 @@
                   "text": "I'll use Linux instead.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Off-topic comment about using Linux instead of Windows.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is stating their preference for an OS, not the CPU itself.",
                   "replies": []
                 }
               ]
@@ -189,10 +189,10 @@
               "text": "Does that mean the improvement will be passed to the 7950x3d?\n\nEdit: Looking at the video, seems like it's looking better, so the answer is probably yes",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely a question about whether improvements are passed to the 7950X3D.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a factual question.",
               "replies": []
             },
             {
@@ -200,10 +200,10 @@
               "text": "Love to see this. I originally built my current rig with a 3950X and loved having so many cores. When they announced the 5800X3D, it was a hard decision to halve my cores\u2026 but still worth it for games. It was always disappointing that when we finally got a x950X3D chip it wasn\u2019t perfect. Love that we can finally get the best of both worlds. I\u2019m definitely getting one in a generation or two.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Shares personal experience with previous AMD CPUs and expresses a strong desire to buy the 9950X3D.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user says they 'Love to see this' and are 'definitely getting one'.",
               "replies": []
             },
             {
@@ -211,10 +211,10 @@
               "text": "Uh what? They haven't changed a thing. Gamebar is still necessary and there are still plenty of games/apps with issues that need the user to intervene (can look at any other review)",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides a technical critique and disagrees with the previous claim of improvements, citing other reviews.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user expresses disappointment that 'they haven't changed a thing' and that issues still exist.",
               "replies": []
             },
             {
@@ -222,10 +222,10 @@
               "text": "Are these improvements being passed onto Ryzen 7000 dual CCD CPU\u2019s as well?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely a technical question about Ryzen 7000 series CPUs.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a factual question.",
               "replies": []
             },
             {
@@ -233,10 +233,10 @@
               "text": "So does this retroactively fix older **50x3d CPUs?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely a technical question about retroactive fixes for older CPUs.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a factual question.",
               "replies": []
             },
             {
@@ -244,15 +244,16 @@
               "text": "**faster**",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort correction of a typo.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is correcting a word.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,30 +18,30 @@
           "text": "I love you 3000",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a meme reference and does not discuss the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a joke and does not express sentiment toward the product.",
           "replies": [
             {
               "commentId": "etc534k",
               "text": "I love you both",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is low-effort banter and not related to the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment does not express any opinion on the product.",
               "replies": [
                 {
                   "commentId": "etcmaw4",
                   "text": "bad bot",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a meme/joke and not related to the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment does not express any opinion on the product.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

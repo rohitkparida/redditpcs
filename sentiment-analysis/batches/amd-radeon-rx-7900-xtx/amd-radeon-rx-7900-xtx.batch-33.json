@@ -18,30 +18,30 @@
           "text": "So after all that drama it's about as fast as the 4080 in raster and much slower in rt. As expected.",
           "upvotes": 296,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides an opinionated performance comparison between the RX 7900 XTX and the RTX 4080.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses disappointment that the card is slower in ray tracing and only matches the 4080 in rasterization.",
           "replies": [
             {
               "commentId": "izxglf3",
               "text": "The disappointing thing here is the uplift vs. the previous gen. They've increased the theoretical FP32 throughput by &gt;2.5x and nearly doubled the memory BW, yet in practice, it doesn't even perform 50% faster. At least the raytracing is somewhat better relatively speaking, but it's not like Nvidia's letting them catch up. They're still just as far ahead.\n\nThen you start looking at the 7900XT vs. 6900XT and the prospects for navi 32 are looking worrying. Will it even be able to match previous gen Navi 21? Does that mean basically no improvement in price/perf for sub-$1000 cards?",
               "upvotes": 59,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user discusses technical performance uplift and compares the 7900 XTX to previous generations.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is disappointed by the actual performance gains relative to theoretical throughput and memory bandwidth.",
               "replies": [
                 {
                   "commentId": "izxrk3y",
                   "text": "The answer to the last question is unfortunately pretty obvious.\n\nI mean, we might get 6700 XT performance for 6650 XT price sort of like improvements.",
                   "upvotes": 13,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a general discussion about price/performance trends for lower-end cards, not specifically about the 7900 XTX.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a speculative factual answer about general GPU trends.",
                   "replies": []
                 }
               ]
@@ -51,30 +51,30 @@
               "text": "Shocker, almost like anyone who has been following the last 3 generations knows that AMD has almost consistently been the worse gpu on everything but entry level. \n\nWhy anyone in their right mind would pay $1000 for a card with worse power efficiency, lower ray tracing performance, worse ai upscaling (both on performance and temporal stability), and worse driver support\n\nI desperately want AMD to compete so nvidia can have a true competitor, but every year is a disappointment from them aside from the 5700xt. They\u2019re always two steps behind nvidia",
               "upvotes": 19,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a technical critique of the 7900 XTX, comparing it to Nvidia's offerings.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user lists several disadvantages, including power efficiency, ray tracing, and driver support, calling it a disappointment.",
               "replies": [
                 {
                   "commentId": "j000m2m",
                   "text": "You should check out PCMR for such people then. Ray tracing is a gimmick with almost zero difference during gameplay for $1000+ GPU purchase--LTT has \"proved\" it. 7900XTX is being celebrated as a big win for price/perf in raster at 1440p with 1.6k upvotes.\n\nThere is still post about DLSS 4k \"fake\" resolution with 7k upvotes.",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user argues in favor of the 7900 XTX's price/performance in rasterization.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user describes the card as a 'big win' for price/performance at 1440p.",
                   "replies": [
                     {
                       "commentId": "j009bgb",
                       "text": "AMD and Intel do \"fake\" 4K too so I don't understand that argument.",
                       "upvotes": 7,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a general discussion about upscaling technology (fake 4K) across multiple brands, not specific to the 7900 XTX's performance or experience.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is making a factual claim about competing technologies.",
                       "replies": []
                     }
                   ]
@@ -85,5 +85,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

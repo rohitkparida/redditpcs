@@ -18,10 +18,10 @@
           "text": "I got a Radeon 7600 at Best Buy for like 250 bucks. Not going to go broke occasionally playing league and battlefield lol",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing their purchase of a Radeon 7600, which is unrelated to the RTX 5070.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a personal anecdote about a different product without sentiment regarding the RTX 5070.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "just got a hellhound xt for 9999sek... basically 1k usd... let see how it performs compared to the 6900xt.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing the purchase of a Radeon Hellhound XT, not the RTX 5070.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment focuses on a competitor's product.",
           "replies": []
         },
         {
@@ -40,20 +40,20 @@
           "text": "Damn the 9070XT puts up similar numbers as the 7900xtx for about half the price",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is comparing the Radeon 9070XT to the 7900xtx, not the RTX 5070.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is about AMD products.",
           "replies": [
             {
               "commentId": "mh89tw1",
               "text": "what half price?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is asking a question about the price of an AMD card mentioned in the previous comment.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual question about a competitor's product.",
               "replies": []
             }
           ]
@@ -63,30 +63,30 @@
           "text": "[Current situation in one photo](https://i.imgur.com/4Jt9qy4.jpeg)",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user posted a link to an image, which is off-topic/low-effort content.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No sentiment expressed regarding the RTX 5070.",
           "replies": [
             {
               "commentId": "mgy34cm",
               "text": "unironic nvidia shill lmao",
               "upvotes": -1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a low-effort insult ('shill') and does not provide insight into the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a personal attack, not a product review.",
               "replies": [
                 {
                   "commentId": "mgy57uq",
                   "text": "Nvidia shill? I am promoting AMD. They did it! They delted Nvidia.",
                   "upvotes": -1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is discussing AMD's competition with Nvidia generally, without specific feedback on the RTX 5070.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is general meta-talk about brand competition.",
                   "replies": []
                 }
               ]
@@ -95,5 +95,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

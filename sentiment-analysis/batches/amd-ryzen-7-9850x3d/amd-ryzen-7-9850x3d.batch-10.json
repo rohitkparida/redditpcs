@@ -18,20 +18,20 @@
           "text": "Would I see a fps jump with a 4090 and 7800x3d or should I wait till the end of am5 with 1180x3d ",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a factual question about potential performance gains without providing an opinion or experience.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question, which does not convey a positive or negative sentiment.",
           "replies": [
             {
               "commentId": "ofemno4",
               "text": "I got a 20fps jump in forza horizon 5 going from a 7800X3D to a 9850X3D that I also overclocked by 200MHz so yea depending on title you get some gains",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user shares personal experience regarding FPS gains when upgrading to the 9850X3D.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user reports a performance increase (20fps jump), indicating satisfaction with the product's performance.",
               "replies": []
             },
             {
@@ -39,10 +39,10 @@
               "text": "Unless you are playing at 720p, your CPU is not a bottleneck, so upgrading will be a waste of money; you will have exactly the same fps with a 7800X3D, a 9850X3D or a 1180X3D. And the 7800X3D is not going to be a bottleneck anytime soon. So relax and enjoy your PC, you are good for at least 5 years. ",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides an opinionated performance critique, suggesting the upgrade is a waste of money.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user advises against the purchase, calling it a waste of money for most users.",
               "replies": []
             },
             {
@@ -50,10 +50,10 @@
               "text": "Depends on what you play entirely.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is too brief and lacks meaningful insight or specific opinion on the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral statement about game dependency.",
               "replies": []
             },
             {
@@ -61,20 +61,20 @@
               "text": "Sigh....  people are so.... \n\nThe 4090 is a 4K GPU. CPU barely matters at all. Y",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion focuses on general GPU/CPU bottlenecks at 4K rather than the specific product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment discusses general hardware principles without expressing sentiment toward the 9850X3D.",
               "replies": [
                 {
                   "commentId": "ofekh9j",
                   "text": "Starcitizen begs to differ",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a brief mention of a specific game and does not provide insight into the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral mention of a game.",
                   "replies": []
                 },
                 {
@@ -82,10 +82,10 @@
                   "text": "This is completely untrue. There are entire genres where you will be CPU limited at 4k all the time.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses general CPU limitations at 4K, not the specific product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a general technical argument.",
                   "replies": []
                 },
                 {
@@ -93,10 +93,10 @@
                   "text": "Yeah if it was 2009.\u00a0",
                   "upvotes": 0,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a sarcastic remark about hardware history and is off-topic.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a joke/sarcastic remark.",
                   "replies": []
                 }
               ]
@@ -105,5 +105,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

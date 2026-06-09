@@ -18,30 +18,30 @@
           "text": "So once more good card bad price",
           "upvotes": 12,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment refers to the RTX 5060 Ti discussed in the parent thread, not the RTX 5070.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses disappointment with the pricing of the card.",
           "replies": [
             {
               "commentId": "mnfr8wv",
               "text": "It\u2019s not really a bad price, considering that it would be equal to a 3060 Ti after adjusting for inflation. The issue is that actual performance has not increased enough in the 4.5 years since the 3060 Ti.",
               "upvotes": 16,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion is focused on the RTX 5060 Ti and its performance relative to the 3060 Ti.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user provides a balanced analysis of pricing and performance gains.",
               "replies": [
                 {
                   "commentId": "mo718yz",
                   "text": "Its literally better in every aspect compared to the 4060ti. Looking at TFLOPs means nothing in comparing the real world usage of a card. Everyone thought that with the RTX4060 Vs the RX7600 (people sided with the 7600) even though the 4060 was the most energy efficient and could still do ultra quality at 1080p 60fps with the majority of games people tested",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the RTX 5060 Ti and compares it to the 4060 Ti and RX 7600.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user argues that the card is better in every aspect compared to its predecessor.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

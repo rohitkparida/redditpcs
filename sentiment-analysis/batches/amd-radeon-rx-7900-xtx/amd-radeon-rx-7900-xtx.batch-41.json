@@ -18,40 +18,40 @@
           "text": "Under-delivered massively imo, and fairly power inefficient compared to the 4080. No idea where the GPU market is going from here on out; I guess buying previous gen is the move at the moment until prices calm down.",
           "upvotes": 82,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses a negative opinion on the product's performance and power efficiency compared to a competitor.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user states the product 'under-delivered massively' and is 'power inefficient'.",
           "replies": [
             {
               "commentId": "izxe2aw",
               "text": "Insanely inefficient looking at the multi Monitor and Video Playback Power draw especially.",
               "upvotes": 23,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User provides a specific technical critique regarding power draw during multi-monitor use.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user describes the power draw as 'insanely inefficient'.",
               "replies": [
                 {
                   "commentId": "izxhi9k",
                   "text": "Yea, the possibly idle power usage makes this no-no cards for me.",
                   "upvotes": 9,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User shares a personal decision not to buy the product based on idle power usage.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user considers the card a 'no-no' due to power usage.",
                   "replies": [
                     {
                       "commentId": "izxhvs5",
                       "text": "Yes, here in Germany using the 7900XTX over 3 years would cost more than the additional cost of the rtx 4080",
                       "upvotes": 8,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "User compares the long-term cost of ownership (electricity) between the 7900 XTX and RTX 4080.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user argues that the 7900 XTX is more expensive over time due to power costs.",
                       "replies": []
                     }
                   ]
@@ -61,30 +61,30 @@
                   "text": "That's probably a bug.",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a short, speculative comment about a bug, lacking meaningful insight into the product's performance or experience.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral observation about a potential bug.",
                   "replies": [
                     {
                       "commentId": "izxt4ot",
                       "text": "According to the Response pcgameshardware.de got no, atleast not the Monitor Power draw\n\n&gt;The AMD RDNA3 architecture is optimized to ensure responsive performance with the highest refresh rates. The newest high-resolution and refresh monitors require significant memory bandwidth and initial launch on RX 7900 series cards gaming cards have been tuned to ensure optimal display performance. This may result in higher idle power and fan speeds with certain displays. We're looking into further optimizing the product going forward.",
                       "upvotes": 8,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment provides a factual quote from AMD regarding power draw, without adding personal opinion or experience.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is purely factual/Q&A.",
                       "replies": [
                         {
                           "commentId": "izyubed",
                           "text": "The issue is probably the same we have since many years. They need a small time-frame to switch between memory clocks. They use the vblank of the monitor for that. Giving them a small windows where they don't have to send data to the monitor.\n\nBut with higher refresh monitors the windows can be to small. And with multiple monitors the vblanks are not synchronized. So they keep the card at the highest memory clocks all the time.\n\nOf course it also can be that they don't have enough clock steps for the memory. So the low power clock just has not enough bandwidth for higher resolution+frequency+multiple monitors.\n\nKind of feels very rushed.",
                           "upvotes": 5,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "User provides a technical critique of the memory clock switching and the product's design, calling it 'rushed'.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user feels the product feels 'very rushed' and has design flaws in power management.",
                           "replies": []
                         }
                       ]
@@ -98,20 +98,20 @@
               "text": "These not a single AMD GPU that is worth to lets the default setting on.\n\nThe card can surely be undervolted of literaly 20-25% and remain the same performance ( or even get more ).AMD are just terrible when its time to make voltage curve.\n\nBy default my 5700XT run 1200mv at 1950mhz.... i can do 998mv for 2001 mhz... that 60w of consumption...  \n\n\nIts not this generation where AMD will have efficient stock setting and be Casual-friendly, sadly.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User critiques the stock voltage settings of AMD GPUs, including the 7900 XTX generation, and suggests undervolting.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user describes AMD as 'terrible' at making voltage curves and the stock settings as not 'casual-friendly'.",
               "replies": [
                 {
                   "commentId": "izxg19a",
                   "text": "Yeah, it's wild the efficiency AMD leaves on the table with default settings. I left my 5700 XT at stock voltage but have it running at 2100 MHz instead of the 1950 or whatever it was.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The discussion shifts to the 5700 XT, which is a different product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is about a different product.",
                   "replies": []
                 }
               ]
@@ -123,30 +123,30 @@
           "text": "So on par on rasterization and somewhat worse on RT, which is exactly what they promised, at least thats the impression i got from AMD and the rumor mill.",
           "upvotes": 28,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User compares the rasterization and ray tracing performance of the 7900 XTX to expectations and competitor products.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user finds the performance 'on par' and 'somewhat worse' as expected, without a clear positive or negative leaning.",
           "replies": [
             {
               "commentId": "izyrnui",
               "text": "I dont know why people are that disappointed. Noone expected AMD to go head to head with the 4090. And that they hit 4080 performance while beeing cheaper is kinda good. RT Performance is shit yes. But AMD will always be a generation behind in that regard. \n\nAnd AMD proofed to improve their drivers over time. Just dont be a early adopter and those cards are a good option.\n\nAnd lets be real here: when people complain that they wanted to upgrade, usually they absolutly dont need the upgrade. So just dont buy it and its still fine. Your 3060Ti is good enough until the next generation hits",
               "upvotes": 22,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User recommends the product as a 'good option' if not an early adopter, while comparing it to the RTX 4080.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user states the card is a 'good option' and hits 4080 performance while being cheaper.",
               "replies": [
                 {
                   "commentId": "izyspbu",
                   "text": "We expected far more performance looking at AMD's 1.5-1.7X performance jump claims",
                   "upvotes": 11,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User expresses disappointment in the performance jump compared to AMD's own claims.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user 'expected far more performance'.",
                   "replies": []
                 },
                 {
@@ -154,10 +154,10 @@
                   "text": "&gt;Noone expected AMD to go head to head with the 4090.\n\nI think initially some people did (excluding RT titles) with the 1.5-1.7x performance claims and how well the 6k series stacked up vs NV.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User discusses the performance expectations of the 7900 XTX based on previous generations and claims.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user implies disappointment that the performance didn't meet the initial high expectations.",
                   "replies": []
                 }
               ]
@@ -169,10 +169,10 @@
           "text": "For something that's trading blows with 4080 in raster and \"decent\" RT, it's fine, I guess. \n\nIs it, on the other hand, $1000 fine? Debatable, but that's the way it is.\n\n&amp;#x200B;\n\nThat coil whine, though \ud83d\ude16",
           "upvotes": 42,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User shares an opinion on the value proposition and mentions a specific hardware issue (coil whine).",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user questions if it is '$1000 fine' and mentions coil whine with a negative emoji.",
           "replies": []
         },
         {
@@ -180,50 +180,50 @@
           "text": "I'm not buying a 1000$ GPU and not use freaking RT. Fuck AMD and fuck Nvidia.",
           "upvotes": 83,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses strong dislike for the product's lack of RT performance, making it a 'don't buy' recommendation.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user uses strong language ('Fuck AMD') and refuses to buy the product due to RT performance.",
           "replies": [
             {
               "commentId": "izxy5av",
               "text": "I'm so incredibly disappointed in this generation.",
               "upvotes": 28,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User expresses general disappointment in the current GPU generation, including the 7900 XTX.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is 'so incredibly disappointed'.",
               "replies": [
                 {
                   "commentId": "izxylii",
                   "text": "PS5 and Xbox X are great deals in comparison. Let it stink on their shelfs.",
                   "upvotes": 11,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is off-topic, discussing consoles (PS5/Xbox) as alternatives to PC gaming.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is about consoles, not the specific GPU.",
                   "replies": [
                     {
                       "commentId": "izxyu6d",
                       "text": "Yeah like it's a worse time to build a pc than it was during the crypto boom. Even midrange cards are going to cost more than an entire console",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is off-topic, discussing general PC building costs and consoles.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Tells general PC building costs, not the specific GPU.",
                       "replies": [
                         {
                           "commentId": "izxzw8r",
                           "text": "Midrange was eating good these past two months with price drops from the 6000 series. If you didn't buy then sorry to say you gonna need to wait two years.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is off-topic, discussing price drops of the 6000 series, not the 7900 XTX.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Discusses a different product series.",
                           "replies": []
                         }
                       ]
@@ -233,10 +233,10 @@
                       "text": "I can find a used ps5 for $400 with a blueray built in - nothing in PC world comes even close.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is off-topic, discussing the value of used consoles.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is about consoles.",
                       "replies": []
                     }
                   ]
@@ -247,5 +247,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

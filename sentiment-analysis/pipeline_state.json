@@ -59,17 +59,37 @@
     "updated_at": "2026-06-09T19:32:36"
   },
   "amd-radeon-rx-7900-xt": {
-    "status": "pending",
-    "step": "classification_resume",
-    "reason": "retry_after_shared_batch_filter_fix",
-    "warnings": [],
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [
+      "zero_include_batch:amd-radeon-rx-7900-xt.batch-03.json",
+      "zero_include_batch:amd-radeon-rx-7900-xt.batch-09.json",
+      "zero_include_batch:amd-radeon-rx-7900-xt.batch-10.json",
+      "zero_include_batch:amd-radeon-rx-7900-xt.batch-13.json",
+      "zero_include_batch:amd-radeon-rx-7900-xt.batch-16.json",
+      "zero_include_batch:amd-radeon-rx-7900-xt.batch-28.json",
+      "zero_include_batch:amd-radeon-rx-7900-xt.batch-33.json",
+      "zero_include_batch:amd-radeon-rx-7900-xt.batch-37.json",
+      "zero_include_batch:amd-radeon-rx-7900-xt.batch-40.json",
+      "zero_include_batch:amd-radeon-rx-7900-xt.batch-44.json",
+      "zero_include_batch:amd-radeon-rx-7900-xt.batch-45.json"
+    ],
     "metrics": {
       "survivingThreads": 5,
       "candidateComments": 870,
-      "classificationCompleteness": 0.9080459770114943
+      "includedComments": 194,
+      "contributingThreads": 5,
+      "largestThreadShare": 0.4484536082474227,
+      "includeRate": 0.3293718166383701,
+      "classificationCompleteness": 1.0
     },
-    "artifacts": {},
-    "error": ""
+    "artifacts": {
+      "classified": "classified/amd-radeon-rx-7900-xt.classified.json",
+      "database": "../src/data/gpus.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-09T16:37:34"
   },
   "amd-radeon-rx-7900-xtx": {
     "status": "done",
@@ -290,17 +310,32 @@
     "updated_at": "2026-06-09T14:38:07"
   },
   "amd-ryzen-5-9600x": {
-    "status": "pending",
-    "step": "classification_resume",
-    "reason": "retry_after_shared_batch_filter_fix",
-    "warnings": [],
+    "status": "done",
+    "step": "complete",
+    "reason": null,
+    "warnings": [
+      "zero_include_batch:amd-ryzen-5-9600x.batch-20.json",
+      "zero_include_batch:amd-ryzen-5-9600x.batch-21.json",
+      "zero_include_batch:amd-ryzen-5-9600x.batch-29.json",
+      "zero_include_batch:amd-ryzen-5-9600x.batch-38.json",
+      "zero_include_batch:amd-ryzen-5-9600x.batch-43.json",
+      "zero_include_batch:amd-ryzen-5-9600x.batch-44.json"
+    ],
     "metrics": {
       "survivingThreads": 5,
       "candidateComments": 725,
-      "classificationCompleteness": 0.05103448275862069
+      "includedComments": 185,
+      "contributingThreads": 5,
+      "largestThreadShare": 0.31351351351351353,
+      "includeRate": 0.40130151843817785,
+      "classificationCompleteness": 1.0
     },
-    "artifacts": {},
-    "error": ""
+    "artifacts": {
+      "classified": "classified/amd-ryzen-5-9600x.classified.json",
+      "database": "../src/data/cpus.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-09T17:05:04"
   },
   "amd-ryzen-7-7700": {
     "status": "insufficient_sources",

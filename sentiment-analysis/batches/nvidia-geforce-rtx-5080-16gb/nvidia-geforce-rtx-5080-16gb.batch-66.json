@@ -18,10 +18,10 @@
           "text": "I got a Radeon 7600 at Best Buy for like 250 bucks. Not going to go broke occasionally playing league and battlefield lol",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing a Radeon 7600, which is not the RTX 5080.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a statement of personal purchase and usage preference.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "just got a hellhound xt for 9999sek... basically 1k usd... let see how it performs compared to the 6900xt.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing a Radeon Hellhound XT and comparing it to a 6900XT, not the RTX 5080.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a factual statement about a recent purchase.",
           "replies": []
         },
         {
@@ -40,20 +40,20 @@
           "text": "Damn the 9070XT puts up similar numbers as the 7900xtx for about half the price",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing the Radeon 9070XT and its value compared to the 7900XTX, not the RTX 5080.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is an observation about price-to-performance for AMD cards.",
           "replies": [
             {
               "commentId": "mh89tw1",
               "text": "what half price?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a question about price, not providing insight into the RTX 5080.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a simple inquiry.",
               "replies": []
             }
           ]
@@ -63,30 +63,30 @@
           "text": "[Current situation in one photo](https://i.imgur.com/4Jt9qy4.jpeg)",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment contains only an image link and no text providing insight into the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a low-effort post without sentiment.",
           "replies": [
             {
               "commentId": "mgy34cm",
               "text": "unironic nvidia shill lmao",
               "upvotes": -1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a meta-discussion/insult regarding 'shilling', not about the product performance.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is an accusation of bias rather than a product opinion.",
               "replies": [
                 {
                   "commentId": "mgy57uq",
                   "text": "Nvidia shill? I am promoting AMD. They did it! They delted Nvidia.",
                   "upvotes": -3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a meta-discussion/argument about brand loyalty, not about the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a defensive response to an accusation.",
                   "replies": []
                 }
               ]
@@ -95,5 +95,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-26b-a4b-it"
 }

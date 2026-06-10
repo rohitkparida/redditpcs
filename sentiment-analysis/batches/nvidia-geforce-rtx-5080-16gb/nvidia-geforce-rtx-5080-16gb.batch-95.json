@@ -18,40 +18,40 @@
           "text": "At least I feel better that the 4080 Super I got a year ago looks like a great decision and there's no reason for FOMO.",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares their current 4080 Super to the new 5080 to justify their purchase decision.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user expresses satisfaction with their previous purchase and relief that they do not have FOMO.",
           "replies": [
             {
               "commentId": "mav8igf",
               "text": "4080 Super looks like a great choice based on this data. Unfortunately, nVidia knows this too - and as a result, the 4080S is currently being phased out (Germany) or has already done so (USA).",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user discusses the market availability and value comparison between the 4080 Super and the 5080.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user provides a factual observation about product phasing and market trends without a strong emotional lean.",
               "replies": [
                 {
                   "commentId": "maxwmu6",
                   "text": "There's really no reason to produce two identically sized chip on the same node to sell one cheaper.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a technical critique regarding chip production and product segmentation.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is making a technical observation about manufacturing logic.",
                   "replies": [
                     {
                       "commentId": "maywv9f",
                       "text": "*Unless one is a cutdown version of the other (imperfect yields), but that's clearly not the case.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user offers a technical critique/counter-argument regarding chip yields and product versions.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a technical explanation for a potential manufacturing scenario.",
                       "replies": []
                     },
                     {
@@ -59,10 +59,10 @@
                       "text": "True.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user is agreeing with the previous technical point regarding product logic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is expressing simple agreement with a technical statement.",
                       "replies": []
                     }
                   ]
@@ -72,10 +72,10 @@
                   "text": "Yeah, it looks like the supply for the 4080S has dried up in the US. I mean, if anyone was looking to get a 4080S around now anyway it's not like the 5080 is bad - the MSRP is the same anyway so they should just get the 5080. It's just a shame that the 4080S never had a chance to drop in price to get anyone a real deal.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user compares the value and MSRP of the 4080 Super and the 5080.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user provides a balanced view, noting the 5080 is a good option at its MSRP but expressing disappointment about the lack of a price drop for the older model.",
                   "replies": []
                 }
               ]
@@ -84,5 +84,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-26b-a4b-it"
 }

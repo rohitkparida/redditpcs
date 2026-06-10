@@ -18,20 +18,20 @@
           "text": "4080 super or 5080\n\n![gif](giphy|9mtE009hcWPOesk8C4)",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is asking for a comparison between the 4080 Super and the 5080.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a direct question/comparison without a clear positive or negative stance.",
           "replies": [
             {
               "commentId": "m9yvoq8",
               "text": "4080S, the price markup isnt worth that negligible performance gain.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a recommendation/opinion on the value of the 5080 compared to the 4080 Super.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user explicitly states the price markup is not worth the performance gain.",
               "replies": []
             },
             {
@@ -39,20 +39,20 @@
               "text": "Literally 0% performance gain in some games...",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user shares an opinion on the performance gains of the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user expresses disappointment by claiming there is zero performance gain in some games.",
               "replies": [
                 {
                   "commentId": "m9xs30v",
                   "text": "that is bug, 8-15% is right..\u00a0",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a technical correction regarding the actual performance gains.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual correction of a previous claim without a strong emotional leaning.",
                   "replies": []
                 }
               ]
@@ -61,5 +61,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-26b-a4b-it"
 }

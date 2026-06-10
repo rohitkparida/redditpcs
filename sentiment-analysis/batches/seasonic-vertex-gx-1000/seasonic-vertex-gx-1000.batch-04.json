@@ -18,80 +18,80 @@
           "text": "It looks like some of these \u201catx 3.0 compliant\u201d PSUs are failing the atx 3.0 certification from Cybenetics. Specifically the Thermaltake GF3 1200w and the SilverStone Hela 1200r. The checkbox for atx 3.0 compliance is missing from both of their data sheets over at Cybenetics. I\u2019m not sure why they failed, but they are missing the atx 3.0 compliance designation. \n\nhttps://www.overclock.net/threads/which-psu-for-rtx-4090.1801356/post-29045609",
           "upvotes": 18,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The comment discusses ATX 3.0 certification issues with specific PSU models, which is relevant to the general discussion of high-end PSUs like the Vertex GX-1000.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is reporting factual discrepancies in certification without expressing a personal opinion on the product itself.",
           "replies": [
             {
               "commentId": "iz34c82",
               "text": "Very interesting. Hopefully it's just a fluke or something, because those companies both have models which otherwise passed no problem (even models in the same series, for that matter). But, I trust Cybenetics to be thorough. Will add a little addendum to each and update the intro. Thank you!",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The comment is a direct response to the discussion about PSU certification and is part of the relevant thread context.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user expresses hope for a resolution but does not express a strong positive or negative sentiment towards a specific product.",
               "replies": [
                 {
                   "commentId": "iz37ann",
                   "text": "Exactly my thoughts! I\u2019m hoping it\u2019s just a fluke, perhaps a clerical error on Cybenetics\u2019 behalf. I have a Hela 1200R sitting in front of me with the labels on the box stating it\u2019s atx 3.0/PCIe 5 compliant, and it even has the platinum rating by Cybenetics on it, but I\u2019m not opening it until I get this figured out. \n\nI emailed Cybenetics and asked about the discrepancy. If anyone else wants, please email them at info@cybenetics.com as I\u2019m sure more of us asking the same question will get us an answer. I\u2019m going to try contacting SilverStone and maybe Thermaltake tomorrow to see if they have info.",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment provides context regarding the user's own hardware and the uncertainty surrounding certification.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is expressing uncertainty and seeking clarification rather than a strong sentiment.",
                   "replies": [
                     {
                       "commentId": "iz4fe9j",
                       "text": "u/52weeksout So Cybenetics is awesome and they\u2019ve already responded several times. First I asked why the Hela 1200R was missing the certification, to which I received:\n\n\u201cWe recently implemented the ATX v3.0 compatibility check on our reports, so it might be that the report hasn\u2019t been updated. \nThank you for pointing this out! We will check it ASAP!\u201d\n\nAnd they responded again within an hour with this disappointing news:\n\n\u201cThe HELA 1200R Platinum is not ATX v3.0 compatible since it does not operate under all  ATX v3.0 transient response test conditions.\nThat's why it is not shown on our website as ATX v3.0 compatible.\u201d\n\nI then asked if this is the same reason the Thermaltake gf3 1200w is missing certification, and also asked how these companies can claim atx 3.0 compliance when they aren\u2019t passing all their tests and they said:\n\n\u201cWe had a problem running transients on the TT 1200 and expecting a new sample. \n\nOur official reports are about Efficiency and Noise. ATX v3.0 testing is just a side perk and we cannot force brands to follow our findings there.\u201d\n\nSo maybe the GF3 1200w will eventually be certified by Cybenetics. But looks like it and the Hela 1200r are both currently not fully atx 3.0 compliant.",
                       "upvotes": 12,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment provides technical details and direct feedback from Cybenetics regarding PSU certification.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is relaying information from a third party without a personal sentiment.",
                       "replies": [
                         {
                           "commentId": "iz5s0h7",
                           "text": "u/rittledin u/52weeksout Another update! I called Silverstone and I told them about the situation. I brought up the Cybenetics report and the person I spoke with, Tom I believe, immediately knew that the test/report was done in September and said Cybenetics was sent a preproduction unit and it\u2019s possible that\u2019s why it failed, and that the final production units that we are receiving now should pass all tests. I mentioned how there was a similar situation with the Thermaltake GF3 1200w and that Cybenetics said they were being sent a new test unit, and the person I spoke with said he\u2019s going to talk with other people at global to see what they can do. I left him my contact info and he said he will keep me updated. It was really nice that I was able to talk to someone who was aware right away, so kudos to Silverstone for that.",
                           "upvotes": 10,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The comment provides an update on the user's communication with the manufacturer, which is relevant to the technical discussion.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is reporting a conversation and is expressing a positive view of the customer service, but the sentiment towards the product is neutral.",
                           "replies": [
                             {
                               "commentId": "iz6csbi",
                               "text": "Wow thanks so much for keeping me updated on this! That makes a lot of sense and sounds optimistic. I was looking at the Intel atx 3.0 spec yesterday and was so confused because there are specific power excursion requirements called out for psus &gt; 450w with a native 12vhpwr cable port. So it just didn\u2019t make sense for Silverstone to claim the 1200R is atx 3.0 compliant unless it was a case of straight up false advertising. \n\nGlad to hear Silverstone and Cybenetics have been so quick to respond to Hopefully we see an updated Cybenetics test report soon and our 1200Rs are fully atx 3.0 compliant. \n\nThanks again for chasing this down and keeping us updated! I was already very over searching for a 1300P after like 1.5 days haha.",
                               "upvotes": 3,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "The comment is part of the the technical discussion regarding ATX 3.0 compliance and certification.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is expressing relief and optimism regarding the resolution of the certification issue, but the sentiment towards the product is neutral.",
                               "replies": [
                                 {
                                   "commentId": "izba0je",
                                   "text": "I got a new message from Silverstone:\n\n\u201cFrom talking to our colleague in the headquarters, they are going to get in touch with Cybenetics to find out if there is possibly a discrepancy in testing method and resubmit the power supply if necessary. They assured me that our production HELA 1200R Platinum is genuinely an ATX 3.0 power supply because it was designed alongside DA1000R Gold, which is also an ATX 3.0 unit.\u201d\n\nI\u2019ll keep updating if I hear more.",
                                   "upvotes": 6,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "The comment provides a further update on the manufacturer'1s communication regarding certification.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is relaying information without a clear sentiment.",
                                   "replies": [
                                     {
                                       "commentId": "izd083g",
                                       "text": "Thank you for the amateur journalism! I'd like to think with how bad publicity can spread over poor PSUs that these companies would do their homework regarding certification. Here's hoping the production models pass the certification testing. Added this info to the OP.",
                                       "upvotes": 3,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "include",
+                                      "relevanceReasoning": "The comment is part of the relevant technical discussion about PSU certification.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The user is expressing a general opinion on the industry practice, but the sentiment towards the product is neutral.",
                                       "replies": []
                                     }
                                   ]
@@ -111,15 +111,16 @@
               "text": "&gt;Thermaltake GF3 1200w \n\nThe Thermaltake GF3 1200w  has been updated to include ATX 3.0 compliant on the Cybernetics site, but SilverStone Hela 1200r still missing it from the data sheet.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The comment provides a factual update on the certification status of specific PSU models.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is reporting factual information without a personal sentiment.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-26b-a4b-it"
 }

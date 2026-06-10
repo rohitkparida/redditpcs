@@ -18,20 +18,20 @@
           "text": "Hello champions :)\n\nI have one PSU that I can buy from a retailer in my country (Romania) and it's: Thermaltake Toughpower GF 3 1000W | PC ATX 3.0 Power Supply | PCIe Gen 5.0\n\nI've never had Thermaltake products before...what do you think?\n\nSome quick info about my setup:\n\nMy GPU: ROG Strix GeForce RTX 4090 OC Edition 24GB GDDR6X\n\nMy CPU: AMD Ryzen 9 7950X\n\nMy AIO: ROG RYUJIN II 240\n\n10X Lian Li UNI Fan AL\n\nOne 4k capture card...ssd nvme wd 850X 1TB (adding one 2TB later on)...and ram G.SKILL Trident Z5 Neo RGB 32GB, DDR5-6000Mhz, CL30, bla, bla. \n\nThank you :)",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is asking for advice on a specific PSU (Thermaltake) for their build, which is relevant to the general discussion of high-end PSUs like the Vertex GX-1000.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question and not expressing a clear positive or negative sentiment towards a specific product.",
           "replies": [
             {
               "commentId": "iwl06w9",
               "text": "I think I'll wait until I find the 1200W model. I don't want my PSU to stay 80% load all the time (or something like that).",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user is discussing PSU wattage and load management, which is relevant to the context of high-end power supplies.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is expressing a preference for a higher wattage model but does not express a strong sentiment towards a specific product.",
               "replies": []
             },
             {
@@ -39,20 +39,20 @@
               "text": "Unfortunately the 1000W only has a 450W PCIE5.0 cable, so you can only run your 4090 at stock settings.\n\n&amp;#x200B;\n\nAs much as it pisses me off that they did that (all you need is 500W on 99% of 4090's to max the power slider for overclocking), that seems to be standard for all 850W and 1000W PSUs coming out - and you have to go for a 1200W to actually get \"full capability\" for your card.\n\nIt should be noted that you can spend about 100USD and get custom cables, that i believe would allow 600W just replacing the ones that came with the PSU.  I would absolutely ask the manufacturer of custom cables to be absolutely sure before \"having to settle\" for waiting or spending for a 1200W model.\n\n&amp;#x200B;\n\nEdit: I just saw a cablemod response below, and at least in their case the cables would be open for 600W as long as the PSU can supply that power (aka even a 850W would be able to supply that unless the CPU was going over 120-200ish)  \n\n\\- please don't buy a 850 with your CPU though, I would definitely recommend a 1200W regardless, if you run a full-load test on your system, the 7950x can pull nearly 300W, plus GPU at \\~550(spikes possible?) so you're getting into cutting it close territory once you at 120ish for the rest of the system/fans.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user is providing technical advice regarding wattage and cable capabilities for high-end GPUs, which is relevant to the discussion.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user expresses frustration ('pisses me off') regarding the limitations of certain PSU wattages/cables.",
               "replies": [
                 {
                   "commentId": "iwmlfcz",
                   "text": "Thank you for your answer and extra info. Gonna get 1200W + some extra cables from cablemod and OFC that adapter when it comes out :D \n\nHave a great day! :)",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user is discussing their plan to purchase a 1200W PSU and custom cables, which is relevant to the product category.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is expressing satisfaction and a positive outlook on their plan to upgrade their components.",
                   "replies": []
                 }
               ]
@@ -61,5 +61,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-26b-a4b-it"
 }

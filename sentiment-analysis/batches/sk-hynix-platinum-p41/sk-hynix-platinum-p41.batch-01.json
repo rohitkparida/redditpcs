@@ -8,80 +8,80 @@
       "text": "SK Hynix Platinum P41 2 TB Review - Faster than Samsung and WD",
       "upvotes": 165,
       "classifyThis": true,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
+      "relevance": "include",
+      "relevanceReasoning": "The comment introduces a review comparing the P41 to Samsung and WD.",
+      "sentiment": "positive",
+      "sentimentReasoning": "The title implies the P41 is faster than its main competitors.",
       "replies": [
         {
           "commentId": "iay9v9m",
           "text": "They're all fast enough.  Its the other stuff that matters.\n\nSK Hynix's previous model was known for its excellent power efficiency, and was a top choice to put into laptops.  This review doesn't discuss power draw and sleep states anywhere that I can see.  Neat that its fast  but the review completely skips over the single selling point (is it still super efficient compared to competitors?) that would make me choose this over my goto samsung.",
           "upvotes": 103,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user discusses the importance of power efficiency for this specific product line.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing a critique of the review rather than a definitive stance on the product itself.",
           "replies": [
             {
               "commentId": "iaybfmi",
               "text": "Most of the time the \"speed\" these companies advertise is pure sequential anyways which isn't really useful as a metric at this point. SSDs excel at random access and that has largely stayed fairly stagnant at the lower que depths.",
               "upvotes": 48,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses technical metrics like sequential vs random access relevant to SSD performance.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a technical observation about SSD performance metrics.",
               "replies": [
                 {
                   "commentId": "iayctp8",
                   "text": "Yep, for random access its either optane, or again all SSD controllers are roughly the same with maybe a *bad* outlier or two.\n\nAt today's baseline, if a difference in sequential speeds would make an every-day difference to you, you'd be looking at reviews of DAS solutions targeted for prosumer+ photography/videography, not individual drives.\n\nI'm not really sure who these reviews are meant for.  You could make it two paragraphs with SLC cache size and other non-advertised parameters, one speed chart of a long full-drive sequential to display garbage collection/throttling/cache,  and say \"everything is otherwise normal\" and include a $/gb and call it a day.",
                   "upvotes": 36,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Provides technical critique regarding what makes a meaningful SSD review.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a technical opinion on review methodology.",
                   "replies": [
                     {
                       "commentId": "iayhuwu",
                       "text": "Yeah I'm in the same camp. I have a 970 Evo, and have zero desire to upgrade to another SSD for more sequential speeds. Only reason to upgrade is for more storage space. I've looked into getting an Optane 905p as an upgrade, since there will be actual meaningful improvements for my workloads, but the price per GB is just too high for consumers.",
                       "upvotes": 10,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses personal upgrade preferences and comparison to other drives.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing their own hardware needs without a strong positive or negative sentiment toward the P41 specifically.",
                       "replies": [
                         {
                           "commentId": "ib03me2",
                           "text": "Getting a used 800p and set it up as a cache device (think primocache) will yield most of the benefits. You might want to tweak it to emphasize metadata.\n\nThis won't be night/day though. Even a p5800x won't be night/day.",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses technical ways to optimize SSD performance using cache devices.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is technical advice regarding storage optimization.",
                           "replies": [
                             {
                               "commentId": "ib12x05",
                               "text": "&gt; This won't be night/day though. Even a p5800x won't be night/day.\n\nCan confirm. Even with a 905P it wasn't a *massive* shift. At some point Windows is the bottleneck due to how Explorer manipulates large numbers of small files.\n\nBut I'd still never go back. Which is going to make things a bit awkward once we're in the PCIe 5 era of SSDs.",
                               "upvotes": 5,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "Discusses the impact of high-end SSDs on system performance and bottlenecks.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is sharing a personal experience with high-end storage performance.",
                               "replies": [
                                 {
                                   "commentId": "ib2ut30",
                                   "text": "&gt; Can confirm. Even with a 905P it wasn't a massive shift\n\nI'm using an optane drive (large 900p) that I got on ebay at a firesale price...\n\nLike, it's nice but I don't really appreciate it. \n\nIf I had it to do over again, I probably would've gotten a smaller optane drive and just used primocache or LVM cache. \n\n\nI definitely appreciate the $80ish 800p that I slapped in my NAS though. Nearly all of my hits to that drive are either from RAM or from that optane drive. Well, the ones that aren't already cached on my desktop's optane drive. \n\n----\n\n&gt;At some point Windows is the bottleneck\n\nIt's a bit philosophical but getting data into memory in the proper format is often the limit. \n\nI'd love it if windows or linux or whatever just did a better job of automatically caching regularly used blocks into RAM. Why not toss most metadata associated with files into RAM if you have 32GB or 64GB of RAM? (for what it's worth ZFS does this)\n\nOr gasp... having a \"small\" 32GB or so optane stick that acts as a persistent page file",
                                   "upvotes": 1,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "Discusses personal experience with Optane and caching strategies.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is sharing technical experiences with different storage technologies.",
                                   "replies": []
                                 }
                               ]
@@ -95,10 +95,10 @@
                       "text": "These reviews are all about marketing. In truth there's been some minor improvements to speed over the years (mostly in sequential, but random access has seen some improvements too over the years, albeit much less). The real benefit/change in SSD is the change in interface (the jump from sata was significant imo), the overall storage size, and the $/GB. I remember my first SSD I bought was like 100 GB, and that wasn't the cheap model either.\n\nHowever, it got to the point where SSDs are in an okay spot size wise. Most consumers can now buy a 1tb/2tb drive, and that's all they need (most consumers aren't going to have many TB's of media, game, files, etc.) And if they need storage, hard drives are probably the better product for them.\n\nSo they need to get their model to stand out. \"Why should you buy THIS 2 TB drive\". The problem is, they can't talk about stuff like dram, controller, etc, otherwise that will make their cheaper products look REALLY bad. It's best that consumers don't know that the cheap drive they bought doesn't have dram or has a really bad controller prone to failure... But talking about speed, now there's a safe, harmless way to advertise your SSD product.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the general market trends and technical aspects of SSDs.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a general industry analysis.",
                       "replies": []
                     }
                   ]
@@ -108,10 +108,10 @@
                   "text": "For what it's worth 4K QD1 is actually improving. While optane (think p5800x) might max out at 400 MBPs when doing 4KQD1 work, something like a Samsung 980 Pro can hit around 90MBPs. \n\nSure the optane is 4x faster but older SATA SSDs were doing like... 30.\n\nNow, this does degrade if you're doing concurrent writes but there certainly has been improvement - a half order of magnitude.",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses technical performance metrics like 4K QD1.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a technical comparison of performance metrics.",
                   "replies": []
                 },
                 {
@@ -119,70 +119,70 @@
                   "text": "But will direct Storage have an impact on this since it's being made targeting SSDs.",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the impact of DirectStorage on SSD performance.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a technical inquiry about a future technology's impact.",
                   "replies": [
                     {
                       "commentId": "iazaab6",
                       "text": "No.  If anything, nvme sequential dickwaving matters even less because your total transfer is hard-limited to a portion of your VRAM.",
                       "upvotes": 8,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses technical limitations related to VRAM and NVMe.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a technical assertion about hardware bottlenecks.",
                       "replies": [
                         {
                           "commentId": "ib04xxc",
                           "text": "Can you explain this in more detail? I don\u2019t understand",
                           "upvotes": 10,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user is asking for clarification on a technical point.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is asking a question and does not express sentiment.",
                           "replies": [
                             {
                               "commentId": "ib1jecw",
                               "text": "Read up on what DirectStorage does again.",
                               "upvotes": -4,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "Provides a technical direction for further research.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The's a directive to read more, not an expression of sentiment.",
                               "replies": [
                                 {
                                   "commentId": "ib1l5nn",
                                   "text": "Pretty sure they are more or less asking why you believe that your vram / usage of your vram will be the bottleneck.",
                                   "upvotes": 8,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "Discusses the context of the user's previous comment.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is clarifying a point in a discussion.",
                                   "replies": [
                                     {
                                       "commentId": "ib1r8xu",
                                       "text": "Right, they don't understand what directstorage does, the problems it solves, and where those solutions are most effective/actively being used.\n\nThere is a whole cult of \"directstorage is the next coming of christ\" that stemmed off  the console wars debate because the playstation ssd had faster sequential (at a huge tradeoff of other things due to proprietary hardware design, but here we are again,  jerking off over sequential), and I really have no interest in diving into that, **again.**\n\nhttps://docs.microsoft.com/en-us/gaming/gdk/_content/gc/system/overviews/directstorage/directstorage-overview\n\nThats a decent overview.  Go find some devblogs of how and where its used in games if you need more.",
                                       "upvotes": -1,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "include",
+                                      "relevanceReasoning": "Discusses technical aspects of DirectStorage and sequential speeds.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The user is providing a technical rebuttal in a discussion.",
                                       "replies": [
                                         {
                                           "commentId": "ib1vbxk",
                                           "text": "Kinda seems like you are expecting people to do a lot of footwork with the assumption they'll come to the same conclusions as you rather than answering the question simply when doing so would require the same amount of effort as this comment took to type.\n\nIt kinda comes across as either arrogance or as if you don't really have basis for what you said as you didn't either post that previous conversation, something directly relevant or a simple explanation.\n\n[Nevertheless, I went searching imagining that with the level of confidence you espoused here it would be easy to find. What I did find was to find an article which talks about the workloads in play\n](https://compusemble.com/insights/home/the-next-gen-gaming-workload-and-directstorage-microsoft-is-making-a-push-to-make-the-full-feature-suite-of-this-technology-available-to-developers-in-2022).\n\nFor the benefit of /u/reddit_hater Im just pinging them here with the message to ctrl-f sequential.\n\nThe thing is though, this explanation says absolutely nothing about VRAM being the limitation and instead refers to use case, which isn't what your comment talked about. In fact, the fact that its high QD would make it even more likely that its storage limited rather than VRAM limited.\n\nSo I'm actually left still wondering what you meant by \"your total transfer is hard-limited to a portion of your VRAM.\" especially given that VRAM will still be at least an order of magnitude faster than storage which would still indicate that storage is the bottleneck.\n\nNo one is going to spend tons of time searching the web to prove someone's comment right. Its up to the person making the comment to at least include relevant information, which a direct storage overview definitely is not.",
                                           "upvotes": 7,
                                           "classifyThis": true,
-                                          "relevance": null,
-                                          "relevanceReasoning": null,
-                                          "sentiment": null,
-                                          "sentimentReasoning": null,
+                                          "relevance": "include",
+                                          "relevanceReasoning": "Discusses technical arguments regarding VRAM and storage bottlenecks.",
+                                          "sentiment": "neutral",
+                                          "sentimentReasoning": "The's a technical debate about hardware bottlenecks.",
                                           "replies": []
                                         }
                                       ]
@@ -198,20 +198,20 @@
                           "text": "But DirectStorage should increase the QD, no?",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses technical aspects of DirectStorage and Queue Depth. importance.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is asking a technical question.",
                           "replies": [
                             {
                               "commentId": "ib657mz",
                               "text": "Ideally, yes. Phison's presentation suggested 32+ and possibly up to QD512 (e.g. Q32T16). (the other user above is talking about sequential when it's more about bandwidth - these are random reads)",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "Discusses technical performance metrics and bandwidth.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is a technical explanation.",
                               "replies": []
                             }
                           ]
@@ -225,10 +225,10 @@
                   "text": "&gt;lower que depths\n\nQueue, not \"que\".",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses a typo in a previous comment.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a correction of a typo, not an expression of sentiment.",
                   "replies": []
                 }
               ]
@@ -238,20 +238,20 @@
               "text": "Every single one of the reviews of come out for this drive has neglected to mention the power consumption numbers, it\u2019s very frustrating. I can only hope that toms hardware, which I still haven\u2019t seen a review come out from, will go over this, that\u2019s who did it last time.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user expresses frustration with the following reviews for this specific drive.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is expressing frustration with the lack of information in reviews.",
               "replies": [
                 {
                   "commentId": "ib65499",
                   "text": "&gt;  I can only hope that toms hardware, which I still haven\u2019t seen a review come out from, will go over this, that\u2019s who did it last time.\n\nTH review appears to be out now. Their power testing isn't super complex, though.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the availability of a latest review for the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is providing factual information about a review's availability.",
                   "replies": []
                 }
               ]
@@ -261,15 +261,16 @@
               "text": "The lack of thermal throttling tells me it doesn't consume a lot of power.\n\nI don't need PCIe gen 4.  I'd be happy with discount on P31 Gold.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses thermals and power consumption of the P41.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is discussing technical aspects of the product's performance.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-26b-a4b-it"
 }

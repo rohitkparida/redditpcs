@@ -8,23 +8,24 @@
       "text": "I am having the worst time I ever had with my PC\n\nAbout 20 days ago, I started encountering a blue screen issue that constantly crashed my PC regardless of what I was on (discord, games, chrome, etc). I\u2019ve done multiple tests trying to confirm where the problem is but nothing seems to work. Please find below the error codes and what I have tried to do to identify and rectify the issue. \n\nBSOD Error Codes:\n*IRQL_NOT_LESS_OR_EQUAL\n*SYSTEM_THREAD_EXCEPTION_NOT_HANDLED\n*PAGE_FAULT_IN_NONPAGED_AREA\n*DRIVER_IRQL_NOT_LESS_OR_EQUAL\n*CACHE_MANAGER\n*EXCEPTION_ON_INVALID_STACK\n\nAttempts to Identify and Rectify Issues as of 20 days ago:\n\n*Reinstall Windows - I have tried this several times, continues to crash or come up with an error that it cannot be done.\n* Uninstall GPU driver and uninstalled GeForce\n* Windows Memory Diagnostics - no errors came up.\n* eject memory and try it one by one to see if one or the other has an issue\n* sfc /scannow - first time I tried it, it said it fixed something. If I try doing it again, it doesn\u2019t do anything anymore.\n* chkdsk /f /r - helped it seems?  Did it once and it was running well for an hour. Blue screen came back. \n* Tried MemTest86. Results came through and it passed. So memory isn\u2019t the issue.\n* Took out the M.2 in question. Kept the \u201cvideo game\u201d m.2 drive in. Wiped it and tried installing Windows. Got several errors and while installing it crashed. With that, I am assuming it\u2019s not the SSD either\n* Wiped secondary M.2 to install windows. Removed first M.2. Still kept crashing or BSOD\n*Removed all drives associated with the computer and ordered a 256gb ssd. Tried to install windows on it and it crashed or BSOD.\n\nSystem Information:\nCPU - Intel Core i9-14900K\nMotherboard - ROG Strix Z690-E Gaming Wifi\nMemory Sticks - Corsair DDR5 6600MT/s 2x32GB 1.40v\nGPU - Nvidia GeForce RTX 4070 Ti\nDrives\n*C Drive (Windows) - Samsung SSD M.2 970 EVO Plus 2Tb\n*D Drive (Game storage) - Samsung SSD M.2 970 EVO Plus 2Tb\n*E Drive - Western Digital Blue 8Tb\n*F Drive - Western Digital Black 6tb\n\n\n\n\n\nPresent Day:\n\nI have reached out for help on this Reddit before. I was told to get an RMA on my motherboard since the issues appeared to be coming from it.\nWell, unfortunately I am still encountering issues. Apparently my old motherboard had a \u201cHDD to Sata\u201d issue so they replaced the entire motherboard.\n\nI ordered new Ram sticks. Tried those, and I am still encountering issues.\n*New Ram Sticks - DDR5 T-Force Delta 2x16GB 6400Mhz\n\nI thought replacing the motherboard and the Ram sticks would solve my issue but that is not the case.\n\nI tried reinstalling windows to see if that could solve it, but once again, it\u2019s having the same issues again. Sometimes it BSOD before I even get to the installation.\n\n\n\n\n\nThank you for reading this far. If you have any ideas on what I can do next, I would greatly appreciate it. I am currently lost and have no idea how this problem came about.\nCould this be a CPU or Power supply issue? Could the replaced Motherboard still be faulty?",
       "upvotes": 575,
       "classifyThis": true,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
+      "relevance": "include",
+      "relevanceReasoning": "The user mentions using T-Force Delta RAM as part of a troubleshooting process for system instability.",
+      "sentiment": "neutral",
+      "sentimentReasoning": "The user is describing a technical issue and troubleshooting steps rather than expressing a satisfaction or dissatisfaction with the RAM itself.",
       "replies": [
         {
           "commentId": "l3ytyn9",
           "text": "I would bet it's the 14900k - [https://gamerant.com/intel-core-i9-stability-issues-response/](https://gamerant.com/intel-core-i9-stability-issues-response/)\n\nThe ASUS board is trying to apply some type of overclock or 'Multicore Enhancement'. Either you either have a bad chip and it should be RMAed or the ASUS board is overclocking you so close to redline it's causing Windows to crash.",
           "upvotes": 677,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment focuses on the CPU (Intel 14900k) and motherboard settings as the cause of instability, not the RAM.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment provides a technical opinion on the cause of the issue without expressing sentiment toward the product.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-26b-a4b-it"
 }

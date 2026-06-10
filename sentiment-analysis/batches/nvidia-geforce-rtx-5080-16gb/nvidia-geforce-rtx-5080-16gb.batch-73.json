@@ -18,30 +18,30 @@
           "text": "Awesome job, thanks a lot!\n\nI think this serves to highlight just how odd HUB's RT testing was. Every other reviewer has the 9070 XT as better than the 5070 at 4k RT - and by an average of nearly 20%! - but HUB has it as worse.\n\nThat's simply too much of a difference to be fully explained by a difference in testing methodology.",
           "upvotes": 30,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The comment discusses performance comparisons between the 9070 XT and 5070 in ray tracing, which is relevant to the product ecosystem.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is critiquing a reviewer's methodology rather than expressing a direct opinion on the product itself.",
           "replies": [
             {
               "commentId": "mgy5rt5",
               "text": "Driver difference?",
               "upvotes": 13,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a technical question about drivers, which is a general meta-discussion about testing.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a simple question without sentiment.",
               "replies": [
                 {
                   "commentId": "mgyawag",
                   "text": "According to their pinned comment on their review, no.\n\nBut I thought the same thing.",
                   "upvotes": 12,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a factual answer to a question about drivers.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual response without sentiment.",
                   "replies": []
                 },
                 {
@@ -49,30 +49,30 @@
                   "text": "HUB also had a lot more path tracing in their testing. For eg, two of their games Wukong and Alan Wake 2 use path tracing at medium settings.",
                   "upvotes": 15,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses testing methodologies (path tracing) rather than the product's performance directly.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a technical observation about testing parameters.",
                   "replies": [
                     {
                       "commentId": "mh3unn1",
                       "text": "I agree that's likely part of it, but I don't think that even that could account for the entire difference.\n\nAnd even if it could, it'd be a very silly way of testing RT, since even the majority of RT titles don't have PT.",
                       "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a critique of testing methodology and its relevance to ray tracing standards.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is debating the validity of a testing method.",
                       "replies": [
                         {
                           "commentId": "mh8b5vr",
                           "text": "More games are moving to path tracing in the future. Doom TDA of all games is going to have it. And not having OMM and SER on AMD RDNA 4 cards is a massive disadvantage when path tracing.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The comment discusses technical disadvantages of AMD RDNA 4 cards in path tracing, which is relevant to the competitive landscape of the 5080.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user is highlighting a technical disadvantage for a competitor, which implies a comparative context for the product.",
                           "replies": []
                         }
                       ]
@@ -86,15 +86,16 @@
               "text": "Hope I'm wrong , but it's not the first time I see strange data with HUB.\n\nSo maybe they made a mistake due to drivers, scripts, outlier... something definetly weirrd going on.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a critique of a specific reviewer's data accuracy.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is expressing skepticism about a reviewer's results.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-26b-a4b-it"
 }

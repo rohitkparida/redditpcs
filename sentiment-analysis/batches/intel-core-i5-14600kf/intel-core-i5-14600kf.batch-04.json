@@ -18,30 +18,30 @@
           "text": "It will be interesting to see if the 14400 is more efficient than the 13400 in idle. Most of the reviews suggest the 13400 is more efficient in idle than any of the AM5 chips. Under load, the efficiency goes out the window though.",
           "upvotes": 18,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is discussing efficiency and idle power draw of 14th gen Intel chips, which is relevant to the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question and making an observation about efficiency without a clear positive or negative leaning.",
           "replies": [
             {
               "commentId": "k64ufp6",
               "text": "The I/O die has about a ~18-20W lower limit for power draw, while the CCDs can power gate themselves to well below &lt;1W. It's simply a fundamental drawback of how their chiplet design is implemented, since the IOD needs to keep active the interconnect links to the CCDs. The drawback exists on the DC side as well; Zen3 Epyc idled at around 70-80W, whereas Xeon Ice-Lake could go as low as 25-35W.\n\nThey give up that for the advantage of it being a highly scalable and modular design paradigm. Compute scaling is basically \"infinite\" and only limited by physical &amp; manufacturing limits, such as socket size, trace routing, IOD size, etc.\n\nIntel &amp; AMD's mobile uses a fully integrated SoC design, so there aren't any active interconnects to maintain, hence are capable of powering down much more of the silicon when idling.",
               "upvotes": 17,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides technical details about chiplet design and power draw, which is relevant to the product's architecture.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical explanation rather than expressing an opinion.",
               "replies": [
                 {
                   "commentId": "k66wj7e",
                   "text": "I find the ~30W idle power of my 7700X rather annoying and passe. I'm hoping Zen 5 will have better idle power but I doubt it.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user shares their personal experience/opinion on idle power draw of a competitor's product (7700X) as a comparison point.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user expresses annoyance with the current idle power draw of their current chip.",
                   "replies": []
                 },
                 {
@@ -49,20 +49,20 @@
                   "text": "Who on god's green earth cares what the idle efficiency of a *server* chip is?",
                   "upvotes": -4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a dismissive/low-effort banter about server chips, not providing insight into the i5-14600KF.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is being dismissive but not expressing a sentiment about the product itself.",
                   "replies": [
                     {
                       "commentId": "k66a679",
                       "text": "Every data center in the world where electricity isn't free? The fact is, most chips remain under low load throughout their lifespan. You just need them for bursts, like when a websites traffic is at its peak.",
                       "upvotes": 12,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a general discussion about data centers and electricity, not specific to the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a factual/justification for the topic of discussion.",
                       "replies": []
                     },
                     {
@@ -70,10 +70,10 @@
                       "text": "The fact that most server chips stays idle most of the time makes it one of the most important metric to care about.\n\nCommercial electricity is expensive yo.",
                       "upvotes": 6,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a general discussion about commercial electricity, not specific to the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a factual/justification for the topic of discussion.",
                       "replies": []
                     },
                     {
@@ -81,10 +81,10 @@
                       "text": "As somebody with a homelab with a bunch of server chips and UK electricity prices, I care. ^(Dual socket systems gobble up those wH.)",
                       "upvotes": 6,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a general discussion about homelabs and electricity, not specific to the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a factual/justification for the topic of discussion.",
                       "replies": []
                     }
                   ]
@@ -96,10 +96,10 @@
               "text": "Yes - my PC is near idle most of the time. Isn't it also possible to set a power limit for these chips? How well do they perform if they're forced to a sensible limit?",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user asks about setting power limits on these chips and performance impact, which is relevant to the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a question about performance and power limits.",
               "replies": []
             },
             {
@@ -107,20 +107,20 @@
               "text": "(not disagreeing)\n\nIn order for Intel to be more efficient overall, the *absolute difference* in idle power consumption needs to be high. For example,  the 795X3D has similar performance to the 149k but uses 87 fewer watts under load. If usage is 50/50 idle/load,  AMD's idle would have to be 87 watts higher for both CPUs to produce the same electricity bill.",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user compares the performance and power draw of the 14900K and 7950X3D, which is relevant context for the product's market position.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is discussing performance and power efficiency comparisons.",
               "replies": [
                 {
                   "commentId": "k64ur1u",
                   "text": "Tbh, most workloads are idle, even FAANG companies struggle to pin their service workloads at 60%+ utilization over time.",
                   "upvotes": 15,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a general meta-discussion about workload utilization in data centers, not specific to the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a factual/justification for the topic of discussion.",
                   "replies": []
                 },
                 {
@@ -128,30 +128,30 @@
                   "text": "1) 14900K uses 87W more under full CPU load, which is not realistic scenario, even with 4090 in 4K you'll be almost always heavily GPU bottlenecked. 2) It depends on how you use your PC. For me it's like 5 hr of browsing/light use for every 1 hr gaming. So for me 7800X3D is less efficient. But tech reviewers bros all conveniently forget about  idle power when testing 7800X3D.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The unsuer is discussing personal usage patterns and comparing efficiency of 7800X3D vs 14th gen, which is relevant.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is weighing the different efficiency profiles of gaming vs light use.",
                   "replies": [
                     {
                       "commentId": "k65ggiy",
                       "text": "Then by your own logic, the i9 is mostly irrelevant when the i5 will be enough, since even with 4090 in 4K you'll be almost always heavily GPU bottlenecked.",
                       "upvotes": 6,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user is comparing the performance difference between i9 and i5 models, which is relevant to the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is making a direct comparison between product tiers within the same generation.",
                       "replies": [
                         {
                           "commentId": "k68sy39",
                           "text": "It is mostly irrelevant. Techpowerup average gaming FPS, 4K: 14900K - 170, i5 12600K - 160. 6% difference.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user provides specific performance data comparing the i9 and i5, which is relevant.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is providing factual data to support a comparison.",
                           "replies": []
                         }
                       ]
@@ -161,20 +161,20 @@
                       "text": "Honestly, electricity is so cheap for home use that idle power probably doesn't matter.  50W at idle if it was on 24/7/365 would be less than $50/year for me.",
                       "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a general discussion about electricity costs, not specific to the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is expressing an opinion on the importance of the topic, not the product.",
                       "replies": [
                         {
                           "commentId": "k687tem",
                           "text": "Not everybody lives in a country with virtually free electricity my dude.",
                           "upvotes": 5,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a general discussion about electricity costs, not specific to the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is is not expressing a sentiment about the product.",
                           "replies": []
                         },
                         {
@@ -182,10 +182,10 @@
                           "text": "Cries in Europoor",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "of the comment is low-effort banter/slang, not providing insight into the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is being sarcastic/slangy, not expressing a sentiment about the product.",
                           "replies": []
                         }
                       ]
@@ -201,10 +201,10 @@
           "text": "14th gen on desktop, pretty uninteresting, and the socket will change with 15th gen. 14th gen on mobile, or at least in Core Ultra I guess, now that's very interesting with Meteor Lake being a complete change for them with disaggregation of tiles as well as a new node to work on with the compute tile.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user expresses an opinion on the 14th gen desktop lineup, which is relevant.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing a lukewarm/uninteresting opinion about the generation, but not a strong negative or positive sentiment.",
           "replies": []
         },
         {
@@ -212,30 +212,30 @@
           "text": "I\u2019m surprised I haven\u2019t heard anyone talking about the additional cache on the non-k 14th gen sku\u2019s. \n\nFor example, the 13700 (f) L2/L3 is 24/30 while the 14700 (f) L2/L3 is said to be 28/33. \n\nCoupled with a small clock boost (and extra e cores in the case of the 14700) makes more of a case for \u201cgenerational\u201c uplift than the k sku\u2019s, at least in gaming workloads?\n\nSomebody explain why I\u2019m wrong.",
           "upvotes": 12,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user discusses technical details regarding cache and core counts, which is relevant to the product's architecture.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is discussing technical specifications and potential uplift's.",
           "replies": [
             {
               "commentId": "k64egxv",
               "text": "The extra cache only applies to the 14700 models and it comes from the extra 4 e cores. Turning on that block of cores also adds their associated L2/L3, there's no real change to the die or architecture layout. The cache quantities on the 14600 and 14900 models is identical to 13th gen.",
               "upvotes": 27,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a technical correction/explanation regarding cache and e-cores, which is relevant.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical explanation rather than than an opinion.",
               "replies": [
                 {
                   "commentId": "k64xiz6",
                   "text": "That makes sense, figured I had to be missing something. Oh well, whenever I upgrade I\u2019ll be coming from 12600, so I guess 13 or 14 doesn\u2019t matter it\u2019ll be an uplift  of some sort anyway.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user shares their personal upgrade path and opinion on the value of 13th vs 14th gen, which is relevant.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is discussing their personal upgrade strategy.",
                   "replies": []
                 }
               ]
@@ -245,10 +245,10 @@
               "text": "the 14700 and 14700k are half way between the 13700/13700k (8P + 8E + 30MB) and the  13900/13900k/14900/14900k (8P + 16E + 36MB), being 8P + 12E + 33MB.\n\nAll the SKUs just have small MHz bumps, except the 14700/K, which is a new chip. Since the RRPs are the same, it makes the 13900/14900 relatively less attractive, since the 14700/K is closer to them than the 13700 was",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a technical breakdown of the different SKUs in the 14th gen lineup, which is relevant.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical analysis of the product lineup.",
               "replies": []
             }
           ]
@@ -258,10 +258,10 @@
           "text": "I don't know why computerbase, pc game hardware, tomshardware, and puget are benching dual rank AMD at 5200 (I assume), (because AMD states 5200 for DR) but then run intel at DR 5600, when intel says dr 5200 just like AMD...  (dual rank)",
           "upvotes": 6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing benchmarking methodology and RAM configurations, not the product itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing a critique of the reviewers, not the product.",
           "replies": []
         },
         {
@@ -269,10 +269,10 @@
           "text": "Bigger waste of sand than Rocket Lake",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user expresses a negative opinion about the 14th gen architecture/product, which is relevant.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is using a derogatory term to describe the product's value/design.",
           "replies": []
         },
         {
@@ -280,25 +280,26 @@
           "text": "&gt;Core i5-13600K \u2192 Core i5-14600K\t+3%\t+3%\t95W \u2192 94W (\u20131%)\t$316 \u2192 $329 (+4%)\n\nOuch. Between this and RTX 40 series, it's been a fairly unexciting 12 months for hardware.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares the 14600K to its predecessor and expresses an opinion on the value/excitement level, which is relevant.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is expressing disappointment with the incremental nature of the hardware updates.",
           "replies": [
             {
               "commentId": "k685xmm",
               "text": "Except for the 4090",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is making a comment about the RTX 4090, which is off-topic.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a correction/addition to a general statement, not expressing a sentiment about the product.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-26b-a4b-it"
 }

@@ -18,20 +18,20 @@
           "text": "Not an expert by any means, but I had similar issues when I used incompatible RAM speed. \n\nIt says here 14900k supports RAM speed up to 5600 so your RAM is not compatible. At least when running at full speed.\n\nhttps://www.intel.com/content/www/us/en/products/sku/236773/intel-core-i9-processor-14900k-36m-cache-up-to-6-00-ghz/specifications.html",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user discusses RAM speed compatibility in relation to the user's troubleshooting process.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing technical advice regarding RAM compatibility without a specific positive or negative sentiment toward the product itself.",
           "replies": [
             {
               "commentId": "l3zq3a7",
               "text": "Nah it all depends the 5600 is for sure stable speed for 2-4 DDR 5 sticks and anything up is overclock and might or not be stable i know this for fact as i have 4x of 6400 cl34 xmp profiled sticks that in no world would run at that speed from xmp profile, manual tune to lower clocks and latency like 6000 cl30 stabilized it, also my cpu is i5-13600k",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user shares personal experience with DDR5 stability and manual tuning of high-speed RAM.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is discussing technical stability and overclocking experiences without a clear positive or negative sentiment toward the product.",
               "replies": []
             }
           ]
@@ -41,10 +41,10 @@
           "text": "I had this issue a few months ago, my hardware was completely different from yours, but same exact errors.\n\n\\* 7950X3D\n\n\\* RTX 4080\n\n\\* 64GB DDR5 6000Mhz CL30\n\n\\* 1000W PSU\n\nI had gone months with zero issues and then two Windows updates later I kept getting 1 crash per day. I could have been doing nothing and the issue still persisted. I requested help on Microsoft site and Reddit and the error was apparently a driver (based on crash dumps) which involved registry edits and driver wiping to fix. The solution was doing some registry changes and wiping drivers, without letting Windows do the auto driver thing. I felt incapable of all that, so I said fuck it and switched to Linux. I nuked my main OS drive. \n\n  \nBTW, I also tried uninstalling and reinstalling Windows, but that would only allow me to fix it temporarily as it would download updates and then cause crashes days later.\n\nI have been on Linux for 3 months and have had zero crashes. Only issue I had was one game freezing up, but that was about it (fixed it by switching Proton version). I cannot paint Linux as the perfect solution as it is not, but currently it is my only solution, well that and my two other PCs!\n\nHonestly, only use my other PCs if I am doing CAD or am playing a game that I cannot play on Linux (such as some anti-cheat games and Microsoft games).",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user shares personal experience with a 6000Mhz CL30 DDR5 kit, which matches the product's specs.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is discussing their experience with system stability and OS-related issues rather than the RAM itself.",
           "replies": []
         },
         {
@@ -52,10 +52,10 @@
           "text": "Classic windows behavior :\u2060'\u2060(",
           "upvotes": -1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a low-effort joke/meme about Windows behavior.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a joke and does not express a sentiment toward the product.",
           "replies": []
         },
         {
@@ -63,13 +63,14 @@
           "text": "May i suggest.... Linux?\n\nLinux mint, perhaps? Or... Arch, if it tickles your fancy, maybe your'e oldschool and want something more debian? That's a option too. Or maybe you don't want anything linux, and also want to relive the 2000's? Sure, may Haiku OS lead you down memory alley... Or do you have more money than sense? Why not MacOS, then?",
           "upvotes": -6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is off-topic meta-talk suggesting alternative operating systems.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is not about the product and does not express a sentiment toward it.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-26b-a4b-it"
 }

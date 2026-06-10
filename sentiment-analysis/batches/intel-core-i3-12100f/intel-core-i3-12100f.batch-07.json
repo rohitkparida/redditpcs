@@ -18,40 +18,40 @@
           "text": "Anyone know why HUB doesn't use the 3090 as a baseline for ~~GPU~~ CPU benchmark?",
           "upvotes": 7,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment asks a general question about benchmarking methodology rather than discussing the Intel Core i3-12100F.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral question about GPU baselines in CPU benchmarks.",
           "replies": [
             {
               "commentId": "hvep7m0",
               "text": "The RX 6900 XT outperforms the RTX 3090 at 1080p especially with SAM/Resizeable BAR enabled (on average, obviously there are some games that favour Nvidia GPUs anyway) and since CPU testing is done at 1080p to maximize the CPU bottleneck the RX 6900 XT is the best card to remove the GPU bottleneck as much as possible.",
               "upvotes": 56,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses GPU performance differences (RX 6900 XT vs RTX 3090) in CPU testing, not the Intel Core i3-12100F.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual explanation of GPU performance at 1080p.",
               "replies": [
                 {
                   "commentId": "hverhbv",
                   "text": "To expand on that, HUB found that Nvidia drivers have a lot of overhead and that causes lower than expected performance*.  IIRC Nvidia relies on the CPU for scheduling while AMD does scheduling on the GPU. \n\n\n\nyoutube.com/watch?v=JLEIJhunaW8\n\n\n\n*In CPU limited scenarios",
                   "upvotes": 29,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discusses Nvidia driver overhead and scheduling, which is off-topic from the Intel Core i3-12100F.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment explains driver overhead in CPU limited scenarios neutrally.",
                   "replies": [
                     {
                       "commentId": "hvf1eb8",
                       "text": "That is true as well though it mostly applies to lower end CPUs with lower thread counts. It especially hits 4C/4T CPUs hard.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discusses general performance of 4C/4T CPUs and driver overhead, not specifically the Intel Core i3-12100F.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment neutrally discusses how driver overhead affects lower-end CPUs.",
                       "replies": []
                     }
                   ]
@@ -61,40 +61,40 @@
                   "text": "I hear this answer a lot, but it has no bearing on cpu benchmarks. The 6900xt being faster doesn't mean the 3090 can't register the same 10% performance gain from a new cpu. The 3090 going from 30 fps to 33fps is the same as the 6900xt going from 50 to 55 fps. \n\nThe 6900xt is faster, but any gpu could be used to showcase a cpu increase, presuming it's not maximized.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discusses general CPU benchmarking methodology and GPU scaling, not the Intel Core i3-12100F.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment neutrally argues about CPU benchmarking methodology.",
                   "replies": [
                     {
                       "commentId": "hvgmz02",
                       "text": "So, the idea behind benchmarking CPUs for gaming by using low resolution and high-end GPUs at stupid high frame rates is that you're benchmarking the game code, in anticipation of a future time when games do more work per frame and require a faster CPU.\n\nInasmuch as a \"stupid high\" frame rate is less high on Nvidia than on AMD because of Nvidia driver overhead, it means that CPU benchmarks with Nvidia are spending more time in Nvidia driver code and less time in game code.  That makes them less effective as gaming CPU benchmarks.\n\nBut really, the *best* gaming CPU benchmark in this video is...\n\nFactorio.\n\nBecause it is an *actually CPU bound* game!",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Explains the methodology of CPU benchmarking and mentions Factorio, without discussing the Intel Core i3-12100F.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment neutrally explains CPU benchmarking concepts.",
                       "replies": [
                         {
                           "commentId": "hvhe761",
                           "text": "It doesn't mean the nvidia gpu doesn't benefit from the cpu uplift. In fact if the driver is as bottlenecked as we're led to believe, it would **greatly** benefit the architecture.  Which is easily tested, as opposed to just guessing.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discusses GPU driver bottlenecks and CPU uplift in general, not the Intel Core i3-12100F.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment neutrally discusses GPU driver behavior.",
                           "replies": [
                             {
                               "commentId": "hvhex19",
                               "text": "The driver overhead is proportional to frame rate.  When game CPU requirements (maybe) increase in the future, it will be because the games are using more CPU time, not because we (the sensible among us, anyway) decide to configure our graphics settings and resolutions to spin at 200+ FPS in the Nvidia driver.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Discusses driver overhead and frame rates in general, not the Intel Core i3-12100F.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment neutrally explains driver overhead mechanics.",
                               "replies": []
                             }
                           ]
@@ -110,10 +110,10 @@
               "text": "Because the 6900xt is the fastest GPU at 1080p. I believe even the 6800xt is above the 3090 at 1080p.\n\nAt 1440p the 6900xt is *slightly* ahead, but at 2160p the 3090 wins.",
               "upvotes": 19,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses GPU performance hierarchy at different resolutions, not the Intel Core i3-12100F.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment neutrally compares GPU performance.",
               "replies": []
             },
             {
@@ -121,40 +121,40 @@
               "text": "6900 XT is a couple of % quicker with reBar on and DLSS/RT off, so it's the fastest baseline to measure the full CPU test suite off.",
               "upvotes": 17,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses GPU performance with reBar and DLSS, not the Intel Core i3-12100F.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment neutrally states GPU performance statistics.",
               "replies": [
                 {
                   "commentId": "hveq23d",
                   "text": "DLSS isn't really relevant for CPU testing since the performance increase that DLSS gives you comes from lowering the resolution which you can do with any GPU.\n\nEdit: I'm not sure what that downvote was for. That's how DLSS works, it renders the game at a lower resolution and uses AI upscaling to make the final image acceptable at native resolution. Unless your goal is to investigate the potential CPU overhead caused by DLSS it simply isn't relevant for CPU testing like this.",
                   "upvotes": 19,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discusses the relevance of DLSS in CPU testing methodology, not the Intel Core i3-12100F.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment neutrally explains how DLSS works in relation to CPU testing.",
                   "replies": [
                     {
                       "commentId": "hvexp6u",
                       "text": "People seem to have a very wrong idea of DLSS I noticed. \n\nThe fact it can, by design, only yield extra FPS when there's a GPU bottleneck is news to many it seems",
                       "upvotes": 15,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discusses general misconceptions about DLSS, not the Intel Core i3-12100F.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment neutrally points out misconceptions about DLSS.",
                       "replies": [
                         {
                           "commentId": "hvf19xz",
                           "text": "I noticed that as well. There seems to be a lot of tech illiteracy when it comes to DLSS.",
                           "upvotes": 12,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discusses general tech illiteracy regarding DLSS, not the Intel Core i3-12100F.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment neutrally agrees with a statement about DLSS misconceptions.",
                           "replies": []
                         }
                       ]
@@ -168,30 +168,30 @@
               "text": "Unpopular(~~?~~ *edit: yes, very much so*) opinion: I think it is misleading to benchmark entry-level CPUs with only the highest-end GPU at low resolution.\n\nA less-informed viewer might draw the wrong conclusion that e.g. moving from an i3-10100 to the i3-12100 will increase their FPS in Tomb Raider by 32%. In fact, with the kind of GPU they are likely to have paired with this CPU,  they will be GPU limited and see no difference whatsoever.\n\nI speculate that people who disagree would argue that this kind of synthetic benchmark is indicative of performance in future games that will be released within the lifespan of the CPU. I would really like to see this future-proofing argument tested. In fact, HUB did [recently address](https://www.youtube.com/watch?v=VkfjICH1VqY&amp;t=547s) the future-proofing argument with regards to CPU core count.",
               "upvotes": -10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the real-world performance upgrade from an i3-10100 to the i3-12100 and critiques benchmarking methods for this entry-level CPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment neutrally analyzes the practical performance gains of upgrading to the i3-12100, noting that real-world GPU bottlenecks will limit the perceived improvement.",
               "replies": [
                 {
                   "commentId": "hvff6qx",
                   "text": "They do it this way mainly so buyers can extrapolate farther into the future with new GPU purchases rather than today by isolating an independent variable. People typically upgrade GPU's more than CPU's.\n\nIt also makes the results less dependent on the test suite.\n\nHB does still make videos where they test various CPU's on different GPU's though.",
                   "upvotes": 13,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discusses general CPU benchmarking philosophy and GPU upgrades, rather than specific insights about the Intel Core i3-12100F.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment neutrally explains the reasoning behind CPU benchmarking methodologies.",
                   "replies": [
                     {
                       "commentId": "hvg40i8",
                       "text": "At a more fundamental level, it\u2019s because it\u2019s a benchmark of the *component*, not a benchmark of a low-end system built using that component. You can certainly use that information to extrapolate future performance, but the problem is that if your benchmark of the 1600 and the 8700K say they\u2019re the same, then you haven\u2019t benchmarked the component, you\u2019ve benchmarked the system. \n\nAs you note, HUB does system benchmarks too, it\u2019s a perfectly fine and valid topic, but the goal of all these launch reviews/etc isn\u2019t to be a build guide, it\u2019s to see how that one specific component is capable of performing, and introducing bottlenecks obscures that goal.",
                       "upvotes": 6,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discusses general benchmarking philosophy of components versus systems, not the Intel Core i3-12100F.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment neutrally explains the purpose of component benchmarking.",
                       "replies": []
                     }
                   ]
@@ -201,10 +201,10 @@
                   "text": "If as a viewer you don't understand the data, you shouldn't blame the results, but seek to understand why you misinterpreted them. I didn't spend a dime before understanding how my parts worked. I feel as though that is a very low bar to set, and the onus should be on the viewer to understand how and why testing is done this way. Especially if you're basing a purchase on reviews, you should probably know what is being reviewed and how",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discusses viewer responsibility in understanding benchmark data, not the Intel Core i3-12100F.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment neutrally discusses how viewers should interpret benchmark results.",
                   "replies": []
                 }
               ]
@@ -213,5 +213,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemini-flash-latest"
 }

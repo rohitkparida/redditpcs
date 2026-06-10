@@ -18,30 +18,30 @@
           "text": "Did they fix the ReBAR requirement? Serious question",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Purely factual question about ReBAR requirement.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a technical question without expressing a positive or negative opinion.",
           "replies": [
             {
               "commentId": "m1qejt5",
               "text": "Nope, if you don't have rebar, you're sol",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual answer regarding ReBAR support.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The response is a direct factual answer.",
               "replies": [
                 {
                   "commentId": "m1u9uwa",
                   "text": "There is a way to add rebar to any motherboard even old as pcie gen 2, if you use linux you can get away only with drivers - for windows you need BIOS modification.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Technical discussion about BIOS modifications for ReBAR.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment provides technical information without sentiment.",
                   "replies": []
                 }
               ]
@@ -51,40 +51,40 @@
               "text": "Shouldn't every five year old PC have it at this point?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General question about PC hardware trends.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is questioning a general hardware trend, not the product.",
               "replies": [
                 {
                   "commentId": "m1y081p",
                   "text": "Not sure what your point is. There are lots of people with PCs older than 5 years which would benefit from a new GPU, especially if it has a good price/performance ratio.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General discussion about GPU upgrade paths for old PCs.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment discusses general upgrade logic rather than the B580 specifically.",
                   "replies": [
                     {
                       "commentId": "m21vsq1",
                       "text": "Probably not worth upgrading with an ancient CPU since so many modern games are heavily CPU bottlenecked.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General discussion about CPU bottlenecks in modern games.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment discusses CPU bottlenecks, not the B580.",
                       "replies": [
                         {
                           "commentId": "m21womc",
                           "text": "It heavily depends on the specific game, resolution etc. Also even some X370 boards don't have ReBAR support.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Technical discussion about motherboard support for ReBAR.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment provides technical details about motherboard compatibility.",
                           "replies": []
                         }
                       ]
@@ -100,20 +100,20 @@
           "text": "How does one get Intel GPU drivers? Nvidia and AMD have their apps, never heard what Intel app is called (if they got one)",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Factual question about Intel GPU drivers.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking for information about Intel's software ecosystem.",
           "replies": [
             {
               "commentId": "m1xwbtc",
               "text": "They have an app",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Factual answer about the existence of an Intel GPU app.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The response is a direct factual answer.",
               "replies": []
             }
           ]
@@ -123,30 +123,30 @@
           "text": "Would this be a worthy upgrade of my 6650xt that I find struggles with stalker 2",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User is asking if the B580 is a worthy upgrade from a 6650XT.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is seeking a recommendation for an upgrade path.",
           "replies": [
             {
               "commentId": "m1u13b5",
               "text": "Probably not, it would be like upgrading from a 7600 to a b580 which really isn't worth the cost. I'd wait and see what January brings from amd at least (Nvidia ain't launching low end for a while)",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User provides a recommendation against upgrading to the B580 from a 6650XT.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user states it is not worth the cost and suggests waiting for AMD.",
               "replies": [
                 {
                   "commentId": "m1u480f",
                   "text": "Perfect thanks",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort response thanking the previous user.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a simple thank you.",
                   "replies": []
                 }
               ]
@@ -158,10 +158,10 @@
           "text": "Between this and RDNA 4, mainstream is finally getting something meaty.",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses a positive opinion on the B580 and RDNA 4 for the mainstream market.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is excited about the product's impact on the mainstream market.",
           "replies": []
         },
         {
@@ -169,10 +169,10 @@
           "text": "wow 2080 super without vram constrictions. at this rate next gen they'll have something worth upgrading my 3090 to!",
           "upvotes": -4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Comparison of B580 performance to a 2080 Super, with a sarcastic tone regarding upgrade paths.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is sarcastic about the B580's performance not being a compelling reason to upgrade from a 3090.",
           "replies": []
         },
         {
@@ -180,20 +180,20 @@
           "text": "Didn\u2019t MLID say the launch stock is the entire stock for Battlemage?",
           "upvotes": -5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about stock levels and leaks from MLID.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is about stock availability and leaks, not product performance or experience.",
           "replies": [
             {
               "commentId": "m1qdely",
               "text": "He's said lots of things before.",
               "upvotes": 12,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Meta-talk about the reliability of a leaker.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is about the leaker, not the product.",
               "replies": []
             },
             {
@@ -201,10 +201,10 @@
               "text": "MLID is fanfiction, stop wasting your time",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Meta-talk about the reliability of a leaker.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Lacks a specific opinion on the B580 itself.",
               "replies": []
             },
             {
@@ -212,10 +212,10 @@
               "text": "No. MLID was correct about Battlemage from 2 years ago, for now. Of course, he deletes things he's wrong on, so it's hard to check his accuracy.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about the accuracy of a leaker.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is about the laeker's accuracy, not the product.",
               "replies": []
             },
             {
@@ -223,20 +223,20 @@
               "text": "Wouldn't surprise me, smells like Intel making this as a paper launch to keep to investors time lines, then not making any besides whatever contractual obligations they have with tsmc because.. They ain't making money on this and Intel kinda needs that profit margin rn.",
               "upvotes": -2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Speculation on Intel's business strategy and the B580 being a 'paper launch'.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user suggests the product is a strategic move for investors rather than a consumer-focused release.",
               "replies": [
                 {
                   "commentId": "m1tpjal",
                   "text": "You're just posting nonsense everywhere ain't you?  Sounds like you know Intel's plans better than they themselves do.  Better go tell Tom Petersen he's lying and they're actually not making a profit and what they need is that vs their stated goal of gaining market share and support so they can grow their product stack.\n\nI love how in every one of your comments you've also completely glossed over the fact Alchemist was more expensive to manufacture being a much larger 406mm^2 die with higher power consumption.  But hey, you know better than they do am I right?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Argument between users about Intel's business strategy and manufacturing costs.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is an argument about business strategy, not a product review or experience.",
                   "replies": []
                 }
               ]
@@ -248,30 +248,30 @@
           "text": "I find it funny how people expect this to bring more competition to the market and end Nvidias market dominance.\n\nWe know from Alchemyst that Intel will not take market share from Nvidia. They will take market share from AMD. And since AMD is the only somewhat credible competition to Nvidia right now, Intels cards will help Nvidia keep and possibly grow it's market share by hurting its competition. Divide and conquer style.\n\nNvidia loves Intel trying to come to the GPU market. \"The enemy of my enemy....\"",
           "upvotes": -5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Opinion on how the B580 will affect market share and competition between Nvidia and AMD.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is analyzing market dynamics rather than the product's performance or value.",
           "replies": [
             {
               "commentId": "m1sjco4",
               "text": "AMD deserves to get pulverized if they can't compete.\n\nAMD has been slacking off being content at 2nd place and this will make them get off their asses and improve RT/upscaling on their cards",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about AMD's competitiveness and RT/upscaling.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is focuses on AMD, not the B580.",
               "replies": [
                 {
                   "commentId": "m4cssnt",
                   "text": "It was all about pricing. If AMD had given players value, it would have helped them take over more of the mid and lower tiers. But they priced themselves too closely to their better performing expensive competition. It would take a few generations of better performing affordable high end cards for AMD to even attempt to catch-up to NVidia.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about AMD's pricing strategy.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is about AMD's pricing, not the B580.",
                   "replies": []
                 },
                 {
@@ -279,10 +279,10 @@
                   "text": "Oh, you didn't hear about RDNA 4 I guess.\n\nBut yeah, AMD has been innovating more in the iGPU space than the GPU space. Which is why Intels cards are a bit daft, they'll be made obsolete early next yeah with Strix Halo. This is also why AMD stopped trying to compete in the low end of the market, they know what's about to come.",
                   "upvotes": 0,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Opinion that the B580 will be made obsolete by Strix Halo.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user believes the product will be obsolete quickly.",
                   "replies": []
                 }
               ]
@@ -291,5 +291,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

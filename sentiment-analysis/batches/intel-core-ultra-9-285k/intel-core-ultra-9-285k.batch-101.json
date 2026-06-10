@@ -18,10 +18,10 @@
           "text": "Using only 500w!!!",
           "upvotes": -4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is commenting on the power consumption of the product.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The use of exclamation marks and context suggests sarcasm regarding high power draw.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "I love amd but games seem to have a hard time with cpus that aren\u2019t the X3D variants, if this cpu performs well I think I\u2019m gonna upgrade to it from my Ryzen 9 7900x.",
           "upvotes": -1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user expresses a potential intent to upgrade to this product based on performance expectations.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is considering buying the product as an upgrade over their current CPU.",
           "replies": []
         },
         {
@@ -40,10 +40,10 @@
           "text": "It\u2019s called arrow lake because the rust pattern is shaped like an arrow! Amazing!!",
           "upvotes": -5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a joke/meme about the product's codename and does not provide meaningful insight.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a joke and does not express a genuine sentiment toward the product's quality.",
           "replies": []
         },
         {
@@ -51,10 +51,10 @@
           "text": "Who cares I ain't buying from that pos company",
           "upvotes": -7,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides a strong recommendation against buying from the company producing the product.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user explicitly calls the company a 'pos' and refuses to buy the product.",
           "replies": []
         },
         {
@@ -62,13 +62,14 @@
           "text": "It also draws close to 300 watts at full trot while the 9950X maxes out around 200.  It would be pretty embarrassing if all they created was a space heater.",
           "upvotes": -8,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares the power draw of the product to a competitor and critiques its efficiency.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes the product as a 'space heater', indicating disappointment in its thermals/efficiency.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

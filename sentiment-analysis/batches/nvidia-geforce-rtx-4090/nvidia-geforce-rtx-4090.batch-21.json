@@ -18,40 +18,40 @@
           "text": "Hope we have decent stock tomorrow in US...",
           "upvotes": 27,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is about stock availability, which is a logistical issue rather than a product insight.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing a hope for stock, which is neutral regarding the product's performance or quality.",
           "replies": [
             {
               "commentId": "irxl9hc",
               "text": "Yields are apparently very good on the 4090.",
               "upvotes": 15,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion of manufacturing yields is a technical fact about production, not a consumer insight into the product's use.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The statement is a factual claim about production yields.",
               "replies": [
                 {
                   "commentId": "irxv33e",
                   "text": "Will still instantly sell out.\n\nWish that was not true as I want one but as typical with flagship launches, patience will be neccessary. \n\nToo bad EVGA is not around this gen gpu as I'd love to be able to be pit on done kind of wait list so I don't have to keep stressing/looking, etc.",
                   "upvotes": 13,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user expresses a desire to own the product, indicating a recommendation/interest based on its flagship status.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user wants the card, implying a positive view of its value and performance.",
                   "replies": [
                     {
                       "commentId": "irxynkw",
                       "text": "Based on debaurs video, i dont even know what partners are going to do other than insane power draws for a sliver of performance increase. This thing really seems overclocked as is out of the box and really setting a lower power target is the way to go for almost no performance loss. I guess we shall see.",
                       "upvotes": 5,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user provides a technical critique regarding power draw and performance gains from overclocking.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing technical trade-offs (power vs performance) without a clear positive or negative leaning.",
                       "replies": []
                     },
                     {
@@ -59,10 +59,10 @@
                       "text": "I normally go third party too, but the 4090 Founders look so better and improved in all areas I will getting it.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user shares their preference for the Founders Edition over third-party cards, providing a design critique.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user explicitly states the Founders Edition looks better and is improved in all areas.",
                       "replies": []
                     }
                   ]
@@ -73,5 +73,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

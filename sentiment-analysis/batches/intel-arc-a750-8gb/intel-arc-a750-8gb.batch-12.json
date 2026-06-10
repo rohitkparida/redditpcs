@@ -18,30 +18,30 @@
           "text": "Please remember folks, this meta data is only applicable if you're using a relatively new CPU. Folks with older CPUs will have a worse experience due to overhead.",
           "upvotes": 15,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses general CPU overhead for Intel Arc GPUs, not specifically the A750.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing a technical warning without a clear positive or negative sentiment toward the product.",
           "replies": [
             {
               "commentId": "m876s7c",
               "text": "Yep. Only recommended for AM4/LGA1700 builds and above. Or any x3D CPU.\n\nShould come with a disclaimer, honestly.",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses general CPU requirements for Intel Arc GPUs, not specifically the A750.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a recommendation based on hardware compatibility.",
               "replies": [
                 {
                   "commentId": "m8ihxdr",
                   "text": "Indeed. I added a note about it.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a meta-comment about adding a note to the original post.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is purely functional and lacks sentiment.",
                   "replies": []
                 },
                 {
@@ -49,20 +49,20 @@
                   "text": "Do you think an intel i5 12th gen could the gpu work as intended or is that still low?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is asking a factual question about CPU compatibility for an Intel Arc GPU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a question and does not express an opinion.",
                   "replies": [
                     {
                       "commentId": "moqjnzl",
                       "text": "That would be absolutely fine.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a factual answer to a compatibility question.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual answer.",
                       "replies": []
                     }
                   ]
@@ -76,20 +76,20 @@
           "text": "The PCGH row for 1080P looks shifted.  Some numbers are obviously in the wrong column",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment points out a formatting error in the original post's table.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a correction of data presentation.",
           "replies": [
             {
               "commentId": "m84d5l3",
               "text": "Indeed. Its fixed now. Thanks for info.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a response to a formatting correction.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a simple acknowledgment.",
               "replies": []
             }
           ]
@@ -99,20 +99,20 @@
           "text": "B580 being  %19 faster than 570 in 4K seems reasonable .I'm still trying to wrap my head around the fact that the 7600XT is more than %35 faster then basically same GPU 7600 but with 8gb only and (and a minor clock boost.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses the B580, B570, and RX 7600XT, not the A750.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is comparing performance data for other GPUs.",
           "replies": [
             {
               "commentId": "m85i7u2",
               "text": "&gt; I'm still trying to wrap my head around the fact that the 7600XT is more than %35 faster then basically same GPU 7600 but with 8gb only and\n\nThat's how hitting the VRAM limits in standardized tests shows up when you just look at averages. Specific titles/settings where it happens tend to end up with framerate dropping to low single digits rather than proportionally, simply because the card cannot manage to render a single frame without swapping around lots of data between system RAM and its local VRAM.\n\nIn some ways it can be treated as testing artifact rather than useful data point because nobody plays games like this. It basically shows that the game just as well could have not worked at all. On the other hand - adjusting some settings around to lower the VRAM usage can bring it back to \"normal\" performance patterns. On the third hand it also does show that specific games at specific settings that currently exist, already pretty much do not work with such card. And there is always an expectation for VRAM usage to creep up with future games. Its just this is more complex information that gets lost once you average results out.\n\nAll in all, it's also worth keeping in mind that the situations where 16GB 7600XT gets significantly ahead thanks specifically to its VRAM, it still often only offers like 10-20 FPS. Which *is* many times better than like 3 FPS on 8GB cards, but does that actually matter at this point? Exceptions to this exist (like Doom Eternal at 1440p), but they are pretty rare as they kinda had to exactly land in specific goldilocks of GPU demands.",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses VRAM limits and performance of the RX 7600XT and 8GB cards in general.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical explanation of VRAM behavior.",
               "replies": []
             },
             {
@@ -120,30 +120,30 @@
               "text": "&gt; 7600XT is more than %35 faster then basically same GPU 7600 but with 8gb only\n\nVRAM comes into play here. This was not a big factor at launch of these cards in 2023. But 1.5 years later, 8GB is too less in many situations.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses VRAM limits of 8GB cards in general, not specifically the A750.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a technical observation.",
               "replies": [
                 {
                   "commentId": "m88fbcx",
                   "text": "What changed recenty ? games test suite?  \n  \nAlso any idea why the 7600 [evenly matched to the 4060 in almost all reviews](https://www.techpowerup.com/gpu-specs/geforce-rtx-4060.c4107) but now some outlets like HUB)are saying its almost %10 slower.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the RX 7600 and RTX 4060, not the A750.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is asking a question about GPU performance differences.",
                   "replies": [
                     {
                       "commentId": "m8ab4gl",
                       "text": "Yes, new games changed this performance picture.\n\nRegarding 7600 vs 4060: There are big differences between the reviews, so there is no uniform performance picture. However, the average of many reviews puts the 4060 slightly ahead of the 7600 (basis: [3DCenter Performance Index](https://www.3dcenter.org/artikel/fullhd-ultrahd-performance-ueberblick-2012-bis-2024)).",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses the RX 7600 and RTX 4060, not the A750.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a performance comparison between two other GPUs.",
                       "replies": []
                     }
                   ]
@@ -155,20 +155,20 @@
               "text": "&gt; B580 being %19 faster than 570 in 4K seems reasonable \n\nIt's worthless data when neither offers a playable experience.",
               "upvotes": 0,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "TheH comment discusses the B580 and B570, not the A750.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user expresses that the performance of these cards at 4K is 'worthless data' because the experience is not playable.",
               "replies": [
                 {
                   "commentId": "m872r9u",
                   "text": "anything that was developed for the previous generation should run great at 4k on a b580.  that's pretty sweet for casual gaming with a media pc and a bigass TV.  (most of my gaming, so my rx6600 is kinda jealous)",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the B580, not the A750.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user describes the B580 as 'pretty sweet' for casual gaming.",
                   "replies": []
                 },
                 {
@@ -176,10 +176,10 @@
                   "text": "Yea if all you do is play\u00a0the latest AAA game at high settings.\u00a0",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the B580, not the A750.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a qualifying statement about the B580's performance.",
                   "replies": []
                 }
               ]
@@ -191,13 +191,14 @@
           "text": "Everyone hating on the 4060 must be let down by the actual performance delta. I got mine for $373 aud after 10% tax. Works out to be $213 USD pre tax. \n\nI game at 1080p and haven't seen another card beat that performance per dollar. Might have to wait for the 5060/9060 to be out for a year and then get discounted to match it.\n\nhttps://www.ozbargain.com.au/node/879001\n\nWtf went as low as $188 USD pre tax like a week later fml hahaha. I see someone managed to get a price refund too, if only I saw that post haha. \n\nhttps://www.ozbargain.com.au/node/880718",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses the RTX 4060, not the A750.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is satisfied with the performance per dollar of the RTX 4060.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

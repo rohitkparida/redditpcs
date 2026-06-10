@@ -18,30 +18,30 @@
           "text": "And yet it is sold out everywhere. Are people really buying this hand over fist or were supplies limited?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discussion about stock availability rather than product performance or experience.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question about sales without expressing a positive or negative opinion on the product itself.",
           "replies": [
             {
               "commentId": "ltkvm8j",
               "text": "Paper launch.",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort comment regarding launch availability.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Purely factual claim about the nature of the launch.",
               "replies": [
                 {
                   "commentId": "ltl2wb8",
                   "text": "Makes sense.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort agreement with a comment about stock.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No opinion on the product expressed.",
                   "replies": []
                 }
               ]
@@ -53,20 +53,20 @@
           "text": "Anyone knowledgeable able to explain why it can perform well in Cinebench, but then not do great in gaming? Is this something that can be fixed with updates/optimisation?",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Purely a technical question about performance differences without providing an opinion.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is seeking information, not expressing sentiment.",
           "replies": [
             {
               "commentId": "ltj5zdl",
               "text": "I mean this is nothing new, it\u2019s just inherent drawback of chiplet design. You get inter-chiplet latency and more importantly bigger memory latency. \n\nThat why ryzen cpus were always underperforming in games even though they were beasts in synthetics. And that\u2019s why x3d cpus are better because they circumvent the memory latency issue because cpu is making less trips to memory since it can store much more data in cache. Intel may improve latency issues somewhat but this is mostly design limitation.",
               "upvotes": 29,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides a technical critique of the chiplet design affecting gaming performance.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The explanation is technical and objective regarding design limitations.",
               "replies": []
             },
             {
@@ -74,10 +74,10 @@
               "text": "Something's truly effed, either with the core or the software. Linux gaming benchmarks it barely sips power and performs meh. It's very limited by the power management maybe, or badly limited and needs specific workloads to be allowed to get to max power. It's weird, it's not even always bad, just randomly bad.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Shares an opinion on the product's inconsistent performance and power management.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Describes the performance as 'meh' and 'randomly bad'.",
               "replies": []
             },
             {
@@ -85,20 +85,20 @@
               "text": "Don't trust synthetic benchmarks. Only believe in real world tests like games or testing from reviewers. It's easy to manipulate benchmark scores for manufacturers. Amd also has better single core scores but 7800x3d still beats everything.",
               "upvotes": -2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Offers an opinion on benchmarks and compares the product to the 7800x3d.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Suggests the product is beaten by the 7800x3d in gaming.",
               "replies": [
                 {
                   "commentId": "ltjxhsy",
                   "text": "Cinebench uses real world rendering engine. This is as real world as it could be, just a different type of task compared to gaming.",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about the validity of Cinebench as a benchmark, not the product itself.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual correction about benchmark types.",
                   "replies": []
                 }
               ]
@@ -110,80 +110,80 @@
           "text": "It's still so power hungry... I knew it. Despite the architectural improvements that carried over from the efficient Lunar Lake, it's still a power hungry monster. I told everyone x86 was not capable of delivering performance and efficiency at the same time, it's just either performance (Arrow Lake) or efficiency (Lunar Lake).",
           "upvotes": -12,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Critiques the power consumption and efficiency of the product.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Calls the product a 'power hungry monster'.",
           "replies": [
             {
               "commentId": "ltj5hrt",
               "text": "AMD is x86 and is more performant and more efficient",
               "upvotes": 30,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Direct comparison between AMD and Intel regarding performance and efficiency.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Positive leaning towards AMD as a superior alternative to the Intel product.",
               "replies": [
                 {
                   "commentId": "ltj6mxh",
                   "text": "AMD is also power hungry. Compare it to the M3 Max and its around 2-3x as efficient as the most efficient x86 AMD CPU. Compare **Power Consumption / Cinebench R15 Multi Power Efficiency - external Monitor** on Notebookcheck.com.\n\nEven the old generation M2 Max found in the Mac Studio desktop is noticeably more efficient than the 9950X (20 points per watt versus 28 points per watt)",
                   "upvotes": -22,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General discussion about x86 vs ARM efficiency, not specific to the 285K.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Technical comparison of architectures without specific product sentiment.",
                   "replies": [
                     {
                       "commentId": "ltjc796",
                       "text": "The problem is you are making the claim that because of intels failure to bring enough efficiency improvement that that somehow reflects a limit in x86.\n\nSo I pointed out how AMD does better. \n\nWhose to say that AMD and Intel can't do much better in the future on x86. You can't make your claim without proof and your proof is insufficient for what you are trying to claim.",
                       "upvotes": 15,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Meta-discussion about the logic of the previous argument regarding x86.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Focuses on the quality of the argument rather than the product.",
                       "replies": [
                         {
                           "commentId": "ltjee92",
                           "text": "We've been waiting for ages now. M-Series exists for 4 years now, if an ultra performance x86 CPU with the same power efficiency would be possible, we would have seen it by now, considering the media pressure it has resulted into, they surely went into overdrive mode. And yet, not even Lunar Lake comes close to the efficiency of an M3 chip, despite the huge improvements in power efficiency and the lower performance: [https://www.notebookcheck.com/Intel-Lunar-Lake-CPU-Analyse-Der-Core-Ultra-7-258V-enttaeuscht-bei-Multi-Core-Leistung-punktet-aber-bei-der-Alltags-Effizienz.892511.0.html](https://www.notebookcheck.com/Intel-Lunar-Lake-CPU-Analyse-Der-Core-Ultra-7-258V-enttaeuscht-bei-Multi-Core-Leistung-punktet-aber-bei-der-Alltags-Effizienz.892511.0.html) (scroll down to Power Consumption - Cinebench 2024 Multi Power Efficiency - external Monitor)\n\nWhat more do you want?",
                           "upvotes": -11,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "General architectural debate about x86 vs ARM efficiency.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "Technical debate without specific sentiment toward the 285K.",
                           "replies": [
                             {
                               "commentId": "ltjsn46",
                               "text": "Lunar lake disproves this narrative you've been spouting for months without any evidence.",
                               "upvotes": 9,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Discussion about the Lunar Lake architecture in a general sense.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "Argumentative comment about architectural narratives.",
                               "replies": [
                                 {
                                   "commentId": "ltjtjpr",
                                   "text": "Dude I just provided evidence right above you. The performance per watt is vastly inferior to the M3.\n\nAnd lunar Lake is not even an alternative to apples M3 pro and max because the multicore performance is much worse. Intel has failed to provide a competitor to those 12 core and 16 core chips. Any why? Because they can't do it. It's not possible for x86 to provide efficency and performance at the same time.",
                                   "upvotes": -1,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "General debate on x86 vs ARM performance and efficiency.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "Focuses on architectural limitations rather than the specific product.",
                                   "replies": [
                                     {
                                       "commentId": "ltl5d5o",
                                       "text": "Why are you ignoring the Qualcomm arm chips with similar efficiency?",
                                       "upvotes": 2,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Off-topic mention of Qualcomm ARM chips.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "Asking a question about a different product line.",
                                       "replies": []
                                     },
                                     {
@@ -191,10 +191,10 @@
                                       "text": "We will find out in a few years. I also expect ARM to take off on the client, just like it already has in the cloud.",
                                       "upvotes": 0,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "General speculation about the future of ARM on clients.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "Speculative comment about industry trends.",
                                       "replies": []
                                     }
                                   ]
@@ -210,10 +210,10 @@
                       "text": "You're comparing apple to orange.",
                       "upvotes": 11,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort comment about the nature of the comparison.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "No sentiment expressed toward the product.",
                       "replies": []
                     }
                   ]
@@ -225,10 +225,10 @@
               "text": "ARM nonsense again? dude, [edumakate yourself](https://chipsandcheese.com/2021/07/13/arm-or-x86-isa-doesnt-matter)",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Off-topic comment about ISA debates.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Aggressive tone but not directed at the product's performance.",
               "replies": []
             }
           ]
@@ -238,10 +238,10 @@
           "text": "YeAH bUT it'S rATeD 138% at UseR BEnCHmARk . It'S tHE BeST",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Sarcastic meme/joke regarding UserBenchmark.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Sarcasm makes the sentiment unreliable and the content low-effort.",
           "replies": []
         },
         {
@@ -249,10 +249,10 @@
           "text": "Videos like this are so childish. Intel dominates in productivity, AMD dominats in Gaming.",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Provides an opinion on the product's role in productivity vs gaming.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Balances the product's strength in productivity with its weakness in gaming.",
           "replies": []
         },
         {
@@ -260,13 +260,14 @@
           "text": "A lot nonsense comments here. It is good workstation CPU bad in gaming and that\u2019s all.",
           "upvotes": -5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Summarizes the product as a good workstation CPU but bad for gaming.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Provides a balanced view of the product's utility.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,40 +18,40 @@
           "text": "RDNA2 competed with the 3090\n\nRDNA3 competed with the 4080\n\nRDNA4 competes with the 5070",
           "upvotes": -2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is making a direct comparison between the RDNA4 architecture and the RTX 5070 series.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a factual claim about market competition without a positive or negative bias.",
           "replies": [
             {
               "commentId": "mgxxnr0",
               "text": "Market doesn't want AMD's high end GPUs. This is why AMD's best generations where when they abandoned competing at the high end. rx480/580, 5700xt and now 9070xt.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion has shifted to AMD's general market strategy and high-end GPU demand, moving away from the specific product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is discussing market trends and AMD's historical performance.",
               "replies": [
                 {
                   "commentId": "mgy1gex",
                   "text": "Do you honestly think AMD is happy with this situation? Having to sell their best card for $600, while NVIDIA can easily sell theirs for $2000+",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment focuses on AMD's corporate happiness and pricing strategies compared to NVIDIA generally, not the RTX 5070 Ti.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is questioning AMD's business satisfaction.",
                   "replies": [
                     {
                       "commentId": "mgy3op1",
                       "text": "AMD is a publicly traded company. They are happy when they sell their GPUs for profit. So far it seems, every time they concentrate their tape out costs on one or two skus to address the mainstream, they have a win.\n\nEvery time they spend money on taping out a full line up top to bottom, they lose the pricing edge and they get stuck with inventory they can't sell.\n\nPeople like to poke fun of AMD about Nvidia -$50. But that's what happens when you tape out bunch of chips and have nowhere near the volume to amortize those costs. Concentrating on one or two SKUs gives AMD room to undercut Nvidia.\n\nVast majority of gamers want AMD high end GPUs to put pressure on Nvidia so that they can buy an Nvidia GPU for less. Where as a more value oriented shopper will buy whatever gives the best value. You gotta go where the customers are.",
                       "upvotes": 7,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a meta-discussion about corporate tape-out costs and market volume, not the specific product's performance or value.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a business analysis of GPU manufacturing.",
                       "replies": []
                     },
                     {
@@ -59,10 +59,10 @@
                       "text": "That's not really how it works. The best card is at the scale they deem worth it to design a GPU.\n\nThe 5090 is NVIDIAs best card because it is much much more expensive to produce than the 9070 XT or the 5070. The 5090 has 32 GB of expensive ram, a massive 750 mm\u00b2 die, and 600W TDP. They were never designed to compete with each other on price.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses the RTX 5090 and general GPU design costs, mentioning the 5070 only as a point of comparison for scale.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is explaining the technical differences in production costs.",
                       "replies": []
                     }
                   ]
@@ -74,15 +74,16 @@
               "text": "RDNA3 competed with 4070ti.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user is correcting a comparison between RDNA3 and the 4070 Ti, which is relevant to the product lineage and competitive landscape.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual correction without emotional leaning.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,50 +18,50 @@
           "text": "Every single 50 series card needs a tier level drop. This is dumb.",
           "upvotes": 14,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is expressing a critical opinion on the tiering and value of the 50 series cards, including the 5070 Ti.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes the current tiering as 'dumb' and suggests a tier level drop is needed.",
           "replies": [
             {
               "commentId": "mg1fwg9",
               "text": "Even the 5090?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a clarifying question about the 5090, not providing insight into the 5070 Ti.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a simple question without an expressed opinion.",
               "replies": [
                 {
                   "commentId": "mg2855w",
                   "text": "honestly, compared to the 3090/4090 uplift, its massively worse. I think they made the 4090 too OP for them to handle making real progress. \n\nI don't have the exact numbers in my head but I'm pretty sure the 4090 to 5090 gap is smaller than the 3090 to 4080 gap, so making the 5090 a 5080 could've made sense.",
                   "upvotes": 13,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The discussion has shifted entirely to the 5090 and 4090, which is off-topic for the 5070 Ti.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user is disappointed in the performance uplift of the 5090 compared to previous generations.",
                   "replies": [
                     {
                       "commentId": "mg3zu4b",
                       "text": "there were 3090 ti also",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a factual statement about the existence of the 3090 Ti, which is off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a purely factual statement.",
                       "replies": [
                         {
                           "commentId": "mg4pvsm",
                           "text": "Which was an extremely minor difference to the 3090 (&lt;5%)",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "This is a technical detail about the 3090 Ti, which is off-topic.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a purely factual/technical statement.",
                           "replies": []
                         }
                       ]
@@ -71,10 +71,10 @@
                       "text": "Ah, thanks for explaining it!",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a low-effort social response, not providing insight into the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a simple thank you.",
                       "replies": []
                     }
                   ]
@@ -85,5 +85,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

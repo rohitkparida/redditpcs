@@ -28,10 +28,10 @@
               "text": "They\u2019re not really selling GPUs, they\u2019re selling cards that unlock DLSS levels.",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a general critique of NVIDIA's business strategy regarding DLSS, not specific to the 4090's performance or value.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user expresses frustration with the perceived 'unlocking' of features via hardware purchases.",
               "replies": []
             },
             {
@@ -39,10 +39,10 @@
               "text": "DLSS3 wont be in Ampere and older as there is just so much wrong with it to try to do realtime frame interpolation using motion vectors and such. ADA takes one clock cycle to get data from the Tensor cores to the OFA while Ampere and older takes tens of thousands of clock cycles to do the same. Ampere and older cant get the Tensor data to the OFA after its done its calculations in the same clock cycle or without software help. The data also needs to be organized and blocked out which requires more software help and many more clock cycles. The OFA also prefers low fidelity data rather then high fidelity data when doing per frame sequencing and only ADA has low fidelity FPUs in their Tensor cores. ADA is also the only architecture to have a high enough Tensor throughput to do per frame sequencing. Last issue is with Turing, that is also just missing OFA \"featuresets\" which is descripted in the OFA SDK documentation.",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides a detailed technical explanation of why the 40-series (including 4090) requires new hardware for DLSS 3.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a technical explanation of hardware architecture differences without a clear positive or negative bias.",
               "replies": []
             },
             {
@@ -50,10 +50,10 @@
               "text": "Thats why AMD is better, fsr updates for both new and old gpus",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a general comparison between AMD and NVIDIA's software update policies, not specific to the 4090.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user prefers AMD's approach to software updates.",
               "replies": []
             }
           ]
@@ -63,60 +63,60 @@
           "text": "GTX 980 - $549 in 2014\n\nGTX 1080 - $599 / $699 in 2016\n\nRTX 2080 - $699 / $799  in 2018\n\nRTX 3080 - $699 / $799  in 2020/2022\n\nRTX 4080 - $899 / $1,199 in 2022\n\n\n\n\nRemember when Nvidia hit the $999 mark with the original Titan? Back when $699 got you the top of the line card (780Ti)?\n\n\nWith the 4090Ti that will most likely cost you $2,100 or $2,200 nowadays. \n\n\n\n\nCan't wait to see what $350 will get you in this generation. I assume the entry level RTX 4050?",
           "upvotes": 564,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the pricing trends of high-end GPUs, including the 4090Ti prediction, which relates to the product's value proposition.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is critical of the rising costs of high-end GPUs over time.",
           "replies": [
             {
               "commentId": "ip82uv3",
               "text": "fuck nvidia",
               "upvotes": 332,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort banter/insult directed at the company, not providing insight into the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Expresses strong dislike for NVIDIA.",
               "replies": [
                 {
                   "commentId": "ip8ddvp",
                   "text": "Once I see the Radeon prices I just might.",
                   "upvotes": 104,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about waiting for Radeon prices, not specific to the 4090.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is simply stating their intention to compare prices.",
                   "replies": [
                     {
                       "commentId": "ipajmzf",
                       "text": "Top tier Navi 30 GPU is supposed to have an absolutely ridiculous price tag. We'll have to wait until Nov 3rd to find out for sure.",
                       "upvotes": 14,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about Navi 30 GPU pricing, not the 4090.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is sharing a leak/rumor about a competitor's product.",
                       "replies": [
                         {
                           "commentId": "ipayfsd",
                           "text": "Navi 31 has MCM design to optimise cost",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Technical detail about AMD's MCM design, not the 4090.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is providing a factual statement about AMD hardware.",
                           "replies": [
                             {
                               "commentId": "ipc4xv4",
                               "text": "I know but TSMC jacked up costs for everyone.\n\nAMD included.\n\nThe most reliable leakers have said that Navi 31's top SKU will be ~$2000 but the entire Radeon 7000 series will be super competitive and use ~25% less power compared to nVidia's lineup.",
                               "upvotes": 7,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Comparison of AMD's power consumption and pricing, not specific to the 4090's performance or value.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is sharing leaked information about AMD's competitiveness.",
                               "replies": []
                             }
                           ]
@@ -130,10 +130,10 @@
                   "text": "Fuck Nvidia",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort insult, not providing product insight.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Expresses strong dislike for NVIDIA.",
                   "replies": []
                 }
               ]
@@ -143,40 +143,40 @@
               "text": "Adjusted for inflation/normalized to 2022 dollars:\n\nGTX 980 - $687\n\nGTX 1080 - $739 / $863\n\nRTX 2080 - $824 / $942\n\nRTX 3080 - $800 / $914\n\nRTX 4080 - $899 / $1,199",
               "upvotes": 179,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely factual listing of inflation-adjusted prices for various GPUs.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a data-driven comparison without opinion.",
               "replies": [
                 {
                   "commentId": "ip8c4tt",
                   "text": "now adujst to stagnant wages",
                   "upvotes": 159,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "General comment on stagnant wages, not specific to the 4090.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is making a social commentary on affordability.",
                   "replies": [
                     {
                       "commentId": "ipunuks",
                       "text": "GTX anything: doable   \nRTX anything: 1 kidney   \nRTX 40xx: the other kidney whoops you're dead oh well",
                       "upvotes": 13,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Uses hyperbole to critique the extreme price of the 40-series GPUs, including the 4090.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user is criticizing the high cost of the product.",
                       "replies": [
                         {
                           "commentId": "ipxq0kj",
                           "text": "You forget the other organs my dude",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Low-effort joke about organs, not providing product insight.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is continuing a joke.",
                           "replies": []
                         }
                       ]
@@ -188,40 +188,40 @@
                   "text": "So with those prices if it was priced 799$ it would have made some sense.",
                   "upvotes": 43,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about the 4080's pricing, not the 4090.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user feels the 4080's price is too high.",
                   "replies": [
                     {
                       "commentId": "ip8hj3t",
                       "text": "The 4080 12 GB is more comparable to previous gen xx70 series cards, so I\u2019d compare it to the 3070 or 3070 TI. Its memory bandwidth is less than the 4080 16 GB by quite a bit, and the fact that it doesn\u2019t even use the same die as the 4080 16 GB despite having the same name is ridiculous. The cut down die means its performance will be nowhere near the 4080 16 GB, instead of being a small difference like the 3080 10 GB vs 3080 12 GB, which had more VRAM and a bigger bus (but the same die) compared to the base 3080 that gave it a few % better performance.",
                       "upvotes": 58,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Detailed critique of the 4080 12GB model, not the 4090.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user is critical of the 4080 12GB's specs and naming convention.",
                       "replies": [
                         {
                           "commentId": "ip9ipsv",
                           "text": "yeah what the fuck?\n\nAt a quick glance I was like.. this isnt a 4080 at all? They're different cards its not just less memory. It should've been called 4080TI.\n\nfucken Nvidia man",
                           "upvotes": 35,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Critique of the 4080 12GB, not the 4090.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user is frustrated with NVIDIA's naming and specs for the 4080 12GB.",
                           "replies": [
                             {
                               "commentId": "ipjimcd",
                               "text": "Check the memory bus. The 12g should've been called 4060.",
                               "upvotes": 7,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Critique of the 4080 12GB, not the 4090.",
+                              "sentiment": "negative",
+                              "sentimentReasoning": "The user believes the 4080 12GB should have been named differently.",
                               "replies": []
                             }
                           ]
@@ -231,10 +231,10 @@
                           "text": "I had to read the specs 3 times, then try to figure out what it was comparable to and when I realized its a 3070ti the look on my face was that look when you think someones super attractive from behind then they turn around :/ I think the 4090 is 100% worth it for my use case (I want all teh fps with dlss off on 4k) but the 4080 meh",
                           "upvotes": 8,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user explicitly states the 4090 is worth it for their specific use case (4K, DLSS off).",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "The user recommends the 4090 for high-performance 4K gaming.",
                           "replies": []
                         },
                         {
@@ -242,10 +242,10 @@
                           "text": "Yeah, nvidia know no one wants to buy a 4070 with a 899 price tag",
                           "upvotes": 7,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about the 4070, not the 4090.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user is critical of the 4070's potential pricing.",
                           "replies": []
                         }
                       ]
@@ -259,10 +259,10 @@
               "text": "&gt;RTX 4080 - $899 / $1,199 in 2022\n\nEven that is being very generous. As others have already pointed out, the $899 \"4080\" is a completely different card with greatly inferior specs (even less CUDA cores than the 3080 for example), so the $899 would have to be compared to the XX70 models and the $1.199 to the XX80 models. That is a huge leap in price.",
               "upvotes": 13,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Critique of the 4080's pricing and specs, not the 4090.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is critical of the 4080's price leap.",
               "replies": []
             },
             {
@@ -270,10 +270,10 @@
               "text": "&gt;Can't wait to see what $350 will get you in this generation.\n\nNVIDIA: Best I can do is GTX4010.",
               "upvotes": 12,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Joke about a potential 4010, not the 4090.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is making a joke about NVIDIA's pricing.",
               "replies": []
             },
             {
@@ -281,10 +281,10 @@
               "text": "2013 $699 would be $890 today\n\n2013 $1000 would be $1270 today",
               "upvotes": 11,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely factual inflation-adjusted price comparison.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing data without opinion.",
               "replies": []
             },
             {
@@ -292,15 +292,16 @@
               "text": "Well the only reason they do is because some of you fucks are buying at that price :)",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General comment on consumer behavior, not specific to the 4090.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is making a general observation about market demand.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

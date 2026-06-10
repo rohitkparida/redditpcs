@@ -18,20 +18,20 @@
           "text": "Does anybody knows at which time the Embargo for the AiB card reviews will fall tomorrow? Would be really nice to be able to decide which card to buy, beforehand..",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking about review embargo times, which is a factual/logistical question rather than a product critique.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral inquiry about timing.",
           "replies": [
             {
               "commentId": "irx5uoi",
               "text": "9am est tomorrow",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a purely factual answer regarding the time of the embargo.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment provides a factual time without any opinion.",
               "replies": []
             },
             {
@@ -39,20 +39,20 @@
               "text": "Probably same time as release",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a factual speculation about the timing of the release/embargo.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral statement about timing.",
               "replies": [
                 {
                   "commentId": "irx55x2",
                   "text": "Thank you for your work!",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a general thank you message, which is low-effort banter/meta-talk.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is expressing gratitude.",
                   "replies": []
                 },
                 {
@@ -60,20 +60,20 @@
                   "text": "Yeah I'm afraid you're right..",
                   "upvotes": 0,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a short reply agreeing with a timing speculation, providing no product insight.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral agreement.",
                   "replies": [
                     {
                       "commentId": "irxzhrd",
                       "text": "There are no big revelations to be had. They all have massive coolers. \n\nThey'll all be fine and the performance difference between the most basic 4090 and the *Strix Ultra Mega OC* will be negligible.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user provides an opinion on the performance and cooling of the various 4090 models.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user suggests that all 4090 cards will be 'fine' and that performance differences will be negligible, implying a positive outlook on the base product.",
                       "replies": []
                     }
                   ]
@@ -84,5 +84,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

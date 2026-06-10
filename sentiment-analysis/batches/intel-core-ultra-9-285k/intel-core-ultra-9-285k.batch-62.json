@@ -18,20 +18,20 @@
           "text": "These results are so bad and inconsistent that it seems like it must be a driver issue??  Otherwise how on Earth does it rank #1 in some and below 12600k in others?  Fucking hell Intel get your shit together",
           "upvotes": 9,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses opinion on the inconsistent performance results of the product.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User is frustrated with the performance and tells Intel to 'get your shit together'.",
           "replies": [
             {
               "commentId": "ltkme3k",
               "text": "Architecture.\n\nDepending on what game is sensitive to. Remember how early Zen releases performed well in games that do multi core well but not great in others? \n\nDrivers or scheduling might help but removing hyper threading has its issues since games use p cores. My gut feeling is it\u2019s related to that and also the ring bus latency which seems to be at zen 1 or 2 levels.",
               "upvotes": 13,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides technical critique regarding architecture and hyper-threading removal.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user views the architectural choices as problematic for gaming performance.",
               "replies": []
             },
             {
@@ -39,10 +39,10 @@
               "text": "horrible memory latency, in some games it get affected more than others\n\nits the same reason Zen 5 isnt always faster than Zen 4, it got higher latencies",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses specific technical issues like memory latency affecting performance.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Describes the memory latency as 'horrible'.",
               "replies": []
             },
             {
@@ -50,10 +50,10 @@
               "text": "Something weird has to be going on. In some benchmarks it's like 50%+ better than a 9950X and then in the next one it's total ass? Makes no sense.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Critiques the inconsistency of benchmarks compared to competitors.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Describes the performance in some benchmarks as 'total ass'.",
               "replies": []
             },
             {
@@ -61,10 +61,10 @@
               "text": "its got VERY high memory latency. i can see the tasks that dont care about memory latency being fine but ones like games that do care tanking being expected",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the impact of high memory latency on gaming performance.",
+              "sentiment": "negative",
+              "sentimentReasoning": "User believes the performance 'tanking' in games is expected due to latency.",
               "replies": []
             }
           ]
@@ -74,30 +74,30 @@
           "text": "When i said that buying this would be a beta testing...",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User suggests the product is essentially a 'beta test' for consumers.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Comparing a retail product to a beta test implies it is unfinished or unstable.",
           "replies": [
             {
               "commentId": "ltkmyrz",
               "text": "Intel shouldn\u2019t have abandoned their node for TSMC. TSMC might be better but working with what you know yields better results.\n\nThey should have optimized 14 series for power efficiency and release that on same z790 chipset.",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Critiques Intel's decision to use TSMC nodes and suggests alternative strategies.",
+              "sentiment": "negative",
+              "sentimentReasoning": "User believes Intel abandoned their own node and missed an optimization opportunity.",
               "replies": [
                 {
                   "commentId": "ltm6nr6",
                   "text": "Intel probably bought all the available capacity to block AMD from purchasing it.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Speculation about corporate capacity and market blocking, not about the product's performance or experience.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral speculation about business strategy.",
                   "replies": []
                 }
               ]
@@ -107,40 +107,40 @@
               "text": "Beta? AFAIK it works, it's just ass value. Solely considering wether it's broken or not at least it doesn't have the Ryzen 9000 scheduling issues for gaming",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the product's value and stability compared to Ryzen 9000.",
+              "sentiment": "negative",
+              "sentimentReasoning": "User explicitly states the product has 'ass value'.",
               "replies": [
                 {
                   "commentId": "ltl8hez",
                   "text": "it performs worse on 24H2 than on older windows version, do yeah it got Windows scheduler issues as well\n\neven with the \"issues\" Zen 5 gained like 5%, it wasnt as slow as this launch, the positioning against Arrow lake doesnt really change",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses performance degradation on specific Windows versions and compares it to Zen 5.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "User states the launch was 'slow' and performance is worse on 24H2.",
                   "replies": [
                     {
                       "commentId": "ltlxv9c",
                       "text": "Where did you see the test on older windows? No reviews i watched said which version of windows they were using.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Purely a question about where the data was found in a review.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is asking for a source, which is neutral.",
                       "replies": [
                         {
                           "commentId": "ltmmu7y",
                           "text": "the review posted in this very post, that you didnt bother to watch\n\nill make it easier, go to 25:17",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Factual answer directing the user to a specific timestamp in a video.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a purely factual direction.",
                           "replies": []
                         }
                       ]
@@ -152,10 +152,10 @@
                   "text": "\"I experienced an issue where, when Virtualization is disabled in bios, running any easy anti-cheat game would result in a BSOD.\"\n\n  \n\"[Microsoft issued a bulletin](https://learn.microsoft.com/en-us/windows/release-health/status-windows-11-24h2#263msgdesc) advising updating games to work around this issue, but the specific failure I experienced was spooky in that immediately following this BSOD if one were to boot to Memtest86, then Memtest86 would detect a memory error (or two).\"\n\n  \n\"This is alarming because cold-booting the system would result in a system with no memory errors. This was repeatable across two different kits of memory from two different vendors. I suspect, but I am not certain, this means that the Easy AntiCheat BSOD somehow puts the CPU into a state where memory operations become unreliable once whatever condition EasyAntiCheat. Huge, if true. Or maybe two memory kits happened to be flaky in an almost identical way, never reporting any memory errors even with overnight testing, except immediately following an Easy AntiCheat crash . .\"\n\n  \n\\-[Level1Techs Review](https://forum.level1techs.com/t/intel-core-ultra-9-285k-core-ultra-5-review/218917)",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Shares a detailed technical report of BSODs and memory errors associated with the CPU.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "Reports alarming stability issues and system crashes.",
                   "replies": []
                 }
               ]
@@ -164,5 +164,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

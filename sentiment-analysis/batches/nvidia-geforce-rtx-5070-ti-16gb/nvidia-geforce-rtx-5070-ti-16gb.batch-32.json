@@ -18,40 +18,40 @@
           "text": "I\u2019ll try to keep my 3080 untill the next generation release, hopefully it\u2019ll get a bigger perf uplift",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is discussing keeping their current GPU (3080) rather than upgrading to the 50-series, but does not provide a specific critique or opinion on the 5070 Ti.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing a neutral decision to wait for a future generation.",
           "replies": [
             {
               "commentId": "m9zfvjk",
               "text": "Me too! \n\nMan I was so excited to upgrade, but now I'm dumping that money into a CPU haha. \n\n3080 is still solid for 1440p.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is discussing their decision to upgrade their CPU instead of their GPU, which is off-topic regarding the 5070 Ti.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is expressing a neutral shift in spending priorities.",
               "replies": [
                 {
                   "commentId": "ma0ehjj",
                   "text": "Even 4k honestly, lossless scaling helps also, and will only get better in the coming years hopefully",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is discussing the performance of the RTX 3080 and lossless scaling, which is off-topic for the 5070 Ti.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a neutral technical observation about an older card.",
                   "replies": [
                     {
                       "commentId": "ma2xfzn",
                       "text": "I was originally going to upgrade my 3080ti to a 5080/90 since I game at 4k, but honestly, the performance increases for the price just isn't really worth it, especially when the 3080ti is still pretty powerful. Hopefully DLSS 4 will help it run a bit longer until the 5080ti or even the 60 series.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user explicitly mentions the 5080/90 and the 5080 Ti as potential upgrade paths, concluding that the current performance increase for the price is not worth it.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user expresses disappointment in the value proposition (performance increase for the price) of the new generation.",
                       "replies": []
                     }
                   ]
@@ -62,5 +62,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

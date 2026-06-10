@@ -18,60 +18,60 @@
           "text": "As someone who owns a 3060 Ti, this is an easy purchase for me. I just hope availability doesn't get in the way.",
           "upvotes": -24,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses a clear intent to purchase the product as an upgrade from a 3060 Ti.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user describes the product as an 'easy purchase', indicating high satisfaction with the value proposition.",
           "replies": [
             {
               "commentId": "mfzb0a9",
               "text": "Oh, hey!  Founders Edition is delayed until late March.\n\n[https://www.reddit.com/r/nvidia/comments/1j3dwwk/nvidia\\_says\\_geforce\\_rtx\\_5070\\_founders\\_edition/](https://www.reddit.com/r/nvidia/comments/1j3dwwk/nvidia_says_geforce_rtx_5070_founders_edition/)\n\nSo only available as much-more-than-MSRP AIB models!  Have a nice day!",
               "upvotes": 11,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment focuses on availability and release dates rather than product performance or opinion.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment provides factual information about a delay without expressing a personal opinion on the product itself.",
               "replies": [
                 {
                   "commentId": "mfzbpkq",
                   "text": "AIB cards seem to be sticking to a $549 price point, which is what I wanted anyway.",
                   "upvotes": -8,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User discusses the pricing of AIB models relative to their desired price point.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user is satisfied that AIB cards are sticking to the $549 price point.",
                   "replies": [
                     {
                       "commentId": "mfzeugq",
                       "text": "Genuinely curious how one finds AIB pricing before launch....",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a meta-question about how to find pricing information, not a critique of the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is asking a factual question about sourcing information.",
                       "replies": [
                         {
                           "commentId": "mfzkt60",
                           "text": "Make sure you either open this on a desktop browser or \"view as desktop site\" on your mobile device...\n\nhttps://www.newegg.com/p/pl?storeName=GPUs-Video-Graphics-Cards&amp;pageTitle=GPUs+%2F+Video+Graphics+Cards&amp;N=100007709+601469160",
                           "upvotes": 0,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment provides a link to a store and technical instructions on how to view the site.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is purely helpful/factual and contains no sentiment regarding the product.",
                           "replies": [
                             {
                               "commentId": "mfznfx8",
                               "text": "Thanks!",
                               "upvotes": 0,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Low-effort response ('Thanks!') that provides no insight into the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is a simple expression of gratitude.",
                               "replies": []
                             }
                           ]
@@ -87,20 +87,20 @@
               "text": "Why didn't you just get a 4070 Super? It's literally the same card",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User compares the product to the 4070 Super, claiming they are essentially the same.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user suggests the product is redundant and that the previous generation is a better choice.",
               "replies": [
                 {
                   "commentId": "mfzcogi",
                   "text": "The thought has crossed my mind, because I'm mostly interested in having Tensor cores. The 4070 Super has 32 more, but it's also more expensive than the 5070. I'm hoping that the faster memory and higher memory bandwidth will help me in the Adobe software that I primarily run.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User discusses specific technical features (Tensor cores, memory bandwidth) and their utility for Adobe software.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user justifies the purchase based on specific performance benefits for their professional workload.",
                   "replies": []
                 },
                 {
@@ -108,10 +108,10 @@
                   "text": "Better card really. Within 3-5% performance but more power efficient and quieter.\u00a0",
                   "upvotes": -1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User provides a direct performance and efficiency comparison between the product and the 4070 Super.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user explicitly states the 4070 Super is a 'better card' due to efficiency and noise.",
                   "replies": []
                 }
               ]
@@ -120,5 +120,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

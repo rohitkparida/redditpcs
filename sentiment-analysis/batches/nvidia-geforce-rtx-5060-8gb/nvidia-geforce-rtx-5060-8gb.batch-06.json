@@ -18,30 +18,30 @@
           "text": "There's gotta be a solution for the vram mess.",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is discussing the VRAM limitation of the RTX 5060.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes the VRAM situation as a 'mess'.",
           "replies": [
             {
               "commentId": "mu1mzot",
               "text": "Neural compression, but NVIDIA has been pretty silent about it and we have no clue if devs are going to use it or not.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about neural compression technology in general, not specific to the product's performance or experience.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual discussion about technology.",
               "replies": [
                 {
                   "commentId": "mu6ovwo",
                   "text": "NTC is still in the betatesting stage and waits on Cooperative Vectors API preview to end. It'll take a while but devs will use. Even if it has no impact on VRAM when the card isn't powerful enough to run the texture inference and has to rely on BCn fallback the game file savings alone are easily worth it.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Technical discussion about APIs and texture inference, not a product review or opinion.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is providing technical information.",
                   "replies": []
                 }
               ]
@@ -51,10 +51,10 @@
               "text": "Sampler feedback streaming, dynamic LOD tapping into0 mesh shaders incredible ability to cull geometry and textures, NVME data streaming, neural compression and shaders and work graphs to name a few.\n\nEverything related to the DX12U spec should start coming on PC from \\~2026. SFS + better geometry and texture culling will do a ton to reduce VRAM usage on PC.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General technical discussion about DX12U specs and VRAM reduction techniques.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is providing technical information.",
               "replies": []
             },
             {
@@ -62,30 +62,30 @@
               "text": "DLSS really, you are supposed to use it. \ud83e\udd37\u200d\u2642\ufe0f\n\nAlso people need to stop trying to run everything at max settings with gimped cards then crying foul on Nvidia. You should be purchasing a higher tier card for that.\n\nAll the whiners and poors are downvoting me because their $300 8GB card sucks at max settings in resolutions it\u2019s not made for and they refuse to use DLSS.",
               "upvotes": -6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides an opinion on the value and usage of the 8GB card, defending its target audience.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user argues that the card is appropriate for its price point and that critics are using it incorrectly.",
               "replies": [
                 {
                   "commentId": "mu1mg8x",
                   "text": "DLSS doesn\u2019t help with VRAM at all I\u2019m pretty sure",
                   "upvotes": -1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about whether DLSS helps with VRAM, which is a general technical question.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a factual query.",
                   "replies": [
                     {
                       "commentId": "mu1nqco",
                       "text": "It does, that\u2019s one of the benefits.",
                       "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General technical discussion about DLSS benefits.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual claim.",
                       "replies": []
                     },
                     {
@@ -93,10 +93,10 @@
                       "text": "you should really read what DLSS is.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort banter/argument about DLSS knowledge.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is an argument between users.",
                       "replies": []
                     },
                     {
@@ -104,10 +104,10 @@
                       "text": "You should read what DLSS is.",
                       "upvotes": -2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Low-effort banter/argument about DLSS knowledge.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is an argument between users.",
                       "replies": []
                     }
                   ]
@@ -119,70 +119,70 @@
               "text": "There is. It's called buying the GPU you want with the VRAM you find to be satisfactory. All this complaining about 8GB is quite annoying. 60-tier cards always didn't have VRAM that was as high as the 80 class card. It's time to pay up if you care so much.",
               "upvotes": -8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user expresses an opinion on the 8GB VRAM capacity of the 60-tier cards.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user defends the 8GB capacity as standard for this tier of card.",
               "replies": [
                 {
                   "commentId": "mu29vff",
                   "text": "holy shit, you are all over these comments. is jensen holding your family hostage ? what is going on ? i have seen like 10 comments of you vehemently defending a company who doesn't know you exist. is this a pr account ?",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Meta-talk about the other user's behavior and accusations of being a PR account.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is an interpersonal argument.",
                   "replies": [
                     {
                       "commentId": "mu2b2cq",
                       "text": "No, it's called being a fan of Nvidia products and correcting people who misinterpret things about such products.",
                       "upvotes": -4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about being a fan of Nvidia as a brand, not the specific product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is defending their brand loyalty.",
                       "replies": [
                         {
                           "commentId": "mu2cr57",
                           "text": "why would you be a fan of a company ? i am confused. what has nvidia done for you ? it is just one of the many components in your pc. you paid for a product and it provides you a certain level of performance, that's the deal . what is there to be a fan of ? do you cheer for financial results ? if you have shares in the company i understand wanting the company to do well but otherwise i don't get it.",
                           "upvotes": 8,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discussion about brand loyalty and the nature of consumerism.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a philosophical discussion about brands.",
                           "replies": [
                             {
                               "commentId": "mu2dgnu",
                               "text": "They give me good products that I like. That's what they done for me. Same way I like certain foods, people, or objects. That's the whole point of liking a brand.",
                               "upvotes": 4,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "General brand loyalty discussion.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is expressing a general liking for the brand.",
                               "replies": [
                                 {
                                   "commentId": "mu2g6co",
                                   "text": "but you paid for them ???? they didn't 'give' you anything. you paid to receive a product. i can understand liking a food since you can taste it and it is unique but you would have no way of knowing if i switched out your nvidia gpu for an amd one. most games would play the same excluding the handful of raytraycing heavy ones. i guess you can be a fan of their features like dlss or them pushing gaming graphics with raytraycing. having a favourite gpu company feels like having a favourite bottled water brand to me.",
                                   "upvotes": 5,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "General discussion about GPU brands and features like DLSS and Raytracing.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment is a general comparison of brand loyalty.",
                                   "replies": [
                                     {
                                       "commentId": "mu2mjra",
                                       "text": "You can't deny that the 5090 is an amazing product.  You pay them money, they give you good product.  I always have the best experience possible with top of the line Nvidia.",
                                       "upvotes": 1,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "Discussion about the RTX 5090, not the RTX 5060.",
+                                      "sentiment": "positive",
+                                      "sentimentReasoning": "The user is praising the 5090.",
                                       "replies": []
                                     }
                                   ]
@@ -200,10 +200,10 @@
                   "text": "&gt; All this complaining about 8GB is quite annoying.\n\nYou obviously weren't around for the 3GB 1060 to see the problems that arise when the GPU massively mismatches the VRAM allocation to the intended usage.  Its like pairing a muscle car engine to a three wheeled vehicle- its only fast on a straight line but will topple over as soon as you need to steer.",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user critiques the 8GB VRAM allocation on the 5060, comparing it to the 1060.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user argues that 8GB is insufficient and creates a bottleneck.",
                   "replies": []
                 }
               ]
@@ -215,10 +215,10 @@
           "text": "Nvidia is behaving like Microsoft, thinking gamers will buy what ever they throw to the market.\n\n\nIt's been 5 gens of RayTracing ant it still sucks. The graphic improvement is minimum. Is just a way to destroy pascal cards.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user critiques Nvidia's market behavior and the effectiveness of Raytracing.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses disappointment in the overall product line and technology.",
           "replies": []
         },
         {
@@ -226,10 +226,10 @@
           "text": "Might come off as arrogant, but spending twice the price of a PS5 just to have near identical performance is not on, the GPU market has gone down the loo, and PC building has become pointless except for showing off muscle rigs.  I've bought GPUs second hand for the past 10 to 15 years and even that's not worthwhile nowadays.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user discusses the performance of the 5060 relative to its price and the PS5.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user believes the performance-to-price ratio is poor value.",
           "replies": []
         },
         {
@@ -237,10 +237,10 @@
           "text": "If rt adds to the memory footprint I'll reduce the footprint simple as that\u00a0",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "General comment about reducing memory footprint, not a specific product critique.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a neutral statement of intent.",
           "replies": []
         },
         {
@@ -248,10 +248,10 @@
           "text": "No shit it\u2019s better than the PS5. The 3060 was better than the ps5 GPU. I\u2019d hope the 5060 wouldn\u2019t be worse than a 2 gen old card",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares the 5060's performance to the PS5 and the 3060.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is stating a factual expectation of performance.",
           "replies": []
         },
         {
@@ -259,25 +259,26 @@
           "text": "AMD says 8 GB is more than enough for mostly all gamers .",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Mention of AMD's opinion on VRAM, not a direct critique of the 5060.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a factual statement about a competitor's claim.",
           "replies": [
             {
               "commentId": "mu1oycs",
               "text": "Because most gamers play f2p games designed to perform on as many hardware as possible\u2026",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "General discussion about the types of games gamers play, not the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral observation.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

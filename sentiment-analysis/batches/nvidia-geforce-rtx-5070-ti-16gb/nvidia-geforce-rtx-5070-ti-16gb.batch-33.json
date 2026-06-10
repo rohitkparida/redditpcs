@@ -18,20 +18,20 @@
           "text": "Not upgrading yet from 3090 to 5080... The deal breaker for me is it's botched 16GB of RAM... Going to wait for the 5080 super or Ti.",
           "upvotes": 10,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses a decision not to upgrade to the 5080 due to the 16GB VRAM, mentioning they will wait for a Ti version.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes the VRAM as 'botched' and uses it as a deal breaker.",
           "replies": [
             {
               "commentId": "m9zag9r",
               "text": "Yeah the 4080 ti super should be able to do games at 4K max settings, except where it\u2019s limited by vram in games like Indiana jones.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses a hypothetical '4080 ti super' and general 4K gaming, not the RTX 5070 Ti.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a general technical discussion about VRAM limits in specific games.",
               "replies": []
             },
             {
@@ -39,20 +39,20 @@
               "text": "My 3060TI is showing its age with the 8GB of VRAM. \n\nI cannot justify going to 16GB with the prices these cards are at. It would have to be a 5090 or a 5080TI / Super like you said.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User discusses the lack of justification for 16GB VRAM at current prices and mentions waiting for a 5080 Ti/Super.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user cannot justify the purchase based on the VRAM and price.",
               "replies": [
                 {
                   "commentId": "m9z6m6k",
                   "text": "Well I have a 5700XT and 8GB so I'm gonna have to deal with it\n\n\nPicked the worst timing gen ever lol",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user is discussing their own current GPU (5700XT) and general timing of the GPU generation, not the specific product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is expressing general frustration with the timing of the GPU generation.",
                   "replies": []
                 }
               ]
@@ -61,5 +61,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

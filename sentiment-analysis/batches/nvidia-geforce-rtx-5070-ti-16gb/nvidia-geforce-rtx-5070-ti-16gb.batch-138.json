@@ -18,30 +18,30 @@
           "text": "Still rocking the 4070 GDDR6X, looks like I can skip this gen",
           "upvotes": -2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is deciding whether to upgrade to the current generation based on the product's performance relative to their 4070.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses that the new generation is not a significant enough upgrade to justify switching from a 4070.",
           "replies": [
             {
               "commentId": "mfzudap",
               "text": "You say it like it\u2019s an old card. Most aren\u2019t even close to a 40 series \ud83d\ude02",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a general remark about GPU ownership and does not provide insight into the RTX 5070 Ti.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral observation about the user base and not a critique of the product.",
               "replies": [
                 {
                   "commentId": "mfzy9dr",
                   "text": "You're absolutely right! But I did upgrade to the 4070 from a 3060ti which i gave to my brother. \ud83d\ude43\n\nStill trying to squeeze out any performance out of  my 5800x3d CPU",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The user discusses their previous upgrade path and current CPU, which is off-topic regarding the RTX 5070 Ti.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a personal anecdote about hardware and does not express sentiment toward the target product.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -28,10 +28,10 @@
               "text": "That's exactly what I thought.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a generic response to a GIF and does not discuss the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is simply agreeing with another user's reaction.",
               "replies": []
             },
             {
@@ -39,10 +39,10 @@
               "text": "This was exactly the GIF I came here to make sure was already posted.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about the GIF posted, not the PC case product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is expressing satisfaction with the same GIF being posted.",
               "replies": []
             }
           ]
@@ -52,20 +52,20 @@
           "text": "Who needs a Steam Machine when you can have a Meme Machine!",
           "upvotes": 1265,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a joke about the build's appearance, not a critique of the case itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is making a lighthearted joke.",
           "replies": [
             {
               "commentId": "om5b5od",
               "text": "this is a fucking war crime",
               "upvotes": 64,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a hyperbolic joke about the visual aesthetic of the build, not the product's quality.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user uses negative language ('war crime') as a joke.",
               "replies": []
             },
             {
@@ -73,15 +73,16 @@
               "text": "Would an micro ATX build be a micro meme machine?",
               "upvotes": 81,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a general question about build sizes (micro ATX), not specific to the O11 Dynamic EVO.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a hypothetical question.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

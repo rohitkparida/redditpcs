@@ -28,30 +28,30 @@
               "text": "Thread scheduling is broken currently. So yeah not really a bulldozer but definitely nothing good either. At best if things get fixed, its gonna perform about the same as 14900k on average.",
               "upvotes": -1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user discusses technical issues with thread scheduling and compares the performance of the 285K to the 14900K.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user describes the performance as 'nothing good' and mentions broken scheduling.",
               "replies": [
                 {
                   "commentId": "lxgut7q",
                   "text": "I have a hard time believing that the issue is scheduling. Arrowlake has less complexities compared to Raptor lake. It does not have SMT and its E-cores are faster.\u00a0\n\n\nIt being worse than raptor lake just points elsewhere to me. We'll see I guess.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a technical critique of the Arrow Lake architecture (285K) and its performance relative to Raptor Lake.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is speculating on the cause of performance issues without a clear positive or negative recommendation.",
                   "replies": [
                     {
                       "commentId": "lxhtuuv",
                       "text": "There are many games that turning off p-cores improves performance considerably (same games usually that strongly underperform). Homeworld for reference [https://x.com/CapFrameX/status/1851368710659064105/photo/1](https://x.com/CapFrameX/status/1851368710659064105/photo/1)\n\nIn cyberpunk disabling some cores in order to physically seperate them, improves performance also [https://x.com/CapFrameX/status/1850261657555013653](https://x.com/CapFrameX/status/1850261657555013653)\n\nYou can also see a picture in that post regarding p/e core layout and why their position can potentially mess up scheduling compared to previous gen cpus that had seperate layouts.\n\nHere is a picture of previous gen intel cpu layout [https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fraptor-lake-die-architecture-specific-core-locations-v0-0zlgqxyr0cab1.jpg%3Fwidth%3D1920%26format%3Dpjpg%26auto%3Dwebp%26s%3Dbba63d80ee7d4bbd40672b75fecfc7bc8198fe4b](https://www.reddit.com/media?url=https%3A%2F%2Fpreview.redd.it%2Fraptor-lake-die-architecture-specific-core-locations-v0-0zlgqxyr0cab1.jpg%3Fwidth%3D1920%26format%3Dpjpg%26auto%3Dwebp%26s%3Dbba63d80ee7d4bbd40672b75fecfc7bc8198fe4b)",
                       "upvotes": -2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user provides specific technical evidence and examples of performance issues with the 285K in specific games.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user highlights that disabling cores is necessary to improve performance, indicating a flaw.",
                       "replies": []
                     }
                   ]
@@ -61,50 +61,50 @@
                   "text": "> Thread scheduling is broken currently. So yeah not really a bulldozer but definitely nothing good either. At best if things get fixed, its gonna perform about the same as 14900k on average.\n\nThread scheduling seems to bring little improvement. Hardware Unboxed did a test with a CPU-intensive portion of Plague Tale: Requiem with the e-cores disabled, and there was barely an improvement.\n\nThread scheduling is basically broken for everyone who has different sets of cores ~ whether P vs E-core or X3D vs non-X3D CCDs, it's a fundamental limitation with Windows scheduler it seems.\n\nThere is also no easy way to automatically determine what set of cores an application may want, or why. Should the user decide, the OS, the application developer? Who is right?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user discusses the 285K's performance and the impact of E-cores and Windows scheduling.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is discussing technical limitations of the OS and hardware architecture in a neutral, analytical tone.",
                   "replies": [
                     {
                       "commentId": "lxk1h4k",
                       "text": "You say its broken in general but in homeworld 3 i dont see ryzen dual ccd cpus suffering at all whereas intel/amd cpu performance difference is about 100%, something that its not normal... Also i never said to disable all e-cores... Thats just stupid because you lose the l2 cache from too many cores. L2 Cache is not shared like previous intel gen which is why you are not gonna see improved performance in the vast majority of cases along the fact the there is no HT anymore so you are literally leaving the cpu with just 8 threads. In cyberpunk i also dont see the dual ccd parts crawling in the bottom of the bottom as well.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user compares the 285K's performance in specific games to AMD Ryzen CPUs.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user notes a 100% performance difference in favor of AMD, which they state is 'not normal'.",
                       "replies": [
                         {
                           "commentId": "lxk2kg3",
                           "text": "> You say its broken in general but in homeworld 3 i dont see ryzen dual ccd cpus suffering at all whereas intel/amd cpu performance difference is about 100%, something that its not normal...\n\nWhich dual CCD CPUs? \n\n> Also i never said to disable all e-cores... Thats just stupid because you lose the l2 cache from too many cores. L2 Cache is not shared like previous intel gen which is why you are not gonna see improved performance along the fact the there is no BT anymore so you are literally leaving the cpu with just 8 threads.\n\nHardware Unboxed decided to test it because they wondered if the E-cores were causing low performance. \n\n>  In cyberpunk i also dont see the dual ccd parts crawling in the bottom of the bottom as well.\n\nDitto for which dual CCD CPUs...",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is primarily a request for clarification on which CPUs were used in the tests, lacking a personal opinion or critique.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is asking factual questions to clarify the discussion.",
                           "replies": [
                             {
                               "commentId": "lxk2xmd",
                               "text": "All dual ccd parts on am5. You wont see a dual ccd part perform worse than a 5800x in those games. Which is the equivalent of a 285k performing worse than a 12600k. (New socket/gen vs previous socket/gen/ lower cpu model).",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "The user compares the 285K's performance to a 12600K, suggesting it performs worse than expected for its generation.",
+                              "sentiment": "negative",
+                              "sentimentReasoning": "The user suggests the 285K is performing worse than a much older, lower-tier model in certain scenarios.",
                               "replies": [
                                 {
                                   "commentId": "lxk3v4h",
                                   "text": "> All dual ccd parts on am5. You wont see a dual ccd part perform worse than a 5800x in those games. Which is the equivalent of a 285k performing worse than a 12600k. (New socket/gen vs previous socket/gen/ lower cpu model).\n\nUm... what about the 9800X3D? We're talking games here...",
                                   "upvotes": 1,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment is a short question about the 9800X3D and does not provide insight into the 285K.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is simply asking a question about a competitor's product.",
                                   "replies": []
                                 }
                               ]
@@ -122,15 +122,16 @@
               "text": "Intel just had it's Bulldozer moment. Now to see if they survive as well...",
               "upvotes": -1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user compares the 285K launch to Intel's 'Bulldozer moment', implying a failure.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user equates the product launch to a notorious architectural failure.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

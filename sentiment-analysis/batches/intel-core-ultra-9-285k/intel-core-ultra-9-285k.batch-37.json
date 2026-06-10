@@ -28,60 +28,60 @@
               "text": "I think those making excuses for Intel at this point are beyond deluded.",
               "upvotes": 86,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user expresses a strong negative opinion about Intel's current product state and those defending it.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user describes defenders of Intel as 'beyond deluded', indicating strong dissatisfaction.",
               "replies": [
                 {
                   "commentId": "ltj2dp9",
                   "text": "What i do not get is how Lunar Lake (200V) is very good and Arrow Lake (200s) is this bad",
                   "upvotes": 43,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user is critiquing the performance of the Arrow Lake (200S) series, which includes the 285K.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user describes the product as 'this bad', indicating disappointment.",
                   "replies": [
                     {
                       "commentId": "ltjalon",
                       "text": "Completely different SoC designs. The LNL team both had more time and weren't under the nonsensical mandates of the MTL team. Also didn't help that half the MTL SoC team was hired by Microsoft midway through.",
                       "upvotes": 47,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses internal company design teams and hiring practices, which is meta-talk/off-topic regarding product performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a technical explanation for the design differences without a clear positive or negative leaning toward the product's value.",
                       "replies": [
                         {
                           "commentId": "ltk4ply",
                           "text": "There are rumors about something being fucked up in ring bus on Meteor Lake & Arrow Lake suffered from same issue. With Lunar Lake they had time to fix it so it didn't suffer from it.",
                           "upvotes": 9,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user discusses a technical critique regarding the ring bus issue affecting Arrow Lake.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": " ",
                           "replies": [
                             {
                               "commentId": "ltlei3y",
                               "text": "Doesn\u2019t LNL still fail in terms of memory latency? Seems like this issue runs deeper than some vague excuse about the ring bus not working.",
                               "upvotes": 9,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The discussion has shifted to Lunar Lake (LNL) memory latency, which is a different product line.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is asking a question about memory latency without expressing a clear sentiment.",
                               "replies": [
                                 {
                                   "commentId": "ltnhl0t",
                                   "text": "I think the main problem is inter-processor latency. [https://external-preview.redd.it/intel-lunar-lake-internal-latency-comparisons-between-v0-DKkZnhso-2Mqu2RxFCXTbKjkdl43s76HawQqDbWv1tQ.jpg?auto=webp&s=406de0a205d5648c977d3380a966ef11d08352e5](https://external-preview.redd.it/intel-lunar-lake-internal-latency-comparisons-between-v0-DKkZnhso-2Mqu2RxFCXTbKjkdl43s76HawQqDbWv1tQ.jpg?auto=webp&s=406de0a205d5648c977d3380a966ef11d08352e5)\n\nDoes LNL fail in terms of memory latency? I couldn't find any data regarding that bad given that it has on-package memory it should be much better in terms of memory latency than MTL.",
                                   "upvotes": 4,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment is focus on Lunar Lake (LNL) and Meteor Lake (MTL) latency, not the 285K.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is providing technical data about inter-processor latency.",
                                   "replies": []
                                 }
                               ]
@@ -91,10 +91,10 @@
                               "text": "Should have had time with ARL, given it's new silicon vs MTL. But again, think the loss of that expertise certainly didn't help.",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "The user is critiquing the design of Arrow Lake (ARL) silicon.",
+                              "sentiment": "negative",
+                              "sentimentReasoning": "The user implies that the loss of expertise led to a poor product.",
                               "replies": []
                             }
                           ]
@@ -106,10 +106,10 @@
                       "text": "Very different tile setup. Also, one can not exactly compare HX 370 vs LNL gaming with the same GPU.",
                       "upvotes": 27,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment discusses the tile setup and comparisons between HX 370 and LNL, which are not the 285K.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is providing a technical comparison between different products.",
                       "replies": []
                     },
                     {
@@ -117,20 +117,20 @@
                       "text": "3nm has a bigger benefit over 4nm at low TDP.",
                       "upvotes": 13,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a general factual statement about 3nm vs 4nm at low TDP.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is stating a technical fact.",
                       "replies": [
                         {
                           "commentId": "ltl002b",
                           "text": "[You can see it in the 285K reviews at lower TDPs as well. ](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F3aaj71slrrwd1.png)The 250W PL1 is well into the unhappy region of the V/F curve, especially with how DLVR works.",
                           "upvotes": 5,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user specifically mentions 285K reviews and critiques the power limit (PL1) and V/F curve.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user describes the power consumption as being in the 'unhappy region', indicating a negative technical critique.",
                           "replies": []
                         }
                       ]
@@ -142,20 +142,20 @@
                   "text": "that reminds me to visit userbencmark again in a couple days, just to see what they have to say",
                   "upvotes": 13,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a joke/meme about visiting UserBenchmark, which is widely considered unreliable.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is making a lighthearted comment.",
                   "replies": [
                     {
                       "commentId": "ltl0x45",
                       "text": "The new Intel chips soundly thrash the 3600 in gaming and have even better power consumption than the 14900k.",
                       "upvotes": 10,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user provides an opinionated performance comparison between the new Intel chips (including 285K) and the 3600/14900k.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user states the chips 'soundly thrash' the competition and have better power consumption.",
                       "replies": []
                     }
                   ]
@@ -165,10 +165,10 @@
                   "text": "I agree been team blue since the 2600k and even backordered the 285k this morning before official benches and have canceled my backorder and am awaiting the 9800x3d benches. Intel obviously doesn't care about gamers anymore and I'm definately open to team red now.",
                   "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user shares personal experience of canceling a backorder for the 285K due to performance concerns.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user cancels their order and states Intel 'doesn't care about gamers anymore'.",
                   "replies": []
                 }
               ]
@@ -178,15 +178,16 @@
               "text": "It doesn't even beat the 5700x3d which is on n7 and n6 which is like n7+ iirc...",
               "upvotes": 9,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a direct performance comparison between the product and the 5700x3d.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is disappointed that the product 'doesn't even beat' an older competitor.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

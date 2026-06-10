@@ -18,30 +18,30 @@
           "text": "This is such a weird mix of results. Chart topping in some benchmarks while regressing in others.\n\nEDIT: its at the top of the charts for both very multithreaded (blender) and very single threaded (stellaris turn time) benchmarks. There's almost certainly something happening with Windows.",
           "upvotes": 98,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User discusses the inconsistent performance results of the 285K across different benchmarks.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is observing a mix of results without expressing a strong positive or negative preference.",
           "replies": [
             {
               "commentId": "ltj5eeh",
               "text": "Its the memory system. The memory and cache latency is up pretty dramatically, so anything that relies on that gets a hit, while anything that can rely on raw compute does decent with the overall compute uplift. Thats why it performs well in things like blender, while being very weird in games.",
               "upvotes": 62,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides a technical critique of the memory system and cache latency affecting gaming performance.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user highlights a performance hit in games due to latency issues.",
               "replies": [
                 {
                   "commentId": "ltlm75f",
                   "text": "So kind of like early Ryzen that had some brutal latency hits",
                   "upvotes": 13,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Compares the 285K's latency issues to early Ryzen CPUs.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The comparison to 'brutal latency hits' implies a negative performance characteristic.",
                   "replies": []
                 },
                 {
@@ -49,20 +49,20 @@
                   "text": "Looking at these results. I could actually believe that Intel brings that 12 P-core raptor lake chip to the consumer market.\n\nThere's a hole in their performance offerings that they can't fill with tiles. That chip would beat/match a 14900K in gaming and some other workloads that are latency sensitive. While being a smaller chip to produce than said 14900K.\n\nOr that 12 core is a test chip for a potential monolithic chip for future releases. And will exist as a side offering to all the tile based products.",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the product's performance offerings and suggests a different chip design would be better.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is speculating on product design and market gaps rather than expressing satisfaction or dissatisfaction.",
                   "replies": [
                     {
                       "commentId": "ltkltlr",
                       "text": "IIRC, they wanted that chip for entry servers (that don't like hybrid), but it was cancelled as part of their budget cuts.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discusses internal Intel corporate budget cuts and cancelled server chips, which is off-topic to the consumer product performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": []
                     },
                     {
@@ -70,10 +70,10 @@
                       "text": "I wouldn't be so certain. It takes a long time to spin up a new product, and 12 p cores wouldn't really be all that much die area savings. An E core cluster is 25% bigger then a single P core, on 13th/14th gen, so you save like one core worth of die area. But given that a single E core is often around 50% ish the performance of the P core, and there's 4 of them, you'd be giving up a hefty amount of multithreaded performance for it. \n\nAn e core cluster is 2x the multi core performance compared to a p core, but in 1.25x the footprint. So, 1.6x the area efficiency, effectively. I would be curious to see if anything did actually scale well with 12 p cores. Probably similar to something like an overclocked Xeon\u00ae w5-3435X",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Technical discussion about die area and area efficiency of P-cores vs E-cores in general, not specific to the 285K's value or experience.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": []
                     }
                   ]
@@ -85,20 +85,20 @@
               "text": "Intel thinks its good enough to release clearly so the review is fair.  \n  \nBut the whole launch seems rushed, the errors in marketing slides and even GN having to tell them their APO feature wasn't working as claimed screams a product that needed more time in the oven.",
               "upvotes": 103,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Critiques the launch of the 285K, calling it rushed and mentioning marketing errors.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user expresses disappointment in the product's launch and readiness.",
               "replies": [
                 {
                   "commentId": "ltj4xdy",
                   "text": "Intel's last couple launches have just all seemed rushed or with problems so far. RKL with that bios update stuff relating to, IIRC, the ringbus, ADL P+E core scheduling growing pains (though tbf, IMO, it wasn't *too* bad early on), RPL's instability problems, MTL's bios update providing generational perf/watt gains, and now this.",
                   "upvotes": 30,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the 285K as part of a pattern of rushed Intel launches.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user views the current launch as part of a series of problematic releases.",
                   "replies": []
                 },
                 {
@@ -106,30 +106,30 @@
                   "text": ">But the whole launch seems rushed\n\nIt absolutely is, seeing how 13th and 14th gen chips are frying themselves currently.",
                   "upvotes": 47,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Focuses on 13th and 14th gen chips frying, which is a different product line.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "N/A",
                   "replies": [
                     {
                       "commentId": "ltjz9x0",
                       "text": "You do know that Meteor Lake was supposed to launch back when Raptor Lake was launched? And Raptor Lake was only developed because the Intel Engineer in one of the videos said it was because Meteor Lake \u201cwas not ready\u201d? And Arrow Lake was supposed to use Intel 20A?\n\nThe launch was not rushed, but simply sloppy. Intel has no excuses after so many delays",
                       "upvotes": 13,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discusses Intel's general manufacturing process and delays (Meteor Lake, Arrow Lake), not the 285K specifically.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "N/A",
                       "replies": [
                         {
                           "commentId": "ltks3fm",
                           "text": "They\u2019re trying to rush to 18A because it\u2019s a big jump and much higher profit margins.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Discusses Intel's profit margins and 18A process, which is off-topic.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
                           "replies": []
                         }
                       ]
@@ -139,10 +139,10 @@
                       "text": "According to Intel that's fixed.",
                       "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Factual statement about Intel's claims regarding previous generation chips.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": []
                     }
                   ]
@@ -152,20 +152,20 @@
                   "text": "285 lacks hyper threading. So, games have 8 threads on P cores, then move to E cores.",
                   "upvotes": 9,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Mentions a specific technical detail (lack of hyper-threading) of the 285K.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is stating a technical fact about the CPU's architecture.",
                   "replies": [
                     {
                       "commentId": "ltjvcd6",
                       "text": "Doesn't make much of a difference. The HT threads were always prioritized below the E-cores since ADL anyway.",
                       "upvotes": 11,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the impact of the lack of hyper-threading on the 285K.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is arguing that the lack of HT doesn't make a significant difference.",
                       "replies": []
                     }
                   ]
@@ -177,30 +177,30 @@
               "text": "> There's almost certainly something happening with Windows.\n\nOther people have been pointing out that it's memory latency, due to an issue with how they did their memory controller.  Not Windows, the CPU",
               "upvotes": 20,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the 285K's memory controller issues and performance.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user attributes performance issues to the CPU's hardware design.",
               "replies": [
                 {
                   "commentId": "ltlgz33",
                   "text": "The CPU is definitely the main culprit, but 285K is faster on 23H2 than 24H2, so Windows is playing some role in some applications.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the 285K's performance across different Windows versions.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is comparing performance without a clear positive or negative leaning.",
                   "replies": [
                     {
                       "commentId": "ltlkj7n",
                       "text": "Scheduler changes that affect specific CPUs are usually changes requested by the CPU vendor so hmm",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General discussion about Windows scheduler changes, not specific to the 285K's performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": []
                     }
                   ]
@@ -210,20 +210,20 @@
                   "text": "Not super techy, does this mean the CPU has no hope of improvement? Or can they do some software stuff?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Asks if the 285K's hardware issues can be improved via software.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is asking a question about the product's potential for improvement.",
                   "replies": [
                     {
                       "commentId": "lu0dbxc",
                       "text": "no, that is not something that can be fixed via software",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "States that the 285K's hardware issues cannot be fixed via software.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user is confirming a permanent hardware flaw.",
                       "replies": []
                     }
                   ]
@@ -235,40 +235,40 @@
               "text": "> There's almost certainly something happening with Windows.\n\nyep, gotta remember this is the first time intel has done a design quite like this. Newer e cores plus p cores with no HT. microsoft is giong to have to step up the scheduler game if nothing else. Heck linux is probably going to need some work too but probably not qutie as much",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the 285K's new architecture (no HT, new e-cores) and its impact on scheduling.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is discussing the architectural changes and the need for software optimization.",
               "replies": [
                 {
                   "commentId": "ltj2yb4",
                   "text": "This is way simpler for the scheduler than MTL. That's not an excuse.",
                   "upvotes": 25,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Critiques the 285K's scheduling issues, stating it should be simpler for the scheduler.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user is expressing dissatisfaction with the current state of the product's optimization.",
                   "replies": [
                     {
                       "commentId": "ltj580z",
                       "text": "im not saying its an excuse(far from it) just what i expect from microsoft and why i use linux so much",
                       "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about the user's preference for Linux over Windows, which is off-topic.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": [
                         {
                           "commentId": "ltj64eb",
                           "text": "Why assume the schedule is at fault at all?",
                           "upvotes": 10,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "General question about the scheduler, not specific to the 285K's performance experience.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
                           "replies": []
                         }
                       ]
@@ -280,20 +280,20 @@
                   "text": "Apparently it's performing well in Linux...   could be a Windows scheduler issue - [https://www.phoronix.com/review/intel-core-ultra-9-285k-linux](https://www.phoronix.com/review/intel-core-ultra-9-285k-linux) \n\nAt least I keep hearing really inconsistent results for benchmarks on this new gen on Windows.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the 285K's performance on Linux vs Windows, citing a review.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is reporting inconsistent results from benchmarks.",
                   "replies": [
                     {
                       "commentId": "ltln8l5",
                       "text": "It does very poorly in the gaming section there too.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Mentions the 285K's poor gaming performance on Linux.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user is reporting poor performance in gaming.",
                       "replies": []
                     }
                   ]
@@ -304,5 +304,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

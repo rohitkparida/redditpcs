@@ -18,10 +18,10 @@
           "text": "I was expecting also a direct comparison between pair of products, like you I think you did previously. Like 5070 vs 9070, 5070 vs 9070 XT, 9070 vs 9070 XT and so on. This would help people make a buying decision.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a request for more data/comparisons rather than an opinion or experience with the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is providing feedback on the review format without expressing a positive or negative sentiment toward the GPU itself.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "Overpriced GPU.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides a direct opinion on the value of the GPU.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user explicitly states the GPU is overpriced.",
           "replies": []
         },
         {
@@ -40,13 +40,14 @@
           "text": "I'm glad I went with my Sapphire Nitro 7900xtx. From these numbers, looks like I'll be good as gold for awhile now. Only downside I really see is that the new FSR is only supported on 9070 cards, but oh well.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares the product's performance numbers to their current hardware to validate their purchase decision.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is satisfied with their own card, but the sentiment toward the 5070 Ti is neutral/comparative.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

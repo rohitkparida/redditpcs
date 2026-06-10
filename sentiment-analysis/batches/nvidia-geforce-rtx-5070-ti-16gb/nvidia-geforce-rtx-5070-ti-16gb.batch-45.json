@@ -18,20 +18,20 @@
           "text": "4080 super or 5080\n\n![gif](giphy|9mtE009hcWPOesk8C4)",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a low-effort comparison query using a gif, lacking meaningful insight or opinion.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question without expressing a clear positive or negative sentiment.",
           "replies": [
             {
               "commentId": "m9yvoq8",
               "text": "4080S, the price markup isnt worth that negligible performance gain.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a recommendation against the 5080, citing poor value due to negligible performance gains.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user explicitly states the price markup is not worth the performance gain.",
               "replies": []
             },
             {
@@ -39,20 +39,20 @@
               "text": "Literally 0% performance gain in some games...",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user shares an opinion on the product's performance, claiming zero gain in some games.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is expressing disappointment in the lack of performance improvement.",
               "replies": [
                 {
                   "commentId": "m9xs30v",
                   "text": "that is bug, 8-15% is right..\u00a0",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a technical critique regarding the performance uplift percentage.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is correcting a factual claim about performance without a strong positive or negative emotional lean.",
                   "replies": []
                 }
               ]
@@ -61,5 +61,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

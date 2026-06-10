@@ -18,13 +18,14 @@
           "text": "This should be pinned.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a general meta-comment about the post's visibility and does not discuss the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing a neutral desire for the post to be pinned.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,25 +18,26 @@
           "text": "I have the option to buy this through the NVIDIA loyalty program for 999.999  (1081.16 with tax) Do you think this card is worth it at that price? (I'm coming from a 3080 10GB card and play at 1440p)",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking a question about whether the card is worth it, but the target product is the RTX 5070 Ti, and this user is discussing the RTX 5080.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a factual inquiry about value without expressing a personal opinion or sentiment.",
           "replies": [
             {
               "commentId": "ms9hyr3",
               "text": "Did you end up ordering? I\u2019m in the same position debating an upgrade from a 3080. How do you like it if so?",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is asking another user for their experience with the RTX 5080, which is not the target product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a question seeking information without expressing a positive or negative sentiment.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,30 +18,30 @@
           "text": "It sucks.\n\n$500 max and availability would be okay..but neither is happening",
           "upvotes": 32,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user expresses a negative opinion on the product's value and availability.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user explicitly states 'It sucks' and criticizes the pricing and availability.",
           "replies": [
             {
               "commentId": "mr4fen2",
               "text": "got mine for 550, founders edition and comes with a free game. Those are pretty available too. Honestly at msrp i think its good value but thats the ONLY case.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user shares personal experience purchasing the card at MSRP and provides a value judgment.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user considers the card to be 'good value' when purchased at MSRP.",
               "replies": [
                 {
                   "commentId": "mr76t1g",
                   "text": "Honestly, credit to Nvidia to getting cards to MSRP. THey said they would increase supply to do it and kept their word.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user discusses the availability and pricing strategy of the product.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user gives 'credit to Nvidia' for maintaining MSRP and increasing supply.",
                   "replies": []
                 }
               ]
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

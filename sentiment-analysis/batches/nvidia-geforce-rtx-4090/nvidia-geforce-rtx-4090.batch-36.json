@@ -18,50 +18,50 @@
           "text": "I'm worried the 4090 Fe wont fit in my o11 dynamic cause of the cables, anyone think this'll be an issue?",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking a factual question about case compatibility rather than sharing an opinion or experience with the product's performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a query about physical fit and does not express a positive or negative sentiment toward the GPU itself.",
           "replies": [
             {
               "commentId": "irxebyx",
               "text": "&gt; o11 dynamic\n\nIt will absolutely not fit width wise. Water block maybe?",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a factual answer regarding case fit, which is excluded per the guidelines.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The response is a technical assessment of fit, not a sentiment-driven opinion on the product.",
               "replies": [
                 {
                   "commentId": "iry6rt3",
                   "text": "It will absolutely fit. There are videos on YouTube of it in a o11 dynamic",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a factual correction regarding case compatibility, not a product critique or experience.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is neutral as it simply provides information about the card's fit.",
                   "replies": [
                     {
                       "commentId": "iry74rz",
                       "text": "I've not seen one with the side panels on and with the adapters.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The user is discussing case panels and adapters, which is off-topic from the product's actual performance or value.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a neutral observation about available evidence of fit.",
                       "replies": [
                         {
                           "commentId": "irzq4rb",
                           "text": "Don't use the adapters, then. I bought an ATX 3.0 PSU just for this launch (well I built an entire new PC as well, but still technically the truth).",
                           "upvotes": 0,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The discussion is about PSU choice and case fit, not the performance or quality of the RTX 4090.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is sharing their build choice, which is neutral in relation to the product's quality.",
                           "replies": []
                         }
                       ]
@@ -74,5 +74,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

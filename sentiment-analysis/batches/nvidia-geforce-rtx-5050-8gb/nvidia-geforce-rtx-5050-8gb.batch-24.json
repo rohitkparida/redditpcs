@@ -18,25 +18,26 @@
           "text": "That MacBook Air deal is too good to pass up, bought mine this morning!",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses a MacBook Air deal, which is off-topic relative to the NVIDIA GeForce RTX 5050.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The sentiment is positive towards the MacBook, but since it is not relevant to the target product, it is marked neutral.",
           "replies": [
             {
               "commentId": "nrr9umw",
               "text": "Nice, enjoy bro",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a low-effort social interaction and does not mention the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a friendly greeting and contains no opinion on the target product.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

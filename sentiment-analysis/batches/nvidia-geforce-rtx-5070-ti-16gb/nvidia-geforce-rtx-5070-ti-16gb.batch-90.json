@@ -18,50 +18,50 @@
           "text": "TLDR - sucks ass",
           "upvotes": 145,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides a concise, opinionated summary of the product's quality.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The phrase 'sucks ass' expresses strong dissatisfaction.",
           "replies": [
             {
               "commentId": "mfzfggy",
               "text": "Blows dogs for quarters?",
               "upvotes": 12,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a low-effort joke/meme response and not a meaningful critique of the hardware.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a joke and does not express a genuine sentiment toward the product.",
               "replies": [
                 {
                   "commentId": "mfzgks6",
                   "text": "Pennies.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is part of a joke chain and is not relevant to the product.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is part of a joke and does not express a genuine sentiment toward the product.",
                   "replies": [
                     {
                       "commentId": "mg00w5e",
                       "text": "At this point it's giving away blowjobs for dogs",
                       "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "This is a low-effort joke/meme response and not a meaningful critique of the hardware.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a joke and does not express a genuine sentiment toward the product.",
                       "replies": [
                         {
                           "commentId": "mnf6eja",
                           "text": "happy cake day, gentleman",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "This is off-topic meta-talk regarding a user's 'cake day'.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is unrelated to the product.",
                           "replies": []
                         }
                       ]
@@ -75,15 +75,16 @@
               "text": "It\u2019s 4090 performance levels, right? \u2026 Right?",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user is questioning the product's performance claims compared to a higher-tier card.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The sarcastic tone implies skepticism and disappointment regarding the actual performance.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

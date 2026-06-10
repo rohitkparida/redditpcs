@@ -18,40 +18,40 @@
           "text": "|Metric|4060Ti-8GB|4060Ti-16GB|\n|:-|:-|:-|\n|4K Raster Performance Averaged / TechPowerUp|**72.5% / 76%**|82.2% / 83%|\n|4K RayTracing Performance Averaged / TechPowerUp|**55.7% / 46%**|86.3% / 87%|\n|3DC UltraHD/4K performance index|**230% (??!?)**|\\~240%|\n\nSomething off here. 8GB should have a much lower Index rating.",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment focuses on the 4060 Ti, not the 5060 Ti 8GB.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is questioning data consistency without expressing a positive or negative opinion on the product itself.",
           "replies": [
             {
               "commentId": "mpfupk9",
               "text": "As the (german) text says: The index value is old, from 2023. Newer benchmarks points to a lower 2160p performance of the 4060Ti. I do not change the index value f\u00fcr the 4060Ti-8G, because the 3DC Performance Index should work mostly neutral to VRAM. But I do not give the 5060Ti-8G an index value at 2160p. 8G VRAM is way too less for 2160p in 2025.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user explicitly states that 8GB VRAM is insufficient for 2160p performance on the 5060 Ti 8GB in 2025.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user expresses a negative view on the product's VRAM capacity for high-resolution gaming.",
               "replies": [
                 {
                   "commentId": "mpfvvaj",
                   "text": "Actually, this is exactly why a 4K index *must* be provided \u2014 not omitted. If 8GB struggles at 4K, that's critical performance information users need. Hiding it under the pretext of \"too little VRAM\" gives an incomplete and misleading picture.\n\nMaking an index \"VRAM-neutral\" makes no sense when VRAM limits directly affect real-world 4K performance. Pretending otherwise disconnects the index from actual user experience \u2014 the entire point of a performance index is to reflect reality, not sanitize it.\n\nI really encourage you to rethink this logic. Omitting 4K results or artificially smoothing them out with \"VRAM-neutral\" indexing risks undermining the credibility of the analysis. Users deserve a full and honest view of how these cards actually perform under modern demands. Please consider updating the article to reflect real-world limitations instead of masking them \u2014 it would strengthen the quality and trustworthiness of your work.",
                   "upvotes": 12,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The discussion centers on how to accurately represent the performance limitations (VRAM) of 8GB cards like the 5060 Ti 8GB.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user argues that the 8GB limitation is 'critical performance information' and a 'real-world limitation' that should not be masked.",
                   "replies": [
                     {
                       "commentId": "mpl29iz",
                       "text": "Setting up a 2160p index value for the 5060Ti-8G would mean I would have to lower the 2160p index value of the 4060Ti-8. Which in turn means I'd have to lower the 2160p index values for all older 8GB cards, all the way back to the Radeon R9 390. This makes no sense. That's why the index is largely VRAM-neutral - so that I don't have to make these nonsensical changes for old cards. The index is meant to reflect the performance of the cards at the time they were sold, not the performance of older cards in 2025.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a meta-discussion about how a performance index is calculated and maintained for historical cards.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is explaining their methodology for indexing, not providing a product opinion.",
                       "replies": []
                     }
                   ]
@@ -62,5 +62,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

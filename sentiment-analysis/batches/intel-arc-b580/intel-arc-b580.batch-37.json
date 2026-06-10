@@ -18,20 +18,20 @@
           "text": "Reviewers need to stop min/maxing on their reviews.  If it is a budget gpu, test it with a budget cpu.  How a $300 gpu does with a $600 cpu is scientific but completely irrelevant.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses review methodology and CPU pairing rather than the B580 itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is critiquing the way reviewers test budget GPUs in general.",
           "replies": [
             {
               "commentId": "m6gqodc",
               "text": "You're misunderstanding the methodology. The intent is to give meaningful data that applies to all CPU+GPU combinations, in the real world.\n\nPlaying games is very similar to doing laundry. You load the washer, then when it's done you move the load from the washer to the dryer, and load the washer again. Each load takes the total combined time of the washer and dryer, but the throughput of loads is bottlenecked at whichever is the faster of the two.\n\nIf there was no way to time how long either the washer or the dryer took, what you can do is test the combination of one with the absolute most expensive, fast version of the other. That way, you're essentially guaranteeing that the bottleneck will be the thing that you're testing, and you can equate the throughput of loads as equal to the speed of that unit.\n\nSo then consumers can just look at all those reported speeds, for mid washers + mega dryers, and mega washers + mid dryers, and then know that their mid washer + mid dryer throughput will perform nearly at whichever is the reported slower of the two, even if you never tested a mid washer + mid dryer combo.\n\nGoing back to CPUs + GPUs, usually the performance of a mid CPU + mid GPU is only ~<5% off comparing the those \"scientific\" review scores and taking the lower of the two. But unfortunately in this case, the driver, which has to run on the mid CPU, is doing a bad job of actually saturating the part that is supposed to be the bottleneck in this scenario, the GPU, so we're seeing outlier behavior. This is not a normal situation.\n\nThat said, I think it's a good failure mode to now test from this point onward, as a clue to do more investigation. But we *definitely* shouldn't start filling our GPU and CPU reviews up with a bunch of \"real world\" tests, because that truly will be noise. We should use a couple added tests as a canary in the coal mine, and then report on it more if it has outlier behavior.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses specific driver issues and bottlenecking behavior of the B580.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user notes the driver is doing a 'bad job' and causing outlier behavior.",
               "replies": []
             }
           ]
@@ -41,10 +41,10 @@
           "text": "Me who just got 5600 seeing my pc being old",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Personal comment about their own PC age, not the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No opinion expressed regarding the B580.",
           "replies": []
         },
         {
@@ -52,40 +52,40 @@
           "text": "they should test with something like Ryzen 2700X",
           "upvotes": -4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Suggestion for CPU testing, not a critique of the GPU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Purely a suggestion for testing methodology.",
           "replies": [
             {
               "commentId": "m6e22nt",
               "text": "They already did some 2600 and 3600 testing: \n\nhttps://youtu.be/00GmwHIJuJY",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Providing a link to other tests, purely factual.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion expressed.",
               "replies": [
                 {
                   "commentId": "m6epq4z",
                   "text": "2600 isnt the same, it lacks the core count vs the 9800X3D.",
                   "upvotes": -2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Discussion about CPU core counts, not the GPU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No opinion expressed.",
                   "replies": [
                     {
                       "commentId": "m6f0ybf",
                       "text": "Two zen+ cores isn't gonna do much, besides there is also 3600 results, so a 2700x will be somewhere between them, closer to 2600 most likely.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Discussion about CPU performance, not the GPU.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "No opinion expressed.",
                       "replies": []
                     }
                   ]
@@ -97,10 +97,10 @@
               "text": "In previous video on B580 bottlenecking they did use larger variety of CPUs, but far fewer games/tests.\n\nStill it was more than enough to pretty firmly tie the issue to CPU performance. So for slower CPU (like 2700X) the bottlenecking simply gets a lot worse. 5600 already makes it iffy proposition, so it makes absolutely zero sense to pair the B580 with 2700X.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the B580's bottlenecking issues and advises against pairing it with certain CPUs.",
+              "sentiment": "negative",
+              "sentimentReasoning": "States it is an 'iffy proposition' and makes 'zero sense' to pair with older CPUs.",
               "replies": []
             },
             {
@@ -108,10 +108,10 @@
               "text": "But then you will get a crowd of arc fans showing the Intel CPU support list link and tell you rebar isn't enabled or supported and call HUB a drama queen",
               "upvotes": 19,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Meta-comment about community reactions and 'arc fans'.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No direct opinion on the product performance.",
               "replies": []
             }
           ]
@@ -121,10 +121,10 @@
           "text": "Now try to use it in a PC without ReBAR",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Mentions a critical technical requirement (ReBAR) for the product to function correctly.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "A technical observation/challenge.",
           "replies": []
         },
         {
@@ -132,10 +132,10 @@
           "text": "oh...B580 is a really bad card, no one will buy 9800x3d with a budget gpu, intel keeps screwing up..",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Directly calls the B580 a 'really bad card'.",
+          "sentiment": "negative",
+          "sentimentReasoning": "Explicitly states the card is bad and that Intel keeps screwing up.",
           "replies": []
         },
         {
@@ -143,30 +143,30 @@
           "text": "Another controversy. I imagine HUB will make 12 videos about it.",
           "upvotes": -11,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Comment about the content creator (HUB) and controversy, not the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "No opinion on the B580.",
           "replies": [
             {
               "commentId": "m6ectdz",
               "text": "You say that like there isn't dozens of comments on Reddit asking why he didn't test Intel CPUs........",
               "upvotes": 16,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about the review process and CPU choices.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion on the B580.",
               "replies": [
                 {
                   "commentId": "m6gu07r",
                   "text": "It is a strange choice to make 3 videos and not use a single Intel CPU",
                   "upvotes": 0,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Critique of the reviewer's CPU choice.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "No opinion on the B580.",
                   "replies": []
                 }
               ]
@@ -176,10 +176,10 @@
               "text": "Because it's interesting as hell and helps people make informed purchases.\n\nI want more of them. I want them to figure out if throwing threads at the issue improves the performance or if it's caused by low frequency/ipc.\n\nI also want to see how much the gulf would open up if they threw a 9950X3D at it in Spiderman remastered at 1080p, since even the 9800x3d seems to be bottlenecking it.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses performance bottlenecking of the B580 even with high-end CPUs.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Notes that even a 9800x3d seems to be bottlenecking it, implying poor optimization.",
               "replies": []
             },
             {
@@ -187,10 +187,10 @@
               "text": "Already 3 in a week",
               "upvotes": -1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort comment about the number of videos.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "No opinion on the B580.",
               "replies": []
             }
           ]
@@ -200,20 +200,20 @@
           "text": "I think this is mainly a cache issue. Id like to see 5700x3d with a 9800x3d id wager they are roughly identical.",
           "upvotes": -1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Speculates on the cause of the B580's performance issues (cache).",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Technical speculation without a clear positive or negative lean.",
           "replies": [
             {
               "commentId": "m6j5wec",
               "text": "It isn't, their previous video showed that. Performed between 5600 and 7600.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "References previous data on B580 performance across different CPUs.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Factual reference to previous test results.",
               "replies": []
             }
           ]
@@ -223,50 +223,50 @@
           "text": "I expected this sub to be more measured and reasonable, waiting for Intel\u2019s driver updates on this before jumping to such definitive, catastrophic conclusions. It may take multiple driver updates\u2014beyond the initial fix\u2014before we see truly optimized performance.",
           "upvotes": -18,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the need for driver updates to optimize B580 performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Advocates for patience and waiting for driver fixes.",
           "replies": [
             {
               "commentId": "m6dvygb",
               "text": "Oh no, sharing about an issue with a product is now creating definitive catastrophic conclusions. We must accept mediocrity from what billion dollar companies sell us",
               "upvotes": 24,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Critiques the product's current state as 'mediocrity'.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Refuses to accept mediocrity from a billion dollar company.",
               "replies": [
                 {
                   "commentId": "m6dx1q1",
                   "text": "This has been posted about numerous times now in this sub and almost nobody's commenting about it objectively and admitting that it's likely a driver issue or that it'll likely be addressed. Near all the comments do sound like definitive catastrophic conclusions, in fact. \n\nI guess it's not team red so bring out the lynch mob.",
                   "upvotes": -16,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the B580's issues as likely being driver-related.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Attempts to frame the issue as a fixable driver problem.",
                   "replies": [
                     {
                       "commentId": "m6dykh9",
                       "text": "How do you know it's a driver issue? What hints? No one is sure what's the problem, not even Intel themselves \n\nFrom what I've seen it's all pretty objective about this GPU now. It doesn't work that well with budget cpus which the market is trying to target",
                       "upvotes": 14,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "States the B580 does not work well with budget CPUs, its target market.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "Explicitly states it doesn't work well for the intended target audience.",
                       "replies": [
                         {
                           "commentId": "m6e2u0s",
                           "text": "If you're asking how I know it's a driver issue you might have issues following this but here you go: \n\nhttps://chipsandcheese.com/p/digging-into-driver-overhead-on-intels\n\nSeemed almost certainly the culprit to me as a former software eng. I actually had friends who were on some intel firmware teams.\n\nEdit: to say that if it is the drivers that doesn't mean that a fix is easy or that it would be forthcoming. Just look at AMD's driver quality for their gpu's basically since their ATI days. If it is a driver issue a fix is almost certainly possible, but that doesn't mean Intel will execute on it.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Provides technical analysis of driver overhead on Intel GPUs.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "Suggests that driver issues are a recurring problem and Intel may not execute a fix.",
                           "replies": []
                         }
                       ]
@@ -280,15 +280,16 @@
               "text": "So if it takes 2 years to get fixed, no one should make any conclusions about anything until then?",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the timeline for fixing the B580's performance issues.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Skeptical about the time it takes to fix critical performance issues.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

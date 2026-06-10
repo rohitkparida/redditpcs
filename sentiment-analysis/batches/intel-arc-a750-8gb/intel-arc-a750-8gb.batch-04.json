@@ -38,60 +38,60 @@
                   "text": "If you idle your pc for 7 hours a day on average, sure.",
                   "upvotes": -9,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "This comment discusses the idle power draw of the Intel Arc A750, which is a technical specification relevant to the product's performance and value.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment makes a factual statement about the conditions under which the idle power draw would be significant, without expressing a positive or negative opinion about the product itself.",
                   "replies": [
                     {
                       "commentId": "irr4ei0",
                       "text": "Normal desktop usage is essentially idle.",
                       "upvotes": 30,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "This comment directly addresses the idle power draw of a GPU (specifically mentioning a 3060) in relation to normal desktop usage, which is a relevant technical aspect of graphics cards.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment states a fact about power draw during normal usage, comparing it to a suggested idle power draw, without expressing a positive or negative sentiment towards any specific product.",
                       "replies": [
                         {
                           "commentId": "irr84kc",
                           "text": "my 3060 draws 20-30w during normal usage. Not 5w like techpowerup suggest.",
                           "upvotes": 7,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "This comment discusses the power draw of a 3060 and 3060 Ti during normal usage and explains factors that can affect idle power consumption, which is relevant to GPU performance and user experience.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment provides technical details and explanations about GPU power consumption and factors influencing it, maintaining an objective and informative tone.",
                           "replies": [
                             {
                               "commentId": "irr8wo5",
                               "text": "How many monitors are connected, at what refresh rates?  Mixed-refresh-rate setups make proper idle near-impossible.\n\nAlso Nvidia's frequency governor does this thing where it locks the card in full 3D mode for 8 seconds when ever it thinks it's being \"used\".  I have seen this get triggered by loads as light as smooth scroll in a web browser.",
                               "upvotes": 6,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "This comment explains technical reasons (monitor refresh rates, Nvidia's frequency governor) that can affect GPU idle power draw, directly relating to the performance and efficiency of graphics cards.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment offers a technical explanation for observed power draw behavior, aiming to inform rather than express a personal opinion on the product's quality.",
                               "replies": [
                                 {
                                   "commentId": "irre522",
                                   "text": "1080p 60hz and 1440p 165hz.",
                                   "upvotes": 2,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "This comment discusses technical details about monitor configurations and their impact on GPU power states, which is relevant to understanding graphics card performance and efficiency.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment provides a technical explanation related to GPU power management and display configurations, maintaining an informative and objective tone.",
                                   "replies": [
                                     {
                                       "commentId": "irva7xv",
                                       "text": "Yeah, that'd probably do it.\n\nWith AMD Polaris, the situation is that changing the memory clock while pixels are being sent to the display causes a visual glitch.  So the Linux driver only allows re-clocking in between refreshes, during the vertical blanking interval.  With multiple displays, you can only re-clock when the vblanks on all displays align, which only happens (with reasonable frequency) if the refresh rates on all displays are the same.\n\nIIRC, there are also restrictions on the total memory bandwidth needed for compositing at high refresh rates and pixel counts, which could lock out the lowest power states.",
                                       "upvotes": 2,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "include",
+                                      "relevanceReasoning": "This comment delves into technical specifics of AMD Polaris GPU power management and display synchronization, which is relevant to understanding graphics card behavior and efficiency.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The comment explains technical limitations and behaviors of AMD GPUs related to power states and display refresh rates in a factual manner.",
                                       "replies": []
                                     }
                                   ]
@@ -103,10 +103,10 @@
                               "text": "Yep, same for my 3060 ti, 24.5W.\n\nIt's a multi monitor thing, If I add my TV it jumps to 34W.",
                               "upvotes": 2,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "include",
+                              "relevanceReasoning": "This comment discusses the power draw of NVIDIA GPUs (3060 and 3060 Ti) with multiple monitors, which is a relevant technical aspect of graphics card performance and efficiency.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment states observed power draw figures and explains how adding more monitors affects it, providing factual information about GPU behavior.",
                               "replies": []
                             }
                           ]
@@ -118,10 +118,10 @@
                       "text": "Which isn't even much. In a work from home setup with additional leisure time that isn't even gaming but just browsing something, or watching videos, can easily reach &gt;12h/day. Heck, I leave my pc running 24/7 for months at a time before a reboot and constantly SSH to it remotely. These cards would destroy my power bill.",
                       "upvotes": 13,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "This comment discusses the implications of high idle power draw for users who keep their PCs on for extended periods, directly relating to the cost and efficiency of graphics cards like the Intel Arc series.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment analyzes the practical consequences of high idle power consumption for different user scenarios without expressing a direct opinion on the product's quality.",
                       "replies": []
                     },
                     {
@@ -129,10 +129,10 @@
                       "text": "My PC has been on for the past 12 years straight. I only turn it off for sporadic cleaning or a cold restart sometimes.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "This comment touches upon the long-term usage of a PC and its power consumption, indirectly relating to the efficiency of components like graphics cards.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment makes a statement about personal PC usage habits without expressing a positive or negative sentiment towards any specific hardware.",
                       "replies": []
                     }
                   ]
@@ -144,10 +144,10 @@
               "text": "&gt; A brief look at these results suggests the A750 has solid equivalence with the 3060 and actually a fantastic price/perf ratio. \n\nHonestly, my first impression looking at these numbers was the opposite.\n\nI'd have expected a price/perf advantage of more than ~10% compared to Nvidia, or even less than that (outside of raytracing) compared to AMD.\n\nAccording to this chart, you can basically pay &lt;10% more for NV hardware per average FPS compared to Intel, and get a far more solid and consistent driver experience across all games. Or you can buy AMD and also get a more mature driver, and sometimes even better performance/$, just losing out on RT performance.\n\nUnless you have a very specific requirement (like a very significant AV1 encoding use case) it seems *really* difficult to recommend even the 750 in this situation.",
               "upvotes": 12,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "This comment directly compares the price/performance ratio of the Intel Arc A750 against NVIDIA and AMD offerings, discussing driver experience and specific use cases, which is highly relevant to a purchasing decision.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The comment expresses doubt about the A750's value proposition compared to competitors, citing driver issues and price as significant drawbacks, leading to a negative recommendation.",
               "replies": []
             },
             {
@@ -155,10 +155,10 @@
               "text": "Yeah. This suggests to me in a generation or two they could be a very competitive system, as they hone their drives, and grow in expertise. \n\nSeems like the team focused on being great at more modern games, while being quite bad at older. As time goes on, this just pay off more and more.",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "This comment discusses the potential for Intel Arc GPUs to become more competitive in the future as drivers improve and the focus on modern games pays off, which is a relevant opinion on the product's long-term prospects.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The comment expresses optimism about Intel's future in the GPU market, suggesting that the current offerings, like the A750, show promise for improvement and competitiveness.",
               "replies": []
             },
             {
@@ -166,30 +166,30 @@
               "text": "When this happens with AMD we say the cards age well over time \ud83d\ude03",
               "upvotes": 25,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "This comment draws a parallel between Intel's improving drivers and AMD's historical driver improvements, relating to the evolution and stability of GPU driver packages.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment uses a comparison to highlight a common perception about GPU driver development cycles without taking a definitive stance on the current state of Intel's drivers.",
               "replies": [
                 {
                   "commentId": "irrtu6s",
                   "text": "Amd's driver issues were never this bad. at least not in last 10 years.",
                   "upvotes": 13,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "This comment directly contrasts Intel's current driver issues with AMD's historical driver problems, providing context on the severity and nature of driver instability in graphics cards.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The comment asserts that Intel's driver issues are significantly worse than AMD's recent ones, implying a negative assessment of Intel's current driver quality.",
                   "replies": [
                     {
                       "commentId": "irulsv6",
                       "text": "True. There is a real difference between AMDs's sometimes (more in the past) weak drivers and this Intel drivers. Intel have still a long way to go. But on the other hand, you can see a (really) substantial progress from A380.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "This comment discusses the progress of Intel's GPU drivers, comparing them to AMD's and noting the substantial improvement from the A380, which is relevant to the product's ongoing development and user experience.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The comment acknowledges the significant progress Intel has made with its drivers, particularly since the A380, indicating a positive trend in driver development.",
                       "replies": []
                     }
                   ]
@@ -199,20 +199,20 @@
                   "text": "No. It has always been either \"buy to help competition\" or \"avoid until issues are fixed\" - ala the 5700xt launch.\n\nAnd AMD has had a history to look back on when it comes to fixing their issues. Intel doesn't have a precedent yet.",
                   "upvotes": 21,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "This comment compares Intel's driver situation to AMD's past issues, discussing the historical context of driver fixes and the lack of precedent for Intel, which is relevant to assessing the risk of buying an Intel GPU.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The comment suggests that Intel's driver situation is more concerning than AMD's due to a lack of established history in fixing such issues, implying a negative outlook for early adopters.",
                   "replies": [
                     {
                       "commentId": "irr1nhk",
                       "text": "&gt; Intel doesn't have a precedent yet.\n\nIf anything they kind of have the opposite tbh. The DX11 driver that everyone complains about is [a relatively recent attempt to try and _improve_ driver stability and reduce overhead.](https://media.discordapp.net/attachments/682674504878522386/999402021474009198/unknown.png?width=1595&amp;height=897) A ground up driver from 2020.\n\nCompare that with AMD's latest attempts at ground up DX11 and OpenGL drivers, and it's a night and day situation, despite it being less than half a year since the latter two took place.\n\nIntel really need to step their driver game. We need them to do better.",
                       "upvotes": 21,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "This comment provides a detailed technical comparison of Intel's and AMD's driver development efforts, specifically regarding DX11 and OpenGL drivers, which is highly relevant to the stability and performance of Intel Arc GPUs.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The comment criticizes Intel's driver development, suggesting they need to improve significantly, and highlights the perceived lack of progress compared to AMD's efforts, indicating a negative view of Intel's current driver situation.",
                       "replies": []
                     },
                     {
@@ -220,10 +220,10 @@
                       "text": "Exactly.\n\nAMD's driver issue is one reason I stopped getting their GPUs and moved to Nvidia. \n\nThough the 5700XT does make me think twice on that decision sometimes.\n\nBut initial driver issues still plagued that card slightly at least.",
                       "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "This comment discusses the user's personal experience switching from AMD to Nvidia due to driver issues and reflects on the 5700XT's initial problems, which is relevant to the broader discussion of GPU driver stability.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The comment expresses dissatisfaction with AMD's driver issues, leading to a switch to Nvidia, and notes that even the 5700XT had initial driver problems, indicating a negative sentiment towards driver stability across brands.",
                       "replies": []
                     }
                   ]
@@ -235,20 +235,20 @@
               "text": "[account superficially suppressed with no recourse by /r/Romania mods &amp; Reddit admins]",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "This comment discusses the pricing of Intel Arc GPUs relative to their performance and compares them to other options, which is relevant to the product's value proposition.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The comment suggests that Intel Arc cards are overpriced even when considering potential driver improvements, and that competitors like the 6600 are a better value, expressing a negative sentiment towards the A770's price-performance.",
               "replies": [
                 {
                   "commentId": "irsiefy",
                   "text": "&gt; the cards should be priced 50% lower than they are\n\nEven then, I would recommend someone to buy a 6600 on sale vs a 16gb a770.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "This comment compares the value proposition of the Intel Arc A770 16GB against a discounted AMD 6600, directly discussing product comparison and pricing, which is relevant to consumer choice.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The comment states a preference for the AMD 6600 over the A770 even at a significantly lower price point for the Intel card, indicating a negative sentiment towards the A770's value.",
                   "replies": []
                 }
               ]
@@ -258,10 +258,10 @@
               "text": "I think Dave2D raised a good point about this. \n\nWhile the A750 might be better than 3060 cost-effective wise, its still not worth it. Beside the driver issue, the A750 would have to compete with the flooding used GPU. A quick search on FB marketpalce and I already found some 3070 for $350 and 3060 for $300",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "This comment discusses the A750's cost-effectiveness compared to the 3060 and introduces the factor of the used GPU market, which is relevant to the product's overall value and competitiveness.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The comment argues that the A750 is not worth buying due to driver issues and the availability of cheaper used GPUs like the 3070 and 3060, expressing a negative sentiment about its market position.",
               "replies": []
             },
             {
@@ -269,30 +269,30 @@
               "text": "Maybe. But we can we see how they actually go for consumers first? \n\nPeople keep parroting how unstable they are, they aren\u2019t in consumer hands yet",
               "upvotes": -1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "This comment questions the widespread claims of instability for Intel Arc GPUs, suggesting that consumer hands-on experience is needed before making definitive judgments, which is relevant to the product's reception.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment expresses a desire for more real-world consumer data before forming a final opinion on the stability of Intel Arc cards, maintaining a neutral and questioning stance.",
               "replies": [
                 {
                   "commentId": "irsmdnw",
                   "text": "It's only get worse when consumers get them. Reviewers have seriously downplayed how bad the performance in older games is.\n\nI'm watching the weekly DF video and it has like a quarter of the performance of a 3060 in AC: Unity which is a dx11 game.\n\nConsidering all the dx11 games are out there, imagine how many will be borderline unplayable. Not to mention more casual buyers not realizing they need a rebar capable system. Anyone that doesn't keep up with pc hardware news and buys those cards will leave a negative review.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "This comment discusses the poor performance of Intel Arc GPUs in older DX11 games and the requirement for ReBAR, which are critical technical limitations affecting user experience and compatibility.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The comment expresses concern that Intel Arc GPUs perform poorly in many popular DX11 games and that casual buyers may not be aware of the ReBAR requirement, leading to negative reviews and a poor user experience.",
                   "replies": [
                     {
                       "commentId": "iruv3i7",
                       "text": "All the people downplaying its poor DX11 performance are pretty much out of touch with reality.\n\nAnyone playing predominantly DX12 games will almost certainly be part of the group who would absolutely not tolerate the problems Arc has and will simply pay the extra for Nvidia, if not AMD.\n\nIt's the people who predominantly play DX11 games that are shopping around at the &lt;$300 bracket en mass and are generally more willing to take a chance. But even their patience has limits.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "This comment analyzes the target market for Intel Arc GPUs, suggesting that users who predominantly play DX12 games are likely to opt for Nvidia or AMD due to Arc's issues, which is relevant to the product's market positioning and appeal.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The comment argues that Intel Arc GPUs are unlikely to appeal to users who play DX12 games due to their existing problems, and even DX11 players have limits to their patience, indicating a negative outlook on the product's market viability.",
                       "replies": []
                     }
                   ]
@@ -303,5 +303,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemini-2.5-flash-lite"
 }

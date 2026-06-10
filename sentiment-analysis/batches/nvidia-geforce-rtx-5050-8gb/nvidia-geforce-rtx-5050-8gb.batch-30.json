@@ -18,40 +18,40 @@
           "text": "Ang recommendation for a laptop the runs league of legends decently?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "User is asking for a general laptop recommendation for a specific game, not discussing the RTX 5050.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a request for information without an expressed opinion on the product.",
           "replies": [
             {
               "commentId": "nrsro2m",
               "text": "A lot of laptops does, do you have a budget in mind ?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a general Q&A interaction regarding budget and laptop preferences.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral inquiry about the user's budget.",
               "replies": [
                 {
                   "commentId": "nrsrsjk",
                   "text": "The cheaper the better I\u2019d like to be able to have league of legends without any issues tho! I\u2019m essentially just going to do paperwork and play league of legends in it haha",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "User is discussing their needs for paperwork and League of Legends, not the RTX 5050.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment expresses a preference for price and usage, but not an opinion on the product.",
                   "replies": [
                     {
                       "commentId": "nrssbp6",
                       "text": "OK, in that case there is [this walmart deal on acer nitro](https://www.walmart.com/ip/Acer-Nitro-V-15-6-1920-x-1080-FHD-165Hz-Gaming-Laptop-Intel-Core-i5-16GB-RAM-512GB-Obsidian-Black/16528002857?classType=REGULAR&amp;athbdg=L1800&amp;clickid=zQ1XDA1c2xycUTKRC7RG0WViUkpTSN1r12Oa1w0&amp;irgwc=1&amp;afsrc=1&amp;sourceid=imp_zQ1XDA1c2xycUTKRC7RG0WViUkpTSN1r12Oa1w0&amp;veh=aff&amp;wmlspartner=imp_1989721&amp;affiliates_ad_id=565706&amp;campaign_id=9383&amp;sharedid=) which is the best under 600 or [this config of it](https://www.amazon.com/i5-13420H-Processor-GeForce-Display-ANV15-52-586Z/dp/B0F5KTGDS9?tag=bkadamos_alltest0e-20&amp;th=1) which is weaker GPU and less ram, but still a good option if you prefer amazon over walmart.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user recommends a specific laptop containing the RTX 5050 (Acer Nitro V) as a 'best under 600' option.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user describes the deal as the 'best under 600' and a 'good option'.",
                       "replies": []
                     }
                   ]
@@ -62,5 +62,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

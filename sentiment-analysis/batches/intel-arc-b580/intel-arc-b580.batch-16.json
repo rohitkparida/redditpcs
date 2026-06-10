@@ -18,40 +18,40 @@
           "text": "This is awesome. It\u2019s about time someone stepped up to nvidia. \n\nI\u2019ll wait for the high end option but I\u2019m excited for an intel gpu in my system",
           "upvotes": 7,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Expresses excitement and interest in purchasing an Intel GPU.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is excited and calls the development of the GPU awesome.",
           "replies": [
             {
               "commentId": "m1pmc9c",
               "text": "Rofl. Step up?  This is barely matching 2nd lowest card from last gen.  This is going after 7700xt instead.",
               "upvotes": -4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Compares the performance of the GPU to other cards.",
+              "sentiment": "negative",
+              "sentimentReasoning": "Dismisses the card's performance as barely matching last-gen low-end cards.",
               "replies": [
                 {
                   "commentId": "m1rmo1g",
                   "text": "7700XT is $400. This is $250.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Compares the price of the B580 to a competitor.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Highlights the excellent value and price advantage of the Intel card.",
                   "replies": [
                     {
                       "commentId": "m1rusq3",
                       "text": "And?   Intel is not chasing Nvidia.  They want a piece of AMD pie.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses Intel's market strategy and competition with AMD.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Explains market positioning without expressing a strong positive or negative opinion on the product itself.",
                       "replies": []
                     }
                   ]
@@ -65,20 +65,20 @@
           "text": "Should I sell my 4060 that I picked up brand new for $200 and pick up this bad boy instead? lol",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Inquires about comparing and potentially buying the B580 over an RTX 4060.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "A playful inquiry about upgrading, showing interest but not a definitive positive or negative stance.",
           "replies": [
             {
               "commentId": "m1qeyqy",
               "text": "Hell no if you got a 4060 for $200",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Advises against replacing a $200 RTX 4060 with the B580.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Provides practical advice based on the price-to-performance of the user's current card rather than a direct negative review of the B580.",
               "replies": []
             }
           ]
@@ -88,20 +88,20 @@
           "text": "Looks great. Makes me want to build another PC just so I can support this product.",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Expresses a strong desire to support the product and build a PC for it.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Highly positive, calling the product great and wanting to buy it to support Intel.",
           "replies": [
             {
               "commentId": "m1qlzu2",
               "text": "Hell, If my kid was old enough to start gaming I would seriously consider making a quick budget build and throwing this in",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Considers the GPU for a potential budget build.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Expresses positive intent and considers it a good option for a budget build.",
               "replies": []
             }
           ]
@@ -111,20 +111,20 @@
           "text": "It's interesting how much further behind it falls in certain titles, while absolutely crushing the 4060 in others, especially in synthetic benchmarks.\n\nI'm no expert on GPUs, but could that indicate a lot of potential driver headroom for the card, or is it some kind of fundamental flaw that is unlikely to be rectified? We know Intel has a fairly large driver team, given their massive improvements in driver compatibility. If there is driver headroom I'd be fairly confident that they are going to pursue it.\n\nSadly there is still a major driver issue in PUBG according to Der8auer. Hopefully that is a quick fix.",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses performance variance, driver potential, and specific game issues.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Balanced analysis of performance strengths and weaknesses, along with driver concerns.",
           "replies": [
             {
               "commentId": "m1penkp",
               "text": "There's all sorts of internal bottlenecks within the GPU architecture that can be hit that can explain severe differences between games. Every single part of designing a high-performance architecture is about decisions and compromises.\n\nYou can optimize something for really fast geometry processing, but that leads to poor utilization of said hardware in games using Nanite, which bypass the fixed-function geometry hardware.\n\nYou can instead optimize something for the modern mesh shader pipeline, but this means that you'll likely be losing performance in traditional/older games due to the opportunity costs.\n\nAn example of this is the AMD NGG pipeline. This basically treats all geometry work as a primitive shader draw. This means it's nice and optimal when you're actually running primitive shaders, but it maps poorly to older kinds of rendering like geometry shaders. In pessimistic scenarios, it can lead to a drastic underutilization of the shader cores due to requirements imposed by the primitive shader pipeline.\n\n> As noted above, each NGG shader invocation can only create up to 1 vertex + up to 1 primitive. This mismatches the programming model of SW GS and makes it difficult to implement (*). In a nutshell, for SW GS the hardware launches a large enough workgroup to fit every possible output vertex. This results in poor HW utilization (most of those threads just sit there doing nothing while the GS threads do the work), but there is not much we can do about that.\n\n(*) Note for the above: Geometry shaders can output an arbitrary amount of vertices and primitives in a single invocation.\n\nhttps://timur.hu/blog/2022/what-is-ngg\n\nThis is the sort of bottleneck that you can't really solve with just driver changes. You can sometimes do some translation work to automatically convert what would be slow to something that would be fast, but you're usually limited on this sort optimization.",
               "upvotes": 12,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Explains technical bottlenecks in GPU architectures relevant to the performance discussion.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Provides an objective, technical explanation of hardware bottlenecks without positive or negative bias.",
               "replies": []
             },
             {
@@ -132,10 +132,10 @@
               "text": "Yeah, when I saw that I assumed drivers fixes would be coming.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses expected driver fixes for performance issues.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Expresses a neutral expectation of future driver updates.",
               "replies": []
             },
             {
@@ -143,10 +143,10 @@
               "text": "It's a bit of both. It could be that the games it pulls ahead in really love VRAM, and the ones where 4060 pulls ahead don't, in which case other driver optimisations would be needed to bring performance up to bridge that gap. \n\nAs for other driver optimisations, what it'll be is that certain API calls are faster on Nvidia, and others on Intel. The graphics pipelines of the games where Intel performs better are probably using more of the API calls that they excel at, and same for Nvidia.\n\nAPI calls might have a dedicated hardware implementation on the GPU (sometimes called native support), or a software implementation that stitches together a load of lower level hardware features to get the same effect. Hardware implementations are obviously usually significantly faster than software implementations. The performance of a software implementation of an API call depends on a bunch of stuff, like how many lower level hardware features need to be utilised to achieve the result, how fast those low level hardware features are, and how optimised the code is.\n\nIf an API call is already utilising a hardware implementation and is lagging behind the competition's hardware implementation, there's practically no chance of driver updates increasing performance. If it's a software implementation, then there is potentially room for improvement (sometimes large ones), but that depends on how well written the software implementation is in the first place.\n\nWith Intel being pretty new to the desktop GPU scene, I'd imagine a) they're probably adding a significant amount of new hardware features each generation, which could be used to optimise their software implementation of API calls, and b) their software implementations haven't been optimised to the same degree that Nvidia or AMD's have yet.\n\nI think unless you are an Intel GPU engineer, it's very hard to tell how much faster the GPUs can get from driver optimisations alone.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Analyzes performance differences and driver optimization potential.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Provides an objective, technical breakdown of API calls and driver support.",
               "replies": []
             }
           ]
@@ -156,10 +156,10 @@
           "text": "So basically if you\u2019re aiming to spend $300 or less on a GPU, get this. We\u2019ll have to see if Nvidia or AMD launch anything compelling for that price point next year but for now this is the clear pick for that price bracket. Wild. I\u2019m building my fianc\u00e9e a PC using my old 2070 super and I\u2019m debating getting one of these instead.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Recommends the GPU as the clear pick for under $300.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Highly positive recommendation, calling it the clear pick for its price bracket.",
           "replies": []
         },
         {
@@ -167,10 +167,10 @@
           "text": "Battlemage is a banger.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Expresses a direct opinion on the Battlemage GPU.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Enthusiastically positive, calling the product a banger.",
           "replies": []
         },
         {
@@ -178,20 +178,20 @@
           "text": "This is the step in the right direction but DLSS is still an important factor. VRAM on 4060 sucks, but it can be managed.\n\nThe biggest issue is this: Can anyone guarantee that this card will be supported in 2 or 3 years? Will ARC division even exist at Intel considering their internal mess?\n\nCompetition is good, but I think the order of desirability is still Geforce > Radeon > ARC. However, it's getting closer. Hopefully Intel's board has patience and allows for product to grow.",
           "upvotes": -3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses features like DLSS vs XeSS, VRAM, and concerns about Intel's long-term support.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "Balanced critique acknowledging it as a step in the right direction while raising valid concerns about support and features.",
           "replies": [
             {
               "commentId": "m1pb8j8",
               "text": "The compatibility should be there, because even if they axe the Desktop versions, they still need to support their iGPUs, which they are selling in huge numbers - and they have the same core architecture as the desktops.\n\nTom Petersen also announced Xe3 (next architecture) is already ready hardware-wise, so I'm 100% sure the driver support for at least 3 years will be there, due to iGPUs alone.\n\nL.E. This guy literally [says the same thing](https://youtu.be/kumOux-zD_A?si=IUQmZGxquG3FI-Vl&t=1058).",
               "upvotes": 18,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses long-term driver support and architecture continuity.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Reassuring and optimistic about long-term driver support.",
               "replies": []
             },
             {
@@ -199,20 +199,20 @@
               "text": "The difference between XeSS and DLSS is there. But its minimal enough that it becomes a non issue imo.\n\nXeSS is vastly better than FSR and much closer to DLSS in quality than ever.",
               "upvotes": 25,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Compiles Intel's XeSS upscaling technology to Nvidia's DLSS.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Praises XeSS as being vastly better than FSR and close to DLSS, making it a non-issue.",
               "replies": [
                 {
                   "commentId": "m1pf8y4",
                   "text": "Main issue with XeSS is game support, but I'd still rather have it than FSR.",
                   "upvotes": 12,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses game support for XeSS compared to FSR.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "Expresses a preference for XeSS over FSR despite game support issues.",
                   "replies": []
                 },
                 {
@@ -220,30 +220,30 @@
                   "text": "> But its minimal enough that it becomes a non issue imo.\n\nTrue difference will be seen how widespread it is through the game industry. FSR is notorious to be poorly implemented/updated. Most games out there are still on FSR 2.2 (some even earlier versions) not 3.1. Only time will tell how well does Intel work with developers.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Discusses the industry adoption and implementation of XeSS.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Expresses a cautious, wait-and-see attitude regarding developer support.",
                   "replies": [
                     {
                       "commentId": "m1p7zbb",
                       "text": "The beauty with XeSS is that you can simply swap the new DLLs in without waiting for the developer to update it as the case with FSR.\n\nIts similar to DLSS in that regard. You can simply download the latest dll file and replace it in the game folder to get the most updated image quality reconstruction method. So its a non issue imo.\n\nYou can try it. Download the latest dll from Techpowerup and swap it in any game with old DLSS/XeSS variant.",
                       "upvotes": 8,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Explains the ease of updating XeSS via DLL swapping.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "Highlights a highly convenient and positive feature of XeSS.",
                       "replies": [
                         {
                           "commentId": "m1r5ojd",
                           "text": "This is good to know! It works this way in cyberpunk but i didnt realize it was a somewhat universal thing!!\n\nI have a 3070 and tbh i bought it for DLSS and RTX voice, but looking at different options in cyberpunk i was blown away with how good Xess is. *ALMOST* indistinguishable from DLSS.",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Shares positive experience with XeSS quality in Cyberpunk.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "Praises XeSS as being almost indistinguishable from DLSS.",
                           "replies": []
                         }
                       ]
@@ -257,10 +257,10 @@
               "text": "Nvidia is massively overcharging and AI only increased the demand for GPUs. There's no better time to get into the GPU space. Sales on Alchemist were already decent for a first gen product and this gen will likely do much better. They'd be crazy to pull the plug now.\n\n>the order of desirability is still Geforce > Radeon > ARC\n\nThe B580 is close to a 4060 Ti at nearly half the cost (prices will likely drop a bit post launch). AMD was competing on 10-20% perf per dollar advantages, but behind on features and brand recognition. Alchemist already had better Raytraycing than AMD. This is Intel's Zen moment, they could take over the midrange market unless Nvidia decides to compete. Either way, a win for the consumer.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Compares B580 value to Nvidia and AMD, calling it Intel's Zen moment.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Highly optimistic about the B580's value and potential to disrupt the midrange market.",
               "replies": []
             },
             {
@@ -268,10 +268,10 @@
               "text": "At bare minimum, drivers will be supported due to drivers being needed for iGPUs.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Assures driver support due to shared architecture with iGPUs.",
+              "sentiment": "positive",
+              "sentimentReasoning": "Reassuringly positive about the certainty of driver support.",
               "replies": []
             }
           ]
@@ -281,10 +281,10 @@
           "text": "The price is right and the performance is good.  Still some growing pains on the drivers, but getting there.  PPA isn't very good though, and power draw during idle is a bit high (though is better than AMD under load looks like).  They need to get a third gen out that's got a somewhat smaller die to improve the product economics.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Evaluates price, performance, drivers, and power efficiency.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Overall positive, noting good price and performance despite some minor driver and power efficiency drawbacks.",
           "replies": []
         },
         {
@@ -292,13 +292,14 @@
           "text": "I hope they stick iterating on this products",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Expresses hope for the continuation and iteration of Intel's GPU products.",
+          "sentiment": "positive",
+          "sentimentReasoning": "Supportive of Intel's GPU efforts and hopes for future iterations.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemini-flash-latest"
 }

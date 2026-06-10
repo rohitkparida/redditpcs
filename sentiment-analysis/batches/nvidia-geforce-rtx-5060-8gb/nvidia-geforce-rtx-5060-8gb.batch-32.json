@@ -18,70 +18,70 @@
           "text": "Just got this card yesterday and getting stuttering in some games, no idea why :(",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User shares personal experience of stuttering while using the product.",
+          "sentiment": "negative",
+          "sentimentReasoning": "User is expressing disappointment and frustration due to performance issues (stuttering).",
           "replies": [
             {
               "commentId": "mo9i94a",
               "text": "did you get the 8 or 16gb version?",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely factual question about which version of the card the user has.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a clarifying question without any expressed opinion.",
               "replies": [
                 {
                   "commentId": "mo9izwe",
                   "text": "16 gig",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Purely factual answer providing the VRAM capacity.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a simple factual statement.",
                   "replies": [
                     {
                       "commentId": "modatp2",
                       "text": "thats good at least. what games are stuttering? lots of games nowadays stutter for reasons beyond your control",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General discussion about game stuttering and not specific to the product's performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment provides general technical advice without a clear positive or negative leaning toward the product.",
                       "replies": [
                         {
                           "commentId": "moddsoi",
                           "text": "The casting of frank stone\n\nDead by daylight \n\nThese two are noticeable.  \n\nAvowed it\u2019s only happened once",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "User specifies which games are stuttering on their RTX 5060 Ti, providing insight into performance.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "User is reporting continued performance issues in specific titles.",
                           "replies": [
                             {
                               "commentId": "modikvu",
                               "text": "ive not played frank stone or avowed, but i know with dbd the game has shader compilation stutters that happen for the first few hours or so of play after you either update your drivers or update the game. Maybe yours will go away after loading in all the shaders",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "Discussion about game-specific shader compilation stutters, not the product itself.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is providing technical explanation for game behavior.",
                               "replies": [
                                 {
                                   "commentId": "mods1mb",
                                   "text": "I\u2019ve been playing tonight and did see some stutter in the first hour but the second hour now I\u2019ve seen no issues.  So maybe that\u2019s all it is.",
                                   "upvotes": 1,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "include",
+                                  "relevanceReasoning": "User shares their experience with the product's performance over time in a specific session.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The user is observing that the stuttering may have disappeared, which is a neutral observation of performance.",
                                   "replies": []
                                 }
                               ]
@@ -98,5 +98,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

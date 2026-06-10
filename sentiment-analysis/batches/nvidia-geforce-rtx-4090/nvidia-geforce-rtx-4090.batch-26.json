@@ -18,30 +18,30 @@
           "text": "Is 4090 overkill for 3440*1440p 175hz?",
           "upvotes": 6,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a purely factual question about resolution and refresh rate without providing an opinion or experience.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a question and does not express a positive or negative sentiment.",
           "replies": [
             {
               "commentId": "irxn9nd",
               "text": "I don\u2019t think so. Very few games from the reviews hit 4K max settings above 160",
               "upvotes": 11,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides an opinion on whether the product is overkill based on review data, offering a recommendation.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user suggests the card is not overkill, implying it is a good fit for the specified high-end monitor.",
               "replies": [
                 {
                   "commentId": "iry7cdh",
                   "text": "3440x1440 is tiny compared to 4k.",
                   "upvotes": 10,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a factual statement about resolution comparison and does not provide insight into the product's performance or value.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a neutral factual statement.",
                   "replies": []
                 },
                 {
@@ -49,10 +49,10 @@
                   "text": "&gt;Is 4090 overkill for 3440\\*1440p 175hz?\n\nThat's not 4K though. And high FPS really depends just as much on the processor as it does on the GPU.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a factual discussion about resolution and CPU bottlenecks, not a critique or experience with the 4090 itself.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing technical information without expressing a positive or negative sentiment toward the product.",
                   "replies": []
                 }
               ]
@@ -61,5 +61,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

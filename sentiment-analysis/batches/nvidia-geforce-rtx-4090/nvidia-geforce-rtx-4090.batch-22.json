@@ -18,40 +18,40 @@
           "text": "The skinniest (FE 137mm) 4090's + power adapter cabling is touching the side panel/glass of cases rated for 190mm CPU cooler clearance (as per Jayztwocents's case) putting pressure on the PCB. Massive issue as that's around where all mid-towers tend to land. Add in that partner cards are even wider, closed side paneled mid-towers are dead for the 4090 unless 3rd party cabling is enough to give space. Sadly this discussion will get lost in the very impressive benchmark numbers.",
           "upvotes": 56,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User discusses a specific technical design flaw regarding the card's width and power adapter cabling causing pressure on the PCB.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes this as a 'massive issue' and expresses concern that it will be overlooked.",
           "replies": [
             {
               "commentId": "irx5g7y",
               "text": "Yeah, that's really a big oversight. I'm lucky having a fractal meshify 2. My case is wider than most mid towers. But i will probably order an cable from cable mod nevertheless today to be safe.",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User shares personal experience with case clearance and the need for third-party cabling for the 4090.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user refers to the design as a 'big oversight'.",
               "replies": [
                 {
                   "commentId": "irx5oeg",
                   "text": "&gt; fractal meshify 2\n\nThat's less CPU cooler headroom than Jayz' example. See the problem?",
                   "upvotes": 13,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User provides technical critique regarding case clearance for the 4090.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user is highlighting a problem with the card's fit in common cases.",
                   "replies": [
                     {
                       "commentId": "irx63t8",
                       "text": "Ohh.. You're right.. I have 185.. :(..so I'm sure to order a cable",
                       "upvotes": 5,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "User confirms the fitment issue and expresses the need to purchase additional hardware to solve it.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The user expresses disappointment/concern ('..:(..') regarding their case clearance.",
                       "replies": []
                     }
                   ]
@@ -61,10 +61,10 @@
                   "text": "I just don't understand why the power connectors are put on the top of the card. \n\nWhy not on the backplate, or at the back of the card like they used to be. \n\nIf non of those are possible, is a right angled connector impossible too?",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "User provides a technical critique of the 4090's power connector placement.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user expresses frustration and lack of understanding as to why the design choice was made.",
                   "replies": []
                 }
               ]
@@ -74,10 +74,10 @@
               "text": "Good thing i dont have side panel anymore...",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User mentions their solution to the 4090's size issue by removing the side panel.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is simply stating a fact about their setup to avoid the fitment problem.",
               "replies": []
             },
             {
@@ -85,10 +85,10 @@
               "text": "Yeah i already upsized my case when i upgraded to my 3080ti because it wouldnt fit, i went overkill on a PSU upgrade too 750w - 1200w.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is discussing their experience with a 3080ti, not the 4090.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Not applicable as the comment is not relevant to the 4090.",
               "replies": []
             },
             {
@@ -96,10 +96,10 @@
               "text": "I had issue closing my o11 dynamic with an EVGA 3080TI FTW. These GPUs are just too tall and I don't know why they are not trying to put power supply port at the end of the card. Like 20 series?",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is discussing their experience with an EVGA 3080TI, not the 4090.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Not applicable as the comment is not relevant to the 4090.",
               "replies": []
             },
             {
@@ -107,15 +107,16 @@
               "text": "Well, RIP O11D users (like half of this sub lol), it has only 155mm clearance for GPUs.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "User discusses the 4090's lack of fit in a popular case (O11D).",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user uses 'RIP' to indicate a negative outcome for users of that case.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

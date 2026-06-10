@@ -18,20 +18,20 @@
           "text": "Was expecting to see power consumption numbers in the video but nothing. Dont hardware unboxed touch on this in their videos?",
           "upvotes": -7,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a question about the content of a video review, not an opinion or experience with the product itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question about video content.",
           "replies": [
             {
               "commentId": "lxgeyjs",
               "text": "Title : 45 game benchmark\n\n  \nI expected 45 game benchmark.",
               "upvotes": 21,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a low-effort sarcastic comment about the video title.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is sarcastic but doesn't express a sentiment toward the product.",
               "replies": []
             }
           ]
@@ -41,20 +41,20 @@
           "text": "Didn't they already do a comparison with the 9800X3D review?",
           "upvotes": -2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a question about whether a comparison video exists, not about the product's performance.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question.",
           "replies": [
             {
               "commentId": "lxix5b2",
               "text": "There's way more games in this comparison so it both validates the launch review data; and gives more detail to people who want a specific title benched (or at least makes it more likely they'll get their specific title results).",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the methodology of a benchmark video, not the product's performance or value.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is explaining the purpose of the benchmark video.",
               "replies": []
             }
           ]
@@ -66,40 +66,40 @@
       "text": "Intel Core Ultra 9 285K, Ultra 7 265K and Ultra 5 245K Review Roundup",
       "upvotes": 143,
       "classifyThis": true,
-      "relevance": null,
-      "relevanceReasoning": null,
-      "sentiment": null,
-      "sentimentReasoning": null,
+      "relevance": "exclude",
+      "relevanceReasoning": "This is a title/link to a review roundup, not a user opinion or experience.",
+      "sentiment": "neutral",
+      "sentimentReasoning": "The comment is purely factual/informational.",
       "replies": [
         {
           "commentId": "ltj0q1l",
           "text": "\u201cWhen pairing Windows 24H2 with Arrow Lake, performance will be terrible\u2014we\u2019ve seen games running at 50% the FPS vs 23H2. One solution is to turn off Thread Director or disable the \u201cBalanced\u201d power profile, which is why we decided to use 23H2 for the time being.\u201d - Techpowerup",
           "upvotes": 34,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The comment highlights a significant performance drop in games when using specific Windows versions with the product.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is reporting terrible performance and FPS loss.",
           "replies": [
             {
               "commentId": "ltpoijb",
               "text": "Hot take: many of these reviews of Intel's new CPUs, are *really* reviews of Windows 11 24H2, and its inability to work well with a CPU that publicly launched only *3 weeks* after it did. The next major component of these reviews is games, showing how binaries compiled and optimized a year or more ago for older CPUs - and likely untouched since - fail to make the best of newer CPUs. Then the remainder of the reviews is taken up with motherboard manufacturers and their BIOS and driver quirks.\n\nObviously, these things matter to many of the intended audience, and Intel probably should have wrangled Microsoft and motherboard manufacturers better, but the performance under Linux (https://www.phoronix.com/review/intel-core-ultra-9-285k-linux) better shows what the *CPUs* are capable of.",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a technical critique of how the product is being reviewed and its performance on different OSs.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a balanced technical analysis of the OS influence on CPU performance.",
               "replies": [
                 {
                   "commentId": "lu748uf",
                   "text": "From a processor-killing bug that wasn\u2019t fixed for 2 years to allowing motherboard manufacturers to run amok with little oversight, it\u2019s understandable why reviewers would blame Intel.\n\nMicrosoft made Windows 11 24H2 available for public testing 9 months ago.\n\nIntel couldn\u2019t bother to check to make sure that it runs properly on Intel\u2019s new processors.",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user critiques Intel's quality control and lack of oversight regarding OS compatibility.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user expresses disappointment in Intel's failure to ensure the product works properly with Windows 11 24H2.",
                   "replies": []
                 },
                 {
@@ -107,10 +107,10 @@
                   "text": "that is why I use GNU+Linux.  \nGNU+Linux has much better support, especially for new stuff.  \nthose new intel chips are no exception as their stability and performance on GNU+Linux is basically uncomparable to windows, since on GNU+Linux it is a few times faster and many times more stable, also more features working.  \nnext to that in gaming, when running through proton, that can make games optimized for newer hardware, not only on old games, but I also noticed it on UE5 based games which where just launched that on a ryzen 5 4500U with 16gb ram and 1.5tb nvme ssd the performance on average increased by 1.5 to 2 times, for both old and new games compared to windows.  \nmeanwhile cpu and ram intensive games gained much better increases.  \nas for normally unstable games like skyrime which on windows crash every few hours with a few mods, on GNU+Linux I have only have it chrash once with the same mods and that was because a mod tried to load another mod which was not installed. but on windows even when walking far sometimes it would just chrash, in linux not only was the fps more than doubled but it also didn't chrash in any such cases.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user shares personal experience using the product on Linux, noting stability and performance gains.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user reports that the product is faster and more stable on Linux than on Windows.",
                   "replies": []
                 }
               ]
@@ -120,20 +120,20 @@
               "text": "Pretty sure you can't turn off thread director as it's baked into the os.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a technical discussion about OS features (Thread Director), not a direct opinion on the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is correcting a technical detail about the OS.",
               "replies": [
                 {
                   "commentId": "ltnn7gg",
                   "text": "\u00d6hm so?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Lacks meaningful insight into the product; it is a short, low-effort response.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a short, dismissive response.",
                   "replies": []
                 }
               ]
@@ -145,20 +145,20 @@
           "text": "The memory latency on Arrow Lake is atrocious. On the Wcctech review, they have DDR5 8000 with 105ns latency. Raptor Lake at 8000 MT/s with XMP timings should be ~65ns latency. That's nearly a 40ns increase in latency, which would likely tank performance in certain CPU bound titles that are sensitive to memory latency.\n\nHas anyone seen L3 latency? There were rumors the Ring bus frequency took a big hit compared to Raptor Lake.\n\nhttps://wccftech.com/review/intel-core-ultra-9-285k-core-ultra-5-245k-arrow-lake-cpus-review/5/",
           "upvotes": 53,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides a technical critique regarding memory latency issues on the Arrow Lake architecture.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes the memory latency as 'atrocious' and likely to tank performance.",
           "replies": [
             {
               "commentId": "ltj4jag",
               "text": "and they still have hardly and l3 cache and still have l3 size tied to core count",
               "upvotes": 13,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user critiques the L3 cache size and its tie to core count on the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is dissatisfied with the cache design.",
               "replies": []
             },
             {
@@ -166,10 +166,10 @@
               "text": "Intel ultra3d when?",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a short question about future products (Ultra 3D), not a critique of the current product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is asking a question about future hardware.",
               "replies": []
             },
             {
@@ -177,30 +177,30 @@
               "text": "msi showed in their live stream the memory latency was \\~90 vs \\~120 by just changing the power setting in windows on the latest update. and said it wasnt behaving that way before the update. i think that was just normal jedec settings(?). then through xmp and some other bios setting supposedly can get it down to like 70 (i dont think they showed that live....was only half-watching),\n\nder8auer messed with the ring clock for his review and got better performance.\n\nidk how likely it is that'll all be stable.\n\nthese CPUs dont seem as bad as reddit is making it out to be, but holy hell this wasnt ready for consumers.\n\nim waiting for the next gen GPUs anyways so I'll see where things land price and performance wise once those are out. looks like it might be an amd build but honestly the synthetics I've seen make it seem plausible these could pull ahead with some software tweaks by then.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user discusses performance tweaks, stability concerns, and the product's readiness for consumers.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user states the CPUs 'wasnt ready for consumers' and expresses doubt about stability.",
               "replies": [
                 {
                   "commentId": "ltn2jh7",
                   "text": ">these CPUs dont seem as bad as reddit is making it out to be\n\nThese are professional reviews that are simply posted on Reddit. It's not Reddit doing the reviews.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a meta-discussion about where reviews are posted, not about the product itself.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is correcting a previous commenter's terminology.",
                   "replies": [
                     {
                       "commentId": "ltnamre",
                       "text": "what? obviously.\n\nreddit, at least here and over on r/hardware, is significantly more negative than the data in the reviews that did relevant testing shows. if you think the reddit sentiment aligns with the data, I disagree with you.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a meta-discussion about Reddit sentiment versus review data, not about the product's performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing the general sentiment of the community.",
                       "replies": []
                     }
                   ]
@@ -212,10 +212,10 @@
               "text": "They benchmarked on a 4 dimm board. There's hoping it's better on an apex since the traces are shorter so at least some latency could be chopped off (which still doesn't help with the shitty interconnects, but it's something at least)",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a technical critique regarding the motherboard's impact on latency on the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user refers to 'shitty interconnects' and hopes for better performance on different boards.",
               "replies": []
             },
             {
@@ -223,50 +223,50 @@
               "text": "This isn\u2019t exactly new information, with ramped up memory speeds latency is always the metric that gives. \n\nIt\u2019s the underlying tech tricks and methods to minimize this latency that needs to be the focus.",
               "upvotes": 0,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a general technical discussion about memory latency metrics, not a specific critique of the 285K.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is discussing general hardware principles.",
               "replies": [
                 {
                   "commentId": "ltl9nok",
                   "text": "No it's not. Running a tuned 8000 MT/s on Raptor Lake yields AIDA latency ~50-55ns, and I would venture to guess it's at least 85ns on Arrow Lake with the same tuned timings.\n\nThe issue here is increased memory latency moving from a monolithic die to a separate SOC tile. This has nothing to do with memory frequency.",
                   "upvotes": 8,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a technical comparison of memory latency between Raptor Lake and Arrow Lake.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user highlights a significant increase in latency due to the new SOC tile design.",
                   "replies": [
                     {
                       "commentId": "ltlibl9",
                       "text": "If that were 100% the cause, the blips and oddities in latency i would think would be more predictable and regular. They seem almost random currently. \n\nInteresting, thanks I am going to do some reading (even though I have zero interest in upgrading to arrow lake)",
                       "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The user expresses no interest in upgrading to Arrow Lake, but the comment is a general observation on latency behavior.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing technical observations without a clear positive or negative leaning.",
                       "replies": [
                         {
                           "commentId": "ltljeqi",
                           "text": "Some games are more sensitive to memory latency, so that could explain some of the results. The inconsistency between gaming benchmarks could also be due to scheduling or microcode issues.",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user discusses how memory latency and scheduling issues affect the product's gaming performance.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user is identifying potential causes for inconsistent gaming results.",
                           "replies": [
                             {
                               "commentId": "ltlncib",
                               "text": "Yes, this was why I was curious about it, the correlation between zen 5 and windows scheduling added another layer to things, it\u2019s so much more difficult to sort through the fluff and get to the real issues these days.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The comment is a general discussion about the difficulty of sorting through hardware reviews, not a specific critique of the product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is expressing a general frustration with the current state of hardware reviews.",
                               "replies": []
                             }
                           ]
@@ -281,5 +281,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

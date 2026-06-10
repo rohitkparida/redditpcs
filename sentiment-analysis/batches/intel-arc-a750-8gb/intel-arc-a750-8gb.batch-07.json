@@ -28,30 +28,30 @@
               "text": "They're way past early stage by now. These cards were delayed more than half a year to give them more time to fix the drivers. If they could make them better, they would have by now.",
               "upvotes": 4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The comment discusses the development status and effectiveness of the product's drivers.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The comment implies that despite delays, the drivers are still not good, indicating disappointment with their current state.",
               "replies": [
                 {
                   "commentId": "irue8ow",
                   "text": "LMAO It took AMD many many years to get competitive drivers but this first gen product isn't in the early stage?",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment compares Intel's driver development to AMD's and questions the 'early stage' argument for a first-gen product.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The rhetorical question and tone suggest skepticism about the drivers being past an early, problematic stage.",
                   "replies": [
                     {
                       "commentId": "irvp6zb",
                       "text": "Intel have been producing drivers for many years now. This DX11 driver everyone's ragging on about is supposed to be their attempt at a ground up driver aimed at improving stability and reducing driver overhead from as recent as 2020. \n\nIt still sucks.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment directly critiques the product's DX11 drivers, their history, and current performance.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The phrase 'It still sucks' clearly expresses a negative opinion on the driver quality.",
                       "replies": []
                     }
                   ]
@@ -61,20 +61,20 @@
                   "text": "Who knows what will happen. Look how long it took AMD to improve dx11 performance.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The comment compares Intel's driver situation to AMD's past DX11 performance, discussing potential future improvements.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment expresses uncertainty about future improvements without a clear positive or negative leaning on the product's current state.",
                   "replies": [
                     {
                       "commentId": "irsuj4j",
                       "text": "AMDs DX11 performance was never THAT bad. And there weren't a number of games that just didn't work, not even back when AMD had \"bad\" drivers.\n\nRemember, Arc's performance in DX9 and older titles (like CS:GO) is comparable to a GTX780. A GTX780 is 10 years old.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment compares Arc's driver issues and performance in older titles to AMD's past, highlighting specific shortcomings.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The comparison of Arc's DX9 performance to a 10-year-old card and mention of games not working indicates significant dissatisfaction.",
                       "replies": []
                     }
                   ]
@@ -85,5 +85,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemini-2.5-flash"
 }

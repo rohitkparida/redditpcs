@@ -18,25 +18,26 @@
           "text": "So if at 4K you enable DLSS, if you use quality the 1440p raster perf comparison is more accurate? Same with DLSS quality and 1080p?",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a technical question about DLSS and resolution scaling, not an opinion or experience with the 4070 Ti Super.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question without expressing a positive or negative sentiment.",
           "replies": [
             {
               "commentId": "m9kdoev",
               "text": "That's largely correct, but do keep in mind why raster performance gap of 5090 vs others is narrower at lower resolutions- because the top end CPUs can't keep up with the 5090. Even at 4K, the 5090 is bottlenecked by the best CPUs of today, according to HUB.",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion focuses on the RTX 5090 and CPU bottlenecks, which is off-topic for the 4070 Ti Super.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment provides a technical explanation without a clear positive or negative leaning.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

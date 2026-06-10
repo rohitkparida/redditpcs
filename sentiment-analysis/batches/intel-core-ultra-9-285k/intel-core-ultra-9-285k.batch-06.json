@@ -18,80 +18,80 @@
           "text": "Hey intel, can you pls do a 12P core monolithic CPU? Drop the NPU and iGPU and bump up the L3 by a meg or two per slice. And with AVX512 turned back on?\n\nkthxbai",
           "upvotes": 69,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is critiquing the design of the CPU by suggesting a different core configuration and feature set.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is expressing dissatisfaction with the current design by asking Intel to remove features and change the core architecture.",
           "replies": [
             {
               "commentId": "ltkbh8o",
               "text": "That\u2019s exactly what will beat AMD in things that people care about so they\u2019re never gonna do that lmao they\u2019re gonna try and me 2 AMD with chiplets (tiles)",
               "upvotes": 25,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user discusses the competitive landscape and Intel's architectural choices compared to AMD.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user believes Intel's approach is designed to mimic AMD rather than optimize for what users care about.",
               "replies": [
                 {
                   "commentId": "ltkf8eg",
                   "text": "Well, client desktop users (primarily gamers) would possibly want it. But such an architecture wouldn\u2019t be a good fit for laptops nor servers. And let\u2019s face it, enthusiast desktops are a small share of the overall x86 market revenue. Ryzen 9000 is Zen5 scaled down from servers, and Arrow Lake S is just Arrow Lake H scaled up from laptops.\n\nOTOH, doesn\u2019t seem like it would be too much effort. They\u2019ve got all the basic blocks already, just putting them together in a different configuration for a market with different needs.\n\nAnd at this rate, what\u2019s one more TSMC die ;)",
                   "upvotes": 9,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a technical critique of the Arrow Lake architecture and its market positioning.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is providing a balanced technical analysis of why the architecture is designed the way it is.",
                   "replies": [
                     {
                       "commentId": "ltkfmdo",
                       "text": "You know that server Xeons are literally all P-cores right? The only place tiles might make sense is in mobile or combining many P core tiles for the XCC Xeons.",
                       "upvotes": 9,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The discussion has shifted to server Xeons and general architecture, moving away from the specific product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual statement about server CPUs.",
                       "replies": [
                         {
                           "commentId": "ltkh9rg",
                           "text": "Currently AFAIK all all-P-core and all all-E-core intel server CPUs utilize a mesh bus, with a negative impact on latency compared to the ring bus in client CPUs. \n\nOf course the ring bus stops scaling well after (presumably) 12 stops.",
                           "upvotes": 11,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The discussion is now focused on technical details of mesh vs ring buses in server CPUs.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a technical explanation of bus scaling.",
                           "replies": [
                             {
                               "commentId": "ltkhlo4",
                               "text": "Ring bus has historically only been used up to 10 cores per ring. Even a 10P core only desktop CPU with extra L3 cache would\u2019ve been fantastic.",
                               "upvotes": 3,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The discussion is focused on general ring bus history and not the specific product.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is a technical observation about core counts per ring.",
                               "replies": [
                                 {
                                   "commentId": "ltkj3fp",
                                   "text": "Raptor Lake and Arrow Lake have 12 ring stops for cores",
                                   "upvotes": 4,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "The comment is a factual correction about ring stops in Raptor Lake and Arrow Lake.",
+                                  "sentiment": "neutral",
+                                  "sentimentReasoning": "The comment is a purely factual correction.",
                                   "replies": [
                                     {
                                       "commentId": "ltkj79w",
                                       "text": "Wait youre right. I was thinking of P core only designs that they did though.",
                                       "upvotes": 4,
                                       "classifyThis": true,
-                                      "relevance": null,
-                                      "relevanceReasoning": null,
-                                      "sentiment": null,
-                                      "sentimentReasoning": null,
+                                      "relevance": "exclude",
+                                      "relevanceReasoning": "The user is acknowledging a correction in a technical debate about ring buses.",
+                                      "sentiment": "neutral",
+                                      "sentimentReasoning": "The comment is a simple acknowledgement of a fact.",
                                       "replies": []
                                     }
                                   ]
@@ -107,30 +107,30 @@
                       "text": "> But such an architecture wouldn\u2019t be a good fit for laptops nor servers\n\nActually, the 12+0 Bartlett Lake was explicitly for servers. They don't like hybrid.",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The discussion is about Bartlett Lake and server CPUs, not the Core Ultra 9 285K.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual statement about a different product line.",
                       "replies": [
                         {
                           "commentId": "ltkvoh2",
                           "text": "Of course, but I\u2019m really struggling to imagine the sort of server workloads that need the low latency of a ring bus and are also happy with a paltry 12 cores/socket. Game servers? High frequency trading? Test and measurement? \n\nJust doesn\u2019t seem like a big addressable market. Edge compute with ECC RAM, maybe.",
                           "upvotes": 3,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The discussion is about server workloads and the market for Bartlett Lake.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is speculating on the market for a different product.",
                           "replies": [
                             {
                               "commentId": "ltkx5u9",
                               "text": "There are probably some use cases that benefit from the ST perf like games, but predominantly the idea is that Bartlett Lake could be *cheap*. You don't need an 8ch Xeon for a simple file or web server.",
                               "upvotes": 4,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The discussion is about the cost and use cases for Bartlett Lake server CPUs.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The comment is a factual discussion about server CPU pricing.",
                               "replies": []
                             }
                           ]
@@ -144,30 +144,30 @@
                   "text": "> That\u2019s exactly what will beat AMD in things that people care about so they\u2019re never gonna do that lmao they\u2019re gonna try and me 2 AMD with chiplets (tiles)\n\nSomehow, I don't think 12P cores would \"beat\" AMD either.\n\nBut it would still be better than what Intel is providing now... which is quite bizarre, actually...",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user compares the current Intel offering to a hypothetical better design and expresses an opinion on the current product.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user describes Intel's current offering as 'bizarre' and inferior to a potential alternative.",
                   "replies": [
                     {
                       "commentId": "ltng8tp",
                       "text": "A monolithic 12P CPU with super low latency memory access and 36mb of L3 would be like the 10900K was back then.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user discusses a hypothetical CPU design that would be superior to the current product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is speculating on a design that would be high performing, but not directly praising or criticizing the 285K itself.",
                       "replies": [
                         {
                           "commentId": "ltngy03",
                           "text": "> A monolithic 12P CPU with super low latency memory access and 36mb of L3 would be like the 10900K was back then.\n\nNot the fairest comparison ~ X3D didn't exist back then. AMD was winning in most productivity benchmarks in that time, but was losing in games because they couldn't match Intel's crazy frequencies or low latency memory.\n\nBut AMD has most certainly caught up in every way with X3D. 96MB of L3 on-die is nothing to sneeze at.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user compares Intel's architecture to AMD's X3D chips in terms of gaming performance.",
+                          "sentiment": "negative",
+                          "sentimentReasoning": "The user suggests that AMD has caught up and surpassed Intel in key areas like L3 cache.",
                           "replies": []
                         },
                         {
@@ -175,10 +175,10 @@
                           "text": ">would be like the 10900K was back then.\n\n...crashing in Minecraft?",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment is a joke/meme about Minecraft crashing.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a low-effort joke.",
                           "replies": []
                         }
                       ]
@@ -192,30 +192,30 @@
               "text": ">\u00a0Drop the NPU\n\nWith how Microsoft is pushing Co-Pilot, this will never happen",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user discusses the inclusion of the NPU in the product and its necessity.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is making a prediction about Microsoft's influence on hardware features.",
               "replies": [
                 {
                   "commentId": "ltm3alx",
                   "text": "Intel is taking the stupid approach here though. They're wasting die space on an NPU that is underpowered and not compliant with Copilot, and anyone running a high end chip is going to have a GPU anyway that is much better for AI workloads. So it's a waste of space that has no value for anyone.\n\nAMD's approach is more intelligent. Their desktop CPUs don't have NPU,s but their mobile APU's do, since they're more likely to be run with no GPU. And their NPU's are powerful enough for Copilot.",
                   "upvotes": 16,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user provides a technical critique of the NPU's value in the Core Ultra 9 285K compared to AMD.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user calls the NPU a 'waste of space' and 'stupid approach'.",
                   "replies": [
                     {
                       "commentId": "ltrvadk",
                       "text": "> NPU,s \n\nSince you're doing this intentionally: NPU does not own \"but\", APU does not own \"do\", and NPU does not own \"are\". That makes no sense since you're not talking about *an* APU or NPU, nor can you possess verbs (or conjunctions). And of course NPUs and APUs are not verbs or conjunctions, so it isn't a a contraction.\n\nJust because it's an acronym doesn't really change anything.",
                       "upvotes": 0,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a grammar correction and not about the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is focused on linguistic corrections.",
                       "replies": []
                     }
                   ]
@@ -225,10 +225,10 @@
                   "text": "That clearly hasn\u2019t stopped intel from releasing Arrow Lake, which does not meet the minimum TOPS required for copilot branding",
                   "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user critiques the NPU's performance in Arrow Lake relative to Copilot requirements.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user points out that the product fails to meet the minimum requirements for its intended branding.",
                   "replies": []
                 }
               ]
@@ -238,10 +238,10 @@
               "text": "Too sensible, won't happen.",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user is commenting on the lack of a sensible design in the current product line.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user implies that Intel's design choices are not sensible.",
               "replies": []
             },
             {
@@ -249,15 +249,16 @@
               "text": "#I DONT WANT E CORES. I DONT WANT E CORES. I DONT WANT E CORES.",
               "upvotes": 0,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user expresses a strong dislike for the E-core architecture used in the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user is explicitly stating they do not want E-cores.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

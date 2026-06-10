@@ -18,70 +18,70 @@
           "text": "Why would you treat the card price as $2,200 when the FE is $2,000?\u00a0",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses the pricing of the RTX 5090, not the RTX 4070 Ti Super.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking a factual question about pricing methodology.",
           "replies": [
             {
               "commentId": "m9os5d2",
               "text": "I assume its some average of all the editions, FE and AIB",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses the RTX 5090 pricing, which is off-topic for the target product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing a neutral assumption about pricing.",
               "replies": [
                 {
                   "commentId": "m9p11ph",
                   "text": "You can\u2019t just randomly change the pride of things like that when comparing value. The MSRP of a 5090 is $2K and many cards will be sold at that price, so manipulating it to artificially make it look worse is straight up dishonest.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The discussion is centered on the RTX 5090 MSRP and value comparison, not the 4070 Ti Super.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user expresses frustration and accuses the author of being dishonest regarding 5090 pricing.",
                   "replies": [
                     {
                       "commentId": "m9q85r7",
                       "text": "Its not randomly changed. The AIB cards are more expensive.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about RTX 5090 AIB card pricing, not the target product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is stating a fact about AIB cards.",
                       "replies": [
                         {
                           "commentId": "m9q8iyr",
                           "text": "I don\u2019t see how that is relevant in any way. The MSRP of a 5090 is $2,000, the fact that some AIBs are more expensive is completely irrelevant.\u00a0",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "The comment focuses on the RTX 5090 MSRP, which is irrelevant to the 4070 Ti Super.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is arguing a point about pricing relevance.",
                           "replies": [
                             {
                               "commentId": "m9q91xs",
                               "text": "They\u2019re doing a cost/performance ratio and the AIB cards will be the choice of a significant proportion of buyers. It\u2019s completely relevant.",
                               "upvotes": 1,
                               "classifyThis": true,
-                              "relevance": null,
-                              "relevanceReasoning": null,
-                              "sentiment": null,
-                              "sentimentReasoning": null,
+                              "relevance": "exclude",
+                              "relevanceReasoning": "The discussion is about the cost/performance ratio of the RTX 5090, not the 4070 Ti Super.",
+                              "sentiment": "neutral",
+                              "sentimentReasoning": "The user is explaining their reasoning for including AIB prices.",
                               "replies": [
                                 {
                                   "commentId": "m9q9dmw",
                                   "text": "It\u2019s unfortunate trying to argue with someone this dumb and disingenuous. \u00a0",
                                   "upvotes": 0,
                                   "classifyThis": true,
-                                  "relevance": null,
-                                  "relevanceReasoning": null,
-                                  "sentiment": null,
-                                  "sentimentReasoning": null,
+                                  "relevance": "exclude",
+                                  "relevanceReasoning": "This is a personal attack/banter between users and does not mention the product.",
+                                  "sentiment": "negative",
+                                  "sentimentReasoning": "The user is calling another user 'dumb and disingenuous'.",
                                   "replies": []
                                 }
                               ]
@@ -98,5 +98,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

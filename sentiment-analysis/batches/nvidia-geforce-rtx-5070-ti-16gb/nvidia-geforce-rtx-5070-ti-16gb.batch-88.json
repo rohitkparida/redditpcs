@@ -18,20 +18,20 @@
           "text": "comparing 5070 and 9070xt with their current prices is laughable",
           "upvotes": -3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is critiquing the value proposition by comparing the product's price to a competitor.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes the price comparison as 'laughable', indicating poor value.",
           "replies": [
             {
               "commentId": "mgz1c9m",
               "text": "Indeed. For this reason, the comparison is not based on current prices, but on assumed prices for the new cards and best prices for the old cards.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a factual explanation of the methodology used in the data provided, not an opinion on the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral, factual clarification.",
               "replies": []
             },
             {
@@ -39,20 +39,20 @@
               "text": "Which one would you go for, then? :)",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "This is a general question asking for a recommendation without providing any insight or opinion.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a simple question.",
               "replies": [
                 {
                   "commentId": "mhz45uw",
                   "text": "none of them lmao, i'm currently looking for 4070 supers myself",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user explicitly advises against buying either the 5070 or 9070XT, preferring an older model.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user rejects both products in favor of a previous generation card.",
                   "replies": []
                 }
               ]
@@ -64,13 +64,14 @@
           "text": "Soooo. Which one is the fastest?",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "This is a purely factual question about performance without any expressed opinion.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a simple question.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

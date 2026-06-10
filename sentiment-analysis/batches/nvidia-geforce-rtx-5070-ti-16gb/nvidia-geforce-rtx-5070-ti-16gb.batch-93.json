@@ -18,40 +18,40 @@
           "text": "(It's a 4070 super with dlss 4)",
           "upvotes": 48,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares the product's performance to a previous generation card, highlighting a specific feature.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a factual comparison without a clear positive or negative emotional tone.",
           "replies": [
             {
               "commentId": "mfzggn3",
               "text": "The 40 series is getting most of DLSS4 anyways. The only thing they aren\u2019t getting is the 4x frame gen.",
               "upvotes": 26,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion has shifted to general DLSS 4 compatibility across the 40 series, rather than the specific product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing factual information about feature availability.",
               "replies": [
                 {
                   "commentId": "mg37prv",
                   "text": "so a worthless feature.",
                   "upvotes": 7,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user expresses an opinion on the value of a key feature of the product.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user explicitly calls the feature 'worthless'.",
                   "replies": [
                     {
                       "commentId": "mgd7xen",
                       "text": "I like it.. makes cyberpunk feels that much more smoother",
                       "upvotes": 7,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user shares personal experience using the product's features in a specific game.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user states they 'like it' and that it makes the game feel 'smoother'.",
                       "replies": []
                     }
                   ]
@@ -61,10 +61,10 @@
                   "text": "3x and 4x",
                   "upvotes": -1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Low-effort comment providing only technical specifications (3x and 4x).",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is purely factual/technical.",
                   "replies": []
                 }
               ]
@@ -74,10 +74,10 @@
               "text": "It's a 4070 S with DLSS4 minus Multi Frame Generation",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a technical critique comparing the product to the 4070 Super.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a technical comparison without a clear positive or negative leaning.",
               "replies": []
             },
             {
@@ -85,10 +85,10 @@
               "text": "DLSS 4 works on all RTX cards. Just not frame gen junk.\u00a0",
               "upvotes": 12,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discussion about general DLSS 4 compatibility, not specific to the product's value or experience.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user refers to frame generation as 'junk'.",
               "replies": []
             },
             {
@@ -96,10 +96,10 @@
               "text": "DLSS 4 and higher real price = scam",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user expresses an opinion on the pricing and value of the product.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The user explicitly labels the product's pricing as a 'scam'.",
               "replies": []
             },
             {
@@ -107,10 +107,10 @@
               "text": "With *MFG",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort correction of a previous comment.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a simple technical correction.",
               "replies": []
             },
             {
@@ -118,15 +118,16 @@
               "text": "So... it's a 4070 Super then.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user concludes that the product is essentially the same as a previous generation card, implying poor value.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The implication is that the product is not a meaningful upgrade.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

@@ -18,30 +18,30 @@
           "text": "The core to core latency is really high which hamper the gaming performance \n\nIf this can be fixed with microcode update, the performance uplift will be huge, but If isn\u2019t it will be Zen + moment with Intel where the core actually good but the latency isn\u2019t there yet\n\nThis is first desktop non monolitic die from intel",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses specific technical performance issues (core-to-core latency) affecting gaming on the 285K.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user expresses that high latency hampers gaming performance and compares it to a previous failure.",
           "replies": [
             {
               "commentId": "ltmzz5f",
               "text": "> This is first desktop non monolithic die from Intel\n\nPentium D, [Core 2 Quad](https://www.anandtech.com/show/2112)\n, and [Clarkdale/Arrandale](https://www.anandtech.com/show/2846/6) would like to have a word with you",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Purely factual correction regarding the history of non-monolithic dies, not an opinion on the 285K.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual correction without sentiment toward the product.",
               "replies": [
                 {
                   "commentId": "ltn09ci",
                   "text": "Those are non monolotic CPU, but the die itself are monolitic, connected by interconnect, each chip has multiple die inside,\n\nThis one is different, there is one cpu die, but the die itself are not monolitic",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "Technical explanation of die architecture, lacking personal opinion or product critique.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a technical explanation without sentiment.",
                   "replies": []
                 }
               ]
@@ -53,20 +53,20 @@
           "text": "What I don't understand is why does Intel even release this? Is this just to show investors that the new packaging is going somewhere? Like it's one thing to show off a one off chip, its another to go into mass manufacturing with the design. And sure this design is not there yet, but it is a fine proof of concept. Still, this seems like a lot of money to spend on a messaging campaign. They would have to reduce the price 30% or more before it is even sort of price competitive. Can they even break even at that point?",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Critiques the product's value proposition and the decision to release it in its current state.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user questions the product's value and suggests it needs a 30% price cut to be competitive.",
           "replies": [
             {
               "commentId": "ltley8z",
               "text": "They have contracts to deliver a new generation to OEMs and they had already booked the wafers from TSMC - the dye was cast a long time ago. I imagine the simulations looked a lot better then the final result.",
               "upvotes": 7,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Speculates on Intel's business contracts and manufacturing, rather than the product's performance or value.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is speculative about business operations, not the product itself.",
               "replies": []
             },
             {
@@ -74,40 +74,40 @@
               "text": "This CPU will sell a bunch because it matters most to what's printing money right now: [machine learning/AI.](https://www.techpowerup.com/review/intel-core-ultra-9-285k/8.html) The 4090 taught us that much.",
               "upvotes": -1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides an opinion on why the product will sell based on AI capabilities.",
+              "sentiment": "positive",
+              "sentimentReasoning": "The user predicts the CPU will sell well due to its AI/ML capabilities.",
               "replies": [
                 {
                   "commentId": "ltlchfn",
                   "text": "If the NPU performance is the only thing that matters, than a dedicated gpu is a much better choice.",
                   "upvotes": 5,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Critiques the NPU performance relative to a dedicated GPU.",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "The user argues that a dedicated GPU is a better choice for NPU tasks.",
                   "replies": [
                     {
                       "commentId": "ltlsqsp",
                       "text": "The software will eventually be programmed so that a computer can use both at once and squeeze out extra performance.",
                       "upvotes": -1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the potential future performance of the NPU/GPU combination.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is discussing potential future software optimization without a clear positive or negative lean.",
                       "replies": [
                         {
                           "commentId": "ltm1z73",
                           "text": "_The Future is Fusion_ - AMD",
                           "upvotes": 4,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "A meme reference to AMD, not providing insight into the 285K.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The comment is a joke/meme.",
                           "replies": []
                         }
                       ]
@@ -123,10 +123,10 @@
           "text": "The 24 PCI-E LANES puts me off massively",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Expresses a specific technical complaint about the number of PCI-E lanes.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user states the lane count 'puts me off massively'.",
           "replies": []
         },
         {
@@ -134,10 +134,10 @@
           "text": "\nI spoke with an Intel representative in our country, and they advised me to wait for the Arrow Lake release, as it will be a better upgrade. However, with all the reviews out there, I\u2019m considering upgrading my Intel i5-12400 to an Intel i9-12900. On the other hand, my reviewer friend is suggesting I go for the i7-14700 instead.\n\nI do photo and video editing then gaming (valorant)",
           "upvotes": 3,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the 285K (Arrow Lake) as a potential upgrade path and compares it to other Intel chips.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is weighing options and seeking advice, not expressing a final sentiment.",
           "replies": []
         },
         {
@@ -145,10 +145,10 @@
           "text": "Nice skyrim reference.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Off-topic comment about a Skyrim reference.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a joke/meme.",
           "replies": []
         },
         {
@@ -156,10 +156,10 @@
           "text": "Yikes. Holding onto my 5950X until AM6/Intel Equivalent at least. Was hoping Intel would start improving since competition is good for all of us.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Decides against buying the product based on the reviews, choosing to keep their current AMD CPU.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is disappointed and will not buy the product.",
           "replies": []
         },
         {
@@ -167,10 +167,10 @@
           "text": "This doesn't seem good in terms of competition and AMD pricing. They may feel free to higher up their prices on the newer CPU's",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Discusses the product's impact on market competition and pricing.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user believes the product's lack of competitiveness may lead to higher AMD prices.",
           "replies": []
         },
         {
@@ -178,10 +178,10 @@
           "text": "Doing their best to make me keep my 11400F",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Implies the product is not worth upgrading to from an older Intel CPU.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user suggests the product's performance doesn't justify an upgrade.",
           "replies": []
         },
         {
@@ -189,10 +189,10 @@
           "text": "So in summary, its good for productivity type of tasks but bad for 1080p gaming, is that right ? Also, I think most of the people are getting 1440p monitor at this point , so how is overall gaming experience in 1440p resolution ?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Asks for a summary of performance in productivity vs gaming at different resolutions.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is asking for clarification on performance characteristics.",
           "replies": []
         },
         {
@@ -200,10 +200,10 @@
           "text": "\\*Bart writing on chalkboard\\*\n\n\"Arrow (to the knee) Lake\" would have been a more colloquial reference to Skyrim.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Off-topic comment about a Skyrim reference.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a joke/meme.",
           "replies": []
         },
         {
@@ -211,10 +211,10 @@
           "text": "No guys, i just bought a thinkpad with core ultra 7 processor. Damn",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discusses a laptop processor (Core Ultra 7), not the desktop 285K.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is talking about a different product.",
           "replies": []
         },
         {
@@ -222,10 +222,10 @@
           "text": "How does this compare to my intel core ix7 hyper ultra?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Low-effort joke/troll comment about a non-existent CPU.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a joke/meme.",
           "replies": []
         },
         {
@@ -233,20 +233,20 @@
           "text": "Sorry not sorry the ultra 9 285k is the only chip I would say is on par or better then AMDs equivalent in AI and chip capabilities, hardware is jumping really fast we still need nerds to sit there and computer screen uses...\u00a0",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "Claims the 285K is on par or better than AMD in AI and chip capabilities.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user expresses satisfaction with the chip's AI capabilities.",
           "replies": [
             {
               "commentId": "mgg6ido",
               "text": "14th gen Internal PCI bus traffic isn't on par with AMDs hence the slower game FPS\u00a0",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Discusses 14th gen Intel CPUs, not the Core Ultra 9 285K.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is about a different product generation.",
               "replies": []
             }
           ]
@@ -256,25 +256,26 @@
           "text": "My Ryzen 3600 in eco mode 45W still doesn't need to be upgraded",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discusses their own Ryzen 3600, not providing insight into the 285K.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is off-topic.",
           "replies": [
             {
               "commentId": "ltju8kb",
               "text": "Good for you? 3600-tier performance doesn\u2019t cut it for tons of people, and is irrelevant to a discussion thread for this Intel processor anyways",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Meta-comment about the thread discussion, not the product itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a meta-comment.",
               "replies": []
             }
           ]
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

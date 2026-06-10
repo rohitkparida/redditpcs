@@ -18,40 +18,40 @@
           "text": "thanks steve",
           "upvotes": 73,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a simple thank you message and does not provide insight into the product.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a polite expression of gratitude without a specific opinion on the product.",
           "replies": [
             {
               "commentId": "irx4yi8",
               "text": "Back to you Steve",
               "upvotes": 59,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is a conversational filler and does not discuss the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral conversational phrase.",
               "replies": [
                 {
                   "commentId": "irxcb1m",
                   "text": "Those stupid snippets he puts in get funnier every video",
                   "upvotes": 26,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses the content of a video, not the RTX 4090.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "The user expresses amusement and enjoyment of the video snippets.",
                   "replies": [
                     {
                       "commentId": "irxrolh",
                       "text": "is there a compilation yet?",
                       "upvotes": 9,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a question about a compilation video, not the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The comment is a factual question about content availability.",
                       "replies": []
                     },
                     {
@@ -59,10 +59,10 @@
                       "text": "What's the origin of them?",
                       "upvotes": 2,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a question about the origin of video snippets, not the product.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Lacks a sentiment leaning regarding the product.",
                       "replies": []
                     }
                   ]
@@ -73,5 +73,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

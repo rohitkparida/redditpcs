@@ -18,30 +18,30 @@
           "text": "So why did they divert power towards the 12v rail? I almost want to say they did this to make it look like they are more power efficient, but I can't imagine they would divert engineering resources to this degree to scam reviewers.",
           "upvotes": 5,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is questioning the power delivery and efficiency of the product, which is a technical critique.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user suggests Intel might be trying to 'scam reviewers' regarding power efficiency.",
           "replies": [
             {
               "commentId": "lu4usi6",
               "text": "No, they wouldn't. A lot of people seem to have misunderstood this aspect of the GN review.   \n  \nA particular Asus motherboard GN tested with feeds its CPU VRM from both EPS12V and ATX 24-pin connectors. This hasn't been the norm \\_recently\\_, but how do you think CPUs were powered before EPS12V existed? It is perfectly reasonable thing for a motherboard design to do (the 24-pin connector can supply up to 300W to the board), and again, is a choice made by the designers of the motherboard, not Intel.\n\nAll of GN's power/efficiency data that they presented included total draw over all connectors. So would data from any other reviewer looking at software-reported package or total system power, or better yet, at \"wall\" (mains) power with an external device. These data are in line with Intel's pre-release marketing. There is no \"hidden\" or \"secret\" or \"extra\" power draw.\n\nIt is great that GN went to the trouble to set up a full interposing rig to get really accurate independent measurements, but it is in no way \\_necessary\\_ to do that in order to see the CPU's full power draw, nor is there any suggestion in the video that any draw is \"hidden\" somehow, which again, would be stupid because anyone measuring total system power at the wall would see it.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is primarily a factual correction regarding motherboard VRM design and power measurement methods, lacking personal opinion on the product itself.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user provides a technical explanation without expressing a positive or negative sentiment toward the product.",
               "replies": [
                 {
                   "commentId": "lu4vznz",
                   "text": "As a side note, a lot of people commenting on this seem to be misusing the phrase \"12v rail\" or at least using it without knowing what it means.   \n  \n\"Rails\" refers to the voltage sources provided by the power supply. There is at least one rail for each distinct voltage (3.3V, 5V, 12V) and in the case of rarer multi-rail supplies, more than one rail of the same voltage (usually the 12V). In the case of a multi-rail power supply, which rails are present on a given MB connector is determined by which cable/plug from the power supply you connect to it. With a single rail power supply, any pin on any connector that is of the same voltage (and all the MB power connectors have 12V present) is on the \\_same\\_ rail.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a general technical explanation of what a '12v rail' is, which is off-topic from the product's performance or value.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is explaining a technical term without expressing an opinion on the product.",
                   "replies": []
                 }
               ]
@@ -53,10 +53,10 @@
           "text": "Intel should make Arrow lake the budget option and re re release the 13900k lmao.",
           "upvotes": 9,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is making a recommendation against the product by suggesting it should be a budget option instead.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user implies the product is not worth its current positioning as a high-end chip.",
           "replies": []
         },
         {
@@ -64,10 +64,10 @@
           "text": "They're so far behind. Look at the perf/watt numbers and it's staggering. In the gaming benchmarks, intel is using like almost double the power of AMD.",
           "upvotes": 8,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides an opinionated performance critique regarding power efficiency compared to AMD.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes the performance per watt as 'staggering' in a negative context, stating Intel is 'far behind'.",
           "replies": []
         },
         {
@@ -75,10 +75,10 @@
           "text": "LMAO 285K has a geomean of +7% over the 3-year old 12900K and is less stable for more than double the price ($290 vs. $630). If you must go Intel over AMD you may as well just scoop up one of those while you still can.",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides a direct comparison of performance and price (value) against older Intel chips and AMD.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user highlights poor value and stability issues, advising others to avoid the product.",
           "replies": []
         },
         {
@@ -86,13 +86,14 @@
           "text": "Damn it.  I was hoping that having more PCIe lanes (where it doesn't disable drives if you use too many) and faster RAM speeds would make this take off.  Sounds like it's pretty hamstrung by the chip at the core of it all.",
           "upvotes": 4,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user expresses disappointment in the product's core performance despite liking the platform features.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user describes the product as 'hamstrung' and expresses disappointment ('Damn it').",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

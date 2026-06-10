@@ -28,30 +28,30 @@
               "text": "Heck, good luck even finding it when it releases. Intel knows its own driver problems and thus are only pushing out small volumes in production.",
               "upvotes": -4,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The comment discusses the product's availability and links it to Intel's awareness of driver problems, which is a critique of the product's market strategy and underlying issues.",
+              "sentiment": "negative",
+              "sentimentReasoning": "The comment expresses a negative outlook on the product's availability and implies issues with Intel's driver maturity affecting production volumes.",
               "replies": [
                 {
                   "commentId": "irrc19i",
                   "text": "yeah you cant possibly know this.",
                   "upvotes": 4,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This comment is a direct rebuttal to a previous user's claim about product availability and driver issues, rather than providing new insight into the product itself.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a challenge to a previous statement's validity and does not express a clear positive or negative opinion about the product.",
                   "replies": [
                     {
                       "commentId": "irrdf6f",
                       "text": "Them making paper launches and even almost no GPU out there a few months after release points to that.",
                       "upvotes": -5,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The comment discusses the product's market availability, specifically mentioning 'paper launches' and scarcity, which is a critique of the product's launch and presence.",
+                      "sentiment": "negative",
+                      "sentimentReasoning": "The comment highlights negative aspects of the product's market presence, such as 'paper launches' and limited availability.",
                       "replies": []
                     }
                   ]
@@ -62,5 +62,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemini-2.5-flash"
 }

@@ -18,50 +18,50 @@
           "text": "I have a 3070, is it worth to upgrade to this?",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The user is asking a question about upgrading, which is purely factual/Q&A without providing an opinion or experience.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a question and does not express a positive or negative sentiment.",
           "replies": [
             {
               "commentId": "mpr829k",
               "text": "Im upgrading from a 3070 fe to a 5070, should arrive in 2 days. Can give ya an update.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The user is stating a fact about their upcoming purchase and offering to provide an update, which is not a meaningful insight into the product's performance or value.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a neutral statement of intent.",
               "replies": [
                 {
                   "commentId": "mpwlpkh",
                   "text": "That would be nice thank you",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "This is a low-effort response thanking the other user, which is not relevant to the product's performance or value.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The comment is a polite thank you, expressing no sentiment toward the product.",
                   "replies": [
                     {
                       "commentId": "mq65iyc",
                       "text": "So, only a day's worth of experience. Very noticeable improvement in all the games I play currently. Rust, Cyberpunk2077 and Oblivion Remaster. I am pretty happy with the upgrade man. If you can get one msrp, I'd say go for it. Can actually use RT too, 3070 was not really able to. \n\nI'd be happy to test something specifically, just lmk.",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "The user shares personal experience with the product, noting noticeable improvements in specific games and recommending it at MSRP.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "The user expresses satisfaction with the upgrade and recommends the product.",
                       "replies": [
                         {
                           "commentId": "mq8m3jy",
                           "text": "Thanks man! I just bought one from Best Buy online for 800",
                           "upvotes": 1,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "The user shares their purchase experience, including the price paid, which relates to the value/worth it factor.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "The user is simply stating they bought the card for $800, without expressing a positive or negative opinion on that price.",
                           "replies": []
                         }
                       ]
@@ -74,5 +74,6 @@
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

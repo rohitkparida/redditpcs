@@ -18,20 +18,20 @@
           "text": "while being a furnace",
           "upvotes": 36,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "User expresses a negative opinion on the product's thermals, calling it a 'furnace'.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The term 'furnace' indicates strong dissatisfaction with the heat output.",
           "replies": [
             {
               "commentId": "kqjto0e",
               "text": "If you let it run apeshit. Just like the 14900k, if you power limit it to the intel spec even air coolers can handle it",
               "upvotes": 24,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides technical critique and advice on managing the product's power limits to control heat.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing technical advice without a clear positive or negative emotional leaning.",
               "replies": []
             },
             {
@@ -39,10 +39,10 @@
               "text": "Gaming loads, no",
               "upvotes": 37,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Discusses the product's thermals specifically during gaming loads.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual statement about gaming loads and heat.",
               "replies": []
             },
             {
@@ -50,40 +50,40 @@
               "text": "These chips really surprised me, temperature wise. It only has a 240mm aio cooling it, and cinebench doesn't even make it tjmax out. I have it on intel's recommended power limits right now ( because of my 4090 and 850w psu, I don't want them ever running 100% at the same time - as unlikely as it is). Anyway in that state, the 14700k can't always sustain 5.5, but it certainly can in any game or emulator or any other day to day task I've run.\n\nWhen I was undervolting it too, it could sustain the max boost while running just about anything, including cinebench, while staying in the high 80s or low 90s.\n\nI dunno if, people have either blown this whole thing out of proportion or my motherboard is perhaps managing its power delivery better than others or something? Because I've had two of these chips now and neither of them have ever hit 100, even during all core workloads. And in gaming, the temps are totally reasonable. And thats only on a 240mm.\n\nLike are people turning off power limits, overclocking and overvolting their chips then wondering why they get hot? The sweet spot for raptor lake frequency is well below what the 13900k, 14900k, 14700k offer.\n\nI think these products are ones designed for people who want maximum frequency, best binning, best memory support... not  necessarily best efficiency. For that... 13400 or something?",
               "upvotes": 30,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Shares personal experience with the 14700K, discussing thermals, cooling, and performance.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User is satisfied with the performance and thermals when power limited or undervolted.",
               "replies": [
                 {
                   "commentId": "kql79ae",
                   "text": "Running at 90\u00b0C on an AIO is very hot.\u00a0\n\n\nAnd temperature != waste, the IHS could just be very good at distributing the wasteheat.\u00a0\n\n\nBut come on, running my 5950X full bore makes it consume like 220W and gives me 31000 points in CB at 82\u00b0C with an air cooler.\u00a0",
                   "upvotes": -1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Critiques the product's thermal performance compared to a competitor (AMD Ryzen 5950X).",
+                  "sentiment": "negative",
+                  "sentimentReasoning": "User considers 90C on an AIO to be 'very hot' and compares it unfavorably to their own CPU.",
                   "replies": [
                     {
                       "commentId": "kqnyyjg",
                       "text": "I was trying to run the same test under conditions similar to yours, which is why I was asking all those questions. You never answered so I took my best guess that you were using r23, power limited my 14700k to 220w and this is what I came up with:\n\nScore: 32392  \nMax package temp: 76c  \nMax package power draw: 221w ( sorry cheated by 1w)\n\nAnd if you don't believe me... here I took a screenshot:\n\n[Image](https://i.ibb.co/0t4qjnL/cinebench-14700k.png)\n\nAnyway I guess my point is, even though you can run an ungodly amount of energy through these chips, you really don't need to, to get good performance. They are quite efficient at the lower frequencies.",
                       "upvotes": 3,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Shares personal experience and benchmark results for the 14700K, arguing it is efficient at lower frequencies.",
+                      "sentiment": "positive",
+                      "sentimentReasoning": "User is happy with the performance and temperature (76c) achieved with power limits.",
                       "replies": [
                         {
                           "commentId": "kqxhj87",
                           "text": "&gt;Anyway I guess my point is, even though you can run an ungodly amount of energy through these chips, you really don't need to get good performance.\n\nThats true! With my 14900K limited at 200 W and tuned with AC and DC loadlines, I get ~37K after the 10 min test \ud83d\ude42\n\nWith the stock PL (253 W) and no tuning I would only score a couple of K more.",
                           "upvotes": 2,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "include",
+                          "relevanceReasoning": "Discusses performance and tuning of the 14900K, which is in the same product family.",
+                          "sentiment": "positive",
+                          "sentimentReasoning": "User is satisfied with the performance gains from tuning.",
                           "replies": []
                         }
                       ]
@@ -93,10 +93,10 @@
                       "text": "And did you tune it at all?",
                       "upvotes": 4,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "Purely a question about tuning, providing no insight into the product itself.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": []
                     }
                   ]
@@ -108,10 +108,10 @@
               "text": "Hey it is winter right now dont complain.\u00a0",
               "upvotes": 17,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "Low-effort joke about the weather, not providing meaningful insight.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
               "replies": []
             },
             {
@@ -119,20 +119,20 @@
               "text": "Do they really run that hot? I was considering upgrading from a 12600k running NH-D15",
               "upvotes": 6,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "A question about the product's thermals without providing an opinion or experience.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "N/A",
               "replies": [
                 {
                   "commentId": "kqk4aku",
                   "text": "They aren't that bad. If you clamp power to the lower 14600K spec you still outperform the i5 and single core shouldn't take a hit at all.",
                   "upvotes": 16,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Provides a recommendation on how to configure the 14700K to outperform an i5 while maintaining thermals.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "User suggests the product is a good value/performance choice if configured correctly.",
                   "replies": []
                 },
                 {
@@ -140,10 +140,10 @@
                   "text": "They do run hot, but no hotter than the Zen 4s except for thr x3D variants. \n\nBut is it so hot it\u2019s melting a hole in your casing? Fuck no. Manage the power limits and they\u2019re fine.",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Shares an opinion on the product's thermals, comparing it to Zen 4 CPUs.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user argues that the heat is manageable and not extreme, taking a neutral stance on the 'furnace' debate.",
                   "replies": []
                 },
                 {
@@ -151,30 +151,30 @@
                   "text": "Honestly it tops out at like 50 degrees for me, but I do have an AIO cooler and a case with really good airflow. I don\u2019t quite get the furnace comments lol",
                   "upvotes": 8,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Shares personal experience with the 14700K, stating it runs cool (50 degrees) with an AIO.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "User is satisfied with the product's thermals.",
                   "replies": [
                     {
                       "commentId": "kqkfwzh",
                       "text": "It's a meme at this point. Especially for the lower end chips. The i9 can keep toasty if you don't Tune it but, Anybody with any real PC knowledge knows how to do this. You can tell most of these guys only started using PCs around 2020. They wouldn't know what a Bios screen actually looked like if it slapped them in the face.",
                       "upvotes": 19,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "include",
+                      "relevanceReasoning": "Discusses the product family's thermals and the importance of tuning for enthusiast CPUs.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "The user is arguing a point about user competence rather than the product's inherent quality.",
                       "replies": [
                         {
                           "commentId": "kqogtgt",
                           "text": "That's what i hate about normies, they didn't know shit of what they bought but they just complain. When something goes wrong they blamed the company for their incompetence.\u00a0\n\n\nI mean who the hell buying an enthusiasts cpu which is unlocked like Intel K series but don't even understand about cpu tuning? That's too dumb !!",
                           "upvotes": 4,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Off-topic discussion about 'normies' and user incompetence, not about the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
                           "replies": []
                         }
                       ]
@@ -184,20 +184,20 @@
                       "text": "Furnace because all the heat your cooler puts out has to go somewhere",
                       "upvotes": -5,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "General physics discussion about heat, not specific to the product's performance.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "N/A",
                       "replies": [
                         {
                           "commentId": "kqkh7sv",
                           "text": "Well don\u2019t all CPUs have to put out some heat? We\u2019re talking basic physics here lol",
                           "upvotes": 6,
                           "classifyThis": true,
-                          "relevance": null,
-                          "relevanceReasoning": null,
-                          "sentiment": null,
-                          "sentimentReasoning": null,
+                          "relevance": "exclude",
+                          "relevanceReasoning": "Low-effort banter about physics, not providing insight into the product.",
+                          "sentiment": "neutral",
+                          "sentimentReasoning": "N/A",
                           "replies": []
                         }
                       ]
@@ -209,10 +209,10 @@
                   "text": "I did the same upgrade with the same cooler. I changed my cooler to a U12-A and it\u2019s fine. People over exaggerate the temperature and power issues with this CPU.",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Shares personal experience with the 14700K, stating that temperature issues are exaggerated.",
+                  "sentiment": "positive",
+                  "sentimentReasoning": "User is satisfied with the product and believes the negative reports are overblown.",
                   "replies": []
                 },
                 {
@@ -220,10 +220,10 @@
                   "text": "&gt;Do they really run that hot? I was considering upgrading from a 12600k running NH-D15\n\nFor gaming that will be absolutely fine. If you try to run an extended all core load, it might struggle a bit.",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "Provides an opinion on the product's thermal performance during gaming vs all-core loads.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user provides a balanced view of the product's thermals.",
                   "replies": []
                 }
               ]
@@ -233,10 +233,10 @@
               "text": "Just tune your cpu to Intel spec instead of letting it run much higher from mobo default settings? Or undervolt the cpu?\n\n\nHonestly if you can't tune or don't understand how to tune cpu then you should never buy any Intel K series cpu aka unlocked cpu. It's so dumb blaming your incompetence to Intel while you are the one buying cpu which is not for you.",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Provides technical critique and advice on how to use the Intel K series CPUs, including the 14700K.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is providing technical guidance and critiquing user behavior rather than the product itself.",
               "replies": []
             },
             {
@@ -244,10 +244,10 @@
               "text": "Who cares? Performance is all that matters.",
               "upvotes": -5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "Expresses an opinion that performance is the only thing that matters, dismissing thermal concerns.",
+              "sentiment": "positive",
+              "sentimentReasoning": "User prioritizes performance, which is the product's strength.",
               "replies": []
             }
           ]
@@ -257,10 +257,10 @@
           "text": "This subreddit is in manual approval mode, which means that **all submissions are automatically removed and must first be approved before they are visible**. Your post will only be approved if it concerns news or reviews related to Intel Corporation and its products or is a high quality discussion thread. Posts regarding purchase advice, cooling problems, technical support, etc... will not be approved. **If you are looking for purchasing advice please visit /r/buildapc. If you are looking for technical support please visit /r/techsupport or see the pinned /r/Intel megathread where Intel representatives and other users can assist you.**\n\n*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/intel) if you have any questions or concerns.*",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Automated bot message from the subreddit moderators.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
           "replies": []
         },
         {
@@ -268,10 +268,10 @@
           "text": "I wanted to upgrade to 14th gen, but sadly money and motherboard limitations said others wise. I upgraded from an GTX 980 to an RTX 4070 Super and from an i3 12100 to an i5 12600 none K (my motherboard has a 140W limit so this was the best I could do), hopefully this will last my 4 to 5 years.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discusses upgrading to other products (i5 12600), not the 14700K.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
           "replies": []
         },
         {
@@ -279,10 +279,10 @@
           "text": "I went from a i7 2600k to a i7 9700k. Big upgrade right there. Then i got bored and upgraded to a i7 13700kf. \nThats the biggest upgrade ive ever experienced. Couldn\u2019t believe the 13th gen performance.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Discusses upgrading to a 13700KF, not the 14700K.",
+          "sentiment": "positive",
+          "sentimentReasoning": "N/A",
           "replies": []
         },
         {
@@ -290,13 +290,14 @@
           "text": "I use KPx paste and spread.it with supplied spatula. A very thin layer.",
           "upvotes": 2,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "Off-topic discussion about thermal paste application, not the product itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "N/A",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

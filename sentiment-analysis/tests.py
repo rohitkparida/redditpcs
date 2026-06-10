@@ -235,6 +235,13 @@ class TestFlattenBatchComments(unittest.TestCase):
         self.assertEqual(result, [])
 
 class TestGeminiClassificationValidation(unittest.TestCase):
+    def test_fallback_models_are_gemma_only(self):
+        self.assertEqual(
+            auto_classify_gemini.GEMMA_FALLBACK_MODELS,
+            ["gemma-4-31b-it", "gemma-3-27b-it"],
+        )
+        self.assertTrue(all("gemma" in model for model in auto_classify_gemini.GEMMA_FALLBACK_MODELS))
+
     def test_list_batch_files_excludes_sidecars(self):
         with tempfile.TemporaryDirectory() as tmp:
             batch_dir = Path(tmp)

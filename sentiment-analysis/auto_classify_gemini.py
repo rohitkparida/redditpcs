@@ -23,6 +23,7 @@ for key, val in sorted(os.environ.items()):
     if key.startswith("GEMINI_API_KEY") and val.strip():
         API_KEYS.append(val.strip())
 current_key_index = 0
+GEMMA_FALLBACK_MODELS = ["gemma-4-31b-it", "gemma-3-27b-it"]
 
 def get_active_key():
     global current_key_index
@@ -171,8 +172,9 @@ def process_batch(batch_file, prompt_text, model="gemini-2.5-flash-lite"):
     }
 
 
-    # Dynamic fallback list: put the requested model first, then other robust models
-    all_models = ["gemini-2.5-flash-lite", "gemini-2.5-flash", "gemini-flash-latest", "gemini-2.0-flash-lite"]
+    # Keep classification on Gemma's separate daily request pools. Gemini
+    # fallbacks share exhausted Gemini quotas and only burn requests.
+    all_models = list(GEMMA_FALLBACK_MODELS)
     if model in all_models:
         all_models.remove(model)
     models_to_try = [model] + all_models

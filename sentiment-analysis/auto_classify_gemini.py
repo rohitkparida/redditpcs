@@ -180,6 +180,8 @@ def process_batch(batch_file, prompt_text, model="gemini-2.5-flash-lite"):
         all_models.remove(model)
     models_to_try = [model] + all_models
 
+    exhausted_keys = set()
+
     for current_model in models_to_try:
         print(f"Processing {batch_file.name} using Gemini model: {current_model}...")
         
@@ -190,8 +192,9 @@ def process_batch(batch_file, prompt_text, model="gemini-2.5-flash-lite"):
                 url = f"https://generativelanguage.googleapis.com/v1beta/models/{current_model}:generateContent?key={get_active_key()}"
                 headers = {"Content-Type": "application/json"}
                 
-                # Dynamically append minimal thinking config for Gemma models to bypass heavy reasoning latency
-                if "gemma" in current_model.lower():
+                # Dynamically append minimal thinking config ONLY for the primary model (avoid fallback timeout)
+                # Keep full thinking budget for fallback models (like 26b) to ensure valid/complete JSON format.
+                if "gemma" in current_model.lower() and current_model == PRIMARY_MODEL:
                     payload["generationConfig"]["thinkingConfig"] = {"thinkingLevel": "MINIMAL"}
                 elif "thinkingConfig" in payload["generationConfig"]:
                     del payload["generationConfig"]["thinkingConfig"]
@@ -203,12 +206,20 @@ def process_batch(batch_file, prompt_text, model="gemini-2.5-flash-lite"):
                 if response.status_code == 429:
                     err_msg = response.text
                     if "Quota exceeded" in err_msg and "requests" in err_msg and "FreeTier" in err_msg:
-                        if rotate_key():
-                            # Retry the current attempt with the new rotated key
+                        exhausted_keys.add(current_key_index)
+                        if len(exhausted_keys) >= len(API_KEYS):
+                            print(f"\n  [Quota] All {len(API_KEYS)} keys exhausted. Waiting 60s for reset...")
+                            time.sleep(60)
+                            exhausted_keys.clear()
+                            rotate_key()
                             continue
                         else:
-                            print(f"Daily requests limit exceeded for model {current_model}. Switching model...")
-                            break  # Break retry loop to try the NEXT model in the list
+                            if rotate_key():
+                                # Retry the current attempt with the new rotated key
+                                continue
+                            else:
+                                print(f"Daily requests limit exceeded for model {current_model}. Switching model...")
+                                break  # Break retry loop to try the NEXT model in the list
                     
                     wait_time = 30
                     print(f"\n  [WARN] Rate limit hit (429) for model {current_model}. Response body: {err_msg[:200]}")

@@ -236,9 +236,10 @@ class TestFlattenBatchComments(unittest.TestCase):
 
 class TestGeminiClassificationValidation(unittest.TestCase):
     def test_fallback_models_are_gemma_only(self):
+        self.assertEqual(auto_classify_gemini.PRIMARY_MODEL, "gemma-4-31b-it")
         self.assertEqual(
             auto_classify_gemini.GEMMA_FALLBACK_MODELS,
-            ["gemma-4-31b-it", "gemma-3-27b-it"],
+            ["gemma-4-26b-a4b-it"],
         )
         self.assertTrue(all("gemma" in model for model in auto_classify_gemini.GEMMA_FALLBACK_MODELS))
 

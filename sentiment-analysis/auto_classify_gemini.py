@@ -23,7 +23,8 @@ for key, val in sorted(os.environ.items()):
     if key.startswith("GEMINI_API_KEY") and val.strip():
         API_KEYS.append(val.strip())
 current_key_index = 0
-GEMMA_FALLBACK_MODELS = ["gemma-4-31b-it", "gemma-3-27b-it"]
+PRIMARY_MODEL = "gemma-4-31b-it"
+GEMMA_FALLBACK_MODELS = ["gemma-4-26b-a4b-it"]
 
 def get_active_key():
     global current_key_index

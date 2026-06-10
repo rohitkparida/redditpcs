@@ -18,10 +18,10 @@
           "text": "Looks like a great chip! I wish the 3300x was included in the comparison though, would've been interesting to see.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user expresses a positive opinion on the chip based on the review.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user describes the chip as 'great'.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "This is an awesome chip for the price point, no doubt about it, so take this as a genuine academic question rather than a criticism: \n\nIIRC Intel can fit 4 E cores into the die size of 1 P core. So for these lower end SKUs, why not do something like 3P/4E and give them a bit more resiliency to background loads like Discord, Windows update, general multi threaded workloads, etc.?\n\nIs it an architectural limitation where the added cache requirements make this more expensive? Or perhaps they want to limit scheduler issues on E cores in the presence of fewer P cores? \n\nIn my simplified mental map I'd love to see a gen where even the cheapest Celerons have something like 1P/4E and we can do away with dual cores altogether, but perhaps it's not that simple.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user provides an opinion on the product's value and asks technical questions about its architecture.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user calls it an 'awesome chip for the price point'.",
           "replies": []
         },
         {
@@ -40,10 +40,10 @@
           "text": "The new i3, at $130, is only barely worse than my 9900k, which I paid $350 for the motherboard and processor wow",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user compares the performance of the i3-12100F to their previous 9900k and notes the value.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user is impressed that a $130 chip is barely worse than a much more expensive older processor.",
           "replies": []
         },
         {
@@ -51,13 +51,14 @@
           "text": "Sucks it doesn't do that well compared to others in production tests which is understandable as it's only a quad core cpu but I still plan to get it anyways because it's FAR better than what I have, I'm on tight budget and it's sufficient enough for what I need.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user discusses the product's performance in production tests and its suitability for their budget.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user states it is 'FAR better' than their current setup and 'sufficient enough' for their needs.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

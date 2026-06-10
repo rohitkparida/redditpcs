@@ -18,10 +18,10 @@
           "text": "Daniel Owen is a good reviewer.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses a reviewer, not the product itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is expressing a positive opinion about a person, but it is not related to the product.",
           "replies": []
         },
         {
@@ -29,10 +29,10 @@
           "text": "[https://www.youtube.com/watch?v=S1eoaySW\\_9E](https://www.youtube.com/watch?v=S1eoaySW_9E) LTT staff swapped to an intel card for some time.... and this is their experiences.",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment provides a link to a video without offering a personal opinion or critique.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is purely informational and lacks sentiment regarding the product.",
           "replies": []
         },
         {
@@ -40,20 +40,20 @@
           "text": "Good luck getting it at that price , scalpers already have it at 400$+",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The comment discusses the availability and pricing of the product, which relates to its value proposition.",
+          "sentiment": "negative",
+          "sentimentReasoning": "The user is frustrated by scalpers driving up the price.",
           "replies": [
             {
               "commentId": "m1px4ni",
               "text": "Yeah so don\u2019t buy it from scalpers",
               "upvotes": 10,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The comment provides a recommendation regarding the purchase of the product.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user is giving practical advice to avoid scalpers, which is neutral toward the product's quality.",
               "replies": []
             }
           ]
@@ -63,30 +63,30 @@
           "text": "really wanted to build a 8086 with intel graphics. for the memes,",
           "upvotes": 1,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment is a joke about building a meme PC.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is a joke and does not express a sentiment about the product's performance or value.",
           "replies": [
             {
               "commentId": "m1sbti3",
               "text": "Their is a i7-8086K\n\nhttps://www.intel.com/content/www/us/en/products/sku/148263/intel-core-i78086k-processor-12m-cache-up-to-5-00-ghz/specifications.html",
               "upvotes": 2,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment discusses a CPU, not the Intel Arc B580 GPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is purely factual and not related to the product.",
               "replies": [
                 {
                   "commentId": "m1ucp2r",
                   "text": "I know and it cost like $500 for some stupid reason even though it's slow. I wanted them to come out with a an 8088 and an 8086 in each generation..",
                   "upvotes": 2,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment discusses CPUs and pricing, not the Intel Arc B580 GPU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is expressing a negative opinion about a CPU, not the product under analysis.",
                   "replies": []
                 }
               ]
@@ -98,13 +98,14 @@
           "text": "Funny how everyone says it has a problem with idle consumption, without saying that enabling ASPM solves it.... only techpowerup did the tests with it enabled",
           "upvotes": 0,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The comment provides a technical critique regarding idle power consumption and a solution.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is discussing a technical configuration to solve a problem, without a clear positive or negative leaning toward the product itself.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

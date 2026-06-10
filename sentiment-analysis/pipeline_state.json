@@ -703,9 +703,26 @@
   },
   "nvidia-geforce-rtx-5090-32gb": {
     "status": "failed",
-    "step": "classify_validation",
-    "error": "[Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-14.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-15.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-22.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-29.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-31.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-33.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-37.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-41.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-43.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'nvidia-geforce-rtx-5090-32gb.batch-44.json' has 7 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'nvidia-geforce-rtx-5090-32gb.batch-45.json' has 4 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-46.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] 'nvidia-geforce-rtx-5090-32gb.batch-48.json' has 12 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify] 'nvidia-geforce-rtx-5090-32gb.batch-52.json' has 6 comments but 0 included \u2014 possible prompt failure or all comments excluded. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-57.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-58.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-59.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-61.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'nvidia-geforce-rtx-5090-32gb.batch-62.json' has 1 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic.",
-    "updated_at": "2026-06-09T08:45:39"
+    "step": "aggregate",
+    "reason": "aggregation_error",
+    "warnings": [
+      "zero_include_batch:nvidia-geforce-rtx-5090-32gb.batch-44.json",
+      "zero_include_batch:nvidia-geforce-rtx-5090-32gb.batch-45.json",
+      "zero_include_batch:nvidia-geforce-rtx-5090-32gb.batch-48.json",
+      "zero_include_batch:nvidia-geforce-rtx-5090-32gb.batch-52.json"
+    ],
+    "metrics": {
+      "survivingThreads": 4,
+      "candidateComments": 579,
+      "includedComments": 166,
+      "contributingThreads": 4,
+      "largestThreadShare": 0.3373493975903614,
+      "includeRate": 0.4139650872817955,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {},
+    "error": "",
+    "updated_at": "2026-06-10T01:39:40"
   },
   "wd-black-sn770": {
     "status": "done",
@@ -720,10 +737,27 @@
     "updated_at": "2026-06-09T08:24:24"
   },
   "wd-black-sn850x": {
-    "status": "failed",
-    "step": "classify_validation",
-    "error": "[Classify] 'wd-black-sn850x.batch-02.json' has 15 comments but 0 included \u2014 possible prompt failure or all comments excluded.",
-    "updated_at": "2026-06-09T08:28:09"
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "zero_include_batch:wd-black-sn850x.batch-02.json"
+    ],
+    "metrics": {
+      "survivingThreads": 2,
+      "candidateComments": 90,
+      "includedComments": 20,
+      "contributingThreads": 2,
+      "largestThreadShare": 0.95,
+      "includeRate": 0.37735849056603776,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/wd-black-sn850x.classified.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-10T01:46:43"
   },
   "nvidia-geforce-rtx-5070-12gb": {
     "status": "failed",
@@ -749,7 +783,7 @@
     },
     "artifacts": {},
     "error": "",
-    "updated_at": "2026-06-10T00:08:05"
+    "updated_at": "2026-06-10T01:37:22"
   },
   "asus-rog-strix-x670e-i-gaming-wifi": {
     "status": "insufficient_sources",
@@ -804,7 +838,7 @@
     },
     "artifacts": {},
     "error": "",
-    "updated_at": "2026-06-09T23:54:12"
+    "updated_at": "2026-06-10T01:34:48"
   },
   "intel-core-ultra-5-250k": {
     "status": "failed",
@@ -825,7 +859,7 @@
     },
     "artifacts": {},
     "error": "",
-    "updated_at": "2026-06-09T22:04:07"
+    "updated_at": "2026-06-10T01:32:54"
   },
   "kingston-fury-beast-ddr5-6000-cl30": {
     "status": "insufficient_sources",
@@ -943,10 +977,14 @@
     "updated_at": "2026-06-09T13:12:38"
   },
   "teamgroup-t-create-classic-ddr5-6000-cl30": {
-    "status": "failed",
+    "status": "insufficient_sources",
     "step": "scrape_validation",
+    "reason": "no_surviving_threads",
+    "warnings": [],
+    "metrics": {},
+    "artifacts": {},
     "error": "[Scrape] sourceThreads is empty \u2014 no Reddit threads were recorded.",
-    "updated_at": "2026-06-09T10:03:33"
+    "updated_at": "2026-06-10T01:43:52"
   },
   "msi-mag-a850gl": {
     "status": "done",
@@ -999,7 +1037,7 @@
     },
     "artifacts": {},
     "error": "[Classify] 'nvidia-geforce-rtx-5060-ti-8gb.batch-30.json' has 22 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5060-ti-8gb.batch-34.json' has 7 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5060-ti-8gb.batch-35.json' has 8 unclassified comment(s).",
-    "updated_at": "2026-06-10T00:12:06"
+    "updated_at": "2026-06-10T01:36:28"
   },
   "msi-x670e-tomahawk": {
     "status": "insufficient_sources",
@@ -1025,10 +1063,32 @@
     "updated_at": "2026-06-09T22:18:52"
   },
   "nzxt-kraken-elite-360": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:38"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "zero_include_batch:nzxt-kraken-elite-360.batch-02.json",
+      "zero_include_batch:nzxt-kraken-elite-360.batch-04.json",
+      "zero_include_batch:nzxt-kraken-elite-360.batch-08.json",
+      "zero_include_batch:nzxt-kraken-elite-360.batch-10.json",
+      "zero_include_batch:nzxt-kraken-elite-360.batch-11.json",
+      "zero_include_batch:nzxt-kraken-elite-360.batch-15.json",
+      "zero_include_batch:nzxt-kraken-elite-360.batch-16.json",
+      "zero_include_batch:nzxt-kraken-elite-360.batch-55.json",
+      "zero_include_batch:nzxt-kraken-elite-360.batch-92.json",
+      "zero_include_batch:nzxt-kraken-elite-360.batch-93.json",
+      "zero_include_batch:nzxt-kraken-elite-360.batch-94.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 2,
+      "candidateComments": 222,
+      "classificationCompleteness": 0.0
+    },
+    "artifacts": {},
+    "error": "[Classify] 'nzxt-kraken-elite-360.batch-01.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-02.json' has 10 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-03.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-04.json' has 5 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-05.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-06.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-07.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-08.json' has 4 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-09.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-10.json' has 5 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-11.json' has 9 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-12.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-13.json' has 3 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-14.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-15.json' has 12 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-16.json' has 8 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-17.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-18.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-19.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-20.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-21.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-22.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-23.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-24.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-25.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-26.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-27.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-28.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-29.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-30.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-31.json' has 3 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-32.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-33.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-34.json' has 3 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-35.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-36.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-37.json' has 3 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-38.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-39.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-40.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-41.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-42.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-43.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-44.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-45.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-46.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-47.json' has 3 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-48.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-49.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-50.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-51.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-52.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-53.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-54.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-55.json' has 4 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-56.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-57.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-58.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-59.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-60.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-61.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-62.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-63.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-64.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-65.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-66.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-67.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-68.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-69.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-70.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-71.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-72.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-73.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-74.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-75.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-76.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-77.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-78.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-79.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-80.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-81.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-82.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-83.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-84.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-85.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-86.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-87.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-88.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-89.json' has 2 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-90.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-91.json' has 1 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-92.json' has 12 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-93.json' has 22 unclassified comment(s). | [Classify] 'nzxt-kraken-elite-360.batch-94.json' has 11 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:44:36"
   },
   "nvidia-geforce-rtx-4070-ti-super": {
     "status": "done",
@@ -1126,16 +1186,50 @@
     "updated_at": "2026-06-09T19:38:54"
   },
   "teamgroup-mp44l": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:38"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "low_candidate_volume",
+      "zero_include_batch:teamgroup-mp44l.batch-01.json",
+      "zero_include_batch:teamgroup-mp44l.batch-02.json",
+      "zero_include_batch:teamgroup-mp44l.batch-03.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 1,
+      "candidateComments": 56,
+      "classificationCompleteness": 0.0
+    },
+    "artifacts": {},
+    "error": "[Classify] 'teamgroup-mp44l.batch-01.json' has 19 unclassified comment(s). | [Classify] 'teamgroup-mp44l.batch-02.json' has 17 unclassified comment(s). | [Classify] 'teamgroup-mp44l.batch-03.json' has 20 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:43:52"
   },
   "patriot-viper-venom-ddr5-6400-cl32": {
-    "status": "failed",
-    "step": "classify_validation",
-    "error": "[Classify Warning] 'patriot-viper-venom-ddr5-6400-cl32.batch-01.json' has 2 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify Warning] 'patriot-viper-venom-ddr5-6400-cl32.batch-02.json' has 3 comment(s) but 0 included \u2014 small batch, may be legitimately off-topic. | [Classify] Include rate is 0.0% \u2014 suspiciously low. Check prompt or source quality.",
-    "updated_at": "2026-06-09T00:19:31"
+    "status": "insufficient_sources",
+    "step": "final_evidence",
+    "reason": "insufficient_included_evidence",
+    "warnings": [
+      "low_candidate_volume",
+      "zero_include_batch:patriot-viper-venom-ddr5-6400-cl32.batch-01.json",
+      "zero_include_batch:patriot-viper-venom-ddr5-6400-cl32.batch-02.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 5,
+      "candidateComments": 24,
+      "includedComments": 0,
+      "contributingThreads": 0,
+      "largestThreadShare": 0,
+      "includeRate": 0.0,
+      "classificationCompleteness": 1.0
+    },
+    "artifacts": {
+      "classified": "classified/patriot-viper-venom-ddr5-6400-cl32.classified.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-10T01:40:02"
   },
   "noctua-nh-u12s-redux": {
     "status": "insufficient_sources",
@@ -1166,10 +1260,23 @@
     "updated_at": "2026-06-09T22:41:36"
   },
   "seasonic-focus-gx": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:38"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "low_candidate_volume",
+      "zero_include_batch:seasonic-focus-gx.batch-01.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 1,
+      "candidateComments": 6,
+      "classificationCompleteness": 0.0
+    },
+    "artifacts": {},
+    "error": "[Classify] 'seasonic-focus-gx.batch-01.json' has 6 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:40:09"
   },
   "fractal-design-north": {
     "status": "insufficient_sources",
@@ -1316,9 +1423,9 @@
     "updated_at": "2026-06-09T22:15:58"
   },
   "intel-arc-a750-8gb": {
-    "status": "failed",
-    "step": "aggregate",
-    "reason": "aggregation_error",
+    "status": "done",
+    "step": "complete",
+    "reason": null,
     "warnings": [
       "zero_include_batch:intel-arc-a750-8gb.batch-08.json",
       "zero_include_batch:intel-arc-a750-8gb.batch-11.json",
@@ -1341,9 +1448,12 @@
       "includeRate": 0.30036630036630035,
       "classificationCompleteness": 1.0
     },
-    "artifacts": {},
+    "artifacts": {
+      "classified": "classified/intel-arc-a750-8gb.classified.json",
+      "database": "../src/data/gpus.json"
+    },
     "error": "",
-    "updated_at": "2026-06-09T20:59:39"
+    "updated_at": "2026-06-10T01:12:32"
   },
   "lian-li-o11-dynamic-evo": {
     "status": "insufficient_sources",
@@ -1380,10 +1490,50 @@
     "updated_at": "2026-06-09T22:45:15"
   },
   "thermalright-peerless-assassin-120-se": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:38"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-01.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-02.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-03.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-04.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-05.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-07.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-08.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-09.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-12.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-13.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-15.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-16.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-17.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-21.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-22.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-24.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-26.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-28.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-29.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-30.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-31.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-32.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-33.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-34.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-35.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-36.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-37.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-38.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-41.json",
+      "zero_include_batch:thermalright-peerless-assassin-120-se.batch-42.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 10,
+      "candidateComments": 346,
+      "classificationCompleteness": 0.0
+    },
+    "artifacts": {},
+    "error": "[Classify] 'thermalright-peerless-assassin-120-se.batch-01.json' has 25 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-02.json' has 24 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-03.json' has 21 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-04.json' has 7 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-05.json' has 23 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-06.json' has 3 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-07.json' has 22 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-08.json' has 14 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-09.json' has 9 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-10.json' has 2 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-11.json' has 3 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-12.json' has 4 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-13.json' has 10 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-14.json' has 3 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-15.json' has 6 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-16.json' has 7 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-17.json' has 6 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-18.json' has 2 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-19.json' has 1 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-20.json' has 1 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-21.json' has 12 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-22.json' has 8 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-23.json' has 2 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-24.json' has 4 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-25.json' has 2 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-26.json' has 5 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-27.json' has 2 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-28.json' has 5 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-29.json' has 6 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-30.json' has 5 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-31.json' has 11 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-32.json' has 10 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-33.json' has 16 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-34.json' has 8 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-35.json' has 4 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-36.json' has 7 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-37.json' has 4 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-38.json' has 5 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-39.json' has 2 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-40.json' has 2 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-41.json' has 19 unclassified comment(s). | [Classify] 'thermalright-peerless-assassin-120-se.batch-42.json' has 14 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:47:00"
   },
   "crucial-t705-gen-5": {
     "status": "insufficient_sources",
@@ -1452,25 +1602,26 @@
   },
   "intel-core-i7-14700k": {
     "status": "failed",
-    "step": "classification",
-    "reason": "classification_incomplete",
+    "step": "aggregate",
+    "reason": "aggregation_error",
     "warnings": [
       "zero_include_batch:intel-core-i7-14700k.batch-02.json",
-      "zero_include_batch:intel-core-i7-14700k.batch-03.json",
       "zero_include_batch:intel-core-i7-14700k.batch-05.json",
       "zero_include_batch:intel-core-i7-14700k.batch-16.json",
-      "zero_include_batch:intel-core-i7-14700k.batch-19.json",
-      "zero_include_batch:intel-core-i7-14700k.batch-20.json",
       "zero_include_batch:intel-core-i7-14700k.batch-25.json"
     ],
     "metrics": {
       "survivingThreads": 5,
       "candidateComments": 528,
-      "classificationCompleteness": 0.8977272727272727
+      "includedComments": 114,
+      "contributingThreads": 5,
+      "largestThreadShare": 0.35964912280701755,
+      "includeRate": 0.3343108504398827,
+      "classificationCompleteness": 1.0
     },
     "artifacts": {},
-    "error": "[Classify] 'intel-core-i7-14700k.batch-03.json' has 12 unclassified comment(s). | [Classify] 'intel-core-i7-14700k.batch-19.json' has 25 unclassified comment(s). | [Classify] 'intel-core-i7-14700k.batch-20.json' has 17 unclassified comment(s).",
-    "updated_at": "2026-06-09T22:15:25"
+    "error": "",
+    "updated_at": "2026-06-10T01:31:33"
   },
   "be-quiet-pure-power-12-m-850w": {
     "status": "insufficient_sources",
@@ -1551,24 +1702,17 @@
     "step": "classification",
     "reason": "classification_incomplete",
     "warnings": [
-      "zero_include_batch:intel-core-i5-14400f.batch-01.json",
       "zero_include_batch:intel-core-i5-14400f.batch-02.json",
-      "zero_include_batch:intel-core-i5-14400f.batch-03.json",
-      "zero_include_batch:intel-core-i5-14400f.batch-04.json",
-      "zero_include_batch:intel-core-i5-14400f.batch-05.json",
-      "zero_include_batch:intel-core-i5-14400f.batch-06.json",
-      "zero_include_batch:intel-core-i5-14400f.batch-07.json",
-      "zero_include_batch:intel-core-i5-14400f.batch-08.json",
-      "anomalous_include_rate_low:0.0206"
+      "zero_include_batch:intel-core-i5-14400f.batch-07.json"
     ],
     "metrics": {
       "survivingThreads": 4,
       "candidateComments": 194,
-      "classificationCompleteness": 0.08762886597938144
+      "classificationCompleteness": 0.8711340206185567
     },
     "artifacts": {},
-    "error": "[Classify] 'intel-core-i5-14400f.batch-01.json' has 23 unclassified comment(s). | [Classify] 'intel-core-i5-14400f.batch-02.json' has 17 unclassified comment(s). | [Classify] 'intel-core-i5-14400f.batch-03.json' has 23 unclassified comment(s). | [Classify] 'intel-core-i5-14400f.batch-04.json' has 17 unclassified comment(s). | [Classify] 'intel-core-i5-14400f.batch-05.json' has 25 unclassified comment(s). | [Classify] 'intel-core-i5-14400f.batch-06.json' has 23 unclassified comment(s). | [Classify] 'intel-core-i5-14400f.batch-07.json' has 25 unclassified comment(s). | [Classify] 'intel-core-i5-14400f.batch-08.json' has 24 unclassified comment(s).",
-    "updated_at": "2026-06-09T21:19:44"
+    "error": "[Classify] 'intel-core-i5-14400f.batch-07.json' has 25 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:31:47"
   },
   "asrock-b650m-pro-rs": {
     "status": "insufficient_sources",
@@ -1890,7 +2034,7 @@
     },
     "artifacts": {},
     "error": "",
-    "updated_at": "2026-06-09T20:41:59"
+    "updated_at": "2026-06-10T01:15:40"
   },
   "intel-arc-b570-10gb": {
     "status": "insufficient_sources",
@@ -1915,52 +2059,36 @@
     "updated_at": "2026-06-09T20:31:50"
   },
   "intel-arc-b580": {
-    "status": "failed",
-    "step": "classification",
-    "reason": "classification_incomplete",
+    "status": "done",
+    "step": "complete",
+    "reason": null,
     "warnings": [
       "zero_include_batch:intel-arc-b580.batch-06.json",
-      "zero_include_batch:intel-arc-b580.batch-20.json",
-      "zero_include_batch:intel-arc-b580.batch-21.json",
       "zero_include_batch:intel-arc-b580.batch-22.json",
-      "zero_include_batch:intel-arc-b580.batch-23.json",
-      "zero_include_batch:intel-arc-b580.batch-24.json",
-      "zero_include_batch:intel-arc-b580.batch-26.json",
-      "zero_include_batch:intel-arc-b580.batch-27.json",
       "zero_include_batch:intel-arc-b580.batch-28.json",
-      "zero_include_batch:intel-arc-b580.batch-29.json",
-      "zero_include_batch:intel-arc-b580.batch-30.json",
-      "zero_include_batch:intel-arc-b580.batch-39.json",
-      "zero_include_batch:intel-arc-b580.batch-40.json",
-      "zero_include_batch:intel-arc-b580.batch-42.json",
-      "zero_include_batch:intel-arc-b580.batch-43.json",
-      "zero_include_batch:intel-arc-b580.batch-44.json",
-      "zero_include_batch:intel-arc-b580.batch-45.json",
-      "zero_include_batch:intel-arc-b580.batch-46.json",
-      "zero_include_batch:intel-arc-b580.batch-47.json",
-      "zero_include_batch:intel-arc-b580.batch-48.json",
-      "zero_include_batch:intel-arc-b580.batch-49.json"
+      "zero_include_batch:intel-arc-b580.batch-29.json"
     ],
     "metrics": {
       "survivingThreads": 7,
       "candidateComments": 1126,
-      "classificationCompleteness": 0.6811722912966253
+      "includedComments": 277,
+      "contributingThreads": 7,
+      "largestThreadShare": 0.4620938628158845,
+      "includeRate": 0.4570957095709571,
+      "classificationCompleteness": 1.0
     },
-    "artifacts": {},
-    "error": "[Classify] 'intel-arc-b580.batch-20.json' has 10 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-21.json' has 25 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-23.json' has 25 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-24.json' has 25 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-26.json' has 25 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-27.json' has 20 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-30.json' has 12 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-39.json' has 25 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-40.json' has 25 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-42.json' has 20 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-43.json' has 23 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-44.json' has 24 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-45.json' has 18 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-46.json' has 24 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-47.json' has 25 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-48.json' has 8 unclassified comment(s). | [Classify] 'intel-arc-b580.batch-49.json' has 25 unclassified comment(s).",
-    "updated_at": "2026-06-09T21:59:25"
+    "artifacts": {
+      "classified": "classified/intel-arc-b580.classified.json",
+      "database": "../src/data/gpus.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-10T01:25:48"
   },
   "intel-core-i3-12100f": {
-    "status": "failed",
+    "status": "review",
     "step": "classification",
-    "reason": "classification_incomplete",
+    "reason": "incomplete_classification",
     "warnings": [
-      "zero_include_batch:intel-core-i3-12100f.batch-12.json",
-      "zero_include_batch:intel-core-i3-12100f.batch-14.json",
-      "zero_include_batch:intel-core-i3-12100f.batch-15.json",
-      "zero_include_batch:intel-core-i3-12100f.batch-16.json",
-      "zero_include_batch:intel-core-i3-12100f.batch-17.json",
-      "zero_include_batch:intel-core-i3-12100f.batch-18.json",
       "zero_include_batch:intel-core-i3-12100f.batch-21.json",
       "zero_include_batch:intel-core-i3-12100f.batch-23.json",
       "zero_include_batch:intel-core-i3-12100f.batch-27.json",
@@ -1972,32 +2100,36 @@
     "metrics": {
       "survivingThreads": 5,
       "candidateComments": 547,
-      "classificationCompleteness": 0.7367458866544789
+      "classificationCompleteness": 0.9945155393053017
     },
-    "artifacts": {},
-    "error": "[Classify] 'intel-core-i3-12100f.batch-12.json' has 20 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-14.json' has 17 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-15.json' has 25 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-16.json' has 4 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-17.json' has 25 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-18.json' has 25 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-19.json' has 3 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-20.json' has 1 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-21.json' has 10 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-22.json' has 2 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-23.json' has 5 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-31.json' has 2 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-42.json' has 1 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-63.json' has 1 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-68.json' has 1 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-84.json' has 1 unclassified comment(s). | [Classify] 'intel-core-i3-12100f.batch-96.json' has 1 unclassified comment(s).",
-    "updated_at": "2026-06-09T22:03:41"
+    "artifacts": {
+      "classified": "classified/intel-core-i3-12100f.classified.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-10T01:21:21"
   },
   "intel-core-i5-12600kf": {
-    "status": "failed",
-    "step": "classification",
-    "reason": "classification_incomplete",
+    "status": "done",
+    "step": "complete",
+    "reason": null,
     "warnings": [
-      "zero_include_batch:intel-core-i5-12600kf.batch-01.json",
-      "zero_include_batch:intel-core-i5-12600kf.batch-05.json",
-      "zero_include_batch:intel-core-i5-12600kf.batch-07.json",
-      "zero_include_batch:intel-core-i5-12600kf.batch-08.json",
-      "zero_include_batch:intel-core-i5-12600kf.batch-09.json",
-      "zero_include_batch:intel-core-i5-12600kf.batch-10.json"
+      "concentration_warning:0.8305"
     ],
     "metrics": {
       "survivingThreads": 3,
       "candidateComments": 210,
-      "classificationCompleteness": 0.3904761904761905
+      "includedComments": 59,
+      "contributingThreads": 3,
+      "largestThreadShare": 0.8305084745762712,
+      "includeRate": 0.3710691823899371,
+      "classificationCompleteness": 1.0
     },
-    "artifacts": {},
-    "error": "[Classify] 'intel-core-i5-12600kf.batch-01.json' has 25 unclassified comment(s). | [Classify] 'intel-core-i5-12600kf.batch-05.json' has 21 unclassified comment(s). | [Classify] 'intel-core-i5-12600kf.batch-07.json' has 24 unclassified comment(s). | [Classify] 'intel-core-i5-12600kf.batch-08.json' has 23 unclassified comment(s). | [Classify] 'intel-core-i5-12600kf.batch-09.json' has 25 unclassified comment(s). | [Classify] 'intel-core-i5-12600kf.batch-10.json' has 10 unclassified comment(s).",
-    "updated_at": "2026-06-09T21:12:57"
+    "artifacts": {
+      "classified": "classified/intel-core-i5-12600kf.classified.json",
+      "database": "../src/data/cpus.json"
+    },
+    "error": "",
+    "updated_at": "2026-06-10T01:22:20"
   },
   "montech-king-95-pro": {
     "status": "insufficient_sources",
@@ -2086,7 +2218,7 @@
     },
     "artifacts": {},
     "error": "",
-    "updated_at": "2026-06-10T00:05:00"
+    "updated_at": "2026-06-10T01:34:28"
   },
   "nvidia-geforce-rtx-5070-ti-16gb": {
     "status": "review",
@@ -2120,58 +2252,298 @@
     "updated_at": "2026-06-10T01:09:52"
   },
   "nvidia-geforce-rtx-5080-16gb": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:37"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-03.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-05.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-06.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-10.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-20.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-21.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-22.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-25.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-29.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-30.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-31.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-33.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-35.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-36.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-37.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-40.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-42.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-44.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-45.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-46.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-47.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-48.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-50.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-52.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-53.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-54.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-55.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-56.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-57.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-59.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-61.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-63.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-64.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-66.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-68.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-69.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-71.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-73.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-74.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-75.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-78.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-80.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-81.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-84.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-85.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-87.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-88.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-90.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-91.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-92.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-93.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-94.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-95.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-97.json",
+      "zero_include_batch:nvidia-geforce-rtx-5080-16gb.batch-99.json",
+      "anomalous_include_rate_low:0.0324"
+    ],
+    "metrics": {
+      "survivingThreads": 5,
+      "candidateComments": 678,
+      "classificationCompleteness": 0.09734513274336283
+    },
+    "artifacts": {},
+    "error": "[Classify] 'nvidia-geforce-rtx-5080-16gb.batch-03.json' has 25 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-05.json' has 25 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-06.json' has 16 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-07.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-08.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-09.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-10.json' has 6 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-100.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-101.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-102.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-103.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-104.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-105.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-106.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-11.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-12.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-13.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-14.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-15.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-16.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-17.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-18.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-19.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-20.json' has 6 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-21.json' has 4 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-22.json' has 8 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-23.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-24.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-25.json' has 5 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-26.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-27.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-28.json' has 3 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-29.json' has 4 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-30.json' has 4 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-31.json' has 4 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-32.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-33.json' has 14 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-34.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-35.json' has 4 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-36.json' has 5 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-37.json' has 6 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-38.json' has 3 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-39.json' has 3 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-40.json' has 4 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-41.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-42.json' has 4 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-43.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-44.json' has 10 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-45.json' has 10 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-46.json' has 8 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-47.json' has 8 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-48.json' has 6 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-49.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-50.json' has 8 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-51.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-52.json' has 8 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-53.json' has 13 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-54.json' has 22 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-55.json' has 13 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-56.json' has 20 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-57.json' has 14 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-58.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-59.json' has 9 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-60.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-61.json' has 5 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-62.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-63.json' has 6 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-64.json' has 4 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-65.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-66.json' has 7 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-67.json' has 3 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-68.json' has 4 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-69.json' has 6 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-70.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-71.json' has 13 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-72.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-73.json' has 7 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-74.json' has 10 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-75.json' has 8 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-76.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-77.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-78.json' has 10 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-79.json' has 2 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-80.json' has 18 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-81.json' has 22 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-82.json' has 3 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-83.json' has 3 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-84.json' has 6 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-85.json' has 5 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-86.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-87.json' has 7 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-88.json' has 4 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-89.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-90.json' has 4 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-91.json' has 12 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-92.json' has 25 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-93.json' has 25 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-94.json' has 15 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-95.json' has 6 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-96.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-97.json' has 8 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-98.json' has 1 unclassified comment(s). | [Classify] 'nvidia-geforce-rtx-5080-16gb.batch-99.json' has 9 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:43:16"
   },
   "nzxt-h6-flow": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:38"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "zero_include_batch:nzxt-h6-flow.batch-01.json",
+      "zero_include_batch:nzxt-h6-flow.batch-02.json",
+      "zero_include_batch:nzxt-h6-flow.batch-03.json",
+      "zero_include_batch:nzxt-h6-flow.batch-04.json",
+      "zero_include_batch:nzxt-h6-flow.batch-05.json",
+      "zero_include_batch:nzxt-h6-flow.batch-06.json",
+      "zero_include_batch:nzxt-h6-flow.batch-07.json",
+      "zero_include_batch:nzxt-h6-flow.batch-08.json",
+      "zero_include_batch:nzxt-h6-flow.batch-09.json",
+      "zero_include_batch:nzxt-h6-flow.batch-10.json",
+      "zero_include_batch:nzxt-h6-flow.batch-11.json",
+      "zero_include_batch:nzxt-h6-flow.batch-12.json",
+      "zero_include_batch:nzxt-h6-flow.batch-13.json",
+      "zero_include_batch:nzxt-h6-flow.batch-14.json",
+      "zero_include_batch:nzxt-h6-flow.batch-15.json",
+      "zero_include_batch:nzxt-h6-flow.batch-16.json",
+      "zero_include_batch:nzxt-h6-flow.batch-17.json",
+      "zero_include_batch:nzxt-h6-flow.batch-18.json",
+      "zero_include_batch:nzxt-h6-flow.batch-19.json",
+      "zero_include_batch:nzxt-h6-flow.batch-20.json",
+      "zero_include_batch:nzxt-h6-flow.batch-21.json",
+      "zero_include_batch:nzxt-h6-flow.batch-22.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 7,
+      "candidateComments": 483,
+      "classificationCompleteness": 0.08074534161490683
+    },
+    "artifacts": {},
+    "error": "[Classify] 'nzxt-h6-flow.batch-01.json' has 25 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-03.json' has 17 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-04.json' has 21 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-05.json' has 25 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-06.json' has 25 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-07.json' has 25 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-08.json' has 24 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-09.json' has 20 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-10.json' has 21 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-11.json' has 23 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-12.json' has 24 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-13.json' has 25 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-14.json' has 24 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-15.json' has 25 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-17.json' has 24 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-18.json' has 25 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-19.json' has 19 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-20.json' has 25 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-21.json' has 15 unclassified comment(s). | [Classify] 'nzxt-h6-flow.batch-22.json' has 12 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:40:02"
   },
   "samsung-990-pro": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:38"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "low_preliminary_source_diversity",
+      "low_candidate_volume",
+      "zero_include_batch:samsung-990-pro.batch-01.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 1,
+      "candidateComments": 25,
+      "classificationCompleteness": 0.0
+    },
+    "artifacts": {},
+    "error": "[Classify] 'samsung-990-pro.batch-01.json' has 25 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:40:05"
   },
   "seasonic-vertex-gx-1000": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:38"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "zero_include_batch:seasonic-vertex-gx-1000.batch-04.json",
+      "zero_include_batch:seasonic-vertex-gx-1000.batch-07.json",
+      "zero_include_batch:seasonic-vertex-gx-1000.batch-141.json",
+      "zero_include_batch:seasonic-vertex-gx-1000.batch-92.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 3,
+      "candidateComments": 212,
+      "classificationCompleteness": 0.0
+    },
+    "artifacts": {},
+    "error": "[Classify] 'seasonic-vertex-gx-1000.batch-01.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-02.json' has 3 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-03.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-04.json' has 9 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-05.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-06.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-07.json' has 4 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-08.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-09.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-10.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-100.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-101.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-102.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-103.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-104.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-105.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-106.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-107.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-108.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-109.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-11.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-110.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-111.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-112.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-113.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-114.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-115.json' has 3 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-116.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-117.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-118.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-119.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-12.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-120.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-121.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-122.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-123.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-124.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-125.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-126.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-127.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-128.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-129.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-13.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-130.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-131.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-132.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-133.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-134.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-135.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-136.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-137.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-138.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-139.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-14.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-140.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-141.json' has 23 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-15.json' has 3 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-16.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-17.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-18.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-19.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-20.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-21.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-22.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-23.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-24.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-25.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-26.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-27.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-28.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-29.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-30.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-31.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-32.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-33.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-34.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-35.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-36.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-37.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-38.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-39.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-40.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-41.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-42.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-43.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-44.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-45.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-46.json' has 3 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-47.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-48.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-49.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-50.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-51.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-52.json' has 3 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-53.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-54.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-55.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-56.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-57.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-58.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-59.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-60.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-61.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-62.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-63.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-64.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-65.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-66.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-67.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-68.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-69.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-70.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-71.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-72.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-73.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-74.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-75.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-76.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-77.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-78.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-79.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-80.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-81.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-82.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-83.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-84.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-85.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-86.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-87.json' has 3 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-88.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-89.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-90.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-91.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-92.json' has 4 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-93.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-94.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-95.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-96.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-97.json' has 1 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-98.json' has 2 unclassified comment(s). | [Classify] 'seasonic-vertex-gx-1000.batch-99.json' has 1 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:47:19"
   },
   "silicon-power-zenith-ddr5-6000-cl30": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:38"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "low_candidate_volume",
+      "zero_include_batch:silicon-power-zenith-ddr5-6000-cl30.batch-01.json",
+      "zero_include_batch:silicon-power-zenith-ddr5-6000-cl30.batch-02.json",
+      "zero_include_batch:silicon-power-zenith-ddr5-6000-cl30.batch-03.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 4,
+      "candidateComments": 44,
+      "classificationCompleteness": 0.0
+    },
+    "artifacts": {},
+    "error": "[Classify] 'silicon-power-zenith-ddr5-6000-cl30.batch-01.json' has 19 unclassified comment(s). | [Classify] 'silicon-power-zenith-ddr5-6000-cl30.batch-02.json' has 19 unclassified comment(s). | [Classify] 'silicon-power-zenith-ddr5-6000-cl30.batch-03.json' has 6 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:43:25"
   },
   "sk-hynix-platinum-p41": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:38"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "zero_include_batch:sk-hynix-platinum-p41.batch-01.json",
+      "zero_include_batch:sk-hynix-platinum-p41.batch-02.json",
+      "zero_include_batch:sk-hynix-platinum-p41.batch-03.json",
+      "zero_include_batch:sk-hynix-platinum-p41.batch-04.json",
+      "zero_include_batch:sk-hynix-platinum-p41.batch-05.json",
+      "zero_include_batch:sk-hynix-platinum-p41.batch-06.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 3,
+      "candidateComments": 106,
+      "classificationCompleteness": 0.0
+    },
+    "artifacts": {},
+    "error": "[Classify] 'sk-hynix-platinum-p41.batch-01.json' has 23 unclassified comment(s). | [Classify] 'sk-hynix-platinum-p41.batch-02.json' has 8 unclassified comment(s). | [Classify] 'sk-hynix-platinum-p41.batch-03.json' has 25 unclassified comment(s). | [Classify] 'sk-hynix-platinum-p41.batch-04.json' has 10 unclassified comment(s). | [Classify] 'sk-hynix-platinum-p41.batch-05.json' has 19 unclassified comment(s). | [Classify] 'sk-hynix-platinum-p41.batch-06.json' has 21 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:43:43"
   },
   "teamgroup-t-force-delta-rgb-ddr5-6000-cl30": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:38"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-02.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-03.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-04.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-05.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-06.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-07.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-08.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-09.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-10.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-11.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-12.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-13.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-14.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-15.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-16.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-17.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-18.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-19.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-20.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-21.json",
+      "zero_include_batch:teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-22.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 3,
+      "candidateComments": 470,
+      "classificationCompleteness": 0.0
+    },
+    "artifacts": {},
+    "error": "[Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-01.json' has 2 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-02.json' has 25 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-03.json' has 24 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-04.json' has 23 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-05.json' has 23 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-06.json' has 25 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-07.json' has 25 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-08.json' has 5 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-09.json' has 24 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-10.json' has 25 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-11.json' has 19 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-12.json' has 25 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-13.json' has 17 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-14.json' has 13 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-15.json' has 25 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-16.json' has 24 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-17.json' has 25 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-18.json' has 25 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-19.json' has 25 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-20.json' has 25 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-21.json' has 25 unclassified comment(s). | [Classify] 'teamgroup-t-force-delta-rgb-ddr5-6000-cl30.batch-22.json' has 21 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:44:56"
   },
   "thermalright-assassin-x-120-refined-se": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:38"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-02.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-03.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-04.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-06.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-08.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-09.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-10.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-14.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-16.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-17.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-18.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-20.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-21.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-22.json",
+      "zero_include_batch:thermalright-assassin-x-120-refined-se.batch-23.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 3,
+      "candidateComments": 156,
+      "classificationCompleteness": 0.0
+    },
+    "artifacts": {},
+    "error": "[Classify] 'thermalright-assassin-x-120-refined-se.batch-01.json' has 3 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-02.json' has 8 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-03.json' has 22 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-04.json' has 17 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-05.json' has 2 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-06.json' has 6 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-07.json' has 2 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-08.json' has 7 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-09.json' has 5 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-10.json' has 8 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-11.json' has 2 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-12.json' has 2 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-13.json' has 1 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-14.json' has 7 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-15.json' has 2 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-16.json' has 11 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-17.json' has 4 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-18.json' has 4 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-19.json' has 1 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-20.json' has 10 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-21.json' has 11 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-22.json' has 11 unclassified comment(s). | [Classify] 'thermalright-assassin-x-120-refined-se.batch-23.json' has 10 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:45:44"
   },
   "thermalright-phantom-spirit-120-evo": {
-    "status": "pending",
-    "step": "rebuild_complete",
-    "error": "",
-    "updated_at": "2026-06-09T13:12:39"
+    "status": "failed",
+    "step": "classification",
+    "reason": "classification_incomplete",
+    "warnings": [
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-01.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-02.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-03.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-04.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-05.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-06.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-07.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-08.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-09.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-10.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-11.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-12.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-13.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-14.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-15.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-16.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-17.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-18.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-19.json",
+      "zero_include_batch:thermalright-phantom-spirit-120-evo.batch-20.json",
+      "anomalous_include_rate_low:0.0000"
+    ],
+    "metrics": {
+      "survivingThreads": 8,
+      "candidateComments": 431,
+      "classificationCompleteness": 0.0
+    },
+    "artifacts": {},
+    "error": "[Classify] 'thermalright-phantom-spirit-120-evo.batch-01.json' has 24 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-02.json' has 19 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-03.json' has 18 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-04.json' has 23 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-05.json' has 25 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-06.json' has 16 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-07.json' has 19 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-08.json' has 25 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-09.json' has 17 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-10.json' has 23 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-11.json' has 25 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-12.json' has 17 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-13.json' has 24 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-14.json' has 25 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-15.json' has 25 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-16.json' has 21 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-17.json' has 25 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-18.json' has 25 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-19.json' has 13 unclassified comment(s). | [Classify] 'thermalright-phantom-spirit-120-evo.batch-20.json' has 22 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:46:42"
   },
   "intel-core-ultra-7-265f": {
     "status": "insufficient_sources",
@@ -2256,18 +2628,17 @@
     "step": "classification",
     "reason": "classification_incomplete",
     "warnings": [
-      "zero_include_batch:intel-core-i5-14600kf.batch-01.json",
       "zero_include_batch:intel-core-i5-14600kf.batch-02.json",
       "zero_include_batch:intel-core-i5-14600kf.batch-04.json"
     ],
     "metrics": {
       "survivingThreads": 4,
       "candidateComments": 122,
-      "classificationCompleteness": 0.5081967213114754
+      "classificationCompleteness": 0.7950819672131147
     },
     "artifacts": {},
-    "error": "[Classify] 'intel-core-i5-14600kf.batch-01.json' has 23 unclassified comment(s). | [Classify] 'intel-core-i5-14600kf.batch-02.json' has 12 unclassified comment(s). | [Classify] 'intel-core-i5-14600kf.batch-04.json' has 25 unclassified comment(s).",
-    "updated_at": "2026-06-09T21:26:09"
+    "error": "[Classify] 'intel-core-i5-14600kf.batch-04.json' has 25 unclassified comment(s).",
+    "updated_at": "2026-06-10T01:29:21"
   },
   "nvidia-geforce-rtx-5050-8gb": {
     "status": "insufficient_sources",

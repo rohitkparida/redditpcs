@@ -28,10 +28,10 @@
               "text": "Steve from Hardware Unboxed posted [a review of i5-12400](https://youtu.be/2J0iP520WoY) yesterday.",
               "upvotes": 5,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is purely factual, providing a link to a review of a different product (i5-12400).",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual statement without any expressed opinion.",
               "replies": []
             },
             {
@@ -39,10 +39,10 @@
               "text": "The 3900X was never meant solely for gaming though, the 3600 was always the go to most popular Zen 2 CPU for most value oriented gaming pcs, at least back on 2019.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion is about the Ryzen 3600 and 3900X, not the i3-12100F.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The comment is a factual discussion about older AMD CPUs.",
               "replies": []
             }
           ]
@@ -52,20 +52,20 @@
           "text": "Steve's H610 info is incorrect, its going off the CES typo slide, which contradicted what ARK said and other documents Intel has on their site. Ian at Anand confirmed with intel that H610 supports 2 memory channels, not 1 like was listed\n\nhttps://twitter.com/IanCutress/status/1480573841088950273/photo/1",
           "upvotes": 98,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "exclude",
+          "relevanceReasoning": "The comment discusses motherboard (H610) specifications and a typo in a review, not the CPU itself.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The comment is correcting a technical detail about motherboards.",
           "replies": [
             {
               "commentId": "hs6mur8",
               "text": "I was wondering what this was about. Seemed pretty insane to gut an entire memory channel even on the cheapest motherboards.",
               "upvotes": 23,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about motherboard memory channels, not the i3-12100F CPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "H610 motherboard discussion.",
               "replies": []
             },
             {
@@ -73,30 +73,30 @@
               "text": "I don't even know how a typo like that gets in, unless the slide used was originally meant to out leakers inside Intel.",
               "upvotes": 18,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about a typo on a slide, not the product performance or experience.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Discussion about a typo.",
               "replies": [
                 {
                   "commentId": "hs948mz",
                   "text": "Someone in marketing misinterpreted \"one DIMM per channel\" (which is what the actual restriction is for H610) as \"one memory channel\" and nobody noticed.\n\nSince if you replace \"memory channels\" with \"DIMMs per channel\" on the slide, the numbers would line up accurately, as it would indeed be 2/2/1 for H670/B660/H610.\n\nIt got me too, and I had to wait until they published specs in ark to find out the truth. I just figured they were just saving H610 (which was rumored to be canceled anyway) for cheap OEM systems that would built primarily with DDR5 (since OEMs have easier access to it), which would be less hampered by one memory channel since it would at least be split in two sub channels, or for cheap DDR4 office PCs that tend to only run single channel anyway. But I'm glad that turned out to be false.",
                   "upvotes": 8,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about motherboard specs (H610/B660/H670), not the i3-12100F CPU.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Technical discussion about motherboard memory channels.",
                   "replies": [
                     {
                       "commentId": "hs9504d",
                       "text": "That immediately makes sense to me, and it's now very obvious. I think you're right on the money.",
                       "upvotes": 5,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a low-effort agreement with a discussion about motherboards.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Agreement with a technical point about motherboards.",
                       "replies": []
                     }
                   ]
@@ -108,30 +108,30 @@
               "text": "Damn it. I just ordered a b660.",
               "upvotes": 1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about ordering a B660 motherboard, not the CPU.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "User is expressing frustration about a motherboard purchase.",
               "replies": [
                 {
                   "commentId": "hs85k28",
                   "text": "How much is the b660 costing where you live?",
                   "upvotes": 1,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is a factual question about motherboard pricing.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Factual question about motherboard cost.",
                   "replies": [
                     {
                       "commentId": "hsawt7r",
                       "text": "$139 US",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is a factual answer about motherboard pricing.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Factual answer about motherboard cost.",
                       "replies": []
                     }
                   ]
@@ -145,30 +145,30 @@
           "text": "Impressive, this lowend i3 beat my ryzen 3600.  \nDamn AMD didn't drop their price, I'll riding my 3600 until I found 5800x under $200.",
           "upvotes": 19,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user shares an opinionated performance comparison between the i3-12100F and the Ryzen 3600.",
+          "sentiment": "positive",
+          "sentimentReasoning": "The user describes the i3 as 'impressive' for beating a Ryzen 3600.",
           "replies": [
             {
               "commentId": "hs7sekw",
               "text": "&gt;my 3600 until I found 5800x under $200.\n\nAt this point It's like a dream that will never happen at all which pretty much the same as some people who were hoping for RTX 2080 Ti to drop under $400 because of 3070 launch back on 2020 Ampere launch.\n\nIt never happened. And it seems like it never ever will...\n\nI'd love to be proven wrong though.",
               "upvotes": 8,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The discussion has shifted to the pricing of the Ryzen 5800X and RTX 2080 Ti.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Discussion about AMD CPU and GPU pricing trends.",
               "replies": [
                 {
                   "commentId": "hsajhyh",
                   "text": "Well, some people did sell their 2080ti at that price when the 3070 was announced. I bet they regret it",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about GPU pricing and regret, not the i3-12100F.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Discussion about GPU sales.",
                   "replies": []
                 }
               ]
@@ -178,30 +178,30 @@
               "text": "3600 bro here. I'm waiting to see 5800x3d numbers when it releases in the Spring. Amd is claiming the \"fastest gaming processor\"",
               "upvotes": 3,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about waiting for the Ryzen 5800X3D, not the i3-12100F.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Discussion about upcoming AMD CPUs.",
               "replies": [
                 {
                   "commentId": "hs90gc2",
                   "text": "It will very likely be the fastest, but if you are a 3600 bro you should probably just get a 5800X when it's on sale. It's going to be a halo sku, priced at least $450 and higher seems likely. It'll be maybe 15% better than a $350 5800X that you can buy today, and it'll cost at least 28% more.",
                   "upvotes": 6,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "exclude",
+                  "relevanceReasoning": "The comment is about the pricing and performance of the Ryzen 5800X and 5800X3D.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "Discussion about AMD CPU value.",
                   "replies": [
                     {
                       "commentId": "hsccbx0",
                       "text": "Exactly, that 5800x3d is gonna cost over $400 easily",
                       "upvotes": 1,
                       "classifyThis": true,
-                      "relevance": null,
-                      "relevanceReasoning": null,
-                      "sentiment": null,
-                      "sentimentReasoning": null,
+                      "relevance": "exclude",
+                      "relevanceReasoning": "The comment is about the price of the Ryzen 5800X3D.",
+                      "sentiment": "neutral",
+                      "sentimentReasoning": "Speculation on AMD CPU pricing.",
                       "replies": []
                     }
                   ]
@@ -213,20 +213,20 @@
               "text": "&gt;Impressive, this lowend i3 beat my ryzen 3600.\n\nThe 3600 is kinda old at this point. This is expected.",
               "upvotes": -1,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "include",
+              "relevanceReasoning": "The user provides a technical critique/opinion on the performance comparison between the i3 and the Ryzen 3600.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "The user states that the i3 beating the 3600 is 'expected' due to the age of the 3600.",
               "replies": [
                 {
                   "commentId": "hsac6cn",
                   "text": "Its current market price doesn\u2019t reflect that",
                   "upvotes": 3,
                   "classifyThis": true,
-                  "relevance": null,
-                  "relevanceReasoning": null,
-                  "sentiment": null,
-                  "sentimentReasoning": null,
+                  "relevance": "include",
+                  "relevanceReasoning": "The user is discussing the value proposition of the i3-12100F relative to the Ryzen 3600's market price.",
+                  "sentiment": "neutral",
+                  "sentimentReasoning": "The user is making a point about market pricing without a clear positive or negative leaning.",
                   "replies": []
                 }
               ]
@@ -236,10 +236,10 @@
               "text": "Yeah, if only I could run a 5800x on my b350 grrrrr",
               "upvotes": 0,
               "classifyThis": true,
-              "relevance": null,
-              "relevanceReasoning": null,
-              "sentiment": null,
-              "sentimentReasoning": null,
+              "relevance": "exclude",
+              "relevanceReasoning": "The comment is about motherboard compatibility for a Ryzen 5800X.",
+              "sentiment": "neutral",
+              "sentimentReasoning": "Frustration about motherboard compatibility.",
               "replies": []
             }
           ]
@@ -249,13 +249,14 @@
           "text": "I love how they captioned an image of the 12100F by itself with \"The Intel i3-12100F next to AMD's current price-competition\"\n\n[Screenshot](https://i.imgur.com/eIfp8ok.jpg)",
           "upvotes": 19,
           "classifyThis": true,
-          "relevance": null,
-          "relevanceReasoning": null,
-          "sentiment": null,
-          "sentimentReasoning": null,
+          "relevance": "include",
+          "relevanceReasoning": "The user is commenting on the marketing/positioning of the i3-12100F as a budget competitor.",
+          "sentiment": "neutral",
+          "sentimentReasoning": "The user is observing the marketing image without expressing a clear positive or negative opinion on the product itself.",
           "replies": []
         }
       ]
     }
-  ]
+  ],
+  "model": "gemma-4-31b-it"
 }

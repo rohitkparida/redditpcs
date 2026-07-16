@@ -18,6 +18,10 @@ CANDIDATES = {
         "https://www.reddit.com/r/Corsair/comments/1jjw0wt/rm850x_vs_rm1000x_noise_at_600w_load/",
         "https://www.reddit.com/r/Corsair/comments/1puizdx/rm1000x_died_after_10_months/",
     ],
+    "gigabyte-b650-gaming-x-ax": [
+        "https://www.reddit.com/r/aorusin/comments/1ko3xhl/gigabyte_b650_gaming_x_ax_v2/",
+        "https://www.reddit.com/r/gigabyte/comments/1k0oosa/gigabyte_b650_gaming_x_ax_v2/",
+    ],
     "intel-core-i5-14400f": [
         "https://www.reddit.com/r/buildapc/comments/1tcqlhc/is_this_a_good_combo/",
         "https://hu.reddit.com/r/IntelArc/comments/1u7zlzq/arc_b580_the_outer_worlds_spacer_choice_edition/",
@@ -46,6 +50,8 @@ for product, urls in CANDIDATES.items():
     env = os.environ.copy()
     # Keep one unreachable Reddit endpoint from holding the whole product queue.
     env["REDDIT_REQUEST_TIMEOUT"] = "15"
+    env["REDDIT_JSON_LIMIT"] = "50"
+    env["REDDIT_JSON_DEPTH"] = "3"
     for url in urls:
         command.extend(["--source-url", url])
     try:

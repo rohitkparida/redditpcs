@@ -5,6 +5,7 @@ import time
 import argparse
 import requests
 from pathlib import Path
+from urllib.parse import urlparse
 from dotenv import load_dotenv
 import praw
 
@@ -39,12 +40,17 @@ def extract_comment_tree(comment, depth=1):
                 node['replies'].append(reply_node)
     return node
 
-def fetch_json_tree(url, timeout):
-    """Fetch a public Reddit thread JSON payload with a hard HTTP timeout."""
-    endpoint = url.rstrip('/') + '.json?raw_json=1'
-    response = requests.get(
+def fetch_json_tree(url, timeout, oauth_session):
+    """Fetch a Reddit thread through the OAuth JSON endpoint with a hard timeout."""
+    path = urlparse(url).path.rstrip('/') + '/'
+    endpoint = 'https://oauth.reddit.com' + path
+    response = oauth_session.get(
         endpoint,
-        headers={'User-Agent': os.getenv('REDDIT_USER_AGENT', 'redditpcs/1.0')},
+        params={
+            'raw_json': 1,
+            'limit': int(os.getenv('REDDIT_JSON_LIMIT', '500')),
+            'depth': int(os.getenv('REDDIT_JSON_DEPTH', '10')),
+        },
         timeout=timeout,
     )
     response.raise_for_status()
@@ -114,6 +120,23 @@ def fetch_product(product_slug: str, urls: list, output_path, max_retries=3, bac
         requestor_kwargs={"timeout": request_timeout},
     )
 
+    oauth_session = requests.Session()
+    oauth_session.headers.update({'User-Agent': user_agent})
+    try:
+        token_response = oauth_session.post(
+            'https://www.reddit.com/api/v1/access_token',
+            auth=(client_id, client_secret),
+            data={'grant_type': 'client_credentials'},
+            timeout=request_timeout,
+        )
+        token_response.raise_for_status()
+        oauth_session.headers.update({
+            'Authorization': f"bearer {token_response.json()['access_token']}"
+        })
+    except requests.RequestException as token_error:
+        print(f"    [OAuth JSON] Token request failed; falling back to PRAW: {token_error}")
+        oauth_session = None
+
     all_roots = []
     print(f"Fetching {len(urls)} threads via PRAW...")
 
@@ -124,7 +147,9 @@ def fetch_product(product_slug: str, urls: list, output_path, max_retries=3, bac
           try:
             print(f"  [{idx+1}/{len(urls)}] Fetching: {url}")
             try:
-                json_root = fetch_json_tree(url, request_timeout)
+                if oauth_session is None:
+                    raise RuntimeError("OAuth JSON session unavailable")
+                json_root = fetch_json_tree(url, request_timeout, oauth_session)
                 all_roots.append(json_root)
                 fetched = True
                 print("    Retrieved via Reddit JSON endpoint")

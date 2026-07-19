@@ -73,7 +73,7 @@ def main() -> None:
     for start in range(0, len(pending), 5):
         batch = pending[start : start + 5]
         compact = [{"commentId": x["commentId"], "products": x["products"], "text": x["suspicious"][0]["comment"].get("text", "")} for x in batch]
-        for attempt in range(3):
+        while True:
             try:
                 result, key_index = call_model(keys, compact, key_index)
                 decisions = {d["commentId"]: d for d in result.get("decisions", [])}
@@ -86,10 +86,8 @@ def main() -> None:
                 break
             except Exception as exc:
                 key_index += 1
-                if attempt == 2:
-                    raise
-                print(f"Batch retry: {exc}", flush=True)
-                time.sleep(5 * (attempt + 1))
+                print(f"Batch retry after cooldown: {exc}", flush=True)
+                time.sleep(120)
         time.sleep(5)
 
 

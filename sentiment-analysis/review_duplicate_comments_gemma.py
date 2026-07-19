@@ -37,8 +37,8 @@ def call_model(keys: list[str], payload: list[dict], key_index: int) -> tuple[di
         key = keys[key_index % len(keys)]
         response = requests.post(
             f"https://generativelanguage.googleapis.com/v1beta/models/{MODEL}:generateContent?key={key}",
-            json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"temperature": 0, "responseMimeType": "application/json"}},
-            timeout=60,
+            json={"contents": [{"parts": [{"text": prompt}]}], "generationConfig": {"temperature": 0, "responseMimeType": "application/json", "maxOutputTokens": 1000}},
+            timeout=120,
         )
         if response.status_code == 429:
             key_index += 1

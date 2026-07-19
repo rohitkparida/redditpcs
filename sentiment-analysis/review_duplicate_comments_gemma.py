@@ -11,7 +11,7 @@ import requests
 ROOT = Path(__file__).resolve().parent
 QUEUE = ROOT / "backfill_runs" / "duplicate_comment_review_queue.json"
 DECISIONS = ROOT / "backfill_runs" / "duplicate_comment_gemma_decisions.jsonl"
-MODEL = "gemma-4-26b-a4b-it"
+MODEL = "gemma-4-31b-it"
 
 
 def load_env() -> list[str]:
@@ -44,7 +44,13 @@ def call_model(keys: list[str], payload: list[dict], key_index: int) -> tuple[di
             key_index += 1
             continue
         response.raise_for_status()
-        text = response.json()["candidates"][0]["content"]["parts"][0]["text"]
+        parts = response.json()["candidates"][0].get("content", {}).get("parts", [])
+        final_parts = [part.get("text", "") for part in parts if part.get("text") and not part.get("thought")]
+        if not final_parts:
+            raise ValueError("Model response contained no final text part")
+        text = final_parts[-1].strip()
+        if text.startswith("```"):
+            text = text.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
         return json.loads(text), key_index
     raise RuntimeError("Gemma quota retries exhausted")
 
@@ -60,6 +66,9 @@ def main() -> None:
             if line.strip():
                 done.add(json.loads(line)["commentId"])
     pending = [item for item in queue if item["commentId"] not in done]
+    limit = int(os.getenv("REVIEW_LIMIT", "0"))
+    if limit:
+        pending = pending[:limit]
     key_index = 0
     for start in range(0, len(pending), 5):
         batch = pending[start : start + 5]
@@ -73,7 +82,7 @@ def main() -> None:
                 with DECISIONS.open("a", encoding="utf-8") as handle:
                     for item in batch:
                         handle.write(json.dumps(decisions[item["commentId"]], ensure_ascii=False) + "\n")
-                print(f"Reviewed {min(start + 20, len(pending))}/{len(pending)}", flush=True)
+                print(f"Reviewed {min(start + len(batch), len(pending))}/{len(pending)}", flush=True)
                 break
             except Exception as exc:
                 key_index += 1

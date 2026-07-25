@@ -1,55 +1,255 @@
 {
   "productName": "AMD Ryzen 9 9950X",
-  "analyzedAt": "2026-06-05T11:21:50.239864",
-  "totalThreads": 1,
+  "analyzedAt": "2026-07-22T08:20:48.471546",
+  "totalThreads": 5,
   "threads": [
     {
-      "url": "https://www.reddit.com/r/Amd/comments/1j9kwad/amd_ryzen_9_9900x3d_review_kitguru/",
-      "subreddit": "Amd",
-      "commentCount": 24,
-      "positive": 6,
-      "negative": 6,
-      "neutral": 12,
+      "url": "https://www.reddit.com/r/hardware/comments/1es12bl/amd_ryzen_9_9950x_cpu_review_benchmarks_vs_7950x/",
+      "subreddit": "hardware",
+      "commentCount": 50,
+      "positive": 3,
+      "negative": 34,
+      "neutral": 13,
       "topComments": [
         {
-          "author": "ohbabyitsme7",
-          "text": "I don't see it as comparable. It's up to 20% slower in 1%s in some games. That's an entire CPU gen of performance. In the Pharaoh example the regular 9950x has better minimums than the 9900x3D. In some games 6 cores is not enough.",
-          "upvotes": 15,
+          "author": "Geddagod",
+          "text": "&gt;It's still \\~5% faster at lower power on a marginally smaller die. This sub is treating zen 5 like the second coming of bulldozer and it's really rather ridiculous\n\nPeople are treating it as if it was meh, which it really is. \n\nThe die is smaller because the team behind the L3 knocked it out of the park- significantly smaller while also decreasing L3 latency in cycles, while maintaining the same frequency (I think, not sure about L3 clocks, but I believe it's the same). \n\nThe core area itself is much bigger, while being on a denser node, and only brings a generational uplift on the FP and AVX-512 side. INT is just straight up bad. \n\nThe power doesn't look great either.",
+          "upvotes": 9,
           "sentiment": "negative",
           "recommendation": null,
-          "commentId": "mhk1e5q"
+          "commentId": "li4gwlm"
         },
         {
-          "author": "Lonely_Drewbear",
-          "text": "AMD Ryzen 9 9900X3D Review - KitGuru",
-          "upvotes": 75,
-          "sentiment": "neutral",
+          "author": "[deleted]",
+          "text": "Cross CCD latency went from sub-80 ns to 180 ns.",
+          "upvotes": 256,
+          "sentiment": "negative",
           "recommendation": null,
-          "commentId": "1j9kwad"
+          "commentId": "li2ookj"
         },
         {
-          "author": "Gseventeen",
-          "text": "They should probably just stop messing with this CPU line. Its in no-mans land. Worse for gaming than the cheaper 8-core. And more expensive than just the regular non x3d chips if productivity is your concern. \n\nI would bet they'll sell fewer than 1-2% of all 9000-series x3d chips in this 12-core configuration.",
+          "author": "TR_2016",
+          "text": "Yep.\n\n\"At nearly 200 ns, cross-cluster latencies aren\u2019t far off from cross-socket latencies on a server platform. It\u2019s a regression compared to prior Zen generations, where cross-cluster latencies were more comparable to worst-case latencies on a monolithic mesh based design.\"\n\nfrom the Chips and Cheese article.",
+          "upvotes": 175,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "li2q1p2"
+        },
+        {
+          "author": "logosuwu",
+          "text": "For references, this is worse than the 1950X.",
+          "upvotes": 59,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "li3qgg6"
+        },
+        {
+          "author": "SoupaSoka",
+          "text": "This made me say \"wtf\" out loud.",
           "upvotes": 31,
           "sentiment": "negative",
           "recommendation": null,
-          "commentId": "mhk4nct"
-        },
+          "commentId": "li4rhkx"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/hardware/comments/1j8q8k1/amd_ryzen_9_9950x3d_cpu_review_benchmarks_vs/",
+      "subreddit": "hardware",
+      "commentCount": 30,
+      "positive": 11,
+      "negative": 10,
+      "neutral": 9,
+      "topComments": [
         {
-          "author": "Competitive-Tear5675",
-          "text": "They probably aren't actively making it. It's just trickling down from 9950x3d production line that failed to make it for whatever reason.",
-          "upvotes": 45,
-          "sentiment": null,
+          "author": "ExtendedDeadline",
+          "text": "Less cores and correspondingly less $$. I feel like that should be an obvious inclusion...?",
+          "upvotes": 38,
+          "sentiment": "neutral",
           "recommendation": null,
-          "commentId": "mhnbj5c"
+          "commentId": "mh7buqn"
         },
         {
-          "author": "phxrider09",
-          "text": "No, it's called having more business sense than the average 5 year old - it costs the same money to produce a 9600 as the 9800. They'd be clueless idiots to sell them as 6 core chips for $100+ less money when they can sell every single 9800 they can make at full price.\n\nOnce they have enough 9800 CCDs that won't run all 8 cores, they'll put out a limited 9600X3D to dump the bad CCDs rather than throw them in the trash and eat the production cost.",
-          "upvotes": 2,
+          "author": "SirActionhaHAA",
+          "text": "tldr\n\nThey overcame the core parking issue through chipset driver. It's now as fast as 9800x3d in gaming but with the multithreaded perf of 9950x. Best of both worlds i guess.",
+          "upvotes": 399,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "mh782vy"
+        },
+        {
+          "author": "Natural-Comparison74",
+          "text": "Yeah, seems the majority of people here who mostly game shouldn\u2019t jump the gun and get the 9950x3d over the 9800x3d because you sure as shit ain\u2019t getting $300 worth of better performance lol. If you need the extra cores for higher workloads you probably already know what you need to do. Waiting was good cause now you know you can get the performance of a 9800x3d and 9950x so there is no compromise.",
+          "upvotes": 3,
           "sentiment": "negative",
           "recommendation": null,
-          "commentId": "mpouphy"
+          "commentId": "mhex613"
+        },
+        {
+          "author": "ls612",
+          "text": "The 9800x3d over the holidays likely soaked up a lot of demand for this so I suspect it won't be long. Most gamers will buy the 9800x3d anyways since it is cheaper so it will mainly be content creators and people who game and work on the same machine who are in the market for this part.",
+          "upvotes": 6,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "mha62nt"
+        },
+        {
+          "author": "[deleted]",
+          "text": "That sounds nice. I was worried the bios would just power down the other CCD entirely, making it completely useless.\n\nJayTwoCents seem to show a more dynamical process I see (which is nice I guess). Requiring using the 'balanced' powerplan, as 'performance' messes up core parking I think he says in this most recent video on youtube.",
+          "upvotes": 1,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "mhd9tr8"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Amd/comments/1j8q8sq/amd_ryzen_9_9950x3d_cpu_review_benchmarks_vs/",
+      "subreddit": "Amd",
+      "commentCount": 22,
+      "positive": 10,
+      "negative": 1,
+      "neutral": 11,
+      "topComments": [
+        {
+          "author": "NGGKroze",
+          "text": "AMD Ryzen 9 9950X3D CPU Review &amp; Benchmarks vs. 9800X3D, 285K, 9950X, &amp; More",
+          "upvotes": 321,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "1j8q8sq"
+        },
+        {
+          "author": "Paracosm24",
+          "text": "Pretty sure I watched a video about someone getting s triple core Phenom CPU, and they managed to unlock the 4th core (although it wasn't stable). There's usually a reason why AMD didn't just sell them as 4 core parts.\n\nBack to nowadays, it's laughable that Userbenckmark would recommend 13th and 14th gen Intel parts - those with severe instabilities - over a 9800X3D.\n\nThey haven't yet done a write up on the 9950X3D - but I'm sure it would be a load of hit garbage anyway, that doesn't make sense. Especially when the 9950X3D has the gaming performance of a 9800X3D and the productivity performance of a 9950X all in one.",
+          "upvotes": 1,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "mp4lfxx"
+        },
+        {
+          "author": "The_One_Returns",
+          "text": "How does 9800x3d compare to this? Looking to buy a new PC and it's like a $300 difference. Feels like 9950 will be very future proofed though if games decide to use all those extra cores.",
+          "upvotes": 1,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "mheek3a"
+        },
+        {
+          "author": "F9-0021",
+          "text": "Between quicksync and openvino, there are still reasons to buy Intel. I'm a musician in a genre that does a lot of sampling, and my 285k has enhanced my workflow with openvino support in a way that a 9950x simply cannot do. Plus having 3 separate processors on the package itself is helpful. The CPU is powerful, but the iGPU is also useful, and the NPU can be used for accelerating matrix operations when there's suport for it (admittedly not much right now, but should improve over time. \n\nIt takes a certain use case, but having that flexibility is worth more than the few percent of extra CPU multicore performance.",
+          "upvotes": 17,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "mh8xypz"
+        },
+        {
+          "author": "errorsniper",
+          "text": "For non gaming applications sure.\n\nBut for gaming applications its amd in a class of its own right now. They are still struggling  (in gaming) against a 2 generations old 5800x3d.",
+          "upvotes": 5,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "mh939ac"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Amd/comments/1go4832/amd_ryzen_7_9800x3d_meta_review_19_launch_reviews/",
+      "subreddit": "Amd",
+      "commentCount": 8,
+      "positive": 4,
+      "negative": 2,
+      "neutral": 2,
+      "topComments": [
+        {
+          "author": "Jazzlike-Control-382",
+          "text": "What I take from this is that the 9700x is actually very competitive for the price and crazy efficient. The 9900x is a pretty good value proposition if you favour application performance, and the 9800x3d is incredible for gaming.\n\nI would say right now all those 3 are very good choices, depending on your workloads, but as more time passes and the 9800x3d becomes more widely available and lowers in price, it will be a no-brainer pick.",
+          "upvotes": 154,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "lwfz6h4"
+        },
+        {
+          "author": "pullupsNpushups",
+          "text": "Very useful aggregate of reviews. The 9800X3D is able to maintain the application performance of its non-X3D counterpart, in comparison to previous iterations. I expect the 9900X3D and 9950X3D to be similar in this area, providing both their standard application performance and enhanced gaming performance.",
+          "upvotes": 11,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "lwhecmi"
+        },
+        {
+          "author": "Plebius-Maximus",
+          "text": "Or wait for 9900/9950x3d",
+          "upvotes": 4,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "lwhpy23"
+        },
+        {
+          "author": "Grat_Master",
+          "text": "Not in a million years.\n\nEven with a 4090 at 1440p there is not even 10% increase in performance vs a 5700x3d/5800x3d.\n\nIf you are on Am4 get a 5700x3d on aliexpress.\n\nIf you are on Am5 you're good to go for many many years no matter the CPU you have.",
+          "upvotes": 3,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "lwioyym"
+        },
+        {
+          "author": "OmarDaily",
+          "text": "Holy, I\u2019m probably looking at a 50% increase in fps over my 5950X. This is the time to upgrade, very nice!.",
+          "upvotes": 1,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "lwje5dl"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/hardware/comments/1go3ybt/amd_ryzen_7_9800x3d_meta_review_19_launch_reviews/",
+      "subreddit": "hardware",
+      "commentCount": 6,
+      "positive": 0,
+      "negative": 2,
+      "neutral": 4,
+      "topComments": [
+        {
+          "author": "PastaPandaSimon",
+          "text": "I think they have pushed a lot of enthusiasts away with the split designs. \n\nI even went ahead with a simple 8-core vs the similar 16-core Ryzen simply because I wanted a straightforward CPU that acts and performs consistently the same with 0 unpredictability or actions required ever. I'd have 100% spent more on the 16-core if all of them were on one CCD, or there was otherwise nearly no occasional latency penalty or software to need to be mindful of.\n\nThis is because the extra MT performance is something I'd like, but *need* extremely rarely. But a consistently performing CPU is what I want all the time.\n\nOn the Intel side things are even way more extreme. I remember a lot of people were getting the eek about the idea of getting CPUs with lower performance cores mixed in with the \"normal\" cores. As well as the still seldom occurring scheduling issues where you randomly get a lower performance because the thread you want to run at a max speed isn't getting anywhere close to the max speed the CPU can deliver, because it was assigned to a core that's slower than the one they had on their CPU of 8 years ago.",
+          "upvotes": 3,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "lwizq5z"
+        },
+        {
+          "author": "nanogenesis",
+          "text": "Isn't that what bartlett lake is supposed to be? Though I'm not sure if it is even coming.\n\nAlso 12P cores wouldn't win in applications/benchmarks against a 9950x, so they use the space for 4p cores as e cores instead. Its a sad world where an architecture is designed from the ground up to win cinebench for 2mins instead of being a good architecture (low latency, high throughput, consistency, etc).",
+          "upvotes": 1,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "lwk0jve"
+        },
+        {
+          "author": "CrownLikeAGravestone",
+          "text": "...how does that have a 9950X3D benchmark on it?",
+          "upvotes": 1,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "lwjius3"
+        },
+        {
+          "author": "nanonan",
+          "text": "There will be engineering samples out there, I wouldn't put too much stock in it though.",
+          "upvotes": 1,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "lwnzuvb"
+        },
+        {
+          "author": "Mystikalrush",
+          "text": "This is exactly what I need lol. I just need someone to do tests. Does clock speed matter as well? Mine is kinda high cl34 44 44 96. I can drop it, but I doubt I can mess with those timings.",
+          "upvotes": 6,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "lwfqve9"
         }
       ]
     }

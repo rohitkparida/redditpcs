@@ -1,55 +1,205 @@
 {
   "productName": "AMD Radeon RX 9070",
-  "analyzedAt": "2026-06-05T11:21:49.836782",
-  "totalThreads": 1,
+  "analyzedAt": "2026-07-22T08:20:49.014505",
+  "totalThreads": 4,
   "threads": [
     {
-      "url": "https://www.reddit.com/r/RigBuild/comments/1ri3e37/amd_radeon_rx_9000_gpus_begin_to_appear_in_the/",
-      "subreddit": "RigBuild",
-      "commentCount": 22,
-      "positive": 1,
-      "negative": 0,
-      "neutral": 21,
+      "url": "https://www.reddit.com/r/radeon/comments/1qk7yuo/9070_xt_vs_5080_review_with_benchmarks/",
+      "subreddit": "radeon",
+      "commentCount": 104,
+      "positive": 70,
+      "negative": 18,
+      "neutral": 16,
       "topComments": [
         {
-          "author": "Nicolas_Laure",
-          "text": "AMD Radeon RX 9000 GPUs begin to appear in the Steam Hardware Survey at last \u2014 RX 9070 arrives with paltry 0.16% market share, less than the GeForce GT 730\n\nThe latest Steam Hardware Survey shows AMD\u2019s RDNA4 Radeon RX 9000 series entering the market with limited impact, as the RX 9070 non-XT holds a 0.16% share, below Nvidia\u2019s 2014 GeForce GT 730. The RX 9070 XT briefly appeared at 0.22% in December 2025 but has since fallen below the charting threshold.\n\nDespite positive reviews for mainstream performance and AI/ray tracing improvements, Nvidia\u2019s GeForce ecosystem continues to dominate. The RX 9060 XT and RX 9070 16GB variants have received largely favorable feedback for efficiency and performance at their MSRPs.\n\nA notable trend in early 2026 is a significant rise in 16GB VRAM adoption among Steam gamers, increasing by 5.85% in January, while 12GB and 8GB VRAM GPUs declined. This suggests 16GB GPUs may soon become the second most common memory configuration.\n\nSteam Hardware Survey results reflect trends among active users but are limited due to voluntary participation, random sampling, and potential reporting inconsistencies.\n\n---\n\n**\u25ae[Source]**: *tomshardware.com*",
-          "upvotes": 20,
+          "author": "BedroomThink3121",
+          "text": "9070 XT vs 5080 Review with Benchmarks.\n\nI have decided to test these 2 cards at 4k both raster and raytracing both at native without any upscaling to test the raw power and I have also included the Overclocked benchmarks for both cards although it's far from an apples-to-apples comparison but is interesting to see.\n\nDuring the time of recording, I was using 25.12.1 Drivers for the 9070 XT and 591.74 for the 5080.\n\nBoth the cards on stock settings were running at around 2.8-3ghz and with over clock 3.1-3.2ghz but again they are not the same, it doesn't really mean anything since the total number of cores is different and far too many variables there. \n\nThe AIB Cards that I am using are the XFX Mercury Magnetic Air OC 9070 XT and PNY 5080 EPIC-X-ARGB OC. Power draw between the two was also very similar both in stock and OC. Both were around 320-340w in stock and 375-400w in OC. Temps were phenomenally good on both not exceeding 60C for the most part.\n\n  \nCyberpunk 2077 4k Rasterization Ultra:\n\n9070 XT = 62.11 Avg. FPS with Min. FPS 50.93\n\n9070 XT OC = 66.33 Avg. FPS with Min. FPS 54.27\n\n5080 = 75.22 Avg. FPS with Min. FPS 50.76\n\n5080 OC = 80.71 Avg. FPS with Min. FPS 64.54\n\nCyberpunk 2077 4k RT Ultra:\n\n9070 XT = 25.93 Avg. FPS with Min. FPS 22.58\n\n9070 XT OC = 27.88 Avg. FPS with Min. FPS 24.55\n\n5080 = 35.66 Avg. FPS with Min. FPS 31.96\n\n5080 OC = 39.31 Avg. FPS with Min. FPS 35.29\n\n  \nDoom The Dark Ages 4k Ultra Nightmare (Ray Tracing is on by default in this game):\n\n9070 XT = 59.77 Avg. FPS with Min. FPS 23.50\n\n9070 XT OC = 63.78 Avg. FPS with Min. FPS 47.02\n\n5080 = 47.48 Avg. FPS with Min. FPS 26.28\n\n5080 OC = 52.45 Avg. FPS with Min. FPS 29.05\n\n  \nAssassin's Creed Shadows 4k Ultra High (Ray Tracing is on by default):\n\n9070 XT = 36 Avg. FPS with Min. FPS 26\n\n9070 XT OC = 37 Avg. FPS with Min. FPS 13\n\n5080 = 39 Avg. FPS with Min. FPS 24\n\n5080 OC = 43 Avg. FPS with Min. FPS 35\n\n  \nRed Dead Redemption 2 4k Ultra:\n\n9070 XT = 75.207 Avg. FPS with Min. FPS 50.328\n\n9070 XT OC = 78.6187 Avg. FPS with Min. FPS 43.353\n\n5080 = 84.8537 Avg. FPS with Min. FPS 17.657\n\n5080 OC = 93.0846 Avg. FPS with Min. FPS 18.886\n\n  \nMetro Exodus Enhanced 4k RT Extreme (RT is on by default):\n\n9070 XT = 48.96 Avg. FPS with Min. FPS 36.71\n\n9070 XT OC = 52.53 Avg. FPS with Min. FPS 40.31\n\n5080 = 60.93 Avg. FPS with Min. FPS 46.58\n\n5080 OC = 66.93 Avg. FPS with Min. FPS 50.83\n\n  \nBlack Myth Wukong 4k Cinematic 70% TSR:\n\n9070 XT = 44 Avg. FPS with Min. FPS 34\n\n9070 XT OC = 47 Avg. FPS with Min. FPS 41\n\n5080 = 56 Avg. FPS with Min. FPS 48\n\n5080 OC = 60 Avg. FPS with Min. FPS 52.\n\n  \n6 Game Average FPS Ray Tracing:\n\n9070 XT = 48.31 Avg. FPS with Min. FPS 32.18\n\n5080 = 53.65 Avg. FPS with Min. FPS 32.41\n\n9070 XT OC = 51.13 Avg. FPS with Min. FPS 34.87\n\n5080 OC = 59.12 Avg. FPS with Min. FPS 36.84\n\n  \nSo the 9070 XT is only 10-12% slower than the RTX 5080 while being 40% cheaper while having near identical 1% lows.\n\nI am sure with the latest 26.1.1 Drivers the 9070 XT may have improved further, and I will test it soon to compare it with these results. \n\nThank you for reading.",
+          "upvotes": 838,
           "sentiment": "positive",
           "recommendation": null,
-          "commentId": "1ri3e37"
+          "commentId": "1qk7yuo"
         },
         {
-          "author": "Current_Finding_4066",
-          "text": "AMD obviously didn't think they can compete, and made too few GPUs",
-          "upvotes": 5,
-          "sentiment": null,
-          "recommendation": null,
-          "commentId": "o83em4w"
-        },
-        {
-          "author": "soggycheesestickjoos",
-          "text": "Yeah the main reason I got nvidia is because 90 series was above msrp and 50 series was right at it when I bought.",
-          "upvotes": 3,
-          "sentiment": null,
-          "recommendation": null,
-          "commentId": "o83gmq7"
-        },
-        {
-          "author": "glizzygobbler247",
-          "text": "It took the 9070xt 8 months to get to msrp, which lasted like 2 months, then the 2026 price hikes happened",
-          "upvotes": 1,
-          "sentiment": null,
-          "recommendation": null,
-          "commentId": "o875yln"
-        },
-        {
-          "author": "MITBryceYoung",
-          "text": "I think at MSRP the 5070 does have a slightly harder time holding its own against the similar priced 9070 and $600 9070xt but I think the price started falling and the 5070 was frequently between 450-520 which actually made it a better buy esp with features",
+          "author": "Shurialvaro",
+          "text": "I have a 9070 xt and im playing cyberpunk for the first time.\n\n2k ultra settings, ray tracing on and set to ultra, FSR on quality: 85fps average (measured in the radeon software upon dozens of gameplay hours)\n\nSame thing but RT on Psycho: 70 fps average\n\nSame but path tracing: 45-50 fps, 80 with frame gen on.",
           "upvotes": 2,
-          "sentiment": null,
+          "sentiment": "positive",
           "recommendation": null,
-          "commentId": "o87bvmf"
+          "commentId": "o1ajmr5"
+        },
+        {
+          "author": "DeadPhoenix86",
+          "text": "The RTX 5080 is not worth the 1500 asking price. Even the 5070 Ti is almost 1100 here. While the 9070 XT is 650-700.",
+          "upvotes": 192,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "o153pd4"
+        },
+        {
+          "author": "scubac14",
+          "text": "I thought this was all decided when it was released. Price for performance was what made the 9000 series competitive with nvidia gpus",
+          "upvotes": 53,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "o164ay4"
+        },
+        {
+          "author": "cronoes",
+          "text": "the only thing is that price stability has never been a real thing.   Sometimes those 9070 XTs were coming up to like, $850 while the 5080 could still be found for $1,000",
+          "upvotes": 2,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "o19q8wx"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/Amd/comments/1j43rd6/amd_radeon_rx_9070_xt_gpu_review_benchmarks_vs/",
+      "subreddit": "Amd",
+      "commentCount": 59,
+      "positive": 25,
+      "negative": 17,
+      "neutral": 17,
+      "topComments": [
+        {
+          "author": "Fit_Date_1629",
+          "text": "HUB swears they'll honour MSRP, after informing with stores. I will get one tomorrow on launch. Finally saying goodbye to my 1070.",
+          "upvotes": 240,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "mg5hayc"
+        },
+        {
+          "author": "BumHound",
+          "text": "Keep in mind that is for the base models. We don't have pricing yet on the majority of the cards. But the $600 reaper isn't going to cost the same as the hellhound.   \nOr for Gamers Nexus, they tested on the Sapphire pulse which is a $600 card. But how many of those will be available versus the Sapphire Nitro or Pure? And will that extra $100-$200 have decent gains? Probably not. Only the MSRP cards are worth the price. The others quickly lose value.",
+          "upvotes": 82,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "mg5i7r6"
+        },
+        {
+          "author": "dstanton",
+          "text": "That reaper is looking real nice though.\n\nProper SFF capable but still 3 fan. \n\nWish XFX would put out a model like that",
+          "upvotes": 37,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "mg5kb7t"
+        },
+        {
+          "author": "jonomarkono",
+          "text": "I probably won't get it at launch day but I do really hope the price doesn't go up too crazy, because that reaper would fit nicely into my t1",
+          "upvotes": 5,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "mg6rxh3"
+        },
+        {
+          "author": "HaoBianTai",
+          "text": "There's no way they are making a lot of Pulse variants (hoping to find one at my MicroCenter tomorrow morning). That cooler is identical to the Pure (which is running a mild OC) meaning it's probably got plenty of headroom out of the box (though most of these probably do, tbf.) It's also (afaik) the only base variant card to have a cooler designed specifically for the XT variant, and upgraded over the non-XT cooler (the Pulse 9070 is a 280mm long two fan variant.) It's gotta be the lowest margin card among the $600 variants launched.",
+          "upvotes": 4,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "mg7yc8a"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/buildapc/comments/1j3bkya/nvidia_rtx_5070_and_amd_rx_9070_and_9070_xt/",
+      "subreddit": "buildapc",
+      "commentCount": 39,
+      "positive": 11,
+      "negative": 11,
+      "neutral": 17,
+      "topComments": [
+        {
+          "author": "windowpuncher",
+          "text": "Absolutely not.  Scalpers can only exist when demand is disproportionately high to the level of available supply.  Scalpers are the product of an \"inefficient\" market - the kind of market Nvidia happily creates because they can essentially act as a monopoly.\n\nAmd has consistently AWFUL marketing, which isn't helping things at all.\n\nBut basically this IS the consumer's fault at this point.  Except some professional cases or some intense personal preferences, there isn't a real reason to buy nvidia over AMD unless someone is dead set on an exclusive feature, and also willing to essentially pay 2 times more money for the same performance, but including a feature.\n\nWhich is nuts to me.  There are zero features Nvidia has outside of a professional setting that can ever make up that price difference.  DLSS IS NOT an argument, because for that price difference you can buy an AMD card good enough to not need DLSS in the first place, or use *very* mild FSR which is basically unnoticeable, from experience using both.",
+          "upvotes": 49,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "mfzkcq9"
+        },
+        {
+          "author": "-Glittering-Soul-",
+          "text": "&gt; Amd has consistently AWFUL marketing, which isn't helping things at all.\n\nFor example, we're less than 48 hours from global launch, but there isn't a single listing for RDNA4 cards anywhere on the internet. Not even with \"TBA\" in place of the price. We also have no ETA for the exact time that they go on sale. It's still just \"March 6.\" \n\nThere are supposed to be piles of these cards ready to ship. What is going on?",
+          "upvotes": 12,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "mg14bil"
+        },
+        {
+          "author": "[deleted]",
+          "text": "The 5070 has been basically downvoted by all professional reviewers. Most have hinted to wait for the AMD reviews tomorrow before doing anything. How is that even a question",
+          "upvotes": 4,
+          "sentiment": "neutral",
+          "recommendation": null,
+          "commentId": "mg0dojz"
+        },
+        {
+          "author": "errorsniper",
+          "text": "Im just one person but 550 bucks for the entry into the lineup and on paper the 50$ for the XT is a no brainer if you are going to get one of the two. From what people are saying on paper the non-xt makes no sense you are getting way more for that last 50$. Meaning realistically 599 for an entry level card. That is insane to me. I might actually be priced out of the new gpu market and only be able to buy used if this trend continues.\n\nI felt bad buying my 7800xt for 499 launch day. It was really pushing it but I wanted 4k and the 5700xt I had was showing its age. It can do most games in 4k with pretty decent settings with FSR3 but its a borderline 4k card for sure. Its not a true-blue 4k card at all. It can do it. But there are some sacrifices to be made. \n\nI cant justify spending a further 100$ for a card when $499 was already pushing it for me.\n\nThe gpu market has went and lost its damned mind. Even adjusting for inflation these prices are insane to me.",
+          "upvotes": 7,
+          "sentiment": "negative",
+          "recommendation": null,
+          "commentId": "mg134f0"
+        },
+        {
+          "author": "Du6e",
+          "text": "Lol Steve's 5070 review is really pouring it on about waiting for the 9070 review insinuating that it's a lot better",
+          "upvotes": 304,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "mfyr4l4"
+        }
+      ]
+    },
+    {
+      "url": "https://www.reddit.com/r/pcmasterrace/comments/1pwrp9a/gpu_advice_radeon_rx_9070_xt_or_rtx_5080/",
+      "subreddit": "pcmasterrace",
+      "commentCount": 16,
+      "positive": 14,
+      "negative": 2,
+      "neutral": 0,
+      "topComments": [
+        {
+          "author": "ZeisHauten",
+          "text": "I have great experience with AMD since my GPU is 6700XT this is why I am locked in with getting a 9070XT next December regardless of the price. I just cannot justify the expensiveness of Nvidia GPU outside of Editing and 3D workloads. \n\nFor those video editors and design renderers, 5080 is for you no question about it.",
+          "upvotes": 3,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nw5twca"
+        },
+        {
+          "author": "Narrow_Property3870",
+          "text": "Pure gaming then going for 9070xt at MSRP will offer a lot better value for the money. if u play on a 4k monitor then 5080 will offer a better headroom maybe around 20% and other features benefits for productivity. $599 vs $999. Go 5080 if the price difference doesn't mean that much to you and play 4k. 9070xt can do 4k no problem just not as good as 5080 in some games.",
+          "upvotes": 3,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nw5pe6e"
+        },
+        {
+          "author": "samurai_for_hire",
+          "text": "I have a 9070 XT. AMD has FSR frame generation as their counterpart to DLSS, and I consistently run games at 240 Hz 1440p with it.",
+          "upvotes": 3,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nw5mus3"
+        },
+        {
+          "author": "GuessImABlindBitch",
+          "text": "Adding to this, I'm on a 9070 XT running games at 5120x1440, 144 hz, so my current limit is my monitor. \nUsually I run games at 60 fps instead, which leaves my gpu hovering just shy of 50 degrees Celsius, thus being dead silent.",
+          "upvotes": 4,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nw5tild"
+        },
+        {
+          "author": "massivemember69",
+          "text": "The best current gen Nvidia GPU in terms of performance to price is the 5070ti. Get that or the 9070 XT, don\u2019t bother with the 5080 which is overpriced.",
+          "upvotes": 3,
+          "sentiment": "positive",
+          "recommendation": null,
+          "commentId": "nw5ttsn"
         }
       ]
     }

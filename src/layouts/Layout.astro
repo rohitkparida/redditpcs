@@ -7,6 +7,7 @@ interface Props {
 import '../styles/global.css';
 
 const { title, description = "PC hardware recommendations compiled from Reddit community sentiment. Sponsor-free and mathematically aggregated." } = Astro.props;
+const base = import.meta.env.BASE_URL;
 ---
 
 <!DOCTYPE html>
@@ -45,22 +46,22 @@ const { title, description = "PC hardware recommendations compiled from Reddit c
       <nav class="sticky top-0 z-50 backdrop-blur-md bg-white/80 dark:bg-zinc-950/80 border-b border-reddit-border dark:border-zinc-800 transition-all duration-200">
         <div class="max-w-7xl mx-auto px-5 lg:px-6 py-6 grid grid-cols-[1fr_auto_1fr] items-center gap-4">
           <div class="justify-self-start">
-            <a href="/" class="text-2xl md:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white hover:text-reddit-orange transition-colors font-sans">
+            <a href={base} class="text-2xl md:text-3xl font-extrabold tracking-tight text-zinc-900 dark:text-white hover:text-reddit-orange transition-colors font-sans">
               Reddit<span class="text-reddit-orange font-black">PCs</span>
             </a>
           </div>
 
           <div class="hidden md:flex items-center gap-8 justify-self-center">
-            <a href="/builds" class="text-base font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">Builds</a>
-            <a href="/#categories" class="text-base font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">Categories</a>
-            <a href="/guides" class="text-base font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">Guides</a>
-            <a href="/about" class="text-base font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">About</a>
+            <a href={`${base}builds`} class="text-base font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">Builds</a>
+            <a href={`${base}#categories`} class="text-base font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">Categories</a>
+            <a href={`${base}guides`} class="text-base font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">Guides</a>
+            <a href={`${base}about`} class="text-base font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange dark:hover:text-reddit-orange transition-colors">About</a>
           </div>
 
           <div class="justify-self-end flex items-center gap-3 sm:gap-4">
             <div class="flex md:hidden items-center gap-3">
-              <a href="/builds" class="text-xs font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange">Builds</a>
-              <a href="/about" class="text-xs font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange">About</a>
+              <a href={`${base}builds`} class="text-xs font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange">Builds</a>
+              <a href={`${base}about`} class="text-xs font-bold text-zinc-600 dark:text-zinc-400 hover:text-reddit-orange">About</a>
             </div>
             <!-- Custom Theme Toggle Switch -->
             <button 
@@ -98,16 +99,16 @@ const { title, description = "PC hardware recommendations compiled from Reddit c
     <footer class="border-t border-zinc-200 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-900/30 transition-colors">
       <div class="max-w-7xl mx-auto px-5 lg:px-6 py-16 md:py-20 grid grid-cols-1 md:grid-cols-[1fr_auto_1fr] items-start gap-12 text-base text-reddit-muted dark:text-zinc-500">
         <div>
-          <a href="/" class="text-2xl font-extrabold tracking-tight text-zinc-900 dark:text-white font-sans">
+          <a href={base} class="text-2xl font-extrabold tracking-tight text-zinc-900 dark:text-white font-sans">
             Reddit<span class="text-reddit-orange font-black">PCs</span>
           </a>
           <p class="mt-4 max-w-sm leading-relaxed">PC building recommendations ranked from real Reddit sentiment.</p>
         </div>
         <nav class="flex flex-wrap md:justify-center content-start gap-x-7 gap-y-3 font-bold" aria-label="Footer navigation">
-          <a href="/builds" class="hover:text-reddit-orange">Builds</a>
-          <a href="/#categories" class="hover:text-reddit-orange">Categories</a>
-          <a href="/guides" class="hover:text-reddit-orange">Guides</a>
-          <a href="/about" class="hover:text-reddit-orange">About</a>
+          <a href={`${base}builds`} class="hover:text-reddit-orange">Builds</a>
+          <a href={`${base}#categories`} class="hover:text-reddit-orange">Categories</a>
+          <a href={`${base}guides`} class="hover:text-reddit-orange">Guides</a>
+          <a href={`${base}about`} class="hover:text-reddit-orange">About</a>
         </nav>
         <div class="md:text-right md:max-w-md md:ml-auto leading-relaxed">
           <p>&copy; 2026 RedditPCs</p>

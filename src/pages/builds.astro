@@ -2,6 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import BrandGraphic from '../components/BrandGraphic.astro';
 import { slugify } from '../utils/helpers';
+const base = import.meta.env.BASE_URL;
 
 // Curated top-performing Reddit community builds matching our verified database items
 const builds = [
@@ -76,7 +77,7 @@ const builds = [
   <section class="py-12 px-4 border-b border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-950 transition-colors">
     <div class="max-w-6xl mx-auto text-left">
       <div class="text-xs text-reddit-muted dark:text-zinc-500 mb-3 font-semibold">
-        <a href="/" class="hover:text-reddit-orange dark:hover:text-reddit-orange">Home</a>
+        <a href={base} class="hover:text-reddit-orange dark:hover:text-reddit-orange">Home</a>
         <span class="mx-2">/</span>
         <span class="text-zinc-650 dark:text-zinc-400 font-bold">Community Builds</span>
       </div>

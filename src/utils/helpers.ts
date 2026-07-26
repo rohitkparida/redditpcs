@@ -11,6 +11,14 @@ export const slugify = (name: string): string => {
     .replace(/^-|-$/g, '');
 };
 
+export const productSlug = (product: { evidenceSlug?: string; slug?: string; name?: string }): string => {
+  return product.evidenceSlug || product.slug || slugify(product.name || '');
+};
+
+export const productSlug = (product: { evidenceSlug?: string; slug?: string; name?: string }): string => {
+  return product.evidenceSlug || product.slug || slugify(product.name || '');
+};
+
 /**
  * Returns the appropriate Tailwind/CSS color class based on the recommendation rate
  */

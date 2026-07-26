@@ -2,7 +2,7 @@
 import Layout from '../layouts/Layout.astro';
 import BrandGraphic from '../components/BrandGraphic.astro';
 import { slugify } from '../utils/helpers';
-const base = import.meta.env.BASE_URL;
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 
 // Curated top-performing Reddit community builds matching our verified database items
 const builds = [

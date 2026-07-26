@@ -1,41 +1,24 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import { slugify } from '../utils/helpers';
+import { productSlug } from '../utils/helpers';
 import { gpus, cpus, motherboards, ram, psus, ssds, coolers, cases } from '../utils/data';
+import { hasPublishableEvidence } from '../utils/evidence';
+const base = import.meta.env.BASE_URL.replace(/\/?$/, '/');
 
-// Helper to get crown holder (first product of each category)
-const getCrownHolder = (cat: any) => {
-  if (!cat || !cat.products || cat.products.length === 0) return null;
-  // Get only products that are ready
-  const readyProducts = cat.products.filter((p: any) => p.redditConsensus && p.redditConsensus !== "" && p.mentions > 0);
-  if (readyProducts.length === 0) return null;
-  const first = readyProducts[0];
-  // Determine if it has a real recommendation rate or fallback
-  const recRate = first.recommendationRate > 0 
-    ? Math.round(first.recommendationRate * 100) 
-    : (cat.slug === 'gpus' ? 88 : cat.slug === 'ssds' ? 91 : cat.slug === 'coolers' ? 93 : 89);
-  return {
-    name: first.name,
-    rate: recRate
-  };
-};
-
-const tier1 = [
-  { ...cpus, crown: getCrownHolder(cpus) },
-  { ...gpus, crown: getCrownHolder(gpus) }
+const categoryCards = [
+  { href: '/cpus', name: 'CPUs (Processors)', description: 'Compare gaming and productivity performance.', image: 'https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?auto=format&fit=crop&w=700&q=80', accent: 'text-reddit-orange', bubble: 'bg-orange-50 dark:bg-orange-950/30' },
+  { href: '/gpus', name: 'Graphics Cards', description: 'Find the best GPUs for your build.', image: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80', accent: 'text-violet-600 dark:text-violet-400', bubble: 'bg-violet-50 dark:bg-violet-950/30' },
+  { href: '/ssds', name: 'SSD Storage', description: 'Speed, reliability, and real-world picks.', image: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=700&q=80', accent: 'text-emerald-600 dark:text-emerald-400', bubble: 'bg-emerald-50 dark:bg-emerald-950/30' },
+  { href: '/coolers', name: 'CPU Coolers', description: 'Air or liquid? Keep your temperatures in check.', image: 'https://images.unsplash.com/photo-1555617981-dac3880eac6e?auto=format&fit=crop&w=700&q=80', accent: 'text-reddit-orange', bubble: 'bg-orange-50 dark:bg-orange-950/30' },
+  { href: '/ram', name: 'RAM (Memory)', description: 'Capacity, speed, and compatibility.', image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80', accent: 'text-blue-600 dark:text-blue-400', bubble: 'bg-blue-50 dark:bg-blue-950/30' },
+  { href: '/psus', name: 'Power Supplies (PSU)', description: 'Reliable power for every watt.', image: 'https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80', accent: 'text-reddit-orange', bubble: 'bg-orange-50 dark:bg-orange-950/30' },
+  { href: '/motherboards', name: 'Motherboards', description: 'The backbone of your build.', image: 'https://images.unsplash.com/photo-1562976540-1502c2145186?auto=format&fit=crop&w=700&q=80', accent: 'text-emerald-600 dark:text-emerald-400', bubble: 'bg-emerald-50 dark:bg-emerald-950/30' },
+  { href: '/cases', name: 'PC Cases', description: 'Airflow, style, and space.', image: 'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=700&q=80', accent: 'text-violet-600 dark:text-violet-400', bubble: 'bg-violet-50 dark:bg-violet-950/30' },
+  { href: '/builds', name: 'Complete Builds', description: 'Curated builds for every budget and goal.', image: 'https://images.unsplash.com/photo-1593642632823-8f785ba67e45?auto=format&fit=crop&w=700&q=80', accent: 'text-reddit-orange', bubble: 'bg-orange-50 dark:bg-orange-950/30' }
 ];
 
-const tier2 = [
-  { ...ssds, crown: getCrownHolder(ssds) },
-  { ...coolers, crown: getCrownHolder(coolers) },
-  { ...ram, crown: getCrownHolder(ram) },
-  { ...psus, crown: getCrownHolder(psus) },
-  { ...motherboards, crown: getCrownHolder(motherboards) },
-  { ...cases, crown: getCrownHolder(cases) }
-];
-
-// Helper to filter ready products for search index
-const getReadyProducts = (cat: any) => cat.products.filter((p: any) => p.redditConsensus && p.redditConsensus !== "" && p.mentions > 0);
+// Helper to filter products that meet the public evidence floor.
+const getReadyProducts = (cat: any) => cat.products.filter(hasPublishableEvidence);
 
 // Compile client-side search index at build-time across all categories (only ready ones)
 const allProducts = [
@@ -53,7 +36,7 @@ const allProducts = [
   price: p.priceRange,
   category: p.category,
   recommendationRate: p.recommendationRate,
-  url: `/${p.slug}/${slugify(p.name)}`
+  url: `/${p.slug}/${productSlug(p)}`
 }));
 ---
 
@@ -62,28 +45,33 @@ const allProducts = [
   <script id="search-data" type="application/json" set:html={JSON.stringify(allProducts)} />
 
   <!-- Hero Section -->
-  <section class="py-16 md:py-24 px-4 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-orange-50/20 via-white to-white dark:from-orange-950/10 dark:via-zinc-950 dark:to-zinc-950 transition-colors">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+  <section class="py-16 md:py-20 lg:min-h-[800px] px-5 lg:px-6 bg-white dark:bg-zinc-950 transition-colors flex items-center">
+    <div class="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center lg:translate-y-8">
       <!-- Left Column: Copy & Search Bar -->
-      <div class="lg:col-span-7 text-left flex flex-col items-start">
-        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-widest text-reddit-orange bg-orange-50 dark:bg-orange-950/20 border border-orange-100/50 dark:border-orange-900/30 mb-6">
-          Sponsor-free recommendations
+      <div class="lg:col-span-5 text-left flex flex-col items-start">
+        <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-[0.24em] text-reddit-orange bg-orange-50 dark:bg-orange-950/20 border border-orange-100/50 dark:border-orange-900/30 mb-5">
+          <svg class="w-3 h-3" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l1.8 5.2L19 10l-5.2 1.8L12 17l-1.8-5.2L5 10l5.2-1.8L12 3z"/>
+          </svg>
+          Community-first. Always.
         </span>
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 tracking-tight text-zinc-900 dark:text-white leading-tight font-sans">
-          PC building recommendations from <span class="text-reddit-orange">Reddit</span>
+        <h1 class="text-4xl md:text-6xl lg:text-[68px] font-extrabold mb-6 tracking-tight text-zinc-900 dark:text-white leading-[1.06] font-sans">
+          <span class="block">PC building</span>
+          <span class="block">recommendations</span>
+          <span class="block">from <span class="text-reddit-orange">Reddit</span></span>
         </h1>
-        <p class="text-lg md:text-xl text-reddit-muted dark:text-zinc-400 font-medium leading-relaxed mb-8">
-          We analyze thousands of raw Reddit threads, and rank content purely by community sentiment. Zero sponsored reviews.
+        <p class="text-base md:text-lg text-reddit-muted dark:text-zinc-400 font-medium leading-relaxed mb-9 max-w-md">
+          Ranked from verified Reddit sentiment.<br />No sponsors. No editorial guesses.
         </p>
 
         {/* Global Interactive Search Bar */}
-        <div class="w-full max-w-lg relative z-30">
-          <div class="group relative shadow-xl rounded-2xl border border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-900/90 transition-all focus-within:ring-2 focus-within:ring-reddit-orange overflow-hidden">
+        <div class="w-full max-w-xl relative z-30">
+          <div class="group relative rounded-xl border border-zinc-200/80 dark:border-zinc-800 bg-white dark:bg-zinc-900/90 transition-all focus-within:ring-2 focus-within:ring-reddit-orange overflow-hidden">
             <input 
               type="text" 
               id="globalSearch" 
               placeholder="Search CPUs, GPUs, SSDs, & more..." 
-              class="w-full px-5 py-4 pl-12 pr-12 text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-transparent border-0 outline-none focus:outline-none placeholder-zinc-400 dark:placeholder-zinc-500"
+              class="w-full px-5 py-5 pl-12 pr-12 text-base font-semibold text-zinc-800 dark:text-zinc-200 bg-transparent border-0 outline-none focus:outline-none placeholder-zinc-400 dark:placeholder-zinc-500"
             />
             <svg class="w-5 h-5 absolute left-4 top-3.5 text-zinc-400 dark:text-zinc-500" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
               <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
@@ -107,58 +95,123 @@ const allProducts = [
             <!-- Dynamic results populated by script -->
           </div>
         </div>
+
+        <div class="grid grid-cols-3 gap-7 mt-10 w-full max-w-xl" aria-label="Why RedditPCs">
+          <div class="flex flex-col items-center text-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 dark:text-emerald-400 flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 3l7 4v5c0 4.4-2.8 7.5-7 9-4.2-1.5-7-4.6-7-9V7l7-4z"/>
+                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4"/>
+              </svg>
+            </span>
+            <span class="text-sm font-semibold text-zinc-600 dark:text-zinc-400">No sponsorships</span>
+          </div>
+          <div class="flex flex-col items-center text-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-amber-50 dark:bg-amber-950/30 text-amber-600 dark:text-amber-400 flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M16 21v-2a4 4 0 00-4-4H6a4 4 0 00-4 4v2M9 11a4 4 0 100-8 4 4 0 000 8zM22 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+              </svg>
+            </span>
+            <span class="text-sm font-semibold text-zinc-600 dark:text-zinc-400">Community ranked</span>
+          </div>
+          <div class="flex flex-col items-center text-center gap-3">
+            <span class="w-11 h-11 rounded-full bg-orange-50 dark:bg-orange-950/30 text-reddit-orange flex items-center justify-center">
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M12 2s4 4.4 4 8a4 4 0 11-8 0c0-1.8.8-3.5 2-5 0 3 2 4 2 4s1-3 0-7zM8 17c1 2 2.3 3 4 3s3-1 4-3"/>
+              </svg>
+            </span>
+            <span class="text-sm font-semibold text-zinc-600 dark:text-zinc-400">Always updated</span>
+          </div>
+        </div>
       </div>
 
       <!-- Right Column: Theme-Aware Cabinet Art Overlay -->
-      <div class="lg:col-span-5 relative">
+      <div class="lg:col-span-7 relative lg:self-start lg:scale-110 lg:origin-right">
         <img 
-          src="/light.png" 
+          src={`${base}light.png`} 
           alt="White PC Build Setup" 
-          class="block dark:hidden w-full h-auto rounded-3xl border border-reddit-border/80 shadow-2xl object-cover hover:scale-[1.01] transition-transform duration-300"
+          class="block dark:hidden w-full h-auto object-cover opacity-95"
         />
         <img 
-          src="/dark.png" 
+          src={`${base}dark.png`} 
           alt="Dark PC Build Setup" 
-          class="hidden dark:block w-full h-auto rounded-3xl border border-zinc-850 shadow-2xl object-cover hover:scale-[1.01] transition-transform duration-300"
+          class="hidden dark:block w-full h-auto object-cover opacity-95"
         />
       </div>
     </div>
   </section>
 
   <!-- Main Showcase -->
-  <section class="pb-24 px-4 max-w-6xl mx-auto">
-    <!-- Tier 1: CPU & GPU -->
-    <div class="mb-8">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        {tier1.map((cat) => (
-          <a 
-            href={`/${cat.slug}`}
-            class="group relative block p-8 rounded-2xl border border-reddit-border dark:border-zinc-800/80 bg-white dark:bg-zinc-900/50 shadow-sm hover:shadow-xl dark:hover:shadow-zinc-950/40 hover:border-reddit-orange dark:hover:border-reddit-orange transition-all duration-300 transform hover:-translate-y-1 overflow-hidden"
-          >
-            <!-- Premium gradient accent on hover -->
-            <div class="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-reddit-orange to-amber-500 opacity-80 group-hover:opacity-100 transition-opacity"></div>
-            
-            <div class="flex justify-between items-center">
-              <h3 class="text-2xl font-bold text-zinc-900 dark:text-white group-hover:text-reddit-orange dark:group-hover:text-reddit-orange transition-colors font-sans">{cat.category}</h3>
-            </div>
-          </a>
-        ))}
+  <section id="categories" class="pt-24 pb-20 px-5 lg:px-6 max-w-7xl mx-auto scroll-mt-24">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-10">
+      <div>
+        <h2 class="text-3xl md:text-4xl font-extrabold tracking-tight text-zinc-900 dark:text-white">Browse Categories</h2>
+        <p class="mt-2 text-base text-reddit-muted dark:text-zinc-400">Explore top-rated components and build smarter.</p>
       </div>
+      <a href="#categories" class="inline-flex items-center gap-2 text-base font-bold text-reddit-orange hover:underline sm:mb-1">
+        View all categories
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6"/>
+        </svg>
+      </a>
     </div>
 
-    <!-- Tier 2: Supporting Components -->
-    <div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        {tier2.map((cat) => (
-          <a 
-            href={`/${cat.slug}`}
-            class="group block p-6 rounded-xl border border-reddit-border dark:border-zinc-800 bg-reddit-surface dark:bg-zinc-900/30 hover:bg-white dark:hover:bg-zinc-900 hover:shadow-md hover:border-zinc-355 dark:hover:border-zinc-700 transition-all duration-200 transform hover:-translate-y-0.5"
-          >
-            <div class="flex justify-between items-center">
-              <h4 class="font-bold text-zinc-800 dark:text-zinc-300 group-hover:text-reddit-orange dark:group-hover:text-reddit-orange transition-colors font-sans">{cat.category}</h4>
-            </div>
-          </a>
-        ))}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+      {categoryCards.map((cat, index) => (
+        <a
+          href={`${base}${cat.href.replace(/^\//, '')}`}
+          class="group relative min-h-56 md:min-h-[310px] flex flex-col justify-between p-7 lg:p-8 rounded-xl border border-zinc-200/70 dark:border-zinc-800/80 bg-white dark:bg-zinc-900/70 hover:border-reddit-orange/70 dark:hover:border-reddit-orange/70 hover:shadow-md transition-all duration-200 overflow-hidden"
+        >
+          <img
+            src={cat.image}
+            alt=""
+            loading="lazy"
+            class="absolute right-0 bottom-0 w-[46%] h-full object-cover opacity-85 dark:opacity-60 group-hover:scale-105 transition-transform duration-300"
+          />
+          <div class="absolute inset-y-0 left-0 w-[58%] bg-white dark:bg-zinc-900"></div>
+          <div class="absolute inset-y-0 left-[54%] w-[14%] bg-gradient-to-r from-white dark:from-zinc-900 to-transparent"></div>
+
+          <div class="relative z-10 w-[54%]">
+            <span class:list={["text-sm font-black tracking-widest", cat.accent]}>{String(index + 1).padStart(2, '0')}</span>
+            <h3 class="mt-7 text-xl lg:text-2xl font-extrabold text-zinc-900 dark:text-white group-hover:text-reddit-orange transition-colors font-sans">{cat.name}</h3>
+            <p class="mt-4 text-sm lg:text-base leading-relaxed text-reddit-muted dark:text-zinc-400">{cat.description}</p>
+          </div>
+          <span class:list={["relative z-10 mt-8 w-10 h-10 rounded-full flex items-center justify-center transition-transform group-hover:translate-x-1", cat.bubble, cat.accent]} aria-hidden="true">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h14m-6-6l6 6-6 6"/>
+            </svg>
+          </span>
+        </a>
+      ))}
+    </div>
+
+    <div class="mt-12 min-h-44 grid grid-cols-1 md:grid-cols-3 rounded-xl border border-zinc-200/70 dark:border-zinc-800 bg-white dark:bg-zinc-900/70 overflow-hidden">
+      <div class="p-9 lg:p-10 flex items-center gap-6 md:border-r border-zinc-200/70 dark:border-zinc-800">
+        <span class="flex-shrink-0 w-12 h-12 rounded-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-700 dark:text-zinc-300">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 18h6M10 22h4M8.5 15.5A7 7 0 1115.5 4.5 7 7 0 018.5 15.5z"/></svg>
+        </span>
+        <div>
+          <h3 class="text-base font-bold text-zinc-900 dark:text-white">How It Works</h3>
+          <p class="mt-2 text-base leading-relaxed text-reddit-muted dark:text-zinc-400">We analyze Reddit discussions, upvotes, and community feedback.</p>
+        </div>
+      </div>
+      <div class="p-9 lg:p-10 flex items-center gap-6 border-t md:border-t-0 md:border-r border-zinc-200/70 dark:border-zinc-800">
+        <span class="flex-shrink-0 w-12 h-12 rounded-full bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center text-zinc-700 dark:text-zinc-300">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M20 12a8 8 0 11-2.34-5.66M20 4v6h-6"/></svg>
+        </span>
+        <div>
+          <h3 class="text-base font-bold text-zinc-900 dark:text-white">Updated regularly</h3>
+          <p class="mt-2 text-base leading-relaxed text-reddit-muted dark:text-zinc-400">Our rankings refresh as new verified data arrives.</p>
+        </div>
+      </div>
+      <div class="p-9 lg:p-10 flex items-center gap-6 border-t md:border-t-0 border-zinc-200/70 dark:border-zinc-800">
+        <span class="flex-shrink-0 w-12 h-12 rounded-full bg-orange-50 dark:bg-orange-950/30 flex items-center justify-center text-reddit-orange">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h8M9 16h6M12 2a8 8 0 018 8c0 5-4 9-8 12-4-3-8-7-8-12a8 8 0 018-8z"/></svg>
+        </span>
+        <div>
+          <h3 class="text-base font-bold text-zinc-900 dark:text-white">Built by the Community</h3>
+          <p class="mt-2 text-base leading-relaxed text-reddit-muted dark:text-zinc-400">Driven by real users, for the community.</p>
+        </div>
       </div>
     </div>
   </section>

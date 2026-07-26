@@ -260,7 +260,7 @@ const maxCategoryPrice = productPrices.length > 0 ? Math.max(...productPrices) :
               const negativePct = totalReviews > 0 ? Math.max(0, 100 - positivePct - neutralPct) : 0;
               return (
                 <a 
-                  href={`${base}${data.slug}/${productPath}`}
+                  href={`${base}${data.slug}/${productPath}/`}
                   class="product-card block bg-white dark:bg-zinc-900/50 border border-reddit-border dark:border-zinc-800 rounded-2xl p-6 hover:shadow-lg dark:hover:shadow-zinc-950/40 hover:border-zinc-300 dark:hover:border-zinc-700/60 transition-all duration-300 transform hover:-translate-y-0.5"
                   data-brand={product.brand}
                   data-price={minPrice}

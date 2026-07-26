@@ -159,7 +159,7 @@ const allProducts = [
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7">
       {categoryCards.map((cat, index) => (
         <a
-          href={`${base}${cat.href.replace(/^\//, '')}`}
+          href={`${base}${cat.href.replace(/^\//, '')}/`}
           class="group relative min-h-56 md:min-h-[310px] flex flex-col justify-between p-7 lg:p-8 rounded-xl border border-zinc-200/70 dark:border-zinc-800/80 bg-white dark:bg-zinc-900/70 hover:border-reddit-orange/70 dark:hover:border-reddit-orange/70 hover:shadow-md transition-all duration-200 overflow-hidden"
         >
           <img

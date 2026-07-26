@@ -1,0 +1,51 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const guides = [
+  {
+    title: 'Choose the right parts',
+    description: 'Start with community-ranked CPUs, GPUs, and supporting components.',
+    href: '/#categories',
+    action: 'Browse categories'
+  },
+  {
+    title: 'Start from a complete build',
+    description: 'Use a balanced community build as a practical starting point.',
+    href: '/builds',
+    action: 'Explore builds'
+  },
+  {
+    title: 'Understand our rankings',
+    description: 'See how Reddit discussions become recommendation scores and consensus.',
+    href: '/about',
+    action: 'How it works'
+  }
+];
+---
+
+<Layout title="PC Building Guides" description="Simple starting points for choosing PC components using Reddit community sentiment.">
+  <section class="py-14 md:py-20 px-4 border-b border-reddit-border dark:border-zinc-800">
+    <div class="max-w-6xl mx-auto">
+      <span class="text-xs font-black uppercase tracking-[0.2em] text-reddit-orange">Guides</span>
+      <h1 class="mt-4 text-3xl md:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white">Build with less guesswork.</h1>
+      <p class="mt-4 max-w-2xl text-base md:text-lg leading-relaxed text-reddit-muted dark:text-zinc-400">
+        Three clear ways to move from research to a confident parts list.
+      </p>
+    </div>
+  </section>
+
+  <section class="py-12 px-4">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-5">
+      {guides.map((guide, index) => (
+        <a href={guide.href} class="group min-h-64 p-6 rounded-2xl border border-reddit-border dark:border-zinc-800 bg-white dark:bg-zinc-900/70 flex flex-col justify-between hover:border-reddit-orange hover:shadow-md transition-all">
+          <div>
+            <span class="text-xs font-black tracking-widest text-reddit-orange">{String(index + 1).padStart(2, '0')}</span>
+            <h2 class="mt-5 text-xl font-extrabold text-zinc-900 dark:text-white">{guide.title}</h2>
+            <p class="mt-3 text-sm leading-relaxed text-reddit-muted dark:text-zinc-400">{guide.description}</p>
+          </div>
+          <span class="mt-6 text-sm font-bold text-reddit-orange group-hover:underline">{guide.action} <span aria-hidden="true">→</span></span>
+        </a>
+      ))}
+    </div>
+  </section>
+</Layout>
